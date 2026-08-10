@@ -1,0 +1,29 @@
+{
+    "name": "Storm UFO",
+    "category": "air_techs",
+
+    "x": 5,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_storm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_ARMED_UFO"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_AIR_STORM_AIRSHIP": 1,
+        "TECHNOLOGY_AIR_STORM_VANGUARD": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1008
+}

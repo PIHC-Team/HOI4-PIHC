@@ -1,0 +1,66 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_IN_CHARGE",
+    "priority": 30,
+    "prerequisite": {
+        "focus": "FOCUS_C12_IN_CHARGE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "601": {
+            "if": {
+                "limit": {
+                    "industrial_complex > 2": null
+                },
+                "remove_building": {
+                    "type": "industrial_complex",
+                    "level": 3
+                }
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 3,
+                "instant_build": true
+            }
+        },
+        "641": {
+            "if": {
+                "limit": {
+                    "industrial_complex > 2": null
+                },
+                "remove_building": {
+                    "type": "industrial_complex",
+                    "level": 3
+                }
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 3,
+                "instant_build": true
+            }
+        },
+        "add_ideas": "IDEA_C12_FOCUS_ON_WAR_PRODUCTION"
+    },
+    "available": {
+        "601": {
+            "industrial_complex > 3": null
+        },
+        "641": {
+            "industrial_complex > 3": null
+        },
+        "C12": {
+            "owns_state": 601,
+            "owns_state__D1": 641,
+            "is_subject": false
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

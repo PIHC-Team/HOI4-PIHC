@@ -1,0 +1,22 @@
+{
+    "date": "1002.12.15 ~ 1002.12.23",
+    "date_scope": "C02",
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_HOTLINE_003",
+            "custom_effect_tooltip": "EVENT_C02_HOTLINE_3_TOOLTIP"
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,29 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_INDUSTRY_EDUCATION",
+    "prerequisite": {
+        "focus": "FOCUS_GEN_INDUSTRY_EDUCATION"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_GEN_INDUSTRY_RESEARCH"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_GEN_AGE_SCIENCE"
+    },
+    "cost": 16,
+    "completion_reward": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INDUSTRY",
+        "add_ideas": "IDEA_ERA_AGE_INDUSTRY"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

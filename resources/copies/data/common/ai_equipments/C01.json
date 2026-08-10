@@ -1,0 +1,43 @@
+{
+    "Aerial_Galleon_Hull": {
+        "category": "pihc_air_galleon",
+        "roles": {
+            "cas": null,
+            "fighter": null
+        },
+        "priority": {
+            "factor": 1000
+        },
+        "Aerial_Galleon_Hull_default": {
+            "priority": {
+                "factor": 10,
+                "modifier": {
+                    "has_tech": "TECHNOLOGY_BBA_FRAME_GALLEON",
+                    "factor": 20
+                }
+            },
+            "target_variant": {
+                "match_value": 1000,
+                "type": "small_plane_cas_airframe",
+                "modules": {
+                    "main_armament_slot": "PLANE_WEAPON_GRDBMB_1B_WATERMELON",
+                    "turret_type_slot_1": "PLANE_WEAPON_GRDBMB_1A_BUTTER",
+                    "turret_type_slot_2": "PLANE_WEAPON_GRDATK_3A_PUMPKIN",
+                    "turret_type_slot_3": "empty",
+                    "turret_type_slot_4": "empty",
+                    "armor_type_slot": "PLANE_ARMOR_2A_BRASS",
+                    "engine_type_slot": "PLANE_ENGINE_2A_STEAM",
+                    "special_type_slot_1": "SPECIAL_VITAMIN_A",
+                    "special_type_slot_2": "empty",
+                    "special_type_slot_3": "empty",
+                    "special_type_slot_4": "empty"
+                },
+                "upgrades": {}
+            }
+        },
+        "allowed_modules": {
+            "PLANE_WEAPON_GRDATK_3C_CHOCOLATE": null,
+            "PLANE_WEAPON_GRDATK_3B_CUPCAKE": null
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_STARLIGHT_RADIO",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C08_STARLIGHT_RADIO"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "country_event": {
+            "id": "C08_MAIN.30",
+            "days": 1
+        },
+        "C05": {
+            "country_event": {
+                "id": "C08_MAIN.30",
+                "days": 1
+            }
+        },
+        "C23": {
+            "country_event": {
+                "id": "C08_MAIN.30",
+                "days": 1
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+{
+    "type": [
+        "armor"
+    ],
+    "interface_category": "interface_category_armor",
+
+    "module_slots": {
+        "engine_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_engine_type"
+            ],
+            "gfx": "TM_light_tank_chassis_engine_type_slot"
+        },
+        "crew_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_crew_type_0"
+            ],
+            "gfx": "TM_light_tank_chassis_armor_type_slot"
+        },
+        "painting_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_painting_type"
+            ],
+            "gfx": "TM_light_tank_chassis_armor_type_slot"
+        },
+        "special_type_slot_1": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_tank_special_type"
+            ],
+            "special": true
+        },
+        "special_type_slot_2": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_tank_special_type"
+            ],
+            "special": true
+        },
+        "turret_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_turret_type"
+            ],
+            "gfx": "TM_light_tank_chassis_turret_type_slot"
+        },
+        "projectile_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_projectile_type"
+            ],
+            "gfx": "TM_light_tank_chassis_main_armament_slot"
+        },
+        "armor_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_armor_type"
+            ],
+            "gfx": "TM_light_tank_chassis_armor_type_slot"
+        },
+        "suspension_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_suspension_type"
+            ],
+            "gfx": "TM_light_tank_chassis_suspension_type_slot"
+        }
+    },
+    "module_count_limit_batch": [
+        {
+            "module": "MODULE_SPECIAL_PHANTOM_WEDGE",
+            "count < 1": null,
+            "title": "HEAVY_CHASSIS_REQUIRED_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_BROADCAST",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_ONLY_1_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_BATTERY",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_ONLY_1_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_PISTON",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_ONLY_1_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_TELESCOPE",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_ONLY_1_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_DJ",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_ONLY_1_TOOLTIP"
+        }
+    ],
+    "upgrades": [
+        "pihc_tank_nsb_reliability_upgrade",
+        "pihc_tank_nsb_armor_value_upgrade"
+    ],
+
+    "// duplicates": {
+        "TANK_LIGHT_MAGICAL": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        },
+        "TANK_LIGHT_OIL": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        },
+        "TANK_LIGHT_ELECTRIC": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        },
+        "TANK_LIGHT_NECRO": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        },
+        "TANK_LIGHT_WITCHCRAFT": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        },
+        "TANK_LIGHT_HIGHTECH": {
+            "type": [ "armor" ],
+            "for_each": {
+                "variant_name": {
+                    "find_and_replace": [
+                        "ARCHETYPE", "EQUIPMENT"
+                    ]
+                }
+            }
+        }
+    }
+}

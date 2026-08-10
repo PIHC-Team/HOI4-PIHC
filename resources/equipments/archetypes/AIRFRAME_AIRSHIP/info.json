@@ -1,0 +1,144 @@
+{
+    "type": [
+        "strategic_bomber",
+        "interceptor",
+        "cas",
+        "tactical_bomber"
+    ],
+    "interface_category": "interface_category_air",
+    "interface_overview_category_index": 5,
+
+    "type_override": "fixed_main_weapon_slot",
+    "allowed_types": [
+        "cas",
+        "tactical_bomber",
+        "strategic_bomber",
+        "suicide"
+    ],
+    "module_slots": {
+        "engine_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_plane_engine_type_0",
+                "pihc_plane_engine_type_1",
+                "pihc_plane_engine_type_2"
+            ]
+        },
+        "armor_type_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_armor_type_0",
+                "pihc_plane_armor_type_1",
+                "pihc_plane_armor_type_2"
+            ]
+        },
+        "fixed_main_weapon_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_plane_weapon_type_air_rec",
+                "pihc_plane_weapon_type_air_atk",
+                "pihc_plane_weapon_type_grd_atk",
+                "pihc_plane_weapon_type_grd_bmb"
+            ]
+        },
+        "fixed_auxiliary_weapon_slot_1": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_weapon_type_air_atk",
+                "pihc_plane_weapon_type_grd_atk",
+                "pihc_plane_weapon_type_grd_bmb"
+            ]
+        },
+        "fixed_auxiliary_weapon_slot_2": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_weapon_type_air_atk",
+                "pihc_plane_weapon_type_grd_atk",
+                "pihc_plane_weapon_type_grd_bmb"
+            ]
+        },
+        "fixed_auxiliary_weapon_slot_3": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_weapon_type_air_atk",
+                "pihc_plane_weapon_type_grd_atk",
+                "pihc_plane_weapon_type_grd_bmb"
+            ]
+        },
+        "fixed_auxiliary_weapon_slot_4": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_weapon_type_air_atk",
+                "pihc_plane_weapon_type_grd_atk",
+                "pihc_plane_weapon_type_grd_bmb"
+            ]
+        },
+        "special_type_slot_1": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_special_type_0"
+            ],
+            "special": true
+        },
+        "special_type_slot_2": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_special_type_0"
+            ],
+            "special": true
+        },
+        "special_type_slot_3": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_special_type_0"
+            ],
+            "special": true
+        },
+        "special_type_slot_4": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_special_type_0"
+            ],
+            "special": true
+        },
+        "special_type_slot_5": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_plane_special_type_0"
+            ],
+            "special": true
+        }
+    },
+    "default_modules": {
+        "engine_type_slot": "MODULE_PLANE_ENGINE_2A_STEAM",
+        "armor_type_slot": "MODULE_PLANE_ARMOR_2A_BRASS",
+        "fixed_main_weapon_slot": "empty"
+    },
+    "module_count_limit_batch": [
+        {
+            "module": "MODULE_SPECIAL_PARADROP",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_PARADROP_ONLY_1_TOOLTIP"
+        },
+        {
+            "module": "MODULE_SPECIAL_SUPPLY",
+            "count < 2": null,
+            "title": "MODULE_SPECIAL_SUPPLY_ONLY_1_TOOLTIP"
+        }
+    ],
+    "upgrades": [
+        "pihc_plane_bba_reliability_upgrade"
+    ],
+    "allow_mission_type": [
+        "recon",
+        "training",
+        "air_superiority",
+        "port_strike",
+        "cas",
+        "attack_logistics",
+        "strategic_bomber"
+    ],
+    "forbid_mission_type": [
+        "interception"
+    ]
+}

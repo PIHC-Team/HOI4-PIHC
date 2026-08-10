@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_political_power": 30,
+            "set_state_controller": 499,
+            "499": {
+                "create_unit": {
+                    "division": "name = \"起义军 (Uprise)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.1 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C08",
+                    "count": 4
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

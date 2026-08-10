@@ -1,0 +1,180 @@
+{
+    "spriteTypes": {
+        "spriteType": {
+            "name": "GFX_pihc_progress_blank",
+            "textureFile": "gfx/interface/PIHC_progress_blank.dds"
+        },
+        "spriteType__D1": {
+            "name": "GFX_pihc_progress_empty",
+            "textureFile": "gfx/interface/PIHC_progress_empty.dds"
+        },
+        "progressbarType": {
+            "name": "GFX_pihc_progress_empty_left",
+            "textureFile1": "gfx/interface/PIHC_progress_empty.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D1": {
+            "name": "GFX_pihc_progress_empty_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_empty.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D2": {
+            "name": "GFX_pihc_progress_mixed",
+            "textureFile": "gfx/interface/PIHC_progress_mixed.dds"
+        },
+        "progressbarType__D2": {
+            "name": "GFX_pihc_progress_mixed_left",
+            "textureFile1": "gfx/interface/PIHC_progress_mixed.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D3": {
+            "name": "GFX_pihc_progress_mixed_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_mixed.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D3": {
+            "name": "GFX_pihc_progress_red",
+            "textureFile": "gfx/interface/PIHC_progress_red.dds"
+        },
+        "progressbarType__D4": {
+            "name": "GFX_pihc_progress_red_left",
+            "textureFile1": "gfx/interface/PIHC_progress_red.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D5": {
+            "name": "GFX_pihc_progress_red_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_red.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D4": {
+            "name": "GFX_pihc_progress_blue",
+            "textureFile": "gfx/interface/PIHC_progress_blue.dds"
+        },
+        "progressbarType__D6": {
+            "name": "GFX_pihc_progress_blue_left",
+            "textureFile1": "gfx/interface/PIHC_progress_blue.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D7": {
+            "name": "GFX_pihc_progress_blue_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blue.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D5": {
+            "name": "GFX_pihc_progress_yellow",
+            "textureFile": "gfx/interface/PIHC_progress_yellow.dds"
+        },
+        "progressbarType__D8": {
+            "name": "GFX_pihc_progress_yellow_left",
+            "textureFile1": "gfx/interface/PIHC_progress_yellow.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D9": {
+            "name": "GFX_pihc_progress_yellow_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_yellow.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D6": {
+            "name": "GFX_pihc_progress_green",
+            "textureFile": "gfx/interface/PIHC_progress_green.dds"
+        },
+        "progressbarType__D10": {
+            "name": "GFX_pihc_progress_green_left",
+            "textureFile1": "gfx/interface/PIHC_progress_green.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_blank.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "progressbarType__D11": {
+            "name": "GFX_pihc_progress_green_right",
+            "textureFile1": "gfx/interface/PIHC_progress_blank.dds",
+            "textureFile2": "gfx/interface/PIHC_progress_green.dds",
+            "effectFile": "gfx/FX/progress.lua",
+            "size": {
+                "x": 420,
+                "y": 40
+            },
+            "horizontal": true,
+            "steps": 1000
+        },
+        "spriteType__D7": {
+            "name": "GFX_pihc_progress_divider",
+            "textureFile": "gfx/interface/PIHC_progress_divider.dds"
+        }
+    }
+}

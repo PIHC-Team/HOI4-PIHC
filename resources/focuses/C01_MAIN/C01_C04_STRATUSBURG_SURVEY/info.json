@@ -1,0 +1,34 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C04_OPERATION_REDSKY",
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C04_OPERATION_REDSKY"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "country_event": {
+            "id": "C01_C04_REDSKY.1"
+        }
+    },
+    "available": {
+        "C04": {
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

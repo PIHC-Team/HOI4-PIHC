@@ -1,0 +1,16 @@
+{
+    "name": "Coffee",
+    "priority": 100,
+    
+    "cost": 75,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_PEGASUS_JOY_JUICE"
+    },
+    "complete_effect": {
+        
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 3
+    }
+}

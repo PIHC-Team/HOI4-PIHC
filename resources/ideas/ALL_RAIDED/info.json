@@ -1,0 +1,13 @@
+{
+    "name": "ALL_RAIDED",
+    "removal_cost": -1,
+    "on_add": {
+        "add_stability": -0.01
+    },
+    "cancel": {
+        "has_war_with": "C25"
+    },
+    "modifier": {
+        "local_resources_factor": -0.03
+    }
+}

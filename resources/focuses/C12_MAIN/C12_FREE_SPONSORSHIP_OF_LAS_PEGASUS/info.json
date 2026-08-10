@@ -1,0 +1,65 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TREASURE_EVERYWHERE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_TREASURE_EVERYWHERE"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C12_INVITE_THE_APPLE_FAMILY"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "644": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "infrastructure",
+                "level": 2,
+                "instant_build": true
+            }
+        },
+        "add_offsite_building": {
+            "type": "industrial_complex",
+            "level": 2
+        },
+        "hidden_effect": {
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C12_BACKSIES",
+            "C07": {
+                "country_event": {
+                    "id": "C12_MAIN.20",
+                    "days": 2,
+                    "random_days": 2
+                }
+            }
+        }
+    },
+    "available": {
+        "country_exists": "C07",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C12_REFUSE_SECOND_BATCH_OF_SPONSORSHIP"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_C12_REFUSE_SECOND_BATCH_OF_SPONSORSHIP_TRIGGER_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C12_C07_REFUSED_CORPORATION"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_C12_C07_REFUSED_CORPORATION_TRIGGER_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

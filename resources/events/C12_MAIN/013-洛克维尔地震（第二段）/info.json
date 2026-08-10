@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 99
+            },
+            "add_stability": -0.03,
+            "add_political_power": -50,
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C12_MAIN.32",
+                    "days": 30,
+                    "random_days": 5
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 1
+            },
+            "add_political_power": -20,
+            "641": {
+                "damage_building": {
+                    "type": "radar_station",
+                    "damage": 4.0
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

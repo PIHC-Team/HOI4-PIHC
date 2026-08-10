@@ -1,0 +1,43 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 14,
+
+    "air_range_factor": 0.15,
+    "air_cas_present_factor": 0.08,
+    "category_air_galleon": {
+        "air_attack": 0.05,
+        "air_ground_attack": 0.05,
+        "air_defence": 0.15,
+        "air_superiority": 0.10
+    },
+    "category_air_plane": {
+        "air_attack": 0.05,
+        "air_ground_attack": 0.05,
+        "air_defence": 0.15,
+        "air_superiority": 0.10
+    },
+    "category_air_ufo": {
+        "air_attack": 0.05,
+        "air_ground_attack": 0.05,
+        "air_defence": 0.15,
+        "air_superiority": 0.10
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

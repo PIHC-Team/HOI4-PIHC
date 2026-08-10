@@ -1,0 +1,84 @@
+{
+    "upgrades": {
+        "pihc_tank_nsb_reliability_upgrade": {
+            "max_level": 20,
+            "cost": "land",
+            "linear_cost": {
+                "cost_by_level": 1,
+                "cost_by_level_for_licensed_equipment": 5
+            },
+            "level_requirements": {
+                "5": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN"
+                    }
+                },
+                "10": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED"
+                    }
+                },
+                "15": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED"
+                    }
+                }
+            },
+            "resource_cost_thresholds": {
+                "15": {
+                    "steel": 1
+                }
+            },
+            "reliability": 0.015,
+            "build_cost_ic": 0.10,
+            "maximum_speed": 0.10
+        },
+        "pihc_tank_nsb_armor_value_upgrade": {
+            "max_level": 20,
+            "cost": "land",
+            "linear_cost": {
+                "cost_by_level": 1,
+                "cost_by_level_for_licensed_equipment": 5
+            },
+            "level_requirements": {
+                "5": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN"
+                    }
+                },
+                "10": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED"
+                    }
+                },
+                "15": {
+                    "OR": {
+                        "has_tech":     "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED",
+                        "has_tech__D1": "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED",
+                        "has_tech__D2": "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED"
+                    }
+                }
+            },
+            "resource_cost_thresholds": {
+                "15": {
+                    "steel": 1
+                }
+            },
+            "reliability": -0.010,
+            "build_cost_ic": 0.10,
+            "maximum_speed": -0.10,
+            "armor_value": 0.10,
+            "breakthrough": 0.05
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Zap Apples to Bonds",
+    "priority": 98,
+    
+    "cost": 0,
+    "days_re_enable": 1,
+    "visible": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE": true
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true
+    },
+    "custom_cost_text": "CUSTOM_COST_ZAP_APPLES_100",
+    "complete_effect": {
+        "subtract_from_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE",
+            "value": 100
+        },
+        "add_to_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE"
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+        "add_to_variable__D1": {
+            "var": "global.VAR_ZAP_APPLES_MARKET",
+            "value": 100
+        }
+    },
+    "ai_will_do": {
+        "base": 2
+    }
+}

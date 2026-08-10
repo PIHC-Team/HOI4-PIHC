@@ -1,0 +1,13 @@
+{
+    "name": "Magic Muggle",
+    "removal_cost": -1,
+    "available": {
+        "always": false
+    },
+    "research_bonus": {
+        "pihc_magical": -0.35,
+        "pihc_magic_theory": -0.35
+    },
+    "cost": 0,
+    "cancel_if_invalid": false
+}

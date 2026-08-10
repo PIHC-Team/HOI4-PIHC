@@ -1,0 +1,23 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_JAHR_NULL",
+    "priority": 30,
+    "prerequisite": {
+        "focus": "FOCUS_GEN_JAHR_NULL"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_command_power": 35
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

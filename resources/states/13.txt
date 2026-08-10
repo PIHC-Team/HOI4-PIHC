@@ -1,0 +1,31 @@
+state = {
+    id = 13
+    name = STATE_13
+    provinces = {
+        2313
+        5017
+        5046
+        7022
+        9008
+        9391
+        9904
+        9930
+    }
+    manpower = 5953
+    state_category = small_island
+    history = {
+        owner = C26
+        victory_points = {
+            2313
+            1
+        }
+        buildings = {
+
+        }
+        add_core_of = C26
+    }
+    resources = {
+        logs = 8
+        aluminium = 1
+    }
+}

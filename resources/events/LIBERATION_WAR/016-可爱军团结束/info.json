@@ -1,0 +1,22 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_CMC_UPRISE_ENDED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

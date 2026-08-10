@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300": true,
+            "C04_ADD_ECO_2_15": true,
+            "C04_DEL_ECO_5_20": true,
+            "add_popularity": {
+                "ideology": "equatism",
+                "popularity": 0.08
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C04_RETURN_TO_WEATHER_FACTORY"
+        }
+    ],
+    "is_triggered_only": true
+}

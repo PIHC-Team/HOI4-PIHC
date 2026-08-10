@@ -1,0 +1,61 @@
+{
+    "name": "Unclaimed Wasteland",
+    "rgb": [
+        1,
+        1,
+        1
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 299,
+        "set_popularities": {
+            "anarchy": 100
+        },
+        "set_politics": {
+            "ruling_party": "anarchy",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_NOPONY_1"
+        ],
+        "add_ideas_batch": [
+            "closed_economy",
+            "disarmed_nation",
+            "civilian_economy",
+            "IDEA_ERA_TECH_5_STAGNATE",
+            "IDEA_ERA_MAGIC_4_MUGGLE"
+        ],
+        "add_manpower": -100000000,
+        "add_political_power": -100000000,
+        "set_research_slots": 0,
+        "set_stability": 0.0,
+        "set_war_support": 0.0,
+        "country_lock_all_division_template": true,
+        "every_other_country": {
+            "ROOT": {
+                "give_military_access": "PREV"
+            }
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        }
+    }
+}

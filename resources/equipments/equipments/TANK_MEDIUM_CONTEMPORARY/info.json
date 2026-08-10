@@ -1,0 +1,16 @@
+{
+    "name": "Contemporary Medium Tank",
+    "parent": "EQUIPMENT_TANK_MEDIUM_MODERN",
+    "alpha_global": 0.5,
+    
+    "resources": {
+        "steel": 12,
+        "rubber": 7,
+        "tungsten": 7
+    },
+    "fuel_consumption": 0.20,
+
+    "maximum_speed": 18.0,
+    "entrenchment": 9.0,
+    "recon": 4
+}

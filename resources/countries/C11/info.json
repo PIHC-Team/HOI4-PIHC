@@ -1,0 +1,310 @@
+{
+    "name": "Changeling Empire",
+    "rgb": [
+        74,
+        188,
+        91
+    ],
+    "history": {
+        "15": {
+            "remove_core_of": "C11"
+        },
+        "30": {
+            "remove_core_of": "C11"
+        },
+        "88": {
+            "remove_core_of": "C11"
+        },
+        "332": {
+            "remove_core_of": "C11"
+        },
+        "370": {
+            "remove_core_of": "C11"
+        },
+        "387": {
+            "remove_core_of": "C11"
+        },
+        "390": {
+            "remove_core_of": "C11"
+        },
+        "395": {
+            "remove_core_of": "C11"
+        },
+        "398": {
+            "remove_core_of": "C11"
+        },
+        "414": {
+            "remove_core_of": "C11"
+        },
+        "424": {
+            "remove_core_of": "C11"
+        },
+        "425": {
+            "remove_core_of": "C11"
+        },
+        "437": {
+            "remove_core_of": "C11"
+        },
+        "451": {
+            "remove_core_of": "C11"
+        },
+        "479": {
+            "remove_core_of": "C11"
+        },
+        "483": {
+            "remove_core_of": "C11"
+        },
+        "485": {
+            "remove_core_of": "C11"
+        },
+        "502": {
+            "remove_core_of": "C11"
+        },
+        "513": {
+            "remove_core_of": "C11"
+        },
+        "519": {
+            "remove_core_of": "C11"
+        },
+        "523": {
+            "remove_core_of": "C11"
+        },
+        "534": {
+            "remove_core_of": "C11"
+        },
+        "537": {
+            "remove_core_of": "C11"
+        },
+        "593": {
+            "remove_core_of": "C11"
+        },
+        "598": {
+            "remove_core_of": "C11"
+        },
+        "602": {
+            "remove_core_of": "C11"
+        },
+        "604": {
+            "remove_core_of": "C11"
+        },
+        "605": {
+            "remove_core_of": "C11"
+        },
+        "614": {
+            "remove_core_of": "C11"
+        },
+        "630": {
+            "remove_core_of": "C11"
+        },
+        "653": {
+            "remove_core_of": "C11"
+        },
+        "687": {
+            "remove_core_of": "C11"
+        },
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 69,
+        "set_popularities": {
+            "fascism": 70,
+            "despotic": 20,
+            "harmonicism": 8,
+            "equatism": 2
+        },
+        "set_politics": {
+            "ruling_party": "fascism",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_QUEEN_CHRYSALIS",
+            "CHARACTER_TRICKSTER"
+        ],
+        "puppet": "C58",
+        "set_autonomy": {
+            "target": "C58",
+            "autonomous_state": "autonomy_pihc_district"
+        },
+        "activate_advisor": "CHARACTER_TRICKSTER",
+        "add_ideas_batch": [
+            "limited_exports",
+            "extensive_conscription",
+            "war_economy"
+        ],
+        "create_faction": "FACTION_CHANGELING_HIVE",
+        "add_to_faction_batch": [
+            "C11"
+        ],
+        "give_guarantee": "C09",
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_CHANGELING_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_NONUNICORN": 1,
+            "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C11_RETALIATION",
+            "FOCUS_C11_CANTERLOT_PACT",
+            "FOCUS_C11_VENI_VIDI_VICI"
+        ],
+        "set_power_balance": {
+            "id": "BOP_C11_STARVATION",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C11_STARVATION",
+            "modifier": "BOP_C11_STARVATION_DAILY_COST"
+        },
+        "add_power_balance_modifier__D1": {
+            "id": "BOP_C11_STARVATION",
+            "modifier": "BOP_C11_STARVATION_CRYSTAL_EMPIRE_TRIBUTE"
+        },
+        "add_political_power": 250,
+        "set_stability": 0.5,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.6,
+        "set_convoys": 150,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 2500
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 2500
+            },
+            {
+                "type": "ARCHETYPE_AIR_TRANSPORT",
+                "amount": 120
+            },
+            {
+                "type": "ARCHETYPE_AIR_ARMED",
+                "amount": 120
+            },
+            {
+                "type": "train_equipment",
+                "amount": 120
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C11"
+                },
+                "requested_factories": 4,
+                "progress": 0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_FIRELANCE",
+                    "creator": "C11"
+                },
+                "requested_factories": 4,
+                "progress": 0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_AUTOMATA_CHANGELING",
+                    "creator": "C11"
+                },
+                "requested_factories": 5,
+                "progress": 0,
+                "efficiency": 80
+            }
+        ],
+        "send_embargo_batch": [
+            "C05",
+            "C08",
+            "C23"
+        ],
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE",
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Changeling Empire Historical AI",
+        "allowed": {
+            "tag": "C11"
+        },
+        "enable": {
+            "country_exists": "C11"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C11_CONQUER_TARTARUS",
+            "FOCUS_C11_BUGBEAR_EXCUSE",
+            "FOCUS_C11_BUGBEAR_CONTROLLED",
+            "FOCUS_C11_THESTRAL_EXCUSE",
+            "FOCUS_C11_THESTRAL_CONTROLLED",
+            "FOCUS_C11_INVADE_TARTARUS",
+            "FOCUS_C11_THESTRAL_EMPIRE",
+            "FOCUS_C11_CONQUER_REINDEER",
+            "FOCUS_C11_REINDEER_WARNING",
+            "FOCUS_C11_REINDEER_ULTIMATUM",
+            "FOCUS_C11_REINDEER_DESTINY",
+            "FOCUS_C11_REINDEER_WAR",
+            "FOCUS_C11_CONQUER_ZEBRA",
+            "FOCUS_C11_WAR_OF_HOLDING",
+            "FOCUS_C11_BORDER_RECRUIT",
+            "FOCUS_C11_INVADE_ZEBRA",
+            "FOCUS_C11_SCORCHED_EARTH",
+            "FOCUS_C11_CONSCRIPTION"
+        ]
+    }
+}

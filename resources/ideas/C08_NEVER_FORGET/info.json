@@ -1,0 +1,12 @@
+{
+    "name": "Never Forget",
+    "removal_cost": -1,
+    "modifier": {
+        "war_support_factor": 0.1
+    },
+    "targeted_modifier": {
+        "tag": "C01",
+        "attack_bonus_against": 0.1,
+        "defense_bonus_against": 0.1
+    }
+}

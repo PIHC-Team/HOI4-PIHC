@@ -1,0 +1,30 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "random_list": {
+                "seed": "random",
+                "20": {
+                    "country_event": {
+                        "id": "C02_MAIN.16",
+                        "days": 1
+                    }
+                },
+                "80": {
+                    "country_event": {
+                        "id": "C02_MAIN.17",
+                        "days": 1
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

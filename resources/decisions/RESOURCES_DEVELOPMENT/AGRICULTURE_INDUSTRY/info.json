@@ -1,0 +1,27 @@
+{
+    "name": "Agriculture Construction",
+    "priority": 100,
+    
+    "cost": 100,
+    "days_remove": 60,
+    "days_re_enable": 240,
+    "remove_effect": {
+        "random_owned_controlled_state": {
+            "BUILD_A_FARM": true
+        }
+    },
+    "ai_will_do": {
+        "base": 5,
+        "modifier": {
+            "add": 20,
+            "has_political_power > 250": null
+        },
+        "modifier__D1": {
+            "add": -5,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_SEA_TREES",
+    "dy": 3,
+    "dx": 2,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C09_SEA_BATTLESHIPISM",
+        "focus__D1": "FOCUS_C09_SEA_COORDINATION"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C09_SEA_SOUTHERN_HARBOUR"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C09_APPLEWOOD_CITY_NEW"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C09_SEA_SECOND_FLEET_TOOLTIP",
+        "hidden_effect": {
+            "CREATE_C09_NAVY_2": true
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

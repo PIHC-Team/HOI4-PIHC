@@ -1,0 +1,20 @@
+{
+    "name": "Angry Cozy Glow",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "fascism_spirit",
+        "traits": [
+            "TRAIT_COZY_GLOW_PARANOIA",
+            "TRAIT_COZY_GLOW_RED_TAPE_MACHINE",
+            "TRAIT_ECONOMICAL_IDIOT",
+            "TRAIT_POLITICAL_GENIUS_II"
+        ]
+    },
+    "seconds": 8.04,
+    "pause_on_loop": 0.00,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_COZY_GLOW_ANGRY_ANIMATED_portrait"
+        }
+    }
+}

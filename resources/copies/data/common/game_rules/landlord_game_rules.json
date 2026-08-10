@@ -1,0 +1,100 @@
+{
+    "CWC_cost_to_core": {
+        "name": "CWC_FORMULA_PP_COST",
+        "group": "CWC_FORMULA_PP_COST_GROUP",
+        "icon": "GFX_core_button_small",
+        "default": {
+            "name": "CWC_FORMULA_PP_COST_5K",
+            "text": "CWC_FORMULA_PP_COST_5K_NAME",
+            "desc": "CWC_FORMULA_PP_COST_5K_DESC",
+            "allow_achievements": true
+        },
+        "option": {
+            "name": "CWC_FORMULA_PP_COST_10K",
+            "text": "CWC_FORMULA_PP_COST_10K_NAME",
+            "desc": "CWC_FORMULA_PP_COST_10K_DESC",
+            "allow_achievements": true
+        },
+        "option__D1": {
+            "name": "CWC_FORMULA_PP_COST_20K",
+            "text": "CWC_FORMULA_PP_COST_20K_NAME",
+            "desc": "CWC_FORMULA_PP_COST_20K_DESC",
+            "allow_achievements": true
+        },
+        "option__D2": {
+            "name": "CWC_FORMULA_PP_COST_40K",
+            "text": "CWC_FORMULA_PP_COST_40K_NAME",
+            "desc": "CWC_FORMULA_PP_COST_40K_DESC",
+            "allow_achievements": true
+        }
+    },
+    "CWC_comp_to_core": {
+        "name": "CWC_COMP_COST",
+        "group": "CWC_FORMULA_PP_COST_GROUP",
+        "icon": "GFX_core_button_small",
+        "option": {
+            "name": "CWC_COMP_COST_20",
+            "text": "CWC_COMP_COST_20_NAME",
+            "desc": "CWC_COMP_COST_20_DESC",
+            "allow_achievements": true
+        },
+        "default": {
+            "name": "CWC_COMP_COST_40",
+            "text": "CWC_COMP_COST_40_NAME",
+            "desc": "CWC_COMP_COST_40_DESC",
+            "allow_achievements": true
+        },
+        "option__D1": {
+            "name": "CWC_COMP_COST_60",
+            "text": "CWC_COMP_COST_60_NAME",
+            "desc": "CWC_COMP_COST_60_DESC",
+            "allow_achievements": true
+        },
+        "option__D2": {
+            "name": "CWC_COMP_COST_80",
+            "text": "CWC_COMP_COST_80_NAME",
+            "desc": "CWC_COMP_COST_80_DESC",
+            "allow_achievements": true
+        },
+        "option__D3": {
+            "name": "CWC_COMP_COST_100",
+            "text": "CWC_COMP_COST_100_NAME",
+            "desc": "CWC_COMP_COST_100_DESC",
+            "allow_achievements": true
+        }
+    },
+    "CWC_occupy_to_core": {
+        "name": "CWC_OCCUPY",
+        "group": "CWC_FORMULA_PP_COST_GROUP",
+        "icon": "GFX_core_button_small",
+        "default": {
+            "name": "CWC_OCCUPY_PEACE",
+            "text": "CWC_OCCUPY_PEACE_NAME",
+            "desc": "CWC_OCCUPY_PEACE_DESC",
+            "allow_achievements": true
+        },
+        "option": {
+            "name": "CWC_OCCUPY_WAR",
+            "text": "CWC_OCCUPY_WAR_NAME",
+            "desc": "CWC_OCCUPY_WAR_DESC",
+            "allow_achievements": true
+        }
+    },
+    "CWC_only_core_claims": {
+        "name": "CWC_CLAIM_FOR_CORE",
+        "group": "CWC_FORMULA_PP_COST_GROUP",
+        "icon": "GFX_core_button_small",
+        "default": {
+            "name": "CWC_NO_CLAIM_FOR_CORE",
+            "text": "CWC_NO_CLAIM_FOR_CORE_NAME",
+            "desc": "CWC_NO_CLAIM_FOR_CORE_DESC",
+            "allow_achievements": true
+        },
+        "option": {
+            "name": "CWC_CLAIM_FOR_CORE",
+            "text": "CWC_CLAIM_FOR_CORE_NAME",
+            "desc": "CWC_CLAIM_FOR_CORE_DESC",
+            "allow_achievements": true
+        }
+    }
+}

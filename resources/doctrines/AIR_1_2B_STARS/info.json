@@ -1,0 +1,36 @@
+{
+    "category": "air",
+    "x": 2,
+    "y": 4,
+
+    "air_night_penalty": -0.25,
+    "air_strategic_bomber_night_penalty": -0.25,
+    "category_air_plane": {
+        "air_attack": 0.08,
+        "air_bombing": 0.08
+    },
+    "category_air_creatures": {
+        "air_attack": 0.08
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_1_3B_CHEAP",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

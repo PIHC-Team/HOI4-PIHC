@@ -1,0 +1,263 @@
+{
+    "name": "Starlight Resistance",
+    "rgb": [
+        237,
+        187,
+        243
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 389,
+        "set_popularities": {
+            "equatism": 8,
+            "harmonicism": 87,
+            "despotic": 5
+        },
+        "set_politics": {
+            "ruling_party": "harmonicism",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_FEATHER_BANGS",
+            "CHARACTER_SUNBURST",
+            "CHARACTER_NIGHT_GLIDER",
+            "CHARACTER_DOUBLE_DIAMOND",
+            "CHARACTER_STARLIGHT_GLIMMER",
+            "CHARACTER_PARTY_FAVOR",
+            "CHARACTER_SUGAR_BELLE",
+            "CHARACTER_DEPARTMENT_C08_THEORY",
+            "CHARACTER_SCIENCE_NEXUS",
+            "CHARACTER_SILVERSTREAM",
+            "CHARACTER_TRIXIE_LULAMOON_C08",
+            "CHARACTER_PRINCESS_CADANCE",
+            "CHARACTER_DEPARTMENT_C08_THEORY_ARMY",
+            "CHARACTER_DEPARTMENT_C08_THEORY_AIR"
+        ],
+        "activate_advisor_batch": [
+            "CHARACTER_SUNBURST",
+            "CHARACTER_DOUBLE_DIAMOND",
+            "CHARACTER_SUGAR_BELLE",
+            "CHARACTER_FEATHER_BANGS",
+            "CHARACTER_DEPARTMENT_C08_THEORY",
+            "CHARACTER_NIGHT_GLIDER",
+            "CHARACTER_PARTY_FAVOR"
+        ],
+        "add_ideas_batch": [
+            "closed_economy",
+            "limited_conscription",
+            "partial_economic_mobilisation",
+            "IDEA_ERA_TECH_3_NEUTRAL",
+            "IDEA_ALL_HARMONICISM_ORTHODOXY",
+            "IDEA_C08_LIBERATION_FRONT_4",
+            "IDEA_C08_LONG_MARCH",
+            "IDEA_C08_ENEMY_AROUND",
+            "IDEA_DINFANTRY_OTA",
+            "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS",
+            "IDEA_DIND_OTA"
+        ],
+        "set_variable_batch": [
+            {
+                "var": "VAR_C08_LIBERATION_FRONT",
+                "value": 4
+            },
+            {
+                "var": "VAR_C08_OCCULTISM",
+                "value": 0
+            },
+            {
+                "var": "VAR_C08_URBANIZATION",
+                "value": 0
+            },
+            {
+                "var": "VAR_C08_EAST_ROUTE",
+                "value": 0
+            },
+            {
+                "var": "VAR_C08_EAST_ROUTE_MAX",
+                "value": 20
+            },
+            {
+                "var": "VAR_C08_TRIAL_KILLED",
+                "value": 0
+            },
+            {
+                "var": "VAR_C08_TRIAL_ARRESTED",
+                "value": 0
+            },
+            {
+                "var": "VAR_C08_TRIAL_RELEASED",
+                "value": 0
+            }
+        ],
+        "give_guarantee": "C09",
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_FIREARM_II": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_COMM_II": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1,
+            "TECHNOLOGY_TECH_MAGI_NONUNICORN": 1,
+            "TECHNOLOGY_BBA_TECH_AIR_WEAPON_I": 1,
+            "TECHNOLOGY_BBA_TECH_AIR_WEAPON_II": 1,
+            "TECHNOLOGY_BBA_TECH_GRD_WEAPON_I": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C08_CANTERLOT_PACT",
+            "FOCUS_C08_UPRISE"
+        ],
+        "create_faction": "FACTION_UNITED_RESISTANCE",
+        "add_to_faction": "C08",
+        "add_to_faction__D1": "C05",
+        "add_to_faction__D2": "C52",
+        "add_to_faction__D3": "C54",
+        "set_stability": 0.6,
+        "set_war_support": 0.5,
+        "set_convoys": 20,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 20
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 100
+            },
+            {
+                "type": "ARCHETYPE_WITCHCRAFT",
+                "amount": 150
+            },
+            {
+                "type": "train_equipment",
+                "amount": 20
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_HANDGONNE",
+                    "creator": "C08"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C08"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II",
+                    "creator": "C08"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            }
+        ],
+        "country_lock_all_division_template": true,
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C08_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_C08_TRADE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN",
+            "PIHC_COUNTRY_FLAG_C08_PIN",
+            "PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON"
+        ],
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Liberation Front Historical AI",
+        "allowed": {
+            "tag": "C08"
+        },
+        "enable": {
+            "country_exists": "C08"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C08_SPARKING_FIRE",
+            "FOCUS_C08_CONTACT_COMRADES",
+            "FOCUS_C08_THE_SITUATION",
+            "FOCUS_C08_ANOTHER_YEAR",
+            "FOCUS_C08_FADED_FRIENDSHIP",
+            "FOCUS_C08_PONIES_WILL",
+            "FOCUS_C08_THROUGH_THE_FOG",
+            "FOCUS_C08_WINTER_WARM_UP",
+            "FOCUS_C08_STARLIGHT_RADIO",
+            "FOCUS_C08_CRYSTAL_AND_SNOW",
+            "FOCUS_C08_VOICE_OF_FRIENDSHIP",
+            "FOCUS_C08_OLD_FRIENDS",
+            "FOCUS_C08_WASTELAND_ADVENTURE",
+            "FOCUS_C08_INDUSTRIAL_PLAN_1003",
+            "FOCUS_C08_EXPLORATION_WORKS",
+            "FOCUS_C08_ONE_SPARSE",
+            "FOCUS_C08_TIMELY_RAIN",
+            "FOCUS_C08_ENIO",
+            "FOCUS_C08_SOURCE_OF_SIN",
+            "FOCUS_C08_MANEHATTAN_ARMY",
+            "FOCUS_C08_MANEHATTAN_RUSH_VANGUARD",
+            "FOCUS_C08_MANEHATTAN_CALLING_OF_TROTTINGHAM",
+            "FOCUS_C08_MANEHATTAN_SERVE_THE_CHAINS"
+        ]
+    }
+}

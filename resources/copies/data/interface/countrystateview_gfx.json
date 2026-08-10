@@ -1,0 +1,566 @@
+{
+    "spriteTypes": {
+        "progressbartype": {
+            "name": "GFX_nuke_progress",
+            "color": [
+                0.0,
+                0.5,
+                0.0
+            ],
+            "colortwo": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "textureFile1": "gfx/interface/nuke_progress.dds",
+            "textureFile2": "gfx/interface/nuke_progress_bg.dds",
+            "size": {
+                "x": 38,
+                "y": 6
+            },
+            "effectFile": "gfx/FX/progress.lua",
+            "horizontal": true
+        },
+        "frameAnimatedSpriteType": {
+            "name": "GFX_nuke_progress_frame",
+            "texturefile": "gfx/interface/nuke_progress_frame.dds",
+            "noOfFrames": 2,
+            "animation_rate_fps": 2,
+            "looping": true,
+            "play_on_show": true,
+            "pause_on_loop": 0.0,
+            "alwaystransparent": true,
+            "effectFile": "gfx/FX/buttonstate_blendframes.lua"
+        },
+        "SpriteType": {
+            "name": "GFX_cancel_conversion_button",
+            "textureFile": "gfx/interface/cancel_conversion_button.dds"
+        },
+        "spriteType": {
+            "name": "GFX_victorypoint_stateview_bg",
+            "textureFile": "gfx/interface/victorypoint_stateview_bg.dds"
+        },
+        "spriteType__D1": {
+            "name": "GFX_stateview_resistance_button",
+            "textureFile": "gfx/interface/stateview_resistance_button.dds"
+        },
+        "spriteType__D2": {
+            "name": "GFX_resistance_icon",
+            "textureFile": "gfx/interface/resistance_icon.dds"
+        },
+        "spriteType__D3": {
+            "name": "GFX_population_icon",
+            "textureFile": "gfx/interface/population_icon.dds"
+        },
+        "spriteType__D4": {
+            "name": "GFX_province_header",
+            "textureFile": "gfx/interface/province_header.dds"
+        },
+        "spriteType__D5": {
+            "name": "GFX_modifiers_weather_icons",
+            "textureFile": "gfx/interface/modifiers_weather_icons.dds",
+            "noOfFrames": 7
+        },
+        "spriteType__D6": {
+            "name": "GFX_modifiers_terrain_icons",
+            "textureFile": "gfx/interface/modifiers_terrain_icons.dds",
+            "noOfFrames": 3
+        },
+        "spriteType__D7": {
+            "name": "GFX_modifiers_mud_icon",
+            "textureFile": "gfx/interface/modifiers_mud_icon.dds"
+        },
+        "spriteType__D8": {
+            "name": "GFX_modifiers_snow_icons",
+            "textureFile": "gfx/interface/modifiers_snow_icons.dds",
+            "noOfFrames": 2
+        },
+        "spriteType__D9": {
+            "name": "GFX_modifiers_flooded_icon",
+            "textureFile": "gfx/interface/modifiers_flooded_icon.dds"
+        },
+        "spriteType__D10": {
+            "name": "GFX_modifiers_unplanned_offensive_icon",
+            "textureFile": "gfx/interface/modifiers_unplanned_offensive_icon.dds"
+        },
+        "spriteType__D11": {
+            "name": "GFX_impassable_icon",
+            "textureFile": "gfx/interface/modifiers_impassable_icon.dds"
+        },
+        "spriteType__D12": {
+            "name": "GFX_temperature_icons",
+            "textureFile": "gfx/interface/temperature_icons.dds",
+            "noOfFrames": 4
+        },
+        "spriteType__D13": {
+            "name": "GFX_convert_industrial_cap_right",
+            "textureFile": "gfx/interface/convert_industrial_cap_right.dds"
+        },
+        "spriteType__D14": {
+            "name": "GFX_convert_industrial_cap_left",
+            "textureFile": "gfx/interface/convert_industrial_cap_left.dds"
+        },
+        "spriteType__D15": {
+            "name": "GFX_boost_building_button",
+            "textureFile": "gfx/interface/boost_building_button.dds"
+        },
+        "spriteType__D16": {
+            "name": "GFX_small_box1",
+            "textureFile": "gfx/interface/small_box1.dds"
+        },
+        "spriteType__D17": {
+            "name": "GFX_stateview_bg",
+            "textureFile": "gfx/interface/stateview/stateview_bg.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D18": {
+            "name": "GFX_ww_stateview_bg",
+            "textureFile": "gfx/interface/stateview/ww_stateview_bg.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D19": {
+            "name": "GFX_stateview_resource_transp_bg",
+            "textureFile": "gfx/interface/stateview_resource_transp_bg.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D20": {
+            "name": "GFX_building_entry_stateview",
+            "textureFile": "gfx/interface/stateview/building_entry_stateview.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D21": {
+            "name": "GFX_building_standing_entry_stateview",
+            "textureFile": "gfx/interface/stateview/building_standing_entry_stateview.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D22": {
+            "name": "GFX_ww_building_standing_entry_stateview",
+            "textureFile": "gfx/interface/stateview/ww_building_standing_entry_stateview.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D23": {
+            "name": "GFX_province_landmark_bg",
+            "textureFile": "gfx/interface/stateview/province_landmark_bg.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D24": {
+            "name": "GFX_core_owner_placeholder_bg",
+            "textureFile": "gfx/interface/core_owner_placeholder.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D25": {
+            "name": "GFX_resources_placeholder_bg",
+            "textureFile": "gfx/interface/resources_placeholder.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D26": {
+            "name": "GFX_state_resistance",
+            "textureFile": "gfx/interface/create_faction_button.dds",
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua"
+        },
+        "spriteType__D27": {
+            "name": "GFX_buildings_strip",
+            "textureFile": "gfx/interface/buildings/building_icon_strip.dds",
+            "noOfFrames": 51
+        },
+        "spriteType__D28": {
+            "name": "GFX_buildings_railway_gun",
+            "textureFile": "gfx/interface/buildings/building_railway_gun.dds"
+        },
+        "spriteType__D29": {
+            "name": "GFX_building_fort_icon",
+            "textureFile": "gfx/interface/buildings/building_fort_icon.dds"
+        },
+        "spriteType__D30": {
+            "name": "GFX_build_slot_bg",
+            "textureFile": "gfx/interface/buildings/build_slot_bg.dds"
+        },
+        "spriteType__D31": {
+            "name": "GFX_no_building",
+            "textureFile": "gfx/interface/buildings/building_no_building.dds",
+            "noOfFrames": 2
+        },
+        "spriteType__D32": {
+            "name": "GFX_building_intel_icon",
+            "textureFile": "gfx/interface/buildings/building_intel_icon.dds"
+        },
+        "spriteType__D33": {
+            "name": "GFX_building_status_overlay",
+            "textureFile": "gfx/interface/buildings/building_status_overlay.dds",
+            "noOfFrames": 3
+        },
+        "spriteType__D34": {
+            "name": "GFX_building_level_bar",
+            "textureFile": "gfx/interface/building_level_bar.dds",
+            "noOfFrames": 4
+        },
+        "spriteType__D35": {
+            "name": "GFX_terrain_default",
+            "textureFile": "gfx/interface/terrains/terrain_placeholder.dds"
+        },
+        "spriteType__D36": {
+            "name": "GFX_terrain_forest",
+            "textureFile": "gfx/interface/terrains/terrain_forest.dds"
+        },
+        "spriteType__D37": {
+            "name": "GFX_terrain_hills",
+            "textureFile": "gfx/interface/terrains/terrain_hills.dds"
+        },
+        "spriteType__D38": {
+            "name": "GFX_terrain_mountain",
+            "textureFile": "gfx/interface/terrains/terrain_mountain.dds"
+        },
+        "spriteType__D39": {
+            "name": "GFX_terrain_plains",
+            "textureFile": "gfx/interface/terrains/terrain_plains.dds"
+        },
+        "spriteType__D40": {
+            "name": "GFX_terrain_urban",
+            "textureFile": "gfx/interface/terrains/terrain_urban.dds"
+        },
+        "spriteType__D41": {
+            "name": "GFX_terrain_jungle",
+            "textureFile": "gfx/interface/terrains/terrain_jungle.dds"
+        },
+        "spriteType__D42": {
+            "name": "GFX_terrain_marsh",
+            "textureFile": "gfx/interface/terrains/terrain_marsh.dds"
+        },
+        "spriteType__D43": {
+            "name": "GFX_terrain_desert",
+            "textureFile": "gfx/interface/terrains/terrain_desert.dds"
+        },
+        "spriteType__D44": {
+            "name": "GFX_terrain_forest_winter",
+            "textureFile": "gfx/interface/terrains/terrain_forest_winter.dds"
+        },
+        "spriteType__D45": {
+            "name": "GFX_terrain_hills_winter",
+            "textureFile": "gfx/interface/terrains/terrain_hills_winter.dds"
+        },
+        "spriteType__D46": {
+            "name": "GFX_terrain_mountain_winter",
+            "textureFile": "gfx/interface/terrains/terrain_mountain_winter.dds"
+        },
+        "spriteType__D47": {
+            "name": "GFX_terrain_plains_winter",
+            "textureFile": "gfx/interface/terrains/terrain_plains_winter.dds"
+        },
+        "spriteType__D48": {
+            "name": "GFX_terrain_urban_winter",
+            "textureFile": "gfx/interface/terrains/terrain_urban_winter.dds"
+        },
+        "spriteType__D49": {
+            "name": "GFX_terrain_jungle_winter",
+            "textureFile": "gfx/interface/terrains/terrain_jungle_winter.dds"
+        },
+        "spriteType__D50": {
+            "name": "GFX_terrain_marsh_winter",
+            "textureFile": "gfx/interface/terrains/terrain_marsh_winter.dds"
+        },
+        "spriteType__D51": {
+            "name": "GFX_terrain_desert_winter",
+            "textureFile": "gfx/interface/terrains/terrain_desert_winter.dds"
+        },
+        "spriteType__D52": {
+            "name": "GFX_required_rule",
+            "textureFile": "gfx/interface/strait_canal_icon.dds"
+        },
+        "spriteType__D53": {
+            "name": "GFX_terrain_water_day",
+            "textureFile": "gfx/interface/terrains/terrain_water_day.dds"
+        },
+        "spriteType__D54": {
+            "name": "GFX_terrain_water_day_rain",
+            "textureFile": "gfx/interface/terrains/terrain_water_day_rain.dds"
+        },
+        "spriteType__D55": {
+            "name": "GFX_terrain_water_day_storm",
+            "textureFile": "gfx/interface/terrains/terrain_water_day_storm.dds"
+        },
+        "spriteType__D56": {
+            "name": "GFX_terrain_water_day_snow",
+            "textureFile": "gfx/interface/terrains/terrain_water_day_snow.dds"
+        },
+        "spriteType__D57": {
+            "name": "GFX_terrain_water_day_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_water_day_snow_storm.dds"
+        },
+        "spriteType__D58": {
+            "name": "GFX_terrain_water_night",
+            "textureFile": "gfx/interface/terrains/terrain_water_night.dds"
+        },
+        "spriteType__D59": {
+            "name": "GFX_terrain_water_night_rain",
+            "textureFile": "gfx/interface/terrains/terrain_water_night_rain.dds"
+        },
+        "spriteType__D60": {
+            "name": "GFX_terrain_water_night_storm",
+            "textureFile": "gfx/interface/terrains/terrain_water_night_storm.dds"
+        },
+        "spriteType__D61": {
+            "name": "GFX_terrain_water_night_snow",
+            "textureFile": "gfx/interface/terrains/terrain_water_night_snow.dds"
+        },
+        "spriteType__D62": {
+            "name": "GFX_terrain_water_night_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_water_night_snow_storm.dds"
+        },
+        "spriteType__D63": {
+            "name": "GFX_terrain_water_deep_ocean_night_rain",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_night_rain.dds"
+        },
+        "spriteType__D64": {
+            "name": "GFX_terrain_water_deep_ocean_night_storm",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_night_storm.dds"
+        },
+        "spriteType__D65": {
+            "name": "GFX_terrain_water_deep_ocean_night_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_night_snow_storm.dds"
+        },
+        "spriteType__D66": {
+            "name": "GFX_terrain_water_deep_ocean_night_snow",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_night_snow.dds"
+        },
+        "spriteType__D67": {
+            "name": "GFX_terrain_water_deep_ocean_day",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_day.dds"
+        },
+        "spriteType__D68": {
+            "name": "GFX_terrain_water_deep_ocean_day_rain",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_day_rain.dds"
+        },
+        "spriteType__D69": {
+            "name": "GFX_terrain_water_deep_ocean_day_storm",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_day_storm.dds"
+        },
+        "spriteType__D70": {
+            "name": "GFX_terrain_water_deep_ocean_day_snow",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_day_snow.dds"
+        },
+        "spriteType__D71": {
+            "name": "GFX_terrain_water_deep_ocean_day_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_day_snow_storm.dds"
+        },
+        "spriteType__D72": {
+            "name": "GFX_terrain_water_deep_ocean_night",
+            "textureFile": "gfx/interface/terrains/terrain_deep_ocean_night.dds"
+        },
+        "spriteType__D73": {
+            "name": "GFX_terrain_water_shallow_sea_night_storm",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_night_storm.dds"
+        },
+        "spriteType__D74": {
+            "name": "GFX_terrain_water_shallow_sea_night_rain",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_night_rain.dds"
+        },
+        "spriteType__D75": {
+            "name": "GFX_terrain_water_shallow_sea_night_snow",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_night_snow.dds"
+        },
+        "spriteType__D76": {
+            "name": "GFX_terrain_water_shallow_sea_night_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_night_snow_storm.dds"
+        },
+        "spriteType__D77": {
+            "name": "GFX_terrain_water_shallow_sea_day",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day.dds"
+        },
+        "spriteType__D78": {
+            "name": "GFX_terrain_water_shallow_sea_day",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day.dds"
+        },
+        "spriteType__D79": {
+            "name": "GFX_terrain_water_shallow_sea_day_rain",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day_rain.dds"
+        },
+        "spriteType__D80": {
+            "name": "GFX_terrain_water_shallow_sea_day_storm",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day_storm.dds"
+        },
+        "spriteType__D81": {
+            "name": "GFX_terrain_water_shallow_sea_day_snow",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day_snow.dds"
+        },
+        "spriteType__D82": {
+            "name": "GFX_terrain_water_shallow_sea_day_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_day_snow_storm.dds"
+        },
+        "spriteType__D83": {
+            "name": "GFX_terrain_water_shallow_sea_night",
+            "textureFile": "gfx/interface/terrains/terrain_shallow_sea_night.dds"
+        },
+        "spriteType__D84": {
+            "name": "GFX_terrain_water_fjords_day",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_day.dds"
+        },
+        "spriteType__D85": {
+            "name": "GFX_terrain_water_fjords_day_rain",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_day_rain.dds"
+        },
+        "spriteType__D86": {
+            "name": "GFX_terrain_water_fjords_day_storm",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_day_storm.dds"
+        },
+        "spriteType__D87": {
+            "name": "GFX_terrain_water_fjords_day_snow",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_day_snow.dds"
+        },
+        "spriteType__D88": {
+            "name": "GFX_terrain_water_fjords_day_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_day_snow_storm.dds"
+        },
+        "spriteType__D89": {
+            "name": "GFX_terrain_water_fjords_night",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_night.dds"
+        },
+        "spriteType__D90": {
+            "name": "GFX_terrain_water_fjords_night_rain",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_night_rain.dds"
+        },
+        "spriteType__D91": {
+            "name": "GFX_terrain_water_fjords_night_storm",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_night_storm.dds"
+        },
+        "spriteType__D92": {
+            "name": "GFX_terrain_water_fjords_night_snow",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_night_snow.dds"
+        },
+        "spriteType__D93": {
+            "name": "GFX_terrain_water_fjords_night_snow_storm",
+            "textureFile": "gfx/interface/terrains/terrain_archipelago_night_snow_storm.dds"
+        },
+        "progressbartype__D1": {
+            "name": "GFX_damage_bar",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "colortwo": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "textureFile1": "gfx/interface/building_damage_bar.dds",
+            "textureFile2": "gfx/interface/building_damage_bar_bg.dds",
+            "size": {
+                "x": 38,
+                "y": 5
+            },
+            "effectFile": "gfx/FX/progress_startend.lua"
+        },
+        "progressbartype__D2": {
+            "name": "GFX_province_landmark_damage_bar",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "colortwo": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "textureFile1": "gfx/interface/stateview/province_landmark_damage_bar.dds",
+            "textureFile2": "gfx/interface/stateview/province_landmark_damage_bar_bg.dds",
+            "size": {
+                "x": 5,
+                "y": 27
+            },
+            "effectFile": "gfx/FX/progress_startend.lua"
+        },
+        "spriteType__D94": {
+            "name": "GFX_nuke_button",
+            "textureFile": "gfx/interface/stateview_nuke_button.dds"
+        },
+        "spriteType__D95": {
+            "name": "GFX_modifiers_sabotaged_resource",
+            "textureFile": "gfx/interface/occupation/sabotaged_resource.dds"
+        },
+        "SpriteType__D1": {
+            "name": "GFX_scorched_earth_state",
+            "texturefile": "gfx/interface/stateview/destroy_railway.dds"
+        },
+        "spriteType__D96": {
+            "name": "GFX_modifiers_conscription_exemptions_granted",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_conscription_exemptions_granted.dds"
+        },
+        "spriteType__D97": {
+            "name": "GFX_modifiers_increased_metal_production",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_increased_metal_production.dds"
+        },
+        "spriteType__D98": {
+            "name": "GFX_unplanned_offensive",
+            "textureFile": "gfx/interface/modifiers_unplanned_offensive_icon.dds"
+        },
+        "spriteType__D99": {
+            "name": "GFX_modifiers_generic_bunker_build_speed",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_bunker_build_speed.dds"
+        },
+        "spriteType__D100": {
+            "name": "GFX_modifiers_generic_military_plans",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_military_plans.dds"
+        },
+        "spriteType__D101": {
+            "name": "GFX_modifiers_demilitarize_zone",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_demilitarize_zone.dds"
+        },
+        "spriteType__D102": {
+            "name": "GFX_modifiers_generic_fascist_corporatism",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_fascist_corporatism.dds"
+        },
+        "spriteType__D103": {
+            "name": "GFX_modifiers_generic_railways",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_railways.dds"
+        },
+        "spriteType__D104": {
+            "name": "GFX_modifiers_generic_military_industry",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_military_industry.dds"
+        },
+        "spriteType__D105": {
+            "name": "GFX_modifiers_generic_defense",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_defense.dds"
+        },
+        "spriteType__D106": {
+            "name": "GFX_modifiers_generic_supply",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_supply.dds"
+        },
+        "spriteType__D107": {
+            "name": "GFX_modifiers_generic_resistance",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_resistance.dds"
+        },
+        "spriteType__D108": {
+            "name": "GFX_modifiers_generic_construction",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_construction.dds"
+        },
+        "spriteType__D109": {
+            "name": "GFX_modifiers_generic_immigration_promoted",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_immigration_promoted.dds"
+        },
+        "spriteType__D110": {
+            "name": "GFX_modifiers_radiation",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_radiation.dds"
+        },
+        "spriteType__D111": {
+            "name": "GFX_modifiers_generic_industry",
+            "textureFile": "gfx/interface/state_modifiers/modifiers_generic_industry.dds"
+        },
+        "spriteType__D112": {
+            "name": "GFX_modifier_generic_state_assault",
+            "textureFile": "gfx/interface/state_modifiers/modifier_generic_state_assault.dds"
+        },
+        "spriteType__D113": {
+            "name": "GFX_modifier_generic_guerilla_base",
+            "textureFile": "gfx/interface/state_modifiers/modifier_generic_guerilla_base.dds"
+        },
+        "spriteType__D114": {
+            "name": "GFX_modifier_generic_sabotage",
+            "textureFile": "gfx/interface/state_modifiers/modifier_generic_sabotage.dds"
+        },
+        "spriteType__D115": {
+            "name": "GFX_modifiers_energy",
+            "textureFile": "gfx/interface/modifiers/modifiers_energy.dds"
+        }
+    }
+}

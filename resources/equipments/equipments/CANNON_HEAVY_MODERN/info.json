@@ -1,0 +1,19 @@
+{
+    "name": "Modern Heavy Cannon",
+    "parent": "EQUIPMENT_CANNON_HEAVY_STEAM",
+    "alpha_global": 0.4,
+    "reliability": 0.95,
+    "weight": 2.5,
+    
+    "resources": {
+        "steel": 9,
+        "rubber": 4,
+        "tungsten": 2
+    },
+    "ap_attack": 48.0,
+    "fuel_consumption": 0.16,
+
+    "maximum_speed": 3.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

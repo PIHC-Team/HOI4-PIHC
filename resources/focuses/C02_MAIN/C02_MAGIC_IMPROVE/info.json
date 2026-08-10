@@ -1,0 +1,25 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_MAGIC_SHOW",
+    "prerequisite": {
+        "focus": "FOCUS_C02_MAGIC_SHOW"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "country_event": {
+            "id": "C02_MAIN.14",
+            "days": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

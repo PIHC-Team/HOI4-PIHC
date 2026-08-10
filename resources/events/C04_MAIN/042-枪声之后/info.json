@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C04_MAIN.43",
+                    "days": 7
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

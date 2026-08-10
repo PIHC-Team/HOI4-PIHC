@@ -1,0 +1,16 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "all",
+        "traits": [
+            "TRAIT_UMBRUM_RABIA"
+        ],
+        "cost": 50,
+        "can_be_fired": false,
+        "removal_cost": -1,
+        "visible": {
+            "has_completed_focus": "FOCUS_C15_SOMBRA_CRYSTAL_CABINATE"
+        }
+    }
+}

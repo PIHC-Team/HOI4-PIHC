@@ -1,0 +1,16 @@
+{
+    "possible": {
+        "difficulty > 1": null,
+        "has_start_date < 1002.12.2": null,
+        "has_any_custom_difficulty_setting": false,
+        "game_rules_allow_achievements": true
+    },
+    "happened": {
+        "hidden_trigger": {
+            "OR": {
+                "has_tech": "TECHNOLOGY_AIR_AIRSHIP",
+                "has_tech__D1": "TECHNOLOGY_BBA_AIR_AIRSHIP"
+            }
+        }
+    }
+}

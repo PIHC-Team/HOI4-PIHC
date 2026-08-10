@@ -1,0 +1,32 @@
+{
+    "C01_BUILD_MAGINO": {
+        "C01": {
+            "every_owned_state": {
+                "if": {
+                    "limit": {
+                        "is_owned_by": "C01",
+                        "is_fully_controlled_by": "C01"
+                    },
+                    "add_building_construction": {
+                        "type": "bunker",
+                        "instant_build": true,
+                        "province": {
+                            "all_provinces": true,
+                            "limit_to_border_country": "C08"
+                        },
+                        "level": 3
+                    },
+                    "add_building_construction__D1": {
+                        "type": "bunker",
+                        "instant_build": true,
+                        "province": {
+                            "all_provinces": true,
+                            "limit_to_border_country": "C08"
+                        },
+                        "level": 3
+                    }
+                }
+            }
+        }
+    }
+}

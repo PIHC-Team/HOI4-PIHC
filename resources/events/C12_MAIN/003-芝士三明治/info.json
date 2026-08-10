@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "recruit_character": "CHARACTER_CHEESE_SANDWICH",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C12_CHEESE_SANDWICH",
+            "country_event": {
+                "id": "C12_MAIN.4",
+                "days": 1
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

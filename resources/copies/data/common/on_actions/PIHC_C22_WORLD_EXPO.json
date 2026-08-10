@@ -1,0 +1,14 @@
+{
+    "on_actions": {
+        "on_monthly": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "TRIGGER_HAVE_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE": true
+                    },
+                    "add_political_power": -15
+                }
+            }
+        }
+    }
+}

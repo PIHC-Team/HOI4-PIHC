@@ -1,0 +1,52 @@
+state = {
+    id = 757
+    name = STATE_757
+    provinces = {
+        53
+        172
+        199
+        2391
+        2752
+        2986
+        4507
+        4765
+        5708
+        5997
+        6986
+        7021
+        7210
+        7276
+        8381
+        8825
+        9440
+        13759
+        13763
+        13803
+        13807
+        13830
+        13880
+        13887
+        13928
+    }
+    manpower = 35807
+    state_category = large_town
+    history = {
+        owner = C48
+        victory_points = {
+            53
+            5
+        }
+        buildings = {
+            industrial_complex = 3
+            arms_factory = 1
+            dockyard = 1
+            53 = {
+                naval_base = 1
+            }
+        }
+        add_core_of = C48
+    }
+    resources = {
+
+    }
+}

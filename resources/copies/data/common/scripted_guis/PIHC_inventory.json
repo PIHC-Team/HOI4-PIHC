@@ -1,0 +1,107 @@
+{
+    "scripted_gui": {
+        "pihc_inventory_toggle": {
+            "window_name": "pihc_inventory_backpack_icon",
+            "context_type": "player_context",
+            "visible": {
+                "is_ai": false
+            },
+            "effects": {
+                "open_inv_click": {
+                    "if": {
+                        "limit": {
+                            "NOT": {
+                                "has_variable": "pihc_inventory_open"
+                            }
+                        },
+                        "INVENTORY_OPEN": true
+                    },
+                    "else": {
+                        "INVENTORY_CLOSE": true
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_ALL_INVENTORY_GUI_ALERT_HIDDEN"
+                }
+            },
+            "triggers": {
+                "inventory_gui_alert_visible": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_ALL_INVENTORY_GUI_ALERT_HIDDEN"
+                    }
+                }
+            }
+        },
+        "pihc_inventory": {
+            "context_type": "player_context",
+            "window_name": "pihc_inventory_container",
+            "visible": {
+                "is_ai": false,
+                "has_variable": "pihc_inventory_open"
+            },
+            "triggers": {
+            },
+            "effects": {
+                "close_button_click": {
+                    "clear_variable": "pihc_inventory_open"
+                },
+                "reload_button_click": {
+                    "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+                }
+            }
+        },
+        "pihc_inventory_items_grid": {
+            "context_type": "player_context",
+            "window_name": "pihc_inventory_items_grid_container",
+            "parent_window_name": "pihc_inventory_container",
+            "visible": {
+                "is_ai": false,
+                "has_variable": "pihc_inventory_open"
+            },
+            "dynamic_lists": {
+                "pihc_inventory_grid_box": {
+                    "array": "PIHC_INVENTORY_ARRAY",
+                    "value": "v",
+                    "index": "i",
+                    "change_scope": false,
+                    "entry_container": "pihc_inventory_item"
+                }
+            },
+            "effects": {
+                "pihc_inventory_item_button_click": {
+                    "set_variable": {
+                        "var": "PIHC_INVENTORY_DISPLAY",
+                        "value": "v"
+                    }
+                }
+            },
+            "properties": {
+                "pihc_inventory_item_button": {
+                    "image": "[GetInventoryItemIcon]"
+                }
+            }
+        },
+        "pihc_inventory_display": {
+            "context_type": "player_context",
+            "window_name": "pihc_inventory_information_container",
+            "parent_window_name": "pihc_inventory_container",
+            "visible": {
+                "is_ai": false,
+                "has_variable": "pihc_inventory_open",
+                "has_variable__D1": "PIHC_INVENTORY_DISPLAY",
+                "check_variable": {
+                    "var": "PIHC_INVENTORY_DISPLAY",
+                    "value": 0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "triggers": {
+            },
+            "effects": {
+            },
+            "properties": {
+                "pihc_inventory_item_information_icon": {
+                    "image": "[GetInventoryDisplayItemPicture]"
+                }
+            }
+        }
+    }
+}

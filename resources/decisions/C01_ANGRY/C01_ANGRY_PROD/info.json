@@ -1,0 +1,44 @@
+{
+    "name": "Angry",
+    "priority": 100,
+    
+    "cost": 50,
+    "days_remove": 30,
+    "days_re_enable": 60,
+    "visible": {
+        "tag": "C01"
+    },
+    "modifier": {
+        "production_factory_max_efficiency_factor": 0.15,
+        "industrial_capacity_factory": 0.2,
+        "supply_consumption_factor": 0.1
+    },
+    "complete_effect": {
+        "add_timed_idea": {
+            "idea": "IDEA_C01_ANGRY_PROD_FAST",
+            "days": 30
+        },
+        "add_to_variable": {
+            "C01.VAR_ANGRY_POWER": 1
+        },
+        "clamp_variable": {
+            "var": "C01.VAR_ANGRY_POWER",
+            "min": 0,
+            "max": 100
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C01_COZY_MOM_FOUND_DEAD"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "DECISION_C01_A_PRIVATE_LETTER_NON_AVAILABLE_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

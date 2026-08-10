@@ -1,0 +1,41 @@
+state = {
+    id = 399
+    name = STATE_399
+    provinces = {
+        917
+        1807
+        3541
+        4580
+        7038
+        7126
+        7574
+        8390
+        8792
+        9271
+        9799
+        10836
+        10908
+        10965
+        10970
+        11017
+        11024
+    }
+    manpower = 68745
+    state_category = large_town
+    history = {
+        owner = C01
+        victory_points = {
+            917
+            3
+        }
+        buildings = {
+            infrastructure = 3
+            arms_factory = 1
+            industrial_complex = 1
+        }
+        add_core_of = C01
+    }
+    resources = {
+
+    }
+}

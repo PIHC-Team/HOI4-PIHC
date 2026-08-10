@@ -1,0 +1,183 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_12_TOOLTIP",
+            "hidden_effect": {
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_MANEHATTAN_WAR_READY",
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR",
+                "add_to_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "value": 1
+                },
+                "clamp_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "min": 1,
+                    "max": 8
+                },
+                "news_event": {
+                    "id": "C08_MAIN.6"
+                },
+                "load_focus_tree": "C08_PARTIII"
+            },
+            "remove_ideas": "IDEA_C08_ENEMY_AROUND",
+            "add_ideas": "IDEA_C08_RECONSTRUCTION_01",
+            "add_political_power": 100,
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_1",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_2",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_3",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_4",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_5",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_6",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                }
+            },
+            "else_if__D5": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_7",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "else_if__D6": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_8",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "888": {
+                "damage_building": {
+                    "type": "infrastructure",
+                    "damage": 1
+                },
+                "damage_building__D1": {
+                    "type": "arm_factory",
+                    "damage": 1.1
+                },
+                "damage_building__D2": {
+                    "type": "industrial_complex",
+                    "damage": 2.5
+                },
+                "damage_building__D3": {
+                    "type": "dockyard",
+                    "damage": 2.3
+                }
+            },
+            "481": {
+                "damage_building": {
+                    "type": "infrastructure",
+                    "damage": 1
+                },
+                "damage_building__D1": {
+                    "type": "arm_factory",
+                    "damage": 0.3
+                },
+                "damage_building__D2": {
+                    "type": "industrial_complex",
+                    "damage": 1.3
+                }
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "remove_ideas": "IDEA_C08_MANEHATTAN_WAR",
+            "white_peace": {
+                "tag": "C06"
+            },
+            "annex_country": {
+                "target": "C06",
+                "transfer_troops": false
+            },
+            "add_popularity": {
+                "ideology": "despotic",
+                "popularity": 0.05        
+            },
+            "set_party_name": {
+                "ideology": "despotic",
+                "long_name": "C08_despotic_party_2",
+                "name": "C08_despotic_party_2"
+            },
+            "add_popularity__D1": {
+                "ideology": "corporation",
+                "popularity": 0.13        
+            },
+            "set_party_name__D1": {
+                "ideology": "corporation",
+                "long_name": "C08_corporation_party_2",
+                "name": "C08_corporation_party_2"
+            },
+            "if": {       
+                "limit": {
+                    "C02": {
+                        "NOT": {
+                            "has_full_control_of_state": 549
+                        }
+                    }
+                },
+                "C02": {
+                    "news_event": {
+                        "id": "C08_MAIN.40"
+                    }
+                }
+            },
+            "C02": {
+                "add_ideas": "IDEA_C02_MAFIA_EXILE"
+            }
+        }
+    },
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

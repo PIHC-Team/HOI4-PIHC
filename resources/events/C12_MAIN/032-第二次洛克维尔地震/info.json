@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_stability": -0.05,
+            "add_political_power": -50,
+            "country_event": {
+                "id": "C12_MAIN.34",
+                "days": 30
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C12_SECOND_EARTHQUAKE_HAPPENED"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

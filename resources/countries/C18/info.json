@@ -1,0 +1,160 @@
+{
+    "name": "Kirin Commune",
+    "rgb": [
+        53,
+        135,
+        123
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 772,
+        "set_popularities": {
+            "peacism": 45,
+            "equatism": 40,
+            "harmonicism": 10,
+            "fascism": 5
+        },
+        "set_politics": {
+            "ruling_party": "peacism",
+            "last_election": "1001.5.1",
+            "election_frequency": 72,
+            "elections_allowed": true
+        },
+        "recruit_character_batch": [
+            "CHARACTER_AUTUMN_BLAZE",
+            "CHARACTER_RAIN_SHINE",
+            "CHARACTER_BURNT_UMBER",
+            "CHARACTER_GRASS_GREEN",
+            "CHARACTER_COMPOSED",
+            "CHARACTER_AQUAMARINE",
+            "CHARACTER_OCHRE",
+            "CHARACTER_BLOSSOM_BURST",
+            "CHARACTER_PRINCESS_CELESTIA_C18",
+            "CHARACTER_PRINCESS_LUNA_C18"
+        ],
+        "activate_advisor_batch": [
+            "CHARACTER_BURNT_UMBER",
+            "CHARACTER_GRASS_GREEN",
+            "CHARACTER_COMPOSED",
+            "CHARACTER_AQUAMARINE",
+            "CHARACTER_OCHRE"
+        ],
+        "promote_character": {
+            "character": "CHARACTER_RAIN_SHINE",
+            "ideology": "peacism_dogmatism"
+        },
+        "add_ideas_batch": [
+            "limited_exports",
+            "unleash_your_inner_nirik",
+            "civilian_economy",
+            "IDEA_ERA_HUNGER_2_FULL",
+            "IDEA_ERA_MAGIC_4_MUGGLE",
+            "IDEA_C18_MODERNIZATION"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C18_FOALS_BREATH",
+            "FOCUS_C18_YANG",
+            "FOCUS_C18_YIN",
+            "FOCUS_C18_OLD_YANG",
+            "FOCUS_C18_YOUNG_YANG",
+            "FOCUS_C18_OLD_YIN",
+            "FOCUS_C18_YOUNG_YIN"
+        ],
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_TRADE",
+        "add_political_power": 100,
+        "set_convoys": 150,
+        "set_war_support": 0.5,
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Kirin Commune Historical AI",
+        "allowed": {
+            "tag": "C18"
+        },
+        "enable": {
+            "country_exists": "C18"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C18_000_KUN",
+            "FOCUS_C18_000_AGRICULTURE_SUBSIDY",
+            "FOCUS_C18_101_LI",
+            "FOCUS_C18_101_CLIMATE_REPORT",
+            "FOCUS_C18_010_KAN",
+            "FOCUS_C18_010_CORRUPTION",
+            "FOCUS_C18_010_CORRUPTION_CASE_CLOSE",
+            "FOCUS_C18_011_XUN",
+            "FOCUS_C18_011_TRADE_FLOWER",
+            "FOCUS_C18_101_CIVIL_INDUSTRY",
+            "FOCUS_C18_101_CIVIL_RESEARCH",
+            "FOCUS_C18_101_NARROW_GATE_RESOURCES",
+            "FOCUS_C18_111_QIAN",
+            "FOCUS_C18_111_ARCHEOLOGY",
+            "FOCUS_C18_101_NARROW_GATE_MINING",
+            "FOCUS_C18_100_ZHEN",
+            "FOCUS_C18_100_NORTHERN_MILITARY_INDUSTRY",
+            "FOCUS_C18_100_PREPARE_SENDAK",
+            "FOCUS_C18_100_WAR_SENDAK",
+            "FOCUS_C18_001_GEN",
+            "FOCUS_C18_001_TRANSFER",
+            "FOCUS_C18_001_HEALTH_CARE",
+            "FOCUS_C18_100_MILITARY_RESEARCH",
+            "FOCUS_C18_100_PREPARE_FOR_WAR",
+            "FOCUS_C18_000_MANUFACTURE",
+            "FOCUS_C18_110_DUI",
+            "FOCUS_C18_000_KIRIN_DREAM",
+            "FOCUS_C18_001_TRANSFER_PERSIST",
+            "FOCUS_C18_001_DOLE",
+            "FOCUS_C18_100_REINCARNATION",
+            "FOCUS_C18_TALK_TO_RAINSHINE"
+        ]
+    }
+}

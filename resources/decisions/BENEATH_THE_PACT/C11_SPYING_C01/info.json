@@ -1,0 +1,24 @@
+{
+    "name": "Spying Equestria Empire",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 28,
+    "fire_only_once": true,
+    "visible": {
+        "tag": "C11",
+        "OR": {
+            "NOT": {
+                "has_dlc": "La Resistance"
+            },
+            "has_intelligence_agency": true
+        }
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "DECISION_C11_SPYING_C01_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

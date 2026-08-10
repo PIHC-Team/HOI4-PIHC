@@ -1,0 +1,13 @@
+{
+    "name": "C15_DISARMED",
+    "removal_cost": -1,
+    "modifier": {
+        "custom_modifier_tooltip": "IDEA_C15_DISARMED_TOOLTIP"
+    },
+    "on_add": {
+        "country_lock_all_division_template": true
+    },
+    "on_remove": {
+        "country_lock_all_division_template": false
+    }
+}

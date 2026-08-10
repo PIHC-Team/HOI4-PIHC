@@ -1,0 +1,11 @@
+{
+    "priority": 99999,
+    "allowed": {
+        "tag": "C04"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_BY_ELECTION"
+    },
+    "scripted_gui": "C04_BY_ELECTION_GUI",
+    "visible_when_empty": true
+}

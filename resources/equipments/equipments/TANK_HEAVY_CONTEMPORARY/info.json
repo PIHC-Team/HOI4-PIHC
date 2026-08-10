@@ -1,0 +1,16 @@
+{
+    "name": "Contemporary Heavy Tank",
+    "parent": "EQUIPMENT_TANK_HEAVY_MODERN",
+    "alpha_global": 0.5,
+    
+    "resources": {
+        "steel": 15,
+        "rubber": 9,
+        "tungsten": 9
+    },
+    "fuel_consumption": 0.24,
+
+    "maximum_speed": 15.0,
+    "entrenchment": 12.0,
+    "recon": 4
+}

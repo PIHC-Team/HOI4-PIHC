@@ -1,0 +1,197 @@
+{
+    "name": "Dominion of Rock Farm",
+    "rgb": [
+        183,
+        182,
+        189
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 601,
+        "set_popularities": {
+            "corporation": 45,
+            "fascism": 3,
+            "despotic": 20,
+            "harmonicism": 25,
+            "democratic": 5,
+            "equatism": 2
+        },
+        "set_politics": {
+            "ruling_party": "corporation",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_MAUD_PIE",
+            "CHARACTER_SANS_SMIRK",
+            "CHARACTER_LIMESTONE_PIE",
+            "CHARACTER_MARBLE_PIE",
+            "CHARACTER_IGNEOUS_ROCK_PIE",
+            "CHARACTER_MUDBRIAR",
+            "CHARACTER_CLOUDY_QUARTZ",
+            "CHARACTER_BANANA_MASH",
+            "CHARACTER_PLATINUM_CURE",
+            "CHARACTER_TOUGH_BREAK",
+            "CHARACTER_ACACIA_PIE",
+            "CHARACTER_OCTAVIO_PIE",
+            "CHARACTER_OAK_PIE",
+            "CHARACTER_PEACHY_PIE",
+            "CHARACTER_BIRCH_PIE",
+            "CHARACTER_FLEETFOOT_C12"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "limited_conscription",
+            "partial_economic_mobilisation",
+            "IDEA_ERA_MAGIC_4_MUGGLE",
+            "IDEA_ERA_HYGIENE_5_DIRTY",
+            "IDEA_C12_APPLES_FROM_SAME_TREE",
+            "IDEA_C12_DESOLATE_FARM",
+            "IDEA_C12_PONIES_IN_POVERTY"
+        ],
+        "complete_national_focus_batch": [
+            "FOCUS_C12_CANTERLOT_PACT",
+            "FOCUS_C12_ROCKFARM_DOMINION"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_CUPCAKE_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_FIREARM_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_CANNON_LIGHT_PINKIE": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "add_political_power": 250,
+        "set_stability": 0.6,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.15,
+        "set_convoys": 150,
+        "add_manpower": 8000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 600
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 1000
+            },
+            {
+                "type": "ARCHETYPE_TANK_LIGHT",
+                "amount": 100
+            },
+            {
+                "type": "ARCHETYPE_CANNON_LIGHT",
+                "amount": 600
+            },
+            {
+                "type": "train_equipment",
+                "amount": 120
+            }
+        ],
+        "set_power_balance": {
+            "id": "BOP_C12_INDEPENDENCE",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C12_INDEPENDENCE",
+            "modifier": "BOP_C12_INDEPENDENCE_DAILY_DRIFT"
+        },
+        "create_faction": "FACTION_APPLEPIE_FAMILY",
+        "add_to_faction": "C12",
+        "add_to_faction__D1": "C14",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_TRADE",
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Rock Farm Historical AI",
+        "allowed": {
+            "tag": "C12"
+        },
+        "enable": {
+            "country_exists": "C12"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C12_PINK_ISN'T_FARM'S_COLOR",
+            "FOCUS_C12_UNEXPECTED_FRIEND",
+            "FOCUS_C12_PIE_FAMILY_MEETING",
+            "FOCUS_C12_SPEECH_NOT_QUITE_INTERESTING",
+            "FOCUS_C12_RENOVATE_TRAIN_STATIONS",
+            "FOCUS_C12_RECONNECTING_WITH_DISTANT_RELATIVES",
+            "FOCUS_C12_PUBLIC_AFFAIRS_BUREAU",
+            "FOCUS_C12_STONE_SOUP_RELIEF_AGENCY",
+            "FOCUS_C12_NEW_TOY_FACTORY",
+            "FOCUS_C12_TREASURE_EVERYWHERE",
+            "FOCUS_C12_LAND_EXPLORATION",
+            "FOCUS_C12_PLAY_STRENGTH_OF_PIE_FAMILY",
+            "FOCUS_C12_WOODEN_FOSSIL_EXHIBITION",
+            "FOCUS_C12_HOLDER'S_BOULDER_PARADE",
+            "FOCUS_C12_INVITE_THE_APPLE_FAMILY",
+            "FOCUS_C12_PATCHWORK_WEALTH",
+            "FOCUS_C12_OVERCOME_HARDSHIPS",
+            "FOCUS_C12_MARBLE_PIE_APARTMENT",
+            "FOCUS_C12_IMPROVING_MINE_SANITATION_CONDITION",
+            "FOCUS_C12_EACH_TO_THEIR_OWN_JOBS",
+            "FOCUS_C12_FORMAL_VISIT_TO_APPLELOOSA",
+            "FOCUS_C12_GIGGLE_AT_GHOSTY",
+            "FOCUS_C12_SEARCH_IN_BIG_THUNDER_MINE",
+            "FOCUS_C12_GREEN_MOUNTAIN_VEINS",
+            "FOCUS_C12_HIGHWAY_OF_PONDEROSA",
+            "FOCUS_C12_ROCKEVILLE_HARVEST_SEASON",
+            "FOCUS_C12_TECHNOLOGICAL_COOPERATION",
+            "FOCUS_C12_ROCKVILLE_GEOLOGICAL_UNIVERSITY",
+            "FOCUS_C12_UNPRECEDENTED_PROSPERITY",
+            "FOCUS_C12_MINING_INDUSTRY_SYSTEM",
+            "FOCUS_C12_SHADOWS_OF_THE_PAST",
+            "FOCUS_C12_UNINVITED_GUEST",
+            "FOCUS_C12_CONFRONTATION_WITH_THE_EMPIRE"
+        ]
+    }
+}

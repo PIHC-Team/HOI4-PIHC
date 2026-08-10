@@ -1,0 +1,622 @@
+{
+    "PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY": {
+        "clear_array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+        "add_to_array": {
+            "array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+            "value": 4
+        },  
+        "add_to_array__D1": {
+            "array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+            "value": 2
+        },
+        "add_to_array__D2": {
+            "array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+            "value": 1
+        },
+        "add_to_array__D3": {
+            "array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+            "value": 3
+        },
+        "clear_array__D1": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+        "while_loop_effect": {
+            "limit": {
+                "check_variable": {
+                    "C08.ARRAY_C08_PIN_GAME_2_1234^num > 0": null
+                }
+            },
+            "set_temp_variable_to_random": {
+                "var": "deletion_index",
+                "min": 0,
+                "max": "C08.ARRAY_C08_PIN_GAME_2_1234^num",
+                "integer": true
+            },
+            "add_to_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_1234^deletion_index"
+            },
+            "remove_from_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_1234",
+                "index": "deletion_index"
+            }
+        },
+        "random": {
+            "chance": 50,
+            "set_temp_variable": {
+                "var": "temp_swap",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0"
+            },
+            "set_variable": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1"
+            },
+            "set_variable__D1": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1",
+                "value": "temp_swap"
+            }
+        },
+        "random__D1": {
+            "chance": 50,
+            "set_temp_variable": {
+                "var": "temp_swap",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2"
+            },
+            "set_variable": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3"
+            },
+            "set_variable__D1": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3",
+                "value": "temp_swap"
+            }
+        },
+        "random__D2": {
+            "chance": 50,
+            "set_temp_variable": {
+                "var": "temp_swap",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0"
+            },
+            "set_variable": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3"
+            },
+            "set_variable__D1": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3",
+                "value": "temp_swap"
+            }
+        },
+        "random__D3": {
+            "chance": 50,
+            "set_temp_variable": {
+                "var": "temp_swap",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1"
+            },
+            "set_variable": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1",
+                "value": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2"
+            },
+            "set_variable__D1": {
+                "var": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2",
+                "value": "temp_swap"
+            }
+        },
+        "clear_variable": "C08.VAR_C08_PIN_GAME_2_BILLBOARD",
+        "random_list": {
+            "seed": "random",
+            "25": {
+                "set_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_BILLBOARD",
+                    "value": 2
+                }
+            },
+            "25__D1": {
+                "set_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_BILLBOARD",
+                    "value": 4
+                }
+            },
+            "25__D2": {
+                "set_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_BILLBOARD",
+                    "value": 3
+                }
+            },
+            "25__D4": {
+                "set_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_BILLBOARD",
+                    "value": 1
+                }
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY1": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 1
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 1
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 2
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2"
+            }
+        },
+        "else": {
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 3
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY2": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": 4
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": 4
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "set_temp_variable": { "i": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^0" },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 0
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0"
+            }
+        },
+        "else": {
+            "set_temp_variable": { "i": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^0" },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY3": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^1" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^0" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 2
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2"
+            }
+        },
+        "else": {
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": 4
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": 4
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY4": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "set_temp_variable": { "i": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^0" },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": 0
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "set_temp_variable": { "i": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^1" },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i"
+            }
+        },
+        "else": {
+            "set_temp_variable": { "i": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^1" },
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY5": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^0" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^1" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^3" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        },
+        "else": {
+            "set_temp_variable": { "v2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^2" },
+            "for_each_loop": {
+                "array": "C08.ARRAY_C08_PIN_GAME_2_PUZZLE",
+                "index": "i",
+                "value": "v",
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "v": "v2"
+                        }
+                    },
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES": "i"
+                    }
+                }
+            },
+            "add_to_array__D1": {
+                "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS": "v2"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_GET_ANSWER": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT": 0
+                }
+            },
+            "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY1": true
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT": 1
+                }
+            },
+            "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY2": true
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT": 2
+                }
+            },
+            "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY3": true
+        },
+        "else_if__D2": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT": 3
+                }
+            },
+            "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY4": true
+        },
+        "else_if__D3": {
+            "limit": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT": 4
+                }
+            },
+            "PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY5": true
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_INIT": {
+        "hidden_effect": {
+            "C08": {
+                "clear_array": "C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234",
+                "add_to_array": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234",
+                    "value": 1
+                },  
+                "add_to_array__D1": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234",
+                    "value": 2
+                },
+                "add_to_array__D2": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234",
+                    "value": 3
+                },
+                "add_to_array__D3": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234",
+                    "value": 4
+                },
+                "set_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT",
+                    "value": 0
+                },
+                "clear_array__D1": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS",
+                "clear_array__D2": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES",
+                "PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY": true,
+                "set_variable__D1": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_ANSWER_BOTTLE",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_READY"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_2_CHECK": {
+        "hidden_effect": {
+            "C08": {
+                "PIHC_C08_PIN_GAME_2_GET_ANSWER": true,
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "C08.VAR_C08_PIN_GAME_2_ANSWER_BOTTLE": "C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^VAR_C08_PIN_GAME_2_CONTACT_COUNT"
+                        }
+                    },
+                    "add_to_variable": {
+                        "var": "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT",
+                        "value": 1
+                    },
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "var": "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT",
+                                "value": 5,
+                                "compare": "greater_than_or_equals"
+                            }
+                        },
+                        "SOLVE_PIHC_C08_PIN_GAME_2": true
+                    },
+                    "PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY": true
+                },
+                "else": {
+                    "PIHC_C08_PIN_GAME_2_INIT": true
+                }
+            }
+        }
+    },
+    "START_PIHC_C08_PIN_GAME_2": {
+        "C08": {
+            "ADD_INVENTORY_ITEM_4EP_C08_PIN_GAME_2_CODEBOOK_1": true,
+            "PIHC_C08_PIN_GAME_2_INIT": true
+        }
+    },
+    "SOLVE_PIHC_C08_PIN_GAME_2": {
+        "C08": {
+            "set_variable": {
+                "var": "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT",
+                "value": 5
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_CORRECT",
+            "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS",
+            "set_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS",
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_READY",
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+                },
+                "C02": {
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.31",
+                        "days": 3
+                    }
+                }
+            },
+            "scoped_sound_effect": "correct_ev"
+        }
+    }
+}

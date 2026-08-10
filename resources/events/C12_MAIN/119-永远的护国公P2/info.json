@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "custom_effect_tooltip": "EVENT_C12_MAIN_119_TOOLTIP",
+        "add_political_power": 100,
+        "add_country_leader_trait": "TRAIT_LORD_PROTECTOR_OF_EQUESTRIA",
+        "set_rule":{
+            "can_create_factions" : true,
+            "can_not_declare_war" : false
+        }
+        }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

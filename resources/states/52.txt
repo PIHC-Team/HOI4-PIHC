@@ -1,0 +1,34 @@
+state = {
+    id = 52
+    name = STATE_52
+    provinces = {
+        1088
+        2549
+        2713
+        2764
+        3570
+        4704
+        6729
+        6975
+        8045
+        10780
+        10845
+        10886
+    }
+    manpower = 6788
+    state_category = rural
+    history = {
+        owner = C09
+        victory_points = {
+            1088
+            5
+        }
+        buildings = {
+            infrastructure = 4
+        }
+        add_core_of = C09
+    }
+    resources = {
+        logs = 5
+    }
+}

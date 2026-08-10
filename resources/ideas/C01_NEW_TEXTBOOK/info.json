@@ -1,0 +1,13 @@
+{
+    "name": "New Textbook",
+    "removal_cost": -1,
+    "on_remove": {
+        "add_ideas": "IDEA_C01_NEW_TEXTBOOK_2"
+    },
+    "research_bonus": {
+        "pihc_magic_theory": 0.15
+    },
+    "modifier": {
+        "research_speed_factor": 0.10
+    }
+}

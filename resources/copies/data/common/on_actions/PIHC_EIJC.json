@@ -1,0 +1,47 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C09": {
+                    "INITIALIZE_EIJC": true
+                }
+            }
+        },
+        "on_join_faction": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "FROM": {
+                            "has_idea": "IDEA_EIJC_MEMBER"
+                        },
+                        "ROOT": {
+                            "NOT": {
+                                "has_idea": "IDEA_EIJC_MEMBER"
+                            }
+                        }
+                    },
+                    "ROOT": {
+                        "add_ideas": "IDEA_EIJC_MEMBER"
+                    }
+                }
+            }
+        },
+        "on_leave_faction": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "FROM": {
+                            "has_idea": "IDEA_EIJC_MEMBER"
+                        },
+                        "ROOT": {
+                            "has_idea": "IDEA_EIJC_MEMBER"
+                        }
+                    },
+                    "ROOT": {
+                        "remove_ideas": "IDEA_EIJC_MEMBER"
+                    }
+                }
+            }
+        }
+    }
+}

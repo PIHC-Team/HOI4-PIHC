@@ -1,0 +1,28 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_INDUSTRY_MINING",
+    "dx": 1,
+    "prerequisite": {
+        "focus": "FOCUS_GEN_INDUSTRY_MINING"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_GEN_INDUSTRY_HYGIENE"
+    },
+    "cost": 10,
+    "completion_reward": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INDUSTRIALIZATION",
+        "add_ideas": "IDEA_ERA_AGE_INDUSTRIALIZATION"
+    },
+    "available": {
+        "has_tech": "TECHNOLOGY_TECH_ENER_I",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

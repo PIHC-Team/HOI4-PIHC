@@ -1,0 +1,27 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_MANEHATTAN_ARMY",
+    "dx": 1,
+    "priority": 80,
+    "prerequisite": {
+        "focus": "FOCUS_C08_MANEHATTAN_ARMY"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_MANEHATTAN_RUSH_VANGUARD_TOOLTIP",
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_MANEHATTAN_RUSH_VANGUARD"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

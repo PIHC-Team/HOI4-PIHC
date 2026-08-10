@@ -1,0 +1,45 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "country_event": {
+                "id": "DISEASE.1",
+                "days": 1,
+                "random_days": 3
+            }
+        }
+    ],
+    "mean_time_to_happen": {
+        "years": 45,
+        "modifier": {
+            "has_idea": "IDEA_ERA_HYGIENE_1_IMMUNE",
+            "factor": 1000
+        },
+        "modifier__D1": {
+            "has_idea": "IDEA_ERA_HYGIENE_2_MYSO",
+            "factor": 5
+        },
+        "modifier__D2": {
+            "has_idea": "IDEA_ERA_HYGIENE_3_CLEAN",
+            "factor": 1.25
+        },
+        "modifier__D3": {
+            "has_idea": "IDEA_ERA_HYGIENE_4_NORMAL",
+            "factor": 1.0
+        },
+        "modifier__D4": {
+            "has_idea": "IDEA_ERA_HYGIENE_5_DIRTY",
+            "factor": 0.8
+        },
+        "modifier__D5": {
+            "has_idea": "IDEA_ERA_HYGIENE_6_FILTHY",
+            "factor": 0.5
+        },
+        "modifier__D6": {
+            "has_idea": "IDEA_ERA_HYGIENE_7_PLAGUE",
+            "factor": 0.2
+        }
+    }
+}

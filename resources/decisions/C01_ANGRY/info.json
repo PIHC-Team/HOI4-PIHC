@@ -1,0 +1,11 @@
+{
+    "priority": 10000,
+    "allowed": {
+        "tag": "C01"
+    },
+    "visible": {
+        "has_completed_focus": "FOCUS_C01_ANGRY"
+    },
+    "scripted_gui": "C01_ANGRY_POWER_PROGRESSBAR",
+    "visible_when_empty": true
+}

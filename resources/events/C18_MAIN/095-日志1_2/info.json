@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "C18_MAIN.96"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "C18_MAIN.94"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

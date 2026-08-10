@@ -1,0 +1,16 @@
+{
+    "name": "Ode to Tomorrow",
+    "removal_cost": -1,
+    "available": {
+        "OR": {
+            "has_idea": "IDEA_ERA_AGE_SCIENCE",
+            "amount_research_slots > 5": null
+        }
+    },
+    "modifier": {
+        "research_speed_factor": 0.40,
+        "stability_factor": -0.15
+    },
+    "cost": 250,
+    "cancel_if_invalid": false
+}

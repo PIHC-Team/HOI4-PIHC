@@ -1,0 +1,245 @@
+{
+    "PV_ANNEX_ALL_NON_CENTRAL_EQUESTRIA": {
+        "C00": {
+            "change_tag_from": "ROOT" 
+        },
+        "every_country": {
+            "every_owned_state": {
+                "set_variable": {
+                    "PIHC_STATE_VAR_PV_0": "PREV"
+                }
+            }
+        },
+        "every_state": {
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "has_state_flag": "PIHC_STATE_FLAG_IS_CENTRAL_EQUESTRIA"
+                    },
+                    "owner": {
+                        "NOT": {
+                            "OR": {
+                                "tag": "C00",
+                                "tag__D1": "C13",
+                                "tag__D2": "C15",
+                                "tag__D3": "C16",
+                                "tag__D4": "C31"
+                            }
+                        }
+                    }
+                },
+                "transfer_state_to": "C00"
+            }
+        }
+    },
+    "PV_RESTORE": {
+        "every_state": {
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "PIHC_STATE_VAR_PV_0": "PREV"
+                    }
+                },
+                "transfer_state_to": "PREV"
+            }
+        }
+    },
+    "d_restore": {
+        "for_each_scope_loop": {
+            "array": "args",
+            "every_state": {
+                "if": {
+                    "limit": {
+                        "has_state_flag": {
+                            "flag": "PIHC_STATE_FLAG_PV_0",
+                            "value": "PREV"
+                        }
+                    },
+                    "transfer_state_to": "PREV"
+                }
+            }
+        }
+    },
+    "PV_0_0_R": {
+        "PV_ANNEX_ALL_NON_CENTRAL_EQUESTRIA": true,
+        "every_country": {
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA",
+                    "NOT": {
+                        "tag": "C01"
+                    }
+                },
+                "C01": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            }
+        },
+        "C01": {
+            "set_cosmetic_tag": "PV_C01_TWO_SISTERS",
+            "change_tag_from": "C00"
+        }
+    },
+    "PV_0_1": {
+        "C00": {
+            "annex_country": {
+                "target": "C15",
+                "transfer_troops": true
+            }
+        }
+    },
+    "PV_0_2_R": {
+        "PV_ANNEX_ALL_NON_CENTRAL_EQUESTRIA": true,
+        "every_country": {
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA",
+                    "NOT": {
+                        "tag": "C01"
+                    }
+                },
+                "C00": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            }
+        },
+        "C01": {
+            "set_cosmetic_tag": "PV_C01_ROYAL",
+            "change_tag_from": "C00"
+        }
+    },
+    "PV_0_3": {
+        "C01": {
+            "every_owned_state": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "state": "369"
+                        }
+                    },
+                    "transfer_state_to": "C00"
+                }
+            }
+        }
+    },
+    "PV_0_4": {
+        "504": {
+            "transfer_state_to": "C02"
+        },
+        "C02": {
+            "set_cosmetic_tag": "PV_C02_UB"
+        }
+    },
+    "PV_0_5_R": {
+        "PV_0_2_R": true,
+        "C02": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C02_UB"
+        }
+    },
+    "PV_0_6": {
+        "C04": {
+            "PV_RESTORE": true
+        },
+        "C03": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C03_UB",
+            "annex_country": {
+                "target": "C04",
+                "transfer_troops": true
+            }
+        }
+    },
+    "PV_0_7": {
+        "C10": {
+            "PV_RESTORE": true
+        }
+    },
+    "PV_0_8": {
+        "888": {
+            "transfer_state_to": "C06"
+        },
+        "C06": {
+            "set_cosmetic_tag": "PV_C06_UB"
+        }
+    },
+    "PV_0_9": {
+        "C06": {
+            "set_cosmetic_tag": "PV_C06_GLADMANE"
+        }
+    },
+    "PV_0_10": {
+        "562": {
+            "transfer_state_to": "C07"
+        },
+        "C07": {
+            "set_cosmetic_tag": "PV_C07_RESORT"
+        }
+    },
+    "PV_0_11": {
+        "C07": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C07_SYNDICATE",
+            "every_owned_state": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "has_state_flag": "PIHC_STATE_FLAG_IS_CENTRAL_EQUESTRIA"
+                        }
+                    },
+                    "transfer_state_to": "C00"
+                }
+            }
+        }
+    },
+    "PV_0_12": {
+        "C05": {
+            "PV_RESTORE": true
+        }
+    },
+    "PV_0_13": {
+        "C06": {
+            "PV_RESTORE": true,
+            "drop_cosmetic_tag": true
+        }
+    },
+    "PV_0_14": {
+        "C08": {
+            "PV_RESTORE": true
+        }
+    },
+    "PV_0_15": {
+        "C02": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C02_UB2"
+        },
+        "C14": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C14_UB2"
+        }
+    },
+    "PV_0_16": {
+        "C12": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C12_UB2"
+        }
+    },
+    "PV_0_17": {
+        "C03": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C03_UB2"
+        }
+    },
+    "PV_0_18_R": {
+        "C03": {
+            "PV_RESTORE": true,
+            "set_cosmetic_tag": "PV_C03_UB2"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "By Election",
+    "priority": 100,
+    
+    "cost": 200,
+    "days_remove": 21,
+    "remove_effect": {
+        "C04_ADD_SKY_STINGER_SUPPORT_150": true,
+        "add_popularity": {
+            "ideology": "corporation",
+            "popularity": 0.10
+        },
+        "hidden_effect": {
+            "C04_ADD_WIND_RIDER_SUPPORT_30": true
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

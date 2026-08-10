@@ -1,0 +1,41 @@
+{
+    "date": "1003.09.23",
+    "date_scope": "C09",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C09"
+            },
+            "hidden_effect": {
+                "random_list": {
+                    "seed": "random",
+                    "48": {
+                        "news_event": {
+                            "id": "C09_MAIN.4"
+                        }
+                    },
+                    "52": {
+                        "news_event": {
+                            "id": "C09_MAIN.5"
+                        }
+                    }
+                },
+                "if": {
+                    "limit": {
+                        "tag": "C09"
+                    },
+                    "country_event": {
+                        "id": "C09_MAIN.3",
+                        "days": 150,
+                        "random_days": 30
+                    }
+                }
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,108 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_EQUESTRIA_WAR"
+            },
+            "news_event": {
+                "id": "C08_MAIN.61"
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "white_peace": {
+                "tag": "C08"
+            },
+            "white_peace__D1": {
+                "tag": "C05"
+            },
+            "white_peace__D2": {
+                "tag": "C23"
+            },
+            "annex_country": {
+                "target": "C08",
+                "transfer_troops": false
+            },
+            "annex_country__D1": {
+                "target": "C05",
+                "transfer_troops": false
+            },
+            "if": {       
+                "limit": {
+                    "C02": {
+                        "exists":false
+                    }
+                },
+                "add_state_core": 504,
+            "add_state_core__D1": 529,
+            "add_state_core__D2": 543,
+            "add_state_core__D3": 235,
+            "add_state_core__D4": 545,
+            "add_state_core__D5": 567,
+            "add_state_core__D6": 514,
+            "add_state_core__D7": 553,
+            "add_state_core__D8": 579,
+            "add_state_core__D9": 590,
+            "add_state_core__D10": 533,
+            "add_state_core__D11": 550,
+            "add_state_core__D12": 585,
+            "add_state_core__D13": 518,
+            "add_state_core__D14": 549,
+            "add_state_core__D15": 568,
+            "add_state_core__D16": 578,
+            "add_state_core__D17": 606,
+            "add_state_core__D18": 619
+            },
+            "add_popularity": {
+                "ideology": "harmonicism",
+                "popularity": 0.25       
+            },
+            "add_state_core": 506,
+            "add_state_core__D1": 529,
+            "add_state_core__D2": 499,
+            "add_state_core__D3": 481,
+            "add_state_core__D4": 401,
+            "add_state_core__D5": 221,
+            "C08": {
+                "set_state_controller": 450,
+                "set_state_controller__D1": 888,
+                "set_state_controller__D2": 415,
+                "set_state_controller__D3": 413,
+                "set_state_controller__D4": 402,
+                "set_state_controller__D5": 391,
+                "set_state_controller__D6": 389,
+                "set_state_controller__D7": 375,
+                "set_state_controller__D8": 4,
+                "set_state_controller__D9": 337,
+                "set_state_controller__D10": 362,
+                "set_state_controller__D11": 344,
+                "set_state_controller__D12": 34,
+                "set_state_controller__D13": 319,
+                "set_state_controller__D14": 299,
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 0.7
+                },
+                "set_politics": {
+                    "ruling_party": "despotic"
+                },
+                "set_cosmetic_tag": "C08_fallen",
+                "leave_faction":true
+            },
+            "C01":{
+            "puppet": "C08"
+            },
+            "hidden_effect": {
+                "set_autonomy": {
+                    "target": "C08",
+                    "autonomous_state": "autonomy_pihc_district"
+                }
+            }
+        }
+    },
+    "is_triggered_only": true
+}

@@ -1,0 +1,35 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "declare_war_on": {
+                "target": "C01",
+                "type": "liberate_wargoal"
+            },
+            "C05": {
+                "add_to_war": {
+                    "targeted_alliance": "C08",
+                    "enemy": "C01",
+                    "hostility_reason": "asked_to_join"
+                }
+            },
+            "C23": {
+                "add_to_war": {
+                    "targeted_alliance": "C08",
+                    "enemy": "C01",
+                    "hostility_reason": "asked_to_join"
+                }
+            },
+            "news_event": {
+                "id": "C08_MAIN.57",
+                "days": 1
+            },
+            "hidden_effect": {
+                "set_global_flag": "PIHC_GLOBAL_FLAG_EQUESTRIA_WAR"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,22 @@
+{
+    "immediate": {
+        "C26": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C26_STAGE_I_2"
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "trigger": {
+        "tag": "C26",
+        "threat > 0.59": null
+    },
+    "mean_time_to_happen": {
+        "months": 1
+    }
+}

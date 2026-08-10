@@ -1,0 +1,50 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C03_WHAT_IS_SHE_LIKE",
+    "dx": -1,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C03_WHAT_IS_SHE_LIKE"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "country_event": {
+            "id": "C01_C03_BLUEBERRY.2"
+        },
+        "C03": {
+            "if": {
+                "limit": {
+                    "is_ai": true
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "value": -0.05,
+                    "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+                }
+            }
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "C03": {
+            "power_balance_value": {
+                "id": "BOP_C03_INDEPENDENCE",
+                "value < 0.00": null
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

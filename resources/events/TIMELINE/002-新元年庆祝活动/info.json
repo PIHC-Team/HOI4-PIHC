@@ -1,0 +1,153 @@
+{
+    "category": "news",
+    "date": "1002.12.26",
+    "date_scope": "C01",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_JAHR_NULL"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C06", "tag__D1": "C07", "tag__D2": "C16", "tag__D3": "C24", "tag__D4": "C26", "tag__D5": "C29", "tag__D6": "C31", "tag__D7": "C00", "tag__D8": "C35", "tag__D9": "C36", "tag__D10": "C37", "tag__D11": "C38", "tag__D12": "C39", "tag__D13": "C40", "tag__D14": "C41", "tag__D15": "C42", "tag__D16": "C43"
+                }
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C05"
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "hidden_effect": {
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C02", "tag__D1": "C03", "tag__D2": "C04", "tag__D3": "C12", "tag__D4": "C14", "tag__D5": "C15", "tag__D6": "C18", "tag__D7": "C19", "tag__D8": "C20", "tag__D9": "C23", "tag__D10": "C27", "tag__D11": "C30"
+                }
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            },
+            "if__D1": {
+                "limit": {
+                    "tag": "C23"
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "C23_MAIN.3",
+                        "days": 1
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C01", "tag__D1": "C11", "tag__D2": "C22", "tag__D3": "C32", "tag__D9": "C33"
+                }
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C09", "tag__D1": "C10", "tag__D2": "C13", "tag__D3": "C17", "tag__D4": "C21", "tag__D5": "C25", "tag__D6": "C28", "tag__D7": "C34", "tag__D8": "C44"
+                }
+            },
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "hidden_effect": {
+                    "country_event": {
+                        "id": "SUPER.9"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

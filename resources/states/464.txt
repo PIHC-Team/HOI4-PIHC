@@ -1,0 +1,46 @@
+state = {
+    id = 464
+    name = STATE_464
+    provinces = {
+        746
+        1253
+        2412
+        2624
+        3940
+        4182
+        6486
+        9044
+        9223
+        11292
+        11296
+        11329
+        11341
+        11351
+        11356
+        11367
+        11443
+    }
+    manpower = 91798
+    state_category = city
+    history = {
+        owner = C55
+        victory_points = {
+            746
+            20
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 4
+            arms_factory = 1
+            air_base = 1
+            746 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C55
+    }
+    resources = {
+        steel = 18
+        rubber = 4
+    }
+}

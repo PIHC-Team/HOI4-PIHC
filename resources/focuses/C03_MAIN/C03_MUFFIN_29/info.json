@@ -1,0 +1,50 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 5,
+    "y": 7,
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C03_MUFFIN_29_TOOLTIP",
+        "hidden_effect": {
+            "add_named_threat": {
+                "threat": -10,
+                "name": "FOCUS_C03_MUFFIN_29_THREAT"
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "C01": {
+                    "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+                }
+            },
+            "always": false
+        },
+        "hidden_trigger": {
+            "is_ai": false
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C03_MUFFIN_29_TRIGGER_TOOLTIP",
+            "check_variable": {
+                "var": "ROOT.VAR_MUFFINS_AID_TOTAL_C03",
+                "value": 50,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_28"
+    }
+}

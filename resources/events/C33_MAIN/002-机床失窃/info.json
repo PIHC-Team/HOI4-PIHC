@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "403": {
+                "if": {
+                    "limit": {
+                        "arms_factory > 0": null
+                    },
+                    "remove_building": {       
+                        "type": "arms_factory",
+                        "level": 1
+                    }
+                }
+            },
+            "C01": {
+                "country_event": {      
+                    "id": "C08_MAIN.41"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

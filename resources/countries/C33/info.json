@@ -1,0 +1,126 @@
+{
+    "name": "Equestria Empire",
+    "rgb": [
+        228,
+        198,
+        196
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 361,
+        "set_popularities": {
+            "despotic": 95,
+            "fascism": 5
+        },
+        "set_politics": {
+            "ruling_party": "despotic",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_SNIPS_AND_SNAILS",
+            "CHARACTER_DEPARTMENT_C33_ARMY",
+            "CHARACTER_DEPARTMENT_C33_NAVY",
+            "CHARACTER_DEPARTMENT_C33_AIR",
+            "CHARACTER_DEPARTMENT_C33_THEORY"
+        ],
+        "add_ideas_batch": [
+            "closed_economy",
+            "extensive_conscription",
+            "war_economy"
+        ],
+        "activate_advisor_batch": [
+            "CHARACTER_DEPARTMENT_C33_ARMY",
+            "CHARACTER_DEPARTMENT_C33_NAVY",
+            "CHARACTER_DEPARTMENT_C33_AIR",
+            "CHARACTER_DEPARTMENT_C33_THEORY"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_FIREARM_II": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_DRAGON_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_COMM_II": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1
+        },
+        "set_stability": 0.5,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.8,
+        "set_convoys": 50,
+        "add_manpower": 1000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 50
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 600
+            },
+            {
+                "type": "train_equipment",
+                "amount": 20
+            }
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1
+            }
+        }
+    }
+}

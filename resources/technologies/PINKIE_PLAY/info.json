@@ -1,0 +1,27 @@
+{
+    "name": "The Pinkie Articulation",
+    "category": "infantry",
+
+    "x": 3,
+    "y": 15,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_special"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_PINKIE_PLAY_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_PINKIE_PLAY"
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1005
+}

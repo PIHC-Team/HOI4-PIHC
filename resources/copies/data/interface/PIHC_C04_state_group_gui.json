@@ -1,0 +1,19 @@
+{
+    "guiTypes": {
+        "containerWindowType": {
+            "name": "C04_state_group_gui_entry_container",
+            "buttonType": {
+                "name": "state_group_btn",
+                "spriteType": "GFX_state_group_gui_STRATUS_1",
+                "pdx_tooltip": "C04_state_group_btn_tooltip",
+                "scale": 0.75
+            },
+            "buttonType__D1": {
+                "name": "state_group_btn_2x",
+                "spriteType": "GFX_state_group_gui_STRATUS_1",
+                "pdx_tooltip": "C04_state_group_btn_tooltip",
+                "scale": 1.5
+            }
+        }
+    }
+}

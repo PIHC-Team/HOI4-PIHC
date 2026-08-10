@@ -1,0 +1,66 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 95
+            },
+            "601": {
+                "add_extra_state_shared_building_slots": 4,
+                "add_building_construction": {
+                    "type": "industrial_complex",
+                    "level": 3,
+                    "instant_build": true
+                },
+                "add_building_construction__D1": {
+                    "type": "infrastructure",
+                    "level": 1,
+                    "instant_build": true
+                }
+            },
+            "custom_effect_tooltip": "PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP_TOOLTIP",
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP",
+                "C07": {
+                    "country_event": {
+                        "id": "C12_MAIN.27",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 5
+            },
+            "custom_effect_tooltip": "PIHC_COUNTRY_FLAG_C12_REFUSE_SECOND_BATCH_OF_SPONSORSHIP_TOOLTIP",
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C12_REFUSED_SECOND_BATCH_OF_SPONSORSHIP",
+                "uncomplete_national_focus": {
+                    "focus": "FOCUS_C12_SECOND_BATCH_OF_SPONSORSHIP",
+                    "uncomplete_children": true,
+                    "refund_political_power": false
+                },
+                "uncomplete_national_focus__D1": {
+                    "focus": "FOCUS_C12_HEAVY_EQUIPMENT_IMPORTATION",
+                    "uncomplete_children": true,
+                    "refund_political_power": false
+                },
+                "uncomplete_national_focus__D2": {
+                    "focus": "FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS",
+                    "uncomplete_children": true,
+                    "refund_political_power": false
+                },
+                "remove_ideas": "IDEA_C12_DEVELOPMENT_ALLOWANCE_OF_LAS_PEGASUS",
+                "C07": {
+                    "country_event": {
+                        "id": "C12_MAIN.26",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

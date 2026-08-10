@@ -1,0 +1,37 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "ADD_INVENTORY_ITEM_4EP_C02_FILTHY_RICH_BRIBERY_1": true,
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "EEMO.7",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C02"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

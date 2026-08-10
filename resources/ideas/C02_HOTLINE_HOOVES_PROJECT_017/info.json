@@ -1,0 +1,59 @@
+{
+    "name": "Project",
+    "removal_cost": -1,
+    "modifier": {
+        "civilian_factory_use": 2
+    },
+    "on_remove": {
+        "random_list": {
+            "seed": "random",
+            "95": {
+                "custom_effect_tooltip": "SUCCESS",
+                "add_ideas": "IDEA_C02_HOTLINE_HOOVES_PROJECT_017_DONE",
+                "custom_effect_tooltip__D1": "C02_TRIXIE_LULAMOON_INC_5",
+                "add_to_variable": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "value": 0.05
+                },
+                "clamp_variable": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                "custom_effect_tooltip__D2": "C02_DOCTOR_HOOVES_INC_10",
+                "add_to_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                    "value": 0.10
+                },
+                "clamp_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            },
+            "5": {
+                "custom_effect_tooltip": "FAILURE",
+                "custom_effect_tooltip__D1": "C02_TRIXIE_LULAMOON_DEC_5",
+                "add_to_variable": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "value": -0.05
+                },
+                "clamp_variable": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                "custom_effect_tooltip__D2": "C02_DOCTOR_HOOVES_DEC_5",
+                "add_to_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                    "value": -0.05
+                },
+                "clamp_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+state = {
+    id = 135
+    name = STATE_135
+    provinces = {
+        2806
+        3466
+        6158
+        6530
+        8034
+        13908
+        13933
+        13952
+        13985
+        14057
+    }
+    manpower = 39150
+    state_category = rural
+    history = {
+        owner = C00
+        victory_points = {
+            2806
+            3
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C00
+    }
+    resources = {
+        aluminium = 1
+        logs = 16
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "name": "Las Pegasus Economic Zone",
+    "rgb": [
+        238,
+        243,
+        159
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 562,
+        "set_popularities": {
+            "corporation": 95,
+            "harmonicism": 2,
+            "despotic": 2,
+            "democratic": 1
+        },
+        "set_politics": {
+            "ruling_party": "corporation",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_FLIM_AND_FLAM",
+            "CHARACTER_MOONLIGHT_ZEPHYR",
+            "CHARACTER_LAVENDER_SUNRISE"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "volunteer_only",
+            "civilian_economy",
+            "IDEA_ERA_TECH_2_CHEER",
+            "IDEA_ALL_EUREKA",
+            "IDEA_ALL_ECONOMIC_GROWTH"
+        ],
+        "add_political_power": 250,
+        "set_stability": 0.5,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.2,
+        "set_convoys": 150,
+        "set_research_slots": 4,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_SHIP_SEASURGE": 1,
+            "TECHNOLOGY_MTG_SHIP_SEASURGE": 1,
+            "TECHNOLOGY_SHIP_SEACOURTYARD": 1,
+            "TECHNOLOGY_MTG_SHIP_SEACOURTYARD": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_FIREARM_II": 1,
+            "TECHNOLOGY_FIREARM_III": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_TANK_LIGHT_STEAM": 1,
+            "TECHNOLOGY_NSB_TANK_LIGHT_STEAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_CANNON_LIGHT_STEAM": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_COMM_II": 1,
+            "TECHNOLOGY_TECH_COMM_III": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_INFO_II": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_ENER_I": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C07_CANTERLOT_PACT",
+            "FOCUS_C07_LICENSED",
+            "FOCUS_C07_LAS_PEGASUS_GROUP",
+            "FOCUS_C07_LPLAB",
+            "FOCUS_C07_LPEG",
+            "FOCUS_C07_LPLIG",
+            "FOCUS_C07_LPMIG",
+            "FOCUS_C07_LPGG"
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED": 1
+            }
+        },
+        "UNLOCK_NAVY_BASIC": true,
+        "create_equipment_variant": {
+            "name": "Twins Class",
+            "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+        },
+        "create_equipment_variant__D1": {
+            "name": "City Class",
+            "type": "EQUIPMENT_SHIP_SEASURGE"
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Las Pegasus Historical AI",
+        "allowed": {
+            "tag": "C07"
+        },
+        "enable": {
+            "country_exists": "C07"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C07_TRADE_ALLIANCE",
+            "FOCUS_C07_LPLIG_CIVIL",
+            "FOCUS_C07_LPEG_WARM",
+            "FOCUS_C07_LPEG_WARM_HOTLINE",
+            "FOCUS_C07_LPEG_NEW_ENERGY",
+            "FOCUS_C07_LPEG_MINE",
+            "FOCUS_C07_LPEG_MINE_DIAMONDIA",
+            "FOCUS_C07_LPMIG_SOUTH_LUNA",
+            "FOCUS_C07_LPMIG_ISLES",
+            "FOCUS_C07_LPMIG_ISLES_ARMY",
+            "FOCUS_C07_LPMIG_ISLES_NAVY",
+            "FOCUS_C07_LPMIG_ISLES_NAVY_FLEET",
+            "FOCUS_C07_LPMIG_ISLES_AIR",
+            "FOCUS_C07_LPMIG_ISLES_FLAGSHIP",
+            "FOCUS_C07_LPMIG_FF_TRADITIONAL",
+            "FOCUS_C07_LPMIG_POLICE",
+            "FOCUS_C07_LREIC",
+            "FOCUS_C07_LPGG_STOCK",
+            "FOCUS_C07_LPGG_CRYPTO",
+            "FOCUS_C07_LPGG_CASINO",
+            "FOCUS_C07_LPGG_GAMBLE",
+            "FOCUS_C07_LPMIG_ISLES_SUPREMACY",
+            "FOCUS_C07_LPMIG_ISLES_WAR_C23",
+            "FOCUS_C07_LPGG_BONDS",
+            "FOCUS_C07_LPMIG_FF_MAGICAL",
+            "FOCUS_C07_LPMIG_NIGHT_SHIFT",
+            "FOCUS_C07_LPMIG_NIGHT_SHIFT_TRAINING",
+            "FOCUS_C07_LPEG_NEW_ENERGY_OIL"
+        ]
+    }
+}

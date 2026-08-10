@@ -1,0 +1,30 @@
+{
+    "name": "Armed Boat",
+    "category": "naval",
+
+    "x": 0,
+    "y": 16,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_surge"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_SEASURGE_ARMED_BOAT"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_ENER_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIP_SEASURGE_STEAM",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1006
+}

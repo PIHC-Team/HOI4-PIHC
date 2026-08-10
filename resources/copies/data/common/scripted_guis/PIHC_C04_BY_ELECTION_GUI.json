@@ -1,0 +1,33 @@
+{
+    "scripted_gui": {
+        "C04_BY_ELECTION_GUI": {
+            "context_type": "decision_category",
+            "window_name": "C04_by_election_container",
+            "properties": {
+                "progress_bar_blue_left": {
+                    "frame": "C04.VAR_BY_ELECTION_PROGRESS_BAR_1"
+                },
+                "progress_bar_empty_left": {
+                    "frame": "C04.VAR_BY_ELECTION_PROGRESS_BAR_2"
+                },
+                "progress_bar_yellow_left": {
+                    "frame": "C04.VAR_BY_ELECTION_PROGRESS_BAR_2"
+                },
+                "progress_bar_divider1": {
+                    "x": "C04.VAR_BY_ELECTION_PROGRESS_BAR_1_DIVIDER"
+                },
+                "progress_bar_divider2": {
+                    "x": "C04.VAR_BY_ELECTION_PROGRESS_BAR_2_DIVIDER"
+                }
+            },
+            "triggers": {
+                "wind_rider_portrait_visible": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C04_WIND_RIDER_RUNNING_FOR_OFFICE"
+                },
+                "progress_bar_yellow_left_visible": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C04_SKY_STINGER_RUNNING_FOR_OFFICE"
+                }
+            }
+        }
+    }
+}

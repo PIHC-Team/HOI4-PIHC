@@ -1,0 +1,99 @@
+{
+    "WAR_ON_CENTRAL_EQUESTRIA": {
+        "every_other_country": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA",
+                "country_exists": "THIS",
+                "PREV": {
+                    "NOT": {
+                        "has_war_with": "THIS"
+                    }
+                }
+            },
+            "PREV": {
+                "declare_war_on": {
+                    "target": "PREV",
+                    "type": "annex_everything"
+                }
+            }
+        }
+    },
+    "END_ALL_WARS": {
+        "custom_effect_tooltip": "PIHC_END_ALL_WARS_TOOLTIP",
+        "hidden_effect": {
+            "every_enemy_country": {
+                "limit": {
+                    "has_war_with": "PREV"
+                },
+                "white_peace": "PREV"
+            }
+        }
+    },
+    "CLEAN_ANNEX_COUNTRY": {
+        "effect_tooltip": {
+            "var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE": {
+                "PREV": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            }
+        },
+        "hidden_effect": {
+            "set_variable": {
+                "var": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE",
+                "value": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+            },
+            "STEAL_ALL_TECHNOLOGY": true,
+            "clear_variable": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE",
+            "var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE": {
+                "END_ALL_WARS": true,
+                "PREV": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            },
+            "clear_variable__D1": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+        }
+    },
+    "CLEAN_ANNEX_COUNTRY_WITH_CORE": {
+        "effect_tooltip": {
+            "var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE": {
+                "PREV": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            }
+        },
+        "hidden_effect": {
+            "set_variable": {
+                "var": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE",
+                "value": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+            },
+            "STEAL_ALL_TECHNOLOGY": true,
+            "clear_variable": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE",
+            "var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE": {
+                "END_ALL_WARS": true,
+                "every_state": {
+                    "limit": {
+                        "is_core_of": "PREV"
+                    },
+                    "add_core_of": "PREV.PREV",
+                    "remove_core_of": "PREV"
+                },
+                "PREV": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                }
+            },
+            "clear_variable__D1": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+        }
+    }
+}

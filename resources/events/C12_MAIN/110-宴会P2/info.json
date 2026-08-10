@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 85
+            },
+            "trigger": {
+                "C12": {
+                    "has_country_flag": "PIHC_C12_BRAEBURN_IS_DEAD"
+                }
+            },
+            "country_event": {
+                "id": "C12_MAIN.111",
+                "days": 21,
+                "random_days": 2
+            }
+
+        },
+        {
+            "ai_chance": {
+                "factor": 15
+            },
+            "country_event": {
+                "id": "C12_MAIN.112",
+                "days": 21,
+                "random_days": 2
+
+        }
+
+            
+        }
+    ],
+    "is_triggered_only": true
+}

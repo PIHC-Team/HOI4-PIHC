@@ -1,0 +1,15 @@
+{
+    "category": "news",
+    "date": "1003.02.15~1003.03.15",
+    "date_scope": "C01",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_PILLARS_ESCAPED"
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,45 @@
+{
+    "specialization": "specialization_steampunk",
+    "project_tags": "sp_tag_pihc_steampunk",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "FROM": {
+            "NOT": {
+                "has_tech": "TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM"
+            }
+        }
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_I"
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "steel": 6,
+            "coal": 12
+        }
+    },
+    "complexity": "sp_complexity.medium",
+    "prototype_time": "sp_time.prototype.medium",
+    "project_output": {
+        "country_effects": {
+            "set_technology": {
+                "TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM": 1,
+                "popup": false
+            }
+        },
+        "enable_equipments": [
+            "EQUIPMENT_AIR_MISSILE_STEAM"
+        ]
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_STEAM",
+        "SP_REWARD_GENERIC_STEAM_EXP",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

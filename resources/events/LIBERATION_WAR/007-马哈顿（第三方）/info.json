@@ -1,0 +1,28 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_888"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "show_major": {
+        "NOT": {
+            "tag": "C08",
+            "tag__D1": "C06"
+        }
+    },
+    "is_triggered_only": true
+}

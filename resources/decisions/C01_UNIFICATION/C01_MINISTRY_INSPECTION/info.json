@@ -1,0 +1,289 @@
+{
+    "name": "Ministry Inspection",
+    "priority": 98,
+    
+    "cost": 60,
+    "days_remove": 30,
+    "days_re_enable": 28,
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "target_trigger": {
+        "FROM": {
+            "OR": {
+                "tag": "C02",
+                "tag__D1": "C03",
+                "tag__D2": "C04",
+                "tag__D3": "C10",
+                "tag__D4": "C12",
+                "tag__D5": "C14"
+            },
+            "NOT": {
+                "OR":{
+                "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01",
+                "is_puppet_of": "C01",
+                "has_war_with":"C01"
+                }
+            }
+        }
+    },
+    "cancel_trigger": {
+        "hidden_trigger": {
+            "OR": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01",
+                "C01": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            }
+        }
+    },
+    "complete_effect": {
+        "FROM": {
+            "if": {
+                "limit": {
+                    "tag": "C02"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "modifier": "BOP_C02_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D1": {
+                "limit": {
+                    "tag": "C03"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "modifier": "BOP_C03_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D2": {
+                "limit": {
+                    "tag": "C04"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "modifier": "BOP_C04_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D3": {
+                "limit": {
+                    "tag": "C10"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "modifier": "BOP_C10_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D4": {
+                "limit": {
+                    "tag": "C12"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "modifier": "BOP_C12_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D5": {
+                "limit": {
+                    "tag": "C14"
+                },
+                "add_power_balance_modifier": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "modifier": "BOP_C14_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            }
+        }
+    },
+    "cancel_effect": {
+        "FROM": {
+            "if": {
+                "limit": {
+                    "tag": "C02"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "modifier": "BOP_C02_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D1": {
+                "limit": {
+                    "tag": "C03"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "modifier": "BOP_C03_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D2": {
+                "limit": {
+                    "tag": "C04"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "modifier": "BOP_C04_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D3": {
+                "limit": {
+                    "tag": "C10"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "modifier": "BOP_C10_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D4": {
+                "limit": {
+                    "tag": "C12"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "modifier": "BOP_C12_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            },
+            "if__D5": {
+                "limit": {
+                    "tag": "C14"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "modifier": "BOP_C14_INDEPENDENCE_INSPECTED_BY_C01"
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 5,
+        "modifier": {
+            "add": 300,
+            "FROM": {
+                "tag": "C02",
+                "power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value > 0.5": null
+                }
+            }
+        },
+        "modifier__D1": {
+            "add": 300,
+            "FROM": {
+                "tag": "C03",
+                "power_balance_value": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "value > 0.65": null
+                }
+            }
+        },
+        "modifier__D2": {
+            "add": 300,
+            "FROM": {
+                "tag": "C04",
+                "power_balance_value": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "value > 0.65": null
+                }
+            }
+        },
+        "modifier__D3": {
+            "add": 500,
+            "FROM": {
+                "tag": "C10",
+                "power_balance_value": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "value > 0": null
+                }
+            }
+        },
+        "modifier__D4": {
+            "add": 300,
+            "FROM": {
+                "tag": "C12",
+                "power_balance_value": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "value > 0.65": null
+                }
+            }
+        },
+        "modifier__D5": {
+            "add": 300,
+            "FROM": {
+                "tag": "C14",
+                "power_balance_value": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "value > 0.65": null
+                }
+            }
+        },
+        "modifier__D6": {
+            "add": 300,
+            "FROM": {
+                "tag": "C02",
+                "power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value > 0.85": null
+                }
+            }
+        },
+        "modifier__D7": {
+            "add": 300,
+            "FROM": {
+                "tag": "C03",
+                "power_balance_value": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "value > 0.85": null
+                }
+            }
+        },
+        "modifier__D8": {
+            "add": 300,
+            "FROM": {
+                "tag": "C04",
+                "power_balance_value": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "value > 0.85": null
+                }
+            }
+        },
+        "modifier__D9": {
+            "add": 500,
+            "FROM": {
+                "tag": "C10",
+                "power_balance_value": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "value > 0.25": null
+                }
+            }
+        },
+        "modifier__D10": {
+            "add": 300,
+            "FROM": {
+                "tag": "C12",
+                "power_balance_value": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "value > 0.85": null
+                }
+            }
+        },
+        "modifier__D11": {
+            "add": 300,
+            "FROM": {
+                "tag": "C14",
+                "power_balance_value": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "value > 0.85": null
+                }
+            }
+        }
+    }
+}

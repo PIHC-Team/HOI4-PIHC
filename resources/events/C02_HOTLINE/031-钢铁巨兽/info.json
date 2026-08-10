@@ -1,0 +1,20 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C07": {
+                "add_intel": {
+                    "target": "C02",
+                    "civilian_intel": 15
+                }
+            },
+            "C02": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C07_TRADE"
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

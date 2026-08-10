@@ -1,0 +1,59 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_OPERATION_GREENLIGHT",
+    "priority": 30,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_OPERATION_GREENLIGHT"
+    },
+    "allow_branch": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_SUPEREVENT_4_HAPPENED"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C01_C02_LOYALTY_TEST_TOOLTIP",
+        "news_event": {
+            "id": "C02_MAIN.4"
+        },
+        "hidden_effect": {
+            "C02": {
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_C02_WAR_C08_COOLDOWN",
+                    "days": 27,
+                    "value": 1
+                }
+            }
+        }
+    },
+    "bypass": {
+        "C02": {
+            "has_war_with": "C08"
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C01_C02_LOYALTY_TEST_TRIGGER_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_C08_TENSION"
+        },
+        "C02": {
+            "has_country_leader": {
+                "character": "CHARACTER_TRIXIE_LULAMOON",
+                "ruling_only": true
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

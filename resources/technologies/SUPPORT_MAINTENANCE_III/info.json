@@ -1,0 +1,57 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 7,
+    "y": 6,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_maintenance"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "maintenance_company": {
+        "reliability_factor": 0.05,
+        "battalion_mult": {
+            "category": "category_all_armor",
+            "equipment_capture_factor": 0.01,
+            "add": true
+        }
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_MAINTENANCE_II": 1
+    },
+    "path": {
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "arms_factory > 100":null
+                },
+                "modifier__D1": {
+                    "factor": 25,
+                    "arms_factory > 125":null
+                },
+                "modifier__D2": {
+                    "factor": 50,
+                    "arms_factory > 175":null
+                },
+                "modifier__D3": {
+                    "factor": 75,
+                    "arms_factory > 220":null
+                }
+            },
+    "research_cost": 1.5,
+    "start_year": 1006
+}

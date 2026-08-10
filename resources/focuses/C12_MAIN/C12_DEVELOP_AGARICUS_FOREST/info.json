@@ -1,0 +1,45 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_CROSS_THE_MACINTOSH_HILLS",
+    
+    "prerequisite": {
+        "focus": "FOCUS_C12_HIGHWAY_OF_PONDEROSA",
+        "focus__D1": "FOCUS_C12_CROSS_THE_MACINTOSH_HILLS"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "652": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "level": 1,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": "infrastructure",
+                "level": 1,
+                "instant_build": true
+            },
+            "add_resource": {
+                "type": "rubber",
+                "amount": 24
+            },
+            "add_resource__D1": {
+                "type": "logs",
+                "amount": 32
+            }
+        }
+    },
+    "available": {
+        "owns_state": 652,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

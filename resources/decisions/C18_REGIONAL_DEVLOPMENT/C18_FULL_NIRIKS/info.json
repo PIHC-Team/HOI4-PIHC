@@ -1,0 +1,24 @@
+{
+    "name": "Full Niriks",
+    "priority": 0,
+    
+    "cost": 0,
+    "visible": {
+        "tag": "C18",
+        "has_completed_focus": "FOCUS_C18_100_REINCARNATION"
+    },
+    "available": {
+        "has_war": true,
+        "has_completed_focus": "FOCUS_C18_100_REINCARNATION",
+        "surrender_progress > 0.4": null
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "C18_BECOME_THE_NIRIK": true
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 10000
+    }
+}

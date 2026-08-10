@@ -1,0 +1,334 @@
+{
+    "version": 1,
+    "expected_total_nodes": 94,
+    "expected_counts": {
+        "grand_land": 5,
+        "grand_air": 3,
+        "sub_land": 25,
+        "sub_air": 18
+    },
+    "category_tracks": {
+        "land": [
+            "infantry",
+            "combat_support",
+            "armor",
+            "operations"
+        ],
+        "air": [
+            "fighter_aircraft",
+            "strike_aircraft",
+            "medium_aircraft",
+            "heavy_aircraft"
+        ]
+    },
+    "category_xp_type": {
+        "land": "army",
+        "air": "air"
+    },
+    "groups": {
+        "ARMY_0": {
+            "category": "land",
+            "grand_stage": "0",
+            "tracks": {
+                "infantry": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "combat_support": {
+                    "options": {
+                        "a": [
+                            "3A",
+                            "4A",
+                            "5A"
+                        ],
+                        "b": [
+                            "3B",
+                            "4B",
+                            "5B"
+                        ]
+                    }
+                },
+                "armor": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                },
+                "operations": {
+                    "stages": [
+                        "8"
+                    ]
+                }
+            }
+        },
+        "ARMY_1": {
+            "category": "land",
+            "grand_stage": "0",
+            "tracks": {
+                "infantry": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "combat_support": {
+                    "options": {
+                        "a": [
+                            "3A",
+                            "4A",
+                            "5A"
+                        ],
+                        "b": [
+                            "3B",
+                            "4B",
+                            "5B"
+                        ]
+                    }
+                },
+                "armor": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                },
+                "operations": {
+                    "stages": [
+                        "8"
+                    ]
+                }
+            }
+        },
+        "ARMY_2": {
+            "category": "land",
+            "grand_stage": "0",
+            "tracks": {
+                "infantry": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "combat_support": {
+                    "options": {
+                        "a": [
+                            "3A",
+                            "4A",
+                            "5A"
+                        ],
+                        "b": [
+                            "3B",
+                            "4B",
+                            "5B"
+                        ]
+                    }
+                },
+                "armor": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                },
+                "operations": {
+                    "stages": [
+                        "8"
+                    ]
+                }
+            }
+        },
+        "ARMY_3": {
+            "category": "land",
+            "grand_stage": "0",
+            "tracks": {
+                "infantry": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "combat_support": {
+                    "options": {
+                        "a": [
+                            "3A",
+                            "4A",
+                            "5A"
+                        ],
+                        "b": [
+                            "3B",
+                            "4B",
+                            "5B"
+                        ]
+                    }
+                },
+                "armor": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                },
+                "operations": {
+                    "stages": [
+                        "8"
+                    ]
+                }
+            }
+        },
+        "ARMY_4": {
+            "category": "land",
+            "grand_stage": "0",
+            "tracks": {
+                "infantry": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "combat_support": {
+                    "options": {
+                        "a": [
+                            "3A",
+                            "4A",
+                            "5A"
+                        ],
+                        "b": [
+                            "3B",
+                            "4B",
+                            "5B"
+                        ]
+                    }
+                },
+                "armor": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                },
+                "operations": {
+                    "stages": [
+                        "8"
+                    ]
+                }
+            }
+        },
+        "AIR_0": {
+            "category": "air",
+            "grand_stage": "0",
+            "tracks": {
+                "fighter_aircraft": {
+                    "options": {
+                        "a": [
+                            "1A",
+                            "2A",
+                            "3A"
+                        ],
+                        "b": [
+                            "1B",
+                            "2B",
+                            "3B"
+                        ]
+                    }
+                },
+                "strike_aircraft": {
+                    "stages": [
+                        "4"
+                    ]
+                },
+                "medium_aircraft": {
+                    "options": {
+                        "a": [
+                            "5A"
+                        ],
+                        "b": [
+                            "5B"
+                        ]
+                    }
+                },
+                "heavy_aircraft": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                }
+            }
+        },
+        "AIR_1": {
+            "category": "air",
+            "grand_stage": "0",
+            "tracks": {
+                "fighter_aircraft": {
+                    "options": {
+                        "a": [
+                            "1A",
+                            "2A",
+                            "3A"
+                        ],
+                        "b": [
+                            "1B",
+                            "2B",
+                            "3B"
+                        ]
+                    }
+                },
+                "strike_aircraft": {
+                    "stages": [
+                        "4"
+                    ]
+                },
+                "medium_aircraft": {
+                    "options": {
+                        "a": [
+                            "5A"
+                        ],
+                        "b": [
+                            "5B"
+                        ],
+                        "c": [
+                            "5C"
+                        ]
+                    }
+                },
+                "heavy_aircraft": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                }
+            }
+        },
+        "AIR_2": {
+            "category": "air",
+            "grand_stage": "0",
+            "tracks": {
+                "fighter_aircraft": {
+                    "stages": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "strike_aircraft": {
+                    "options": {
+                        "a": [
+                            "3A"
+                        ],
+                        "b": [
+                            "3B"
+                        ]
+                    }
+                },
+                "medium_aircraft": {
+                    "stages": [
+                        "4",
+                        "5"
+                    ]
+                },
+                "heavy_aircraft": {
+                    "stages": [
+                        "6",
+                        "7"
+                    ]
+                }
+            }
+        }
+    }
+}

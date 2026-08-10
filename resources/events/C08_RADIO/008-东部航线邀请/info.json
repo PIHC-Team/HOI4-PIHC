@@ -1,0 +1,148 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                
+            },
+            "hidden_effect": {
+                "if": {       
+                    "limit": {
+                        "tag": "C18"
+                    },
+                    "883": {
+                        "add_province_modifier": {
+                            "static_modifiers": [
+                                "MODIFIER_EAST_ROUTE"
+                            ],
+                            "province": {
+                                "all_provinces": true
+                            }
+                        }
+                    },
+                    "C08": {
+                        "add_to_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "value": 5
+                        },
+                        "clamp_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "min": 0,
+                            "max": 100
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES"
+                    }
+                },
+                "if__D1": {       
+                    "limit": {
+                        "tag": "C19"
+                    },
+                    "C08": {
+                        "add_to_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "value": 5
+                        },
+                        "clamp_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "min": 0,
+                            "max": 100
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES"
+                    }
+                },
+                "if__D2": {       
+                    "limit": {
+                        "tag": "C20"
+                    },
+                    "C08": {
+                        "add_to_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "value": 5
+                        },
+                        "clamp_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "min": 0,
+                            "max": 100
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES"
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_ALL_EAST_ROUTE"
+                },
+                "if__D3": {       
+                    "limit": {
+                        "tag": "C23"
+                    },
+                    "261": {
+                        "add_province_modifier": {
+                            "static_modifiers": [
+                                "MODIFIER_EAST_ROUTE"
+                            ],
+                            "province": {
+                                "all_provinces": true
+                            }
+                        }
+                    },
+                    "C08": {
+                        "add_to_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "value": 10
+                        },
+                        "clamp_variable": {
+                            "var": "VAR_C08_EAST_ROUTE_MAX",
+                            "min": 0,
+                            "max": 100
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES"
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_ALL_EAST_ROUTE"
+                }
+            },
+            "name": "EVENT_C08_RADIO_8_o0"
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "hidden_effect": {
+                    "if": {       
+                        "limit": {
+                            "tag": "C18"
+                        },
+                        "C08": {
+                            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES"
+                        }
+                    },
+                    "if__D1": {       
+                        "limit": {
+                            "tag": "C19"
+                        },
+                        "C08": {
+                            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES"
+                        }
+                    },
+                    "if__D2": {       
+                        "limit": {
+                            "tag": "C20"
+                        },
+                        "C08": {
+                            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES"
+                        }
+                    },
+                    "if__D3": {       
+                        "limit": {
+                            "tag": "C23"
+                        },
+                        "C08": {
+                            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES"
+                        }
+                    }
+                }
+            },
+            "name": "EVENT_C08_RADIO_8_o1"
+        }
+    ],
+    "is_triggered_only": true
+}

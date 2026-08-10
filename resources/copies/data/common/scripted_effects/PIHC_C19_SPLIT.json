@@ -1,0 +1,81 @@
+{
+ "C19_SPLIT": {
+        "C19": {
+            "hidden_effect": {
+                "create_dynamic_country": {
+                    "original_tag": "C19",
+                    "reserve_dynamic_country": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C19_CIVIL_WAR_GESTAL",
+                    "set_cosmetic_tag": "Z19",
+                    "transfer_state__D2": 417,
+                    "transfer_state__D3": 516,
+                    "transfer_state__D8": 516,
+                    "transfer_state__D10": 444,
+                    "transfer_state__D11": 420,
+                    "transfer_state__D12": 460,
+                    "transfer_state__D13": 66,
+                    "set_capital": {
+                        "state": 66
+                    },
+                    "set_politics": {
+                        "ruling_party": "peacism"
+                    },
+                    "add_popularity": {
+                        "ideology": "peacism",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_GUSTAVE_LE_GRAND",
+                    "promote_character": {
+                        "character": "CHARACTER_GUSTAVE_LE_GRAND",
+                        "ideology": "peacism_duchy"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C19_CIVIL_WAR_GOLDSTONE",
+                "set_politics": {
+                    "ruling_party": "despotic"
+                },
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 1.00
+                },
+                "add_popularity__D1": {
+                    "ideology": "equatism",
+                    "popularity": 0.10
+                },
+                "C22": {
+                    "puppet": "Z19",
+                    "set_autonomy": {
+                        "target": "Z19",
+                        "autonomous_state": "autonomy_pihc_licensed"
+                    }
+                },
+                "Z19": {
+                    "set_politics": {
+                        "ruling_party": "peacism"
+                    },
+                    "add_popularity": {
+                        "ideology": "peacism",
+                        "popularity": 1.00
+                    },
+                    "add_popularity__D1": {
+                        "ideology": "democratic",
+                        "popularity": 0.10
+                    },
+                    "add_popularity__D2": {
+                        "ideology": "harmonicism",
+                        "popularity": 0.10
+                    },
+                    "promote_character": {
+                        "character": "CHARACTER_LORD_GESTAL",
+                        "ideology": "peacism_duchy"
+                    },
+                    "add_ideas": "disarmed_nation",
+                    "add_ideas__D1": "limited_exports",
+                    "every_owned_state": {
+                        "set_demilitarized_zone": true
+                    }
+                }
+            }
+        }
+    }
+}

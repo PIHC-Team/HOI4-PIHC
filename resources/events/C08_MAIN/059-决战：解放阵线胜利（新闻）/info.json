@@ -1,0 +1,31 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C08",
+                    "tag__D1": "C05",
+                    "tag__D2": "C23"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C08",
+                    "tag__D2": "C23"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,231 @@
+{
+    "C35_CIVIL_WAR": {
+        "C35": {
+            "hidden_effect": {
+                "start_civil_war": {
+                    "ideology": "despotic",
+                    "keep_all_characters": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C35_CIVIL_WAR_ANUBIS",
+                    "set_cosmetic_tag": "X35",
+                    "capital": 161,
+                    "states": [
+                        161, 176, 149, 193, 188, 195, 800
+                    ],
+                    "states_filter": {
+                        "is_owned_and_controlled_by": "C35"
+                    },
+                    "set_politics": {
+                        "ruling_party": "despotic"
+                    },
+                    "add_popularity": {
+                        "ideology": "despotic",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_ANUGYPT_ANUBIS_DEAD",
+                    "promote_character": {
+                        "character": "CHARACTER_ANUGYPT_ANUBIS_DEAD",
+                        "ideology": "despotic_theocracy"
+                    }
+                },
+                "X35": {
+                    "161": {
+                        "create_unit": {
+                            "division": "name = \"豺狼军 (Jackals Army)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.2 start_equipment_factor = 0.9 start_manpower_factor = 0.9",
+                            "owner": "X35",
+                            "count": 6
+                        }
+                    }
+                },
+                "create_dynamic_country": {
+                    "original_tag": "C35",
+                    "reserve_dynamic_country": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C35_CIVIL_WAR_Cleopatrot",
+                    "set_cosmetic_tag": "Y35",
+                    "transfer_state": 804,
+                    "set_capital": {
+                        "state": 804  
+                    },
+                    "if": {
+                        "limit": {
+                            "193": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 193
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "805": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 805
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "835": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 835
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "838": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 838
+                    },
+                    "if__D4": {
+                        "limit": {
+                            "897": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 897
+                    },
+                    "if__D5": {
+                        "limit": {
+                            "832": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 832
+                    },
+                    "set_politics": {
+                        "ruling_party": "fascism"
+                    },
+                    "add_popularity": {
+                        "ideology": "fascism",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_ANUGYPT_Cleopatrot_DEAD",
+                    "promote_character": {
+                        "character": "CHARACTER_ANUGYPT_Cleopatrot_DEAD",
+                        "ideology": "fascism_theocracy"
+                    },
+                    "declare_war_on": {
+                        "target": "C35",
+                        "type": "crusade_wargoal"
+                    },
+                    "declare_war_on__D1": {
+                        "target": "X35",
+                        "type": "crusade_wargoal"
+                    }
+                },
+                "Y35": {
+                    "804": {
+                        "create_unit": {
+                            "division": "name = \"克骊欧佩特拉后嗣 (Cleopatrot Descendants)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.2 start_equipment_factor = 0.9 start_manpower_factor = 0.9",
+                            "owner": "Y35",
+                            "count": 3
+                        }
+                    }
+                },
+                "create_dynamic_country__D1": {
+                    "original_tag": "C35",
+                    "reserve_dynamic_country": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C35_CIVIL_WAR_BAAST",
+                    "set_cosmetic_tag": "Z35",
+                    "transfer_state": 827,
+                    "set_capital": {
+                        "state": 827
+                    },
+                    "if": {
+                        "limit": {
+                            "829": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 829
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "827": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 827
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "825": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 825
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "796": {
+                                "is_owned_and_controlled_by": "C35"
+                            }
+                        },
+                        "transfer_state": 796
+                    },
+                    "set_politics": {
+                        "ruling_party": "harmonicism"
+                    },
+                    "add_popularity": {
+                        "ideology": "harmonicism",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_ANUGYPT_BAAST_DEAD",
+                    "promote_character": {
+                        "character": "CHARACTER_ANUGYPT_BAAST_DEAD",
+                        "ideology": "harmonicism_freestate"
+                    }
+                },
+                "Z35": {
+                    "827": {
+                        "create_unit": {
+                            "division": "name = \"新安及共和军 (New Anugpyt Republic Army)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7",
+                            "owner": "Z35",
+                            "count": 6
+                        }
+                    }
+                },
+                "create_dynamic_country__D2": {
+                    "original_tag": "C35",
+                    "reserve_dynamic_country": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C35_CIVIL_WAR_SPHINX",
+                    "set_cosmetic_tag": "W35",
+                    "transfer_state": 807,
+                    "set_capital": {
+                        "state": 807
+                    },
+                    "set_politics": {
+                        "ruling_party": "transcendence"
+                    },
+                    "add_popularity": {
+                        "ideology": "transcendence",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_SPHINX",
+                    "promote_character": {
+                        "character": "CHARACTER_SPHINX",
+                        "ideology": "transcendence_spirit"
+                    },
+                    "set_technology": {
+                        "TECHNOLOGY_STONE_GARGOYLES": 1
+                    },
+                    "load_oob": "C35_gargoyles"
+                },
+                "W35": {
+                    "807": {
+                        "create_unit": {
+                            "division": "name = \"斯芬克斯神庙守护者 (Sphinx Temple Guardians)\" division_template = \"石像鬼师 (Gargoyles Division)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "W35",
+                            "count": 10
+                        }
+                    }
+                },
+                "add_named_threat": {
+                    "threat": 5,
+                    "name": "EVENT_TIMELINE_24_THREAT"
+                }
+            }
+        }
+    }
+}

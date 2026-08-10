@@ -1,0 +1,50 @@
+{
+    "name": "Bonds to Air",
+    "priority": 95,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "has_idea": "IDEA_EIJC_MEMBER",
+            "AND": {
+                "owns_state": 412,
+                "controls_state": 412
+            }
+        },
+        "C03": {
+            "has_idea": "IDEA_EIJC_MEMBER"
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_600",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true,
+        "if": {
+            "limit": {
+                "C04": {
+                    "has_idea": "IDEA_EIJC_MEMBER"
+                }
+            },
+            "add_equipment_to_stockpile": {
+                "type": "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION",
+                "amount": 250
+            }
+        },
+        "else": {
+            "add_equipment_to_stockpile": {
+                "type": "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION",
+                "amount": 150
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

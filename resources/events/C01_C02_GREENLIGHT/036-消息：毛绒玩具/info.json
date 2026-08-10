@@ -1,0 +1,23 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C01_C02_GREENLIGHT_36_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_CENTER_KNOWS",
+            "hidden_effect": {
+                "add_to_variable": {
+                    "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                    "value": 0.15
+                },
+                "clamp_variable": {
+                    "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

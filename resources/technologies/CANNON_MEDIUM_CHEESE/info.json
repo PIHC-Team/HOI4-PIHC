@@ -1,0 +1,48 @@
+{
+    "name": "Cheese's Party Cannon",
+    "category": "artillery",
+
+    "x": 3,
+    "y": 12,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_artillery"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_CANNON_MEDIUM_CHEESE"
+    ],
+    "enable_subunits": [
+        "cannon_medium",
+        "cannon_tank_medium",
+        "cannon_mot_medium"
+    ],
+    "enable_equipment_modules": [
+        "MODULE_CREW_3B_BONELESS"
+    ],
+    "allow": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "OR": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_ALLOW_PINKIE_CANNON",
+                        "tag": "C12",
+                        "is_in_faction_with": "C12"
+                    }
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_CANNON_MEDIUM_CHEESE_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_CANNON_LIGHT_PINKIE": 1
+    },
+
+    "research_cost": 5.0,
+    "start_year": 1004
+}

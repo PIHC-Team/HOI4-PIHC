@@ -1,0 +1,33 @@
+{
+    "name": "Artifact Perception",
+    "category": "electronics",
+
+    "x": 10,
+    "y": 12,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_magical",
+        "pihc_dark_magic",
+        "pihc_magic_theory"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete_limit": {
+        "always": true
+    },
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_TECH_MAGI_DARKPERCEPTION_TOOLTIP"
+    },
+
+    "path": {
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1004
+}

@@ -1,0 +1,60 @@
+{
+    "name": "Balloon",
+    "category": "bba_air_techs",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 6,
+    "y": 0,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_air_galleon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_FRAME_GALLEON"
+    ],
+    "enable_subunits": [],
+    "enable_equipment_modules": [
+        "MODULE_PLANE_ARMOR_1A_WOODEN",
+        "MODULE_PLANE_ARMOR_2B_STEEL",
+        "MODULE_PLANE_ARMOR_2A_BRASS",
+        "MODULE_PLANE_ENGINE_1A_AIR",
+        "MODULE_SPECIAL_SUPPLY",
+        "MODULE_SPECIAL_PARADROP",
+        "MODULE_SPECIAL_TANK",
+        "MODULE_PLANE_WEAPON_AIRREC_1A_BINOCULAR"
+    ],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+    "ai_will_do": {
+        "factor": 1,
+        "modifier": {
+            "factor": 25,
+            "arms_factory > 50": null
+        },
+        "modifier__D1": {
+            "factor": 5,
+            "date > 1003.8.1": null,
+            "is_major": true
+        },
+        "modifier__D2": {
+            "factor": 50,
+            "arms_factory > 100": null
+        },
+        "modifier__D3": {
+            "factor": 5,
+            "has_army_manpower": {
+                "size > 15000": null
+            }
+        }
+    },
+    "research_cost": 2,
+    "start_year": 1000
+}

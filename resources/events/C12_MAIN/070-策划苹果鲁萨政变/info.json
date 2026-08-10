@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_political_power": 100,
+            "add_war_support": 0.15,
+            "C12": {
+                "puppet": {
+                    "target": "C14",
+                    "end_wars": true
+                }
+            },
+            "set_country_flag":"PIHC_C12_BRAEBURN_IS_ALIVE"
+        }
+    ],
+    "is_triggered_only": true
+}

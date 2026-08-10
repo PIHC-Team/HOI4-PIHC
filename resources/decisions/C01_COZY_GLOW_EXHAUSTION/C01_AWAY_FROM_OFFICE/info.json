@@ -1,0 +1,42 @@
+{
+    "name": "Away From Office",
+    "priority": 1,
+    
+    "cost": 0,
+    "days_remove": 30,
+    "visible": {
+        "tag": "C01"
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS",
+        "set_country_flag__D1": "PIHC_COUNTRY_AWAY_FROM_OFFICE",
+        "add_power_balance_modifier": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "modifier": "BOP_C01_COZY_GLOW_EXHAUSTION_ON_VACATION"
+        },
+        "custom_effect_tooltip": "DECISION_C01_AWAY_FROM_OFFICE_AWAY_TOOLTIP"
+    },
+    "remove_effect": {
+        "remove_power_balance_modifier": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "modifier": "BOP_C01_COZY_GLOW_EXHAUSTION_ON_VACATION"
+        },
+        "add_power_balance_value": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "value": 0.2,
+            "tooltip_side": "BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE"
+        },
+        "clr_country_flag": "PIHC_COUNTRY_AWAY_FROM_OFFICE",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 1000,
+            "power_balance_value": {
+                "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+                "value < -0.8": null
+            }
+        }
+    }
+}

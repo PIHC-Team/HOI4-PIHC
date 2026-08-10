@@ -1,0 +1,52 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "hidden_effect": {
+                "news_event": {
+                    "id": "SUPER_NEWS.4"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C23",
+                    "tag__D2": "C05",
+                    "tag__D3": "C08"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C05",
+                    "tag__D1": "C23"
+                }
+            }
+        }
+    ],
+    "category": "news",
+    "major": true,
+    "is_triggered_only": true
+}

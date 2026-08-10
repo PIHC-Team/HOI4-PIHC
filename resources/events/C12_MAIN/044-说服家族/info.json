@@ -1,0 +1,63 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "deactivate_advisor": "CHARACTER_ACACIA_PIE",
+            "remove_advisor_role": {
+                "character": "CHARACTER_ACACIA_PIE",
+                "slot": "political_advisor"
+            },
+            "deactivate_advisor__D1": "CHARACTER_OAK_PIE",
+            "remove_advisor_role__D1": {
+                "character": "CHARACTER_OAK_PIE",
+                "slot": "political_advisor"
+            },
+            "deactivate_advisor__D2": "CHARACTER_PEACHY_PIE",
+            "remove_advisor_role__D2": {
+                "character": "CHARACTER_PEACHY_PIE",
+                "slot": "political_advisor"
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE"
+                },
+                "remove_ideas": "IDEA_C12_APPLES_FROM_SAME_TREE"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_1"
+                },
+                "remove_ideas": "IDEA_C12_APPLES_FROM_SAME_TREE_1"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_2"
+                },
+                "remove_ideas": "IDEA_C12_APPLES_FROM_SAME_TREE_2"
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_3"
+                },
+                "remove_ideas": "IDEA_C12_APPLES_FROM_SAME_TREE_3"
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_4"
+                },
+                "remove_ideas": "IDEA_C12_APPLES_FROM_SAME_TREE_4"
+            },
+            "C14": {
+                "country_event": {
+                    "id": "C12_MAIN.45",
+                    "days": 2,
+                    "random_days": 2
+                }
+            },
+            "add_political_power": -50
+        }
+    ],
+    "is_triggered_only": true
+}

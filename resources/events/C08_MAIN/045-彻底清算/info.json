@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_popularity": {
+                "ideology": "corporation",
+                "popularity": -0.08        
+            },
+            "add_manpower": -114,
+            "hidden_effect": {
+                "add_popularity__D1": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.08        
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

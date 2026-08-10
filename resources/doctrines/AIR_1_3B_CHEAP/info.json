@@ -1,0 +1,30 @@
+{
+    "category": "air",
+    "x": 2,
+    "y": 6,
+
+    "category_air": {
+        "build_cost_ic": -0.25
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_1_4_CONTINUOUS_BOMB",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

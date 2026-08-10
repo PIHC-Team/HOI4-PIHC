@@ -1,0 +1,27 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_SOURCE_OF_SIN",
+    "dx": -1,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C08_SOURCE_OF_SIN"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C08_MANEHATTAN_MNS"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_MANEHATTAN_ARMY_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

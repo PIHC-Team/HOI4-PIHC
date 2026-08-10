@@ -1,0 +1,33 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_EQUESTRIA_CONSCRIPTION",
+    "prerequisite": {
+        "focus": "FOCUS_C01_EQUESTRIA_CONSCRIPTION"
+    },
+    "completion_reward": {
+        "add_ideas": "IDEA_C01_FAST_TRAINING",
+        "country_event": {
+            "id": "C01_MAIN.13",
+            "days": 1
+        },
+        "hidden_effect": {
+            "add_power_balance_value": {
+                "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+                "value": -0.05,
+                "tooltip_side": "BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE"
+            }
+        }
+    },
+    "cost": 3,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

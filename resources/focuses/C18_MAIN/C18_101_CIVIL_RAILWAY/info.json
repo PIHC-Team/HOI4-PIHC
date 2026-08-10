@@ -1,0 +1,25 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_101_CIVIL_RESEARCH",
+    "prerequisite": {
+        "focus": "FOCUS_C18_101_CIVIL_RESEARCH"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_timed_idea": {
+            "idea": "IDEA_C18_FAST_SUPPLY_CONSTRUCTION",
+            "days": 720
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

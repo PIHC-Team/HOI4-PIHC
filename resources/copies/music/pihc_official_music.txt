@@ -1,0 +1,73 @@
+music_station = "pihc_official_station"
+music = {
+	song = "pihc01"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc02"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc03"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc04"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc05"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc06"
+	chance = { factor = 1 modifier = { add = 7 tag = C23 } }
+}
+music = {
+	song = "pihc07"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc08"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc09"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc10"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc11"
+	chance = { factor = 1 modifier = { add = 7 tag = C01 } }
+}
+music = {
+	song = "pihc12"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc13"
+	chance = { factor = 1 modifier = { add = 7 tag = C21 } }
+}
+music = {
+	song = "pihc14"
+	chance = { factor = 0 modifier = { add = 11 has_war = yes } }
+}
+music = {
+	song = "pihc15"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc16"
+	chance = { factor = 0 modifier = { add = 11 has_war = yes } }
+}
+music = {
+	song = "pihc17"
+	chance = { factor = 1 }
+}
+music = {
+	song = "pihc18"
+	chance = { factor = 1 }
+}

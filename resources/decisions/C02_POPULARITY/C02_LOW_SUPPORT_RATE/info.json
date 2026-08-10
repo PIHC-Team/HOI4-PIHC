@@ -1,0 +1,42 @@
+{
+    "name": "Second Election",
+    "priority": 999,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 60,
+    "is_good": false,
+    "allowed": {
+        "tag": "C02"
+    },
+    "activation": {
+        "check_variable": {
+            "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "value": 0.05,
+            "compare": "less_than"
+        }
+    },
+    "available": {
+        "OR": {
+            "custom_trigger_tooltip": {
+                "tooltip": "C02_TRIXIE_LULAMOON_GE_5",
+                "check_variable": {
+                    "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "value": 0.05,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "custom_trigger_tooltip__D1": {
+                "tooltip": "DECISION_C02_SECOND_ELECTION_TRIGGER_TOOLTIP",
+                "has_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+            }
+        }
+    },
+    "complete_effect": {
+    },
+    "timeout_effect": {
+        "C02": {
+            "C02_TRIXIE_LULAMOON_FIRED": true
+        }
+    }
+}

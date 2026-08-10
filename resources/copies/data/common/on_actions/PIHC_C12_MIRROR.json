@@ -1,0 +1,20 @@
+{
+    "on_actions": {
+        "on_monthly_C12": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "date > 1004.1.1": null,
+                        "has_war": false,
+                        "has_country_leader": {
+                            "character": "CHARACTER_MAUD_PIE",
+                            "ruling_only": true
+                        },
+                        "is_in_faction_with": "C23"
+                    },
+                    "country_event": "C12_MAIN.35"
+                }
+            }
+        }
+    }
+}

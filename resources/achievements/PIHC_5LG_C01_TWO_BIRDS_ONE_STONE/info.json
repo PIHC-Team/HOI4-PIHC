@@ -1,0 +1,18 @@
+{
+    "possible": {
+        "difficulty > 1": null,
+        "has_start_date < 1002.12.2": null,
+        "has_any_custom_difficulty_setting": false,
+        "game_rules_allow_achievements": true,
+        "is_ironman": true,
+
+        "tag": "C01"
+    },
+    "happened": {
+        "hidden_trigger": {
+            "C01": {
+                "has_country_flag": "PIHC_ACHIEVEMENT_FLAG_C01_TWO_BIRDS_ONE_STONE"
+            }
+        }
+    }
+}

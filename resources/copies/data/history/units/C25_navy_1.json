@@ -1,0 +1,233 @@
+{
+    "units": {
+        "fleet": {
+            "name": "Sea of Clouds Fleet",
+            "naval_base": 5800,
+            "task_force": {
+                "name": "Sea of Clouds Fleet 1",
+                "location": 16198,
+                "ship": {
+                    "name": "Prism Wing",
+                    "definition": "battleship",
+                    "pride_of_the_fleet": true,
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Harmony Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "Celaeno",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "Mullet",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D3": {
+                    "name": "Lix Spittle",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D4": {
+                    "name": "Boyle",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D5": {
+                    "name": "Squabble",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                }
+            },
+            "task_force__D1": {
+                "name": "Sea of Clouds Fleet 2",
+                "location": 16319,
+                "ship": {
+                    "name": "Sonic Rainboom",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Harmony Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "Awesome Time",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Awesome Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "Gem Stones",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Awesome Class"
+                        }
+                    }
+                },
+                "ship__D3": {
+                    "name": "Rainy Days",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Awesome Class"
+                        }
+                    }
+                }
+            }
+        },
+        "fleet__D1": {
+            "name": "Ornithia Fleet",
+            "naval_base": 742,
+            "task_force": {
+                "name": "Ornithia Fleet 1",
+                "location": 15373,
+                "ship": {
+                    "name": "Ornithia",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Harmony Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "Prince Aello",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "Princess Ocypete",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D3": {
+                    "name": "Princess Zephyra",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                }
+            },
+            "task_force__D1": {
+                "name": "Ornithia Fleet 2",
+                "location": 16781,
+                "ship": {
+                    "name": "Tree of Love",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Harmony Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "Queen Ozomene",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "King Thaumus",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C25",
+                            "version_name": "Leader Class"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

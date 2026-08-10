@@ -1,0 +1,30 @@
+{
+    "name": "Ancient Ranged Weapon",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 0,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_BOW"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_I",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_SHIELD_CROSSBOW",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1000
+}

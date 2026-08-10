@@ -1,0 +1,20 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C04": {
+                "country_event": {
+                    "id": "C04_MAIN.15",
+                    "days": 31
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

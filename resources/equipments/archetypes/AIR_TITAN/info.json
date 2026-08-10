@@ -1,0 +1,20 @@
+{
+    "type": "strategic_bomber",
+    "interface_category": "interface_category_air",
+
+    "allowed_types": [
+        "strategic_bomber"
+    ],
+    "allow_mission_type": [
+        "recon",
+        "training",
+        "paradrop",
+        "air_supply",
+        "interception",
+        "air_superiority",
+        "port_strike",
+        "cas",
+        "attack_logistics",
+        "strategic_bomber"
+    ]
+}

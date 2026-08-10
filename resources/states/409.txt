@@ -1,0 +1,47 @@
+state = {
+    id = 409
+    name = STATE_409
+    provinces = {
+        667
+        1398
+        1594
+        2068
+        2130
+        2241
+        2668
+        4456
+        4557
+        5862
+        6285
+        6399
+        6641
+        10706
+        10774
+        10841
+        10877
+        10890
+        10956
+        11009
+    }
+    manpower = 90863
+    state_category = large_town
+    history = {
+        owner = C09
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 2
+            dockyard = 3
+            2068 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C09
+        victory_points = {
+            2068
+            25
+        }
+    }
+    resources = {
+        chromium = 1
+    }
+}

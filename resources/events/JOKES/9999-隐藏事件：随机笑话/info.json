@@ -1,0 +1,369 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "random_list": {
+                "seed": "random",
+                "1": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_001_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.1"
+                },
+                "1__D1": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_002_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.2"
+                },
+                "1__D2": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_003_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.3"
+                },
+                "1__D3": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_004_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.4"
+                },
+                "1__D4": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_005_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.5"
+                },
+                "1__D5": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_006_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.6"
+                },
+                "1__D6": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_007_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.7"
+                },
+                "1__D7": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_008_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.8"
+                },
+                "1__D8": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_009_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.9"
+                },
+                "1__D9": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_010_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.10"
+                },
+                "1__D10": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_011_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.11"
+                },
+                "1__D11": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_012_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.12"
+                },
+                "1__D12": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_013_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.13"
+                },
+                "1__D13": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_014_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.14"
+                },
+                "1__D14": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_015_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.15"
+                },
+                "1__D15": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_016_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.16"
+                },
+                "1__D16": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_017_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.17"
+                },
+                "1__D17": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_018_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.18"
+                },
+                "1__D18": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_019_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.19"
+                },
+                "1__D19": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_020_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.20"
+                },
+                "1__D20": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_021_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.21"
+                },
+                "1__D21": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_022_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.22"
+                },
+                "1__D22": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_023_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.23"
+                },
+                "1__D23": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_024_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.24"
+                },
+                "1__D24": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_025_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.25"
+                },
+                "1__D25": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_026_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.26"
+                },
+                "1__D26": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_027_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.27"
+                },
+                "1__D27": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_028_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.28"
+                },
+                "1__D28": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_029_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.29"
+                },
+                "1__D29": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_030_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.30"
+                },
+                "1__D30": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_031_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.31"
+                },
+                "1__D31": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_032_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.32"
+                },
+                "1__D32": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_033_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.33"
+                },
+                "1__D33": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_034_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.34"
+                },
+                "1__D34": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_035_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.35"
+                },
+                "1__D35": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_036_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.36"
+                },
+                "1__D36": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_037_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.37"
+                },
+                "1__D37": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_038_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.38"
+                },
+                "1__D38": {
+                    "modifier": {
+                        "factor": 8,
+                        "NOT": {
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_039_SEEN"
+                        }
+                    },
+                    "country_event": "JOKES.39"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

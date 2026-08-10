@@ -1,0 +1,16 @@
+{
+    "name": "Contemporary Light Tank",
+    "parent": "EQUIPMENT_TANK_LIGHT_MODERN",
+    "alpha_global": 0.5,
+    
+    "resources": {
+        "steel": 10,
+        "rubber": 6,
+        "tungsten": 6
+    },
+    "fuel_consumption": 0.15,
+
+    "maximum_speed": 22.0,
+    "entrenchment": 8.0,
+    "recon": 4
+}

@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_manpower": 250,
+            "random_list": {
+                "seed": "random",
+                "80": {
+                    "UPGRADE_HYGIENE": true
+                },
+                "20": {
+                    "DOWNGRADE_HYGIENE": true
+                }
+            }
+        }
+    ],
+    "mean_time_to_happen": {
+        "years": 4,
+        "modifier": {
+            "factor": 9999,
+            "date < 1003.03.15": null
+        }
+    }
+}

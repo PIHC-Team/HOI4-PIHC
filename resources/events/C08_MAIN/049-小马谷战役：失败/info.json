@@ -1,0 +1,106 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR",
+                "add_to_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "value": -1
+                },
+                "clamp_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "min": 1,
+                    "max": 8
+                }
+            },
+            "news_event": {
+                "id": "C08_MAIN.52"
+            },
+            "add_stability": -0.1,
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_1",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_2",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_3",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_4",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_5",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_6",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                }
+            },
+            "else_if__D5": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_7",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                }
+            },
+            "else_if__D6": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_8",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                }
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "remove_ideas": "IDEA_C08_PONYVILLE_WAR",
+            "white_peace": {
+                "tag": "C02"
+            }
+        }
+    },
+    "is_triggered_only": true
+}

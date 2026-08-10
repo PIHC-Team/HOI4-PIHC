@@ -1,0 +1,14 @@
+{
+    "name": "Burnt Umber",
+    "gender": "male",
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_RULE_ENFORCER"
+        ],
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    }
+}

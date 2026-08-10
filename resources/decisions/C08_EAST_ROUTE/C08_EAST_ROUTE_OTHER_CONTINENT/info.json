@@ -1,0 +1,41 @@
+{
+    "name": "East Route Continent",
+    "priority": 89999,
+    
+    "cost": 35,
+    "days_remove": 30,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_OTHER_CONTINENT"
+    },
+    "available": {
+        "num_of_civilian_factories_available_for_projects > 2": null
+    },
+    "modifier": {
+        "civilian_factory_use": 3
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "DECISION_C08_EAST_ROUTE_OTHER_CONTINENT_TOOLTIP",
+        "C18": {
+            "country_event": {      
+                "id": "C08_RADIO.8"
+            }
+        },
+        "C19": {
+            "country_event": {      
+                "id": "C08_RADIO.8"
+            }
+        },
+        "C20": {
+            "country_event": {      
+                "id": "C08_RADIO.8"
+            }
+        },
+        "hidden_effect": {
+            
+        }
+    },
+    "ai_will_do": {
+        "base": 10000
+    },
+    "fire_only_once": true
+}

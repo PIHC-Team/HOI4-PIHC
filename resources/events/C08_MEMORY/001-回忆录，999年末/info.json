@@ -1,0 +1,24 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_MEMORY_1"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_MEMORY_1",
+        "name": "EVENT_C08_MEMORY_1_o0"
+    },
+    "option__D1": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_MEMORY_1"
+        },
+        "name": "EVENT_C08_MEMORY_1_o1"
+    },
+    "is_triggered_only": true
+}

@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "add_resource": {
+                "type": "logs",
+                "amount": 45,
+                "state": 526
+            },
+            "add_resource__D1": {
+                "type": "logs",
+                "amount": 45,
+                "state": 531
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C09_OAK_TREES"
+            }
+        }
+    ],
+    "hidden": true,
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

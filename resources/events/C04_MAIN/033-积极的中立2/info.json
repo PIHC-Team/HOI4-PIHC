@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "364": {
+                "add_claim_by": "C04"
+            },
+            "365": {
+                "add_claim_by": "C04"
+            },
+            "hidden_effect": {
+                "ADD_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_1": true
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

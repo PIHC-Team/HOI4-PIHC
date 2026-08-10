@@ -1,0 +1,58 @@
+{
+    "name": "Pin Game 1",
+    "priority": 101,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "custom_trigger_tooltip": {
+            "tooltip": "C08_PIN_GAME_1_DONE_TOOLITP",
+            "NOT": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT"
+                }
+            }
+        }
+    },
+    "available": {
+        "C08": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C08_PIN": true,
+            "has_country_leader": {
+                "character": "CHARACTER_STARLIGHT_GLIMMER",
+                "ruling_only": true
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "C08_PIN_SWITCH_ON_TOOLITP",
+                "has_country_flag": "PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON"
+            },
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK": true
+        },
+        "C02": {
+            "has_country_leader": {
+                "character": "CHARACTER_TRIXIE_LULAMOON",
+                "ruling_only": true
+            }
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "C08_PIN_GAME_1_REPEAT_TOOLITP",
+            "NOT": {
+                "is_in_array": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_ANSWERS",
+                    "value": "C08.ARRAY_C08_PIN_GAME_1_DECISIONS^3"
+                }
+            }
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "add_to_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_1_ANSWERS",
+                "value": "C08.ARRAY_C08_PIN_GAME_1_DECISIONS^3"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

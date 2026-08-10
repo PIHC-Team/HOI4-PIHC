@@ -1,0 +1,15 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "add_political_power": 10,
+        "add_stability": 0.05,
+        "every_other_country": {
+            "country_event": {      
+                "id": "C08_RADIO.1"
+            }
+        }
+    },
+    "is_triggered_only": true
+}

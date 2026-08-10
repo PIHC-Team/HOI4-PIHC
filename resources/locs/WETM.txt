@@ -1,0 +1,41 @@
+[zh.WETM_ZAP_APPLES]
+£wetm_zap §Y魔虹苹果§!
+[en.WETM_ZAP_APPLES]
+£wetm_zap §YZap Apples§!
+
+[zh.WETM_ORE_BOULDERS]
+£wetm_boulder §Y原矿巨石§!
+[en.WETM_ORE_BOULDERS]
+£wetm_boulder §YOre Boulders§!
+
+[zh.WETM_BLUEPRINTS]
+£wetm_blueprint §Y科技蓝图§!
+[en.WETM_BLUEPRINTS]
+£wetm_blueprint §YBlueprints§!
+
+[zh.WETM_DEV_BONDS]
+£wetm_bond §Y发展债券§!
+[en.WETM_DEV_BONDS]
+£wetm_bond §YDevelopment Bonds§!
+
+[zh.CUSTOM_COST_DEV_BONDS_DYNAMIC]
+£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|Y0]
+[en.CUSTOM_COST_DEV_BONDS_DYNAMIC]
+£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|Y0]
+[zh.CUSTOM_COST_DEV_BONDS_DYNAMIC_blocked]
+£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|R0]
+[en.CUSTOM_COST_DEV_BONDS_DYNAMIC_blocked]
+£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|R0]
+[zh.CUSTOM_COST_DEV_BONDS_DYNAMIC_tooltip]
+消耗[?global.VAR_DEV_BONDS_EXCHANGE|Y0] 个 $WETM_DEV_BONDS$
+[en.CUSTOM_COST_DEV_BONDS_DYNAMIC_tooltip]
+Costs [?global.VAR_DEV_BONDS_EXCHANGE|Y0] $WETM_DEV_BONDS$
+
+[zh.WETM_DEV_BONDS_APPRECIATION]
+£wetm_bond §Y发展债券§! 将会升值
+[en.WETM_DEV_BONDS_APPRECIATION]
+£wetm_bond §YDevelopment Bonds§! will appreciate
+[zh.WETM_DEV_BONDS_DEPRECIATION]
+£wetm_bond §Y发展债券§! 将会贬值
+[en.WETM_DEV_BONDS_DEPRECIATION]
+£wetm_bond §YDevelopment Bonds§! will depreciate

@@ -1,0 +1,23 @@
+{
+    "category": "news",
+    "date": "1007.06.28",
+    "date_scope": "C22",
+    "immediate": {
+        "hidden_effect": {
+            "C22": {
+                "news_event": {
+                    "id": "SUPER_NEWS.6"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,354 @@
+{
+    "faction_goal_a_large_faction": {
+        "name": "a_large_faction_goal_name",
+        "description": "a_large_faction_goal_desc",
+        "category": "medium_term",
+        "group": "FOCUS_FILTER_POLITICAL_CHARACTER",
+        "visible": {
+            "num_faction_members > 4": null
+        },
+        "completed": {
+            "num_faction_members > 9": null
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_FACTION_LEADER",
+            "add_faction_initiative": 1
+        },
+        "ai_will_do": {
+            "base": 1
+        }
+    },
+    "faction_goal_air_superiority": {
+        "name": "air_superiority_goal_name",
+        "description": "air_superiority_goal_desc",
+        "category": "medium_term",
+        "group": "FOCUS_FILTER_AIR_XP",
+        "available": [],
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "unit": "fighter",
+                "size > 999": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_collection_element": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": {
+                        "faction_members": null,
+                        "limit": {
+                            "has_deployed_air_force_size": {
+                                "size > 249": null,
+                                "type": "fighter"
+                            }
+                        }
+                    },
+                    "name": "ALL_FACTION_MEMBERS_WITH_250_FIGHTERS"
+                },
+                "air_experience": 50,
+                "add_mastery": {
+                    "amount": 100,
+                    "track": "fighter_aircraft"
+                }
+            },
+            "custom_effect_tooltip__D1": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D2": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "add_tech_bonus": {
+                    "name": "air_superiority_tech_bonus",
+                    "bonus": 0.5,
+                    "uses": 1,
+                    "category": "air_equipment"
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "num_of_military_factories > 39": null
+            },
+            "modifier__D1": {
+                "add": 1,
+                "count_in_collection": {
+                    "collection": {
+                        "input": "game:scope",
+                        "operators": [
+                            "faction_members"
+                        ],
+                        "name": "FACTION_NAME"
+                    },
+                    "buildings": [
+                        "arms_factory"
+                    ],
+                    "size > 149": null
+                }
+            }
+        }
+    },
+    "faction_goal_industrial_expansion": {
+        "name": "industrial_expansion_goal_name",
+        "description": "industrial_expansion_goal_desc",
+        "category": "medium_term",
+        "group": "FOCUS_FILTER_INDUSTRY",
+        "visible": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "industrial_complex"
+                ],
+                "size > 49": null
+            }
+        },
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "industrial_complex"
+                ],
+                "size > 149": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "AT_LEAST_50_CIVS",
+                "visible_when_empty": true,
+                "limit": {
+                    "num_of_civilian_factories > 49": null
+                },
+                "add_tech_bonus": {
+                    "name": "industrial_expansion_tech_bonus",
+                    "bonus": 0.5,
+                    "uses": 2,
+                    "category": "industry"
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": 1,
+                "is_major": true
+            },
+            "modifier__D1": {
+                "add": 1,
+                "is_major": true
+            },
+            "modifier__D2": {
+                "add": 1,
+                "date < 1938.1.1": null
+            }
+        }
+    },
+    "faction_goal_industrial_research": {
+        "name": "industrial_research_goal_name",
+        "description": "industrial_research_goal_desc",
+        "category": "medium_term",
+        "group": "FOCUS_FILTER_RESEARCH",
+        "visible": {
+            "any_allied_country": {
+                "NOT": {
+                    "has_tech": "construction4"
+                }
+            }
+        },
+        "completed": {
+            "ROOT": {
+                "has_tech": "construction4"
+            },
+            "all_allied_country": {
+                "has_tech": "construction4"
+            },
+            "collection_size": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ]
+                },
+                "value > 4": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "INFLUENCE_ABOVE_30_PERCENT",
+                "visible_when_empty": true,
+                "limit": {
+                    "faction_influence_ratio > 0.3": null
+                },
+                "add_faction_initiative": 1
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": 1,
+                "collection_size": {
+                    "input": {
+                        "input": "game:scope",
+                        "operators": [
+                            "faction_members"
+                        ]
+                    },
+                    "value < 5": null
+                }
+            },
+            "modifier__D1": {
+                "add": 1,
+                "date > 1938.1.1": null,
+                "date < 1941.1.1": null
+            }
+        }
+    },
+    "faction_goal_a_military_base": {
+        "name": "a_military_base_goal_name",
+        "description": "a_military_base_goal_desc",
+        "category": "medium_term",
+        "group": "FOCUS_FILTER_INDUSTRY",
+        "visible": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "arms_factory"
+                ],
+                "size > 49": null
+            }
+        },
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "arms_factory"
+                ],
+                "size > 149": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "AT_LEAST_50_MILS",
+                "visible_when_empty": true,
+                "limit": {
+                    "num_of_military_factories > 49": null
+                },
+                "add_tech_bonus": {
+                    "name": "a_military_base_tech_bonus",
+                    "bonus": 0.5,
+                    "uses": 2,
+                    "category": "excavation_tech"
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "date > 1938.1.1": null
+            },
+            "modifier__D1": {
+                "add": 1,
+                "is_major": true
+            }
+        }
+    },
+    "faction_goal_aggressive_defense": {
+        "name": "aggressive_defense_goal_name",
+        "description": "aggressive_defense_goal_desc",
+        "group": "FOCUS_FILTER_WAR_SUPPORT",
+        "category": "medium_term",
+        "visible": {
+            "FROM": {
+                "has_defensive_war": true
+            }
+        },
+        "completed": {
+            "any_allied_country": {
+                "has_defensive_war": true
+            },
+            "collection_size": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": {
+                        "faction_members": null,
+                        "limit": {
+                            "any_enemy_country": {
+                                "has_offensive_war_with": "ROOT",
+                                "casualties_inflicted_by": {
+                                    "opponent": "PREV",
+                                    "thousands > 250": null
+                                }
+                            }
+                        }
+                    },
+                    "name": "COLLECTION_CASUALTIES_INFLICTED_BY_FACTION_MEMBERS"
+                },
+                "value > 0": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "ALL_FACTION_MEMBERS_INFLICTED_250K_CASUALTIES",
+            "every_faction_member": {
+                "limit": {
+                    "any_enemy_country": {
+                        "has_offensive_war_with": "ROOT",
+                        "casualties_inflicted_by": {
+                            "opponent": "PREV",
+                            "thousands > 250": null
+                        }
+                    }
+                },
+                "add_faction_initiative": 1
+            },
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D3": "ALL_FACTION_MEMBERS",
+            "every_faction_member__D1": {
+                "army_experience": 50
+            }
+        },
+        "ai_will_do": {
+            "base": 1
+        }
+    }
+}

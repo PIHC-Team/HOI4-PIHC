@@ -1,0 +1,34 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_MIL_AIR_BLADE",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_MIL_AIR_MODERN",
+        "focus__D1": "FOCUS_C15_SOMBRA_MIL_AIR_BLADE",
+        "focus__D2": "FOCUS_C15_SOMBRA_MIL_AIR_TITAN"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "air_experience": 100,
+        "add_ideas": "IDEA_C15_SOMBRA_MIL_AIR_FULL",
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

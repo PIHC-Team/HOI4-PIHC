@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "hidden_effect": {
+                "C02": {
+                    "END_ALL_WARS": true,
+                    "leave_faction": true,
+                    "set_major": false
+                },
+                "C08": {
+                    "set_variable": {
+                        "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                        "value": "C02"
+                    },
+                    "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                    "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

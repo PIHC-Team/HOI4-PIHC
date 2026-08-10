@@ -1,0 +1,499 @@
+{
+    "on_actions": {
+        "on_state_control_changed": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 415
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.1"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.2"
+                        }
+                    },
+                    "C06": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.3"
+                        }
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 450
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.4"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.5"
+                        }
+                    },
+                    "C06": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.6"
+                        }
+                    }
+                },
+                "if__D2": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 888
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.7"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.8"
+                        }
+                    },
+                    "C06": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.9"
+                        }
+                    }
+                },
+                "if__D3": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 481
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.10"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.11"
+                        }
+                    },
+                    "C06": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.12"
+                        }
+                    }
+                },
+                "if__D4": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 549,
+                            "has_state_flag": "PIHC_STATE_FLAG_BALTIMARE_UPRISING"
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.13"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.14"
+                        }
+                    },
+                    "C06": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.15"
+                        }
+                    }
+                },
+                "if__D5": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 63
+                        },
+                        "FROM": {
+                            "tag": "C01"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C01"
+                        }
+                    },
+                    "C26": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.20"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.21"
+                        }
+                    },
+                    "C01": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.22"
+                        }
+                    }
+                },
+                "if__D6": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 431
+                        },
+                        "FROM": {
+                            "tag": "C01"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C01"
+                        }
+                    },
+                    "C26": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.23"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.24"
+                        }
+                    },
+                    "C01": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.25"
+                        }
+                    }
+                },
+                "if__D7": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 374
+                        },
+                        "FROM": {
+                            "tag": "C01"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C01"
+                        }
+                    },
+                    "C26": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.26"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.27"
+                        }
+                    },
+                    "C01": {
+                        "country_event": {
+                            "id": "LIBERATION_WAR.28"
+                        }
+                    }
+                },
+                "if__D8": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 481
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06",
+                            "controls_state": 888
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.12"
+                        }
+                    }
+                },
+                "if__D9": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 888
+                        },
+                        "FROM": {
+                            "tag": "C06"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C06",
+                            "controls_state": 481
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.12"
+                        }
+                    }
+                },
+                "if__D10": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 504
+                        },
+                        "FROM": {
+                            "tag": "C02"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "has_war_with": "C02"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.48"
+                        }
+                    }
+                },
+                "if__D11": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 481
+                        },
+                        "FROM": {
+                            "tag": "C08"
+                        },
+                        "ROOT": {
+                            "tag": "C02"
+                        },
+                        "C08": {
+                            "has_war_with": "C02"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.49"
+                        }
+                    }
+                },
+                "if__D13": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 86
+                        },
+                        "FROM": {
+                            "tag": "C01"
+                        },
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "C08": {
+                            "owns_state": 86,
+                            "OR": {
+                                "is_in_faction_with": "C12",
+                                "is_in_faction_with__D1": "C14"
+                            }
+                        },
+                        "OR": {
+                            "country_exists": "C12",
+                            "country_exists__D1": "C14"
+                        }
+                    },
+                    "C08": {
+                        "set_country_flag": "PIHC_C08_STARLIGHT_HAVE_DECIDE_SISTER_CASTLE",
+                        "country_event": {
+                            "id": "C12_MAIN.102"
+                        }
+                    }
+                }
+            }
+        },
+        "on_civil_war_end_before_annexation": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C01"
+                        },
+                        "FROM": {
+                            "tag": "Z01"
+                        }
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "LIBERATION_WAR.16"
+                        }
+                    }
+                }
+            }
+        },
+        "on_capitulation": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C06"
+                        },
+                        "FROM": {
+                            "tag": "C08"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.12"
+                        }
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C01"
+                        },
+                        "FROM": {
+                            "tag": "C08"
+                        }
+                    },
+                    "set_variable": {
+                        "var": "global.VAR_THE_COUNTRY_THAT_DEFEATED_C01",
+                        "value": "FROM"
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "C01_MAIN.31"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.58"
+                        }
+                    }
+                },
+                "if__D2": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C08"
+                        },
+                        "FROM": {
+                            "tag": "C01"
+                        }
+                    },
+                    "C08": {
+                        "country_event": {
+                            "id": "C08_MAIN.60"
+                        }
+                    }
+                },
+                "if__D3": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C28"
+                        },
+                        "FROM": {
+                            "tag": "C26"
+                        }
+                    },
+                    "C28": {
+                        "country_event": {
+                            "id": "C28_MAIN.1"
+                        }
+                    }
+                },
+                "if__D4": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C01"
+                        },
+                        "FROM": {
+                            "tag": "C12"
+                        }
+                    },
+                    "set_variable": {
+                        "var": "global.VAR_THE_COUNTRY_THAT_DEFEATED_C01",
+                        "value": "FROM"
+                    },
+                    "C01": {
+                        "news_event": {
+                            "id": "C01_MAIN.31"
+                        }
+                    },
+                    "C12": {
+                        "if": {
+                            "limit": {
+                                "has_country_flag": "PIHC_C12_LIMESTONE_HAS_ENHANCEMENT"
+                            },
+                            "country_event": {
+                                "id": "C12_MAIN.91"
+                            }
+                        },
+                        "else": {
+                            "country_event": {
+                                "id": "C12_MAIN.89"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

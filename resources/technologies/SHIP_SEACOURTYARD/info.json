@@ -1,0 +1,27 @@
+{
+    "name": "Surge of Seas",
+    "category": "naval",
+
+    "x": 2,
+    "y": 6,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_courtyard"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_SEACOURTYARD"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIP_SEACOURTYARD_IRON",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1001
+}

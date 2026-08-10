@@ -1,0 +1,33 @@
+{
+    "name": "Early Radar",
+    "category": "electronics",
+
+    "x": 0,
+    "y": 6,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_commu_tech"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_building": {
+        "building": "radar_station",
+		"level": 1
+    },
+    "coordination_bonus": 0.02,
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_COMM_III",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1002
+}

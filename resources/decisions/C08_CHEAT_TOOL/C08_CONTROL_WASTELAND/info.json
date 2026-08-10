@@ -1,0 +1,37 @@
+{
+    "name": "Control Wasteland",
+    "priority": 99,
+    
+    "cost": 0,
+    "allowed": {
+        "tag": "C08"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT"
+    },
+    "complete_effect": {
+        "add_state_core": 337,
+        "transfer_state": 337,
+        "add_state_core__D1": 362,
+        "transfer_state__D1": 362,
+        "add_state_core__D2": 344,
+        "transfer_state__D2": 344,
+        "add_state_core__D3": 34,
+        "transfer_state__D3": 34,
+        "add_state_core__D4": 299,
+        "transfer_state__D4": 299,
+        "add_state_core__D5": 319,
+        "transfer_state__D5": 319,
+        "C00": {
+            "remove_state_core": 337,
+            "remove_state_core__D1": 362,
+            "remove_state_core__D2": 344,
+            "remove_state_core__D3": 334,
+            "remove_state_core__D4": 299,
+            "remove_state_core__D5": 319
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "trigger": {
+                "NOT": {
+                    "has_idea": "IDEA_DINFANTRY_LPMIG"
+                },
+                "NOT__D1": {
+                    "has_idea": "IDEA_DTANK_LPMIG"
+                }
+            },
+            "add_political_power": -300,
+            "add_ideas": "IDEA_DINFANTRY_LPMIG",
+            "add_ideas__D1": "IDEA_DTANK_LPMIG",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_WORLD_EXPO_LP_PURCHASE"
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "trigger": {
+                "has_idea": "IDEA_DTANK_LPMIG"
+            },
+            "add_political_power": -200,
+            "add_ideas": "IDEA_DTANK_LPMIG",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_WORLD_EXPO_LP_PURCHASE"
+        },
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "trigger": {
+                "NOT": {
+                    "has_idea": "IDEA_DINFANTRY_LPMIG"
+                }
+            },
+            "add_political_power": -200,
+            "add_ideas": "IDEA_DINFANTRY_LPMIG",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_WORLD_EXPO_LP_PURCHASE"
+        },
+        {
+            "ai_chance": {
+                "factor": 90
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

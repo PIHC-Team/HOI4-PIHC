@@ -1,0 +1,19 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "navy_chief",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_SILVERSTREAM"
+        ],
+        "available": {
+            "custom_trigger_tooltip": {
+                "tooltip": "CHARACTER_SILVERSTREAM_TOOLTIP",
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_SILVERSTREAM"
+            }
+        },
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

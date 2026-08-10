@@ -1,0 +1,31 @@
+{
+    "name": "Hidden",
+    "category": "support",
+
+    "x": 0,
+    "y": 0,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_project"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_MISSILE_ELEC"
+    ],
+    "enable_equipment_modules": [
+        "MODULE_TURRET_5B_ELECMAG"
+    ],
+    "enable_subunits": [
+    ],
+    "allow": {
+        "always": false
+    },
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1000
+}

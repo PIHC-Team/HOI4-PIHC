@@ -1,0 +1,25 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_ECONOMIC_RECOVERY_II",
+    "prerequisite": {
+        "focus": "FOCUS_C15_ECONOMIC_RECOVERY_II"
+    },
+    "bypass": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C15_INDEPENDENCE_WAR"
+    },
+    "cost": 1,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "completion_reward": {
+        "add_political_power": 150
+    }
+}

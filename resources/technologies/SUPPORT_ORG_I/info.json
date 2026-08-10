@@ -1,0 +1,47 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 4,
+    "y": 7,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_organization"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "army_org_factor": 0.05,
+    "army_org_regain": 0.05,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT": 1
+    },
+    "path": {
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "date > 1003.1.1": null
+                },
+                "modifier__D1": {
+                    "factor": 20,
+                    "date > 1004.1.1": null
+                },
+                "modifier__D2": {
+                    "factor": 30,
+                    "date > 1005.1.1": null
+                }
+            },
+    "research_cost": 1.5,
+    "start_year": 1002
+}

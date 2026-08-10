@@ -1,0 +1,28 @@
+{
+    "name": "Muffins",
+    "priority": 50,
+    
+    "cost": 0,
+    "days_re_enable": 1,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "CUSTOM_COST_MUFFIN_ROULETTE_DYNAMIC_OWN_tooltip",
+            "check_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": "ROOT.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST",
+                "compare": "greater_than_or_equals"
+            }
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "C03_ROULETTE_OPEN_NEXT": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

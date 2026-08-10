@@ -1,0 +1,34 @@
+{
+    "name": "Muffins",
+    "priority": 100,
+    
+    "cost": 0,
+    "is_good": true,
+    "selectable_mission": false,
+    "days_mission_timeout": 60,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C03_MUFFIN_ROULETTE_TASK_5_DO_NOTHING_TOOLTIP",
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING"
+            }
+        }
+    },
+    "complete_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING"
+    },
+    "timeout_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING",
+        "custom_effect_tooltip": "CUSTOM_GAIN_MUFFINS_1500",
+        "add_to_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1500
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+    }
+}

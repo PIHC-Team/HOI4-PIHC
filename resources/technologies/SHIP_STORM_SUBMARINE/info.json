@@ -1,0 +1,30 @@
+{
+    "name": "Storm Submarine",
+    "category": "naval",
+
+    "x": 6,
+    "y": 16,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_submarine",
+        "pihc_storm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_STORM_SUBMARINE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_ENER_I": 1,
+        "TECHNOLOGY_STORM_CORE": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1006
+}

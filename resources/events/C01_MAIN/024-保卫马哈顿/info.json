@@ -1,0 +1,65 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "C06": {
+                "give_military_access": "C02"
+            },
+            "C02": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_INTERFERE_C06",
+                "custom_effect_tooltip": "EVENT_C01_MAIN_24_TOOLTIP"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C06"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C02",
+                    "tag__D2": "C06",
+                    "tag__D3": "C08",
+                    "tag__D4": "C23",
+                    "tag__D5": "C05"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C08",
+                    "tag__D1": "C05",
+                    "tag__D2": "C23"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

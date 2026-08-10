@@ -1,0 +1,73 @@
+{
+    "name": "Annex EEA",
+    "priority": 110,
+    
+    "cost": 200,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "visible": {
+        "has_completed_focus": "FOCUS_C01_UNIFICATION_POLICY",
+        "has_country_flag": "PIHC_COUNTRY_FLAG_EEA_NEW_REGULATIONS",
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_C10_MERGED"
+        },
+        "C10": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        },
+        "power_balance_value": {
+            "id": "BOP_C10_INDEPENDENCE",
+            "value < 0.8": null
+        },
+        "C10":{
+            "is_puppet_of": "C01"
+        }
+    },
+    "complete_effect": {
+        "C10": {
+            "remove_all_power_balance_modifiers": {
+                "id": "BOP_C10_INDEPENDENCE"
+            },
+            "remove_power_balance": {
+                "id": "BOP_C10_INDEPENDENCE"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C10_MERGED"
+    },
+    "remove_effect": {
+        "effect_tooltip": {
+            "annex_country": {
+                "target": "C10",
+                "transfer_troops": true
+            }
+        },
+        "hidden_effect": {
+            "set_variable": {
+                "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                "value": "C10"
+            },
+            "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+            "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+        },
+        "news_event": {
+            "id": "C01_MAIN.9"
+        }
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

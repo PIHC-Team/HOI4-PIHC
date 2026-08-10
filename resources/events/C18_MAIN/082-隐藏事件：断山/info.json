@@ -1,0 +1,48 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C22": {
+                "every_controlled_state": {
+                    "if": {
+                        "limit": {
+                            "any_state_division": {
+                                "division_has_battalion_in_template": "tirek"
+                            }
+                        }
+                    },
+                    "teleport_armies": {
+                        "limit": {
+                            "tag": "C22"
+                        },
+                        "to_state": 772
+                    }                    
+                },
+                "772": {
+                    "transfer_state_to": "C22"
+                },
+                "ADD_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES_1": true
+            },
+            "C18": {
+                "772": {
+                    "set_state_name": "STATE_772_DUAN_SHAN"
+                },
+                "country_event": {
+                    "id": "C18_MAIN.83",
+                    "days": 1
+                },
+                "ADD_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES_1": true,
+                "set_global_flag": "PIHC_GLOBAL_FLAG_DUAN_SHAN"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Coloratura",
+    "gender": "female",
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "all",
+        "cost": 400,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_FASHION_IDOL",
+            "TRAIT_HIGH_POLITICAL_ESTEEM",
+            "TRAIT_POPULAR"
+        ]
+    }
+}

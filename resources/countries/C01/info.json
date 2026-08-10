@@ -1,0 +1,364 @@
+{
+    "name": "Equestria Empire",
+    "rgb": [
+        248,
+        218,
+        216
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 369,
+        "set_popularities": {
+            "despotic": 75,
+            "democratic": 10,
+            "harmonicism": 10,
+            "equatism": 3,
+            "fascism": 2
+        },
+        "set_politics": {
+            "ruling_party": "despotic",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_NIGHTINGALE",
+            "CHARACTER_LILY_LACE",
+            "CHARACTER_SAPPHIRE_SHORES",
+            "CHARACTER_DIAMOND_TIARA",
+            "CHARACTER_DESCENT",
+            "CHARACTER_JET_SET",
+            "CHARACTER_FANCY_PANTS",
+            "CHARACTER_THE_HEADLESS_HORSE",
+            "CHARACTER_MORNING_GLORY",
+            "CHARACTER_UPPER_CRUST",
+            "CHARACTER_ROYAL_GUARD",
+            "CHARACTER_FLEUR_DE_LIS",
+            "CHARACTER_FIRE_FLARE",
+            "CHARACTER_COZY_GLOW",
+            "CHARACTER_SKY_FLOWER",
+            "CHARACTER_MIDNIGHT_FUN",
+            "CHARACTER_MOON_DANCER",
+            "CHARACTER_FEATHER_FLATTERFLY",
+            "CHARACTER_CINNAMON_CHAI",
+            "CHARACTER_ROXIE_RAVE",
+            "CHARACTER_REFLECTIVE_ROCK",
+            "CHARACTER_PRETTY_VISION",
+            "CHARACTER_POWDER_ROUGE",
+            "CHARACTER_PEACH_MELBA",
+            "CHARACTER_OCEAN_SPRAY",
+            "CHARACTER_OCEAN_DREAM"
+        ],
+        "activate_advisor": "CHARACTER_FANCY_PANTS",
+        "add_ideas_batch": [
+            "limited_exports",
+            "limited_conscription",
+            "partial_economic_mobilisation",
+            "IDEA_C01_FEUDAL_SYSTEM",
+            "IDEA_C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED",
+            "IDEA_ALL_THE_DARK_AGE",
+            "IDEA_ALL_LAW_ORTHODOXY",
+            "IDEA_DINFANTRY_EEMD"
+        ],
+        "create_faction": "FACTION_EQUESTRIA_EMPIRE_ORDER",
+        "add_to_faction_batch": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C10",
+            "C33",
+            "C59"
+        ],
+        "puppet": "C33",
+        "set_autonomy": {
+            "target": "C33",
+            "autonomous_state": "autonomy_pihc_district"
+        },
+        "puppet__D1": "C59",
+        "set_autonomy__D1": {
+            "target": "C59",
+            "autonomous_state": "autonomy_pihc_licensed"
+        },
+        "489": {
+            "add_core_of": "C53"
+        },
+        "give_guarantee_batch": [
+            "C06",
+            "C07",
+            "C09",
+            "C15",
+            "C16"
+        ],
+        "send_embargo_batch": [
+            "C05",
+            "C08",
+            "C23"
+        ],
+        "set_research_slots": 3,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_COMM_II": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C01_CANTERLOT_PACT",
+            "FOCUS_C01_COZY_GLOW_CORONATION",
+            "FOCUS_C01_IDEOLOGY_POLICY",
+            "FOCUS_C01_ECONOMIC_POLICY",
+            "FOCUS_C01_MILITARY_POLICY",
+            "FOCUS_C01_SCIENCE_POLICY"
+        ],
+        "set_power_balance": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "modifier": "BOP_C01_COZY_GLOW_EXHAUSTION_DAILY_COST"
+        },
+        "add_political_power": 400,
+        "set_stability": 0.45,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.3,
+        "set_convoys": 150,
+        "add_manpower": 10000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 1500
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 1500
+            },
+            {
+                "type": "ARCHETYPE_WITCHCRAFT",
+                "amount": 300
+            },
+            {
+                "type": "ARCHETYPE_SHIELD",
+                "amount": 300
+            },
+            {
+                "type": "ARCHETYPE_VEHICLE",
+                "amount": 80
+            },
+            {
+                "type": "ARCHETYPE_AIR_TRANSPORT",
+                "amount": 200
+            },
+            {
+                "type": "ARCHETYPE_AIR_SCOUT",
+                "amount": 20
+            },
+            {
+                "type": "ARCHETYPE_AIR_ARMED",
+                "amount": 120
+            },
+            {
+                "type": "train_equipment",
+                "amount": 120
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C01"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_FIRELANCE",
+                    "creator": "C01"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SHIELD_CROSSBOW",
+                    "creator": "C01"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_VEHICLE_STEEL",
+                    "creator": "C01"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II",
+                    "creator": "C01"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_TANK_LIGHT_RAM",
+                    "creator": "C01"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            }
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "542": {
+            "remove_core_of": "C01"
+        },
+        "459": {
+            "remove_core_of": "C01"
+        },
+        "487": {
+            "remove_core_of": "C01"
+        },
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Equestria Empire Historical AI",
+        "allowed": {
+            "tag": "C01"
+        },
+        "enable": {
+            "country_exists": "C01"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C01_SECRET_POLICE",
+            "FOCUS_C01_STRENGTHEN_PENETRATION",
+            "FOCUS_C01_STRENGTHEN_PROPAGANDA",
+            "FOCUS_C01_NEO_HARMONICISM",
+            "FOCUS_C01_EMPRESS_PRESTIGE",
+            "FOCUS_C01_NEW_HOLIDAYS",
+            "FOCUS_C01_CORRECTING_HISTORY",
+            "FOCUS_C01_QUESTIONNAIRE",
+            "FOCUS_C01_GREAT_JAHR_NULL",
+            "FOCUS_C01_MARESHALL_PLAN",
+            "FOCUS_C01_MILITARY_TECHNOLOGY",
+            "FOCUS_C01_SMILE",
+            "FOCUS_C01_REEDUCATION",
+            "FOCUS_C01_ENEMY_AMONG_US",
+            "FOCUS_C01_IMPROVE_LIVELIHOOD",
+            "FOCUS_C01_RECONSTRUCTION",
+            "FOCUS_C01_OUTSOURCING_INFRASTRUCTURE",
+            "FOCUS_C01_EQUESTRIA_CONSCRIPTION",
+            "FOCUS_C01_UNIVERSAL_SURVEILLANCE",
+            "FOCUS_C01_UNIFICATION_POLICY",
+            "FOCUS_C01_C02_OPERATION_GREENLIGHT",
+            "FOCUS_C01_C02_LOYALTY_TEST",
+            "FOCUS_C01_C02_EVERFREE_FIELDTRIP",
+            "FOCUS_C01_C02_PERFUME_BUSINESS",
+            "FOCUS_C01_C02_SILO_INSPECTION",
+            "FOCUS_C01_OUTSOURCING_LASPEGASUS",
+            "FOCUS_C01_CANTERLOT_MILITARY",
+            "FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II",
+            "FOCUS_C01_C02_PHASE_I",
+            "FOCUS_C01_C03_OPERATION_BLUEBERRY",
+            "FOCUS_C01_C03_WHAT_IS_SHE_LIKE",
+            "FOCUS_C01_C03_DELIVERY",
+            "FOCUS_C01_C03_MUFFIN_I",
+            "FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_III",
+            "FOCUS_C01_C02_PHASE_II",
+            "FOCUS_C01_ECONOMIC_RECOVERY",
+            "FOCUS_C01_SCIENCE_FREE",
+            "FOCUS_C01_C03_MUFFIN_II",
+            "FOCUS_C01_MILITARY_MAGIC",
+            "FOCUS_C01_C03_MUFFIN_III",
+            "FOCUS_C01_SCHOOL_FOR_GIFTED_UNICORNS",
+            "FOCUS_C01_C04_OPERATION_REDSKY",
+            "FOCUS_C01_C04_STRATUSBURG_SURVEY",
+            "FOCUS_C01_C03_MUFFIN_IV",
+            "FOCUS_C01_EDUCATION_REFORM",
+            "FOCUS_C01_C04_RUMOR_I",
+            "FOCUS_C01_C04_MILITARY_PRESSURE",
+            "FOCUS_C01_NEW_TEXTBOOK",
+            "FOCUS_C01_C02_REPLACER",
+            "FOCUS_C01_MILITARY_SUPPLY",
+            "FOCUS_C01_C03_DISCOVERY",
+            "FOCUS_C01_C04_INVITATION",
+            "FOCUS_C01_C04_RUMOR_II",
+            "FOCUS_C01_C03_MUFFIN_V",
+            "FOCUS_C01_C02_REPLACER",
+            "FOCUS_C01_MILITARY_MAGINO",
+            "FOCUS_C01_MILITARY_FAST_TRAINING",
+            "FOCUS_C01_EMPIRE_ACADEMY",
+            "FOCUS_C01_NEW_TEXTBOOK",
+            "FOCUS_C01_RENDERING_THREATS",
+            "FOCUS_C01_LAST_RESORT",
+            "FOCUS_C01_FRUITFUL_WORK",
+            "FOCUS_C01_MILITARY_AIR"
+        ]
+    }
+}

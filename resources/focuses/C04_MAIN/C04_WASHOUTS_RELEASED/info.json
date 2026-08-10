@@ -1,0 +1,25 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_WASHOUT_TOUR",
+    "prerequisite": {
+        "focus": "FOCUS_C04_WASHOUT_TOUR"
+    },
+    "cost": 1,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_WASHOUTS_RELEASED"
+    },
+    "completion_reward": {
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

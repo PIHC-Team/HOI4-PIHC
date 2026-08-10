@@ -1,0 +1,58 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_ECONOMIC_LEFTOVER",
+    "prerequisite": {
+        "focus": "FOCUS_C15_ECONOMIC_LEFTOVER"
+    },
+    "bypass": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C15_INDEPENDENCE_WAR"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C15_CHANGELING_FRIEND"
+    },
+    "cost": 3,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "completion_reward": {
+        "news_event": {
+            "id": "C15_MAIN.7",
+            "days": 1
+        },
+        "345": {
+            "set_demilitarized_zone": false,
+            "set_state_name": "STATE_345_FORMER_CONCESSION",
+            "remove_core_of": "C11"
+        },
+        "C11": {
+            "remove_resource_rights": 345
+        },
+        "add_popularity": {
+            "ideology": "fascism",
+            "popularity": 0.10
+        },
+        "add_popularity__D1": {
+            "ideology": "despotic",
+            "popularity": 0.05
+        },
+        "40": {
+            "if": {
+                "limit": {
+                    "is_owned_and_controlled_by": "C15"
+                },
+                "BUILD_A_MIC": true,
+                "BUILD_A_CIC": true,
+                "BUILD_A_CIC__D1": true,
+                "BUILD_A_CIC__D2": true
+            }
+        }
+    }
+}

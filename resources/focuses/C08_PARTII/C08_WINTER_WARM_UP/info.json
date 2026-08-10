@@ -1,0 +1,36 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_FADED_FRIENDSHIP",
+    "priority": 10,
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C08_PONIES_WILL"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_THROUGH_THE_FOG"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "country_event": {
+            "id": "C08_MAIN.21",
+            "days": 1
+        },
+        "hidden_effect": {
+            "country_event": {      
+                "id": "C08_MAIN.23",
+                "days": 4
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

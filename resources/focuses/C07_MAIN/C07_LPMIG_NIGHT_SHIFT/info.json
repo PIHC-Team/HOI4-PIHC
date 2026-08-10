@@ -1,0 +1,41 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_FF_MAGICAL",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_FF_MAGICAL"
+    },
+    "cost": 8,
+    "completion_reward": {
+        "set_technology": {
+            "TECHNOLOGY_WITCHCRAFT_I": 1
+        },
+        "580": {
+            "create_unit": {
+                "division": "name = \"油嘴滑舌披萨店夜班保安 (Flim and Flam’s Pizzeria Nightshift Security)\" division_template = \"魔法步兵安保队 (Magical Infantry Security Team)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                "owner": "C07",
+                "count": 2
+            },
+            "hidden_effect": {
+                "create_unit": {
+                    "division": "name = \"油嘴滑舌披萨店的？？？ (Flim and Flam’s Pizzeria ???)\" division_template = \"自动作战安保队 (Automata Security Team)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                    "owner": "C07",
+                    "count": 2
+                }
+            }
+        }
+    },
+    "available": {
+        "580": {
+            "is_owned_and_controlled_by": "C07"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

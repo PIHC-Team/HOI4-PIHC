@@ -1,0 +1,13 @@
+{
+    "name": "Myso",
+    "removal_cost": -1,
+    "available": {
+        "has_tech": "TECHNOLOGY_SUPPORT_NURSE_III"
+    },
+    "modifier": {
+        "monthly_population": 0.02,
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_2_MYSO_TOOLTIP"
+    },
+    "cost": 350,
+    "cancel_if_invalid": false
+}

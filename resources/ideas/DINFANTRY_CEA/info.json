@@ -1,0 +1,41 @@
+{
+    "name": "DINFANTRY_CEA",
+    "designer": true,
+    "category": "materiel_manufacturer",
+    "traits": [
+        "infantry_equipment_manufacturer"
+    ],
+    "cost": 150,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "country_exists": "C11",
+        "OR": {
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE_TOOLTIP",
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+            },
+            "tag": "C11",
+            "is_in_faction_with": "C11"
+        }
+    },
+    "research_bonus": {
+        "pihc_summon": 0.25
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_INFANTRY": {
+            "reliability": 0.02
+        },
+        "ARCHETYPE_AUTOMATA": {
+            "reliability": 0.10
+        }
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

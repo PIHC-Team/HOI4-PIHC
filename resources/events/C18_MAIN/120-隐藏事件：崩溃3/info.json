@@ -1,0 +1,65 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "217": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "224": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "779": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "213": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "203": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "country_event": {
+                "id": "C18_MAIN.121",
+                "days": 14
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

@@ -1,0 +1,32 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 12,
+
+    "land_reinforce_rate": 0.05,
+    "additional_brigade_column_size": 1,
+    "experience_gain_army_factor": 0.10,
+    "industrial_capacity_factory": 0.15,
+    "enable_tactic": "tactic_overwhelming_fire",
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_tide_of_iron"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_0_7_AIR_LAND",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

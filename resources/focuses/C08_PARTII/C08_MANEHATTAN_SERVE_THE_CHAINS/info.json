@@ -1,0 +1,79 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_MANEHATTAN_CALLING_OF_TROTTINGHAM",
+    "dy": 1,
+    "priority": 100,
+    "will_lead_to_war_with": "C06",
+    "cancelable": false,
+    "prerequisite": {
+        "focus": "FOCUS_C08_MANEHATTAN_IN_THE_STREET",
+        "focus__D1": "FOCUS_C08_MANEHATTAN_RUSH_VANGUARD"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_MANEHATTAN_CALLING_OF_TROTTINGHAM"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_MANEHATTAN_SERVE_THE_CHAINS_TOOLTIP",
+        "declare_war_on": {
+            "target": "C06",
+            "type": "liberate_wargoal"
+        },
+        "add_ideas": "IDEA_C08_MANEHATTAN_WAR",
+        "news_event": {
+            "id": "C08_MAIN.37",
+            "days": 1
+        },
+        "if": {       
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_TROTTINGHAM_MNS"
+            },
+            "C08": {
+                "set_state_controller": 4
+            }
+        },
+        "if__D1": {       
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_MANEHATTAN_RUSH_VANGUARD"
+            },
+            "C08": {
+                "add_timed_idea": {
+                    "idea": "IDEA_C08_ASSAULT",
+                    "days": 30
+                }
+            }
+        },
+        "hidden_effect": {
+            "set_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR",
+            "add_ideas": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS",
+            "C05": {
+                "add_ideas": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS"
+            },
+            "C23": {
+                "add_ideas": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS"
+            },
+            "C01": {
+                "diplomatic_relation": {
+                    "country": "C06",
+                    "relation": "guarantee",
+                    "active": false
+                }
+            }
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_MANEHATTAN_EVIDENCE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_MANEHATTAN_EVIDENCE"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

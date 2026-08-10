@@ -1,0 +1,14 @@
+{
+    "news_effects": {
+        "C15": {
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C15_ENDING_LOST_IN_THE_SNOW",
+            "INIT_RADIANT_HOPE": true
+        }
+    },
+    "effects": {
+        "play_song": "superevent_music_08"
+    },
+    "o_effects": {
+        "custom_effect_tooltip": "PIHC_ENDING_TEXT"
+    }
+}

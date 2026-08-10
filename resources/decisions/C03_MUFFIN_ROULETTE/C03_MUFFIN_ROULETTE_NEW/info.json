@@ -1,0 +1,52 @@
+{
+    "name": "Muffins",
+    "priority": 51,
+    
+    "cost": 0,
+    "days_re_enable": 7,
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_MUFFIN_ROULETTE_DEBUG",
+            "has_completed_focus": "FOCUS_C03_MUFFIN_05",
+            "has_game_rule": {
+                "rule": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE",
+                "option": "ALWAYS_FREE"
+            }
+        },
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING"
+        }
+    },
+    "available": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 500,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 500,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_MUFFINS_500",
+    "complete_effect": {
+        "hidden_effect": {
+            "subtract_from_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 500
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "subtract_from_variable__D1": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": 500
+            },
+            "C03_ROULETTE_NEW_GAME": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "name": "Formal Condemn",
+    "priority": 101,
+    
+    "cost": 30,
+    "days_re_enable": 0,
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "target_trigger": {
+        "FROM": {
+            "OR": {
+                "AND": {
+                    "tag": "C02",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C02_INDEPENDENCE",
+                        "modifier": "BOP_C02_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                },
+                "AND__D1": {
+                    "tag": "C03",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C03_INDEPENDENCE",
+                        "modifier": "BOP_C03_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                },
+                "AND__D2": {
+                    "tag": "C04",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C04_INDEPENDENCE",
+                        "modifier": "BOP_C04_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                },
+                "AND__D3": {
+                    "tag": "C10",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C10_INDEPENDENCE",
+                        "modifier": "BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                },
+                "AND__D4": {
+                    "tag": "C12",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C12_INDEPENDENCE",
+                        "modifier": "BOP_C12_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                },
+                "AND__D5": {
+                    "tag": "C14",
+                    "has_power_balance_modifier": {
+                        "id": "BOP_C14_INDEPENDENCE",
+                        "modifier": "BOP_C14_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                    }
+                }
+            },
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+            },
+            "NOT__D1": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_30_DAYS_SECRET_FOR_INDENDENCE"
+            }
+        }
+    },
+    "complete_effect": {
+        "FROM": {
+            "if": {
+                "limit": {
+                    "tag": "C02"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "modifier": "BOP_C02_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "if__D1": {
+                "limit": {
+                    "tag": "C03"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "modifier": "BOP_C03_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "if__D2": {
+                "limit": {
+                    "tag": "C04"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "modifier": "BOP_C04_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C04_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "if__D3": {
+                "limit": {
+                    "tag": "C10"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "modifier": "BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C10_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C10_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "if__D4": {
+                "limit": {
+                    "tag": "C12"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "modifier": "BOP_C12_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C12_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "if__D5": {
+                "limit": {
+                    "tag": "C14"
+                },
+                "remove_power_balance_modifier": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "modifier": "BOP_C14_INDEPENDENCE_INDEPENDENCE_MOVEMENT"
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "value": -0.2,
+                    "tooltip_side": "BOP_C14_INDEPENDENCE_LEFT_SIDE"
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

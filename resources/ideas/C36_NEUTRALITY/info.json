@@ -1,0 +1,13 @@
+{
+    "name": "Isolated from the world",
+    "removal_cost": -1,
+    "modifier": {
+        "drift_defence_factor": 0.1,
+        "send_volunteers_tension": 0.2,
+        "trade_opinion_factor": -1,
+        "embargo_threshold_factor": -0.25,
+        "ai_get_ally_desire_factor": -99,
+        "custom_modifier_tooltip": "IDEA_C36_NEUTRALITY_TOOLTIP",
+        "cannot_call_allies_or_join_wars": 1
+    }
+}

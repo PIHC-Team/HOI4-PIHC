@@ -1,0 +1,39 @@
+state = {
+    id = 292
+    name = STATE_292
+    provinces = {
+        1248
+        1860
+        2670
+        2787
+        5081
+        5909
+        5973
+        6053
+        6240
+        8301
+        10665
+        10674
+        10761
+        10806
+        10810
+        10859
+        10905
+    }
+    manpower = 3722
+    state_category = rural
+    history = {
+        owner = C64
+        victory_points = {
+            1248
+            3
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C64
+    }
+    resources = {
+        rubber = 2
+    }
+}

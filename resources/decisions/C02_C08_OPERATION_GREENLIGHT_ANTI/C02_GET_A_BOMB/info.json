@@ -1,0 +1,86 @@
+{
+    "name": "Diffuse",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 240,
+    "days_re_enable": 0,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "NOT": {
+            "AND": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS",
+                "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS",
+                "has_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS",
+                "has_country_flag__D3": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS",
+                "has_country_flag__D4": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS"
+            }
+        }
+    },
+    "cancel_trigger": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C02_GET_A_BOMB_TRIGGER_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS",
+            "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS",
+            "has_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS",
+            "has_country_flag__D3": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS",
+            "has_country_flag__D4": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS"
+        }
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "DECISION_C02_GET_A_BOMB_TOOLTIP",
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_CENTER_KNOWS"
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS"
+            },
+            "else_if": {
+                "limit": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS"
+            },
+            "else_if__D2": {
+                "limit": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS"
+            },
+            "else_if__D3": {
+                "limit": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS"
+            },
+            "else_if__D4": {
+                "limit": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

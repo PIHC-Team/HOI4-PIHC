@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 60
+            },
+            "unlock_national_focus": "FOCUS_C12_INVITE_THE_APPLE_FAMILY",
+            "add_political_power": 50
+        },
+        {
+            "ai_chance": {
+                "factor": 40
+            },
+            "hidden_effect": {
+                "C07": {
+                    "country_event": {
+                        "id": "C12_MAIN.20",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

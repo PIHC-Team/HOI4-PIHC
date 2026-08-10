@@ -1,0 +1,27 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_COLORFUL_SKY",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C12_COLORFUL_SKY"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "category": "pihc_electronics",
+            "bonus": 0.75,
+            "uses": 2
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

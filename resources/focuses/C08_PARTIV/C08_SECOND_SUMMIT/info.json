@@ -1,0 +1,25 @@
+{
+    "tree": "C08_PARTIV",
+    "parent": "FOCUS_C08_CANTERLOT_MIND",
+    "priority": 10,
+    "x": 9,
+    "y": 1,
+    "cost": 5,
+    "prerequisite": {
+        "focus": "FOCUS_C08_CANTERLOT_MIND"
+    },
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_SECOND_SUMMIT_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

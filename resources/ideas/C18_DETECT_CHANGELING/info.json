@@ -1,0 +1,10 @@
+{
+    "name": "Detect Changelings",
+    "category": "hidden_ideas",
+    "removal_cost": -1,
+    "modifier": {
+        "foreign_subversive_activites": -0.25,
+        "civilian_intel_to_others": -0.50,
+        "army_intel_to_others": -0.50
+    }
+}

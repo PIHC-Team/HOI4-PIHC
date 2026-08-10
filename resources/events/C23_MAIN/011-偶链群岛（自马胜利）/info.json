@@ -1,0 +1,33 @@
+{
+    "date": "1004.1.10",
+    "date_scope": "C23",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "effect_tooltip": {
+                "annex_country": {
+                    "target": "C44",
+                    "transfer_troops": true
+                }
+            },
+            "hidden_effect": {
+                "set_variable": {
+                    "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                    "value": "C44"
+                },
+                "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+            }
+        }
+    ],
+    "trigger": {
+        "NOT": {
+            "C07": {
+                "has_completed_focus": "FOCUS_C07_LPMIG_ISLES_WAR_C23"
+            }
+        }
+    },
+    "is_triggered_only": true
+}

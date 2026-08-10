@@ -1,0 +1,15 @@
+{
+    "priority": 29999,
+    "visible": {
+        "tag": "C03",
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_MUFFIN_ROULETTE_DEBUG",
+            "has_completed_focus": "FOCUS_C03_MUFFIN_05",
+            "has_game_rule": {
+                "rule": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE",
+                "option": "ALWAYS_FREE"
+            }
+        }
+    },
+    "visible_when_empty": true
+}

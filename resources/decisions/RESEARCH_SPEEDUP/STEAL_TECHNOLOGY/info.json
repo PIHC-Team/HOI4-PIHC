@@ -1,0 +1,64 @@
+{
+    "name": "Technology Stealing",
+    "priority": 97,
+    "cost": 75,
+    "days_remove": 60,
+    "days_re_enable": 180,
+    "target_array": "ROOT.neighbors",
+    "available": {
+        "ROOT": {
+            "if": {
+                "limit": {
+                    "has_variable": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE"
+                },
+                "custom_trigger_tooltip": {
+                    "tooltip": "DECISION_STEAL_TECHNOLOGY_TOOLTIP",
+                    "always": false
+                }
+            }
+        }
+    },
+    "target_trigger": {
+        "FROM": {
+            "NOT": {
+                "OR": {
+                    "is_forbidden_to_interact": true,
+                    "has_government": "transcendence"
+                }
+            }
+        },
+        "ROOT": {
+            "intel_level_over": {
+                "target": "FROM",
+                "civilian_intel > 0.14": null
+            }
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "ROOT": {
+                "set_variable": {
+                    "var": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE",
+                    "value": "FROM"
+                }
+            }
+        }
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "DECISION_STEAL_TECHNOLOGY_EFFECT_TOOLTIP",
+        "ROOT": {
+            "STEAL_TECHNOLOGY_BY_INTEL": true,
+            "clear_variable": "VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE"
+        }
+    },
+    "ai_will_do": {
+        "base": 5,
+        "modifier": {
+            "add": -5,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

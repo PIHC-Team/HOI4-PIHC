@@ -1,0 +1,52 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II",
+    "prerequisite": {
+        "focus": "FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II"
+    },
+    "completion_reward": {
+        "random_owned_controlled_state": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true,
+            "add_resource" : {
+            "type": "coal",
+            "amount": 32,
+            "state": "ROOT"
+        }
+        },
+        "random_owned_controlled_state__D1": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true,
+            "add_resource" : {
+            "type": "tungsten",
+            "amount": 32,
+            "state": "ROOT"
+        }
+        },
+        "random_owned_controlled_state__D2": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "random_owned_controlled_state__D3": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D4": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D5": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D6": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D7": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        }
+    },
+    "cost": 5
+}

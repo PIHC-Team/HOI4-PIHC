@@ -1,0 +1,32 @@
+{
+    "priority": 30001,
+    "allowed": {
+        "OR": {
+            "tag": "C02",
+            "tag__D1": "C14",
+            "tag__D2": "C01"
+        }
+    },
+    "visible": {
+        "NOT": {
+            "has_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        },
+        "if": {
+            "limit": {
+                "tag": "C14"
+            },
+            "C14": {
+                "has_completed_focus": "FOCUS_C14_NEW_PARTNER"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "tag": "C01"
+            },
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C02_REPLACER"
+            }
+        }
+    },
+    "visible_when_empty": true
+}

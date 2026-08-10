@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "effect_tooltip": {
+                "C07": {
+                    "create_wargoal": {
+                        "type": "trade_request_wargoal",
+                        "target": "C12"
+                    }
+                },
+                "C12": {
+                    "add_timed_idea": {
+                        "idea": "IDEA_C12_PUNISHMENT_OF_LAS_PEGASUS",
+                        "days": 365
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

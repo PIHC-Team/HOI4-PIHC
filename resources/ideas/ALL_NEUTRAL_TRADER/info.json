@@ -1,0 +1,12 @@
+{
+    "category": "hidden_ideas",
+    "name": "A Neutral Trader",
+    "removal_cost": -1,
+    "modifier": {
+        "ai_license_acceptance": 0.9,
+        "lend_lease_tension": 0.0,
+        "trade_opinion_factor": 0.3,
+        "opinion_gain_monthly_factor": 0.25,
+        "corporation_acceptance": 85
+    }
+}

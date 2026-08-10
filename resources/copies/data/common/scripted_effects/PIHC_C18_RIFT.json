@@ -1,0 +1,126 @@
+{
+    "C18_RIFT": {
+        "C18": {
+            "hidden_effect": {
+                "C38": {
+                    "set_variable": {
+                        "var": "C38.VAR_PEACEFUL_COUNTER",
+                        "value": 0
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C38_RIFT_ACTIVATED",
+                    "ADD_INVENTORY_ITEM_5LG_ARTIFACT_STAFF_OF_SACANAS_1": true,
+                    "217": {
+                        "add_core_of": "C38",
+                        "transfer_state_to": "C38"
+                    },
+                    "167": {
+                        "add_core_of": "C38",
+                        "transfer_state_to": "C38"
+                    },
+                    "784": {
+                        "add_core_of": "C38",
+                        "transfer_state_to": "C38"
+                    },
+                    "60": {
+                        "add_core_of": "C38",
+                        "transfer_state_to": "C38"
+                    },
+                    "731": {
+                        "add_core_of": "C38",
+                        "transfer_state_to": "C38"
+                    },
+                    "set_capital": { "state": 217 },
+                    "load_oob": "C38_rift",
+                    "217__D1": {
+                        "create_unit": {
+                            "division": "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C38",
+                            "count": 4
+                        },
+                        "add_building_construction": {
+                            "type": "air_base",
+                            "level": 2,
+                            "instant_build": true
+                        }
+                    },
+                    "167__D1": {
+                        "create_unit": {
+                            "division": "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C38",
+                            "count": 2
+                        }
+                    },
+                    "784__D1": {
+                        "create_unit": {
+                            "division": "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C38",
+                            "count": 2
+                        }
+                    },
+                    "60__D1": {
+                        "create_unit": {
+                            "division": "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C38",
+                            "count": 2
+                        }
+                    },
+                    "731__D1": {
+                        "create_unit": {
+                            "division": "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C38",
+                            "count": 2
+                        }
+                    },
+                    "add_offsite_building": {
+                        "type": "arms_factory",
+                        "level": 6
+                    },
+                    "add_offsite_building__D1": {
+                        "type": "industrial_complex",
+                        "level": 6
+                    },
+                    "declare_war_on": {
+                        "target": "C18",
+                        "type": "annex_everything"
+                    },
+                    "if": {
+                        "limit": {
+                            "country_exists": "C37",
+                            "NOT": {
+                                "has_war_with": "C37"
+                            }
+                        },
+                        "declare_war_on": {
+                            "target": "C37",
+                            "type": "annex_everything"
+                        }
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "country_exists": "Z18",
+                            "NOT": {
+                                "has_war_with": "Z18"
+                            }
+                        },
+                        "declare_war_on": {
+                            "target": "Z18",
+                            "type": "annex_everything"
+                        }
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "country_exists": "Y18",
+                            "NOT": {
+                                "has_war_with": "Y18"
+                            }
+                        },
+                        "declare_war_on": {
+                            "target": "Y18",
+                            "type": "annex_everything"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

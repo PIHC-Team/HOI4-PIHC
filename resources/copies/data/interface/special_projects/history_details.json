@@ -1,0 +1,316 @@
+{
+    "guiTypes": {
+        "containerWindowType": {
+            "name": "detailed_project_history_window",
+            "size": {
+                "width": 520,
+                "height": 740
+            },
+            "position": {
+                "x": 800,
+                "y": 300
+            },
+            "moveable": true,
+            "background": {
+                "name": "Background",
+                "quadTextureSprite": "GFX_tiled_plain_bg"
+            },
+            "instantTextboxType": {
+                "name": "header_text",
+                "position": {
+                    "x": 0,
+                    "y": 10
+                },
+                "text": "SPECIAL_PROJECT_REWARDS_HEADER",
+                "font": "hoi_20bs",
+                "maxWidth": 520,
+                "maxHeight": 20,
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "buttonType": {
+                "name": "close_button",
+                "position": {
+                    "x": -38,
+                    "y": 4
+                },
+                "quadTextureSprite": "GFX_closebutton",
+                "buttonFont": "Main_14_black",
+                "shortcut": "ESCAPE",
+                "Orientation": "UPPER_RIGHT",
+                "clicksound": "click_close",
+                "pdx_tooltip": "CLOSE"
+            },
+            "containerWindowType": {
+                "name": "detailed_history_project_view",
+                "size": {
+                    "width": 500,
+                    "height": 700
+                },
+                "position": {
+                    "x": 0,
+                    "y": 40
+                },
+                "margin": {
+                    "left": 10,
+                    "right": 10,
+                    "top": 10
+                },
+                "clipping": true,
+                "background": {
+                    "name": "Background",
+                    "quadTextureSprite": "GFX_tiled_paper_bg"
+                },
+                "smoothListBoxType": {
+                    "name": "output_list",
+                    "size": {
+                        "x": 490,
+                        "y": 685
+                    },
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "scrollbartype": "standardlistbox_slider"
+                }
+            }
+        },
+        "containerWindowType__D1": {
+            "name": "detailed_output_item_separator",
+            "size": {
+                "width": 500,
+                "height": 0
+            },
+            "background": {
+                "name": "Background",
+                "spriteType": "GFX_stats_entry_long_bg",
+                "position": {
+                    "x": 75,
+                    "y": -28
+                }
+            }
+        },
+        "containerWindowType__D2": {
+            "name": "detailed_output_item",
+            "background": {
+                "name": "Background",
+                "spriteType": "GFX_tiled_window_transparent"
+            },
+            "instantTextboxType": {
+                "name": "header",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 464,
+                "font": "hoi4_typewriter22",
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D1": {
+                "name": "reward_desc",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 454,
+                "font": "hoi4_typewriter16_colored",
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D2": {
+                "name": "option_header",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 464,
+                "font": "hoi4_typewriter22",
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D3": {
+                "name": "date_text",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 464,
+                "font": "hoi4_typewriter16_colored",
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D4": {
+                "name": "progress_text",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 464,
+                "font": "hoi4_typewriter16_colored",
+                "format": "center",
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D5": {
+                "name": "rewards_header",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                },
+                "maxWidth": 464,
+                "font": "hoi4_typewriter22",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "SPECIAL_PROJECT_REWARDS_HEADER_TEXT"
+            },
+            "instantTextboxType__D6": {
+                "name": "country_effect_reward_description",
+                "position": {
+                    "x": 10,
+                    "y": 20
+                },
+                "font": "hoi4_typewriter16_colored",
+                "maxWidth": 464,
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D7": {
+                "name": "scientist_effect_reward_description",
+                "position": {
+                    "x": 10,
+                    "y": 20
+                },
+                "font": "hoi4_typewriter16_colored",
+                "maxWidth": 464,
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D8": {
+                "name": "state_effect_reward_description",
+                "position": {
+                    "x": 10,
+                    "y": 20
+                },
+                "font": "hoi4_typewriter16_colored",
+                "maxWidth": 464,
+                "alwaystransparent": true
+            },
+            "instantTextboxType__D9": {
+                "name": "equipment_bonus_reward_description",
+                "position": {
+                    "x": 10,
+                    "y": 20
+                },
+                "font": "hoi4_typewriter16_colored",
+                "maxWidth": 464,
+                "alwaystransparent": true
+            },
+            "containerWindowType": {
+                "name": "unit_stat_bonus_rewards",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 201,
+                    "height": 30
+                },
+                "clipping": false,
+                "instantTextboxType": {
+                    "name": "header",
+                    "position": {
+                        "x": 0,
+                        "y": 18
+                    },
+                    "font": "hoi4_typewriter16_colored",
+                    "maxWidth": 201,
+                    "maxHeight": 20,
+                    "format": "center",
+                    "alwaystransparent": true
+                }
+            },
+            "containerWindowType__D1": {
+                "name": "unlocked_subunits",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 201,
+                    "height": 30
+                },
+                "clipping": false,
+                "instantTextboxType": {
+                    "name": "header",
+                    "position": {
+                        "x": 0,
+                        "y": 18
+                    },
+                    "font": "hoi4_typewriter16_colored",
+                    "maxWidth": 201,
+                    "maxHeight": 20,
+                    "format": "center",
+                    "alwaystransparent": true
+                }
+            },
+            "containerWindowType__D2": {
+                "name": "unlocked_equipment_modules",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 201,
+                    "height": 30
+                },
+                "clipping": false,
+                "instantTextboxType": {
+                    "name": "header",
+                    "position": {
+                        "x": 0,
+                        "y": 18
+                    },
+                    "font": "hoi4_typewriter16_colored",
+                    "maxWidth": 201,
+                    "maxHeight": 20,
+                    "format": "center",
+                    "alwaystransparent": true
+                }
+            },
+            "containerWindowType__D3": {
+                "name": "unlocked_equipments",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 201,
+                    "height": 30
+                },
+                "clipping": false,
+                "instantTextboxType": {
+                    "name": "header",
+                    "position": {
+                        "x": 0,
+                        "y": 18
+                    },
+                    "font": "hoi4_typewriter16_colored",
+                    "maxWidth": 201,
+                    "maxHeight": 20,
+                    "format": "center",
+                    "alwaystransparent": true
+                }
+            },
+            "containerWindowType__D4": {
+                "name": "padding",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 464,
+                    "height": 0
+                },
+                "clipping": true
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "name": "Balloon",
+    "category": "bba_air_techs",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 12,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_air_plane"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_FRAME_PLANE"
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_PLANE_ARMOR_1A_WOODEN",
+        "MODULE_PLANE_ARMOR_2B_STEEL",
+        "MODULE_PLANE_ARMOR_2A_BRASS",
+        "MODULE_PLANE_ENGINE_1A_AIR",
+        "MODULE_SPECIAL_SUPPLY",
+        "MODULE_SPECIAL_PARADROP",
+        "MODULE_SPECIAL_TANK",
+        "MODULE_PLANE_WEAPON_AIRREC_1A_BINOCULAR"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_FRAME_PLANE_C_17B",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_BBA_FRAME_PLANE_F_26D",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 10,
+            "arms_factory > 80": null
+        },
+        "modifier__D1": {
+            "add": 5,
+            "date > 1007.8.1": null,
+            "is_major": true
+        },
+        "modifier__D2": {
+            "add": 20,
+            "arms_factory > 150": null
+        },
+        "modifier__D3": {
+            "add": 10,
+            "has_army_manpower": {
+                "size > 25000": null
+            }
+        },
+        "modifier__D4": {
+            "add": -200,
+            "tag": "C01",
+            "//帝国不喜欢飞机":null
+        }
+    },
+    "research_cost": 8.0,
+    "start_year": 1004
+}

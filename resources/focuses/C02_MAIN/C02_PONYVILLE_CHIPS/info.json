@@ -1,0 +1,28 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_PONYVILLE_RESEARCH",
+    "dy": 3,
+    "prerequisite": {
+        "focus": "FOCUS_C02_PONYVILLE_RESEARCH"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 1.0,
+            "technology": "TECHNOLOGY_TECH_INFO_III"
+        }
+    },
+    "available": {
+        "has_tech": "TECHNOLOGY_TECH_INFO_II",
+        "has_idea": "IDEA_C02_STALLIONCON_VALLEY",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Coal Exploration",
+    "priority": 94,
+    
+    "days_remove": 120,
+    "days_re_enable": 90,
+    "available": {
+        "num_of_civilian_factories_available_for_projects > 2": null,
+        "hidden_trigger": {
+            "has_political_power > 49": null
+        }
+    },
+    "custom_cost_trigger": {
+        "num_of_civilian_factories_available_for_projects > 2": null,
+        "has_political_power > 49": null
+    },
+    "custom_cost_text": "CUSTOM_COST_CIV_FACTORY_3_PP_25",
+    "modifier": {
+        "civilian_factory_use": 3
+    },
+    "ai_hint_pp_cost": 25,
+    "complete_effect": {
+        "hidden_effect": {
+            "add_political_power": -25
+        }
+    },
+    "remove_effect": {
+        "random_owned_controlled_state": {
+            "random": {
+                "chance": 90,
+                "add_resource": {
+                    "type": "coal",
+                    "amount": 5
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 10,
+        "modifier": {
+            "add": -10,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

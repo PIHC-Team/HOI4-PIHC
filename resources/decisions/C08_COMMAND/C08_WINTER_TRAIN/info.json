@@ -1,0 +1,26 @@
+{
+    "name": "Winter train",
+    "priority": 99999,
+    
+    "visible": {
+        
+    },
+    "available": {
+        "controls_state": "375",
+        "command_power > 49" : null
+    },
+    "complete_effect": {
+        "add_command_power" : -50
+    },
+    "modifier": {
+        "army_org_factor": -0.2
+    },
+    "remove_effect": {
+        "add_ideas": "IDEA_C08_WINTER_TRAIN"
+    },
+    "days_remove": 60,
+    "ai_will_do": {
+        "base": 10000
+    },
+    "fire_only_once": true
+}

@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_46_TOOLTIP",
+            "C28": {
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.02        
+                },
+                "add_stability": 0.1,
+                "add_opinion_modifier": {
+                    "target": "C08",
+                    "modifier": "DECESION_C28_SUPPORT_C08_OPINION_MODIFIER"
+                }
+            },
+            "add_opinion_modifier": {
+                "target": "C28",
+                "modifier": "DECESION_C08_C28_SUPPORT_OPINION_MODIFIER"
+            },
+            "add_stability": 0.02,
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_C28_SUPPORT",
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_OLD_FRIENDS"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

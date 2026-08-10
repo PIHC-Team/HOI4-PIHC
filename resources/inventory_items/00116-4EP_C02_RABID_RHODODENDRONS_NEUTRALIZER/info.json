@@ -1,0 +1,16 @@
+{
+    "operations": [
+        {
+            "type": "switch",
+            "on_effects": {
+                "add_ideas": "IDEA_C02_RABID_RHODODENDRONS_NEUTRALIZER_PRODUCTION"
+            },
+            "off_effects": {
+                "remove_ideas": "IDEA_C02_RABID_RHODODENDRONS_NEUTRALIZER_PRODUCTION"
+            },
+            "on_trigger": {
+                "num_of_civilian_factories_available_for_projects > 1": null
+            }
+        }
+    ]
+}

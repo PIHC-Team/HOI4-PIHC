@@ -1,0 +1,21 @@
+{
+    "gender": "male",
+    "field_marshal": {
+        "skill": 3,
+        "attack_skill": 4,
+        "defense_skill": 3,
+        "planning_skill": 2,
+        "logistics_skill": 2,
+        "traits": []
+    },
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_PARTY_FAVOR_UNEXPECTED_WEAPON"
+        ],
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

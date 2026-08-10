@@ -1,0 +1,36 @@
+{
+    "specialization": "specialization_elecpunk",
+    "project_tags": "sp_tag_pihc_elecpunk",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_IIE"
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "steel": 6,
+            "aluminium": 3,
+            "tungsten": 3
+        }
+    },
+    "complexity": "sp_complexity.small",
+    "prototype_time": "sp_time.prototype.short",
+    "project_output": {
+        "country_effects": {
+            "add_ideas": "IDEA_ALL_WORKSHOP_ELEC"
+        }
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_ELEC",
+        "SP_REWARD_GENERIC_ELEC_EXP",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

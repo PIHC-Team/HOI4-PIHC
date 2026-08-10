@@ -1,0 +1,44 @@
+{
+    "name": "Arsenal assault",
+    "priority": 79998,
+    
+    "cost": 15,
+    "days_re_enable": 14,
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR",
+        "tag": "C05"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_MANEHATTAN_WAR_START_TOOLTIP",
+            "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR"
+        }
+    },
+    "complete_effect": {
+        "C06": {
+            "add_equipment_to_stockpile": {
+                "type": "EQUIPMENT_RANGED_HANDGONNE",
+                "amount": -50,
+                "producer": "C06"
+            },
+            "add_equipment_to_stockpile__D1": {
+                "type": "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II",
+                "amount": -40,
+                "producer": "C06"
+            },
+            "add_equipment_to_stockpile__D3": {
+                "type": "EQUIPMENT_SUPPORT_I",
+                "amount": -25,
+                "producer": "C06"
+            },
+            "add_equipment_to_stockpile__D2": {
+                "type": "EQUIPMENT_SHIELD_CROSSBOW",
+                "amount": -15,
+                "producer": "C06"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 10000
+    }
+}

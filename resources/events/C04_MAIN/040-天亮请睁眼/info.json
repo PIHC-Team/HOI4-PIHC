@@ -1,0 +1,34 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C04": {
+                "C04_SPITFIRE_ASSASSINATED": true
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_stability": -0.15,
+            "add_power_balance_value": {
+                "id": "BOP_C04_INDEPENDENCE",
+                "value": -0.35,
+                "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+            },
+            "C04_DEL_ECO_0_30": true,
+            "country_event": {
+                "id": "C04_MAIN.41"
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C04_MAIN.56",
+                    "days": 60,
+                    "random_days": 40
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

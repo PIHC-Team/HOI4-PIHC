@@ -1,0 +1,20 @@
+{
+    "date": "1002.12.1",
+    "date_scope": "C02",
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

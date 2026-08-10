@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "C04_MAIN.10"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "C04_MAIN.8"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Magical Radar",
+    "category": "electronics",
+
+    "x": 0,
+    "y": 21,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_magical",
+        "pihc_commu_tech"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_building": {
+        "building": "radar_station",
+		"level": 4
+    },
+    "coordination_bonus": 0.02,
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_COMM_VI",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1007
+}

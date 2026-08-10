@@ -1,0 +1,156 @@
+{
+    "name": "Tirek Realm",
+    "rgb": [
+        255,
+        20,
+        20
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false,
+            "can_send_volunteers": true
+        },
+        "capital": 56,
+        "set_popularities": {
+            "transcendence": 80,
+            "despotic": 10,
+            "fascism": 10
+        },
+        "set_politics": {
+            "ruling_party": "transcendence",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_LORD_TIREK",
+            "CHARACTER_SCORPAN"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TANK_TITAN_TIREK": 1,
+            "TECHNOLOGY_NSB_TANK_TITAN_TIREK": 1
+        },
+        "81": {
+            "add_core_of": "C19",
+            "add_claim_by": "C19"
+        },
+        "115": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "128": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "626": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "671": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "669": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "678": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "697": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "679": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "657": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "129": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "591": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "583": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "620": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "116": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "117": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "616": {
+            "add_core_of": "C20",
+            "add_claim_by": "C20"
+        },
+        "93": {
+            "add_core_of": "C63"
+        },
+        "74": {
+            "add_core_of": "C63"
+        },
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_TIREK_POWER",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "tree": "C14_MAIN",
+    "parent": "FOCUS_C14_METEOR",
+    "prerequisite": {
+        "focus": "FOCUS_C14_METEOR"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "capital_scope": {
+            "create_unit": {
+                "division": "name = \"抗议团体 (Protesters)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 0.0 start_manpower_factor = 0.5",
+                "owner": "C14",
+                "count": 1
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_METEORITE_INCIDENT_PROTEST"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

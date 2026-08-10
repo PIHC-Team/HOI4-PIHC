@@ -1,0 +1,45 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FINAL_RECKONING",
+    "prerequisite": {
+        "focus": "FOCUS_C12_FINAL_RECKONING"
+    },
+    "cost": 5,
+    "bypass": {
+            "owns_state":667,
+            "owns_state__D1":661,
+            "owns_state__D2":688,
+        "owns_state__D3":694,
+        "owns_state__D4":748,
+        "owns_state__D5":141,
+        "owns_state__D6":38,
+        "owns_state__D7":659
+    },
+    "completion_reward": {
+"declare_war_on" :{
+    "target" : "C43",
+    "type" : "annex_everything"
+},
+"declare_war_on__D1" :{
+    "target" : "C41",
+    "type" : "annex_everything"
+},
+"declare_war_on__D2" :{
+    "target" : "C42",
+    "type" : "annex_everything"
+}
+
+    },
+    "available": {
+        "has_war":false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

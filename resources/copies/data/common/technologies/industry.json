@@ -1,0 +1,1746 @@
+{
+    "technologies": {
+        "basic_machine_tools": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "path": {
+                "leads_to_tech": "improved_machine_tools",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "concentrated_industry",
+                "research_cost_coeff": 1
+            },
+            "path__D2": {
+                "leads_to_tech": "dispersed_industry",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1000,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "ai_will_do": {
+                "factor": 10
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "improved_machine_tools": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "path": {
+                "leads_to_tech": "advanced_machine_tools",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "improved_equipment_conversion",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": 10,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1002.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "advanced_machine_tools": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "path": {
+                "leads_to_tech": "assembly_line_production",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": 10,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1004.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "assembly_line_production": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "path": {
+                "leads_to_tech": "flexible_line",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "streamlined_line",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 8
+                }
+            },
+            "ai_will_do": {
+                "factor": 10,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1006.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "flexible_line": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "line_change_production_efficiency_factor": 0.2,
+            "research_cost": 2,
+            "start_year": 1008,
+            "XOR": [
+                "streamlined_line"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": -1,
+                    "y": 10
+                }
+            },
+            "ai_will_do": {
+                "factor": 10,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1008.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "streamlined_line": {
+            "production_factory_max_efficiency_factor": 0.1,
+            "production_factory_efficiency_gain_factor": 0.1,
+            "research_cost": 2,
+            "start_year": 1008,
+            "XOR": [
+                "flexible_line"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 10
+                }
+            },
+            "ai_will_do": {
+                "factor": 10,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1008.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "improved_equipment_conversion": {
+            "equipment_conversion_speed": 0.4,
+            "allow_branch": {
+                "has_dlc": "Death or Dishonor"
+            },
+            "path": {
+                "leads_to_tech": "advanced_equipment_conversion",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "factor": 2,
+                    "date > 1002.1.1": null
+                },
+                "modifier__D1": {
+                    "factor": 0,
+                    "NOT": {
+                        "has_government": "fascism"
+                    }
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "advanced_equipment_conversion": {
+            "equipment_conversion_speed": 0.4,
+            "research_cost": 1,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "factor": 2,
+                    "date > 1002.1.1": null
+                },
+                "modifier__D1": {
+                    "factor": 0,
+                    "NOT": {
+                        "has_government": "fascism"
+                    }
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "cat_production"
+            ]
+        },
+        "concentrated_industry": {
+            "industrial_capacity_factory": 0.15,
+            "industrial_capacity_dockyard": 0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "concentrated_industry2",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "XOR": [
+                "dispersed_industry"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 4,
+                    "y": 2
+                }
+            },
+            "ai_will_do": {
+                "factor": 25,
+                "modifier": {
+                    "factor": 0,
+                    "has_tech": "dispersed_industry"
+                },
+                "modifier__D1": {
+                    "factor": 0,
+                    "is_researching_technology": "dispersed_industry"
+                },
+                "modifier__D2": {
+                    "factor": 5,
+                    "date > 1002.1.1": null
+                },
+                "modifier__D3": {
+                    "factor": 50,
+                    "OR": {
+                        "tag": "C01",
+                        "tag__D1": "C11",
+                        "tag__D2": "C12",
+                        "tag__D3": "C22"
+                    }
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "concentrated_industry_category"
+            ],
+            "ai_research_weights": {
+                "offensive": -1
+            }
+        },
+        "concentrated_industry2": {
+            "industrial_capacity_factory": 0.15,
+            "industrial_capacity_dockyard": 0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "concentrated_industry3",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 4,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": 20,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1002.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "concentrated_industry_category"
+            ],
+            "ai_research_weights": {
+                "offensive": -1
+            }
+        },
+        "concentrated_industry3": {
+            "industrial_capacity_factory": 0.15,
+            "industrial_capacity_dockyard": 0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "concentrated_industry4",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 4,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": 15,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1004.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "concentrated_industry_category"
+            ],
+            "ai_research_weights": {
+                "offensive": -1
+            }
+        },
+        "concentrated_industry4": {
+            "industrial_capacity_factory": 0.15,
+            "industrial_capacity_dockyard": 0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "concentrated_industry5",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 4,
+                    "y": 8
+                }
+            },
+            "ai_will_do": {
+                "factor": 15,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1006.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "concentrated_industry_category"
+            ],
+            "ai_research_weights": {
+                "offensive": -1
+            }
+        },
+        "concentrated_industry5": {
+            "industrial_capacity_factory": 0.15,
+            "industrial_capacity_dockyard": 0.1,
+            "global_building_slots_factor": 0.15,
+            "research_cost": 2,
+            "start_year": 1008,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 4,
+                    "y": 10
+                }
+            },
+            "ai_will_do": {
+                "factor": 4,
+                "modifier": {
+                    "factor": 5,
+                    "date > 1007.1.9": null
+                },
+                "modifier__D1": {
+                    "factor": 20,
+                    "date > 1008.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "concentrated_industry_category"
+            ],
+            "ai_research_weights": {
+                "offensive": -1
+            }
+        },
+        "dispersed_industry": {
+            "industrial_capacity_factory": 0.1,
+            "industrial_capacity_dockyard": 0.1,
+            "line_change_production_efficiency_factor": 0.1,
+            "production_factory_start_efficiency_factor": 0.05,
+            "industry_air_damage_factor": -0.15,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "dispersed_industry2",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "XOR": [
+                "concentrated_industry"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 6,
+                    "y": 2
+                }
+            },
+            "ai_will_do": {
+                "factor": 25,
+                "modifier": {
+                    "factor": 0,
+                    "has_tech": "concentrated_industry"
+                },
+                "modifier__D1": {
+                    "factor": 0,
+                    "is_researching_technology": "concentrated_industry"
+                },
+                "modifier__D2": {
+                    "factor": 5,
+                    "date > 1002.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "dispersed_industry_category"
+            ],
+            "ai_research_weights": {
+                "defensive": -1
+            }
+        },
+        "dispersed_industry2": {
+            "industrial_capacity_factory": 0.1,
+            "industrial_capacity_dockyard": 0.1,
+            "line_change_production_efficiency_factor": 0.1,
+            "production_factory_start_efficiency_factor": 0.05,
+            "industry_air_damage_factor": -0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "dispersed_industry3",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 6,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": 20,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1002.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "dispersed_industry_category"
+            ],
+            "ai_research_weights": {
+                "defensive": -1
+            }
+        },
+        "dispersed_industry3": {
+            "industrial_capacity_factory": 0.1,
+            "industrial_capacity_dockyard": 0.1,
+            "line_change_production_efficiency_factor": 0.1,
+            "production_factory_start_efficiency_factor": 0.05,
+            "industry_air_damage_factor": -0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "dispersed_industry4",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 6,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": 15,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1004.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "dispersed_industry_category"
+            ],
+            "ai_research_weights": {
+                "defensive": -1
+            }
+        },
+        "dispersed_industry4": {
+            "industrial_capacity_factory": 0.1,
+            "industrial_capacity_dockyard": 0.1,
+            "line_change_production_efficiency_factor": 0.1,
+            "production_factory_start_efficiency_factor": 0.05,
+            "industry_air_damage_factor": -0.1,
+            "global_building_slots_factor": 0.15,
+            "path": {
+                "leads_to_tech": "dispersed_industry5",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 6,
+                    "y": 8
+                }
+            },
+            "ai_will_do": {
+                "factor": 15,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1006.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "dispersed_industry_category"
+            ],
+            "ai_research_weights": {
+                "defensive": -1
+            }
+        },
+        "dispersed_industry5": {
+            "industrial_capacity_factory": 0.1,
+            "industrial_capacity_dockyard": 0.1,
+            "line_change_production_efficiency_factor": 0.1,
+            "production_factory_start_efficiency_factor": 0.05,
+            "industry_air_damage_factor": -0.1,
+            "global_building_slots_factor": 0.15,
+            "research_cost": 2,
+            "start_year": 1008,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 6,
+                    "y": 10
+                }
+            },
+            "ai_will_do": {
+                "factor": 15,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1008.1.1": null
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "dispersed_industry_category"
+            ],
+            "ai_research_weights": {
+                "defensive": -1
+            }
+        },
+        "fuel_silos": {
+            "enable_building": {
+                "building": "fuel_silo",
+                "level": 3
+            },
+            "path": {
+                "leads_to_tech": "synth_oil_experiments",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "fuel_refining",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1000,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 0
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": -2,
+                "modifier": {
+                    "factor": 2,
+                    "oil > 100": null
+                },
+                "modifier__D1": {
+                    "factor": 3,
+                    "oil > 200": null
+                },
+                "modifier__D2": {
+                    "factor": 4,
+                    "oil > 300": null
+                },
+                "modifier__D3": {
+                    "factor": 2,
+                    "num_of_military_factories > 50": null
+                },
+                "modifier__D4": {
+                    "factor": 3,
+                    "num_of_military_factories > 70": null
+                },
+                "modifier__D5": {
+                    "factor": 4,
+                    "num_of_military_factories > 80": null
+                },
+                "modifier__D6": {
+                    "factor": 4,
+                    "num_of_military_factories > 85": null
+                },
+                "modifier__D7": {
+                    "factor": 4,
+                    "num_of_military_factories > 90": null
+                },
+                "modifier__D8": {
+                    "factor": 2,
+                    "num_of_naval_factories > 10": null
+                },
+                "modifier__D9": {
+                    "factor": 3,
+                    "num_of_naval_factories > 20": null
+                },
+                "modifier__D10": {
+                    "factor": 4,
+                    "num_of_naval_factories > 30": null
+                },
+                "modifier__D11": {
+                    "factor": 4,
+                    "num_of_naval_factories > 40": null
+                },
+                "modifier__D12": {
+                    "factor": 4,
+                    "num_of_naval_factories > 50": null
+                },
+                "modifier__D13": {
+                    "factor": -50,
+                    "date < 1005.1.1": null
+                },
+                "modifier__D14": {
+                    "factor": -20,
+                    "date < \"1008.1.1\"": null
+                }
+            }
+        },
+        "fuel_refining": {
+            "fuel_gain_factor": 0.2,
+            "fuel_gain_factor_from_states": 0.1,
+            "path": {
+                "leads_to_tech": "fuel_refining2",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 2,
+            "start_year": 1000,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 3,
+                    "y": 2
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "has_war": true,
+                    "factor": 2
+                },
+                "modifier__D1": {
+                    "is_major": false,
+                    "factor": 0.25
+                },
+                "modifier__D2": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 10": null
+                },
+                "modifier__D3": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 20": null
+                },
+                "modifier__D4": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 30": null
+                },
+                "modifier__D5": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 10": null
+                },
+                "modifier__D6": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 20": null
+                },
+                "modifier__D7": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 30": null
+                }
+            }
+        },
+        "fuel_refining2": {
+            "fuel_gain_factor": 0.2,
+            "fuel_gain_factor_from_states": 0.1,
+            "path": {
+                "leads_to_tech": "fuel_refining3",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 2,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 3,
+                    "y": 4
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "has_war": true,
+                    "factor": 2
+                },
+                "modifier__D1": {
+                    "is_major": false,
+                    "factor": 0.25
+                },
+                "modifier__D2": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 20": null
+                },
+                "modifier__D3": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 30": null
+                },
+                "modifier__D4": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 20": null
+                },
+                "modifier__D5": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 30": null
+                },
+                "modifier__D6": {
+                    "factor": -10,
+                    "date < 1007.1.1": null
+                },
+                "modifier__D7": {
+                    "factor": 10,
+                    "tag": "C01"
+                }
+                
+            }
+        },
+        "fuel_refining3": {
+            "fuel_gain_factor": 0.2,
+            "fuel_gain_factor_from_states": 0.1,
+            "path": {
+                "leads_to_tech": "fuel_refining4",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 3,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 3,
+                    "y": 6
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "has_war": true,
+                    "factor": 1
+                },
+                "modifier__D1": {
+                    "is_major": false,
+                    "factor": 0.25
+                },
+                "modifier__D2": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 30": null
+                },
+                "modifier__D3": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 30": null
+                },
+                "modifier__D4": {
+                    "factor": -10,
+                    "date < 1008.1.1": null
+                },
+                "modifier__D7": {
+                    "factor": 10,
+                    "tag": "C01"
+                }
+            }
+        },
+        "fuel_refining4": {
+            "fuel_gain_factor": 0.2,
+            "fuel_gain_factor_from_states": 0.1,
+            "path": {
+                "leads_to_tech": "fuel_refining5",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 3,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 3,
+                    "y": 8
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "has_war": true,
+                    "factor": 2
+                },
+                "modifier__D1": {
+                    "is_major": false,
+                    "factor": 0.25
+                },
+                "modifier__D2": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 30": null
+                },
+                "modifier__D3": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 30": null
+                }
+            }
+        },
+        "fuel_refining5": {
+            "fuel_gain_factor": 0.2,
+            "fuel_gain_factor_from_states": 0.1,
+            "research_cost": 3,
+            "start_year": 1008,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 3,
+                    "y": 10
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "has_war": true,
+                    "factor": 2
+                },
+                "modifier__D1": {
+                    "is_major": false,
+                    "factor": 0.25
+                },
+                "modifier__D2": {
+                    "factor": 1.5,
+                    "num_of_military_factories > 40": null
+                },
+                "modifier__D3": {
+                    "factor": 1.5,
+                    "num_of_naval_factories > 40": null
+                }
+            }
+        },
+        "synth_oil_experiments": {
+            "enable_building": {
+                "building": "synthetic_refinery",
+                "level": 3
+            },
+            "path": {
+                "leads_to_tech": "oil_processing",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "rubber_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 3,
+            "start_year": 1000,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                }
+            },
+            "enable_equipment_modules": [
+                "MODULE_SPECIAL_GLUE"
+            ],
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_oil"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 0.5,
+                    "oil > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "oil > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "oil > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "oil": -2
+            }
+        },
+        "oil_processing": {
+            "fuel_gain_factor_from_states": 0.5,
+            "start_year": 1002,
+            "path": {
+                "leads_to_tech": "improved_oil_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": -1,
+                    "y": 4
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_oil"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 0.5,
+                    "oil > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "oil > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "oil > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "oil": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "improved_oil_processing": {
+            "fuel_gain_factor_from_states": 0.5,
+            "path": {
+                "leads_to_tech": "advanced_oil_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": -1,
+                    "y": 6
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_oil"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 0.5,
+                    "oil > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "oil > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "oil > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "oil": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "advanced_oil_processing": {
+            "fuel_gain_factor_from_states": 0.5,
+            "path": {
+                "leads_to_tech": "modern_oil_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": -1,
+                    "y": 8
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_oil"
+            ],
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 0.5,
+                    "rubber > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "rubber > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "rubber > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "rubber": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "modern_oil_processing": {
+            "fuel_gain_factor_from_states": 0.5,
+            "research_cost": 1.5,
+            "start_year": 1008,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": -1,
+                    "y": 10
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_oil"
+            ],
+            "ai_will_do": {
+                "factor": -0.5,
+                "modifier": {
+                    "factor": 0.5,
+                    "oil > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "oil > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "oil > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "oil": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "rubber_processing": {
+            "on_research_complete": {
+                "modify_building_resources": {
+                    "building": "synthetic_refinery",
+                    "resource": "rubber",
+                    "amount": 1
+                }
+            },
+            "path": {
+                "leads_to_tech": "improved_rubber_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1002,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 4
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_rubber"
+            ],
+            "ai_will_do": {
+                "factor": -0.5,
+                "modifier": {
+                    "factor": 0.5,
+                    "rubber > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "rubber > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "rubber > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "rubber": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "improved_rubber_processing": {
+            "on_research_complete": {
+                "modify_building_resources": {
+                    "building": "synthetic_refinery",
+                    "resource": "rubber",
+                    "amount": 1
+                }
+            },
+            "path": {
+                "leads_to_tech": "advanced_rubber_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1004,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 6
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_rubber"
+            ],
+            "ai_will_do": {
+                "factor": -0.5,
+                "modifier": {
+                    "factor": 0.5,
+                    "rubber > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "rubber > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "rubber > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "rubber": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "advanced_rubber_processing": {
+            "on_research_complete": {
+                "modify_building_resources": {
+                    "building": "synthetic_refinery",
+                    "resource": "rubber",
+                    "amount": 1
+                }
+            },
+            "path": {
+                "leads_to_tech": "modern_rubber_processing",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 8
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_rubber"
+            ],
+            "ai_will_do": {
+                "factor": -0.5,
+                "modifier": {
+                    "factor": 0.5,
+                    "rubber > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "rubber > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "rubber > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "rubber": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "modern_rubber_processing": {
+            "on_research_complete": {
+                "modify_building_resources": {
+                    "building": "synthetic_refinery",
+                    "resource": "rubber",
+                    "amount": 1
+                }
+            },
+            "research_cost": 1.5,
+            "start_year": 1008,
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 1,
+                    "y": 10
+                }
+            },
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_synth",
+                "cat_synth_rubber"
+            ],
+            "ai_will_do": {
+                "factor": -0.5,
+                "modifier": {
+                    "factor": 0.5,
+                    "rubber > 10": null
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "rubber > 20": null
+                },
+                "modifier__D2": {
+                    "factor": 0.5,
+                    "rubber > 30": null
+                }
+            },
+            "ai_research_weights": {
+                "rubber": -2
+            },
+            "show_effect_as_desc": true
+        },
+        "construction1": {
+            "production_speed_buildings_factor": 0.1,
+            "industry_repair_factor": 0.1,
+            "path": {
+                "leads_to_tech": "construction2",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "excavation1",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1000,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "ai_will_do": {
+                "factor": 50,
+                "modifier": {
+                    "factor": 5,
+                    "date > 1002.1.1": null
+                }
+            }
+        },
+        "excavation1": {
+            "local_resources_factor": 0.1,
+            "path": {
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction",
+                "pihc_excavation"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 0
+                }
+            },
+            "ai_will_do": {
+                "factor": 1,
+                "modifier": {
+                    "factor": 5,
+                    "OR": {
+                        "oil > 0": null,
+                        "aluminium > 0": null,
+                        "rubber > 0": null,
+                        "tungsten > 0": null,
+                        "steel > 0": null,
+                        "chromium > 0": null
+                    }
+                },
+                "modifier__D1": {
+                    "factor": 1.5,
+                    "OR": {
+                        "oil > 8": null,
+                        "aluminium > 8": null,
+                        "rubber > 8": null,
+                        "tungsten > 8": null,
+                        "steel > 8": null,
+                        "chromium > 8": null
+                    }
+                }
+            }
+        },
+        "construction2": {
+            "production_speed_buildings_factor": 0.1,
+            "industry_repair_factor": 0.1,
+            "path": {
+                "leads_to_tech": "construction3",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "excavation2",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                }
+            },
+            "ai_will_do": {
+                "factor": 4,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1002.1.1": null
+                }
+            }
+        },
+        "excavation2": {
+            "local_resources_factor": 0.1,
+            "path": {
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1002,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction",
+                "pihc_excavation"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 2
+                }
+            },
+            "ai_will_do": {
+                "factor": -5,
+                "modifier": {
+                    "factor": 5,
+                    "OR": {
+                        "oil > 0": null,
+                        "aluminium > 0": null,
+                        "rubber > 0": null,
+                        "tungsten > 0": null,
+                        "steel > 0": null,
+                        "chromium > 0": null
+                    }
+                },
+                "modifier__D1": {
+                    "factor": 1.5,
+                    "OR": {
+                        "oil > 8": null,
+                        "aluminium > 8": null,
+                        "rubber > 8": null,
+                        "tungsten > 8": null,
+                        "steel > 8": null,
+                        "chromium > 8": null
+                    }
+                }
+            }
+        },
+        "construction3": {
+            "production_speed_buildings_factor": 0.1,
+            "industry_repair_factor": 0.1,
+            "path": {
+                "leads_to_tech": "construction4",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "excavation3",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1004,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 1.5,
+                    "has_war": true
+                },
+                "modifier__D1": {
+                    "factor": 0.5,
+                    "has_war": false
+                },
+                "modifier__D2": {
+                    "factor": 3,
+                    "date > 1005.1.1": null
+                }
+            }
+        },
+        "excavation3": {
+            "local_resources_factor": 0.1,
+            "path": {
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1,
+            "start_year": 1004,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction",
+                "pihc_excavation"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 4
+                }
+            },
+            "ai_will_do": {
+                "factor": -5,
+                "modifier": {
+                    "factor": 5,
+                    "OR": {
+                        "oil > 0": null,
+                        "aluminium > 0": null,
+                        "rubber > 0": null,
+                        "tungsten > 0": null,
+                        "steel > 0": null,
+                        "chromium > 0": null
+                    }
+                },
+                "modifier__D1": {
+                    "factor": 1.5,
+                    "OR": {
+                        "oil > 8": null,
+                        "aluminium > 8": null,
+                        "rubber > 8": null,
+                        "tungsten > 8": null,
+                        "steel > 8": null,
+                        "chromium > 8": null
+                    }
+                }
+            }
+        },
+        "construction4": {
+            "production_speed_buildings_factor": 0.1,
+            "industry_repair_factor": 0.1,
+            "path": {
+                "leads_to_tech": "construction5",
+                "research_cost_coeff": 1
+            },
+            "path__D1": {
+                "leads_to_tech": "excavation4",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1007.1.1": null
+                }
+            }
+        },
+        "excavation4": {
+            "local_resources_factor": 0.1,
+            "path": {
+                "research_cost_coeff": 1
+            },
+            "research_cost": 1.5,
+            "start_year": 1006,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction",
+                "pihc_excavation"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 6
+                }
+            },
+            "ai_will_do": {
+                "factor": -5,
+                "modifier": {
+                    "factor": 5,
+                    "OR": {
+                        "oil > 0": null,
+                        "aluminium > 0": null,
+                        "rubber > 0": null,
+                        "tungsten > 0": null,
+                        "steel > 0": null,
+                        "chromium > 0": null
+                    }
+                },
+                "modifier__D1": {
+                    "factor": 1.5,
+                    "OR": {
+                        "oil > 8": null,
+                        "aluminium > 8": null,
+                        "rubber > 8": null,
+                        "tungsten > 8": null,
+                        "steel > 8": null,
+                        "chromium > 8": null
+                    }
+                }
+            }
+        },
+        "construction5": {
+            "production_speed_buildings_factor": 0.1,
+            "industry_repair_factor": 0.1,
+            "path": {
+                "leads_to_tech": "excavation5",
+                "research_cost_coeff": 1
+            },
+            "research_cost": 2,
+            "start_year": 1008,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 0,
+                    "y": 8
+                }
+            },
+            "ai_will_do": {
+                "factor": 0,
+                "modifier": {
+                    "factor": 10,
+                    "date > 1008.1.1": null
+                }
+            }
+        },
+        "excavation5": {
+            "local_resources_factor": 0.1,
+            "path": {
+                "research_cost_coeff": 1
+            },
+            "research_cost": 2,
+            "start_year": 1008,
+            "categories": [
+                "pihc_industry",
+                "pihc_civil",
+                "pihc_construction",
+                "pihc_excavation"
+            ],
+            "folder": {
+                "name": "industry_folder",
+                "position": {
+                    "x": 2,
+                    "y": 8
+                }
+            },
+            "ai_will_do": {
+                "factor": -5,
+                "modifier": {
+                    "factor": 5,
+                    "OR": {
+                        "oil > 0": null,
+                        "aluminium > 0": null,
+                        "rubber > 0": null,
+                        "tungsten > 0": null,
+                        "steel > 0": null,
+                        "chromium > 0": null
+                    }
+                },
+                "modifier__D1": {
+                    "factor": 1.5,
+                    "OR": {
+                        "oil > 8": null,
+                        "aluminium > 8": null,
+                        "rubber > 8": null,
+                        "tungsten > 8": null,
+                        "steel > 8": null,
+                        "chromium > 8": null
+                    }
+                }
+            }
+        }
+    }
+}

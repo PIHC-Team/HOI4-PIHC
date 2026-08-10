@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1": true,
+            "hidden_effect": {
+                "if": {
+                    "limit": {
+                        "is_ai": true
+                    },
+                    "country_event": {
+                        "id": "C18_MAIN.11",
+                        "days": 14
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

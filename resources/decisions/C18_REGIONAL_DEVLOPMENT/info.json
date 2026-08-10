@@ -1,0 +1,14 @@
+{
+    "priority": 99998,
+    "allowed": {
+        "tag": "C18"
+    },
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_REGIONAL_DEV_WORKING",
+            "has_completed_focus": "FOCUS_C18_100_REINCARNATION"
+        }
+    },
+    "scripted_gui": "C18_REGIONAL_DEV_GUI",
+    "visible_when_empty": true
+}

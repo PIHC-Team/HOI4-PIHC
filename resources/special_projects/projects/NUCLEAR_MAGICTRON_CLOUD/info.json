@@ -1,0 +1,35 @@
+{
+    "specialization": "specialization_nuclear",
+    "project_tags": "sp_tag_pihc_nuclear",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_MAGI_I"
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "crystals": 12
+        }
+    },
+    "complexity": "sp_complexity.medium",
+    "prototype_time": "sp_time.prototype.medium",
+    "project_output": {
+        "enable_equipment_modules": [
+            "MODULE_PROJECTILE_6A_PLASMA"
+        ]
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_NUCLEAR_EXP",
+        "SP_REWARD_GENERIC_NUCLEAR_MAGIC",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_FAILURE_THEORETICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

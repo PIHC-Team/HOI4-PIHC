@@ -1,0 +1,27 @@
+{
+    "tree": "C08_PARTIV",
+    "parent": "FOCUS_C08_SECOND_SUMMIT",
+    "priority": 10,
+    "x": 9,
+    "y": 2,
+    "cost": 2,
+    "cancelable": false,
+    "prerequisite": {
+        "focus": "FOCUS_C08_SECOND_SUMMIT"
+    },
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_TO_THE_WAR_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_TO_THE_WAR"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

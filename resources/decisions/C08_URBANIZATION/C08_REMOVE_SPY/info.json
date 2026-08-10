@@ -1,0 +1,43 @@
+{
+    "name": "Remove Spy",
+    "priority": 1000,
+    
+    "cost": 15,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_URBANIZATION"
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C08_TROTTINGHAM_REFORM"
+    },
+    "complete_effect": {
+        "custom_effect_tooltip": "C08_URBANIZATION_INC_5",
+        "888": {
+            "add_manpower":-42
+        },
+        "4": {
+            "add_manpower":-17
+        },
+        "481": {
+            "add_manpower":-31
+        },
+        "add_popularity": {
+            "ideology": "despotic",
+            "popularity": -0.03        
+        },
+        "hidden_effect": {
+            "add_to_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "value": 5
+            },
+            "clamp_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "min": 0,
+                "max": 100
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 10000
+    }
+}

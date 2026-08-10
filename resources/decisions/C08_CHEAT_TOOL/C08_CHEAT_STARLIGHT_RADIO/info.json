@@ -1,0 +1,18 @@
+{
+    "name": "Archive unlock",
+    "priority": 101,
+    
+    "cost": 0,
+    "allowed": {
+        "tag": "C08"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT"
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO"
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

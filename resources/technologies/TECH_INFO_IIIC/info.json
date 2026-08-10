@@ -1,0 +1,38 @@
+{
+    "name": "Crystalline",
+    "category": "electronics",
+
+    "x": 8,
+    "y": 18,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_info_tech",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_ARMOR_4B_MODERN",
+        "MODULE_PLANE_ARMOR_4B_MODERN",
+        "MODULE_CREW_5B_CRYSTAL"
+    ],
+    "research_speed_factor": 0.24,
+    "country_resource_cost_crystals": 5,
+    "special_project_specialization": [
+        "specialization_future"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_INFO_II": 1,
+        "TECHNOLOGY_TECH_MAGI_I": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1006
+}

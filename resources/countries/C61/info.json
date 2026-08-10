@@ -1,0 +1,99 @@
+{
+    "name": "Vanhoover",
+    "rgb": [
+        255,
+        202,
+        122
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 574,
+        "set_popularities": {
+            "harmonicism": 100
+        },
+        "set_politics": {
+            "ruling_party": "harmonicism",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_NOPONY_4"
+        ],
+        "add_ideas_batch": [
+            "closed_economy",
+            "disarmed_nation",
+            "civilian_economy"
+        ],
+        "409": {
+            "add_core_of": "C61"
+        },
+        "52": {
+            "add_core_of": "C61"
+        },
+        "418": {
+            "add_core_of": "C61"
+        },
+        "386": {
+            "add_core_of": "C61"
+        },
+        "355": {
+            "add_core_of": "C61"
+        },
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_SHIP_SEASURGE": 1,
+            "TECHNOLOGY_MTG_SHIP_SEASURGE": 1,
+            "TECHNOLOGY_SHIP_SEACOURTYARD": 1,
+            "TECHNOLOGY_MTG_SHIP_SEACOURTYARD": 1,
+            "TECHNOLOGY_SHIP_SEACARDINAL": 1,
+            "TECHNOLOGY_MTG_SHIP_SEACARDINAL": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "add_manpower": 100,
+        "add_political_power": 150,
+        "set_research_slots": 1,
+        "set_stability": 50.0,
+        "set_war_support": 50.0,
+        "country_lock_all_division_template": true,
+        "every_other_country": {
+            "ROOT": {
+                "give_military_access": "PREV"
+            }
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        }
+    }
+}

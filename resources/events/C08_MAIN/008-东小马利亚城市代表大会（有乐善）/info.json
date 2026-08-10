@@ -1,0 +1,48 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "481": {
+                "set_demilitarized_zone": false
+            },
+            "499": {
+                "set_demilitarized_zone": false
+            },
+            "506": {
+                "set_demilitarized_zone": false
+            },
+            "518": {
+                "set_demilitarized_zone": false
+            },
+            "568": {
+                "set_demilitarized_zone": false
+            },
+            "578": {
+                "set_demilitarized_zone": false
+            },
+            "606": {
+                "set_demilitarized_zone": false
+            },
+            "619": {
+                "set_demilitarized_zone": false
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C08"
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

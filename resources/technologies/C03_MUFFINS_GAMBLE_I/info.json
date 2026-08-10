@@ -1,0 +1,53 @@
+{
+    "name": "Muffins",
+    "category": "muffins",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 6,
+    "y": 6,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_muffins"
+    ],
+    "enable_equipments": {},
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_C03_MUFFINS_GAMBLE_I_TOOLTIP",
+        "add_to_variable": {
+            "var": "ROOT.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN",
+            "value": 20
+        }
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_C03_MUFFINS_GAMBLE_II",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE",
+        "research_cost_coeff": 1
+    },
+    "path__D2": {
+        "leads_to_tech": "TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE",
+        "research_cost_coeff": 1
+    },
+    "path__D3": {
+        "leads_to_tech": "TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK",
+        "research_cost_coeff": 1
+    },
+
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 1000,
+            "tag": "C03"
+        }
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1002
+}

@@ -1,0 +1,40 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C00": {
+                "annex_country": {
+                    "target": "C18",
+                    "transfer_troops": false
+                },
+                "if": {
+                    "limit": {
+                        "country_exists": "Z18"
+                    },
+                    "annex_country": {
+                        "target": "Z18",
+                        "transfer_troops": false
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "country_exists": "Y18"
+                    },
+                    "annex_country": {
+                        "target": "Y18",
+                        "transfer_troops": false
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

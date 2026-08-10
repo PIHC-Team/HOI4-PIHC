@@ -1,0 +1,21 @@
+{
+    "name": "Lokadhatu",
+    "priority": 100,
+    
+    "cost": 5,
+    "days_remove": 90,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NARROW_GATE_ACCIDENT"
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.102"
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

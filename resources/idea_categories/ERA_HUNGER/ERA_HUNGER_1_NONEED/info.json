@@ -1,0 +1,12 @@
+{
+    "name": "No Need",
+    "removal_cost": -1,
+    "available": {
+        "is_magical_creatures": true
+    },
+    "modifier": {
+        "custom_modifier_tooltip": "PIHC_HUNGER_TOOLTIP"
+    },
+    "cost": 30,
+    "cancel_if_invalid": false
+}

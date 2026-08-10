@@ -1,0 +1,43 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_STANDARDIZE_MILITARY_PROFESSIONALISM",
+    "dx": -1,
+    "dw": -6,
+    "dc": -3,
+    "prerequisite": {
+        "focus": "FOCUS_C12_STANDARDIZE_MILITARY_PROFESSIONALISM"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C12_FOCUS_ON_WAR_PRODUCTION"
+    },
+    "cost": 4,
+    "bypass": {
+        "is_ai": true,
+        "OR": {
+            "has_war_with": "C01",
+            "has_war_with__D1": "C31"
+        }
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C12_MAIN.46",
+            "days": 2,
+            "random_days": 2
+        }
+    },
+    "available": {
+        "has_army_manpower": {
+            "size > 3500": null
+        },
+        "country_exists": "C31",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

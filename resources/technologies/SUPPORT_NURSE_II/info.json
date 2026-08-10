@@ -1,0 +1,47 @@
+{
+    "name": "Support",
+    "category": "support",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 3,
+    "y": 4,
+    "size": "small",
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_nurse"
+    ],
+    "enable_equipments": [],
+    "enable_subunits": [],
+    "field_hospital": {
+        "casualty_trickleback": 0.1,
+        "experience_loss_factor": -0.1
+    },
+    "experience_loss_factor": -0.05,
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_ORG_II": 1,
+        "TECHNOLOGY_SUPPORT_NURSE_I": 1
+    },
+    "path": {},
+    "ai_will_do": {
+        "modifier": {
+            "factor": 10,
+            "has_idea": "extensive_conscription"
+        },
+        "modifier__D1": {
+            "factor": 25,
+            "has_idea": "service_by_requirement"
+        },
+        "modifier__D2": {
+            "factor": 50,
+            "has_idea": "all_adults_serve"
+        },
+        "modifier__D3": {
+            "factor": 75,
+            "has_idea": "scraping_the_barrel"
+        }
+    },
+    "research_cost": 1.5,
+    "start_year": 1004
+}

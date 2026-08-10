@@ -1,0 +1,59 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TAKE_OVER_BUFFALO",
+    "prerequisite": {
+        "focus": "FOCUS_C12_TAKE_OVER_BUFFALO"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_war_with": "C07"
+                }
+            },
+            "country_event": {
+                "id": "C12_MAIN.54",
+                "days": 2,
+                "random_days": 2
+            },
+            "custom_effect_tooltip": "PIHC_C12_MARBLE_PIE_MEETS_TWO_BROTHERS_TOOLTIP"
+        },
+        "else_if": {
+            "limit": {
+                "C12": {
+                    "has_war_with": "C07"
+                }
+            },
+            "country_event": {
+                "id": "C12_MAIN.56",
+                "days": 2,
+                "random_days": 2
+            },
+            "custom_effect_tooltip": "PIHC_C12_MARBLE_PIE_MEETS_TWO_BROTHERS_TOOLTIP"
+        }
+    },
+    "available": {
+        "country_exists": "C07",
+        "if":{
+            "limit": {
+                "is_ai": true
+            },
+            "has_war_with": "C07"
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "bypass":{
+        "NOT":{
+            "country_exists": "C01"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "C02": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_witchcraft": 2,
+                        "specialization_future": 1
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_witchcraft": 2,
+                        "specialization_future": 1
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "C02__D1": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_oilpunk": 2,
+                        "specialization_magic": 1
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_oilpunk": 2,
+                        "specialization_magic": 1
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

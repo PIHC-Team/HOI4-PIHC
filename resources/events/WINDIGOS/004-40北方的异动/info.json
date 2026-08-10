@@ -1,0 +1,25 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C26"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C26"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

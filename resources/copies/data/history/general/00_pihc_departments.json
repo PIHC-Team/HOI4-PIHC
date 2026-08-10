@@ -1,0 +1,256 @@
+{
+    "every_possible_country": {
+        "limit": {
+            "NOT": {
+                "OR": {
+                    "tag": "C08",
+                    "tag__D1": "C12",
+                    "is_blank_country": true,
+                    "is_magical_creatures": true
+                }
+            },
+            "is_dynamic_country": false
+        },
+        "generate_character": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_ARMY",
+            "name": "TRAIT_DEPARTMENT_ARMY",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "army_chief",
+                "traits": [
+                    "TRAIT_DEPARTMENT_ARMY"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D1": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_NAVY",
+            "name": "TRAIT_DEPARTMENT_NAVY",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "navy_chief",
+                "traits": [
+                    "TRAIT_DEPARTMENT_NAVY"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D2": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_AIR",
+            "name": "TRAIT_DEPARTMENT_AIR",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "air_chief",
+                "traits": [
+                    "TRAIT_DEPARTMENT_AIR"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D3": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_COMMAND",
+            "name": "TRAIT_DEPARTMENT_COMMAND",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "high_command",
+                "traits": [
+                    "TRAIT_DEPARTMENT_COMMAND"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D4": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_ARMY_THEORY",
+            "name": "TRAIT_DEPARTMENT_ARMY_THEORY",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "theorist",
+                "ledger": "army",
+                "traits": [
+                    "TRAIT_DEPARTMENT_ARMY_THEORY"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D5": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_NAVY_THEORY",
+            "name": "TRAIT_DEPARTMENT_NAVY_THEORY",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "theorist",
+                "ledger": "navy",
+                "traits": [
+                    "TRAIT_DEPARTMENT_NAVY_THEORY"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        },
+        "generate_character__D6": {
+            "token_base": "CHARACTER_GENERIC_DEPARTMENT_AIR_THEORY",
+            "name": "TRAIT_DEPARTMENT_AIR_THEORY",
+            "gender": "undefined",
+            "advisor": {
+                "slot": "theorist",
+                "ledger": "air",
+                "traits": [
+                    "TRAIT_DEPARTMENT_AIR_THEORY"
+                ],
+                "allowed": {
+                    "always": true
+                },
+                "cost": 100,
+                "can_be_fired": true,
+                "removal_cost": 150,
+                "ai_will_do": {
+                    "factor": 1
+                }
+            },
+            "portraits": {
+                "army": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                },
+                "navy": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_NAVY_portrait_navy_small"
+                },
+                "civilian": {
+                    "large": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army",
+                    "small": "GFX_CHARACTER_DEPARTMENT_C08_ARMY_portrait_army_small"
+                }
+            }
+        }
+    }
+}

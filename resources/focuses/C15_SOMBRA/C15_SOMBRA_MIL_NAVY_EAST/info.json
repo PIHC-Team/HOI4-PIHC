@@ -1,0 +1,51 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_MIL_NAVY",
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_MIL_NAVY"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "303": {
+            "add_building_construction": {
+                "type": "dockyard",
+                "level": 2,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": "naval_base",
+                "level": 2,
+                "instant_build": true,
+                "province": 10057
+            },
+            "add_building_construction__D2": {
+                "type": "coastal_bunker",
+                "instant_build": true,
+                "level": 2,
+                "province": 10057
+            }
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "303": {
+            "is_owned_and_controlled_by": "C15"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

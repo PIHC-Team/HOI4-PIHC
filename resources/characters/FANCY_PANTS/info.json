@@ -1,0 +1,53 @@
+{
+    "name": "Fancy Pants",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_HIGH_POLITICAL_ESTEEM",
+            "TRAIT_SILVER_SPOON_SYNDROME"
+        ],
+        "removal_cost": -1,
+        "on_add": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "CHARACTER_JET_SET",
+                        "has_idea__D1": "CHARACTER_UPPER_CRUST",
+                        "NOT": {
+                            "has_idea": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                        }
+                    },
+                    "add_ideas": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                },
+                "if__D1": {
+                    "limit": {
+                        "has_idea": "CHARACTER_FLEUR_DE_LIS",
+                        "NOT": {
+                            "has_idea": "IDEA_C01_HOUSE_OF_CARDS"
+                        }
+                    },
+                    "add_ideas": "IDEA_C01_HOUSE_OF_CARDS"
+                }
+            }
+        },
+        "on_remove": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                    },
+                    "remove_ideas": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                },
+                "if__D1": {
+                    "limit": {
+                        "has_idea": "IDEA_C01_HOUSE_OF_CARDS"
+                    },
+                    "remove_ideas": "IDEA_C01_HOUSE_OF_CARDS"
+                }
+            }
+        },
+        "can_be_fired": false
+    },
+    "gender": "male"
+}

@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_cosmetic_tag": "C08_harmonicism_alliance",
+            "remove_country_leader_trait": "TRAIT_STARLIGHT_GLIMMER_RESISTANCE_LEADER",  
+            "add_country_leader_trait": "TRAIT_STARLIGHT_GLIMMER_LIBERATION_FRONT_LEADER",
+            "hidden_effect": {
+                "news_event": {      
+                    "id": "C08_MAIN.39"
+                },
+                "news_event__D1": {      
+                    "id": "C08_MAIN.43",
+                    "days": 5
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

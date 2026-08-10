@@ -1,0 +1,29 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_000_AGRICULTURE_SUBSIDY",
+    "prerequisite": {
+        "focus": "FOCUS_C18_000_AGRICULTURE_SUBSIDY"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C18_000_PLANTATION_IMPROVE_TOOLTIP",
+        "swap_ideas": {
+            "add_idea": "IDEA_C18_AGRICULTURE_SUBSIDY_2",
+            "remove_idea": "IDEA_C18_AGRICULTURE_SUBSIDY"
+        }
+    },
+    "available": {
+        "CHARACTER_GRASS_GREEN": {
+            "is_hired_as_advisor": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

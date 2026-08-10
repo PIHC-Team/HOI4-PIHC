@@ -1,0 +1,46 @@
+{
+    "name": "Modern Light Tank",
+    "category": "nsb_armour",
+    "x": 0,
+    "y": 15,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_armor"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_TANK_LIGHT_MODERN"
+    ],
+    "enable_subunits": [],
+    "dependencies": {
+        "TECHNOLOGY_NSB_TANK_LIGHT_STEAM": 1,
+        "TECHNOLOGY_TECH_ENER_II": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY",
+        "research_cost_coeff": 1
+    },
+    "ai_will_do": {
+        "modifier": {
+            "factor": 10,
+            "arms_factory > 30": null
+        },
+        "modifier__D1": {
+            "factor": -10,
+            "arms_factory < 20": null
+        },
+        "modifier__D2": {
+            "factor": 10,
+            "date > 1005.1.1": null
+        },
+        "modifier__D3": {
+            "add": 50,
+            "date > 1003.1.1": null,
+            "OR": {
+                "tag": "C01"
+            }
+        }
+    },
+    "research_cost": 3.0,
+    "start_year": 1005
+}

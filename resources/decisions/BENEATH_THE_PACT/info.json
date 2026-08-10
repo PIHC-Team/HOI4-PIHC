@@ -1,0 +1,13 @@
+{
+    "priority": 30000,
+    "allowed": {
+        "OR": {
+            "tag": "C01",
+            "tag__D1": "C11",
+            "tag__D2": "C22"
+        }
+    },
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_JAHR_NULL"
+    }
+}

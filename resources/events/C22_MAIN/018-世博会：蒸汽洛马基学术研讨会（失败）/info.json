@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "VAR_PIHC_WORLD_EXPO_VENUE": 3
+                    },
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_WORLD_EXPO_LP_PURCHASE"
+                    }
+                },
+                "ADD_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_1": true
+            },
+            "set_variable": {
+                "VAR_PIHC_WORLD_EXPO_VENUE": 1
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

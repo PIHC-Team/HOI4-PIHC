@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "retire_character": "CHARACTER_IGNEOUS_ROCK_PIE",
+            "retire_character__D1": "CHARACTER_CLOUDY_QUARTZ",
+            "C01": {
+                "country_event": {
+                    "id": "C12_MAIN.84",
+                    "days": 2,
+                    "random_days": 2
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

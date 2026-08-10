@@ -1,0 +1,29 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_110_OPEN_TO_DRAGONS",
+    "prerequisite": {
+        "focus": "FOCUS_C18_110_OPEN_TO_DRAGONS"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "country_event": {
+            "id": "C18_MAIN.128"
+        }
+    },
+    "available": {
+        "OR": {
+            "country_exists": "C05",
+            "country_exists__D1": "C08",
+            "country_exists__D2": "C23"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

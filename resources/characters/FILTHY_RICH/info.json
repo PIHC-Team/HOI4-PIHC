@@ -1,0 +1,19 @@
+{
+    "gender": "male",
+    "country_leader": {
+        "ideology": "corporation_democracy",
+        "traits": [
+            "TRAIT_SILVER_SPOON_SYNDROME",
+            "TRAIT_ECONOMICAL_GENIUS_II"
+        ]
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_SILVER_SPOON_SYNDROME",
+            "TRAIT_ECONOMICAL_GENIUS_II"
+        ],
+        "removal_cost": 350
+    }
+}

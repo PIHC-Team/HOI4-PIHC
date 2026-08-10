@@ -1,0 +1,45 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C09"
+            },
+            "custom_effect_tooltip": "WETM_DEV_BONDS_DEPRECIATION",
+            "hidden_effect": {
+                "add_to_variable": {
+                    "var": "global.VAR_DEV_BONDS_EXCHANGE",
+                    "value": 10
+                },
+                "UPDATE_DEV_BONDS_EXCHANGE_RATE": true
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C09"
+                }
+            },
+            "custom_effect_tooltip": "WETM_DEV_BONDS_DEPRECIATION"
+        }
+    ],
+    "major": true,
+    "show_major": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_IS_IN_WETM",
+            "has_country_flag__D1": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS": true,
+            "is_in_faction_with": "C09"
+        }
+    },
+    "is_triggered_only": true
+}

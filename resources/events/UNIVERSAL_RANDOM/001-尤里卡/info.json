@@ -1,0 +1,42 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_tech_bonus": {
+                "bonus": 0.50,
+                "uses": 1,
+                "category": "pihc_all"
+            },
+            "random_list": {
+                "seed": "random",
+                "50": {
+                    "add_breakthrough_progress": {
+                        "specialization": "specialization_magic",
+                        "value": 0.8
+                    }
+                },
+                "40": {
+                    "add_breakthrough_progress": {
+                        "specialization": "specialization_witchcraft",
+                        "value": 0.8
+                    }
+                },
+                "10": {
+                    "add_breakthrough_progress": {
+                        "specialization": "specialization_nuclear",
+                        "value": 0.8
+                    }
+                }
+            }
+        }
+    ],
+    "mean_time_to_happen": {
+        "years": 3,
+        "modifier": {
+            "factor": 9999,
+            "date < 1003.03.15": null
+        }
+    }
+}

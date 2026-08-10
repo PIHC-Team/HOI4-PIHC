@@ -1,0 +1,39 @@
+{
+    "on_actions": {
+        "on_monthly_C38": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C38_RIFT_ACTIVATED",
+                        "has_war": false
+                    },
+                    "add_to_variable": {
+                        "var": "C38.VAR_PEACEFUL_COUNTER",
+                        "value": 1
+                    },
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "var": "C38.VAR_PEACEFUL_COUNTER",
+                                "value": 3,
+                                "compare": "greater_than"
+                            }
+                        },
+                        "C00": {
+                            "annex_country": {
+                                "target": "C38",
+                                "transfer_troops": false
+                            }
+                        }
+                    }
+                },
+                "else": {
+                    "set_variable": {
+                        "var": "C38.VAR_PEACEFUL_COUNTER",
+                        "value": 0
+                    }
+                }
+            }
+        }
+    }
+}

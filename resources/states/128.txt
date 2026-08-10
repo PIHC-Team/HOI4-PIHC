@@ -1,0 +1,39 @@
+state = {
+    id = 128
+    name = STATE_128
+    provinces = {
+        371
+        2105
+        4144
+        4560
+        4656
+        6853
+        7145
+        8277
+        12587
+        12623
+        12680
+        12705
+        12710
+        12732
+    }
+    manpower = 31122
+    state_category = town
+    history = {
+        owner = C57
+        victory_points = {
+            371
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 1
+            industrial_complex = 3
+            arms_factory = 1
+        }
+        add_core_of = C57
+    }
+    resources = {
+
+    }
+}

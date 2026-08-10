@@ -1,0 +1,37 @@
+{
+    "specialization": "specialization_steampunk",
+    "project_tags": "sp_tag_pihc_steampunk",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_I"
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "steel": 6,
+            "coal": 6,
+            "aluminium": 3
+        }
+    },
+    "complexity": "sp_complexity.small",
+    "prototype_time": "sp_time.prototype.short",
+    "project_output": {
+        "enable_equipment_modules": [
+            "MODULE_SPECIAL_SE_GADGET",
+            "MODULE_SPECIAL_AIR_SE_GADGET"
+        ]
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_STEAM",
+        "SP_REWARD_GENERIC_STEAM_EXP",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

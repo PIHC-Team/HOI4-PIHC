@@ -1,0 +1,48 @@
+state = {
+    id = 690
+    name = STATE_690
+    provinces = {
+        1096
+        1498
+        2201
+        3113
+        3126
+        3305
+        5347
+        5409
+        7310
+        8112
+        8859
+        9226
+        9239
+        12857
+        12920
+        12949
+        12970
+        12974
+        12994
+        13018
+        13038
+        13082
+        13094
+        13121
+    }
+    manpower = 7010
+    state_category = large_town
+    history = {
+        owner = C20
+        victory_points = {
+            1096
+            10
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+            arms_factory = 1
+        }
+        add_core_of = C20
+    }
+    resources = {
+        oil = 8
+    }
+}

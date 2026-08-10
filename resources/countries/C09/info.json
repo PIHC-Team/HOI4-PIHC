@@ -1,0 +1,221 @@
+{
+    "name": "Sire\u2019s Hollow  United Committee",
+    "rgb": [
+        226,
+        141,
+        62
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 432,
+        "set_popularities": {
+            "democratic": 72,
+            "harmonicism": 12,
+            "corporation": 8,
+            "despotic": 8
+        },
+        "set_politics": {
+            "ruling_party": "democratic",
+            "last_election": "1002.12.1",
+            "election_frequency": 24,
+            "elections_allowed": false
+        },
+        "recruit_character": "CHARACTER_STELLAR_FLARE",
+        "recruit_character__D1": "CHARACTER_FIRELIGHT",
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_FIREARM_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_COMM_II": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C09_CANTERLOT_PACT",
+            "FOCUS_C09_TERM_EXCHANGE",
+            "FOCUS_C09_CANTERLOT_PACT_2",
+            "FOCUS_C09_TERM_EXCHANGE_2"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "disarmed_nation",
+            "civilian_economy",
+            "IDEA_C09_TERM_EXCHANGE",
+            "IDEA_C09_SATELLITE",
+            "IDEA_ALL_ECONOMIC_GROWTH"
+        ],
+        "add_political_power": 250,
+        "set_stability": 0.35,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.3,
+        "set_convoys": 150,
+        "add_manpower": -3000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 500
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 60
+            },
+            {
+                "type": "train_equipment",
+                "amount": 60
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C09"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_HANDGONNE",
+                    "creator": "C09"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 100
+            }
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN",
+            "PIHC_COUNTRY_FLAG_C09_TERM_OF_STELLAR_FLARE"
+        ],
+        "country_lock_all_division_template": true,
+        "give_military_access_batch": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C08",
+            "C10",
+            "C11",
+            "C15"
+        ],
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Sire\u2019s Hollow  Historical AI",
+        "allowed": {
+            "tag": "C09"
+        },
+        "enable": {
+            "country_exists": "C09"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C09_APPLEWOOD_ACQUISITION",
+            "FOCUS_C09_ECO_WAR",
+            "FOCUS_C09_APPLEWOOD_DEVELOPMENT",
+            "FOCUS_C09_APPLEWOOD_POPULATION",
+            "FOCUS_C09_APPLEWOOD_INFRASTRUCTURE",
+            "FOCUS_C09_APPLEWOOD_TRANSPORT",
+            "FOCUS_C09_SEA_POWER",
+            "FOCUS_C09_SEA_NORTHERN_HARBOUR",
+            "FOCUS_C09_TALL_STREET",
+            "FOCUS_C09_APPLEWOOD_CITY_1",
+            "FOCUS_C09_APPLEWOOD_CITY_3",
+            "FOCUS_C09_SEA_SOUTHERN_HARBOUR",
+            "FOCUS_C09_APPLEWOOD_CITY_2",
+            "FOCUS_C09_SEA_FIRST_FLEET",
+            "FOCUS_C09_APPLEWOOD_CITY_NEW",
+            "FOCUS_C09_FREE_TRADE",
+            "FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL",
+            "FOCUS_C09_INTER_APPROACH_SADDLE",
+            "FOCUS_C09_INTER_OPEN_UP_SADDLE",
+            "FOCUS_C09_INTER_FACTION_SADDLE",
+            "FOCUS_C09_INTER_APPROACH_CLOUDSDALE",
+            "FOCUS_C09_INTER_FACTION_CLOUDSDALE",
+            "FOCUS_C09_COST_OF_DEVELOPMENT_1",
+            "FOCUS_C09_INTER_APPROACH_TIREK",
+            "FOCUS_C09_SEA_TREES",
+            "FOCUS_C09_SEA_BATTLESHIPISM",
+            "FOCUS_C09_SEA_SECOND_FLEET",
+            "FOCUS_C09_INTER_PURCHASE_TIREK",
+            "FOCUS_C09_INTER_PURCHASE_SADDLE",
+            "FOCUS_C09_INTER_PURCHASE_EAST",
+            "FOCUS_C09_INTER_HQ",
+            "FOCUS_C09_COST_OF_DEVELOPMENT_2",
+            "FOCUS_C09_INTER_FACTION_STRATUSBURG",
+            "FOCUS_C09_COST_OF_DEVELOPMENT_3",
+            "FOCUS_C09_COST_OF_DEVELOPMENT_4",
+            "FOCUS_C09_COST_OF_DEVELOPMENT_5",
+            "FOCUS_C09_BALANCE",
+            "FOCUS_C09_LEGACY",
+            "FOCUS_C09_SH",
+            "FOCUS_C09_SH_LIBRARY",
+            "FOCUS_C09_SH_BAKERY",
+            "FOCUS_C09_SH_BOOKSTORE",
+            "FOCUS_C09_SH_HERITAGE",
+            "FOCUS_C09_MSHGA",
+            "FOCUS_C09_MSHGA_EVAL",
+            "FOCUS_C09_MSHGA_QUIT",
+            "FOCUS_C09_MSHGA_NONSATELLITE",
+            "FOCUS_C09_MSHGA_JOIN_CHANGELINGS",
+            "FOCUS_C09_LAND_POWER",
+            "FOCUS_C09_LAND_CONTACT_STARLIGHT",
+            "FOCUS_C09_COST_OF_PROTECTION_1",
+            "FOCUS_C09_LAND_MIL_FACTORY",
+            "FOCUS_C09_COST_OF_PROTECTION_2",
+            "FOCUS_C09_LAND_MILITIA",
+            "FOCUS_C09_COST_OF_PROTECTION_3",
+            "FOCUS_C09_COST_OF_PROTECTION_4",
+            "FOCUS_C09_COST_OF_PROTECTION_5"
+        ]
+    }
+}

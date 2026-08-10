@@ -1,0 +1,47 @@
+{
+    "immediate": {
+        "C31": {
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+                        "value": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "compare": "greater_than"
+                    }
+                },
+                "C02": {
+                    "country_event": {
+                        "id": "C14_MAIN.16"
+                    }
+                },
+                "C14": {
+                    "country_event": {
+                        "id": "C14_MAIN.17"
+                    }
+                }
+            },
+            "else": {
+                "C02": {
+                    "country_event": {
+                        "id": "C14_MAIN.18"
+                    }
+                },
+                "C14": {
+                    "country_event": {
+                        "id": "C14_MAIN.19"
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

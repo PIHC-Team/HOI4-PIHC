@@ -1,0 +1,90 @@
+{
+    "name": "Puppet Stratusburg",
+    "priority": 110,
+    
+    "cost": 150,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "visible": {
+        "OR": {
+            "AND": {
+                "has_completed_focus": "FOCUS_C01_UNIFICATION_POLICY",
+                "has_completed_focus__D1": "FOCUS_C01_C04_OPERATION_REDSKY",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C01_C04_MERGED"
+                },
+                "C10": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                    }
+                }
+            },
+            "has_country_flag": "PIHC_COUNTRY_FLAG_DEBUG_PUPPET_C04"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        },
+        "power_balance_value": {
+            "id": "BOP_C04_INDEPENDENCE",
+            "value < -0.95": null
+        }
+    },
+    "complete_effect": {
+        "C04": {
+            "remove_all_power_balance_modifiers": {
+                "id": "BOP_C04_INDEPENDENCE"
+            },
+            "remove_power_balance": {
+                "id": "BOP_C04_INDEPENDENCE"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C04_MERGED"
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "C04": {
+                "retire_character": "CHARACTER_SPITFIRE",
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 1.00
+                },
+                "set_politics": {
+                    "ruling_party": "despotic"
+                },
+                "hidden_effect": {
+                    "remove_all_power_balance_modifiers": {
+                        "id": "BOP_C04_INDEPENDENCE"
+                    },
+                    "remove_power_balance": {
+                        "id": "BOP_C04_INDEPENDENCE"
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_VISIBLE_CHARACTER_UNITY_COMMITTEE_C04",
+                    "promote_character": {
+                        "character": "CHARACTER_UNITY_COMMITTEE_C04",
+                        "ideology": "despotic_duchy"
+                    }
+                }
+            },
+            "C01": {
+                "puppet": {
+                    "target": "C04",
+                    "end_wars": false
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C01_OPERATION_REDSKY_COMPLETED"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+                "if": {
+                    "limit": {
+                        "is_owned_by": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "add_core_of": "C22",
+                    "transfer_state_to": "C22"
+                }
+            },
+            "for_each_scope_loop__D1": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+                "if": {
+                    "limit": {
+                        "is_owned_by": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "add_core_of": "C22",
+                    "transfer_state_to": "C22"
+                }
+            },
+            "for_each_scope_loop__D2": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+                "if": {
+                    "limit": {
+                        "is_owned_by": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "add_core_of": "C22",
+                    "transfer_state_to": "C22"
+                }
+            },
+            "C18": {
+                "country_event": {
+                    "id": "C18_MAIN.85",
+                    "days": 1
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

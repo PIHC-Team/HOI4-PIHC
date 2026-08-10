@@ -1,0 +1,19 @@
+{
+    "name": "Contemporary Heavy Cannon",
+    "parent": "EQUIPMENT_CANNON_HEAVY_MODERN",
+    "alpha_global": 1.0,
+    "reliability": 0.99,
+    "weight": 2.5,
+    
+    "resources": {
+        "steel": 10,
+        "rubber": 4,
+        "tungsten": 3
+    },
+    "ap_attack": 60.0,
+    "fuel_consumption": 0.24,
+
+    "maximum_speed": 4.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

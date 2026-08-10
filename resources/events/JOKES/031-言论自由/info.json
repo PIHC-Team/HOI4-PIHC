@@ -1,0 +1,52 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "has_global_flag": "PIHC_GLOBAL_FLAG_JOKE_031_SEEN"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "global.VAR_PIHC_JOKE_COUNTER",
+                    "value": 1
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_JOKE_031_SEEN"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "JOKES.9999"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "JOKES.32"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "JOKES.30"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

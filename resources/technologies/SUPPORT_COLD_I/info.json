@@ -1,0 +1,40 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 3,
+    "y": 10,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_cold"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "acclimatization_cold_climate_gain_factor": 0.5,
+    "winter_attrition_factor": -0.15,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT": 1
+    },
+    "path": {
+    },
+    "ai_will_do": {
+        "factor": 0,
+        "modifier": {
+            "factor": 5,
+            "date > 1003.1.1": null
+        }
+    },
+    "research_cost": 0.5,
+    "start_year": 1002
+}

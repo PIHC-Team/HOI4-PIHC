@@ -1,0 +1,17 @@
+{
+    "name": "Industry Era",
+    "removal_cost": 0,
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IDEA_ERA_AGE_INDUSTRIALIZATION_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INDUSTRIALIZATION"
+        }
+    },
+    "modifier": {
+        "production_factory_start_efficiency_factor": 0.10,
+        "production_factory_max_efficiency_factor": 0.10,
+        "production_factory_efficiency_gain_factor": 0.10
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

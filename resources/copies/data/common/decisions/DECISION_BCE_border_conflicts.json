@@ -1,0 +1,424 @@
+{
+    "@border_incident_escalation_countdown": 15,
+    "@border_conflict_incident_forgotten_timer": 30,
+    "@border_conflict_escalate_to_war_countdown": 45,
+    "@border_conflict_time_until_cancelled": 360,
+    "DECISION_CATEGORY_BCE_BORDER_CONFLICTS": {
+        "BCE_border_conflict_incident_warning_defender": {
+            "icon": "border_war",
+            "allowed": {
+                "always": false
+            },
+            "available": {
+                "hidden_trigger": {
+                    "always": false
+                }
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:defender_state_temp",
+                    "state__D1": "var:ROOT.defender_state_vs_@FROM"
+                }
+            },
+            "war_with_target_on_timeout": true,
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "days_mission_timeout": "@border_incident_escalation_countdown",
+            "fire_only_once": true,
+            "is_good": false,
+            "timeout_effect": {
+                "custom_effect_tooltip": "escalation_possible_tooltip_for_defender",
+                "custom_effect_tooltip__D1": "effects_if_border_conflict_is_lost",
+                "effect_tooltip": {
+                    "add_political_power": -100,
+                    "var:ROOT.defender_state_vs_@FROM": {
+                        "FROM": {
+                            "transfer_state": "PREV"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "remove_targeted_decision": {
+                        "target": "FROM",
+                        "decision": "BCE_border_conflict_incident_warning_defender"
+                    },
+                    "activate_targeted_decision": {
+                        "target": "FROM",
+                        "decision": "BCE_border_conflict_escalation_warning_defender"
+                    }
+                }
+            }
+        },
+        "BCE_border_conflict_escalation_warning_defender": {
+            "icon": "border_war",
+            "allowed": {
+                "always": false
+            },
+            "available": {
+                "hidden_trigger": {
+                    "always": false
+                }
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:defender_state_temp",
+                    "state__D1": "var:ROOT.defender_state_vs_@FROM"
+                }
+            },
+            "war_with_target_on_timeout": true,
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "days_mission_timeout": "@border_conflict_incident_forgotten_timer",
+            "fire_only_once": true,
+            "is_good": false,
+            "timeout_effect": {
+                "custom_effect_tooltip": "from_cannot_escalate",
+                "custom_effect_tooltip__D1": "effects_if_border_conflict_is_lost",
+                "effect_tooltip": {
+                    "add_political_power": -100,
+                    "var:ROOT.defender_state_vs_@FROM": {
+                        "FROM": {
+                            "transfer_state": "PREV"
+                        }
+                    }
+                }
+            }
+        },
+        "BCE_escalate_incident_to_border_conflict": {
+            "icon": "border_war",
+            "allowed": {
+                "always": false
+            },
+            "available": {
+                "divisions_in_border_state": {
+                    "state": "var:FROM.attacker_state_vs_@ROOT",
+                    "border_state": "var:FROM.defender_state_vs_@ROOT",
+                    "size > 0": null
+                }
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:FROM.attacker_state_vs_@ROOT"
+                }
+            },
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "cancel_trigger": {
+                "is_in_faction_with": "FROM"
+            },
+            "selectable_mission": true,
+            "fire_only_once": true,
+            "days_mission_timeout": "@border_conflict_incident_forgotten_timer",
+            "timeout_effect": {
+                "custom_effect_tooltip": "BCE_border_incident_delay_until_new_incident_120",
+                "hidden_effect": {
+                    "FROM": {
+                        "remove_targeted_decision": {
+                            "target": "ROOT",
+                            "decision": "BCE_border_conflict_escalation_warning_defender"
+                        }
+                    },
+                    "FROM__D1": {
+                        "var:attacker_state_vs_@ROOT": {
+                            "clr_state_flag": "border_incident_active"
+                        },
+                        "var:defender_state_vs_@ROOT": {
+                            "clr_state_flag": "border_incident_active"
+                        },
+                        "clear_variable": "attacker_state_vs_@ROOT",
+                        "clear_variable__D1": "defender_state_vs_@ROOT"
+                    }
+                }
+            },
+            "complete_effect": {
+                "start_border_war": {
+                    "change_state_after_war": false,
+                    "attacker": {
+                        "state": "var:FROM.attacker_state_vs_@ROOT",
+                        "num_provinces": 4,
+                        "on_win": "BCE_border_conflict_won_attacker.1",
+                        "on_lose": "BCE_border_conflict_lost_attacker.1",
+                        "on_cancel": "BCE_border_conflict_canceled_attacker.1"
+                    },
+                    "defender": {
+                        "state": "var:FROM.defender_state_vs_@ROOT",
+                        "num_provinces": 4,
+                        "on_win": "BCE_border_conflict_won_defender.1",
+                        "on_lose": "BCE_border_conflict_lost_defender.1",
+                        "on_cancel": "BCE_border_conflict_canceled_defender.1"
+                    }
+                },
+                "FROM": {
+                    "activate_targeted_decision": {
+                        "target": "ROOT",
+                        "decision": "BCE_border_conflict_escalate_conflict"
+                    },
+                    "activate_targeted_decision__D1": {
+                        "target": "ROOT",
+                        "decision": "BCE_border_conflict_time_until_cancelled"
+                    }
+                },
+                "activate_targeted_decision": {
+                    "target": "FROM",
+                    "decision": "BCE_border_conflict_escalate_conflict"
+                },
+                "activate_targeted_decision__D1": {
+                    "target": "FROM",
+                    "decision": "BCE_border_conflict_time_until_cancelled"
+                }
+            }
+        },
+        "BCE_border_conflict_time_until_cancelled": {
+            "icon": "border_war",
+            "allowed": {
+                "always": false
+            },
+            "available": {
+                "var:FROM.defender_state_vs_@ROOT": {
+                    "has_border_war": false
+                },
+                "var:FROM.attacker_state_vs_@ROOT": {
+                    "has_border_war": false
+                }
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:defender_state_temp",
+                    "state__D1": "var:FROM.defender_state_vs_@ROOT"
+                }
+            },
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "days_mission_timeout": "@border_conflict_time_until_cancelled",
+            "is_good": false,
+            "fire_only_once": true,
+            "complete_effect": [],
+            "timeout_effect": {
+                "if": {
+                    "limit": {
+                        "is_border_conflict_defender_vs_FROM": true
+                    },
+                    "cancel_border_war": {
+                        "defender": "var:defender_state_vs_@FROM",
+                        "attacker": "var:attacker_state_vs_@FROM"
+                    }
+                },
+                "else": {
+                    "cancel_border_war": {
+                        "defender": "var:FROM.defender_state_vs_@ROOT",
+                        "attacker": "var:FROM.attacker_state_vs_@ROOT"
+                    }
+                },
+                "hidden_effect": {
+                    "remove_targeted_decision": {
+                        "target": "FROM",
+                        "decision": "BCE_border_conflict_escalate_conflict"
+                    }
+                }
+            }
+        },
+        "BCE_border_conflict_escalate_conflict": {
+            "icon": "decision_generic_ignite_civil_war",
+            "allowed": {
+                "always": false
+            },
+            "visible": {
+                "has_border_war_with": "FROM"
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:FROM.attacker_state_vs_@ROOT",
+                    "state__D1": "var:ROOT.defender_state_vs_@FROM"
+                }
+            },
+            "cost": 200,
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "fire_only_once": true,
+            "complete_effect": {
+                "if": {
+                    "limit": {
+                        "is_border_conflict_defender_vs_FROM": true
+                    },
+                    "set_border_war_data": {
+                        "attacker": "var:ROOT.defender_state_vs_@FROM",
+                        "defender": "var:ROOT.defender_state_vs_@FROM",
+                        "defender_modifier": 0.15,
+                        "combat_width": 100
+                    }
+                },
+                "else": {
+                    "set_border_war_data": {
+                        "attacker": "var:FROM.defender_state_vs_@ROOT",
+                        "defender": "var:FROM.defender_state_vs_@ROOT",
+                        "attacker_modifier": 0.15,
+                        "combat_width": 100
+                    }
+                },
+                "FROM": {
+                    "set_country_flag": {
+                        "flag": "BCE_border_conflict_escalate_to_war_cooldown_@ROOT",
+                        "days": "@border_conflict_escalate_to_war_countdown",
+                        "value": 1
+                    },
+                    "remove_targeted_decision": {
+                        "target": "ROOT",
+                        "decision": "BCE_border_conflict_escalate_conflict"
+                    }
+                },
+                "set_country_flag": {
+                    "flag": "BCE_border_conflict_escalate_to_war_cooldown_@FROM",
+                    "days": "@border_conflict_escalate_to_war_countdown",
+                    "value": 1
+                },
+                "custom_effect_tooltip": "in_45_days",
+                "activate_targeted_decision": {
+                    "target": "FROM",
+                    "decision": "BCE_border_conflict_escalate_to_war"
+                }
+            }
+        },
+        "BCE_border_conflict_escalate_to_war": {
+            "icon": "decision_generic_ignite_civil_war",
+            "allowed": {
+                "always": false
+            },
+            "visible": {
+                "NOT": {
+                    "has_country_flag": "BCE_border_conflict_escalate_to_war_cooldown_@FROM"
+                },
+                "has_border_war_with": "FROM"
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:FROM.defender_state_vs_@ROOT",
+                    "state__D1": "var:ROOT.attacker_state_vs_@FROM"
+                }
+            },
+            "cost": 150,
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "days_remove": 15,
+            "fire_only_once": true,
+            "war_with_target_on_remove": true,
+            "complete_effect": {
+                "if": {
+                    "limit": {
+                        "is_border_conflict_defender_vs_FROM": true
+                    },
+                    "var:ROOT.defender_state_vs_@FROM": {
+                        "save_event_target_as": "their_state"
+                    },
+                    "var:ROOT.attacker_state_vs_@FROM": {
+                        "save_event_target_as": "our_state"
+                    }
+                },
+                "else": {
+                    "var:FROM.defender_state_vs_@ROOT": {
+                        "save_event_target_as": "our_state"
+                    },
+                    "var:FROM.attacker_state_vs_@ROOT": {
+                        "save_event_target_as": "their_state"
+                    }
+                },
+                "FROM": {
+                    "country_event": {
+                        "id": "BCE_border_conflict_escalate_to_war.1"
+                    },
+                    "hidden_effect": {
+                        "remove_targeted_decision": {
+                            "target": "ROOT",
+                            "decision": "BCE_border_conflict_escalate_to_war"
+                        }
+                    }
+                }
+            },
+            "remove_effect": {
+                "cancel_border_war": {
+                    "dont_fire_events": true,
+                    "defender": "var:FROM.defender_state_vs_@ROOT",
+                    "attacker": "var:FROM.attacker_state_vs_@ROOT"
+                },
+                "declare_war_on": {
+                    "target": "FROM",
+                    "type": "annex_everything"
+                },
+                "if": {
+                    "limit": {
+                        "is_border_conflict_defender_vs_FROM": true
+                    },
+                    "var:attacker_state_vs_@FROM": {
+                        "clr_state_flag": "border_incident_active"
+                    },
+                    "var:defender_state_vs_@FROM": {
+                        "clr_state_flag": "border_incident_active"
+                    },
+                    "clear_variable": "attacker_state_vs_@FROM",
+                    "clear_variable__D1": "defender_state_vs_@FROM"
+                },
+                "else": {
+                    "FROM": {
+                        "var:attacker_state_vs_@ROOT": {
+                            "clr_state_flag": "border_incident_active"
+                        },
+                        "var:defender_state_vs_@ROOT": {
+                            "clr_state_flag": "border_incident_active"
+                        },
+                        "clear_variable": "attacker_state_vs_@ROOT",
+                        "clear_variable__D1": "defender_state_vs_@ROOT"
+                    }
+                }
+            }
+        },
+        "BCE_border_conflict_back_out_of_conflict": {
+            "allowed": {
+                "always": false
+            },
+            "visible": {
+                "has_border_war_with": "FROM"
+            },
+            "highlight_states": {
+                "highlight_state_targets": {
+                    "state": "var:FROM.attacker_state_vs_@ROOT",
+                    "state__D1": "var:ROOT.defender_state_vs_@FROM"
+                }
+            },
+            "ai_will_do": {
+                "base": 0,
+                "modifier": []
+            },
+            "fire_only_once": true,
+            "complete_effect": {
+                "if": {
+                    "limit": {
+                        "is_border_conflict_defender_vs_FROM": true
+                    },
+                    "finalize_border_war": {
+                        "attacker_win": true,
+                        "attacker": "ROOT.attacker_state_vs_@FROM",
+                        "defender": "ROOT.attacker_state_vs_@FROM"
+                    }
+                },
+                "else": {
+                    "finalize_border_war": {
+                        "attacker": "FROM.attacker_state_vs_@ROOT",
+                        "defender": "FROM.attacker_state_vs_@ROOT",
+                        "defender_win": true
+                    }
+                }
+            }
+        }
+    }
+}

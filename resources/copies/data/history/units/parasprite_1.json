@@ -1,0 +1,24 @@
+{
+    "division_template": {
+        "name": "精灵飞蝇群 (Parasprite Swarm)",
+        "regiments": {
+            "infantry_automata": {
+                "x": 0,
+                "y": 0
+            },
+            "infantry_automata__D1": {
+                "x": 1,
+                "y": 0
+            },
+            "infantry_automata__D2": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        "support": {
+
+        },
+        "is_locked": true,
+        "priority": 0
+    }
+}

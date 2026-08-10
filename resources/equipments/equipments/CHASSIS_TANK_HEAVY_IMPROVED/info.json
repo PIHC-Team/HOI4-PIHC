@@ -1,0 +1,117 @@
+{
+    "name": "Chassis",
+    "parent": "EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN",
+    "is_frame": true,
+
+    "build_cost_ic": 8.0,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.90,
+    "manpower": 3,
+    "weight": 1.5,
+
+    "defense": 48.0,
+    "max_strength": 200.0,
+    "armor_value": 24.0,
+    "hardness": 0.95,
+    
+    "resources": {
+        "steel": 9,
+        "rubber": 6
+    },
+    "fuel_consumption": 0.25,
+    "fuel_capacity": 20.0,
+
+    "module_slots": {
+        "engine_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_engine_type_0",
+                "pihc_tank_engine_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_engine_type_slot"
+        },
+        "crew_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_crew_type_0"
+            ],
+            "gfx": "TM_heavy_tank_chassis_armor_type_slot"
+        },
+        "painting_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_painting_type_0",
+                "pihc_tank_painting_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_armor_type_slot"
+        },
+        "special_type_slot_1": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_tank_special_type_1"
+            ],
+            "special": true
+        },
+        "special_type_slot_2": {
+            "required": false,
+            "allowed_module_categories": [
+                "pihc_tank_special_type_1"
+            ],
+            "special": true
+        },
+        "turret_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_turret_type_0",
+                "pihc_tank_turret_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_turret_type_slot"
+        },
+        "projectile_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_projectile_type_0",
+                "pihc_tank_projectile_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_main_armament_slot"
+        },
+        "armor_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_armor_type_0",
+                "pihc_tank_armor_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_armor_type_slot"
+        },
+        "suspension_type_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "pihc_tank_suspension_type_0",
+                "pihc_tank_suspension_type_1"
+            ],
+            "gfx": "TM_heavy_tank_chassis_suspension_type_slot"
+        }
+    },
+    "default_modules": {
+        "turret_type_slot": "MODULE_TURRET_3B_SPIN",
+        "projectile_type_slot": "MODULE_PROJECTILE_5B_SHELL",
+        "painting_type_slot": "MODULE_PAINTING_CAMOU",
+        "crew_type_slot": "MODULE_CREW_1A_NONE",
+        "suspension_type_slot": "MODULE_SUSPENSION_2A_TRACK",
+        "armor_type_slot": "MODULE_ARMOR_2B_STEEL",
+        "engine_type_slot": "MODULE_ENGINE_2A_STEAM"
+    },
+    "module_count_limit_batch": [
+        {
+            "module": "any",
+            "count < 9": null,
+            "title": "CHASSIS_HAS_ONLY_9_SLOTS_TOOLTIP"
+        }
+    ],
+
+    "maximum_speed": 0.5,
+    "entrenchment": 4.0,
+    "recon": 2
+}

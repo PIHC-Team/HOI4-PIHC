@@ -1,0 +1,16 @@
+{
+    "name": "Smoothbore Musket",
+    "parent": "EQUIPMENT_RANGED_HANDGUN",
+    "alpha_global": 0.35,
+    "alpha": {
+        "defense": -0.1
+    },
+    
+    "reliability": 0.90,
+    
+    "resources": {
+        "logs": 2,
+        "steel": 2,
+        "coal": 1
+    }
+}

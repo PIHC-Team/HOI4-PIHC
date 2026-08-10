@@ -1,0 +1,42 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_SEA_POWER",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C09_SEA_POWER"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "409": {
+            "add_building_construction": {
+                "type": "dockyard",
+                "level": 2,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": "naval_base",
+                "level": 2,
+                "instant_build": true,
+                "province": 10877
+            }
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "409": {
+            "is_owned_and_controlled_by": "C09"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

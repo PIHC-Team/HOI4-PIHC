@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_31_TOOLTIP",
+            "hidden_effect": {
+                "country_event": {      
+                    "id": "C08_MAIN.32",
+                    "days": 7
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

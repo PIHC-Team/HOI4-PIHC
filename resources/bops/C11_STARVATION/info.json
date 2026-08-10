@@ -1,0 +1,88 @@
+{
+    "initial_value": -0.3,
+    "decision_category": "DECISION_CATEGORY_C11_STARVATION",
+    "sides": {
+        "left": {
+            "range": {
+                "min": -1.0,
+                "max": -0.99,
+                "modifier": {
+                    "consumer_goods_factor": 0.9,
+                    "political_power_cost": 0.8,
+                    "stability_factor": -0.15,
+                    "party_popularity_stability_factor": -0.2,
+                    "conscription_factor": -0.15,
+                    "monthly_population": -0.10
+                },
+                "on_activate": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C11_CIVIL_WAR",
+                    "remove_all_power_balance_modifiers": {
+                        "id": "BOP_C11_STARVATION"
+                    },
+                    "add_power_balance_value": {
+                        "id": "BOP_C11_STARVATION",
+                        "value": -1.0
+                    },
+                    "news_event": {
+                        "id": "C11_MAIN.5",
+                        "days": 28
+                    }
+                }
+            },
+            "range__D1": {
+                "min": -0.99,
+                "max": -0.8,
+                "modifier": {
+                    "consumer_goods_factor": 0.9,
+                    "political_power_cost": 0.8,
+                    "stability_factor": -0.15,
+                    "party_popularity_stability_factor": -0.2,
+                    "conscription_factor": -0.15,
+                    "monthly_population": -0.10
+                }
+            },
+            "range__D2": {
+                "min": -0.8,
+                "max": -0.0,
+                "modifier": {
+                    "consumer_goods_factor": 0.7,
+                    "political_power_cost": 0.5,
+                    "stability_factor": -0.1,
+                    "party_popularity_stability_factor": -0.1,
+                    "conscription_factor": -0.1,
+                    "monthly_population": -0.05
+                }
+            }
+        },
+        "right": {
+            "range": {
+                "min": 0.0,
+                "max": 0.5,
+                "modifier": {
+                    "consumer_goods_factor": 0.3,
+                    "political_power_cost": 0.2
+                }
+            },
+            "range__D1": {
+                "min": 0.5,
+                "max": 1.0,
+                "modifier": {
+                }
+            }
+        }
+    },
+    "modifiers": {
+        "BOP_C11_STARVATION_DAILY_COST": {
+            "power_balance_weekly": -0.100
+        },
+        "BOP_C11_STARVATION_CRYSTAL_EMPIRE_TRIBUTE": {
+            "power_balance_weekly": 0.085
+        },
+        "BOP_C11_STARVATION_REINDEER_TRIBUTE": {
+            "power_balance_weekly": 0.018
+        },
+        "BOP_C11_STARVATION_ZEBRA_TRIBUTE": {
+            "power_balance_weekly": 0.018
+        }
+    }
+}

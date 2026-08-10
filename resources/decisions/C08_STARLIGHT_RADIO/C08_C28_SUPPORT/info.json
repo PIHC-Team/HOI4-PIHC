@@ -1,0 +1,23 @@
+{
+    "name": "C28 Support",
+    "priority": 89998,
+    
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_C28_SUPPORT"
+    },
+    "available": {
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "remove_ideas": "CHARACTER_FEATHER_BANGS",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_SILVERSTREAM"
+        },
+        "add_ideas": "CHARACTER_SILVERSTREAM",
+        "add_ideas__D1": "IDEA_C08_C28_SUPPORT"
+    },
+    "cost": 60,
+    "ai_will_do": {
+        "base": 99998
+    },
+    "fire_only_once": true
+}

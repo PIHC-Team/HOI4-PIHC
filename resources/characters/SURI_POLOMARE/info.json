@@ -1,0 +1,21 @@
+{
+    "name": "Suri Polomare",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 100,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_CORRUPT",
+            "TRAIT_PRINCE_OF_TERROR"
+        ]
+    },
+    "country_leader": {
+        "ideology": "corporation_oligarchy",
+        "traits": [
+            "TRAIT_CORRUPT",
+            "TRAIT_PRINCE_OF_TERROR"
+        ]
+    }
+}

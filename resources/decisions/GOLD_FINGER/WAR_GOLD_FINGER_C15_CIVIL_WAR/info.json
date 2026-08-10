@@ -1,0 +1,21 @@
+{
+    "name": "C15 Civil War",
+    "priority": 102,
+    
+    "cost": 1999,
+    "available": {
+        "is_ironman": false
+    },
+    "complete_effect": {
+        "C15": {
+            "hidden_effect": {
+                "C15_FULL_ON_CIVIL_WAR": true,
+                "C15_WAR_AT_EACH_OTHER": true
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 0
+    }
+}

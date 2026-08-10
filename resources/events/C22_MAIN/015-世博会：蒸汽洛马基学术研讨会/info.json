@@ -1,0 +1,30 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "random_list": {
+                    "seed": "random",
+                    "10": {
+                        "country_event": {
+                            "id": "C22_MAIN.17"
+                        }
+                    },
+                    "90": {
+                        "country_event": {
+                            "id": "C22_MAIN.16"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

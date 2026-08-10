@@ -1,0 +1,35 @@
+{
+    "name": "Magical Sniper",
+    "category": "infantry",
+
+    "x": 0,
+    "y": 21,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_MAGICAL_RANGED_SNIPER"
+    ],
+    "enable_subunits": [
+    ],
+    "allow_branch": {
+        "OR": {
+            "tag": "C07",
+            "tag__D1": "C23"
+        }
+    },
+    "allow": {
+        "always": false
+    },
+    "dependencies": {
+        "TECHNOLOGY_MAGICAL_BLUNDERBUSS": 1,
+        "TECHNOLOGY_TECH_ENER_III": 1
+    },
+
+    "research_cost": 5.0,
+    "start_year": 1007
+}

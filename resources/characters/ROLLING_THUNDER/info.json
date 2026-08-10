@@ -1,0 +1,29 @@
+{
+    "name": "Rolling Thunder",
+    "gender": "female",
+    "advisor": {
+        "slot": "air_chief",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_FEARLESS",
+            "TRAIT_WASHOUTS_ROLLING_THUNDER"
+        ],
+        "available": {
+            "if": {
+                "limit": {
+                    "tag": "C04",
+                    "NOT": {
+                        "has_government": "fascism"
+                    }
+                },
+                "custom_trigger_tooltip": {
+                    "tooltip": "PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP",
+                    "always": false
+                }
+            }
+        },
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    }
+}

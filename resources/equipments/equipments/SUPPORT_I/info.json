@@ -1,0 +1,19 @@
+{
+    "name": "Support Equipment",
+    "archetype": "ARCHETYPE_SUPPORT",
+    "priority": 0,
+    "visual_level": 0,
+
+    "active": true,
+
+    "build_cost_ic": 2.00,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.85,
+    
+    "resources": {
+        "logs": 2,
+        "coal": 1
+    }
+}

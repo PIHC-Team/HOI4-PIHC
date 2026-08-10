@@ -1,0 +1,34 @@
+{
+    "name": "Material Upgrade",
+    "category": "infantry",
+
+    "x": 6,
+    "y": 21,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_shield"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_shield": {
+        "defense": 0.10,
+        "max_strength": 0.10,
+        "soft_attack": 0.2,
+        "build_cost_ic": -0.15
+    },
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIELD_MODERN",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1007
+}

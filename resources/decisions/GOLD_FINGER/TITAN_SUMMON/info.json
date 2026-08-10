@@ -1,0 +1,16 @@
+{
+    "name": "Summon Titan",
+    "priority": 101,
+    
+    "cost": 1000,
+    "days_re_enable": 7,
+    "available": {
+        "is_ironman": false
+    },
+    "complete_effect": {
+        "PANZER": true
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

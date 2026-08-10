@@ -1,0 +1,17 @@
+{
+    "news_effects": {
+        "C03": {
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C03_ENDING_MUFFIN_WORLD",
+            "add_named_threat": {
+                "threat": -10,
+                "name": "EVENT_SUPER_7_THREAT"
+            }
+        }
+    },
+    "effects": {
+        "play_song": "superevent_music_07"
+    },
+    "o_effects": {
+        "custom_effect_tooltip": "PIHC_ENDING_TEXT"
+    }
+}

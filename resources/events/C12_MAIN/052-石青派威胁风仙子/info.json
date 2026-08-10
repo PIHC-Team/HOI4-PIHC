@@ -1,0 +1,41 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+				"factor": 100
+            },
+			"trigger": {
+				"tag": "C40"
+			},
+            "C12": {
+                "annex_country": {
+                    "target": "C40",
+                    "transfer_troops": false
+                },
+                "add_named_threat": {
+                    "threat": 5,
+                    "name": "EVENT_C12_MAIN_49_TENSION"
+                },
+                "country_event": {
+                    "id": "C12_MAIN.53",
+                    "days": 7,
+                    "random_days": 2
+                }
+            }
+        },
+        {
+            "ai_chance": {
+				"factor": 100
+            },
+			"trigger": {
+				"tag": "C12"
+			},
+            "add_war_support": 0.05,
+            "declare_war_on": {
+                "target": "C12",
+                "type": "take_state_focus"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

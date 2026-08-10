@@ -1,0 +1,51 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_PHASE_I",
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_PHASE_I"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C01_C02_REPLACER_TOOLTIP"
+    },
+    "bypass": {
+        "C02": {
+            "OR": {
+                "has_country_leader": {
+                    "character": "CHARACTER_FILTHY_RICH",
+                    "ruling_only": true
+                },
+                "has_country_leader__D1": {
+                    "character": "CHARACTER_MARE",
+                    "ruling_only": true
+                }
+            }
+        }
+    },
+    "available": {
+        "C02": {
+            "has_country_leader": {
+                "character": "CHARACTER_TRIXIE_LULAMOON",
+                "ruling_only": true
+            },
+            "hidden_trigger": {
+                "is_ai": true
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

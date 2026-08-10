@@ -1,0 +1,28 @@
+{
+    "tree": "C08_PARTII",
+    "parent": null,
+    "x": 0,
+    "y": 0,
+    "cost": 2,
+    "completion_reward": {
+        "swap_ideas": {
+            "remove_idea": "IDEA_C08_FADED_FRIENDSHIP_1",
+            "add_idea": "IDEA_C08_FADED_FRIENDSHIP_2"
+        },
+        "country_event": {
+            "id": "C08_MAIN.18",
+            "days": 1
+        }  
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

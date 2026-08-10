@@ -1,0 +1,63 @@
+{
+    "date": "1005.01.01 ~ 1006.01.01",
+    "date_scope": "C11",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C11"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "CECIA.5",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+                            "NOT": {
+                                "has_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+                            }
+                        },
+                        "country_event": {
+                            "id": "CECIA.5",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11",
+                    "tag__D1": "C01"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

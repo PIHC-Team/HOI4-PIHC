@@ -1,0 +1,22 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SUMMARIZE_COMBAT_EXPERIENCE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_SUMMARIZE_COMBAT_EXPERIENCE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_ideas": "IDEA_C12_STREAMLINE_THE_CHAIN_OF_COMMAND"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

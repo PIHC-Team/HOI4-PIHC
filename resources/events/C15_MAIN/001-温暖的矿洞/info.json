@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "288": {
+                "add_resource": {
+                    "type": "crystals",
+                    "amount": 4
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C15_MAIN.2",
+                    "days": 14,
+                    "random_days": 1
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

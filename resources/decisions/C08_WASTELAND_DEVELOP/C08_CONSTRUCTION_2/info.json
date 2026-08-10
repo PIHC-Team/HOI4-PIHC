@@ -1,0 +1,41 @@
+{
+    "name": "Construction",
+    "priority": 999,
+    
+    "cost": 20,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND_2"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_CONSTRUCTION_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND_CONSTRUCTION"
+        }
+    },
+    "custom_cost_trigger": {
+        "num_of_civilian_factories_available_for_projects > 1": null
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND_3",
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND_2"
+        },
+        "34": {
+            "add_extra_state_shared_building_slots": 1,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            },
+            "add_manpower":3130
+        }
+    },
+    "modifier": {
+        "civilian_factory_use": 2
+    },
+    "days_remove": 28,
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 100
+    }  
+}

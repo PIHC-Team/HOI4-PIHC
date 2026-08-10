@@ -1,0 +1,26 @@
+{
+    "name": "Witchcraft V",
+    "category": "infantry",
+
+    "x": 8,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_magical",
+        "pihc_witchcraft"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_WITCHCRAFT_MYTHIC_STAFF"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1008
+}

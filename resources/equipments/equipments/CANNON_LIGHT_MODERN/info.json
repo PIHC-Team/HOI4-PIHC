@@ -1,0 +1,18 @@
+{
+    "name": "Modern Light Cannon",
+    "parent": "EQUIPMENT_CANNON_LIGHT_STEAM",
+    "alpha_global": 0.5,
+    "reliability": 0.95,
+    "weight": 1.2,
+    "resources": {
+        "steel": 5,
+        "rubber": 3,
+        "tungsten": 1
+    },
+    "ap_attack": 24.0,
+    "fuel_consumption": 0.08,
+
+    "maximum_speed": 5.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

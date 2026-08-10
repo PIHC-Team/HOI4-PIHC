@@ -1,0 +1,80 @@
+{
+    "PIHC_DOCTRINE_LAND_SMALL_BOOST": {
+        "add_mastery_bonus": {
+            "bonus": 0.10,
+            "days": 180,
+            "name": "PIHC_DOCTRINE_LAND_SMALL_BOOST_INFANTRY",
+            "track": "infantry"
+        },
+        "add_mastery_bonus__D1": {
+            "bonus": 0.10,
+            "days": 180,
+            "name": "PIHC_DOCTRINE_LAND_SMALL_BOOST_COMBAT_SUPPORT",
+            "track": "combat_support"
+        },
+        "add_mastery_bonus__D2": {
+            "bonus": 0.10,
+            "days": 180,
+            "name": "PIHC_DOCTRINE_LAND_SMALL_BOOST_ARMOR",
+            "track": "armor"
+        },
+        "add_mastery_bonus__D3": {
+            "bonus": 0.10,
+            "days": 180,
+            "name": "PIHC_DOCTRINE_LAND_SMALL_BOOST_OPERATIONS",
+            "track": "operations"
+        }
+    },
+    "PIHC_DOCTRINE_LAND_LARGE_BOOST": {
+        "add_mastery_bonus": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_LAND_LARGE_BOOST_INFANTRY",
+            "track": "infantry"
+        },
+        "add_mastery_bonus__D1": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_LAND_LARGE_BOOST_COMBAT_SUPPORT",
+            "track": "combat_support"
+        },
+        "add_mastery_bonus__D2": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_LAND_LARGE_BOOST_ARMOR",
+            "track": "armor"
+        },
+        "add_mastery_bonus__D3": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_LAND_LARGE_BOOST_OPERATIONS",
+            "track": "operations"
+        }
+    },
+    "PIHC_DOCTRINE_AIR_LARGE_BOOST": {
+        "add_mastery_bonus": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_AIR_LARGE_BOOST_FIGHTER",
+            "track": "fighter_aircraft"
+        },
+        "add_mastery_bonus__D1": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_AIR_LARGE_BOOST_STRIKE",
+            "track": "strike_aircraft"
+        },
+        "add_mastery_bonus__D2": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_AIR_LARGE_BOOST_MEDIUM",
+            "track": "medium_aircraft"
+        },
+        "add_mastery_bonus__D3": {
+            "bonus": 0.15,
+            "days": 365,
+            "name": "PIHC_DOCTRINE_AIR_LARGE_BOOST_HEAVY",
+            "track": "heavy_aircraft"
+        }
+    }
+}

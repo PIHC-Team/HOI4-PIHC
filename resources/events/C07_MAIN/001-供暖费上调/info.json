@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "news_event": {
+                    "id": "C07_MAIN.2",
+                    "days": 7
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,41 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_ROYAL_DESTINY",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C15_ROYAL_DESTINY"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "add_popularity": {
+            "ideology": "democratic",
+            "popularity": -0.03
+        },
+        "add_popularity__D1": {
+            "ideology": "harmonicism",
+            "popularity": -0.03
+        },
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C15_EQUALISM_ACCEPTED"
+                }
+            },
+            "add_popularity": {
+                "ideology": "equatism",
+                "popularity": -0.01
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

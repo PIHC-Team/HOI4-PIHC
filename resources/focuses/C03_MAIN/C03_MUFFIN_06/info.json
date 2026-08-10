@@ -1,0 +1,51 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 3,
+    "y": 2,
+    "cost": 5,
+    "bypass": {
+        "hidden_trigger": {
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+            }
+        }
+    },
+    "completion_reward": {
+        "hidden_effect": {
+            "random_list": {
+                "seed": "random",
+                "80": {
+                    "add_power_balance_value": {
+                        "id": "BOP_C03_INDEPENDENCE",
+                        "value": 0.10,
+                        "tooltip_side": "BOP_C03_INDEPENDENCE_RIGHT_SIDE"
+                    }
+                },
+                "20": {
+                    "add_power_balance_value": {
+                        "id": "BOP_C03_INDEPENDENCE",
+                        "value": -0.05,
+                        "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+                    }
+                }
+            },
+            "mark_focus_tree_layout_dirty": true
+        },
+        "custom_effect_tooltip": "FOCUS_C03_MUFFIN_06_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_05"
+    }
+}

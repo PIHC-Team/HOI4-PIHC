@@ -1,0 +1,31 @@
+{
+    "name": "Material Upgrade",
+    "category": "infantry",
+
+    "x": 6,
+    "y": 15,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_shield"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_shield": {
+        "defense": 0.15
+    },
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIELD_IMPROVE_II",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1005
+}

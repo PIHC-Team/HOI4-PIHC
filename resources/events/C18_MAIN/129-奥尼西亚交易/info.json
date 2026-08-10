@@ -1,0 +1,53 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C18_MAIN_129_TOOLTIP",
+            "hidden_effect": {
+                "CREATE_C18_NAVY_1": true
+            },
+            "diplomatic_relation": {
+                "country": "C51",
+                "relation": "docking_rights",
+                "active": true
+            },
+            "diplomatic_relation__D1": {
+                "country": "C51",
+                "relation": "non_aggression_pact",
+                "active": true
+            },
+            "diplomatic_relation__D2": {
+                "country": "C25",
+                "relation": "docking_rights",
+                "active": true
+            },
+            "diplomatic_relation__D3": {
+                "country": "C25",
+                "relation": "non_aggression_pact",
+                "active": true
+            },
+            "C25": {
+                "diplomatic_relation": {
+                    "country": "C18",
+                    "relation": "docking_rights",
+                    "active": true
+                }
+            },
+            "C51": {
+                "diplomatic_relation": {
+                    "country": "C18",
+                    "relation": "docking_rights",
+                    "active": true
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

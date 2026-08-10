@@ -1,0 +1,15 @@
+{
+    "name": "Centralized Power",
+    "removal_cost": -1,
+    "modifier": {
+        "stability_factor": 0.10,
+        "war_stability_factor": 0.5,
+        "production_factory_start_efficiency_factor": -0.03,
+        "IDEA_CATEGORY_ERA_AGE_cost_factor": -0.33,
+        "IDEA_CATEGORY_ERA_TECH_cost_factor": -0.33,
+        "IDEA_CATEGORY_ERA_MAGIC_cost_factor": -0.33,
+        "IDEA_CATEGORY_ERA_HUNGER_cost_factor": -0.33,
+        "IDEA_CATEGORY_ERA_COLD_cost_factor": -0.33,
+        "IDEA_CATEGORY_ERA_HYGIENE_cost_factor": -0.33
+    }
+}

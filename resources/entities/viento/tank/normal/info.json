@@ -1,0 +1,219 @@
+{
+    "mesh": {
+        "scale": 1.00
+    },
+    "entities": [
+        {
+            "scale": 1.0,
+            "default_state": "idle",
+            "state": {
+                "name": "idle",
+                "animation": "idle",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0
+            },
+            "state__D1": {
+                "name": "attack",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "event": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                },
+                "event__D1": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_smoke_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                }
+            },
+            "state__D2": {
+                "name": "defend",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "event": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                },
+                "event__D1": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_smoke_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                }
+            },
+            "state__D3": {
+                "name": "support_attack",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "event": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                },
+                "event__D1": {
+                    "time": 0,
+                    "node": "barrel",
+                    "particle": "light_tank_attack_barrel_smoke_particle",
+                    "keep_particle": true,
+                    "sound": {
+                        "soundeffect": "light_armour_fire"
+                    }
+                }
+            },
+            "state__D4": {
+                "name": "move",
+                "animation": "move",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "event": {
+                    "trigger_once": true,
+                    "sound": {
+                        "soundeffect": "tank_engine_light_move"
+                    }
+                },
+                "event__D1": {
+                    "time": 0,
+                    "node": "exhaust",
+                    "particle": "tank_exhaust_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                },
+                "event__D2": {
+                    "time": 0,
+                    "node": "left_tracks",
+                    "particle": "tank_moving_tracks_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                },
+                "event__D3": {
+                    "time": 0,
+                    "node": "right_tracks",
+                    "particle": "tank_moving_tracks_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                }
+            },
+            "state__D5": {
+                "name": "retreat",
+                "animation": "move",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "event": {
+                    "trigger_once": true,
+                    "sound": {
+                        "soundeffect": "tank_engine_light_move"
+                    }
+                },
+                "event__D1": {
+                    "time": 0,
+                    "node": "exhaust",
+                    "particle": "tank_exhaust_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                },
+                "event__D2": {
+                    "time": 0,
+                    "node": "left_tracks",
+                    "particle": "tank_moving_tracks_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                },
+                "event__D3": {
+                    "time": 0,
+                    "node": "right_tracks",
+                    "particle": "tank_moving_tracks_particle",
+                    "keep_particle": false,
+                    "trigger_once": true
+                }
+            },
+            "state__D6": {
+                "name": "training",
+                "animation": "idle",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0
+            },
+            "state__D7": {
+                "name": "death",
+                "animation": "idle",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0
+            }
+        },
+        {
+            "apply": {
+                "tags": [
+                    ["titan", 999]
+                ],
+                "countries": [
+                    "all"
+                ]
+            },
+            "name": "SUPER_HEAVY",
+            "clone": true,
+            "scale": 1.35
+        },
+        {
+            "apply": {
+                "tags": [
+                    ["tank_heavy", 999]
+                ],
+                "countries": [
+                    "all"
+                ]
+            },
+            "name": "HEAVY",
+            "clone": true,
+            "scale": 1.15
+        },
+        {
+            "apply": {
+                "tags": [
+                    ["tank_medium", 999]
+                ],
+                "countries": [
+                    "all"
+                ]
+            },
+            "name": "MEDIUM",
+            "clone": true,
+            "scale": 0.9
+        },
+        {
+            "apply": {
+                "tags": [
+                    ["tank_light", 999]
+                ],
+                "countries": [
+                    "all"
+                ]
+            },
+            "name": "LIGHT",
+            "clone": true,
+            "scale": 0.75
+        }
+    ]
+}

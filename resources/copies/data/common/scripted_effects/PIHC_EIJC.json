@@ -1,0 +1,118 @@
+{
+    "CALCULATE_EIJC_BOOST": {
+        "set_variable": {
+            "var": "global.VAR_EIJC_NUM_MEMBERS",
+            "value": 0
+        },
+        "every_possible_country": {
+            "limit": {
+                "has_idea": "IDEA_EIJC_MEMBER"
+            },
+            "add_to_variable": {
+                "var": "global.VAR_EIJC_NUM_MEMBERS",
+                "value": 1
+            }
+        },
+
+        "set_variable__D1": {
+            "var": "global.VAR_EIJC_SLOTS_BOOST",
+            "value": "global.VAR_EIJC_NUM_MEMBERS"
+        },
+        "multiply_variable": {
+            "var": "global.VAR_EIJC_SLOTS_BOOST",
+            "value": 0.05
+        },
+        "add_to_variable": {
+            "var": "global.VAR_EIJC_SLOTS_BOOST",
+            "value": 0.05
+        },
+        "clamp_variable": {
+            "var": "global.VAR_EIJC_SLOTS_BOOST",
+            "min": 0.00,
+            "max": 1.00
+        },
+
+        "set_variable__D2": {
+            "var": "global.VAR_EIJC_INDUSTRY_BOOST",
+            "value": "global.VAR_EIJC_NUM_MEMBERS"
+        },
+        "multiply_variable__D1": {
+            "var": "global.VAR_EIJC_INDUSTRY_BOOST",
+            "value": 0.05
+        },
+        "add_to_variable__D1": {
+            "var": "global.VAR_EIJC_INDUSTRY_BOOST",
+            "value": 0.05
+        },
+        "clamp_variable__D1": {
+            "var": "global.VAR_EIJC_INDUSTRY_BOOST",
+            "min": 0.00,
+            "max": 0.75
+        },
+
+        "set_variable__D3": {
+            "var": "global.VAR_EIJC_GOODS_BOOST",
+            "value": "global.VAR_EIJC_NUM_MEMBERS"
+        },
+        "multiply_variable__D2": {
+            "var": "global.VAR_EIJC_GOODS_BOOST",
+            "value": 0.03
+        },
+        "add_to_variable__D2": {
+            "var": "global.VAR_EIJC_GOODS_BOOST",
+            "value": 0.01
+        },
+        "clamp_variable__D2": {
+            "var": "global.VAR_EIJC_GOODS_BOOST",
+            "min": 0.00,
+            "max": 0.25
+        },
+        "multiply_variable__D3": {
+            "var": "global.VAR_EIJC_GOODS_BOOST",
+            "value": -1
+        },
+
+        "set_variable__D4": {
+            "var": "global.VAR_EIJC_BUILDINGS_BOOST",
+            "value": "global.VAR_EIJC_NUM_MEMBERS"
+        },
+        "multiply_variable__D4": {
+            "var": "global.VAR_EIJC_BUILDINGS_BOOST",
+            "value": 0.05
+        },
+        "add_to_variable__D3": {
+            "var": "global.VAR_EIJC_BUILDINGS_BOOST",
+            "value": 0.05
+        },
+        "clamp_variable__D3": {
+            "var": "global.VAR_EIJC_BUILDINGS_BOOST",
+            "min": 0.00,
+            "max": 0.75
+        },
+
+        "set_variable__D5": {
+            "var": "global.VAR_EIJC_RESOURCES_BOOST",
+            "value": "global.VAR_EIJC_NUM_MEMBERS"
+        },
+        "multiply_variable__D5": {
+            "var": "global.VAR_EIJC_RESOURCES_BOOST",
+            "value": 0.03
+        },
+        "add_to_variable__D4": {
+            "var": "global.VAR_EIJC_RESOURCES_BOOST",
+            "value": 0.01
+        },
+        "clamp_variable__D4": {
+            "var": "global.VAR_EIJC_RESOURCES_BOOST",
+            "min": 0.00,
+            "max": 0.25
+        }
+    },
+    "INITIALIZE_EIJC": {
+        "set_variable": {
+            "var": "global.VAR_EIJC_NUM_MEMBERS",
+            "value": 0
+        },
+        "CALCULATE_EIJC_BOOST": true
+    }
+}

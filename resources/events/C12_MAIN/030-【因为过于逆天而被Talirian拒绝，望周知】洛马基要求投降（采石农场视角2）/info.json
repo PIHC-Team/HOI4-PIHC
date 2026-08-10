@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 99
+            },
+            "C12": {
+                "white_peace": "C07",
+                "add_stability": -0.1,
+                "add_political_power": -150
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 1
+            },
+            "add_political_power": 150
+        }
+    ],
+    "is_triggered_only": true
+}

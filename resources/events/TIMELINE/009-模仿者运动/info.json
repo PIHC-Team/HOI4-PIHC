@@ -1,0 +1,22 @@
+{
+    "date": "1003.07.09",
+    "date_scope": "C01",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C01_IMITATOR_MOVEMENT",
+            "mark_focus_tree_layout_dirty": true,
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "has_completed_focus": "FOCUS_C01_SECRET_POLICE"
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C01_COZY_MOM_ALIVE"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

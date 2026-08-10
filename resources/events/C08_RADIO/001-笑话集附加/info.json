@@ -1,0 +1,66 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "is_in_faction_with": "C01",
+                    "NOT": {
+                        "tag": "C01"
+                    }
+                }
+            },
+            "add_political_power": -15,
+            "add_stability": -0.01,
+            "add_popularity": {
+                "ideology": "harmonicism",
+                "popularity": 0.02        
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "is_in_faction_with": "C08"
+                }
+            },
+            "add_political_power": 10,
+            "add_stability": 0.05
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "NOT": {
+                        "is_in_faction_with": "C01",
+                        "is_in_faction_with__D1": "C08"
+                    }
+                }
+                
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "tag": "C01"
+                }
+            },
+            "add_political_power": -30,
+            "add_stability": -0.03,
+            "add_popularity": {
+                "ideology": "harmonicism",
+                "popularity": 0.03        
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

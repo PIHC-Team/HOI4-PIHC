@@ -1,0 +1,45 @@
+state = {
+    id = 365
+    name = STATE_365
+    provinces = {
+        88
+        1015
+        2259
+        3235
+        3780
+        3998
+        4799
+        5615
+        5673
+        6783
+        6925
+        7561
+        8114
+        8397
+        8540
+    }
+    manpower = 81451
+    state_category = city
+    history = {
+        owner = C03
+        victory_points = {
+            88
+            25
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 2
+            arms_factory = 2
+            farm_complex = 1
+            88 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C03
+    }
+    resources = {
+        crystals = 2
+        tungsten = 1
+        oil = 2
+    }
+}

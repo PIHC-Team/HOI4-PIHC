@@ -1,0 +1,52 @@
+state = {
+    id = 432
+    name = STATE_432
+    provinces = {
+        1328
+        1744
+        1895
+        1898
+        2028
+        2414
+        3886
+        4111
+        5513
+        6213
+        6231
+        6416
+        6493
+        7901
+        8084
+        8533
+        9466
+        9554
+        11096
+        11129
+        11169
+        11172
+        11243
+        11337
+        11357
+        11379
+        11415
+        11423
+    }
+    manpower = 124182
+    state_category = city
+    history = {
+        owner = C09
+        victory_points = {
+            1328
+            25
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            farm_complex = 1
+        }
+        add_core_of = C09
+    }
+    resources = {
+        logs = 5
+    }
+}

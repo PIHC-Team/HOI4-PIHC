@@ -1,0 +1,24 @@
+{
+    "name": "Steam Chariot",
+    "parent": "EQUIPMENT_VEHICLE_STEEL",
+    "alpha_global": 0.3,
+
+    "build_cost_ic": 5.0,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.95,
+
+    "hardness": 0.40,
+    
+    "resources": {
+        "steel": 3,
+        "rubber": 2,
+        "coal": 1
+    },
+    "fuel_consumption": 0.0,
+    "supply_truck": true,
+
+    "maximum_speed": 12.0,
+    "recon": 3
+}

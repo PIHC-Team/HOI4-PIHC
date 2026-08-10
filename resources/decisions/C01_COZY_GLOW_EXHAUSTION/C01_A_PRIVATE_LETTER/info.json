@@ -1,0 +1,45 @@
+{
+    "name": "A Private Letter",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 42,
+    "visible": {
+        "tag": "C01"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C01_COZY_MOM_FOUND_DEAD"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "DECISION_C01_A_PRIVATE_LETTER_NON_AVAILABLE_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "complete_effect": {
+        "add_power_balance_value": {
+            "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+            "value": 0.12,
+            "tooltip_side": "BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C01_IMITATOR_MOVEMENT",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C01_COZY_MOM_ALIVE"
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C01_MAIN.30",
+                    "days": 42
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

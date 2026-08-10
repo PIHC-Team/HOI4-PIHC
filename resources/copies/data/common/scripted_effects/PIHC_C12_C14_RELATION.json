@@ -1,0 +1,78 @@
+{
+    "UPGRADE_C12_C14_RELATION": {
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE"
+            },
+            "hidden_effect": {
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C12_APPLES_FROM_SAME_TREE",
+                    "add_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_1"
+                }
+            },
+            "custom_effect_tooltip": "IDEA_C12_APPLES_FROM_SAME_TREE_1_UPGRADE_TOOLTIP"
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_1"
+            },
+            "hidden_effect": {
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_1",
+                    "add_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_2"
+                }
+            },
+            "custom_effect_tooltip": "IDEA_C12_APPLES_FROM_SAME_TREE_2_UPGRADE_TOOLTIP"
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_2"
+            },
+            "hidden_effect": {
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_2",
+                    "add_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_3"
+                }
+            },
+            "custom_effect_tooltip": "IDEA_C12_APPLES_FROM_SAME_TREE_3_UPGRADE_TOOLTIP"
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_3"
+            },
+            "hidden_effect": {
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_3",
+                    "add_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_4"
+                }
+            },
+            "custom_effect_tooltip": "IDEA_C12_APPLES_FROM_SAME_TREE_4_UPGRADE_TOOLTIP"
+        },
+        "else_if__D3": {
+            "limit": {
+                "country_exists": "C14",
+                "has_idea": "IDEA_C12_APPLES_FROM_SAME_TREE_4",
+                "C14": {
+                    "has_war": false
+                }
+            },
+            "C12": {
+                "effect_tooltip": {
+                    "annex_country": {
+                        "target": "C14",
+                        "transfer_troops": true
+                    }
+                },
+                "hidden_effect": {
+                    "set_variable": {
+                        "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                        "value": "C14"
+                    },
+                    "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                    "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+                },
+                "set_cosmetic_tag": "C12_APPLEPIE"
+            }
+        }
+    }
+}

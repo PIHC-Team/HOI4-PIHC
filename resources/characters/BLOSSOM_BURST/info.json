@@ -1,0 +1,31 @@
+{
+    "name": "Blossom Burst",
+    "gender": "female",
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_FREIGHT_SUPPLY_BUREAU"
+        ],
+        "available": {
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7"
+                },
+                "custom_trigger_tooltip": {
+                    "tooltip": "CHARACTER_BLOSSOM_BURST_TOOLTIP_CRIMINAL",
+                    "always": false
+                }
+            },
+            "else": {
+                "custom_trigger_tooltip": {
+                    "tooltip": "CHARACTER_BLOSSOM_BURST_TOOLTIP",
+                    "always": false
+                }
+            }
+        },
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    }
+}

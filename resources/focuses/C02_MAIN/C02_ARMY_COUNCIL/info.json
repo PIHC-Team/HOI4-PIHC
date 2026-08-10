@@ -1,0 +1,34 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_LOYALTY",
+    "dy": 1,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C02_POLICE_STATE",
+        "focus__D1": "FOCUS_C02_LOYALTY"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "army_experience": 30
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

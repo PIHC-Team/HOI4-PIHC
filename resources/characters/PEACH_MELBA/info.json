@@ -1,0 +1,13 @@
+{
+    "name": "Peach Melba",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 140,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_INDUSTRY_LEADER"
+        ]
+    }
+}

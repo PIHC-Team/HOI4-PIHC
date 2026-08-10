@@ -1,0 +1,23 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [],
+        "removal_cost": 350
+    },
+    "advisor__D1": {
+        "slot": "high_command",
+        "ledger": "navy",
+        "idea_token": "C23_PINKIE_PIE_HUMAN",
+        "traits": [],
+        "removal_cost": 350
+    },
+    "advisor__D2": {
+        "slot": "navy_chief",
+        "ledger": "military",
+        "idea_token": "C23_PINKIE_PIE_HUMAN",
+        "traits": [],
+        "removal_cost": 350
+    }
+}

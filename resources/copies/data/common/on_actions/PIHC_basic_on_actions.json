@@ -1,0 +1,172 @@
+{
+    "on_actions": {
+        "on_nuke_drop": {
+            "effect": {
+                "FROM": {
+                    "owner": {
+                        "if": {
+                            "limit": {
+                                "NOT": {
+                                    "has_country_flag": "PIHC_COUNTRY_FLAG_FAKE_NUKE_DROP"
+                                }
+                            },
+                            "country_event": {
+                                "id": "NUKES.1"
+                            }
+                        }
+                    },
+                    "add_state_modifier": {
+                        "modifier": {
+                            "local_manpower": -0.30,
+                            "local_org_regain": -0.50,
+                            "state_resources_factor": -0.20
+                        }
+                    },
+                    "every_state_division": {
+                        "random_list": {
+                            "seed": "random",
+                            "60": {
+                                "destroy_unit": true
+                            },
+                            "40": {
+                                "set_unit_organization": 0.0
+                            }
+                        }
+                    },
+                    "every_neighbor_state": {
+                        "add_state_modifier": {
+                            "modifier": {
+                                "local_manpower": -0.15,
+                                "local_org_regain": -0.10,
+                                "state_resources_factor": -0.05
+                            }
+                        },
+                        "every_state_division": {
+                            "random_list": {
+                                "seed": "random",
+                                "10": {
+                                    "destroy_unit": true
+                                },
+                                "30": {
+                                    "set_unit_organization": 0.0
+                                },
+                                "40": {
+                                    "set_unit_organization": 0.1
+                                },
+                                "20": {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "on_paradrop": {
+            "effect": {
+                "ROOT": {
+                    "set_country_flag": "has_paradropped_flag"
+                }
+            }
+        },
+        "on_weekly_C15": {
+            "effect": {
+                "C15_PARLIAMENT_CALCULATE_NEXT_ELECTION": true
+            }
+        },
+        "on_startup": {
+            "effect": {
+                "every_possible_country": {
+                    "load_oob": "general_infantry_small",
+                    "scoped_play_song": "pihc09",
+                    "if": {
+                        "limit": {
+                            "is_ai": false
+                        },
+                        "set_variable": {
+                            "pihc_welcome_screen": 2
+                        }
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "is_ai": true
+                        },
+                        "add_ideas": "IDEA_ALL_EXAI"
+                    }
+                },
+                "C26": {
+                    "load_oob": "C26_hidden",
+                    "18": {
+                        "create_unit": {
+                            "division": "name = \"轻型坦克模型测试师 (Light Armor Model Test)\" division_template = \"风魔轻型装甲力量 (Windigo Light Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C26",
+                            "count": 1,
+                            "prioritize_location": 4380
+                        },
+                        "create_unit__D1": {
+                            "division": "name = \"中型坦克模型测试师 (Medium Armor Model Test)\" division_template = \"风魔中型装甲力量 (Windigo Medium Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C26",
+                            "count": 1,
+                            "prioritize_location": 9955
+                        },
+                        "create_unit__D2": {
+                            "division": "name = \"重型坦克模型测试师 (Heavy Armor Model Test)\" division_template = \"风魔重型装甲力量 (Windigo Heavy Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C26",
+                            "count": 1,
+                            "prioritize_location": 9948
+                        }
+                    },
+                    "set_technology": {
+                        "TECHNOLOGY_TANK_TITAN_WINDIGO": 1,
+                        "TECHNOLOGY_NSB_TANK_TITAN_WINDIGO": 1
+                    },
+                    "load_oob__D1": "windigo",
+                    "capital_scope": {
+                        "create_unit": {
+                            "division": "name = \"风之魔 (Windigo)\" division_template = \"风之魔 (Windigo)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C26",
+                            "count": 3
+                        }
+                    }
+                },
+                "C22": {
+                    "set_technology": {
+                        "TECHNOLOGY_TANK_TITAN_TIREK": 1,
+                        "TECHNOLOGY_NSB_TANK_TITAN_TIREK": 1
+                    },
+                    "load_oob": "tirek",
+                    "capital_scope": {
+                        "create_unit": {
+                            "division": "name = \"提雷克大王 (Lord Tirek)\" division_template = \"提雷克 (Tirek)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C22",
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        },
+        "on_monthly": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "has_focus_tree": "GENERIC",
+                        "is_ai": true
+                    },
+                    "random_list": {
+                        "seed": "random",
+                        "8": {
+                            "set_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS",
+                            "country_event": {
+                                "id": "UNIVERSAL_RANDOM.4",
+                                "days": 1,
+                                "random_days": 7
+                            }
+                        },
+                        "92": {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Spitfire",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "democratic_freestate",
+        "traits": [
+            "TRAIT_POPULAR",
+            "TRAIT_DIPLOMATIC_GENIUS",
+            "TRAIT_FREEDOM_FIGHTER"
+        ]
+    },
+    "seconds": 8.70,
+    "pause_on_loop": 3.77,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_SPITFIRE_ANIMATED_portrait"
+        }
+    }
+}

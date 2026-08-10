@@ -1,0 +1,37 @@
+{
+    "C02_join_war_with_empire": {
+        "allowed": {
+            "original_tag": "C02"
+        },
+        "enable": {
+            "C02": {
+                "NOT": {
+                    "has_government": "harmonicism"
+                }
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": 9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D1": {
+            "type": "befriend",
+            "id": "C01",
+            "value": 100
+        },
+        "ai_strategy__D2": {
+            "type": "dont_join_wars_with",
+            "id": "C01",
+            "value": -1000
+        },
+        "ai_strategy__D4": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": 9999,
+            "target": "call_allies"
+        }
+    }
+}

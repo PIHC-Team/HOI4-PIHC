@@ -1,0 +1,31 @@
+{
+    "name": "Urbanization time",
+    "priority": 10000,
+    
+    "selectable_mission": false,
+    "days_mission_timeout": 7,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_URBANIZATION",
+        "tag": "C08"
+    },
+    "available": {
+        "always": false
+    },
+    "timeout_effect": {
+        "custom_effect_tooltip": "C08_URBANIZATION_INC_4",
+        "hidden_effect": {
+            "add_to_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "value": 4
+            },
+            "clamp_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "min": 0,
+                "max": 100
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

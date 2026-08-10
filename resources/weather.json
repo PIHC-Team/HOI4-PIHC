@@ -1,0 +1,268 @@
+{
+    "terrain_modifiers": {
+        "no_phenomenon": [],
+        "mud": {
+            "terrain": {
+                "type": "mountain",
+                "value": -0.3
+            },
+            "terrain__D1": {
+                "type": "plains",
+                "value": 0.5
+            },
+            "terrain__D2": {
+                "type": "marsh",
+                "value": 0.9
+            },
+            "terrain__D3": {
+                "type": "desert",
+                "value": 0.1
+            },
+            "terrain__D4": {
+                "type": "jungle",
+                "value": 0.2
+            }
+        },
+        "rain_light": {
+            "terrain": {
+                "type": "jungle",
+                "value": 0.2
+            }
+        },
+        "rain_heavy": {
+            "terrain": {
+                "type": "jungle",
+                "value": 0.2
+            }
+        },
+        "snow": {
+            "terrain": {
+                "type": "mountain",
+                "value": 0.8
+            },
+            "terrain__D1": {
+                "type": "desert",
+                "value": -1.0
+            },
+            "terrain__D2": {
+                "type": "urban",
+                "value": -0.4
+            }
+        },
+        "blizzard": {
+            "terrain": {
+                "type": "mountain",
+                "value": 0.8
+            },
+            "terrain__D1": {
+                "type": "desert",
+                "value": -1.0
+            },
+            "terrain__D2": {
+                "type": "urban",
+                "value": -0.4
+            }
+        },
+        "sandstorm": {
+            "terrain": {
+                "type": "desert",
+                "value": 0.8
+            },
+            "terrain__D1": {
+                "type": "mountain",
+                "value": -1.0
+            }
+        },
+        "temperature": {
+            "terrain": {
+                "type": "mountain",
+                "value": -7.0
+            },
+            "terrain__D1": {
+                "type": "hills",
+                "value": -3.0
+            },
+            "terrain__D2": {
+                "type": "forest",
+                "value": -1.0
+            },
+            "terrain__D3": {
+                "type": "urban",
+                "value": 3.0
+            },
+            "terrain__D4": {
+                "type": "jungle",
+                "value": 5.0
+            }
+        }
+    },
+    "settings": {
+        "temperature": {
+            "temperature_variation": 2.0,
+            "max_temperature_change": 6.0,
+            "temperature_neighbor_smoothing": 0.3,
+            "temperature_change_neighbor_smoothing": 0.5,
+            "weather_extreme_cold": [
+                -100.0,
+                -12.0
+            ],
+            "weather_very_cold": [
+                -12.0,
+                -4.0
+            ],
+            "weather_very_hot": [
+                20.0,
+                28.0
+            ],
+            "weather_extreme_hot": [
+                28.0,
+                100.0
+            ]
+        },
+        "mud": {
+            "water_gain_on_rain_light": 0.5,
+            "water_gain_on_rain_heavy": 1.8,
+            "water_gain_max": 200.0,
+            "water_gain_min": 5.0,
+            "water_gain_to_cm": 0.2,
+            "water_dryout_temperature": [
+                2.0,
+                38.0
+            ],
+            "water_dryout_multiplier": [
+                0.0005,
+                0.4
+            ],
+            "min_temperature": -1.0
+        },
+        "visual_mud_effects": [
+            "flooded"
+        ],
+        "snowing": {
+            "snow_gain_on_snowing": 1.0,
+            "snow_gain_on_blizzard": 5.0,
+            "snow_gain_max": 80.0,
+            "snow_visual_min": 128,
+            "snow_gain_to_cm": 2.1,
+            "snow_melt_temperature": [
+                0.0,
+                12.0
+            ],
+            "snow_melt_multiplier": [
+                0.001,
+                0.9
+            ],
+            "temperature": [
+                1.0,
+                -4.0
+            ],
+            "weather_ground_snow_medium": [
+                20.0,
+                40.0
+            ],
+            "weather_ground_snow_high": [
+                40.0,
+                1000.0
+            ]
+        },
+        "arctic_water": {
+            "arctic_water_temperature": [
+                -5.0,
+                0.0
+            ],
+            "arctic_water_end_temperature": [
+                1.0,
+                5.0
+            ]
+        },
+        "chance_increase": {
+            "mud": [
+                15.0,
+                0.1
+            ]
+        },
+        "duration": {
+            "no_phenomenon": [
+                5,
+                12
+            ],
+            "rain_light": [
+                5,
+                20
+            ],
+            "rain_heavy": [
+                2,
+                15
+            ],
+            "snow": [
+                5,
+                20
+            ],
+            "blizzard": [
+                2,
+                15
+            ],
+            "sandstorm": [
+                2,
+                10
+            ]
+        },
+        "performance": {
+            "provinces_per_update": 584,
+            "regions_per_update": 7,
+            "init_run_passes": 14,
+            "texture_refresh_freq": 2.0
+        }
+    },
+    "weather_effects": {
+        "rain_light": {
+            "weather_effect": {
+                "entity": "rain_entity",
+                "fading_entity": "rain_clouds_entity"
+            },
+            "weather_effect__D1": {
+                "entity": "rain_small_entity",
+                "fading_entity": "rain_small_clouds_entity",
+                "small": true
+            }
+        },
+        "rain_heavy": {
+            "weather_effect": {
+                "entity": "lightning_storm_entity",
+                "fading_entity": "lightning_storm_clouds_entity"
+            },
+            "weather_effect__D1": {
+                "entity": "lightning_storm_small_entity",
+                "fading_entity": "lightning_storm_small_clouds_entity",
+                "small": true
+            }
+        },
+        "snow": {
+            "weather_effect": {
+                "entity": "snow_entity",
+                "fading_entity": "snow_clouds_entity"
+            },
+            "weather_effect__D1": {
+                "entity": "snow_small_entity",
+                "fading_entity": "snow_small_clouds_entity",
+                "small": true
+            }
+        },
+        "blizzard": {
+            "weather_effect": {
+                "entity": "snow_storm_entity",
+                "fading_entity": "snow_storm_clouds_entity"
+            },
+            "weather_effect__D1": {
+                "entity": "snow_storm_small_entity",
+                "fading_entity": "snow_storm_small_clouds_entity",
+                "small": true
+            }
+        },
+        "sandstorm": {
+            "weather_effect": {
+                "entity": "sandstorm_entity"
+            }
+        }
+    }
+}

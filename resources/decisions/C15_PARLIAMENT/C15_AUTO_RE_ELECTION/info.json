@@ -1,0 +1,46 @@
+{
+    "name": "Prepare Against Discord",
+    "priority": 999,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 180,
+    "days_re_enable": 0,
+    "allowed": {
+        "tag": "C15"
+    },
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C15_PARLIAMENT_WORKING"
+    },
+    "available": {
+        "hidden_trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C15_PARLIAMENT_ELECTION_ONGOING"
+        }
+    },
+    "cancel_trigger": {
+        "hidden_trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C15_PARLIAMENT_WORKING"
+            }
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "C15_PARLIAMENT_CALCULATE_NEXT_ELECTION": true,
+            "news_event": {
+                "id": "C15_PARLIAMENT.1",
+                "days": 1
+            }
+        }
+    },
+    "timeout_effect": {
+        "C15_PARLIAMENT_CALCULATE_NEXT_ELECTION": true,
+        "news_event": {
+            "id": "C15_PARLIAMENT.1",
+            "days": 1
+        }
+    },
+    "cancel_effect": {
+        
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+			"if" : {
+				"limit" : {
+					"has_idea" : "IDEA_C12_DESOLATE_FARM_2"
+				},
+				"remove_ideas": "IDEA_C12_DESOLATE_FARM_2"
+			},
+			"else_if" : {
+				"limit" : {
+					"has_idea" : "IDEA_C12_DESOLATE_FARM_1"
+				},
+				"swap_ideas": {
+					"add_idea": "IDEA_C12_DESOLATE_FARM_2",
+					"remove_idea": "IDEA_C12_DESOLATE_FARM_1"
+				}
+			},
+			"else_if__D1" : {
+				"limit" : {
+					"has_idea" : "IDEA_C12_DESOLATE_FARM"
+				},
+				"swap_ideas": {
+					"add_idea": "IDEA_C12_DESOLATE_FARM_1",
+					"remove_idea": "IDEA_C12_DESOLATE_FARM"
+				}
+			}
+    	}
+    ],
+    "is_triggered_only": true
+}

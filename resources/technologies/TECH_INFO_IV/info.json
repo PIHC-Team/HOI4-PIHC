@@ -1,0 +1,39 @@
+{
+    "name": "Magical Chips",
+    "category": "electronics",
+
+    "x": 2,
+    "y": 21,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_info_tech",
+        "pihc_chips",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "research_speed_factor": 0.30,
+    "special_project_specialization": [
+        "specialization_future",
+        "specialization_magic"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_INFO_III": 1,
+        "TECHNOLOGY_TECH_MAGI_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_INFO_V",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1007
+}

@@ -1,0 +1,34 @@
+state = {
+    id = 181
+    name = STATE_181
+    provinces = {
+        1399
+        3171
+        3474
+        4453
+        6682
+        7844
+        8098
+        8326
+        14222
+        14426
+        14587
+    }
+    manpower = 1233
+    state_category = rural
+    history = {
+        owner = C36
+        victory_points = {
+            1399
+            3
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 4
+        }
+        add_core_of = C36
+    }
+    resources = {
+        tungsten = 1
+    }
+}

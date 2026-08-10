@@ -1,0 +1,13 @@
+{
+    "name": "Coco Pommel",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "military",
+        "cost": 200,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_POLITICAL_GENIUS"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_ASSASSINATE_GLADMANE_2"
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C06": {
+                "kill_country_leader": true,
+                "hidden_effect": {
+                    "promote_character": {
+                        "character": "CHARACTER_SURI_POLOMARE",
+                        "ideology": "corporation_oligarchy"
+                    },
+                    "set_cosmetic_tag": "C06_SURI",
+                    "news_event": {
+                        "id": "C08_MAIN.11",
+                        "days": 1
+                    }
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

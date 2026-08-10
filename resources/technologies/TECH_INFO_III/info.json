@@ -1,0 +1,48 @@
+{
+    "name": "Chips",
+    "category": "electronics",
+
+    "x": 2,
+    "y": 18,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_info_tech",
+        "pihc_chips"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_building": {
+        "building": "future_facility",
+        "level": 1
+    },
+    "enable_equipment_modules": [
+        "MODULE_ARMOR_4B_MODERN",
+        "MODULE_ARMOR_4B_MAGNET",
+        "MODULE_PLANE_ARMOR_4B_MODERN",
+        "MODULE_PLANE_ARMOR_4B_MAGNET",
+        "MODULE_CREW_5A_AI"
+    ],
+    "research_speed_factor": 0.25,
+    "special_project_specialization": [
+        "specialization_future"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_INFO_II": 1,
+        "TECHNOLOGY_TECH_ENER_IIE": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_INFO_IV",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1006
+}

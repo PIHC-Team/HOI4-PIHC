@@ -1,0 +1,28 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 80
+            },
+            "C07": {
+                "country_event": {
+                    "id": "C07_MAIN.5",
+                    "days": 3
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 20
+            },
+            "C07": {
+                "country_event": {
+                    "id": "C07_MAIN.6",
+                    "days": 3
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Derpy Hooves",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "democratic_duchy",
+        "traits": [
+            "TRAIT_DERPY_HOOVES_CHAOTIC",
+            "TRAIT_DERPY_HOOVES_POPULAR"
+        ]
+    },
+    "seconds": 6.00,
+    "pause_on_loop": 8.14,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_DERPY_HOOVES_ANIMATED_portrait"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "dist": {
+            "all": "all"
+        },
+        "gen": [
+            ["ARMY_CHIEF", ["TRAIT_ALL_DAY_ALL_NIGHT"], {"cost": 100, "removal_cost": 150, "slot": "army_chief"}],
+            ["ARMY_CHIEF", ["TRAIT_BREAKTHROUGH"], {"cost": 100, "removal_cost": 150, "slot": "army_chief"}],
+            ["ARMY_CHIEF", ["TRAIT_GUERRILLA"], {"cost": 100, "removal_cost": 150, "slot": "army_chief"}],
+            ["ARMY_CHIEF", ["TRAIT_ARROGANT_ARMY_COMMANDER"], {"cost": 100, "removal_cost": 150, "slot": "army_chief"}],
+            ["NAVY_CHIEF", ["TRAIT_ARROGANT_NAVY_COMMANDER"], {"cost": 100, "removal_cost": 150, "slot": "navy_chief"}],
+            ["AIR_CHIEF", ["TRAIT_ARROGANT_AIR_COMMANDER"], {"cost": 100, "removal_cost": 150, "slot": "air_chief"}],
+            ["ADVISOR", ["TRAIT_ARCHITECT"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_EDUCATOR"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_INDUSTRY_LEADER"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_DOVISH", "TRAIT_DIPLOMATIC_GENIUS"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_CORRUPT", "TRAIT_ECONOMICAL_GENIUS"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_EFFICIENT", "TRAIT_HAWKISH"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_FREEDOM_FIGHTER", "TRAIT_FASHION_IDOL"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_PRINCE_OF_TERROR"], {"cost": 100, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_POPULAR"], {"cost": 300, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_SUPER_IDOL"], {"cost": 300, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_MAKEUP_ARTIST", "TRAIT_TREACHEROUS"], {"cost": 300, "removal_cost": 150, "slot": "political_advisor"}],
+            ["ADVISOR", ["TRAIT_TECHNOLOGICAL_GENIUS_II", "TRAIT_DIPLOMATIC_IDIOT"], {"cost": 300, "removal_cost": 150, "slot": "political_advisor"}]
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C14",
+                    "tag__D1": "C12"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "add_opinion_modifier": {
+                "target": "C12",
+                "modifier": "FOCUS_C14_C12_ETERNAL_FRIENDSHIP_OPINION_MODIFIER"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C12"
+            },
+            "add_opinion_modifier": {
+                "target": "C14",
+                "modifier": "FOCUS_C12_C14_ETERNAL_FRIENDSHIP_OPINION_MODIFIER"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

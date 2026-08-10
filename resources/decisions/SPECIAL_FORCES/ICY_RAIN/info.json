@@ -1,0 +1,41 @@
+{
+    "name": "Icy Arrow",
+    "priority": 101,
+    
+    "cost": 0,
+    "days_re_enable": 76,
+    "visible": {
+        "has_war": true,
+        "has_template_majority_unit": "infantry_icy"
+    },
+    "available": {
+        "any_country_division": {
+            "division_has_majority_template": "infantry_icy"
+        }
+    },
+    "complete_effect": {
+        "every_other_country": {
+            "limit": {
+                "has_war_with": "ROOT",
+                "NOT": {
+                    "tag": "C26"
+                }
+            },
+            "hidden_effect": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_ALL_ICY_ARROW"
+                    },
+                    "remove_ideas": "IDEA_ALL_ICY_ARROW"
+                }
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_ALL_ICY_ARROW",
+                "days": 42
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

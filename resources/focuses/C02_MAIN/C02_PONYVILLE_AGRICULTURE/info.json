@@ -1,0 +1,36 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_THE_FIVE_MONTHS_PLAN",
+    "dx": -1,
+    "dc": 1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C02_THE_FIVE_MONTHS_PLAN"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "country_event": {
+            "id": "C02_MAIN.1",
+            "days": 1
+        },
+        "hidden_effect": {
+            "C14": {
+                "country_event": {
+                    "id": "C02_MAIN.1",
+                    "days": 1
+                }
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

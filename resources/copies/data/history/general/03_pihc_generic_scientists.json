@@ -1,0 +1,58 @@
+{
+    "every_possible_country": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_steampunk": 2
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_steampunk": 2
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D1": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_magic": 2
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_magic": 2
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

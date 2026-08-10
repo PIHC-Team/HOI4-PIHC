@@ -1,0 +1,21 @@
+{
+    "name": "Cloudy Quartz",
+    "gender": "female",
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "military",
+        "cost": 100,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_ECONOMICAL_GENIUS"
+        ]
+    },
+    "advisor__D1": {
+        "slot": "political_advisor",
+        "cost": 100,
+        "removal_cost": 100,
+        "traits": [
+            "TRAIT_ECONOMICAL_GENIUS"
+        ]
+    }
+}

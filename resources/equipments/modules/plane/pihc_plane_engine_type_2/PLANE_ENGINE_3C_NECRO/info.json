@@ -1,0 +1,18 @@
+{
+    "add_stats": {
+        "build_cost_ic": 10.0,
+        "weight": 10.0
+    },
+    "multiply_stats": {
+        "maximum_speed": 0.50,
+        "fuel_consumption": -1.00,
+        "air_range": 1.00
+    },
+    "xp_cost": 15,
+
+    "allowed_module_categories": {
+        "armor_type_slot": [
+            "pihc_plane_armor_type_2_necro"
+        ]
+    }
+}

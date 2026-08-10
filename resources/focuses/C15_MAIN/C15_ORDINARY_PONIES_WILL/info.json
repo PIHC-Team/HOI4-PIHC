@@ -1,0 +1,40 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_CANTERLOT_PACT",
+    "prerequisite": {
+        "focus": "FOCUS_C15_CANTERLOT_PACT"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C15_ROYAL_DESTINY"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_popularity": {
+            "ideology": "harmonicism",
+            "popularity": 0.01
+        },
+        "add_popularity__D1": {
+            "ideology": "democratic",
+            "popularity": 0.02
+        },
+        "add_popularity__D2": {
+            "ideology": "equatism",
+            "popularity": 0.01
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C15_ORDINARY_PONIES_WILL_TOOLTIP",
+            "always": false
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

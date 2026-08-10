@@ -1,0 +1,55 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "C14": {
+                "add_power_balance_value": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "value": -0.3,
+                    "tooltip_side": "BOP_C14_INDEPENDENCE_LEFT_SIDE"
+                },
+                "give_military_access": "C01"
+            },
+            "if": {
+                "limit": {
+                    "C12": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C12_IN_METEORITE_INCIDENT"
+                    }
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "value": -0.15,
+                    "tooltip_side": "BOP_C12_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C14_METEORITE_INCIDENT_OVER"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C14",
+                    "tag__D1": "C01"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

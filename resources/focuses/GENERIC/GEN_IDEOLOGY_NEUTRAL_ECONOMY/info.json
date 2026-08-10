@@ -1,0 +1,70 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_IDEOLOGY_NEUTRAL_TRADE",
+    "prerequisite": {
+        "focus": "FOCUS_GEN_IDEOLOGY_NEUTRAL_TRADE"
+    },
+    "cost": 5,
+    "bypass": {
+        "has_idea": "free_trade"
+    },
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "tag": "C26"
+                },
+                "NOT__D1": {
+                    "tag": "C22"
+                },
+                "NOT__D2": {
+                    "tag": "C36"
+                },
+                "NOT__D3": {
+                    "tag": "C46"
+                },
+                "NOT__D4": {
+                    "tag": "C29"
+                }
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "export_focus"
+                },
+                "swap_ideas": {
+                    "remove_idea": "export_focus",
+                    "add_idea": "free_trade"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "limited_exports"
+                },
+                "swap_ideas": {
+                    "remove_idea": "limited_exports",
+                    "add_idea": "export_focus"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "closed_economy"
+                },
+                "swap_ideas": {
+                    "remove_idea": "closed_economy",
+                    "add_idea": "limited_exports"
+                }
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

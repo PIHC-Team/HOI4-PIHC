@@ -1,0 +1,138 @@
+{
+    "name": "Harmony Tree",
+    "priority": 97,
+    "visible": {
+        "OR": {
+            "controls_state": "585",
+            "controls_state__D1": "550",
+            "controls_state__D2": "487",
+            "controls_state__D3": "459",
+            "controls_state__D4": "533",
+            "controls_state__D5": "80",
+            "controls_state__D6": "40",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_IS_ALLIED_AGAINST_WINDIGOS"
+        }
+    },
+
+    "cost": 25,
+    "days_re_enable": 180,
+    "complete_effect": {
+        "custom_effect_tooltip": "DECISION_HARMONY_TREE_TOOLTIP",
+        "if": {
+            "limit": {
+                "threat > 0.14": null
+            },
+            "add_named_threat": {
+                "threat": -1,
+                "name": "DECISION_HARMONY_TREE_THREAT"
+            }
+        },
+        "hidden_effect": {
+            "if__D1": {
+                "limit": {
+                    "C15": {
+                        "has_country_leader": {
+                            "character": "CHARACTER_KING_SOMBRA",
+                            "ruling_only": true
+                        }
+                    }
+                },
+                "every_country": {
+                    "limit": {
+                        "has_war_with": "C15"
+                    },
+                    "add_timed_idea": {
+                        "idea": "IDEA_ALL_HARMONY_BLESSING",
+                        "days": 150
+                    }
+                }
+            },
+            "if__D2": {
+                "limit": {
+                    "tag": "C02"
+                },
+                "add_to_variable": {
+                    "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                    "value": 0.05
+                },
+                "clamp_variable": {
+                    "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                    "min": 0.0,
+                    "max": 1.0
+                },
+                "add_to_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "value": 0.02
+                },
+                "clamp_variable__D1": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "min": 0.0,
+                    "max": 1.0
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 100,
+            "tag": "C17"
+        },
+        "modifier__D1": {
+            "add": 5,
+            "tag": "C02"
+        },
+        "modifier__D2": {
+            "add": 5,
+            "tag": "C08"
+        },
+        "modifier__D3": {
+            "add": 5,
+            "has_country_flag": "PIHC_COUNTRY_FLAG_IS_ALLIED_AGAINST_WINDIGOS"
+        },
+        "modifier__D4": {
+            "add": 40,
+            "tag": "C02",
+            "date < 1004.04.01": null,
+            "threat > 0.29": null
+        },
+        "modifier__D5": {
+            "add": 100,
+            "has_war_with": "Z15"
+        },
+        "modifier__D6": {
+            "add": 1,
+            "NOT": {
+                "is_extreme_ideology": true
+            },
+            "NOT__D1": {
+                "tag": "C01"
+            },
+            "threat > 0.69": null
+        },
+        "modifier__D7": {
+            "add": 40,
+            "NOT": {
+                "is_extreme_ideology": true
+            },
+            "NOT__D1": {
+                "tag": "C01"
+            },
+            "threat > 0.79": null
+        },
+        "modifier__D8": {
+            "add": 100,
+            "NOT": {
+                "is_extreme_ideology": true
+            },
+            "NOT__D1": {
+                "tag": "C01"
+            },
+            "threat > 0.89": null
+        },
+        "modifier__D9": {
+            "factor": 0,
+            "threat < 0.15": null
+        }
+    }
+}

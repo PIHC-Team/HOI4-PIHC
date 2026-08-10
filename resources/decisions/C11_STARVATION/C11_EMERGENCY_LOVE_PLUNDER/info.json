@@ -1,0 +1,21 @@
+{
+    "name": "Plunder",
+    "priority": 100,
+    
+    "cost": 50,
+    "days_re_enable": 60,
+    "visible": {
+        "tag": "C11"
+    },
+    "complete_effect": {
+        "add_power_balance_value": {
+            "id": "BOP_C11_STARVATION",
+            "value": 0.18,
+            "tooltip_side": "BOP_C11_STARVATION_RIGHT_SIDE"
+        },
+        "add_stability": -0.025
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

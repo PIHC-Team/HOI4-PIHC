@@ -1,0 +1,901 @@
+[zh.COLONIAL_FORCES_GENERAL_DESCRIPTION]
+§G点击查看附属国和流亡政府的编制§!
+
+殖民地的自治度越低，用殖民地编制创建的单位可以使用的殖民地马力就越多。
+[zh.FOREIGN_TEMPLATE_DESC]
+这是我们的附属国$COUNTRY_ADJ|H$的编制。我们可以复制该编制并以此为基础创建殖民地军队。殖民地军队会根据与该附属国自治等级对应的比例使用其马力。
+[zh.COLONIAL_TEMPLATE_DESC]
+这是$COUNTRY_DEF|H$的殖民地军队编制。殖民领军队会根据与该附属国自治等级对应的比例使用其马力。
+[zh.FOREIGN_EXILE_TEMPLATE_DESC]
+该编制属于我国接纳的$COUNTRY_ADJ|H$流亡政府。我们可以复制该编制或以此为基础创建流亡军队，后者使用其所属的流亡政府的马力。
+[zh.EXILE_TEMPLATE_DESC]
+这是$COUNTRY_DEF|H$的流亡军队编制。流亡军队会使用其流亡政府的马力。
+[zh.STAT_ARMY_CASUALTY_TRICKLEBACK_DESC]
+战斗损失中能得救治而返回马力池的比例。受治伤兵不会作为伤亡损失而影响战争支持度。
+[zh.STAT_CASUALTY_TRICKLEBACK_DESC]
+战斗负伤马员回补到马力池中的百分比。此种伤亡不会作为伤亡损失而影响战争支持度惩罚。
+[zh.COMBAT_SIDE_SUMMARY]
+$MANPOWER|*1Y$马力，$VEHICLES|Y$车辆，$ARTILLERY|Y$火炮
+[zh.COMBAT_LOG_LOSSES_IN_MP]
+§H马力损失：§!$NUM|*$
+[zh.COMBAT_LOG_BATTLE_LOST_MANPOWER]
+马力：$MP|*R$
+[zh.COMBAT_LOG_MP_LOST_DESC]
+§H马力损失§!
+敌方陆军造成的损失：$GND|R$
+敌方空军造成的损失：$AIR|R$
+[zh.COMBAT_LOG_MP_LOST_WITH_NAVY_DESC]
+§H马力损失§!
+敌方陆军造成的损失：$GND|R$
+敌方空军造成的损失：$AIR|R$
+敌方海军造成的损失：$NAVY|R$
+[zh.STATE_POPULATION_DESC]
+这个地区的总马口。你的征兵法案可以使你将其中一定%的马口用作马力，以满足陆、海、空三军的需求。
+[zh.STATE_OWNER_RESISTANCE_NON_CORE_INFO]
+$COUNTRY|H$将仅能够使用该地区$MANPOWER|-%.0$的马力。
+[zh.STATE_OWNER_RESISTANCE_NON_CORE_INFO_WITH_MODIFIERS]
+$COUNTRY|H$将仅能够使用该地区$MANPOWER|-%.0$的马力，更重要的是，这个数值将根据其占领状态获得以下修正：
+[zh.VIDEO_TITLE_INCREASE_MANPOWER]
+增加马力
+[zh.MANPOWER]
+马力
+[zh.SERVICE_MANPOWER]
+£manpower_texticon 维修马力：
+[zh.SERVICE_MANPOWER_DESC]
+维修马力用于保障多种装备的正常运作。
+[zh.MAX_MANPOWER]
+最大马力：
+[zh.MANPOWER_TOTAL]
+所有马力：$MAX|0H*$
+[zh.MANPOWER_USAGE]
+剩余马力：$FREE|^2H$$EXILE$
+使用的马力：
+陆军：$ARMY|^2H$
+    - 已部署：$FIELD|^2H$
+    - 训练中：$TRAINING|^2H$
+空军：$AIR|^2H$
+海军：$NAVAL|^2H$
+驻军：$GARRISON|^2H$
+[zh.MANPOWER_CURRENT]
+全部马力：$TOTAL|^2H$
+可用核心马口（$ELIGIBLE|^H$）的$PERC|2%H$
+[zh.MANPOWER_CURRENT_MOBILIZATION]
+全部马力：$TOTAL|^2H$
+可用核心马口（$ELIGIBLE|^H$）的$PERC|2%H$（大约每日动员$MOB|+3%$）
+[zh.MANPOWER_DESC]
+马力来自于国内与占领区的§H适役马口§!，代表着可以参军的马员。启用更为严苛的§H征兵法案§!可以增加适役马口兵提高可用马力。
+[zh.MANPOWER_DIVISION]
+每师马力
+[zh.MANPOWER_DIVISION_DESC]
+§T这个§H师§!的士兵数量。当士兵阵亡时他们会从你所在国家的§H马力§!储备中得到增援。§!
+[zh.MANPOWER_DIVISION_SIZE_DESC]
+§T这个§H师§!包含$AMOUNT|G$军马。当士兵阵亡时他们会从你所在国家的§H马力§!储备中得到增援。§!
+[zh.MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC]
+§T这个§H陆军师§!有$AMOUNT|G$部队。其马力来自：§!
+[zh.MANPOWER_SHIP]
+船舶维修马力
+[zh.MANPOWER_SHIP_DESC]
+§T这艘§H船§!需要 $AMOUNT|G$ 维修马力。§!
+[zh.MANPOWER_AIRWING]
+空军维修马力
+[zh.MANPOWER_AIRWING_DESC]
+§T这队§H空军§!需要 $AMOUNT|G$ 维修马力。§!
+[zh.CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC]
+
+由于以下因素，有效的全部马力改变为$VAL|-%0$：
+
+[zh.MANPOWER_MONTHLY_TOTAL]
+每月可获得的马力：$VALUE|^+1$（$PERC|2%H$）
+全部马口增长：$MAX|^2H$（$FACTOR|2%H$ 全部马口）
+
+基础增长率：$RATIO|%H$
+[zh.MANPOWER_PROVINCE_TOOLTIP]
+马力：$VAL|*Y$
+[zh.MANPOWER_IN_USE]
+现役马力
+[zh.MANPOWER_IN_USE_DESC]
+§T现役的士兵数量。当士兵阵亡时他们会从你所在国家的§H马力§!储备中得到增援。§!
+[zh.NAVAL_SERVICE_MANPOWER_DESC]
+维修马力用于维持我们海军的正常运作。
+[zh.AIR_SERVICE_MANPOWER_DESC]
+维修马力用于维持我们空军的正常运作。
+[zh.MANPOWER_IN_USE_GARRISON]
+驻军马力
+[zh.MANPOWER_IN_USE_GARRISON_DESC]
+§T驻扎士兵数量。当士兵阵亡时他们会从你所在国家的§H马力§!储备中得到增援。§!
+[zh.MANPOWER_RAILWAY_GUN]
+列车炮服役马力
+[zh.MANPOWER_RAILWAY_GUN_DESC]
+§T此§H列车炮§!需要$AMOUNT|G$服役马力。§!
+[zh.THEATRE_PRIORITY_DESC]
+战区优先权将决定哪支部队会首先得到运输来的资源和马力。
+[zh.DIPLOMACY_ASKSTATECONTROL_DESC]
+接管占领区意味着我们将需要对抗那里的抵抗势力，但也会让你获得该地区的资源、马力和工业。
+[zh.DIPLOMACY_GIVESTATECONTROL_DESC]
+移交占领区可以使你不用耗费精力去处理该地区的抵抗势力并可以使你的阵营成员获得资源，马力和工厂。
+[zh.ESTIMATED_MANPOWER]
+马力估算
+[zh.DIPLOMACY_MESSAGE_SUBJECT_AUTONOMY_CHANGE_MANPOWER]
+这个行动会需要我们$VALUE|^2H$马力。
+[zh.DIPLOMACY_ASSUME_FACTION_LEADERSHIP_MANPOWER_PROGRESS]
+已部署的马力为$CURRENT|*R$，需要部署马力超过$NEEDED|*Y$。
+[zh.DIPLOMACY_REQUEST_FOREIGN_MANPOWER_ACTION_DESC]
+请求外国的马力来补充我们的驻军。
+[zh.DIPLOMACY_REQUEST_FOREIGN_MANPOWER_ACTION_DESC_MORE]
+请求更多的马力来补充我们的驻军。
+（该国已经给予我们$NUMBER|H*$马力）
+[zh.DIPLOMACY_REQUEST_FOREIGN_MANPOWER_REQUEST_DESC]
+$COUNTRY|UY$请求我们为驻军补充马力。
+[zh.DIPLOMACY_REQUEST_FOREIGN_MANPOWER_REQUEST_DESC_MORE]
+$COUNTRY|UY$请求我们为驻军补充更多马力。
+他们已经获得了我们的$NUMBER|H*$马力。
+[zh.DIPLOMACY_REQUEST_FOREIGN_MANPOWER_REQUEST_DETAILS]
+维持其政策所需的马力：$NEEDED|H*$
+目前其储备的总外国马力：$CURRENT|H*$
+[zh.DIPLOMACY_CANCEL_FOREIGN_MANPOWER_ACTION_DESC]
+撤回我们支援他们驻军的马力（$NUMBER|H*$）。
+[zh.DIPLOMACY_CANCEL_FOREIGN_MANPOWER_MESSAGE_ACTION_DESC]
+$COUNTRY|UY$取消了驻军援助。
+
+他们撤回了支援我们的马力（$NUMBER|H*$）。
+[zh.DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_REQUEST_FOREIGN_MANPOWER]
+$COUNTRY|UY$§G接受§!了我们的驻军援助请求。
+
+他们支援我们$MANPOWER|H*$马力。
+[zh.foreign_manpower_initiator_desc]
+$COUNTRY|UY$已为其他国家的驻军援助马力
+[zh.foreign_manpower_initiator_extended_desc]
+$COUNTRY1|UY$已为$COUNTRY2|Y$的驻军援助马力
+[zh.foreign_manpower_receiver_desc]
+$COUNTRY|UY$正在使用其他国家的马力作为驻军
+[zh.foreign_manpower_receiver_extended_desc]
+$COUNTRY1|UY$正在使用$COUNTRY2|Y$的马力作为驻军
+[zh.FOREIGN_MANPOWER_REASON_NO_NEED]
+我们并不需要更多的外国马力：
+[zh.FOREIGN_MANPOWER_REASON_NOT_ENOUGH]
+$COUNTRY|UY$没有足够的马力来支援我们：
+[zh.FOREIGN_MANPOWER_REASON_ALREADY_ENOUGH]
+$COUNTRY|UY$不愿意支援我们更多马力：
+[zh.FOREIGN_MANPOWER_REASON_COOLDOWN]
+$COUNTRY|UY$最近支援了我们马力。他们在$DATE|H$前不会接受新的请求：
+[zh.DIPLOMACY_NUMBER_FOREIGN_MANPOWER_SENT]
+派遣$MANPOWER|H$马力去$COUNTRY|H$。
+[zh.DR_COMPARED_DEPLOYED_MANPOWER]
+和我们相比的已部署马力：
+[zh.alert_few_manpower_instant]
+§H马力短缺！§!
+[zh.alert_few_manpower_delayed]
+我方马力储备低下，这将导致我军部队不再能补员和战斗。
+[zh.alert_not_enough_garrison_instant]
+§H缺乏足够的马力或装备增援驻军§!
+[zh.alert_not_enough_garrison_delayed]
+我方目前存在$NUM|*H$单位马力空缺。
+[zh.AIRWING_CREATE_NO_MANPOWER]
+§R马力不足，无法创建新联队！§!
+[zh.QUICK_DEPLOY_WING_DISABLE_NO_MAN_DESC]
+添加$PLANE_TYPE|H$空军联队。
+你没有足够的马力。
+[zh.EXILE_MANPOWER_DAILY_GROWTH]
+每日§H流亡老兵马力§!增长：$AMOUNT|H^$
+[zh.EXILE_MANPOWER_EXPLANATION_DELAYED_HOST]
+只要他们具备足够的§H正统性§!，我们便可利用$EXILEADJ|H$的§H流亡老兵马力§!来组建§H流亡空军联队§!和§H流亡老兵师§!。
+[zh.EXILE_MANPOWER_EXPLANATION_DELAYED_EXILE_PLAYER]
+只要我们具备足够的§H正统性§!，我们的东道国（$HOSTNAMEDEF|UH$）便可利用§H流亡老兵马力§!来组建§H流亡空军联队§!和§H流亡老兵师§!。
+[zh.GIE_AIRWING_SELECT_MANPOWER_BUTTON_EXILE]
+我们目前正在使用$COUNTRYADJ|H$的§H流亡老兵马力§!。
+[zh.GIE_AIRWING_SELECT_MANPOWER_BUTTON_OWN]
+我们目前正在使用$COUNTRYADJ|H$的§H马力§!。
+[zh.GIE_AIRWING_SELECT_MANPOWER_EXILE_AVAILABLE]
+点击选择使用§H马力§!以组建§H空军联队§!。
+[zh.GIE_RECRUITMENT_LOCKED_HOST]
+$COUNTRY|HU$需要拥有$VALUE|0H$的§H正统性§!我们才能使用§H流亡老兵马力§!征召$TYPE|H$。
+[zh.GIE_RECRUITMENT_LOCKED_EXILE_PLAYER]
+我们需要拥有$VALUE|0H$的§H正统性§!，$HOSTNAMEDEF|H$才能使用§H流亡老兵马力§!征召$TYPE|H$。
+[zh.GIE_AIRWING_RECRUITMENT_SELECT_EXILE]
+点击使用$COUNTRYADJ|H$的§H流亡老兵马力§!。
+[zh.GIE_AIRWING_RECRUITMENT_SELECT_OWNER]
+点击使用$COUNTRYADJ|H$的§H马力§!。
+[zh.GIE_REINSTATE_EFFECT_DESC]
+随着该国政府的恢复，$NAMEADJ$的所有§H流亡老兵师§!、§H军队指挥官§!以及§H军舰§!都将归还于$NAMEDEF|H$。我们将不再能够使用其§H流亡老兵马力§!来组建§H流亡空军联队§!，而所有的飞机也将回归库存。
+[zh.COUNTRYVIEW_GIE_INFO_LEGITIMACY]
+§H正统性§!会影响逐渐补充到东道国的§H流亡老兵马力§!和我们的常规马力。
+[zh.COUNTRYVIEW_GIE_INFO_LEGITIMACY_HOST]
+§H正统性§!会影响逐渐补充到东道国的§H流亡老兵马力§!。
+[zh.DESIGNER_MANPOWER]
+马力：
+[zh.DESIGNER_MANPOWER_DESC]
+这一数值表示该单位达到满编所需要的马力。
+[zh.POR_battleship_effort_desc]
+如果我们想要控制海洋，那么我们必须开足马力生产现代战列舰，这将让很多国家在一想到我们的海军时便瑟瑟发抖。
+[zh.EFFECT_MANPOWER_ADD_COUNTRY]
+马力：$VAL|+=0$。
+[zh.CONVEYOR_MANPOWER_NEED]
+马力需求：$AMOUNT|H$
+[zh.DEPLOYMENT_MANPOWER_DESC]
+马力：$VALUE|Y0$ （最大为$MAX|Y0$）
+[zh.CONVEYOR_CAN_NOT_MANPOWER_TRAIN]
+§R没有足够的马力用于训练§!
+[zh.CONVEYOR_CAN_NOT_TRAIN_COUNT]
+§R没有足够的马力或者装备训练其中的$DIVS|H$个师§!
+[zh.PEACE_COST_BREAKDOWN_BASE_VALUE_MANPOWER]
+马力：$VAL|H$
+[zh.concentrated_industry5_desc]
+主要工业园区现已连接工业生产的许多方面，运输与马力成本因此最小化。
+[zh.TRIGGER_HAS_MANPOWER_MORE_THAN]
+马力高于$NUMBER|*H$
+[zh.TRIGGER_HAS_MANPOWER_LESS_THAN]
+马力低于$NUMBER|*H$
+[zh.TRIGGER_RECRUIT_HAS_MANPOWER]
+剩余马力至少$NUMBER|*H$
+[zh.TRIGGER_MANPOWER_PER_FACTORY]
+马力/工厂
+[zh.TRIGGER_MANPOWER_IN_DEPLOYMENT_QUEUE]
+部署队列中的马力
+[zh.TRIGGER_ARMY_MANPOWER_IN_STATE_OF_TYPE]
+马力服役于$STATE|H$地区的$TYPE|H$师中。
+[zh.TRIGGER_ARMY_MANPOWER_IN_STATE]
+部署马力于$STATE|H$。
+[zh.TRIGGER_HAS_FOREIGN_MANPOWER_MORE_THAN]
+外国马力高于$NUMBER|*H$
+[zh.TRIGGER_HAS_FOREIGN_MANPOWER_LESS_THAN]
+外国马力低于$NUMBER|*H$
+[zh.TRIGGER_GARRISON_MANPOWER_NEED_MORE_THAN]
+驻军马力需求多于$NUMBER|*H$
+[zh.TRIGGER_GARRISON_MANPOWER_NEED_LESS_THAN]
+驻军马力需求低于$NUMBER|*H$
+[zh.TRIGGER_RECRUIT_HAS_NOT_MANPOWER]
+剩余马力最多$NUMBER|*H$
+[zh.CONFIRMDELETETEXT_RETURNDESC]
+使用的装备将回收至仓库，§Y军马§!将返回至§Y马力池§!。所有§Y远征军§!将被送回来源国。
+[zh.CONFIRMCONSOLIDATEUNITSAREENCIRCLED]
+§R选中的单位被包围了，他们会损失全部的装备和$VALUE|%0$的马力！§!
+[zh.CONFIRMCONSOLIDATE_EQUIPMENT_GAIN_CONSOLIDATE_TITLE]
+以下会返回到你的§H库存§!/§H马力池§!中：
+[zh.CONSOLIDATE_TOOLTIP]
+合并兵力不足和受损的单位，被整编单位的经验值可以保留。马力和装备将会叠加。
+[zh.CONFIRMDELETETEXT_NAVYDESC]
+该舰艇将被§R销毁§!，§Y军马§!将复员为§Y普通马力§!。
+[zh.CONFIRMDELETETEXT_RAILWAY_GUNS_TEXT]
+该列车炮将被§R销毁§!，§Y军马§!将复员为§Y普通马力§!。
+[zh.WEEKLY_FROM_OTHER_SOURCES]
+
+§H我们也收到§!：
+每周马力：$VALUE|G$
+[zh.PLAN_COHESION_STRICT_DESC]
+将只会从短距离的地方调集部队以维持住战线
+
+§R这种设置不适合马力不足或变化快速的战线-注意保持密切关注！§!
+[zh.CURRENT_MANPOWER]
+ - 现有马力：$VAL|*H1$（$PER|%0H$）
+
+[zh.UNIT_STAT_MANPOWER]
+§T现有§H马力§!为$VAL|H$/$MAX|H$§!
+[zh.SERVICE_MANPOWER_HEADER]
+服役马力
+[zh.ironside_desc]
+§L此马力主用我国海军最为强大的战舰来捍卫我方领海安全。§!
+[zh.FRA_destroyer_3_desc]
+勇猛级驱逐舰是大胆级驱逐舰的改进型，于1938年和1939年的海军项目中被授权开发，但战争的爆发和法国的沦陷导致其被迫取消。勇猛级的设计思路更倾向于防空角色，排水量将增加至2,800-2,900吨，并拥有更大马力的引擎。
+[zh.FRA_battleship_4_desc]
+阿尔萨斯级被计划作为黎塞留级的继任者，全部四艘于1939年完成设计研究，1940年批准并计划于1941年开工，但法国的沦陷使这一切成为泡影。这一型号在黎塞留级的基础上进行了改进，配备了更大更多的主炮，更强大的防空装备，更厚的装甲以及更大马力的引擎。
+[zh.FRA_carrier_3_desc]
+让·巴尔级航母是战争中期时的一个提案，建议仿照日本帝国海军信浓号的改造方案，将未完工的黎塞留级战列舰让·巴尔号改造成一艘正规航母。其庞大的船体将能够容纳大量的飞机，再加上其马力强劲的引擎，将使其成为一款作战半径出色的快速航母，源自美国的重型防空火力能在对抗空中威胁和小型水面战斗舰艇是提供很好的防护。
+[zh.VIC_destroyer_3_desc]
+勇猛级驱逐舰是大胆级驱逐舰的改进型，于1938年和1939年的海军项目中被授权开发，但战争的爆发和法国的沦陷导致其被迫取消。勇猛级的设计思路更倾向于防空角色，排水量将增加至2,800-2,900吨，并拥有更大马力的引擎。
+[zh.VIC_battleship_4_desc]
+阿尔萨斯级被计划作为黎塞留级的继任者，全部四艘于1939年完成设计研究，1940年批准并计划于1941年开工，但法国的沦陷使这一切成为泡影。这一型号在黎塞留级的基础上进行了改进，配备了更大更多的主炮，更强大的防空装备，更厚的装甲以及更大马力的引擎。
+[zh.VIC_carrier_3_desc]
+让·巴尔级航母是战争中期时的一个提案，建议仿照日本帝国海军信浓号的改造方案，将未完工的黎塞留级战列舰让·巴尔号改造成一艘正规航母。其庞大的船体将能够容纳大量的飞机，再加上其马力强劲的引擎，将使其成为一款作战半径出色的快速航母，源自美国的重型防空火力能在对抗空中威胁和小型水面战斗舰艇是提供很好的防护。
+[zh.PRODUCTION_CAN_NOT_DEPLOY_MANPOWER]
+马力资源不足
+[zh.PROD_LINE_PLANE_DEST_RESERVES_DUE_TO_MANPOWER]
+由于所需§Y增援§!的§H马力§!不足，动用了§Y后备队§!
+[zh.INTEL_LEDGER_MANPOWER_TOOLTIP]
+可用马力：$RANGE|H$
+[zh.INTEL_LEDGER_FIELDED_MANPOWER_TOOLTIP]
+服役马力：
+[zh.INTEL_LEDGER_DEPLOYED_MANPOWER_COUNT]
+已部署陆军马力：$AMOUNT|H$
+[zh.INTEL_LEDGER_DEPLOYED_MANPOWER_COUNT_WITH_CAP]
+已部署陆军马力：$AMOUNT|H$（所需陆军情报：$MIN|H.0%$）
+[zh.INTEL_LEDGER_DEPLOYED_NAVY_MANPOWER_COUNT]
+已部署海军马力：$AMOUNT|H$
+[zh.INTEL_LEDGER_DEPLOYED_NAVY_MANPOWER_COUNT_WITH_CAP]
+已部署海军马力：$AMOUNT|H$（所需海军情报：$MIN|H.0%$）
+[zh.INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT]
+已部署空军马力：$AMOUNT|H$
+[zh.INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT_WITH_CAP]
+已部署空军马力：$AMOUNT|H$（所需空军情报：$MIN|H.0%$）
+[zh.CIV_LEDGER_THRESHOLD_FUZZY_TOTAL_MANPOWER]
+可用马力总量估算
+[zh.CIV_LEDGER_THRESHOLD_MANPOWER]
+可用马力总量
+[zh.ARMY_LEDGER_THRESHOLD_DEPLOYED_MANPOWER]
+服役陆军马力
+[zh.ARMY_LEDGER_THRESHOLD_FUZZY_DEPLOYED_MANPOWER]
+服役马力估算
+[zh.NAVY_LEDGER_THRESHOLD_FIELDED_MANPOWER]
+已部署海军马力
+[zh.NAVY_LEDGER_THRESHOLD_FUZZY_FIELDED_MANPOWER]
+已部署海军马力估算
+[zh.AIR_LEDGER_THRESHOLD_FIELDED_MANPOWER]
+服役空军马力
+[zh.AIR_LEDGER_THRESHOLD_FUZZY_FIELDED_MANPOWER]
+已服役空军马力估算
+[zh.REQUESTED_MANPOWER_DETAILS]
+下一批$NUM|Y$马力将在$HR|Y$小时后送达。
+我们大约需要$D|Y$日来让部队满员。
+[zh.NOT_ENOUGH_MANPOWER_TO_REINFORCE]
+没有足够的马力进行增员。
+[zh.MODIFIER_LOCAL_MANPOWER]
+当地马力
+[zh.MODIFIER_GLOBAL_MONTHLY_POPULATION_DESC]
+每月总马力增长数量修正
+[zh.MODIFIER_CONSCRIPTION_FACTOR_DESC]
+对国家可以征募的马力进行修正。
+[zh.MODIFIER_CONSCRIPTION_TOTAL_FACTOR_DESC]
+对国家可以征募的马力进行修正。
+[zh.MODIFIER_AUTONOMY_MANPOWER_SHARE]
+附属国马力要求
+[zh.MODIFIER_AUTONOMY_MANPOWER_SHARE_DESC]
+附属国部队所需要的马力
+[zh.MODIFIER_LOCAL_NON_CORE_MANPOWER]
+本地非核心马力
+[zh.MODIFIER_GLOBAL_NON_CORE_MANPOWER]
+非核心马力
+[zh.MODIFIER_WEEKLY_MANPOWER]
+每周马力
+[zh.MODIFIER_EXILED_MAPOWER_GAIN_FACTOR]
+每日流亡马力
+[zh.modifier_module_light_ship_engine_1_design_cost_factor]
+舰艇35000马力引擎设计花费
+[zh.modifier_module_light_ship_engine_2_design_cost_factor]
+舰艇40000马力引擎设计花费
+[zh.modifier_module_light_ship_engine_3_design_cost_factor]
+舰艇45000马力引擎设计花费
+[zh.modifier_module_light_ship_engine_4_design_cost_factor]
+舰艇50000马力引擎设计花费
+[zh.modifier_module_sub_ship_engine_1_design_cost_factor]
+舰艇1000马力引擎设计花费
+[zh.modifier_module_sub_ship_engine_2_design_cost_factor]
+舰艇2000马力引擎设计花费
+[zh.modifier_module_sub_ship_engine_3_design_cost_factor]
+舰艇3000马力引擎设计花费
+[zh.modifier_module_sub_ship_engine_4_design_cost_factor]
+舰艇4000马力引擎设计花费
+[zh.modifier_module_cruiser_ship_engine_1_design_cost_factor]
+舰艇60000马力引擎设计花费
+[zh.modifier_module_cruiser_ship_engine_2_design_cost_factor]
+舰艇70000马力引擎设计花费
+[zh.modifier_module_cruiser_ship_engine_3_design_cost_factor]
+舰艇80000马力引擎设计花费
+[zh.modifier_module_cruiser_ship_engine_4_design_cost_factor]
+舰艇90000马力引擎设计花费
+[zh.modifier_module_heavy_ship_engine_1_design_cost_factor]
+舰艇30000马力引擎设计花费
+[zh.modifier_module_heavy_ship_engine_2_design_cost_factor]
+舰艇90000马力引擎设计花费
+[zh.modifier_module_heavy_ship_engine_3_design_cost_factor]
+舰艇150000马力引擎设计花费
+[zh.modifier_module_heavy_ship_engine_4_design_cost_factor]
+舰艇210000马力引擎设计花费
+[zh.modifier_module_carrier_ship_engine_1_design_cost_factor]
+舰艇50000马力引擎设计花费
+[zh.modifier_module_carrier_ship_engine_2_design_cost_factor]
+舰艇120000马力引擎设计花费
+[zh.modifier_module_carrier_ship_engine_3_design_cost_factor]
+舰艇150000马力引擎设计花费
+[zh.modifier_module_carrier_ship_engine_4_design_cost_factor]
+舰艇210000马力引擎设计花费
+[zh.MODIFIER_EXILED_GOVERNMENT_WEEKLY_MANPOWER]
+每周流亡马力
+[zh.MODIFIER_AIR_MANPOWER_REQUIREMENT_FACTOR]
+空军马力要求
+[zh.FIELDER_MANPOWER]
+服役马力：$MAN|Y*$
+[zh.light_ship_engine_1]
+35000马力引擎
+[zh.light_ship_engine_2]
+40000马力引擎
+[zh.light_ship_engine_3]
+45000马力引擎
+[zh.light_ship_engine_4]
+50000马力引擎
+[zh.sub_ship_engine_1]
+1000马力引擎
+[zh.sub_ship_engine_2]
+2000马力引擎
+[zh.sub_ship_engine_3]
+3000马力引擎
+[zh.sub_ship_engine_4]
+4000马力引擎
+[zh.cruiser_ship_engine_1]
+60000马力引擎
+[zh.cruiser_ship_engine_2]
+70000马力引擎
+[zh.cruiser_ship_engine_3]
+80000马力引擎
+[zh.cruiser_ship_engine_4]
+90000马力引擎
+[zh.heavy_ship_engine_1]
+30000马力引擎
+[zh.heavy_ship_engine_2]
+90000马力引擎
+[zh.heavy_ship_engine_3]
+150000马力引擎
+[zh.heavy_ship_engine_4]
+210000马力引擎
+[zh.carrier_ship_engine_1]
+50000马力引擎
+[zh.carrier_ship_engine_2]
+120000马力引擎
+[zh.carrier_ship_engine_3]
+150000马力引擎
+[zh.carrier_ship_engine_4]
+210000马力引擎
+[zh.ENG_light_ship_engine_1]
+布朗-柯蒂斯 27000马力引擎
+[zh.ENG_light_ship_engine_2]
+帕森斯 38000马力引擎
+[zh.ENG_light_ship_engine_3]
+帕森斯 48000马力引擎
+[zh.ENG_light_ship_engine_4]
+帕森斯54000马力引擎
+[zh.ENG_sub_ship_engine_1]
+海军部1550马力引擎
+[zh.ENG_sub_ship_engine_2]
+维克斯 2500马力引擎
+[zh.ENG_sub_ship_engine_3]
+维克斯3100马力引擎
+[zh.ENG_sub_ship_engine_4]
+维克斯4300马力引擎
+[zh.ENG_cruiser_ship_engine_1]
+帕森斯 60000马力引擎
+[zh.ENG_cruiser_ship_engine_2]
+帕森斯 72000马力引擎
+[zh.ENG_cruiser_ship_engine_3]
+帕森斯 80000马力引擎
+[zh.ENG_cruiser_ship_engine_4]
+帕森斯 108000马力引擎
+[zh.ENG_heavy_ship_engine_1]
+帕森斯 40000马力引擎
+[zh.ENG_heavy_ship_engine_2]
+帕森斯 110000马力引擎
+[zh.ENG_heavy_ship_engine_3]
+帕森斯 130000马力引擎
+[zh.ENG_heavy_ship_engine_4]
+帕森斯 160000马力引擎
+[zh.ENG_carrier_ship_engine_1]
+布朗-柯蒂斯 50000马力引擎
+[zh.ENG_carrier_ship_engine_2]
+帕森斯 102000马力引擎
+[zh.ENG_carrier_ship_engine_3]
+帕森斯 148000马力引擎
+[zh.ENG_carrier_ship_engine_4]
+帕森斯 200000马力引擎
+[zh.FRA_light_ship_engine_1]
+佐利 33000马力  引擎
+[zh.FRA_light_ship_engine_2]
+拉图-布列塔尼 40000马力 引擎
+[zh.FRA_light_ship_engine_3]
+拉图-布列塔尼 74000马力 引擎
+[zh.FRA_light_ship_engine_4]
+拉图-布列塔尼 92000马力 引擎
+[zh.FRA_sub_ship_engine_1]
+苏尔寿 1300马力 引擎
+[zh.FRA_sub_ship_engine_2]
+诺曼 1800马力 引擎
+[zh.FRA_sub_ship_engine_3]
+苏尔寿 2900马力 引擎
+[zh.FRA_sub_ship_engine_4]
+苏尔寿 6000马力 引擎
+[zh.FRA_cruiser_ship_engine_1]
+拉图-布列塔尼 84000马力 引擎
+[zh.FRA_cruiser_ship_engine_2]
+拉图-布列塔尼 90000马力 引擎
+[zh.FRA_cruiser_ship_engine_3]
+拉图-布列塔尼 100000马力 引擎
+[zh.FRA_cruiser_ship_engine_4]
+拉图-布列塔尼 120000马力 引擎
+[zh.FRA_heavy_ship_engine_1]
+帕森斯 29000马力 引擎
+[zh.FRA_heavy_ship_engine_2]
+帕森斯 102000马力 引擎
+[zh.FRA_heavy_ship_engine_3]
+帕森斯 150000马力 引擎
+[zh.FRA_heavy_ship_engine_4]
+帕森斯 210000马力 引擎
+[zh.FRA_carrier_ship_engine_1]
+帕森斯 37500马力 引擎
+[zh.FRA_carrier_ship_engine_2]
+帕森斯 125000马力引擎
+[zh.FRA_carrier_ship_engine_3]
+帕森斯 150000马力引擎
+[zh.FRA_carrier_ship_engine_4]
+帕森斯 210000马力引擎
+[zh.ITA_light_ship_engine_1]
+贝鲁佐 36000马力引擎
+[zh.ITA_light_ship_engine_2]
+贝鲁佐 44000马力引擎
+[zh.ITA_light_ship_engine_3]
+贝鲁佐 48000马力引擎
+[zh.ITA_light_ship_engine_4]
+贝鲁佐 54000马力引擎
+[zh.ITA_sub_ship_engine_1]
+菲亚特 1200马力柴油机
+[zh.ITA_sub_ship_engine_2]
+菲亚特 2400马力柴油机
+[zh.ITA_sub_ship_engine_3]
+托西 3400马力柴油机
+[zh.ITA_sub_ship_engine_4]
+CRA 4300马力柴油机
+[zh.ITA_cruiser_ship_engine_1]
+帕森斯 60000马力引擎
+[zh.ITA_cruiser_ship_engine_2]
+帕森斯 95000马力引擎
+[zh.ITA_cruiser_ship_engine_3]
+帕森斯 106000马力引擎
+[zh.ITA_cruiser_ship_engine_4]
+帕森斯 120000马力引擎
+[zh.ITA_heavy_ship_engine_1]
+帕森斯 30000马力引擎
+[zh.ITA_heavy_ship_engine_2]
+贝鲁佐 75000马力引擎
+[zh.ITA_heavy_ship_engine_3]
+帕森斯 128200马力引擎
+[zh.ITA_carrier_ship_engine_1]
+贝鲁佐 50000马力引擎
+[zh.ITA_carrier_ship_engine_2]
+贝鲁佐 120000马力引擎
+[zh.ITA_carrier_ship_engine_3]
+贝鲁佐 151000马力引擎
+[zh.ITA_carrier_ship_engine_4]
+贝鲁佐 200000马力引擎
+[zh.USA_light_ship_engine_1]
+西屋 27000马力引擎
+[zh.USA_light_ship_engine_2]
+柯蒂斯 42800马力引擎
+[zh.USA_light_ship_engine_3]
+西屋 50000马力引擎
+[zh.USA_light_ship_engine_4]
+通用电气 60000马力引擎
+[zh.USA_sub_ship_engine_1]
+新伦敦 S&E 1200马力 引擎
+[zh.USA_sub_ship_engine_2]
+通用 3100马力引擎
+[zh.USA_sub_ship_engine_3]
+温顿 4300马力引擎
+[zh.USA_sub_ship_engine_4]
+通用电气 5400马力引擎
+[zh.USA_cruiser_ship_engine_1]
+西屋 90000马力引擎
+[zh.USA_cruiser_ship_engine_2]
+西屋 100000马力引擎
+[zh.USA_cruiser_ship_engine_3]
+西屋 100000马力引擎
+[zh.USA_cruiser_ship_engine_4]
+通用电气 120000马力引擎
+[zh.USA_heavy_ship_engine_1]
+柯蒂斯 31500马力引擎
+[zh.USA_heavy_ship_engine_2]
+通用电气 121000马力引擎
+[zh.USA_heavy_ship_engine_3]
+通用电气 172000马力引擎
+[zh.USA_heavy_ship_engine_4]
+通用电气 212000马力引擎
+[zh.USA_carrier_ship_engine_1]
+柯蒂斯 53500马力引擎
+[zh.USA_carrier_ship_engine_2]
+西屋 120000马力引擎
+[zh.USA_carrier_ship_engine_3]
+西屋 150000马力引擎
+[zh.USA_carrier_ship_engine_4]
+西屋 212000马力引擎
+[zh.JAP_light_ship_engine_1]
+帕森斯 34000马力引擎
+[zh.JAP_light_ship_engine_2]
+舰本式 50000马力引擎
+[zh.JAP_light_ship_engine_3]
+舰本式 52000马力引擎
+[zh.JAP_light_ship_engine_4]
+舰本式 75000马力引擎
+[zh.JAP_sub_ship_engine_1]
+苏尔寿 2600马力 引擎
+[zh.JAP_sub_ship_engine_2]
+苏尔寿 6800马力 引擎
+[zh.JAP_sub_ship_engine_3]
+舰本式 8000马力引擎
+[zh.JAP_sub_ship_engine_4]
+舰本式 11000马力引擎
+[zh.JAP_cruiser_ship_engine_1]
+布朗-柯蒂斯 51000马力引擎
+[zh.JAP_cruiser_ship_engine_2]
+三菱 90000马力引擎
+[zh.JAP_cruiser_ship_engine_3]
+舰本式 102000马力引擎
+[zh.JAP_cruiser_ship_engine_4]
+舰本式 152000马力引擎
+[zh.JAP_heavy_ship_engine_1]
+布朗-柯蒂斯 40000马力引擎
+[zh.JAP_heavy_ship_engine_2]
+技本式 80000马力引擎
+[zh.JAP_heavy_ship_engine_3]
+技本式 131200马力引擎
+[zh.JAP_heavy_ship_engine_4]
+舰本式 150000马力引擎
+[zh.JAP_carrier_ship_engine_1]
+舰本式 65000马力引擎
+[zh.JAP_carrier_ship_engine_2]
+技本式 131200马力引擎
+[zh.JAP_carrier_ship_engine_3]
+舰本式 152000马力引擎
+[zh.JAP_carrier_ship_engine_4]
+舰本式 160000马力引擎
+[zh.GER_light_ship_engine_1]
+伏尔铿 23,000 马力引擎
+[zh.GER_light_ship_engine_2]
+德希马克 70,000马力引擎
+[zh.GER_light_ship_engine_3]
+改进型德希马克 70,000马力引擎
+[zh.GER_light_ship_engine_4]
+MAN 76000马力柴油引擎
+[zh.GER_sub_ship_engine_1]
+MWM 700马力柴油机
+[zh.GER_sub_ship_engine_2]
+MAN 2100马力柴油引擎
+[zh.GER_sub_ship_engine_3]
+MAN 2200马力柴油引擎
+[zh.GER_sub_ship_engine_4]
+SSW 4,626马力电动机
+[zh.GER_cruiser_ship_engine_1]
+MAN 56800马力柴油引擎
+[zh.GER_cruiser_ship_engine_2]
+希肖 65,000马力引擎
+[zh.GER_cruiser_ship_engine_3]
+日耳曼尼亚 72,400马力引擎
+[zh.GER_cruiser_ship_engine_4]
+布洛姆&福斯 132,000马力引擎
+[zh.GER_heavy_ship_engine_1]
+20,450马力 垂直三胀式蒸汽引擎
+[zh.GER_heavy_ship_engine_2]
+布洛姆&福斯 138,000马力引擎
+[zh.GER_heavy_ship_engine_3]
+德希马克 160,100马力引擎
+[zh.GER_heavy_ship_engine_4]
+MAN 165000马力柴油引擎
+[zh.GER_carrier_ship_engine_1]
+德希马克 50,000马力引擎
+[zh.GER_carrier_ship_engine_2]
+布朗-博韦里 165,000马力引擎
+[zh.GER_carrier_ship_engine_3]
+布洛姆&福斯 180,000马力引擎
+[zh.GER_carrier_ship_engine_4]
+MAN 185000马力柴油引擎
+[zh.SOV_light_ship_engine_1]
+布朗-博韦里35000马力引擎
+[zh.SOV_sub_ship_engine_1]
+38B8型 1370马力柴油引擎
+[zh.SOV_sub_ship_engine_2]
+42BM6型 2200马力柴油引擎
+[zh.SOV_sub_ship_engine_3]
+1D型 4000马力柴油引擎
+[zh.SOV_sub_ship_engine_4]
+9DKR型 8400马力柴油引擎
+[zh.SOV_cruiser_ship_engine_1]
+布朗-帕森斯 60000马力引擎
+[zh.SOV_cruiser_ship_engine_2]
+TV-7型 70000马力引擎
+[zh.SOV_cruiser_ship_engine_3]
+TV-7型 80000马力引擎
+[zh.SOV_cruiser_ship_engine_4]
+TV-7型 110000马力引擎
+[zh.SOV_heavy_ship_engine_1]
+帕森斯 42000马力引擎
+[zh.SOV_heavy_ship_engine_2]
+布朗-博韦里 120000马力引擎
+[zh.SOV_heavy_ship_engine_3]
+布朗-博韦里 201000马力引擎
+[zh.SOV_heavy_ship_engine_4]
+TV-4型 240000马力引擎
+[zh.SOV_carrier_ship_engine_1]
+帕森斯 66000马力引擎
+[zh.SOV_carrier_ship_engine_2]
+布朗-博韦里 126500马力引擎
+[zh.SOV_carrier_ship_engine_3]
+布朗-博韦里 154000马力引擎
+[zh.SOV_carrier_ship_engine_4]
+TV-4型210000马力引擎
+[zh.ARG_light_ship_engine_1]
+帕森斯 42000马力引擎
+[zh.ARG_sub_ship_engine_1]
+托西 1500马力引擎
+[zh.ARG_cruiser_ship_engine_1]
+帕森斯 54000马力引擎
+[zh.ARG_cruiser_ship_engine_2]
+帕森斯 85000马力引擎
+[zh.ARG_cruiser_ship_engine_3]
+95000马力引擎
+[zh.ARG_cruiser_ship_engine_4]
+110000马力引擎
+[zh.ARG_heavy_ship_engine_1]
+柯蒂斯 39500马力引擎
+[zh.BRA_light_ship_engine_1]
+帕森斯 24500马力引擎
+[zh.BRA_light_ship_engine_2]
+通用电气 42800马力引擎
+[zh.BRA_sub_ship_engine_1]
+安萨尔多 2000马力引擎
+[zh.BRA_sub_ship_engine_2]
+2500马力引擎
+[zh.BRA_heavy_ship_engine_1]
+维克斯 30000马力引擎
+[zh.CHL_light_ship_engine_1]
+帕森斯 28000马力引擎
+[zh.CHL_sub_ship_engine_1]
+新伦敦船舶引擎公司 480马力引擎
+[zh.CHL_sub_ship_engine_2]
+帕森斯 2750马力引擎
+[zh.CHL_sub_ship_engine_3]
+3500马力引擎
+[zh.CHL_sub_ship_engine_4]
+5000马力引擎
+[zh.CHL_heavy_ship_engine_1]
+布朗-柯蒂斯 37000马力引擎
+[zh.DEN_sub_ship_engine_1]
+伯迈斯特&韦恩 900马力动力系统
+[zh.DEN_sub_ship_engine_2]
+伯迈斯特&韦恩 1200马力动力系统
+[zh.EST_sub_ship_engine_1]
+维克斯 1000马力引擎
+[zh.FIN_sub_ship_engine_1]
+阿特拉斯 1160马力引擎
+[zh.GRE_light_ship_engine_1]
+帕森斯 22000马力引擎
+[zh.GRE_light_ship_engine_2]
+帕森斯 34000马力引擎
+[zh.GRE_sub_ship_engine_1]
+苏尔寿 1420马力引擎
+[zh.HOL_light_ship_engine_1]
+帕森斯 31000马力引擎
+[zh.HOL_light_ship_engine_2]
+帕森斯 40000马力引擎
+[zh.HOL_light_ship_engine_3]
+帕森斯 45000马力引擎
+[zh.HOL_sub_ship_engine_1]
+苏尔寿 900马力引擎
+[zh.HOL_sub_ship_engine_2]
+苏尔寿 1800马力引擎
+[zh.HOL_sub_ship_engine_3]
+MAN 3200马力引擎
+[zh.HOL_sub_ship_engine_4]
+苏尔寿 5000马力引擎
+[zh.HOL_cruiser_ship_engine_1]
+帕森斯 56000马力引擎
+[zh.HOL_cruiser_ship_engine_2]
+帕森斯 66000马力引擎
+[zh.HOL_cruiser_ship_engine_3]
+帕森斯 78000马力引擎
+[zh.HOL_heavy_ship_engine_3]
+帕森斯 180000马力引擎
+[zh.LAT_sub_ship_engine_1]
+苏尔寿 1300马力引擎
+[zh.NOR_light_ship_engine_1]
+利拉伐 30000马力引擎
+[zh.NOR_sub_ship_engine_1]
+苏尔寿 900马力引擎
+[zh.POL_light_ship_engine_1]
+帕森斯 33000马力引擎
+[zh.POL_light_ship_engine_2]
+帕森斯 54000马力引擎
+[zh.POL_light_ship_engine_3]
+65000马力引擎
+[zh.POL_light_ship_engine_4]
+75000马力引擎
+[zh.POL_sub_ship_engine_1]
+诺曼-维克斯 1800马力引擎
+[zh.POL_sub_ship_engine_2]
+苏尔寿 4740马力引擎
+[zh.POL_sub_ship_engine_3]
+苏尔寿 5400马力引擎
+[zh.POL_sub_ship_engine_4]
+6500马力引擎
+[zh.POR_light_ship_engine_1]
+帕森斯 33000马力引擎
+[zh.POR_sub_ship_engine_1]
+维克斯2300马力引擎
+[zh.POR_sub_ship_engine_2]
+2800马力引擎
+[zh.POR_sub_ship_engine_3]
+3500马力引擎
+[zh.PRU_light_ship_engine_1]
+布朗-博韦里32700马力引擎
+[zh.PRU_sub_ship_engine_1]
+新伦敦800马力引擎
+[zh.ROM_light_ship_engine_1]
+托西45000马力引擎
+[zh.ROM_light_ship_engine_2]
+帕森斯 52000马力引擎
+[zh.ROM_light_ship_engine_3]
+57000马力引擎
+[zh.ROM_light_ship_engine_4]
+60000马力引擎
+[zh.ROM_sub_ship_engine_1]
+苏尔寿800马力引擎
+[zh.SIA_light_ship_engine_1]
+布朗-柯蒂斯 27000马力引擎
+[zh.SPR_light_ship_engine_1]
+帕森斯 33000马力引擎
+[zh.SPR_light_ship_engine_2]
+帕森斯 42000马力引擎
+[zh.SPR_light_ship_engine_3]
+50000马力引擎
+[zh.SPR_light_ship_engine_4]
+60000马力引擎
+[zh.SPR_sub_ship_engine_1]
+新伦敦 1400马力引擎
+[zh.SPR_sub_ship_engine_2]
+维克斯 2000马力引擎
+[zh.SPR_sub_ship_engine_3]
+苏尔寿 5000马力引擎
+[zh.SPR_sub_ship_engine_4]
+6000马力引擎
+[zh.SPR_cruiser_ship_engine_1]
+帕森斯 45000马力引擎
+[zh.SPR_cruiser_ship_engine_2]
+帕森斯 80000马力引擎
+[zh.SPR_cruiser_ship_engine_3]
+帕森斯 90000马力引擎
+[zh.SPR_cruiser_ship_engine_4]
+110000马力引擎
+[zh.SPR_heavy_ship_engine_1]
+帕森斯 15500马力引擎
+[zh.SWE_light_ship_engine_1]
+利拉伐26000马力引擎
+[zh.SWE_light_ship_engine_2]
+利拉伐32000马力引擎
+[zh.SWE_light_ship_engine_3]
+利拉伐44000马力引擎
+[zh.SWE_light_ship_engine_4]
+利拉伐58000马力引擎
+[zh.SWE_sub_ship_engine_1]
+阿特拉斯1340马力引擎
+[zh.SWE_sub_ship_engine_2]
+哥特沃尔肯1920马力引擎
+[zh.SWE_sub_ship_engine_3]
+哥特沃尔肯3000马力引擎
+[zh.SWE_sub_ship_engine_4]
+哥特沃尔肯4000马力引擎
+[zh.SWE_cruiser_ship_engine_1]
+利拉伐33000马力引擎
+[zh.SWE_cruiser_ship_engine_2]
+利拉伐70000马力引擎
+[zh.SWE_cruiser_ship_engine_3]
+利拉伐80000马力引擎
+[zh.SWE_cruiser_ship_engine_4]
+利拉伐90000马力引擎
+[zh.SWE_heavy_ship_engine_1]
+穆塔拉23910马力引擎
+[zh.TUR_light_ship_engine_1]
+帕森斯 35000马力引擎
+[zh.TUR_light_ship_engine_2]
+帕森斯 40000马力引擎
+[zh.TUR_sub_ship_engine_1]
+MAN 1100马力柴油机
+[zh.TUR_sub_ship_engine_2]
+MAN 2300马力柴油机
+[zh.TUR_sub_ship_engine_3]
+MAN 2880马力柴油机
+[zh.TUR_sub_ship_engine_4]
+巴布科克&威尔科克斯 3500马力柴油机
+[zh.TUR_heavy_ship_engine_1]
+帕森斯 52000马力引擎
+[zh.YUG_light_ship_engine_1]
+帕森斯 42000马力蒸汽轮机
+[zh.YUG_light_ship_engine_2]
+45000马力引擎
+[zh.YUG_light_ship_engine_3]
+50000马力引擎
+[zh.YUG_light_ship_engine_4]
+60000马力引擎
+[zh.YUG_sub_ship_engine_1]
+MAN 1480马力柴油机

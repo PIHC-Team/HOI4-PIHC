@@ -1,0 +1,35 @@
+{
+    "name": "Steampunk Armored Train",
+    "category": "infantry",
+
+    "x": 12,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_vehicle",
+        "pihc_train"
+    ],
+    "enable_equipments": [
+        "train_equipment_3"
+    ],
+    "enable_subunits": [
+    ],
+
+
+    "allow_branch": {
+        "always": false,
+        "has_dlc": "No Step Back"
+    },
+    "dependencies": {
+        "TECHNOLOGY_TRAIN_II": 1,
+        "TECHNOLOGY_ENER_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C12_C07_REFUSED_CORPORATION",
+            "uncomplete_national_focus": {
+                "focus": "FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS",
+                "uncomplete_children": true,
+                "refund_political_power": false
+            },
+            "remove_ideas": "IDEA_C12_DEVELOPMENT_ALLOWANCE_OF_LAS_PEGASUS",
+            "add_political_power": -50
+        }
+    ],
+    "is_triggered_only": true
+}

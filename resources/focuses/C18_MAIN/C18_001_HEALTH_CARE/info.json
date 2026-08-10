@@ -1,0 +1,29 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_001_GEN",
+    "prerequisite": {
+        "focus": "FOCUS_C18_001_GEN"
+    },
+    "bypass": {
+        "has_idea": "IDEA_ERA_HYGIENE_2_MYSO"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT_NURSE_I": 1
+        },
+        "UPGRADE_HYGIENE": true,
+        "C18_DEL_GROWTH_0_1": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

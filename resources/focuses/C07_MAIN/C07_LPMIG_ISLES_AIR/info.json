@@ -1,0 +1,28 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_ISLES",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_ISLES"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "147": {
+            "BUILD_AN_AIR_BASE": true,
+            "BUILD_AN_AIR_BASE__D1": true
+        }
+    },
+    "available": {
+        "147": {
+            "is_owned_and_controlled_by": "C07"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

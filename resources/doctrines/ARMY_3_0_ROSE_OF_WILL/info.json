@@ -1,0 +1,44 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 0,
+    "xor": [
+        "DOCTRINE_ARMY_0_0_TIDE_OF_IRON",
+        "DOCTRINE_ARMY_1_0_FLAME_OF_RAGE",
+        "DOCTRINE_ARMY_2_0_WALL_OF_UNITY",
+        "DOCTRINE_ARMY_4_0_BREEZE_OF_DEATH"
+    ],
+
+    "category_infantry_traditional": {
+        "max_organisation": 4.0,
+        "default_morale": 0.20
+    },
+    "experience_gain_army": 0.40,
+    "surrender_limit": 0.05,
+    "army_core_defence_factor": 0.10,
+    "enable_tactic": "tactic_tactical_withdrawal",
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_rose_of_will"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_3_1_FIGHT_EVERYWHERE",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

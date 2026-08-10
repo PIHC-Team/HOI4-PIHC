@@ -1,0 +1,87 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C03": {
+                    "set_variable": {
+                        "var": "VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                        "value": 3000
+                    },
+                    "set_variable__D1": {
+                        "var": "VAR_MUFFINS_PRODUCE_BASE",
+                        "value": 80
+                    },
+                    "set_variable__D2": {
+                        "var": "VAR_MUFFINS_PRODUCE_FARM",
+                        "value": 60
+                    },
+                    "C03_ROULETTE_INIT": true
+                }
+            }
+        },
+        "on_monthly_C03": {
+            "effect": {
+                "add_to_variable": {
+                    "var": "VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "VAR_MUFFINS_PRODUCE_BASE"
+                },
+                "COMPUTE_NUM_FARMS": true,
+                "set_temp_variable": {
+                    "var": "muffins_produced_by_farm",
+                    "value": "VAR_NUM_FARMS_OWNED"
+                },
+                "multiply_temp_variable": {
+                    "var": "muffins_produced_by_farm",
+                    "value": "VAR_MUFFINS_PRODUCE_FARM"
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "muffins_produced_by_farm"
+                },
+                "C03_CONVERT_MUFFINS_75": true,
+                "C03_CONVERT_MUFFINS_40": true,
+                "C03_CONVERT_EQUIPMENT_MUFFINS_I": true,
+                "C03_CONVERT_EQUIPMENT_MUFFINS_II": true,
+                "C03_CONVERT_EQUIPMENT_MUFFINS_III": true,
+                "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+                "if": {
+                    "limit": {
+                        "C12": {
+                            "OR": {
+                                "has_idea": "IDEA_C12_CLOUD_CITY_AGREEMENT",
+                                "has_idea__D1": "IDEA_C12_CLOUD_CITY_AGREEMENT_2"
+                            }
+                        }
+                    },
+                    "add_to_variable": {
+                        "var": "VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                        "value": 50
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "check_variable": {
+                            "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                            "value": 1000000,
+                            "compare": "greater_than_or_equals"
+                        }
+                    },
+                    "news_event" : {
+                        "id": "SUPER_NEWS.7",
+                        "days": 3
+                    }
+                }
+            }
+        },
+        "on_monthly": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_DIND_C04_STRATUSBURG_DINER"
+                    },
+                    "ADD_INVENTORY_ITEM_3RA_C03_MUFFIN_100": true
+                }
+            }
+        }
+    }
+}

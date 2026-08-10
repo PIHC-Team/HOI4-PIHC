@@ -1,0 +1,37 @@
+{
+    "category": "land",
+    "x": 2,
+    "y": 10,
+
+    "cannon_mot_light": {
+        "breakthrough": 0.10
+    },
+    "cannon_mot_medium": {
+        "breakthrough": 0.10
+    },
+    "cannon_mot_heavy": {
+        "breakthrough": 0.10
+    },
+    "army_speed_factor": 0.10,
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_flame_of_rage"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_1_6_ALL_YOU_NEED",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

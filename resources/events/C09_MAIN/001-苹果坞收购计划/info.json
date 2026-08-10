@@ -1,0 +1,112 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "C09_MAIN.1",
+                            "days": 3
+                        }
+                    }
+                }
+            },
+            "531": {
+                "if": {
+                    "limit": {
+                        "is_owned_and_controlled_by": "C16"
+                    },
+                    "C16": {
+                        "give_resource_rights": {
+                            "state": 531,
+                            "receiver": "C01",
+                            "resources": [
+                                "logs"
+                            ]
+                        }
+                    }
+                }
+            },
+            "526": {
+                "if": {
+                    "limit": {
+                        "is_owned_and_controlled_by": "C16"
+                    },
+                    "C16": {
+                        "give_resource_rights": {
+                            "state": 526,
+                            "receiver": "C01",
+                            "resources": [
+                                "logs"
+                            ]
+                        }
+                    }
+                }
+            },
+            "ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300": true
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C09"
+            },
+            "531": {
+                "if": {
+                    "limit": {
+                        "is_owned_and_controlled_by": "C16"
+                    },
+                    "remove_core_of": "C16",
+                    "transfer_state_to": "C09",
+                    "set_demilitarized_zone": false
+                }
+            },
+            "526": {
+                "if": {
+                    "limit": {
+                        "is_owned_and_controlled_by": "C16"
+                    },
+                    "remove_core_of": "C16",
+                    "transfer_state_to": "C09",
+                    "set_demilitarized_zone": false
+                }
+            },
+            "give_resource_rights": {
+                "state": 531,
+                "receiver": "C01",
+                "resources": [
+                    "logs"
+                ]
+            },
+            "give_resource_rights__D1": {
+                "state": 526,
+                "receiver": "C01",
+                "resources": [
+                    "logs"
+                ]
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C09"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Queen Chrysalis",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "fascism_authoritarianism",
+        "traits": [
+            "TRAIT_QUEEN_CHRYSALIS_THE_FORMIDABLE_QUEEN",
+            "TRAIT_RUTHLESS",
+            "TRAIT_EFFICIENT"
+        ]
+    },
+    "seconds": 5.40,
+    "pause_on_loop": 4.83,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_QUEEN_CHRYSALIS_ANIMATED_portrait"
+        }
+    }
+}

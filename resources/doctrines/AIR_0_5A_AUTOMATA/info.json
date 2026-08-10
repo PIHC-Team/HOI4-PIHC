@@ -1,0 +1,34 @@
+{
+    "category": "air",
+    "x": -2,
+    "y": 10,
+    "xor": [
+        "DOCTRINE_AIR_0_5B_AIR_EXPERIENCE"
+    ],
+
+    "air_attack_factor": 0.05,
+    "category_infantry_automata": {
+        "air_attack": 5.00
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_open_sky"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_0_6_AIR_RESEARCH",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

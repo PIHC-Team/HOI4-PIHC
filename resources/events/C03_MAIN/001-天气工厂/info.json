@@ -1,0 +1,38 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0,
+                "modifier": {
+                    "add": 10000,
+                    "has_government": "transcendence"
+                }
+            },
+            "add_named_threat": {
+                "threat": 5,
+                "name": "EVENT_C03_MAIN_1_INC_THREAT"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_named_threat": {
+                "threat": -5,
+                "name": "EVENT_C03_MAIN_1_DEC_THREAT"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 800
+            },
+            "trigger": {
+                "tag": "C03"
+            },
+            "random_owned_controlled_state": {
+                "BUILD_A_FARM": true
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

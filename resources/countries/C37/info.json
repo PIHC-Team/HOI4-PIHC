@@ -1,0 +1,81 @@
+{
+    "name": "Sendakuminati",
+    "rgb": [
+        161,
+        113,
+        143
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "set_popularities": {
+            "transcendence": 100
+        },
+        "set_politics": {
+            "ruling_party": "transcendence",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_SENDAK"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_SUPPORT_COLD_I": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_I": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_II": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_III": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_IV": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_V": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_WITCHCRAFT_III": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_NONUNICORN": 1,
+            "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    }
+}

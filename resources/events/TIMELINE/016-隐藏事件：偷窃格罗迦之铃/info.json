@@ -1,0 +1,31 @@
+{
+    "date": "1004.01.01 ~ 1004.12.01",
+    "date_scope": "C01",
+    "immediate": {
+        "hidden_effect": {
+            "C01": {
+                "country_event": {
+                    "id": "EEMO.11",
+                    "days": 1
+                }
+            },
+            "C11": {
+                "country_event": {
+                    "id": "CECIA.4",
+                    "days": 60,
+                    "random_days": 60
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

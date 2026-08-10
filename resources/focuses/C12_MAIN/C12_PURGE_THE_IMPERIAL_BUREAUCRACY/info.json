@@ -1,0 +1,24 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_DUST_SETTLES",
+    
+    "prerequisite": {
+        "focus": "FOCUS_C12_DUST_SETTLES"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "add_manpower" : -2000,
+        "add_ideas":"IDEA_C12_WHITE_HORROR"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

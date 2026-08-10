@@ -1,0 +1,33 @@
+{
+    "add_stats": {
+        "build_cost_ic": 30.0,
+        "weight": 10.0
+    },
+    "multiply_stats": {
+        "maximum_speed": 0.75,
+        "fuel_consumption": -0.90,
+        "air_range": 0.75
+    },
+    "xp_cost": 10,
+
+    "allowed_module_categories": {
+        "armor_type_slot": [
+            "pihc_plane_armor_type_2_elec"
+        ],
+        "special_type_slot_1": [
+            "pihc_plane_special_type_2_elec"
+        ],
+        "special_type_slot_2": [
+            "pihc_plane_special_type_2_elec"
+        ],
+        "special_type_slot_3": [
+            "pihc_plane_special_type_2_elec"
+        ],
+        "special_type_slot_4": [
+            "pihc_plane_special_type_2_elec"
+        ],
+        "special_type_slot_5": [
+            "pihc_plane_special_type_2_elec"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "add_power_balance_modifier": {
+                "id": "BOP_C11_STARVATION",
+                "modifier": "BOP_C11_STARVATION_ZEBRA_TRIBUTE"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "trigger": {
+        "740": {
+            "is_owned_and_controlled_by": "C11"
+        },
+        "C11": {
+            "power_balance_value": {
+                "id": "BOP_C11_STARVATION",
+                "value > -0.99": null
+            }
+        }
+    },
+    "hidden": true,
+    "fire_only_once": true
+}

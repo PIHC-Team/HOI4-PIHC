@@ -1,0 +1,27 @@
+{
+    "name": "Road",
+    "priority": 999,
+    
+    "cost": 25,
+    "days_re_enable": 14,
+    "days_remove": 14,
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE",
+        "tag": "C01"
+    },
+    "available": {
+        "num_of_civilian_factories_available_for_projects > 1": null
+    },
+    "modifier": {
+        "civilian_factory_use": 2
+    },
+    "remove_effect": {
+        "add_days_mission_timeout": {
+            "mission": "DECISION_C01_COZ_SUPPORT_TIME",
+            "days": -21
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

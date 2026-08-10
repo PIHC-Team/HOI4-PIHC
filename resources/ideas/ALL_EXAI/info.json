@@ -1,0 +1,37 @@
+{
+    "category": "hidden_ideas",
+    "name": "EXAI",
+    "removal_cost": -1,
+    "allowed": {
+        "is_ai": true
+    },
+    "allowed_civil_war": {
+        "always": true
+    },
+    "cancel": {
+        "is_ai": false
+    },
+    "modifier": {
+        "line_change_production_efficiency_factor": 0.80,
+        "production_factory_efficiency_gain_factor": 0.35,
+        "production_lack_of_resource_penalty_factor": -0.40,
+        "political_power_gain": 0.25,
+        "air_accidents_factor": -0.25,
+        "air_home_defence_factor": 0.10,
+        "army_fuel_consumption_factor": -0.10,
+        "air_fuel_consumption_factor": -0.10,
+        "navy_fuel_consumption_factor": -0.10
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_AIRFRAME_PLANE": {
+            "build_cost_ic": -0.25,
+            "reliability": 0.15,
+            "instant": true
+        },
+        "ARCHETYPE_AIRFRAME_GALLEON": {
+            "build_cost_ic": -0.25,
+            "reliability": 0.15,
+            "instant": true
+        }
+    }
+}

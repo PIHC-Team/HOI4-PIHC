@@ -1,0 +1,13 @@
+{
+    "priority": 10001,
+    "allowed": {
+        "OR": {
+            "tag": "C01",
+            "tag__D1": "C13",
+            "tag__D2": "C02"
+        }
+    },
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_THE_GRIFFON_LIES_HEAVY"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "country_event": {
+                "id": "C01_C02_GREENLIGHT.24"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,16 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "custom_effect_tooltip": "C18_SENDAKS_PLAN_WARNING_EFFECT_TOOLTIP",
+                "country_event": {
+                    "id": "C18_MAIN.11"
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN": true
+            }
+        }
+    ]
+}

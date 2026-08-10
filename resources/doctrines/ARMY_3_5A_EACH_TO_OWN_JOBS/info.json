@@ -1,0 +1,38 @@
+{
+    "category": "land",
+    "x": -2,
+    "y": 10,
+
+    "max_command_power": 20,
+    "command_power_gain_mult": 0.25,
+    "land_reinforce_rate": 0.06,
+    "supply_consumption_factor": -0.05,
+    "coordination_bonus": 0.02,
+    "category_all_infantry": {
+        "casualty_trickleback": 0.02
+    },
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_rose_of_will"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_3_6_ALWAYS_PREPARED",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

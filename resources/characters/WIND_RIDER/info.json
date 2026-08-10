@@ -1,0 +1,24 @@
+{
+    "name": "Wind Rider",
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 150,
+        "removal_cost": -1,
+        "can_be_fired": false,
+        "traits": [
+            "TRAIT_SUPER_IDOL",
+            "TRAIT_TREACHEROUS",
+            "TRAIT_HIGH_BUSINESS_ESTEEM"
+        ]
+    },
+    "country_leader": {
+        "ideology": "corporation_organization",
+        "traits": [
+            "TRAIT_SUPER_IDOL",
+            "TRAIT_TREACHEROUS",
+            "TRAIT_HIGH_BUSINESS_ESTEEM"
+        ]
+    }
+}

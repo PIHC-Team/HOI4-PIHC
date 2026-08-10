@@ -1,0 +1,55 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_INTER_FACTION_CLOUDSDALE",
+    "prerequisite": {
+        "focus": "FOCUS_C09_INTER_FACTION_CLOUDSDALE"
+    },
+    "cost": 8,
+    "completion_reward": {
+        "C09": {
+            "add_to_faction": "C04"
+        },
+        "C04": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INTERNATIONAL",
+            "add_ideas": "IDEA_ERA_AGE_INTERNATIONAL"
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_EIJC_MEMBER"
+            },
+            "C04": {
+                "add_ideas": "IDEA_EIJC_MEMBER"
+            }
+        }
+    },
+    "available": {
+        "C04": {
+            "is_ai": true,
+            "has_war": false,
+            "hidden_trigger": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+            },
+            "is_in_faction": false,
+            "has_opinion": {
+                "target": "C09",
+                "value > 29": null
+            }
+        },
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "NOT": {
+            "has_completed_focus": "FOCUS_C09_MSHGA_QUIT"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

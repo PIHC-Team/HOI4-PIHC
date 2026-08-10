@@ -1,0 +1,71 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_NEW_OPPORTUNITY",
+    "prerequisite": {
+        "focus": "FOCUS_C08_NEW_OPPORTUNITY"
+    },
+    "dy": 1,
+    "priority": 0,
+    "cost": 1,
+    "completion_reward": {
+        "518": {
+            "add_resistance": 30,
+            "add_resistance_target": 10,
+            "add_province_modifier": {
+                "static_modifiers": [
+                    "MODIFIER_BALTIMARE_RESISTANCE"
+                ],
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "549": {
+            "add_resistance": 30,
+            "add_resistance_target": 10,
+            "add_province_modifier": {
+                "static_modifiers": [
+                    "MODIFIER_BALTIMARE_RESISTANCE"
+                ],
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "665": {
+            "add_resistance": 30,
+            "add_resistance_target": 10,
+            "add_province_modifier": {
+                "static_modifiers": [
+                    "MODIFIER_BALTIMARE_RESISTANCE"
+                ],
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "568": {
+            "add_resistance": 30,
+            "add_resistance_target": 10,
+            "add_province_modifier": {
+                "static_modifiers": [
+                    "MODIFIER_BALTIMARE_RESISTANCE"
+                ],
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

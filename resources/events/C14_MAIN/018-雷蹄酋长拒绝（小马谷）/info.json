@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            }
+        }
+    ],
+    "trigger": {
+        "tag": "C02",
+        "has_completed_focus": "FOCUS_C02_APPLE_SOUTHERN_FRIEND"
+    },
+    "is_triggered_only": true
+}

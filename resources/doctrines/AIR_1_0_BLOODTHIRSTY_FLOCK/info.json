@@ -1,0 +1,38 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 0,
+    "xor": [
+        "DOCTRINE_AIR_0_0_OPEN_SKY",
+        "DOCTRINE_AIR_2_0_FLYING_FORTRESS"
+    ],
+
+    "air_agility_factor": 0.05,
+    "air_attack_factor": 0.05,
+    "air_superiority_efficiency": 0.10,
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_1_1A_ELITE",
+        "research_cost_coeff": 1.0
+    },
+    "path__D1": {
+        "leads_to_tech": "DOCTRINE_AIR_1_1B_CROWD",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

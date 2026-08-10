@@ -1,0 +1,28 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 16,
+    "xp_unlock_cost": 200,
+
+    "army_attack_against_minor_factor": 0.12,
+    "enable_tactic": "tactic_unexpected_thrust",
+    "enable_tactic__D1": "tactic_breakthrough",
+    "enable_tactic__D2": "tactic_pihc_iron_curtain",
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_flame_of_rage"
+    ],
+
+    "research_cost": 4.5,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

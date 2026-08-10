@@ -1,0 +1,96 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "custom_effect_tooltip": "EVENT_C04_MAIN_24_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLYS_INVEST",
+            "add_ideas": "free_trade",
+            "add_ideas__D1": "civilian_economy",
+            "if": {
+                "limit": {
+                    "has_completed_focus": "FOCUS_C04_CRYSTAL_DISAPPROVE"
+                },
+                "uncomplete_national_focus": {
+                    "focus": "FOCUS_C04_CRYSTAL_DISAPPROVE",
+                    "uncomplete_children": false,
+                    "refund_political_power": false
+                },
+                "complete_national_focus": "FOCUS_C04_CRYSTAL_APPROVE"
+            },
+            "add_power_balance_value": {
+                "id": "BOP_C04_INDEPENDENCE",
+                "value": -0.05,
+                "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+            },
+            "add_popularity": {
+                "ideology": "corporation",
+                "popularity": 0.05
+            },
+            "336": {
+                "add_building_construction": {
+                    "type": "trade_complex",
+                    "level": 1,
+                    "instant_build": true
+                }
+            },
+            "C04_ADD_ECO_0_10": true,
+            "hidden_effect": {
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 0.10
+                },
+                "country_event": {
+                    "id": "C04_MAIN.46",
+                    "days": 40,
+                    "random_days": 30
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED",
+            "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C04_WIND_RIDERS_INVEST",
+            "custom_effect_tooltip": "EVENT_C04_MAIN_23_TOOLTIP",
+            "if": {
+                "limit": {
+                    "has_completed_focus": "FOCUS_C04_CRYSTAL_APPROVE"
+                },
+                "remove_ideas": "IDEA_C04_TIMBUCKTU_BLESSING"
+            },
+            "if__D1": {
+                "limit": {
+                    "has_completed_focus": "FOCUS_C04_CRYSTAL_DISAPPROVE"
+                },
+                "uncomplete_national_focus": {
+                    "focus": "FOCUS_C04_CRYSTAL_DISAPPROVE",
+                    "uncomplete_children": false,
+                    "refund_political_power": false
+                }
+            },
+            "376": {
+                "add_building_construction": {
+                    "type": "trade_complex",
+                    "level": 1,
+                    "instant_build": true
+                }
+            },
+            "C04_ADD_ECO_2_20": true,
+            "add_popularity": {
+                "ideology": "corporation",
+                "popularity": 0.15
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C04_MAIN.45",
+                    "days": 30,
+                    "random_Days": 7
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

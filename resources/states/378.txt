@@ -1,0 +1,47 @@
+state = {
+    id = 378
+    name = STATE_378
+    provinces = {
+        365
+        1816
+        1905
+        2199
+        2665
+        2875
+        3737
+        4165
+        4296
+        4674
+        5447
+        5604
+        6117
+        6926
+        7754
+        8497
+        9073
+        10642
+        10714
+        10739
+        10756
+        10771
+        10823
+        10829
+        10855
+    }
+    manpower = 45740
+    state_category = rural
+    history = {
+        owner = C17
+        victory_points = {
+            365
+            5
+        }
+        buildings = {
+            dockyard = 1
+        }
+        add_core_of = C17
+    }
+    resources = {
+        logs = 18
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "category": "land",
+    "x": 2,
+    "y": 6,
+    "xor": [
+        "DOCTRINE_ARMY_2_3A_SOUND_BACKING"
+    ],
+
+    "category_infantry_shield": {
+        "maximum_speed": 0.20
+    },
+    "category_infantry_motorized": {
+        "defense": 0.20
+    },
+    "enable_tactic": "tactic_elastic_defense",
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_wall_of_unity"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_2_4B_COMPREHENSIVE",
+        "research_cost_coeff": 1.0
+    },
+    
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

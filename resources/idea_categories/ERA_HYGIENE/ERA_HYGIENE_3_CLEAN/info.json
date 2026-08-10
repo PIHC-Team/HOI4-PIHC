@@ -1,0 +1,12 @@
+{
+    "name": "Clean",
+    "removal_cost": -1,
+    "available": {
+        "has_tech": "TECHNOLOGY_SUPPORT_NURSE_I"
+    },
+    "modifier": {
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_3_CLEAN_TOOLTIP"
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

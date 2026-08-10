@@ -1,0 +1,22 @@
+{
+    "name": "Vehicle V",
+    "category": "infantry",
+
+    "x": 10,
+    "y": 27,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_vehicle"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_VEHICLE_CONTEMPORARY"
+    ],
+    "enable_subunits": [
+    ],
+
+    "research_cost": 3.0,
+    "start_year": 1009
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Import Engine",
+    "priority": 73,
+    "visible": {
+        "NOT": {
+            "OR": {
+                "has_tech": "TECHNOLOGY_TECH_ENER_IIE",
+                "is_blank_country": true
+            }
+        }
+    },
+    "available": {
+        "any_neighbor_country": {
+            "NOT": {
+                "OR": {
+                    "is_forbidden_to_interact": true,
+                    "has_government": "transcendence"
+                }
+            },
+            "has_tech": "TECHNOLOGY_TECH_ENER_IIE"
+        }
+    },
+
+    "cost": 150,
+    "days_remove": 240,
+    "remove_effect": {
+        "set_technology": {
+            "TECHNOLOGY_TECH_ENER_IIE": 1
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 100,
+        "modifier": {
+            "add": -100,
+            "is_blank_country": true
+        }
+    }
+}

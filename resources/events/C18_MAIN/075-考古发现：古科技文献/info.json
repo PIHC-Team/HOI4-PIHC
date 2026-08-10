@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_tech_bonus": {
+                "name": "C18_ARCHEOLOGY_TECHNOLOGY_BONUS",
+                "bonus": 0.35,
+                "uses": 2,
+                "category": "pihc_all"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

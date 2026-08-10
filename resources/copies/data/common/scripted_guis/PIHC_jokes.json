@@ -1,0 +1,18 @@
+{
+    "scripted_gui": {
+        "pihc_jokes_toggle": {
+            "window_name": "pihc_jokes_newspaper_icon",
+            "context_type": "player_context",
+            "visible": {
+                "is_ai": false
+            },
+            "effects": {
+                "open_jokes_click": {
+                    "country_event": {
+                        "id": "JOKES.9999"
+                    }
+                }
+            }
+        }
+    }
+}

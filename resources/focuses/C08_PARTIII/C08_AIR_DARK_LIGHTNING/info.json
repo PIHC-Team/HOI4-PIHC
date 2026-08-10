@@ -1,0 +1,34 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_AIR_LINE",
+    "prerequisite": {
+        "focus": "FOCUS_C08_AIR_LINE"
+    },
+    "dx": 1,
+    "priority": 0,
+    "cost": 2,
+    "completion_reward": {
+        "add_ideas": "IDEA_C08_AIR_DARK_LIGHTNING",
+        "add_tech_bonus": {
+            "category": "pihc_air_atk",
+            "bonus": 0.75,
+            "uses": 1
+        },
+        "add_tech_bonus__D1": {
+            "category": "pihc_air_grd",
+            "bonus": 0.75,
+            "uses": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "Armed Liner",
+    "archetype": "ship_hull_heavy",
+    "parent": "EQUIPMENT_SHIP_SEACOURTYARD_IRON",
+
+    "priority": 1502,
+    "module_slots": "inherit",
+    "default_modules": {
+        "fixed_ship_battery_slot": "ship_heavy_battery_3",
+        "fixed_ship_anti_air_slot": "ship_anti_air_4",
+        "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+        "fixed_ship_radar_slot": "empty",
+        "fixed_ship_engine_slot": "heavy_ship_engine_3",
+        "fixed_ship_secondaries_slot": "ship_secondaries_2",
+        "fixed_ship_armor_slot": "ship_armor_bb_3",
+        "front_1_custom_slot": "ship_anti_air_4",
+        "mid_1_custom_slot": "ship_anti_air_4",
+        "mid_2_custom_slot": "ship_secondaries_2",
+        "rear_1_custom_slot": "ship_heavy_battery_3"
+    },
+    "hg_armor_piercing": 0,
+    "hg_attack": 0,
+    "lg_armor_piercing": 0,
+    "lg_attack": 0,
+    "torpedo_attack": 0,
+    "anti_air_attack": 0,
+    "armor_value": 30,
+    "surface_detection": 25,
+    "sub_detection": 5,
+    "surface_visibility": 30,
+    "naval_speed": 25,
+    "reliability": 0.9,
+    "naval_range": 5000,
+    "max_strength": 500,
+    "build_cost_ic": 5200,
+    "resources": {
+        "steel": 10,
+        "coal": 6,
+        "chromium": 2
+    },
+    "manpower": 12
+}

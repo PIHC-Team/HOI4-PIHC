@@ -1,0 +1,19 @@
+{
+    "name": "Contemporary Medium Cannon",
+    "parent": "EQUIPMENT_CANNON_MEDIUM_MODERN",
+    "alpha_global": 1.0,
+    "reliability": 0.99,
+    "weight": 1.8,
+    
+    "resources": {
+        "steel": 8,
+        "rubber": 4,
+        "tungsten": 2
+    },
+    "ap_attack": 48.0,
+    "fuel_consumption": 0.20,
+
+    "maximum_speed": 5.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

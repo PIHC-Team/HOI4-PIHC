@@ -1,0 +1,22 @@
+{
+    "name": "Short Fuse",
+    "gender": "male",
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_SHORT_FUSE",
+            "TRAIT_BREAKTHROUGH",
+            "TRAIT_WASHOUTS_SHORT_FUSE"
+        ],
+        "available": {
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP",            
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C04_NEW_EMPLOYEE_SHORT_FUSE"
+            }
+        },
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    }
+}

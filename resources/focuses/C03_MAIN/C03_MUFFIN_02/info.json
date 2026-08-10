@@ -1,0 +1,45 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 6,
+    "y": 4,
+    "cost": 2,
+    "bypass": {
+        "hidden_trigger": {
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+            }
+        }
+    },
+    "completion_reward": {
+        "hidden_effect": {
+            "C07": {
+                "country_event": {
+                    "id": "LPLAB.247",
+                    "random_days": 7
+                }
+            },
+            "country_event": {
+                "id": "LPLAB.247",
+                "days": 7,
+                "random_days": 30
+            },
+            "mark_focus_tree_layout_dirty": true
+        },
+        "custom_effect_tooltip": "FOCUS_C03_MUFFIN_02_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_01"
+    }
+}

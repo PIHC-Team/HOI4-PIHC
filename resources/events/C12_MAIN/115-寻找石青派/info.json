@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "add_political_power": -25
+        }
+    ],
+    "trigger":{
+        "has_country_flag":"PIHC_COUNTRY_FLAG_C12_START_CIVIL_WAR_WITH_APPLEBLOOM",
+    "C14":{
+            "has_full_control_of_state" : "86",
+"casualties_inflicted_by" : {
+    "opponent" :"C12",
+    "thousands<1":null
+}
+}
+    },
+    "fire_only_once": true
+}

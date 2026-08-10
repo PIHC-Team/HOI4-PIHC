@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C07"
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_GIANT_MUFFIN",
+                "mark_focus_tree_layout_dirty": true,
+                "complete_national_focus": "FOCUS_C07_LPLAB_247"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C03"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

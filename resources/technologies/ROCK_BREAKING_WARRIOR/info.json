@@ -1,0 +1,54 @@
+{
+    "name": "Rock Breaker",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 150,
+    "root_y": 200,
+
+    "x": 16,
+    "y": 12,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_shield"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIELD_ROCKBREAKER"
+    ],
+    "enable_subunits": [
+        "infantry_rockbreaker"
+    ],
+    "allow": {
+        "always": false,
+        "if": {
+            "limit": {
+                "NOT": {
+                    "C12": {
+                        "has_country_leader": {
+                            "character": "CHARACTER_LIMESTONE_PIE",
+                            "ruling_only": true
+                        }
+                    },
+                    "OR": {
+                        "tag": "C12",
+                        "is_in_faction_with": "C12"
+                    }
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_ROCKBREAKER_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+
+    "research_cost": 5.0,
+    "start_year": 1007
+}

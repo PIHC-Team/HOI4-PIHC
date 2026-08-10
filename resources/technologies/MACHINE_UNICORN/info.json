@@ -1,0 +1,47 @@
+{
+    "name": "Mechanical Unicorn",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 14,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_summon",
+        "pihc_electronics",
+        "pihc_chips",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AUTOMATA_MACHINE_UNICORN"
+    ],
+    "enable_subunits": [
+        "infantry_automata"
+    ],
+    "allow": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_global_flag": "PIHC_GLOBAL_FLAG_CMC_UPRISE_ENDED"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "FOCUS_C07_LPLAB_112_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "dependencies": {
+        "TECHNOLOGY_TECH_INFO_IV": 1,
+        "TECHNOLOGY_MACHINE_PONY": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1008
+}

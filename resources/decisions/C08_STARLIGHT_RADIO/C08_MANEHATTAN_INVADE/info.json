@@ -1,0 +1,27 @@
+{
+    "name": "Invade",
+    "priority": 79988,
+    
+    "cost": 100,
+    "days_remove": 3,
+    "visible": {
+        "tag": "C08",
+        "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR"
+    },
+    "available": {
+        "has_full_control_of_state": 4,
+        "has_full_control_of_state__D1": 415,
+        "has_full_control_of_state__D2": 450
+    },
+    "remove_effect": {
+        "C06": {
+            "add_timed_idea": {
+                "idea": "IDEA_C08_MANEHATTAN_UNSTABLE",
+                "days": 21
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 114514
+    }
+}

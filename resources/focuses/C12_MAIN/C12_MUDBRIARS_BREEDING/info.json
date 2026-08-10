@@ -1,0 +1,27 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_AMMUNITION_BOTANY",
+    "dx": 1,
+    "dy": 2,
+    "prerequisite": {
+        "focus": "FOCUS_C12_AMMUNITION_BOTANY"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "swap_ideas": {
+            "remove_idea": "IDEA_C12_AMMUNITION_BOTANY",
+            "add_idea": "IDEA_C12_AMMUNITION_BOTANY_1"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

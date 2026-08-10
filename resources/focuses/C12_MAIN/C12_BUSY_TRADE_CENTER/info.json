@@ -1,0 +1,65 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SECRET_UNDER_THE_SEDIMENTARY",
+    "prerequisite": {
+        "focus": "FOCUS_C12_PROMOTE_PAIRING_STONE",
+        "focus__D1": "FOCUS_C12_SECRET_UNDER_THE_SEDIMENTARY"
+    },
+    
+    "cost": 4,
+    "completion_reward": {
+        "601": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "trade_complex",
+                "level": 1,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": " financial_complex",
+                "level": 1,
+                "instant_build": true
+            }
+
+    },
+    "608": {
+        "add_extra_state_shared_building_slots": 2,
+        "add_building_construction": {
+            "type": "trade_complex",
+            "level": 1,
+            "instant_build": true
+        },
+        "add_building_construction__D1": {
+            "type": " financial_complex",
+            "level": 1,
+            "instant_build": true
+        }
+
+},
+"641": {
+    "add_extra_state_shared_building_slots": 2,
+    "add_building_construction": {
+        "type": "trade_complex",
+        "level": 1,
+        "instant_build": true
+    },
+    "add_building_construction__D1": {
+        "type": " financial_complex",
+        "level": 1,
+        "instant_build": true
+    }
+}
+    },
+    "available": {
+        "owns_state": 601,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_political_power": 100,
+            "add_war_support": 0.15,
+            "C12": {
+                "puppet": {
+                    "target": "C14",
+                    "end_wars": true
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

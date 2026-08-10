@@ -1,0 +1,44 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 4,
+
+
+    "category_infantry_shield": {
+        "default_morale": 0.15,
+        "casualty_trickleback": 0.01
+    },
+    "category_armor_heavy": {
+        "default_morale": 0.15
+    },
+    "army_morale_factor": 0.10,
+    "enable_tactic": "tactic_pihc_iron_curtain",
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_wall_of_unity"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_2_3A_SOUND_BACKING",
+        "research_cost_coeff": 1.0
+    },
+    "path__D1": {
+        "leads_to_tech": "DOCTRINE_ARMY_2_3B_ELASTIC_DEFENSE",
+        "research_cost_coeff": 1.0
+    },
+    
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

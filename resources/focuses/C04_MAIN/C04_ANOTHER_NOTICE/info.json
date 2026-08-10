@@ -1,0 +1,42 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_CRYSTAL_DISAPPROVE",
+    "prerequisite": {
+        "focus": "FOCUS_C04_CRYSTAL_DISAPPROVE"
+    },
+    "cost": 2,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C04_CRYSTAL_DISAPPROVE",
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_CONSTRUCTION_AVAILABLE"
+    },
+    "completion_reward": {
+        "add_manpower": -200,
+        "ADD_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_200": true,
+        "add_popularity": {
+            "ideology": "despotic",
+            "popularity": 0.3
+        },
+        "add_power_balance_value": {
+            "id": "BOP_C04_INDEPENDENCE",
+            "value": -0.25,
+            "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+        },
+        "hidden_effect": {
+            "add_popularity": {
+                "ideology": "fascism",
+                "popularity": 0.3
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "on_actions": {
+        "on_civil_war_end": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "ROOT": {
+                            "tag": "C27"
+                        },
+                        "FROM": {
+                            "tag": "Z27"
+                        }
+                    },
+                    "C23": {
+                        "country_event": {
+                            "id": "C23_MAIN.14"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

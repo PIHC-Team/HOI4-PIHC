@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "add_state_core": 337,
+                "transfer_state": 337,
+                "add_state_core__D1": 362,
+                "transfer_state__D1": 362,
+                "C00": {
+                    "remove_state_core": 337,
+                    "remove_state_core__D1": 362
+                },
+                "country_event": {
+                    "id": "C08_RADIO.6",
+                    "days": 1
+                }
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

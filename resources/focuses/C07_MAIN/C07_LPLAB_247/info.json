@@ -1,0 +1,26 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPLAB",
+    "priority": 10,
+    "bypass": {
+        "has_tech": "TECHNOLOGY_SUPPORT_AUTO_I"
+    },
+    "cost": 2,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_GIANT_MUFFIN"
+    },
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C07_LPLAB_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

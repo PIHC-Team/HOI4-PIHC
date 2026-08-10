@@ -1,0 +1,12 @@
+{
+    "category": "hidden_ideas",
+    "name": "Coal Reserve",
+    "removal_cost": -1,
+    "modifier": {
+        "country_resource_steel": 10,
+        "country_resource_aluminium": 8,
+        "country_resource_coal": 6,
+        "country_resource_chromium": 4,
+        "country_resource_tungsten": 4
+    }
+}

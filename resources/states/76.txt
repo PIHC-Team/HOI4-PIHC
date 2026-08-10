@@ -1,0 +1,46 @@
+state = {
+    id = 76
+    name = STATE_76
+    provinces = {
+        923
+        3942
+        4740
+        5625
+        6554
+        6946
+        7410
+        7921
+        7935
+        11570
+        11616
+        11667
+        11719
+        11750
+        11840
+        11913
+    }
+    manpower = 65444
+    state_category = town
+    history = {
+        owner = C11
+        victory_points = {
+            923
+            20
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 3
+            923 = {
+                naval_base = 3
+                supply_node = 1
+            }
+        }
+        add_core_of = C11
+    }
+    resources = {
+        coal = 8
+        chromium = 8
+        steel = 8
+        aluminium = 8
+    }
+}

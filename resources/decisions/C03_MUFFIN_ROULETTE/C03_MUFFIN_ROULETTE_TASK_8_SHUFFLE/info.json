@@ -1,0 +1,36 @@
+{
+    "name": "Muffins",
+    "priority": 100,
+    
+    "cost": 0,
+    "is_good": false,
+    "selectable_mission": false,
+    "days_mission_timeout": 60,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_8_SHUFFLE"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C03_MUFFIN_ROULETTE_TASK_8_SHUFFLE",
+            "check_variable": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE",
+                "value": 5,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    },
+    "complete_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_8_SHUFFLE",
+        "custom_effect_tooltip": "CUSTOM_GAIN_MUFFINS_1500",
+        "add_to_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1500
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+    },
+    "timeout_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_8_SHUFFLE"
+    }
+}

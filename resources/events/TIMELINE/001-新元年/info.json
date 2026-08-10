@@ -1,0 +1,48 @@
+{
+    "category": "news",
+    "date": "1002.12.25",
+    "date_scope": "C01",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "C01": {
+                    "add_named_threat": {
+                        "threat": 10,
+                        "name": "EVENT_TIMELINE_1_THREAT"
+                    }
+                },
+                "C08": {
+                    "country_event": {
+                        "id": "C08_MAIN.17",
+                        "days": 1
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C08"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

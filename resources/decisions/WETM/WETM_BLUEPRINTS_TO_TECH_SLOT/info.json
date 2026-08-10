@@ -1,0 +1,44 @@
+{
+    "name": "Blueprints to Tech bonus",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "OR": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT": true,
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C07",
+            "is_in_faction_with": "C07",
+            "AND": {
+                "owns_state": 562,
+                "controls_state": 562
+            }
+        },
+        "amount_research_slots < 6": null
+    },
+    "available": {
+        "amount_research_slots < 6": null,
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_2400": true,
+        "hidden_trigger": {
+            "has_political_power > 299": null
+        }
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_2400": true,
+        "has_political_power > 299": null
+    },
+    "custom_cost_text": "CUSTOM_COST_BLUEPRINTS_2400_PP_300",
+    "ai_hint_pp_cost": 300,
+    "complete_effect": {
+        "hidden_effect": {
+            "add_political_power": -300
+        },
+        "DEL_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_2400": true,
+        "add_research_slot": 1
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 100
+    }
+}

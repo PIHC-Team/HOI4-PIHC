@@ -1,0 +1,44 @@
+state = {
+    id = 624
+    name = STATE_624
+    provinces = {
+        54
+        317
+        2560
+        2590
+        3246
+        3907
+        4431
+        5693
+        6087
+        6122
+        7417
+        9384
+        12335
+        12431
+        12479
+        12526
+        12530
+    }
+    manpower = 3895
+    state_category = rural
+    history = {
+        owner = C12
+        victory_points = {
+            54
+            3
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            arms_factory = 1
+        }
+        add_core_of = C12
+    }
+    resources = {
+        steel = 6
+        aluminium = 4
+        chromium = 3
+        tungsten = 2
+    }
+}

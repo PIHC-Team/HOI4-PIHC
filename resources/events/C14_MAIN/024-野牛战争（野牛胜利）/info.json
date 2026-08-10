@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "587": {
+            "if": {
+                "limit": {
+                    "is_owned_and_controlled_by": "C14"
+                },
+                "transfer_state_to": "C31"
+            }
+        }
+        }
+    ],
+    "is_triggered_only": true
+}

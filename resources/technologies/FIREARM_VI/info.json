@@ -1,0 +1,33 @@
+{
+    "name": "Mid-stage Firearm II",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 18,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_RIFLED"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_VI_IMPROVE",
+        "research_cost_coeff": 1
+    },
+    "ai_will_do": {
+        "factor": 4,
+        "modifier": {
+            "factor": 20,
+            "date > 1006.8.1": null
+        }
+    },
+    "research_cost": 2.0,
+    "start_year": 1006
+}

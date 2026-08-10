@@ -1,0 +1,40 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_REBUILD_HARMONY",
+    "prerequisite": {
+        "focus": "FOCUS_C04_REBUILD_HARMONY"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C04_DINER_EXPANSION_CONSTRUCTION"
+    },
+    "cost": 1,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_DINER_RUNNING",
+        "has_completed_focus": "FOCUS_C04_DINER_EXPANSION_CONSTRUCTION"
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C04_MAIN.32"
+        },
+        "effect_tooltip": {
+            "364": {
+                "add_claim_by": "C04"
+            },
+            "365": {
+                "add_claim_by": "C04"
+            }
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

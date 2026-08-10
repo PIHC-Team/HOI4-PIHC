@@ -1,0 +1,14 @@
+{
+    "name": "Hunger",
+    "removal_cost": -1,
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "monthly_population": -0.05,
+        "stability_factor": -0.12,
+        "custom_modifier_tooltip": "PIHC_HUNGER_TOOLTIP"
+    },
+    "cost": 30,
+    "cancel_if_invalid": false
+}

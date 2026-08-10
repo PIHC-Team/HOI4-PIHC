@@ -1,0 +1,24 @@
+{
+    "name": "Spying Changeling Empire",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 28,
+    "fire_only_once": true,
+    "visible": {
+        "tag": "C01",
+        "OR": {
+            "NOT": {
+                "has_dlc": "La Resistance"
+            },
+            "has_intelligence_agency": true
+        }
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "DECISION_C01_SPYING_C11_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

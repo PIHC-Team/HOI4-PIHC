@@ -1,0 +1,28 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 8,
+    "strategic_bomb_visibility": -0.35,
+    "air_bombing_targetting": 0.10,
+
+    "research_cost": 4.5,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_flying_fortress"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_2_5_SUPPLY",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "date": "1003.01.01 ~ 1003.04.01",
+    "date_scope": "C18",
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "C18_DRAW_ATTENTION_1": true
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

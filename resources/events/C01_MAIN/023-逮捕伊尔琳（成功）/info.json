@@ -1,0 +1,35 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_AK_YEARLING_KILLED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C11"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

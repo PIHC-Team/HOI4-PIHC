@@ -1,0 +1,37 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_CLAIM_PONYVILLE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_CLAIM_PONYVILLE"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C12_CLEAN_UP_THE_WILDERNESS"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C12_TEAR_UP_ALL_AGREEMENTS"
+    },
+    "cost": 5,
+    "completion_reward": {
+            "country_event": {
+                "id": "C12_MAIN.118",
+                "days": 2,
+                "random_days": 2
+            }
+    },
+    "available": {
+        "always": false,
+        "has_country_leader": {
+            "character": "CHARACTER_LIMESTONE_PIE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

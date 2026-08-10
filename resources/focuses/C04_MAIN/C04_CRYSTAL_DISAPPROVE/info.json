@@ -1,0 +1,40 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_CRYSTAL_MINE",
+    "prerequisite": {
+        "focus": "FOCUS_C04_CRYSTAL_MINE"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C04_CRYSTAL_APPROVE"
+    },
+    "cost": 1,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C04_CRYSTAL_MINE"
+    },
+    "completion_reward": {
+        "ADD_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_200": true
+    },
+    "available": {
+        "NOT": {
+            "has_idea": "free_trade"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "FOCUS_C04_CRYSTAL_DISAPPROVE_DISABLED_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

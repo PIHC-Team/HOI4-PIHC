@@ -1,0 +1,45 @@
+state = {
+    id = 888
+    name = STATE_888
+    provinces = {
+        3334
+        4573
+        5840
+        7789
+        9525
+        9663
+        10995
+        10996
+        11057
+        11084
+        11091
+    }
+    manpower = 160240
+    state_category = megalopolis
+    history = {
+        owner = C06
+        buildings = {
+            infrastructure = 5
+            industrial_complex = 3
+            arms_factory = 1
+            dockyard = 5
+            3334 = {
+                naval_base = 2
+            }
+            11057 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C06
+        victory_points = {
+            11057
+            50
+        }
+    }
+    resources = {
+        logs = 8
+        steel = 20
+        chromium = 10
+        aluminium = 10
+    }
+}

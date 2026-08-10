@@ -1,0 +1,44 @@
+{
+    "name": "Niriks Control",
+    "priority": 2,
+    
+    "cost": 0,
+    "days_remove": 90,
+    "days_re_enable": 42,
+    "visible": {
+        "tag": "C18",
+        "has_tech": "TECHNOLOGY_TECH_MAGI_DARKMAGIC"
+    },
+    "available": {
+        "has_tech": "TECHNOLOGY_TECH_MAGI_DARKMAGIC"
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "C18_DEL_GROWTH_0_10": true
+        }
+    },
+    "modifier": {
+        "custom_modifier_tooltip": "DECISION_C18_NIRIKS_CONTROL_TOOLTIP"
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "C18_ADD_GROWTH_0_12": true
+        }
+    },
+    "cancel_effect": {
+        "hidden_effect": {
+            "C18_ADD_GROWTH_0_12": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 100,
+            "check_variable": {
+                "var": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO",
+                "value": 10.0,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    }
+}

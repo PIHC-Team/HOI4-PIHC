@@ -1,0 +1,31 @@
+{
+    "name": "Hotline",
+    "priority": 101,
+    
+    "cost": 5,
+    "selectable_mission": true,
+    "days_mission_timeout": 56,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_HOTLINE_030"
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C02_HOTLINE.31",
+                "days": 1
+            }
+        }
+    },
+    "timeout_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C02_HOTLINE.32",
+                "days": 1
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 10
+    },
+    "fire_only_once": true
+}

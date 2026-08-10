@@ -1,0 +1,36 @@
+state = {
+    id = 131
+    name = STATE_131
+    provinces = {
+        3683
+        4604
+        4662
+        5770
+        6644
+        9477
+        9823
+        13411
+        13417
+        13459
+        13463
+        13504
+        13594
+    }
+    manpower = 1250
+    state_category = rural
+    history = {
+        owner = C18
+        victory_points = {
+            3683
+            3
+        }
+        buildings = {
+
+        }
+        add_core_of = C18
+    }
+    resources = {
+        aluminium = 1
+        coal = 4
+    }
+}

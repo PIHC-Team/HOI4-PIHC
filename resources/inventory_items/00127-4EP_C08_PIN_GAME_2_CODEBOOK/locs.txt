@@ -1,0 +1,24 @@
+[zh.@]
+坎特洛特高档香水生产商密码表
+
+[en.@]
+Canterlot Luxury Perfume Manufacturer Codebook
+
+[zh.@DESC]
+坎特洛特高档香水公司的特殊产品有四种不同的味道：§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§!、§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§!、§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§!和§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§!。我们发现，这些香水有时会被装入错误的瓶子，原来这是香水生产商所遵循的密码表。密码表通过下述方式运作：
+1. 前来接头的顾客需要连续5次购买香水，每次购买一瓶。
+2. 每次都有四瓶特殊香水在售卖：§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§!、§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§!、§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§!和§Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§!各一瓶，但是它们可能在错误的瓶子中。
+3. 每次的§C广告牌§!上都有一种香水品种，顾客需要根据§C广告牌§!上的香水品种信息购买香水。
+4. 如果顾客购买的香水是正确的，那么接头进度将继续，否则将从头开始。
+
+[en.@DESC]
+Canterlot Luxury Perfume Company produces four special products with different scents: §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§!, §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§!, §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§!, and §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§!. We found that these perfumes are sometimes put into the wrong bottles, which is actually a codebook followed by the perfume manufacturer. The codebook works as follows:
+1. Customers who come for the first time need to buy perfume 5 times in a row, one bottle each time.
+2. Each time, there are four special perfumes for sale: §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§!, §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§!, §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§!, and §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§!, one each. However, they may be in the wrong bottles.
+3. Each time, the §Cbillboard§! displays a perfume varieties. Customers need to purchase perfume according to the perfume on the §Cbillboard§!.
+4. If the perfume purchased by the customer is correct, the transaction will continue, otherwise it will start over.
+
+[zh.@o0]
+阅读
+[en.@o0]
+Read

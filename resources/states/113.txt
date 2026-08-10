@@ -1,0 +1,35 @@
+state = {
+    id = 113
+    name = STATE_113
+    provinces = {
+        6188
+        8508
+        11865
+        11890
+        11891
+        11912
+        11940
+    }
+    manpower = 52096
+    state_category = megalopolis
+    history = {
+        owner = C22
+        victory_points = {
+            6188
+            50
+        }
+        buildings = {
+            industrial_complex = 2
+            arms_factory = 2
+            infrastructure = 4
+            dockyard = 2
+            6188 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C22
+    }
+    resources = {
+
+    }
+}

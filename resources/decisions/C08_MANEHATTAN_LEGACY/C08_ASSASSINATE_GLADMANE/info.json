@@ -1,0 +1,48 @@
+{
+    "name": "Assassinate Gladmane",
+    "priority": 100,
+    
+    "cost": 25,
+    "days_remove": 28,
+    "days_re_enable": 3,
+    "visible": {
+        "country_exists": "C06",
+        "C06": {
+            "has_country_leader": {
+                "character": "CHARACTER_GLADMANE",
+                "ruling_only": true
+            }
+        }
+    },
+    "remove_effect": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_ASSASSINATE_GLADMANE_1",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C08_ASSASSINATE_GLADMANE_2"
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C08_MAIN.10",
+                    "days": 1
+                }
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C08_EVIDENCE_MANEHATTAN_1"
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C08_MAIN.9"
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

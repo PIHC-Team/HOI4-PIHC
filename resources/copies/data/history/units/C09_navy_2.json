@@ -1,0 +1,49 @@
+{
+    "units": {
+        "fleet": {
+            "name": "Sire’s Hollow Second Fleet",
+            "naval_base": 3200,
+            "task_force": {
+                "name": "Sire’s Hollow Fleet 2",
+                "location": 16946,
+                "ship": {
+                    "name": "Apple Smoothie",
+                    "definition": "battleship",
+                    "pride_of_the_fleet": true,
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C09",
+                            "version_name": "Smoothie Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "New Apple Wood",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C09",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "New Sire’s Hollow",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C09",
+                            "version_name": "City Class"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

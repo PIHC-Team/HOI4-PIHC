@@ -1,0 +1,27 @@
+{
+    "name": "Early Firearm II",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 6,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_HANDGONNE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_EXPLOSIVE",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1002
+}

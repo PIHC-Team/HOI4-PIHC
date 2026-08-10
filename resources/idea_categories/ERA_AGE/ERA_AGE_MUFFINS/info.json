@@ -1,0 +1,28 @@
+{
+    "name": "Muffins Era",
+    "removal_cost": 0,
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IDEA_ERA_AGE_MUFFINS_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_MUFFINS"
+        }
+    },
+    "modifier": {
+        "stability_factor": 1.00,
+        "stability_weekly": 1.00,
+        "stability_weekly_factor": 1.00
+    },
+    "on_add": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_HAS_ENTERED_SCIENCE_AGE"
+                }
+            },
+            "add_research_slot": 1
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_ENTERED_SCIENCE_AGE"
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

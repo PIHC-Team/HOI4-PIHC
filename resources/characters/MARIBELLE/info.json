@@ -1,0 +1,14 @@
+{
+    "name": "Maribelle",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 100,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_DIPLOMATIC_GENIUS_II",
+            "TRAIT_POLITICAL_IDIOT"
+        ]
+    }
+}

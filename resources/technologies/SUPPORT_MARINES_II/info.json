@@ -1,0 +1,34 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 8,
+    "y": 10,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "transport_capacity": -0.15,
+    "naval_invasion_capacity": 5,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT": 1,
+        "TECHNOLOGY_SUPPORT_MARINES_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1002
+}

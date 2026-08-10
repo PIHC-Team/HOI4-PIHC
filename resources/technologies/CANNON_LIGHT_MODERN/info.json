@@ -1,0 +1,30 @@
+{
+    "name": "Modern Light Cannon",
+    "category": "artillery",
+
+    "x": 0,
+    "y": 15,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_artillery"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_CANNON_LIGHT_MODERN"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_CANNON_LIGHT_STEAM": 1,
+        "TECHNOLOGY_TECH_ENER_II": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1005
+}

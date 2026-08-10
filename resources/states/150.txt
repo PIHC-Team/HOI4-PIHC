@@ -1,0 +1,31 @@
+state = {
+    id = 150
+    name = STATE_150
+    provinces = {
+        114
+        5053
+        5340
+        7287
+        9063
+        9329
+        13542
+        13639
+    }
+    manpower = 6506
+    state_category = pastoral
+    history = {
+        owner = C35
+        buildings = {
+            industrial_complex = 2
+            farm_complex = 2
+        }
+        add_core_of = C35
+        victory_points = {
+            9063
+            10
+        }
+    }
+    resources = {
+
+    }
+}

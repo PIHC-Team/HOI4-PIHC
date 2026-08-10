@@ -1,0 +1,34 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 11,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_cold"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "acclimatization_cold_climate_gain_factor": 0.5,
+    "winter_attrition_factor": -0.15,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_COLD_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 0.5,
+    "start_year": 1004
+}

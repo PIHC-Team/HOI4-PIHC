@@ -1,0 +1,138 @@
+{
+    "guiTypes": {
+        "containerWindowType": {
+            "name": "C04_by_election_container",
+            "position": {
+                "x": 10,
+                "y": 0
+            },
+            "size": {
+                "width": 470,
+                "height": 265
+            },
+            "orientation": "center",
+            "origo": "center",
+            "clipping": false,
+            "iconType": {
+                "name": "sky_stinger_portrait",
+                "spriteType": "GFX_C04_sky_stinger_portrait",
+                "position": {
+                    "x": 130,
+                    "y": 100
+                },
+                "scale": 0.8,
+                "centerposition": true
+            },
+            "iconType__D1": {
+                "name": "wind_rider_portrait",
+                "spriteType": "GFX_C04_wind_rider_portrait",
+                "position": {
+                    "x": 260,
+                    "y": 100
+                },
+                "scale": 0.8,
+                "centerposition": true
+            },
+            "iconType__D2": {
+                "name": "washouts_portrait",
+                "spriteType": "GFX_C04_washouts_portrait",
+                "position": {
+                    "x": 410,
+                    "y": 100
+                },
+                "scale": 0.8,
+                "centerposition": true
+            },
+            "iconType__D3": {
+                "name": "progress_bar_green",
+                "spriteType": "GFX_pihc_progress_green",
+                "position": {
+                    "x": 30,
+                    "y": 131
+                }
+            },
+            "iconType__D4": {
+                "name": "progress_bar_empty_left",
+                "spriteType": "GFX_pihc_progress_empty_left",
+                "position": {
+                    "x": 30,
+                    "y": 130
+                }
+            },
+            "iconType__D5": {
+                "name": "progress_bar_yellow_left",
+                "spriteType": "GFX_pihc_progress_yellow_left",
+                "position": {
+                    "x": 30,
+                    "y": 130
+                }
+            },
+            "iconType__D6": {
+                "name": "sky_stinger_support_bg",
+                "spriteType": "GFX_generic_box_96",
+                "position": {
+                    "x": 30,
+                    "y": 168
+                },
+                "Orientation": "UPPER_LEFT"
+            },
+            "instantTextBoxType": {
+                "name": "sky_stinger_support",
+                "position": {
+                    "x": 45,
+                    "y": 170
+                },
+                "font": "hoi_24header",
+                "text": "[?C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT|.1%%]",
+                "format": "left",
+                "maxHeight": 24,
+                "maxWidth": 100
+            },
+            "iconType__D7": {
+                "name": "progress_bar_blue_left",
+                "spriteType": "GFX_pihc_progress_blue_left",
+                "position": {
+                    "x": 30,
+                    "y": 130
+                }
+            },
+            "iconType__D8": {
+                "name": "washouts_support_bg",
+                "spriteType": "GFX_generic_box_96",
+                "position": {
+                    "x": 350,
+                    "y": 168
+                },
+                "Orientation": "UPPER_LEFT"
+            },
+            "instantTextBoxType__D1": {
+                "name": "washouts_support",
+                "position": {
+                    "x": 335,
+                    "y": 170
+                },
+                "font": "hoi_24header",
+                "text": "[?C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT|.1%%]",
+                "format": "right",
+                "maxHeight": 24,
+                "maxWidth": 100
+            },
+            "iconType__D9": {
+                "name": "progress_bar_divider1",
+                "spriteType": "GFX_pihc_progress_divider",
+                "position": {
+                    "x": 30,
+                    "y": 130
+                }
+            },
+            "iconType__D10": {
+                "name": "progress_bar_divider2",
+                "spriteType": "GFX_pihc_progress_divider",
+                "position": {
+                    "x": 30,
+                    "y": 130
+                }
+            }
+        }
+    }
+}

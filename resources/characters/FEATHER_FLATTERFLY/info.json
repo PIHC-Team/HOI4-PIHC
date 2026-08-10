@@ -1,0 +1,15 @@
+{
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_ECONOMICAL_GENIUS_II",
+            "TRAIT_INDECISIVE"
+        ],
+        "removal_cost": 350,
+        "ai_will_do": {
+            "factor": 0
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C15"
+                },
+                "C15": {
+                    "country_event": {
+                        "id": "C15_PARLIAMENT.3",
+                        "days": 13
+                    },
+                    "news_event": {
+                        "id": "C15_PARLIAMENT.2",
+                        "days": 14
+                    },
+                    "set_country_flag": {
+                        "flag": "PIHC_COUNTRY_FLAG_C15_PARLIAMENT_ELECTION_ONGOING",
+                        "days": 14,
+                        "value": 1
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "show_major": {
+        "OR": {
+            "tag": "C15",
+            "tag__D1": "C11",
+            "tag__D2": "C01",
+            "tag__D3": "C08"
+        }
+    },
+    "is_triggered_only": true
+}

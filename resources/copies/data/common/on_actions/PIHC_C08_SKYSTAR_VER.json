@@ -1,0 +1,85 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C08": {
+                    "load_oob": "C08_skystar_ver",
+                    "capital_scope": {
+                        "create_unit": {
+                            "division": "name = \"近卫军团第1师 “平等镇” (Infantry Division 1 “Our Town”)\" division_template = \"近卫军团 (Guards Corps)\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D1": {
+                            "division": "name = \"步兵军团第1师 (Infantry Division 1)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D2": {
+                            "division": "name = \"步兵军团第2师 (Infantry Division 2)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D3": {
+                            "division": "name = \"战斗组 (Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.4 start_equipment_factor = 0.8 start_manpower_factor = 0.9",
+                            "owner": "C08",
+                            "count": 4
+                        }
+                    },
+                    "391": {
+                        "create_unit": {
+                            "division": "name = \"近卫军团第2师 “雪绒花” (Infantry Division 2 “Edelweiss”)\" division_template = \"近卫军团 (Guards Corps)\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D1": {
+                            "division": "name = \"步兵军团第3师 (Infantry Division 3)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D2": {
+                            "division": "name = \"步兵军团第4师 (Infantry Division 4)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D3": {
+                            "division": "name = \"战斗组 (Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.4 start_equipment_factor = 0.8 start_manpower_factor = 0.9",
+                            "owner": "C08",
+                            "count": 4
+                        }
+                    },
+                    "402": {
+                        "create_unit": {
+                            "division": "name = \"近卫军团第3师 “闪电” (Infantry Division 3 “Lightning”)\" division_template = \"近卫军团 (Guards Corps)\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D1": {
+                            "division": "name = \"步兵军团第5师 (Infantry Division 5)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D2": {
+                            "division": "name = \"步兵军团第6师 (Infantry Division 6)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                            "owner": "C08",
+                            "count": 1
+                        },
+                        "create_unit__D3": {
+                            "division": "name = \"战斗组 (Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.4 start_equipment_factor = 0.8 start_manpower_factor = 0.9",
+                            "owner": "C08",
+                            "count": 3
+                        }
+                    },
+                    "set_variable": {
+                        "var": "VAR_C08_HARMONICISM",
+                        "value": 0
+                    },
+                    "set_variable__D1": {
+                        "var": "VAR_C08_COMMUNISM",
+                        "value": 0
+                    }
+                }
+            }
+        }
+    }
+}

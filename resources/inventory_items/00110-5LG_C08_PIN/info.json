@@ -1,0 +1,38 @@
+{
+    "operations": [
+        {
+            "type": "switch",
+            "on_effects": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN",
+                "hidden_effect": {
+                    "set_portraits": {
+                        "character": "CHARACTER_STARLIGHT_GLIMMER",
+                        "civilian": {
+                            "large": "GFX_CHARACTER_STARLIGHT_GLIMMER_portrait"
+                        }
+                    }
+                },
+                "custom_effect_tooltip": "C02_C08_PIN_EQUIP_TOOLTIP"
+            },
+            "off_effects": {
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN",
+                "hidden_effect": {
+                    "set_portraits": {
+                        "character": "CHARACTER_STARLIGHT_GLIMMER",
+                        "civilian": {
+                            "large": "GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_alt"
+                        }
+                    }
+                }
+            },
+            "on_trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C08_PIN": true,
+                "tag": "C08",
+                "has_country_leader": {
+                    "character": "CHARACTER_STARLIGHT_GLIMMER",
+                    "ruling_only": true
+                }
+            }
+        }
+    ]
+}

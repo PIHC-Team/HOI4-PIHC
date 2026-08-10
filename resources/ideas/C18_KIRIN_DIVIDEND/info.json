@@ -1,0 +1,12 @@
+{
+    "name": "Kirin Dividend",
+    "removal_cost": -1,
+    "modifier": {
+        "monthly_population": 0.02,
+        "production_factory_max_efficiency_factor": 0.05,
+        "production_factory_start_efficiency_factor": 0.25,
+        "production_factory_efficiency_gain_factor": 0.45,
+        "industry_free_repair_factor": 0.10,
+        "global_building_slots_factor": 0.15
+    }
+}

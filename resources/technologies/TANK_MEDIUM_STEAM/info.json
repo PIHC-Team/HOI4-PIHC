@@ -1,0 +1,31 @@
+{
+    "name": "Steampunk Medium Tank",
+    "category": "armour",
+
+    "x": 2,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_armor"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_TANK_MEDIUM_STEAM"
+    ],
+    "enable_subunits": [
+        "tank_medium"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_TANK_RAM": 1,
+        "TECHNOLOGY_TECH_ENER_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TANK_MEDIUM_MODERN",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

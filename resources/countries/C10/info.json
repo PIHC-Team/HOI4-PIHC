@@ -1,0 +1,98 @@
+{
+    "name": "Equestria Education Association",
+    "rgb": [
+        56,
+        166,
+        159
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 539,
+        "set_popularities": {
+            "harmonicism": 65,
+            "despotic": 20,
+            "democratic": 10,
+            "corporation": 5
+        },
+        "set_politics": {
+            "ruling_party": "harmonicism",
+            "elections_allowed": false
+        },
+        "recruit_character": "CHARACTER_CHANCELLOR_NEIGHSAY",
+        "add_ideas_batch": [
+            "limited_exports",
+            "volunteer_only",
+            "civilian_economy",
+            "IDEA_DINFANTRY_EEMD"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1
+        },
+        "add_manpower": -1500,
+        "set_power_balance": {
+            "id": "BOP_C10_INDEPENDENCE",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C10_INDEPENDENCE",
+            "modifier": "BOP_C10_INDEPENDENCE_DAILY_DRIFT"
+        },
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "517": {
+            "set_demilitarized_zone": true
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1
+            }
+        }
+    }
+}

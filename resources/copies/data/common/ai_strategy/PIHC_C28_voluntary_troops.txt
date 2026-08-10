@@ -1,0 +1,32 @@
+C23_support_resistance = { #骏鹰倾向
+    allowed = {
+        original_tag = C28  
+    }
+    enable = {
+        country_exists = C45 #（填写克鲁格镇支持一方tag）
+    }
+    abort = {
+        OR = {
+            NOT = { country_exists = C45 } #（当余晖支持一方tag灭亡，取消这个倾向）
+        }
+    }
+    abort_when_not_enabled = yes  #（当余晖支持一方tag灭亡，取消这个倾向）
+
+    ai_strategy = { #（填写克鲁格镇余晖支持一方tag）ai支持倾向，更愿意接受支持请求
+        type = support
+        id = C45
+        value = 100
+    }
+
+    ai_strategy = {  #（填写克鲁格镇余晖支持一方tag）志愿军
+        type = send_volunteers_desire
+        id = C45
+        value = 100 
+    }
+
+    ai_strategy = { #租借法案
+        type = send_lend_lease_desire
+        id = C45
+        value = 100
+    }
+}

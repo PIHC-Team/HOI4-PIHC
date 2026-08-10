@@ -1,0 +1,47 @@
+state = {
+    id = 50
+    name = STATE_50
+    provinces = {
+        1681
+        1800
+        2860
+        3896
+        4461
+        4836
+        5365
+        5454
+        6281
+        7150
+        7869
+        7997
+        9173
+        9221
+        10736
+        10748
+        10786
+        10800
+        10801
+        10827
+        10843
+        10885
+        10889
+        10910
+    }
+    manpower = 23750
+    state_category = pastoral
+    history = {
+        owner = C29
+        victory_points = {
+            1681
+            1
+        }
+        buildings = {
+            radar_station = 3
+        }
+        add_core_of = C29
+    }
+    resources = {
+        oil = 2
+        steel = 2
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "name": "Air Tech",
+    "category": "bba_air_techs",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 4,
+    "y": 3,
+    "size": "small",
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_air_grd"
+    ],
+    "enable_equipments": [],
+    "enable_subunits": [],
+    "enable_equipment_modules": [
+        "MODULE_PLANE_WEAPON_GRDATK_1A_TOMATO",
+        "MODULE_PLANE_WEAPON_GRDATK_1B_CARROT",
+        "MODULE_PLANE_WEAPON_GRDATK_1C_PIE",
+        "MODULE_PLANE_WEAPON_GRDATK_1D_DONUT",
+        "MODULE_PLANE_WEAPON_GRDATK_2A_CHEESE",
+        "MODULE_PLANE_WEAPON_GRDATK_2B_HAY",
+        "MODULE_PLANE_WEAPON_GRDATK_2C_DEERCRACKER",
+        "MODULE_PLANE_WEAPON_GRDATK_3A_PUMPKIN",
+        "MODULE_PLANE_WEAPON_GRDATK_3C_CHOCOLATE"
+    ],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_TECH_GRD_WEAPON_II",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+    "ai_will_do": {
+        "factor": 1,
+        "modifier": {
+            "factor": 5,
+            "arms_factory > 80": null
+        },
+        "modifier__D1": {
+            "factor": 5,
+            "date > 1005.8.1": null,
+            "is_major": true
+        },
+        "modifier__D2": {
+            "factor": 25,
+            "arms_factory > 150": null
+        },
+        "modifier__D3": {
+            "factor": 55,
+            "has_tech": "TECHNOLOGY_BBA_FRAME_AIRSHIP"
+        }
+    },
+    "research_cost": 1.5,
+    "start_year": 1001
+}

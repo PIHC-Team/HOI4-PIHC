@@ -1,0 +1,14 @@
+{
+    "name": "National Dole",
+    "removal_cost": -1,
+    "modifier": {
+        "consumer_goods_factor": 0.25,
+        "monthly_population": 0.04,
+        "political_power_gain": 0.12,
+        "stability_factor": 0.25,
+        "custom_modifier_tooltip": "IDEA_C18_DOLE_MODIFIER_TOOLTIP"
+    },
+    "on_add": {
+        "C18_DEL_GROWTH_0_5": true
+    }
+}

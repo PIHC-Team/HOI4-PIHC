@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "effect_tooltip": {
+                "recruit_character": "CHARACTER_FEATHER_FLATTERFLY_C04"
+            },
+            "C01": {
+                "retire_character": "CHARACTER_FEATHER_FLATTERFLY"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLY_ARRIVES",
+            "mark_focus_tree_layout_dirty": true
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,22 @@
+{
+    "possible": {
+        "difficulty > 1": null,
+        "has_start_date < 1002.12.2": null,
+        "has_any_custom_difficulty_setting": false,
+        "game_rules_allow_achievements": true,
+        "is_ironman": true,
+        
+        "tag": "C03"
+    },
+    "happened": {
+        "date < 1006.1.1": null,
+        "hidden_trigger": {
+            "has_variable": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+            "check_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": 16710,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    }
+}

@@ -1,0 +1,369 @@
+{
+    "UPGRADE_HYGIENE": {
+        "custom_effect_tooltip": "PIHC_UPGRADE_HYGIENE_TOOLTIP",
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_3_CLEAN"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_2_MYSO",
+                "remove_idea": "IDEA_ERA_HYGIENE_3_CLEAN"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_4_NORMAL"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_3_CLEAN",
+                "remove_idea": "IDEA_ERA_HYGIENE_4_NORMAL"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_5_DIRTY"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_4_NORMAL",
+                "remove_idea": "IDEA_ERA_HYGIENE_5_DIRTY"
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_6_FILTHY"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_5_DIRTY",
+                "remove_idea": "IDEA_ERA_HYGIENE_6_FILTHY"
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_7_PLAGUE"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_6_FILTHY",
+                "remove_idea": "IDEA_ERA_HYGIENE_7_PLAGUE"
+            }
+        }
+    },
+    "DOWNGRADE_HYGIENE": {
+        "custom_effect_tooltip": "PIHC_DOWNGRADE_HYGIENE_TOOLTIP",
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_2_MYSO"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_3_CLEAN",
+                "remove_idea": "IDEA_ERA_HYGIENE_2_MYSO"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_3_CLEAN"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_4_NORMAL",
+                "remove_idea": "IDEA_ERA_HYGIENE_3_CLEAN"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_4_NORMAL"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_5_DIRTY",
+                "remove_idea": "IDEA_ERA_HYGIENE_4_NORMAL"
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_5_DIRTY"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_6_FILTHY",
+                "remove_idea": "IDEA_ERA_HYGIENE_5_DIRTY"
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_6_FILTHY"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HYGIENE_7_PLAGUE",
+                "remove_idea": "IDEA_ERA_HYGIENE_6_FILTHY"
+            }
+        }
+    },
+    "CALCULATE_DISEASE_RISK_FACTOR": {
+        "set_variable": {
+            "var": "VAR_DISEASE_RISK_FACTOR",
+            "value": 1.0
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_1_IMMUNE"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 0.0
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_2_MYSO"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 0.2
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_3_CLEAN"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 0.8
+            }
+        },
+        "if__D3": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_4_NORMAL"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 1.0
+            }
+        },
+        "if__D4": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_5_DIRTY"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 1.25
+            }
+        },
+        "if__D5": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_6_FILTHY"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 2.0
+            }
+        },
+        "if__D6": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HYGIENE_7_PLAGUE"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 5.0
+            }
+        },
+        "if__D7": {
+            "limit": {
+                "has_tech": "TECHNOLOGY_SUPPORT_DISEASE_I"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 0.8
+            }
+        },
+        "if__D8": {
+            "limit": {
+                "has_tech": "TECHNOLOGY_SUPPORT_DISEASE_II"
+            },
+            "multiply_variable": {
+                "var": "VAR_DISEASE_RISK_FACTOR",
+                "value": 0.8
+            }
+        }
+    },
+    "INFECT_BLUE_FLU": {
+        "CALCULATE_DISEASE_RISK_FACTOR": true,
+        "set_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_BLUE_FLU",
+            "value": 10
+        },
+        "multiply_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_BLUE_FLU",
+            "value": "VAR_DISEASE_RISK_FACTOR"
+        },
+        "round_temp_variable": "VAR_DISEASE_CHANCE_BLUE_FLU",
+        "clamp_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_BLUE_FLU",
+            "min": 0,
+            "max": 100
+        },
+        "set_temp_variable__D1": {
+            "var": "VAR_NON_DISEASE_CHANCE_BLUE_FLU",
+            "value": 100
+        },
+        "subtract_from_temp_variable": {
+            "var": "VAR_NON_DISEASE_CHANCE_BLUE_FLU",
+            "value": "VAR_DISEASE_RISK_BLUE_FLU"
+        },
+        "random_list": {
+            "seed": "random",
+            "var:VAR_DISEASE_CHANCE_BLUE_FLU": {
+                "country_event": {
+                    "id": "DISEASE.1",
+                    "days": 1,
+                    "random_days": 3
+                }
+            },
+            "var:VAR_NON_DISEASE_CHANCE_BLUE_FLU": {
+            }
+        },
+        "if": {
+            "limit": {
+                "tag": "C18",
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C18_001_HEALTH_CARE"
+                }
+            },
+            "C18_ADD_NIRIK_0_10": true
+        }
+    },
+    "INFECT_SWAMP_FEVER": {
+        "CALCULATE_DISEASE_RISK_FACTOR": true,
+        "set_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_SWAMP_FEVER",
+            "value": 10
+        },
+        "multiply_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_SWAMP_FEVER",
+            "value": "VAR_DISEASE_RISK_FACTOR"
+        },
+        "round_temp_variable": "VAR_DISEASE_CHANCE_SWAMP_FEVER",
+        "clamp_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_SWAMP_FEVER",
+            "min": 0,
+            "max": 100
+        },
+        "set_temp_variable__D1": {
+            "var": "VAR_NON_DISEASE_CHANCE_SWAMP_FEVER",
+            "value": 100
+        },
+        "subtract_from_temp_variable": {
+            "var": "VAR_NON_DISEASE_CHANCE_SWAMP_FEVER",
+            "value": "VAR_DISEASE_RISK_SWAMP_FEVER"
+        },
+        "random_list": {
+            "seed": "random",
+            "var:VAR_DISEASE_CHANCE_SWAMP_FEVER": {
+                "country_event": {
+                    "id": "DISEASE.3",
+                    "days": 1,
+                    "random_days": 3
+                }
+            },
+            "var:VAR_NON_DISEASE_CHANCE_SWAMP_FEVER": {
+            }
+        },
+        "if": {
+            "limit": {
+                "tag": "C18",
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C18_001_HEALTH_CARE"
+                }
+            },
+            "C18_ADD_NIRIK_0_10": true
+        }
+    },
+    "INFECT_CUTIE_POX": {
+        "CALCULATE_DISEASE_RISK_FACTOR": true,
+        "set_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_CUTIE_POX",
+            "value": 10
+        },
+        "multiply_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_CUTIE_POX",
+            "value": "VAR_DISEASE_RISK_FACTOR"
+        },
+        "round_temp_variable": "VAR_DISEASE_CHANCE_CUTIE_POX",
+        "clamp_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_CUTIE_POX",
+            "min": 0,
+            "max": 100
+        },
+        "set_temp_variable__D1": {
+            "var": "VAR_NON_DISEASE_CHANCE_CUTIE_POX",
+            "value": 100
+        },
+        "subtract_from_temp_variable": {
+            "var": "VAR_NON_DISEASE_CHANCE_CUTIE_POX",
+            "value": "VAR_DISEASE_RISK_CUTIE_POX"
+        },
+        "random_list": {
+            "seed": "random",
+            "var:VAR_DISEASE_CHANCE_CUTIE_POX": {
+                "country_event": {
+                    "id": "DISEASE.5",
+                    "days": 1,
+                    "random_days": 3
+                }
+            },
+            "var:VAR_NON_DISEASE_CHANCE_CUTIE_POX": {
+            }
+        },
+        "if": {
+            "limit": {
+                "tag": "C18",
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C18_001_HEALTH_CARE"
+                }
+            },
+            "C18_ADD_NIRIK_0_10": true
+        }
+    },
+    "INFECT_POISON_JOKE": {
+        "CALCULATE_DISEASE_RISK_FACTOR": true,
+        "set_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_POISON_JOKE",
+            "value": 10
+        },
+        "multiply_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_POISON_JOKE",
+            "value": "VAR_DISEASE_RISK_FACTOR"
+        },
+        "round_temp_variable": "VAR_DISEASE_CHANCE_POISON_JOKE",
+        "clamp_temp_variable": {
+            "var": "VAR_DISEASE_CHANCE_POISON_JOKE",
+            "min": 0,
+            "max": 100
+        },
+        "set_temp_variable__D1": {
+            "var": "VAR_NON_DISEASE_CHANCE_POISON_JOKE",
+            "value": 100
+        },
+        "subtract_from_temp_variable": {
+            "var": "VAR_NON_DISEASE_CHANCE_POISON_JOKE",
+            "value": "VAR_DISEASE_RISK_POISON_JOKE"
+        },
+        "random_list": {
+            "seed": "random",
+            "var:VAR_DISEASE_CHANCE_POISON_JOKE": {
+                "country_event": {
+                    "id": "DISEASE.7",
+                    "days": 1,
+                    "random_days": 3
+                }
+            },
+            "var:VAR_NON_DISEASE_CHANCE_POISON_JOKE": {
+            }
+        },
+        "if": {
+            "limit": {
+                "tag": "C18",
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C18_001_HEALTH_CARE"
+                }
+            },
+            "C18_ADD_NIRIK_0_10": true
+        }
+    }
+}

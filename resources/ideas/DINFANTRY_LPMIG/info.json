@@ -1,0 +1,51 @@
+{
+    "name": "DINFANTRY_LPMIG",
+    "designer": true,
+    "category": "materiel_manufacturer",
+    "traits": [
+        "infantry_equipment_manufacturer"
+    ],
+    "cost": 250,
+    "removal_cost": -1,
+    "allowed": {
+        "num_of_civilian_factories_available_for_projects > 4": null
+    },
+    "visible": {
+        "C07": {
+            "has_completed_focus": "FOCUS_C07_LPMIG"
+        }
+    },
+    "available": {
+        "country_exists": "C07"
+    },
+    "research_bonus": {
+        "pihc_infantry": 0.40
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_INFANTRY": {
+            "soft_attack": 0.1,
+            "build_cost_ic": 0.1
+        }
+    },
+    "modifier": {
+        "line_change_production_efficiency_factor": -0.05
+    },
+    "targeted_modifier": {
+        "tag": "C07",
+        "mic_to_target_factor": 0.05
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "add": -1,
+            "FROM": {
+                "tag": "C08",
+                "controls_state": "389"
+            }
+        },
+        "modifier__D1": {
+            "add": 100,
+            "date > 1003.5.2": null
+        }
+    }
+}

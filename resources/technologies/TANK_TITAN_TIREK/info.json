@@ -1,0 +1,43 @@
+{
+    "name": "Titan",
+    "category": "armour",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 8,
+    "y": 0,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_armor"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_TANK_TITAN_TIREK_INVINCIBLE"
+    ],
+    "enable_subunits": [
+        "tank_light",
+        "tank_medium",
+        "tank_heavy",
+        "titan"
+    ],
+    "on_research_complete": {
+        "hidden_effect": {
+            "load_oob": "tirek"
+        }
+    },
+    "allow": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_TIREK_POWER"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_TANK_TITAN_TIREK_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "research_cost": 6.0,
+    "start_year": 1007
+}

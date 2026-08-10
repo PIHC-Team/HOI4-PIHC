@@ -1,0 +1,23 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_MILITARY",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_GEN_MILITARY"
+    },
+    "cost": 8,
+    "completion_reward": {
+        "navy_experience": 20
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

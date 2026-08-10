@@ -1,0 +1,65 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "if": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                            "value": 2,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_2"
+            },
+            "else_if": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                            "value": 4,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_4"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                            "value": 6,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_6"
+            },
+            "else_if__D2": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                            "value": 8,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_8"
+            }
+        }
+    ],
+    "trigger": {
+        "tag": "C14",
+        "has_completed_focus": "FOCUS_C14_GUESTS_THUNDERHOOVES"
+    },
+    "is_triggered_only": true
+}

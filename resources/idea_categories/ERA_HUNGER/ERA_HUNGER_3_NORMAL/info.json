@@ -1,0 +1,14 @@
+{
+    "name": "Normal",
+    "removal_cost": -1,
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "stability_factor": -0.03,
+        "custom_modifier_tooltip": "PIHC_HUNGER_TOOLTIP"
+    },
+    "cost": 30,
+    "default": true,
+    "cancel_if_invalid": false
+}

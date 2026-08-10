@@ -1,0 +1,23 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "is_in_faction_with": "C03"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "is_in_faction_with": "C03"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Supply Construction",
+    "priority": 98,
+    
+    "cost": 100,
+    "days_remove": 60,
+    "days_re_enable": 120,
+    "modifier": {
+        "production_speed_supply_node_factor": 3.0,
+        "production_speed_rail_way_factor": 3.0,
+        "production_speed_fuel_silo_factor": 3.0
+    },
+    "ai_will_do": {
+        "base": -100,
+        "modifier": {
+            "add": 10,
+            "has_offensive_war": true
+        },
+        "modifier__D1": {
+            "add": 10,
+            "has_defensive_war": true
+        },
+        "modifier__D2": {
+            "add": -2,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        },
+    "modifier__D3": {
+            "add": -2,
+        "has_war":false,
+        "date < 1006.6.1":null
+            }
+        }
+}

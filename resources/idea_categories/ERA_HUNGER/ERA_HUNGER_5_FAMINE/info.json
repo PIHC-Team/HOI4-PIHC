@@ -1,0 +1,14 @@
+{
+    "name": "Famine",
+    "removal_cost": -1,
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "monthly_population": -0.30,
+        "stability_factor": -0.25,
+        "custom_modifier_tooltip": "PIHC_HUNGER_TOOLTIP"
+    },
+    "cost": 30,
+    "cancel_if_invalid": false
+}

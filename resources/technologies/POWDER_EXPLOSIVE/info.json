@@ -1,0 +1,33 @@
+{
+    "name": "Powder Explosive",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 3,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_I",
+        "research_cost_coeff": 1,
+        "ignore_for_layout": true
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1001
+}

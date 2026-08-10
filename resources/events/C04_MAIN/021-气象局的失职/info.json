@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_technology": {
+                "TECHNOLOGY_SUPPORT_COLD_I": 1
+            },
+            "add_tech_bonus": {
+                "technology": "TECHNOLOGY_ICY_BOW",
+                "bonus": 0.3,
+                "name": "DECISION_C04_METEOROLOGICAL_BUREAU"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

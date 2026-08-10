@@ -1,0 +1,23 @@
+{
+    "name": "Declare War",
+    "priority": 2,
+    
+    "cost": 1999,
+    "days_remove": 30,
+    "available": {
+        "is_ironman": false
+    },
+    "remove_effect": {
+        "every_other_country": {
+            "limit": {
+                "NOT": {
+                    "tag": "C00"
+                }
+            },
+            "declare_war_on": {
+                "type": "crusade_wargoal",
+                "target": "ROOT"
+            }
+        }
+    }
+}

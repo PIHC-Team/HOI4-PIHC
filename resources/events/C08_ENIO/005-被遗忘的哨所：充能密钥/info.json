@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C08_ENIO.6"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C08_ENIO.7"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

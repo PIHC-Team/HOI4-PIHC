@@ -1,0 +1,29 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FINAL_RECKONING",
+    "prerequisite": {
+        "focus": "FOCUS_C12_FINAL_RECKONING"
+    },
+    "cost": 5,
+    "completion_reward": {
+            "C08": {
+            "country_event": {
+                "id": "C12_MAIN.105",
+                "days": 2,
+                "random_days": 2
+            }
+        }
+    },
+    "available": {
+        "country_exists": "C08",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "389": {
+                "add_building_construction": {
+                    "type": "arms_factory",   
+                    "level": 1,
+                    "instant_build": true     
+                }
+            },
+            "C33": {
+                "country_event": {      
+                    "id": "C33_MAIN.2"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Uprise",
+    "priority": 999,
+    
+    "cost": 0,
+    "fire_only_once": true,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C02_LIBERATION_FRONT_UPRISE_TRIGGER_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_DISARMED",
+            "C02":{
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED"
+                },
+            "has_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED",
+            "has_country_flag__D4": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_DISARMED",
+            "has_country_flag__D5": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED"
+        },
+        "NOT": {
+            "has_country_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C02_LIBERATION_FRONT_UPRISE_TRIGGER_TOOLTIP",
+            "has_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY"
+        },
+        "OR": {
+            "NOT": {
+                "has_full_control_of_state": 529
+            },
+            "NOT__D1": {
+                "has_full_control_of_state": 504 
+            }
+        }
+    },
+    "complete_effect": {
+        "C02_OPERATION_GREENLIGHT_PERFECT_ENDING": true
+    },
+    "ai_will_do": {
+        "base": 10000
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Construction Expansion",
+    "priority": 98,
+    
+    "cost": 75,
+    "days_re_enable": 120,
+    "complete_effect": {
+        "random_owned_controlled_state": {
+            "add_extra_state_shared_building_slots": 1
+        },
+        "random_owned_controlled_state__D1": {
+            "add_extra_state_shared_building_slots": 1
+        }
+    },
+    "ai_will_do": {
+        "base": 2,
+        "modifier": {
+            "add": -2,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

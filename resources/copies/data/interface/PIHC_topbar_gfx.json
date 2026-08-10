@@ -1,0 +1,39 @@
+{
+    "spriteTypes": {
+        "spriteType": {
+            "name": "GFX_IB_civ_fac",
+            "texturefile": "gfx/texticons/IB_civ_fac_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D1": {
+            "name": "GFX_IB_mil_fac",
+            "texturefile": "gfx/texticons/IB_mil_fac_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D2": {
+            "name": "GFX_IB_dockyard",
+            "texturefile": "gfx/texticons/IB_dockyard_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D3": {
+            "name": "GFX_IB_divison",
+            "texturefile": "gfx/texticons/IB_divison_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D4": {
+            "name": "GFX_IB_planes",
+            "texturefile": "gfx/texticons/IB_planes_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D5": {
+            "name": "GFX_IB_ships",
+            "texturefile": "gfx/texticons/IB_ships_20x20.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D6": {
+            "name": "GFX_ib_bg_half",
+            "texturefile": "gfx/interface/ib_background_extended_half.dds",
+            "transparencecheck": true
+        }
+    }
+}

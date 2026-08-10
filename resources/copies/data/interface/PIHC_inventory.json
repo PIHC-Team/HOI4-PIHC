@@ -1,0 +1,229 @@
+{
+	"guiTypes": {
+		"containerWindowType": {
+			"name": "pihc_inventory_backpack_icon",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"orientation": "lower_right",
+			"moveable": false,
+			"buttonType": {
+				"name": "open_inv",
+				"quadTextureSprite": "GFX_pihc_inventory_icon",
+				"pdx_tooltip": "PIHC_INVENTORY_TOGGLE_TT",
+				"position": {
+					"x": -64,
+					"y": -428
+				},
+				"scale": 0.5
+			},
+			"iconType": {
+				"name": "inventory_gui_alert",
+				"spriteType": "GFX_gui_alert",
+				"position": {
+					"x": -72,
+					"y": -436
+				},
+				"scale": 0.5
+			}
+		},
+		"containerWindowType__D1": {
+			"name": "pihc_inventory_container",
+			"size": {
+				"width": 1167,
+				"height": 675
+			},
+			"position": {
+				"x": -583,
+				"y": -297
+			},
+			"Orientation": "center",
+			"moveable": true,
+			"clipping": false,
+			"show_sound": "menu_open_window",
+			"hide_sound": "menu_close_window",
+			"Background": {
+				"name": "pihc_welcome_screen_bg",
+				"quadTextureSprite": "GFX_tiled_pihc_inventory_bg"
+			},
+			"instantTextboxType": {
+				"name": "header_desc",
+				"position": {
+					"x": -267,
+					"y": 23
+				},
+				"font": "hoi_24header",
+				"text": "PIHC_INVENTORY_HEADER",
+				"Orientation": "center_up",
+				"format": "center",
+				"maxWidth": 530,
+				"maxHeight": 30
+			},
+			"buttonType": {
+				"name": "reload_button",
+				"position": {
+					"x": -85,
+					"y": 25
+				},
+				"quadTextureSprite": "GFX_reloadbutton",
+				"Orientation": "UPPER_RIGHT",
+				"clicksound": "click_close",
+				"pdx_tooltip": "PIHC_RELOAD_EFFECT"
+			},
+			"buttonType__D1": {
+				"name": "close_button",
+				"position": {
+					"x": -41,
+					"y": 25
+				},
+				"quadTextureSprite": "GFX_closebutton",
+				"shortcut": "ESCAPE",
+				"Orientation": "UPPER_RIGHT",
+				"clicksound": "click_close",
+				"pdx_tooltip": "CLOSE"
+			}
+		},
+		"containerWindowType__D2": {
+			"name": "pihc_inventory_items_grid_container",
+			"Orientation": "upper_left",
+			"position": {
+				"x": 25,
+				"y": 202
+			},
+			"size": {
+				"width": 530,
+				"height": 440
+			},
+			"verticalScrollbar": "right_vertical_slider",
+			"autohide_scrollbars": false,
+			"scroll_wheel_factor": 40,
+			"smooth_scrolling": true,
+            "clipping": true,
+            "background": {
+                "name": "Background",
+                "quadTextureSprite": "GFX_blank"
+            },
+			"gridBoxType": {
+				"name": "pihc_inventory_grid_box",
+				"Orientation": "upper_left",
+				"position": {
+					"x": 0,
+					"y": 0
+				},
+				"slotsize": {
+					"width": 72,
+					"height": 72
+				},
+				"format": "UPPER_LEFT",
+				"max_slots_horizontal": 7
+			}
+		},
+		"containerWindowType__D3": {
+			"name": "pihc_inventory_item",
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"background": {
+				"name": "pihc_inventory_item_bg",
+				"quadTextureSprite": "GFX_pihc_inventory_item_bg"
+			},
+			"buttonType": {
+				"name": "pihc_inventory_item_button",
+				"position": {
+					"x": 4,
+					"y": 4
+				},
+				"Orientation": "upper_left",
+				"quadTextureSprite": "GFX_INVENTORY_ITEM_DEFAULT_SMALL",
+				"pdx_tooltip": "PIHC_INVENTORY_ITEM_TOOLTIP"
+			},
+			"instantTextboxType": {
+				"name": "pihc_inventory_item_count",
+				"position": {
+					"x": 0,
+					"y": 60
+				},
+				"font": "Arial12",
+				"text": "PIHC_INVENTORY_ITEM_COUNT",
+				"Orientation": "upper_left",
+				"format": "right",
+				"maxWidth": 72,
+				"maxHeight": 10,
+				"alwaystransparent": true
+			}
+		},
+		"containerWindowType__D4": {
+			"name": "pihc_inventory_information_container",
+			"Orientation": "upper_left",
+			"position": {
+				"x": 565,
+				"y": 180
+			},
+			"size": {
+				"width": 624,
+				"height": 450
+			},
+			"moveable": true,
+			"clipping": false,
+            "iconType": {
+                "name": "pihc_inventory_item_information_icon",
+                "quadTextureSprite": "GFX_INVENTORY_ITEM_DEFAULT",
+                "position": {
+                    "x": 174,
+                    "y": 0
+                },
+				"scale": 0.4,
+                "orientation": "upper_left",
+				"alwaystransparent": true
+            },
+			"instantTextboxType": {
+				"name": "pihc_inventory_item_information_name",
+				"position": {
+					"x": 34,
+					"y": 190
+				},
+				"font": "hoi_24header",
+				"text": "PIHC_INVENTORY_ITEM_NAME",
+				"Orientation": "upper_left",
+				"format": "center",
+				"maxWidth": 480,
+				"maxHeight": 25,
+				"alwaystransparent": true
+			},
+			"containerWindowType": {
+				"name": "pihc_inventory_item_information_desc_container",
+				"position": {
+					"x": 0,
+					"y": 230
+				},
+				"size": {
+					"width": 560,
+					"height": 195
+				},
+				"verticalScrollbar": "right_vertical_slider",
+				"smooth_scrolling": true,
+				"margin": {
+					"top": 0,
+					"bottom": 0
+				},
+				"instantTextboxType": {
+					"name": "pihc_inventory_item_information_desc",
+					"position": {
+						"x": 0,
+						"y": 0
+					},
+					"font": "hoi4_typewriter16_inverted",
+					"text": "PIHC_INVENTORY_ITEM_DESC",
+					"Orientation": "upper_left",
+					"format": "left",
+					"maxWidth": 555,
+					"maxHeight": 200,
+					"fixedsize": false,
+					"scrollbartype": "standardtext_slider"
+				}
+			}
+		}
+	}
+}

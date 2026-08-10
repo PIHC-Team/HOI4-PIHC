@@ -1,0 +1,40 @@
+{
+    "name": "Parasprite Training",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 16,
+    "y": 3,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AUTOMATA_PARASPRITE"
+    ],
+    "enable_subunits": [
+        "infantry_automata"
+    ],
+    "on_research_complete": {
+        "hidden_effect": {
+            "load_oob": "parasprite_1",
+            "load_oob__D1": "parasprite_2",
+            "load_oob__D2": "parasprite_3"
+        }
+    },
+    "allow": {
+        "always": false
+    },
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1001
+}

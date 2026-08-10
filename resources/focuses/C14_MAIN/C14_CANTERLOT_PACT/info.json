@@ -1,0 +1,19 @@
+{
+    "tree": "C14_MAIN",
+    "parent": "FOCUS_C14_TRADE_AGREEMENT",
+    "prerequisite": {
+        "focus": "FOCUS_C14_TRADE_AGREEMENT"
+    },
+    "cost": 26,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

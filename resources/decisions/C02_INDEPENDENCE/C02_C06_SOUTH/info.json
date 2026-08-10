@@ -1,0 +1,71 @@
+{
+    "name": "Stablize Eastern Equestria",
+    "priority": 100,
+    
+    "cost": 75,
+    "selectable_mission": false,
+    "days_mission_timeout": 60,
+    "activation": {
+        "C02": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_INTERFERE_C06"
+        }
+    },
+    "available": {
+        "C06": {
+            "has_war_with": "C08"
+        },
+        "550": {
+            "is_owned_and_controlled_by": "C06"
+        },
+        "585": {
+            "is_owned_and_controlled_by": "C06"
+        },
+        "606": {
+            "is_owned_and_controlled_by": "C06"
+        },
+        "665": {
+            "is_owned_and_controlled_by": "C06"
+        },
+        "if": {
+            "limit": {
+                "is_ai": false
+            },
+            "num_divisions_in_states": {
+                "count > 4": null,
+                "states": ["550", "585", "606", "619", "665"]
+            }
+        }
+    },
+    "war_with_on_timeout": "C06",
+    "war_with_on_complete": "C06",
+    "complete_effect": {
+        "C02": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_TROOPS_AT_C06"
+        },
+        "550": {
+            "transfer_state_to": "C02"
+        },
+        "585": {
+            "transfer_state_to": "C02"
+        },
+        "606": {
+            "transfer_state_to": "C02"
+        },
+        "665": {
+            "transfer_state_to": "C02"
+        }
+    },
+    "timeout_effect": {
+        "C02": {
+            "add_power_balance_value": {
+                "id": "BOP_C02_INDEPENDENCE",
+                "value": -0.2,
+                "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    },
+    "fire_only_once": true
+}

@@ -1,0 +1,14 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C12_ACCEPT_CLOUD_CITY_AGREEMENT"
+            },
+            "add_ideas": "IDEA_C12_CLOUD_CITY_AGREEMENT"
+        }
+    ],
+    "is_triggered_only": true
+}

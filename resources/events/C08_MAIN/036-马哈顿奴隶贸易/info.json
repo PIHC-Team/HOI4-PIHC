@@ -1,0 +1,17 @@
+{
+    "date": "1003.8.18",
+    "date_scope": "C08",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_36_TOOLTIP",
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PARTII_3",
+                "mark_focus_tree_layout_dirty": true
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

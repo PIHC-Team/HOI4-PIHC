@@ -1,0 +1,20 @@
+{
+    "name": "Research program",
+    "priority": 89998,
+    
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON",
+        "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_OLD_FRIENDS"
+    },
+    "available": {
+    },
+    "modifier": {
+        "weekly_manpower": 30
+    },
+    "days_remove": 70,
+    "days_re_enable": 28,
+    "cost": 20,
+    "ai_will_do": {
+        "base": 0
+    }
+}

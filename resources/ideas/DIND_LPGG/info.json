@@ -1,0 +1,31 @@
+{
+    "name": "DIND_LPGG",
+    "designer": true,
+    "category": "industrial_concern",
+    "traits": [
+        "entertainment_company"
+    ],
+    "cost": 250,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "C07": {
+            "has_completed_focus": "FOCUS_C07_LPGG"
+        }
+    },
+    "available": {
+        "country_exists": "C07"
+    },
+    "modifier": {
+        "stability_weekly_factor": 0.03
+    },
+    "targeted_modifier": {
+        "tag": "C07",
+        "cic_to_target_factor": 0.05
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

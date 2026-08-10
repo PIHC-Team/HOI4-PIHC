@@ -1,0 +1,16 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_stability": 0.03,
+            "custom_effect_tooltip": "EVENT_TIMELINE_21_TOOLTIP",
+            "REVOKE_WINTER_PENALTY": true,
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_WINTER_LOCK"
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

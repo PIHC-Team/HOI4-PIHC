@@ -1,0 +1,25 @@
+{
+    "name": "Avalanche of Clouds",
+    "category": "bba_air_techs",
+    "x": 6,
+    "y": 6,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_BOMBING_CLOUDAVA"
+    ],
+    "enable_subunits": [],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_AIR_DESTROYER",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_BBA_AIR_AIRSHIP",
+        "research_cost_coeff": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1002
+}

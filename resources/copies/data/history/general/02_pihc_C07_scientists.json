@@ -1,0 +1,48 @@
+{
+    "C07": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 3
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 3
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "C07__D1": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_witchcraft": 3
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_witchcraft": 3
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

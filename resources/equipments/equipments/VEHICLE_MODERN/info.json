@@ -1,0 +1,24 @@
+{
+    "name": "Modern Chariot",
+    "parent": "EQUIPMENT_VEHICLE_STEAM",
+    "alpha_global": 0.3,
+
+    "build_cost_ic": 7.0,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.99,
+
+    "hardness": 0.45,
+    
+    "resources": {
+        "steel": 3,
+        "rubber": 2,
+        "tungsten": 1
+    },
+    "fuel_consumption": 1.0,
+    "supply_truck": true,
+
+    "maximum_speed": 14.0,
+    "recon": 4
+}

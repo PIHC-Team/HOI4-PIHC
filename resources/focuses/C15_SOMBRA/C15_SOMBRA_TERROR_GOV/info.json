@@ -1,0 +1,44 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_TERROR",
+    "dx": 1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_TERROR"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "add_political_power": 50,
+        "add_timed_idea": {
+            "idea": "IDEA_C15_SOMBRA_TERROR_GOV",
+            "days": 90
+        },
+        "add_popularity": {
+            "ideology": "democratic",
+            "popularity": -0.15
+        },
+        "add_popularity__D1": {
+            "ideology": "corporation",
+            "popularity": -0.15
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

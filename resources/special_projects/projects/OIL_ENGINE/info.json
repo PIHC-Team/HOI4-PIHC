@@ -1,0 +1,41 @@
+{
+    "specialization": "specialization_oilpunk",
+    "project_tags": "sp_tag_pihc_oilpunk",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "FROM": {
+            "NOT": {
+                "has_tech": "TECHNOLOGY_TECH_ENER_II"
+            }
+        }
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_I"
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "steel": 12,
+            "rubber": 12,
+            "aluminium": 6
+        }
+    },
+    "project_output": {
+        "country_effects": {
+            "set_technology": {
+                "TECHNOLOGY_TECH_ENER_II": 1,
+                "popup": false
+            }
+        }
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_OIL",
+        "SP_REWARD_GENERIC_OIL_EXP",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

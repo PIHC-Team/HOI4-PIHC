@@ -1,0 +1,67 @@
+{
+    "name": "Bonds to Zap apples",
+    "priority": 99,
+    "cost": 0,
+    "days_re_enable": 1,
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C14",
+            "is_in_faction_with": "C14",
+            "AND": {
+                "owns_state": 190,
+                "controls_state": 190
+            }
+        }
+    },
+    "available": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE",
+            "compare": "greater_than_or_equals"
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "global.VAR_ZAP_APPLES_MARKET",
+                    "value": 100,
+                    "compare": "less_than"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "DECISION_WETM_BONDS_TO_ZAP_APPLES_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE",
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_DYNAMIC",
+    "complete_effect": {
+        "subtract_from_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE"
+        },
+        "ADD_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true,
+        "subtract_from_variable__D1": {
+            "var": "global.VAR_ZAP_APPLES_MARKET",
+            "value": 100
+        }
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 0,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true
+        },
+        "modifier__D1": {
+            "factor": 0,
+            "tag": "C14"
+        }
+    }
+}

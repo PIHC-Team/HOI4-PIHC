@@ -1,0 +1,19 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_CANTERLOT_PACT",
+    "prerequisite": {
+        "focus": "FOCUS_C07_CANTERLOT_PACT"
+    },
+    "cost": 29,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

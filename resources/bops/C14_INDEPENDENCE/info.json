@@ -1,0 +1,80 @@
+{
+    "initial_value": 0.5,
+    "decision_category": "DECISION_CATEGORY_C14_INDEPENDENCE",
+    "sides": {
+        "left": {
+            "range": {
+                "min": -1.0,
+                "max": -0.8,
+                "on_activate": {
+                    "add_ideas": "IDEA_ALL_C01_COLONY_2"
+                },
+                "on_deactivate": {
+                    "remove_ideas": "IDEA_ALL_C01_COLONY_2"
+                }
+            },
+            "range__D1": {
+                "min": -0.8,
+                "max": 0.0,
+                "on_activate": {
+                    "add_ideas": "IDEA_ALL_C01_COLONY_1"
+                },
+                "on_deactivate": {
+                    "remove_ideas": "IDEA_ALL_C01_COLONY_1"
+                }
+            }
+        },
+        "right": {
+            "range": {
+                "min": 0.0,
+                "max": 0.8,
+                "on_activate": {
+                    "add_ideas": "IDEA_ALL_C01_COLONY"
+                },
+                "on_deactivate": {
+                    "remove_ideas": "IDEA_ALL_C01_COLONY"
+                }
+            },
+            "range__D1": {
+                "min": 0.8,
+                "max": 0.99,
+                "on_activate": {
+                    "C01": {
+                        "country_event": {
+                            "id": "C01_MAIN.21",
+                            "days": 7
+                        }
+                    }
+                }
+            },
+            "range__D2": {
+                "min": 0.99,
+                "max": 1.0,
+                "on_activate": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01",
+                    "remove_all_power_balance_modifiers": {
+                        "id": "BOP_C14_INDEPENDENCE"
+                    },
+                    "add_power_balance_value": {
+                        "id": "BOP_C14_INDEPENDENCE",
+                        "value": 1.0
+                    }
+                }
+            }
+        }
+    },
+    "modifiers": {
+        "BOP_C14_INDEPENDENCE_DAILY_DRIFT": {
+            "power_balance_weekly": 0.005
+        },
+        "BOP_C14_INDEPENDENCE_INDEPENDENCE_MOVEMENT": {
+            "power_balance_weekly": 0.025
+        },
+        "BOP_C14_INDEPENDENCE_SUPPRESSED_BY_C01": {
+            "power_balance_weekly": -0.025
+        },
+        "BOP_C14_INDEPENDENCE_INSPECTED_BY_C01": {
+            "power_balance_weekly": -0.010
+        }
+    }
+}

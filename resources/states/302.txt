@@ -1,0 +1,54 @@
+state = {
+    id = 302
+    name = STATE_302
+    provinces = {
+        705
+        725
+        1251
+        1587
+        1909
+        2553
+        2939
+        3378
+        3379
+        3620
+        3731
+        7037
+        7223
+        7364
+        7466
+        10186
+        10192
+        10206
+        10224
+        10241
+        10300
+        10309
+        15080
+    }
+    manpower = 26543
+    state_category = pastoral
+    history = {
+        owner = C17
+        victory_points = {
+            705
+            1
+        }
+        buildings = {
+            dockyard = 3
+            15080 = {
+                naval_base = 2
+                supply_node = 1
+            }
+        }
+        add_core_of = C17
+        victory_points = {
+            15080
+            50
+        }
+    }
+    resources = {
+        steel = 2
+        aluminium = 2
+    }
+}

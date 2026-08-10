@@ -1,0 +1,581 @@
+{
+    "C03_CONVERT_MUFFINS_75": {
+        "set_temp_variable": {
+            "C03.temp_stability": "C03.stability"
+        },
+        "set_variable": {
+            "var": "C03.VAR_DEBUG_MUFFIN_STABILITY",
+            "value": "C03.temp_stability"
+        },
+        "subtract_from_temp_variable": {
+            "C03.temp_stability": 0.75
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C03.temp_stability > 0": null
+                }
+            },
+            "C03": {
+                "set_temp_variable": {
+                    "C03.temp_stability_subtract": "C03.temp_stability"
+                },
+                "multiply_temp_variable": {
+                    "C03.temp_stability_subtract": -1
+                },
+                "add_stability": "C03.temp_stability_subtract",
+                "set_temp_variable__D1": {
+                    "C03.temp_muffins_add": "C03.temp_stability"
+                },
+                "multiply_temp_variable__D1": {
+                    "C03.temp_muffins_add": 10000
+                },
+                "round_temp_variable": "C03.temp_muffins_add",
+                "add_to_variable": {
+                    "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "C03.temp_muffins_add"
+                }
+            }
+        }
+    },
+    "C03_CONVERT_MUFFINS_40": {
+        "set_temp_variable": {
+            "C03.temp_stability": "C03.stability"
+        },
+        "subtract_from_temp_variable": {
+            "C03.temp_stability": 0.40
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "C03.temp_stability < 0": null
+                }
+            },
+            "C03": {
+                "set_temp_variable": {
+                    "C03.temp_stability_subtract": "C03.temp_stability"
+                },
+                "multiply_temp_variable": {
+                    "C03.temp_stability_subtract": -1
+                },
+                "add_stability": "C03.temp_stability_subtract",
+                "set_temp_variable__D1": {
+                    "C03.temp_muffins_add": "C03.temp_stability"
+                },
+                "multiply_temp_variable__D1": {
+                    "C03.temp_muffins_add": 12500
+                },
+                "round_temp_variable": "C03.temp_muffins_add",
+                "add_to_variable": {
+                    "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "C03.temp_muffins_add"
+                }
+            }
+        }
+    },
+    "C03_CONVERT_EQUIPMENT_MUFFINS_I": {
+        "set_temp_variable": {
+            "C03.temp_num_muffins_1": "num_equipment@EQUIPMENT_MUFFIN_I"
+        },
+        "multiply_temp_variable": {
+            "C03.temp_num_muffins_1": -1
+        },
+        "add_equipment_to_stockpile": {
+            "type": "EQUIPMENT_MUFFIN_I",
+            "amount": "C03.temp_num_muffins_1"
+        },
+        "multiply_temp_variable__D1": {
+            "C03.temp_num_muffins_1": -5
+        },
+        "add_to_variable": {
+            "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": "C03.temp_num_muffins_1"
+        }
+    },
+    "C03_CONVERT_EQUIPMENT_MUFFINS_II": {
+        "set_temp_variable": {
+            "C03.temp_num_muffins_2": "num_equipment@EQUIPMENT_MUFFIN_II"
+        },
+        "multiply_temp_variable": {
+            "C03.temp_num_muffins_2": -1
+        },
+        "add_equipment_to_stockpile": {
+            "type": "EQUIPMENT_MUFFIN_II",
+            "amount": "C03.temp_num_muffins_2"
+        },
+        "multiply_temp_variable__D1": {
+            "C03.temp_num_muffins_2": -20
+        },
+        "add_to_variable": {
+            "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": "C03.temp_num_muffins_2"
+        }
+    },
+    "C03_CONVERT_EQUIPMENT_MUFFINS_III": {
+        "set_temp_variable": {
+            "C03.temp_num_muffins_3": "num_equipment@EQUIPMENT_MUFFIN_III"
+        },
+        "multiply_temp_variable": {
+            "C03.temp_num_muffins_3": -1
+        },
+        "add_equipment_to_stockpile": {
+            "type": "EQUIPMENT_MUFFIN_III",
+            "amount": "C03.temp_num_muffins_3"
+        },
+        "multiply_temp_variable__D1": {
+            "C03.temp_num_muffins_3": -100
+        },
+        "add_to_variable": {
+            "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": "C03.temp_num_muffins_3"
+        }
+    },
+    "C03_ROULETTE_INIT": {
+        "set_variable": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD",
+            "value": 4
+        },
+        "set_variable__D1": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD",
+            "value": 4
+        },
+        "set_variable__D2": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN",
+            "value": 500
+        },
+        "set_variable__D3": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST",
+            "value": 600
+        },
+        "set_variable__D4": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_CONFIG",
+            "value": 8
+        },
+        "set_variable__D5": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+            "value": 0
+        },
+        "set_variable__D6": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GAMES",
+            "value": 0
+        },
+        "set_variable__D7": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD",
+            "value": 0
+        },
+        "set_variable__D8": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_BAD",
+            "value": 0
+        },
+        "set_variable__D9": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK",
+            "value": 0
+        },
+        "set_variable__D10": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK",
+            "value": 0
+        },
+        "set_variable__D11": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES",
+            "value": 0
+        },
+        "set_variable__D12": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES",
+            "value": 0
+        },
+        "set_variable__D13": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES",
+            "value": 0
+        },
+        "set_variable__D14": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK",
+            "value": 0
+        },
+        "set_variable__D15": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_7_FORTUNE_TELL",
+            "value": 0
+        },
+        "set_variable__D16": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE",
+            "value": 0
+        }
+    },
+    "C03_ROULETTE_REGEN_NEXT": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD",
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+                    "value": 0,
+                    "compare": "equals"
+                }
+            },
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING"
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD",
+                    "value": 0,
+                    "compare": "equals"
+                }
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD"
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_BAD",
+                    "value": 0,
+                    "compare": "equals"
+                }
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD"
+        },
+        "else": {
+            "random_list": {
+                "seed": "random",
+                "C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD"
+                },
+                "C03.VAR_MUFFIN_ROULETTE_BOXES_BAD": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD"
+                }
+            }
+        }
+    },
+    "C03_ROULETTE_DROP_NEXT": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD"
+            },
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD",
+            "subtract_from_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+                "value": 1
+            },
+            "subtract_from_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD",
+                "value": 1
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD"
+            },
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD",
+            "subtract_from_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+                "value": 1
+            },
+            "subtract_from_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_BAD",
+                "value": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "subtract_from_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+                "value": 1
+            }
+        },
+        "C03_ROULETTE_REGEN_NEXT": true
+    },
+    "C03_ROULETTE_OPEN_NEXT": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "AND": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD",
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE"
+                        }
+                    },
+                    "AND__D1": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD",
+                        "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE"
+                    }
+                }
+            },
+            "hidden_effect": {
+                "C03": {
+                    "scoped_sound_effect": "correct_ev"
+                }
+            },
+            "add_to_variable": {
+                "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN"
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "add_to_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN"
+            },
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE"
+                },
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE",
+                "add_to_variable": {
+                    "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN"
+                },
+                "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+                "add_to_variable__D1": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                    "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN"
+                }
+            },
+            "add_to_variable__D2": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD",
+                "value": 1
+            },
+            "add_to_variable__D3": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK",
+                "value": 1
+            },
+            "if__D1": {
+                "limit": {
+                    "check_variable": {
+                        "var": "C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK",
+                        "value": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK",
+                        "compare": "greater_than"
+                    }
+                },
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK",
+                    "value": "C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK"
+                }
+            },
+            "add_to_variable__D4": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES",
+                "value": 1
+            },
+            "add_to_variable__D5": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK",
+                "value": 1
+            },
+            "if__D2": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE",
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "OR": {
+                    "AND": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD",
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE"
+                        }
+                    },
+                    "AND__D1": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD",
+                        "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE"
+                    }
+                }
+            },
+            "hidden_effect": {
+                "C03": {
+                    "scoped_sound_effect": "wrong_ev"
+                }
+            },
+            "subtract_from_variable": {
+                "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST"
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "subtract_from_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST"
+            },
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE"
+                },
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE",
+                "subtract_from_variable": {
+                    "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST"
+                },
+                "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+                "subtract_from_variable__D1": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                    "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST"
+                }
+            },
+            "add_to_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_BAD",
+                "value": 1
+            },
+            "set_variable": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK",
+                "value": 0
+            },
+            "set_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK",
+                "value": 0
+            },
+            "if__D1": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+                },
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+            },
+            "if__D2": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE",
+                    "check_variable": {
+                        "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+                        "value": 1,
+                        "compare": "equals"
+                    }
+                },
+                "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C03_MUFFIN_ROULETTE_IDIOT"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "add_to_variable": {
+                "var": "C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 100
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "add_to_variable__D1": {
+                "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": 100
+            }
+        },
+        "add_to_variable": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES",
+            "value": 1
+        },
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING",
+        "C03_ROULETTE_DROP_NEXT": true
+    },
+    "C03_ROULETTE_NEW_GAME": {
+        "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C03_MUFFIN_ROULETTE_FIRST_GAME",
+        "add_to_variable": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TOTAL_GAMES",
+            "value": 1
+        },
+        "set_variable": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD",
+            "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD"
+        },
+        "set_variable__D1": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_BOXES_BAD",
+            "value": "C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD"
+        },
+        "set_variable__D2": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+            "value": "C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD"
+        },
+        "add_to_variable__D1": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_BOXES",
+            "value": "C03.VAR_MUFFIN_ROULETTE_BOXES_BAD"
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING",
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE",
+        "add_to_variable__D2": {
+            "var": "C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES",
+            "value": 1
+        },
+        "C03_ROULETTE_REGEN_NEXT": true
+    },
+    "C03_ROULETTE_RANDOM_TASK": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_1_NUM_GAMES"
+            },
+            "1__D1": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_2_NUM_BOXES"
+            },
+            "1__D2": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_3_NUM_GOOD_BOXES"
+            },
+            "1__D3": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_4_NUM_WINNING_STREAK"
+            },
+            "1__D4": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING"
+            },
+            "1__D5": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+            },
+            "1__D6": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_7_FORTUNE_TELL",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_7_FORTUNE_TELL"
+            },
+            "1__D7": {
+                "set_variable": {
+                    "var": "C03.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE",
+                    "value": 0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_8_SHUFFLE"
+            }
+        }
+    },
+    "C03_MUFFINS_AID_INIT": {
+        "every_possible_country": {
+            "set_variable": {
+                "var": "VAR_MUFFINS_AID_FROM_C03",
+                "value": 0
+            }
+        },
+        "C03": {
+            "set_variable": {
+                "var": "VAR_MUFFINS_AID_TOTAL_C03",
+                "value": 0
+            }
+        }
+    },
+    "C03_MUFFINS_JOIN_SAINT_DERPY": {
+        "leave_faction": true,
+        "END_ALL_WARS": true,
+        "add_stability": 0.10,
+        "C03": {
+            "add_to_faction": "PREV"
+        }
+    }
+}

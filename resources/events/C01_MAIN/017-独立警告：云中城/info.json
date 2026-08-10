@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 80
+            },
+            "add_political_power": -50,
+            "C03": {
+                "add_power_balance_value": {
+                    "id": "BOP_C03_INDEPENDENCE",
+                    "value": -0.1,
+                    "tooltip_side": "BOP_C03_INDEPENDENCE_LEFT_SIDE"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 20
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,39 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 12,
+    "xp_unlock_cost": 200,
+
+    "category_air_airship": {
+        "air_superiority": 1.00,
+        "air_bombing": 0.10,
+        "air_ground_attack": 0.05
+    },
+    "category_air_flyer": {
+        "air_superiority": 1.00,
+        "air_bombing": 0.05,
+        "air_ground_attack": 0.10
+    },
+
+    "research_cost": 4.5,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_flying_fortress"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_2_7_ARRIVAL",
+        "research_cost_coeff": 1.0
+    },
+
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

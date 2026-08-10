@@ -1,0 +1,28 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_ADVANCED_PRODUCTION_METHODS",
+    "prerequisite": {
+        "focus": "FOCUS_C12_EXPAND_ORE_TRADE",
+        "focus__D1": "FOCUS_C12_ADVANCED_PRODUCTION_METHODS"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "name": "pihc_synth",
+            "bonus": 1,
+            "ahead_reduction": 2,
+            "uses": 2
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

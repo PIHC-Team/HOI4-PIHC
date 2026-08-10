@@ -1,0 +1,38 @@
+{
+    "name": "LREIC",
+    "priority": 98,
+    
+    "days_remove": 60,
+    "visible": {
+        "tag": "C07",
+        "has_completed_focus": "FOCUS_C07_LREIC"
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true,
+        "C43": {
+            "is_neighbor_of": "C07"
+        }
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_600",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+    },
+    "remove_effect": {
+        "add_timed_idea": {
+            "idea": "IDEA_C07_C43_PREPARED",
+            "days": 90
+        },
+        "declare_war_on": {
+            "target": "C43",
+            "type": "annex_everything"
+        },
+        "custom_effect_tooltip": "DECISION_C07_LREIC_WAR_ON_LEOTA_TOOLTIP"
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 40000
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 12,
+
+    "air_superiority_efficiency": 0.15,
+    "army_bonus_air_superiority_factor": 0.10,
+    "ground_attack_factor": 0.05,
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_1_7_FLEET",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

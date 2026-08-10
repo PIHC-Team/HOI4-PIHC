@@ -1,0 +1,23 @@
+{
+    "category": "news",
+    "date": "1004.06.13",
+    "date_scope": "C02",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_tech_bonus": {
+                "technology": "TECHNOLOGY_TECH_MAGI_I",
+                "bonus": 0.15,
+                "name": "PIHC_IHORN"
+            },
+            "add_breakthrough_progress": {
+                "specialization": "specialization_magic",
+                "value": 0.15
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

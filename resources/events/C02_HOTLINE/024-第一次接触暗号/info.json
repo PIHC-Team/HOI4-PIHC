@@ -1,0 +1,28 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_CONTACT",
+            "country_event": {
+                "id": "C02_HOTLINE.25",
+                "days": 3
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

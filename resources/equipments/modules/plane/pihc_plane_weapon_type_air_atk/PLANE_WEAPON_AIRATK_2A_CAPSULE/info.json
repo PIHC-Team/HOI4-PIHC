@@ -1,0 +1,19 @@
+{
+    "add_stats": {
+        "weight": 4.0,
+        "air_attack": 16.0,
+        "reliability": -0.05
+    },
+    "multiply_stats": {
+        "air_attack": 0.15,
+        "build_cost_ic": 0.03,
+        "air_superiority": 1.50
+    },
+    "allow_mission_type": [
+        "air_superiority"
+    ],
+    "add_equipment_type": [
+        "fighter"
+    ],
+    "xp_cost": 5
+}

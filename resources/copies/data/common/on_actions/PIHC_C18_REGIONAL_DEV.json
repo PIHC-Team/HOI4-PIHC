@@ -1,0 +1,134 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C18": {
+                    "add_to_variable": {
+                        "VAR_INVENTORY_ITEM_3RA_C18_CURE": 120
+                    },
+                    "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+                    "set_variable": {
+                        "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 0
+                    },
+                    "set_variable__D1": {
+                        "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION": 3
+                    },
+                    "set_variable__D2": {
+                        "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION": 1
+                    },
+                    "C18_REGIONAL_DEV_INIT_REGIONS": true,
+                    "C18_REGIONAL_DEV_INIT_REGIONS_NIRIKS": true,
+                    "C18_REGIONAL_DEV_COMPUTE_KIRINS": true,
+                    "C18_REGIONAL_DEV_COMPUTE_POPULATION": true,
+                    "C18_REGIONAL_DEV_COMPUTE_URBANIZATION": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C18_REGIONAL_DEV_WORKING",
+
+                    "C18_INIT_CURE": true,
+                    "C18_INIT_UNLEASH_YOUR_INNER_NIRIKS": true,
+                    "C18_INIT_URBANIZATION_MODIFIERS": true,
+
+                    "C18_REGIONAL_DEV_COMPUTE": true,
+
+                    "add_dynamic_modifier": {
+                        "modifier": "C18_NIRIKS_DYNAMIC_MODIFIER",
+                        "scope": "C18"
+                    },
+                    "add_dynamic_modifier__D1": {
+                        "modifier": "C18_URBAN_DYNAMIC_MODIFIER",
+                        "scope": "C18"
+                    },
+
+                    "set_variable__D3": {
+                        "C18.VAR_ATTENTION_OF_THE_CENTAURS": 0
+                    },
+                    "set_variable__D4": {
+                        "C18.VAR_MONTHLY_DEV_BONDS_FROM_SENDAK": 100
+                    },
+                    
+                    "mark_focus_tree_layout_dirty": true
+                }
+            }
+        },
+        "on_weekly_C18": {
+            "effect": {
+                "C18_REGIONAL_DEV_UPDATE": true,
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "variable": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO",
+                            "value": "party_popularity_100@fascism",
+                            "compare": "greater_than"
+                        }
+                    },
+                    "add_popularity": {
+                        "ideology": "fascism",
+                        "popularity": 0.005
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "check_variable": {
+                            "variable": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO",
+                            "value": "party_popularity_100@fascism",
+                            "compare": "less_than"
+                        }
+                    },
+                    "add_popularity": {
+                        "ideology": "fascism",
+                        "popularity": -0.005
+                    }
+                }
+            }
+        },
+        "on_monthly_C18": {
+            "effect": {
+                "C18_PRODUCE_CURE": true,
+                "C18_REGIONAL_DEV_BUILDINGS_DAMAGE": true,
+
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_C18_SENDAKS_SECRET_COOPERATOR"
+                    },
+                    "add_to_variable": {
+                        "C18.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS": "C18.VAR_MONTHLY_DEV_BONDS_FROM_SENDAK"
+                    },
+                    "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+                },
+
+                "if__D1": {
+                    "limit": {
+                        "OR": {
+                            "check_variable": {
+                                "var": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO",
+                                "value": 75.0,
+                                "compare": "greater_than"
+                            },
+                            "has_idea": "unleash_your_inner_nirik_lokadhatu"
+                        }
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C18_COLLAPSING"
+                },
+
+                "if__D2": {
+                    "limit": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_COLLAPSING",
+                        "OR": {
+                            "has_war": false,
+                            "check_variable": {
+                                "var": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO",
+                                "value": 85.0,
+                                "compare": "greater_than"
+                            }
+                        },
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_COLLAPSED"
+                        }
+                    },
+                    "country_event": {
+                        "id": "C18_MAIN.116"
+                    }
+                }
+            }
+        }
+    }
+}

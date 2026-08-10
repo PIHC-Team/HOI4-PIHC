@@ -1,0 +1,28 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_WASHOUTS_RELEASED",
+    "prerequisite": {
+        "focus": "FOCUS_C04_WASHOUTS_RELEASED"
+    },
+    "cost": 4,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C04_WASHOUTS_RELEASED"
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C04_MAIN.28"
+        }
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C04_WASHOUT_TOUR",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

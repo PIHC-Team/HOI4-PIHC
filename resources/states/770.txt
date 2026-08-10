@@ -1,0 +1,39 @@
+state = {
+    id = 770
+    name = STATE_770
+    provinces = {
+        1131
+        2157
+        2439
+        2681
+        4145
+        4206
+        4476
+        5335
+        5523
+        6247
+        8684
+        13679
+        13696
+        13716
+        13788
+        13849
+    }
+    manpower = 1196
+    state_category = rural
+    history = {
+        owner = C18
+        victory_points = {
+            1131
+            3
+        }
+        buildings = {
+            infrastructure = 2
+            farm_complex = 1
+        }
+        add_core_of = C18
+    }
+    resources = {
+
+    }
+}

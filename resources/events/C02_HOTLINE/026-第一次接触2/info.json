@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "IDEA_DIND_C02_PLUSH_TOY_LOGS_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3",
+            "add_ideas": "IDEA_DIND_C02_PLUSH_TOY_LOGS",
+            "country_event": {
+                "id": "C02_HOTLINE.27",
+                "days": 7
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

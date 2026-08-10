@@ -1,0 +1,29 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C18_MAIN_115_o0_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED",
+            "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EXPEL",
+            "add_named_threat": {
+                "threat": 10,
+                "name": "EVENT_C18_MAIN_115_THREAT"
+            },
+            "mark_focus_tree_layout_dirty": true
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "custom_effect_tooltip": "EVENT_C18_MAIN_115_o1_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED",
+            "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EMBRACE",
+            "C18_ADD_NIRIK_0_15": true,
+            "mark_focus_tree_layout_dirty": true
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

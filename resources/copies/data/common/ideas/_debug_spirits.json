@@ -1,0 +1,30 @@
+{
+    "ideas": {
+        "country": {
+            "add_production_efficiency": {
+                "allowed": {
+                    "always": false
+                },
+                "removal_cost": -1,
+                "allowed_civil_war": {
+                    "always": true
+                },
+                "modifier": {
+                    "production_factory_efficiency_gain_factor": 100
+                }
+            },
+            "decrease_production_efficiency": {
+                "allowed": {
+                    "always": false
+                },
+                "removal_cost": -1,
+                "allowed_civil_war": {
+                    "always": true
+                },
+                "modifier": {
+                    "production_factory_efficiency_gain_factor": -100
+                }
+            }
+        }
+    }
+}

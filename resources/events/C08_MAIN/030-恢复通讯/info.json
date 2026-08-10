@@ -1,0 +1,31 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "tag": "C08"
+        }
+    },
+    "option__D1": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "tag": "C05"
+        },
+        "add_ideas": "IDEA_C08_STARLIGHT_RADIO_01",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO"
+    },
+    "option__D2": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "tag": "C23"
+        },
+        "add_ideas": "IDEA_C08_STARLIGHT_RADIO_01",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO"
+    },
+    "is_triggered_only": true
+}

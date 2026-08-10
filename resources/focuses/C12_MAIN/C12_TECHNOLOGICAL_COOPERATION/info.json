@@ -1,0 +1,26 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_OVERCOME_HARDSHIPS",
+    
+    "prerequisite": {
+        "focus": "FOCUS_C12_OVERCOME_HARDSHIPS"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_to_tech_sharing_group": "pihc_apple_pie_family_research",
+        "C14": {
+            "add_to_tech_sharing_group": "pihc_apple_pie_family_research"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

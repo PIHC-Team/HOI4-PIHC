@@ -1,0 +1,15 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "uncomplete_national_focus": {
+                "focus": "FOCUS_C02_PONYVILLE_MILSCHOOL",
+                "uncomplete_children": true,
+                "refund_political_power": false
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

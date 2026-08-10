@@ -1,0 +1,56 @@
+{
+    "name": "Forest Cultivation",
+    "priority": 97,
+    
+    "days_remove": 120,
+    "days_re_enable": 90,
+    "available": {
+        "num_of_civilian_factories_available_for_projects > 2": null,
+        "hidden_trigger": {
+            "has_political_power > 39": null
+        }
+    },
+    "custom_cost_trigger": {
+        "num_of_civilian_factories_available_for_projects > 2": null,
+        "has_political_power > 39": null
+    },
+    "custom_cost_text": "CUSTOM_COST_CIV_FACTORY_3_PP_25",
+    "modifier": {
+        "civilian_factory_use": 3
+    },
+    "ai_hint_pp_cost": 25,
+    "complete_effect": {
+        "hidden_effect": {
+            "add_political_power": -25
+        }
+    },
+    "remove_effect": {
+        "random_owned_controlled_state": {
+            "add_resource": {
+                "type": "logs",
+                "amount": 24
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "add": 4,
+            "NOT": {
+                "has_tech": "TECHNOLOGY_TECH_ENER_I"
+            }
+        },
+        "modifier__D1": {
+            "add": 40,
+            "tag": "C02",
+            "date < 1004.01.01": null
+        },
+        "modifier__D2": {
+            "add": -1,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

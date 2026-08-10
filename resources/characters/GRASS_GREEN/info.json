@@ -1,0 +1,20 @@
+{
+    "name": "Grass-Green",
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_GRASS_GREEN_AGRICULTURE"
+        ],
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150,
+        "on_add": {
+            "C18_DEL_GROWTH_0_3": true
+        },
+        "on_remove": {
+            "C18_ADD_GROWTH_0_3": true
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 10,
+    "xp_unlock_cost": 200,
+
+    "air_defence_factor": 0.05,
+    "air_fuel_consumption_factor": -0.95,
+    "category_air_airship": {
+        "fuel_consumption": 10.00
+    },
+
+    "research_cost": 4.5,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_flying_fortress"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_2_6_DOMINATE",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

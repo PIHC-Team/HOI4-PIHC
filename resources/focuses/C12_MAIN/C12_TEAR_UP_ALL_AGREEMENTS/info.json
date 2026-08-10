@@ -1,0 +1,31 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FINAL_RECKONING",
+    "prerequisite": {
+        "focus": "FOCUS_C12_FINAL_RECKONING"
+    },
+    "cost": 5,
+    "bypass": {
+    "OR" :{
+        "C07": {"is_subject_of":"C12"},
+        "C07__D1": {"is_in_faction_with":"C12"}
+    }
+    },
+    "completion_reward": {
+"create_wargoal" :{
+    "target" : "C07",
+    "type" : "take_state_focus"
+}
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

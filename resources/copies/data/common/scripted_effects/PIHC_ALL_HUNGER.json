@@ -1,0 +1,183 @@
+{
+    "INIT_HUNGER_FARMS": {
+        "C11": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        },
+        "C13": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        },
+        "C16": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        },
+        "C17": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        },
+        "C22": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        },
+        "C26": {
+            "add_ideas": "IDEA_ERA_HUNGER_1_NONEED"
+        }
+    },
+    "CALCULATE_HUNGER": {
+        "set_variable": {
+            "var": "VAR_NUM_FARMS_REQUIRED_2",
+            "value": "max_manpower_k"
+        },
+        "divide_variable": {
+            "var": "VAR_NUM_FARMS_REQUIRED_2",
+            "value": 60
+        },
+        "round_variable": "VAR_NUM_FARMS_REQUIRED_2",
+        
+        "set_variable__D1": {
+            "var": "VAR_NUM_FARMS_REQUIRED_3",
+            "value": "max_manpower_k"
+        },
+        "divide_variable__D1": {
+            "var": "VAR_NUM_FARMS_REQUIRED_3",
+            "value": 96
+        },
+        "round_variable__D1": "VAR_NUM_FARMS_REQUIRED_3",
+        
+        "set_variable__D2": {
+            "var": "VAR_NUM_FARMS_REQUIRED_4",
+            "value": "max_manpower_k"
+        },
+        "divide_variable__D2": {
+            "var": "VAR_NUM_FARMS_REQUIRED_4",
+            "value": 240
+        },
+        "round_variable__D2": "VAR_NUM_FARMS_REQUIRED_4",
+        "COMPUTE_NUM_FARMS": true
+    },
+    "CHANGE_HUNGER_LEVEL": {
+        "CALCULATE_HUNGER": true,
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_2_FULL",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_REQUIRED_2",
+                    "value": "VAR_NUM_FARMS_OWNED",
+                    "compare": "greater_than"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_3_NORMAL"
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_3_NORMAL",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_REQUIRED_3",
+                    "value": "VAR_NUM_FARMS_OWNED",
+                    "compare": "greater_than"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_4_HUNGER"
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_4_HUNGER",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_REQUIRED_4",
+                    "value": "VAR_NUM_FARMS_OWNED",
+                    "compare": "greater_than"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_5_FAMINE"
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_3_NORMAL",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_OWNED",
+                    "value": "VAR_NUM_FARMS_REQUIRED_2",
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_2_FULL"
+        },
+        "else_if__D3": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_4_HUNGER",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_OWNED",
+                    "value": "VAR_NUM_FARMS_REQUIRED_3",
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_3_NORMAL"
+        },
+        "else_if__D4": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_5_FAMINE",
+                "check_variable": {
+                    "var": "VAR_NUM_FARMS_OWNED",
+                    "value": "VAR_NUM_FARMS_REQUIRED_4",
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "add_ideas": "IDEA_ERA_HUNGER_4_HUNGER"
+        }
+    },
+    "UPGRADE_HUNGER": {
+        "custom_effect_tooltip": "PIHC_UPGRADE_HUNGER_TOOLTIP",
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_5_FAMINE"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_4_HUNGER",
+                "remove_idea": "IDEA_ERA_HUNGER_5_FAMINE"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_4_HUNGER"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_3_NORMAL",
+                "remove_idea": "IDEA_ERA_HUNGER_4_HUNGER"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_3_NORMAL"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_2_FULL",
+                "remove_idea": "IDEA_ERA_HUNGER_3_NORMAL"
+            }
+        }
+    },
+    "DOWNGRADE_HUNGER": {
+        "custom_effect_tooltip": "PIHC_DOWNGRADE_HUNGER_TOOLTIP",
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_4_HUNGER"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_5_FAMINE",
+                "remove_idea": "IDEA_ERA_HUNGER_4_HUNGER"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_3_NORMAL"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_4_HUNGER",
+                "remove_idea": "IDEA_ERA_HUNGER_3_NORMAL"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ERA_HUNGER_2_FULL"
+            },
+            "swap_ideas": {
+                "add_idea": "IDEA_ERA_HUNGER_3_NORMAL",
+                "remove_idea": "IDEA_ERA_HUNGER_2_FULL"
+            }
+        }
+    }
+}

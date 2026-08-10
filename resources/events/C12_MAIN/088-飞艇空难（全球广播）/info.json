@@ -1,0 +1,33 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger" : {
+                "NOT":{ "tag" : "C12"} 
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger" : {
+                "NOT":{ "tag" : "C12"} 
+            }
+
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger" : {
+                "tag" : "C12"
+            }
+    
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

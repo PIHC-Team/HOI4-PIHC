@@ -1,0 +1,21 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C04": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING",
+                "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "country_event": {
+                "id": "C04_MAIN.50"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

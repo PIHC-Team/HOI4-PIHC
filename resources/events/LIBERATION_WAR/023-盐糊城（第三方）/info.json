@@ -1,0 +1,27 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "show_major": {
+        "NOT": {
+            "tag": "C08",
+            "tag__D1": "C01"
+        }
+    },
+    "is_triggered_only": true
+}

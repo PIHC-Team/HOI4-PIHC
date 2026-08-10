@@ -1,0 +1,22 @@
+{
+    "name": "Iron Cardinal of Seas",
+    "category": "mtgnaval",
+    "x": 4,
+    "y": 11,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_cardinal"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_SEACARDINAL_IRON"
+    ],
+    "enable_subunits": [],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM",
+        "research_cost_coeff": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1003
+}

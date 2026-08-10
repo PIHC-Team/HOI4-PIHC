@@ -1,0 +1,31 @@
+{
+    "name": "Military Industry Construction",
+    "priority": 99,
+    
+    "cost": 125,
+    "days_remove": 60,
+    "days_re_enable": 240,
+    "remove_effect": {
+        "random_owned_controlled_state": {
+            "BUILD_A_MIC": true
+        }
+    },
+    "ai_will_do": {
+        "base": 5,
+        "modifier": {
+            "add": 20,
+            "has_political_power > 250": null
+        },
+        "modifier__D1": {
+            "add": 20,
+            "has_war": true
+        },
+        "modifier__D2": {
+            "add": -5,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

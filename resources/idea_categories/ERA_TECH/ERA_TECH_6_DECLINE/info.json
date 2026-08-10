@@ -1,0 +1,13 @@
+{
+    "name": "Road to Degradation",
+    "removal_cost": -1,
+    "available": {
+        "always": false
+    },
+    "modifier": {
+        "research_speed_factor": -0.5,
+        "stability_factor": 0.35
+    },
+    "cost": 250,
+    "cancel_if_invalid": false
+}

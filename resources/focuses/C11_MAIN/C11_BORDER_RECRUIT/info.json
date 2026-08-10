@@ -1,0 +1,47 @@
+{
+    "tree": "C11_MAIN",
+    "parent": "FOCUS_C11_CONQUER_ZEBRA",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C11_CONQUER_ZEBRA"
+    },
+    "cost": 4,
+    "will_lead_to_war_with": "C30",
+    "completion_reward": {
+        "614": {
+            "if": {
+                "limit": {
+                    "is_owned_and_controlled_by": "C11"
+                }
+            },
+            "create_unit": {
+                "division": "name = \"幻形灵丛林部队 (Changeling Jungle Division)\" division_template = \"幻形自动作战师 (Changeling Automata Division)\" start_experience_factor = 0.5 start_equipment_factor = 0.3 start_manpower_factor = 0.5",
+                "owner": "C11",
+                "count": 4
+            }
+        },
+        "653": {
+            "if": {
+                "limit": {
+                    "is_owned_and_controlled_by": "C11"
+                }
+            },
+            "create_unit": {
+                "division": "name = \"幻形灵丛林部队 (Changeling Jungle Division)\" division_template = \"幻形自动作战师 (Changeling Automata Division)\" start_experience_factor = 0.5 start_equipment_factor = 0.3 start_manpower_factor = 0.5",
+                "owner": "C11",
+                "count": 4
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

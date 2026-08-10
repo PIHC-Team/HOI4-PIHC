@@ -1,0 +1,25 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_000_MANUFACTURE",
+    "prerequisite": {
+        "focus": "FOCUS_C18_000_MANUFACTURE"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C18_001_WELFARE_STATE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_ideas": "IDEA_C18_KIRIN_DREAM"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

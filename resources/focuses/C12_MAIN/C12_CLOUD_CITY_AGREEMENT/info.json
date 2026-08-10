@@ -1,0 +1,28 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FLY_HIGHER",
+    "prerequisite": {
+        "focus": "FOCUS_C12_FLY_HIGHER"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "C03": {
+            "country_event": {
+                "id": "C12_MAIN.16",
+                "days": 2,
+                "random_days": 2
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

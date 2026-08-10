@@ -1,0 +1,33 @@
+{
+    "name": "Air Tech",
+    "category": "bba_air_techs",
+
+    "x": 6,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+
+    "on_research_complete": {
+        "swap_ideas": {
+            "remove_idea": "IDEA_ALL_TECH_AIR_GALLEON_COST_1",
+            "add_idea": "IDEA_ALL_TECH_AIR_GALLEON_COST_2"
+        }
+    },
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1003
+}

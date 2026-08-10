@@ -1,0 +1,48 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 1,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete": {
+        "set_country_leader_ideology": "transcendence_swarm",
+        "hidden_effect": {
+            "// set_popularities": {
+                "transcendence": 100
+            },
+            "// set_politics": {
+                "ruling_party": "transcendence"
+            }
+        },
+        "add_ideas": "IDEA_ALL_IDEOLOGY_SWARM"
+    },
+
+    "allow": {
+        "NOT": {
+            "has_government": "transcendence"
+        }
+    },
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 200.0,
+    "start_year": 1006
+}

@@ -1,0 +1,41 @@
+{
+    "name": "General Magic Academy",
+    "category": "electronics",
+
+    "x": 8,
+    "y": 3,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "production_factory_max_efficiency_factor": 0.1,
+    "production_lack_of_resource_penalty_factor": -0.2,
+    "training_time_factor": -0.15,
+    "minimum_training_level": -0.03,
+    "max_training": 0.1,
+    "country_resource_crystals": 5,
+    "supply_consumption_factor": 0.1,
+    "special_project_specialization": [
+        "specialization_magic"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_MODERN",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_DARKMAGIC",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.5,
+    "start_year": 1001
+}

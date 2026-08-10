@@ -1,0 +1,2097 @@
+{
+    "C18_KIRINS_PASS_ON": {
+        "C18": {
+            "retire_character": "CHARACTER_RAIN_SHINE",
+            "promote_character": {
+                "character": "CHARACTER_AUTUMN_BLAZE",
+                "ideology": "peacism_dogmatism"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_RETIRED"
+        }
+    },
+    "C18_REGIONAL_DEV_INIT_REGIONS": {
+        "clear_array": "C18.ARRAY_REGIONAL_DEV_REGIONS",
+        "add_to_array": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 1
+        },
+        "add_to_array__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 2
+        },
+        "add_to_array__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 3
+        },
+        "add_to_array__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 4
+        },
+        "add_to_array__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 5
+        },
+        "add_to_array__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS": 6
+        },
+        "clear_array__D1": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+        "add_to_array__D6": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_1": 772
+        },
+        "add_to_array__D7": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_1": 883
+        },
+        "add_to_array__D8": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_1": 211
+        },
+        "clear_array__D2": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+        "add_to_array__D9": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_2": 773
+        },
+        "add_to_array__D10": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_2": 779
+        },
+        "add_to_array__D11": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_2": 208
+        },
+        "add_to_array__D12": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_2": 173
+        },
+        "add_to_array__D13": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_2": 213
+        },
+        "clear_array__D3": "C18.ARRAY_REGIONAL_DEV_STATES_3",
+        "add_to_array__D14": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 770
+        },
+        "add_to_array__D15": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 739
+        },
+        "add_to_array__D16": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 131
+        },
+        "add_to_array__D17": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 734
+        },
+        "add_to_array__D18": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 756
+        },
+        "add_to_array__D19": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 784
+        },
+        "add_to_array__D20": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_3": 628
+        },
+        "clear_array__D4": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+        "add_to_array__D21": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 203
+        },
+        "add_to_array__D22": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 217
+        },
+        "add_to_array__D23": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 788
+        },
+        "add_to_array__D24": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 179
+        },
+        "add_to_array__D25": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 787
+        },
+        "add_to_array__D26": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 793
+        },
+        "add_to_array__D27": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 205
+        },
+        "add_to_array__D28": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 820
+        },
+        "add_to_array__D29": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 184
+        },
+        "add_to_array__D30": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 60
+        },
+        "add_to_array__D31": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_4": 202
+        },
+        "clear_array__D5": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+        "add_to_array__D32": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 828
+        },
+        "add_to_array__D33": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 847
+        },
+        "add_to_array__D34": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 819
+        },
+        "add_to_array__D35": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 224
+        },
+        "add_to_array__D36": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 201
+        },
+        "add_to_array__D37": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 810
+        },
+        "add_to_array__D38": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 226
+        },
+        "add_to_array__D39": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_5": 801
+        },
+        "clear_array__D6": "C18.ARRAY_REGIONAL_DEV_STATES_6",
+        "add_to_array__D40": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_6": 731
+        },
+        "add_to_array__D41": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_6": 736
+        },
+        "add_to_array__D42": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_6": 742
+        },
+        "add_to_array__D43": {
+            "C18.ARRAY_REGIONAL_DEV_STATES_6": 759
+        }
+    },
+    "C18_REGIONAL_DEV_INIT_REGIONS_NIRIKS": {
+        "clear_array": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE",
+        "add_to_array": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 0.057
+        },
+        "add_to_array__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 0.092
+        },
+        "add_to_array__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 0.21
+        },
+        "add_to_array__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 0.722
+        },
+        "add_to_array__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 0.121
+        },
+        "add_to_array__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE": 1.534
+        },
+        "clear_array__D1": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD",
+        "add_to_array__D6": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "add_to_array__D7": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "add_to_array__D8": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "add_to_array__D9": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "add_to_array__D10": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "add_to_array__D11": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD": 0
+        },
+        "clear_array__D2": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR",
+        "add_to_array__D12": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        },
+        "add_to_array__D13": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        },
+        "add_to_array__D14": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        },
+        "add_to_array__D15": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        },
+        "add_to_array__D16": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        },
+        "add_to_array__D17": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR": 1.07
+        }
+    },
+    "C18_REGIONAL_DEV_COMPUTE_KIRINS": {
+        "clear_array": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY",
+        "add_to_array": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0"
+        },
+        "add_to_array__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1"
+        },
+        "add_to_array__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2"
+        },
+        "add_to_array__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3"
+        },
+        "add_to_array__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4"
+        },
+        "add_to_array__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5"
+        },
+        "add_to_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^0"
+        },
+        "add_to_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^1"
+        },
+        "add_to_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^2"
+        },
+        "add_to_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^3"
+        },
+        "add_to_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4"
+        },
+        "add_to_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^5"
+        },
+        "clear_array__D1": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY",
+        "add_to_array__D6": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "add_to_array__D7": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "add_to_array__D8": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "add_to_array__D9": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "add_to_array__D10": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "add_to_array__D11": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY": 100
+        },
+        "subtract_from_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^0": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0"
+        },
+        "subtract_from_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^1": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1"
+        },
+        "subtract_from_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^2": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2"
+        },
+        "subtract_from_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^3": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3"
+        },
+        "subtract_from_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^4": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4"
+        },
+        "subtract_from_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^5": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5"
+        }
+    },
+    "C18_REGIONAL_DEV_COMPUTE_NATIONAL_POPULATION": {
+        "set_variable": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": 0
+        },
+        "set_temp_variable": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0"
+        },
+        "multiply_temp_variable": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0"
+        },
+        "add_to_variable": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        },
+        "set_temp_variable__D1": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1"
+        },
+        "multiply_temp_variable__D1": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1"
+        },
+        "add_to_variable__D1": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        },
+        "set_temp_variable__D2": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2"
+        },
+        "multiply_temp_variable__D2": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2"
+        },
+        "add_to_variable__D2": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        },
+        "set_temp_variable__D3": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3"
+        },
+        "multiply_temp_variable__D3": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3"
+        },
+        "add_to_variable__D3": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        },
+        "set_temp_variable__D4": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4"
+        },
+        "multiply_temp_variable__D4": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4"
+        },
+        "add_to_variable__D4": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        },
+        "set_temp_variable__D5": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5"
+        },
+        "multiply_temp_variable__D5": {
+            "temp_nirik_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5"
+        },
+        "add_to_variable__D5": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO": "temp_nirik_population"
+        }
+    },
+    "C18_REGIONAL_DEV_COMPUTE_POPULATION": {
+        "clear_array": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO",
+        "set_variable": {
+            "C18.VAR_SUM_POPULATION_k": 0
+        },
+        "add_to_array": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0": "state_population_k"
+            }
+        },
+        "set_temp_variable": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^0"
+        },
+        "add_to_temp_variable": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0"
+        },
+        "divide_temp_variable": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0": "temp_population_display_factor"
+        },
+        "add_to_variable": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0"
+        },
+        "add_to_array__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop__D1": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1": "state_population_k"
+            }
+        },
+        "set_temp_variable__D1": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^1"
+        },
+        "add_to_temp_variable__D1": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1"
+        },
+        "divide_temp_variable__D1": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1": "temp_population_display_factor"
+        },
+        "add_to_variable__D1": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1"
+        },
+        "add_to_array__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop__D2": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_3",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2": "state_population_k"
+            }
+        },
+        "set_temp_variable__D2": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^2"
+        },
+        "add_to_temp_variable__D2": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2"
+        },
+        "divide_temp_variable__D2": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2": "temp_population_display_factor"
+        },
+        "add_to_variable__D2": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2"
+        },
+        "add_to_array__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop__D3": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3": "state_population_k"
+            }
+        },
+        "set_temp_variable__D3": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^3"
+        },
+        "add_to_temp_variable__D3": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3"
+        },
+        "divide_temp_variable__D3": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3": "temp_population_display_factor"
+        },
+        "add_to_variable__D3": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3"
+        },
+        "add_to_array__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop__D4": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4": "state_population_k"
+            }
+        },
+        "set_temp_variable__D4": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^4"
+        },
+        "add_to_temp_variable__D4": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4"
+        },
+        "divide_temp_variable__D4": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4": "temp_population_display_factor"
+        },
+        "add_to_variable__D4": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4"
+        },
+        "add_to_array__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": 0
+        },
+        "for_each_scope_loop__D5": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_6",
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5": "state_population_k"
+            }
+        },
+        "set_temp_variable__D5": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^5"
+        },
+        "add_to_temp_variable__D5": {
+            "temp_population_display_factor": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5"
+        },
+        "divide_temp_variable__D5": {
+            "temp_population_display_factor": 100
+        },
+        "multiply_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5": "temp_population_display_factor"
+        },
+        "add_to_variable__D5": {
+            "C18.VAR_SUM_POPULATION_k": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5"
+        },
+        "divide_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0": "C18.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1": "C18.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2": "C18.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3": "C18.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4": "C18.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5": "C18.VAR_SUM_POPULATION_k"
+        },
+        "C18_REGIONAL_DEV_COMPUTE_NATIONAL_POPULATION": true
+    },
+    "C18_REGIONAL_DEV_COMPUTE_NATIONAL_URBANIZATION": {
+        "set_variable": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": 0
+        },
+        "set_temp_variable": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0"
+        },
+        "multiply_temp_variable": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^0"
+        },
+        "add_to_variable": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        },
+        "set_temp_variable__D1": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1"
+        },
+        "multiply_temp_variable__D1": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^1"
+        },
+        "add_to_variable__D1": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        },
+        "set_temp_variable__D2": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2"
+        },
+        "multiply_temp_variable__D2": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^2"
+        },
+        "add_to_variable__D2": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        },
+        "set_temp_variable__D3": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3"
+        },
+        "multiply_temp_variable__D3": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^3"
+        },
+        "add_to_variable__D3": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        },
+        "set_temp_variable__D4": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4"
+        },
+        "multiply_temp_variable__D4": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^4"
+        },
+        "add_to_variable__D4": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        },
+        "set_temp_variable__D5": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5"
+        },
+        "multiply_temp_variable__D5": {
+            "temp_urban_population": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^5"
+        },
+        "add_to_variable__D5": {
+            "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO": "temp_urban_population"
+        }
+    },
+    "C18_REGIONAL_DEV_COMPUTE_URBANIZATION": {
+        "clear_array": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT",
+        "clear_array__D1": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT",
+        "clear_array__D2": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO",
+        "add_to_array": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^0": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0"
+        },
+        "set_temp_variable": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^0"
+        },
+        "add_to_temp_variable": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^0"
+        },
+        "divide_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^0": "temp_urbanization_count"
+        },
+        "add_to_array__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop__D1": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^1": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1"
+        },
+        "set_temp_variable__D1": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^1"
+        },
+        "add_to_temp_variable__D1": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^1"
+        },
+        "divide_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^1": "temp_urbanization_count"
+        },
+        "add_to_array__D6": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D7": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop__D2": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_3",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^2": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D8": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2"
+        },
+        "set_temp_variable__D2": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^2"
+        },
+        "add_to_temp_variable__D2": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^2"
+        },
+        "divide_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^2": "temp_urbanization_count"
+        },
+        "add_to_array__D9": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D10": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop__D3": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^3": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D11": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3"
+        },
+        "set_temp_variable__D3": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^3"
+        },
+        "add_to_temp_variable__D3": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^3"
+        },
+        "divide_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^3": "temp_urbanization_count"
+        },
+        "add_to_array__D12": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D13": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop__D4": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^4": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D14": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4"
+        },
+        "set_temp_variable__D4": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^4"
+        },
+        "add_to_temp_variable__D4": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^4"
+        },
+        "divide_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^4": "temp_urbanization_count"
+        },
+        "add_to_array__D15": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT": "C18.VAR_URBANIZATION_BASE_RURAL_PER_REGION"
+        },
+        "add_to_array__D16": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT": "C18.VAR_URBANIZATION_BASE_URBAN_PER_REGION"
+        },
+        "for_each_scope_loop__D5": {
+            "array": "C18.ARRAY_REGIONAL_DEV_STATES_6",
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^5": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            },
+            "add_to_variable__D1": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.industrial_complex_level"
+            },
+            "add_to_variable__D2": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.arms_factory_level"
+            },
+            "add_to_variable__D3": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.building_level@dockyard"
+            },
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable__D4": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.VAR_NUM_RESEARCHS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable__D5": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable__D6": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            },
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable__D7": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        },
+        "add_to_array__D17": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5"
+        },
+        "set_temp_variable__D5": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_URBAN_COUNT^5"
+        },
+        "add_to_temp_variable__D5": {
+            "temp_urbanization_count": "C18.ARRAY_REGIONAL_DEV_REGIONS_RURAL_COUNT^5"
+        },
+        "divide_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^5": "temp_urbanization_count"
+        },
+        "C18_REGIONAL_DEV_COMPUTE_NATIONAL_URBANIZATION": true
+    },
+    "C18_INIT_CURE": {
+        "set_variable": {
+            "C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT": 60
+        },
+        "set_variable__D1": {
+            "C18.VAR_STREAM_OF_SILENCE_CURE_SPEED": 1
+        }
+    },
+    "C18_PRODUCE_CURE": {
+        "COMPUTE_NUM_FARMS": true,
+        "set_temp_variable": {
+            "temp_num_cure_per_month": "VAR_NUM_FARMS_OWNED"
+        },
+        "multiply_temp_variable": {
+            "temp_num_cure_per_month": "C18.VAR_STREAM_OF_SILENCE_CURE_SPEED"
+        },
+        "round_temp_variable": "temp_num_cure_per_month",
+        "clamp_temp_variable": {
+            "var": "temp_num_cure_per_month",
+            "min": 0,
+            "max": "C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT"
+        },
+        "add_to_variable": {
+            "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE": "temp_num_cure_per_month"
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_C18_FLOWER_MARKET_1"
+            },
+            "add_to_variable": {
+                "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE": -10
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_C18_FLOWER_MARKET_2"
+            },
+            "add_to_variable": {
+                "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE": -3
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_C18_FLOWER_MARKET_3"
+            },
+            "add_to_variable": {
+                "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE": -1
+            }
+        },
+        "clamp_variable": {
+            "var": "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE",
+            "min": 0
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+    },
+    "C18_REGIONAL_DEV_COMPUTE_NIRIK_MODIFIER": {
+        "set_temp_variable": {
+            "nirik_100": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO"
+        },
+        "divide_temp_variable": {
+            "nirik_100": 100
+        },
+        "set_variable": {
+            "C18.VAR_NIRIK_STABILITY": "nirik_100"
+        },
+        "multiply_variable": {
+            "C18.VAR_NIRIK_STABILITY": "C18.VAR_NIRIK_STABILITY_FACTOR"
+        },
+        "set_variable__D1": {
+            "C18.VAR_NIRIK_CONSCRIPTION": "nirik_100"
+        },
+        "multiply_variable__D1": {
+            "C18.VAR_NIRIK_CONSCRIPTION": "C18.VAR_NIRIK_CONSCRIPTION_FACTOR"
+        },
+        "set_variable__D2": {
+            "C18.VAR_NIRIK_CONSTRUCTION": "nirik_100"
+        },
+        "multiply_variable__D2": {
+            "C18.VAR_NIRIK_CONSTRUCTION": "C18.VAR_NIRIK_CONSTRUCTION_FACTOR"
+        },
+        "set_variable__D3": {
+            "C18.VAR_NIRIK_FACTORY": "nirik_100"
+        },
+        "multiply_variable__D3": {
+            "C18.VAR_NIRIK_FACTORY": "C18.VAR_NIRIK_FACTORY_FACTOR"
+        },
+        "set_variable__D4": {
+            "C18.VAR_NIRIK_DOCKYARD": "nirik_100"
+        },
+        "multiply_variable__D4": {
+            "C18.VAR_NIRIK_DOCKYARD": "C18.VAR_NIRIK_DOCKYARD_FACTOR"
+        },
+        "set_variable__D5": {
+            "C18.VAR_NIRIK_TRAINING": "nirik_100"
+        },
+        "multiply_variable__D5": {
+            "C18.VAR_NIRIK_TRAINING": "C18.VAR_NIRIK_TRAINING_FACTOR"
+        },
+        "set_variable__D6": {
+            "C18.VAR_NIRIK_POLITICAL_COST": "C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO"
+        },
+        "multiply_variable__D6": {
+            "C18.VAR_NIRIK_POLITICAL_COST": "C18.VAR_NIRIK_POLITICAL_COST_FACTOR"
+        }
+    },
+    "C18_INIT_UNLEASH_YOUR_INNER_NIRIKS": {
+        "set_variable": {
+            "C18.VAR_NIRIK_STABILITY_FACTOR": -4
+        },
+        "set_variable__D1": {
+            "C18.VAR_NIRIK_CONSCRIPTION_FACTOR": 1
+        },
+        "set_variable__D2": {
+            "C18.VAR_NIRIK_CONSTRUCTION_FACTOR": -1.5
+        },
+        "set_variable__D3": {
+            "C18.VAR_NIRIK_FACTORY_FACTOR": -1.5
+        },
+        "set_variable__D4": {
+            "C18.VAR_NIRIK_DOCKYARD_FACTOR": -1.5
+        },
+        "set_variable__D5": {
+            "C18.VAR_NIRIK_TRAINING_FACTOR": -0.5
+        },
+        "set_variable__D6": {
+            "C18.VAR_NIRIK_STABILITY_BASE": 0.75
+        },
+        "set_variable__D7": {
+            "C18.VAR_NIRIK_POLITICAL_COST_FACTOR": 0.15
+        },
+        "set_stability": "C18.VAR_NIRIK_STABILITY_BASE",
+        "C18_REGIONAL_DEV_COMPUTE_NIRIK_MODIFIER": true
+    },
+    "C18_REGIONAL_DEV_COMPUTE_UBRAN_MODIFIER": {
+        "set_temp_variable": {
+            "urban_100": "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO"
+        },
+        "subtract_from_temp_variable": {
+            "urban_100": 0.25
+        },
+        "clamp_temp_variable": {
+            "var": "urban_100",
+            "min": 0.0
+        },
+        "set_variable": {
+            "C18.VAR_URBAN_CONSTRUCTION": "urban_100"
+        },
+        "multiply_variable": {
+            "C18.VAR_URBAN_CONSTRUCTION": "C18.VAR_URBAN_CONSTRUCTION_FACTOR"
+        },
+        "set_variable__D1": {
+            "C18.VAR_URBAN_FACTORY": "urban_100"
+        },
+        "multiply_variable__D1": {
+            "C18.VAR_URBAN_FACTORY": "C18.VAR_URBAN_FACTORY_FACTOR"
+        },
+        "set_variable__D2": {
+            "C18.VAR_URBAN_DOCKYARD": "urban_100"
+        },
+        "multiply_variable__D2": {
+            "C18.VAR_URBAN_DOCKYARD": "C18.VAR_URBAN_DOCKYARD_FACTOR"
+        },
+        "set_variable__D3": {
+            "C18.VAR_URBAN_REPAIR": "urban_100"
+        },
+        "multiply_variable__D3": {
+            "C18.VAR_URBAN_REPAIR": "C18.VAR_URBAN_REPAIR_FACTOR"
+        },
+        "set_variable__D4": {
+            "C18.VAR_URBAN_SELF_REPAIR": "urban_100"
+        },
+        "multiply_variable__D4": {
+            "C18.VAR_URBAN_SELF_REPAIR": "C18.VAR_URBAN_SELF_REPAIR_FACTOR"
+        },
+        "set_variable__D5": {
+            "C18.VAR_URBAN_RESOURCE": "urban_100"
+        },
+        "multiply_variable__D5": {
+            "C18.VAR_URBAN_RESOURCE": "C18.VAR_URBAN_RESOURCE_FACTOR"
+        },
+        "set_variable__D6": {
+            "C18.VAR_URBAN_SUPPLY_RANGE": "urban_100"
+        },
+        "multiply_variable__D6": {
+            "C18.VAR_URBAN_SUPPLY_RANGE": "C18.VAR_URBAN_SUPPLY_RANGE_FACTOR"
+        },
+        "set_variable__D7": {
+            "C18.VAR_URBAN_POLITICAL_GAIN": "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO"
+        },
+        "multiply_variable__D7": {
+            "C18.VAR_URBAN_POLITICAL_GAIN": 100.0
+        },
+        "subtract_from_variable": {
+            "C18.VAR_URBAN_POLITICAL_GAIN": 25.0
+        },
+        "clamp_variable": {
+            "var": "C18.VAR_URBAN_POLITICAL_GAIN",
+            "min": 0.0
+        },
+        "multiply_variable__D8": {
+            "C18.VAR_URBAN_POLITICAL_GAIN": "C18.VAR_URBAN_POLITICAL_GAIN_FACTOR"
+        }
+    },
+    "C18_INIT_URBANIZATION_MODIFIERS": {
+        "set_variable": {
+            "C18.VAR_URBAN_CONSTRUCTION_FACTOR": 1.0
+        },
+        "set_variable__D1": {
+            "C18.VAR_URBAN_FACTORY_FACTOR": 0.5
+        },
+        "set_variable__D2": {
+            "C18.VAR_URBAN_DOCKYARD_FACTOR": 0.5
+        },
+        "set_variable__D3": {
+            "C18.VAR_URBAN_REPAIR_FACTOR": 0.5
+        },
+        "set_variable__D4": {
+            "C18.VAR_URBAN_SELF_REPAIR_FACTOR": 0.4
+        },
+        "set_variable__D5": {
+            "C18.VAR_URBAN_RESOURCE_FACTOR": 0.4
+        },
+        "set_variable__D6": {
+            "C18.VAR_URBAN_SUPPLY_RANGE_FACTOR": 2.0
+        },
+        "set_variable__D7": {
+            "C18.VAR_URBAN_POLITICAL_GAIN_FACTOR": 0.02
+        },
+        "C18_REGIONAL_DEV_COMPUTE_UBRAN_MODIFIER": true
+    },
+    "C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0": 0.990
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_1"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0": 1.005
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1": 0.99
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_2"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1": 1.005
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2": 0.99
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_3"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2": 1.005
+            }
+        },
+        "if__D3": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3": 0.99
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_4"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3": 1.005
+            }
+        },
+        "if__D4": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 0.99
+            }
+        },
+        "else_if__D4": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_5"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 1.005
+            }
+        },
+        "if__D5": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5",
+                    "value": 30,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5": 0.99
+            }
+        },
+        "else_if__D5": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5",
+                    "value": 30,
+                    "compare": "less_than"
+                },
+                "check_variable__D1": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5",
+                    "value": 1.02,
+                    "compare": "less_than"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_6"
+                },
+                "NOT__D1": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5": 1.005
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH_FAILSAFE": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0": 0.990
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1": 0.990
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2": 0.990
+            }
+        },
+        "if__D3": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3": 0.990
+            }
+        },
+        "if__D4": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 0.990
+            }
+        },
+        "if__D5": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5",
+                    "value": 1.105,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+                }
+            },
+            "multiply_variable": {
+                "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5": 0.990
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_UPDATE_NIRIKS": {
+        "multiply_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0"
+        },
+        "clamp_variable": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0",
+            "min": 0.005,
+            "max": 100.0
+        },
+        "multiply_variable__D1": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1"
+        },
+        "clamp_variable__D1": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1",
+            "min": 0.005,
+            "max": 100.0
+        },
+        "multiply_variable__D2": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2"
+        },
+        "clamp_variable__D2": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2",
+            "min": 0.005,
+            "max": 100.0
+        },
+        "multiply_variable__D3": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3"
+        },
+        "clamp_variable__D3": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3",
+            "min": 0.005,
+            "max": 100.0
+        },
+        "multiply_variable__D4": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4"
+        },
+        "clamp_variable__D4": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+            "min": 0.005,
+            "max": 100.0
+        },
+        "multiply_variable__D5": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5"
+        },
+        "clamp_variable__D5": {
+            "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5",
+            "min": 0.005,
+            "max": 100.0
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_1": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_1",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_2": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_2",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_3": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_3",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_3",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_4": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_5": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_5",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_6": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5",
+                    "value": 25.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_6",
+                "random": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.50
+                    }
+                },
+                "random__D1": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.30
+                    }
+                },
+                "random__D2": {
+                    "chance": 75,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.20
+                    }
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5",
+                    "value": 10.0,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "for_each_scope_loop": {
+                "array": "C18.ARRAY_REGIONAL_DEV_STATES_6",
+                "random": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "infrastructure",
+                        "damage": 0.10
+                    }
+                },
+                "random__D1": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "industrial_complex",
+                        "damage": 0.10
+                    }
+                },
+                "random__D2": {
+                    "chance": 50,
+                    "damage_building": {
+                        "type": "farm_complex",
+                        "damage": 0.10
+                    }
+                }
+            }
+        }
+    },
+    "C18_REGIONAL_DEV_BUILDINGS_DAMAGE": {
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_1": true,
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_2": true,
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_3": true,
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_4": true,
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_5": true,
+        "C18_REGIONAL_DEV_BUILDINGS_DAMAGE_6": true
+    },
+    "C18_REGIONAL_DEV_COMPUTE": {
+        "C18_REGIONAL_DEV_COMPUTE_KIRINS": true,
+        "C18_REGIONAL_DEV_COMPUTE_POPULATION": true,
+        "C18_REGIONAL_DEV_COMPUTE_URBANIZATION": true,
+        "C18_REGIONAL_DEV_COMPUTE_NIRIK_MODIFIER": true,
+        "C18_REGIONAL_DEV_COMPUTE_UBRAN_MODIFIER": true
+    },
+    "C18_REGIONAL_DEV_UPDATE": {
+        "C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH": true,
+        "C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH_FAILSAFE": true,
+        "C18_REGIONAL_DEV_UPDATE_NIRIKS": true,
+        "C18_REGIONAL_DEV_COMPUTE": true
+    },
+    "C18_SENDAK": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED",
+        "114": {
+            "REMOVE_FROM_C00_WASTELAND": true,
+            "transfer_state_to": "C37",
+            "set_state_name": "STATE_114_SENDAK",
+            "set_victory_points": {
+                "province": 2415,
+                "value": 5
+            },
+            "set_province_name": {
+                "id": 2415,
+                "name": "STATE_114_SENDAK"
+            },
+            "add_building_construction": {
+                "type": "naval_base",
+                "instant_build": true,
+                "level": 1,
+                "province": 4484
+            }
+        },
+        "167": {
+            "remove_core_of": "C25",
+            "transfer_state_to": "C37",
+            "set_state_name": "STATE_167_SENDAK",
+            "set_victory_points": {
+                "province": 5258,
+                "value": 10
+            },
+            "add_extra_state_shared_building_slots": 6,
+            "add_building_construction": {
+                "type": "supply_node",
+                "instant_build": true,
+                "level": 1,
+                "province": 5258
+            },
+            "add_building_construction__D1": {
+                "type": "naval_base",
+                "instant_build": true,
+                "level": 1,
+                "province": 4166
+            },
+            "add_building_construction__D2": {
+                "type": "dockyard",
+                "instant_build": true,
+                "level": 1
+            },
+            "add_building_construction__D3": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            }
+        },
+        "799": {
+            "REMOVE_FROM_C00_WASTELAND": true,
+            "transfer_state_to": "C37",
+            "set_state_name": "STATE_799_SENDAK",
+            "set_victory_points": {
+                "province": 14199,
+                "value": 15
+            },
+            "set_province_name": {
+                "id": 14199,
+                "name": "STATE_799_SENDAK"
+            }
+        },
+        "C37": {
+            "set_capital": { "state": 799 },
+            "load_oob": "C37_sendak",
+            "799": {
+                "create_unit": {
+                    "division": "name = \"僧达克密教团 (Sendak Cult)\" division_template = \"黑魔法教团 (Dark Magic Cult)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C37",
+                    "count": 4
+                }
+            },
+            "167": {
+                "create_unit": {
+                    "division": "name = \"僧达克密教团 (Sendak Cult)\" division_template = \"黑魔法教团 (Dark Magic Cult)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C37",
+                    "count": 2
+                }
+            },
+            "add_offsite_building": {
+                "type": "arms_factory",
+                "level": 2
+            },
+            "add_offsite_building__D1": {
+                "type": "industrial_complex",
+                "level": 5
+            }
+        },
+        "C18": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED",
+            "country_event": {
+                "id": "C18_MAIN.8"
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "C18_LESS_ATTENTION_1": {
+        "custom_effect_tooltip": "C18_LESS_ATTENTION_1_TOOLTIP",
+        "subtract_from_variable": {
+            "var": "C18.VAR_ATTENTION_OF_THE_CENTAURS",
+            "value": 1
+        }
+    },
+    "C18_DRAW_ATTENTION_1": {
+        "custom_effect_tooltip": "C18_DRAW_ATTENTION_1_TOOLITP",
+        "add_to_variable": {
+            "var": "C18.VAR_ATTENTION_OF_THE_CENTAURS",
+            "value": 1
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.VAR_ATTENTION_OF_THE_CENTAURS",
+                    "value": 3,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED"
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C18_MAIN.58",
+                    "days": 7,
+                    "random_days": 21
+                }
+            }
+        }
+    },
+    "C18_DRAW_ATTENTION_2": {
+        "custom_effect_tooltip": "C18_DRAW_ATTENTION_2_TOOLITP",
+        "add_to_variable": {
+            "var": "C18.VAR_ATTENTION_OF_THE_CENTAURS",
+            "value": 2
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C18.VAR_ATTENTION_OF_THE_CENTAURS",
+                    "value": 3,
+                    "compare": "greater_than_or_equals"
+                },
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED"
+                }
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C18_MAIN.58",
+                    "days": 7,
+                    "random_days": 21
+                }
+            }
+        }
+    },
+    "C18_CONVERT_A_FARM_TO_CIV_IN_STATE": {
+        "remove_building": {
+            "type": "farm_complex",
+            "level": 1
+        },
+        "add_building_construction": {
+            "type": "industrial_complex",
+            "level": 1,
+            "instant_build": true
+        }
+    },
+    "C18_TIREK": {
+        "hidden_effect": {
+            "C18": {
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_FAKE_NUKE_DROP",
+                    "days": 1,
+                    "value": 1
+                }
+            },
+            "C22": {
+                "declare_war_on": {
+                    "target": "C18",
+                    "type": "annex_everything"
+                },
+                "declare_war_on__D1": {
+                    "target": "C37",
+                    "type": "annex_everything"
+                },
+                "launch_nuke": {
+                    "state": 772,
+                    "controller": "C18"
+                },
+                "launch_nuke__D1": {
+                    "state": 799,
+                    "controller": "C37"
+                }
+            },
+            "country_event": {
+                "id": "C18_MAIN.82",
+                "hours": 7
+            }
+        }
+    }
+}

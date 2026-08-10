@@ -1,0 +1,12 @@
+objectTypes = {
+	pdxmesh = {
+		name = "building_pihc_bgfx_fog"
+		file = "gfx/models/test_object.mesh"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "pihc_bgfx_fog_particle"
+		type = "pihc_bgfx_fog_file"
+		scale = 0.7
+	}
+}

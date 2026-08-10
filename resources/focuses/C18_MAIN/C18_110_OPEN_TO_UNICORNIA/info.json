@@ -1,0 +1,26 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_110_DUI",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C18_110_DUI"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "country_event": {
+            "id": "C18_MAIN.126"
+        }
+    },
+    "available": {
+        "country_exists": "C34",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_variable": {
+                "var": "VAR_ZAP_APPLES_HARVEST",
+                "value": 1.5
+            },
+            "CALCULATE_ZAP_APPLES_YEARLY": true,
+            "add_to_variable": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE",
+                "value": "VAR_ZAP_APPLES_YEARLY"
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "custom_effect_tooltip": "EVENT_C14_MAIN_3_TOOLTIP"
+        }
+    ],
+    "is_triggered_only": true
+}

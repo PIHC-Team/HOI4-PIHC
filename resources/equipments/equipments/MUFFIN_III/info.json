@@ -1,0 +1,14 @@
+{
+    "name": "Muffins",
+    "parent": "EQUIPMENT_MUFFIN_II",
+
+    "build_cost_ic": 400.00,
+    "lend_lease_cost": 2.0,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 1.0,
+    
+    "resources": {
+        "logs": 18
+    }
+}

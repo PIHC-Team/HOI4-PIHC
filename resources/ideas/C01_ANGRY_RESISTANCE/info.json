@@ -1,0 +1,11 @@
+{
+    "name": "Angry",
+    "removal_cost": -1,
+    "modifier": {
+        "resistance_target": 0.1,
+        "resistance_decay": -0.2,
+        "resistance_growth": 0.2,
+        "required_garrison_factor": 0.1,
+        "compliance_growth": 0.4
+    }
+}

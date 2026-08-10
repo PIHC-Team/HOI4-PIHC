@@ -1,0 +1,110 @@
+{
+    "name": "Ponyville War Order",
+    "priority": 110,
+    
+    "cost": 150,
+    "days_remove": 7,
+    "fire_only_once": true,
+    "visible": {
+        "has_completed_focus": "FOCUS_C01_C02_PHASE_II"
+    },
+    "available": {
+        "504": {
+            "is_owned_by": "C02"
+        },
+        "C02": {
+            "has_war_with": "C08",
+            "has_country_leader": {
+                "character": "CHARACTER_TRIXIE_LULAMOON",
+                "ruling_only": true
+            }
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C01_C02_OPERATION_GREENLIGHT_TRIGGER_TOOLTIP",
+            "C02": {
+                "NOT": {
+                    "AND": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_DISARMED",
+                        "C02":{
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED"
+                },
+                        "has_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED",
+                        "has_country_flag__D3": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_DISARMED",
+                        "has_country_flag__D4": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED"
+                    }
+                }
+            }
+        },
+        "OR": {
+            "504": {
+                "C08": {
+                    "any_allied_country": {
+                        "num_divisions_in_states": {
+                            "states": [504],
+                            "count > 0": null
+                        }
+                    }
+                }
+            },
+            "529": {
+                "C08": {
+                    "any_allied_country": {
+                        "num_divisions_in_states": {
+                            "states": [529],
+                            "count > 0": null
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "C02": {
+                "country_event": {
+                    "id": "C01_C02_GREENLIGHT.34"
+                }
+            },
+            "C08": {
+                "country_event": {
+                    "id": "C01_C02_GREENLIGHT.34"
+                }
+            }
+        }
+    },
+    "remove_effect": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_DISARMED",
+                    "C02":{
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED"
+                },
+                    "has_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED",
+                    "has_country_flag__D3": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_DISARMED",
+                    "has_country_flag__D4": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED"
+                }
+            },
+            "C02": {
+                "news_event": {
+                    "id": "SUPER_NEWS.10",
+                    "days": 1
+                }
+            }
+        },
+        "else": {
+            "C02": {
+                "news_event": {
+                    "id": "SUPER_NEWS.11",
+                    "days": 1
+                },
+                "news_event__D1": {
+                    "id": "C01_C02_GREENLIGHT.6"
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 10000
+    }
+}

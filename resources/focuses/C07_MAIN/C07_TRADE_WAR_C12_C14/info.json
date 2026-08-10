@@ -1,0 +1,79 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_TRADE_INVITE_C14",
+    "priority": 10,
+    "dx": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C07_TRADE_INVITE_C14"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C07_TRADE_INVITE_C12"
+    },
+    "cost": 12,
+    "will_lead_to_war_with": "C14",
+    "will_lead_to_war_with__D1": "C12",
+    "completion_reward": {
+        "create_faction": "FACTION_WESTERN_ALLIANCE",
+        "create_wargoal": {
+            "type": "trade_request_wargoal",
+            "target": "C14"
+        },
+        "create_wargoal__D1": {
+            "type": "trade_request_wargoal",
+            "target": "C12"
+        }
+    },
+    "available": {
+        "OR": {
+            "custom_trigger_tooltip": {
+                "tooltip": "FOCUS_C07_TRADE_WAR_C12_C14_TOOLTIP_C14",
+                "C14": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C14_REJECT_WETA"
+                }
+            },
+            "custom_trigger_tooltip__D1": {
+                "tooltip": "FOCUS_C07_TRADE_WAR_C12_C14_TOOLTIP_C12",
+                "C12": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C12_REJECT_WETA"
+                }
+            }
+        },
+        "hidden_trigger": {
+            "OR": {
+                "AND": {
+                    "C12": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C12_REJECT_WETA"
+                    },
+                    "C14": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C14_REJECT_WETA"
+                    }
+                },
+                "AND__D1": {
+                    "C12": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C12_ACCEPT_WETA"
+                    },
+                    "C14": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C14_REJECT_WETA"
+                    }
+                },
+                "AND__D2": {
+                    "C12": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C12_REJECT_WETA"
+                    },
+                    "C14": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C14_ACCEPT_WETA"
+                    }
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

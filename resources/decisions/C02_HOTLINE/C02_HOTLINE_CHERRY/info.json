@@ -1,0 +1,64 @@
+{
+    "name": "Pear Hotline",
+    "priority": 100,
+    
+    "cost": 75,
+    "days_re_enable": 70,
+    "visible": {
+        "tag": "C02",
+        "has_completed_focus": "FOCUS_C02_APPLE_INSULT",
+        "OR": {
+            "579": {
+                "is_demilitarized_zone": true
+            },
+            "590": {
+                "is_demilitarized_zone": true
+            },
+            "C14": {
+                "has_resources_rights": {
+                    "state": 579
+                }
+            },
+            "C14__D1": {
+                "has_resources_rights": {
+                    "state": 590
+                }
+            }
+        }
+    },
+    "available": {
+        "num_divisions_in_states": {
+            "count > 0": null,
+            "states": [579]
+        },
+        "num_divisions_in_states__D1": {
+            "count > 0": null,
+            "states": [590]
+        }
+    },
+    "complete_effect": {
+        "579": {
+            "if": {
+                "limit": {
+                    "is_demilitarized_zone": true
+                },
+                "set_demilitarized_zone": false
+            }
+        },
+        "590": {
+            "if": {
+                "limit": {
+                    "is_demilitarized_zone": true
+                },
+                "set_demilitarized_zone": false
+            }
+        },
+        "C14": {
+            "remove_resource_rights": 579,
+            "remove_resource_rights__D1": 590
+        }
+    },
+    "ai_will_do": {
+        "base": 100
+    }
+}

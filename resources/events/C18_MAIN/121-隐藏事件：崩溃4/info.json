@@ -1,0 +1,74 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "736": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "628": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "770": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "756": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "883": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "828": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "country_event": {
+                "id": "C18_MAIN.122",
+                "days": 7
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

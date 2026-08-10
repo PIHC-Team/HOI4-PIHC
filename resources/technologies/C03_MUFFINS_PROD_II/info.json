@@ -1,0 +1,43 @@
+{
+    "name": "Muffins",
+    "category": "muffins",
+
+    "x": 4,
+    "y": 15,
+
+    "categories": [
+        "pihc_all",
+        "pihc_muffins"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_MUFFIN_II"
+    ],
+    "on_research_complete": {
+        "hidden_effect": {
+            "add_equipment_production": {
+                "equipment": {
+                    "type": "EQUIPMENT_MUFFIN_II",
+                    "creator": "C03"
+                },
+                "requested_factories": 15,
+                "progress": 0.0,
+                "efficiency": 100
+            }
+        }
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_C03_MUFFINS_PROD_III",
+        "research_cost_coeff": 1
+    },
+
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 1000,
+            "tag": "C03"
+        }
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1005
+}

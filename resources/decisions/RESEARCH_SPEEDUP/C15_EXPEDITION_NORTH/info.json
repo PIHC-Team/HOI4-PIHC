@@ -1,0 +1,40 @@
+{
+    "name": "Royal Speech",
+    "priority": 100,
+    
+    "cost": 50,
+    "days_remove": 60,
+    "visible": {
+        "tag": "C15"
+    },
+    "available": {
+        "265": {
+            "is_owned_and_controlled_by": "C15"
+        },
+        "288": {
+            "is_owned_and_controlled_by": "C15"
+        },
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C15_MAIN.1"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    },
+    "fire_only_once": true
+}

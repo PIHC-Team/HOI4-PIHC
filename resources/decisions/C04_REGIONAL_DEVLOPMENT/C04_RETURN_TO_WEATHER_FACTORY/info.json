@@ -1,0 +1,55 @@
+{
+    "name": "Return Home",
+    "priority": 100,
+    
+    "cost": 75,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_RETURN_TO_WEATHER_FACTORY",
+        "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C04_BY_ELECTION",
+        "any_state_in": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_2",
+            "is_core_of": "C04",
+            "is_owned_by": "C04"
+        },
+        "any_state_in__D1": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_5",
+            "is_core_of": "C04",
+            "is_owned_by": "C04"
+        }
+    },
+    "available": {
+        "any_state_in": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_2",
+            "is_core_of": "C04",
+            "is_owned_by": "C04"
+        },
+        "any_state_in__D1": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_5",
+            "is_core_of": "C04",
+            "is_owned_by": "C04"
+        }
+    },
+    "complete_effect": {
+        "add_ideas": "IDEA_C04_RETURN_HOME",
+        "C04_DEL_ECO_2_5": true,
+        "376": {
+            "add_state_modifier": {
+                "modifier": {
+                    "local_manpower": -0.10
+                }
+            }
+        },
+        "C04_ADD_ECO_5_5": true,
+        "365": {
+            "add_state_modifier": {
+                "modifier": {
+                    "local_manpower": 0.20
+                }
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 3
+    }
+}

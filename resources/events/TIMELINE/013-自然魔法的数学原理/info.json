@@ -1,0 +1,44 @@
+{
+    "category": "news",
+    "date": "1004.07.05",
+    "date_scope": "C23",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C23"
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_MODERN_MAGIC_THEORY_PROPOSED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "Ç23"
+                }
+            },
+            "add_tech_bonus": {
+                "bonus": 0.5,
+                "technology": "TECHNOLOGY_TECH_MAGI_MODERN"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "Ç23"
+            },
+            "set_technology": {
+                "TECHNOLOGY_TECH_MAGI_MODERN": 1
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

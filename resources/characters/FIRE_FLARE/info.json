@@ -1,0 +1,22 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "all",
+        "traits": [
+            "TRAIT_FIRE_FLARE_FIREWORKS",
+            "TRAIT_EXPERIENCED_COMMANDER"
+        ],
+        "on_add": {
+            "owner": {
+                "add_tech_bonus": {
+                    "bonus": 0.5,
+                    "uses": 2,
+                    "category": "pihc_firearm",
+                    "name": "TRAIT_FIRE_FLARE_FIREWORKS"
+                }
+            }
+        },
+        "can_be_fired": false
+    }
+}

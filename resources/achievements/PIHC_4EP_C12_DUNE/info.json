@@ -1,0 +1,15 @@
+{
+    "possible": {
+        "difficulty > 1": null,
+        "has_start_date < 1002.12.2": null,
+        "has_any_custom_difficulty_setting": false,
+        "game_rules_allow_achievements": true,
+
+        "tag": "C12"
+    },
+    "happened": {
+        "hidden_trigger": {
+            "has_tech": "TECHNOLOGY_QUARRAY_EEL"
+        }
+    }
+}

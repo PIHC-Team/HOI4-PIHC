@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "add_to_variable": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4": 0.40
+                },
+                "add_to_variable__D1": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^6": 0.02
+                },
+                "country_event": {
+                    "id": "C18_MAIN.105",
+                    "days": 7,
+                    "random_days": 14
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

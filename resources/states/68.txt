@@ -1,0 +1,43 @@
+state = {
+    id = 68
+    name = STATE_68
+    provinces = {
+        693
+        3289
+        3459
+        3686
+        3981
+        4522
+        6393
+        6495
+        7102
+        7330
+        11697
+        11703
+        11749
+        11771
+        11855
+    }
+    manpower = 30818
+    state_category = metropolis
+    history = {
+        owner = C22
+        victory_points = {
+            693
+            35
+        }
+        buildings = {
+            industrial_complex = 2
+            arms_factory = 2
+            infrastructure = 4
+            dockyard = 3
+            3459 = {
+                naval_base = 1
+            }
+        }
+        add_core_of = C22
+    }
+    resources = {
+        steel = 32
+    }
+}

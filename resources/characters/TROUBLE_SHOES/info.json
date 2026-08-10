@@ -1,0 +1,14 @@
+{
+    "name": "Trouble Shoes",
+    "gender": "male",
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "cost": 100,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_HORSESHOE_UNLUCKY",
+            "TRAIT_HORSESHOE_JOKER"
+        ]
+    }
+}

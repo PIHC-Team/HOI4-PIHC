@@ -1,0 +1,41 @@
+state = {
+    id = 460
+    name = STATE_460
+    provinces = {
+        77
+        1566
+        1584
+        2013
+        3290
+        5464
+        6089
+        6157
+        7339
+        7476
+        8904
+        9192
+        11153
+        11189
+        11252
+        11307
+        11331
+        11349
+    }
+    manpower = 28119
+    state_category = pastoral
+    history = {
+        owner = C64
+        victory_points = {
+            77
+            1
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C64
+    }
+    resources = {
+        logs = 4
+        steel = 2
+    }
+}

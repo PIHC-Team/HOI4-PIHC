@@ -1,0 +1,37 @@
+{
+    "category": "land",
+    "x": 2,
+    "y": 6,
+    "xor": [
+        "DOCTRINE_ARMY_4_3A_TACTICAL_WITHDRAW"
+    ],
+
+    "intel_network_gain_factor": 0.15,
+    "civilian_intel_to_others": -0.15,
+    "army_intel_to_others": -0.25,
+    "army_intel_decryption_bonus": 30.0,
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_breeze_of_death"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_4_4B_KEY_ATTACK",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

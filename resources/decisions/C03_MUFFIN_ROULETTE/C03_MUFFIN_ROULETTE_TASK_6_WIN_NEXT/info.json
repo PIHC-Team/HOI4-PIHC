@@ -1,0 +1,56 @@
+{
+    "name": "Muffins",
+    "priority": 100,
+    
+    "cost": 0,
+    "is_good": false,
+    "selectable_mission": false,
+    "days_mission_timeout": 60,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C03_MUFFIN_ROULETTE_TASK_6_WIN_NEXT",
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+            },
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE"
+        }
+    },
+    "cancel_trigger": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C03_MUFFIN_ROULETTE_TASK_6_WIN_NEXT",
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+            },
+            "NOT__D1": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE"
+            }
+        }
+    },
+    "complete_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE"
+            },
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE",
+            "custom_effect_tooltip": "CUSTOM_GAIN_MUFFINS_1000",
+            "add_to_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 1000
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+        }
+    },
+    "cancel_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+    },
+    "timeout_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK",
+        "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT"
+    }
+}

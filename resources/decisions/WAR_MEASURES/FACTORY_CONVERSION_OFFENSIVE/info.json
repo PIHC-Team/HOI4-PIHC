@@ -1,0 +1,18 @@
+{
+    "name": "Factory Conversion",
+    "priority": 100,
+    
+    "cost": 100,
+    "days_re_enable": 90,
+    "visible": {
+        "has_offensive_war": true
+    },
+    "available": {
+        "num_of_civilian_factories > 5": null
+    },
+    "complete_effect": {
+        "replace_civ_with_arms_factories": true,
+        "add_war_support": -0.05,
+        "add_stability": -0.03
+    }
+}

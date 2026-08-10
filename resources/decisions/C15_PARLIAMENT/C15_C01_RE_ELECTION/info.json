@@ -1,0 +1,51 @@
+{
+    "name": "Immediate Re-election",
+    "priority": 100,
+    
+    "cost": 250,
+    "days_re_enable": 120,
+    "visible": {
+        "tag": "C01"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "complete_effect": {
+        "C15": {
+            "custom_effect_tooltip": "C15_PARLIAMENT_INCREASE_EUC",
+            "hidden_effect": {
+                "multiply_variable": {
+                    "var": "C15_royal_support_factor",
+                    "value": 0.96
+                },
+                "clamp_variable": {
+                    "var": "C15_royal_support_factor",
+                    "min": 0.3,
+                    "max": 0.9
+                },
+                "C15_PARLIAMENT_CALCULATE_NEXT_ELECTION": true
+            },
+            "news_event": {
+                "id": "C15_PARLIAMENT.1",
+                "days": 1
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 5,
+            "has_political_power > 400": null
+        }
+    }
+}

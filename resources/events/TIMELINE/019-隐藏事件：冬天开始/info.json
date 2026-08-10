@@ -1,0 +1,29 @@
+{
+    "date": "1003.08.01",
+    "date_scope": "C26",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C26": {
+                "country_event": {
+                    "id": "TIMELINE.19",
+                    "days": 365
+                },
+                "news_event": {
+                    "id": "TIMELINE.20",
+                    "days": 1,
+                    "random_days": 60
+                },
+                "news_event__D1": {
+                    "id": "TIMELINE.21",
+                    "days": 153,
+                    "random_days": 90
+                }
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

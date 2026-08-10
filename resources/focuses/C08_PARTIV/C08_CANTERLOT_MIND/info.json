@@ -1,0 +1,27 @@
+{
+    "tree": "C08_PARTIV",
+    "parent": null,
+    "x": 9,
+    "y": 0,
+    "cost": 5,
+    "cancelable": false,
+    "select_effect": {
+        "country_event": {
+            "id": "C08_MAIN.83"
+        }
+    },
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_CANTERLOT_MIND_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

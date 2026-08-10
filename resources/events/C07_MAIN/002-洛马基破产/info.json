@@ -1,0 +1,29 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C07"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_C07_CIVIL_CO",
+                "add_idea": "IDEA_C07_CIVIL_CO_2"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C07"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,26 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "cost": 4,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "completion_reward": {
+        "PIHC_DOCTRINE_LAND_LARGE_BOOST": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

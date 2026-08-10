@@ -1,0 +1,70 @@
+{
+    "name": "DTANK_KMC",
+    "designer": true,
+    "category": "tank_manufacturer",
+    "traits": [
+        "tank_manufacturer",
+        "artillery_manufacturer"
+    ],
+    "cost": 50,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "C18": {
+            "has_completed_focus": "FOCUS_C18_100_MILITARY_RESEARCH"
+        }
+    },
+    "available": {
+        "country_exists": "C18",
+        "OR": {
+            "tag": "C18",
+            "C18": {
+                "has_opinion": {
+                    "target": "ROOT",
+                    "value > -21": null
+                }
+            }
+        }
+    },
+    "research_bonus": {
+        "pihc_armor": 0.20,
+        "pihc_artillery": 0.10
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_TANK_LIGHT": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_TANK_MEDIUM": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_TANK_HEAVY": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_CANNON_LIGHT": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_CANNON_MEDIUM": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_CANNON_HEAVY": {
+            "hard_attack": -0.05,
+            "soft_attack": -0.05,
+            "build_cost_ic": -0.15
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

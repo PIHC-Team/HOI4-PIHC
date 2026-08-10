@@ -1,0 +1,44 @@
+{
+    "date": "1003.09.23",
+    "date_scope": "C14",
+    "immediate": {
+        "hidden_effect": {
+            "random_list": {
+                "seed": "random",
+                "50": {
+                    "country_event": {
+                        "id": "C14_MAIN.1"
+                    }
+                },
+                "30": {
+                    "country_event": {
+                        "id": "C14_MAIN.2"
+                    }
+                },
+                "12": {
+                    "country_event": {
+                        "id": "C14_MAIN.3"
+                    }
+                },
+                "8": {
+                    "country_event": {
+                        "id": "C14_MAIN.4"
+                    }
+                }
+            },
+            "country_event": {
+                "id": "TIMELINE.17",
+                "days": 365
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true
+}

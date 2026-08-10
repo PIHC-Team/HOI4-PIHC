@@ -1,0 +1,45 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 5,
+    "y": 18,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_magical",
+        "pihc_support_teleport",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_magical": {
+        "maximum_speed": 0.25,
+        "breakthrough": 0.1
+    },
+    "enable_equipment_modules": [
+        "MODULE_TURRET_5A_TELEPORT"
+    ],
+
+    "allow": {
+        "is_magic_country": true
+    },
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_MAGIC_IV": 1,
+        "TECHNOLOGY_SUPPORT_TELEPORT_III": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1009
+}

@@ -1,0 +1,36 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_LEGACY",
+    "prerequisite": {
+        "focus": "FOCUS_C09_LEGACY"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C09_LAND_POWER_TOOLTIP",
+        "swap_ideas": {
+            "add_idea": "volunteer_only",
+            "remove_idea": "disarmed_nation"
+        },
+        "hidden_effect": {
+            "swap_ideas": {
+                "remove_idea": "IDEA_C09_SATELLITE",
+                "add_idea": "IDEA_C09_SATELLITE_2"
+            }
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_FIRELIGHT",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

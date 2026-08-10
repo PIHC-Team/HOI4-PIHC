@@ -1,0 +1,391 @@
+{
+    "BUILD_A_FARM": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "farm_complex",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_CIC": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "industrial_complex",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_MIC": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "arms_factory",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_DOCKYARD": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "dockyard",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_AN_AIR_BASE": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "air_base",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_STEEL": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "steel_works",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_AN_ALUMINIUM": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "aluminium_mill",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_COAL": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "coal_mine",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_RUBBER": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "synthetic_refinery",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_SILO": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "fuel_silo",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_RADAR": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "radar_station",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_ROCKET": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "rocket_site",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_REACTOR": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "nuclear_reactor",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_A_RESEARCH": {
+        "add_extra_state_shared_building_slots": 1,
+        "add_building_construction": {
+            "type": "research_complex",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+    "BUILD_AN_INFRA": {
+        "add_building_construction": {
+            "type": "infrastructure",
+            "instant_build": true,
+            "level": 1
+        }
+    },
+
+
+    "COMPUTE_NUM_RESEARCHES_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_RESEARCHES_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "research_complex > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_RESEARCHES_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_RESEARCHES": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_RESEARCHES_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_RESEARCHES_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_RESEARCHES_OWNED",
+                "value": "THIS.VAR_NUM_RESEARCHES_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_FARMS_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_FARMS_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "farm_complex > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_FARMS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "farm_complex > 1": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_FARMS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "farm_complex > 2": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_FARMS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_FARMS": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_FARMS_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_FARMS_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_FARMS_OWNED",
+                "value": "THIS.VAR_NUM_FARMS_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_STEEL_WORKS_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "steel_works > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "steel_works > 1": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "steel_works > 2": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_STEEL_WORKS": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_STEEL_WORKS_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_STEEL_WORKS_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_STEEL_WORKS_OWNED",
+                "value": "THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "aluminium_mill > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "aluminium_mill > 1": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "aluminium_mill > 2": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_ALUMINIUM_MILLS": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_ALUMINIUM_MILLS_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_ALUMINIUM_MILLS_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_ALUMINIUM_MILLS_OWNED",
+                "value": "THIS.VAR_NUM_ALUMINIUM_MILLS_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_COAL_MINES_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_COAL_MINES_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "coal_mine > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_COAL_MINES_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "coal_mine > 1": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_COAL_MINES_IN_CURRENT_STATE",
+                "value": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "coal_mine > 2": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_COAL_MINES_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_COAL_MINES": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_COAL_MINES_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_COAL_MINES_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_COAL_MINES_OWNED",
+                "value": "THIS.VAR_NUM_COAL_MINES_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_TRADE_CENTERS_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_TRADE_CENTERS_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "trade_complex > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_TRADE_CENTERS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_TRADE_CENTERS": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_TRADE_CENTERS_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_TRADE_CENTERS_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_TRADE_CENTERS_OWNED",
+                "value": "THIS.VAR_NUM_TRADE_CENTERS_IN_CURRENT_STATE"
+            }
+        }
+    },
+    "COMPUTE_NUM_FINANCIAL_CENTERS_IN_STATE": {
+        "set_variable": {
+            "var": "VAR_NUM_FINANCIAL_CENTERS_IN_CURRENT_STATE",
+            "value": 0
+        },
+        "if": {
+            "limit": {
+                "financial_complex > 0": null
+            },
+            "add_to_variable": {
+                "var": "VAR_NUM_FINANCIAL_CENTERS_IN_CURRENT_STATE",
+                "value": 1
+            }
+        }
+    },
+    "COMPUTE_NUM_FINANCIAL_CENTERS": {
+        "set_variable": {
+            "var": "THIS.VAR_NUM_FINANCIAL_CENTERS_OWNED",
+            "value": 0
+        },
+        "every_controlled_state": {
+            "COMPUTE_NUM_FINANCIAL_CENTERS_IN_STATE": true,
+            "add_to_variable": {
+                "var": "PREV.VAR_NUM_FINANCIAL_CENTERS_OWNED",
+                "value": "THIS.VAR_NUM_FINANCIAL_CENTERS_IN_CURRENT_STATE"
+            }
+        }
+    }
+}

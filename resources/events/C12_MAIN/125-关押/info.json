@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+
+        "add_political_power": -25,
+        "country_event": {
+                "id": "C12_MAIN.126",
+                "days": 35,
+                "random_days": 3
+        }
+        }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

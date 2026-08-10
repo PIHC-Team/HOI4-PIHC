@@ -1,0 +1,38 @@
+{
+    "name": "Mid-stage Firearm III",
+    "category": "infantry",
+
+    "x": 5,
+    "y": 22,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_CARBINE"
+    ],
+    "enable_subunits": [
+    ],
+    "ai_will_do": {
+        "factor": 1,
+        "modifier": {
+            "factor": 4,
+            "date > 1009.8.1": null
+        },
+        "modifier__D1": {
+            "factor": -1,
+            "date < 1006.8.1": null
+        },
+        "modifier__D2": {
+            "factor": -15,
+        "has_equipment" : { 
+        "ARCHETYPE_INFANTRY < 20000":null
+    }
+        }
+    },
+    "research_cost": 2.0,
+    "start_year": 1007
+}

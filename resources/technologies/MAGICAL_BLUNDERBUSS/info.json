@@ -1,0 +1,31 @@
+{
+    "name": "Magical Gonne",
+    "category": "infantry",
+
+    "x": 0,
+    "y": 10,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_FIREARM_III": 1,
+        "TECHNOLOGY_MAGICAL_HANDGONNE": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_MAGICAL_SNIPER",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

@@ -1,0 +1,28 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C04"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C04"
+            },
+            "country_event": {
+                "id": "C04_MAIN.42"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

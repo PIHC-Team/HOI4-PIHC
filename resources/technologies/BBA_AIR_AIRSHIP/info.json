@@ -1,0 +1,21 @@
+{
+    "name": "Airship",
+    "category": "bba_air_techs",
+    "x": 6,
+    "y": 12,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_AIRSHIP"
+    ],
+    "enable_subunits": [],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_AIR_STORM_AIRSHIP",
+        "research_cost_coeff": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1004
+}

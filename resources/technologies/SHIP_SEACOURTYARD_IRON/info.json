@@ -1,0 +1,27 @@
+{
+    "name": "Iron Courtyard of Seas",
+    "category": "naval",
+
+    "x": 2,
+    "y": 11,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_courtyard"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_SEACOURTYARD_IRON"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

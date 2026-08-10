@@ -1,0 +1,20 @@
+{
+    "name": "Mudbriar",
+    "gender": "male",
+    "field_marshal": {
+        "skill": 4,
+        "attack_skill": 2,
+        "defense_skill": 2,
+        "planning_skill": 5,
+        "logistics_skill": 4,
+        "traits": []
+    },
+    "advisor": {
+        "slot": "theorist",
+        "cost": 150,
+        "removal_cost": 150,
+        "traits": [
+            "TRAIT_LOGICAL_ANALYST"
+        ]
+    } 
+}

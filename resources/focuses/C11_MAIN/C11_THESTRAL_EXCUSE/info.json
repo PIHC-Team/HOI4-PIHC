@@ -1,0 +1,45 @@
+{
+    "tree": "C11_MAIN",
+    "parent": "FOCUS_C11_BUGBEAR_CONTROLLED",
+    "prerequisite": {
+        "focus": "FOCUS_C11_BUGBEAR_CONTROLLED"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "581": {
+            "random_state_division": {
+                "destroy_unit": true
+            }
+        },
+        "575": {
+            "set_demilitarized_zone": false
+        },
+        "522": {
+            "set_demilitarized_zone": false
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "is_ai": false
+            },
+            "581": {
+                "C11": {
+                    "num_divisions_in_states": {
+                        "count > 5": null,
+                        "states": ["581"]
+                    }
+                }
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

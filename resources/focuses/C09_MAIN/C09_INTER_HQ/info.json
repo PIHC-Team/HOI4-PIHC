@@ -1,0 +1,41 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_INTER_PURCHASE_EAST",
+    "prerequisite": {
+        "focus": "FOCUS_C09_INTER_PURCHASE_EAST"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "set_capital": {
+            "state": 531,
+            "remember_old_capital": true
+        },
+        "C09": {
+            "add_ideas": "IDEA_EIJC_MEMBER"
+        },
+        "every_possible_country": {
+            "limit": {
+                "is_in_faction_with": "C09",
+                "NOT": {
+                    "has_idea": "IDEA_EIJC_MEMBER"
+                }
+            },
+            "add_ideas": "IDEA_EIJC_MEMBER"
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Close border",
+    "priority": 109,
+    
+    "cost": 25,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "visible": {
+        "C08": {
+            "controls_state": "888"
+        }
+    },
+    "available": {
+    },
+    "remove_effect": {
+        "C08": {
+            "remove_ideas": "IDEA_C08_LONG_MARCH",
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_OLD_FRIENDS"
+        }
+    },
+    "ai_will_do": {
+        "base": 100
+    }
+}

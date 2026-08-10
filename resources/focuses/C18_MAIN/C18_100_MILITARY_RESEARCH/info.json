@@ -1,0 +1,33 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_100_NORTHERN_MILITARY_INDUSTRY",
+    "prerequisite": {
+        "focus": "FOCUS_C18_100_NORTHERN_MILITARY_INDUSTRY"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_infantry"
+        },
+        "add_tech_bonus__D1": {
+            "bonus": 0.5,
+            "uses": 1,
+            "category": "pihc_armor"
+        },
+        "add_ideas": "IDEA_DINFANTRY_KMC",
+        "add_ideas__D1": "IDEA_DTANK_KMC"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

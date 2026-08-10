@@ -1,0 +1,42 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_ECONOMIC_POLICY",
+    "dx": -7,
+    "prerequisite": {
+        "focus": "FOCUS_C01_ECONOMIC_POLICY"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C01_CANTERLOT_MILITARY"
+    },
+    "available": {
+        "has_war": false,
+        "369": {
+            "is_owned_by": "C01",
+            "is_controlled_by": "C01"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "completion_reward": {
+        "369": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true,
+            "BUILD_A_CIC__D2": true
+        },
+        "hidden_effect": {
+            "add_power_balance_value": {
+                "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+                "value": -0.05,
+                "tooltip_side": "BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE"
+            }
+        }
+    },
+    "cost": 2
+}

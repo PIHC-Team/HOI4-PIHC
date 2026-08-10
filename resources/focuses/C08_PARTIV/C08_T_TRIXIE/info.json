@@ -1,0 +1,26 @@
+{
+    "tree": "C08_PARTIV",
+    "parent": "FOCUS_C08_THE_RISING_FIRE",
+    "priority": 10,
+    "cost": 2,
+    "prerequisite": {
+        "focus": "FOCUS_C08_THE_RISING_FIRE"
+    },
+    "completion_reward": {
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C08_T_TRIXIE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_TRIXIE_ALIVE"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

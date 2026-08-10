@@ -1,0 +1,26 @@
+{
+    "name": "Book",
+    "priority": 797,
+    
+    "visible": {
+        "OR": {
+            "check_variable": {
+                "VAR_PIHC_WORLD_EXPO_VENUE": 2
+            },
+            "check_variable__D1": {
+                "VAR_PIHC_WORLD_EXPO_VENUE": 4
+            }
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C22_MAIN.9"
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

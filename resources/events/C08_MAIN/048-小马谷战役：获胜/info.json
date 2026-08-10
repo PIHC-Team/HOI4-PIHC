@@ -1,0 +1,229 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR",
+                "add_to_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "value": 1
+                },
+                "clamp_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "min": 1,
+                    "max": 8
+                },
+                "remove_ideas": "CHARACTER_SUGAR_BELLE",
+                "add_ideas": "IDEA_C08_SUGAR_BELLE"
+            },
+            "news_event": {
+                "id": "C08_MAIN.50"
+            },
+            "add_ideas": "CHARACTER_TRIXIE_LULAMOON_C08",
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_1",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_2",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_3",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_4",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_5",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_6",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                }
+            },
+            "else_if__D5": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_7",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "else_if__D6": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_8",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "name": "EVENT_C08_MAIN_48_o0"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR",
+                "add_to_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "value": 1
+                },
+                "clamp_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "min": 1,
+                    "max": 8
+                } 
+            },
+            "news_event": {
+                "id": "C08_MAIN.51"
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_1",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_2",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_3",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_4",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_5",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_6",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                }
+            },
+            "else_if__D5": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_7",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "else_if__D6": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_8",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            },
+            "name": "EVENT_C08_MAIN_48_o1"
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "remove_ideas": "IDEA_C08_PONYVILLE_WAR",
+            "white_peace": {
+                "tag": "C02"
+            },
+            "annex_country": {
+                "target": "C02",
+                "transfer_troops": false
+            },
+            "add_popularity": {
+                "ideology": "despotic",
+                "popularity": 0.15       
+            },
+            "add_state_core": 504,
+            "add_state_core__D1": 529,
+            "add_state_core__D2": 543,
+            "add_state_core__D3": 235,
+            "add_state_core__D4": 545,
+            "add_state_core__D5": 567,
+            "add_state_core__D6": 514,
+            "add_state_core__D7": 553,
+            "add_state_core__D8": 579,
+            "add_state_core__D9": 590,
+            "add_state_core__D10": 533,
+            "add_state_core__D11": 550,
+            "add_state_core__D12": 585,
+            "add_state_core__D13": 518,
+            "add_state_core__D14": 549,
+            "add_state_core__D15": 568,
+            "add_state_core__D16": 578,
+            "add_state_core__D17": 606,
+            "add_state_core__D18": 619
+        }
+    },
+    "is_triggered_only": true
+}

@@ -1,0 +1,39 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_ROYAL_DESTINY",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C15_ROYAL_DESTINY"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "add_popularity": {
+            "ideology": "despotic",
+            "popularity": 0.02
+        },
+        "custom_effect_tooltip": "C15_PARLIAMENT_INCREASE_ROYAL",
+        "hidden_effect": {
+            "multiply_variable": {
+                "var": "C15_royal_support_factor",
+                "value": 1.02
+            },
+            "clamp_variable": {
+                "var": "C15_royal_support_factor",
+                "min": 0.3,
+                "max": 0.9
+            },
+            "C15_PARLIAMENT_CALCULATE_NEXT_ELECTION": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

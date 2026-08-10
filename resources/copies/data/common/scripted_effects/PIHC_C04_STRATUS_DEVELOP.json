@@ -1,0 +1,886 @@
+{
+    "C04_REGIONAL_DEV_INIT_REGIONS": {
+        "clear_array": "C04.ARRAY_REGIONAL_DEV_REGIONS",
+        "add_to_array": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 1
+        },
+        "add_to_array__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 2
+        },
+        "add_to_array__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 3
+        },
+        "add_to_array__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 4
+        },
+        "add_to_array__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 5
+        },
+        "add_to_array__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 6
+        },
+        "add_to_array__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 7
+        },
+        "add_to_array__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS": 8
+        },
+        "clear_array__D1": "C04.ARRAY_REGIONAL_DEV_STATES_1",
+        "add_to_array__D8": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_1": 336
+        },
+        "add_to_array__D9": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_1": 37
+        },
+        "clear_array__D2": "C04.ARRAY_REGIONAL_DEV_STATES_2",
+        "add_to_array__D10": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_2": 376
+        },
+        "clear_array__D3": "C04.ARRAY_REGIONAL_DEV_STATES_3",
+        "add_to_array__D11": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_3": 46
+        },
+        "add_to_array__D12": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_3": 360
+        },
+        "clear_array__D4": "C04.ARRAY_REGIONAL_DEV_STATES_4",
+        "add_to_array__D13": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_4": 388
+        },
+        "clear_array__D5": "C04.ARRAY_REGIONAL_DEV_STATES_5",
+        "add_to_array__D14": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_5": 365
+        },
+        "clear_array__D6": "C04.ARRAY_REGIONAL_DEV_STATES_6",
+        "add_to_array__D15": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_6": 364
+        },
+        "clear_array__D7": "C04.ARRAY_REGIONAL_DEV_STATES_7",
+        "add_to_array__D16": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 400
+        },
+        "add_to_array__D17": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 410
+        },
+        "add_to_array__D18": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 412
+        },
+        "add_to_array__D19": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 426
+        },
+        "add_to_array__D20": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 441
+        },
+        "add_to_array__D21": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 446
+        },
+        "add_to_array__D22": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_7": 436
+        },
+        "clear_array__D8": "C04.ARRAY_REGIONAL_DEV_STATES_8",
+        "add_to_array__D23": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_8": 355
+        },
+        "add_to_array__D24": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_8": 409
+        },
+        "add_to_array__D25": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_8": 52
+        },
+        "add_to_array__D26": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_8": 418
+        },
+        "add_to_array__D27": {
+            "C04.ARRAY_REGIONAL_DEV_STATES_8": 386
+        }
+    },
+    "C04_REGIONAL_DEV_INIT_ECONOMIC_SCORES": {
+        "clear_array": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR",
+        "add_to_array": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 8.0
+        },
+        "add_to_array__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 5.0
+        },
+        "add_to_array__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 3.0
+        },
+        "add_to_array__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 1.5
+        },
+        "add_to_array__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 3.0
+        },
+        "add_to_array__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 3.0
+        },
+        "add_to_array__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 8.0
+        },
+        "add_to_array__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR": 12.0
+        }
+    },
+    "C04_REGIONAL_DEV_INIT_BOOST": {
+        "set_variable": {
+            "C04.VAR_REGIONAL_DEV_MONTHLY_POPULATION_BOOST_RATIO": 0.01
+        },
+        "set_variable__D1": {
+            "C04.VAR_REGIONAL_DEV_STABILITY_WEEKLY_BOOST_RATIO": 0.003
+        },
+        "set_variable__D2": {
+            "C04.VAR_REGIONAL_DEV_CONSTRUCTION_BOOST_RATIO": 0.10
+        },
+        "set_variable__D3": {
+            "C04.VAR_REGIONAL_DEV_FACTORY_BOOST_RATIO": 0.10
+        },
+        "set_variable__D4": {
+            "C04.VAR_REGIONAL_DEV_RESOURCES_BOOST_RATIO": 0.10
+        },
+        "set_variable__D5": {
+            "C04.VAR_REGIONAL_DEV_DRIFT_DEFENCE_BOOST_RATIO": 0.10
+        },
+        "set_variable__D6": {
+            "C04.VAR_REGIONAL_DEV_POLITICAL_POWER_BOOST_RATIO": 0.30
+        }
+    },
+    "C04_REGIONAL_DEV_INIT": {
+        "C04_REGIONAL_DEV_INIT_REGIONS": true,
+        "C04_REGIONAL_DEV_INIT_ECONOMIC_SCORES": true,
+        "C04_REGIONAL_DEV_INIT_BOOST": true
+    },
+    "C04_REGIONAL_DEV_COMPUTE_POPULATION": {
+        "clear_array": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION",
+        "clear_array__D1": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO",
+        "set_variable": {
+            "C04.VAR_SUM_POPULATION_k": 0
+        },
+        "add_to_array": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_1",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^0": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D1": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_2",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^1": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D2": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_3",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^2": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D3": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_4",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^3": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D4": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_5",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^4": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D5": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_6",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^5": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D6": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_7",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^6": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION": 0
+        },
+        "for_each_scope_loop__D7": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_8",
+            "if": {
+                "limit": {
+                    "is_core_of": "C04",
+                    "is_owned_by": "C04"
+                },
+                "add_to_variable": {
+                    "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^7": "state_population_k"
+                },
+                "add_to_variable__D1": {
+                    "C04.VAR_SUM_POPULATION_k": "state_population_k"
+                }
+            }
+        },
+        "add_to_array__D8": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^0"
+        },
+        "add_to_array__D9": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^1"
+        },
+        "add_to_array__D10": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^2"
+        },
+        "add_to_array__D11": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^3"
+        },
+        "add_to_array__D12": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^4"
+        },
+        "add_to_array__D13": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^5"
+        },
+        "add_to_array__D14": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^6"
+        },
+        "add_to_array__D15": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^7"
+        },
+        "divide_variable": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^6": "C04.VAR_SUM_POPULATION_k"
+        },
+        "divide_variable__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^7": "C04.VAR_SUM_POPULATION_k"
+        }
+    },
+    "C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE_GET_INITIAL_GUESS": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 2.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 0.0
+            }
+        },
+        "else_if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 4.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 1.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 2.0
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 8.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 2.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 4.0
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 16.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 3.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 8.0
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 32.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 4.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 16.0
+            }
+        },
+        "else_if__D4": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 64.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 5.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 32.0
+            }
+        },
+        "else_if__D5": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 128.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 6.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 64.0
+            }
+        },
+        "else_if__D6": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 256.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 7.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 128.0
+            }
+        },
+        "else_if__D7": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 512.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 8.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 256.0
+            }
+        },
+        "else_if__D8": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 1024.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 9.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 512.0
+            }
+        },
+        "else_if__D9": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 2048.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 10.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 1024.0
+            }
+        },
+        "else_if__D10": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 4096.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 11.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 2048.0
+            }
+        },
+        "else_if__D11": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 8192.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 12.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 4096.0
+            }
+        },
+        "else_if__D12": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 16384.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 13.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 8192.0
+            }
+        },
+        "else_if__D13": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 32768.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 14.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 16384.0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "C04.VAR_INITIAL_GUESS": 15.0
+            },
+            "divide_variable": {
+                "C04.VAR_ECONOMIC_FACTOR": 32768.0
+            }
+        },
+        "clamp_variable": {
+            "var": "C04.VAR_ECONOMIC_FACTOR",
+            "min": 1.0,
+            "max": 2.0
+        }
+    },
+    "C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE": {
+        "set_variable": {
+            "C04.VAR_ECONOMIC_FACTOR": "C04.VAR_TOTAL_ECONOMIC_SCORE"
+        },
+        "divide_variable": {
+            "C04.VAR_ECONOMIC_FACTOR": 1000.0
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_ECONOMIC_FACTOR",
+                    "value": 1.0,
+                    "compare": "less_than_or_equals"
+                }
+            },
+            "set_variable": {
+                "C04.VAR_ECONOMIC_LEVEL": 0.0
+            }
+        },
+        "else": {
+            "C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE_GET_INITIAL_GUESS": true,
+            "set_variable": {
+                "C04.VAR_ECONOMIC_LEVEL": "C04.VAR_ECONOMIC_FACTOR"
+            },
+            "subtract_from_variable": {
+                "C04.VAR_ECONOMIC_LEVEL": 1.0
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "C04.VAR_ECONOMIC_LEVEL",
+                        "value": 0.5,
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "multiply_variable": {
+                    "C04.VAR_ECONOMIC_LEVEL": 1.17
+                }
+            },
+            "else": {
+                "multiply_variable": {
+                    "C04.VAR_ECONOMIC_LEVEL": 0.83
+                },
+                "add_to_variable": {
+                    "C04.VAR_ECONOMIC_LEVEL": 0.17
+                }
+            },
+            "add_to_variable": {
+                "C04.VAR_ECONOMIC_LEVEL": "C04.VAR_INITIAL_GUESS"
+            }
+        }
+    },
+    "C04_REGIONAL_DEV_COMPUTE_ECONOMIC_SCORES": {
+        "clear_array": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE",
+        "add_to_array": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^0"
+        },
+        "multiply_variable": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^0": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^0"
+        },
+        "add_to_array__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^1"
+        },
+        "multiply_variable__D1": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^1": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^1"
+        },
+        "add_to_array__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^2"
+        },
+        "multiply_variable__D2": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^2": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^2"
+        },
+        "add_to_array__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^3"
+        },
+        "multiply_variable__D3": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^3": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^3"
+        },
+        "add_to_array__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^4"
+        },
+        "multiply_variable__D4": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^4": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^4"
+        },
+        "add_to_array__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^5"
+        },
+        "multiply_variable__D5": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^5": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^5"
+        },
+        "add_to_array__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^6"
+        },
+        "multiply_variable__D6": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^6": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^6"
+        },
+        "add_to_array__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_POPULATION^7"
+        },
+        "multiply_variable__D7": {
+            "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^7": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^7"
+        },
+        "set_variable": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": 0
+        },
+        "add_to_variable": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^0"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^1"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^2"
+        },
+        "add_to_variable__D3": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^3"
+        },
+        "add_to_variable__D4": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^4"
+        },
+        "add_to_variable__D5": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^5"
+        },
+        "add_to_variable__D6": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^6"
+        },
+        "add_to_variable__D7": {
+            "C04.VAR_TOTAL_ECONOMIC_SCORE": "C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_SCORE^7"
+        },
+        "C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE": true
+    },
+    "C04_REGIONAL_DEV_COMPUTE_BOOST": {
+        "set_variable": {
+            "C04.VAR_REGIONAL_DEV_MONTHLY_POPULATION_BOOST": "C04.VAR_REGIONAL_DEV_MONTHLY_POPULATION_BOOST_RATIO"
+        },
+        "multiply_variable": {
+            "C04.VAR_REGIONAL_DEV_MONTHLY_POPULATION_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D1": {
+            "C04.VAR_REGIONAL_DEV_STABILITY_WEEKLY_BOOST": "C04.VAR_REGIONAL_DEV_STABILITY_WEEKLY_BOOST_RATIO"
+        },
+        "multiply_variable__D1": {
+            "C04.VAR_REGIONAL_DEV_STABILITY_WEEKLY_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D2": {
+            "C04.VAR_REGIONAL_DEV_CONSTRUCTION_BOOST": "C04.VAR_REGIONAL_DEV_CONSTRUCTION_BOOST_RATIO"
+        },
+        "multiply_variable__D2": {
+            "C04.VAR_REGIONAL_DEV_CONSTRUCTION_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D3": {
+            "C04.VAR_REGIONAL_DEV_FACTORY_BOOST": "C04.VAR_REGIONAL_DEV_FACTORY_BOOST_RATIO"
+        },
+        "multiply_variable__D3": {
+            "C04.VAR_REGIONAL_DEV_FACTORY_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D4": {
+            "C04.VAR_REGIONAL_DEV_RESOURCES_BOOST": "C04.VAR_REGIONAL_DEV_RESOURCES_BOOST_RATIO"
+        },
+        "multiply_variable__D4": {
+            "C04.VAR_REGIONAL_DEV_RESOURCES_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D5": {
+            "C04.VAR_REGIONAL_DEV_DRIFT_DEFENCE_BOOST": "C04.VAR_REGIONAL_DEV_DRIFT_DEFENCE_BOOST_RATIO"
+        },
+        "multiply_variable__D5": {
+            "C04.VAR_REGIONAL_DEV_DRIFT_DEFENCE_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        },
+        "set_variable__D6": {
+            "C04.VAR_REGIONAL_DEV_POLITICAL_POWER_BOOST": "C04.VAR_REGIONAL_DEV_POLITICAL_POWER_BOOST_RATIO"
+        },
+        "multiply_variable__D6": {
+            "C04.VAR_REGIONAL_DEV_POLITICAL_POWER_BOOST": "C04.VAR_ECONOMIC_LEVEL"
+        }
+    },
+    "C04_REGIONAL_DEV_COMPUTE": {
+        "C04": {
+            "C04_REGIONAL_DEV_COMPUTE_POPULATION": true,
+            "C04_REGIONAL_DEV_COMPUTE_ECONOMIC_SCORES": true,
+            "C04_REGIONAL_DEV_COMPUTE_BOOST": true
+        }
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_1": {
+        "336": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "37": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_2": {
+        "376": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_3": {
+        "46": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "360": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_4": {
+        "388": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_5": {
+        "365": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C04_OWN_WEATHER_FACTORY",
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_6": {
+        "364": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_7": {
+        "400": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "410": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "412": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "426": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "441": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "446": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "436": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C04_OWN_CLOUDSDALE",
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_8": {
+        "355": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "409": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "52": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "418": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "386": {
+            "add_core_of": "C04",
+            "transfer_state_to": "C04"
+        },
+        "C04_REGIONAL_DEV_COMPUTE": true
+    },
+    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA": {
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_1": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_2": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_3": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_4": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_5": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_6": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_7": true,
+        "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_8": true
+    }
+}

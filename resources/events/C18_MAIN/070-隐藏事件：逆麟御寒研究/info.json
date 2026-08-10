@@ -1,0 +1,25 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS_2",
+                "complete_national_focus": "FOCUS_C18_101_CLIMATE_RESEARCH_2",
+                "country_event": {
+                    "id": "C18_MAIN.104",
+                    "days": 72,
+                    "random_days": 14
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

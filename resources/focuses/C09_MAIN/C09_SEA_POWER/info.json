@@ -1,0 +1,28 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_APPLEWOOD_ACQUISITION",
+    "dx": -1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C09_APPLEWOOD_ACQUISITION"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "navy_experience": 20
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

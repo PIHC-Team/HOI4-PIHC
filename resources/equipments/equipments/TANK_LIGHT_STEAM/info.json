@@ -1,0 +1,37 @@
+{
+    "name": "Steampunk Light Tank",
+    "parent": "EQUIPMENT_TANK_LIGHT_RAM",
+    "priority": 10000,
+    "visual_level": 10000,
+
+    "build_cost_ic": 10.5,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.76,
+    "manpower": 1,
+    "weight": 1.4,
+
+    "soft_attack": 15.0,
+    "hard_attack": 12.0,
+    "air_attack": 0.0,
+    "ap_attack": 5.0,
+    "breakthrough": 40.0,
+
+    "defense": 22.0,
+    "max_strength": 50.0,
+    "armor_value": 6.0,
+    "hardness": 0.75,
+    
+    "resources": {
+        "steel": 7,
+        "rubber": 4,
+        "coal": 2
+    },
+    "fuel_consumption": 0.06,
+    "fuel_capacity": 10.0,
+
+    "maximum_speed": 15.0,
+    "entrenchment": 3.5,
+    "recon": 2
+}

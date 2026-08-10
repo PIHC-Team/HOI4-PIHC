@@ -1,0 +1,110 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_13_CIV_0_TOOLTIP",
+            "hidden_effect": {
+                "C31": {
+                    "set_variable": {
+                        "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "value": 0
+                    },
+                    "country_event": {
+                        "id": "C14_MAIN.15",
+                        "days": 42
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_13_CIV_2_TOOLTIP",
+            "hidden_effect": {
+                "C31": {
+                    "set_variable": {
+                        "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "value": 2
+                    },
+                    "country_event": {
+                        "id": "C14_MAIN.15",
+                        "days": 42
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_13_CIV_4_TOOLTIP",
+            "hidden_effect": {
+                "C31": {
+                    "set_variable": {
+                        "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "value": 4
+                    },
+                    "country_event": {
+                        "id": "C14_MAIN.15",
+                        "days": 42
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_13_CIV_6_TOOLTIP",
+            "hidden_effect": {
+                "C31": {
+                    "set_variable": {
+                        "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "value": 6
+                    },
+                    "country_event": {
+                        "id": "C14_MAIN.15",
+                        "days": 42
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_13_CIV_8_TOOLTIP",
+            "hidden_effect": {
+                "C31": {
+                    "set_variable": {
+                        "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+                        "value": 8
+                    },
+                    "country_event": {
+                        "id": "C14_MAIN.15",
+                        "days": 42
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

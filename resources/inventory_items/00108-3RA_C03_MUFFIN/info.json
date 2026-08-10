@@ -1,0 +1,26 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "DEL_INVENTORY_ITEM_3RA_C03_MUFFIN_1": true
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_3RA_C03_MUFFIN": true
+            }
+        },
+        {
+            "type": "click",
+            "effects": {
+                "ADD_INVENTORY_ITEM_3RA_C03_MUFFIN_1": true
+            },
+            "trigger": {
+                "tag": "C03",
+                "has_country_leader": {
+                    "character": "CHARACTER_DERPY_HOOVES",
+                    "ruling_only": true
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,1022 @@
+{
+    "peace_ai_desires": {
+        "take_our_cores": {
+            "peace_action_type": [
+                "take_states"
+            ],
+            "enable": {
+                "ROOT": {
+                    "tag": "ROOT.FROM"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "is_core_of": "ROOT.FROM"
+                }
+            },
+            "ai_desire": 100
+        },
+        "generic_influence_cutoff": {
+            "peace_action_type": [
+                "take_states",
+                "puppet"
+            ],
+            "enable": {
+                "ROOT": {
+                    "tag": "ROOT.FROM"
+                },
+                "OR": {
+                    "has_government": "democratic",
+                    "has_government__D1": "equatism"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM"
+                    }
+                },
+                "ROOT.FROM.FROM.FROM__D1": {
+                    "NOT": {
+                        "is_claimed_by": "ROOT.FROM"
+                    },
+                    "pc_is_state_outside_influence_for_winner": "ROOT.FROM",
+                    "NOT__D1": {
+                        "OR": {
+                            "AND": {
+                                "is_capital": true,
+                                "is_coastal": true
+                            },
+                            "state": 738,
+                            "state__D1": 860,
+                            "state__D2": 458,
+                            "state__D3": 446,
+                            "state__D4": 126,
+                            "state__D5": 286,
+                            "AND__D1": {
+                                "ROOT.FROM": {
+                                    "capital_scope": {
+                                        "is_on_continent": "europe"
+                                    }
+                                },
+                                "OR": {
+                                    "state": 137,
+                                    "state__D1": 797,
+                                    "state__D2": 118
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ai_desire": -1000
+        },
+        "generic_influence_cutoff_force_government_fascism_unaligned": {
+            "peace_action_type": [
+                "take_states",
+                "puppet",
+                "force_government",
+                "liberate"
+            ],
+            "enable": {
+                "NOT": {
+                    "OR": {
+                        "has_government": "democratic",
+                        "has_government__D1": "equatism"
+                    }
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_claimed_by": "ROOT.FROM"
+                    },
+                    "ROOT": {
+                        "pc_is_winner": true
+                    },
+                    "pc_is_state_outside_influence_for_winner": "ROOT",
+                    "NOT__D1": {
+                        "OR": {
+                            "AND": {
+                                "is_capital": true,
+                                "is_coastal": true
+                            },
+                            "state": 738,
+                            "state__D1": 860,
+                            "state__D2": 458,
+                            "state__D3": 446,
+                            "state__D4": 126,
+                            "state__D5": 286,
+                            "AND__D1": {
+                                "ROOT.FROM": {
+                                    "capital_scope": {
+                                        "is_on_continent": "europe"
+                                    }
+                                },
+                                "OR": {
+                                    "state": 137,
+                                    "state__D1": 797,
+                                    "state__D2": 118
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ai_desire": -1000
+        },
+        "force_gov_puppets": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic",
+                    "ROOT.FROM.FROM": {
+                        "NOT": {
+                            "has_government": "democratic"
+                        },
+                        "is_subject": true
+                    }
+                }
+            },
+            "ai_desire": 100
+        },
+        "doesnt_control_no_claim": {
+            "peace_action_type": [
+                "take_states"
+            ],
+            "enable": {
+                "ROOT": {
+                    "tag": "ROOT.FROM"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM"
+                    },
+                    "NOT__D1": {
+                        "is_claimed_by": "ROOT.FROM"
+                    },
+                    "NOT__D2": {
+                        "is_controlled_by": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -20
+        },
+        "democracy_force_government_on_equatism": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic"
+                },
+                "ROOT.FROM.FROM": {
+                    "has_government": "equatism"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_claimed_by": "ROOT.FROM.FROM"
+                    }
+                },
+                "ROOT.FROM.FROM.FROM__D1": {
+                    "any_country_with_core": {
+                        "NOT": {
+                            "pc_is_liberated": true
+                        }
+                    }
+                }
+            },
+            "ai_desire": 50
+        },
+        "democracy_owner_does_not_have_core": {
+            "peace_action_type": [
+                "force_government",
+                "puppet",
+                "take_states"
+            ],
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -50
+        },
+        "other_owner_does_not_have_core": {
+            "peace_action_type": [
+                "force_government",
+                "puppet",
+                "take_states"
+            ],
+            "enable": {
+                "ROOT": {
+                    "NOT": {
+                        "has_government": "democratic"
+                    },
+                    "NOT__D1": {
+                        "has_government": "fascism"
+                    },
+                    "NOT__D2": {
+                        "tag": "ROOT.FROM"
+                    }
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -20
+        },
+        "dont_grab_exclaves": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "OR": {
+                            "is_claimed_by": "ROOT.FROM",
+                            "any_neighbor_state": {
+                                "OR": {
+                                    "is_owned_by": "ROOT.FROM",
+                                    "pc_is_state_claimed_by": "ROOT.FROM"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "ai_desire": -40
+        },
+        "do_grab_stuff_near_us": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "OR": {
+                        "any_neighbor_state": {
+                            "OR": {
+                                "is_owned_by": "ROOT.FROM"
+                            }
+                        },
+                        "is_claimed_by": "ROOT.FROM"
+                    }
+                },
+                "ROOT": {
+                    "tag": "ROOT.FROM"
+                }
+            },
+            "ai_desire": 10
+        },
+        "leave_force_gov_at_will_to_allies": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "ROOT": {
+                    "NOT": {
+                        "has_government": "democratic"
+                    }
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "any_neighbor_state": {
+                            "OR": {
+                                "pc_is_state_claimed_by": "ROOT.FROM",
+                                "pc_is_state_claimed_by__D1": "ROOT"
+                            }
+                        }
+                    }
+                }
+            },
+            "ai_desire": -80
+        },
+        "generic_occupies_state": {
+            "peace_action_type": [
+                "take_states",
+                "puppet",
+                "liberate",
+                "force_government"
+            ],
+            "enable": {
+                "FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_controlled_by": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": -10
+        },
+        "generic_occupies_player_state": {
+            "peace_action_type": [
+                "take_states",
+                "puppet",
+                "liberate",
+                "force_government"
+            ],
+            "enable": {
+                "FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_controlled_by": "ROOT"
+                    },
+                    "controller": {
+                        "pc_is_loser": false,
+                        "is_ai": false
+                    }
+                }
+            },
+            "ai_desire": -20
+        },
+        "democrats_dont_liberate_the_wrong_ideology": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic"
+                },
+                "ROOT.FROM": {
+                    "OR": {
+                        "has_government": "fascism",
+                        "has_government__D1": "equatism"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "dont_puppet_and_force_government": {
+            "peace_action_type": [
+                "puppet"
+            ],
+            "enable": {
+                "if": {
+                    "limit": {
+                        "has_government": "democratic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "democratic"
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "has_government": "fascism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "fascism"
+                    }
+                },
+                "else_if__D1": {
+                    "limit": {
+                        "has_government": "equatism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "equatism"
+                    }
+                },
+                "else_if__D2": {
+                    "limit": {
+                        "has_government": "despotic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "despotic"
+                    }
+                },
+                "else": {
+                    "always": false
+                }
+            },
+            "ai_desire": -200
+        },
+        "dont_force_government_and_puppet": {
+            "peace_action_type": [
+                "force_government"
+            ],
+            "enable": {
+                "FROM.FROM": {
+                    "pc_is_puppeted_by": "ROOT"
+                }
+            },
+            "ai_desire": -200
+        },
+        "nonaligned_dont_liberate_the_wrong_ideology": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "despotic"
+                },
+                "ROOT.FROM": {
+                    "NOT": {
+                        "has_government": "despotic"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "equatism_dont_liberate_the_wrong_ideology": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "equatism"
+                },
+                "ROOT.FROM": {
+                    "NOT": {
+                        "has_government": "equatism"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "fascism_dont_liberate_the_wrong_ideology": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "fascism"
+                },
+                "ROOT.FROM": {
+                    "NOT": {
+                        "OR": {
+                            "has_government": "fascism",
+                            "has_government__D1": "despotic"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "dont_force_government_or_puppet_on_non_core": {
+            "peace_action_type": [
+                "puppet",
+                "force_government"
+            ],
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "liberate_on_non_core": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_core_of": "ROOT.FROM.FROM"
+                    }
+                }
+            },
+            "ai_desire": 20
+        },
+        "liberate_if_already_exists": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT": {
+                    "has_government": "democratic"
+                },
+                "ROOT.FROM": {
+                    "pc_is_liberated": true
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "is_core_of": "ROOT.FROM"
+                }
+            },
+            "ai_desire": 100
+        },
+        "minors_and_subjects_dont_liberate": {
+            "peace_action_type": [
+                "liberate",
+                "take_states",
+                "force_government",
+                "puppet"
+            ],
+            "enable": {
+                "ROOT": {
+                    "NOT": {
+                        "tag": "ROOT.FROM"
+                    }
+                },
+                "ROOT__D1": {
+                    "OR": {
+                        "is_major": false,
+                        "is_subject": true
+                    }
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "OR": {
+                            "is_core_of": "ROOT.FROM",
+                            "is_claimed_by": "ROOT.FROM"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -90
+        },
+        "non_aligned_should_stick_to_claims": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT": {
+                    "has_government": "despotic",
+                    "is_major": false
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_claimed_by": "ROOT.FROM"
+                    },
+                    "NOT__D1": {
+                        "is_core_of": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -20
+        },
+        "it_is_a_non_coastal_adjacency": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM": {
+                    "tag": "ROOT"
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "is_coastal": false,
+                    "any_neighbor_state": {
+                        "is_owned_by": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": 10
+        },
+        "wrong_ideology_faction_members_dont_force_gov": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "ROOT": {
+                    "NOT": {
+                        "has_government": "democratic"
+                    },
+                    "any_allied_country": {
+                        "is_faction_leader": true,
+                        "has_government": "democratic"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "avoid_forcing_gov_if_ally_has_core": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "any_country_with_core": {
+                        "exists": true,
+                        "pc_is_on_same_side_as": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "do_force_government_if_forced_to_our_ideology": {
+            "peace_action_type": [
+                "force_government"
+            ],
+            "enable": {
+                "if": {
+                    "limit": {
+                        "has_government": "democratic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "democratic"
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "has_government": "fascism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "fascism"
+                    }
+                },
+                "else_if__D1": {
+                    "limit": {
+                        "has_government": "equatism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "equatism"
+                    }
+                },
+                "else_if__D2": {
+                    "limit": {
+                        "has_government": "despotic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "despotic"
+                    }
+                },
+                "else": {
+                    "always": false
+                }
+            },
+            "ai_desire": 20
+        },
+        "dont_take_states_for_wrong_ideology_allies": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT": {
+                    "NOT": {
+                        "tag": "ROOT.FROM"
+                    }
+                },
+                "ROOT.FROM": {
+                    "NOT": {
+                        "has_same_ideology": true
+                    }
+                }
+            },
+            "ai_desire": -20
+        },
+        "prefer_take_states_for_puppets_with_cores": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM": {
+                    "is_subject_of": "ROOT",
+                    "has_civil_war": true
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "is_core_of": "ROOT.FROM"
+                }
+            },
+            "ai_desire": 100
+        },
+        "dont_force_government_for_puppets_with_cores": {
+            "peace_action_type": [
+                "force_government",
+                "puppet"
+            ],
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "any_country_with_core": {
+                        "is_subject_of": "ROOT",
+                        "has_civil_war": true
+                    }
+                }
+            },
+            "ai_desire": -100
+        },
+        "retake_territory_from_independence_wars": {
+            "peace_action_type": [
+                "take_states"
+            ],
+            "enable": {
+                "FROM.FROM": {
+                    "has_war_with_wargoal_against": {
+                        "target": "ROOT",
+                        "type": "independence_wargoal"
+                    }
+                }
+            },
+            "ai_desire": 75
+        },
+        "dont_change_gov_after_independence_wars": {
+            "peace_action_type": [
+                "force_government",
+                "liberate",
+                "puppet"
+            ],
+            "enable": {
+                "FROM.FROM": {
+                    "has_war_with_wargoal_against": {
+                        "target": "ROOT",
+                        "type": "independence_wargoal"
+                    }
+                }
+            },
+            "ai_desire": -75
+        },
+        "return_puppet_cores": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM": {
+                    "OR": {
+                        "is_subject_of": "ROOT",
+                        "AND": {
+                            "pc_is_puppeted_by": "ROOT"
+                        }
+                    }
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "is_core_of": "ROOT.FROM",
+                    "NOT": {
+                        "is_core_of": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": 70
+        },
+        "civil_war_participants_dont_accept_each_other": {
+            "peace_action_type": [
+                "force_government",
+                "puppet",
+                "liberate"
+            ],
+            "enable": {
+                "ROOT": {
+                    "has_civil_war": true,
+                    "original_tag": "FROM"
+                }
+            },
+            "ai_desire": -200
+        },
+        "puppets_dont_interfere_take_states": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "is_subject": true,
+                "NOT": {
+                    "OR": {
+                        "ROOT.FROM.FROM.FROM": {
+                            "is_claimed_by": "ROOT.FROM"
+                        },
+                        "ROOT.FROM.FROM.FROM__D1": {
+                            "is_core_of": "ROOT.FROM"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "puppets_dont_interfere_others": {
+            "peace_action_type": [
+                "force_government",
+                "puppet",
+                "liberate"
+            ],
+            "enable": {
+                "is_subject": true,
+                "OVERLORD": {
+                    "NOT": {
+                        "tag": "ROOT.FROM"
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "nonaligned_mostly_take_states": {
+            "peace_action_type": [
+                "puppet",
+                "liberate",
+                "force_government"
+            ],
+            "enable": {
+                "ROOT": {
+                    "has_government": "despotic"
+                }
+            },
+            "ai_desire": -120
+        },
+        "puppet_if_another_puppet_has_core": {
+            "peace_action_type": "puppet",
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "any_country_with_core": {
+                            "is_subject_of": "ROOT"
+                        }
+                    },
+                    "any_country_with_core": {
+                        "pc_is_puppeted_by": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": 30
+        },
+        "dont_liberate_if_we_could_puppet_or_owner_is_our_ideology": {
+            "peace_action_type": "liberate",
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "any_country_with_core": {
+                        "OR": {
+                            "pc_is_puppeted_by": "ROOT",
+                            "pc_is_forced_government_by": "ROOT",
+                            "AND": {
+                                "country_exists": "THIS",
+                                "has_same_ideology": true
+                            },
+                            "is_in_faction_with": "ROOT"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -30
+        },
+        "dont_do_other_things_if_we_should_liberate": {
+            "peace_action_type": [
+                "take_states",
+                "puppet",
+                "force_government"
+            ],
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "any_country_with_core": {
+                        "pc_is_liberated": true
+                    }
+                }
+            },
+            "ai_desire": -200
+        },
+        "minors_dont_fragment_as_much": {
+            "peace_action_type": [
+                "puppet",
+                "liberate"
+            ],
+            "enable": {
+                "is_major": false,
+                "ROOT.FROM.FROM": {
+                    "pc_is_puppeted": true
+                },
+                "NOT": {
+                    "ROOT.FROM.FROM": {
+                        "pc_is_puppeted_by": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": -100
+        },
+        "minors_dont_puppet_or_liberate_at_all_because_you_cant_finish_the_job": {
+            "peace_action_type": [
+                "puppet",
+                "liberate"
+            ],
+            "enable": {
+                "is_major": false,
+                "ROOT.FROM": {
+                    "pc_is_liberated": false
+                }
+            },
+            "ai_desire": -100
+        },
+        "majors_dont_fragment_as_much_less": {
+            "peace_action_type": [
+                "puppet",
+                "liberate"
+            ],
+            "enable": {
+                "is_major": true,
+                "ROOT.FROM.FROM": {
+                    "pc_is_puppeted": true,
+                    "NOT": {
+                        "ROOT.FROM.FROM": {
+                            "pc_is_puppeted_by": "ROOT"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -50
+        },
+        "minors_follow_your_leader_when_forcing_gov": {
+            "peace_action_type": "force_government",
+            "enable": {
+                "is_major": false,
+                "ROOT.FROM.FROM": {
+                    "pc_is_forced_government": false
+                }
+            },
+            "ai_desire": -100
+        },
+        "continuous_force_gov_desire": {
+            "peace_action_type": [
+                "force_government"
+            ],
+            "enable": {
+                "FROM.FROM": {
+                    "pc_is_forced_government_by": "ROOT"
+                }
+            },
+            "ai_desire": 30
+        },
+        "continuous_puppet": {
+            "peace_action_type": [
+                "puppet"
+            ],
+            "enable": {
+                "ROOT.FROM": {
+                    "pc_is_puppeted_by": "ROOT"
+                }
+            },
+            "ai_desire": 100
+        },
+        "leave_player_controlled_land_until_later_in_the_process": {
+            "peace_action_type": [
+                "take_states",
+                "puppet",
+                "force_government",
+                "liberate"
+            ],
+            "enable": {
+                "ROOT.FROM.FROM.FROM": {
+                    "controller": {
+                        "is_ai": false
+                    }
+                }
+            },
+            "ai_desire": -10
+        },
+        "minors_avoid_interfering_with_random_claims": {
+            "peace_action_type": [
+                "take_states"
+            ],
+            "enable": {
+                "ROOT": {
+                    "is_ai": true
+                },
+                "ROOT.FROM": {
+                    "tag": "ROOT",
+                    "is_major": false
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "OR": {
+                            "is_claimed_by": "ROOT",
+                            "is_core_of": "ROOT"
+                        }
+                    }
+                }
+            },
+            "ai_desire": -80
+        },
+        "dont_liberate_if_puppeted": {
+            "peace_action_type": [
+                "liberate"
+            ],
+            "enable": {
+                "ROOT.FROM": {
+                    "pc_is_puppeted": true
+                }
+            },
+            "ai_desire": -200
+        },
+        "dont_take_state_if_already_puppeted_by_us": {
+            "peace_action_type": [
+                "take_state"
+            ],
+            "enable": {
+                "ROOT.FROM": {
+                    "pc_is_puppeted_by": "ROOT"
+                }
+            },
+            "ai_desire": -200
+        },
+        "dont_force_their_puppets": {
+            "peace_action_type": [
+                "force_government"
+            ],
+            "enable": {
+                "ROOT.FROM.FROM": {
+                    "is_subject": true
+                },
+                "ROOT.FROM.FROM.FROM": {
+                    "NOT": {
+                        "is_claimed_by": "ROOT"
+                    },
+                    "NOT__D1": {
+                        "is_core_of": "ROOT"
+                    }
+                }
+            },
+            "ai_desire": -90
+        },
+        "prefer_not_taking_land_from_force_governmented_minors": {
+            "peace_action_type": "take_states",
+            "enable": {
+                "ROOT.FROM.FROM": {
+                    "is_major": false
+                },
+                "if": {
+                    "limit": {
+                        "has_government": "democratic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "democratic"
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "has_government": "fascism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "fascism"
+                    }
+                },
+                "else_if__D1": {
+                    "limit": {
+                        "has_government": "equatism"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "equatism"
+                    }
+                },
+                "else_if__D2": {
+                    "limit": {
+                        "has_government": "despotic"
+                    },
+                    "ROOT.FROM.FROM": {
+                        "pc_is_forced_government_to": "despotic"
+                    }
+                },
+                "else": {
+                    "always": false
+                }
+            },
+            "ai_desire": -100
+        }
+    }
+}

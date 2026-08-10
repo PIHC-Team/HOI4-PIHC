@@ -1,0 +1,106 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_500": true,
+            "hidden_effect": {
+                "load_oob": "C02_police"
+            },
+            "if": {
+                "limit": {
+                    "504": {
+                        "is_owned_and_controlled_by": "C02"
+                    }
+                },
+                "504": {
+                    "create_unit": {
+                        "division": "name = \"小马谷汉堡店保安 (Ponyville Hay Burger Store Security)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                        "owner": "C02",
+                        "count": 2
+                    }
+                }
+            },
+            "if__D1": {
+                "limit": {
+                    "567": {
+                        "is_owned_and_controlled_by": "C02"
+                    }
+                },
+                "567": {
+                    "create_unit": {
+                        "division": "name = \"小马谷汉堡店保安 (Ponyville Hay Burger Store Security)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                        "owner": "C02",
+                        "count": 2
+                    }
+                }
+            },
+            "if__D2": {
+                "limit": {
+                    "578": {
+                        "is_owned_and_controlled_by": "C02"
+                    }
+                },
+                "578": {
+                    "create_unit": {
+                        "division": "name = \"小马谷汉堡店保安 (Ponyville Hay Burger Store Security)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                        "owner": "C02",
+                        "count": 1
+                    }
+                }
+            },
+            "if__D3": {
+                "limit": {
+                    "481": {
+                        "is_owned_and_controlled_by": "C02"
+                    }
+                },
+                "481": {
+                    "create_unit": {
+                        "division": "name = \"小马谷汉堡店保安 (Ponyville Hay Burger Store Security)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                        "owner": "C02",
+                        "count": 1
+                    }
+                }
+            },
+            "if__D4": {
+                "limit": {
+                    "888": {
+                        "is_owned_and_controlled_by": "C02"
+                    }
+                },
+                "888": {
+                    "create_unit": {
+                        "division": "name = \"小马谷汉堡店保安 (Ponyville Hay Burger Store Security)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 0.9",
+                        "owner": "C02",
+                        "count": 1
+                    }
+                }
+            },
+            "hidden_effect__D1": {
+                "C08": {
+                    "country_event": {
+                        "id": "C02_MAIN.19",
+                        "days": 14
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C02"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

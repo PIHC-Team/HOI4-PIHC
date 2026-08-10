@@ -1,0 +1,53 @@
+{
+    "name": "Skeleton Pony",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 18,
+    "y": 0,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AUTOMATA_SKELETON"
+    ],
+    "enable_subunits": [
+        "infantry_automata"
+    ],
+    "allow": {
+        "tag": "C05",
+        "if": {
+            "limit": {
+                "NOT": {
+                    "OR": {
+                        "tag": "C05",
+                        "is_in_faction_with": "C05"
+                    }
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_PAPER_SKELETON_PONY_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_PAPER_SQUIZARD",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 5.0,
+    "start_year": 1000
+}

@@ -1,0 +1,25 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_MILITARY_ARMY_DOCT",
+    "prerequisite": {
+        "focus": "FOCUS_GEN_MILITARY_ARMY_DOCT"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.40,
+            "technology": "TECHNOLOGY_ICY_BOW"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

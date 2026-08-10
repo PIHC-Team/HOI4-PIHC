@@ -1,0 +1,36 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_ARMY_INTEGRATION",
+    "prerequisite": {
+        "focus": "FOCUS_C08_ARMY_INTEGRATION"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C08_ARMY_LINE"
+    },
+    "priority": 10,
+    "cost": 1,
+    "completion_reward": {
+        "army_experience": 5,
+        "air_experience": 20,
+        "add_tech_bonus": {
+            "category": "cat_superior_firepower",
+            "bonus": 0.75,
+            "uses": 1
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C08_AIR_LINE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_PLANE"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

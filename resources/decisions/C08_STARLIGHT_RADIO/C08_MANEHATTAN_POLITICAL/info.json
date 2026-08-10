@@ -1,0 +1,29 @@
+{
+    "name": "Concentrated breakthroughs",
+    "priority": 79981,
+    
+    "visible": {
+        "tag": "C08",
+        "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_MANEHATTAN_WAR_START_TOOLTIP",
+            "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR"
+        }
+    },
+    "complete_effect": {
+        "add_political_power": 35
+    },
+    "modifier": {
+        "industrial_capacity_factory": -0.35,
+        "political_power_gain": 1.0
+    },
+    "remove_effect": {
+        
+    },
+    "days_remove": 30,
+    "ai_will_do": {
+        "base": 99999
+    }
+}

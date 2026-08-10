@@ -1,0 +1,124 @@
+{
+    "@manifest_fulfilled_value": 0.75,
+    "faction_manifest_regional_expansionism": {
+        "name": "regional_expansionism_goal_name",
+        "description": "regional_expansionism_goal_desc",
+        "is_manifest": true,
+        "ratio_progress": {
+            "total_amount_collection": "collection:states_on_my_continent",
+            "completed_amount_collection": "collection:faction_states_on_my_continent",
+            "range": {
+                "max": 0.67
+            },
+            "scale": {
+                "party_popularity_stability_factor": 0.1
+            },
+            "progress_sections": {
+                "manifest_fulfilled": {
+                    "min": "@manifest_fulfilled_value",
+                    "modifier": {
+                        "monthly_population": 0.15,
+                        "generate_wargoal_tension": -0.15
+                    }
+                }
+            }
+        }
+    },
+    "faction_manifest_conquest_of_territory": {
+        "name": "conquest_of_territory_goal_name",
+        "description": "conquest_of_territory_goal_desc",
+        "is_manifest": true,
+        "ratio_progress": {
+            "total_amount_collection": "collection:faction_owned_core_states",
+            "completed_amount_collection": "collection:faction_controlled_non_core_states",
+            "range": {
+                "max": 1
+            },
+            "scale": {
+                "offensive_war_stability_factor": 0.15,
+                "justify_war_goal_time": -0.25
+            },
+            "progress_sections": {
+                "manifest_fulfilled": {
+                    "min": "@manifest_fulfilled_value",
+                    "modifier": {
+                        "non_core_manpower": 0.03,
+                        "generate_wargoal_tension": -0.25
+                    }
+                }
+            }
+        }
+    },
+    "faction_manifest_strength_in_unity": {
+        "name": "strength_in_unity_goal_name",
+        "description": "strength_in_unity_goal_desc",
+        "is_manifest": true,
+        "ratio_progress": {
+            "total_amount": 20,
+            "completed_amount_collection": {
+                "input": "game:scope",
+                "operators": [
+                    "faction_members"
+                ],
+                "name": "COLLECTION_FACTION_MEMBERS"
+            },
+            "scale": {
+                "trade_opinion_factor": 0.2
+            },
+            "progress_sections": {
+                "manifest_fulfilled": {
+                    "min": "@manifest_fulfilled_value",
+                    "modifier": {
+                        "political_power_factor": 0.1
+                    }
+                }
+            }
+        }
+    },
+    "faction_manifest_protector_of_peace": {
+        "name": "protector_of_peace_goal_name",
+        "description": "protector_of_peace_goal_desc",
+        "is_manifest": true,
+        "ratio_progress": {
+            "total_amount_collection": "game:all_countries",
+            "completed_amount_collection": "collection:world_at_peace_countries",
+            "scale": {
+                "production_speed_buildings_factor": 0.1
+            },
+            "progress_sections": {
+                "manifest_fulfilled": {
+                    "min": "@manifest_fulfilled_value",
+                    "modifier": {
+                        "trade_opinion_factor": 0.2
+                    }
+                }
+            }
+        }
+    },
+    "faction_manifest_strategic_resource_control": {
+        "name": "strategic_resource_control_goal_name",
+        "description": "strategic_resource_control_goal_desc",
+        "is_manifest": true,
+        "ratio_progress": {
+            "completed_amount_custom_tooltip": "FACTION_RESOURCE_EXTRACTED_TOTAL_DESC",
+            "total_amount_custom_tooltip": "GLOBAL_RESOURCE_EXTRACTED_TOTAL_DESC",
+            "total_amount": "global.global_resource_extracted_total",
+            "completed_amount": "faction_resource_extracted_total",
+            "range": {
+                "max": 0.3
+            },
+            "scale": {
+                "industrial_capacity_dockyard": 0.1,
+                "industrial_capacity_factory": 0.1
+            },
+            "progress_sections": {
+                "manifest_fulfilled": {
+                    "min": "@manifest_fulfilled_value",
+                    "modifier": {
+                        "production_speed_buildings_factor": 0.1
+                    }
+                }
+            }
+        }
+    }
+}

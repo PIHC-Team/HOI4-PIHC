@@ -1,0 +1,25 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C04": {
+                    "set_variable": {
+                        "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_COEFFICIENT": 4.10
+                    },
+                    "set_variable__D1": {
+                        "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_SHIFT": 30.0
+                    },
+                    "set_variable__D2": {
+                        "C04.VAR_BY_ELECTION_POPULARITY_WEIGHT": 0.5
+                    },
+                    "INIT_C04_BY_ELECTION": true
+                }
+            }
+        },
+        "on_weekly_C04": {
+            "effect": {
+                "WEEKLY_C04_BY_ELECTION": true
+            }
+        }
+    }
+}

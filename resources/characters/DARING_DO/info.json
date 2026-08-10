@@ -1,0 +1,20 @@
+{
+    "name": "Daring Do",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "anarchy_anarchy",
+        "traits": [
+            "TRAIT_GUERRILLA",
+            "TRAIT_RUTHLESS"
+        ]
+    },
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_GUERRILLA",
+            "TRAIT_RUTHLESS"
+        ],
+        "can_be_fired": false
+    }
+}

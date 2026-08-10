@@ -1,0 +1,28 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_CRYSTAL_AND_SNOW",
+    "priority": 0,
+    "prerequisite": {
+        "focus": "FOCUS_C08_CRYSTAL_AND_SNOW"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND",
+        "custom_effect_tooltip": "FOCUS_C08_WASTELAND_ADVENTURE_TOOLTIP",
+        "country_event": {
+            "id": "C08_MAIN.35",
+            "days": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

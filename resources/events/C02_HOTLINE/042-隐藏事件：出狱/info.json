@@ -1,0 +1,19 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "ADD_INVENTORY_ITEM_2UN_C02_PIANO_KEY_1": true
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

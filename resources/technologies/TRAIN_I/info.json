@@ -1,0 +1,28 @@
+{
+    "name": "Train",
+    "category": "infantry",
+
+    "x": 12,
+    "y": 3,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_vehicle",
+        "pihc_train"
+    ],
+    "enable_equipments": [
+        "train_equipment_1"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TRAIN_II",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1001
+}

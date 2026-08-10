@@ -1,0 +1,40 @@
+{
+    "name": "Modern Heavy Weapons",
+    "category": "infantry",
+
+    "x": 6,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_shield"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIELD_MODERN_MACHINE_GUN"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_FIREARM_VIII": 1,
+        "TECHNOLOGY_SHIELD_RIOT_POLICE": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_SHIELD_CONTEMPORARY",
+        "research_cost_coeff": 1
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "tag" : "C12"
+                },
+                "modifier__D1": {
+                    "factor": -10,
+                    "arms_factory < 80": null
+                }
+            },
+    "research_cost": 3.0,
+    "start_year": 1008
+}

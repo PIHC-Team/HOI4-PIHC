@@ -1,0 +1,60 @@
+{
+    "name": "Muffins",
+    "priority": 45,
+    
+    "cost": 0,
+    "days_re_enable": 28,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING"
+    },
+    "available": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1000,
+            "compare": "greater_than_or_equals"
+        },
+        "// custom_trigger_tooltip": {
+            "tooltip": "DECISION_C03_MUFFIN_ROULETTE_BREED_TOOLTIP",
+            "NOT": {
+                "check_variable": {
+                    "var": "ROOT.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            }
+        },
+        "custom_trigger_tooltip__D1": {
+            "tooltip": "FOCUS_C03_MUFFIN_12_TRIGGER_TOOLTIP",
+            "has_completed_focus": "FOCUS_C03_MUFFIN_12"
+        },
+        "has_tech": "TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED"
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1000,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_MUFFINS_1000",
+    "complete_effect": {
+        "hidden_effect": {
+            "subtract_from_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 1000
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "subtract_from_variable__D1": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": 1000
+            },
+            "add_to_variable": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+                "value": 20
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

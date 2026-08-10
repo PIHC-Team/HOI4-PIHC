@@ -1,0 +1,42 @@
+{
+    "name": "Balloon",
+    "category": "bba_air_techs",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 14,
+    "y": 18,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_air_ufo"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_FRAME_UFO"
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_PLANE_ARMOR_1A_WOODEN",
+        "MODULE_PLANE_ARMOR_2B_STEEL",
+        "MODULE_PLANE_ARMOR_2A_BRASS",
+        "MODULE_PLANE_ENGINE_1A_AIR",
+        "MODULE_SPECIAL_SUPPLY",
+        "MODULE_SPECIAL_PARADROP",
+        "MODULE_SPECIAL_TANK",
+        "MODULE_PLANE_WEAPON_AIRREC_1A_BINOCULAR"
+    ],
+
+    "path": {
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1006
+}

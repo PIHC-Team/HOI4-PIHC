@@ -1,0 +1,21 @@
+{
+    "possible": {
+        "difficulty > 1": null,
+        "has_start_date < 1002.12.2": null,
+        "has_any_custom_difficulty_setting": false,
+        "game_rules_allow_achievements": true,
+        "is_ironman": true,
+        
+        "tag": "C18"
+    },
+    "happened": {
+        "C18": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_BEI_MING_CHRONICLES": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_YIN_YUN_CHRONICLES": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_HUA_HAI_CHRONICLES": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES": true
+        }
+    }
+}

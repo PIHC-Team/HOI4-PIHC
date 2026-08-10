@@ -1,0 +1,20 @@
+{
+    "name": "14-A.0b",
+    "priority": 100,
+    
+    "cost": 0,
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_14A1B",
+            "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_ALL_REPORTS_UNLOCKED"
+        }
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C08_MAIN.1"
+        }
+    },
+    "ai_will_do": {
+        "base": 100
+    }
+}

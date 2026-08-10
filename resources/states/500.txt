@@ -1,0 +1,41 @@
+state = {
+    id = 500
+    name = STATE_500
+    provinces = {
+        788
+        1300
+        4051
+        5616
+        6558
+        7087
+        7665
+        7886
+        8366
+        8742
+        11523
+        11566
+        11579
+        11604
+        11621
+        11748
+    }
+    manpower = 1171
+    state_category = wasteland
+    history = {
+        owner = C02
+        victory_points = {
+            788
+            1
+        }
+        buildings = {
+            788 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C02
+    }
+    resources = {
+        crystals = 1
+        logs = 4
+    }
+}

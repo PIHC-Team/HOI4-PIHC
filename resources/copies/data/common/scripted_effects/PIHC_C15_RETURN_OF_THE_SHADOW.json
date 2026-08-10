@@ -1,0 +1,124 @@
+{
+    "INIT_KING_SOMBRA": {
+        "set_politics": {
+            "ruling_party": "transcendence"
+        },
+        "add_popularity": {
+            "ideology": "transcendence",
+            "popularity": 1.00
+        },
+        "add_popularity__D1": {
+            "ideology": "despotic",
+            "popularity": 0.25
+        },
+        "add_popularity__D2": {
+            "ideology": "harmonicism",
+            "popularity": 0.05
+        },
+        "add_popularity__D3": {
+            "ideology": "equatism",
+            "popularity": 0.05
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C15_VISIBLE_KING_SOMBRA",
+        "promote_character": {
+            "character": "CHARACTER_KING_SOMBRA",
+            "ideology": "transcendence_deity"
+        },
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_DARK_MAGIC_USER"
+                },
+                "remove_ideas": "IDEA_ALL_DARK_MAGIC_USER"
+            },
+            "if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_DARK_MAGIC_PAYBACK"
+                },
+                "remove_ideas": "IDEA_ALL_DARK_MAGIC_PAYBACK"
+            },
+            "if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C15_SACRAMENT_2"
+                },
+                "remove_ideas": "IDEA_C15_SACRAMENT_2"
+            },
+            "if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C15_DISARMED"
+                },
+                "remove_ideas": "IDEA_C15_DISARMED"
+            },
+            "if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_THE_DARK_AGE"
+                },
+                "remove_ideas": "IDEA_ALL_THE_DARK_AGE"
+            },
+            "if__D5": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_THE_DARK_AGE_2"
+                },
+                "remove_ideas": "IDEA_ALL_THE_DARK_AGE_2"
+            },
+            "add_ideas": "tot_economic_mobilisation",
+            "add_ideas__D1": "closed_economy",
+            "add_ideas__D2": "service_by_requirement",
+            "add_ideas__D3": "IDEA_ERA_HYGIENE_1_IMMUNE",
+            "add_ideas__D4": "IDEA_ALL_DARK_MAGIC_USER",
+            "C15": {
+                "load_oob": "Z15_infantry_witchcraft"
+            },
+            "load_focus_tree": "C15_SOMBRA",
+            "complete_national_focus": "FOCUS_C15_SOMBRA_RETURN_OF_THE_SHADOW",
+            "create_faction": "FACTION_SOMBRA_EMPIRE",
+            "set_technology": {
+                "TECHNOLOGY_WITCHCRAFT_III": 1,
+                "TECHNOLOGY_WITCHCRAFT_IV": 1,
+                "TECHNOLOGY_SUPPORT_MAGIC_I": 1,
+                "TECHNOLOGY_SUPPORT_MAGIC_II": 1,
+                "TECHNOLOGY_SUPPORT_MAGIC_III": 1,
+                "TECHNOLOGY_SUPPORT_MAGIC_IV": 1,
+                "TECHNOLOGY_SUPPORT_MAGIC_V": 1,
+                "TECHNOLOGY_CREATURE_TRAINING": 1,
+                "TECHNOLOGY_SOMBRA_SLAVES": 1
+            },
+            "add_manpower": 500000,
+            "3": {
+                "create_unit": {
+                    "division": "name = \"荒原影魔师 (Umbrum Division)\" division_template = \"荒原影魔师 (Umbrum Division)\" start_experience_factor = 0.6 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C15",
+                    "count": 12
+                },
+                "create_unit__D1": {
+                    "division": "name = \"黑晶奴隶师 (Sombra Slave Division)\" division_template = \"黑晶奴隶师 (Sombra Slave Division)\" start_experience_factor = 0.2 start_equipment_factor = 0.4 start_manpower_factor = 1.0",
+                    "owner": "C15",
+                    "count": 40
+                }
+            },
+            "END_ALL_WARS": true,
+            "set_stability": 0.40,
+            "set_variable": {
+                "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+                "value": 0
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C15_SOMBRA"
+        }
+    },
+    "INIT_RADIANT_HOPE": {
+        "set_politics": {
+            "ruling_party": "harmonicism"
+        },
+        "add_popularity": {
+            "ideology": "harmonicism",
+            "popularity": 1.00
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C15_VISIBLE_RADIANT_HOPE",
+        "promote_character": {
+            "character": "CHARACTER_RADIANT_HOPE",
+            "ideology": "harmonicism_democracy"
+        },
+        "load_focus_tree": "NULL",
+        "END_ALL_WARS": true
+    }
+}

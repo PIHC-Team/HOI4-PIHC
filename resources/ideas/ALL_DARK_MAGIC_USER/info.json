@@ -1,0 +1,17 @@
+{
+    "name": "Dark Magic User",
+    "removal_cost": -1,
+    "on_remove": {
+        "add_ideas": "IDEA_ALL_DARK_MAGIC_PAYBACK"
+    },
+    "research_bonus": {
+        "pihc_magical": 0.2
+    },
+    "modifier": {
+        "offence": 0.20,
+        "defence": 0.15,
+        "local_resources_factor": 0.35,
+        "transcendence_drift": 0.01,
+        "monthly_population": -0.1
+    }
+}

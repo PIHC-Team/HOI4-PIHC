@@ -1,0 +1,17 @@
+{
+    "name": "Princess Cadance",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_PRINCESS_CADANCE"
+        ],
+        "visible": {
+            "always": false
+        },
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

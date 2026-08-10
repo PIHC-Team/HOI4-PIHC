@@ -1,0 +1,31 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "random_list": {
+                "seed": "random",
+                "50": {
+                    "every_country": {
+                        "country_event": {
+                            "id": "C08_RADIO.3"
+                        }
+                    }
+                },
+                "50__D1": {
+                    "every_country": {
+                        "country_event": {
+                            "id": "C08_RADIO.4"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

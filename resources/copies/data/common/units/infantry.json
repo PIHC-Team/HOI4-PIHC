@@ -1,0 +1,403 @@
+{
+    "sub_units": {
+        "infantry_traditional": {
+            "abbreviation": "ITR",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 10,
+            "ai_priority": 50,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "categories": [
+                "category_infantry_traditional",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 30,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "soft_attack": 0.2,
+            "manpower": 32,
+            "training_time": 90,
+            "suppression": 1.5,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.06,
+            "need": {
+                "ARCHETYPE_INFANTRY": 64,
+                "ARCHETYPE_SUPPORT": 4
+            }
+        },
+        "infantry_shield": {
+            "abbreviation": "ISH",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 11,
+            "ai_priority": 100,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "categories": [
+                "category_infantry_shield",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 80,
+            "max_organisation": 70,
+            "defense": 1.3,
+            "default_morale": 0.3,
+            "hard_attack": 0.1,
+            "manpower": 24,
+            "training_time": 120,
+            "suppression": 5.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "need": {
+                "ARCHETYPE_SHIELD": 48,
+                "ARCHETYPE_SUPPORT": 8
+            }
+        },
+        "infantry_magical": {
+            "abbreviation": "IMA",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 500,
+            "ai_priority": 150,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "categories": [
+                "category_infantry_magical",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "soft_attack": 0.25,
+            "manpower": 24,
+            "training_time": 160,
+            "suppression": 1.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.04,
+            "need": {
+                "ARCHETYPE_WITCHCRAFT": 48,
+                "ARCHETYPE_SUPPORT": 4
+            }
+        },
+        "infantry_automata": {
+            "abbreviation": "IAT",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 400,
+            "ai_priority": 150,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "categories": [
+                "category_infantry_automata",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 1,
+            "max_strength": 15,
+            "max_organisation": 100,
+            "default_morale": 0.1,
+            "manpower": 2,
+            "training_time": 45,
+            "suppression": 0.5,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.01,
+            "need": {
+                "ARCHETYPE_AUTOMATA": 160
+            }
+        },
+        "infantry_motorized": {
+            "abbreviation": "IMO",
+            "sprite": "motorized",
+            "map_icon_category": "infantry",
+            "priority": 200,
+            "ai_priority": 80,
+            "active": false,
+            "type": [
+                "motorized"
+            ],
+            "group": "mobile",
+            "categories": [
+                "category_infantry_motorized",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 35,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "soft_attack": 0.1,
+            "manpower": 48,
+            "training_time": 90,
+            "suppression": 2.2,
+            "weight": 0.75,
+            "supply_consumption": 0.065,
+            "transport": "ARCHETYPE_VEHICLE",
+            "need": {
+                "ARCHETYPE_INFANTRY": 96,
+                "ARCHETYPE_VEHICLE": 24,
+                "ARCHETYPE_SUPPORT": 4
+            },
+            "forest": {
+                "attack": -0.1,
+                "movement": -0.5
+            },
+            "mountain": {
+                "attack": -0.05
+            },
+            "jungle": {
+                "attack": -0.2,
+                "movement": -0.5
+            },
+            "marsh": {
+                "attack": -0.1,
+                "movement": -0.3
+            },
+            "urban": {
+                "attack": -0.1
+            },
+            "river": {
+                "attack": -0.1,
+                "movement": -0.1
+            },
+            "amphibious": {
+                "attack": -0.2
+            }
+        },
+        "infantry_biochemi": {
+            "abbreviation": "IBC",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "special_forces": true,
+            "categories": [
+                "category_infantry_biochemi",
+                "category_infantry_special",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "manpower": 24,
+            "training_time": 160,
+            "suppression": 0.5,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "need": {
+                "ARCHETYPE_BIOCHEMI": 96,
+                "ARCHETYPE_SUPPORT": 8
+            }
+        },
+        "infantry_landmine": {
+            "abbreviation": "ILM",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "type": [
+                "infantry",
+                "anti_tank"
+            ],
+            "group": "infantry",
+            "special_forces": true,
+            "categories": [
+                "category_infantry_landmine",
+                "category_infantry_special",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "manpower": 24,
+            "training_time": 160,
+            "suppression": 0.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "need": {
+                "ARCHETYPE_LANDMINE": 96,
+                "ARCHETYPE_SUPPORT": 8
+            }
+        },
+        "infantry_music": {
+            "abbreviation": "IMZ",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "special_forces": true,
+            "categories": [
+                "category_infantry_music",
+                "category_infantry_special",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "manpower": 24,
+            "training_time": 160,
+            "suppression": 1.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "need": {
+                "ARCHETYPE_MUSIC": 96,
+                "ARCHETYPE_SUPPORT": 8
+            }
+        },
+        "infantry_icy": {
+            "abbreviation": "IIC",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "special_forces": true,
+            "categories": [
+                "category_infantry_icy",
+                "category_infantry_special",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "manpower": 24,
+            "training_time": 160,
+            "suppression": 0.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "need": {
+                "ARCHETYPE_ICY": 96,
+                "ARCHETYPE_SUPPORT": 8
+            }
+        },
+        "infantry_colossal": {
+            "abbreviation": "ICS",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "type": [
+                "infantry",
+                "support"
+            ],
+            "group": "support",
+            "special_forces": false,
+            "categories": [
+                "category_infantry_colossal",
+                "category_infantry_special",
+                "category_all_support",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 15,
+            "max_organisation": 60,
+            "default_morale": 0.3,
+            "manpower": 18,
+            "training_time": 160,
+            "suppression": 0.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.08,
+            "hills": {
+                "movement": 0.20
+            },
+            "marsh": {
+                "movement": 0.05
+            },
+            "fort": {
+                "attack": 0.10
+            },
+            "need": {
+                "ARCHETYPE_COLOSSAL": 24,
+                "ARCHETYPE_SUPPORT": 12
+            }
+        },
+        "infantry_rockbreaker": {
+            "abbreviation": "IRB",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 1000,
+            "ai_priority": 1000,
+            "active": false,
+            "can_exfiltrate_from_coast" : true,
+            "special_forces" : true,
+            "mountaineers" : true,
+            "type": [
+                "infantry"
+            ],
+            "group": "infantry",
+            "categories": [
+                "category_infantry_rockbreaker",
+                "category_infantry_special",
+                "category_all_infantry",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "max_strength": 50,
+            "max_organisation": 200,
+            "default_morale": 0.3,
+            "soft_attack": 30,
+            "hard_attack": 30,
+            "manpower": 300,
+            "training_time": 200,
+            "suppression": 5.0,
+            "weight": 0.5,
+            "can_be_parachuted": true,
+            "supply_consumption": 0.05,
+            "need": {
+                "ARCHETYPE_ROCKBREAKER": 100,
+                "ARCHETYPE_SUPPORT": 20
+            }
+        }
+    }
+}

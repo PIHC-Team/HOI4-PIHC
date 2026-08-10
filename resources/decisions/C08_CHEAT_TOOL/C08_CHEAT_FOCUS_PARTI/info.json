@@ -1,0 +1,19 @@
+{
+    "name": "Focus partI",
+    "priority": 100,
+    
+    "cost": 0,
+    "allowed": {
+        "tag": "C08"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT"
+    },
+    "complete_effect": {
+        "load_focus_tree": "C08_MAIN",
+        "mark_focus_tree_layout_dirty": true
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

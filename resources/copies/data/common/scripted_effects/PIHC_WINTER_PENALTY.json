@@ -1,0 +1,301 @@
+{
+    "APPLY_WINTER_PENALTY": {
+        "if": {
+            "limit": {
+                "threat > 0.99": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_100"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_070"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "OR": {
+                        "has_idea": "IDEA_ERA_COLD_1_COAL",
+                        "has_idea__D1": "IDEA_ERA_COLD_2_WOOD"
+                    }
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_040"
+            },
+            "else": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_5_BURN"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_020"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "threat > 0.89": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_090"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_060"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "OR": {
+                        "has_idea": "IDEA_ERA_COLD_1_COAL",
+                        "has_idea__D1": "IDEA_ERA_COLD_2_WOOD"
+                    }
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_030"
+            },
+            "else": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_5_BURN"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_010"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "threat > 0.79": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_080"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_050"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "OR": {
+                        "has_idea": "IDEA_ERA_COLD_1_COAL",
+                        "has_idea__D1": "IDEA_ERA_COLD_2_WOOD"
+                    }
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_020"
+            },
+            "else": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_5_BURN"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_000"
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "threat > 0.69": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_070"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_040"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "OR": {
+                        "has_idea": "IDEA_ERA_COLD_1_COAL",
+                        "has_idea__D1": "IDEA_ERA_COLD_2_WOOD"
+                    }
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_010"
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "threat > 0.59": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_060"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_030"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "OR": {
+                        "has_idea": "IDEA_ERA_COLD_1_COAL",
+                        "has_idea__D1": "IDEA_ERA_COLD_2_WOOD"
+                    }
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_000"
+            }
+        },
+        "else_if__D4": {
+            "limit": {
+                "threat > 0.49": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_050"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_020"
+            }
+        },
+        "else_if__D5": {
+            "limit": {
+                "threat > 0.39": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_040"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_010"
+            }
+        },
+        "else_if__D6": {
+            "limit": {
+                "threat > 0.29": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_030"
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_3_SUBSIDY"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_000"
+            }
+        },
+        "else_if__D7": {
+            "limit": {
+                "threat > 0.19": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_020"
+            }
+        },
+        "else_if__D8": {
+            "limit": {
+                "threat > 0.9": null
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_010"
+            }
+        },
+        "else": {
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_COLD_4_SELF"
+                },
+                "add_ideas": "IDEA_ALL_WINTER_PENALTY_000"
+            }
+        }
+    },
+    "REVOKE_WINTER_PENALTY": {
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_100"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_100"
+        },
+        "if__D1": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_090"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_090"
+        },
+        "if__D2": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_080"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_080"
+        },
+        "if__D3": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_070"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_070"
+        },
+        "if__D4": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_060"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_060"
+        },
+        "if__D5": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_050"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_050"
+        },
+        "if__D6": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_040"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_040"
+        },
+        "if__D7": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_030"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_030"
+        },
+        "if__D8": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_020"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_020"
+        },
+        "if__D9": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_010"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_010"
+        },
+        "if__D10": {
+            "limit": {
+                "has_idea": "IDEA_ALL_WINTER_PENALTY_000"
+            },
+            "remove_ideas": "IDEA_ALL_WINTER_PENALTY_000"
+        }
+    }
+}

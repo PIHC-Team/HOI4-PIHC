@@ -1,0 +1,27 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C11"
+            },
+            "news_event": {
+                "id": "SUPER_NEWS.5",
+                "days": 42
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

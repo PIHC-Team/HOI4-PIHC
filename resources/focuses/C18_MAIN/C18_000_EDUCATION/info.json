@@ -1,0 +1,29 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_000_KUN",
+    "prerequisite": {
+        "focus": "FOCUS_C18_000_KUN"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "736": {
+            "BUILD_A_RESEARCH": true,
+            "BUILD_AN_INFRA": true
+        },
+        "60": {
+            "BUILD_A_RESEARCH": true,
+            "BUILD_AN_INFRA": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

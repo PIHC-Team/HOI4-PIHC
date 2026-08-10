@@ -1,0 +1,42 @@
+state = {
+    id = 504
+    name = STATE_504
+    provinces = {
+        37
+        940
+        2612
+        3654
+        3658
+        4142
+        4416
+        5591
+        5771
+        8483
+        9559
+        11565
+        11676
+        11737
+    }
+    manpower = 69815
+    state_category = large_town
+    history = {
+        owner = C02
+        victory_points = {
+            37
+            25
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 3
+            farm_complex = 2
+            37 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C02
+    }
+    resources = {
+        aluminium = 1
+        chromium = 1
+    }
+}

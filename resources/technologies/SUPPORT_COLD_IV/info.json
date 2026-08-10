@@ -1,0 +1,48 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 0,
+    "y": 13,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_cold"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "acclimatization_cold_climate_gain_factor": 0.75,
+    "winter_attrition_factor": -0.50,
+    "air_weather_penalty": -0.1,
+    "terrain_penalty_reduction": 0.03,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_COLD_III": 1
+    },
+    "path": {
+    },
+    "on_research_complete": {
+        "if": {
+            "limit": {
+                "tag": "C18",
+                "has_decision": "DECISION_C18_DIE_NEBENWELT_WAR_TIMER"
+            },
+            "add_days_mission_timeout": {
+                "mission": "DECISION_C18_DIE_NEBENWELT_WAR_TIMER",
+                "days": 60
+            }
+        }
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1008
+}

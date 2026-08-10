@@ -1,0 +1,108 @@
+{
+    "name": "Cure",
+    "priority": 101,
+    
+    "cost": 25,
+    "days_remove": 60,
+    "days_re_enable": 0,
+    "highlight_states": {
+        "highlight_state_targets": {
+            "state": 828,
+            "state__D1": 847,
+            "state__D2": 819,
+            "state__D3": 224,
+            "state__D4": 201,
+            "state__D5": 810,
+            "state__D6": 226,
+            "state__D7": 801
+        }
+    },
+    "visible": {
+        "tag": "C18",
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_REGIONAL_DEV_WORKING"
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_C18_CURE_60": true,
+        "has_political_power > 24": null
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_C18_CURE_60": true,
+        "has_political_power > 24": null
+    },
+    "custom_cost_text": "CUSTOM_COST_CURE_60_PP_25",
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_5",
+        "custom_effect_tooltip": "DECISION_C18_CURE_REGION_5_START_TOOLTIP",
+        "multiply_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 0.850
+        },
+        "hidden_effect": {
+            "DEL_INVENTORY_ITEM_3RA_C18_CURE_60": true,
+            "add_political_power": -25
+        }
+    },
+    "remove_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_5",
+        "custom_effect_tooltip": "DECISION_C18_CURE_REGION_5_END_TOOLTIP",
+        "multiply_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 1.176
+        }
+    },
+    "cancel_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_5",
+        "custom_effect_tooltip": "DECISION_C18_CURE_REGION_5_END_TOOLTIP",
+        "multiply_variable": {
+            "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4": 1.176
+        }
+    },
+    "cancel_trigger": {
+        "hidden_trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CURING_5"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 3,
+        "modifier": {
+            "add": 10,
+            "check_variable": {
+                "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                "value": 2.0,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "modifier__D1": {
+            "add": 100,
+            "check_variable": {
+                "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                "value": 5.0,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "modifier__D2": {
+            "add": 4000,
+            "check_variable": {
+                "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4",
+                "value": 10.0,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "modifier__D3": {
+            "add": 10,
+            "check_variable": {
+                "var": "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE",
+                "value": 100,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "modifier__D4": {
+            "add": 100,
+            "check_variable": {
+                "var": "C18.VAR_INVENTORY_ITEM_3RA_C18_CURE",
+                "value": 200,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    }
+}

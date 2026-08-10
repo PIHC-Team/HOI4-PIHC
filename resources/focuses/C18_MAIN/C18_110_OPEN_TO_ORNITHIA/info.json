@@ -1,0 +1,38 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_110_DUI",
+    "prerequisite": {
+        "focus": "FOCUS_C18_110_DUI"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "country_event": {
+            "id": "C18_MAIN.129"
+        }
+    },
+    "available": {
+        "country_exists": "C25",
+        "num_of_naval_factories > 5": null,
+        "202": {
+            "is_owned_by": "C18",
+            "is_fully_controlled_by": "C18",
+            "dockyard > 0": null,
+            "naval_base > 0": null
+        },
+        "184": {
+            "is_owned_by": "C18",
+            "is_fully_controlled_by": "C18",
+            "dockyard > 0": null,
+            "naval_base > 0": null
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

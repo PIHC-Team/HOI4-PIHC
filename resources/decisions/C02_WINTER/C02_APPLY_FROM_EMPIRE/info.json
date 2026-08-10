@@ -1,0 +1,36 @@
+{
+    "name": "Apply logs From Empire",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 60,
+    "days_re_enable": 0,
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "C02": {
+            "add_power_balance_value": {
+                "id": "BOP_C02_INDEPENDENCE",
+                "value": -0.15,
+                "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+            }
+        }
+    },
+    "modifier": {
+        "country_resource_logs": 40
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 1000,
+            "C02": {
+                "check_variable": {
+                    "var": "C02.VAR_C02_WINTER_FIRE_PRODUCED",
+                    "value": "C02.VAR_C02_WINTER_FIRE",
+                    "compare": "less_than"
+                }
+            }
+        }
+    }
+}

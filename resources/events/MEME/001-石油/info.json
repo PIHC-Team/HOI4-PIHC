@@ -1,0 +1,15 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C23_OIL_WHERE",
+            "effect_tooltip": {
+                "recruit_character": "CHARACTER_US_MILITARY"
+            },
+            "activate_advisor": "CHARACTER_US_MILITARY"
+        }
+    ],
+    "is_triggered_only": true
+}

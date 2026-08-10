@@ -1,0 +1,22 @@
+{
+    "name": "Mid-stage Firearm I",
+    "category": "infantry",
+
+    "x": 5,
+    "y": 16,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_SMOOTHBORE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "research_cost": 2.0,
+    "start_year": 1005
+}

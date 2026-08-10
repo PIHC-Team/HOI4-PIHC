@@ -1,0 +1,70 @@
+{
+    "name": "Freedom",
+    "priority": 100,
+    
+    "cost": 150,
+    "days_re_enable": 180,
+    "allowed": {
+        "tag": "C15"
+    },
+    "visible": {
+        "has_completed_focus": "FOCUS_C15_SOMBRA_CRYSTAL_FREEDOM"
+    },
+    "available": {
+        "has_template": "黑晶奴隶师 (Sombra Slave Division)",
+        "3": {
+            "is_owned_and_controlled_by": "C15"
+        },
+        "has_army_size": {
+            "size > 9": null
+        },
+        "num_divisions_in_states": {
+            "count > 5": null,
+            "states": [
+                "3"
+            ],
+            "types": [
+                "infantry_traditional"
+            ]
+        }
+    },
+    "complete_effect": {
+        "add_stability": -0.04,
+        "custom_effect_tooltip": "DECISION_C15_SOMBRA_SLAVE_FREEDOM_TOOLTIP",
+        "3": {
+            "hidden_effect": {
+                "every_state_division": {
+                    "limit": {
+                        "division_has_majority_template": "infantry_traditional"
+                    },
+                    "destroy_unit": true
+                }
+            },
+            "BUILD_A_CIC": true
+        },
+        "add_resource": {
+            "type": "crystals",
+            "amount": 12,
+            "state": 3
+        },
+        "random": {
+            "chance": 10,
+            "add_resource": {
+                "type": "tungsten",
+                "amount": 4,
+                "state": 3
+            }
+        },
+        "random__D1": {
+            "chance": 10,
+            "add_resource": {
+                "type": "chromium",
+                "amount": 4,
+                "state": 3
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

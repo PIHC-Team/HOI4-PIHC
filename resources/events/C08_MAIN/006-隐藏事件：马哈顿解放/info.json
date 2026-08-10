@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C08_MAIN.12",
+                "days": 1
+            },
+            "news_event": {
+                "id": "SUPER_NEWS.4",
+                "days": 3
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "trigger": {
+        "tag": "C08",
+        "888": {
+            "is_owned_and_controlled_by": "C08"
+        }
+    },
+    "hidden": true,
+    "fire_only_once": true
+}

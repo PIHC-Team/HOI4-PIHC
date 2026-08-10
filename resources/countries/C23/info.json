@@ -1,0 +1,126 @@
+{
+    "name": "Free Equestria",
+    "rgb": [
+        255,
+        241,
+        136
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 261,
+        "set_popularities": {
+            "democratic": 30,
+            "harmonicism": 25,
+            "despotic": 15,
+            "peacism": 20,
+            "anarchy": 4,
+            "equatism": 3,
+            "fascism": 1,
+            "corporation": 1,
+            "transcendence": 1
+        },
+        "set_politics": {
+            "ruling_party": "democratic",
+            "elections_allowed": false
+        },
+        "set_stability": 0.10,
+        "recruit_character_batch": [
+            "CHARACTER_SUNSET_SHIMMER",
+            "CHARACTER_SUNSET_SHIMMER_MISSING",
+            "CHARACTER_HUMAN_TWILIGHT_SPARKLE",
+            "CHARACTER_HUMAN_RAINBOW_DASH",
+            "CHARACTER_HUMAN_PINKIE_PIE",
+            "CHARACTER_HUMAN_RARITY",
+            "CHARACTER_HUMAN_APPLE_JACK",
+            "CHARACTER_HUMAN_FLUTTERSHY",
+            "CHARACTER_MARE_DO_WELL_2",
+            "CHARACTER_COLORATURA",
+            "CHARACTER_US_MILITARY"
+        ],
+        "promote_character": {
+            "character": "CHARACTER_SUNSET_SHIMMER",
+            "ideology": "democratic_harmonicism"
+        },
+        "create_faction": "FACTION_MATO",
+        "add_ideas_batch": [
+            "export_focus",
+            "limited_conscription",
+            "civilian_economy",
+            "IDEA_ERA_TECH_3_NEUTRAL",
+            "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS",
+            "IDEA_ALL_HARMONICISM_ORTHODOXY",
+            "IDEA_C23_STORM_LEGACY",
+            "IDEA_C23_GREAT_DEPRESSION"
+        ],
+        "// complete_national_focus_batch": [
+            "FOCUS_BAD_NEWS",
+            "FOCUS_WHERE_SHOULD_I_GO",
+            "FOCUS_MAD_TWIENCE",
+            "FOCUS_YES_I_AM_NEW_HERE",
+            "FOCUS_CREATE_A_PORTAL",
+            "FOCUS_CHAOS_SOUTHERN_ISLANDS",
+            "FOCUS_COMPROMISE"
+        ],
+        "set_research_slots": 2,
+        "country_lock_all_division_template": true,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_ENER_I": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C08_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_C08_TRADE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "add_manpower": 800,
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    }
+}

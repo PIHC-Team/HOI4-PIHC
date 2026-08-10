@@ -1,0 +1,26 @@
+{
+    "on_actions": {
+        "on_monthly_C07": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "C01": {
+                            "has_war_with": "C08",
+                            "OR": {
+                                "has_war_with": "C12",
+                                "has_war_with__D1": "C14"
+                            },
+                            "longest_war_length > 24": null
+                        }
+                    },
+                    "C07": {
+                        "country_event": {
+                            "id": "C07_MAIN.14",
+                            "days": 30
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

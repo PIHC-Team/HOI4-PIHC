@@ -1,0 +1,41 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev",
+                "news_event": {
+                    "id": "C02_HOTLINE.15",
+                    "days": 7,
+                    "random_days": 7
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "random_list": {
+                    "seed": "random",
+                    "80": {
+                        "country_event": {
+                            "id": "C02_HOTLINE.11",
+                            "days": 180,
+                            "random_days": 120
+                        }
+                    },
+                    "20": {
+                        "country_event": {
+                            "id": "C02_HOTLINE.13",
+                            "days": 180,
+                            "random_days": 120
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

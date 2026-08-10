@@ -1,0 +1,44 @@
+{
+    "//available": {
+        "tag": "C07",
+        "C12": {
+            "has_war_with": "C07",
+            "surrender_progress > 0.4": null
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 95
+            },
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.29",
+                    "days": 2,
+                    "random_days": 2
+                }
+            },
+            "add_political_power": 50
+        },
+        {
+            "ai_chance": {
+                "factor": 4
+            },
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.30",
+                    "days": 2,
+                    "random_days": 2
+                },
+                "add_political_power": 20
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 1
+            },
+            "add_political_power": 50
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,34 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_MSHGA",
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C09_MSHGA"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "C11": {
+            "add_opinion_modifier": {
+                "target": "C09",
+                "modifier": "FOCUS_C11_C09_FIRELIGHT_CONTACT_OPINION_MODIFIER"
+            }
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_FIRELIGHT",
+            "ruling_only": true
+        },
+        "has_completed_focus": "FOCUS_C09_APPLEWOOD_CITY_NEW",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Bonds to Civ",
+    "priority": 97,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "state_target": true,
+    "on_map_mode": "map_only",
+    "target_root_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS": true
+    },
+    "target_array": "ROOT.owned_controlled_states",
+    "available": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1500": true
+        }
+    },
+    "custom_cost_trigger": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1500": true
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_1500",
+    "complete_effect": {
+        "ROOT": {
+            "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1500": true
+        },
+        "FROM": {
+            "BUILD_A_CIC": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

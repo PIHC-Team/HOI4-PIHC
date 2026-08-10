@@ -1,0 +1,407 @@
+{
+    "INIT_C04_BY_ELECTION": {
+        "set_variable": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": 51.0
+        },
+        "set_variable__D1": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": 21.0
+        },
+        "set_variable__D2": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": 31.0
+        },
+        "set_variable__D3": {
+            "C04.VAR_DELTA": 0.0
+        },
+        "COMPUTE_C04_BY_ELECTION": true
+    },
+    "RATIONALIZE_C04_BY_ELECTION": {
+        "clamp_variable": {
+            "var": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT",
+            "min": 0.0
+        },
+        "clamp_variable__D1": {
+            "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+            "min": 0.0
+        },
+        "clamp_variable__D2": {
+            "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+            "min": 0.0
+        },
+        "set_temp_variable": {
+            "total_support": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+        },
+        "add_to_temp_variable": {
+            "total_support": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT"
+        },
+        "add_to_temp_variable__D1": {
+            "total_support": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+        },
+        "divide_temp_variable": {
+            "total_support": 100.0
+        },
+        "divide_variable": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": "total_support"
+        },
+        "divide_variable__D1": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": "total_support"
+        },
+        "divide_variable__D2": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": "total_support"
+        },
+        "clamp_variable__D3": {
+            "var": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "clamp_variable__D4": {
+            "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "clamp_variable__D5": {
+            "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "COMPUTE_C04_BY_ELECTION": {
+        "RATIONALIZE_C04_BY_ELECTION": true,
+        "set_variable": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_1": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+        },
+        "set_variable__D1": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+        },
+        "add_to_variable": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+        },
+        "set_variable__D2": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_1_DIVIDER": "C04.VAR_BY_ELECTION_PROGRESS_BAR_1"
+        },
+        "multiply_variable": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_1_DIVIDER": "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_COEFFICIENT"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_1_DIVIDER": "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_SHIFT"
+        },
+        "set_variable__D3": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2_DIVIDER": "C04.VAR_BY_ELECTION_PROGRESS_BAR_2"
+        },
+        "multiply_variable__D1": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2_DIVIDER": "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_COEFFICIENT"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2_DIVIDER": "C04.VAR_MYSTERIOUS_PROGRESS_BAR_GUI_SHIFT"
+        },
+        "multiply_variable__D2": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_1": 10.0
+        },
+        "multiply_variable__D3": {
+            "C04.VAR_BY_ELECTION_PROGRESS_BAR_2": 10.0
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "MODIFY_C04_BY_ELECTION_SKY_STINGER_SUPPORT": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+                    "value": 100.0,
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "wind_rider_ratio": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+            },
+            "set_temp_variable__D1": {
+                "wind_rider_washouts": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+            },
+            "add_to_temp_variable": {
+                "wind_rider_washouts": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT"
+            },
+            "divide_temp_variable": {
+                "wind_rider_ratio": "wind_rider_washouts"
+            }
+        },
+        "else": {
+            "set_temp_variable": {
+                "wind_rider_ratio": 0.5
+            }
+        },
+        "set_temp_variable": {
+            "added_old": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+        },
+        "add_to_variable": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": "C04.VAR_DELTA"
+        },
+        "clamp_variable": {
+            "var": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D1": {
+            "added_delta": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+        },
+        "subtract_from_temp_variable": {
+            "added_delta": "added_old"
+        },
+        "multiply_temp_variable": {
+            "added_delta": -1
+        },
+        "set_temp_variable__D2": {
+            "wind_rider_delta": "added_delta"
+        },
+        "multiply_temp_variable__D1": {
+            "wind_rider_delta": "wind_rider_ratio"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": "wind_rider_delta"
+        },
+        "clamp_variable__D1": {
+            "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D3": {
+            "washouts_delta": "added_delta"
+        },
+        "subtract_from_temp_variable__D1": {
+            "washouts_delta": "wind_rider_delta"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": "washouts_delta"
+        },
+        "clamp_variable__D2": {
+            "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_variable": {
+            "C04.VAR_DELTA": 0.0
+        },
+        "COMPUTE_C04_BY_ELECTION": true
+    },
+    "MODIFY_C04_BY_ELECTION_WIND_RIDER_SUPPORT": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+                    "value": 100.0,
+                    "compare": "less_than"
+                },
+                "set_temp_variable": {
+                    "sky_stinger_ratio": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+                },
+                "set_temp_variable__D1": {
+                    "sky_stinger_washouts": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+                },
+                "add_to_temp_variable": {
+                    "sky_stinger_washouts": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT"
+                },
+                "divide_temp_variable": {
+                    "sky_stinger_ratio": "sky_stinger_washouts"
+                }
+            }
+        },
+        "else": {
+            "set_temp_variable": {
+                "sky_stinger_ratio": 0.5
+            }
+        },
+        "set_temp_variable": {
+            "added_old": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+        },
+        "add_to_variable": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": "C04.VAR_DELTA"
+        },
+        "clamp_variable": {
+            "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D1": {
+            "added_delta": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+        },
+        "subtract_from_temp_variable": {
+            "added_delta": "added_old"
+        },
+        "multiply_temp_variable": {
+            "added_delta": -1
+        },
+        "set_temp_variable__D2": {
+            "sky_stinger_delta": "added_delta"
+        },
+        "multiply_temp_variable__D1": {
+            "sky_stinger_delta": "sky_stinger_ratio"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": "sky_stinger_delta"
+        },
+        "clamp_variable__D1": {
+            "var": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D3": {
+            "washouts_delta": "added_delta"
+        },
+        "subtract_from_temp_variable__D1": {
+            "washouts_delta": "sky_stinger_delta"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": "washouts_delta"
+        },
+        "clamp_variable__D2": {
+            "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_variable": {
+            "C04.VAR_DELTA": 0.0
+        },
+        "COMPUTE_C04_BY_ELECTION": true
+    },
+    "MODIFY_C04_BY_ELECTION_WASHOUTS_SUPPORT": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+                    "value": 100.0,
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "sky_stinger_ratio": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+            },
+            "set_temp_variable__D1": {
+                "sky_stinger_wind_rider": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT"
+            },
+            "add_to_temp_variable": {
+                "sky_stinger_wind_rider": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT"
+            },
+            "divide_temp_variable": {
+                "sky_stinger_ratio": "sky_stinger_wind_rider"
+            }
+        },
+        "else": {
+            "set_temp_variable": {
+                "sky_stinger_ratio": 0.5
+            }
+        },
+        "set_temp_variable": {
+            "added_old": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT"
+        },
+        "add_to_variable": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": "C04.VAR_DELTA"
+        },
+        "clamp_variable": {
+            "var": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D1": {
+            "added_delta": "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT"
+        },
+        "subtract_from_temp_variable": {
+            "added_delta": "added_old"
+        },
+        "multiply_temp_variable": {
+            "added_delta": -1
+        },
+        "set_temp_variable__D2": {
+            "sky_stinger_delta": "added_delta"
+        },
+        "multiply_temp_variable__D1": {
+            "sky_stinger_delta": "sky_stinger_ratio"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": "sky_stinger_delta"
+        },
+        "clamp_variable__D1": {
+            "var": "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_temp_variable__D3": {
+            "wind_rider_delta": "added_delta"
+        },
+        "subtract_from_temp_variable__D1": {
+            "wind_rider_delta": "sky_stinger_delta"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": "wind_rider_delta"
+        },
+        "clamp_variable__D2": {
+            "var": "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT",
+            "min": 0.0,
+            "max": 100.0
+        },
+        "set_variable": {
+            "C04.VAR_DELTA": 0.0
+        },
+        "COMPUTE_C04_BY_ELECTION": true
+    },
+    "WEEKLY_C04_BY_ELECTION": {
+        "set_temp_variable": {
+            "support": "party_popularity@democratic"
+        },
+        "add_to_temp_variable": {
+            "support": "party_popularity@harmonicism"
+        },
+        "multiply_temp_variable": {
+            "support": "C04.VAR_BY_ELECTION_POPULARITY_WEIGHT"
+        },
+        "add_to_variable": {
+            "C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT": "support"
+        },
+        "set_temp_variable__D1": {
+            "support": "party_popularity@fascism"
+        },
+        "add_to_temp_variable__D1": {
+            "support": "party_popularity@anarchy"
+        },
+        "multiply_temp_variable__D1": {
+            "support": "C04.VAR_BY_ELECTION_POPULARITY_WEIGHT"
+        },
+        "add_to_variable__D1": {
+            "C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT": "support"
+        },
+        "set_temp_variable__D2": {
+            "support": "party_popularity@corporation"
+        },
+        "add_to_temp_variable__D2": {
+            "support": "party_popularity@despotic"
+        },
+        "multiply_temp_variable__D2": {
+            "support": "C04.VAR_BY_ELECTION_POPULARITY_WEIGHT"
+        },
+        "add_to_variable__D2": {
+            "C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT": "support"
+        },
+        "COMPUTE_C04_BY_ELECTION": true
+    },
+    "C04_SPITFIRE_ASSASSINATED": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_SPITFIRE_ASSASSINATED",
+        "kill_country_leader": true,
+        "retire_character": "CHARACTER_SHORT_FUSE",
+        "deactivate_advisor": "CHARACTER_SKY_STINGER",
+        "promote_character": {
+            "character": "CHARACTER_SKY_STINGER",
+            "ideology": "harmonicism_revengeism"
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ALL_ECONOMIC_GROWTH"
+            },
+            "remove_ideas": "IDEA_ALL_ECONOMIC_GROWTH"
+        },
+        "load_focus_tree": "C04_BY_ELECTION",
+        "complete_national_focus": "FOCUS_C04_AFTER_THE_GUNSHOT",
+        "DEL_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_1": true
+    },
+    "C04_BY_ELECTION_RESULT": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_SPITFIRE_ASSASSINATED"
+        
+    }
+}

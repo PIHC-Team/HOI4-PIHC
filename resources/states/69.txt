@@ -1,0 +1,37 @@
+state = {
+    id = 69
+    name = STATE_69
+    provinces = {
+        2946
+        3130
+        3803
+        3814
+        9682
+        11594
+        11665
+        11707
+        11715
+    }
+    manpower = 123932
+    state_category = metropolis
+    history = {
+        owner = C11
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 4
+            arms_factory = 4
+            3803 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C11
+        victory_points = {
+            3803
+            35
+        }
+    }
+    resources = {
+        tungsten = 20
+        crystals = 30
+    }
+}

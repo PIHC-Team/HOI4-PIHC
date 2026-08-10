@@ -1,0 +1,42 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_ISLES_ARMY",
+    "dw": -2,
+    "dc": -2,
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_ISLES_NAVY_FLEET"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C07_LPMIG_ISLES_ARMY"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C07_LPMIG_ISLES_FLAGSHIP"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "146": {
+            "add_claim_by": "C07"
+        },
+        "187": {
+            "add_claim_by": "C07"
+        },
+        "178": {
+            "add_claim_by": "C07"
+        },
+        "882": {
+            "add_claim_by": "C07"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

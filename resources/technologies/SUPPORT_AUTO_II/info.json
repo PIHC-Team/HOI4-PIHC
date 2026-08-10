@@ -1,0 +1,36 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 6,
+    "y": 11,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_auto"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_automata": {
+        "soft_attack": 0.10,
+        "max_strength": 0.25
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_AUTO_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1004
+}

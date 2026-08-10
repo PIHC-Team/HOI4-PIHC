@@ -1,0 +1,926 @@
+{
+    "every_possible_country": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_000",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_ALL_DAY_ALL_NIGHT"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_000_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_ALL_DAY_ALL_NIGHT"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D1": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_001",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_BREAKTHROUGH"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_001_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_BREAKTHROUGH"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D2": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_002",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_GUERRILLA"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_002_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_GUERRILLA"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D3": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_003",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_ARMY_COMMANDER"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ARMY_CHIEF_ALL_01_003_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "army_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_ARMY_COMMANDER"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D4": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_NAVY_CHIEF_ALL_01_004",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "navy_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_NAVY_COMMANDER"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_NAVY_CHIEF_ALL_01_004_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "navy_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_NAVY_COMMANDER"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D5": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_AIR_CHIEF_ALL_01_005",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "air_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_AIR_COMMANDER"
+                        ]
+                    },
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_AIR_CHIEF_ALL_01_005_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "air_chief",
+                        "traits": [
+                            "TRAIT_ARROGANT_AIR_COMMANDER"
+                        ]
+                    },
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "every_possible_country__D6": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_006",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_ARCHITECT"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_003_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_006_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_ARCHITECT"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_004_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D7": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_007",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_EDUCATOR"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_008_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_007_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_EDUCATOR"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_005_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D8": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_008",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_INDUSTRY_LEADER"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_002_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_008_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_INDUSTRY_LEADER"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_001_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D9": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_009",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_DOVISH",
+                            "TRAIT_DIPLOMATIC_GENIUS"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_009_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_009_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_DOVISH",
+                            "TRAIT_DIPLOMATIC_GENIUS"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_006_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D10": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_010",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_CORRUPT",
+                            "TRAIT_ECONOMICAL_GENIUS"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_010_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_010_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_CORRUPT",
+                            "TRAIT_ECONOMICAL_GENIUS"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_007_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D11": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_011",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_EFFICIENT",
+                            "TRAIT_HAWKISH"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_011_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_011_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_EFFICIENT",
+                            "TRAIT_HAWKISH"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_012_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D12": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_012",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_FREEDOM_FIGHTER",
+                            "TRAIT_FASHION_IDOL"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_011_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_012_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_FREEDOM_FIGHTER",
+                            "TRAIT_FASHION_IDOL"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_012_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D13": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_013",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_PRINCE_OF_TERROR"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_008_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_013_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 100,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_PRINCE_OF_TERROR"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_005_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D14": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_014",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_POPULAR"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_002_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_014_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_POPULAR"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_001_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D15": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_015",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_SUPER_IDOL"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_011_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_015_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_SUPER_IDOL"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_012_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D16": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_016",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_MAKEUP_ARTIST",
+                            "TRAIT_TREACHEROUS"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_002_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_016_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_MAKEUP_ARTIST",
+                            "TRAIT_TREACHEROUS"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_001_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "every_possible_country__D17": {
+        "limit": {
+            "is_pony_country": true,
+            "is_dynamic_country": false,
+            "is_blank_country": false
+        },
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_017",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_TECHNOLOGICAL_GENIUS_II",
+                            "TRAIT_DIPLOMATIC_IDIOT"
+                        ]
+                    },
+                    "gender": "male",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_003_portrait_small"
+                        }
+                    }
+                }
+            },
+            "5": {
+                "generate_character": {
+                    "token_base": "CHARACTER_GENERIC_RANDOM_ADVISOR_ALL_01_017_FEMALE",
+                    "advisor": {
+                        "allowed": {
+                            "always": true
+                        },
+                        "cost": 300,
+                        "removal_cost": 150,
+                        "slot": "political_advisor",
+                        "traits": [
+                            "TRAIT_TECHNOLOGICAL_GENIUS_II",
+                            "TRAIT_DIPLOMATIC_IDIOT"
+                        ]
+                    },
+                    "gender": "female",
+                    "portraits": {
+                        "army": {
+                            "small": "GFX_RANDOM_CHARACTER_PONY_POLITICAL_004_portrait_small"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

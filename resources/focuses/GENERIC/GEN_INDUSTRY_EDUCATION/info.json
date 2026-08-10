@@ -1,0 +1,28 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_INDUSTRY_SOCIETY",
+    "prerequisite": {
+        "focus": "FOCUS_GEN_INDUSTRY_SOCIETY"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_GEN_INDUSTRY_INFRA_3"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_GEN_INDUSTRY_CONSTRUCTION_3"
+    },
+    "cost": 10,
+    "completion_reward": {
+        "UPGRADE_TECH": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

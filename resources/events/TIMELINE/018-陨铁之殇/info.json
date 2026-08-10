@@ -1,0 +1,45 @@
+{
+    "date": "1003.02.01",
+    "date_scope": "C01",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "custom_effect_tooltip": "EVENT_TIMELINE_18_C14_TOOLTIP"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "C14": {
+                "give_resource_rights": {
+                    "receiver": "C01",
+                    "state": 86
+                },
+                "country_event": {
+                    "id": "TIMELINE.18"
+                }
+            },
+            "C01": {
+                "transfer_state": 86
+            },
+            "86": {
+                "create_unit": {
+                    "division": "name = \"帝国陨铁特别行动小队 (Imperial Meteor Special Special Action Team)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C01",
+                    "count": 3
+                }
+            },
+            "custom_effect_tooltip": "EVENT_TIMELINE_18_C01_TOOLTIP",
+            "set_global_flag": "PIHC_GLOBAL_FLAG_METEORITE_HAPPENED"
+        }
+    ],
+    "is_triggered_only": true
+}

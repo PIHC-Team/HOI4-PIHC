@@ -1,0 +1,32 @@
+{
+    "name": "Loan Bonds",
+    "priority": 91,
+    
+    "days_remove": 360,
+    "days_re_enable": 1,
+    "visible": {
+        "tag": "C09",
+        "has_completed_focus": "FOCUS_C09_ECONOMY_CENTER",
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS": true
+    },
+    "available": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+        }
+    },
+    "custom_cost_trigger": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_600",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600": true
+    },
+    "remove_effect": {
+        "ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200": true
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

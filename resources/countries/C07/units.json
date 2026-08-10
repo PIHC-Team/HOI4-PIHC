@@ -1,0 +1,34 @@
+{
+    "traditional_regular": [
+        { "location": 12077, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 12077, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 13008, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 12520, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 }
+    ],
+    "traditional_small": [
+        { "location": 12633, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 12633, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  9655, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  9655, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  2129, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  7458, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 12520, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location": 12520, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  5051, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  1269, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  2016, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  2541, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  9300, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  7458, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 }
+    ],
+    "tank_light": [
+        { "location": 12077, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  2016, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  2541, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  1269, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  9300, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 }
+    ],
+    "artillery": [
+        { "location": 12077, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 }
+    ]
+}

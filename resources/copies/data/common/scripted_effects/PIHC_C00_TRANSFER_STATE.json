@@ -1,0 +1,53 @@
+{
+    "REMOVE_FROM_C00_WASTELAND": {
+        "if": {
+            "limit": {
+                "pihc_bgfx_fog > 0": null
+            },
+            "set_building_level": {
+                "type": "pihc_bgfx_fog",
+                "level": 0,
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "remove_core_of": "C00"
+    },
+    "ADD_TO_C00_WASTELAND": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "pihc_bgfx_fog > 0": null
+                }
+            },
+            "add_building_construction": {
+                "type": "pihc_bgfx_fog",
+                "level": 1,
+                "instant_build": true,
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "add_core_of": "C00",
+        "transfer_state_to": "C00"
+    },
+    "ADD_FOG_OF_WAR_BUILDING": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "pihc_bgfx_fog > 0": null
+                }
+            },
+            "add_building_construction": {
+                "type": "pihc_bgfx_fog",
+                "level": 1,
+                "instant_build": true,
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        }
+    }
+}

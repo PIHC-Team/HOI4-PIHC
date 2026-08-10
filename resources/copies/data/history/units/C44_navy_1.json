@@ -1,0 +1,132 @@
+{
+    "units": {
+        "fleet": {
+            "name": "Equestrian Fleet",
+            "naval_base": 2753,
+            "task_force": {
+                "name": "Equestrian Fleet 1",
+                "location": 16201,
+                "ship": {
+                    "name": "Princess Celestia",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "Princess Class"
+                        }
+                    }
+                },
+                "ship__D1": {
+                    "name": "Princess Luna",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "Princess Class"
+                        }
+                    }
+                },
+                "ship__D2": {
+                    "name": "Princess Cadence",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "Princess Class"
+                        }
+                    }
+                },
+                "ship__D3": {
+                    "name": "Princess Twilight",
+                    "definition": "battleship",
+                    "start_experience_factor": 0.8,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEACOURTYARD": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "Princess Class"
+                        }
+                    }
+                },
+                "ship__D4": {
+                    "name": "Canterlot",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.5,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D5": {
+                    "name": "Manehattan",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.3,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D6": {
+                    "name": "Las Pegasus",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.3,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D7": {
+                    "name": "Ponyville",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.1,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C07",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D8": {
+                    "name": "Cloudsdale",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.1,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "City Class"
+                        }
+                    }
+                },
+                "ship__D9": {
+                    "name": "Appleloosa",
+                    "definition": "destroyer",
+                    "start_experience_factor": 0.1,
+                    "equipment": {
+                        "EQUIPMENT_SHIP_SEASURGE": {
+                            "amount": 1,
+                            "owner": "C44",
+                            "version_name": "City Class"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

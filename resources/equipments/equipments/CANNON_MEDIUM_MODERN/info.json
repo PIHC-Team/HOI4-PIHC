@@ -1,0 +1,21 @@
+{
+    "name": "Modern Medium Cannon",
+    "parent": "EQUIPMENT_CANNON_MEDIUM_STEAM",
+    "alpha_global": 0.4,
+    "reliability": 0.95,
+    "weight": 1.8,
+    "can_be_produced" : { 
+        "NOT":{"TAG":"C12"}
+    },
+    "resources": {
+        "steel": 7,
+        "rubber": 4,
+        "tungsten": 1
+    },
+    "ap_attack": 36.0,
+    "fuel_consumption": 0.12,
+
+    "maximum_speed": 4.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

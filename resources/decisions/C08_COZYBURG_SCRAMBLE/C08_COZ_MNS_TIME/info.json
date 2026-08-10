@@ -1,0 +1,45 @@
+{
+    "name": "MNS Time",
+    "priority": 10000,
+    
+    "selectable_mission": false,
+    "days_mission_timeout": 180,
+    "activation": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE",
+        "tag": "C08"
+    },
+    "cancel_trigger": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_COZ_MNS_TIME_TOOLTIP",
+            "NOT": {
+                "has_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE"
+            }
+        }
+    },
+    "available": {
+        "always": false
+    },
+    "timeout_effect": {
+        "country_event": {
+            "id": "C08_MAIN.71"
+        },
+        "C01": {
+            "end_puppet": "C33",
+            "country_event": {
+                "id": "C08_MAIN.72"
+            }
+        },
+        "C33": {
+            "leave_faction": true,
+            "add_ideas": "IDEA_C33_FALLEN"
+        },
+        "hidden_effect": {
+            "clr_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE"
+        }
+        
+    },
+    "ai_will_do": {
+        "base": 0
+    },
+    "fire_only_once": true
+}

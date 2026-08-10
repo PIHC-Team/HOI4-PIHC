@@ -1,0 +1,19 @@
+{
+    "name": "Agriculture Subsidy",
+    "removal_cost": -1,
+    "modifier": {
+        "civilian_factory_use": 1,
+        "production_speed_farm_complex_factor": 0.15,
+        "custom_modifier_tooltip": "IDEA_C18_AGRICULTURE_SUBSIDY_2_MODIFIER_TOOLTIP"
+    },
+    "on_add": {
+        "multiply_variable": {
+            "C18.VAR_STREAM_OF_SILENCE_CURE_SPEED": 1.375
+        }
+    },
+    "on_remove": {
+        "multiply_variable": {
+            "C18.VAR_STREAM_OF_SILENCE_CURE_SPEED": 0.728
+        }
+    }
+}

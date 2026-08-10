@@ -1,0 +1,24 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_110_SECRET_CENTAUR",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C18_110_SECRET_CENTAUR"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "add_ideas": "IDEA_C18_DETECT_CHANGELING"
+    },
+    "available": {
+        "country_exists": "C11",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

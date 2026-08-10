@@ -1,0 +1,32 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 16,
+    "xp_unlock_cost": 200,
+
+    "army_defence_against_major_factor": 0.20,
+    "surrender_limit": 0.10,
+    "resistance_damage_to_garrison_on_our_occupied_states": 0.75,
+    "resistance_growth_on_our_occupied_states": 0.25,
+    "static_anti_air_damage_factor": 0.15,
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_rose_of_will"
+    ],
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

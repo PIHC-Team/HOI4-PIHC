@@ -1,0 +1,81 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_RECONSTRUCTION_PLANNING",
+    "prerequisite": {
+        "focus": "FOCUS_C01_RECONSTRUCTION_PLANNING"
+    },
+    "available": {
+        "has_war": false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "completion_reward": {
+        "random_owned_controlled_state": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "random_owned_controlled_state__D1": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "random_owned_controlled_state__D2": {
+            "BUILD_A_CIC": true
+        },
+        "random_owned_controlled_state__D3": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D4": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D5": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D6": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D7": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D8": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D9": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "if": {
+            "limit": {
+                "has_completed_focus": "FOCUS_C01_CANTERLOT_CENTER",
+                "369": {
+                    "is_owned_by": "C01",
+                    "is_controlled_by": "C01"
+                }
+            },
+            "369": {
+                "BUILD_AN_INFRA": true,
+                "BUILD_A_CIC": true
+            }
+        },
+        "hidden_effect": {
+            "add_power_balance_value": {
+                "id": "BOP_C01_COZY_GLOW_EXHAUSTION",
+                "value": -0.05,
+                "tooltip_side": "BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE"
+            }
+        }
+    },
+    "cost": 7
+}

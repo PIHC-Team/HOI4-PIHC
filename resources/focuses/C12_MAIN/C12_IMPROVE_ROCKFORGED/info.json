@@ -1,0 +1,42 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_PROJECT_ROCKFORGED_WARRIORS",
+    "prerequisite": {
+        "focus": "FOCUS_C12_PROJECT_ROCKFORGED_WARRIORS"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "country_event": {
+            "id": "C12_MAIN.72",
+            "days": 2,
+            "random_days": 2
+        },
+        "custom_effect_tooltip": "PIHC_C12_IMPROVE_ROCKFORGED_WARRIORS_TOOLTIP"
+    },
+    "bypass":{
+                "OR": {
+            "C01": {
+                "OR": {
+                    "has_capitulated": true,
+                    "is_subject": true
+                }
+            },
+            "NOT": {
+                "country_exists": "C01"
+            }
+        }
+    },
+    "available": {
+        "has_tech": "TECHNOLOGY_SUPPORT_AUTO_III",
+        "has_tech__D1": "TECHNOLOGY_FIREARM_VIII",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

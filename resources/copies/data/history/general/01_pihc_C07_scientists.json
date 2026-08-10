@@ -1,0 +1,95 @@
+{
+    "C07": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 1,
+                        "specialization_magic": 1,
+                        "specialization_steampunk": 1,
+                        "specialization_oilpunk": 1,
+                        "specialization_elecpunk": 1,
+                        "specialization_witchcraft": 1,
+                        "specialization_future": 1,
+                        "specialization_bio": 1
+                    },
+                    "traits": [],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 1,
+                        "specialization_magic": 1,
+                        "specialization_steampunk": 1,
+                        "specialization_oilpunk": 1,
+                        "specialization_elecpunk": 1,
+                        "specialization_witchcraft": 1,
+                        "specialization_future": 1,
+                        "specialization_bio": 1
+                    },
+                    "traits": [],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "C07__D1": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 2,
+                        "specialization_witchcraft": 1
+                    },
+                    "traits": [
+                        "scientist_trait_genius"
+                    ],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 2,
+                        "specialization_witchcraft": 1
+                    },
+                    "traits": [
+                        "scientist_trait_genius"
+                    ],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "C07__D2": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_bio": 3
+                    },
+                    "traits": [
+                        "scientist_trait_brilliant_theorist"
+                    ],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_bio": 3
+                    },
+                    "traits": [
+                        "scientist_trait_brilliant_theorist"
+                    ],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

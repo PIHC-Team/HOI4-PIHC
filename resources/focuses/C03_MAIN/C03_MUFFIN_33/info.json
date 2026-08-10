@@ -1,0 +1,69 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 13,
+    "y": 2,
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C03_MUFFIN_33_TOOLTIP",
+        "END_ALL_WARS": true,
+        "every_other_country": {
+            "limit": {
+                "is_in_faction_with": "C03"
+            },
+            "C03": {
+                "effect_tooltip": {
+                    "annex_country": {
+                        "target": "PREV",
+                        "transfer_troops": true
+                    }
+                },
+                "hidden_effect": {
+                    "set_variable": {
+                        "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                        "value": "PREV"
+                    },
+                    "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                    "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+                }
+            }
+        },
+        "hidden_effect": {
+            "scoped_play_song": "FM007",
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "C01": {
+                    "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+                }
+            },
+            "always": false
+        },
+        "hidden_trigger": {
+            "is_ai": false
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C03_MUFFIN_33_TRIGGER_TOOLTIP",
+            "check_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 1000000,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_32"
+    }
+}

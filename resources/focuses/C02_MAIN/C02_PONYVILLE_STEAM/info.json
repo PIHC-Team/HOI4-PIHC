@@ -1,0 +1,51 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_PONYVILLE_TECHNOLOGY",
+    "dx": 3,
+    "prerequisite": {
+        "focus": "FOCUS_C02_PONYVILLE_TECHNOLOGY"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_opinion_modifier": {
+            "target": "C07",
+            "modifier": "FOCUS_C02_C07_COLLABORATION_OPINION_MODIFIER"
+        },
+        "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_500": true,
+        "C07": {
+            "ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_500": true
+        },
+        "set_technology": {
+            "TECHNOLOGY_TECH_ENER_I": 1
+        },
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_steam_tech",
+            "name": "FOCUS_C02_PONYVILLE_STEAM_BONUS"
+        },
+        "add_timed_idea": {
+            "idea": "IDEA_C02_C07_TRADE",
+            "days": 90
+        }
+    },
+    "available": {
+        "C07": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_I"
+        },
+        "//custom_trigger_tooltip": {
+            "tooltip": "PIHC_COUNTRY_FLAG_C07_TRADE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C07_TRADE"
+        },
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_500": true,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

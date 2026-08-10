@@ -1,0 +1,20 @@
+{
+    "name": "Trixie Lulamoon",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_TRIXIE_LULAMOON_C08"
+        ],
+        "visible": {
+            "custom_trigger_tooltip": {
+                "tooltip": "CHARACTER_TRIXIE_LULAMOON_C08_TOOLTIP",
+                "has_country_flag": "PIHC_COUNTRY_FLAG_TRIXIE_ALIVE"
+            }
+        },
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

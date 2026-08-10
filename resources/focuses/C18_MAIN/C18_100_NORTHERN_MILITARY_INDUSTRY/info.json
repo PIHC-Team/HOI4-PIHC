@@ -1,0 +1,34 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_100_ZHEN",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C18_100_ZHEN"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "131": {
+            "BUILD_A_MIC": true,
+            "BUILD_A_MIC__D1": true
+        },
+        "225": {
+            "BUILD_A_MIC": true,
+            "BUILD_A_MIC__D1": true
+        },
+        "756": {
+            "BUILD_A_MIC": true,
+            "BUILD_A_MIC__D1": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

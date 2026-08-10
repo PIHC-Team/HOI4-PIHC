@@ -1,0 +1,28 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_PLAY_STRENGTH_OF_PIE_FAMILY",
+    "dy": 3,
+    "prerequisite": {
+        "focus": "FOCUS_C12_ROCKEVILLE_HARVEST_SEASON",
+        "focus__D1": "FOCUS_C12_DEVELOP_AGARICUS_FOREST"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C12_INTRODUCE_RESEARCH_TEAM",
+        "focus__D1": "FOCUS_C12_REFUGEE_FROM_LAS_PEGASUS"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "add_research_slot": 1
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

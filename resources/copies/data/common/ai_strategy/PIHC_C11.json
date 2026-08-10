@@ -1,0 +1,92 @@
+{
+    "C11_be_friend_with_empire": {
+        "allowed": {
+            "original_tag": "C11"
+        },
+        "enable": {
+            "C11": {
+                "NOT": {
+                    "has_government": "harmonicism"
+                }
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "befriend",
+            "id": "C01",
+            "value": 10
+        },
+        "ai_strategy__D1": {
+            "type": "support",
+            "id": "C01",
+            "value": 10
+        },
+        "ai_strategy__D2": {
+            "type": "diplo_action_desire",
+            "id": "C01",
+            "value": 0,
+            "target": "send_volunteers"
+        }
+    },
+    "C11_accept_volunteers_fropm_empire": {
+        "allowed": {
+            "original_tag": "C11"
+        },
+        "enable": {
+            "C11": {
+                "NOT": {
+                    "has_government": "harmonicism"
+                }
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": 100,
+            "target": "send_volunteers"
+        }
+    },
+    "C11_rush_attack_deer": {
+        "allowed": {
+            "original_tag": "C11"
+        },
+        "enable": {
+            "has_war_with": "C17",
+            "date < 1004.1.1": null
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "front_control",
+            "tag": "C17",
+            "ratio": 0.5,
+            "priority": 100,
+            "ordertype": "front",
+            "execution_type": "rush",
+            "execute_order": true
+        },
+        "ai_strategy__D1": {
+            "type": "ignore_army_incompetence",
+            "value": 25
+        }
+    },
+    "C11_rush_attack_batpony": {
+        "allowed": {
+            "original_tag": "C11"
+        },
+        "enable": {
+            "has_war_with": "C32",
+            "date < 1004.1.1": null
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "front_control",
+            "tag": "C32",
+            "ratio": 0.5,
+            "priority": 100,
+            "ordertype": "front",
+            "execution_type": "rush",
+            "execute_order": true
+        }
+    }
+}

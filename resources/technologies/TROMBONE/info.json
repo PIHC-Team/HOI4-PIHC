@@ -1,0 +1,44 @@
+{
+    "name": "Trombone",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 12,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_special"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SPECIAL_MUSIC_TROMBONE"
+    ],
+    "enable_subunits": [
+        "infantry_music"
+    ],
+    "on_research_complete": {
+        "hidden_effect": {
+            "load_oob": "general_infantry_music",
+            "set_variable": {
+                "var": "VAR_BATTLEFIELD_BAND_PLAYING",
+                "value": 0
+            }
+        }
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_MAGICAL_YOVIDAPHONE",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_PINKIE_PLAY",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1004
+}

@@ -1,0 +1,55 @@
+{
+    "name": "War On C08",
+    "priority": 100,
+    
+    "cost": 0,
+    "selectable_mission": true,
+    "days_mission_timeout": 32,
+    "activation": {
+        "C01": {
+            "has_completed_focus": "FOCUS_C01_C02_LOYALTY_TEST"
+        }
+    },
+    "cancel_trigger": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C02_HOTLINE_WAR_C08_TOOLTIP",
+            "NOT": {
+                "has_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY"
+            }
+        }
+    },
+    "complete_effect": {
+        "C02": {
+            "declare_war_on": {
+                "type": "crusade_wargoal",
+                "target": "C08"
+            },
+            "add_named_threat": {
+                "threat": 5,
+                "name": "DECISION_C02_HOTLINE_WAR_C08_THREAT"
+            }
+        },
+        "news_event": {
+            "id": "C08_MAIN.53",
+            "days": 1
+        }
+    },
+    "timeout_effect": {
+        "custom_effect_tooltip": "EVENT_C02_MAIN_11_EFFECT_TOOLTIP",
+        "hidden_effect": {
+            "C02_SECOND_PONYVILLE_ELECTION_WITHOUT_TRIXIE_LULAMOON": true
+        }
+    },
+    "war_with_on_complete": "C08",
+    "war_with_on_complete__D1": "C01",
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 1000,
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C02_WAR_C08_COOLDOWN"
+            }
+        }
+    },
+    "fire_only_once": true
+}

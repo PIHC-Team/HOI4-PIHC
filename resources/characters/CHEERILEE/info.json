@@ -1,0 +1,14 @@
+{
+    "name": "Cheerilee",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 300,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_EDUCATOR",
+            "TRAIT_POPULAR"
+        ]
+    }
+}

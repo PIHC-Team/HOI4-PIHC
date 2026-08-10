@@ -1,0 +1,76 @@
+{
+    "name": "Hei Sha",
+    "priority": 99,
+    
+    "cost": 50,
+    "days_remove": 90,
+    "state_target": true,
+    "on_map_mode": "map_and_decisions_view",
+    "highlight_states": {
+        "highlight_state_targets": {
+            "state": 201
+        }
+    },
+    "targets": {
+        "state": 201
+    },
+    "available": {
+        "201": {
+            "is_owned_by": "C18",
+            "is_fully_controlled_by": "C18"
+        }
+    },
+    "complete_effect": {
+        "hidden_effect": {
+            "random": {
+                "chance": 20,
+                "131": {
+                    "C18": {
+                        "country_event": {
+                            "id": "C18_MAIN.74",
+                            "days": 42
+                        }
+                    }
+                }
+            },
+            "random__D1": {
+                "chance": 15,
+                "131": {
+                    "C18": {
+                        "country_event": {
+                            "id": "C18_MAIN.75",
+                            "days": 56
+                        }
+                    }
+                }
+            },
+            "random__D2": {
+                "chance": 30,
+                "131": {
+                    "C18": {
+                        "country_event": {
+                            "id": "C18_MAIN.76",
+                            "days": 70
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "remove_effect": {
+        "custom_effect_tooltip": "C18_EXCAVATION_TOOLTIP",
+        "hidden_effect": {
+            "201": {
+                "C18": {
+                    "country_event": {
+                        "id": "C18_MAIN.79"
+                    }
+                }
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 10
+    }
+}

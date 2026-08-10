@@ -1,0 +1,110 @@
+{
+    "is_extreme_ideology": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IS_EXTREME_IDEOLOGY_TOOLTIP",
+            "OR": {
+                "has_government": "transcendence",
+                "has_country_leader_ideology": "fascism_totalitarianism",
+                "has_country_leader_ideology__D1": "fascism_dystopia",
+                "has_country_leader_ideology__D2": "fascism_spirit",
+                "has_country_leader_ideology__D3": "democratic_dystopia",
+                "has_country_leader_ideology__D4": "despotic_dystopia",
+                "has_country_leader_ideology__D5": "harmonicism_dystopia",
+                "has_country_leader_ideology__D6": "corporation_dystopia",
+                "has_country_leader_ideology__D7": "equatism_dystopia"
+            }
+        }
+    },
+    "is_magical_creatures": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IS_MAGICAL_CREATURES_TOOLTIP",
+            "OR": {
+                "has_government": "transcendence",
+                "has_country_leader_ideology": "harmonicism_spirit",
+                "has_country_leader_ideology__D1": "peacism_spirit",
+                "has_country_leader_ideology__D2": "fascism_spirit"
+            }
+        }
+    },
+    "is_pony_country": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IS_PONY_COUNTRY_TOOLTIP",
+            "OR": {
+                "tag": "C01",
+                "tag__D1": "C02",
+                "tag__D2": "C03",
+                "tag__D3": "C04",
+                "tag__D4": "C05",
+                "tag__D5": "C06",
+                "tag__D6": "C07",
+                "tag__D7": "C08",
+                "tag__D8": "C09",
+                "tag__D9": "C10",
+                "tag__D10": "C12",
+                "tag__D11": "C14",
+                "tag__D12": "C15",
+                "tag__D13": "C23",
+                "tag__D14": "C24",
+                "tag__D15": "C33",
+                "tag__D16": "C34"
+            }
+        }
+    },
+    "is_unicorn_country": {
+        "custom_trigger_tooltip": {
+            "tooltip": "PIHC_COUNTRY_FLAG_HAS_UNICORN_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        }
+    },
+    "is_magic_country": {
+        "custom_trigger_tooltip": {
+            "tooltip": "TECHNOLOGY_TECH_MAGI_UNICORN_TOOLTIP",
+            "OR": {
+                "is_unicorn_country": true,
+                "tag": "C11",
+                "tag__D1": "C17",
+                "tag__D2": "C18",
+                "tag__D3": "C26",
+                "tag__D4": "C37"
+            }
+        }
+    },
+    "is_central_equestria_country": {
+        "custom_trigger_tooltip": {
+            "tooltip": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA"
+        }
+    },
+    "is_blank_country": {
+        "OR": {
+            "tag": "C00",
+            "tag__D1": "C32",
+            "tag__D3": "C38",
+            "tag__D4": "C41",
+            "tag__D5": "C42",
+            "tag__D6": "C43"
+        }
+    },
+    "is_major_forces_country": {
+        "OR": {
+            "tag": "C01",
+            "tag__D1": "C11",
+            "tag__D2": "C07",
+            "tag__D3": "C15",
+            "tag__D4": "C22",
+            "tag__D5": "C08",
+            "tag__D6": "C02",
+            "tag__D7": "C12",
+            "tag__D8": "C14",
+            "tag__D9": "C23",
+            "tag__D10": "C26"
+        }
+    },
+    "is_forbidden_to_interact": {
+        "OR": {
+            "tag": "C00",
+            "tag__D1": "C16",
+            "tag__D2": "C26"
+        }
+    }
+}

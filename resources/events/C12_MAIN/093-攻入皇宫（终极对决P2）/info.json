@@ -1,0 +1,14 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_C12_COZY_IS_DEAD",
+                "set_country_flag__D1": "PIHC_C12_THE_EMPIRE_HAS_BEEN_DEFEATED"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

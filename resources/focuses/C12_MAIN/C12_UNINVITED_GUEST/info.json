@@ -1,0 +1,29 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SHADOWS_OF_THE_PAST",
+    "prerequisite": {
+        "focus": "FOCUS_C12_SHADOWS_OF_THE_PAST"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "country_event": {
+            "id": "C12_MAIN.43",
+            "days": 2,
+            "random_days": 2
+        }
+    },
+    "available": {
+        "C12": {
+            "is_subject": false
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "END_ALL_WARS": true,
+                "leave_faction": true,
+                "set_major": false,
+                "country_lock_all_division_template": true,
+                "remove_ideas": "IDEA_ALL_NUKED"
+            },
+            "C00": {
+                "remove_ideas": "IDEA_ALL_NUKED"
+            },
+            "C08": {
+                "remove_ideas": "IDEA_ALL_NUKED"
+            },
+            "C01": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_COMPLETED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

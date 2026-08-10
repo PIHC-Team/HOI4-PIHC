@@ -1,0 +1,18 @@
+{
+    "name": "Auto Trade",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "always": true
+    },
+    "complete_effect": {
+        "ROOT": {
+            "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

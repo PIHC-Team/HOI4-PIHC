@@ -1,0 +1,31 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_16A3C"
+            }
+        },
+        "custom_effect_tooltip": "EVENT_C08_MAIN_73_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_16A3C",
+        "DOWNGRADE_LIBERATION_FRONT": true,
+        "add_political_power": -100,
+        "add_stability": -0.15,
+        "add_war_support": -0.05,
+        "hidden_effect": {   
+        },
+        "name": "EVENT_C08_MAIN_73_o0"
+    },
+    "option__D1": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_16A3C"
+        },
+        "name": "EVENT_C08_MAIN_73_o1"
+    },
+    "is_triggered_only": true
+}

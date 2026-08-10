@@ -1,0 +1,20 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "C18_CIVIL_WAR": true,
+                "activate_mission": "DECISION_C18_DIE_NEBENWELT_UNSTABLE_TIMER"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

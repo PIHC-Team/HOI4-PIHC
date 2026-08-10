@@ -1,0 +1,129 @@
+{
+    "UPDATE_DEV_BONDS_EXCHANGE_RATE": {
+        "round_variable": "global.VAR_DEV_BONDS_EXCHANGE",
+        "clamp_variable": {
+            "var": "global.VAR_DEV_BONDS_EXCHANGE",
+            "min": 50,
+            "max": 500
+        },
+        "set_variable": {
+            "var": "global.VAR_DEV_BONDS_EXCHANGE_INV",
+            "value": 10000
+        },
+        "divide_variable": {
+            "var": "global.VAR_DEV_BONDS_EXCHANGE_INV",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE"
+        },
+        "round_variable__D1": "global.VAR_DEV_BONDS_EXCHANGE_INV"
+    },
+    "CALCULATE_ZAP_APPLES_YEARLY": {
+        "C14": {
+            "set_variable": {
+                "var": "VAR_ZAP_APPLES_YEARLY",
+                "value": "VAR_ZAP_APPLES_PRODUCE"
+            },
+            "multiply_variable": {
+                "var": "VAR_ZAP_APPLES_YEARLY",
+                "value": "VAR_ZAP_APPLES_HARVEST"
+            },
+            "round_variable": "VAR_ZAP_APPLES_YEARLY"
+        }
+    },
+    "INITIALIZE_WETM": {
+        "every_possible_country": {
+            "set_variable": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE",
+                "value": 0
+            },
+            "set_variable__D1": {
+                "var": "VAR_ZAP_APPLES_PRODUCE",
+                "value": 0
+            },
+            "set_variable__D2": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER",
+                "value": 0
+            },
+            "set_variable__D3": {
+                "var": "VAR_ORE_BOULDERS_PRODUCE",
+                "value": 0
+            },
+            "set_variable__D4": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_BLUEPRINT",
+                "value": 0
+            },
+            "set_variable__D5": {
+                "var": "VAR_BLUEPRINTS_PRODUCE",
+                "value": 0
+            },
+            "set_variable__D6": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+                "value": 0
+            }
+        },
+        "C14": {
+            "set_variable": {
+                "var": "VAR_ZAP_APPLES_PRODUCE",
+                "value": 1200
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_IS_IN_WETM",
+            "set_variable__D1": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE",
+                "value": 600
+            },
+            "set_variable__D2": {
+                "var": "VAR_ZAP_APPLES_YEARLY",
+                "value": 0
+            },
+            "set_variable__D3": {
+                "var": "VAR_ZAP_APPLES_HARVEST",
+                "value": 1.0
+            }
+        },
+        "C12": {
+            "set_variable": {
+                "var": "VAR_ORE_BOULDERS_PRODUCE",
+                "value": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_IS_IN_WETM",
+            "set_variable__D1": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER",
+                "value": 300
+            }
+        },
+        "C07": {
+            "set_variable": {
+                "var": "VAR_BLUEPRINTS_PRODUCE",
+                "value": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_IS_IN_WETM",
+            "set_variable__D1": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_BLUEPRINT",
+                "value": 300
+            }
+        },
+        "C09": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_IS_IN_WETM",
+            "set_variable__D1": {
+                "var": "VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+                "value": 600
+            }
+        },
+        "set_variable": {
+            "var": "global.VAR_DEV_BONDS_EXCHANGE",
+            "value": 150
+        },
+        "UPDATE_DEV_BONDS_EXCHANGE_RATE": true,
+        "set_variable__D1": {
+            "var": "global.VAR_ZAP_APPLES_MARKET",
+            "value": 1200
+        },
+        "set_variable__D2": {
+            "var": "global.VAR_ORE_BOULDERS_MARKET",
+            "value": 1200
+        },
+        "set_variable__D3": {
+            "var": "global.VAR_BLUEPRINTS_MARKET",
+            "value": 2400
+        }
+    }
+}

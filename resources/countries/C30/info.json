@@ -1,0 +1,116 @@
+{
+    "name": "Casabronco",
+    "rgb": [
+        220,
+        220,
+        220
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 118,
+        "set_popularities": {
+            "harmonicism": 70,
+            "democratic": 20,
+            "peacism": 10
+        },
+        "set_politics": {
+            "ruling_party": "harmonicism",
+            "elections_allowed": false
+        },
+        "recruit_character": "CHARACTER_ZECORA",
+        "add_ideas_batch": [
+            "closed_economy",
+            "service_by_requirement",
+            "tot_economic_mobilisation"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C08_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_C08_TRADE"
+        ],
+        "614": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "653": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "687": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "630": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "604": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "602": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "593": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "597": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "574": {
+            "add_core_of": "C30",
+            "add_claim_by": "C30"
+        },
+        "add_manpower": -40000,
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1
+            }
+        }
+    }
+}

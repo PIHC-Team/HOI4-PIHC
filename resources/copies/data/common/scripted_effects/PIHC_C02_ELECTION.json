@@ -1,0 +1,694 @@
+{
+    "C02_SECOND_PONYVILLE_ELECTION": {
+        "C02": {
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D4": {
+                        "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "democratic",
+                    "popularity": 0.15
+                },
+                "load_focus_tree": "C02_ALT",
+                "news_event": {
+                    "id": "C02_MAIN.5"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D4": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "fascism",
+                    "popularity": 0.50
+                },
+                "set_politics": {
+                    "ruling_party": "fascism"
+                },
+                "deactivate_advisor": "CHARACTER_CRACKLE_COSETTE",
+                "promote_character": {
+                    "character": "CHARACTER_CRACKLE_COSETTE",
+                    "ideology": "fascism_duchy"
+                },
+                "load_focus_tree": "C02_ALT_CRACKLE_COSETTE",
+                "news_event": {
+                    "id": "C02_MAIN.10"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D4": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "corporation",
+                    "popularity": 0.30
+                },
+                "set_politics": {
+                    "ruling_party": "corporation"
+                },
+                "deactivate_advisor": "CHARACTER_FILTHY_RICH",
+                "promote_character": {
+                    "character": "CHARACTER_FILTHY_RICH",
+                    "ideology": "corporation_democracy"
+                },
+                "load_focus_tree": "C02_ALT_FILTHY_RICH",
+                "news_event": {
+                    "id": "C02_MAIN.9"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D4": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.35
+                },
+                "set_politics": {
+                    "ruling_party": "harmonicism"
+                },
+                "deactivate_advisor": "CHARACTER_MARE",
+                "promote_character": {
+                    "character": "CHARACTER_MARE",
+                    "ideology": "harmonicism_freestate"
+                },
+                "load_focus_tree": "C02_ALT_MARE",
+                "news_event": {
+                    "id": "C02_MAIN.7"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D4": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "democratic",
+                    "popularity": 0.15
+                },
+                "set_politics": {
+                    "ruling_party": "democratic"
+                },
+                "deactivate_advisor": "CHARACTER_DOCTOR_HOOVES",
+                "promote_character": {
+                    "character": "CHARACTER_DOCTOR_HOOVES",
+                    "ideology": "democratic_technocracy"
+                },
+                "load_focus_tree": "C02_ALT_DOCTOR_HOOVES",
+                "news_event": {
+                    "id": "C02_MAIN.8"
+                }
+            },
+            "else": {
+                "add_popularity": {
+                    "ideology": "peacism",
+                    "popularity": 0.50
+                },
+                "set_politics": {
+                    "ruling_party": "peacism"
+                },
+                "deactivate_advisor": "CHARACTER_OCTAVIA",
+                "promote_character": {
+                    "character": "CHARACTER_OCTAVIA",
+                    "ideology": "peacism_dogmatism"
+                },
+                "load_focus_tree": "C02_ALT_OCTAVIA",
+                "news_event": {
+                    "id": "C02_MAIN.6"
+                }
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "C02_SECOND_PONYVILLE_ELECTION_WITHOUT_TRIXIE_LULAMOON": {
+        "C02": {
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "fascism",
+                    "popularity": 0.50
+                },
+                "set_politics": {
+                    "ruling_party": "fascism"
+                },
+                "deactivate_advisor": "CHARACTER_CRACKLE_COSETTE",
+                "promote_character": {
+                    "character": "CHARACTER_CRACKLE_COSETTE",
+                    "ideology": "fascism_duchy"
+                },
+                "load_focus_tree": "C02_ALT_CRACKLE_COSETTE",
+                "news_event": {
+                    "id": "C02_MAIN.10"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "corporation",
+                    "popularity": 0.30
+                },
+                "set_politics": {
+                    "ruling_party": "corporation"
+                },
+                "deactivate_advisor": "CHARACTER_FILTHY_RICH",
+                "promote_character": {
+                    "character": "CHARACTER_FILTHY_RICH",
+                    "ideology": "corporation_democracy"
+                },
+                "load_focus_tree": "C02_ALT_FILTHY_RICH",
+                "news_event": {
+                    "id": "C02_MAIN.9"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_MARE",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.35
+                },
+                "set_politics": {
+                    "ruling_party": "harmonicism"
+                },
+                "deactivate_advisor": "CHARACTER_MARE",
+                "promote_character": {
+                    "character": "CHARACTER_MARE",
+                    "ideology": "harmonicism_freestate"
+                },
+                "load_focus_tree": "C02_ALT_MARE",
+                "news_event": {
+                    "id": "C02_MAIN.7"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "check_variable": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D1": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_FILTHY_RICH",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D2": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_MARE",
+                        "compare": "greater_than_or_equals"
+                    },
+                    "check_variable__D3": {
+                        "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                        "value": "VAR_C02_ELECTION_OCTAVIA",
+                        "compare": "greater_than_or_equals"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "democratic",
+                    "popularity": 0.15
+                },
+                "set_politics": {
+                    "ruling_party": "democratic"
+                },
+                "deactivate_advisor": "CHARACTER_DOCTOR_HOOVES",
+                "promote_character": {
+                    "character": "CHARACTER_DOCTOR_HOOVES",
+                    "ideology": "democratic_technocracy"
+                },
+                "load_focus_tree": "C02_ALT_DOCTOR_HOOVES",
+                "news_event": {
+                    "id": "C02_MAIN.8"
+                }
+            },
+            "else": {
+                "add_popularity": {
+                    "ideology": "peacism",
+                    "popularity": 0.50
+                },
+                "set_politics": {
+                    "ruling_party": "peacism"
+                },
+                "deactivate_advisor": "CHARACTER_OCTAVIA",
+                "promote_character": {
+                    "character": "CHARACTER_OCTAVIA",
+                    "ideology": "peacism_dogmatism"
+                },
+                "load_focus_tree": "C02_ALT_OCTAVIA",
+                "news_event": {
+                    "id": "C02_MAIN.6"
+                }
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "C02_TRIXIE_LULAMOON_FIRED": {
+        "C02": {
+            "news_event": {
+                "id": "C02_MAIN.11",
+                "days": 3
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "C02_TRIXIE_LULAMOON_DEAD": {
+        "C02": {
+            "add_popularity": {
+                "ideology": "anarchy",
+                "popularity": 1.00
+            },
+            "set_politics": {
+                "ruling_party": "anarchy"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_ANARCHY",
+            "promote_character": {
+                "character": "CHARACTER_NOPONY_3",
+                "ideology": "anarchy_anarchy"
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "C02_TRIXIE_LULAMOON_WIN": {
+        "C02": {
+            "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        },
+        "// TODO": null
+    },
+    "DEBUG_C02_TRIXIE_LULAMOON_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_TRIXIE_LULAMOON_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_CRACKLE_COSETTE_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_CRACKLE_COSETTE_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_FILTHY_RICH_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_FILTHY_RICH_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_MARE_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_MARE_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_DOCTOR_HOOVES_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_DOCTOR_HOOVES_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_OCTAVIA_INC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": 0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_C02_OCTAVIA_DEC_5": {
+        "C02": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    },
+    "DEBUG_TRIXIE_LULAMOON_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "DEBUG_CRACKLE_COSETTE_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "DEBUG_FILTHY_RICH_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "DEBUG_MARE_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "DEBUG_DOCTOR_HOOVES_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "DEBUG_OCTAVIA_WIN": {
+        "C02": {
+            "set_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": 1.00
+            },
+            "C02_SECOND_PONYVILLE_ELECTION": true
+        }
+    },
+    "C02_OPERATION_GREENLIGHT_PERFECT_ENDING": {
+        "hidden_effect": {
+            "C02": {
+                "remove_all_power_balance_modifiers": {
+                    "id": "BOP_C02_INDEPENDENCE"
+                },
+                "remove_power_balance": {
+                    "id": "BOP_C02_INDEPENDENCE"
+                },
+                "set_variable": {
+                    "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                    "value": 1.00
+                },
+                "set_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED",
+                "END_ALL_WARS": true
+            },
+            "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY"
+        },
+        "custom_effect_tooltip": "DECISION_C02_LIBERATION_FRONT_UPRISE_TOOLTIP",
+        "C08": {
+            "country_event": {
+                "id": "C08_MAIN.81",
+                "days": 1
+            }
+        }
+        
+    }
+}

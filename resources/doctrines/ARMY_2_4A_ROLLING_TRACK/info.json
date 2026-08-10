@@ -1,0 +1,32 @@
+{
+    "category": "land",
+    "x": -2,
+    "y": 8,
+
+    "production_speed_supply_node_factor": 0.20,
+    "production_speed_rail_way_factor": 0.20,
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_wall_of_unity"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_2_5A_DOA_PREVAILS",
+        "research_cost_coeff": 1.0
+    },
+    
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

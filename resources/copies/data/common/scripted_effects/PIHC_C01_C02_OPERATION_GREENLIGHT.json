@@ -1,0 +1,94 @@
+{
+    "OPERATION_GREENLIGHT": {
+        "hidden_effect": {
+            "C02": {
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_FAKE_NUKE_DROP",
+                    "days": 3,
+                    "value": 1
+                },
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "C02":{
+                                "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED"
+                            }
+                        }
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.7",
+                        "hours": 2
+                    },
+                    "country_event__D1": {
+                        "id": "C01_C02_GREENLIGHT.8",
+                        "hours": 9
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_DISARMED"
+                        }
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.9",
+                        "hours": 12
+                    },
+                    "country_event__D1": {
+                        "id": "C01_C02_GREENLIGHT.10",
+                        "hours": 17
+                    }
+                },
+                "if__D2": {
+                    "limit": {
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED"
+                        }
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.11",
+                        "hours": 14
+                    },
+                    "country_event__D1": {
+                        "id": "C01_C02_GREENLIGHT.12",
+                        "hours": 21
+                    }
+                },
+                "if__D3": {
+                    "limit": {
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED"
+                        }
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.13",
+                        "hours": 16
+                    },
+                    "country_event__D1": {
+                        "id": "C01_C02_GREENLIGHT.14",
+                        "hours": 23
+                    }
+                },
+                "if__D4": {
+                    "limit": {
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_DISARMED"
+                        }
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.15",
+                        "hours": 6
+                    },
+                    "country_event__D1": {
+                        "id": "C01_C02_GREENLIGHT.16",
+                        "hours": 13
+                    }
+                },
+                "country_event": {
+                    "id": "C01_C02_GREENLIGHT.17",
+                    "hours": 24
+                }
+            }
+        }
+    }
+}

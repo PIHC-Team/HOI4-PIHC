@@ -1,0 +1,40 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_INTER_OPEN_UP_SADDLE",
+    "prerequisite": {
+        "focus": "FOCUS_C09_INTER_OPEN_UP_SADDLE"
+    },
+    "cost": 8,
+    "completion_reward": {
+        "C09": {
+            "add_to_faction": "C24"
+        },
+        "C24": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INTERNATIONAL",
+            "add_ideas": "IDEA_ERA_AGE_INTERNATIONAL"
+        }
+    },
+    "available": {
+        "C24": {
+            "is_ai": true,
+            "has_war": false,
+            "has_opinion": {
+                "target": "C09",
+                "value > 29": null
+            }
+        },
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "options": [
+        {
+            "iteration_output": {
+                "scientist_effects": {
+                    "add_scientist_xp": {
+                        "experience": "constant:sp_scientist_xp_gain.medium",
+                        "specialization": "specialization_oilpunk"
+                    }
+                }
+            }
+        }
+    ]
+}

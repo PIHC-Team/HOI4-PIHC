@@ -1,0 +1,189 @@
+{
+    "name": "Crystal Empire",
+    "rgb": [
+        116,
+        72,
+        170
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 3,
+        "set_popularities": {
+            "despotic": 60,
+            "harmonicism": 15,
+            "fascism": 13,
+            "democratic": 7,
+            "equatism": 5
+        },
+        "set_politics": {
+            "ruling_party": "despotic",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_FLURRY_HEART",
+            "CHARACTER_HARSH_WHINNY",
+            "CHARACTER_UMBRUM_IRA",
+            "CHARACTER_UMBRUM_RABIA",
+            "CHARACTER_KING_SOMBRA",
+            "CHARACTER_RADIANT_HOPE"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "disarmed_nation",
+            "civilian_economy",
+            "IDEA_C15_DISARMED",
+            "IDEA_C15_TRIBUTED_LOVE",
+            "IDEA_ALL_THE_DARK_AGE"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_UNICORN": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C15_CRYSTAL_EMPIRE_TRUCE",
+            "FOCUS_C15_CANTERLOT_PACT"
+        ],
+        "add_manpower": 20000,
+        "add_political_power": 250,
+        "set_stability": 0.55,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.5,
+        "set_convoys": 250,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 2000
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 2000
+            },
+            {
+                "type": "ARCHETYPE_WITCHCRAFT",
+                "amount": 800
+            },
+            {
+                "type": "ARCHETYPE_SHIELD",
+                "amount": 250
+            },
+            {
+                "type": "ARCHETYPE_VEHICLE",
+                "amount": 50
+            },
+            {
+                "type": "ARCHETYPE_AIR_TRANSPORT",
+                "amount": 200
+            },
+            {
+                "type": "ARCHETYPE_AIR_SCOUT",
+                "amount": 20
+            },
+            {
+                "type": "ARCHETYPE_AIR_ARMED",
+                "amount": 80
+            },
+            {
+                "type": "train_equipment",
+                "amount": 200
+            }
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C15_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN"
+        ],
+        "C15_PARLIAMENT_GUI_INIT": true,
+        "345": {
+            "set_demilitarized_zone": true,
+            "add_core_of": "C11"
+        },
+        "give_resource_rights": {
+            "receiver": "C11",
+            "state": 345
+        },
+        "country_lock_all_division_template": true,
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Crystal Empire Historical AI",
+        "allowed": {
+            "tag": "C15"
+        },
+        "enable": {
+            "country_exists": "C15"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C15_ROYAL_DESTINY",
+            "FOCUS_C15_GLORY_CRYSTAL",
+            "FOCUS_C15_GLORY_CROWN",
+            "FOCUS_C15_GLORY_PONIES",
+            "FOCUS_C15_SACRAMENT",
+            "FOCUS_C15_REVELATION",
+            "FOCUS_C15_DARK_MAGIC",
+            "FOCUS_C15_INDEPENDENCE_WAR_THEOLOGY",
+            "FOCUS_C15_RETURN_OF_THE_SHADOW",
+            "FOCUS_C15_HEALING_THE_TRAUMA",
+            "FOCUS_C15_ECONOMIC_RECOVERY",
+            "FOCUS_C15_ECONOMIC_RECOVERY_II",
+            "FOCUS_C15_MILITARY_RECOVERY",
+            "FOCUS_C15_CONSCRIPTION",
+            "FOCUS_C15_ECONOMIC_LEFTOVER",
+            "FOCUS_C15_CHANGELING_ENEMY",
+            "FOCUS_C15_SOMBRA_CRISIS_FRIEND"
+        ]
+    }
+}

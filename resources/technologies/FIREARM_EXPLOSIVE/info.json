@@ -1,0 +1,43 @@
+{
+    "name": "Design Upgrade",
+    "category": "infantry",
+    "x": 4,
+    "y": 8,
+    "size": "small",
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [],
+    "enable_subunits": [],
+    "infantry_traditional": {
+        "soft_attack": 0.1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_III",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_IV",
+        "research_cost_coeff": 1
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "add": 50,
+            "arms_factory > 30": null
+        },
+        "modifier__D1": {
+            "add": 20,
+            "arms_factory > 10": null
+        },
+        "modifier__D2": {
+            "add": 10,
+            "date > 1005.1.1": null
+        }
+    },
+    "research_cost": 3,
+    "start_year": 1002
+}

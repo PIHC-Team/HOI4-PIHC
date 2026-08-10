@@ -1,0 +1,297 @@
+{
+    "name": "Green Flu",
+    "priority": 101,
+    
+    "cost": 0,
+    "days_re_enable": 76,
+    "target_trigger": {
+        "FROM": {
+            "has_war_with": "ROOT"
+        }
+    },
+    "target_root_trigger": {
+        "has_template_majority_unit": "infantry_biochemi"
+    },
+    "available": {
+        "ROOT": {
+            "any_country_division": {
+                "division_has_majority_template": "infantry_biochemi"
+            }
+        },
+        "FROM": {
+            "NOT": {
+                "has_idea": "IDEA_ERA_HYGIENE_1_IMMUNE"
+            }
+        }
+    },
+    "complete_effect": {
+        "FROM": {
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_7_PLAGUE"
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                    },
+                    "if__D4": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                    },
+                    "if__D5": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_6"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_6"
+                    },
+                    "if__D6": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_7"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_7",
+                    "days": 90
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_6_FILTHY",
+                    "NOT": {
+                        "OR": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                    },
+                    "if__D4": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                    },
+                    "if__D5": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_6"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_6"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_6",
+                    "days": 90
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_5_DIRTY",
+                    "NOT": {
+                        "OR": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7",
+                            "has_idea__D1": "IDEA_ALL_DISEASE_GREEN_FLU_6"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                    },
+                    "if__D4": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_5",
+                    "days": 90
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_4_NORMAL",
+                    "NOT": {
+                        "OR": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7",
+                            "has_idea__D1": "IDEA_ALL_DISEASE_GREEN_FLU_6",
+                            "has_idea__D2": "IDEA_ALL_DISEASE_GREEN_FLU_5"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                    },
+                    "if__D3": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_4",
+                    "days": 90
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_3_CLEAN",
+                    "NOT": {
+                        "OR": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7",
+                            "has_idea__D1": "IDEA_ALL_DISEASE_GREEN_FLU_6",
+                            "has_idea__D2": "IDEA_ALL_DISEASE_GREEN_FLU_5",
+                            "has_idea__D3": "IDEA_ALL_DISEASE_GREEN_FLU_4"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    },
+                    "if__D2": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_3",
+                    "days": 90
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_ERA_HYGIENE_2_MYSO",
+                    "NOT": {
+                        "OR": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_7",
+                            "has_idea__D1": "IDEA_ALL_DISEASE_GREEN_FLU_6",
+                            "has_idea__D2": "IDEA_ALL_DISEASE_GREEN_FLU_5",
+                            "has_idea__D3": "IDEA_ALL_DISEASE_GREEN_FLU_4",
+                            "has_idea__D4": "IDEA_ALL_DISEASE_GREEN_FLU_3"
+                        }
+                    }
+                },
+                "hidden_effect": {
+                    "if": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_1"
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "has_idea": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                        },
+                        "remove_ideas": "IDEA_ALL_DISEASE_GREEN_FLU_2"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "IDEA_ALL_DISEASE_GREEN_FLU_2",
+                    "days": 90
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

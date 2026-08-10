@@ -1,0 +1,42 @@
+{
+    "category": "news",
+    "date": "1003.08.27",
+    "date_scope": "C01",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C01"
+                },
+                "C01": {
+                    "add_named_threat": {
+                        "threat": 5,
+                        "name": "EVENT_TIMELINE_11_THREAT"
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

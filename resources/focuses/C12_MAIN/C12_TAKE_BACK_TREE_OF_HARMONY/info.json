@@ -1,0 +1,68 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_CLAIM_PONYVILLE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_CLAIM_PONYVILLE"
+    },
+    "cost": 6,
+    "bypass": {
+        "owns_state": 550,
+        "owns_state__D1": 585
+    },
+    "completion_reward": {
+        "550": {
+            "add_claim_by": "C12"
+        },
+        "585": {
+            "add_claim_by": "C12"
+        },
+        "550__D1": {
+            "owner": {
+                "C12": {
+                    "declare_war_on": {
+                        "target": "PREV",
+                        "type": "take_claimed_state"
+                    }
+                }
+            }
+        },
+        "585__D1": {
+            "owner": {
+                "C12": {
+                    "declare_war_on": {
+                        "target": "PREV",
+                        "type": "take_claimed_state"
+                    }
+                }
+            }
+        },
+        "hidden_effect": {
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C12_LIMESTONE_PIE_REMAINS_RATIONAL"
+        }
+    },
+    "available": {
+        "if":{
+            "limit": {
+                "is_ai": true
+            },
+            "always": false
+        },
+        "550": {
+            "owner": {
+                "NOT": {
+                    "tag" : "C08",
+                    "is_in_faction_with": "C12"
+                }
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

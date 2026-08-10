@@ -1,0 +1,146 @@
+{
+    "scripted_gui": {
+        "C18_REGIONAL_DEV_GUI": {
+            "context_type": "decision_category",
+            "window_name": "C18_regional_dev_container",
+            "dynamic_lists": {
+                "map_gridbox": {
+                    "array": "C18.ARRAY_REGIONAL_DEV_REGIONS",
+                    "entry_container": "C18_state_group_gui_entry_container",
+                    "index": "i",
+                    "value": "v"
+                }
+            },
+            "triggers": {
+                "state_group_btn_visible": {
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                            }
+                        },
+                        "set_temp_variable": {"VAR_STATE_GROUP_GUI_KIRIN_FRAME": 2}
+                    },
+                    "else": {
+                        "set_temp_variable": {"VAR_STATE_GROUP_GUI_KIRIN_FRAME": 1}
+                    },
+                    "check_variable": {
+                        "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^i",
+                        "value": 10.0,
+                        "compare": "less_than"
+                    }
+                },
+                "state_group_btn_nirik_visible": {
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                            }
+                        },
+                        "set_temp_variable": {"VAR_STATE_GROUP_GUI_NIRIK_FRAME": 2}
+                    },
+                    "else": {
+                        "set_temp_variable": {"VAR_STATE_GROUP_GUI_NIRIK_FRAME": 1}
+                    },
+                    "check_variable": {
+                        "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^i",
+                        "value": 10.0,
+                        "compare": "greater_than_or_equals"
+                    }
+                }
+            },
+            "properties": {
+                "state_group_btn": {
+                    "image": "GFX_state_group_gui_KIRIN_[?v]",
+                    "frame": "VAR_STATE_GROUP_GUI_KIRIN_FRAME",
+                    "x": 0,
+                    "y": 0
+                },
+                "state_group_btn_nirik": {
+                    "image": "GFX_state_group_gui_KIRIN_[?v]_nirik",
+                    "frame": "VAR_STATE_GROUP_GUI_NIRIK_FRAME",
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "effects": {
+                "state_group_btn_click": {
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^i",
+                                "value": 0,
+                                "compare": "greater_than"
+                            }
+                        },
+                        "if": {
+                            "limit": {
+                                "NOT": {
+                                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED"
+                                }
+                            },
+                            "C18": {
+                                "scoped_sound_effect": "wrong_ev"
+                            }
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED",
+                        "mark_focus_tree_layout_dirty": true
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "check_variable": {
+                                "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                            }
+                        },
+                        "set_variable": {
+                            "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 0
+                        }
+                    },
+                    "else": {
+                        "set_variable": {
+                            "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                        }
+                    }
+                },
+                "state_group_btn_nirik_click": {
+                    "if": {
+                        "limit": {
+                            "check_variable": {
+                                "var": "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^i",
+                                "value": 0,
+                                "compare": "greater_than"
+                            }
+                        },
+                        "if": {
+                            "limit": {
+                                "NOT": {
+                                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED"
+                                }
+                            },
+                            "C18": {
+                                "scoped_sound_effect": "wrong_ev"
+                            }
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED",
+                        "mark_focus_tree_layout_dirty": true
+                    },
+                    "if__D1": {
+                        "limit": {
+                            "check_variable": {
+                                "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                            }
+                        },
+                        "set_variable": {
+                            "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 0
+                        }
+                    },
+                    "else": {
+                        "set_variable": {
+                            "C18.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": "v"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

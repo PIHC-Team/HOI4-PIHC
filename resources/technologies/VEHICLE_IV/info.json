@@ -1,0 +1,27 @@
+{
+    "name": "Vehicle IV",
+    "category": "infantry",
+
+    "x": 10,
+    "y": 15,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_vehicle"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_VEHICLE_MODERN"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_VEHICLE_V",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1005
+}

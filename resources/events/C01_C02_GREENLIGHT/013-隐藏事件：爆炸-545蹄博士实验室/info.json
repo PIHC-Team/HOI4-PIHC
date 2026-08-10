@@ -1,0 +1,22 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C01": {
+                "launch_nuke": {
+                    "state": 545,
+                    "controller": "C02"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

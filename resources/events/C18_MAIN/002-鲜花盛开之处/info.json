@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_6MY_C18_RAIN_SHINE_FOALS_BREATH_1": true,
+            "C18_KIRINS_PASS_ON": true,
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C18_MAIN.57",
+                    "days": 14,
+                    "random_days": 35
+                },
+                "country_event__D1": {
+                    "id": "C18_MAIN.71",
+                    "days": 90,
+                    "random_days": 35
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Starlight Glimmer",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "harmonicism_monarchy",
+        "traits": [
+            "TRAIT_STARLIGHT_GLIMMER_RESISTANCE_LEADER",
+            "TRAIT_STARLIGHT_GLIMMER_FORMER_PRINCIPLE"
+        ]
+    },
+    "seconds": 8.00,
+    "pause_on_loop": 6.10,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_STARLIGHT_GLIMMER_ANIMATED_portrait"
+        }
+    }
+}

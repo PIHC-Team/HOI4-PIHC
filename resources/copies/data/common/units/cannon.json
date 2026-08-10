@@ -1,0 +1,334 @@
+{
+    "sub_units": {
+        "cannon_light": {
+            "abbreviation": "LCN",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 100,
+            "ai_priority": 100,
+            "active": false,
+            "type": [
+                "infantry",
+                "artillery",
+                "support"
+            ],
+            "group": "support",
+            "categories": [
+                "category_artillery_light",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_LIGHT": 36
+            },
+            "manpower": 36,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.30,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.5,
+            "hard_attack": 1.2,
+            "can_be_parachuted": true
+        },
+        "cannon_medium": {
+            "abbreviation": "MCN",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 101,
+            "ai_priority": 101,
+            "active": false,
+            "type": [
+                "infantry",
+                "artillery",
+                "support"
+            ],
+            "group": "support",
+            "categories": [
+                "category_artillery_medium",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_MEDIUM": 30
+            },
+            "manpower": 32,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.36,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.6,
+            "hard_attack": 1.25,
+            "can_be_parachuted": false
+        },
+        "cannon_heavy": {
+            "abbreviation": "HCN",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 102,
+            "ai_priority": 102,
+            "active": false,
+            "type": [
+                "infantry",
+                "artillery",
+                "support"
+            ],
+            "group": "support",
+            "categories": [
+                "category_artillery_heavy",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_HEAVY": 24
+            },
+            "manpower": 32,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.42,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.8,
+            "hard_attack": 1.3,
+            "can_be_parachuted": false
+        },
+        "cannon_tank_light": {
+            "abbreviation": "LCT",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 200,
+            "ai_priority": 100,
+            "active": false,
+            "type": [
+                "armor",
+                "infantry",
+                "artillery"
+            ],
+            "group": "combat_support",
+            "categories": [
+                "category_artillery_light",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_LIGHT": 36
+            },
+            "manpower": 36,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.30,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.5,
+            "hard_attack": 1.2,
+            "can_be_parachuted": true
+        },
+        "cannon_tank_medium": {
+            "abbreviation": "MCT",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 201,
+            "ai_priority": 101,
+            "active": false,
+            "type": [
+                "armor",
+                "infantry",
+                "artillery"
+            ],
+            "group": "combat_support",
+            "categories": [
+                "category_artillery_medium",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_MEDIUM": 30
+            },
+            "manpower": 32,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.36,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.6,
+            "hard_attack": 1.3,
+            "can_be_parachuted": false
+        },
+        "cannon_tank_heavy": {
+            "abbreviation": "HCT",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 202,
+            "ai_priority": 102,
+            "active": false,
+            "type": [
+                "armor",
+                "infantry",
+                "artillery"
+            ],
+            "group": "combat_support",
+            "categories": [
+                "category_artillery_heavy",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "need": {
+                "ARCHETYPE_CANNON_HEAVY": 24
+            },
+            "manpower": 32,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.42,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.8,
+            "hard_attack": 1.5,
+            "can_be_parachuted": false
+        },
+        "cannon_mot_light": {
+            "abbreviation": "LCM",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 300,
+            "ai_priority": 0,
+            "active": false,
+            "type": [
+                "armor",
+                "motorized",
+                "artillery"
+            ],
+            "group": "mobile_combat_support",
+            "categories": [
+                "category_artillery_light",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "transport": "ARCHETYPE_VEHICLE",
+            "need": {
+                "ARCHETYPE_CANNON_LIGHT": 36,
+                "ARCHETYPE_VEHICLE": 12
+            },
+            "manpower": 48,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.36,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.5,
+            "hard_attack": 1.2,
+            "can_be_parachuted": true
+        },
+        "cannon_mot_medium": {
+            "abbreviation": "MCM",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 301,
+            "ai_priority": 0,
+            "active": false,
+            "type": [
+                "armor",
+                "motorized",
+                "artillery"
+            ],
+            "group": "mobile_combat_support",
+            "categories": [
+                "category_artillery_medium",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "transport": "ARCHETYPE_VEHICLE",
+            "need": {
+                "ARCHETYPE_CANNON_MEDIUM": 30,
+                "ARCHETYPE_VEHICLE": 12
+            },
+            "manpower": 42,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.42,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.6,
+            "hard_attack": 1.3,
+            "can_be_parachuted": false
+        },
+        "cannon_mot_heavy": {
+            "abbreviation": "HCM",
+            "sprite": "artillery",
+            "map_icon_category": "infantry",
+            "priority": 302,
+            "ai_priority": 0,
+            "active": false,
+            "type": [
+                "armor",
+                "motorized",
+                "artillery"
+            ],
+            "group": "mobile_combat_support",
+            "categories": [
+                "category_artillery_heavy",
+                "category_all_artillery",
+                "category_all_support",
+                "category_army"
+            ],
+            "combat_width": 2,
+            "transport": "ARCHETYPE_VEHICLE",
+            "need": {
+                "ARCHETYPE_CANNON_HEAVY": 24,
+                "ARCHETYPE_VEHICLE": 12
+            },
+            "manpower": 42,
+            "max_organisation": 0,
+            "default_morale": 0.1,
+            "training_time": 120,
+            "max_strength": 0.2,
+            "weight": 0.1,
+            "supply_consumption": 0.48,
+            "defense": -0.4,
+            "breakthrough": -0.4,
+            "soft_attack": 1.8,
+            "hard_attack": 1.5,
+            "can_be_parachuted": false
+        }
+    }
+}

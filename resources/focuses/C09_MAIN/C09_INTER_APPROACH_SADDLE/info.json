@@ -1,0 +1,36 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "C24": {
+            "add_opinion_modifier": {
+                "target": "C09",
+                "modifier": "FOCUS_C24_C09_BUSINESS_OPINION_MODIFIER"
+            }
+        },
+        "add_opinion_modifier": {
+            "target": "C24",
+            "modifier": "FOCUS_C09_C24_BUSINESS_OPINION_MODIFIER"
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

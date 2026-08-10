@@ -1,0 +1,84 @@
+{
+    "on_actions": {
+        "on_state_control_changed": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 799
+                        },
+                        "FROM": {
+                            "tag": "C37"
+                        },
+                        "ROOT": {
+                            "tag": "C18"
+                        },
+                        "C18": {
+                            "has_war_with": "C37"
+                        }
+                    },
+                    "C18": {
+                        "if": {
+                            "limit": {
+                                "has_idea": "IDEA_C18_SENDAKS_SECRET_COOPERATOR"
+                            },
+                            "country_event": {
+                                "id": "C18_MAIN.92"
+                            },
+                            "remove_ideas": "IDEA_C18_SENDAKS_SECRET_COOPERATOR",
+                            "remove_ideas__D1": "IDEA_C18_C37_PREPARED",
+                            "add_named_threat": {
+                                "threat": -3,
+                                "name": "EVENT_C18_MAIN_60_TOOLTIP_2"
+                            }
+                        },
+                        "annex_country": {
+                            "target": "C37",
+                            "transfer_troops": false
+                        }
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "FROM.FROM": {
+                            "state": 217
+                        },
+                        "FROM": {
+                            "tag": "Z18"
+                        },
+                        "ROOT": {
+                            "tag": "C18"
+                        },
+                        "C18": {
+                            "has_civil_war": true
+                        }
+                    },
+                    "C18": {
+                        "annex_country": {
+                            "target": "Z18",
+                            "transfer_troops": false
+                        }
+                    }
+                }
+            }
+        },
+        "on_civil_war_end": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "ROOT": {
+                            "original_tag": "C18",
+                            "has_global_flag": "PIHC_GLOBAL_FLAG_CULANIKA_LOKADHATU"
+                        }
+                    },
+                    "C18": {
+                        "country_event": {
+                            "id": "C18_MAIN.115",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

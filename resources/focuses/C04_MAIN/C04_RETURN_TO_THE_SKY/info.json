@@ -1,0 +1,57 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_HONORED_GUEST_FEATHER_FLATTERFLY",
+    "prerequisite": {
+        "focus": "FOCUS_C04_ACTIVE_NEUTRALITY"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C04_HONORED_GUEST_FEATHER_FLATTERFLY",
+        "focus__D1": "FOCUS_C04_HONORED_GUEST_WIND_RIDER"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C04_NEW_EMPLOYEE"
+    },
+    "cost": 6,
+    "select_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C04_MAIN.40",
+                "days": 40
+            }
+        }
+    },
+    "completion_reward": {
+        "air_experience": 150,
+        "add_war_support": 0.20,
+        "add_stability": 0.15,
+        "add_power_balance_value": {
+            "id": "BOP_C04_INDEPENDENCE",
+            "value": 0.35,
+            "tooltip_side": "BOP_C03_INDEPENDENCE_RIGHT_SIDE"
+        },
+        "country_event": {
+            "id": "C04_MAIN.39"
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR",
+            "tooltip": "FOCUS_C04_RETURN_TO_THE_SKY_TRIGGER_TOOLTIP"
+        },
+        "hidden_trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_SPITFIRE_ASSASSINATED"
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

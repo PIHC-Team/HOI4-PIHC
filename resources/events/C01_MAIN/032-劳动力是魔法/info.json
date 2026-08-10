@@ -1,0 +1,26 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "global.VAR_THE_COUNTRY_THAT_DEFEATED_C01"
+            },
+            "ADD_INVENTORY_ITEM_6MY_C01_CROWN_IN_MUD_1": true
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "global.VAR_THE_COUNTRY_THAT_DEFEATED_C01"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

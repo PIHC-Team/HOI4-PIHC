@@ -1,0 +1,167 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_81_TOOLTIP",
+            "news_event": {
+                "id": "C08_MAIN.50"
+            },
+            "UPGRADE_LIBERATION_FRONT": true,
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_TRIXIE_ALIVE",
+                "remove_ideas": "CHARACTER_SUGAR_BELLE",
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR",
+                "add_ideas": "IDEA_C08_SUGAR_BELLE"
+            },
+            "add_ideas": "CHARACTER_TRIXIE_LULAMOON_C08",
+            "white_peace": {
+                "tag": "C02"
+            },
+            "puppet": "C02",
+            "C02": {
+                "leave_faction": true,
+                "C08": {
+                    "add_to_faction": "C02"
+                },
+                "set_party_name": {
+                    "ideology": "harmonicism",
+                    "long_name": "C02_harmonicism_party_2",
+                    "name": "C02_harmonicism_party_2"
+                },
+                "set_politics": {
+                    "ruling_party": "harmonicism"
+                },
+                "set_cosmetic_tag": "C02_harmonicism_resistance",
+                "deactivate_advisor": "CHARACTER_MARE",
+                "promote_character": {
+                    "character": "CHARACTER_MARE",
+                    "ideology": "harmonicism_monarchy"
+                }
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "load_focus_tree": "C08_PARTIV",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_TRIXIE_ALIVE",
+            "C02": {
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.6       
+                },
+                "load_focus_tree": "C02_LIBERATION_MARE",
+                "add_ideas": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS",
+                "remove_ideas": "IDEA_C02_PUPPET_GOVERNMENT",
+                "remove_ideas__D1": "IDEA_C01_MARESHALL_PLAN",
+                "remove_ideas__D2": "IDEA_ALL_C01_COLONY_1",
+                "remove_ideas__D3": "IDEA_C02_EMPIRE_FUEL_FEE_2",
+                "remove_ideas__D4": "IDEA_C08_FAKE_WAR",
+                "remove_state_core": 590,
+                "remove_state_core__D1": 579,
+                "remove_state_core__D2": 567,
+                "remove_state_core__D3": 553,
+                "remove_state_core__D4": 533,
+                "remove_state_core__D5": 514,
+                "remove_state_core__D6": 500
+            },
+            "add_popularity": {
+                "ideology": "despotic",
+                "popularity": 0.18       
+            },
+            "remove_ideas": "IDEA_C08_C02_PREPARED",
+            "518": {
+                "remove_province_modifier": {
+                    "static_modifiers": [
+                        "MODIFIER_BALTIMARE_RESISTANCE"
+                    ],
+                    "province": {
+                        "all_provinces": true
+                    }
+                }
+            },
+            "549": {
+                "remove_province_modifier": {
+                    "static_modifiers": [
+                        "MODIFIER_BALTIMARE_RESISTANCE"
+                    ],
+                    "province": {
+                        "all_provinces": true
+                    }
+                }
+            },
+            "665": {
+                "remove_province_modifier": {
+                    "static_modifiers": [
+                        "MODIFIER_BALTIMARE_RESISTANCE"
+                    ],
+                    "province": {
+                        "all_provinces": true
+                    }
+                }
+            },
+            "568": {
+                "remove_province_modifier": {
+                    "static_modifiers": [
+                        "MODIFIER_BALTIMARE_RESISTANCE"
+                    ],
+                    "province": {
+                        "all_provinces": true
+                    }
+                }
+            },
+            "553": {
+                "set_demilitarized_zone": false
+            },
+            "533": {
+                "set_demilitarized_zone": false
+            },
+            "579": {
+                "set_demilitarized_zone": false
+            },
+            "590": {
+                "set_demilitarized_zone": false
+            },
+            "C14": {
+                "remove_resource_rights": 553,
+                "remove_resource_rights__D1": 533,
+                "remove_resource_rights__D2": 579,
+                "remove_resource_rights__D3": 590
+            },
+            "add_state_core": 549,
+            "transfer_state": 549,
+            "add_state_core__D1": 568,
+            "transfer_state__D1": 568,
+            "add_state_core__D2": 578,
+            "transfer_state__D2": 578,
+            "add_state_core__D3": 606,
+            "transfer_state__D3": 606,
+            "add_state_core__D4": 619,
+            "transfer_state__D4": 619,
+            "add_state_core__D5": 567,
+            "transfer_state__D5": 567,
+            "add_state_core__D6": 514,
+            "transfer_state__D6": 514,
+            "add_state_core__D7": 553,
+            "transfer_state__D7": 553,
+            "add_state_core__D8": 579,
+            "transfer_state__D8": 579,
+            "add_state_core__D9": 590,
+            "transfer_state__D9": 590,
+            "add_state_core__D10": 533,
+            "transfer_state__D10": 533,
+            "add_state_core__D11": 550,
+            "transfer_state__D11": 550,
+            "add_state_core__D12": 585,
+            "transfer_state__D12": 585,
+            "add_state_core__D13": 518,
+            "transfer_state__D13": 518,
+            "add_state_core__D14": 665,
+            "transfer_state__D14": 665,
+            "add_state_core__D15": 500,
+            "transfer_state__D15": 500
+        }
+    },
+    "is_triggered_only": true
+}

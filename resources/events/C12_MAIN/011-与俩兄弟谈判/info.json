@@ -1,0 +1,41 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 75
+            },
+            "C07": {
+                "add_political_power": 50,
+                "add_timed_idea": {
+                    "idea": "IDEA_C12_CONTROL_ROCK_FARM",
+                    "days": 365
+                }
+            },
+            "C12": {
+                "add_timed_idea": {
+                    "idea": "IDEA_C12_ECONOMIC_CONTROL_OF_LAS_PEGASUS",
+                    "days": 365
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "C07": {
+                "create_wargoal": {
+                    "type": "trade_request_wargoal",
+                    "target": "C12"
+                }
+            },
+            "C12": {
+                "add_political_power": 50,
+                "add_timed_idea": {
+                    "idea": "IDEA_C12_PUNISHMENT_OF_LAS_PEGASUS",
+                    "days": 365
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

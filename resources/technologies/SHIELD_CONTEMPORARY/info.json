@@ -1,0 +1,29 @@
+{
+    "name": "Contemporary Heavy Weapons",
+    "category": "infantry",
+
+    "x": 6,
+    "y": 27,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_shield"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIELD_CONTEMPORARY_MACHINE_GUN"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_FIREARM_IX": 1,
+        "TECHNOLOGY_SHIELD_MODERN": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 2.5,
+    "start_year": 1009
+}

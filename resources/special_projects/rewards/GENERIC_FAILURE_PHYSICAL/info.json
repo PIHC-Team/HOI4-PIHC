@@ -1,0 +1,19 @@
+{
+    "threshold": {
+        "min": 30,
+        "max": 100
+    },
+    "options": [
+        {
+            "iteration_output": {
+                "facility_state_effects": {
+                    "damage_building": {
+                        "tags": "facility",
+                        "damage": 0.1,
+                        "province": "var:facility_province_id"
+                    }
+                }
+            }
+        }
+    ]
+}

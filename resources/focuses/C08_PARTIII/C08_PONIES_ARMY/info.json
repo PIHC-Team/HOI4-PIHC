@@ -1,0 +1,53 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_ARMY_STRATEGY",
+    "prerequisite": {
+        "focus": "FOCUS_C08_ARMY_STRATEGY",
+        "focus__D1": "FOCUS_C08_AIR_TEST_FLIGHTS"
+    },
+    "dx": 2,
+    "priority": 0,
+    "cost": 1,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_PONIES_ARMY_TOOLTIP",
+        "add_tech_bonus": {
+            "category": "pihc_support",
+            "bonus": 0.5,
+            "uses": 2
+        },
+        "add_tech_bonus__D1": {
+            "category": "pihc_military",
+            "bonus": 0.5,
+            "uses": 2
+        },
+        "if": {       
+            "limit": {
+                "has_completed_focus": "FOCUS_C08_ARMY_LINE"
+            },
+            "hidden_effect": {
+                "remove_ideas": "CHARACTER_DEPARTMENT_C08_THEORY"
+            },
+            "add_ideas": "CHARACTER_DEPARTMENT_C08_THEORY_ARMY"
+        },
+        "if__D1": {       
+            "limit": {
+                "has_completed_focus": "FOCUS_C08_AIR_LINE"
+            },
+            "hidden_effect": {
+                "remove_ideas": "CHARACTER_DEPARTMENT_C08_THEORY"
+            },
+            "add_ideas": "CHARACTER_DEPARTMENT_C08_THEORY_AIR"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

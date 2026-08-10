@@ -1,0 +1,23 @@
+{
+    "name": "Frostpunk",
+    "removal_cost": -1,
+    "available": {
+        "is_extreme_ideology": true,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_WINTER_LOCK"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "IDEA_CATEGORY_ERA_COLD_WINTER_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "modifier": {
+        "acclimatization_cold_climate_gain_factor": 0.50,
+        "winter_attrition_factor": -0.40,
+        "monthly_population": -0.15
+    },
+    "cost": 250,
+    "cancel_if_invalid": false
+}

@@ -1,0 +1,45 @@
+state = {
+    id = 851
+    name = STATE_851
+    provinces = {
+        1779
+        1914
+        2696
+        2972
+        4132
+        4734
+        7426
+        8709
+        9122
+        9230
+        9317
+        14458
+        14475
+        14568
+        14606
+    }
+    manpower = 55277
+    state_category = town
+    history = {
+        owner = C26
+        victory_points = {
+            1779
+            5
+        }
+        buildings = {
+            dockyard = 1
+            1779 = {
+                naval_base = 3
+                supply_node = 1
+            }
+            9230 = {
+                naval_base = 1
+                supply_node = 1
+            }
+        }
+        add_core_of = C26
+    }
+    resources = {
+
+    }
+}

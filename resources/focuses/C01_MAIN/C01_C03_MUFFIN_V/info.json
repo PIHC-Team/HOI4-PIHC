@@ -1,0 +1,46 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C03_WHAT_IS_SHE_LIKE",
+    "priority": 10,
+    "dy": 4,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C03_DISCOVERY"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C01_C03_MUFFIN_IV"
+    },
+    "cost": 4,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C01_C03_DISCOVERY",
+        "has_completed_focus__D1": "FOCUS_C01_C03_MUFFIN_IV"
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C01_C03_BLUEBERRY.6",
+            "days": 3
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER": true,
+        "C03": {
+            "hidden_trigger": {
+                "is_ai": true
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SPEECH_NOT_QUITE_INTERESTING",
+    "prerequisite": {
+        "focus": "FOCUS_C12_SPEECH_NOT_QUITE_INTERESTING"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "build_railway": {
+            "level": 2,
+            "build_only_on_allied": false,
+            "fallback": false,
+            "path": [
+                714, 9030, 12525, 12497, 489, 9032, 4251, 9384, 2590, 7417, 54, 3246, 2560, 2309, 12632, 7235, 5804, 8702, 104, 7379, 12621, 7596
+            ],
+            "start_province": 714,
+            "target_province": 7596
+        },
+        "601": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "infrastructure",
+                "level": 2,
+                "instant_build": true 
+            }
+        },
+        "635": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "infrastructure",
+                "level": 2,
+                "instant_build": true 
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

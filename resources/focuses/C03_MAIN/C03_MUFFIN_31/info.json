@@ -1,0 +1,50 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 5,
+    "y": 8,
+    "cost": 4,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 1.00,
+            "uses": 22,
+            "category": "pihc_muffins"
+        },
+        "hidden_effect": {
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "C01": {
+                    "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+                }
+            },
+            "always": false
+        },
+        "hidden_trigger": {
+            "is_ai": false
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C03_MUFFIN_31_TRIGGER_TOOLTIP",
+            "check_variable": {
+                "var": "ROOT.VAR_MUFFINS_AID_TOTAL_C03",
+                "value": 50,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_30"
+    }
+}

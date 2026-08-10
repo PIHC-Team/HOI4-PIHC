@@ -1,0 +1,32 @@
+{
+    "scripted_gui": {
+        "C15_PARLIAMENT_GUI": {
+            "context_type": "decision_category",
+            "window_name": "parliament_gui_container",
+            "dynamic_lists": {
+                "parliament_semicircle_main_grid": {
+                    "array": "C15.parliament_main_array",
+                    "index": "C15.parliament_main_index",
+                    "change_scope": false,
+                    "entry_container": "parliament_semicircle_main_entry"
+                },
+                "parliament_member_grid": {
+                    "array": "C15.parliament_member_array",
+                    "index": "C15.parliament_member_index",
+                    "change_scope": false,
+                    "entry_container": "parliament_member_entry"
+                }
+            },
+            "properties": {
+                "parliament_semicircle_main_icon": {
+                    "frame": "v",
+                    "x": "C15.parliament_x_array^C15.parliament_main_index",
+                    "y": "C15.parliament_y_array^C15.parliament_main_index"
+                },
+                "parliament_member_icon": {
+                    "frame": "v"
+                }
+            }
+        }
+    }
+}

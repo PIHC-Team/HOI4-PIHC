@@ -1,0 +1,40 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 5,
+    "y": 12,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_magical",
+        "pihc_support_teleport",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_magical": {
+        "maximum_speed": 0.15
+    },
+
+    "allow": {
+        "is_magic_country": true
+    },
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_MAGIC_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1003
+}

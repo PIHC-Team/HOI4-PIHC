@@ -1,0 +1,48 @@
+state = {
+    id = 284
+    name = STATE_284
+    provinces = {
+        154
+        238
+        512
+        974
+        1034
+        2263
+        2536
+        3666
+        3724
+        3906
+        5240
+        6118
+        6667
+        6871
+        7444
+        7490
+        8096
+        9346
+        10008
+        10013
+        10048
+        10168
+        10172
+        10199
+    }
+    manpower = 42165
+    state_category = wasteland
+    history = {
+        owner = C21
+        victory_points = {
+            154
+            1
+        }
+        buildings = {
+            infrastructure = 2
+            dockyard = 1
+        }
+        add_core_of = C21
+    }
+    resources = {
+        aluminium = 6
+        steel = 32
+    }
+}

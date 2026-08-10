@@ -1,0 +1,50 @@
+state = {
+    id = 309
+    name = STATE_309
+    provinces = {
+        425
+        490
+        527
+        666
+        822
+        997
+        1318
+        1858
+        2588
+        3076
+        3129
+        3486
+        4312
+        4912
+        6008
+        8364
+        9314
+        10109
+        10150
+        10169
+        10188
+        10215
+        10242
+        10302
+    }
+    manpower = 70287
+    state_category = wasteland
+    history = {
+        owner = C21
+        victory_points = {
+            425
+            1
+        }
+        buildings = {
+            industrial_complex = 1
+            arms_factory = 1
+            425 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C21
+    }
+    resources = {
+        aluminium = 12
+    }
+}

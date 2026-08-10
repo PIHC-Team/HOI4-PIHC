@@ -1,0 +1,84 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_PATH_TO_FREEDOM",
+    "dw": -2,
+    "dc": -2,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C02_PATH_TO_FREEDOM"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C02_HIDDEN_MILITARIZATION",
+        "focus__D1": "FOCUS_C02_AN_OLD_FRIEND"
+    },
+    "ai_will_do": {"factor": 0},
+    "cost": 2,
+    "completion_reward": {
+        "swap_ideas": {
+            "remove_idea": "IDEA_C02_PUPPET_GOVERNMENT",
+            "add_idea": "IDEA_C02_PUPPET_GOVERNMENT_2"
+        },
+        "add_power_balance_value": {
+            "id": "BOP_C02_INDEPENDENCE",
+            "value": -0.15,
+            "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+        },
+        "custom_effect_tooltip": "FOCUS_C02_LOYALTY_TOOLTIP",
+        "add_to_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "value": 0.10
+        },
+        "clamp_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "min": 0.0,
+            "max": 1.0
+        },
+        "add_to_variable__D1": {
+            "var": "C02.VAR_C02_ELECTION_MARE",
+            "value": -0.05
+        },
+        "clamp_variable__D1": {
+            "var": "C02.VAR_C02_ELECTION_MARE",
+            "min": 0.0,
+            "max": 1.0
+        },
+        "add_to_variable__D2": {
+            "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+            "value": -0.05
+        },
+        "clamp_variable__D2": {
+            "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+            "min": 0.0,
+            "max": 1.0
+        },
+        "add_to_variable__D3": {
+            "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+            "value": -0.05
+        },
+        "clamp_variable__D3": {
+            "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+            "min": 0.0,
+            "max": 1.0
+        },
+        "add_to_variable__D4": {
+            "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+            "value": -0.05
+        },
+        "clamp_variable__D4": {
+            "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

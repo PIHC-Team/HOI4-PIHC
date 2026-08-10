@@ -1,0 +1,51 @@
+state = {
+    id = 588
+    name = STATE_588
+    provinces = {
+        430
+        1490
+        2595
+        2990
+        3009
+        4230
+        4310
+        4804
+        6039
+        7680
+        8332
+        8780
+        8785
+        9136
+        9195
+        9792
+        12303
+        12313
+        12319
+        12345
+        12367
+        12412
+        12452
+        15094
+    }
+    manpower = 38126
+    state_category = rural
+    history = {
+        owner = C60
+        buildings = {
+            infrastructure = 2
+            dockyard = 2
+            15094 = {
+                naval_base = 2
+                supply_node = 1
+            }
+        }
+        add_core_of = C60
+        victory_points = {
+            15094
+            50
+        }
+    }
+    resources = {
+        crystals = 24
+    }
+}

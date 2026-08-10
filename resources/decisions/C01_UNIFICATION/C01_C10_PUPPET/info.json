@@ -1,0 +1,70 @@
+{
+    "name": "Puppet EEA",
+    "priority": 110,
+    
+    "cost": 150,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "visible": {
+        "OR": {
+            "AND": {
+                "has_completed_focus": "FOCUS_C01_UNIFICATION_POLICY",
+                "has_country_flag": "PIHC_COUNTRY_FLAG_EEA_NEW_REGULATIONS",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C01_C10_MERGED"
+                },
+                "C10": {
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                    }
+                }
+            },
+            "has_country_flag": "PIHC_COUNTRY_FLAG_DEBUG_PUPPET_C10"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        },
+        "power_balance_value": {
+            "id": "BOP_C10_INDEPENDENCE",
+            "value < -0.01": null
+        }
+    },
+    "complete_effect": {
+        "C10": {
+            "remove_all_power_balance_modifiers": {
+                "id": "BOP_C10_INDEPENDENCE"
+            },
+            "remove_power_balance": {
+                "id": "BOP_C10_INDEPENDENCE"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C10_MERGED"
+    },
+    "remove_effect": {
+        "C10": {
+            "set_country_leader_ideology": "despotic_duchy"
+        },
+        "puppet": {
+            "target": "C10",
+            "end_wars": false
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "C01_MAIN.11"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

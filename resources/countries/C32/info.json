@@ -1,0 +1,97 @@
+{
+    "name": "The Second Lunar Empire",
+    "rgb": [
+        57,
+        65,
+        170
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 575,
+        "set_popularities": {
+            "fascism": 70,
+            "transcendence": 30
+        },
+        "set_politics": {
+            "ruling_party": "fascism",
+            "elections_allowed": false
+        },
+        "recruit_character": "CHARACTER_NIGHTMARE_MOON_1",
+        "add_ideas_batch": [
+            "limited_exports",
+            "all_adults_serve",
+            "war_economy"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_WITCHCRAFT_III": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_CHANGELING_TRAINING": 1,
+            "TECHNOLOGY_THESTRALS_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+            "TECHNOLOGY_TECH_MAGI_NONUNICORN": 1,
+            "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1,
+            "TECHNOLOGY_TECH_MAGI_DARKPERCEPTION": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_I": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_II": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_III": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_IV": 1,
+            "TECHNOLOGY_SUPPORT_MAGIC_V": 1
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN": 1
+            }
+        }
+    }
+}

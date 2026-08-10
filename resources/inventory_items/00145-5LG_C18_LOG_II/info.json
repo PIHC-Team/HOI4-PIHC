@@ -1,0 +1,23 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "country_event": {
+                    "id": "C18_MAIN.97"
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_II": true,
+                "custom_trigger_tooltip": {
+                    "tooltip": "PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE_TOOLTIP",
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE"
+                },
+                "custom_trigger_tooltip__D1": {
+                    "tooltip": "PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_SECRET_CODE_TOOLTIP",
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_SECRET_CODE"
+                }
+            }
+        }
+    ]
+}

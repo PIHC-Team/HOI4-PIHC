@@ -1,0 +1,39 @@
+{
+    "category": "land",
+    "x": 2,
+    "y": 6,
+    "xor": [
+        "DOCTRINE_ARMY_0_3A_MOBILE_FORTRESS"
+    ],
+
+    "category_infantry_automata": {
+        "defense": 0.05,
+        "soft_attack": 0.15,
+        "hard_attack": 0.05,
+        "max_strength": 0.15,
+        "max_organisation": 4.0
+    },
+    "coordination_bonus": 0.02,
+    "enable_tactic": "tactic_pihc_drones_attack",
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_tide_of_iron"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_0_4B_AUTONOMOUS",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

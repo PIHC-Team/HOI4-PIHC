@@ -1,0 +1,50 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_5LG_ARTIFACT_SONIC_SCREWDRIVER_1": true,
+            "add_tech_bonus": {
+                "bonus": 0.15,
+                "uses": 1,
+                "category": "pihc_magical"
+            },
+            "add_ideas": "IDEA_ALL_ARTIFACT_SONIC_SCREWDRIVER",
+            "hidden_effect": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "has_tech": "TECHNOLOGY_TECH_MAGI_II"
+                        }
+                    },
+                    "add_nuclear_bombs": 1
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "mean_time_to_happen": {
+        "years": 35,
+        "modifier": {
+            "factor": 0.5,
+            "has_tech": "TECHNOLOGY_TECH_MAGI_DARKPERCEPTION"
+        },
+        "modifier__D1": {
+            "factor": 0.5,
+            "has_tech": "TECHNOLOGY_TECH_MAGI_II"
+        },
+        "modifier__D2": {
+            "factor": 0.85,
+            "has_idea_with_trait": "TRAIT_ARCHAEOLOGIST"
+        },
+        "modifier__D3": {
+            "factor": 0.6,
+            "has_idea_with_trait": "TRAIT_FANTASY_LITERATURE"
+        },
+        "modifier__D4": {
+            "factor": 0.1,
+            "has_idea": "CHARACTER_DOCTOR_HOOVES"
+        }
+    }
+}

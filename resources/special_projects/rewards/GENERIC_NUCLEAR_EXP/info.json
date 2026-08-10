@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "iteration_output": {
+                "country_effects": {
+                    "add_tech_bonus": {
+                        "name": "SP_REWARD_GENERIC_NUCLEAR_EXP",
+                        "bonus": 0.50,
+                        "uses": 1,
+                        "category": "pihc_nuclear"
+                    }
+                },
+                "scientist_effects": {
+                    "add_scientist_xp": {
+                        "experience": "constant:sp_scientist_xp_gain.low",
+                        "specialization": "specialization_nuclear"
+                    }
+                }
+            }
+        }
+    ]
+}

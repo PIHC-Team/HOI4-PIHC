@@ -1,0 +1,24 @@
+{
+    "name": "Contemporary Heavy Cannon",
+    "category": "artillery",
+
+    "x": 4,
+    "y": 27,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_artillery"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_CANNON_HEAVY_CONTEMPORARY"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1007
+}

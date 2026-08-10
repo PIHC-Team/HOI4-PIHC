@@ -1,0 +1,34 @@
+{
+    "name": "Air Tech",
+    "category": "bba_air_techs",
+
+    "x": 0,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_air_atk"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_PLANE_WEAPON_AIRATK_2A_CAPSULE"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_TECH_AIR_WEAPON_III",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1003
+}

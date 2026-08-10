@@ -1,0 +1,57 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_APOCALYPSE",
+    "dw": -2,
+    "dc": -2,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_APOCALYPSE"
+    },
+    "bypass": {
+        "NOT": {
+            "country_exists": "C01",
+            "country_exists__D1": "C33"
+        }
+    },
+    "cost": 12,
+    "will_lead_to_war_with": "C01",
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "country_exists": "C01"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C15_SOMBRA_C01_PREPARED",
+                "days": 180
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "country_exists": "C33"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C15_SOMBRA_C33_PREPARED",
+                "days": 180
+            }
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

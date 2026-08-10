@@ -1,0 +1,37 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "remove_power_balance": {
+                "id": "BOP_C12_INDEPENDENCE"
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_C01_COLONY"
+                },
+                "remove_ideas": "IDEA_ALL_C01_COLONY"
+            },
+            "if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_C01_COLONY_1"
+                },
+                "remove_ideas": "IDEA_ALL_C01_COLONY_1"
+            },
+            "if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_C01_COLONY_2"
+                },
+                "remove_ideas": "IDEA_ALL_C01_COLONY_2"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

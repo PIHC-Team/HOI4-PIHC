@@ -1,0 +1,33 @@
+{
+    "name": "Muffins",
+    "category": "muffins",
+
+    "x": 12,
+    "y": 12,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_muffins"
+    ],
+    "enable_equipments": {},
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED_TOOLTIP",
+        "set_variable": {
+            "var": "ROOT.VAR_MUFFIN_ROULETTE_BREED_COUNT",
+            "value": 0
+        }
+    },
+
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 1000,
+            "tag": "C03"
+        }
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1004
+}

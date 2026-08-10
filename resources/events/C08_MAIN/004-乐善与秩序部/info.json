@@ -1,0 +1,24 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_14A2A"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EVIDENCE_MANEHATTAN_4",
+        "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_MANEHATTAN_EVIDENCE",
+        "set_country_flag__D2": "PIHC_COUNTRY_FLAG_C08_REPORT_14A2A"
+    },
+    "option__D1": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_14A2A"
+        }
+    },
+    "is_triggered_only": true
+}

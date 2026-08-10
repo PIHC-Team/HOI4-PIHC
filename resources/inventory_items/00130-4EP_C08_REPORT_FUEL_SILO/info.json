@@ -1,0 +1,43 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "country_event": {
+                    "id": "C01_C02_GREENLIGHT.29"
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO": true
+            }
+        },
+        {
+            "type": "click",
+            "effects": {
+                "C02": {
+                    "country_event": {
+                        "id": "EEMO.13",
+                        "days": 3
+                    }
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C08_PIN": true,
+                "custom_trigger_tooltip": {
+                    "tooltip": "C08_PIN_SWITCH_ON_TOOLITP",
+                    "has_country_flag": "PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON"
+                },
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO": true,
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PERFUME_WAREHOUSE_MANAGER": true,
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PERFUME_SALESPONY": true,
+                "custom_trigger_tooltip__D1": {
+                    "tooltip": "C02_OPERATION_GREENLIGHT_NOT_KNOW_TOOLITP",
+                    "NOT": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+                    }
+                }
+            }
+        }
+    ]
+}

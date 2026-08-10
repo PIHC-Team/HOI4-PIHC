@@ -1,0 +1,30 @@
+state = {
+    id = 106
+    name = STATE_106
+    provinces = {
+        1087
+        1458
+        1493
+        3006
+        8727
+        13569
+        13676
+        13688
+    }
+    manpower = 54405
+    state_category = town
+    history = {
+        owner = C00
+        victory_points = {
+            1087
+            5
+        }
+        buildings = {
+
+        }
+        add_core_of = C00
+    }
+    resources = {
+        aluminium = 1
+    }
+}

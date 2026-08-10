@@ -1,0 +1,36 @@
+{
+    "name": "Lightning Dust",
+    "gender": "female",
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_LIGHTNING_DUST_TRAINING_CAMP",
+            "TRAIT_WASHOUTS_LIGHTNING_DUST"
+        ],
+        "available": {
+            "if": {
+                "limit": {
+                    "tag": "C04",
+                    "NOT": {
+                        "has_government": "fascism"
+                    }
+                },
+                "custom_trigger_tooltip": {
+                    "tooltip": "PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP",
+                    "always": false
+                }
+            }
+        },
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    },
+    "country_leader": {
+        "ideology": "fascism_pegasi",
+        "traits": [
+            "TRAIT_LIGHTNING_DUST_TRAINING_CAMP",
+            "TRAIT_WASHOUTS_LIGHTNING_DUST"
+        ]
+    }
+}

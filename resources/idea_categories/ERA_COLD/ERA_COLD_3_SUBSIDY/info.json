@@ -1,0 +1,24 @@
+{
+    "name": "Wood",
+    "removal_cost": -1,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_WINTER_LOCK"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "IDEA_CATEGORY_ERA_COLD_WINTER_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "modifier": {
+        "acclimatization_cold_climate_gain_factor": 0.15,
+        "winter_attrition_factor": -0.10,
+        "country_resource_cost_logs": 5,
+        "custom_modifier_tooltip": "IDEA_ERA_COLD_3_SUBSIDY_TOOLTIP"
+    },
+    "cost": 50,
+    "default": true,
+    "cancel_if_invalid": false
+}

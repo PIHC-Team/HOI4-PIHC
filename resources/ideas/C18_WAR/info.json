@@ -1,0 +1,15 @@
+{
+    "name": "Armed to Teeth",
+    "removal_cost": -1,
+    "modifier": {
+        "offence": 0.10,
+        "defence": 0.25,
+        "acclimatization_cold_climate_gain_factor": 0.50,
+        "acclimatization_hot_climate_gain_factor": 0.50,
+        "dig_in_speed_factor": 0.15,
+        "custom_modifier_tooltip": "IDEA_C18_WAR_MODIFIER_TOOLTIP"
+    },
+    "on_add": {
+        "C18_ADD_GROWTH_0_3": true
+    }
+}

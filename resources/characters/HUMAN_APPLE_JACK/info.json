@@ -1,0 +1,23 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [],
+        "removal_cost": 350
+    },
+    "advisor__D1": {
+        "slot": "high_command",
+        "ledger": "army",
+        "idea_token": "C23_APPLE_JACK_HUMAN",
+        "traits": [],
+        "removal_cost": 350
+    },
+    "advisor__D2": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "idea_token": "C23_APPLE_JACK_HUMAN",
+        "traits": [],
+        "removal_cost": 350
+    }
+}

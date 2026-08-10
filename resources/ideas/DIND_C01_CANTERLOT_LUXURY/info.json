@@ -1,0 +1,38 @@
+{
+    "name": "DIND_C01_CANTERLOT_LUXURY",
+    "designer": true,
+    "category": "industrial_concern",
+    "traits": [
+        "entertainment_company"
+    ],
+    "cost": 150,
+    "removal_cost": -1,
+    "allowed": {
+        "OR": {
+            "tag": "C01",
+            "tag__D1": "C02"
+        }
+    },
+    "modifier": {
+        "stability_factor": 0.05
+    },
+    "on_add": {
+        "if": {
+            "limit": {
+                "tag": "C01"
+            },
+            "add_political_power": 150
+        }
+    },
+    "visible": {
+        "C01": {
+            "has_completed_focus": "FOCUS_C01_C02_PERFUME_BUSINESS"
+        }
+    },
+    "available": {
+        "country_exists": "C01"
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

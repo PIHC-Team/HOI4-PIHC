@@ -1,0 +1,50 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_EVERFREE_FIELDTRIP",
+    "dx": -1,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_EVERFREE_FIELDTRIP"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "custom_effect_tooltip": "IDEA_DIND_C01_CANTERLOT_LUXURY_TOOLTIP",
+        "hidden_effect": {
+            "C02": {
+                "country_event": {
+                    "id": "C02_HOTLINE.33",
+                    "days": 14
+                }
+            },
+            "if": {
+                "limit": {
+                    "C02": {
+                        "has_country_flag": "PIHC_INVENTORY_ITEM_5LG_C02_PIN_o0_SWITCH_ON"
+                    }
+                },
+                "C08": {
+                    "ADD_INVENTORY_ITEM_4EP_C08_PERFUME_WAREHOUSE_MANAGER_1": true,
+                    "ADD_INVENTORY_ITEM_4EP_C08_PERFUME_SALESPONY_1": true
+                }
+            }
+        }
+    },
+    "available": {
+        "C02": {
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

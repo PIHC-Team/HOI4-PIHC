@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT": true
+                    }
+                },
+                "ADD_INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT_1": true
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

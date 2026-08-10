@@ -1,0 +1,56 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_FOALS_BREATH",
+    "dx": -3,
+    "dy": 7,
+    "priority": 10,
+    "allow_branch": {
+        "OR": {
+            "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED",
+            "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_I": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_II": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_III": true
+        }
+    },
+    "prerequisite": {
+        "focus": "FOCUS_C18_101_NARROW_GATE_MINING",
+        "focus__D1": "FOCUS_C18_101_CLIMATE_RESEARCH_2",
+        "focus__D2": "FOCUS_C18_011_TRADE_FLOWER",
+        "focus__D3": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE"
+    },
+    "cost": 4,
+    "select_effect": {
+        "country_event": {
+            "id": "C18_MAIN.111",
+            "days": 1
+        }
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C18_MAIN.112"
+        }
+    },
+    "available": {
+        "has_war": false,
+        "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_I": true,
+        "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_II": true,
+        "custom_trigger_tooltip": {
+            "tooltip": "PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE"
+        },
+        "TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_III": true,
+        "custom_trigger_tooltip__D1": {
+            "tooltip": "PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

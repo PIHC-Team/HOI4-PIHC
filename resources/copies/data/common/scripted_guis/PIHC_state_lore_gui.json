@@ -1,0 +1,99 @@
+{
+    "scripted_gui": {
+        "state_lore_container_gui": {
+            "context_type": "selected_state_context",
+            "parent_window_token": "selected_state_view",
+            "dirty": "ROOT.state_lore_text_state_id",
+            "window_name": "state_lore_container",
+            "visible": {
+                "is_in_array": {
+                    "array": "global.states_with_lore",
+                    "value": "THIS.id"
+                }
+            },
+            "effects": {
+                "state_lore_button_click": {
+                    "if": {
+                        "limit": {
+                            "state": "ROOT.state_lore_text_state_id"
+                        },
+                        "clear_variable": "ROOT.state_lore_text_state_id"
+                    },
+                    "else": {
+                        "set_variable": {
+                            "ROOT.state_lore_text_state_id": "THIS"
+                        }
+                    }
+                }
+            },
+            "properties": {
+                "state_lore_button": {
+                    "image": "[THIS.state_lore_get_button_gfx]"
+                }
+            }
+        },
+        "state_lore_container_text_gui": {
+            "context_type": "player_context",
+            "window_name": "state_lore_text_container",
+            "dirty": "ROOT.state_lore_text_state_id",
+            "visible": {
+                "has_variable": "state_lore_text_state_id"
+            },
+            "effects": {
+                "state_lore_text_close_button_click": {
+                    "clear_variable": "state_lore_text_state_id"
+                }
+            }
+        },
+        "pihc_state_lore_mapicon_gui": {
+            "context_type": "state_mapicon",
+            "window_name": "pihc_state_lore_mapicon_gui",
+            "dirty": "ROOT.state_lore_text_state_id",
+            "visible": {
+                "ROOT": {
+                    "has_country_flag": "pihc_state_lore_mapicons_visible"
+                }
+            },
+            "mapicon_targets": {
+                "target_array": "global.states_with_lore"
+            },
+            "effects": {
+                "state_lore_mapicon_button_click": {
+                    "set_variable": {
+                        "ROOT.state_lore_text_state_id": "FROM"
+                    }
+                }
+            },
+            "properties": {
+                "state_lore_mapicon_button": {
+                    "image": "[FROM.state_lore_get_button_gfx]"
+                }
+            }
+        },
+        "pihc_state_lore_toggle": {
+            "window_name": "pihc_state_lore_icon",
+            "context_type": "player_context",
+            "visible": {
+                "is_ai": false
+            },
+            "effects": {
+                "open_state_lore_click": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "pihc_state_lore_mapicons_visible"
+                        },
+                        "clr_country_flag": "pihc_state_lore_mapicons_visible"
+                    },
+                    "else": {
+                        "set_country_flag": "pihc_state_lore_mapicons_visible"
+                    }
+                }
+            },
+            "properties": {
+                "state_lore_mapicon_control": {
+                    "image": "[state_lore_get_gfx_control_panel]"
+                }
+            }
+        }
+    }
+}

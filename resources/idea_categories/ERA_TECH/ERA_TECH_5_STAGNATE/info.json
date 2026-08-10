@@ -1,0 +1,15 @@
+{
+    "name": "Eternal Stagnate",
+    "removal_cost": -1,
+    "available": {
+        "NOT": {
+            "has_idea": "IDEA_ERA_AGE_SCIENCE"
+        }
+    },
+    "modifier": {
+        "research_speed_factor": -0.3,
+        "stability_factor": 0.16
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

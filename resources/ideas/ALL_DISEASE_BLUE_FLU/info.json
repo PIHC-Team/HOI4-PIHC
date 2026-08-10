@@ -1,0 +1,19 @@
+{
+    "name": "Blue Flu",
+    "removal_cost": -1,
+    "modifier": {
+        "monthly_population": -0.25
+    },
+    "on_remove": {
+        "every_neighbor_country": {
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "has_idea": "IDEA_ALL_DISEASE_BLUE_FLU"
+                    }
+                },
+                "INFECT_BLUE_FLU": true
+            }
+        }
+    }
+}

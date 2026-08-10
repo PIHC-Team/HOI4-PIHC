@@ -1,0 +1,15 @@
+{
+    "name": "Landlord",
+    "priority": 3,
+    
+    "cost": 0,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_LANDLORD_ENABLED"
+    },
+    "available": {
+        "is_ironman": false
+    },
+    "complete_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_LANDLORD_ENABLED"
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "name": "Generous Aid",
+    "priority": 0,
+    
+    "cost": 0,
+    "days_remove": 7,
+    "days_re_enable": 30,
+    "target_trigger": {
+        "FROM": {
+            "NOT": {
+                "OR": {
+                    "tag": "C00",
+                    "original_tag": "C11",
+                    "has_government": "transcendence",
+                    "is_in_faction_with": "C03"
+                }
+            },
+            "check_variable": {
+                "var": "VAR_MUFFINS_AID_FROM_C03",
+                "value": 1,
+                "compare": "greater_than_or_equals"
+            },
+            "has_opinion": {
+                "target": "ROOT",
+                "value > 39": null
+            },
+            "is_ai": true
+        },
+        "ROOT": {
+            "has_opinion": {
+                "target": "FROM",
+                "value > -11": null
+            }
+        }
+    },
+    "available": {
+        "FROM": {
+            "check_variable": {
+                "var": "VAR_MUFFINS_AID_FROM_C03",
+                "value": 10,
+                "compare": "greater_than_or_equals"
+            },
+            "has_opinion": {
+                "target": "ROOT",
+                "value > 39": null
+            }
+        },
+        "ROOT": {
+            "custom_trigger_tooltip": {
+                "tooltip": "CUSTOM_OWN_MUFFINS_500",
+                "check_variable": {
+                    "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": 500,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "has_opinion": {
+                "target": "FROM",
+                "value > -11": null
+            }
+        }
+    },
+    "target_root_trigger": {
+        "tag": "C03",
+        "has_completed_focus": "FOCUS_C03_MUFFIN_28"
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 500,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_MUFFINS_500",
+    "complete_effect": {
+        "ROOT": {
+            "subtract_from_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 500
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+        }
+    },
+    "remove_effect": {
+        "FROM": {
+            "C03_MUFFINS_JOIN_SAINT_DERPY": true,
+            "if": {
+                "limit": {
+                    "C03": {
+                        "has_completed_focus": "FOCUS_C03_MUFFIN_33"
+                    }
+                },
+                "ROOT": {
+                    "effect_tooltip": {
+                        "annex_country": {
+                            "target": "FROM",
+                            "transfer_troops": true
+                        }
+                    },
+                    "hidden_effect": {
+                        "set_variable": {
+                            "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                            "value": "FROM"
+                        },
+                        "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                        "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+                    }
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000,
+        "modifier": {
+            "factor": 0,
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+            }
+        }
+    }
+}

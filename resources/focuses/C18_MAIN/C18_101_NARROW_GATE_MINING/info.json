@@ -1,0 +1,92 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_101_NARROW_GATE_RESOURCES",
+    "prerequisite": {
+        "focus": "FOCUS_C18_101_NARROW_GATE_RESOURCES"
+    },
+    "cost": 8,
+    "select_effect": {
+        "217": {
+            "BUILD_A_CIC": true
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.67",
+                "days": 42
+            }
+        }
+    },
+    "cancel_if_invalid": false,
+    "continue_if_invalid": true,
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+                }
+            },
+            "effect_tooltip": {
+                "217": {
+                    "add_resource": {
+                        "type": "crystals",
+                        "amount": 42
+                    },
+                    "add_resource__D1": {
+                        "type": "steel",
+                        "amount": 12
+                    },
+                    "add_resource__D2": {
+                        "type": "tungsten",
+                        "amount": 6
+                    },
+                    "add_resource__D3": {
+                        "type": "chromium",
+                        "amount": 3
+                    }
+                }
+            },
+            "hidden_effect": {
+                "217": {
+                    "add_resource": {
+                        "type": "crystals",
+                        "amount": 1
+                    }
+                }
+            }
+        }
+    },
+    "cancel": {
+        "hidden_trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NARROW_GATE_MINING_DISABLED"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_completed_focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+            },
+            "always": false
+        },
+        "else": {
+            "has_tech": "construction1",
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NARROW_GATE_MINING_DISABLED"
+                },
+                "custom_trigger_tooltip": {
+                    "tooltip": "PIHC_COUNTRY_FLAG_C18_NARROW_GATE_MINING_DISABLED_TOOLTIP",
+                    "always": false
+                }
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

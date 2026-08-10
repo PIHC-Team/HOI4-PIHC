@@ -1,0 +1,59 @@
+state = {
+    id = 562
+    name = STATE_562
+    provinces = {
+        148
+        1560
+        2421
+        3058
+        3108
+        3359
+        3714
+        4315
+        4454
+        5204
+        5603
+        5975
+        9321
+        9533
+        12038
+        12039
+        12074
+        12077
+        12088
+        12089
+        12105
+        12125
+        12129
+        12144
+        12165
+        12220
+        12251
+    }
+    manpower = 157869
+    state_category = megalopolis
+    history = {
+        owner = C07
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 5
+            arms_factory = 3
+            dockyard = 5
+            radar_station = 1
+            12251 = {
+                naval_base = 1
+            }
+            12077 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C07
+        victory_points = {
+            12077
+            50
+        }
+    }
+    resources = {
+        coal = 8
+    }
+}

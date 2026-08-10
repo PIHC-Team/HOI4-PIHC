@@ -1,0 +1,13 @@
+{
+    "name": "Reflective Rock",
+    "gender": "male",
+    "advisor": {
+        "slot": "theorist",
+        "ledger": "army",
+        "cost": 120,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_ARMY_DOCTRINE"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C15_RETURNED_RADIANT_HOPE",
+            "effect_tooltip": {
+                "recruit_character": "CHARACTER_RADIANT_HOPE"
+            },
+            "activate_advisor": "CHARACTER_RADIANT_HOPE"
+        }
+    ],
+    "is_triggered_only": true
+}

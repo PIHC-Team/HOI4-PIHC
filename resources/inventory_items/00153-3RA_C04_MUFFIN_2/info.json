@@ -1,0 +1,14 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "DEL_INVENTORY_ITEM_3RA_C04_MUFFIN_2_1": true,
+                "air_experience": 25
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_3RA_C04_MUFFIN_2": true
+            }
+        }
+    ]
+}

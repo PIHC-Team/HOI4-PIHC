@@ -1,0 +1,45 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_IN_CHARGE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_IN_CHARGE"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "remove_ideas": "IDEA_C12_BRIBE_IMPERIAL_OFFICIALS",
+        "custom_effect_tooltip": "PIHC_C12_STOP_SHOWING_WEAKNESS_TO_THE_EMPIRE_TOOLTIP",
+        "hidden_effect":{
+        "C01": {
+            "create_wargoal__D1": {
+            "type": "puppet_wargoal_focus",
+            "target": "C02"
+        }
+        }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "is_ai": true
+            },
+            "always": false
+        }
+    },
+        "bypass": {
+            "OR": {
+                "NOT": {   
+                    "country_exists": "C01"
+                },
+                    "has_war_with": "C01"
+            }
+        }
+        }

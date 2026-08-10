@@ -1,0 +1,26 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_firearm"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

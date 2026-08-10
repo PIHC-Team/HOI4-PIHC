@@ -1,0 +1,69 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_GLORY_CRYSTAL",
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C15_GLORY_CRYSTAL"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C15_GLORY_PONIES"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C15_GLORY_CROWN"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "add_country_leader_role": {
+            "character": "CHARACTER_FLURRY_HEART",
+            "promote_leader": true,
+            "country_leader": {
+                "ideology": "despotic_theocracy",
+                "traits": [
+                    "TRAIT_FLURRY_HEART_ROYAL_LINEAGE",
+                    "TRAIT_FLURRY_HEART_YOUNG_MASTER"
+                ]
+            }
+        },
+        "add_ideas": "IDEA_C15_SACRAMENT",
+        "custom_effect_tooltip": "C15_PARLIAMENT_INCREASE_ROYAL",
+        "hidden_effect": {
+            "multiply_variable": {
+                "var": "C15_royal_support_factor",
+                "value": 1.08
+            },
+            "clamp_variable": {
+                "var": "C15_royal_support_factor",
+                "min": 0.3,
+                "max": 0.9
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C15_SACRAMENT_TOOLTIP",
+            "OR": {
+                "check_variable": {
+                    "var": "C15_full_support",
+                    "compare": "greater_than_or_equals",
+                    "value": 300
+                },
+                "check_variable__D1": {
+                    "var": "parliament_seat_array^1",
+                    "compare": "greater_than_or_equals",
+                    "value": 250
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

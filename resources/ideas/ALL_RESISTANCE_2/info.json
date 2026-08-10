@@ -1,0 +1,13 @@
+{
+    "name": "ALL_RESISTANCE",
+    "removal_cost": -1,
+    "modifier": {
+        "local_resources_factor": -0.1,
+        "stability_factor": -0.10,
+        "political_power_gain": 0.25,
+        "army_morale_factor": 0.20,
+        "training_time_factor": 0.08,
+        "stability_weekly_factor": 0.01,
+        "out_of_supply_factor": -0.20
+    }
+}

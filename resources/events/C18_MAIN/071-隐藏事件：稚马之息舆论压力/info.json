@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "has_completed_focus": "FOCUS_C18_011_TRADE_FLOWER"
+                        }
+                    },
+                    "activate_mission": "DECISION_C18_PRESSURE_FOR_OPEN_FLOWER_MARKET",
+                    "country_event": {
+                        "id": "C18_MAIN.73"
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

@@ -1,0 +1,46 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SECOND_BATCH_OF_SPONSORSHIP",
+    "prerequisite": {
+        "focus": "FOCUS_C12_SECOND_BATCH_OF_SPONSORSHIP"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "644": {
+            "add_extra_state_shared_building_slots": 3,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "level": 2,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": "infrastructure",
+                "level": 2,
+                "instant_build": true
+            },
+            "set_state_category": "large_town",
+            "add_victory_points": {
+                "province": 489,
+                "value": 25
+            }
+        },
+        "give_market_access": "C07"
+    },
+    "available": {
+        "country_exists": "C07",
+        "custom_trigger_tooltip": {
+            "tooltip": "PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP_TRIGGER_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP"
+        },  
+        "owns_state": 644,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

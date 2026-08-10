@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 99
+            },
+            "custom_effect_tooltip": "EVENT_C12_MAIN_16_TOOLTIP",
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.15",
+                    "days": 2,
+                    "random_days": 2
+                }
+            },
+            "retire_character": "CHARACTER_FLEETFOOT_C03"
+        },
+        {
+            "ai_chance": {
+                "factor": 1
+            },
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.17",
+                    "days": 2,
+                    "random_days": 2
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

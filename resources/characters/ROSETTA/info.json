@@ -1,0 +1,14 @@
+{
+    "name": "Rosetta",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 140,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_HIGH_POLITICAL_ESTEEM",
+            "TRAIT_FASHION_IDOL"
+        ]
+    }
+}

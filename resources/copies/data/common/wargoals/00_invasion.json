@@ -1,0 +1,147 @@
+{
+    "wargoal_types": {
+        "take_state": {
+            "allowed": [],
+            "available": [],
+            "take_states": [],
+            "generate_base_cost": 200,
+            "generate_per_state_cost": 50,
+            "take_states_limit": 5,
+            "take_states_cost": -20,
+            "expire": 60,
+            "threat": 2
+        },
+        "take_state_focus": {
+            "allowed": {
+                "always": false
+            },
+            "available": [],
+            "take_states": [],
+            "generate_base_cost": 200,
+            "generate_per_state_cost": 50,
+            "take_states_limit": 5,
+            "take_states_cost": -20,
+            "expire": 730,
+            "threat": 2
+        },
+        "puppet_wargoal_focus": {
+            "allowed": {
+                "always": false
+            },
+            "puppet": {
+                "always": true
+            },
+            "generate_base_cost": 200,
+            "generate_per_state_cost": 50,
+            "puppet_cost": -50,
+            "expire": 730,
+            "threat": 2
+        },
+        "take_claimed_state": {
+            "war_name": "WAR_TAKE_CLAIM_NAME",
+            "take_states": {
+                "is_claimed_by": "ROOT",
+                "is_owned_by": "PREV",
+                "is_controlled_by": "PREV"
+            },
+            "generate_base_cost": 125,
+            "generate_per_state_cost": 10,
+            "take_states_limit": 5,
+            "take_states_cost": -50,
+            "threat": 0.15
+        },
+        "take_core_state": {
+            "war_name": "WAR_TAKE_CORE_NAME",
+            "allowed": [],
+            "take_states": {
+                "is_core_of": "ROOT",
+                "is_owned_by": "PREV",
+                "is_controlled_by": "PREV"
+            },
+            "generate_base_cost": 125,
+            "generate_per_state_cost": 0,
+            "take_states_limit": 5,
+            "take_states_cost": -80,
+            "threat": 0.1
+        },
+        "annex_everything": {
+            "war_name": "WAR_NAME",
+            "allowed": {
+                "always": false
+            },
+            "available": [],
+            "take_states": [],
+            "threat": 0.5
+        },
+        "civil_war": {
+            "war_name": "CIVIL_WAR_NAME",
+            "allowed": {
+                "always": false
+            },
+            "available": [],
+            "take_states": [],
+            "threat": 1,
+            "take_states_threat_factor": 0.1,
+            "take_states_cost": -75
+        },
+        "topple_government": {
+            "allowed": {
+                "always": false
+            },
+            "available": [],
+            "take_states": [],
+            "force_government_cost": -50,
+            "threat": 0.5
+        },
+        "liberate_wargoal": {
+            "allowed": {
+                "always": false
+            },
+            "liberate": {
+                "always": true
+            },
+            "generate_base_cost": 200,
+            "generate_per_state_cost": 50,
+            "puppet_cost": -50,
+            "expire": 730,
+            "threat": 2
+        },
+        "independence_wargoal": {
+            "war_name": "INDEPENDENCE_WAR_NAME",
+            "allowed": {
+                "always": false
+            },
+            "available": [],
+            "take_states": [],
+            "threat": 0
+        },
+        "crusade_wargoal": {
+            "allowed": {
+                "always": false
+            },
+            "take_states_cost": -50,
+            "puppet_cost": -50,
+            "expire": 180,
+            "threat": 0.5
+        },
+        "law_orthodoxy_wargoal": {
+            "allowed": {
+                "always": false
+            },
+            "take_states_cost": 50,
+            "force_government_cost": -75,
+            "expire": 180,
+            "threat": 0.5
+        },
+        "trade_request_wargoal": {
+            "allowed": {
+                "always": false
+            },
+            "take_states_cost": 200,
+            "puppet_cost": -75,
+            "force_government_cost": -75,
+            "expire": 180,
+            "threat": 0.5
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_PROMOTE_PAIRING_STONE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_PROMOTE_PAIRING_STONE",
+        "focus__D1": "FOCUS_C12_SECRET_UNDER_THE_SEDIMENTARY"
+    },
+    
+    "cost": 3,
+    "completion_reward": {
+        "558": {
+            "add_extra_state_shared_building_slots": 5,
+            "add_building_construction": {
+                "type": "infrastructure",
+                "level": 2,
+                "instant_build": true
+            },
+            "add_building_construction__D1": {
+                "type": "industrial_complex",
+                "level": 2,
+                "instant_build": true
+            },
+            "add_resource": {
+                "type": "rubber",
+                "amount": 12
+            },
+            "add_resource__D1": {
+                "type": "oil",
+                "amount": 48
+            }
+        }
+    },
+    "available": {
+        "owns_state": 558,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

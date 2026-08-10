@@ -1,0 +1,43 @@
+{
+    "tree": "C08_MAIN",
+    "parent": "FOCUS_C08_SPARKING_FIRE",
+    "priority": 10,
+    "dw": -2,
+    "dc": -2,
+    "dy": 1,
+    "cancel_if_invalid": true,
+    "prerequisite": {
+        "focus": "FOCUS_C08_THE_SITUATION"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_CONTACT_COMRADES"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "country_event": {
+            "id": "C08_MAIN.16",
+            "days": 1
+        }  
+    },
+    "bypass": {
+        "hidden_trigger": {
+            "has_global_flag": "PIHC_GLOBAL_FLAG_JAHR_NULL"
+        }
+    },
+    "available": {
+        "hidden_trigger": {
+            "NOT": {
+                "has_global_flag": "PIHC_GLOBAL_FLAG_JAHR_NULL"
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

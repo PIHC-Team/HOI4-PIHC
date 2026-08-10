@@ -1,0 +1,70 @@
+{
+    "name": "Capital",
+    "priority": 99,
+    
+    "cost": 5,
+    "days_remove": 30,
+    "state_target": true,
+    "on_map_mode": "map_and_decisions_view",
+    "highlight_states": {
+        "highlight_state_targets": {
+            "state": 772,
+            "state__D1": 883,
+            "state__D2": 211,
+            "state__D3": 828,
+            "state__D4": 847,
+            "state__D5": 819,
+            "state__D6": 224,
+            "state__D7": 201,
+            "state__D8": 810,
+            "state__D9": 226,
+            "state__D10": 801
+        }
+    },
+    "targets": {
+        "state": 772
+    },
+    "target_trigger": {
+        "always": true
+    },
+    "visible": {
+        "C18": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE",
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7"
+            }
+        }
+    },
+    "available": {
+        "772": {
+            "is_owned_by": "C18",
+            "is_fully_controlled_by": "C18"
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "C18_SMUGGLING_CASE_ONLY_ONE_INVESTIGATION_TOOLTIP",
+            "C18": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+                }
+            }
+        }
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+    },
+    "remove_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING",
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.14"
+            }
+        }
+    },
+    "cancel_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 5
+    }
+}

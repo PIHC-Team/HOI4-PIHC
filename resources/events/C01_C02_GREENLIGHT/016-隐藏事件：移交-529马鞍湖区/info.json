@@ -1,0 +1,26 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "529": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C02"
+                    },
+                    "remove_core_of": "C02",
+                    "ADD_TO_C00_WASTELAND": true,
+                    "set_state_flag": "PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

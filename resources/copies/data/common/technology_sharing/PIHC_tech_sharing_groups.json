@@ -1,0 +1,51 @@
+{
+    "technology_sharing_group": {
+        "id": "pihc_allied_research",
+        "name": "pihc_allied_research",
+        "desc": "pihc_allied_research_desc",
+        "picture": "GFX_technology_sharing_default",
+        "research_sharing_per_country_bonus": 0.1,
+        "available": {
+            "always": true
+        }
+    },
+    "technology_sharing_group__D1": {
+        "id": "continuous_tech_share",
+        "name": "continuous_tech_share",
+        "desc": "continuous_tech_share_desc",
+        "picture": "GFX_technology_sharing_default",
+        "research_sharing_per_country_bonus": 0.15,
+        "is_faction_sharing": true,
+        "available": {
+            "is_in_faction": true
+        }
+    },
+    "technology_sharing_group__D2": {
+        "id": "pihc_international_research",
+        "name": "pihc_international_research",
+        "desc": "pihc_international_research_desc",
+        "picture": "GFX_technology_sharing_default",
+        "research_sharing_per_country_bonus": 0.2,
+        "is_faction_sharing": true,
+        "available": {
+            "has_idea": "IDEA_ERA_AGE_INTERNATIONAL"
+        }
+    },
+    "technology_sharing_group__D3": {
+        "id": "pihc_apple_pie_family_research",
+        "name": "pihc_apple_pie_family_research",
+        "desc": "pihc_apple_pie_family_research_desc",
+        "picture": "GFX_technology_sharing_default",
+        "research_sharing_per_country_bonus": 0.2,
+        "is_faction_sharing": true,
+        "available": {
+            "OR": {
+                "tag": "C12",
+                "tag__D1": "C14"
+            },
+            "C12": {
+                "has_completed_focus": "FOCUS_C12_TECHNOLOGICAL_COOPERATION"
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "tree": "C04_BY_ELECTION",
+    "parent": "FOCUS_C04_THE_SUSPECTS_CONFESSION",
+    "prerequisite": {
+        "focus": "FOCUS_C04_THE_SUSPECTS_CONFESSION"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "create_intelligence_agency": {
+            "name": "The Sepal",
+            "icon": "GFX_INTEL_AGENCY_SEPAL"
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "C04_MAIN.51",
+                "days": 7
+            },
+            "country_event__D1": {
+                "id": "C04_MAIN.52",
+                "days": 30,
+                "random_days": 7
+            },
+            "DEL_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_II_1": true
+        },
+        "custom_effect_tooltip": {
+            "tooltip": "C04_FOCUS_THE_INVESTIGATION_TEAM_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_SEPAL_INVESTIGATION"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "tree": "C04_BY_ELECTION",
+    "parent": "FOCUS_C04_AFTER_THE_GUNSHOT",
+    "dy": 5,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C04_AFTER_THE_GUNSHOT"
+    },
+    "cost": 3,
+    "select_effect": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING"
+                }
+            },
+            "country_event": {
+                "id": "C04_MAIN.49",
+                "days": 1,
+                "random_days": 3
+            }
+        }
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C04_MAIN.39"
+        },
+        "declare_war_on": {
+            "target": "C01",
+            "type": "liberate_wargoal"
+        }
+    },
+    "available": {
+        "hidden_trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE"
+            }
+        },
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_completed_focus": "FOCUS_C04_THE_SUSPECTS_CONFESSION"
+                },
+                "NOT__D1": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "FOCUS_C04_WAR_TO_THE_EMPIRE_TRIGGER_TOOLTIP_1",
+                "always": false
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C04_BY_ELECTION_ENDED"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "FOCUS_C04_WAR_TO_THE_EMPIRE_TRIGGER_TOOLTIP_2",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

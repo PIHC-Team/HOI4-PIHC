@@ -1,0 +1,31 @@
+{
+    "name": "Vehicle II",
+    "category": "infantry",
+
+    "x": 10,
+    "y": 3,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_vehicle"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_VEHICLE_STEEL"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TRAIN_I",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_VEHICLE_III",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1001
+}

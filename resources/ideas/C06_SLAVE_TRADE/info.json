@@ -1,0 +1,10 @@
+{
+    "name": "Slave Trade",
+    "removal_cost": -1,
+    "modifier": {
+        "stability_factor": -0.1,
+        "consumer_goods_factor": -0.3,
+        "surrender_limit": -0.3,
+        "monthly_population": 0.3
+    }
+}

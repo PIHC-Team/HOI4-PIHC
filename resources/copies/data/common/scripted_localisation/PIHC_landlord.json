@@ -1,0 +1,309 @@
+{
+    "defined_text": {
+        "name": "open_landlord_tooltip_s",
+        "text": {
+            "trigger": {
+                "NOT": {
+                    "ROOT": {
+                        "has_country_flag": "landlord_window_opened"
+                    }
+                }
+            },
+            "localization_key": "open_landlord_tooltip_open"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "has_country_flag": "landlord_window_opened"
+                }
+            },
+            "localization_key": "open_landlord_tooltip_close"
+        }
+    },
+    "defined_text__D1": {
+        "name": "core_state_button_desc",
+        "text": {
+            "trigger": {
+                "NOT": {
+                    "PREV": {
+                        "has_state_flag": "core_cost_checked"
+                    }
+                }
+            },
+            "localization_key": "core_state_cost_not_checked"
+        },
+        "text__D1": {
+            "trigger": {
+                "NOT": {
+                    "PREV": {
+                        "is_owned_and_controlled_by": "ROOT"
+                    }
+                }
+            },
+            "localization_key": "[core_state_req_not_owned]"
+        },
+        "text__D2": {
+            "trigger": {
+                "PREV": {
+                    "is_core_of": "ROOT"
+                }
+            },
+            "localization_key": "core_state_req_already_cored"
+        },
+        "text__D3": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_only_core_claims",
+                    "option": "CWC_CLAIM_FOR_CORE"
+                },
+                "NOT": {
+                    "PREV": {
+                        "is_claimed_by": "ROOT"
+                    }
+                },
+                "NOT__D1": {
+                    "PREV": {
+                        "is_core_of": "ROOT"
+                    }
+                }
+            },
+            "localization_key": "core_state_req_no_claim"
+        },
+        "text__D4": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_comp_to_core",
+                    "option": "CWC_COMP_COST_100"
+                },
+                "PREV": {
+                    "compliance < 100": null
+                }
+            },
+            "localization_key": "core_state_req_no_compliance_100"
+        },
+        "text__D5": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_comp_to_core",
+                    "option": "CWC_COMP_COST_80"
+                },
+                "PREV": {
+                    "compliance < 80": null
+                }
+            },
+            "localization_key": "core_state_req_no_compliance_80"
+        },
+        "text__D6": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_comp_to_core",
+                    "option": "CWC_COMP_COST_60"
+                },
+                "PREV": {
+                    "compliance < 60": null
+                }
+            },
+            "localization_key": "core_state_req_no_compliance_60"
+        },
+        "text__D7": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_comp_to_core",
+                    "option": "CWC_COMP_COST_40"
+                },
+                "PREV": {
+                    "compliance < 40": null
+                }
+            },
+            "localization_key": "core_state_req_no_compliance_40"
+        },
+        "text__D8": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_comp_to_core",
+                    "option": "CWC_COMP_COST_20"
+                },
+                "PREV": {
+                    "compliance < 20": null
+                }
+            },
+            "localization_key": "core_state_req_no_compliance_20"
+        },
+        "text__D9": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "cost_to_core > political_power": null
+                    }
+                }
+            },
+            "localization_key": "core_state_req_no_pp"
+        }
+    },
+    "defined_text__D2": {
+        "name": "core_state_claimed",
+        "text": {
+            "trigger": {
+                "PREV": {
+                    "is_claimed_by": "ROOT"
+                }
+            },
+            "localization_key": "core_state_claimed_true"
+        }
+    },
+    "defined_text__D3": {
+        "name": "core_state_cost_game_rule",
+        "text": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_5K"
+                }
+            },
+            "localization_key": "5"
+        },
+        "text__D1": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_10K"
+                }
+            },
+            "localization_key": "10"
+        },
+        "text__D2": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_20K"
+                }
+            },
+            "localization_key": "20"
+        },
+        "text__D3": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_40K"
+                }
+            },
+            "localization_key": "40"
+        }
+    },
+    "defined_text__D4": {
+        "name": "core_state_req_not_owned",
+        "text": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_occupy_to_core",
+                    "option": "CWC_OCCUPY_PEACE"
+                },
+                "NOT": {
+                    "PREV": {
+                        "is_owned_and_controlled_by": "ROOT"
+                    }
+                }
+            },
+            "localization_key": "core_state_req_not_owned_peace"
+        },
+        "text__D1": {
+            "trigger": {
+                "has_game_rule": {
+                    "rule": "CWC_occupy_to_core",
+                    "option": "CWC_OCCUPY_WAR"
+                },
+                "NOT": {
+                    "ROOT": {
+                        "has_full_control_of_state": "PREV"
+                    }
+                }
+            },
+            "localization_key": "core_state_req_not_owned_war"
+        }
+    },
+    "defined_text__D5": {
+        "name": "claim_state_button_desc",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "claim_state_disabled"
+        },
+        "text__D1": {
+            "trigger": {
+                "NOT": {
+                    "PREV": {
+                        "has_state_flag": "core_cost_checked"
+                    }
+                }
+            },
+            "localization_key": "core_state_cost_not_checked"
+        },
+        "text__D2": {
+            "trigger": {
+                "PREV": {
+                    "is_owned_and_controlled_by": "ROOT"
+                }
+            },
+            "localization_key": "claim_state_already_owned"
+        },
+        "text__D3": {
+            "trigger": {
+                "PREV": {
+                    "is_core_of": "ROOT"
+                }
+            },
+            "localization_key": "core_state_req_already_cored"
+        },
+        "text__D4": {
+            "trigger": {
+                "PREV": {
+                    "is_claimed_by": "ROOT"
+                }
+            },
+            "localization_key": "claim_state_req_already_claimed"
+        },
+        "text__D5": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "cost_to_claim > political_power": null
+                    }
+                }
+            },
+            "localization_key": "core_state_req_no_pp"
+        }
+    },
+    "defined_text__D6": {
+        "name": "revoke_core_button_desc",
+        "text": {
+            "trigger": {
+                "NOT": {
+                    "PREV": {
+                        "is_core_of": "ROOT"
+                    }
+                }
+            },
+            "localization_key": "revoke_core_not_core"
+        },
+        "text__D1": {
+            "trigger": {
+                "is_capital": true
+            },
+            "localization_key": "revoke_core_capital"
+        }
+    },
+    "defined_text__D7": {
+        "name": "revoke_claim_button_desc",
+        "text": {
+            "trigger": {
+                "NOT": {
+                    "PREV": {
+                        "is_claimed_by": "ROOT"
+                    }
+                }
+            },
+            "localization_key": "revoke_claim_no_claim"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Mech-aided Computation Array",
+    "category": "electronics",
+
+    "x": 2,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_info_tech"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "research_speed_factor": 0.12,
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_INFO_III",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

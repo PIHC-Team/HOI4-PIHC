@@ -1,0 +1,297 @@
+{
+    "name": "Mining Research Ideas",
+    "priority": 99,
+
+    "cost": 125,
+    "days_re_enable": 180,
+    "complete_effect": {
+        "random": {
+            "chance": 90,
+            "add_tech_bonus": {
+                "bonus": 0.15,
+                "uses": 1,
+                "category": "pihc_all"
+            }
+        },
+        "random__D1": {
+            "chance": 25,
+            "add_tech_bonus": {
+                "bonus": 0.15,
+                "uses": 2,
+                "category": "pihc_all"
+            }
+        },
+        "random__D2": {
+            "chance": 10,
+            "add_tech_bonus": {
+                "bonus": 0.30,
+                "uses": 2,
+                "category": "pihc_all"
+            }
+        },
+        "random__D3": {
+            "chance": 2,
+            "add_tech_bonus": {
+                "bonus": 1.00,
+                "uses": 2,
+                "category": "pihc_all"
+            }
+        },
+        "random__D4": {
+            "chance": 2,
+            "add_tech_bonus": {
+                "bonus": 0.50,
+                "uses": 5,
+                "category": "pihc_all"
+            }
+        },
+
+        "if": {
+            "limit": {
+                "magic_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_magic",
+                    "value": 0.2
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_magic",
+                    "value": 0.5
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_magic",
+                    "value": 1.0
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_magic",
+                    "value": 2.0
+                }
+            }
+        },
+
+        "if__D1": {
+            "limit": {
+                "steampunk_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_steampunk",
+                    "value": 0.2
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_steampunk",
+                    "value": 0.5
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_steampunk",
+                    "value": 1.0
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_steampunk",
+                    "value": 2.0
+                }
+            }
+        },
+
+        "if__D2": {
+            "limit": {
+                "oilpunk_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_oilpunk",
+                    "value": 0.2
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_oilpunk",
+                    "value": 0.5
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_oilpunk",
+                    "value": 1.0
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_oilpunk",
+                    "value": 2.0
+                }
+            }
+        },
+
+        "if__D3": {
+            "limit": {
+                "elecpunk_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_elecpunk",
+                    "value": 0.2
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_elecpunk",
+                    "value": 0.5
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_elecpunk",
+                    "value": 1.0
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_elecpunk",
+                    "value": 2.0
+                }
+            }
+        },
+
+        "if__D4": {
+            "limit": {
+                "witchcraft_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_witchcraft",
+                    "value": 0.10
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_witchcraft",
+                    "value": 0.25
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_witchcraft",
+                    "value": 0.50
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_witchcraft",
+                    "value": 1.00
+                }
+            }
+        },
+
+        "if__D5": {
+            "limit": {
+                "future_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_future",
+                    "value": 0.10
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_future",
+                    "value": 0.25
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_future",
+                    "value": 0.50
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_future",
+                    "value": 1.00
+                }
+            }
+        },
+
+        "if__D6": {
+            "limit": {
+                "bio_facility > 0": null
+            },
+            "random": {
+                "chance": 90,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_bio",
+                    "value": 0.10
+                }
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_bio",
+                    "value": 0.25
+                }
+            },
+            "random__D2": {
+                "chance": 10,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_bio",
+                    "value": 0.50
+                }
+            },
+            "random__D3": {
+                "chance": 2,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_bio",
+                    "value": 1.00
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 2,
+        "modifier": {
+            "add": -2,
+            "FROM": {
+                "tag": "C08",
+                "is_ai": true
+            }
+        }
+    }
+}

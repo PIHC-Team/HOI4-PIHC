@@ -1,0 +1,22 @@
+{
+    "date": "1003.08.01",
+    "date_scope": "C02",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C02": {
+                "custom_effect_tooltip": "EVENT_TIMELINE_15_TOOLTIP",
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_C02_HARSH_WINTER",
+                    "days": 240,
+                    "value": 1
+                }
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

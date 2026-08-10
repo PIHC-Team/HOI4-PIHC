@@ -1,0 +1,17 @@
+{
+    "should_activate_active_crypto_bonuses": {
+        "always": false
+    },
+    "should_not_activate_active_crypto_bonuses": {
+        "always": false
+    },
+    "should_initiate_resistance": {
+        "impassable": false,
+        "check_variable": {
+            "core_countries^num > 0": null
+        },
+        "NOT": {
+            "is_core_of": "FROM"
+        }
+    }
+}

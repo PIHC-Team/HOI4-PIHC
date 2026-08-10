@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "remove_ideas": "CHARACTER_DOUBLE_DIAMOND",
+                "add_ideas": "IDEA_C08_DOUBLE_DIAMOND",
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_CADENCE_ALIVE"
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_36_TOOLTIP",
+            "add_ideas": "CHARACTER_PRINCESS_CADANCE"
+        }
+    ],
+    "is_triggered_only": true
+}

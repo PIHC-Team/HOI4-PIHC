@@ -1,0 +1,28 @@
+{
+    "date": "1003.01.01 ~ 1003.01.31",
+    "date_scope": "C02",
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1": true,
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C02_HOTLINE.7",
+                    "days": 7,
+                    "random_days": 7
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

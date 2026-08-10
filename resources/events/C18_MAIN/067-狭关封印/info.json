@@ -1,0 +1,24 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_NARROW_GATE_MINING_DISABLED",
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C18_MAIN.69",
+                    "days": 1,
+                    "random_days": 3
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

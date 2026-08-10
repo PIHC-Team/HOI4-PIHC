@@ -1,0 +1,34 @@
+{
+    "name": "Windigos",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 72,
+    "fire_only_once": true,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C26_STAGE_I"
+    },
+    "available": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C26_STAGE_I",
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "war_with_on_remove": "C28",
+    "remove_effect": {
+        "news_event": {
+            "id": "WINDIGOS.6"
+        }
+    },
+    "ai_will_do": {
+        "base": 40000
+    }
+}

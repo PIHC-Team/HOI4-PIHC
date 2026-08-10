@@ -1,0 +1,15 @@
+{
+    "FOCUS_C09_INTER_HQ_DYNAMIC_MODIFIER": {
+        "remove_trigger": {
+            "C09": {
+                "is_faction_leader": false
+            }
+        },
+        "global_building_slots_factor": "global.VAR_EIJC_SLOTS_BOOST",
+        "industrial_capacity_factory": "global.VAR_EIJC_INDUSTRY_BOOST",
+        "industrial_capacity_dockyard": "global.VAR_EIJC_INDUSTRY_BOOST",
+        "consumer_goods_factor": "global.VAR_EIJC_GOODS_BOOST",
+        "production_speed_buildings_factor": "global.VAR_EIJC_BUILDINGS_BOOST",
+        "local_resources_factor": "global.VAR_EIJC_RESOURCES_BOOST"
+    }
+}

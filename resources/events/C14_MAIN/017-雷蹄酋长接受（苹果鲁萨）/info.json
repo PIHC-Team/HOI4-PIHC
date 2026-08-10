@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            }
+        }
+    ],
+    "trigger": {
+        "tag": "C14",
+        "has_completed_focus": "FOCUS_C14_GUESTS_THUNDERHOOVES"
+    },
+    "is_triggered_only": true
+}

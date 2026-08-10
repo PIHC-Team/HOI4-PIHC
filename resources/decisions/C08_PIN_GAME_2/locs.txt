@@ -1,0 +1,44 @@
+[en.@]
+Operation <=Greenlight=> Interception Mission II
+[zh.@]
+「绿灯」行动拦截任务II
+
+[en.@desc]
+To stop the Equestria Empire’s §YOperation <=Greenlight=> §!, we need to investigate Canterlot High-End Perfume Company’s secret operation.
+We have obtained item §YCanterlot Luxury Perfume Manufacturer Codebook§! and now we need to send our agent who is disguised as a Ponyville Hayburger Store employee who is disguised as a normal customer to Canterlot High-End Perfume Company for the contact.
+
+[GetC08PinGame2ContactCount]
+
+Today’s perfume sales on the §Cbillboard§!: [GetC08PinGame2Billboard]
+Today’s special perfume sales:
+- The perfume in the §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§! bottle has scent §Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0.GetC08PinGame2Scent]§!.
+- The perfume in the §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§! bottle has scent §Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1.GetC08PinGame2Scent]§!.
+- The perfume in the §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§! bottle has scent §Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2.GetC08PinGame2Scent]§!.
+- The perfume in the §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§! bottle has scent §Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3.GetC08PinGame2Scent]§!.
+
+§RPlease note that you may need to remember the information of the perfumes you purchased before.§!
+
+[zh.@desc]
+想要阻止小马利亚帝国的§Y「绿灯」行动§!，我们需要将坎特洛特高档香水公司的秘密行为调查清楚。
+我们已经获得了物品§Y坎特洛特高档香水生产商密码表§!，接下来我们要派出伪装成伪装成普通顾客的小马谷汉堡店员工的特工，去坎特洛特高档香水公司接头。
+
+[GetC08PinGame2ContactCount]
+
+今日§C广告牌§!销售的香水：[GetC08PinGame2Billboard]
+今日销售的特殊香水：
+- §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^0.GetC08PinGame2Scent]§!瓶子里的香水是§Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0.GetC08PinGame2Scent]§!味的。
+- §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^1.GetC08PinGame2Scent]§!瓶子里的香水是§Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1.GetC08PinGame2Scent]§!味的。
+- §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^2.GetC08PinGame2Scent]§!瓶子里的香水是§Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2.GetC08PinGame2Scent]§!味的。
+- §Y[?C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234^3.GetC08PinGame2Scent]§!瓶子里的香水是§Y[?C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3.GetC08PinGame2Scent]§!味的。
+
+§R请注意您可能需要记忆此前若干次购买的香水信息。§!
+
+[zh.@CONTACT_COUNT_Y]
+已经完成的接头次数：[?C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT|Y0]/5
+[en.@CONTACT_COUNT_Y]
+Number of contacts completed: [?C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT|Y0]/5
+
+[zh.@CONTACT_COUNT_G]
+已经完成的接头次数：[?C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT|G0]/5
+[en.@CONTACT_COUNT_G]
+Number of contacts completed: [?C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT|G0]/5

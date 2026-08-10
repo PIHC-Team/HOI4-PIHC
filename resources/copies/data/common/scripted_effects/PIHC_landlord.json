@@ -1,0 +1,108 @@
+{
+    "CWCPP_cost_divider": {
+        "if": {
+            "limit": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_5K"
+                }
+            },
+            "ROOT": {
+                "divide_variable": {
+                    "cost_to_core": 5
+                }
+            },
+            "CWCPP_claim_checker": true
+        },
+        "else_if": {
+            "limit": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_10K"
+                }
+            },
+            "ROOT": {
+                "divide_variable": {
+                    "cost_to_core": 10
+                }
+            },
+            "log": "Cost has been divided by 10: [?ROOT.cost_to_core]",
+            "CWCPP_claim_checker": true
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_20K"
+                }
+            },
+            "ROOT": {
+                "divide_variable": {
+                    "cost_to_core": 20
+                }
+            },
+            "log": "Cost has been divided by 20: [?ROOT.cost_to_core]",
+            "CWCPP_claim_checker": true
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_game_rule": {
+                    "rule": "CWC_cost_to_core",
+                    "option": "CWC_FORMULA_PP_COST_40K"
+                }
+            },
+            "ROOT": {
+                "divide_variable": {
+                    "cost_to_core": 40
+                }
+            },
+            "log": "Cost has been divided by 40: [?ROOT.cost_to_core]",
+            "CWCPP_claim_checker": true
+        }
+    },
+    "CWCPP_claim_checker": {
+        "if": {
+            "limit": {
+                "PREV": {
+                    "is_claimed_by": "ROOT"
+                }
+            },
+            "ROOT": {
+                "divide_variable": {
+                    "cost_to_core": 2
+                }
+            },
+            "log": "State has a claim, diving by 2: [?ROOT.cost_to_core]"
+        },
+        "if__D1": {
+            "limit": {
+                "ROOT": {
+                    "check_variable": {
+                        "cost_to_core < 1": null
+                    }
+                }
+            },
+            "ROOT": {
+                "set_variable": {
+                    "cost_to_core": 1
+                }
+            },
+            "log": "Cost is 0, setting it to 1: [?ROOT.cost_to_core]"
+        },
+        "if__D2": {
+            "limit": {
+                "ROOT": {
+                    "check_variable": {
+                        "cost_to_core > 2000": null
+                    }
+                }
+            },
+            "ROOT": {
+                "set_variable": {
+                    "cost_to_core": 2000
+                }
+            },
+            "log": "Cost higher than 2000, setting it to 2000: [?ROOT.cost_to_core]"
+        }
+    }
+}

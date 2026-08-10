@@ -1,0 +1,39 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 95
+            },
+            "C14": {
+                "kill_country_leader": true
+            },
+            "custom_effect_tooltip": "EVENT_C12_MAIN_64_TOOLTIP",
+            "hidden_effect": {
+                "C12": {
+                    "country_event": {
+                        "id": "C12_MAIN.67",
+                        "days": 7,
+                        "random_days": 3
+                    },
+                    "set_country_flag": "PIHC_C12_BRAEBURN_IS_DEAD"
+                }
+
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 5
+            },
+            "hidden_effect": {
+                "C12": {
+                    "country_event": {
+                        "id": "C12_MAIN.68",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

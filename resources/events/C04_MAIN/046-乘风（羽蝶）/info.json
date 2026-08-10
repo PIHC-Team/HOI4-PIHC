@@ -1,0 +1,20 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_stability": -0.10,
+            "C04_DEL_ECO_0_5": true,
+            "C04_ADD_ECO_2_20": true,
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C04_MAIN.57",
+                    "days": 30,
+                    "random_days": 60
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,17 @@
+{
+    "name": "By Election",
+    "priority": 100,
+    
+    "cost": 125,
+    "days_remove": 14,
+    "available": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING"
+    },
+    "remove_effect": {
+        "C04_DEL_WASHOUTS_SUPPORT_50": true
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "name": "Forbidden Jungle",
+    "rgb": [
+        76,
+        161,
+        185
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 718,
+        "set_popularities": {
+            "peacism": 60,
+            "transcendence": 40
+        },
+        "set_politics": {
+            "ruling_party": "peacism",
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_AHUIZOTL",
+            "CHARACTER_AK_YEARLING"
+        ],
+        "activate_advisor_batch": [
+            "CHARACTER_AK_YEARLING"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_MAGICAL_MELEE_WEAPON": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_II": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_STONE_GARGOYLES": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "give_military_access_batch": [
+            
+        ],
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        }
+    }
+}

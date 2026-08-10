@@ -1,0 +1,30 @@
+{
+    "name": "Assist in commanding",
+    "priority": 79998,
+    
+    "cost": 25,
+    "days_re_enable": 30,
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR",
+        "tag": "C23"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C08_MANEHATTAN_WAR_START_TOOLTIP",
+            "has_global_flag": "PIHC_GLOBAL_FLAG_MANEHATTAN_WAR"
+        }
+    },
+    "complete_effect": {
+        "C08": {
+            "add_timed_idea": {
+                "idea": "IDEA_C08_MANEHATTAN_C23_COMMANDING",
+                "days": 30
+            }
+        }
+    },
+    "modifier": {
+    },
+    "ai_will_do": {
+        "base": 10000
+    }
+}

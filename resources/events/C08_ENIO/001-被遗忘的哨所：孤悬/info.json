@@ -1,0 +1,14 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_ENIO_1_TOOLTIP",
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_ENIO_OUTPOST_FIX"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,28 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_TALK_TO_RAINSHINE",
+    "prerequisite": {
+        "focus": "FOCUS_C18_TALK_TO_RAINSHINE"
+    },
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "C18_DEL_NIRIK_0_25": true,
+        "C18_DEL_GROWTH_0_10": true
+    },
+    "available": {
+        "has_war": false,
+        "has_civil_war": false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Picture Frame",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 50,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_SILICON_DREAM"
+        ],
+        "on_add": {
+            "owner": {
+                "add_tech_bonus": {
+                    "bonus": 0.5,
+                    "uses": 1,
+                    "category": "pihc_chips",
+                    "name": "TRAIT_SILICON_DREAM"
+                }
+            }
+        },
+        "can_be_fired": false
+    }
+}

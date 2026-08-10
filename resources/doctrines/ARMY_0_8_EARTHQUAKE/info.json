@@ -1,0 +1,26 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 16,
+    "xp_unlock_cost": 200,
+
+    "combat_width_factor": -0.20,
+    "enable_tactic": "tactic_pihc_earthquake",
+
+    "research_cost": 4.5,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_tide_of_iron"
+    ],
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

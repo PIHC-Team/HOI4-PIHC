@@ -1,0 +1,15 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES_1": true,
+            "custom_effect_tooltip": "EVENT_C18_MAIN_79_MODIFIER_TOOLTIP",
+            "multiply_variable": {
+                "C18.VAR_STREAM_OF_SILENCE_CURE_SPEED": 1.100
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

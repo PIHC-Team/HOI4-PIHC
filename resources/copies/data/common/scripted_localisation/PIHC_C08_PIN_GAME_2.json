@@ -1,0 +1,118 @@
+{
+    "defined_text": {
+        "name": "GetC08PinGame2ScentNested",
+        "text": {
+            "trigger": {
+                "THIS": {
+                    "state": 1
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_01_PINETREE"
+        },
+        "text__D1": {
+            "trigger": {
+                "THIS": {
+                    "state": 2
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_02_PINEAPPLE"
+        },
+        "text__D2": {
+            "trigger": {
+                "THIS": {
+                    "state": 3
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_03_PEACH"
+        },
+        "text__D3": {
+            "trigger": {
+                "THIS": {
+                    "state": 4
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_04_APPLE"
+        }
+    },
+    "defined_text__D1": {
+        "name": "GetC08PinGame2BillboardNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 1
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_01_PINETREE"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 2
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_02_PINEAPPLE"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 3
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_03_PEACH"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C08.VAR_C08_PIN_GAME_2_BILLBOARD": 4
+                }
+            },
+            "localization_key": "C08_PIN_GAME_2_04_APPLE"
+        }
+    },
+    "defined_text__D2": {
+        "name": "GetC08PinGame2Scent",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[GetC08PinGame2ScentNested]"
+        }
+    },
+    "defined_text__D3": {
+        "name": "GetC08PinGame2Billboard",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[GetC08PinGame2BillboardNested]"
+        }
+    },
+    "defined_text__D4": {
+        "name": "GetC08PinGame2ContactCountNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "var": "C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT",
+                    "value": 5,
+                    "compare": "greater_than_or_equals"
+                }
+            },
+            "localization_key": "DECISION_CATEGORY_C08_PIN_GAME_2_CONTACT_COUNT_G"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "DECISION_CATEGORY_C08_PIN_GAME_2_CONTACT_COUNT_Y"
+        }
+    },
+    "defined_text__D5": {
+        "name": "GetC08PinGame2ContactCount",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[GetC08PinGame2ContactCountNested]"
+        }
+    }
+}

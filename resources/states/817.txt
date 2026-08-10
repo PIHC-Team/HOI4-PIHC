@@ -1,0 +1,50 @@
+state = {
+    id = 817
+    name = STATE_817
+    provinces = {
+        2127
+        2236
+        2849
+        3835
+        4226
+        5676
+        5925
+        6319
+        6463
+        6873
+        6901
+        8855
+        9436
+        9778
+        14161
+        14201
+        14202
+        14248
+        14313
+        14369
+        14433
+        15126
+    }
+    manpower = 59218
+    state_category = rural
+    history = {
+        owner = C50
+        victory_points = {
+            2127
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+            2127 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C50
+    }
+    resources = {
+        aluminium = 8
+        logs = 15
+        oil = 16
+    }
+}

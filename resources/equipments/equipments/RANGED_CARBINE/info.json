@@ -1,0 +1,14 @@
+{
+    "name": "Carbine",
+    "parent": "EQUIPMENT_RANGED_RIFLED",
+    "alpha_global": 0.3,
+    "alpha": {
+        "defense": -0.1
+    },
+    
+    "resources": {
+        "logs": 2,
+        "steel": 2,
+        "coal": 1
+    }
+}

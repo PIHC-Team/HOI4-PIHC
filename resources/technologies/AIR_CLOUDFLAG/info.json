@@ -1,0 +1,24 @@
+{
+    "name": "Flagship of Clouds",
+    "category": "air_techs",
+
+    "x": 0,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_TRANSPORT_CLOUDFLAG"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

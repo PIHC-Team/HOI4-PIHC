@@ -1,0 +1,80 @@
+{
+    "name": "Intervene Appleloosa",
+    "priority": 100,
+    "cost": 100,
+    "days_remove": 32,
+    "activation": {
+        "has_completed_focus": "FOCUS_C01_LAST_RESORT",
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "available": {
+        "OR": {
+            "country_exists": "C54",
+            "country_exists__D1": "C08",
+            "country_exists__D2": "C05"
+        },
+        "NOT": {
+            "is_in_faction_with": "C08"
+        },
+        "NOT__D1": {
+            "has_war_with": "C08"
+        }
+    },
+    "remove_effect": {
+        "declare_war_on__D1": {
+            "type": "crusade_wargoal",
+            "target": "C08"
+        },
+        "declare_war_on__D2": {
+            "type": "crusade_wargoal",
+            "target": "C05"
+        },
+        "declare_war_on__D3": {
+            "type": "crusade_wargoal",
+            "target": "C54"
+        }
+    },
+    "ai_will_do": {
+        "base": 10,
+        "modifier": {
+            "date > 1006.6.1": null,
+            "add": 100
+        },
+        "modifier__D1": {
+            "add": -20,
+            "C01": {
+                "has_war_with": "C52"
+            }
+        },
+        "modifier__D2": {
+            "add": -30,
+            "C52": {
+                "has_capitulated": false
+            }
+        },
+        "modifier__D3": {
+            "add": 100,
+            "C52": {
+                "OR": {
+                    "has_capitulated": true,
+                    "surrender_progress > 0.8": null
+                }
+            }
+        },
+        "modifier__D4": {
+            "date > 1007.1.1": null,
+            "add": 30
+        }
+    },
+    "fire_only_once": true
+}

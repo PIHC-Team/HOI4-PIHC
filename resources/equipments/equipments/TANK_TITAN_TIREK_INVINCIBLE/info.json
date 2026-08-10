@@ -1,0 +1,35 @@
+{
+    "name": "Titan",
+    "archetype": "ARCHETYPE_TITAN",
+    "priority": 0,
+    "visual_level": 99999,
+    "is_buildable" : false,
+    "build_cost_ic": 99999.0,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 1.00,
+    "manpower": 0,
+    "weight": 999.0,
+
+    "soft_attack": 99999.0,
+    "hard_attack": 99999.0,
+    "air_attack": 99999.0,
+    "ap_attack": 99999.0,
+    "breakthrough": 99999.0,
+    "initiative": 99999.0,
+
+    "defense": 99999.0,
+    "max_strength": 99999.0,
+    "armor_value": 99999.0,
+    "hardness": 1.00,
+    
+    "resources": {
+        "crystals": 9999
+    },
+    "fuel_consumption": 0.00,
+
+    "maximum_speed": 0.5,
+    "entrenchment": 99999.0,
+    "recon": 5
+}

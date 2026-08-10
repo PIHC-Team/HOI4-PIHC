@@ -1,0 +1,27 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C31": {
+                "country_event": {
+                    "id": "C12_MAIN.47",
+                    "days": 2,
+                    "random_days": 2
+                }
+            },
+            "add_political_power": 25,
+            "hidden_effect": {
+                "C14": {
+                    "country_event": {
+                        "id": "C12_MAIN.49",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

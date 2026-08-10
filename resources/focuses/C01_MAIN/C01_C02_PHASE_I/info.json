@@ -1,0 +1,62 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_OPERATION_GREENLIGHT",
+    "priority": 10,
+    "dy": 2,
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_PERFUME_BUSINESS"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C01_C02_SILO_INSPECTION"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C01_C02_PHASE_I_TOOLTIP",
+        "C02": {
+            "if": {
+                "limit": {
+                    "is_ai": false
+                },
+                "add_power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value": -0.05,
+                    "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                }
+            },
+            "else": {
+                "add_power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value": -0.15,
+                    "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                }
+            }
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "EEMO.12",
+                "days": 3
+            }
+        }
+    },
+    "available": {
+        "C02": {
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

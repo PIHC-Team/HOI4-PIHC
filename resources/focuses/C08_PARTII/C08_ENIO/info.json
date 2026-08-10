@@ -1,0 +1,42 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_TIMELY_RAIN",
+    "dx": -1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C08_TIMELY_RAIN",
+        "focus__D1": "FOCUS_C08_LONG_DEW"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_EXPLORATION_WORKS"
+    },
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_EXPLORATION_WORKS"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_ENIO_TOOLTIP",
+        "set_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_SCIENCE",
+        "swap_ideas": {
+            "remove_idea": "IDEA_ERA_AGE_NORMAL",
+            "add_idea": "IDEA_ERA_AGE_SCIENCE"
+        },
+        "swap_ideas__D1": {
+            "remove_idea": "IDEA_ERA_MAGIC_3_NORMAL",
+            "add_idea": "IDEA_ERA_MAGIC_2_EXCEL"
+        },
+        "add_ideas": "CHARACTER_SCIENCE_NEXUS",
+        "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_ENIO"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

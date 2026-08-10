@@ -1,0 +1,17 @@
+{
+    "news_effects": {
+        "C11": {
+            "declare_war_on": {
+                "target": "C16",
+                "type": "annex_everything"
+            },
+            "add_named_threat": {
+                "threat": 5,
+                "name": "EVENT_SUPER_3_THREAT"
+            }
+        }
+    },
+    "effects": {
+        "play_song": "superevent_music_03"
+    }
+}

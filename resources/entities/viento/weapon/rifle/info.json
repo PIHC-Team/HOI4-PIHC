@@ -1,0 +1,178 @@
+{
+    "mesh": {
+        "scale": 0.35
+    },
+    "entities": [
+        {
+            "scale": 1.0,
+
+            "default_state": "idle",
+            "state": {
+                "name": "idle"
+            },
+            "state__D1": {
+                "name": "move"
+            },
+            "state__D2": {
+                "name": "fire01",
+                "event": {
+                    "time": 1.4,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D1": {
+                    "time": 1.9,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D2": {
+                    "time": 2.2,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D3": {
+                    "time": 2.7,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D4": {
+                "name": "fire02",
+                "event": {
+                    "time": 0.8,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D1": {
+                    "time": 1.3,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D2": {
+                    "time": 4.2,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D3": {
+                    "time": 4.7,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D3": {
+                "name": "fire03",
+                "event": {
+                    "time": 0.5,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D1": {
+                    "time": 1.0,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D2": {
+                    "time": 4.2,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D3": {
+                    "time": 4.7,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D5": {
+                "name": "fire04",
+                "event": {
+                    "time": 0.3,
+                    "node": "barrel",
+                    "particle": "rifle_muzzle_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "event__D1": {
+                    "time": 0.8,
+                    "node": "barrel",
+                    "particle": "mg_muzzle_smoke_particle",
+                    "keep_particle": true,
+                    "light": "muzzle_flash",
+                    "sound": {
+                        "soundeffect": "infantry_rifle_attack"
+                    }
+                },
+                "looping": false,
+                "next_state": "idle"
+            }
+        }
+    ]
+}

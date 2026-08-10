@@ -1,0 +1,28 @@
+{
+    "news_effects": {
+        "C15": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C15_INDEPENDENCE_WAR",
+            "add_named_threat": {
+                "threat": 3,
+                "name": "EVENT_SUPER_1_THREAT"
+            }
+        },
+        "C11": {
+            "declare_war_on": {
+                "target": "C15",
+                "type": "puppet_wargoal_focus"
+            },
+            "add_named_threat": {
+                "threat": 5,
+                "name": "EVENT_SUPER_1_THREAT"
+            },
+            "remove_power_balance_modifier": {
+                "id": "BOP_C11_STARVATION",
+                "modifier": "BOP_C11_STARVATION_CRYSTAL_EMPIRE_TRIBUTE"
+            }
+        }
+    },
+    "effects": {
+        "play_song": "pihc16"
+    }
+}

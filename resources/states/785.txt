@@ -1,0 +1,40 @@
+state = {
+    id = 785
+    name = STATE_785
+    provinces = {
+        671
+        1075
+        1243
+        2625
+        3164
+        3794
+        9645
+        13970
+        13987
+        14006
+        14067
+        14081
+    }
+    manpower = 119098
+    state_category = rural
+    history = {
+        owner = C48
+        buildings = {
+            infrastructure = 3
+            dockyard = 2
+            industrial_complex = 3
+            arms_factory = 1
+            671 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C48
+        victory_points = {
+            9645
+            25
+        }
+    }
+    resources = {
+        steel = 14
+    }
+}

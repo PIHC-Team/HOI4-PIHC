@@ -1,0 +1,34 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "country_event": {
+                    "id": "C01_C03_BLUEBERRY.7"
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_REPLY": true
+            }
+        },
+        {
+            "type": "click",
+            "effects": {
+                "country_event": {
+                    "id": "C01_C03_BLUEBERRY.8"
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_REPLY": true
+            },
+            "visible": {
+                "C02": {
+                    "has_country_leader": {
+                        "character": "CHARACTER_DOCTOR_HOOVES",
+                        "ruling_only": true
+                    }
+                }
+            }
+        }
+    ]
+}

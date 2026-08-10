@@ -1,0 +1,24 @@
+{
+    "name": "Mast of Clouds",
+    "category": "air_techs",
+
+    "x": 2,
+    "y": 6,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_SCOUT_CLOUDMAST"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1002
+}

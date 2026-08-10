@@ -1,0 +1,18 @@
+{
+    "date": "1002.12.3",
+    "date_scope": "C23",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C23_MAIN.2",
+                    "days": 5
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

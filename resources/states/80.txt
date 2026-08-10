@@ -1,0 +1,45 @@
+state = {
+    id = 80
+    name = STATE_80
+    provinces = {
+        985
+        1290
+        2107
+        2399
+        2965
+        3648
+        4862
+        4895
+        4968
+        5182
+        5614
+        7129
+        7328
+        7717
+        8127
+        8829
+        10403
+        10418
+        10490
+        10523
+    }
+    manpower = 51213
+    state_category = wasteland
+    history = {
+        owner = C17
+        victory_points = {
+            985
+            35
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 3
+            arms_factory = 1
+        }
+        add_core_of = C17
+    }
+    resources = {
+        coal = 20
+        tungsten = 16
+    }
+}

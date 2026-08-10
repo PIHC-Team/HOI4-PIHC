@@ -1,0 +1,28 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_010_KAN",
+    "prerequisite": {
+        "focus": "FOCUS_C18_010_KAN"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "C18_DEL_NIRIK_0_5": true,
+        "country_event": {
+            "id": "C18_MAIN.12"
+        },
+        "hidden_effect": {
+            "activate_mission": "DECISION_C18_PRESSURE_FOR_BLOSSOM_CASE_CLOSE"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+state = {
+    id = 450
+    name = STATE_450
+    provinces = {
+        347
+        396
+        2240
+        3938
+        4032
+        4358
+        5318
+        8063
+        8241
+        8808
+        9131
+        11098
+        11141
+        11143
+        11166
+        11187
+        11229
+        11264
+    }
+    manpower = 3696
+    state_category = rural
+    history = {
+        owner = C06
+        victory_points = {
+            4358
+            5
+        }
+        victory_points = {
+            11098
+            3
+        }
+        buildings = {
+            infrastructure = 3
+            farm_complex = 1
+        }
+        add_core_of = C06
+    }
+    resources = {
+        logs = 8
+    }
+}

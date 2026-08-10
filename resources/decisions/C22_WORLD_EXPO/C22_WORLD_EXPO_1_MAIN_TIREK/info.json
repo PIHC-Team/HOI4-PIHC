@@ -1,0 +1,21 @@
+{
+    "name": "Tirek",
+    "priority": 898,
+    
+    "visible": {
+        "check_variable": {
+            "VAR_PIHC_WORLD_EXPO_VENUE": 1
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C22_MAIN.3"
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

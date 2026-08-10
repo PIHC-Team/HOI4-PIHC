@@ -1,0 +1,53 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "declare_war_on": {
+                "target": "C06",
+                "type": "liberate_wargoal"
+            },
+            "add_named_threat": {
+                "threat": 5,
+                "name": "EVENT_C08_RED_RADIO_2_THREAT"
+            },
+            "hidden_effect": {
+                "C01": {
+                    "country_event": {
+                        "id": "C01_MAIN.24",
+                        "days": 7
+                    }
+                },
+                "C02": {
+                    "country_event": {
+                        "id": "C01_MAIN.24",
+                        "days": 7
+                    }
+                },
+                "C06": {
+                    "country_event": {
+                        "id": "C01_MAIN.24",
+                        "days": 7
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C08"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Common visible",
+    "priority": 90000,
+    
+    "visible": {
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON"
+        }
+    },
+    "available": {
+        "hidden_trigger": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON"
+            }
+        }
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON"
+    },
+    "cost": 0,
+    "ai_will_do": {
+        "base": 100
+    }
+}

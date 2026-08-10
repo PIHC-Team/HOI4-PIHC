@@ -1,0 +1,32 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_ANALYZING_THE_WHIMSICAL_IDEAS",
+    "priority": 20,
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C12_PRECIOUS_GIFT"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C12_STEAM_POWER_IMPROVE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "set_technology" : {
+            "TECHNOLOGY_CANNON_MEDIUM_CHEESE" : 1
+        }
+    },
+    "bypass": {
+		"has_tech": "TECHNOLOGY_CANNON_MEDIUM_CHEESE" 
+	},
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

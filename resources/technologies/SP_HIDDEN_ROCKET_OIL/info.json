@@ -1,0 +1,28 @@
+{
+    "name": "Hidden",
+    "category": "support",
+
+    "x": 0,
+    "y": 0,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_project"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_MISSILE_OIL"
+    ],
+    "enable_subunits": [
+    ],
+    "allow": {
+        "always": false
+    },
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1000
+}

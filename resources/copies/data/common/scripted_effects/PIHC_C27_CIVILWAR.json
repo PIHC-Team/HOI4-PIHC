@@ -1,0 +1,48 @@
+{
+    "C27_CIVIL_WAR": {
+        "C27": {
+            "END_ALL_WARS": true,
+            "hidden_effect": {
+                "start_civil_war": {
+                    "ideology": "corporation",
+                    "keep_all_characters": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C27_CIVIL_WAR_VERKO",
+                    "set_cosmetic_tag": "Z27",
+                    "size": 0.3,
+                    "army_ratio": 0.15,
+                    "navy_ratio": 0.1,
+                    "air_ratio": 0.1,
+                    "capital": 844,
+                    "states_filter": {
+                        "is_owned_and_controlled_by": "C27"
+                    },
+                    "set_politics": {
+                        "ruling_party": "corporation"
+                    },
+                    "add_popularity": {
+                        "ideology": "corporation",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_VERKO",
+                    "promote_character": {
+                        "character": "CHARACTER_VERKO",
+                        "ideology": "corporation_oligarchy"
+                    }
+                },
+                "Z27": {
+                    "844": {
+                        "create_unit": {
+                            "division": "name = \"债权者 (The Creditors)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7",
+                            "owner": "Z27",
+                            "count": 3
+                        }
+                    }
+                },
+                "add_named_threat": {
+                    "threat": 2,
+                    "name": "EVENT_C23_MAIN_13_THREAT"
+                }
+            }
+        }
+    }
+}

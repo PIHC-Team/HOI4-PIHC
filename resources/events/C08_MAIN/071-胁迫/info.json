@@ -1,0 +1,20 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_MAIN_71_TOOLTIP",
+            "UPGRADE_LIBERATION_FRONT": true,
+            "C33": {
+                "give_military_access": "C08",
+                "break_embargo": "C08",
+                "give_military_access__D1": "C05",
+                "break_embargo__D1": "C05",
+                "give_military_access__D2": "C33",
+                "break_embargo__D2": "C33"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

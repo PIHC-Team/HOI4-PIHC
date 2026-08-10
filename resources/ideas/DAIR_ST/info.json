@@ -1,0 +1,50 @@
+{
+    "name": "DAIR_ST",
+    "designer": true,
+    "category": "aircraft_manufacturer",
+    "traits": [
+        "aircraft_manufacturer"
+    ],
+    "cost": 300,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "always": true
+    },
+    "research_bonus": {
+        "pihc_air": 0.15,
+        "pihc_storm": 0.3
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_AIR_TRANSPORT": {
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_AIR_SCOUT": {
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_AIR_TBOMBER": {
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_AIR_SBOMBER": {
+            "build_cost_ic": -0.15
+        },
+        "ARCHETYPE_AIR_ARMED": {
+            "build_cost_ic": -0.15
+        }
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "add": -1,
+            "FROM": {
+                "tag": "C08",
+                "controls_state": "389"
+            }
+        }
+    }
+}

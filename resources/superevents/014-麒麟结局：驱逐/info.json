@@ -1,0 +1,14 @@
+{
+    "news_effects": {
+        "C18": {
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C03_ENDING_KIRIN",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_END_OF_COLLAPSE"
+        }
+    },
+    "effects": {
+        "play_song": "superevent_music_14"
+    },
+    "o_effects": {
+        "custom_effect_tooltip": "PIHC_ENDING_TEMP_TEXT"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Coffee",
+    "priority": 100,
+    
+    "cost": 25,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_WIND_RIDER_STARSWIRL_COFFEE",
+        "any_state_in": {
+            "array": "C04.ARRAY_REGIONAL_DEV_STATES_1",
+            "is_core_of": "C04",
+            "is_owned_by": "C04"
+        }
+    },
+    "complete_effect": {
+        "C04_ADD_ECO_1_5": true,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C04_WIND_RIDER_RUNNING_FOR_OFFICE"
+            },
+            "C04_ADD_WIND_RIDER_SUPPORT_25": true
+        },
+        "else": {
+            "hidden_effect": {
+                "C04_ADD_WIND_RIDER_SUPPORT_25": true
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 3
+    }
+}

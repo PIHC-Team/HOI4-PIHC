@@ -1,0 +1,33 @@
+{
+    "name": "Modern Firearm",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_MODERN_RIFLE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_IX",
+        "research_cost_coeff": 1
+    },
+    "ai_will_do": {
+        "factor": 4,
+        "modifier": {
+            "factor": 20,
+            "date > 1009.8.1": null
+        }
+    },
+    "research_cost": 3.0,
+    "start_year": 1008
+}

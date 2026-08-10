@@ -1,0 +1,17 @@
+{
+    "name": "Blunderbuss",
+    "parent": "EQUIPMENT_RANGED_HANDGONNE",
+    "alpha_global": 0.3,
+    "alpha": {
+        "defense": -0.1,
+        "build_cost_ic": -0.20
+    },
+    
+    "reliability": 0.90,
+    
+    "resources": {
+        "logs": 1,
+        "steel": 2,
+        "coal": 1
+    }
+}

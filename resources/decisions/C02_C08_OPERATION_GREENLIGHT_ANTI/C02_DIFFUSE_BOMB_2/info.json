@@ -1,0 +1,35 @@
+{
+    "name": "Diffuse",
+    "priority": 104,
+    
+    "cost": 5,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS"
+    },
+    "complete_effect": {
+        "set_country_flag": {
+            "flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_DIFFUSING",
+            "days": 14,
+            "value": 1
+        }
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED"
+        }
+    },
+    "ai_will_do": {
+        "base": 1000,
+        "modifier": {
+            "factor": 0,
+            "C01": {
+                "is_ai": false
+            }
+        }
+    }
+}

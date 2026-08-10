@@ -1,0 +1,84 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_DINER_EXPANSION",
+    "prerequisite": {
+        "focus": "FOCUS_C04_DINER_EXPANSION",
+        "focus__D1": "FOCUS_C04_CRYSTAL_APPROVE",
+        "focus__D2": "FOCUS_C04_ANOTHER_NOTICE"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C04_RETURN_OF_ACADEMY"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C04_WASHOUT_TOUR"
+    },
+    "dx": 1,
+    "dy": 1,
+    "cost": 7,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_CONSTRUCTION_AVAILABLE"
+    },
+    "cancel_if_invalid": false,
+    "continue_if_invalid": true,
+    "select_effect": {
+        "DEL_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_500": true,
+        "hidden_effect": {
+            "country_event": {
+                "id": "C04_MAIN.22",
+                "days": 21,
+                "random_days": 3
+            },
+            "country_event__D1": {
+                "id": "C04_MAIN.25",
+                "days": 30,
+                "random_days": 14
+            }
+        }
+    },
+    "completion_reward": {
+        "336": {
+            "BUILD_A_FARM": true,
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "37": {
+            "BUILD_A_FARM": true,
+            "BUILD_A_CIC": true
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_ALL_ECONOMIC_RECOVERY"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_ALL_ECONOMIC_RECOVERY",
+                "add_idea": "IDEA_ALL_ECONOMIC_GROWTH"
+            }
+        },
+        "else": {
+            "add_ideas": "IDEA_ALL_ECONOMIC_GROWTH"
+        },
+        "custom_effect_tooltip": "FOCUS_C04_DINER_EXPANSION_CONSTRUCTION_TOOLTIP",
+        "hidden_effect": {
+            "country_event": {
+                "id": "C04_MAIN.26",
+                "days": 21,
+                "random_days": 10
+            }
+        }
+    },
+    "available": {
+        "OR": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_500": true,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_20000": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

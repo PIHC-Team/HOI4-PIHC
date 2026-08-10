@@ -1,0 +1,59 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_APOCALYPSE_END",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_APOCALYPSE_END"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C15_SOMBRA_CRISIS_SELF"
+    },
+    "cost": 12,
+    "completion_reward": {
+        "add_country_leader_role": {
+            "character": "CHARACTER_KING_SOMBRA",
+            "promote_leader": true,
+            "country_leader": {
+                "ideology": "transcendence_crisis",
+                "traits": [
+                    "TRAIT_KING_SOMBRA_KING_OF_MONSTERS",
+                    "TRAIT_KING_SOMBRA_SOURCE_OF_TERROR"
+                ]
+            }
+        },
+        "hidden_effect": {
+            "set_popularities": {
+                "transcendence": 100
+            }
+        },
+        "C26": {
+            "add_to_faction": "C15"
+        },
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT_COLD_I": 1,
+            "TECHNOLOGY_SUPPORT_COLD_II": 1,
+            "TECHNOLOGY_SUPPORT_COLD_III": 1,
+            "TECHNOLOGY_SUPPORT_COLD_IV": 1
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "has_war": false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

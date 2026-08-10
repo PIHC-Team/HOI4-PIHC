@@ -1,0 +1,16 @@
+{
+    "name": "Modern Rifle",
+    "parent": "EQUIPMENT_RANGED_CARBINE",
+    "alpha_global": 0.5,
+    "alpha": {
+        "defense": -0.15
+    },
+    
+    "reliability": 0.95,
+    
+    "resources": {
+        "logs": 1,
+        "steel": 3,
+        "aluminium": 1
+    }
+}

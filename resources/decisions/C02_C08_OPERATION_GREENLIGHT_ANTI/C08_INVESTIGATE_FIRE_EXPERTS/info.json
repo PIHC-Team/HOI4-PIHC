@@ -1,0 +1,36 @@
+{
+    "name": "Investigation",
+    "priority": 101,
+    
+    "cost": 5,
+    "days_remove": 14,
+    "fire_only_once": true,
+    "allowed": {
+        "tag": "C08"
+    },
+    "available": {
+        "C08": {
+            "has_country_leader": {
+                "character": "CHARACTER_STARLIGHT_GLIMMER",
+                "ruling_only": true
+            }
+        }
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "START_PIHC_C08_PIN_GAME_2": true,
+            "if": {
+                "limit": {
+                    "is_ai": true
+                },
+                "country_event": {
+                    "id": "C01_C02_GREENLIGHT.33",
+                    "days": 360
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

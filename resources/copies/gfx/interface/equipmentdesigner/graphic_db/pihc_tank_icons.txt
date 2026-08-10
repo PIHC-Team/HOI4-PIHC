@@ -1,0 +1,65 @@
+default = {
+	EQUIPMENT_CHASSIS_TANK_LIGHT_WOODEN = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_LIGHT_RAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_MEDIUM_WOODEN = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_LIGHT_RAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_LIGHT_RAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_LIGHT_STEAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_MEDIUM_IMPROVED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_MEDIUM_STEAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_HEAVY_IMPROVED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_HEAVY_STEAM_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_LIGHT_ADVANCED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_LIGHT_MODERN_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_MEDIUM_ADVANCED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_MEDIUM_MODERN_medium
+			}
+		}
+	}
+	EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_TANK_HEAVY_MODERN_medium
+			}
+		}
+	}
+}

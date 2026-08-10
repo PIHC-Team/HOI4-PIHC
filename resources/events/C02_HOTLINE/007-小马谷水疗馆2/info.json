@@ -1,0 +1,26 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1": true,
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C02_HOTLINE.8",
+                    "days": 15,
+                    "random_days": 60
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,82 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "C01": {
+                "start_civil_war": {
+                    "ideology": "harmonicism",
+                    "keep_all_characters": true,
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C01_CIVIL_WAR_CMC",
+                    "set_cosmetic_tag": "Z01",
+                    "capital": 487,
+                    "states": [
+                        487, 459, 542
+                    ],
+                    "size": 0.1,
+                    "army_ratio": 0.1,
+                    "navy_ratio": 0.0,
+                    "air_ratio": 0.0,
+                    "set_politics": {
+                        "ruling_party": "harmonicism"
+                    },
+                    "add_popularity": {
+                        "ideology": "harmonicism",
+                        "popularity": 1.00
+                    },
+                    "recruit_character": "CHARACTER_CMC",
+                    "promote_character": {
+                        "character": "CHARACTER_CMC",
+                        "ideology": "harmonicism_democracy"
+                    }
+                },
+                "Z01": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA"
+                },
+                "487": {
+                    "create_unit": {
+                        "division": "name = \"可爱标志童子军 (CMC)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.2 start_manpower_factor = 0.9",
+                        "owner": "Z01",
+                        "count": 4
+                    }
+                },
+                "if": {
+                    "limit": {
+                        "C08": {
+                            "has_completed_focus": "FOCUS_C08_CANTERLOT_CMC_RURAL"
+                        }
+                    },
+                    "INIT_CMC_MILITARY_RURAL": true
+                },
+                "if__D1": {
+                    "limit": {
+                        "C08": {
+                            "has_completed_focus": "FOCUS_C08_CANTERLOT_CMC_CITY"
+                        }
+                    },
+                    "INIT_CMC_MILITARY_CITY": true
+                }
+            },
+            "C08": {
+                "country_event": {
+                    "id": "CMC_UPRISE.2",
+                    "days": 1
+                }
+            },
+            "C01__D1": {
+                "country_event": {
+                    "id": "CMC_UPRISE.3",
+                    "days": 1
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

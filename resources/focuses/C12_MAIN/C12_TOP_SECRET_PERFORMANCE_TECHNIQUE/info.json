@@ -1,0 +1,25 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER",
+    "prerequisite": {
+        "focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "cost": 5,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "completion_reward": {
+        "// 我的设想是一个增强版的乐队决议，就是比正常乐团决议给予的buff更高一些。主要是目前正常乐队决议已经够超模了，如果以后变成只有少数国家可以有军乐团，那么这个国策就改为解锁就是": null
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

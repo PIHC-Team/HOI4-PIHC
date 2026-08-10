@@ -1,0 +1,19 @@
+{
+    "buildings": {
+        "pihc_bgfx_fog": {
+            "base_cost": 0,
+            "value": 0,
+
+            "is_buildable": false,
+            "damage_factor": -1,
+
+            "level_cap": {
+                "province_max": 1
+            },
+
+            "always_shown": true,
+            "show_on_map": 1,
+            "icon_frame": 9999
+        }
+    }
+}

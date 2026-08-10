@@ -1,0 +1,14 @@
+{
+    "name": "Sepal Files",
+    "priority": 100,
+    
+    "cost": 5,
+    "days_remove": 42,
+    "remove_effect": {
+        "C04_ADD_SKY_STINGER_SUPPORT_10": true
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 0
+    }
+}

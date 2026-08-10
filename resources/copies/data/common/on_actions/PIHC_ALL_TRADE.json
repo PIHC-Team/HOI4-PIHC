@@ -1,0 +1,22 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C26": {
+                    "INIT_TRADE_CENTER": true
+                },
+                "every_possible_country": {
+                    "INIT_TRADE_CENTER_COUNTRY": true,
+                    "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+                }
+            }
+        },
+        "on_weekly": {
+            "effect": {
+                "ROOT": {
+                    "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+                }
+            }
+        }
+    }
+}

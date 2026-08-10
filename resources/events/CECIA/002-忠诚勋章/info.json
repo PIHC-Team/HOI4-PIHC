@@ -1,0 +1,138 @@
+{
+    "date": "1003.01.01 ~ 1005.01.01",
+    "date_scope": "C11",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C11"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "CECIA.2",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 90
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+                            "NOT": {
+                                "has_country_flag": "PIHC_COUNTRY_FLAG_C11_INTELLIGENCE"
+                            }
+                        },
+                        "country_event": {
+                            "id": "CECIA.2",
+                            "days": 3
+                        }
+                    }
+                },
+                "C02": {
+                    "random_list": {
+                        "seed": "random",
+                        "30": {
+                            "add_power_balance_value": {
+                                "id": "BOP_C02_INDEPENDENCE",
+                                "value": 0.05,
+                                "tooltip_side": "BOP_C02_INDEPENDENCE_RIGHT_SIDE"
+                            }
+                        },
+                        "70": {
+                            "add_power_balance_value": {
+                                "id": "BOP_C02_INDEPENDENCE",
+                                "value": -0.05,
+                                "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "CECIA.2",
+                            "days": 3
+                        }
+                    }
+                },
+                "C02": {
+                    "random_list": {
+                        "seed": "random",
+                        "70": {
+                            "add_power_balance_value": {
+                                "id": "BOP_C02_INDEPENDENCE",
+                                "value": 0.05,
+                                "tooltip_side": "BOP_C02_INDEPENDENCE_RIGHT_SIDE"
+                            }
+                        },
+                        "30": {
+                            "add_power_balance_value": {
+                                "id": "BOP_C02_INDEPENDENCE",
+                                "value": -0.10,
+                                "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "C02": {
+                "add_power_balance_value": {
+                    "id": "BOP_C02_INDEPENDENCE",
+                    "value": -0.05,
+                    "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11",
+                    "tag__D1": "C01",
+                    "tag__D2": "C02"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

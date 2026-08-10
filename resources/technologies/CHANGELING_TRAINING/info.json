@@ -1,0 +1,32 @@
+{
+    "name": "Changeling Training",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 16,
+    "y": 0,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AUTOMATA_CHANGELING"
+    ],
+    "enable_subunits": [
+        "infantry_automata"
+    ],
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+    "allow": {
+        "tag": "C11"
+    },
+    "research_cost": 3.0,
+    "start_year": 1000
+}

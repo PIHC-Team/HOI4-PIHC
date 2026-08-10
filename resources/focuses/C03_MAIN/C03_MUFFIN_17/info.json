@@ -1,0 +1,48 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 4,
+    "y": 1,
+    "cost": 4,
+    "bypass": {
+        "hidden_trigger": {
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+            }
+        }
+    },
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_BLUE"
+            },
+            "custom_effect_tooltip": "FOCUS_C03_MUFFIN_17_TRUE_TOOLTIP"
+        },
+        "else_if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_RED"
+            },
+            "custom_effect_tooltip": "FOCUS_C03_MUFFIN_17_FALSE_TOOLTIP"
+        },
+        "else": {
+            "custom_effect_tooltip": "FOCUS_C03_MUFFIN_17_TOOLTIP"
+        },
+        "hidden_effect": {
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_16"
+    }
+}

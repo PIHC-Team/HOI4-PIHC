@@ -1,0 +1,35 @@
+{
+    "name": "Hotline",
+    "priority": 100,
+    
+    "cost": 75,
+    "selectable_mission": true,
+    "days_mission_timeout": 56,
+    "activation": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_HOTLINE_019"
+    },
+    "available": {
+        "num_of_civilian_factories_available_for_projects > 1": null
+    },
+    "complete_effect": {
+        "effect_tooltip": {
+            "add_ideas": "IDEA_C02_HOTLINE_HOOVES_PROJECT_019"
+        },
+        "hidden_effect": {
+            "add_timed_idea": {
+                "idea": "IDEA_C02_HOTLINE_HOOVES_PROJECT_019",
+                "days": 90
+            }
+        }
+    },
+    "timeout_effect": {
+        "country_event": {
+            "id": "C02_HOTLINE.16",
+            "days": 1
+        }
+    },
+    "ai_will_do": {
+        "base": 10
+    },
+    "fire_only_once": true
+}

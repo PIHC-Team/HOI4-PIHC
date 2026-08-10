@@ -1,0 +1,15 @@
+{
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "visible": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLY_ARRIVES"
+        },
+        "traits": [
+            "TRAIT_ECONOMICAL_GENIUS_II",
+            "TRAIT_INDECISIVE"
+        ],
+        "removal_cost": 350
+    }
+}

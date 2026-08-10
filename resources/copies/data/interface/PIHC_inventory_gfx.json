@@ -1,0 +1,35 @@
+{
+    "spriteTypes": {
+        "corneredTileSpriteType": {
+            "name": "GFX_tiled_pihc_inventory_bg",
+            "size": {
+                "x": 1167,
+                "y": 458
+            },
+            "textureFile": "gfx/interface/welcome/pihc_inventory_bg_tiled.dds",
+            "borderSize": {
+                "x": 583,
+                "y": 240
+            },
+            "tilingCenter": true,
+            "effectFile": "gfx/FX/buttonstate_nodowneffect.lua",
+            "alwaystransparent": false
+        },
+        "spriteType": {
+            "name": "GFX_pihc_inventory_icon",
+            "textureFile": "gfx/interface/inventory.dds"
+        },
+        "spriteType__D1": {
+            "name": "GFX_pihc_inventory_item_bg",
+            "textureFile": "gfx/interface/inventory_item_bg.dds"
+        },
+        "spriteType__D2": {
+            "name": "GFX_INVENTORY_ITEM_DEFAULT",
+            "textureFile": "gfx/interface/inventory_items/INVENTORY_ITEM_DEFAULT.dds"
+        },
+        "spriteType__D3": {
+            "name": "GFX_INVENTORY_ITEM_DEFAULT_SMALL",
+            "textureFile": "gfx/interface/inventory_items/INVENTORY_ITEM_DEFAULT_SMALL.dds"
+        }
+    }
+}

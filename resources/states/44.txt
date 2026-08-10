@@ -1,0 +1,40 @@
+state = {
+    id = 44
+    name = STATE_44
+    provinces = {
+        2961
+        4320
+        4464
+        4703
+        4825
+        4854
+        4885
+        6064
+        6705
+        7025
+        7555
+        7792
+        11767
+        11768
+        11788
+        11885
+        11893
+    }
+    manpower = 4169
+    state_category = rural
+    history = {
+        owner = C16
+        victory_points = {
+            2961
+            5
+        }
+        buildings = {
+            infrastructure = 3
+        }
+        add_core_of = C16
+    }
+    resources = {
+        aluminium = 8
+        crystals = 12
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_TRADE_POLICY_CHANGELINIA",
+    "prerequisite": {
+        "focus": "FOCUS_C07_TRADE_POLICY_CHANGELINIA"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "C30": {
+            "add_opinion_modifier": {
+                "target": "C07",
+                "modifier": "FOCUS_C07_TRADE_CONTACT_ZEBRAS_OPINION_MODIFIER"
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

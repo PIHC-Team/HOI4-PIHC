@@ -1,0 +1,18 @@
+{
+    "priority": 99999,
+    "allowed": {
+        "OR": {
+            "tag": "C02",
+            "tag__D1": "C08"
+        }
+    },
+    "visible": {
+        "is_ai": false,
+        "tag": "C08",
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT",
+            "is_debug": true
+        }
+    },
+    "visible_when_empty": true
+}

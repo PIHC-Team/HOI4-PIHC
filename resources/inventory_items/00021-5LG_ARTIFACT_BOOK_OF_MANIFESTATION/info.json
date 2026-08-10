@@ -1,0 +1,26 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "DEL_INVENTORY_ITEM_5LG_ARTIFACT_BOOK_OF_MANIFESTATION_1": true,
+                "if": {
+                    "limit": {
+                        "has_tech": "TECHNOLOGY_TECH_MAGI_II"
+                    },
+                    "add_nuclear_bombs": 1
+                },
+                "else": {
+                    "custom_effect_tooltip": "PIHC_ARTIFACT_OVERCHARGE_EFFECT_UNKNOWN",
+                    "hidden_effect": {
+                        "add_nuclear_bombs": 1
+                    }
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_5LG_ARTIFACT_BOOK_OF_MANIFESTATION": true,
+                "has_tech": "TECHNOLOGY_TECH_MAGI_II"
+            }
+        }
+    ]
+}

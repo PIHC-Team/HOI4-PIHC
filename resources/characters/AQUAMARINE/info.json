@@ -1,0 +1,14 @@
+{
+    "name": "Aquamarine",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_ECONOMICAL_GENIUS"
+        ],
+        "cost": 50,
+        "can_be_fired": true,
+        "removal_cost": 150
+    }
+}

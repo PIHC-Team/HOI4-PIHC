@@ -1,0 +1,106 @@
+{
+    "name": "Buffalo Tribe",
+    "rgb": [
+        200,
+        200,
+        200
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 610,
+        "set_popularities": {
+            "harmonicism": 70,
+            "democratic": 20,
+            "peacism": 10
+        },
+        "set_politics": {
+            "ruling_party": "harmonicism",
+            "elections_allowed": false
+        },
+        "recruit_character": "CHARACTER_THUNDERHOOVES",
+        "add_ideas_batch": [
+            "closed_economy",
+            "limited_conscription",
+            "low_economic_mobilisation",
+            "IDEA_ERA_MAGIC_4_MUGGLE"
+        ],
+        "set_research_slots": 1,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_TANK_RAM": 1,
+            "TECHNOLOGY_NSB_TANK_RAM": 1,
+            "TECHNOLOGY_CANNON_CATAPULT": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "give_military_access_batch": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C08",
+            "C09",
+            "C10",
+            "C12",
+            "C13",
+            "C14"
+        ],
+        "set_variable": {
+            "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+            "value": 0
+        },
+        "set_variable__D14": {
+            "var": "VAR_C14_PROVIDED_CIV_FACTORIES",
+            "value": 0
+        },
+        "587": {
+            "add_core_of": "C31"
+        },
+        "589": {
+            "add_core_of": "C31"
+        },
+        "577": {
+            "add_core_of": "C31"
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 14,
+
+    "category_all_artillery": {
+        "air_attack": 3.00
+    },
+    "category_infantry_magical": {
+        "air_attack": 3.00
+    },
+    "static_anti_air_damage_factor": 0.08,
+    "static_anti_air_hit_chance_factor": 0.25,
+    "enemy_army_bonus_air_superiority_factor": -0.15,
+    "cas_damage_reduction": 0.15,
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_flame_of_rage"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_1_8_HARVEST",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

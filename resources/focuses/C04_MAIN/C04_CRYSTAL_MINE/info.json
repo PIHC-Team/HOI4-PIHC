@@ -1,0 +1,32 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_START_OF_CHANGE",
+    "prerequisite": {
+        "focus": "FOCUS_C04_START_OF_CHANGE"
+    },
+    "priority": 10,
+    "cost": 5,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C04_CRYSTAL_MINE_AVAILABLE"
+    },
+    "completion_reward": {
+        "C04_ADD_ECO_2_15": true,
+        "add_resource": {
+            "type": "crystals",
+            "amount": 32,
+            "state": 376
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

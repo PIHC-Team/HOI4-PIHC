@@ -1,0 +1,525 @@
+{
+    "faction_goal_resource_control": {
+        "name": "resource_control_goal_name",
+        "description": "resource_control_goal_desc",
+        "category": "long_term",
+        "group": "resources_to_market_icon",
+        "visible": [],
+        "available": [],
+        "completed": {
+            "has_resources_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "oil",
+                "amount > 499": null,
+                "extracted": true
+            },
+            "has_resources_in_collection__D1": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "coal",
+                "amount > 499": null,
+                "extracted": true
+            },
+            "has_resources_in_collection__D2": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "rubber",
+                "amount > 199": null,
+                "extracted": true
+            },
+            "has_resources_in_collection__D3": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "aluminium",
+                "amount > 199": null,
+                "extracted": true
+            },
+            "has_resources_in_collection__D4": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "chromium",
+                "amount > 199": null,
+                "extracted": true
+            },
+            "has_resources_in_collection__D5": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "resource": "tungsten",
+                "amount > 199": null,
+                "extracted": true
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 500,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_FACTION_LEADER",
+            "add_faction_initiative": 1,
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "INFLUENCE_TOP_THREE",
+                "visible_when_empty": true,
+                "limit": {
+                    "faction_influence_rank < 4": null
+                },
+                "add_political_power": 100
+            }
+        },
+        "ai_will_do": {
+            "base": 1
+        }
+    },
+    "faction_goal_strategic_bombing_campaign": {
+        "name": "strategic_bombing_campaign_goal_name",
+        "description": "strategic_bombing_campaign_goal_desc",
+        "category": "long_term",
+        "group": "FOCUS_FILTER_AIR_XP",
+        "available": {
+            "FROM": {
+                "has_war": true
+            }
+        },
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "unit": "strategic_bomber",
+                "size > 199": null
+            },
+            "collection_size": {
+                "input": {
+                    "input": "game:all_states",
+                    "operators": {
+                        "limit": {
+                            "owner": {
+                                "has_war_with": "root"
+                            },
+                            "is_core_of": "OWNER",
+                            "days_since_last_strategic_bombing < 30": null
+                        }
+                    },
+                    "name": "ENEMY_FACTION_STATES_BOMBED"
+                },
+                "value > 2": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_collection_element": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": {
+                        "faction_members": null,
+                        "limit": {
+                            "has_deployed_air_force_size": {
+                                "size > 49": null,
+                                "type": "strategic_bomber"
+                            }
+                        }
+                    },
+                    "name": "ALL_FACTION_MEMBERS_WITH_50_BOMBERS"
+                },
+                "add_faction_initiative": 1,
+                "add_war_support": 0.1,
+                "air_experience": 50,
+                "add_mastery": {
+                    "amount": 100,
+                    "track": "heavy_aircraft"
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "num_of_military_factories > 49": null
+            },
+            "modifier__D1": {
+                "add": 1,
+                "count_in_collection": {
+                    "collection": {
+                        "input": "game:scope",
+                        "operators": [
+                            "faction_members"
+                        ],
+                        "name": "FACTION_NAME"
+                    },
+                    "buildings": [
+                        "arms_factory"
+                    ],
+                    "size > 149": null
+                }
+            }
+        }
+    },
+    "faction_goal_liberate_territory": {
+        "name": "liberate_territory_goal_name",
+        "description": "liberate_territory_goal_desc",
+        "category": "long_term",
+        "group": "FOCUS_FILTER_ANNEXATION",
+        "visible": {
+            "collection_size": {
+                "input": {
+                    "input": "collection:faction_owned_core_states",
+                    "operators": {
+                        "limit": {
+                            "NOT": {
+                                "is_fully_controlled_by": "OWNER"
+                            }
+                        }
+                    },
+                    "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                },
+                "value > 0": null
+            }
+        },
+        "completed": {
+            "collection_size": {
+                "input": {
+                    "input": "collection:faction_owned_core_states",
+                    "operators": {
+                        "limit": {
+                            "NOT": {
+                                "is_fully_controlled_by": "OWNER"
+                            }
+                        }
+                    },
+                    "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                },
+                "value < 1": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_FACTION_LEADER",
+            "add_faction_initiative": 1,
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D3": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "add_stability": 0.1
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": 4,
+                "collection_size": {
+                    "input": {
+                        "input": "collection:faction_owned_core_states",
+                        "operators": {
+                            "limit": {
+                                "NOT": {
+                                    "is_fully_controlled_by": "OWNER"
+                                }
+                            }
+                        },
+                        "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                    },
+                    "value > 4": null
+                }
+            },
+            "modifier__D1": {
+                "add": 5,
+                "collection_size": {
+                    "input": {
+                        "input": "collection:faction_owned_core_states",
+                        "operators": {
+                            "limit": {
+                                "NOT": {
+                                    "is_fully_controlled_by": "OWNER"
+                                }
+                            }
+                        },
+                        "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                    },
+                    "value > 10": null
+                }
+            }
+        }
+    },
+    "faction_goal_great_offensive": {
+        "name": "great_offensive_goal_name",
+        "description": "great_offensive_goal_desc",
+        "category": "long_term",
+        "group": "FOCUS_FILTER_ANNEXATION",
+        "visible": {
+            "FROM": {
+                "has_war": true
+            },
+            "collection_size": {
+                "input": {
+                    "input": "game:all_states",
+                    "operators": {
+                        "limit": {
+                            "owner": {
+                                "has_war_with": "ROOT"
+                            },
+                            "is_core_of": "OWNER",
+                            "is_controlled_by_ROOT_or_ally": true
+                        }
+                    },
+                    "name": "ENEMY_FACTION_CORE_STATES_CONTROLLED_BY_US"
+                },
+                "value < 1": null
+            }
+        },
+        "completed": {
+            "collection_size": {
+                "input": {
+                    "input": "game:all_states",
+                    "operators": {
+                        "limit": {
+                            "owner": {
+                                "has_war_with": "ROOT"
+                            },
+                            "is_core_of": "OWNER",
+                            "is_controlled_by_ROOT_or_ally": true
+                        }
+                    },
+                    "name": "ENEMY_FACTION_CORE_STATES_CONTROLLED_BY_US"
+                },
+                "value > 0": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "add_war_support": 0.1
+            },
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D3": "TARGET_STATE_CONTROLLERS",
+            "every_faction_member__D1": {
+                "visible_when_empty": true,
+                "limit": {
+                    "any_controlled_state": {
+                        "owner": {
+                            "has_war_with": "ROOT"
+                        },
+                        "is_core_of": "OWNER"
+                    }
+                },
+                "add_faction_initiative": 1
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "collection_size": {
+                    "input": {
+                        "input": "collection:faction_owned_core_states",
+                        "operators": {
+                            "limit": {
+                                "NOT": {
+                                    "is_fully_controlled_by": "OWNER"
+                                }
+                            }
+                        },
+                        "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                    },
+                    "value < 1": null
+                }
+            }
+        }
+    },
+    "faction_goal_defeating_our_enemies": {
+        "name": "defeating_our_enemies_goal_name",
+        "description": "defeating_our_enemies_goal_desc",
+        "group": "FOCUS_FILTER_ANNEXATION",
+        "category": "long_term",
+        "visible": {
+            "NOT": {
+                "has_country_flag": "peace_winner_flag"
+            }
+        },
+        "completed": {
+            "custom_trigger_tooltip": {
+                "tooltip": "is_victor_in_pc_tt",
+                "has_country_flag": "peace_winner_flag"
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "add_war_support": 0.1
+            },
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D3": "PEACE_CONFERENCE_WINNERS",
+            "every_faction_member__D1": {
+                "visible_when_empty": true,
+                "limit": {
+                    "has_country_flag": "peace_winner_flag"
+                },
+                "add_faction_initiative": 1
+            }
+        }
+    },
+    "faction_goal_industrial_domination": {
+        "name": "industrial_domination_goal_name",
+        "description": "industrial_domination_goal_desc",
+        "category": "long_term",
+        "group": "FOCUS_FILTER_INDUSTRY",
+        "visible": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "industrial_complex",
+                    "arms_factory",
+                    "dockyard"
+                ],
+                "size > 100": null
+            }
+        },
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "buildings": [
+                    "industrial_complex",
+                    "arms_factory",
+                    "dockyard"
+                ],
+                "size > 1000": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "AT_LEAST_500_FACTORIES",
+                "visible_when_empty": true,
+                "limit": {
+                    "num_of_controlled_factories > 500": null
+                },
+                "add_faction_initiative": 1
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": 1,
+                "is_major": true
+            },
+            "modifier__D1": {
+                "add": 1,
+                "num_of_controlled_factories > 200": null
+            }
+        }
+    },
+    "faction_goal_the_atomic_race": {
+        "name": "the_atomic_race_goal_name",
+        "description": "the_atomic_race_goal_desc",
+        "group": "FOCUS_FILTER_RESEARCH",
+        "category": "long_term",
+        "visible": {
+            "date > 1940.1.1": null
+        },
+        "completed": {
+            "custom_override_tooltip": {
+                "tooltip": "the_atomic_race_complete_trigger",
+                "has_variable": "global.first_country_sp_nuclear_bomb",
+                "var:global.first_country_sp_nuclear_bomb": {
+                    "OR": {
+                        "is_in_faction_with": "ROOT",
+                        "tag": "ROOT"
+                    }
+                }
+            }
+        },
+        "cancel": {
+            "custom_override_tooltip": {
+                "tooltip": "the_atomic_race_complete_trigger_fail",
+                "has_variable": "global.first_country_sp_nuclear_bomb",
+                "NOT": {
+                    "var:global.first_country_sp_nuclear_bomb": {
+                        "is_in_faction_with": "ROOT"
+                    }
+                },
+                "NOT__D1": {
+                    "var:global.first_country_sp_nuclear_bomb": {
+                        "tag": "ROOT"
+                    }
+                }
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 1000,
+            "every_collection_element": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": {
+                        "faction_members": null,
+                        "limit": {
+                            "faction_influence_rank < 4": null
+                        }
+                    },
+                    "name": "INFLUENCE_TOP_THREE"
+                },
+                "add_faction_initiative": 1,
+                "add_breakthrough_progress": {
+                    "specialization": "specialization_nuclear",
+                    "value": 0.25
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "is_major": true
+            }
+        }
+    }
+}

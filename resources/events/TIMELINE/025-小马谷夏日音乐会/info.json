@@ -1,0 +1,35 @@
+{
+    "category": "news",
+    "date": "1003.06.01",
+    "date_scope": "C02",
+    "immediate": {
+        "hidden_effect": {
+            "add_named_threat": {
+                "threat": -2,
+                "name": "EVENT_TIMELINE_25_THREAT"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C11"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

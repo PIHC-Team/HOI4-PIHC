@@ -1,0 +1,28 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C02_HOTLINE.10"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

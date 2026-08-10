@@ -1,0 +1,82 @@
+{
+    "division_template": {
+        "name": "荒原影魔师 (Umbrum Division)",
+        "regiments": {
+            "infantry_magical": {
+                "x": 0,
+                "y": 0
+            },
+            "infantry_magical__D1": {
+                "x": 1,
+                "y": 0
+            },
+            "infantry_magical__D2": {
+                "x": 2,
+                "y": 0
+            },
+            "infantry_magical__D3": {
+                "x": 0,
+                "y": 1
+            },
+            "infantry_magical__D4": {
+                "x": 1,
+                "y": 1
+            },
+            "infantry_magical__D5": {
+                "x": 2,
+                "y": 1
+            }
+        },
+        "support": {
+
+        },
+        "is_locked": true,
+        "priority": 0
+    },
+    "division_template__D1": {
+        "name": "黑晶奴隶师 (Sombra Slave Division)",
+        "regiments": {
+            "infantry_traditional": {
+                "x": 0,
+                "y": 0
+            },
+            "infantry_traditional__D1": {
+                "x": 1,
+                "y": 0
+            },
+            "infantry_traditional__D2": {
+                "x": 2,
+                "y": 0
+            },
+            "infantry_traditional__D3": {
+                "x": 0,
+                "y": 1
+            },
+            "infantry_traditional__D4": {
+                "x": 1,
+                "y": 1
+            },
+            "infantry_traditional__D5": {
+                "x": 2,
+                "y": 1
+            },
+            "infantry_traditional__D6": {
+                "x": 0,
+                "y": 2
+            },
+            "infantry_traditional__D7": {
+                "x": 1,
+                "y": 2
+            },
+            "infantry_traditional__D8": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "support": {
+            "engineer": 1
+        },
+        "is_locked": true,
+        "priority": 0
+    }
+}

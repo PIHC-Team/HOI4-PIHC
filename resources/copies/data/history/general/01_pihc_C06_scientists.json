@@ -1,0 +1,29 @@
+{
+    "C06": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_bio": 2
+                    },
+                    "traits": [
+                        "scientist_trait_schrodingers_trait"
+                    ],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_bio": 2
+                    },
+                    "traits": [
+                        "scientist_trait_schrodingers_trait"
+                    ],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

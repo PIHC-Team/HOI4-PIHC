@@ -1,0 +1,15 @@
+{
+    "category": "hidden_ideas",
+    "name": "Prepared Against Leota",
+    "removal_cost": -1,
+    "modifier": {
+        "ai_focus_aggressive_factor": 0.3,
+        "supply_consumption_factor": -0.075
+    },
+    "targeted_modifier": {
+        "tag": "C42",
+        "attack_bonus_against": 0.25,
+        "breakthrough_bonus_against": 0.25,
+        "defense_bonus_against": 0.05
+    }
+}

@@ -1,0 +1,21 @@
+######################################
+sound = {
+    name = "correct"
+    file = "PIHC_soundeffects/correct.wav"
+}
+
+soundeffect = {
+	name = "correct_ev"
+	sounds = {
+		sound = "correct"
+	}
+	volume = 1.0
+}
+
+category = {
+	name = "correct_cat"
+	soundeffects = {
+		correct_ev
+	}
+	compressor = master_compressor
+}

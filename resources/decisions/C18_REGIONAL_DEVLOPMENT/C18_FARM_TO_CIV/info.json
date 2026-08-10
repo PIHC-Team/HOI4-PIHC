@@ -1,0 +1,44 @@
+{
+    "name": "Farm to Civ",
+    "priority": 99,
+    
+    "cost": 75,
+    "days_remove": 30,
+    "days_re_enable": 90,
+    "state_target": true,
+    "on_map_mode": "map_only",
+    "target_trigger": {
+        "FROM": {
+            "is_owned_by": "C18",
+            "is_fully_controlled_by": "C18",
+            "farm_complex > 0": null
+        }
+    },
+    "target_root_trigger": {
+        "has_completed_focus": "FOCUS_C18_000_MANUFACTURE"
+    },
+    "target_array": "C18.ARRAY_REGIONAL_DEV_STATES_4",
+    "remove_effect": {
+        "FROM": {
+            "C18_CONVERT_A_FARM_TO_CIV_IN_STATE": true
+        }
+    },
+    "ai_will_do": {
+        "base": 10,
+        "modifier": {
+            "factor": 0,
+            "OR": {
+                "check_variable": {
+                    "var": "C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO",
+                    "value": 0.90,
+                    "compare": "greater_than_or_equals"
+                },
+                "check_variable__D1": {
+                    "var": "C18.VAR_NUM_FARMS_OWNED",
+                    "value": 20,
+                    "compare": "less_than"
+                }
+            }
+        }
+    }
+}

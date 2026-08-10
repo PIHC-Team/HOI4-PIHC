@@ -1,0 +1,44 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C08",
+                    "tag__D1": "C01",
+                    "tag__D2": "C02"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "custom_effect_tooltip": "PIHC_DEVELOPMENT_TEMP_TEXT"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

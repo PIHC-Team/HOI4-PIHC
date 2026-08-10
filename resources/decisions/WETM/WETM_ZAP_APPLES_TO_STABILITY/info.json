@@ -1,0 +1,34 @@
+{
+    "name": "Zap Apples to Stability",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "OR": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE": true,
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C14",
+            "is_in_faction_with": "C14",
+            "AND": {
+                "owns_state": 190,
+                "controls_state": 190
+            }
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true
+    },
+    "custom_cost_text": "CUSTOM_COST_ZAP_APPLES_100",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_100": true,
+        "add_stability": 0.01,
+        "add_manpower": 600
+    },
+    "ai_will_do": {
+        "base": 2
+    }
+}

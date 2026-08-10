@@ -1,0 +1,67 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "NOT": {
+                                "tag": "C02"
+                            },
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "EEMO.12",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "custom_effect_tooltip": "EVENT_EEMO_13_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_KNOWS",
+            "ADD_INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO_1": true,
+            "if": {
+                "limit": {
+                    "C08": {
+                        "is_ai": true
+                    }
+                },
+                "C02": {
+                    "country_event": {
+                        "id": "EEMO.13",
+                        "days": 21
+                    }
+                },
+                "C08": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C08"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

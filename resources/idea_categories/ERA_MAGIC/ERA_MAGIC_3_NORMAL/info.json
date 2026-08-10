@@ -1,0 +1,13 @@
+{
+    "name": "Magic Exists",
+    "removal_cost": -1,
+    "available": {
+        "always": false
+    },
+    "research_bonus": {
+        "pihc_magic_theory": -0.15
+    },
+    "cost": 0,
+    "default": true,
+    "cancel_if_invalid": false
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Move",
+    "priority": 0,
+    
+    "cost": 5,
+    "visible": {
+        "check_variable": {
+            "VAR_PIHC_WORLD_EXPO_VENUE": 0
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "set_variable": {
+            "VAR_PIHC_WORLD_EXPO_VENUE": 1
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "C22_MAIN.1"
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

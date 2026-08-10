@@ -1,0 +1,27 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_TERM_EXCHANGE_2",
+    "prerequisite": {
+        "focus": "FOCUS_C09_TERM_EXCHANGE_2"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "add_stability": 0.10,
+        "add_political_power": 150
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_FIRELIGHT",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

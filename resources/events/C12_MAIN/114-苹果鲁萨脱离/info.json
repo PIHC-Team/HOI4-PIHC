@@ -1,0 +1,81 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+
+        "add_political_power": -100,
+        "C12":{
+            "add_manpower":-5000,
+            "set_country_flag":"PIHC_COUNTRY_FLAG_C12_START_CIVIL_WAR_WITH_APPLEBLOOM",
+            "release_on_controlled" :"C14"
+        },
+        "if": {
+            "limit": {
+                "190": {
+                    "is_owned_and_controlled_by": "C12"
+                }
+            },
+                    "190": {
+            "transfer_state_to": "C14"
+        }
+        },
+        "if__D1": {
+            "limit": {
+                "564": {
+                    "is_owned_and_controlled_by": "C12"
+                }
+            },
+                    "564": {
+            "transfer_state_to": "C14"
+        }
+        },
+        "if__D2": {
+            "limit": {
+                "577": {
+                    "is_owned_and_controlled_by": "C12"
+                }
+            },
+                    "577": {
+            "transfer_state_to": "C14"
+        }
+        },
+        "if__D3": {
+            "limit": {
+                "599": {
+                    "is_owned_and_controlled_by": "C12"
+                }
+            },
+                    "599": {
+            "transfer_state_to": "C14"
+        }
+        },
+        "if__D4": {
+            "limit": {
+                "589": {
+                    "is_owned_and_controlled_by": "C12"
+                }
+            },
+                    "589": {
+            "transfer_state_to": "C14"
+        }
+        },
+"C12__D1":{
+"declare_war_on" : {
+    "target" : "C14",
+    "type" : "annex_everything"
+}
+},
+"C14":{
+    "add_manpower":5000,
+            "country_event": {
+                "id": "C12_MAIN.131",
+                "days": 2
+            }
+}
+        }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

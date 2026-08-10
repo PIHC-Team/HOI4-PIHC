@@ -1,0 +1,23 @@
+######################################
+sound = {
+	name = "magic_sound"
+	file = "menu/magic_sound.wav"
+	volume = 1
+	always_load = yes
+}
+
+soundeffect = {
+	name = "magic_sound_ev"
+	sounds = {
+		sound = "magic_sound"
+	}
+	volume = 3
+}
+
+category = {
+	name = "magic_sound_cat"
+	soundeffects = {
+		magic_sound_ev
+	}
+	compressor = master_compressor
+}

@@ -1,0 +1,56 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_power_balance_value": {
+                "id": "BOP_C02_INDEPENDENCE",
+                "value": -0.2,
+                "tooltip_side": "BOP_C02_INDEPENDENCE_LEFT_SIDE"
+            },
+            "add_stability": -0.1,
+            "if": {
+                "limit": {
+                    "TRIGGER_HAVE_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET": true
+                },
+                "DEL_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1": true
+            },
+            "else": {
+                "add_political_power": -100
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "550": {
+                "transfer_state_to": "C02"
+            },
+            "585": {
+                "transfer_state_to": "C02"
+            },
+            "606": {
+                "transfer_state_to": "C02"
+            },
+            "665": {
+                "transfer_state_to": "C02"
+            },
+            "518": {
+                "transfer_state_to": "C02"
+            },
+            "568": {
+                "transfer_state_to": "C02"
+            },
+            "578": {
+                "transfer_state_to": "C02"
+            },
+            "619": {
+                "transfer_state_to": "C02"
+            },
+            "549": {
+                "transfer_state_to": "C02"
+            }
+        }
+    },
+    "is_triggered_only": true
+}

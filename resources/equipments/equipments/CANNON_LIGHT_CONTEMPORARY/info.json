@@ -1,0 +1,19 @@
+{
+    "name": "Contemporary Light Cannon",
+    "parent": "EQUIPMENT_CANNON_LIGHT_MODERN",
+    "alpha_global": 1.0,
+    "reliability": 0.99,
+    "weight": 1.2,
+    
+    "resources": {
+        "steel": 6,
+        "rubber": 3,
+        "tungsten": 2
+    },
+    "ap_attack": 32.0,
+    "fuel_consumption": 0.16,
+
+    "maximum_speed": 6.0,
+    "entrenchment": 1.0,
+    "recon": 2
+}

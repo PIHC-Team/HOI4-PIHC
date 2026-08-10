@@ -1,0 +1,27 @@
+{
+    "name": "Rift",
+    "priority": 99999,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 1200,
+    "is_good": false,
+    "fire_only_once": true,
+    "activation": {
+        "always": false
+    },
+    "visible": {
+        "has_decision": "DECISION_C18_DIE_NEBENWELT_UNSTABLE_TIMER"
+    },
+    "available": {
+        "hidden_trigger": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_END_OF_COLLAPSE"
+        }
+    },
+    "timeout_effect": {
+        "custom_effect_tooltip": "DECISION_C18_DIE_NEBENWELT_UNSTABLE_TIMER_TOOLTIP",
+        "hidden_effect": {
+            "C18_RIFT": true
+        }
+    }
+}

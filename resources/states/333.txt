@@ -1,0 +1,40 @@
+state = {
+    id = 333
+    name = STATE_333
+    provinces = {
+        162
+        630
+        2537
+        2783
+        4669
+        6253
+        6282
+        6732
+        8203
+        9447
+        10364
+        10394
+        10401
+        10421
+        10447
+        10454
+        10459
+        10489
+    }
+    manpower = 26324
+    state_category = pastoral
+    history = {
+        owner = C26
+        victory_points = {
+            162
+            1
+        }
+        buildings = {
+
+        }
+        add_core_of = C26
+    }
+    resources = {
+        logs = 8
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "priority": 39999,
+    "allowed": {
+        
+    },
+    "visible": {
+        "AND": {
+            "has_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE",
+            "tag": "C08"
+        }
+    },
+    "visible_when_empty": true
+}

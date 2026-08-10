@@ -1,0 +1,40 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 4,
+
+    "category_air_balloon": {
+        "air_defence": 0.10
+    },
+    "category_air_galleon": {
+        "air_defence": 0.10
+    },
+    "category_air_airship": {
+        "air_defence": 0.10
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_flying_fortress"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_2_3A_PROVIDENCE",
+        "research_cost_coeff": 1.0
+    },
+    "path__D1": {
+        "leads_to_tech": "DOCTRINE_AIR_2_3B_GLORY_TO_QUEEN",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

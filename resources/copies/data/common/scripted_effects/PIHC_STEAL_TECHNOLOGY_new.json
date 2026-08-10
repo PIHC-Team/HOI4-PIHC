@@ -1,0 +1,121 @@
+{
+    "STEAL_TECHNOLOGY_BY_INTEL": {
+        "var:VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE": {
+            "PREV": {
+                "if": {
+                    "limit": {
+                        "intel_level_over": {
+                            "target": "PREV",
+                            "civilian_intel > 0.9": null,
+                            "army_intel > 0.5": null,
+                            "navy_intel > 0.3": null,
+                            "airforce_intel > 0.3": null
+                        }
+                    },
+                    "steal_random_tech_bonus": {
+                        "category": "pihc_all",
+                        "folder": "infantry_folder",
+                        "folder__D1": "support_folder",
+                        "folder__D2": "armour_folder",
+                        "folder__D3": "nsb_armour_folder",
+                        "folder__D4": "artillery_folder",
+                        "folder__D5": "air_techs_folder",
+                        "folder__D6": "bba_air_techs_folder",
+                        "folder__D7": "naval_folder",
+                        "folder__D8": "mtgnavalfolder",
+                        "folder__D9": "mtgnavalsupportfolder",
+                        "folder__D10": "industry_folder",
+                        "folder__D11": "electronics_folder",
+                        "bonus": 2.0,
+                        "dynamic": true,
+                        "name": "PIHC_STEALED_TECHNOLOGY",
+                        "target": "PREV",
+                        "uses": 2
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "intel_level_over": {
+                            "target": "PREV",
+                            "civilian_intel > 0.75": null,
+                            "army_intel > 0.3": null,
+                            "navy_intel > 0.1": null,
+                            "airforce_intel > 0.1": null
+                        }
+                    },
+                    "steal_random_tech_bonus": {
+                        "category": "pihc_all",
+                        "folder": "infantry_folder",
+                        "folder__D1": "support_folder",
+                        "folder__D2": "armour_folder",
+                        "folder__D3": "nsb_armour_folder",
+                        "folder__D4": "artillery_folder",
+                        "folder__D5": "air_techs_folder",
+                        "folder__D6": "bba_air_techs_folder",
+                        "folder__D7": "naval_folder",
+                        "folder__D8": "mtgnavalfolder",
+                        "folder__D9": "mtgnavalsupportfolder",
+                        "folder__D10": "industry_folder",
+                        "folder__D11": "electronics_folder",
+                        "bonus": 1.0,
+                        "dynamic": true,
+                        "name": "PIHC_STEALED_TECHNOLOGY",
+                        "target": "PREV",
+                        "uses": 2
+                    }
+                },
+                "else_if__D1": {
+                    "limit": {
+                        "intel_level_over": {
+                            "target": "PREV",
+                            "civilian_intel > 0.6": null,
+                            "army_intel > 0.1": null
+                        }
+                    },
+                    "steal_random_tech_bonus": {
+                        "category": "pihc_all",
+                        "folder": "infantry_folder",
+                        "folder__D1": "support_folder",
+                        "folder__D2": "armour_folder",
+                        "folder__D3": "nsb_armour_folder",
+                        "folder__D4": "artillery_folder",
+                        "folder__D5": "air_techs_folder",
+                        "folder__D6": "bba_air_techs_folder",
+                        "folder__D7": "naval_folder",
+                        "folder__D8": "mtgnavalfolder",
+                        "folder__D9": "mtgnavalsupportfolder",
+                        "folder__D10": "industry_folder",
+                        "folder__D11": "electronics_folder",
+                        "bonus": 0.5,
+                        "dynamic": true,
+                        "name": "PIHC_STEALED_TECHNOLOGY",
+                        "target": "PREV",
+                        "uses": 2
+                    }
+                },
+                "else": {
+                    "steal_random_tech_bonus": {
+                        "category": "pihc_all",
+                        "folder": "infantry_folder",
+                        "folder__D1": "support_folder",
+                        "folder__D2": "armour_folder",
+                        "folder__D3": "nsb_armour_folder",
+                        "folder__D4": "artillery_folder",
+                        "folder__D5": "air_techs_folder",
+                        "folder__D6": "bba_air_techs_folder",
+                        "folder__D7": "naval_folder",
+                        "folder__D8": "mtgnavalfolder",
+                        "folder__D9": "mtgnavalsupportfolder",
+                        "folder__D10": "industry_folder",
+                        "folder__D11": "electronics_folder",
+                        "bonus": 0.3,
+                        "dynamic": true,
+                        "name": "PIHC_STEALED_TECHNOLOGY",
+                        "target": "PREV",
+                        "uses": 2
+                    }
+                }
+            }
+        }
+    }
+}

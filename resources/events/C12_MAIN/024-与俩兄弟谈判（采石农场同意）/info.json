@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "effect_tooltip": {
+                "C07": {
+                    "add_political_power": 100,
+                    "add_timed_idea": {
+                        "idea": "IDEA_C12_CONTROL_ROCK_FARM",
+                        "days": 365
+                    }
+                },
+                "C12": {
+                    "add_timed_idea": {
+                        "idea": "IDEA_C12_ECONOMIC_CONTROL_OF_LAS_PEGASUS",
+                        "days": 365
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

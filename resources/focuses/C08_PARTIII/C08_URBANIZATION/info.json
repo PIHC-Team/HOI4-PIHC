@@ -1,0 +1,57 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_INDUSTRIAL_PLAN_1004",
+    "prerequisite": {
+        "focus": "FOCUS_C08_INDUSTRIAL_PLAN_1004"
+    },
+    "priority": 10,
+    "cost": 1,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_URBANIZATION_TOOLTIP",
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_URBANIZATION"
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_01"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_C08_RECONSTRUCTION_01",
+                "add_idea": "IDEA_C08_RECONSTRUCTION_02"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_02"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_C08_RECONSTRUCTION_02",
+                "add_idea": "IDEA_C08_RECONSTRUCTION_03"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_03"
+            },
+            "remove_ideas": "IDEA_C08_RECONSTRUCTION_03"
+        },
+        "888": {
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_HEALING_THE_TRAUMA",
+    "prerequisite": {
+        "focus": "FOCUS_C15_HEALING_THE_TRAUMA"
+    },
+    "cost": 3,
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "completion_reward": {
+        "remove_ideas": "IDEA_C15_DISARMED",
+        "swap_ideas": {
+            "add_idea": "volunteer_only",
+            "remove_idea": "disarmed_nation"
+        }
+    }
+}

@@ -1,0 +1,471 @@
+[zh.WORLD_TENSION_NAME]
+不和谐度
+[en.WORLD_TENSION_NAME]
+Disharmony
+
+[zh.SORT_BY_TENSION]
+按不和谐度排序
+[en.SORT_BY_TENSION]
+Sort by Disharmony
+
+[zh.MODIFIER_GENERATE_WARGOAL_TENSION_LIMIT]
+制造战争目标的不和谐度限制
+[en.MODIFIER_GENERATE_WARGOAL_TENSION_LIMIT]
+Generate war goal disharmony limit
+
+[zh.MODIFIER_GENERATE_WARGOAL_TENSION_LIMIT_AGAINST_COUNTRY]
+对该国制造战争目标的不和谐度限制
+[en.MODIFIER_GENERATE_WARGOAL_TENSION_LIMIT_AGAINST_COUNTRY]
+Generate war goal disharmony limit against country
+
+[zh.MODIFIER_JOIN_FACTION_TENSION_LIMIT]
+加入阵营的不和谐度限制
+[en.MODIFIER_JOIN_FACTION_TENSION_LIMIT]
+Join faction disharmony limit
+
+[zh.MODIFIER_LEND_LEASE_TENSION_LIMIT]
+租借法案的不和谐度限制
+[en.MODIFIER_LEND_LEASE_TENSION_LIMIT]
+Lend-lease disharmony limit
+
+[zh.MODIFIER_LEND_LEASE_TENSION_LIMIT_WITH_OVERLORD]
+来自傀儡国的租借法案不和谐度限制
+[en.MODIFIER_LEND_LEASE_TENSION_LIMIT_WITH_OVERLORD]
+Lend-lease disharmony limit from puppet
+
+[zh.MODIFIER_REQUEST_LEASE_TENSION_LIMIT]
+租借请求的不和谐度限制
+[en.MODIFIER_REQUEST_LEASE_TENSION_LIMIT]
+Lend-lease request disharmony limit
+
+[zh.MODIFIER_SEND_VOLUNTEERS_TENSION_LIMIT]
+派遣志愿军的不和谐度限制
+[en.MODIFIER_SEND_VOLUNTEERS_TENSION_LIMIT]
+Send volunteers disharmony limit
+
+[zh.MODIFIER_GUARANTEE_TENSION_LIMIT]
+保障独立的不和谐度限制
+[en.MODIFIER_GUARANTEE_TENSION_LIMIT]
+Guarantee disharmony limit
+
+[zh.MODIFIER_ENEMY_DECLARE_WAR_TENSION]
+敌国对我国宣战产生的不和谐度
+[en.MODIFIER_ENEMY_DECLARE_WAR_TENSION]
+Declare war disharmony on us
+
+[zh.MODIFIER_CIVIL_WAR_INVOLVEMENT_TENSION]
+介入内战造成不和谐度
+[en.MODIFIER_CIVIL_WAR_INVOLVEMENT_TENSION]
+Civil war involvement disharmony
+
+[zh.MODIFIER_EMBARGO_THRESHOLD_FACTOR]
+实施禁运的不和谐度限制
+[en.MODIFIER_EMBARGO_THRESHOLD_FACTOR]
+Embargo Disharmony Limit
+
+[zh.MODIFIER_EMBARGO_THRESHOLD_FACTOR_DESC]
+改变发送禁运所需要的世界不和谐度阈值。
+[en.MODIFIER_EMBARGO_THRESHOLD_FACTOR_DESC]
+Modifies the disharmony threshold that a target needs to have reached, in order to send an embargo.
+
+[zh.embargo_threshold_factor]
+实施禁运的不和谐度限制
+[en.embargo_threshold_factor]
+Embargo Disharmony Limit
+
+[zh.PEACE_THREAT_GENERATED]
+不和谐度：$VALUE|-$%
+[en.PEACE_THREAT_GENERATED]
+Disharmony: $VALUE|-$%
+
+[en.NETHERLANDS_GATHERING_STORM_DESC]
+The Dutch government eyes the mounting global disharmonys with concern. Between an ailing economy, a powerful pacifist movement, and a firm belief in neutrality to the point of driving potential allies away, they are unable to properly prepare their defenses.
+
+At the same time, the importance of the Netherlands as a gateway of trade into the continent means that both the British and the Germans desire Dutch ‘cooperation’ to thwart the other, and may take rejection as a reason for hostility. Perhaps withdrawal to the colonies is the only possible means to resist such an invasion...
+
+[en.PORTUGAL_GATHERING_STORM_DESC]
+Since Salazar’s rise to power in 1932, Portugal has been gradually distancing herself from the unstable period of the First Republic. Fiscal Autonomy and Political Independence from the major powers led to the creation of the Estado Novo, laying the foundations for the development of the Portuguese industry and the modernization of the army. 
+
+Now, Portugal must decide the way forward as political and social instability increases in neighboring Spain and international disharmonys are hopelessly worsening...
+
+[en.south_american_events_32_tt]
+§RWe will struggle to send volunteers due to§! §Y$undisturbed_isolation$§! §Rpolicy and the disharmony threshold!§!
+
+[zh.EFFECT_ADD_THREAT]
+不和谐度增加$THREAT|1R$。
+[en.EFFECT_ADD_THREAT]
+Disharmony is increased by $THREAT|1R$.
+
+[zh.EFFECT_REMOVE_THREAT]
+不和谐度减少$THREAT|1G$。
+[en.EFFECT_REMOVE_THREAT]
+Disharmony is decreased by $THREAT|1G$.
+
+[zh.FACTION_JOIN_THREAT_IMPACT]
+这将会改变$VAL$的不和谐度。
+[en.FACTION_JOIN_THREAT_IMPACT]
+This will change Disharmony by $VAL$.
+
+[zh.DIPLOMACY_GUARANTEE_DESC]
+保障$COUNTRY|H$独立意味着你将会对任何攻击它的国家宣战。保障其他国家独立会降低$THREAT|Y%$§Y不和谐度§!。
+[en.DIPLOMACY_GUARANTEE_DESC]
+Guaranteeing the independence of $COUNTRY|H$ means you will declare war on any country that attacks it. Guaranteeing will lower the §YDisharmony§! by $THREAT|Y%$.
+
+[zh.DIPLOMACY_REVOKE_GUARANTEE_DESC]
+撤销对$COUNTRY|Y$独立性的保障。撤销保障会提升$THREAT|Y%$§Y不和谐度§!。
+[en.DIPLOMACY_REVOKE_GUARANTEE_DESC]
+Revoke our guarantee and stop protecting $COUNTRY|Y$. Revoking guarantee increase §YDisharmony§! by $THREAT|Y%$.
+
+[zh.DIPLOMACY_LEND_LEASE_REASON_PUPPET]
+由于傀儡国自治度，不和谐度限制降低。
+[en.DIPLOMACY_LEND_LEASE_REASON_PUPPET]
+Disharmony limit reduced because of our puppets autonomy
+
+[zh.DIPLOMACY_INCOMING_LEND_LEASE_REASON_PUPPET]
+我们的自治等级降低了与宗主国的不和谐度限制。
+[en.DIPLOMACY_INCOMING_LEND_LEASE_REASON_PUPPET]
+Our autonomy level is reducing the disharmony limit with our master
+
+[zh.DR_FACTION_LOW_TENSION]
+不和谐度为§R$TENSION_DIFF$§!，对§Y$THEM$§!加入§Y$US$§!阵营来说过低
+[en.DR_FACTION_LOW_TENSION]
+Disharmony is §R$TENSION_DIFF$§! too low for §Y$THEM$§! to enter a faction with §Y$US$§!
+
+[zh.DR_FACTION_TENSION]
+不和谐度：§G$TENSION_DIFF$§!
+[en.DR_FACTION_TENSION]
+Disharmony: §G$TENSION_DIFF$§!
+
+[zh.DR_TOO_MUCH_THREAT]
+§Y$US|U$§!与这个阵营相比产生了过多的不和谐度： 
+[en.DR_TOO_MUCH_THREAT]
+§Y$US|U$§! generated too much disharmony compared the faction: 
+
+[zh.WARGOAL_THREAT_VALUE]
+正当化该战争目标会提高不和谐度$VALUE|Y%0$。
+[en.WARGOAL_THREAT_VALUE]
+Justification of this war goal will increase disharmony on $VALUE|Y%0$.
+
+[zh.DIPLOMACY_DEM_NO_THREAT_JUSTIFYING_WAR]
+民主主义国家无法对未造成不和谐度的国家正当化战争目标。
+[en.DIPLOMACY_DEM_NO_THREAT_JUSTIFYING_WAR]
+Democracies can’t justify war goals against countries that have not generated disharmony.
+
+[zh.DIPLOMACY_TOO_LOW_TENSION]
+我们需要不和谐度达到$LIMIT|%0Y$（目前：$TENSION|%0Y$）。
+[en.DIPLOMACY_TOO_LOW_TENSION]
+We need disharmony at $LIMIT|%0Y$ (currently: $TENSION|%0Y$).
+
+[zh.DIPLOMACY_TOO_LOW_TENSION_REASON]
+我方执行此行动的不和谐度限制包括以下因素：
+$REASON$
+[en.DIPLOMACY_TOO_LOW_TENSION_REASON]
+Our disharmony limit for this action due to:
+$REASON$
+
+[zh.DIPLOMACY_TOO_LOW_TENSION_REVERSED]
+他们需要不和谐度达到$LIMIT|%0Y$ （目前：$TENSION|%0Y$）。
+[en.DIPLOMACY_TOO_LOW_TENSION_REVERSED]
+They need disharmony at $LIMIT|%0Y$ (currently: $TENSION|%0Y$).
+
+[zh.DIPLOMACY_TOO_LOW_TENSION_REVERSED_REASON]
+对方执行此行动的不和谐度限制包括以下因素：
+$REASON$
+[en.DIPLOMACY_TOO_LOW_TENSION_REVERSED_REASON]
+Their disharmony limit for this action due to:
+$REASON$
+
+[zh.DIPLOMACY_TOO_LOW_TENSION_OTHER]
+$WHO|U$是$IDE$，需要不和谐度达到$LIMIT|%0Y$才能加入阵营（目前：$TENSION|%0Y$）。
+[en.DIPLOMACY_TOO_LOW_TENSION_OTHER]
+$WHO|U$ is $IDE$ and needs disharmony at $LIMIT|%0Y$ to join faction (currently: $TENSION|%0Y$).
+
+[zh.SEND_VOLUNTEERS_GENERATE_THREAT]
+
+
+将会产生§H$THREAT|1$%§!不和谐度。
+
+
+[zh.DIPLOMACY_OPINION_FOR_DEMO_FROM_WT_GENERATION]
+产生不和谐度：$VALUE|+=$
+[en.DIPLOMACY_OPINION_FOR_DEMO_FROM_WT_GENERATION]
+Generated Disharmony: $VALUE|+=$
+
+[zh.CIVIL_WAR_TENSION_DESC]
+想加入内战的话，不和谐度必须高于$MIN|0H%$，现在只有$CURRENT|0R%$。
+[en.CIVIL_WAR_TENSION_DESC]
+To join a civil war Disharmony must be at least $MIN|0H%$. Right now it is only $CURRENT|0R%$.
+
+[zh.DIPLOMACY_EMBARGO_THREAT_THRESHOLD_DESC]
+该国尚未产生$THREAT|H0$不和谐度。
+[en.DIPLOMACY_EMBARGO_THREAT_THRESHOLD_DESC]
+They have not generated $THREAT|H0$ Disharmony.
+
+[zh.DR_DISTANCE_BETWEEN_CAPITALS]
+距离（按不和谐度减少）： 
+[en.DR_DISTANCE_BETWEEN_CAPITALS]
+Distance (Reduced by Disharmony): 
+
+[zh.DR_CONDITIONAL_SURRENDER_WORLD_THREAT_SCALED]
+当前不和谐度： 
+[en.DR_CONDITIONAL_SURRENDER_WORLD_THREAT_SCALED]
+Current Global Disharmony: 
+
+[zh.RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC]
+不受意识形态与不和谐度的限制。
+[en.RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC]
+Unrestricted for any ideology at any Disharmony.
+
+[zh.RULE_ALLOW_WARGOALS_LIMITED_DESC]
+战争目标受限于意识形态和不和谐度。
+[en.RULE_ALLOW_WARGOALS_LIMITED_DESC]
+Wargoal Generation is limited by ideologies and Disharmony limits.
+
+[zh.RULE_OPTION_FREE_25]
+在不和谐度达到25%时无限制
+[en.RULE_OPTION_FREE_25]
+Free at 25% Disharmony
+
+[zh.RULE_OPTION_FREE_50]
+在不和谐度达到50%时无限制
+[en.RULE_OPTION_FREE_50]
+Free at 50% Disharmony
+
+[zh.RULE_OPTION_FREE_75]
+在不和谐度达到75%时无限制
+[en.RULE_OPTION_FREE_75]
+Free at 75% Disharmony
+
+[zh.RULE_OPTION_FREE_100]
+在不和谐度达到100%时无限制
+[en.RULE_OPTION_FREE_100]
+Free at 100% Disharmony
+
+[zh.RULE_ALLOW_WARGOALS_FREE_25_DESC]
+在不和谐度低于25%时无法制造战争目标，但在这之后所有国家都可以制造战争目标。该设定的优先级高于意识形态规则，但仍然允许通过国策获得战争目标。
+[en.RULE_ALLOW_WARGOALS_FREE_25_DESC]
+Wargoal generation is disabled below 25% Disharmony, but available for all nations afterwards. This overrides any ideology restrictions, but still allows gaining wargoals through focuses.
+
+[zh.RULE_ALLOW_WARGOALS_FREE_50_DESC]
+在不和谐度低于50%时无法制造战争目标，但在这之后所有国家都可以制造战争目标。该设定的优先级高于意识形态规则，但仍然允许通过国策获得战争目标。
+[en.RULE_ALLOW_WARGOALS_FREE_50_DESC]
+Wargoal generation is disabled below 50% Disharmony, but available for all nations afterwards. This overrides any ideology restrictions, but still allows gaining wargoals through focuses.
+
+[zh.RULE_ALLOW_WARGOALS_FREE_75_DESC]
+在不和谐度低于75%时无法制造战争目标，但在这之后所有国家都可以制造战争目标。该设定的优先级高于意识形态规则，但仍然允许通过国策获得战争目标。
+[en.RULE_ALLOW_WARGOALS_FREE_75_DESC]
+Wargoal generation is disabled below 75% Disharmony, but available for all nations afterwards. This overrides any ideology restrictions, but still allows gaining wargoals through focuses.
+
+[zh.RULE_ALLOW_WARGOALS_FREE_100_DESC]
+在不和谐度低于100%时无法制造战争目标，但在这之后所有国家都可以制造战争目标。该设定的优先级高于意识形态规则，但仍然允许通过国策获得战争目标。
+[en.RULE_ALLOW_WARGOALS_FREE_100_DESC]
+Wargoal generation is disabled below 100% Disharmony, but available for all nations afterwards. This overrides any ideology restrictions, but still allows gaining wargoals through focuses.
+
+[zh.RULE_ALLOW_LEND_LEASE_FREE_DESC]
+无论不和谐度如何，各国都可以给任意国家提供租借法案。
+[en.RULE_ALLOW_LEND_LEASE_FREE_DESC]
+Countries may lend-lease equipment to anyone at any Disharmony level.
+
+[zh.RULE_ALLOW_LEND_LEASE_LIMITED_DESC]
+租借法案受不和谐度和意识形态的限制。
+[en.RULE_ALLOW_LEND_LEASE_LIMITED_DESC]
+Lend-Lease is limited by Disharmony and ideology rules.
+
+[zh.RULE_ALLOW_VOLUNTEERS_FREE_DESC]
+无论不和谐度如何，各国都可以给任何国家派遣志愿军。
+[en.RULE_ALLOW_VOLUNTEERS_FREE_DESC]
+Countries may send Volunteers to any country regardless of Disharmony.
+
+[zh.RULE_ALLOW_VOLUNTEERS_LIMITED_DESC]
+派遣志愿军被不和谐度和意识形态所限制。
+[en.RULE_ALLOW_VOLUNTEERS_LIMITED_DESC]
+Sending Volunteers is restricted by Disharmony and ideology rules.
+
+[zh.RULE_ALLOW_GUARANTEES_FREE_DESC]
+无论不和谐度如何，各国可以在任何时候对任何国家保障独立。
+[en.RULE_ALLOW_GUARANTEES_FREE_DESC]
+The independence of any country can be guaranteed at any time, regardless of Disharmony.
+
+[zh.RULE_ALLOW_GUARANTEES_LIMITED_DESC]
+保障独立被不和谐度和意识形态所限制。
+[en.RULE_ALLOW_GUARANTEES_LIMITED_DESC]
+Issuing a Guarantee of Independence is restricted by Disharmony and ideology.
+
+[en.rising_tension]
+Rising Disharmony
+
+[en.test_the_chinese_focus_desc]
+The Chinese still refuse to acknowledge our liberation of Manchuria, and disharmonys along the border near Beijing have resulted in several skirmishes. If we manufacture an incident, we can escalate the conflict into full-scale war. This will give us the excuse we need to deal with the Chinese once and for all!
+
+[en.NORDIC_first_joint_institution_desc_dem]
+one where the cabinet members of the different countries in our supranational organization can discuss how to better combine our efforts to lead our people through the disharmonys rising in Europe.
+
+[en.chinese_war_focus_desc]
+The Marco Polo Bridge incident proved that the Chinese are not interested in cooperation. With increasing disharmony threatening the ensuing ceasefire, war may be the only means to bring the order to the Chinese nation.
+
+[en.northern_expansion_focus_desc]
+The Northern Expansion Doctrine, which has the support of the Imperial Army, recognizes that the Soviet Union poses the greatest threat to Japanese ambitions. With disharmonys rising in Europe, a favorable moment to attack the Russian Far East is bound to present itself. We must strike quickly.
+
+[zh.OPERATIVE_MISSION_DIPLOMATIC_PRESSURE_DESC]
+§L影响由AI控制的国家更亲近你的阵营并签订互不侵犯条约。玩家的国家在加入其它阵营时将受到更严苛的条件限制。§!
+§H每日外交施压：$BASE_ACCEPTANCE$§!
+ 基础：$BASE_ACCEPTANCE|G$
+§H每日不和谐度要求：-$BASE_TENSION|%$§!
+ 基础：§G-§!$BASE_TENSION|%G$
+[en.OPERATIVE_MISSION_DIPLOMATIC_PRESSURE_DESC]
+§LInfluence an AI controlled nation to prefer your Faction and Non-Aggression Pacts. Player nations will get tightened restrictions to join other Factions.§!
+§HDaily Diplomatic Pressure: $BASE_ACCEPTANCE$§!
+  Base: $BASE_ACCEPTANCE|G$
+§HDaily Disharmony requirements: -$BASE_TENSION|%$§!
+  Base: §G-§!$BASE_TENSION|%G$
+
+[zh.DIPLOMATIC_PRESSURE_TENSION_REQUIREMENTS_DRIFT]
+每日改变§Y不和谐度§!需求$DRIFT|1%H$
+[en.DIPLOMATIC_PRESSURE_TENSION_REQUIREMENTS_DRIFT]
+Changing the §Ydisharmony§! requirements by $DRIFT|1%H$ per day
+
+[zh.TRIGGER_MORE_THAN_X_THREAT]
+不和谐度高于$THREAT|%Y0$
+[en.TRIGGER_MORE_THAN_X_THREAT]
+More than $THREAT|%Y0$ Disharmony
+
+[zh.TRIGGER_LESS_THAN_X_THREAT]
+不和谐度低于$THREAT|%Y0$
+[en.TRIGGER_LESS_THAN_X_THREAT]
+Less than $THREAT|%Y0$ Disharmony
+
+[zh.TRIGGER_MORE_THAN_X_THREAT_ADDED]
+引发多于$THREAT|%H0$的不和谐度
+[en.TRIGGER_MORE_THAN_X_THREAT_ADDED]
+Caused more than $THREAT|%H0$ Disharmony
+
+[zh.TRIGGER_LESS_THAN_X_THREAT_ADDED]
+引发少于$THREAT|%H0$的不和谐度
+[en.TRIGGER_LESS_THAN_X_THREAT_ADDED]
+Caused less than $THREAT|%H0$ Disharmony
+
+[zh.tut_12_text_1]
+埃塞俄比亚投降了！你赢了！
+你可以通过§Y和平谈判§!来下达要求。我们建议你选择§Y夺取所有地区§!。
+
+每个要求将会或多或少的增加£world_tension_icon §Y不和谐度§!。§Y不和谐度§!越高，你离一场世界大战就越近。
+
+一些国家的特定§Y外交选项§!会被封锁，直到不和谐度增长到一定数值。越多下方的提示来了解更多。
+[en.tut_12_text_1]
+Ethiopia has surrendered! You have won!
+You can now make demands during the §YPeace Conference§!. We recommend that you choose to §YTake All States§!.
+
+Each demand you make will increase £world_disharmony_icon  §YDisharmony§! by a certain amount. The higher the §YDisharmony§! is, the closer you are to a World War.
+
+Some countries have certain §YDiplomatic Actions§! locked until Disharmony is high enough. Read more in the hint below.
+
+[zh.BUTTON_WIKI_WORLD_TENSION]
+在HOI4维基上阅读关于§H不和谐度§!的条目！
+[en.BUTTON_WIKI_WORLD_TENSION]
+Read about §HDisharmony§! on HOI4 Wiki!
+
+[zh.BUTTON_HINT_WORLD_TENSION]
+阅读§H不和谐度§!上的提示
+[en.BUTTON_HINT_WORLD_TENSION]
+Read the hint on §HDisharmony§!
+
+[zh.HINT_WORLD_TENSION]
+提示：不和谐度
+[en.HINT_WORLD_TENSION]
+Hint: Disharmony
+
+[zh.HINT_WORLD_TENSION_TEXT]
+这是£world_tension_icon  §Y不和谐度§!界面。所有引起不和谐度变化的事件都会在这里列出。
+
+不和谐度是一个用来描述这场游戏热度的度量。一些国家的§Y外交行动§!在不和谐度没有到达一定程度前无法执行。
+
+一般而言，轴心国家希望不和谐度保持低点来阻止民主国家干涉，而民主国家则希望不和谐度升高以便于干涉。
+
+宣战，正当化宣称，吞并领土，完成某些§Y国策§!都能升高不和谐度。
+
+不和谐度越高，你离一场世界大战就越近。
+[en.HINT_WORLD_TENSION_TEXT]
+This is the £world_disharmony_icon  §YDisharmony§! screen. All events that affect the Disharmony somehow, will be shown in the list here.
+
+Disharmony is a measurement of how heated the game has become. Certain countries may have certain §YDiplomatic Actions§! locked until Disharmony is high enough.
+
+Generally speaking, Axis powers want the Disharmony to stay low to prevent Democratic countries from intervening, while Democratic countries want Disharmony to be high so that they can intervene.
+
+Declaring War, justifying claims, annexing territory, completing certain §YNational Focuses§! are all examples of action that might increase Disharmony.
+
+The higher the Disharmony is, the closer you are to a World War.
+
+[zh.HINT_WORLD_TENSION_TEXT_2]
+£world_tension_icon  §Y不和谐度§!是一个用来描述这场游戏热度的度量。一些国家的§Y外交行动§!在不和谐度没有到达一定程度前无法执行。
+
+一般而言，法西斯和共产主义势力希望不和谐度保持低点来阻止民主国家干涉，而民主国家则希望不和谐度升高以便于干涉。
+
+宣战，正当化宣称，吞并领土，完成某些§Y国策§!都能升高不和谐度。
+
+不和谐度越高，你离一场世界大战就越近。
+[en.HINT_WORLD_TENSION_TEXT_2]
+£world_disharmony_icon  §YDisharmony§! is a measurement of how heated the game has become. Certain countries may have certain §YDiplomatic Actions§! locked until Disharmony is high enough.
+
+Generally speaking, Fascist and Communist powers want the Disharmony to stay low to prevent Democratic countries from intervening, while Democratic countries want Disharmony to be high so that they can intervene.
+
+Declaring War, justifying claims, annexing territory, completing certain §YNational Focuses§! are all examples of action that might increase Disharmony.
+
+The higher the Disharmony is, the closer you are to a World War.
+
+[zh.THREAT_TOOLTIP]
+§H不和谐度
+§! 当前数值：$VAL|1%H$
+[en.THREAT_TOOLTIP]
+§HDisharmony
+§! Current value: $VAL|1%H$
+
+[zh.THREAT_LARGEST_DESC]
+制造不和谐度最多的国家是$COUNTRY|H$（$VAL$）
+[en.THREAT_LARGEST_DESC]
+The Largest Disharmony has been generated by $COUNTRY|H$ ($VAL$)
+
+[zh.NO_THREAT_SOURCES]
+§H当前没有不和谐度来源§!
+[en.NO_THREAT_SOURCES]
+§HNo current sources of disharmony§!
+
+[zh.GENERATE_WARGOAL_TENSION_DESC]
+需要$VAL|%Y0$不和谐度来制造战争目标。
+
+[en.GENERATE_WARGOAL_TENSION_DESC]
+Needs $VAL|%Y0$ disharmony to justify a war goal.
+
+
+[zh.JOIN_FACTION_TENSION_DESC]
+需要$VAL|%Y0$不和谐度来加入或创建一个阵营。
+
+[en.JOIN_FACTION_TENSION_DESC]
+Needs $VAL|%Y0$ disharmony to join or create a faction.
+
+
+[zh.LEND_LEASE_TENSION_DESC]
+需要$VAL|%Y0$不和谐度来送出一份租借法案援助。
+
+[en.LEND_LEASE_TENSION_DESC]
+Needs $VAL|%Y0$ disharmony to send a lend-lease aid.
+
+
+[zh.SEND_VOLUNTEERS_TENSION_DESC]
+需要$VAL|%Y0$不和谐度来派遣志愿军。
+
+[en.SEND_VOLUNTEERS_TENSION_DESC]
+Needs $VAL|%Y0$ disharmony to send volunteer forces.
+
+
+[zh.GUARANTEE_TENSION_DESC]
+需要$VAL|%Y0$不和谐度来保证另一个国家的独立。
+
+[en.GUARANTEE_TENSION_DESC]
+Needs $VAL|%Y0$ disharmony to guarantee another nation’s independence.
+
+
+[zh.THREAT_WINDOW_NAME]
+不和谐度历史记录
+[en.THREAT_WINDOW_NAME]
+Disharmony history
+

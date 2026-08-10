@@ -1,0 +1,13 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_DEM_THE_MASTERMIND",
+    "prerequisite": {
+        "focus": "FOCUS_C01_DEM_THE_MASTERMIND"
+    },
+    "completion_reward": {
+        "news_event": {
+            "id": "C01_MAIN.29"
+        }
+    },
+    "cost": 4
+}

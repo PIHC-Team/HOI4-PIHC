@@ -1,0 +1,28 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_GLORY_PONIES",
+    "allow_branch": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_6MY_C15_BLOOD_CRYSTAL": true
+    },
+    "bypass": {
+        "has_tech": "TECHNOLOGY_TECH_MAGI_DARKMAGIC"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "set_technology": {
+            "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_6MY_C15_BLOOD_CRYSTAL": true,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

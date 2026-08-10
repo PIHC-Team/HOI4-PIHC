@@ -1,0 +1,65 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_010_CORRUPTION",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C18_010_CORRUPTION"
+    },
+    "cost": 6,
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7"
+    },
+    "select_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.41",
+                "days": 7
+            },
+            "country_event__D1": {
+                "id": "C18_MAIN.40",
+                "days": 21
+            }
+        }
+    },
+    "completion_reward": {
+        "C18_DEL_NIRIK_0_10": true,
+        "country_event": {
+            "id": "C18_MAIN.42"
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_BLOSSOM",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE"
+        },
+        "custom_trigger_tooltip__D1": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_AQUAMARINE",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2"
+        },
+        "custom_trigger_tooltip__D2": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_BURNT_UMBER",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3"
+        },
+        "custom_trigger_tooltip__D3": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_COMPOSED",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4"
+        },
+        "custom_trigger_tooltip__D4": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_GRASS_GREEN",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5"
+        },
+        "custom_trigger_tooltip__D5": {
+            "tooltip": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE_TOOLTIP_OCHRE",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

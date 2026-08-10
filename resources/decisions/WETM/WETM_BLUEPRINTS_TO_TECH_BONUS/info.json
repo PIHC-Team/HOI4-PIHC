@@ -1,0 +1,41 @@
+{
+    "name": "Blueprints to Tech bonus",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "OR": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT": true,
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C07",
+            "is_in_faction_with": "C07",
+            "AND": {
+                "owns_state": 562,
+                "controls_state": 562
+            }
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_300": true
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_300": true
+    },
+    "custom_cost_text": "CUSTOM_COST_BLUEPRINTS_300",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_BLUEPRINT_300": true,
+        "add_tech_bonus": {
+            "bonus": 0.30,
+            "uses": 1,
+            "category": "pihc_all"
+        },
+        "add_breakthrough_progress": {
+            "specialization": "all",
+            "value": 0.5
+        }
+    },
+    "ai_will_do": {
+        "base": 2
+    }
+}

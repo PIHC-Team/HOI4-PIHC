@@ -1,0 +1,16 @@
+{
+    "option": {
+        "ai_chance": {
+            "factor": 100
+        },
+        "ADD_INVENTORY_ITEM_4EP_BIG_BUCKS_DIARY_1": true,
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EVIDENCE_MANEHATTAN_2",
+        "hidden_effect": {
+            "country_event": {      
+                "id": "C08_MAIN.3",
+                "days": 21
+            }
+        }
+    },
+    "is_triggered_only": true
+}

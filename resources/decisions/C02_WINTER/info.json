@@ -1,0 +1,13 @@
+{
+    "priority": 10001,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_HARSH_WINTER",
+            "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C02_HARSH_WINTER_DEBUG"
+        }
+    },
+    "visible_when_empty": true
+}

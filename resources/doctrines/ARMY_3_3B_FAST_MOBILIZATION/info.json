@@ -1,0 +1,36 @@
+{
+    "category": "land",
+    "x": 2,
+    "y": 6,
+    "xor": [
+        "DOCTRINE_ARMY_3_3A_PONIES_WAR"
+    ],
+
+    "training_time_army_factor": -0.10,
+    "minimum_training_level": -0.10,
+    "enable_tactic": "tactic_infantry_charge",
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_rose_of_will"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_3_4B_WAR_OF_WILL",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Timbucktu",
+    "priority": 99,
+    
+    "visible": {
+        "check_variable": {
+            "VAR_PIHC_WORLD_EXPO_VENUE": 8
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C22_MAIN.19"
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_DEM_A_LIGHTER_HOOF",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C01_DEM_A_LIGHTER_HOOF"
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C01_MAIN.28"
+        }
+    },
+    "cost": 1
+}

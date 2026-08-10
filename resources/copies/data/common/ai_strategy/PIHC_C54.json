@@ -1,0 +1,258 @@
+{
+    "C54_dont_use_traditional_guns": {
+        "allowed": {
+            "original_tag": "C54"
+        },
+        "enable": {
+            "date > 1002.6.1": null
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "equipment_variant_production_factor",
+            "id": "ARCHETYPE_INFANTRY",
+            "value": -100
+        },
+        "ai_strategy__D1": {
+            "type": "equipment_production_min_factories_archetype",
+            "id": "ARCHETYPE_WITCHCRAFT",
+            "value": 4
+        }
+    },
+    "C54_against_empire": {
+        "allowed": {
+            "original_tag": "C54"
+        },
+        "enable": {
+            "NOT": {
+                "has_government": "despotic"
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "antagonize",
+            "id": "C01",
+            "value": 100
+        },
+        "ai_strategy__D1": {
+            "type": "antagonize",
+            "id": "C01",
+            "value": 100
+        },
+        "ai_strategy__D2": {
+            "type": "antagonize",
+            "id": "C02",
+            "value": 100
+        },
+        "ai_strategy__D3": {
+            "type": "prepare_for_war",
+            "id": "C01",
+            "value": 100
+        }
+    },
+    "C54_mainly_defense_empire_not_others": {
+        "allowed": {
+            "original_tag": "C54"
+        },
+        "enable": {
+            "has_government": "harmonicism"
+        },
+        "abort": {
+            "has_war_with": "C19"
+        },
+        "ai_strategy": {
+            "type": "befriend",
+            "id": "C19",
+            "value": 25
+        },
+        "ai_strategy__D1": {
+            "type": "befriend",
+            "id": "C55",
+            "value": 25
+        },
+        "ai_strategy__D2": {
+            "type": "prepare_for_war",
+            "id": "C01",
+            "value": 10
+        },
+        "ai_strategy__D3": {
+            "type": "dont_defend_ally_borders",
+            "id": "C19",
+            "value": 10
+        },
+        "ai_strategy__D4": {
+            "type": "dont_defend_ally_borders",
+            "id": "C55",
+            "value": 10
+        }
+    },
+    "C54_help_resistance": {
+        "allowed": {
+            "original_tag": "C54"
+        },
+        "enable": {
+            "NOT": {
+                "has_government": "despotic"
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "send_lend_lease_desire",
+            "id": "C08",
+            "value": 50
+        }
+    },
+    "C54_keep_building_arimies": {
+        "allowed": {
+            "original_tag": "C54"
+        },
+        "enable": {
+            "is_subject": false
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "build_army",
+            "id": "suppression",
+            "value": -1000
+        }
+    },
+    "C54_spend_xp_to_template_before": {
+        "allowed": {
+            "tag": "C54"
+        },
+        "enable": {
+            "date > 1002.1.1": null
+        },
+        "abort": {
+            "date > 1005.1.1": null
+        },
+        "ai_strategy": {
+            "type": "land_xp_spend_priority",
+            "id": "division_template",
+            "value": 40
+        }
+    },
+    "C54_unit_production": {
+        "allowed": {
+            "tag": "C54"
+        },
+        "enable": {
+            "always": true
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "role_ratio",
+            "id": "infantry_traditional_small",
+            "value": 0
+        },
+        "ai_strategy__D1": {
+            "type": "role_ratio",
+            "id": "infantry_traditional",
+            "value": 0
+        },
+        "ai_strategy__D2": {
+            "type": "role_ratio",
+            "id": "infantry_magical_small",
+            "value": 15
+        },
+        "ai_strategy__D3": {
+            "type": "role_ratio",
+            "id": "infantry_magical",
+            "value": 40
+        },
+        "ai_strategy__D4": {
+            "type": "role_ratio",
+            "id": "discord_infantry_automata_default",
+            "value": 0
+        },
+        "ai_strategy__D5": {
+            "type": "role_ratio",
+            "id": "discord_infantry_automata_large",
+            "value": 0
+        },
+        "ai_strategy__D6": {
+            "type": "role_ratio",
+            "id": "armor_generic",
+            "value": 0
+        },
+        "ai_strategy__D7": {
+            "type": "role_ratio",
+            "id": "titan_generic",
+            "value": 0
+        },
+        "ai_strategy__D8": {
+            "type": "role_ratio",
+            "id": "special_generic",
+            "value": 1
+        },
+        "ai_strategy__D9": {
+            "type": "unit_ratio",
+            "id": "fighter",
+            "value": 50
+        },
+        "ai_strategy__D10": {
+            "type": "unit_ratio",
+            "id": "cas",
+            "value": 25
+        },
+        "ai_strategy__D11": {
+            "type": "unit_ratio",
+            "id": "tactical_bomber",
+            "value": 15
+        },
+        "ai_strategy__D12": {
+            "type": "unit_ratio",
+            "id": "strategic_bomber",
+            "value": 1
+        },
+        "ai_strategy__D13": {
+            "type": "unit_ratio",
+            "id": "naval_bomber",
+            "value": 10
+        },
+        "ai_strategy__D14": {
+            "type": "equipment_production_factor",
+            "id": "heavy_fighter",
+            "value": -40
+        },
+        "ai_strategy__D15": {
+            "type": "unit_ratio",
+            "id": "heavy_fighter",
+            "value": 20
+        },
+        "ai_strategy__D16": {
+            "type": "unit_ratio",
+            "id": "capital_ship",
+            "value": 10
+        },
+        "ai_strategy__D17": {
+            "type": "unit_ratio",
+            "id": "submarine",
+            "value": 10
+        },
+        "ai_strategy__D18": {
+            "type": "unit_ratio",
+            "id": "screen_ship",
+            "value": 40
+        },
+        "ai_strategy__D19": {
+            "type": "unit_ratio",
+            "id": "convoy",
+            "value": 15
+        },
+        "ai_strategy__D20": {
+            "type": "equipment_production_factor",
+            "id": "fighter",
+            "value": 5
+        },
+        "ai_strategy__D21": {
+            "type": "equipment_production_factor",
+            "id": "infantry",
+            "value": 20
+        },
+        "ai_strategy__D22": {
+            "type": "equipment_production_factor",
+            "id": "artillery",
+            "value": 10
+        }
+    }
+}

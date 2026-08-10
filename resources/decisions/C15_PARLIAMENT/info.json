@@ -1,0 +1,24 @@
+{
+    "priority": 20000,
+    "allowed": {
+        "OR": {
+            "tag": "C15",
+            "tag__D1": "C01",
+            "tag__D2": "C08",
+            "tag__D3": "C11"
+        }
+    },
+    "visible": {
+        "C15": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C15_PARLIAMENT_WORKING"
+        },
+        "if": {
+            "limit": {
+                "tag": "C08"
+            },
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_PARLIAMENT"
+        }
+    },
+    "scripted_gui": "C15_PARLIAMENT_GUI",
+    "visible_when_empty": true
+}

@@ -1,0 +1,124 @@
+{
+    "tree": "C15_MAIN",
+    "parent": "FOCUS_C15_REVELATION",
+    "prerequisite": {
+        "focus": "FOCUS_C15_REVELATION"
+    },
+    "cost": 6,
+    "will_lead_to_war_with": "C11",
+    "completion_reward": {
+        "swap_ideas": {
+            "remove_idea": "limited_conscription",
+            "add_idea": "extensive_conscription"
+        },
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_C15_TRIBUTED_LOVE"
+            },
+            "remove_ideas": "IDEA_C15_TRIBUTED_LOVE"
+        },
+        "if__D1": {
+            "limit": {
+                "has_idea": "IDEA_C15_TRIBUTED_LOVE_2"
+            },
+            "remove_ideas": "IDEA_C15_TRIBUTED_LOVE_2"
+        },
+        "if__D2": {
+            "limit": {
+                "has_idea": "IDEA_C15_TRIBUTED_LOVE_3"
+            },
+            "remove_ideas": "IDEA_C15_TRIBUTED_LOVE_3"
+        },
+        "if__D3": {
+            "limit": {
+                "is_guaranteed_by": "C01"
+            },
+            "C01": {
+                "diplomatic_relation": {
+                    "country": "C15",
+                    "relation": "guarantee",
+                    "active": false
+                }
+            }
+        },
+        "if__D4": {
+            "limit": {
+                "is_guaranteed_by": "C11"
+            },
+            "C11": {
+                "diplomatic_relation": {
+                    "country": "C15",
+                    "relation": "guarantee",
+                    "active": false
+                }
+            }
+        },
+        "if__D5": {
+            "limit": {
+                "345": {
+                    "is_demilitarized_zone": true
+                }
+            },
+            "345": {
+                "set_demilitarized_zone": false
+            }
+        },
+        "if__D6": {
+            "limit": {
+                "345": {
+                    "is_core_of": "C11",
+                    "is_owned_and_controlled_by": "C15"
+                }
+            },
+            "345": {
+                "remove_core_of": "C11"
+            }
+        },
+        "if__D7": {
+            "limit": {
+                "345": {
+                    "is_owned_and_controlled_by": "C11"
+                }
+            },
+            "345": {
+                "add_core_of": "C15",
+                "add_claim_by": "C15"
+            }
+        },
+        "news_event": {
+            "id": "SUPER_NEWS.1"
+        }
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C15_CONSCRIPTION",
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C15_INDEPENDENCE_WAR_THEOLOGY_TOOLTIP",
+            "OR": {
+                "check_variable": {
+                    "var": "C15_full_support",
+                    "compare": "greater_than_or_equals",
+                    "value": 350
+                },
+                "check_variable__D1": {
+                    "var": "parliament_seat_array^1",
+                    "compare": "greater_than_or_equals",
+                    "value": 300
+                }
+            },
+            "check_variable": {
+                "var": "parliament_seat_array^4",
+                "compare": "less_than_or_equals",
+                "value": 65
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

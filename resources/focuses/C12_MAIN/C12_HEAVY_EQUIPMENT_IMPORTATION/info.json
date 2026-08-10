@@ -1,0 +1,36 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_timed_idea" : {
+            "idea": "IDEA_C12_DEVELOPMENT_ALLOWANCE_OF_LAS_PEGASUS",
+            "days": 180
+        }
+    },
+    "available": {
+        "country_exists": "C07",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C12_REFUSE_SECOND_BATCH_OF_SPONSORSHIP"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_C12_REFUSE_SECOND_BATCH_OF_SPONSORSHIP_TRIGGER_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

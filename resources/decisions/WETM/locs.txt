@@ -1,0 +1,21 @@
+[en.@]
+Development Bonds Trade Market
+[zh.@]
+发展债券贸易市场
+
+[en.@desc]
+In WETM (Western Equestria Trade Market / Development Bonds Trade Market), you can find certain scarce resources to buy and sell. If you are inside the WETA (Western Equestria Trade Alliance), there will be more options available to you.
+Scarce resources we have:
+$WETM_ZAP_APPLES$: [?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE|G0] ([?ROOT.VAR_ZAP_APPLES_PRODUCE|=+0] estimated per year)
+$WETM_ORE_BOULDERS$: [?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER|G0] ([?ROOT.VAR_ORE_BOULDERS_PRODUCE|=+0] per month)
+$WETM_BLUEPRINTS$: [?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_BLUEPRINT|G0] ([?ROOT.VAR_BLUEPRINTS_PRODUCE|=+0] per month)
+$WETM_DEV_BONDS$: [?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS|G0]
+In WETM, $WETM_DEV_BONDS$ can be considered as the common currency, which can be used for trading or investing in light industry in states; $WETM_ZAP_APPLES$ can be bought when in the same faction as Appleloosa; $WETM_ORE_BOULDERS$ can be bought when in the same faction as Rock Farm; $WETM_BLUEPRINTS$ can be bought when in the same faction as Las Pegasus; more $WETM_DEV_BONDS$ will be issued when in the same faction as Sire’s Hollow.
+[zh.@desc]
+在西小马国贸易市场 (发展债券贸易市场) 中，你可以找到一些稀缺资源进行购买和出售。如果你在西小马国贸易同盟内部，你将有更多的选择。
+我们有以下稀缺资源：
+$WETM_ZAP_APPLES$: [?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE|G0] (年产量预计 [?ROOT.VAR_ZAP_APPLES_PRODUCE|=+0])
+$WETM_ORE_BOULDERS$：[?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER|G0] (月产量 [?ROOT.VAR_ORE_BOULDERS_PRODUCE|=+0])
+$WETM_BLUEPRINTS$：[?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_BLUEPRINT|G0] (月产量 [?ROOT.VAR_BLUEPRINTS_PRODUCE|=+0])
+$WETM_DEV_BONDS$：[?ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS|G0]
+在西小马国贸易市场中，$WETM_DEV_BONDS$ 可以被视作通行的货币，可以用于交易或在地区投资建设轻工业；当与苹果鲁萨在同一阵营中时可以进行 $WETM_ZAP_APPLES$ 兑换；当与采石农场在同一阵营中时可以进行 $WETM_ORE_BOULDERS$ 兑换；当与洛马基地在同一阵营中时可以进行 $WETM_BLUEPRINTS$ 兑换；当与名流谷在同一阵营中时增发债券可以获得更多的 $WETM_DEV_BONDS$。

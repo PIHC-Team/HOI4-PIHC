@@ -1,0 +1,36 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_equipment_to_stockpile": {
+                "type": "EQUIPMENT_RANGED_HANDGONNE",
+                "amount": -821
+            },
+            "add_equipment_to_stockpile__D1": {
+                "type": "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II",
+                "amount": -407
+            },
+            "add_equipment_to_stockpile__D2": {
+                "type": "EQUIPMENT_SHIELD_CROSSBOW",
+                "amount": -105
+            },
+            "add_equipment_to_stockpile__D3": {
+                "type": "EQUIPMENT_SUPPORT_I",
+                "amount": -122
+            },
+            "add_equipment_to_stockpile__D4": {
+                "type": "EQUIPMENT_CANNON_LIGHT_CATAPULT",
+                "amount": -51
+            },
+            "C01": {
+                "country_event": {      
+                    "id": "C08_MAIN.41"
+                }
+            }
+                
+        }
+    ],
+    "is_triggered_only": true
+}

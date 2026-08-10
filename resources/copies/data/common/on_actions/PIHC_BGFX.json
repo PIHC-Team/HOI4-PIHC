@@ -1,0 +1,33 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C00": {
+                    "every_owned_state": {
+                        "add_building_construction": {
+                            "type": "pihc_bgfx_fog",
+                            "level": 1,
+                            "instant_build": true,
+                            "province": {
+                                "all_provinces": true
+                            }
+                        }
+                    }
+                },
+                "C26": {
+                    "every_owned_state": {
+                        "ADD_FOG_OF_WAR_BUILDING": true
+                    }
+                },
+                "C36": {
+                    "every_owned_state": {
+                        "ADD_FOG_OF_WAR_BUILDING": true
+                    }
+                },
+                "218": {
+                    "ADD_FOG_OF_WAR_BUILDING": true
+                }
+            }
+        }
+    }
+}

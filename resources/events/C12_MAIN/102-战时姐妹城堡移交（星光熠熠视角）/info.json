@@ -1,0 +1,47 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "if": {
+                "limit": {
+                    "country_exists": "C14"
+                },
+                "C14": {
+                    "transfer_state": 86,
+                    "country_event": {
+                        "id": "C12_MAIN.103",
+                        "days": 2,
+                        "random_days": 2
+                    },
+                    "hidden_effect": {
+                        "set_country_flag": "PIHC_C08_STARLIGHT_TRANSFER_CASTLE_TO_C14"
+                    }
+                }
+            },
+            "else": {
+                "C12": {
+                    "transfer_state": 86,
+                    "country_event": {
+                        "id": "C12_MAIN.103",
+                        "days": 2,
+                        "random_days": 2
+                    },
+                    "hidden_effect": {
+                        "set_country_flag": "PIHC_C08_STARLIGHT_TRANSFER_CASTLE_TO_C12"
+                    }
+                }
+            },
+            "add_political_power": 150
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "add_political_power": -100
+        }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C02": {
+                "leave_faction": true,
+                "create_faction": "FACTION_MARSHAL_TRIXIE"
+            },
+            "news_event": {      
+                "id": "C08_MAIN.55"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

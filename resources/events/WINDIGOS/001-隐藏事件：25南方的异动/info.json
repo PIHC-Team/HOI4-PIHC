@@ -1,0 +1,24 @@
+{
+    "immediate": {
+        "C26": {
+            "news_event": {
+                "id": "WINDIGOS.2"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "trigger": {
+        "tag": "C26",
+        "threat > 0.24": null
+    },
+    "mean_time_to_happen": {
+        "months": 1
+    }
+}

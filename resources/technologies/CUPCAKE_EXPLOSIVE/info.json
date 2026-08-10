@@ -1,0 +1,43 @@
+{
+    "name": "Powder Explosive",
+    "category": "infantry",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 2,
+    "y": 5,
+    "size": "small",
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [],
+    "enable_subunits": [],
+    "enable_equipment_modules": [
+        "MODULE_PROJECTILE_3B_CUPCAKE"
+    ],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_MAGICAL_HANDGONNE",
+        "research_cost_coeff": 1,
+        "ignore_for_layout": true
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_LANDMINE",
+        "research_cost_coeff": 1
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 1,
+            "arms_factory > 120": null
+        },
+        "modifier__D2": {
+            "factor": 10,
+            "date > 1010.1.1": null
+        }
+    },
+    "research_cost": 3,
+    "start_year": 1002
+}

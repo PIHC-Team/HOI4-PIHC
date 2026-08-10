@@ -1,0 +1,32 @@
+{
+    "name": "Pressure Liberation Front",
+    "priority": 100,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 120,
+    "is_good": true,
+    "activation": {
+        "C02": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C02_INTERFERE_C06"
+        },
+        "NOT": {
+            "C06": {
+                "has_war_with": "C08"
+            }
+        }
+    },
+    "available": {
+        "NOT": {
+            "C02": {
+                "has_war_with": "C08"
+            }
+        }
+    },
+    "war_with_on_timeout": "C08",
+    "war_with_on_complete": "C08",
+    "ai_will_do": {
+        "base": 0
+    },
+    "fire_only_once": true
+}

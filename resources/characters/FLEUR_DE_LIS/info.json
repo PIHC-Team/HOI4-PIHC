@@ -1,0 +1,34 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_FASHION_IDOL"
+        ],
+        "on_add": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "CHARACTER_FANCY_PANTS",
+                        "NOT": {
+                            "has_idea": "IDEA_C01_HOUSE_OF_CARDS"
+                        }
+                    },
+                    "add_ideas": "IDEA_C01_HOUSE_OF_CARDS"
+                }
+            }
+        },
+        "on_remove": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_C01_HOUSE_OF_CARDS"
+                    },
+                    "remove_ideas": "IDEA_C01_HOUSE_OF_CARDS"
+                }
+            }
+        },
+        "removal_cost": 350
+    }
+}

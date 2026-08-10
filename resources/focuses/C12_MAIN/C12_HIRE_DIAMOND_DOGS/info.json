@@ -1,0 +1,37 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TOP_SECRET_PERFORMANCE_TECHNIQUE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_TOP_SECRET_PERFORMANCE_TECHNIQUE"
+    },
+    
+    "cost": 4,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.75,
+            "uses": 2,
+            "category": "pihc_support_engineer"
+        },
+        "// add_equipment_bonus": {
+            "name": "FOCUS_C12_HIDE_DIAMOND_DOGS",
+            "bonus": {
+                "engineer": {
+                    "entrenchment": 0.5,
+                    "combat_width": -5,
+                    "instant": true
+                }
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

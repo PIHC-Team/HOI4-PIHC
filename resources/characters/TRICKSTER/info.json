@@ -1,0 +1,18 @@
+{
+    "name": "Trickster",
+    "gender": "male",
+    "country_leader": {
+        "ideology": "fascism_totalitarianism",
+        "traits": [
+        ]
+    },
+    "advisor": {
+        "slot": "high_command",
+        "ledger": "military",
+        "cost": 150,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_RULE_ENFORCER"
+        ]
+    }
+}

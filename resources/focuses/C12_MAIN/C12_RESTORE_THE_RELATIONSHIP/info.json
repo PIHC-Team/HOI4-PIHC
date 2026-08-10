@@ -1,0 +1,80 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_ROAD_OF_APPLELOOSA",
+    "prerequisite": {
+        "focus": "FOCUS_C12_ROAD_OF_APPLELOOSA"
+    },
+    "cost": 8,
+    "bypass": {
+        "NOT": {
+            "country_exists": "C14"
+        }
+    },
+    "completion_reward": {
+        "effect_tooltip": {
+            "annex_country": {
+                "target": "C14",
+                "transfer_troops": true
+            }
+        },
+        "hidden_effect": {
+            "set_variable": {
+                "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                "value": "C14"
+            },
+            "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+            "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+        },
+        "190": {
+            "if": {
+                "limit": {
+                    "is_owned_and_controlled_by": "C12"
+                },
+                "BUILD_A_CIC": true,
+                "BUILD_A_CIC__D1": true,
+                "BUILD_A_CIC__D2": true,
+                "BUILD_AN_INFRA": true,
+                "BUILD_AN_INFRA__D1": true
+            }
+        }
+    },
+    "available": {
+"OR":{
+        "NOT" : { "country_exists" :"C31"},
+        "C31":{
+"OR":{
+    "is_in_faction_with":"C12",
+    "has_capitulated":true,
+    "is_subject_of":"C12",
+    "NOT":{
+        "has_war_with":"C12"
+    }
+    }
+}
+    },
+        "C14": {
+            "hidden_trigger": {
+                "is_ai": true
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "C14": {"has_war":true}
+            },
+            "C14":{
+                "has_full_control_of_state":190,
+                "has_full_control_of_state__D1":564,
+                "surrender_progress < 0.2":null
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

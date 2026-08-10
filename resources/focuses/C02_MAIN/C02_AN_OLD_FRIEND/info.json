@@ -1,0 +1,45 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_PATH_TO_FREEDOM",
+    "prerequisite": {
+        "focus": "FOCUS_C02_PATH_TO_FREEDOM"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C02_LOYALTY"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "add_power_balance_value": {
+            "id": "BOP_C02_INDEPENDENCE",
+            "value": 0.10,
+            "tooltip_side": "BOP_C02_INDEPENDENCE_RIGHT_SIDE"
+        }
+    },
+    "available": {
+        "NOT": {
+            "has_war_with": "C08"
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "C02_PIN_SWITCH_ON_TOOLITP",
+            "has_country_flag": "PIHC_INVENTORY_ITEM_5LG_C02_PIN_o0_SWITCH_ON"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP",
+                "always": false
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

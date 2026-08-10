@@ -1,0 +1,39 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "add_to_variable": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4": 3.20
+                },
+                "add_to_variable__D1": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^6": 1.40
+                },
+                "add_to_variable__D2": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^0": 0.02
+                },
+                "add_to_variable__D3": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^1": 0.10
+                },
+                "add_to_variable__D4": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^2": 0.08
+                },
+                "add_to_variable__D5": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^3": 0.06
+                },
+                "add_to_variable__D6": {
+                    "C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^5": 0.12
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

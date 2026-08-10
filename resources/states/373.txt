@@ -1,0 +1,40 @@
+state = {
+    id = 373
+    name = STATE_373
+    provinces = {
+        1402
+        2205
+        3213
+        4041
+        4293
+        4469
+        5370
+        5995
+        7390
+        7709
+        9005
+        9635
+        10557
+        10639
+        10671
+        10678
+        10760
+    }
+    manpower = 2425
+    state_category = city
+    history = {
+        owner = C65
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 4
+            arms_factory = 2
+            1402 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C65
+    }
+    resources = {
+
+    }
+}

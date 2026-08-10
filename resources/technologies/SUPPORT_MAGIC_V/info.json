@@ -1,0 +1,47 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 4,
+    "y": 19,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_magical",
+        "pihc_magical",
+        "pihc_dark_magic"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "infantry_magical": {
+        "soft_attack": 0.08,
+        "hard_attack": 0.08,
+        "defense": 0.08
+    },
+    "special_project_specialization": [
+        "specialization_magic",
+        "specialization_witchcraft"
+    ],
+
+    "allow": {
+        "is_magic_country": true
+    },
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_MAGIC_IV": 1,
+        "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1008
+}

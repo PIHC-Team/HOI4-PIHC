@@ -1,0 +1,56 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 6,
+    "y": 7,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_maintenance"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_CREW_2D_ENGINEER"
+    ],
+    "maintenance_company": {
+        "reliability_factor": 0.05,
+        "equipment_capture_factor": 0.05
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_MAINTENANCE_I": 1
+    },
+    "path": {
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "arms_factory > 50":null
+                },
+                "modifier__D1": {
+                    "factor": 25,
+                    "arms_factory > 70":null
+                },
+                "modifier__D2": {
+                    "factor": 50,
+                    "arms_factory > 90":null
+                },
+                "modifier__D3": {
+                    "factor": 75,
+                    "arms_factory > 120":null
+                }
+            },
+    "research_cost": 1.5,
+    "start_year": 1004
+}

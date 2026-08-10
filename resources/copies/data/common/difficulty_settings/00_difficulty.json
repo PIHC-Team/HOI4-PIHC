@@ -1,0 +1,76 @@
+{
+    "difficulty_settings": {
+        "difficulty_setting": {
+            "key": "custom_diff_strong_C01",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C01"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D1": {
+            "key": "custom_diff_strong_C02",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C02"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D2": {
+            "key": "custom_diff_strong_C07",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C07"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D3": {
+            "key": "custom_diff_strong_C08",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C08"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D4": {
+            "key": "custom_diff_strong_C11",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C11"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D8": {
+            "key": "custom_diff_strong_C12",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C12"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D5": {
+            "key": "custom_diff_strong_C15",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C15"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D6": {
+            "key": "custom_diff_strong_C23",
+            "modifier": "diff_strong_ai_generic",
+            "countries": [
+                "C23"
+            ],
+            "multiplier": 2.0
+        },
+        "difficulty_setting__D7": {
+            "key": "custom_diff_strong_crisis",
+            "modifier": "diff_pihc_crisis",
+            "countries": [
+                "C26"
+            ],
+            "multiplier": 2.0
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Quibble Pants",
+    "gender": "male",
+    "advisor": {
+        "slot": "army_chief",
+        "ledger": "military",
+        "cost": 250,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_BREAKTHROUGH",
+            "TRAIT_SILVER_SPOON_SYNDROME"
+        ]
+    }
+}

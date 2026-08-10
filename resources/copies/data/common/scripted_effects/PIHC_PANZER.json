@@ -1,0 +1,27 @@
+{
+    "PANZER": {
+        "hidden_effect": {
+            "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_ALL_PANZER",
+            "if": {
+                "limit": {
+                    "has_dlc": "No Step Back"
+                },
+                "set_technology": {
+                    "TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M": 1
+                }
+            },
+            "else": {
+                "set_technology": {
+                    "TECHNOLOGY_TANK_TITAN_SSCS6000M": 1
+                }
+            }
+        },
+        "capital_scope": {
+            "create_unit": {
+                "division": "name = \"泰坦 (Titan)\" division_template = \"泰坦 (Titan)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                "owner": "ROOT",
+                "count": 1
+            }
+        }
+    }
+}

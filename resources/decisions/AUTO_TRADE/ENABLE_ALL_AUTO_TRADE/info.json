@@ -1,0 +1,35 @@
+{
+    "name": "Auto Trade",
+    "priority": 99,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "always": true
+    },
+    "complete_effect": {
+        "ROOT": {
+            "ENABLE_AUTO_TRADE_CRYSTALS_BUY": true,
+            "ENABLE_AUTO_TRADE_CRYSTALS_SELL": true,
+            "ENABLE_AUTO_TRADE_TUNGSTEN_BUY": true,
+            "ENABLE_AUTO_TRADE_TUNGSTEN_SELL": true,
+            "ENABLE_AUTO_TRADE_CHROMIUM_BUY": true,
+            "ENABLE_AUTO_TRADE_CHROMIUM_SELL": true,
+            "ENABLE_AUTO_TRADE_ALUMINIUM_BUY": true,
+            "ENABLE_AUTO_TRADE_ALUMINIUM_SELL": true,
+            "ENABLE_AUTO_TRADE_STEEL_BUY": true,
+            "ENABLE_AUTO_TRADE_STEEL_SELL": true,
+            "ENABLE_AUTO_TRADE_COAL_BUY": true,
+            "ENABLE_AUTO_TRADE_COAL_SELL": true,
+            "ENABLE_AUTO_TRADE_RUBBER_BUY": true,
+            "ENABLE_AUTO_TRADE_RUBBER_SELL": true,
+            "ENABLE_AUTO_TRADE_OIL_BUY": true,
+            "ENABLE_AUTO_TRADE_OIL_SELL": true,
+            "ENABLE_AUTO_TRADE_LOGS_BUY": true,
+            "ENABLE_AUTO_TRADE_LOGS_SELL": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

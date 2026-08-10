@@ -1,0 +1,68 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "if": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+                            "value": 2,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_2"
+            },
+            "else_if": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+                            "value": 4,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_4"
+            },
+            "else_if__D1": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+                            "value": 6,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_6"
+            },
+            "else_if__D2": {
+                "limit": {
+                    "C31": {
+                        "check_variable": {
+                            "var": "VAR_C02_PROVIDED_CIV_FACTORIES",
+                            "value": 8,
+                            "compare": "equals"
+                        }
+                    }
+                },
+                "add_ideas": "IDEA_C31_APPLE_PIE_TRADE_CIV_8"
+            },
+            "C31": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C31_WAR_AGAINST_C14"
+            }
+        }
+    ],
+    "trigger": {
+        "tag": "C02",
+        "has_completed_focus": "FOCUS_C02_APPLE_SOUTHERN_FRIEND"
+    },
+    "is_triggered_only": true
+}

@@ -1,0 +1,25 @@
+{
+    "priority": 99999,
+    "allowed": {
+        "OR": {
+            "tag": "C02",
+            "tag__D1": "C08"
+        }
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_KNOWS",
+        "if": {
+            "limit": {
+                "tag": "C08"
+            },
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+        },
+        "NOT": {
+            "OR": {
+                "has_global_flag": "PIHC_GLOBAL_FLAG_SUPEREVENT_10_HAPPENED",
+                "has_global_flag__D1": "PIHC_GLOBAL_FLAG_SUPEREVENT_11_HAPPENED"
+            }
+        }
+    },
+    "visible_when_empty": true
+}

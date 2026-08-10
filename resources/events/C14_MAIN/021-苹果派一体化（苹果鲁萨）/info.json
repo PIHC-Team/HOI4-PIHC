@@ -1,0 +1,60 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C14",
+                    "tag__D1": "C12"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "C14": {
+                "effect_tooltip": {
+                    "annex_country": {
+                        "target": "C12",
+                        "transfer_troops": true
+                    }
+                },
+                "hidden_effect": {
+                    "set_variable": {
+                        "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                        "value": "C12"
+                    },
+                    "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+                    "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+                },
+                "set_cosmetic_tag": "C14_APPLEPIE",
+                "add_country_leader_role": {
+                    "character": "CHARACTER_BRAEBURN",
+                    "promote_leader": true,
+                    "country_leader": {
+                        "ideology": "democratic_republic",
+                        "traits": [
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C12"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "trigger": {
+                "C14": {
+                    "is_ai": true
+                }
+            },
+            "country_event": {
+                    "id": "C12_MAIN.70",
+                    "days": 2,
+                    "random_days": 2
+                },
+            "add_political_power": -50,
+            "hidden_effect": {
+                "clr_country_flag": "C12_LIMESTONE_PIE_REMAINS_RATIONAL",
+                "//这个选项只有当苹果鲁萨是AI控制的时候才能使用，或许可以改成决议，并需要付出很多代价和花费": null
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_political_power": -50
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C04": {
+                "add_power_balance_modifier": {
+                    "id": "BOP_C04_INDEPENDENCE",
+                    "modifier": "BOP_C04_INDEPENDENCE_RUMOR"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

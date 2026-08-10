@@ -1,0 +1,11 @@
+{
+    "removal_cost": -1,
+    "modifier": {
+    "attrition": -1.0,
+    "stability_factor": 0.15,
+    "army_core_attack_factor" : 0.75,
+	"army_core_defence_factor" :0.75,
+	"resistance_decay_on_our_occupied_states" : -0.50,
+	"resistance_growth_on_our_occupied_states" : 0.50
+    }
+}

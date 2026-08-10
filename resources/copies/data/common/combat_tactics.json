@@ -1,0 +1,901 @@
+{
+    "phases": [
+        "close_combat",
+        "tactical_withdrawal",
+        "seize_bridge",
+        "hold_bridge"
+    ],
+    "tactic_pihc_teleportation_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "OWNER": {
+                "has_template_majority_unit": "infantry_magical",
+                "has_tech": "TECHNOLOGY_SUPPORT_TELEPORT_I"
+            },
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 6
+        },
+        "picture": "tactic_unexpected_thrust",
+        "countered_by": "tactic_pihc_magic_seal",
+        "attacker_movement_speed": 0.25,
+        "attacker": 0.35
+    },
+    "tactic_pihc_drones_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "OWNER": {
+                "has_template_majority_unit": "infantry_automata"
+            },
+            "phase": false
+        },
+        "active": false,
+        "countered_by": "tactic_overwhelming_fire",
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_banzai_charge",
+        "attacker_movement_speed": 0.25,
+        "attacker": 0.25,
+        "defender": 0.15
+    },
+    "tactic_pihc_magic_seal": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "OWNER": {
+                "has_tech": "TECHNOLOGY_SUPPORT_MAGIC_I"
+            },
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "delay",
+        "countered_by": "tactic_unexpected_thrust",
+        "attacker_movement_speed": -0.25,
+        "attacker": -0.50,
+        "defender": -0.50
+    },
+    "tactic_pihc_iron_curtain": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "OWNER": {
+                "OR": {
+                    "has_template_majority_unit": "cannon_light",
+                    "has_template_majority_unit__D1": "cannon_medium",
+                    "has_template_majority_unit__D2": "cannon_heavy"
+                }
+            },
+            "phase": false
+        },
+        "active": false,
+        "countered_by": "tactic_pihc_teleportation_attack",
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_overwhelming_fire",
+        "defender": 0.35
+    },
+    "tactic_pihc_precise_elimination": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "skill_advantage > 1": null,
+            "phase": false
+        },
+        "active": false,
+        "countered_by": "tactic_guerrilla_tactics",
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_barrage",
+        "attacker_movement_speed": -0.20,
+        "attacker": 0.15,
+        "defender": -0.50
+    },
+    "tactic_pihc_earthquake": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "hardness > 0.8": null,
+            "OWNER": {
+                "OR": {
+                    "has_template_containing_unit": "titan",
+                    "has_template_containing_unit__D1": "windigo_fraction",
+                    "has_template_containing_unit__D2": "windigo",
+                    "has_template_containing_unit__D3": "tirek"
+                }
+            },
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4,
+            "modifier": {
+                "add": 4,
+                "has_trait": "aggressive_assaulter"
+            }
+        },
+        "picture": "shock",
+        "attacker": 1.00
+    },
+    "tactic_pihc_scorched_earth": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_overwhelming_fire",
+        "attacker_movement_speed": -0.40,
+        "defender": 1.00
+    },
+
+
+    "tactic_basic_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": true,
+        "base": {
+            "factor": 4
+        },
+        "picture": "attack",
+        "countered_by": "tactic_counterattack",
+        "attacker": 0.05
+    },
+    "tactic_basic_defend": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false
+        },
+        "active": true,
+        "base": {
+            "factor": 4
+        },
+        "picture": "defend",
+        "defender": 0.05
+    },
+    "tactic_counterattack": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "skill_advantage > 0": null,
+            "phase": false
+        },
+        "active": true,
+        "base": {
+            "factor": 4,
+            "modifier": {
+                "add": 4,
+                "has_trait": "unyielding_defender"
+            }
+        },
+        "picture": "counterattack",
+        "defender": 0.25
+    },
+    "tactic_assault": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": true,
+        "base": {
+            "factor": 2,
+            "modifier": {
+                "add": 2,
+                "has_trait": "aggressive_assaulter"
+            },
+            "modifier__D1": {
+                "factor": 0.2,
+                "NOT": {
+                    "is_fighting_in_terrain": "urban"
+                }
+            }
+        },
+        "picture": "assault",
+        "countered_by": "tactic_counterattack",
+        "phase": "close_combat",
+        "attacker": 0.25
+    },
+    "tactic_cc_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "close_combat"
+        },
+        "active": true,
+        "base": {
+            "factor": 4
+        },
+        "picture": "cc_attack",
+        "display_phase": "close_combat",
+        "attacker": 0.1,
+        "defender": 0.05
+    },
+    "tactic_cc_defend": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "close_combat"
+        },
+        "active": true,
+        "base": {
+            "factor": 4
+        },
+        "picture": "cc_defend",
+        "display_phase": "close_combat",
+        "attacker": 0.05,
+        "defender": 0.1
+    },
+    "tactic_cc_storm": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "close_combat"
+        },
+        "active": true,
+        "base": {
+            "factor": 2
+        },
+        "picture": "cc_storm",
+        "display_phase": "close_combat",
+        "attacker": 0.2,
+        "defender": 0.2
+    },
+    "tactic_cc_local_strong_point": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "close_combat"
+        },
+        "active": true,
+        "display_phase": "close_combat",
+        "base": {
+            "factor": 2
+        },
+        "picture": "cc_local_strong_point",
+        "attacker": -0.2
+    },
+    "tactic_cc_withdraw": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "close_combat"
+        },
+        "active": true,
+        "base": {
+            "factor": 1
+        },
+        "picture": "cc_withdraw",
+        "display_phase": "close_combat",
+        "phase": false,
+        "attacker": -0.05,
+        "defender": -0.05
+    },
+    "tactic_encirclement": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false,
+            "frontage_full": true,
+            "has_reserves": true,
+            "OR": {
+                "skill_advantage > 0": null,
+                "has_trait": "panzer_leader",
+                "has_trait__D1": "trickster"
+            }
+        },
+        "active": true,
+        "base": {
+            "factor": 4,
+            "modifier": {
+                "add": 4,
+                "OR": {
+                    "has_trait": "panzer_expert",
+                    "has_trait__D1": "combined_arms_expert"
+                }
+            }
+        },
+        "picture": "encircle",
+        "countered_by": "tactic_tactical_withdrawal",
+        "combat_width": 0.5,
+        "attacker": 0.25,
+        "defender": 0.05
+    },
+    "tactic_delay": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "delay",
+        "countered_by": "tactic_shock",
+        "attacker_movement_speed": -0.25,
+        "attacker": -0.25,
+        "defender": -0.15
+    },
+    "tactic_shock": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": true,
+        "base": {
+            "factor": 4,
+            "modifier": {
+                "add": 4,
+                "has_trait": "aggressive_assaulter"
+            }
+        },
+        "picture": "shock",
+        "countered_by": "tactic_ambush",
+        "defender": -0.25
+    },
+    "tactic_tactical_withdrawal": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "skill_advantage > 0": null,
+                "has_trait": "trickster"
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "withdraw",
+        "phase": "tactical_withdrawal",
+        "combat_width": -0.25,
+        "attacker": -0.25,
+        "defender": -0.05
+    },
+    "tactic_tw_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "tactical_withdrawal"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "tw_attack",
+        "display_phase": "tactical_withdrawal",
+        "combat_width": -0.25,
+        "attacker": -0.25,
+        "defender": -0.1
+    },
+    "tactic_tw_defend": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "tactical_withdrawal"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "tw_defend",
+        "display_phase": "tactical_withdrawal",
+        "combat_width": -0.25,
+        "attacker": -0.3,
+        "defender": -0.05
+    },
+    "tactic_tw_chase": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "tactical_withdrawal"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "tw_chase",
+        "display_phase": "tactical_withdrawal",
+        "combat_width": -0.25,
+        "attacker": -0.15,
+        "defender": -0.05
+    },
+    "tactic_tw_evade": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "tactical_withdrawal"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "tw_evade",
+        "display_phase": "tactical_withdrawal",
+        "combat_width": -0.25,
+        "attacker": -0.4,
+        "defender": -0.1
+    },
+    "tactic_tw_intercept": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "tactical_withdrawal"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "tw_intercept",
+        "display_phase": "tactical_withdrawal",
+        "phase": false,
+        "attacker": -0.05,
+        "defender": -0.1
+    },
+    "tactic_breakthrough": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false,
+            "OR": {
+                "hardness > 0.5": null,
+                "skill_advantage > 1": null
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "breakthrough",
+        "countered_by": "tactic_backhand_blow",
+        "attacker_movement_speed": 0.5,
+        "attacker": 0.25,
+        "defender": -0.15
+    },
+    "tactic_ambush": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "skill_advantage > 1": null,
+                "skill > 2": null,
+                "has_trait": "trickster"
+            }
+        },
+        "active": true,
+        "base": {
+            "factor": 4
+        },
+        "picture": "ambush",
+        "countered_by": "tactic_breakthrough",
+        "attacker": -0.25
+    },
+    "tactic_blitz": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "hardness > 0.5": null,
+            "phase": false,
+            "OR": {
+                "skill > 2": null,
+                "has_trait": "panzer_leader",
+                "skill_advantage > 1": null
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4,
+            "modifier": {
+                "add": 4,
+                "OR": {
+                    "has_trait": "panzer_expert",
+                    "has_trait__D1": "combined_arms_expert"
+                }
+            }
+        },
+        "picture": "blitz",
+        "countered_by": "tactic_elastic_defense",
+        "attacker_movement_speed": 0.5,
+        "attacker": 0.15,
+        "defender": -0.15
+    },
+    "tactic_elastic_defense": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "has_trait": "defensive_doctrine",
+                "skill > 2": null
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "elastic_defence",
+        "attacker_movement_speed": -0.25,
+        "attacker": -0.15,
+        "defender": 0.1
+    },
+    "tactic_backhand_blow": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "skill > 4": null,
+                "AND": {
+                    "has_trait": "defensive_doctrine",
+                    "skill > 3": null
+                }
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "backhand_blow",
+        "attacker_movement_speed": -0.3,
+        "attacker": -0.2,
+        "defender": 0.25
+    },
+    "tactic_seize_bridge": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "has_combat_modifier": "river_crossing",
+            "phase": false,
+            "OR": {
+                "skill > 3": null,
+                "AND": {
+                    "has_trait": "offensive_doctrine",
+                    "skill > 2": null
+                }
+            }
+        },
+        "base": {
+            "factor": 2
+        },
+        "picture": "seize_bridge",
+        "phase": "seize_bridge",
+        "attacker_movement_speed": 0.1,
+        "combat_width": -0.25,
+        "attacker": 0.2,
+        "defender": -0.05
+    },
+    "tactic_attacker_sb_hold": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "seize_bridge"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "attacker_sb_hold",
+        "display_phase": "seize_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.2
+    },
+    "tactic_attacker_sb_skillful_defence": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "seize_bridge",
+            "skill > 4": null
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "attacker_sb_skillful_defence",
+        "display_phase": "seize_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.2,
+        "defender": -0.1
+    },
+    "tactic_defender_sb_assault": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "seize_bridge"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "defender_sb_assault",
+        "display_phase": "seize_bridge",
+        "combat_width": -0.25,
+        "defender": -0.05
+    },
+    "tactic_defender_sb_reckless_assault": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "seize_bridge",
+            "skill < 3": null
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "defender_sb_reckless_assault",
+        "display_phase": "seize_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.25,
+        "defender": -0.1
+    },
+    "tactic_defender_sb_retake_bridge": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "seize_bridge",
+            "OR": {
+                "skill > 2": null,
+                "has_trait": "trickster"
+            }
+        },
+        "countered_by": "tactic_attacker_sb_skillful_defence",
+        "phase": "hold_bridge",
+        "base": {
+            "factor": 4
+        },
+        "picture": "defender_sb_retake_bridge",
+        "display_phase": "seize_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.1,
+        "defender": -0.05
+    },
+    "tactic_hold_bridge": {
+        "is_attacker": false,
+        "trigger": {
+            "has_combat_modifier": "river_crossing",
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "skill > 2": null,
+                "has_trait": "defensive_doctrine"
+            }
+        },
+        "base": {
+            "factor": 2
+        },
+        "picture": "tactic_hold_bridge",
+        "phase": "hold_bridge",
+        "attacker_movement_speed": 0.1,
+        "combat_width": -0.25,
+        "attacker": 0.2,
+        "defender": -0.05
+    },
+    "tactic_attacker_hb_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "hold_bridge"
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "attacker_hb_attack",
+        "display_phase": "hold_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.1
+    },
+    "tactic_attacker_hb_rush": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "hold_bridge",
+            "skill > 4": null
+        },
+        "base": {
+            "factor": 4
+        },
+        "picture": "attacker_hb_rush",
+        "display_phase": "hold_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.2
+    },
+    "tactic_attacker_hb_storm": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": "hold_bridge"
+        },
+        "base": {
+            "factor": 2
+        },
+        "picture": "attacker_hb_storm",
+        "display_phase": "hold_bridge",
+        "countered_by": "tactic_defender_hb_skillful_defence",
+        "phase": "seize_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.2,
+        "defender": 0.05
+    },
+    "tactic_defender_hb_hold": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "hold_bridge",
+            "skill < 3": null
+        },
+        "base": {
+            "factor": 2
+        },
+        "picture": "defender_hb_hold",
+        "display_phase": "hold_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.2,
+        "defender": -0.1
+    },
+    "tactic_defender_hb_skillful_defence": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": "hold_bridge",
+            "OR": {
+                "skill > 2": null,
+                "has_trait": "trickster"
+            }
+        },
+        "base": {
+            "factor": 2
+        },
+        "picture": "defender_hb_skillful_defence",
+        "display_phase": "hold_bridge",
+        "combat_width": -0.25,
+        "attacker": 0.1,
+        "defender": 0.05
+    },
+    "tactic_guerrilla_tactics": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false,
+            "OR": {
+                "skill > 2": null,
+                "has_trait": "trickster"
+            }
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_guerrilla_tactics",
+        "combat_width": -0.5,
+        "attacker": -0.7,
+        "defender": -0.6
+    },
+    "tactic_human_wave_tactics": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false,
+            "frontage_full": true,
+            "has_reserves": true
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_human_wave_tactics",
+        "combat_width": 0.5,
+        "attacker": 0.1,
+        "defender": 0.1
+    },
+    "tactic_infantry_charge": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_infantry_charge",
+        "attacker": 0.1,
+        "defender": -0.05
+    },
+    "tactic_banzai_charge": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "countered_by": "tactic_overwhelming_fire",
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_banzai_charge",
+        "attacker_movement_speed": 0.1,
+        "attacker": 0.25,
+        "defender": 0.1
+    },
+    "tactic_planned_attack": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_planned_attack",
+        "attacker": 0.15
+    },
+    "tactic_relentless_assault": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_relentless_assault",
+        "attacker_movement_speed": 0.15,
+        "attacker": 0.2,
+        "defender": 0.05
+    },
+    "tactic_unexpected_thrust": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_unexpected_thrust",
+        "attacker_movement_speed": 0.15,
+        "attacker": 0.15
+    },
+    "tactic_overwhelming_fire": {
+        "is_attacker": false,
+        "trigger": {
+            "is_attacker": false,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 2
+        },
+        "picture": "tactic_overwhelming_fire",
+        "attacker": -0.1,
+        "defender": 0.1
+    },
+    "tactic_barrage": {
+        "is_attacker": true,
+        "trigger": {
+            "is_attacker": true,
+            "phase": false
+        },
+        "active": false,
+        "base": {
+            "factor": 4
+        },
+        "picture": "tactic_barrage",
+        "attacker": 0.1,
+        "defender": -0.2
+    }
+}

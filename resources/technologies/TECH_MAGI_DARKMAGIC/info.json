@@ -1,0 +1,61 @@
+{
+    "name": "Dark Magic Theory",
+    "category": "electronics",
+
+    "x": 10,
+    "y": 6,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_magical",
+        "pihc_dark_magic",
+        "pihc_magic_theory"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete_limit": {
+        "always": true
+    },
+    "on_research_complete": {
+        "hidden_effect": {
+            "add_timed_idea": {
+                "idea": "IDEA_ALL_DARK_MAGIC_USER",
+                "days": 666
+            }
+        },
+        "custom_effect_tooltip": "TECHNOLOGY_TECH_MAGI_DARKMAGIC_TOOLTIP"
+    },
+    "special_project_specialization": [
+        "specialization_magic",
+        "specialization_witchcraft"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_I",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_DARKPERCEPTION",
+        "research_cost_coeff": 1
+    },
+    "path__D2": {
+        "leads_to_tech": "TECHNOLOGY_TECH_ENER_IIN",
+        "research_cost_coeff": 1
+    },
+
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "tag": "C15",
+            "factor": 100
+        }
+    },
+
+    "research_cost": 2.0,
+    "start_year": 1002
+}

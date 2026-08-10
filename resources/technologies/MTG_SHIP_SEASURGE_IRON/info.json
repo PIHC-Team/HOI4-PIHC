@@ -1,0 +1,22 @@
+{
+    "name": "Iron Surge of Seas",
+    "category": "mtgnaval",
+    "x": 0,
+    "y": 11,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_navy",
+        "pihc_surge"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SHIP_SEASURGE_IRON"
+    ],
+    "enable_subunits": [],
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT",
+        "research_cost_coeff": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1003
+}

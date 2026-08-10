@@ -1,0 +1,61 @@
+{
+    "name": "Annex Stratusburg",
+    "priority": 110,
+    
+    "cost": 200,
+    "days_remove": 90,
+    "fire_only_once": true,
+    "visible": {
+        "has_completed_focus": "FOCUS_C01_UNIFICATION_POLICY",
+        "C04": {
+            "has_country_leader": {
+                "character": "CHARACTER_UNITY_COMMITTEE_C04",
+                "ruling_only": true
+            },
+            "is_puppet_of": "C01"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "complete_effect": {
+        "C04": {
+            "remove_all_power_balance_modifiers": {
+                "id": "BOP_C04_INDEPENDENCE"
+            },
+            "remove_power_balance": {
+                "id": "BOP_C04_INDEPENDENCE"
+            }
+        },
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C04_MERGED"
+    },
+    "remove_effect": {
+        "effect_tooltip": {
+            "annex_country": {
+                "target": "C04",
+                "transfer_troops": true
+            }
+        },
+        "hidden_effect": {
+            "set_variable": {
+                "var": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE",
+                "value": "C04"
+            },
+            "CLEAN_ANNEX_COUNTRY_WITH_CORE": true,
+            "clear_variable": "VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE"
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

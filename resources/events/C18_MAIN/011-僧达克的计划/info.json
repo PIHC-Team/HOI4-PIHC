@@ -1,0 +1,76 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "set_technology": {
+                "TECHNOLOGY_TECH_MAGI_DARKMAGIC": 1
+            },
+            "hidden_effect": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_ALL_DARK_MAGIC_USER"
+                    },
+                    "remove_ideas": "IDEA_ALL_DARK_MAGIC_USER"
+                },
+                "if__D1": {
+                    "limit": {
+                        "has_idea": "IDEA_ALL_DARK_MAGIC_PAYBACK"
+                    },
+                    "remove_ideas": "IDEA_ALL_DARK_MAGIC_PAYBACK"
+                },
+                "C18_ADD_GROWTH_0_5": true,
+                "country_event": {
+                    "id": "C18_MAIN.59",
+                    "days": 180,
+                    "random_days": 180
+                },
+                "country_event__D1": {
+                    "id": "C18_MAIN.62",
+                    "days": 60,
+                    "random_days": 30
+                },
+                "country_event__D2": {
+                    "id": "C18_MAIN.61",
+                    "days": 90,
+                    "random_days": 30
+                },
+                "country_event__D3": {
+                    "id": "C18_MAIN.63",
+                    "days": 120,
+                    "random_days": 30
+                },
+                "country_event__D4": {
+                    "id": "C18_MAIN.64",
+                    "days": 150,
+                    "random_days": 30
+                },
+                "country_event__D5": {
+                    "id": "C18_MAIN.65",
+                    "days": 120,
+                    "random_days": 60
+                },
+                "country_event__D6": {
+                    "id": "C18_MAIN.66",
+                    "days": 14,
+                    "random_days": 42
+                }
+            },
+            "add_ideas": "IDEA_ALL_DARK_MAGIC_USER",
+            "add_timed_idea": {
+                "idea": "IDEA_C18_SENDAKS_SECRET_COOPERATOR",
+                "years": 3
+            },
+            "DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1": true
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1": true
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

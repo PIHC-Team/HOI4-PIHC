@@ -1,0 +1,38 @@
+{
+    "category": "land",
+    "x": -2,
+    "y": 8,
+
+    "category_all_armor": {
+        "supply_consumption": -0.10
+    },
+    "category_infantry_motorized": {
+        "supply_consumption": -0.10
+    },
+    "category_all_infantry": {
+        "maximum_speed": 0.15
+    },
+    "out_of_supply_factor": -0.08,
+    "enable_tactic": "tactic_breakthrough",
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_tide_of_iron"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_0_5A_COFFIN_NAIL",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C01_STUDENTS_STRIKE",
+                "days": 28
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

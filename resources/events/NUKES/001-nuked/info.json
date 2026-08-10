@@ -1,0 +1,68 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_ALL_NUKED"
+                },
+                "remove_ideas": "IDEA_ALL_NUKED"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_ALL_NUKED",
+                "days": 90
+            },
+            "set_country_flag": {
+                "flag": "PIHC_COUNTRY_FLAG_NUKED_CD",
+                "days": 45,
+                "value": 1
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_manpower": -3000,
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NUKED_CD_3"
+                },
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_NUKED_CD_3",
+                    "days": 120,
+                    "value": 1
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NUKED_CD_2"
+                },
+                "add_stability": -0.01,
+                "add_war_support": -0.01,
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_NUKED_CD_3",
+                    "days": 135,
+                    "value": 1
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NUKED_CD"
+                },
+                "add_stability": -0.01,
+                "add_war_support": -0.01,
+                "set_country_flag": {
+                    "flag": "PIHC_COUNTRY_FLAG_NUKED_CD_2",
+                    "days": 90,
+                    "value": 1
+                }
+            },
+            "else": {
+                "add_stability": -0.05,
+                "add_war_support": -0.05
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Modern Magic Theory",
+    "category": "electronics",
+
+    "x": 9,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_magical",
+        "pihc_magic_theory"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete": {
+        "add_ideas": "IDEA_ALL_MODERN_MAGIC_THEORY"
+    },
+    "special_project_specialization": [
+        "specialization_magic"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_I",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

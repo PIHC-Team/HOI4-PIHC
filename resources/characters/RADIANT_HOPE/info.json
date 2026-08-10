@@ -1,0 +1,22 @@
+{
+    "name": "Radiant Hope",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "harmonicism_democracy",
+        "traits": [
+            "TRAIT_RADIANT_HOPE"
+        ]
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 0,
+        "removal_cost": -1,
+        "traits": [
+            "TRAIT_RADIANT_HOPE"
+        ],
+        "visible": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C15_RETURNED_RADIANT_HOPE"
+        }
+    }
+}

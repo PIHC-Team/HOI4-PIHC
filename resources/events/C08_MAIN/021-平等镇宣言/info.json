@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "remove_ideas": "IDEA_C08_FADED_FRIENDSHIP_4",
+            "add_ideas": "IDEA_C08_NEVER_FORGET",
+            "set_political_power": 0,
+            "UPGRADE_LIBERATION_FRONT": true,
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PARTII_2",
+                "mark_focus_tree_layout_dirty": true,
+                "news_event": {
+                    "id": "C08_MAIN.22"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

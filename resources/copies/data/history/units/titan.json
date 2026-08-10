@@ -1,0 +1,48 @@
+{
+    "division_template": {
+        "name": "泰坦 (Titan)",
+        "regiments": {
+            "infantry_traditional": {
+                "x": 0,
+                "y": 0
+            },
+            "infantry_traditional__D1": {
+                "x": 1,
+                "y": 0
+            },
+            "infantry_traditional__D2": {
+                "x": 2,
+                "y": 0
+            },
+            "tank_heavy": {
+                "x": 0,
+                "y": 1
+            },
+            "titan": {
+                "x": 1,
+                "y": 1
+            },
+            "tank_heavy__D1": {
+                "x": 2,
+                "y": 1
+            },
+            "infantry_magical": {
+                "x": 0,
+                "y": 2
+            },
+            "infantry_magical__D1": {
+                "x": 1,
+                "y": 2
+            },
+            "infantry_magical__D2": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "support": {
+
+        },
+        "is_locked": true,
+        "priority": 0
+    }
+}

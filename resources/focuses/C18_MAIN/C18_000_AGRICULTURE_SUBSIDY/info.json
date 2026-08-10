@@ -1,0 +1,24 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_000_KUN",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C18_000_KUN"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "add_ideas": "IDEA_C18_AGRICULTURE_SUBSIDY",
+        "C18_DEL_NIRIK_0_10": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

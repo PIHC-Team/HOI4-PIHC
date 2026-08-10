@@ -1,0 +1,26 @@
+{
+    "name": "Dodge College",
+    "removal_cost": -1,
+    "modifier": {
+        "custom_modifier_tooltip": "IDEA_C02_DODGE_COLLEGE_TOOLTIP_SCIENCE",
+        "hidden_modifier": {
+            "research_speed_factor": 0.05
+        },
+        "custom_modifier_tooltip__D1": "IDEA_C02_DODGE_COLLEGE_TOOLTIP_MAGIC",
+        "hidden_modifier__D1": {
+            "production_factory_max_efficiency_factor": 0.05
+        },
+        "custom_modifier_tooltip__D2": "IDEA_C02_DODGE_COLLEGE_TOOLTIP_MINE",
+        "hidden_modifier__D2": {
+            "local_resources_factor": 0.05
+        },
+        "custom_modifier_tooltip__D3": "IDEA_C02_DODGE_COLLEGE_TOOLTIP_SOCIOLOGY",
+        "hidden_modifier__D3": {
+            "stability_weekly_factor": 0.01
+        },
+        "custom_modifier_tooltip__D4": "IDEA_C02_DODGE_COLLEGE_TOOLTIP_MILITARY",
+        "hidden_modifier__D4": {
+            "training_time_factor": -0.10
+        }
+    }
+}

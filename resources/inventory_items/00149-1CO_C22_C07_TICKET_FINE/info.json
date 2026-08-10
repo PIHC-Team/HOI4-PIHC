@@ -1,0 +1,29 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "add_political_power": -15,
+                "DEL_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_1": true
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE": true
+            }
+        },
+        {
+            "type": "click",
+            "effects": {
+                "C07": {
+                    "add_opinion_modifier": {
+                        "target": "ROOT",
+                        "modifier": "INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_OPINION_MODIFIER"
+                    }
+                },
+                "DEL_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_1": true
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE": true
+            }
+        }
+    ]
+}

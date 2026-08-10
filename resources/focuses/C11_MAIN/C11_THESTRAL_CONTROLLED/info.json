@@ -1,0 +1,70 @@
+{
+    "tree": "C11_MAIN",
+    "parent": "FOCUS_C11_THESTRAL_EXCUSE",
+    "prerequisite": {
+        "focus": "FOCUS_C11_THESTRAL_EXCUSE"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "575": {
+            "transfer_state_to": "C11"
+        },
+        "522": {
+            "transfer_state_to": "C11"
+        },
+        "548": {
+            "set_demilitarized_zone": false
+        },
+        "44": {
+            "set_demilitarized_zone": false
+        },
+        "561": {
+            "set_demilitarized_zone": false
+        },
+        "add_power_balance_value": {
+            "id": "BOP_C11_STARVATION",
+            "value": 0.04,
+            "tooltip_side": "BOP_C11_STARVATION_RIGHT_SIDE"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "is_ai": false
+            },
+            "581": {
+                "C11": {
+                    "num_divisions_in_states": {
+                        "count > 2": null,
+                        "states": ["581"]
+                    }
+                }
+            },
+            "575": {
+                "C11": {
+                    "num_divisions_in_states": {
+                        "count > 1": null,
+                        "states": ["575"]
+                    }
+                }
+            },
+            "522": {
+                "C11": {
+                    "num_divisions_in_states": {
+                        "count > 1": null,
+                        "states": ["522"]
+                    }
+                }
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

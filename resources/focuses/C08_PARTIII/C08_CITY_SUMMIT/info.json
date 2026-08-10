@@ -1,0 +1,44 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_FILL_IN_THE_GAPS",
+    "priority": 10,
+    "dx": -1,
+    "prerequisite": {
+        "focus": "FOCUS_C08_FILL_IN_THE_GAPS"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_HEALS_SCARS"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_state_core": 4,
+        "add_state_core__D1": 415,
+        "add_state_core__D2": 450,
+        "add_state_core__D3": 401,
+        "add_state_core__D4": 499,
+        "add_state_core__D5": 506,
+        "add_state_core__D6": 221,
+        "news_event": {
+            "id": "C08_MAIN.7",
+            "days": 1
+        },
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_TEST_END",
+            "country_event": {
+                "id": "C08_MEMORY.1",
+                "days": 7
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

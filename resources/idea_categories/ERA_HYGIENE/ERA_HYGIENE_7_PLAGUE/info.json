@@ -1,0 +1,14 @@
+{
+    "name": "Plague",
+    "removal_cost": -1,
+    "available": {
+        "always": false
+    },
+    "modifier": {
+        "monthly_population": -0.15,
+        "stability_weekly_factor": -0.05,
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_7_PLAGUE_TOOLTIP"
+    },
+    "cost": 250,
+    "cancel_if_invalid": false
+}

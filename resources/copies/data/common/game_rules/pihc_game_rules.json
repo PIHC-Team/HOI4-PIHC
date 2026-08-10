@@ -1,0 +1,34 @@
+{
+    "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE": {
+        "name": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE",
+        "group": "PIHC_GAME_RULES_GROUP",
+        "option": {
+            "name": "ALWAYS_FREE",
+            "text": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE_ENABLE_NAME",
+            "desc": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE_ENABLE_DESC",
+            "allow_achievements": true
+        },
+        "default": {
+            "name": "FOCUSES_ONLY",
+            "text": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE_DISABLE_NAME",
+            "desc": "PIHC_GAME_RULE_C03_MUFFIN_ROULETTE_DISABLE_DESC",
+            "allow_achievements": true
+        }
+    },
+    "PIHC_GAME_RULE_DYNAMIC_PORTRAITS": {
+        "name": "PIHC_GAME_RULE_DYNAMIC_PORTRAITS",
+        "group": "PIHC_GAME_RULES_GROUP",
+        "default": {
+            "name": "RULE_OPTION_PIHC_ENABLE",
+            "text": "PIHC_GAME_RULE_DYNAMIC_PORTRAITS_ENABLE_NAME",
+            "desc": "PIHC_GAME_RULE_DYNAMIC_PORTRAITS_ENABLE_DESC",
+            "allow_achievements": true
+        },
+        "option": {
+            "name": "RULE_OPTION_PIHC_DISABLE",
+            "text": "PIHC_GAME_RULE_DYNAMIC_PORTRAITS_DISABLE_NAME",
+            "desc": "PIHC_GAME_RULE_DYNAMIC_PORTRAITS_DISABLE_DESC",
+            "allow_achievements": true
+        }
+    }
+}

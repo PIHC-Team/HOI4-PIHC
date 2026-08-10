@@ -1,0 +1,292 @@
+{
+    "name": "Duchy of Ponyville",
+    "rgb": [
+        121,
+        175,
+        222
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 504,
+        "set_popularities": {
+            "democratic": 40,
+            "despotic": 30,
+            "harmonicism": 15,
+            "peacism": 10,
+            "corporation": 5
+        },
+        "set_politics": {
+            "ruling_party": "democratic",
+            "last_election": "1002.3.1",
+            "election_frequency": 48,
+            "elections_allowed": false
+        },
+        "567__D1": {
+            "remove_core_of": "C02"
+        },
+        "545__D1": {
+            "remove_core_of": "C02"
+        },
+        "579__D1": {
+            "remove_core_of": "C02"
+        },
+        "590__D1": {
+            "remove_core_of": "C02"
+        },
+        "recruit_character_batch": [
+            "CHARACTER_CRANKY_DOODLE_DONKEY",
+            "CHARACTER_OCTAVIA",
+            "CHARACTER_RUSTY_BUCKET",
+            "CHARACTER_CATTAIL",
+            "CHARACTER_INKY_ROSE",
+            "CHARACTER_SPOILED_RICH",
+            "CHARACTER_TRIXIE_LULAMOON",
+            "CHARACTER_CHEERILEE",
+            "CHARACTER_MRS_CUP_CAKE",
+            "CHARACTER_MR_CARROT_CAKE",
+            "CHARACTER_FILTHY_RICH",
+            "CHARACTER_DJ_PON3",
+            "CHARACTER_SILVER_SHILL",
+            "CHARACTER_RAINY_DAY",
+            "CHARACTER_CRACKLE_COSETTE",
+            "CHARACTER_CHERRY_JUBILEE",
+            "CHARACTER_MARE",
+            "CHARACTER_LADY_BEETLE",
+            "CHARACTER_BULK_BICEPS",
+            "CHARACTER_STARSTREAK",
+            "CHARACTER_DOCTOR_HOOVES",
+            "CHARACTER_ROSETTA",
+            "CHARACTER_PHOTO_FINISH",
+            "CHARACTER_PEACHY_PLUME",
+            "CHARACTER_MAREY_POPPINS",
+            "CHARACTER_UNITY_COMMITTEE_C02",
+            "CHARACTER_NOPONY_3",
+            "CHARACTER_TRIXIE_LULAMOON_AMULET"
+        ],
+        "activate_advisor_batch": [
+            "CHARACTER_MARE",
+            "CHARACTER_FILTHY_RICH",
+            "CHARACTER_DOCTOR_HOOVES"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "limited_conscription",
+            "low_economic_mobilisation",
+            "IDEA_C02_PUPPET_GOVERNMENT",
+            "IDEA_ALL_ECONOMIC_RECOVERY",
+            "IDEA_C02_C14_TRADE",
+            "IDEA_DINFANTRY_EEMD"
+        ],
+        "set_variable_batch": [
+            {
+                "var": "VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": 0.8
+            },
+            {
+                "var": "VAR_C02_ELECTION_MARE",
+                "value": 0.6
+            },
+            {
+                "var": "VAR_C02_ELECTION_OCTAVIA",
+                "value": 0.45
+            },
+            {
+                "var": "VAR_C02_ELECTION_FILTHY_RICH",
+                "value": 0.3
+            },
+            {
+                "var": "VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "value": 0.45
+            },
+            {
+                "var": "VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "value": 0.05
+            },
+            {
+                "var": "VAR_C02_WINTER_FIRE_BASE",
+                "value": 0
+            }
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_SHIELD_CROSSBOW": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_WITCHCRAFT_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "complete_national_focus_batch": [
+            "FOCUS_C02_CANTERLOT_PACT",
+            "FOCUS_C02_AS_A_DUKE"
+        ],
+        "set_power_balance": {
+            "id": "BOP_C02_INDEPENDENCE",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C02_INDEPENDENCE",
+            "modifier": "BOP_C02_INDEPENDENCE_DAILY_DRIFT"
+        },
+        "add_political_power": 250,
+        "set_stability": 0.75,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.3,
+        "set_convoys": 150,
+        "add_manpower": 3000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 200
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 100
+            },
+            {
+                "type": "ARCHETYPE_SHIELD",
+                "amount": 200
+            },
+            {
+                "type": "ARCHETYPE_AIR_TRANSPORT",
+                "amount": 40
+            },
+            {
+                "type": "train_equipment",
+                "amount": 60
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C02"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_FIRELANCE",
+                    "creator": "C02"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SHIELD_CROSSBOW",
+                    "creator": "C02"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            },
+            {
+                "equipment": {
+                    "type": "train_equipment_1",
+                    "creator": "C02"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            }
+        ],
+        "567": {
+            "add_core_of": "C49"
+        },
+        "579": {
+            "add_core_of": "C49"
+        },
+        "590": {
+            "add_core_of": "C49"
+        },
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE",
+            "PIHC_COUNTRY_FLAG_HAS_UNICORN",
+            "PIHC_COUNTRY_FLAG_C02_PIN",
+            "PIHC_INVENTORY_ITEM_5LG_C02_PIN_o0_SWITCH_ON"
+        ],
+        "set_major": true,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        }
+    },
+    "ai": {
+        "name": "historical",
+        "desc": "Ponyville Historical AI",
+        "allowed": {
+            "tag": "C02"
+        },
+        "enable": {
+            "country_exists": "C02"
+        },
+        "ai_national_focuses": [
+            "FOCUS_C02_PATH_TO_FREEDOM",
+            "FOCUS_C02_HIDDEN_MILITARIZATION",
+            "FOCUS_C02_POLICE_STATE",
+            "FOCUS_C02_THE_FIVE_MONTHS_PLAN",
+            "FOCUS_C02_PONYVILLE_TECHNOLOGY",
+            "FOCUS_C02_PONYVILLE_AGRICULTURE",
+            "FOCUS_C02_PONYVILLE_AGRICULTURE_2",
+            "FOCUS_C02_PONYVILLE_AGRICULTURE_3",
+            "FOCUS_C02_MAGIC_EDUCATION",
+            "FOCUS_C02_AN_OLD_FRIEND",
+            "FOCUS_C02_PONYVILLE_STEAM",
+            "FOCUS_C02_ARMY_COUNCIL",
+            "FOCUS_C02_APPLE_INSULT",
+            "FOCUS_C02_APPLE_SOUTHERN_FRIEND",
+            "FOCUS_C02_MAGIC_TRICKS",
+            "FOCUS_C02_MAGIC_SHOW",
+            "FOCUS_C02_MAGIC_IMPROVE",
+            "FOCUS_C02_ARMY_HAMBURGER",
+            "FOCUS_C02_PONY_OR_A_RAT",
+            "FOCUS_C02_ARMY_MILITARIZATION",
+            "FOCUS_C02_PONYVILLE_INDUSTRY",
+            "FOCUS_C02_MAGIC_AGRICULTURE",
+            "FOCUS_C02_PONYVILLE_CONSTRUCTION",
+            "FOCUS_C02_MAGIC_MUGGLE",
+            "FOCUS_C02_PONYVILLE_PROSPERITY",
+            "FOCUS_C02_PONYVILLE_RESEARCH",
+            "FOCUS_C02_PONYVILLE_OPENMIND",
+            "FOCUS_C02_PONYVILLE_OVERLORD",
+            "FOCUS_C02_PONYVILLE_MILSCHOOL",
+            "FOCUS_C02_AMULET"
+        ]
+    }
+}

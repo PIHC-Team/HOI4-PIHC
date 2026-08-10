@@ -1,0 +1,28 @@
+{
+    "traditional_regular": [
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  7201, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  7201, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  5857, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 }
+    ],
+    "traditional_small": [
+        { "location":  1389, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  1389, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  1518, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":  1518, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 }
+    ],
+    "shield": [
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.7, "start_manpower_factor": 1.0 },
+        { "location": 10881, "start_experience_factor":0.2, "start_equipment_factor": 0.7, "start_manpower_factor": 1.0 },
+        { "location": 10881, "start_experience_factor":0.2, "start_equipment_factor": 0.7, "start_manpower_factor": 1.0 },
+        { "location":    94, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 },
+        { "location":    94, "start_experience_factor":0.2, "start_equipment_factor": 0.9, "start_manpower_factor": 1.0 }
+    ],
+    "magical": [
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location":  7529, "start_experience_factor":0.2, "start_equipment_factor": 0.5, "start_manpower_factor": 1.0 },
+        { "location": 10881, "start_experience_factor":0.2, "start_equipment_factor": 0.7, "start_manpower_factor": 1.0 }
+    ]
+}

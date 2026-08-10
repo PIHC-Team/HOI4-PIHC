@@ -1,0 +1,37 @@
+state = {
+    id = 875
+    name = STATE_875
+    provinces = {
+        1778
+        3016
+        3074
+        3775
+        5561
+        7062
+        7269
+        9228
+        14681
+        14706
+        14731
+        14746
+        14764
+        14779
+    }
+    manpower = 66778
+    state_category = large_town
+    history = {
+        owner = C51
+        victory_points = {
+            1778
+            10
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 1
+        }
+        add_core_of = C51
+    }
+    resources = {
+
+    }
+}

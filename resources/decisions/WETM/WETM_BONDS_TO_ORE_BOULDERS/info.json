@@ -1,0 +1,67 @@
+{
+    "name": "Bonds to Ore Boulders",
+    "priority": 99,
+    "cost": 0,
+    "days_re_enable": 1,
+    "visible": {
+        "OR": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C12",
+            "is_in_faction_with": "C12",
+            "AND": {
+                "owns_state": 601,
+                "controls_state": 601
+            }
+        }
+    },
+    "available": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE",
+            "compare": "greater_than_or_equals"
+        },
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "var": "global.VAR_ORE_BOULDERS_MARKET",
+                    "value": 100,
+                    "compare": "less_than"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "DECISION_WETM_BONDS_TO_ORE_BOULDERS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE",
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_DYNAMIC",
+    "complete_effect": {
+        "subtract_from_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS",
+            "value": "global.VAR_DEV_BONDS_EXCHANGE"
+        },
+        "ADD_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_100": true,
+        "subtract_from_variable__D1": {
+            "var": "global.VAR_ORE_BOULDERS_MARKET",
+            "value": 100
+        }
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "factor": 0,
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_600": true
+        },
+        "modifier__D1": {
+            "factor": 0,
+            "tag": "C12"
+        }
+    }
+}

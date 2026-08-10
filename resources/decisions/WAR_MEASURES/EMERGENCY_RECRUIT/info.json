@@ -1,0 +1,62 @@
+{
+    "name": "Emergent Recruitment",
+    "priority": 100,
+    "cost": 100,
+    "days_remove": 28,
+    "days_re_enable": 120,
+    "visible": {
+        "NOT": {
+            "tag": "C08"
+        },
+        "NOT__D1": {
+            "tag": "C16"
+        }
+    },
+    "cancel_trigger": {
+        "OR": {
+            "has_war": false,
+            "NOT": {
+                "num_of_controlled_states > 0": null
+            }
+        }
+    },
+    "remove_effect": {
+        "capital_scope": {
+            "create_unit": {
+                "division": "name = \"紧急应征部队 (Emergently Recruited Division)\" division_template = \"紧急应征部队 (Emergently Recruited Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7",
+                "owner": "ROOT",
+                "count": 3
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 20,
+        "modifier": {
+            "factor": -10,
+            "is_major": true,
+            "date > 1008.1.1": null
+        },
+        "modifier__D1": {
+            "factor": -10,
+            "date > 1009.1.1": null
+        },
+        "modifier__D2": {
+            "factor": -10,
+            "has_army_manpower": {
+                "size > 20000": null
+            }
+        },
+        "modifier__D3": {
+            "factor": -10,
+            "num_of_controlled_factories > 100": null
+        },
+        "modifier__D4": {
+            "factor": 10,
+            "is_subject": true
+        },
+        "modifier__D5": {
+            "factor": 30,
+            "surrender_progress > 0.5": null
+        }
+    }
+}

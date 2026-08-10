@@ -1,0 +1,63 @@
+{
+    "tree": "C04_MAIN",
+    "parent": "FOCUS_C04_REBUILD_WONDERBOLTS",
+    "prerequisite": {
+        "focus": "FOCUS_C04_REBUILD_WONDERBOLTS"
+    },
+    "cost": 2,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C04_REBUILD_WONDERBOLTS"
+    },
+    "completion_reward": {
+        "add_political_power": 100,
+        "if": {
+            "limit": {
+                "has_country_leader": {
+                    "character": "CHARACTER_SPITFIRE",
+                    "ruling_only": true
+                }
+            },
+            "set_politics": {
+                "ruling_party": "harmonicism"
+            },
+            "add_country_leader_role": {
+                "character": "CHARACTER_SPITFIRE",
+                "promote_leader": true,
+                "country_leader": {
+                    "ideology": "harmonicism_republic",
+                    "traits": [
+                        "TRAIT_POPULAR",
+                        "TRAIT_DIPLOMATIC_GENIUS",
+                        "TRAIT_FREEDOM_FIGHTER_SPITFIRE"
+                    ]
+                }
+            },
+            "hidden_effect": {
+                "set_popularities": {
+                    "harmonicism": 80,
+                    "fascism": 7,
+                    "corporation": 6,
+                    "equatism": 5,
+                    "despotic": 1,
+                    "peacism": 1
+                }
+            }
+        },
+        "add_power_balance_value": {
+            "id": "BOP_C04_INDEPENDENCE",
+            "value": 0.05,
+            "tooltip_side": "BOP_C03_INDEPENDENCE_RIGHT_SIDE"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

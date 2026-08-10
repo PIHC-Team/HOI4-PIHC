@@ -1,0 +1,30 @@
+{
+    "tree": "C14_MAIN",
+    "parent": "FOCUS_C14_FAMILY_APPLE_TO_THE_CORE",
+    "dw": -6,
+    "dc": -5,
+    "prerequisite": {
+        "focus": "FOCUS_C14_FAMILY_RAISE_THIS_BARN"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C14_FAMILY_APPLE_TO_THE_CORE"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C14_FAMILY_FACTORY"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "add_political_power": 100
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

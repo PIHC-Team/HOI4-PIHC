@@ -1,0 +1,101 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 4,
+    "y": 5,
+    "cost": 4,
+    "completion_reward": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "C01": {
+                            "has_completed_focus":"FOCUS_C01_C03_MUFFIN_V"
+                        }
+                    }
+                },
+                "add_to_variable": {
+                    "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                    "value": 5000
+                },
+                "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+                "set_popularities": {
+                    "harmonicism": 100
+                },
+                "set_politics": {
+                    "ruling_party": "harmonicism"
+                },
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 1.0
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C03_SAINT",
+                "promote_character": {
+                    "character": "CHARACTER_SAINT_DERPY_HOOVES",
+                    "ideology": "harmonicism_theocracy"
+                },
+                "set_cosmetic_tag": "C03_HEAVEN",
+                "if": {
+                    "limit": {
+                        "is_in_faction": true
+                    },
+                    "every_other_country": {
+                        "limit": {
+                            "is_in_faction_with": "C03"
+                        },
+                        "set_country_flag": "PIHC_COUNTRY_FLAG_C03_FACTION_TEMP_MARKER",
+                        "leave_faction": true
+                    }
+                },
+                "leave_faction": true,
+                "create_faction": "FACTION_MUFFIN",
+                "every_other_country": {
+                    "limit": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_FACTION_TEMP_MARKER"
+                    },
+                    "C03_MUFFINS_JOIN_SAINT_DERPY": true,
+                    "clr_country_flag": "PIHC_COUNTRY_FLAG_C03_FACTION_TEMP_MARKER"
+                }
+            }
+        },
+        "mark_focus_tree_layout_dirty": true,
+        "custom_effect_tooltip": "FOCUS_C03_MUFFIN_26_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "C01": {
+                    "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+                }
+            },
+            "always": false
+        },
+        "C03": {
+            "is_puppet": false,
+            "OR": {
+                "is_faction_leader": true,
+                "is_in_faction": false
+            }
+        },
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C03_MUFFIN_26_TRIGGER_TOOLTIP",
+            "check_variable": {
+                "var": "ROOT.VAR_MUFFINS_AID_TOTAL_C03",
+                "value": 20,
+                "compare": "greater_than_or_equals"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_25"
+    }
+}

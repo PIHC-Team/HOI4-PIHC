@@ -1,0 +1,34 @@
+{
+    "date": "1004.03.15",
+    "date_scope": "C02",
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "scoped_sound_effect": "ringring_ev"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_ideas": "IDEA_C02_EMPIRE_FUEL_FEE",
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C02_HOTLINE.29",
+                    "days": 16
+                },
+                "C01": {
+                    "country_event": {
+                        "id": "C02_HOTLINE.29",
+                        "days": 16
+                    }
+                }
+            },
+            "set_fuel_ratio": 1.0
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

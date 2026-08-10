@@ -1,0 +1,37 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_MSHGA_NONSATELLITE",
+    "dx": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C09_MSHGA_NONSATELLITE"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C09_MSHGA_QUIT"
+    },
+    "cost": 8,
+    "completion_reward": {
+        "remove_ideas": "IDEA_C09_SATELLITE_3",
+        "C11": {
+            "add_to_faction": "C09"
+        },
+        "add_named_threat": {
+            "threat": 5,
+            "name": "FOCUS_C09_MSHGA_JOIN_CHANGELINGS_THREAT"
+        }
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_FIRELIGHT",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

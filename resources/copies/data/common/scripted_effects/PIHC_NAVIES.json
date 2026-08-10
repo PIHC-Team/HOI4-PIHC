@@ -1,0 +1,106 @@
+{
+    "UNLOCK_NAVY_BASIC": {
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_SEASURGE": 1,
+                "TECHNOLOGY_MTG_SHIP_SEACOURTYARD": 1
+            }
+        },
+        "else": {
+            "set_technology": {
+                "TECHNOLOGY_SHIP_SEASURGE": 1,
+                "TECHNOLOGY_SHIP_SEACOURTYARD": 1
+            }
+        }
+    },
+    "CREATE_C07_NAVY_1": {
+        "C07": {
+            "UNLOCK_NAVY_BASIC": true,
+            "create_equipment_variant": {
+                "name": "Twins Class",
+                "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+            },
+            "create_equipment_variant__D1": {
+                "name": "City Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C07_navy_1"
+        }
+    },
+    "CREATE_C09_NAVY_1": {
+        "C09": {
+            "UNLOCK_NAVY_BASIC": true,
+            "create_equipment_variant": {
+                "name": "Smoothie Class",
+                "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+            },
+            "create_equipment_variant__D1": {
+                "name": "Essence Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C09_navy_1"
+        }
+    },
+    "CREATE_C09_NAVY_2": {
+        "C09": {
+            "create_equipment_variant": {
+                "name": "City Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C09_navy_2"
+        }
+    },
+    "CREATE_C18_NAVY_1": {
+        "C18": {
+            "UNLOCK_NAVY_BASIC": true,
+            "create_equipment_variant": {
+                "name": "Bao Chuan Class",
+                "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+            },
+            "create_equipment_variant__D1": {
+                "name": "Liang Chuan Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "create_equipment_variant__D2": {
+                "name": "Zuo Chuan Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C18_navy_1"
+        }
+    },
+    "CREATE_C25_NAVY_1": {
+        "C25": {
+            "UNLOCK_NAVY_BASIC": true,
+            "create_equipment_variant": {
+                "name": "Harmony Class",
+                "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+            },
+            "create_equipment_variant__D1": {
+                "name": "Leader Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "create_equipment_variant__D2": {
+                "name": "Awesome Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C25_navy_1"
+        }
+    },
+    "CREATE_C44_NAVY_1": {
+        "C44": {
+            "UNLOCK_NAVY_BASIC": true,
+            "create_equipment_variant": {
+                "name": "Princess Class",
+                "type": "EQUIPMENT_SHIP_SEACOURTYARD"
+            },
+            "create_equipment_variant__D1": {
+                "name": "City Class",
+                "type": "EQUIPMENT_SHIP_SEASURGE"
+            },
+            "load_oob": "C44_navy_1"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Lokadhatu",
+    "priority": 999,
+    
+    "cost": 25,
+    "days_remove": 30,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED"
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.107"
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

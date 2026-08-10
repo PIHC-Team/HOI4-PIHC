@@ -1,0 +1,72 @@
+{
+    "C01": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 1,
+                        "specialization_magic": 1,
+                        "specialization_steampunk": 1,
+                        "specialization_oilpunk": 1,
+                        "specialization_elecpunk": 1,
+                        "specialization_witchcraft": 1,
+                        "specialization_future": 1,
+                        "specialization_bio": 1
+                    },
+                    "traits": [
+                        "scientist_trait_gifted_engineer"
+                    ],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_nuclear": 1,
+                        "specialization_magic": 1,
+                        "specialization_steampunk": 1,
+                        "specialization_oilpunk": 1,
+                        "specialization_elecpunk": 1,
+                        "specialization_witchcraft": 1,
+                        "specialization_future": 1,
+                        "specialization_bio": 1
+                    },
+                    "traits": [
+                        "scientist_trait_gifted_engineer"
+                    ],
+                    "gender": "female"
+                }
+            }
+        }
+    },
+    "C01__D1": {
+        "random_list": {
+            "seed": "random",
+            "1": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_future": 2,
+                        "specialization_nuclear": 1
+                    },
+                    "traits": [
+                        "scientist_trait_genius"
+                    ],
+                    "gender": "male"
+                }
+            },
+            "5": {
+                "generate_scientist_character": {
+                    "skills": {
+                        "specialization_future": 2,
+                        "specialization_nuclear": 1
+                    },
+                    "traits": [
+                        "scientist_trait_genius"
+                    ],
+                    "gender": "female"
+                }
+            }
+        }
+    }
+}

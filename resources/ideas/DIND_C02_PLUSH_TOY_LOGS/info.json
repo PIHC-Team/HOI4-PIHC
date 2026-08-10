@@ -1,0 +1,23 @@
+{
+    "name": "DIND_C02_PLUSH_TOY_LOGS",
+    "designer": true,
+    "category": "industrial_concern",
+    "traits": [
+        "energy_company"
+    ],
+    "cost": 150,
+    "removal_cost": -1,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3",
+        "country_exists": "C11"
+    },
+    "available": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3"
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

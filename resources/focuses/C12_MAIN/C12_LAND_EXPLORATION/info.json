@@ -1,0 +1,24 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TREASURE_EVERYWHERE",
+    "dy": 1,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C12_TREASURE_EVERYWHERE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C12_LAND_EXPLORATION_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

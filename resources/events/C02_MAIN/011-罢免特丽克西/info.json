@@ -1,0 +1,30 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "custom_effect_tooltip": "EVENT_C02_MAIN_11_EFFECT_TOOLTIP",
+            "hidden_effect": {
+                "C02_SECOND_PONYVILLE_ELECTION_WITHOUT_TRIXIE_LULAMOON": true
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C02"
+                }
+            }
+        }
+
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Sombra Slaves",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 18,
+    "y": 12,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AUTOMATA_SOMBRA_SLAVES"
+    ],
+    "enable_subunits": [
+        "infantry_automata"
+    ],
+    "allow": {
+        "tag" :"C15",
+        "if": {
+            "limit": {
+                "NOT": {
+                    "C15": {
+                        "has_country_leader": {
+                            "character": "CHARACTER_KING_SOMBRA",
+                            "ruling_only": true
+                        }
+                    },
+                    "OR": {
+                        "tag": "C15",
+                        "is_in_faction_with": "C15"
+                    }
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_SOMBRA_SLAVES_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+    "research_cost": 5.0,
+    "start_year": 1004
+}

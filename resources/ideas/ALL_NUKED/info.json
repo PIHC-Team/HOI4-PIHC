@@ -1,0 +1,12 @@
+{
+    "name": "ALL_NUKED",
+    "removal_cost": -1,
+    "allowed_civil_war": {
+        "always": true
+    },
+    "modifier": {
+        "surrender_limit": -0.15,
+        "stability_factor": -0.07,
+        "local_resources_factor": -0.07
+    }
+}

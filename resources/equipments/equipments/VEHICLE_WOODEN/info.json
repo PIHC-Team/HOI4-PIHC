@@ -1,0 +1,26 @@
+{
+    "name": "Wooden Chariot",
+    "archetype": "ARCHETYPE_VEHICLE",
+    "priority": 1,
+    "visual_level": 1,
+
+    "build_cost_ic": 2.5,
+    "lend_lease_cost": 1,
+    "can_license": true,
+    "is_convertable": false,
+    "reliability": 0.80,
+    
+    "breakthrough": 4.0,
+
+    "hardness": 0.15,
+    
+    "resources": {
+        "logs": 6,
+        "rubber": 2
+    },
+    "fuel_consumption": 0.0,
+    "supply_truck": true,
+
+    "maximum_speed": 8.0,
+    "recon": 2
+}

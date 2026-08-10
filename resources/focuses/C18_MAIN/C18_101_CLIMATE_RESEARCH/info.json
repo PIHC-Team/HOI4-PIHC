@@ -1,0 +1,38 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_101_CLIMATE_REPORT",
+    "prerequisite": {
+        "focus": "FOCUS_C18_101_CLIMATE_REPORT"
+    },
+    "cost": 26,
+    "completion_reward": {
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT_COLD_I": 1,
+            "TECHNOLOGY_SUPPORT_COLD_II": 1
+        },
+        "add_tech_bonus": {
+            "technology": "TECHNOLOGY_TECH_ENER_I",
+            "bonus": 1.0,
+            "uses": 1,
+            "name": "FOCUS_C18_101_CLIMATE_RESEARCH"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS"
+            },
+            "custom_effect_tooltip": "FOCUS_C18_101_CLIMATE_RESEARCH_TOOLTIP"
+        },
+        "mark_focus_tree_layout_dirty": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

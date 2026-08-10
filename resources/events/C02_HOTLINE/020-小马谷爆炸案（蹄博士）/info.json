@@ -1,0 +1,37 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 90
+            },
+            "trigger": {
+                "tag": "C02"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "country_event": {
+                "id": "C02_HOTLINE.21",
+                "days": 3
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C02"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

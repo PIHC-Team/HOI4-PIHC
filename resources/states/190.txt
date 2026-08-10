@@ -1,0 +1,34 @@
+state = {
+    id = 190
+    name = STATE_190
+    provinces = {
+        115
+        610
+        5467
+        5993
+        7557
+        8633
+    }
+    manpower = 85280
+    state_category = large_town
+    history = {
+        owner = C14
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            farm_complex = 1
+            5467 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C14
+        victory_points = {
+            5467
+            10
+        }
+    }
+    resources = {
+        rubber = 2
+        coal = 4
+    }
+}

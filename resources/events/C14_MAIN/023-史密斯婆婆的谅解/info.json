@@ -1,0 +1,78 @@
+{
+    "immediate": {
+        "C14": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C02_FORGIVEN"
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C02",
+                    "tag__D1": "C14"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "C02": {
+                "add_ideas": "IDEA_C02_C14_TRADE_2",
+                "590": {
+                    "if": {
+                        "limit": {
+                            "is_demilitarized_zone": true
+                        },
+                        "set_demilitarized_zone": false
+                    }
+                },
+                "579": {
+                    "if": {
+                        "limit": {
+                            "is_demilitarized_zone": true
+                        },
+                        "set_demilitarized_zone": false
+                    }
+                },
+                "533": {
+                    "if": {
+                        "limit": {
+                            "is_demilitarized_zone": true
+                        },
+                        "set_demilitarized_zone": false
+                    }
+                },
+                "553": {
+                    "if": {
+                        "limit": {
+                            "is_demilitarized_zone": true
+                        },
+                        "set_demilitarized_zone": false
+                    }
+                }
+            },
+            "C14": {
+                "remove_resource_rights": 590,
+                "remove_resource_rights__D1": 579,
+                "remove_resource_rights__D2": 533,
+                "remove_resource_rights__D3": 553
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

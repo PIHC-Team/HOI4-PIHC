@@ -1,0 +1,58 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "custom_effect_tooltip": "EVENT_C14_MAIN_8_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C01_CRUSADE_C14"
+        },
+        {
+            "ai_chance": {
+                "factor": 90
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "C14": {
+                "add_power_balance_value": {
+                    "id": "BOP_C14_INDEPENDENCE",
+                    "value": 0.20,
+                    "tooltip_side": "BOP_C14_INDEPENDENCE_RIGHT_SIDE"
+                }
+            },
+            "C12": {
+                "add_power_balance_value": {
+                    "id": "BOP_C12_INDEPENDENCE",
+                    "value": 0.10,
+                    "tooltip_side": "BOP_C12_INDEPENDENCE_RIGHT_SIDE"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C14",
+                    "tag__D1": "C01"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

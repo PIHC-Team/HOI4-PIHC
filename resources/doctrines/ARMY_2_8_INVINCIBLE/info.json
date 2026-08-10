@@ -1,0 +1,33 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 16,
+    "xp_unlock_cost": 200,
+
+    "production_speed_bunker_factor": 0.50,
+    "land_bunker_effectiveness_factor": 0.25,
+    "production_speed_anti_air_building_factor": 0.25,
+    "supply_combat_penalties_on_core_factor": -0.50,
+    "army_core_defence_factor": 0.20,
+    "enable_tactic": "tactic_pihc_magic_seal",
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_wall_of_unity"
+    ],
+    
+    "research_cost": 4.5,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

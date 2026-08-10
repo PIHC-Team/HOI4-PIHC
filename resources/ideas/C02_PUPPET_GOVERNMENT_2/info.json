@@ -1,0 +1,13 @@
+{
+    "name": "C02_PUPPET_GOVERNMENT",
+    "removal_cost": -1,
+    "allowed": {
+        "tag": "C02"
+    },
+    "modifier": {
+        "political_power_cost": 0.3,
+        "stability_factor": -0.15,
+        "war_support_factor": 0.05,
+        "conscription_factor": -0.1
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_MILITARY_ARMY",
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_GEN_MILITARY_ARMY"
+    },
+    "cost": 6,
+    "bypass": {
+        "has_idea": "scraping_the_barrel"
+    },
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "has_idea": "all_adults_serve"
+            },
+            "swap_ideas": {
+                "remove_idea": "all_adults_serve",
+                "add_idea": "scraping_the_barrel"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "service_by_requirement"
+            },
+            "swap_ideas": {
+                "remove_idea": "service_by_requirement",
+                "add_idea": "all_adults_serve"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "extensive_conscription"
+            },
+            "swap_ideas": {
+                "remove_idea": "extensive_conscription",
+                "add_idea": "service_by_requirement"
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "limited_conscription"
+            },
+            "swap_ideas": {
+                "remove_idea": "limited_conscription",
+                "add_idea": "extensive_conscription"
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "has_idea": "volunteer_only"
+            },
+            "swap_ideas": {
+                "remove_idea": "volunteer_only",
+                "add_idea": "limited_conscription"
+            }
+        },
+        "else_if__D4": {
+            "limit": {
+                "has_idea": "disarmed_nation"
+            },
+            "swap_ideas": {
+                "remove_idea": "disarmed_nation",
+                "add_idea": "volunteer_only"
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

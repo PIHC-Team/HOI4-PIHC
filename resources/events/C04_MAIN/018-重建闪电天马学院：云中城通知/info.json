@@ -1,0 +1,33 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "388": {
+                "if": {
+                    "limit": {
+                        "is_owned_by": "C03",
+                        "is_controlled_by": "C03"
+                    },
+                    "remove_core_of": "C03",
+                    "C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_4": true
+                }
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C03_C04_TRADE",
+                "days": 365
+            },
+            "C04": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C04_REBUILD_WONDERBOLTS_AVAILABLE",
+                "mark_focus_tree_layout_dirty": true
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

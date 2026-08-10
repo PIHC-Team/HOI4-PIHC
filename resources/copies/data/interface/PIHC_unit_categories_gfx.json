@@ -1,0 +1,185 @@
+{
+    "spriteTypes": {
+        "spriteType": {
+            "name": "GFX_unit_category_infantry_traditional_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_traditional_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D1": {
+            "name": "GFX_unit_category_infantry_shield_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_shield_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D2": {
+            "name": "GFX_unit_category_infantry_magical_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_magical_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D3": {
+            "name": "GFX_unit_category_infantry_automata_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_automata_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D4": {
+            "name": "GFX_unit_category_infantry_motorized_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_motorized_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D5": {
+            "name": "GFX_unit_category_infantry_special_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_special_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D6": {
+            "name": "GFX_unit_category_infantry_biochemi_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_biochemi_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D7": {
+            "name": "GFX_unit_category_infantry_landmine_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_landmine_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D8": {
+            "name": "GFX_unit_category_infantry_music_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_music_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D9": {
+            "name": "GFX_unit_category_infantry_icy_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_icy_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D10": {
+            "name": "GFX_unit_category_infantry_colossal_icon_small",
+            "texturefile": "gfx/texticons/unit_category_infantry_colossal_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D11": {
+            "name": "GFX_unit_category_all_infantry_icon_small",
+            "texturefile": "gfx/texticons/unit_category_all_infantry_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D12": {
+            "name": "GFX_unit_category_armor_light_icon_small",
+            "texturefile": "gfx/texticons/unit_category_armor_light_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D13": {
+            "name": "GFX_unit_category_armor_medium_icon_small",
+            "texturefile": "gfx/texticons/unit_category_armor_medium_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D14": {
+            "name": "GFX_unit_category_armor_heavy_icon_small",
+            "texturefile": "gfx/texticons/unit_category_armor_heavy_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D15": {
+            "name": "GFX_unit_category_titan_icon_small",
+            "texturefile": "gfx/texticons/unit_category_titan_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D16": {
+            "name": "GFX_unit_category_all_armor_icon_small",
+            "texturefile": "gfx/texticons/unit_category_all_armor_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D17": {
+            "name": "GFX_unit_category_artillery_light_icon_small",
+            "texturefile": "gfx/texticons/unit_category_artillery_light_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D18": {
+            "name": "GFX_unit_category_artillery_medium_icon_small",
+            "texturefile": "gfx/texticons/unit_category_artillery_medium_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D19": {
+            "name": "GFX_unit_category_artillery_heavy_icon_small",
+            "texturefile": "gfx/texticons/unit_category_artillery_heavy_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D20": {
+            "name": "GFX_unit_category_all_artillery_icon_small",
+            "texturefile": "gfx/texticons/unit_category_all_artillery_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D21": {
+            "name": "GFX_unit_category_all_support_icon_small",
+            "texturefile": "gfx/texticons/unit_category_all_support_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D22": {
+            "name": "GFX_unit_category_army_icon_small",
+            "texturefile": "gfx/texticons/unit_category_army_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        
+        "spriteType__D23": {
+            "name": "GFX_unit_category_air_transport_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_transport_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D24": {
+            "name": "GFX_unit_category_air_armed_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_armed_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D25": {
+            "name": "GFX_unit_category_air_scout_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_scout_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D26": {
+            "name": "GFX_unit_category_air_tact_bomber_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_tact_bomber_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D27": {
+            "name": "GFX_unit_category_air_strat_bomber_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_strat_bomber_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D28": {
+            "name": "GFX_unit_category_air_cas_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_cas_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D29": {
+            "name": "GFX_unit_category_air_balloon_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_balloon_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D30": {
+            "name": "GFX_unit_category_air_galleon_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_galleon_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D31": {
+            "name": "GFX_unit_category_air_airship_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_airship_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D32": {
+            "name": "GFX_unit_category_air_plane_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_plane_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D33": {
+            "name": "GFX_unit_category_air_ufo_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_ufo_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D34": {
+            "name": "GFX_unit_category_air_flyer_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_flyer_icon_small.dds",
+            "legacy_lazy_load": false
+        },
+        "spriteType__D35": {
+            "name": "GFX_unit_category_air_creatures_icon_small",
+            "texturefile": "gfx/texticons/unit_category_air_creatures_icon_small.dds",
+            "legacy_lazy_load": false
+        }
+    }
+}

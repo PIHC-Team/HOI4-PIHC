@@ -1,0 +1,28 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_ARMY_INTEGRATION",
+    "prerequisite": {
+        "focus": "FOCUS_C08_ARMY_INTEGRATION"
+    },
+    "priority": 0,
+    "cost": 1,
+    "completion_reward": {
+        "add_popularity": {
+            "ideology": "despotic",
+            "popularity": -1.00       
+        },
+        "add_manpower": -381,
+        "add_ideas": "IDEA_C08_MNS"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

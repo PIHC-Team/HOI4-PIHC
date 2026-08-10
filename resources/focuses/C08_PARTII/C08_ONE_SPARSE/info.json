@@ -1,0 +1,29 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_INDUSTRIAL_PLAN_1003",
+    "dx": 1,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C08_INDUSTRIAL_PLAN_1003"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "army_experience": 20,
+        "air_experience": 10,
+        "add_command_power" : 40,
+        "country_event": {
+            "id": "C08_MAIN.25"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

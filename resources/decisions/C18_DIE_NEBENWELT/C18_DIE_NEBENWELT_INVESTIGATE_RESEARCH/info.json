@@ -1,0 +1,31 @@
+{
+    "name": "Lokadhatu",
+    "priority": 100,
+    
+    "cost": 5,
+    "days_remove": 30,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE"
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "has_character": "CHARACTER_GRASS_GREEN"
+                },
+                "country_event": {
+                    "id": "C18_MAIN.109"
+                }
+            },
+            "else": {
+                "country_event": {
+                    "id": "C18_MAIN.110"
+                }
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

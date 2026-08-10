@@ -1,0 +1,38 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 2,
+
+    "category_all_armor": {
+        "breakthrough": 0.15
+    },
+    "category_infantry_motorized": {
+        "breakthrough": 0.15
+    },
+    "category_infantry_traditional": {
+        "breakthrough": 0.15
+    },
+    "army_speed_factor": 0.1,
+    "enable_tactic": "tactic_blitz",
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_tide_of_iron"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_0_2_ARMOR_SHEILD",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

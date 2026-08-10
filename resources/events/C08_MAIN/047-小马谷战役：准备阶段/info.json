@@ -1,0 +1,48 @@
+{
+    "category": "news",
+    "date": "1005.1.15",
+    "date_scope": "C08",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C01_C08_TENSION",
+            "mark_focus_tree_layout_dirty": true
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "set_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C08",
+                    "tag__D2": "C02"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Contemporary Firearm",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 27,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_CONTEMPORARY_RIFLE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1009
+}

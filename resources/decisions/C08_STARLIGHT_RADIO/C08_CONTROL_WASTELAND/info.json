@@ -1,0 +1,25 @@
+{
+    "name": "Control wasteland",
+    "priority": 89999,
+    
+    "cost": 40,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_WASTELAND"
+    },
+    "available": {
+        "has_full_control_of_state": 4
+    },
+    "complete_effect": {
+        "custom_effect_tooltip": "DECISION_C08_CONTROL_WASTELAND_TOOLTIP",
+        "hidden_effect": {
+            "country_event": {
+                "id": "C08_RADIO.5",
+                "days": 1
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 10000
+    }
+}

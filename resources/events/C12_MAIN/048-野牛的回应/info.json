@@ -1,0 +1,48 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "declare_war_on": {
+                "target": "C31",
+                "type": "annex_everything"
+            },
+            "add_political_power": 30,
+            "C08": {
+                "country_event": {
+                    "id": "C12_MAIN.50",
+                    "days": 2,
+                    "random_days": 2
+                }
+            }
+        },
+        {
+            "ai_chance": {
+				"base": 0,
+				"modifier": {
+                    "add": 25,
+					"has_opinion": {
+						"target": "C08",
+						"value> 89": null
+					}
+				}
+            },
+            "custom_effect_tooltip": "PIHC_C12_STOP_WAR_ON_BUFFALO_TOOLTIP",
+            "add_political_power": -150,
+            "add_war_support": -0.1,
+            "add_stability": -0.15,
+            "hidden_effect": {
+                "set_country_flag": "C12_LIMESTONE_PIE_REMAINS_RATIONAL",
+                "C08": {
+                    "country_event": {
+                        "id": "C12_MAIN.51",
+                        "days": 2,
+                        "random_days": 2
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,20 @@
+{
+    "name": "AK Yearling",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "anarchy_anarchy",
+        "traits": [
+            "TRAIT_FANTASY_LITERATURE",
+            "TRAIT_POPULAR"
+        ]
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_FANTASY_LITERATURE",
+            "TRAIT_GUERRILLA"
+        ],
+        "can_be_fired": false
+    }
+}

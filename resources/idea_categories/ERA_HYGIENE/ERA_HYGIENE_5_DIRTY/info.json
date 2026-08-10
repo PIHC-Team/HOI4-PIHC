@@ -1,0 +1,13 @@
+{
+    "name": "Dirty",
+    "removal_cost": -1,
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "monthly_population": -0.03,
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_5_DIRTY_TOOLTIP"
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

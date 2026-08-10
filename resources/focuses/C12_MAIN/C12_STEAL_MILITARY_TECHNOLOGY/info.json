@@ -1,0 +1,32 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER",
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "cost": 3,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER"
+    },
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 3,
+            "category": "pihc_military",
+            "name": "FOCUS_C12_STEAL_MILITARY_TECHNOLOGY"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

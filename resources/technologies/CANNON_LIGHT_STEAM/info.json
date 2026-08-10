@@ -1,0 +1,42 @@
+{
+    "name": "Steampunk Light Cannon",
+    "category": "artillery",
+
+    "x": 0,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_artillery"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_CANNON_LIGHT_STEAM"
+    ],
+    "enable_subunits": [
+        "cannon_light",
+        "cannon_tank_light",
+        "cannon_mot_light"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_CANNON_CATAPULT": 1,
+        "TECHNOLOGY_TECH_ENER_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_CANNON_LIGHT_MODERN",
+        "research_cost_coeff": 1
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "arms_factory > 20": null
+                },
+                "modifier__D1": {
+                    "factor": -10,
+                    "date < 1003.1.1": null
+                }
+            },
+    "research_cost": 3.0,
+    "start_year": 1003
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Witchcraft II",
+    "category": "infantry",
+
+    "x": 8,
+    "y": 6,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_magical",
+        "pihc_witchcraft"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II"
+    ],
+    "enable_subunits": [
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_WITCHCRAFT_III",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1002
+}

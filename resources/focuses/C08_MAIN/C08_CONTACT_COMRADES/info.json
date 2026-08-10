@@ -1,0 +1,28 @@
+{
+    "tree": "C08_MAIN",
+    "parent": "FOCUS_C08_SPARKING_FIRE",
+    "dx": 1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C08_SPARKING_FIRE"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "add_political_power": 20,
+        "country_event": {
+            "id": "C08_MAIN.15",
+            "days": 1
+        }  
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Landmine",
+    "category": "infantry",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_special"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_SPECIAL_LANDMINE_PIE"
+    ],
+    "enable_subunits": [
+        "infantry_landmine"
+    ],
+    "on_research_complete": {
+        "hidden_effect": {
+            "load_oob": "general_infantry_landmine"
+        }
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1003
+}

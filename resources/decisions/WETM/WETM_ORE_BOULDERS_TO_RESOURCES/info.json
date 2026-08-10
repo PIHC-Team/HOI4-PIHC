@@ -1,0 +1,58 @@
+{
+    "name": "Ore boulders to Resources",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "visible": {
+        "OR": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER": true,
+            "has_country_flag": "PIHC_COUNTRY_FLAG_WETM_DEBUG",
+            "tag": "C12",
+            "is_in_faction_with": "C12",
+            "AND": {
+                "owns_state": 601,
+                "controls_state": 601
+            }
+        }
+    },
+    "available": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800": true
+    },
+    "custom_cost_trigger": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800": true
+    },
+    "custom_cost_text": "CUSTOM_COST_ORE_BOULDERS_800",
+    "complete_effect": {
+        "DEL_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800": true,
+        "capital_scope": {
+            "add_resource": {
+                "type": "steel",
+                "amount": 6
+            },
+            "add_resource__D1": {
+                "type": "crystals",
+                "amount": 4
+            },
+            "add_resource__D2": {
+                "type": "aluminium",
+                "amount": 3
+            },
+            "add_resource__D3": {
+                "type": "chromium",
+                "amount": 1
+            },
+            "add_resource__D4": {
+                "type": "tungsten",
+                "amount": 1
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1,
+        "modifier": {
+            "factor": 10,
+            "tag" :"C12"
+        }
+    }
+}

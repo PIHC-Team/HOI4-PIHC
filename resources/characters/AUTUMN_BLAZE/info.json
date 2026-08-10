@@ -1,0 +1,37 @@
+{
+    "name": "Autumn Blaze",
+    "gender": "female",
+    "country_leader": {
+        "ideology": "peacism_dogmatism",
+        "traits": [
+            "TRAIT_AUTUMN_BLAZE_A_PEACEFUL_DREAM"
+        ]
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "all",
+        "traits": [
+        ],
+        "available": {
+            "custom_trigger_tooltip": {
+                "tooltip": "CHARACTER_AUTUMN_BLAZE_TOOLTIP",
+                "always": false
+            }
+        },
+        "visible": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_RETIRED"
+            }
+        },
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    },
+    "seconds": 6.73,
+    "pause_on_loop": 9.19,
+    "portraits": {
+        "civilian": {
+            "large": "GFX_CHARACTER_AUTUMN_BLAZE_ANIMATED_portrait"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+state = {
+    id = 85
+    name = STATE_85
+    provinces = {
+        1235
+        3699
+        6287
+        9318
+        12256
+        12377
+        15093
+    }
+    manpower = 6001
+    state_category = small_island
+    history = {
+        owner = C54
+        victory_points = {
+            1235
+            1
+        }
+        buildings = {
+            1235 = {
+                naval_base = 1
+                supply_node = 1
+            }
+            3699 = {
+                naval_base = 1
+            }
+        }
+        add_core_of = C54
+    }
+    resources = {
+
+    }
+}

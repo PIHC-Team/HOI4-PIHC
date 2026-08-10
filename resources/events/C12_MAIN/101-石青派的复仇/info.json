@@ -1,0 +1,27 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "retire_character" : "CHARACTER_MAUD_PIE",
+        "retire_character__D1" : "CHARACTER_MUDBRIAR",
+        "complete_national_focus":"FOCUS_C12_LIMESTONE_PIES_REVENGE",
+            "add_country_leader_role" : {
+                "character" : "CHARACTER_LIMESTONE_PIE",
+                "promote_leader" : true,
+                "country_leader" : {
+                    "ideology" : "corporation_militarism"
+                }
+            },
+            "C01":{
+                "country_event": {
+                    "id": "C12_MAIN.86",
+                    "days": 2,
+                    "random_days": 2
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

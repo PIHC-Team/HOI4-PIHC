@@ -1,0 +1,56 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C01": {
+                "add_to_faction": "C07"
+            },
+            "if": {
+            "limit": {
+                "C01": {
+                    "has_war_with":"C12"
+                }        
+            },
+        "declare_war_on__D1": {
+            "type": "crusade_wargoal",
+            "target": "C12"
+        }
+        },
+        "if__D1": {
+            "limit": {
+                "C01": {
+                    "has_war_with":"C08"
+                }        
+            },
+        "declare_war_on__D1": {
+            "type": "crusade_wargoal",
+            "target": "C08"
+        }
+        },
+        "if__D2": {
+            "limit": {
+                "C07": {
+                    "has_war_with":"C41"
+                }        
+            },
+        "C07": {
+        "white_peace":"C41"
+        }
+        },
+        "if__D3": {
+            "limit": {
+                "C07": {
+                    "has_war_with":"C43"
+                }        
+            },
+        "C07": {
+        "white_peace":"C43"
+        }
+        }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

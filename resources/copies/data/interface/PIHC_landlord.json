@@ -1,0 +1,242 @@
+{
+    "guiTypes": {
+        "containerWindowType": {
+            "name": "landlord_window",
+            "position": {
+                "x": 464,
+                "y": 8
+            },
+            "size": {
+                "width": 100,
+                "height": 130
+            },
+            "clipping": false,
+            "background": {
+                "name": "Background",
+                "quadTextureSprite": "GFX_tiled_decisions_bg_small"
+            },
+            "buttonType": {
+                "name": "open_window",
+                "position": {
+                    "x": -5,
+                    "y": 34
+                },
+                "quadTextureSprite": "GFX_button_left",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "open_landlord_tooltip"
+            },
+            "buttonType__D1": {
+                "name": "core_state_button",
+                "position": {
+                    "x": -93,
+                    "y": 30
+                },
+                "quadTextureSprite": "GFX_core_button",
+                "buttonFont": "Main_14_black",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "CORE_STATE_DESC"
+            },
+            "buttonType__D2": {
+                "name": "claim_state_button",
+                "position": {
+                    "x": -49,
+                    "y": 30
+                },
+                "quadTextureSprite": "GFX_claim_button",
+                "buttonFont": "Main_14_black",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "CLAIM_STATE_DESC"
+            },
+            "buttonType__D3": {
+                "name": "check_core_button",
+                "position": {
+                    "x": -98,
+                    "y": 2
+                },
+                "quadTextureSprite": "button_straight_96_32",
+                "buttonText": "CWCPP_CALCULATE_COST",
+                "buttonFont": "hoi_16mbs",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "CHECK_CORE_STATE_DESC"
+            },
+            "instantTextBoxType": {
+                "name": "stripe1",
+                "position": {
+                    "x": -50,
+                    "y": 60
+                },
+                "font": "hoi_24header",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "--------"
+            },
+            "buttonType__D4": {
+                "name": "revoke_core_button",
+                "position": {
+                    "x": -93,
+                    "y": 80
+                },
+                "quadTextureSprite": "GFX_revoke_core_button",
+                "buttonFont": "Main_14_black",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "REVOKE_CORE_DESC"
+            },
+            "buttonType__D5": {
+                "name": "revoke_claim_button",
+                "position": {
+                    "x": -49,
+                    "y": 80
+                },
+                "quadTextureSprite": "GFX_revoke_claim_button",
+                "buttonFont": "Main_14_black",
+                "Orientation": "UPPER_RIGHT",
+                "pdx_tooltip": "REVOKE_CLAIM_DESC"
+            }
+        },
+        "containerWindowType__D1": {
+            "name": "landlord_popup_confirm",
+            "position": {
+                "x": -265,
+                "y": -160
+            },
+            "size": {
+                "width": 530,
+                "height": 200
+            },
+            "orientation": "center",
+            "clipping": false,
+            "fade_time": 300,
+            "fade_type": "linear",
+            "background": {
+                "name": "Background",
+                "quadTextureSprite": "GFX_tiled_bg"
+            },
+            "instantTextBoxType": {
+                "name": "u_sure",
+                "position": {
+                    "x": 165,
+                    "y": 20
+                },
+                "font": "hoi_36header",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "Confirmation"
+            },
+            "instantTextBoxType__D1": {
+                "name": "u_sure2",
+                "position": {
+                    "x": -10,
+                    "y": 80
+                },
+                "maxWidth": 560,
+                "font": "hoi_18mbs",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "revoke_core_confirmation"
+            },
+            "buttonType": {
+                "name": "cancel",
+                "position": {
+                    "x": -475,
+                    "y": 130
+                },
+                "quadTextureSprite": "GFX_button_148x34",
+                "Orientation": "UPPER_RIGHT",
+                "buttonText": "CORE_STATE_REVOKE_NO",
+                "buttonFont": "hoi_16mbs"
+            },
+            "buttonType__D1": {
+                "name": "confirm",
+                "position": {
+                    "x": -200,
+                    "y": 130
+                },
+                "quadTextureSprite": "GFX_button_148x34",
+                "Orientation": "UPPER_RIGHT",
+                "buttonText": "CORE_STATE_REVOKE_YES",
+                "buttonFont": "hoi_16mbs"
+            }
+        },
+        "containerWindowType__D2": {
+            "name": "landlord_popup_confirm_claim",
+            "position": {
+                "x": -265,
+                "y": -160
+            },
+            "size": {
+                "width": 530,
+                "height": 200
+            },
+            "orientation": "center",
+            "clipping": false,
+            "fade_time": 300,
+            "fade_type": "linear",
+            "background": {
+                "name": "Background",
+                "quadTextureSprite": "GFX_tiled_bg"
+            },
+            "instantTextBoxType": {
+                "name": "u_sure",
+                "position": {
+                    "x": 165,
+                    "y": 20
+                },
+                "font": "hoi_36header",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "Confirmation"
+            },
+            "instantTextBoxType__D1": {
+                "name": "u_sure2",
+                "position": {
+                    "x": -10,
+                    "y": 80
+                },
+                "maxWidth": 560,
+                "font": "hoi_18mbs",
+                "format": "center",
+                "alwaystransparent": true,
+                "text": "revoke_claim_confirmation"
+            },
+            "buttonType": {
+                "name": "cancel",
+                "position": {
+                    "x": -475,
+                    "y": 130
+                },
+                "quadTextureSprite": "GFX_button_148x34",
+                "Orientation": "UPPER_RIGHT",
+                "buttonText": "CLAIM_STATE_REVOKE_NO",
+                "buttonFont": "hoi_16mbs"
+            },
+            "buttonType__D1": {
+                "name": "confirm",
+                "position": {
+                    "x": -200,
+                    "y": 130
+                },
+                "quadTextureSprite": "GFX_button_148x34",
+                "Orientation": "UPPER_RIGHT",
+                "buttonText": "CLAIM_STATE_REVOKE_YES",
+                "buttonFont": "hoi_16mbs"
+            }
+        },
+        "containerWindowType__D3": {
+            "name": "landlord_window_button",
+            "position": {
+                "x": 462,
+                "y": 40
+            },
+            "clipping": false,
+            "buttonType": {
+                "name": "open_window",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "quadTextureSprite": "button_right",
+                "pdx_tooltip": "open_landlord_tooltip"
+            }
+        }
+    }
+}

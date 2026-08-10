@@ -1,0 +1,25 @@
+{
+    "name": "Mechanical Pegasus",
+    "category": "bba_air_techs",
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+    "x": 10,
+    "y": 18,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_ARMED_MACHINE_PEGASUS"
+    ],
+    "enable_subunits": [],
+    "dependencies": {
+        "TECHNOLOGY_TECH_INFO_III": 1,
+        "TECHNOLOGY_BBA_AIR_CREATURES": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1006
+}

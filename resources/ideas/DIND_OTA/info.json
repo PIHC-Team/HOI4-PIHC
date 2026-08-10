@@ -1,0 +1,33 @@
+{
+    "name": "DIND_OTA",
+    "designer": true,
+    "category": "industrial_concern",
+    "traits": [
+        "resistance_company"
+    ],
+    "cost": 150,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "country_exists": "C08",
+        "OR": {
+            "tag": "C08",
+            "is_in_faction_with": "C08"
+        }
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_INFANTRY": {
+            "build_cost_ic": -0.05,
+            "soft_attack": 0.02,
+            "defense": 0.02
+        }
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

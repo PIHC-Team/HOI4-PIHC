@@ -1,0 +1,20 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "show_major": {
+        "OR": {
+            "tag": "C15",
+            "tag__D1": "C11",
+            "tag__D2": "C01",
+            "tag__D3": "C08"
+        }
+    },
+    "is_triggered_only": true
+}

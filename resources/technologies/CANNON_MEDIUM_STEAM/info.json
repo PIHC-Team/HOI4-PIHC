@@ -1,0 +1,51 @@
+{
+    "name": "Steampunk Medium Cannon",
+    "category": "artillery",
+
+    "x": 2,
+    "y": 9,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_artillery"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_CANNON_MEDIUM_STEAM"
+    ],
+    "enable_subunits": [
+        "cannon_medium",
+        "cannon_tank_medium",
+        "cannon_mot_medium"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_CANNON_CATAPULT": 1,
+
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1,
+        "TECHNOLOGY_TECH_ENER_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_CANNON_MEDIUM_MODERN",
+        "research_cost_coeff": 1
+    },
+"ai_will_do": {
+                "modifier": {
+                    "factor": 10,
+                    "arms_factory > 40": null
+                },
+                "modifier__D1": {
+                    "factor": -10,
+                    "arms_factory < 30": null
+                },
+                "modifier__D2": {
+                    "factor": 10,
+                    "date > 1005.1.1": null
+                }
+            },
+    "research_cost": 3.0,
+    "start_year": 1003
+}

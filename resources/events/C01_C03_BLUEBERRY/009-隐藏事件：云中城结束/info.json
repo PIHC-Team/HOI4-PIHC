@@ -1,0 +1,46 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C03": {
+                "retire_character": "CHARACTER_SAINT_DERPY_HOOVES",
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 1.00
+                },
+                "set_politics": {
+                    "ruling_party": "despotic"
+                },
+                "hidden_effect": {
+                    "remove_all_power_balance_modifiers": {
+                        "id": "BOP_C03_INDEPENDENCE"
+                    },
+                    "remove_power_balance": {
+                        "id": "BOP_C03_INDEPENDENCE"
+                    },
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_VISIBLE_CHARACTER_UNITY_COMMITTEE_C03",
+                    "promote_character": {
+                        "character": "CHARACTER_UNITY_COMMITTEE_C03",
+                        "ideology": "despotic_duchy"
+                    }
+                }
+            },
+            "C01": {
+                "puppet": {
+                    "target": "C03",
+                    "end_wars": false
+                },
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C01_OPERATION_BLUEBERRY_COMPLETED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

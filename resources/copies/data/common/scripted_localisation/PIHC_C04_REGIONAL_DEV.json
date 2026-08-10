@@ -1,0 +1,412 @@
+{
+    "defined_text": {
+        "name": "C04GetCurrentStateGroupNameNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 1
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_1"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 2
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_2"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 3
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_3"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 4
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_4"
+        },
+        "text__D4": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 5
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_5"
+        },
+        "text__D5": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 6
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_6"
+        },
+        "text__D6": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 7
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_7"
+        },
+        "text__D7": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 8
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_8"
+        },
+        "text__D8": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_0"
+        }
+    },
+    "defined_text__D1": {
+        "name": "C04GetCurrentStateGroupPopulationDisplayNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 1
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_1"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 2
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_2"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 3
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_3"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 4
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_4"
+        },
+        "text__D4": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 5
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_5"
+        },
+        "text__D5": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 6
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_6"
+        },
+        "text__D6": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 7
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_7"
+        },
+        "text__D7": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 8
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_8"
+        },
+        "text__D8": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "--"
+        }
+    },
+    "defined_text__D2": {
+        "name": "C04GetCurrentStateGroupPopulationRatioDisplayNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 1
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_1"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 2
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_2"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 3
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_3"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 4
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_4"
+        },
+        "text__D4": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 5
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_5"
+        },
+        "text__D5": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 6
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_6"
+        },
+        "text__D6": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 7
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_7"
+        },
+        "text__D7": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 8
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_POPULATION_RATIO_8"
+        },
+        "text__D8": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "--"
+        }
+    },
+    "defined_text__D3": {
+        "name": "C04GetCurrentStateGroupEconomicFactorDisplayNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 1
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_1"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 2
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_2"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 3
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_3"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 4
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_4"
+        },
+        "text__D4": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 5
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_5"
+        },
+        "text__D5": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 6
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_6"
+        },
+        "text__D6": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 7
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_7"
+        },
+        "text__D7": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 8
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_FACTOR_8"
+        },
+        "text__D8": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "--"
+        }
+    },
+    "defined_text__D4": {
+        "name": "C04GetCurrentStateGroupEconomicScoreDisplayNested",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 1
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_1"
+        },
+        "text__D1": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 2
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_2"
+        },
+        "text__D2": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 3
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_3"
+        },
+        "text__D3": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 4
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_4"
+        },
+        "text__D4": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 5
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_5"
+        },
+        "text__D5": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 6
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_6"
+        },
+        "text__D6": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 7
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_7"
+        },
+        "text__D7": {
+            "trigger": {
+                "check_variable": {
+                    "C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE": 8
+                }
+            },
+            "localization_key": "C04_REGIONAL_DEV_STATE_GROUP_ECONOMIC_SCORE_8"
+        },
+        "text__D8": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "--"
+        }
+    },
+    "defined_text__D5": {
+        "name": "C04GetCurrentStateGroupName",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[C04GetCurrentStateGroupNameNested]"
+        }
+    },
+    "defined_text__D6": {
+        "name": "C04GetCurrentStateGroupPopulationDisplay",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[C04GetCurrentStateGroupPopulationDisplayNested]"
+        }
+    },
+    "defined_text__D7": {
+        "name": "C04GetCurrentStateGroupPopulationRatioDisplay",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[C04GetCurrentStateGroupPopulationRatioDisplayNested]"
+        }
+    },
+    "defined_text__D8": {
+        "name": "C04GetCurrentStateGroupEconomicFactorDisplay",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[C04GetCurrentStateGroupEconomicFactorDisplayNested]"
+        }
+    },
+    "defined_text__D9": {
+        "name": "C04GetCurrentStateGroupEconomicScoreDisplay",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "[C04GetCurrentStateGroupEconomicScoreDisplayNested]"
+        }
+    }
+}

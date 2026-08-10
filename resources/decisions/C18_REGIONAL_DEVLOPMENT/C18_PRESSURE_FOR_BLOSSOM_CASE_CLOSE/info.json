@@ -1,0 +1,27 @@
+{
+    "name": "War on Corruption",
+    "priority": 999,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 540,
+    "is_good": false,
+    "fire_only_once": true,
+    "activation": {
+        "always": false
+    },
+    "visible": {
+        "has_decision": "DECISION_C18_PRESSURE_FOR_BLOSSOM_CASE_CLOSE"
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C18_010_CORRUPTION_CASE_CLOSE"
+    },
+    "complete_effect": {
+        "add_political_power": 25
+    },
+    "timeout_effect": {
+        "C18_ADD_NIRIK_0_100": true,
+        "C18_ADD_GROWTH_0_25": true,
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE"
+    }
+}

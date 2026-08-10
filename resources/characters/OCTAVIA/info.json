@@ -1,0 +1,39 @@
+{
+    "gender": "female",
+    "country_leader": {
+        "ideology": "peacism_dogmatism",
+        "traits": [
+            "TRAIT_OCTAVIA_A_PEACEFUL_DREAM"
+        ]
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_OCTAVIA_A_PEACEFUL_DREAM"
+        ],
+        "on_add": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": 0.20
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "min": 0.0,
+                "max": 1.0
+            }
+        },
+        "on_remove": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": -0.20
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "min": 0.0,
+                "max": 1.0
+            }
+        },
+        "can_be_fired": false
+    }
+}

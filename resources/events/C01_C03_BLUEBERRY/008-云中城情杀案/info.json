@@ -1,0 +1,26 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "C01_C03_DERPY_AND_DOCTOR_HOOVES": true
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

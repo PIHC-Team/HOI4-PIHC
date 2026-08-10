@@ -1,0 +1,59 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_APOCALYPSE_C06",
+    "priority": 10,
+    "dx": -1,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_APOCALYPSE_C02",
+        "focus__D1": "FOCUS_C15_SOMBRA_APOCALYPSE_C01",
+        "focus__D2": "FOCUS_C15_SOMBRA_APOCALYPSE_C06"
+    },
+    "bypass": {
+        "NOT": {
+            "country_exists": "C12",
+            "country_exists__D1": "C14"
+        }
+    },
+    "cost": 6,
+    "will_lead_to_war_with": "C12",
+    "will_lead_to_war_with__D1": "C14",
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "country_exists": "C12"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C15_SOMBRA_C12_PREPARED",
+                "days": 120
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "country_exists": "C14"
+            },
+            "add_timed_idea": {
+                "idea": "IDEA_C15_SOMBRA_C14_PREPARED",
+                "days": 120
+            }
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

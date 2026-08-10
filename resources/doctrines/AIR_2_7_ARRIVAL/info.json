@@ -1,0 +1,26 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 14,
+    "xp_unlock_cost": 400,
+
+    "air_accidents_factor": -1.00,
+    "air_range_factor": 9999.99,
+
+    "research_cost": 9.0,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_flying_fortress"
+    ],
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Unicorn Magic Academy",
+    "category": "electronics",
+
+    "x": 10,
+    "y": 3,
+
+    "size": "small",
+
+    "allow": {
+        "is_unicorn_country": true
+    },
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "production_lack_of_resource_penalty_factor": 0.15,
+    "training_time_factor": 0.1,
+    "offence": 0.12,
+    "defence": 0.12,
+    "special_project_specialization": [
+        "specialization_magic"
+    ],
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_MODERN",
+        "research_cost_coeff": 1
+    },
+    "path__D1": {
+        "leads_to_tech": "TECHNOLOGY_TECH_MAGI_DARKMAGIC",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 5.0,
+    "start_year": 1001
+}

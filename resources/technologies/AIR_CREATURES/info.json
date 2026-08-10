@@ -1,0 +1,30 @@
+{
+    "name": "Flying Creatures Formation",
+    "category": "air_techs",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 10,
+    "y": 0,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_summon"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_CREATURE_TRAINING": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1000
+}

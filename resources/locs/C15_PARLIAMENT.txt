@@ -1,0 +1,72 @@
+[zh.@TITLE]
+水晶帝国理事会代表分布
+[en.@TITLE]
+Distribution of CEC Representatives
+[zh.@SEAT_DESC]
+代表席 #[?temp_seat|Y0]
+[en.@SEAT_DESC]
+Rep. Seat #[?temp_seat|Y0]
+[zh.@SEAT_DATA_DESC]
+[GetParliamentSeatName] 属于 §Y[GetParliamentPartyName]§!
+[en.@SEAT_DATA_DESC]
+[GetParliamentSeatName] belongs to §Y[GetParliamentPartyName]§!
+[zh.@PARTY_TEXT]
+§Y[GetParliamentPartyName]§! - [?C15.parliament_seat_array^parliament_member_index|Y0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^parliament_member_index|+=0])
+[en.@PARTY_TEXT]
+§Y[GetParliamentPartyName]§! - [?C15.parliament_seat_array^parliament_member_index|Y0] Rep. Seats (Expected to be [?C15.parliament_delta_array^parliament_member_index|+=0] in the next election)
+[zh.@DATA_BEFORE_ELECTION]
+当前理事会代表分布:
+$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^0|+=0])
+$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^1|+=0])
+$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^2|+=0])
+$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^3|+=0])
+$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^4|+=0])
+$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] 代表席 (预计在下次选举中[?C15.parliament_delta_array^5|+=0])
+[en.@DATA_BEFORE_ELECTION]
+Current distribution of CEC representatives:
+$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^0|+=0] in the next election)
+$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^1|+=0] in the next election)
+$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^2|+=0] in the next election)
+$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^3|+=0] in the next election)
+$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^4|+=0] in the next election)
+$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^5|+=0] in the next election)
+[zh.@DATA_AFTER_ELECTION]
+选举结束后的新一届理事会代表分布:
+$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] 代表席
+$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] 代表席
+$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] 代表席
+$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] 代表席
+$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] 代表席
+$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] 代表席
+[en.@DATA_AFTER_ELECTION]
+New distribution of CEC representatives after the election:
+$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] Rep. Seats
+$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] Rep. Seats
+$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] Rep. Seats
+$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] Rep. Seats
+$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] Rep. Seats
+$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] Rep. Seats
+[zh.@PARTY_1]
+小马利亚团结委员会
+[en.@PARTY_1]
+Equestria Unity Commission
+[zh.@PARTY_2]
+水晶帝国皇室内阁
+[en.@PARTY_2]
+Crystal Empire Royal Cabinet
+[zh.@PARTY_3]
+水晶帝国和谐党
+[en.@PARTY_3]
+Crystal Empire Harmony Party
+[zh.@PARTY_4]
+水晶帝国自由党
+[en.@PARTY_4]
+Crystal Empire Freedom Party
+[zh.@PARTY_5]
+幻形灵顾问团
+[en.@PARTY_5]
+Changeling Advisory Council
+[zh.@PARTY_6]
+红色水晶
+[en.@PARTY_6]
+Red Crystal

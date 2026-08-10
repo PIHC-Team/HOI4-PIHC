@@ -1,0 +1,34 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_BY_YOUR_SIDE",
+    "prerequisite": {
+        "focus": "FOCUS_C08_PONIES_ARMY"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_BY_YOUR_SIDE"
+    },
+    "prerequisite__D2": {
+        "focus": "FOCUS_C08_SHINING_METROPOLIS"
+    },
+    "select_effect": {
+        "country_event": {
+            "id": "C08_MAIN.77"
+        }
+    },
+    "priority": 0,
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C08_WAY_BACK_HOME_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

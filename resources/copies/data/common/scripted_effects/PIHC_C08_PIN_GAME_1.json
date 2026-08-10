@@ -1,0 +1,457 @@
+{
+
+    "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": {
+        "random_list": {
+            "seed": "random",
+            "10": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1": "v"
+                    }
+                }
+            },
+            "10__D1": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2": "v"
+                    }
+                }
+            },
+            "10__D2": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3": "v"
+                    }
+                }
+            },
+            "10__D3": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4": "v"
+                    }
+                }
+            },
+            "10__D4": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5": "v"
+                    }
+                }
+            },
+            "10__D5": {
+                "modifier": {
+                    "factor": 0,
+                    "check_variable": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6^num > 0": null
+                    }
+                },
+                "for_each_loop": {
+                    "array": "ARRAY_LOCS_SOURCE",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6": "v"
+                    }
+                }
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE": {
+        "C08": {
+            "clear_array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1",
+            "clear_array__D1": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2",
+            "clear_array__D2": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3",
+            "clear_array__D3": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4",
+            "clear_array__D4": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5",
+            "clear_array__D5": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6"
+        },
+        "C08__D1": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 1
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 2
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 3
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 5
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 16
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 4
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 6
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D2": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 10
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 1
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 6
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 17
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 12
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 4
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 21
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D3": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 7
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 18
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 17
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 11
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 13
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 3
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 12
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D4": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 8
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 14
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 9
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 16
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 11
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 21
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 17
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D5": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 15
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 3
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 9
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 19
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 14
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 20
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 21
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D6": {
+            "clear_array": "ARRAY_LOCS_SOURCE",
+            "add_to_array": {
+                "ARRAY_LOCS_SOURCE": 8
+            },
+            "add_to_array__D1": {
+                "ARRAY_LOCS_SOURCE": 10
+            },
+            "add_to_array__D2": {
+                "ARRAY_LOCS_SOURCE": 19
+            },
+            "add_to_array__D3": {
+                "ARRAY_LOCS_SOURCE": 2
+            },
+            "add_to_array__D4": {
+                "ARRAY_LOCS_SOURCE": 15
+            },
+            "add_to_array__D5": {
+                "ARRAY_LOCS_SOURCE": 16
+            },
+            "add_to_array__D6": {
+                "ARRAY_LOCS_SOURCE": 20
+            },
+            "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW": true
+        },
+        "C08__D7": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INITIALIZED"
+        }
+    },
+    "PIHC_C08_PIN_GAME_1_GET_A_PUZZLE_ARRAY": {
+        "clear_array": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE",
+        "random_list": {
+            "seed": "random",
+            "10": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            },
+            "10__D1": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            },
+            "10__D2": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            },
+            "10__D3": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            },
+            "10__D4": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            },
+            "10__D5": {
+                "for_each_loop": {
+                    "array": "C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6",
+                    "index": "i",
+                    "value": "v",
+                    "add_to_array": {
+                        "C08.ARRAY_C08_PIN_GAME_1_PUZZLE": "v"
+                    }
+                }
+            }
+        },
+        "while_loop_effect": {
+            "limit": {
+                "check_variable": {
+                    "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^num > 4": null
+                }
+            },
+            "set_temp_variable_to_random": {
+                "var": "deletion_index",
+                "min": 0,
+                "max": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^num",
+                "integer": true
+            },
+            "remove_from_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE",
+                "index": "deletion_index"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_1_CREATE_PUZZLE_DECISIONS": {
+        "clear_array": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP",
+        "for_each_loop": {
+            "array": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE",
+            "index": "i",
+            "value": "v",
+            "add_to_array": {
+                "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP": "v"
+            }
+        },
+        "clear_array__D1": "C08.ARRAY_C08_PIN_GAME_1_DECISIONS",
+        "while_loop_effect": {
+            "limit": {
+                "check_variable": {
+                    "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP^num > 0": null
+                }
+            },
+            "set_temp_variable_to_random": {
+                "var": "deletion_index",
+                "min": 0,
+                "max": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP^num",
+                "integer": true
+            },
+            "add_to_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_1_DECISIONS",
+                "value": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP^deletion_index"
+            },
+            "remove_from_array": {
+                "array": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE_TEMP",
+                "index": "deletion_index"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_1_INIT": {
+        "hidden_effect": {
+            "C08": {
+                "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT",
+                "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT",
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INITIALIZED"
+                        }
+                    },
+                    "PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE": true
+                },
+                "PIHC_C08_PIN_GAME_1_GET_A_PUZZLE_ARRAY": true,
+                "PIHC_C08_PIN_GAME_1_CREATE_PUZZLE_DECISIONS": true,
+                "clear_array": "C08.ARRAY_C08_PIN_GAME_1_ANSWERS",
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_READY"
+            }
+        }
+    },
+    "PIHC_C08_PIN_GAME_1_CHECK": {
+        "hidden_effect": {
+            "C08": {
+                "if": {
+                    "limit": {
+                        "check_variable": {
+                            "C08.ARRAY_C08_PIN_GAME_1_ANSWERS^0": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^0"
+                        },
+                        "check_variable__D1": {
+                            "C08.ARRAY_C08_PIN_GAME_1_ANSWERS^1": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^1"
+                        },
+                        "check_variable__D2": {
+                            "C08.ARRAY_C08_PIN_GAME_1_ANSWERS^2": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^2"
+                        },
+                        "check_variable__D3": {
+                            "C08.ARRAY_C08_PIN_GAME_1_ANSWERS^3": "C08.ARRAY_C08_PIN_GAME_1_PUZZLE^3"
+                        }   
+                    },
+                    "SOLVE_PIHC_C08_PIN_GAME_1": true
+                },
+                "else": {
+                    "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT",
+                    "scoped_sound_effect": "wrong_ev"
+                }
+            }
+        }
+    },
+    "START_PIHC_C08_PIN_GAME_1": {
+        "C08": {
+            "ADD_INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK_1": true,
+            "PIHC_C08_PIN_GAME_1_INIT": true
+        }
+    },
+    "SOLVE_PIHC_C08_PIN_GAME_1": {
+        "C08": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT",
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT",
+            "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS",
+            "set_country_flag__D2": "PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS",
+            "clr_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_READY",
+            "if": {
+                "limit": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT"
+                },
+                "C02": {
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.30",
+                        "days": 3
+                    }
+                }
+            },
+            "scoped_sound_effect": "correct_ev"
+        }
+    }
+}

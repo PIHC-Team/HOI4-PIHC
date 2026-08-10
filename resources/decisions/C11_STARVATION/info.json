@@ -1,0 +1,11 @@
+{
+    "priority": 30000,
+    "allowed": {
+        "tag": "C11"
+    },
+    "visible": {
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C11_CIVIL_WAR"
+        }
+    }
+}

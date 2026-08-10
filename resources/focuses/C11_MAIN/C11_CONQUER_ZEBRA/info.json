@@ -1,0 +1,23 @@
+{
+    "tree": "C11_MAIN",
+    "parent": "FOCUS_C11_VENI_VIDI_VICI",
+    "priority": 30,
+    "prerequisite": {
+        "focus": "FOCUS_C11_VENI_VIDI_VICI"
+    },
+    "cost": 3,
+    "will_lead_to_war_with": "C30",
+    "completion_reward": {
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

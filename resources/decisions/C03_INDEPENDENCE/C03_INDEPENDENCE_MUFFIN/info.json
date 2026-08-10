@@ -1,0 +1,48 @@
+{
+    "name": "Muffins",
+    "priority": 0,
+    
+    "cost": 0,
+    "days_re_enable": 90,
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "CUSTOM_OWN_MUFFINS_1000",
+            "check_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 1000,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    },
+    "custom_cost_trigger": {
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1000,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_MUFFINS_1000",
+    "complete_effect": {
+        "subtract_from_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 1000
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+        "add_power_balance_value": {
+            "id": "BOP_C03_INDEPENDENCE",
+            "value": 0.05,
+            "tooltip_side": "BOP_C03_INDEPENDENCE_RIGHT_SIDE"
+        }
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 40,
+            "check_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 8000,
+                "compare": "greater_than_or_equals"
+            }
+        }
+    }
+}

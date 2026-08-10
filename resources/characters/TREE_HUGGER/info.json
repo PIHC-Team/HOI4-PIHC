@@ -1,0 +1,14 @@
+{
+    "name": "Tree Hugger",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "all",
+        "cost": 350,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_DOVISH",
+            "TRAIT_FREEDOM_FIGHTER"
+        ]
+    }
+}

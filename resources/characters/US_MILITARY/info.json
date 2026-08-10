@@ -1,0 +1,15 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "military",
+        "traits": [
+            "TRAIT_US_MILITARY"
+        ],
+        "cost": 0,
+        "removal_cost": 350,
+        "visible": {
+            "has_global_flag": "PIHC_ACHIEVEMENT_FLAG_C23_OIL_WHERE"
+        }
+    }
+}

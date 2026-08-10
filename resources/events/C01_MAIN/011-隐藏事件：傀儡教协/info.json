@@ -1,0 +1,43 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C10": {
+                "set_politics": {
+                    "ruling_party": "despotic"
+                },
+                "add_popularity": {
+                    "ideology": "despotic",
+                    "popularity": 1.00
+                },
+                "add_popularity__D1": {
+                    "ideology": "democratic",
+                    "popularity": 0.10
+                },
+                "add_popularity__D2": {
+                    "ideology": "corporation",
+                    "popularity": 0.05
+                },
+                "promote_character": {
+                    "character": "CHARACTER_CHANCELLOR_NEIGHSAY",
+                    "ideology": "despotic_duchy"
+                }
+            },
+            "C01": {
+                "news_event": {
+                    "id": "C01_MAIN.8",
+                    "days": 1
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

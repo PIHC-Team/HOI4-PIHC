@@ -1,0 +1,108 @@
+{
+    "name": "Courtyard of Seas",
+    "archetype": "ship_hull_heavy",
+
+    "priority": 1500,
+    "module_slots": {
+        "fixed_ship_battery_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "ship_heavy_battery"
+            ]
+        },
+        "fixed_ship_anti_air_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "ship_anti_air"
+            ]
+        },
+        "fixed_ship_fire_control_system_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "ship_fire_control_system"
+            ]
+        },
+        "fixed_ship_radar_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "ship_radar"
+            ]
+        },
+        "fixed_ship_engine_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "heavy_ship_engine"
+            ]
+        },
+        "fixed_ship_secondaries_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "ship_secondaries",
+                "ship_dp_secondaries"
+            ]
+        },
+        "fixed_ship_armor_slot": {
+            "required": true,
+            "allowed_module_categories": [
+                "ship_heavy_armor"
+            ]
+        },
+        "front_1_custom_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "ship_anti_air",
+                "ship_heavy_battery"
+            ]
+        },
+        "mid_1_custom_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "ship_torpedo",
+                "ship_anti_air",
+                "ship_secondaries",
+                "ship_dp_secondaries"
+            ]
+        },
+        "mid_2_custom_slot": "mid_1_custom_slot",
+        "rear_1_custom_slot": {
+            "required": false,
+            "allowed_module_categories": [
+                "ship_anti_air",
+                "ship_heavy_battery"
+            ]
+        }
+    },
+    "default_modules": {
+        "fixed_ship_battery_slot": "ship_heavy_battery_1",
+        "fixed_ship_anti_air_slot": "ship_anti_air_1",
+        "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+        "fixed_ship_radar_slot": "empty",
+        "fixed_ship_engine_slot": "heavy_ship_engine_1",
+        "fixed_ship_secondaries_slot": "ship_secondaries_1",
+        "fixed_ship_armor_slot": "ship_armor_bb_1",
+        "front_1_custom_slot": "ship_anti_air_1",
+        "mid_1_custom_slot": "ship_anti_air_1",
+        "mid_2_custom_slot": "ship_secondaries_2",
+        "rear_1_custom_slot": "ship_heavy_battery_1"
+    },
+    "lg_armor_piercing": 0,
+    "lg_attack": 0,
+    "hg_armor_piercing": 0,
+    "hg_attack": 0,
+    "torpedo_attack": 0,
+    "anti_air_attack": 0,
+    "armor_value": 20,
+    "surface_detection": 12,
+    "sub_detection": 5,
+    "surface_visibility": 30,
+    "naval_speed": 21,
+    "reliability": 0.8,
+    "naval_range": 3000,
+    "max_strength": 350,
+    "fuel_consumption": 0,
+    "build_cost_ic": 5600,
+    "resources": {
+        "logs": 20
+    },
+    "manpower": 12
+}

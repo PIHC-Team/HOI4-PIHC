@@ -1,0 +1,38 @@
+{
+    "name": "Magictron Anomaly Detector",
+    "category": "electronics",
+
+    "x": 0,
+    "y": 24,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_civil",
+        "pihc_electronics",
+        "pihc_magical",
+        "pihc_commu_tech",
+        "pihc_magictronics"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_building": {
+        "building": "radar_station",
+		"level": 5
+    },
+    "land_reinforce_rate": 0.06,
+    "coordination_bonus": 0.04,
+
+    "dependencies": {
+        "TECHNOLOGY_TECH_COMM_V": 1,
+        "TECHNOLOGY_TECH_MAGI_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1008
+}

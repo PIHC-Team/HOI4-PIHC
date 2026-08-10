@@ -1,0 +1,41 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 1,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_nurse",
+        "pihc_support_disease",
+        "pihc_special"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+
+    "allow": {
+        "OR": {
+            "controls_state": 502,
+            "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME": true
+        }
+    },
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_NURSE_III": 1,
+        "TECHNOLOGY_SUPPORT_DISEASE_II": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1007
+}

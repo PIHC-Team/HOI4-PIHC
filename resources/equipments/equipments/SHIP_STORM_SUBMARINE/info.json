@@ -1,0 +1,33 @@
+{
+    "name": "Storm Submarine",
+    "archetype": "ship_hull_submarine",
+
+    "priority": 2502,
+    "module_slots": "inherit",
+    "default_modules": {
+        "fixed_ship_torpedo_slot": "ship_torpedo_sub_2",
+        "fixed_ship_engine_slot": "sub_ship_engine_1",
+        "rear_1_custom_slot": "ship_torpedo_sub_1"
+    },
+    "lg_armor_piercing": 0,
+    "lg_attack": 0,
+    "torpedo_attack": 12,
+    "anti_air_attack": 0,
+    "armor_value": 40,
+    "surface_detection": 50,
+    "sub_detection": 0,
+    "surface_visibility": 1,
+    "sub_visibility": 15,
+    "naval_speed": 18,
+    "reliability": 0.8,
+    "fuel_consumption": 0,
+    "naval_range": 5000,
+    "max_strength": 30,
+    "build_cost_ic": 350,
+    "resources": {
+        "steel": 4,
+        "coal": 1,
+        "crystals": 2
+    },
+    "manpower": 1
+}

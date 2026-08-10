@@ -1,0 +1,90 @@
+{
+    "mio_policy_general_ruthless_contracts": {
+        "icon": "GFX_mio_policy_ruthless_contracts",
+        "allowed": {
+            "always": true
+        },
+        "available": {
+            "has_mio_size > 5": null
+        },
+        "organization_modifier": {
+            "military_industrial_organization_funds_gain": 0.1
+        }
+    },
+    "mio_policy_general_assembly_line_optimisers": {
+        "icon": "GFX_mio_policy_assembly_line_optimisers",
+        "allowed": {
+            "OR": {
+                "has_mio_equipment_type": "small_plane_airframe",
+                "has_mio_equipment_type__D1": "medium_plane_airframe",
+                "has_mio_equipment_type__D2": "large_plane_airframe",
+                "has_mio_equipment_type__D3": "small_plane_cas_airframe",
+                "has_mio_equipment_type__D4": "small_plane_naval_bomber_airframe",
+                "has_mio_equipment_type__D5": "medium_plane_fighter_airframe",
+                "has_mio_equipment_type__D6": "medium_plane_scout_plane_airframe",
+                "has_mio_equipment_type__D7": "large_plane_maritime_patrol_plane_airframe",
+                "has_mio_equipment_type__D8": "armor",
+                "has_mio_equipment_type__D9": "motorized_equipment",
+                "has_mio_equipment_type__D10": "mechanized_equipment",
+                "has_mio_equipment_type__D11": "anti_tank_equipment",
+                "has_mio_equipment_type__D12": "flame_equipment",
+                "has_mio_equipment_type__D13": "anti_air_equipment",
+                "has_mio_equipment_type__D14": "artillery_equipment",
+                "has_mio_equipment_type__D15": "rocket_equipment",
+                "has_mio_equipment_type__D16": "infantry_equipment",
+                "has_mio_equipment_type__D17": "railway_gun_equipment",
+                "has_mio_equipment_type__D18": "train_equipment"
+            }
+        },
+        "available": {
+            "has_mio_size > 5": null
+        },
+        "production_bonus": {
+            "same_as_mio": {
+                "production_efficiency_cap_factor": 0.05,
+                "production_efficiency_gain_factor": 0.05
+            }
+        }
+    },
+    "mio_policy_general_vertical_integration": {
+        "icon": "GFX_mio_policy_vertical_integration",
+        "allowed": {
+            "always": true
+        },
+        "available": {
+            "has_mio_size > 5": null
+        },
+        "production_bonus": {
+            "same_as_mio": {
+                "production_resource_need_factor": -0.1,
+                "production_resource_penalty_factor": 0.1
+            }
+        }
+    },
+    "mio_policy_general_mechanical_genius": {
+        "icon": "GFX_mio_policy_mechanical_genius",
+        "allowed": {
+            "always": true
+        },
+        "available": {
+            "has_mio_size > 5": null
+        },
+        "equipment_bonus": {
+            "same_as_mio": {
+                "reliability": 0.1
+            }
+        }
+    },
+    "mio_policy_general_experimental_development_teams": {
+        "icon": "GFX_mio_policy_experimental_development_teams",
+        "allowed": {
+            "always": true
+        },
+        "available": {
+            "has_mio_size > 5": null
+        },
+        "organization_modifier": {
+            "military_industrial_organization_research_bonus": 0.2
+        }
+    }
+}

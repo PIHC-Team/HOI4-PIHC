@@ -1,0 +1,9 @@
+{
+    "name": "White Horror",
+    "removal_cost": -1,
+    "modifier": {
+        "resistance_decay_on_our_occupied_states": 0.25,
+        "resistance_damage_to_garrison_on_our_occupied_states": 0.25,
+        "local_manpower": 0.9
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "name": "Air Tech",
+    "category": "bba_air_techs",
+
+    "x": 8,
+    "y": 18,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+
+    "on_research_complete": {
+        "swap_ideas": {
+            "remove_idea": "IDEA_ALL_TECH_AIR_AIRSHIP_COST_1",
+            "add_idea": "IDEA_ALL_TECH_AIR_AIRSHIP_COST_2"
+        }
+    },
+
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III",
+        "research_cost_coeff": 1
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+"ai_will_do": {
+        "factor": 1,
+        "modifier": {
+            "factor": 25,
+            "arms_factory > 80": null
+        },
+        "modifier__D1": {
+            "factor": 5,
+            "date > 1004.8.1": null,
+            "is_major": true
+        },
+        "modifier__D2": {
+            "factor": 50,
+            "arms_factory > 150": null
+        },
+        "modifier__D3": {
+            "factor": 5,
+            "has_army_manpower": {
+                "size > 20000": null
+            }
+        },
+        "modifier__D4": {
+            "factor": 25,
+            "tag": "C01"
+        }
+    },
+    "research_cost": 1.5,
+    "start_year": 1006
+}

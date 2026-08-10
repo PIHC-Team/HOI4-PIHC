@@ -1,0 +1,14 @@
+{
+    "name": "Normal",
+    "removal_cost": -1,
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "monthly_population": -0.01,
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_4_NORMAL_TOOLTIP"
+    },
+    "cost": 150,
+    "default": true,
+    "cancel_if_invalid": false
+}

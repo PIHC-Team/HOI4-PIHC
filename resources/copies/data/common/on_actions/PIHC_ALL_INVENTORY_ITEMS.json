@@ -1,0 +1,18 @@
+{
+    "on_actions": {
+        "on_startup": {
+            "effect": {
+                "C08": {
+                    "ADD_INVENTORY_ITEM_6MY_C08_BLUNDERBUSS_1": true,
+                    "ADD_INVENTORY_ITEM_5LG_C08_PIN_1": true
+                },
+                "C02": {
+                    "ADD_INVENTORY_ITEM_5LG_C02_PIN_1": true
+                },
+                "C01": {
+                    "ADD_INVENTORY_ITEM_6MY_C01_LOCKET_1": true
+                }
+            }
+        }
+    }
+}

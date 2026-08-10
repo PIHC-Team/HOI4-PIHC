@@ -1,0 +1,37 @@
+{
+    "name": "Magical Gonne",
+    "category": "infantry",
+
+    "x": 0,
+    "y": 15,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_magical"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE"
+    ],
+    "enable_subunits": [
+    ],
+    "allow": {
+        "if": {
+            "limit": {
+                "tag": "C21"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "TECHNOLOGY_MAGICAL_YOVIDAPHONE_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "dependencies": {
+        "TECHNOLOGY_TROMBONE": 1,
+        "TECHNOLOGY_MAGICAL_BLUNDERBUSS": 1
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1005
+}

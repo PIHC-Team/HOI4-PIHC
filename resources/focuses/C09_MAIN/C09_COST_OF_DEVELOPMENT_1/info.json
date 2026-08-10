@@ -1,0 +1,28 @@
+{
+    "tree": "C09_MAIN",
+    "parent": "FOCUS_C09_ECO_WAR",
+    "prerequisite": {
+        "focus": "FOCUS_C09_ECO_WAR"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "UPGRADE_TECH": true,
+        "DOWNGRADE_HYGIENE": true,
+        "add_political_power": 50
+    },
+    "available": {
+        "has_country_leader": {
+            "character": "CHARACTER_STELLAR_FLARE",
+            "ruling_only": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "operations": [
+        {
+            "type": "click",
+            "effects": {
+                "if": {
+                    "limit": {
+                        "has_completed_focus": "FOCUS_C01_C02_SILO_INSPECTION"
+                    },
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.2"
+                    }
+                },
+                "else": {
+                    "country_event": {
+                        "id": "C01_C02_GREENLIGHT.1"
+                    }
+                }
+            },
+            "trigger": {
+                "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C01_REPORT_RABID_RHODODENDRONS": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "category": "land",
+    "x": -2,
+    "y": 8,
+
+    "industrial_capacity_factory": 0.10,
+    "cic_construction_boost_factor": 0.10,
+    "war_support_factor": 0.10,
+
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_rose_of_will"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_3_5A_EACH_TO_OWN_JOBS",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_FASHION_IDOL"
+        ],
+        "on_add": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "CHARACTER_JET_SET",
+                        "has_idea__D1": "CHARACTER_FANCY_PANTS",
+                        "NOT": {
+                            "has_idea": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                        }
+                    },
+                    "add_ideas": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                }
+            }
+        },
+        "on_remove": {
+            "owner": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                    },
+                    "remove_ideas": "IDEA_C01_ROYAL_SWANIFYING_COMMITTEE"
+                }
+            }
+        },
+        "removal_cost": 350,
+        "ai_will_do": {
+            "base": 1000
+        }
+    }
+}

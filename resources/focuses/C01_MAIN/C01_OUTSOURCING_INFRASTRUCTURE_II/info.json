@@ -1,0 +1,55 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_OUTSOURCING_LASPEGASUS",
+    "dx": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C01_OUTSOURCING_LASPEGASUS",
+        "focus__D1": "FOCUS_C01_OUTSOURCING_SIRESHOLLOW"
+    },
+    "completion_reward": {
+        "random_owned_controlled_state": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true,
+            "add_resource" : {
+            "type": "aluminium",
+            "amount": 24,
+            "state": "ROOT"
+        }
+        },
+        "random_owned_controlled_state__D1": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "random_owned_controlled_state__D2": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true
+        },
+        "random_owned_controlled_state__D3": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D4": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true,
+            "BUILD_AN_INFRA__D2": true,
+            "add_resource" : {
+            "type": "chromium",
+            "amount": 24,
+            "state": "ROOT"
+        }
+        },
+        "random_owned_controlled_state__D5": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D6": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        },
+        "random_owned_controlled_state__D7": {
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true
+        }
+    },
+    "cost": 4
+}

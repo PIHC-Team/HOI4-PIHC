@@ -1,0 +1,19 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.48",
+                    "days": 2,
+                    "random_days": 2
+                }
+            },
+            "add_stability": -0.05,
+            "add_war_support": 0.25
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,158 @@
+{
+    "name": "Pursue AK Yearling",
+    "priority": 100,
+    
+    "cost": 0,
+    "days_remove": 7,
+    "visible": {
+        "tag": "C01",
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_3"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2"
+            },
+            "718": {
+                "C01": {
+                    "num_divisions_in_states": {
+                        "count > 2": null,
+                        "states": ["718"]
+                    }
+                }
+            }
+        }
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "C13": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C13_AMBUSH"
+                    }
+                },
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "718": {
+                                "C01": {
+                                    "num_divisions_in_states": {
+                                        "count > 6": null,
+                                        "states": ["718"]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "718": {
+                        "every_state_division": {
+                            "destroy_unit": true
+                        }
+                    },
+                    "news_event": {
+                        "id": "C01_MAIN.22",
+                        "days": 1
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "718": {
+                            "C01": {
+                                "num_divisions_in_states": {
+                                    "count > 8": null,
+                                    "states": ["718"]
+                                }
+                            }
+                        }
+                    },
+                    "718": {
+                        "random_state_division": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D1": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D2": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D3": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D4": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D5": {
+                            "destroy_unit": true
+                        }
+                    },
+                    "C13": {
+                        "retire_character": "CHARACTER_AK_YEARLING"
+                    },
+                    "news_event": {
+                        "id": "C01_MAIN.23",
+                        "days": 1
+                    }
+                }
+            },
+            "else": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "718": {
+                                "C01": {
+                                    "num_divisions_in_states": {
+                                        "count > 3": null,
+                                        "states": ["718"]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "718": {
+                        "every_state_division": {
+                            "destroy_unit": true
+                        }
+                    },
+                    "news_event": {
+                        "id": "C01_MAIN.22",
+                        "days": 1
+                    }
+                },
+                "if__D1": {
+                    "limit": {
+                        "718": {
+                            "C01": {
+                                "num_divisions_in_states": {
+                                    "count > 3": null,
+                                    "states": ["718"]
+                                }
+                            }
+                        }
+                    },
+                    "718": {
+                        "random_state_division": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D1": {
+                            "destroy_unit": true
+                        },
+                        "random_state_division__D2": {
+                            "destroy_unit": true
+                        }
+                    },
+                    "C13": {
+                        "retire_character": "CHARACTER_AK_YEARLING"
+                    },
+                    "news_event": {
+                        "id": "C01_MAIN.23",
+                        "days": 1
+                    }
+                }
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 1000
+    }
+}

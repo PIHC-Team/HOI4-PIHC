@@ -1,0 +1,34 @@
+{
+    "category": "land",
+    "x": -2,
+    "y": 8,
+
+    "land_reinforce_rate": 0.08,
+    "army_speed_factor": 0.10,
+    "initiative_factor": 0.10,
+    "terrain_penalty_reduction": 0.10,
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_breeze_of_death"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_4_5A_BLITZ",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    },
+    "ai_research_weights": {
+        "armor": 4.0
+    }
+}

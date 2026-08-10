@@ -1,0 +1,67 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 80
+            },
+            "trigger": {
+                "tag": "C11"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 2
+            },
+            "trigger": {
+                "tag": "C11"
+            },
+            "country_event": {
+                "id": "CECIA.9",
+                "days": 2
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 18
+            },
+            "trigger": {
+                "tag": "C11"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C11_TRICKSTER_EXECUTED",
+            "retire_character": "CHARACTER_TRICKSTER"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "every_other_country": {
+                    "if": {
+                        "limit": {
+                            "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+                        },
+                        "country_event": {
+                            "id": "CECIA.8",
+                            "days": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C11",
+                    "tag__D1": "C01"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,32 @@
+state = {
+    id = 879
+    name = STATE_879
+    provinces = {
+        1051
+        4205
+        4543
+        5089
+        5531
+        7347
+        8577
+        9497
+        14701
+    }
+    manpower = 1106
+    state_category = wasteland
+    history = {
+        owner = C24
+        victory_points = {
+            1051
+            5
+        }
+        buildings = {
+
+        }
+        add_core_of = C24
+    }
+    resources = {
+        aluminium = 1
+        tungsten = 1
+    }
+}

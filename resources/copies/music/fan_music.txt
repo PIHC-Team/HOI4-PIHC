@@ -1,0 +1,77 @@
+music_station = "pihc_fan_station"
+music = {
+	song = "FM001"
+	chance = { base = 1 modifier = { add = 3 has_war = yes } }
+}
+music = {
+	song = "FM002"
+	chance = { base = 1 modifier = { add = 7 tag = C19 } }
+}
+music = {
+	song = "FM003"
+	chance = { base = 1 modifier = { add = 7 tag = C08 } }
+}
+music = {
+	song = "FM004"
+	chance = { base = 1 }
+}
+music = {
+	song = "FM005"
+	chance = { base = 0 }
+}
+music = {
+	song = "FM006"
+	chance = { base = 1 modifier = { add = 7 tag = C03 } }
+}
+music = {
+	song = "FM007"
+	chance = { base = 0 }
+}
+music = {
+	song = "FM008"
+	chance = { base = 0 }
+}
+music = {
+	song = "FM009"
+	chance = { base = 0 }
+}
+music = {
+	song = "FM010"
+	chance = { base = 1 modifier = { add = 7 tag = C07 } }
+}
+music = {
+	song = "FM011"
+	chance = { base = 1 modifier = { add = 3 has_war = yes } }
+}
+music = {
+	song = "FM012"
+	chance = { base = 0 }
+}
+music = {
+	song = "FM013"
+	chance = { base = 1 modifier = { add = 7 tag = C02 } }
+}
+music = {
+	song = "FM014"
+	chance = { base = 1 modifier = { add = 7 tag = C18 } modifier = { add = 3 tag = C34 } modifier = { add = 7 tag = C18 has_war = yes } }
+}
+music = {
+	song = "FM015"
+	chance = { base = 1 modifier = { add = 7 tag = C18 } modifier = { add = 3 tag = C34 } }
+}
+music = {
+	song = "FM016"
+	chance = { base = 1 modifier = { add = 3 tag = C18 } modifier = { add = 7 tag = C34 } }
+}
+music = {
+	song = "FM017"
+	chance = { base = 1 modifier = { add = 3 has_war = yes } }
+}
+music = {
+	song = "FM018"
+	chance = { base = 1 modifier = { add = 7 tag = C12 } modifier = { add = 7 tag = C04 } }
+}
+music = {
+	song = "FM019"
+	chance = { base = 0 modifier = { add = 4 tag = C08 has_war = yes } }
+}

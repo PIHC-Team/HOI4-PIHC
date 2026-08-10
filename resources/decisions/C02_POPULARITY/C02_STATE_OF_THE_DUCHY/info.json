@@ -1,0 +1,50 @@
+{
+    "name": "Second Election",
+    "priority": 999,
+    
+    "cost": 5,
+    "selectable_mission": true,
+    "days_mission_timeout": 14,
+    "days_re_enable": 150,
+    "is_good": false,
+    "allowed": {
+        "tag": "C02"
+    },
+    "activation": {
+        "has_completed_focus": "FOCUS_C02_THE_FIVE_MONTHS_PLAN",
+        "NOT": {
+            "has_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "complete_effect": {
+        "add_political_power": 125,
+        "custom_effect_tooltip": "C02_TRIXIE_LULAMOON_INC_5",
+        "add_to_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "value": 0.05
+        },
+        "clamp_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "timeout_effect": {
+        "custom_effect_tooltip": "C02_TRIXIE_LULAMOON_DEC_2",
+        "add_to_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "value": -0.02
+        },
+        "clamp_variable": {
+            "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "ai_will_do": {
+        "base": 4000
+    }
+}

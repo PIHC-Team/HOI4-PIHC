@@ -1,0 +1,233 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "clr_global_flag": "PIHC_GLOBAL_FLAG_EQUESTRIA_WAR",
+                "add_to_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "value": 2
+                },
+                "clamp_variable": {
+                    "var": "VAR_C08_LIBERATION_FRONT",
+                    "min": 1,
+                    "max": 8
+                }
+            },
+            "set_cosmetic_tag": "C08_liberate",
+            "news_event": {
+                "id": "C08_MAIN.59"
+            },
+            "if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_1"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_1",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                }
+            },
+            "else_if": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_2"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_2",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                }
+            },
+            "else_if__D1": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_3"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_3",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                }
+            },
+            "else_if__D2": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_4"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_4",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                }
+            },
+            "else_if__D3": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_5"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_5",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_7"
+                }
+            },
+            "else_if__D4": {
+                "limit": {
+                    "has_idea": "IDEA_C08_LIBERATION_FRONT_6"
+                },
+                "swap_ideas": {
+                    "remove_idea": "IDEA_C08_LIBERATION_FRONT_6",
+                    "add_idea": "IDEA_C08_LIBERATION_FRONT_8"
+                }
+            }
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "white_peace": {
+                "tag": "C01"
+            },
+            "annex_country": {
+                "target": "C01",
+                "transfer_troops": false
+            },
+            "if": {       
+                "limit": {
+                    "C33": {
+                        "exists": true
+                    }
+                },
+                "annex_country": {
+                    "target": "C33",
+                    "transfer_troops": false
+                }
+            },
+            "if__D1": {       
+                "limit": {
+                    "C02": {
+                        "exists": true
+                    }
+                },
+                "annex_country": {
+                    "target": "C02",
+                    "transfer_troops": false
+                }
+            },
+            "if__D2": {       
+                "limit": {
+                    "C10": {
+                        "exists": true
+                    }
+                },
+                "annex_country": {
+                    "target": "C10",
+                    "transfer_troops": false
+                }
+            },
+            "if__D3": {       
+                "limit": {
+                    "C03": {
+                        "exists": true
+                    }
+                },
+                "annex_country": {
+                    "target": "C03",
+                    "transfer_troops": false
+                }
+            },
+            "if__D4": {       
+                "limit": {
+                    "C04": {
+                        "exists": true
+                    }
+                },
+                "annex_country": {
+                    "target": "C04",
+                    "transfer_troops": false
+                }
+            },
+            "add_popularity": {
+                "ideology": "despotic",
+                "popularity": 0.25       
+            },
+            "add_state_core": 504,
+            "add_state_core__D1": 529,
+            "add_state_core__D2": 543,
+            "add_state_core__D3": 235,
+            "add_state_core__D4": 545,
+            "add_state_core__D5": 567,
+            "add_state_core__D6": 514,
+            "add_state_core__D7": 553,
+            "add_state_core__D8": 579,
+            "add_state_core__D9": 590,
+            "add_state_core__D10": 533,
+            "add_state_core__D11": 550,
+            "add_state_core__D12": 585,
+            "add_state_core__D13": 518,
+            "add_state_core__D14": 549,
+            "add_state_core__D15": 568,
+            "add_state_core__D16": 578,
+            "add_state_core__D17": 606,
+            "add_state_core__D18": 619,
+
+            "add_state_core__D19": 411,
+            "add_state_core__D20": 361,
+            "add_state_core__D21": 403,
+
+            "add_state_core__D22": 404,
+            "add_state_core__D23": 246,
+            "add_state_core__D24": 489,
+            "add_state_core__D25": 443,
+            "add_state_core__D26": 83,
+            "add_state_core__D27": 434,
+            "add_state_core__D28": 439,
+            "add_state_core__D29": 462,
+            "add_state_core__D30": 409,
+            "add_state_core__D31": 496,
+            "add_state_core__D32": 63,
+            "add_state_core__D33": 363,
+            "add_state_core__D34": 274,
+            "add_state_core__D35": 453,
+            "add_state_core__D36": 474,
+            "add_state_core__D37": 487,
+            "add_state_core__D38": 357,
+            "add_state_core__D39": 367,
+            "add_state_core__D40": 397,
+            "add_state_core__D41": 24,
+            "add_state_core__D42": 431,
+            "add_state_core__D43": 440,
+            "add_state_core__D44": 374,
+            "add_state_core__D45": 399,
+            "add_state_core__D46": 369,
+            "add_state_core__D47": 542,
+            "add_state_core__D48": 459,
+            "add_state_core__D49": 480,
+            "add_state_core__D50": 466,
+            "add_state_core__D51": 646,
+            "add_state_core__D52": 422,
+            "add_state_core__D53": 423,
+            "add_state_core__D54": 380,
+
+            "add_state_core__D55": 517,
+            "add_state_core__D56": 486,
+            "add_state_core__D57": 470,
+            "add_state_core__D58": 539,
+            "add_state_core__D59": 572,
+            "add_state_core__D60": 494,
+            "add_state_core__D61": 520,
+
+            "add_state_core__D62": 365,
+            "add_state_core__D63": 412,
+            "add_state_core__D64": 410,
+            "add_state_core__D65": 388,
+            "add_state_core__D66": 441,
+            "add_state_core__D67": 426,
+            "add_state_core__D68": 400,
+            "add_state_core__D69": 436,
+            "add_state_core__D70": 446,
+
+            "add_state_core__D71": 376,
+            "add_state_core__D72": 360,
+            "add_state_core__D73": 46,
+            "add_state_core__D74": 336,
+            "add_state_core__D75": 37
+
+
+        }
+    },
+    "is_triggered_only": true
+}

@@ -1,0 +1,24 @@
+{
+    "tree": "GENERIC",
+    "parent": "FOCUS_GEN_MILITARY",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_GEN_MILITARY"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "army_experience": 20,
+        "PIHC_DOCTRINE_LAND_SMALL_BOOST": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

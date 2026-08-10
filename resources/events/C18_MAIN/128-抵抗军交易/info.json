@@ -1,0 +1,50 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "load_oob": "C18_new_army"
+            },
+            "add_equipment_to_stockpile": {
+                "type": "ARCHETYPE_WITCHCRAFT",
+                "amount": 200
+            },
+            "add_equipment_to_stockpile__D1": {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 600
+            },
+            "add_equipment_to_stockpile__D2": {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 400
+            },
+            "add_tech_bonus": {
+                "bonus": 0.5,
+                "uses": 1,
+                "category": "pihc_firearm",
+                "name": "EVENT_C18_MAIN_128_TOOLTIP"
+            },
+            "capital_scope": {
+                "create_unit": {
+                    "division": "name = \"抵抗军训练战斗组 (Resistance-trained Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0",
+                    "owner": "C18",
+                    "count": 3
+                }
+            },
+            "C08": {
+                "add_intel": {
+                    "target": "C18",
+                    "civilian_intel": 40,
+                    "army_intel": 80
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

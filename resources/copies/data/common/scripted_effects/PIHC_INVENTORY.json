@@ -1,0 +1,49 @@
+{
+    "INVENTORY_GUI_CLEAR": {
+        "clear_array": "PIHC_INVENTORY_ARRAY",
+        "set_variable": {
+            "var": "PIHC_INVENTORY_DISPLAY",
+            "value": -1
+        }
+    },
+    "ADD_INVENTORY_ITEM_DEFAULT_1000": {
+        "add_to_variable": {
+            "VAR_INVENTORY_ITEM_DEFAULT": 1000
+        },
+        "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+    },
+    "INVENTORY_SCAN": {
+
+    },
+    "INVENTORY_DEBUG": {
+        
+    },
+    "INVENTORY_RELOAD": {
+        "INVENTORY_GUI_CLEAR": true,
+        "INVENTORY_SCAN": true,
+        "mark_focus_tree_layout_dirty": true
+    },
+    "INVENTORY_RELOAD_ONLY_WHEN_OPEN": {
+        "if": {
+            "limit": {
+                "check_variable": {
+                    "pihc_inventory_open": 1
+                }
+            },
+            "INVENTORY_RELOAD": true
+        },
+        "else": {
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "INVENTORY_OPEN": {
+        "INVENTORY_RELOAD": true,
+
+        "set_variable": {
+            "pihc_inventory_open": 1
+        }
+    },
+    "INVENTORY_CLOSE": {
+        "clear_variable": "pihc_inventory_open"
+    }
+}

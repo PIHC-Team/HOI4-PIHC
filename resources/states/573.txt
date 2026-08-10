@@ -1,0 +1,49 @@
+state = {
+    id = 573
+    name = STATE_573
+    provinces = {
+        1234
+        783
+        1306
+        1440
+        1532
+        3017
+        3247
+        3364
+        3506
+        7474
+        8168
+        8640
+        12824
+        12873
+        12907
+        12937
+        12940
+        13002
+        13027
+        13036
+        13039
+        13070
+    }
+    manpower = 85459
+    state_category = pastoral
+    history = {
+        owner = C46
+        victory_points = {
+            1234
+            1
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            1234 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C46
+    }
+    resources = {
+        steel = 20
+    }
+}

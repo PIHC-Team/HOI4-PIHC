@@ -1,0 +1,32 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 7,
+    "y": 9,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "paratrooper_weight_factor": -0.5,
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1002
+}

@@ -1,0 +1,49 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C08"
+            },
+            "clr_global_flag": "PIHC_GLOBAL_FLAG_PONYVILLE_WAR",
+            "remove_ideas": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS"
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "leave_faction": true,
+            "C01": {
+                "add_to_faction": "C02"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01",
+                    "tag__D1": "C08",
+                    "tag__D2": "C02"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

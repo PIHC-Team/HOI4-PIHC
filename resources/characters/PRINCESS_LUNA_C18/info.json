@@ -1,0 +1,19 @@
+{
+    "name": "Princess Luna",
+    "gender": "female",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "traits": [
+        ],
+        "visible": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EMBRACE"
+        },
+        "available": {
+            "always": false
+        },
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

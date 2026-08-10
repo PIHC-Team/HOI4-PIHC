@@ -1,0 +1,43 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C10"
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 85
+            },
+            "trigger": {
+                "tag": "C10"
+            },
+            "add_power_balance_value": {
+                "id": "BOP_C10_INDEPENDENCE",
+                "value": -0.10,
+                "tooltip_side": "BOP_C10_INDEPENDENCE_LEFT_SIDE"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 15
+            },
+            "trigger": {
+                "tag": "C10"
+            },
+            "add_power_balance_value": {
+                "id": "BOP_C10_INDEPENDENCE",
+                "value": 0.10,
+                "tooltip_side": "BOP_C10_INDEPENDENCE_RIGHT_SIDE"
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

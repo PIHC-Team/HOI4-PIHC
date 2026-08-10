@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "ADD_INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES_1": true,
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C18_COLLAPSED",
+                "country_event": {
+                    "id": "C18_MAIN.118"
+                }
+            }
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

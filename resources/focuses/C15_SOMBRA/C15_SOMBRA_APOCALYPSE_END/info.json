@@ -1,0 +1,50 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_APOCALYPSE_C23",
+    "dw": -2,
+    "dc": -2,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_APOCALYPSE_C23"
+    },
+    "cost": 4,
+    "will_lead_to_war_with": "C01",
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C15_SOMBRA_APOCALYPSE_END_TOOLTIP",
+        "add_to_variable": {
+            "var": "C15.VAR_SOMBRA_STATUE_MAX",
+            "value": 5
+        },
+        "add_to_variable__D1": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C15_SOMBRA_APOCALYPSE_302",
+        "has_completed_focus__D1": "FOCUS_C15_SOMBRA_APOCALYPSE_588",
+        "has_completed_focus__D2": "FOCUS_C15_SOMBRA_APOCALYPSE_C01",
+        "has_completed_focus__D3": "FOCUS_C15_SOMBRA_APOCALYPSE_C02",
+        "has_completed_focus__D4": "FOCUS_C15_SOMBRA_APOCALYPSE_C03C04",
+        "has_completed_focus__D5": "FOCUS_C15_SOMBRA_APOCALYPSE_C05",
+        "has_completed_focus__D6": "FOCUS_C15_SOMBRA_APOCALYPSE_C06",
+        "has_completed_focus__D7": "FOCUS_C15_SOMBRA_APOCALYPSE_C07",
+        "has_completed_focus__D8": "FOCUS_C15_SOMBRA_APOCALYPSE_C08",
+        "has_completed_focus__D9": "FOCUS_C15_SOMBRA_APOCALYPSE_C09",
+        "has_completed_focus__D10": "FOCUS_C15_SOMBRA_APOCALYPSE_C12C14",
+        "has_completed_focus__D11": "FOCUS_C15_SOMBRA_APOCALYPSE_C23",
+        "has_war": false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

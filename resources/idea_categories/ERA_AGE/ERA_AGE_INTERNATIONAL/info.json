@@ -1,0 +1,27 @@
+{
+    "name": "International Era",
+    "removal_cost": 0,
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "IDEA_ERA_AGE_INTERNATIONAL_TOOLTIP",
+            "has_country_flag": "PIHC_COUNTRY_FLAG_HAS_AGE_INTERNATIONAL"
+        }
+    },
+    "modifier": {
+        "trade_opinion_factor": 0.3,
+        "consumer_goods_factor": -0.15,
+        "monthly_population": 0.15,
+        "corporation_drift": 0.03,
+        "research_speed_factor": 0.05,
+        "civilian_intel_to_others": 50.0,
+        "political_power_gain": 0.3
+    },
+    "on_add": {
+        "add_to_tech_sharing_group": "pihc_international_research"
+    },
+    "on_remove": {
+        "remove_from_tech_sharing_group": "pihc_international_research"
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

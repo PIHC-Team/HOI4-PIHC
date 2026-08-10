@@ -1,0 +1,182 @@
+{
+    "defined_text": {
+        "name": "IB_OIL_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@oil > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@oil > resource_imported@oil": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_OIL"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_OIL_0"
+        }
+    },
+    "defined_text__D1": {
+        "name": "IB_ALM_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@aluminium > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@aluminium > resource_imported@aluminium": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_ALUMINIUM"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_ALUMINIUM_0"
+        }
+    },
+    "defined_text__D2": {
+        "name": "IB_RUB_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@rubber > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@rubber > resource_imported@rubber": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_RUBBER"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_RUBBER_0"
+        }
+    },
+    "defined_text__D3": {
+        "name": "IB_TUN_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@tungsten > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@tungsten > resource_imported@tungsten": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_TUNGSTEN"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_TUNGSTEN_0"
+        }
+    },
+    "defined_text__D4": {
+        "name": "IB_STE_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@steel > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@steel > resource_imported@steel": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_STEEL"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_STEEL_0"
+        }
+    },
+    "defined_text__D5": {
+        "name": "IB_CHR_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@chromium > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@chromium > resource_imported@chromium": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_CHROMIUM"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_CHROMIUM_0"
+        }
+    },
+    "defined_text__D6": {
+        "name": "IB_LOG_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@logs > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@logs > resource_imported@logs": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_LOGS"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_LOGS_0"
+        }
+    },
+    "defined_text__D7": {
+        "name": "IB_COA_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@coal > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@coal > resource_imported@coal": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_COAL"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_COAL_0"
+        }
+    },
+    "defined_text__D8": {
+        "name": "IB_CRY_TEXT",
+        "text": {
+            "trigger": {
+                "check_variable": {
+                    "resource_imported@crystals > 0": null
+                },
+                "check_variable__D1": {
+                    "resource@crystals > resource_imported@crystals": null
+                }
+            },
+            "localization_key": "TOPBAR_RESOURCE_CRYSTALS"
+        },
+        "text__D1": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TOPBAR_RESOURCE_CRYSTALS_0"
+        }
+    }
+}

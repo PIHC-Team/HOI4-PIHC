@@ -1,0 +1,78 @@
+state = {
+    id = 303
+    name = STATE_303
+    provinces = {
+        176
+        294
+        657
+        732
+        1772
+        1981
+        2042
+        2170
+        2202
+        2599
+        3333
+        3426
+        3596
+        3647
+        3950
+        4353
+        4367
+        4617
+        4637
+        5078
+        5126
+        5192
+        5868
+        5970
+        7396
+        7416
+        7774
+        7889
+        8601
+        9064
+        9165
+        9412
+        9426
+        10057
+        10102
+        10103
+        10128
+        10153
+        10177
+        10178
+        10197
+        10207
+        10233
+        10234
+        10262
+        10277
+        10278
+        10337
+    }
+    manpower = 2574
+    state_category = pastoral
+    history = {
+        owner = C15
+        victory_points = {
+            176
+            1
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            10057 = {
+                naval_base = 1
+            }
+        }
+        add_core_of = C15
+        victory_points = {
+            3950
+            10
+        }
+    }
+    resources = {
+
+    }
+}

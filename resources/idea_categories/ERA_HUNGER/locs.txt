@@ -1,0 +1,26 @@
+[zh.@]
+食品供给
+[en.@]
+Food Supply
+
+[zh.@_cost_factor]
+食品供给花费
+[en.@_cost_factor]
+Food Supply Policy Cost
+
+[zh.PIHC_HUNGER_TOOLTIP]
+国家的食品供给程度依据 §Y农场§! 与马口的比例进行计算。
+如今，我们国家中有 [?ROOT.VAR_NUM_FARMS_OWNED|Y0] §Y农场§!。
+各个食品供给等级的农场要求如下：
+§Y食品充裕§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_2|Y0] 农场。
+§Y正常供给§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_3|Y0] 农场。
+§Y食品短缺§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_4|Y0] 农场。
+供给程度将每月进行检查，不满足条件会下调供给等级一级。
+[en.PIHC_HUNGER_TOOLTIP]
+The country’s food supply level is calculated based on the ratio of §YFarms§! to the population.
+Currently, there are [?ROOT.VAR_NUM_FARMS_OWNED|Y0] §YFarms§! in our country.
+The required number of farms for each food supply level is as follows:
+§YAbundant Food§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_2|Y0] Farms are required based on our country’s population.
+§YNormal Supply§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_3|Y0] Farms are required based on our country’s population.
+§YFood Shortage§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_4|Y0] Farms are required based on our country’s population.
+The level of supply will be checked monthly, and if the conditions are not met, the supply level will be lowered by one level.

@@ -1,0 +1,40 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_OPERATION_GREENLIGHT",
+    "priority": 20,
+    "dx": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_OPERATION_GREENLIGHT"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "ADD_INVENTORY_ITEM_4EP_C01_REPORT_RABID_RHODODENDRONS_1": true,
+        "hidden_effect": {
+            "C02": {
+                "country_event": {
+                    "id": "C02_HOTLINE.33",
+                    "days": 30
+                }
+            }
+        }
+    },
+    "available": {
+        "C02": {
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": [
+        "fighter",
+        "interceptor",
+        "cas"
+    ],
+    "interface_category": "interface_category_air",
+    "interface_overview_category_index": 1,
+    "allow_mission_type": [
+        "recon",
+        "training",
+        "air_superiority",
+        "interception",
+        "cas",
+        "attack_logistics"
+    ]
+}

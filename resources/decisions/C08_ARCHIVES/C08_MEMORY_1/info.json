@@ -1,0 +1,17 @@
+{
+    "name": "Memory 1",
+    "priority": 99,
+    
+    "cost": 0,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_MEMORY_1"
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C08_MEMORY.1"
+        }
+    },
+    "ai_will_do": {
+        "base": 100
+    }
+}

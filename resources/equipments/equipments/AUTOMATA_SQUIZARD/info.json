@@ -1,0 +1,29 @@
+{
+    "name": "Squizard",
+    "archetype": "ARCHETYPE_AUTOMATA",
+    "parent": "EQUIPMENT_AUTOMATA_SKELETON",
+
+    "build_cost_ic": 0.20,
+    "lend_lease_cost": 1,
+    "can_license": false,
+    "is_convertable": false,
+    "reliability": 0.95,
+
+    "soft_attack": 12.0,
+    "hard_attack": 1.0,
+    "air_attack": 0.8,
+    "ap_attack": 4.0,
+    "armor_value": 0.2,
+    "breakthrough": 4.0,
+
+    "defense": 36.0,
+    
+    "resources": {
+        "logs": 3,
+        "crystals": 1
+    },
+
+    "maximum_speed": 6.0,
+    "entrenchment": 1.0,
+    "recon": 3
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Contemporary Rifle",
+    "parent": "EQUIPMENT_RANGED_MODERN_RIFLE",
+    "alpha_global": 0.5,
+    "alpha": {
+        "defense": -0.15
+    },
+    
+    "reliability": 0.99,
+    
+    "resources": {
+        "steel": 3,
+        "aluminium": 1,
+        "tungsten": 1
+    }
+}

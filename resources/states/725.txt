@@ -1,0 +1,36 @@
+state = {
+    id = 725
+    name = STATE_725
+    provinces = {
+        1535
+        2687
+        3826
+        4535
+        5358
+        8892
+        9150
+        9820
+        13251
+        13269
+        13292
+        13316
+        13363
+    }
+    manpower = 3363
+    state_category = rural
+    history = {
+        owner = C20
+        victory_points = {
+            1535
+            3
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C20
+    }
+    resources = {
+        coal = 2
+        aluminium = 1
+    }
+}

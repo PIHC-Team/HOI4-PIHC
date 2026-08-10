@@ -1,0 +1,15 @@
+{
+    "name": "Cattail",
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 300,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_DIPLOMATIC_IDIOT",
+            "TRAIT_RUTHLESS",
+            "TRAIT_POPULAR"
+        ]
+    }
+}

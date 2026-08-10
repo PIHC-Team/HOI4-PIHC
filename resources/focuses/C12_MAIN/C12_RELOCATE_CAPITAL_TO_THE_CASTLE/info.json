@@ -1,0 +1,40 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_RESTORE_THE_RELATIONSHIP",
+    "prerequisite": {
+        "focus": "FOCUS_C12_RESTORE_THE_RELATIONSHIP"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "86": {
+            "BUILD_A_CIC": true,
+            "BUILD_A_CIC__D1": true,
+            "BUILD_A_CIC__D2": true,
+            "BUILD_AN_INFRA": true,
+            "BUILD_AN_INFRA__D1": true,
+            "set_state_category": "large_town",
+            "add_victory_points": {
+                "province": 2007,
+                "value": 25
+            }
+        },
+        "set_capital": {
+            "state": 86
+        }
+    },
+    "available": {
+        "86": {
+            "is_owned_and_controlled_by": "C12",
+            "is_core_of": "C12"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

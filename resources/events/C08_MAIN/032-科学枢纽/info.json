@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_EXPLORATION_WORKS",
+                "set_country_flag__D1": "PIHC_COUNTRY_FLAG_C08_SCIENCE_NEXUS"
+            },
+            "mark_focus_tree_layout_dirty": true,
+            "375": {
+                "add_victory_points": {
+                    "province": "6265",
+                    "value": "15"
+                },
+                "set_province_name": {
+                    "id": 6265,
+                    "name": "PROV_6265_SCIENCE_NEXUS"
+                },
+                "BUILD_A_RESEARCH": true
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

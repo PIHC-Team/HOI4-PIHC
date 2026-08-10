@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_stability": 0.02,
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "has_government": "transcendence",
+                        "has_country_leader_ideology": "fascism_totalitarianism",
+                        "has_country_leader_ideology__D1": "fascism_dystopia",
+                        "has_country_leader_ideology__D2": "corporation_dystopia",
+                        "has_country_leader_ideology__D3": "equatism_dystopia",
+                        "has_country_leader_ideology__D4": "harmonicism_dystopia",
+                        "has_country_leader_ideology__D5": "democratic_dystopia"
+                    }
+                },
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.03
+                }
+            }
+        }
+    ],
+    "mean_time_to_happen": {
+        "years": 3,
+        "modifier": {
+            "factor": 9999,
+            "date < 1003.03.15": null
+        }
+    }
+}

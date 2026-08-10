@@ -1,0 +1,18 @@
+{
+    "name": "Remove on war",
+    "priority": 1,
+    
+    "cost": 0,
+    "allowed": {
+        "tag": "C08"
+    },
+    "visible": {
+        "is_debug": true
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT"
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

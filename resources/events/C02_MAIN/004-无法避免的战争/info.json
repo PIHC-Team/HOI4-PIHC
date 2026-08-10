@@ -1,0 +1,40 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "C02": {
+                "leave_faction": true,
+                "create_faction": "FACTION_MARSHAL_TRIXIE",
+                "add_ideas": "IDEA_C02_EMPIRE_MARSHAL"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "OR": {
+                        "tag": "C01",
+                        "tag__D1": "C11"
+                    }
+                }
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "OR": {
+                    "tag": "C01",
+                    "tag__D1": "C11"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

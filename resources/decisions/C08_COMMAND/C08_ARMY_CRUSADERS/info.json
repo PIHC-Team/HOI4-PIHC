@@ -1,0 +1,32 @@
+{
+    "name": "Tank",
+    "priority": 99990,
+    
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_ARMY_CRUSADERS"
+    },
+    "available": {
+        "command_power > 49" : null,
+        "has_army_experience > 74": null
+    },
+    "complete_effect": {
+        "add_command_power" : -50,
+        "army_experience": -75
+    },
+    "modifier": {
+        
+    },
+    "remove_effect": {
+        "add_tech_bonus": {
+            "category": "pihc_armor",
+            "bonus": 1.0,
+            "uses": 1
+        },
+        "add_ideas": "IDEA_C08_ARMY_CRUSADERS"
+    },
+    "days_remove": 180,
+    "ai_will_do": {
+        "base": 10000
+    },
+    "fire_only_once": true
+}

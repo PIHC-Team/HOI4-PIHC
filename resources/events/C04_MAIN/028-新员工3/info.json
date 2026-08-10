@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "remove_trait": {
+                "character": "CHARACTER_SHORT_FUSE",
+                "slot": "army_chief",
+                "trait": "TRAIT_WASHOUTS_SHORT_FUSE"
+            },
+            "hidden_effect": {
+                "country_event": {
+                    "id": "C04_MAIN.29",
+                    "days": 30,
+                    "random_days": 10
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,17 @@
+{
+    "threshold": {
+        "min": 30,
+        "max": 60
+    },
+    "options": [
+        {
+            "iteration_output": {
+                "country_effects": {
+                    "FROM": {
+                        "add_project_progress_ratio": "constant:sp_progress.loss.medium"
+                    }
+                }
+            }
+        }
+    ]
+}

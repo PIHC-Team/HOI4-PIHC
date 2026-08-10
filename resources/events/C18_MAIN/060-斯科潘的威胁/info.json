@@ -1,0 +1,29 @@
+{
+    "immediate": {
+        "C18": {
+            "hidden_effect": {
+                "activate_mission": "DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK",
+                "if": {
+                    "limit": {
+                        "TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN": true
+                    },
+                    "DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1": true
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "effect_tooltip": {
+                "activate_mission": "DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK"
+            },
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C18_WAR_ON_C37",
+            "mark_focus_tree_layout_dirty": true
+        }
+    ],
+    "fire_only_once": true,
+    "is_triggered_only": true
+}

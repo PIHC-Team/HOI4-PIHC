@@ -1,0 +1,24 @@
+{
+    "category": "news",
+    "immediate": {
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C08"
+                },
+                "C08": {
+                    "set_country_flag": "PIHC_GLOBAL_FLAG_GLADMANE_KILLED"
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

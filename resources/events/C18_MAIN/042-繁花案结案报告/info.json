@@ -1,0 +1,55 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "retire_character": "CHARACTER_AQUAMARINE",
+            "custom_effect_tooltip": "EVENT_C18_MAIN_42_TOOLTIP",
+            "country_event": {
+                "id": "C18_MAIN.43"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "retire_character": "CHARACTER_BURNT_UMBER",
+            "custom_effect_tooltip": "EVENT_C18_MAIN_42_TOOLTIP",
+            "country_event": {
+                "id": "C18_MAIN.44"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 10
+            },
+            "retire_character": "CHARACTER_COMPOSED",
+            "custom_effect_tooltip": "EVENT_C18_MAIN_42_TOOLTIP",
+            "country_event": {
+                "id": "C18_MAIN.45"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "retire_character": "CHARACTER_GRASS_GREEN",
+            "custom_effect_tooltip": "EVENT_C18_MAIN_42_TOOLTIP",
+            "country_event": {
+                "id": "C18_MAIN.46"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 80
+            },
+            "retire_character": "CHARACTER_OCHRE",
+            "custom_effect_tooltip": "EVENT_C18_MAIN_42_TOOLTIP",
+            "country_event": {
+                "id": "C18_MAIN.47"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

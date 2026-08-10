@@ -1,0 +1,38 @@
+{
+    "name": "Draw a map",
+    "priority": 1000,
+    
+    "days_remove": 7,
+    "days_re_enable": 3,
+    "visible": {
+        "has_global_flag": "PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE",
+        "tag": "C08"
+    },
+    "available": {
+        "command_power > 14" : null,
+        "custom_trigger_tooltip": {
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C08_COZYBURG_ACTIVE_1"
+            },
+            "tooltip": "DECISION_C08_COZ_DRAW_MAP_TOOLTIP"
+        }
+    },
+    "complete_effect": {
+        "add_command_power" : -15,
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_COZYBURG_ACTIVE_1"
+        }
+    },
+    "remove_effect": {
+        "add_days_mission_timeout": {
+            "mission": "DECISION_C08_COZ_MNS_TIME",
+            "days": -7
+        },
+        "hidden_effect": {
+            "clr_country_flag": "PIHC_COUNTRY_FLAG_C08_COZYBURG_ACTIVE_1"
+        }
+    },
+    "ai_will_do": {
+        "base": 100000
+    }
+}

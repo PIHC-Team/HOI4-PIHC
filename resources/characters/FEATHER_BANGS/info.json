@@ -1,0 +1,21 @@
+{
+    "gender": "male",
+    "corps_commander": {
+        "skill": 1,
+        "attack_skill": 2,
+        "defense_skill": 3,
+        "planning_skill": 2,
+        "logistics_skill": 1,
+        "traits": []
+    },
+    "advisor": {
+        "slot": "navy_chief",
+        "ledger": "civilian",
+        "traits": [
+            "TRAIT_FEATHER_BANGS"
+        ],
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

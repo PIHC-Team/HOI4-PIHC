@@ -1,0 +1,42 @@
+{
+    "tree": "C15_SOMBRA",
+    "parent": "FOCUS_C15_SOMBRA_APOCALYPSE_C01",
+    "priority": 10,
+    "dy": 2,
+    "prerequisite": {
+        "focus": "FOCUS_C15_SOMBRA_APOCALYPSE_C07",
+        "focus__D1": "FOCUS_C15_SOMBRA_APOCALYPSE_C05",
+        "focus__D2": "FOCUS_C15_SOMBRA_APOCALYPSE_C12C14"
+    },
+    "bypass": {
+        "NOT": {
+            "country_exists": "C23"
+        }
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_timed_idea": {
+            "idea": "IDEA_C15_SOMBRA_C23_PREPARED",
+            "days": 90
+        },
+        "add_to_variable": {
+            "var": "C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES",
+            "value": 1
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "scale": [
+        152,
+        152
+    ]
+}

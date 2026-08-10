@@ -1,0 +1,16 @@
+{
+    "name": "Enthusiastic Imagination",
+    "removal_cost": -1,
+    "available": {
+        "OR": {
+            "has_idea": "IDEA_ERA_AGE_SCIENCE",
+            "amount_research_slots > 2": null
+        }
+    },
+    "modifier": {
+        "research_speed_factor": 0.20,
+        "stability_factor": -0.08
+    },
+    "cost": 150,
+    "cancel_if_invalid": false
+}

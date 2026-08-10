@@ -1,0 +1,36 @@
+{
+    "tree": "C01_MAIN",
+    "parent": null,
+    "x": 5,
+    "y": 10,
+    "cost": 1,
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C01_UNIFICATION_POLICY"
+    },
+    "completion_reward": {
+        "add_power_balance_value": {
+            "id": "BOP_C04_INDEPENDENCE",
+            "value": -0.03,
+            "tooltip_side": "BOP_C04_INDEPENDENCE_LEFT_SIDE"
+        }
+    },
+    "available": {
+        "C04": {
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

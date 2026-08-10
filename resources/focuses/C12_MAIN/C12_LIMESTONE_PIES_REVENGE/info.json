@@ -1,0 +1,14 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_CONFRONTATION_WITH_THE_EMPIRE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_CONFRONTATION_WITH_THE_EMPIRE"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "add_ideas": "IDEA_C12_PROSPEROUS_FARM"
+    },
+    "available": {
+        "always": false
+    }
+}

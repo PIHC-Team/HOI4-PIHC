@@ -1,0 +1,22 @@
+{
+    "name": "Improved Firearm I",
+    "category": "infantry",
+
+    "x": 5,
+    "y": 10,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_BLUNDERBUSS"
+    ],
+    "enable_subunits": [
+    ],
+
+    "research_cost": 1.0,
+    "start_year": 1003
+}

@@ -1,0 +1,13 @@
+{
+    "name": "C01_FEUDAL_SYSTEM_2",
+    "removal_cost": -1,
+    "allowed": {
+        "tag": "C01"
+    },
+    "modifier": {
+        "political_power_cost": 1.5,
+        "local_resources_factor": -0.25,
+        "stability_weekly_factor": -0.01,
+        "subjects_autonomy_gain": 0.1
+    }
+}

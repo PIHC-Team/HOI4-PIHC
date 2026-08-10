@@ -1,0 +1,20 @@
+{
+    "name": "Liberation Front",
+    "priority": 97,
+    
+    "cost": 0,
+    "allowed": {
+        "tag": "C08"
+    },
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_CHEAT"
+    },
+    "complete_effect": {
+        "country_event": {
+            "id": "C08_MAIN.38"
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

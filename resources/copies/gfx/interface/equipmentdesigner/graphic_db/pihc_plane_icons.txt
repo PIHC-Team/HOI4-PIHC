@@ -1,0 +1,37 @@
+default = {
+	EQUIPMENT_FRAME_AIRSHIP = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_FRAME_AIRSHIP_medium
+			}
+		}
+	}
+	EQUIPMENT_FRAME_BALLOON = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_FRAME_BALLOON_medium
+			}
+		}
+	}
+	EQUIPMENT_FRAME_GALLEON = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_FRAME_GALLEON_medium
+			}
+		}
+	}
+	EQUIPMENT_FRAME_PLANE = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_FRAME_PLANE_medium
+			}
+		}
+	}
+	EQUIPMENT_FRAME_UFO = {
+		pool = {
+			icons = {
+				GFX_EQUIPMENT_FRAME_UFO_medium
+			}
+		}
+	}
+}

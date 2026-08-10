@@ -1,0 +1,77 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "is_in_faction_with": "C01"
+                }
+            },
+            "random": {
+                "chance": 25,
+                "add_political_power": -10
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.02        
+                }
+            },
+            "random__D2": {
+                "chance": 25,
+                "add_stability": -0.02
+            },
+            "random__D3": {
+                "chance": 25,
+                "add_war_support": -0.01
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "is_in_faction_with": "C08"
+                }
+            },
+            "random": {
+                "chance": 25,
+                "add_political_power": 10
+            },
+            "random__D1": {
+                "chance": 25,
+                "add_popularity": {
+                    "ideology": "harmonicism",
+                    "popularity": 0.02        
+                }
+            },
+            "random__D2": {
+                "chance": 25,
+                "add_stability": 0.02
+            },
+            "random__D3": {
+                "chance": 25,
+                "add_war_support": 0.01
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "AND": {
+                    "NOT": {
+                        "is_in_faction_with": "C01",
+                        "is_in_faction_with__D1": "C08"
+                    }
+                }
+                
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

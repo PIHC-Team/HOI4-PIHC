@@ -1,0 +1,27 @@
+{
+    "name": "Steampunk Heavy Tank",
+    "category": "nsb_armour",
+    "x": 4,
+    "y": 9,
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_armor"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_TANK_HEAVY_STEAM"
+    ],
+    "enable_subunits": [
+        "tank_heavy"
+    ],
+    "dependencies": {
+        "TECHNOLOGY_NSB_TANK_RAM": 1,
+        "TECHNOLOGY_TECH_ENER_I": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_NSB_TANK_HEAVY_MODERN",
+        "research_cost_coeff": 1
+    },
+    "research_cost": 3.0,
+    "start_year": 1003
+}

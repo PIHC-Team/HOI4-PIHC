@@ -1,0 +1,31 @@
+{
+    "name": "Militia",
+    "priority": 100,
+    
+    "cost": 100,
+    "days_remove": 42,
+    "days_re_enable": 180,
+    "allowed": {
+        "tag": "C09"
+    },
+    "visible": {
+        "has_completed_focus": "FOCUS_C09_LAND_MILITIA"
+    },
+    "available": {
+        "432": {
+            "is_owned_and_controlled_by": "C09"
+        }
+    },
+    "remove_effect": {
+        "432": {
+            "create_unit": {
+                "division": "name = \"名流谷民兵小队 (Sire’s Hollow Militia Squad)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                "owner": "C09",
+                "count": 3
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 300
+    }
+}

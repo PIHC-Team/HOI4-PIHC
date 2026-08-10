@@ -1,0 +1,49 @@
+{
+    "name": "Muffins",
+    "priority": 44,
+    
+    "cost": 0,
+    "days_re_enable": 1,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING"
+    },
+    "available": {
+        "has_political_power > 9": null,
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 100,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_trigger": {
+        "has_political_power > 9": null,
+        "check_variable": {
+            "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+            "value": 100,
+            "compare": "greater_than_or_equals"
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_MUFFINS_100_PP_10",
+    "complete_effect": {
+        "hidden_effect": {
+            "add_political_power": -10,
+            "add_to_variable": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE",
+                "value": 1
+            },
+            "subtract_from_variable": {
+                "var": "ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN",
+                "value": 100
+            },
+            "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true,
+            "subtract_from_variable__D1": {
+                "var": "ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT",
+                "value": 100
+            },
+            "C03_ROULETTE_REGEN_NEXT": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

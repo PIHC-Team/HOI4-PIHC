@@ -1,0 +1,677 @@
+{
+    "defined_text": {
+        "name": "GetTradeCenterResourceCrystals",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CRYSTALS_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CRYSTALS_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D1": {
+        "name": "GetTradeCenterResourceTungsten",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_TUNGSTEN_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D2": {
+        "name": "GetTradeCenterResourceChromium",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CHROMIUM_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CHROMIUM_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D3": {
+        "name": "GetTradeCenterResourceAluminium",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_ALUMINIUM_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D4": {
+        "name": "GetTradeCenterResourceSteel",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_STEEL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_STEEL_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_STEEL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_STEEL_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_STEEL_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D5": {
+        "name": "GetTradeCenterResourceCoal",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_COAL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_COAL_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_COAL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_COAL_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_COAL_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D6": {
+        "name": "GetTradeCenterResourceRubber",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_RUBBER_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_RUBBER_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D7": {
+        "name": "GetTradeCenterResourceOil",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_OIL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_OIL_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_OIL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_OIL_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_OIL_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D8": {
+        "name": "GetTradeCenterResourceLogs",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_LOGS_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_LOGS_GAIN_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_LOGS_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_LOGS_COST_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_LOGS_NONE_TOOLTIP"
+        }
+    },
+    "defined_text__D9": {
+        "name": "GetTradeCenterResourceCrystalsShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CRYSTALS_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CRYSTALS_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_CRYSTALS_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D10": {
+        "name": "GetTradeCenterResourceTungstenShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_TUNGSTEN_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_TUNGSTEN_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D11": {
+        "name": "GetTradeCenterResourceChromiumShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CHROMIUM_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_CHROMIUM_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_CHROMIUM_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D12": {
+        "name": "GetTradeCenterResourceAluminiumShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_ALUMINIUM_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_ALUMINIUM_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D13": {
+        "name": "GetTradeCenterResourceSteelShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_STEEL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_STEEL_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_STEEL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_STEEL_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_STEEL_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D14": {
+        "name": "GetTradeCenterResourceCoalShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_COAL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_COAL_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_COAL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_COAL_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_COAL_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D15": {
+        "name": "GetTradeCenterResourceRubberShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_RUBBER_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_RUBBER_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_RUBBER_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D16": {
+        "name": "GetTradeCenterResourceOilShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_OIL_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_OIL_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_OIL_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_OIL_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_OIL_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D17": {
+        "name": "GetTradeCenterResourceLogsShort",
+        "text": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_LOGS_GAIN",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_LOGS_GAIN_SHORT_TOOLTIP"
+        },
+        "text__D1": {
+            "trigger": {
+                "ROOT": {
+                    "check_variable": {
+                        "var": "ROOT.VAR_TRADE_CENTER_LOGS_COST",
+                        "value": 0,
+                        "compare": "greater_than"
+                    }
+                }
+            },
+            "localization_key": "TRADE_CENTER_LOGS_COST_SHORT_TOOLTIP"
+        },
+        "text__D2": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "TRADE_CENTER_LOGS_NONE_SHORT_TOOLTIP"
+        }
+    },
+    "defined_text__D18": {
+        "name": "GetTradeCenterResourceCrystalsIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_CRYSTALS_TOOLTIP"
+        }
+    },
+    "defined_text__D19": {
+        "name": "GetTradeCenterResourceTungstenIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_TUNGSTEN_TOOLTIP"
+        }
+    },
+    "defined_text__D20": {
+        "name": "GetTradeCenterResourceChromiumIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_CHROMIUM_TOOLTIP"
+        }
+    },
+    "defined_text__D21": {
+        "name": "GetTradeCenterResourceAluminiumIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_ALUMINIUM_TOOLTIP"
+        }
+    },
+    "defined_text__D22": {
+        "name": "GetTradeCenterResourceSteelIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_STEEL_TOOLTIP"
+        }
+    },
+    "defined_text__D23": {
+        "name": "GetTradeCenterResourceCoalIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_COAL_TOOLTIP"
+        }
+    },
+    "defined_text__D24": {
+        "name": "GetTradeCenterResourceRubberIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_RUBBER_TOOLTIP"
+        }
+    },
+    "defined_text__D25": {
+        "name": "GetTradeCenterResourceOilIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_OIL_TOOLTIP"
+        }
+    },
+    "defined_text__D26": {
+        "name": "GetTradeCenterResourceLogsIcon",
+        "text": {
+            "trigger": {
+                "always": true
+            },
+            "localization_key": "PIHC_AUTO_TRADE_REC_COST_LOGS_TOOLTIP"
+        }
+    }
+}

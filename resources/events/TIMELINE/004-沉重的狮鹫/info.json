@@ -1,0 +1,30 @@
+{
+    "category": "news",
+    "date": "1003.02.01",
+    "date_scope": "C01",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "hidden_effect": {
+                "set_global_flag": "PIHC_GLOBAL_FLAG_THE_GRIFFON_LIES_HEAVY"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "NOT": {
+                    "tag": "C01"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

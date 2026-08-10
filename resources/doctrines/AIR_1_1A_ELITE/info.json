@@ -1,0 +1,33 @@
+{
+    "category": "air",
+    "x": -2,
+    "y": 2,
+    "xor": [
+        "DOCTRINE_AIR_1_1B_CROWD"
+    ],
+
+    "air_ace_bonuses_factor": 0.15,
+    "ace_effectiveness_factor": 0.15,
+    "air_ace_generation_chance_factor": 0.05,
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_bloodthirsty_flock"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_1_2A_FLAGSHIP",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

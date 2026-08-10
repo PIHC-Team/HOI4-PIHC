@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }   
+        }
+    ],
+    "immediate": {
+        "hidden_effect": {
+            "white_peace": {
+                "tag": "C26"
+            },
+            "C26": {
+                "set_state_owner": 192,
+                "set_state_owner__D1": 271,
+                "set_state_owner__D2": 323,
+                "set_state_owner__D3": 346,
+                "set_state_owner__D4": 857,
+                "set_state_owner__D5": 216
+            }
+        }
+    },
+    "is_triggered_only": true
+}

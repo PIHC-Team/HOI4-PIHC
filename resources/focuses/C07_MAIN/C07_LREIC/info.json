@@ -1,0 +1,25 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_POLICE",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_POLICE"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C07_LPEG_MINE_DIAMONDIA"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C07_LREIC_TOOLTIP"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

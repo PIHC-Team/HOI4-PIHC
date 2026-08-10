@@ -1,0 +1,59 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_SUMMARIZE_COMBAT_EXPERIENCE",
+    "prerequisite": {
+        "focus": "FOCUS_C12_SUMMARIZE_COMBAT_EXPERIENCE"
+    },
+    
+    "cost": 4,
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "has_idea": "limited_conscription"
+            },
+            "swap_ideas": {
+                "remove_idea": "limited_conscription",
+                "add_idea": "extensive_conscription"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "has_idea": "extensive_conscription"
+            },
+            "swap_ideas": {
+                "remove_idea": "extensive_conscription",
+                "add_idea": "service_by_requirement"
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_idea": "service_by_requirement"
+            },
+            "swap_ideas": {
+                "remove_idea": "service_by_requirement",
+                "add_idea": "all_adults_serve"
+            }
+        }
+    },
+    "available": {
+        "NOT": {
+            "has_idea": "scraping_the_barrel"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+        "bypass": {
+        "OR": {
+            "has_idea": "service_by_requirement",
+            "has_idea__D1": "all_adults_serve"
+        
+        }
+    }
+}

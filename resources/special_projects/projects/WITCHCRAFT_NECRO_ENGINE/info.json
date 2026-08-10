@@ -1,0 +1,38 @@
+{
+    "specialization": "specialization_witchcraft",
+    "project_tags": "sp_tag_pihc_witchcraft",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "FROM": {
+            "NOT": {
+                "has_tech": "TECHNOLOGY_TECH_ENER_IIN"
+            }
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "resource_cost": {
+        "resources": {
+            "logs": 8,
+            "crystals": 12
+        }
+    },
+    "project_output": {
+        "country_effects": {
+            "set_technology": {
+                "TECHNOLOGY_TECH_ENER_IIN": 1,
+                "popup": false
+            }
+        }
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_WITCHCRAFT",
+        "SP_REWARD_GENERIC_WITCHCRAFT_EXP",
+        "SP_REWARD_GENERIC_FAILURE_SPIRITUAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

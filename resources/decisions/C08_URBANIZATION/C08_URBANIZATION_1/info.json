@@ -1,0 +1,30 @@
+{
+    "name": "Recource",
+    "priority": 997,
+    
+    "cost": 35,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_URBANIZATION"
+    },
+    "available": {
+        "has_completed_focus": "FOCUS_C08_NEW_HOME_PLAN"
+    },
+    "complete_effect": {
+        "custom_effect_tooltip": "C08_URBANIZATION_INC_10",
+        "hidden_effect": {
+            "add_to_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "value": 10
+            },
+            "clamp_variable": {
+                "var": "VAR_C08_URBANIZATION",
+                "min": 0,
+                "max": 100
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 0
+    }
+}

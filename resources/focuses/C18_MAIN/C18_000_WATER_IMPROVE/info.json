@@ -1,0 +1,37 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_000_PLANTATION_IMPROVE",
+    "prerequisite": {
+        "focus": "FOCUS_C18_000_PLANTATION_IMPROVE"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C18_000_WATER_IMPROVE_TOOLTIP",
+        "multiply_variable": {
+            "C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT": 1.5
+        },
+        "round_variable": "C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT",
+        "801": {
+            "add_province_modifier": {
+                "static_modifiers": [
+                    "MODIFIER_WONDER_STREAM_OF_SILENCE_DAM"
+                ],
+                "province": {
+                    "all_provinces": true
+                }
+            }
+        },
+        "C18_DEL_NIRIK_0_5": true
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

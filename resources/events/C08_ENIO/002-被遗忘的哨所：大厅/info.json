@@ -1,0 +1,30 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "hidden_effect": {
+                "if": {
+                    "limit": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OUTPOST_FIX_2"
+                    },
+                    "country_event": {
+                        "id": "C08_ENIO.3",
+                        "days": 5
+                    }
+                },
+                "else_if": {
+                    "limit": {
+                        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_OUTPOST_FIX_1"
+                    },
+                    "country_event": {
+                        "id": "C08_ENIO.4",
+                        "days": 5
+                    }
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

@@ -1,0 +1,83 @@
+{
+    "name": "Praise",
+    "priority": 100,
+    
+    "cost": 100,
+    "days_re_enable": 150,
+    "allowed": {
+        "tag": "C02"
+    },
+    "visible": {
+        "has_character": "CHARACTER_CRACKLE_COSETTE"
+    },
+    "available": {
+        "has_character": "CHARACTER_CRACKLE_COSETTE",
+        "CHARACTER_CRACKLE_COSETTE": {
+            "is_hired_as_advisor": true
+        }
+    },
+    "complete_effect": {
+        "custom_effect_tooltip": "C02_MARE_DEC_5",
+        "custom_effect_tooltip__D1": "C02_OCTAVIA_DEC_5",
+        "custom_effect_tooltip__D2": "C02_FILTHY_RICH_DEC_5",
+        "custom_effect_tooltip__D3": "C02_DOCTOR_HOOVES_DEC_5",
+        "custom_effect_tooltip__D4": "C02_CRACKLE_COSETTE_INC_15",
+        "custom_effect_tooltip__D5": "C02_TRIXIE_LULAMOON_INC_10",
+        "hidden_effect": {
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_MARE",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "add_to_variable__D1": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "value": -0.05
+            },
+            "clamp_variable__D1": {
+                "var": "C02.VAR_C02_ELECTION_OCTAVIA",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "add_to_variable__D2": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "value": -0.05
+            },
+            "clamp_variable__D2": {
+                "var": "C02.VAR_C02_ELECTION_FILTHY_RICH",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "add_to_variable__D3": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "value": -0.05
+            },
+            "clamp_variable__D3": {
+                "var": "C02.VAR_C02_ELECTION_DOCTOR_HOOVES",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "add_to_variable__D4": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "value": 0.15
+            },
+            "clamp_variable__D4": {
+                "var": "C02.VAR_C02_ELECTION_CRACKLE_COSETTE",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "add_to_variable__D5": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": 0.10
+            },
+            "clamp_variable__D5": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "min": 0.0,
+                "max": 1.0
+            }
+        }
+    }
+}

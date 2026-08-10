@@ -1,0 +1,37 @@
+{
+    "name": "Bonds to War",
+    "priority": 94,
+    
+    "cost": 0,
+    "days_remove": 90,
+    "days_re_enable": 0,
+    "visible": {
+        "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS": true
+    },
+    "available": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200": true
+        }
+    },
+    "custom_cost_trigger": {
+        "ROOT": {
+            "TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200": true
+        }
+    },
+    "custom_cost_text": "CUSTOM_COST_DEV_BONDS_1200",
+    "modifier": {
+        "offence": 0.05,
+        "defence": 0.10,
+        "army_morale_factor": 0.10,
+        "conversion_cost_civ_to_mil_factor": -0.3,
+        "political_power_cost": 0.02
+    },
+    "complete_effect": {
+        "ROOT": {
+            "DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200": true
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

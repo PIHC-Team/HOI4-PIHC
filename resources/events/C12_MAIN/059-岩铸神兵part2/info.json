@@ -1,0 +1,33 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 75
+            },
+            "add_political_power": -30,
+            "C12": {
+                "country_event": {
+                    "id": "C12_MAIN.60",
+                    "days": 30,
+                    "random_days": 2
+                }
+            },
+            "// 开启决议：研究魔药": null,
+            "hidden_effect": {
+                "clr_country_flag": "C12_LIMESTONE_PIE_REMAINS_RATIONAL"
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 25
+            },
+            "add_political_power": 50,
+            "add_tech_bonus": {
+                "bonus": 0.5,
+                "uses": 2,
+                "category": "pihc_armor"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

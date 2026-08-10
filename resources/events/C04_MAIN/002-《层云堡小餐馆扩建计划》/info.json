@@ -1,0 +1,21 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C04": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_AVAILABLE",
+                "mark_focus_tree_layout_dirty": true
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "country_event": {
+                "id": "C04_MAIN.3"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

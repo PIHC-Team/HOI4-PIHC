@@ -1,0 +1,28 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "C18": {
+                "if": {
+                    "limit": {
+                        "NOT": {
+                            "has_tech": "construction1"
+                        }
+                    },
+                    "set_technology": {
+                        "construction1": 1
+                    }
+                }
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

@@ -1,0 +1,3145 @@
+{
+    "DEBUG_AUTO_TRADE": {
+        "ROOT": {
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_LIMIT_EXTRA",
+                "value": 5
+            },
+            "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+        }
+    },
+    "INIT_TRADE_CENTER": {
+        "set_variable": {
+            "var": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE",
+            "value": 6
+        },
+        "set_variable__D1": {
+            "var": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE",
+            "value": 4
+        },
+        "set_variable__D2": {
+            "var": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE",
+            "value": 4
+        },
+        "set_variable__D3": {
+            "var": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE",
+            "value": 4
+        },
+        "set_variable__D4": {
+            "var": "global.VAR_TRADE_CENTER_STEEL_VALUE",
+            "value": 2
+        },
+        "set_variable__D5": {
+            "var": "global.VAR_TRADE_CENTER_COAL_VALUE",
+            "value": 2
+        },
+        "set_variable__D6": {
+            "var": "global.VAR_TRADE_CENTER_RUBBER_VALUE",
+            "value": 2
+        },
+        "set_variable__D7": {
+            "var": "global.VAR_TRADE_CENTER_OIL_VALUE",
+            "value": 2
+        },
+        "set_variable__D8": {
+            "var": "global.VAR_TRADE_CENTER_LOGS_VALUE",
+            "value": 1
+        }
+    },
+    "ENABLE_AUTO_TRADE_CRYSTALS_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CRYSTALS_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_CRYSTALS_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CRYSTALS_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_CRYSTALS_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY"
+            },
+            "DISABLE_AUTO_TRADE_CRYSTALS_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_CRYSTALS_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_CRYSTALS_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CRYSTALS_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_CRYSTALS_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CRYSTALS_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_CRYSTALS_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL"
+            },
+            "DISABLE_AUTO_TRADE_CRYSTALS_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_CRYSTALS_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_TUNGSTEN_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_TUNGSTEN_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_TUNGSTEN_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_TUNGSTEN_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_TUNGSTEN_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY"
+            },
+            "DISABLE_AUTO_TRADE_TUNGSTEN_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_TUNGSTEN_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_TUNGSTEN_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_TUNGSTEN_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_TUNGSTEN_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_TUNGSTEN_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_TUNGSTEN_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL"
+            },
+            "DISABLE_AUTO_TRADE_TUNGSTEN_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_TUNGSTEN_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_CHROMIUM_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CHROMIUM_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_CHROMIUM_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CHROMIUM_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_CHROMIUM_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY"
+            },
+            "DISABLE_AUTO_TRADE_CHROMIUM_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_CHROMIUM_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_CHROMIUM_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CHROMIUM_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_CHROMIUM_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_CHROMIUM_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_CHROMIUM_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL"
+            },
+            "DISABLE_AUTO_TRADE_CHROMIUM_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_CHROMIUM_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_ALUMINIUM_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_ALUMINIUM_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_ALUMINIUM_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_ALUMINIUM_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_ALUMINIUM_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_BUY"
+            },
+            "DISABLE_AUTO_TRADE_ALUMINIUM_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_ALUMINIUM_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_ALUMINIUM_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_ALUMINIUM_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_ALUMINIUM_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_ALUMINIUM_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_ALUMINIUM_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL"
+            },
+            "DISABLE_AUTO_TRADE_ALUMINIUM_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_ALUMINIUM_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_STEEL_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_STEEL_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_STEEL_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_STEEL_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_STEEL_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_BUY"
+            },
+            "DISABLE_AUTO_TRADE_STEEL_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_STEEL_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_STEEL_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_STEEL_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_STEEL_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_STEEL_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_STEEL_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL"
+            },
+            "DISABLE_AUTO_TRADE_STEEL_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_STEEL_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_COAL_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_COAL_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_COAL_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_COAL_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_COAL_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_BUY"
+            },
+            "DISABLE_AUTO_TRADE_COAL_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_COAL_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_COAL_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_COAL_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_COAL_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_COAL_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_COAL_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL"
+            },
+            "DISABLE_AUTO_TRADE_COAL_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_COAL_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_RUBBER_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_RUBBER_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_RUBBER_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_RUBBER_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_RUBBER_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_BUY"
+            },
+            "DISABLE_AUTO_TRADE_RUBBER_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_RUBBER_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_RUBBER_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_RUBBER_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_RUBBER_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_RUBBER_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_RUBBER_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL"
+            },
+            "DISABLE_AUTO_TRADE_RUBBER_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_RUBBER_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_OIL_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_OIL_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_OIL_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_OIL_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_OIL_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_BUY"
+            },
+            "DISABLE_AUTO_TRADE_OIL_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_OIL_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_OIL_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_OIL_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_OIL_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_OIL_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_OIL_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL"
+            },
+            "DISABLE_AUTO_TRADE_OIL_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_OIL_SELL": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_LOGS_BUY": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_LOGS_BUY_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_LOGS_BUY": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_BUY",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_LOGS_BUY_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_LOGS_BUY": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_BUY"
+            },
+            "DISABLE_AUTO_TRADE_LOGS_BUY": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_LOGS_BUY": true
+        }
+    },
+    "ENABLE_AUTO_TRADE_LOGS_SELL": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_LOGS_SELL_FRAME": 1 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "DISABLE_AUTO_TRADE_LOGS_SELL": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL",
+        "set_variable": { "VAR_AUTO_TRADE_GUI_LOGS_SELL_FRAME": 2 },
+        "COMPUTE_TRADE_CENTER_AUTO_TRADE": true
+    },
+    "TOGGLE_AUTO_TRADE_LOGS_SELL": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL"
+            },
+            "DISABLE_AUTO_TRADE_LOGS_SELL": true
+        },
+        "else": {
+            "ENABLE_AUTO_TRADE_LOGS_SELL": true
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_CRYSTALS": {
+        "ENABLE_AUTO_TRADE_CRYSTALS_BUY": true,
+        "ENABLE_AUTO_TRADE_CRYSTALS_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_TUNGSTEN": {
+        "ENABLE_AUTO_TRADE_TUNGSTEN_BUY": true,
+        "ENABLE_AUTO_TRADE_TUNGSTEN_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_CHROMIUM": {
+        "ENABLE_AUTO_TRADE_CHROMIUM_BUY": true,
+        "ENABLE_AUTO_TRADE_CHROMIUM_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_ALUMINIUM": {
+        "ENABLE_AUTO_TRADE_ALUMINIUM_BUY": true,
+        "ENABLE_AUTO_TRADE_ALUMINIUM_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_STEEL": {
+        "ENABLE_AUTO_TRADE_STEEL_BUY": true,
+        "ENABLE_AUTO_TRADE_STEEL_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_STEEL_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_STEEL_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_STEEL_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_STEEL_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_STEEL_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_COAL": {
+        "ENABLE_AUTO_TRADE_COAL_BUY": true,
+        "ENABLE_AUTO_TRADE_COAL_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_COAL_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_COAL_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_COAL_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_COAL_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_COAL_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_RUBBER": {
+        "ENABLE_AUTO_TRADE_RUBBER_BUY": true,
+        "ENABLE_AUTO_TRADE_RUBBER_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_RUBBER_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_RUBBER_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_RUBBER_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_OIL": {
+        "ENABLE_AUTO_TRADE_OIL_BUY": true,
+        "ENABLE_AUTO_TRADE_OIL_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_OIL_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_OIL_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_OIL_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_OIL_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_OIL_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY_LOGS": {
+        "ENABLE_AUTO_TRADE_LOGS_BUY": true,
+        "ENABLE_AUTO_TRADE_LOGS_SELL": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_LOGS_PRESERVE",
+            "value": 2
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_LOGS_REQ",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_LOGS_OFF",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_LOGS_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_LOGS_COST",
+            "value": 0
+        }
+    },
+    "INIT_TRADE_CENTER_COUNTRY": {
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_LIMIT_PER",
+            "value": 6
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_LIMIT_EXTRA",
+            "value": 2
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_LIMIT",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_CREDIT",
+            "value": 0
+        },
+        "set_variable__D5": {
+            "var": "VAR_TRADE_CENTER_CREDIT_MAX",
+            "value": 0
+        },
+        "INIT_TRADE_CENTER_COUNTRY_CRYSTALS": true,
+        "INIT_TRADE_CENTER_COUNTRY_TUNGSTEN": true,
+        "INIT_TRADE_CENTER_COUNTRY_CHROMIUM": true,
+        "INIT_TRADE_CENTER_COUNTRY_ALUMINIUM": true,
+        "INIT_TRADE_CENTER_COUNTRY_STEEL": true,
+        "INIT_TRADE_CENTER_COUNTRY_COAL": true,
+        "INIT_TRADE_CENTER_COUNTRY_RUBBER": true,
+        "INIT_TRADE_CENTER_COUNTRY_OIL": true,
+        "INIT_TRADE_CENTER_COUNTRY_LOGS": true,
+        "add_dynamic_modifier": {
+            "modifier": "PIHC_TRADE_DYNAMIC_MODIFIER",
+            "scope": "THIS"
+        }
+    },
+
+    "COMPUTE_TRADE_CENTER_LIMIT": {
+        "COMPUTE_NUM_TRADE_CENTERS": true,
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_LIMIT",
+            "value": "VAR_NUM_TRADE_CENTERS_OWNED"
+        },
+        "multiply_variable": {
+            "var": "VAR_TRADE_CENTER_LIMIT",
+            "value": "VAR_TRADE_CENTER_LIMIT_PER"
+        },
+        "add_to_variable": {
+            "var": "VAR_TRADE_CENTER_LIMIT",
+            "value": "VAR_TRADE_CENTER_LIMIT_EXTRA"
+        }
+    },
+    "COMPUTE_TRADE_CENTER_CLEAR": {
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_GAIN",
+            "value": 0
+        },
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+            "value": 0
+        },
+        "set_variable__D2": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_GAIN",
+            "value": 0
+        },
+        "set_variable__D3": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+            "value": 0
+        },
+        "set_variable__D4": {
+            "var": "VAR_TRADE_CENTER_STEEL_GAIN",
+            "value": 0
+        },
+        "set_variable__D5": {
+            "var": "VAR_TRADE_CENTER_COAL_GAIN",
+            "value": 0
+        },
+        "set_variable__D6": {
+            "var": "VAR_TRADE_CENTER_RUBBER_GAIN",
+            "value": 0
+        },
+        "set_variable__D7": {
+            "var": "VAR_TRADE_CENTER_OIL_GAIN",
+            "value": 0
+        },
+        "set_variable__D8": {
+            "var": "VAR_TRADE_CENTER_LOGS_GAIN",
+            "value": 0
+        },
+        "set_variable__D9": {
+            "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+            "value": 0
+        },
+        "set_variable__D10": {
+            "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+            "value": 0
+        },
+        "set_variable__D11": {
+            "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+            "value": 0
+        },
+        "set_variable__D12": {
+            "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+            "value": 0
+        },
+        "set_variable__D13": {
+            "var": "VAR_TRADE_CENTER_STEEL_COST",
+            "value": 0
+        },
+        "set_variable__D14": {
+            "var": "VAR_TRADE_CENTER_COAL_COST",
+            "value": 0
+        },
+        "set_variable__D15": {
+            "var": "VAR_TRADE_CENTER_RUBBER_COST",
+            "value": 0
+        },
+        "set_variable__D16": {
+            "var": "VAR_TRADE_CENTER_OIL_COST",
+            "value": 0
+        },
+        "set_variable__D17": {
+            "var": "VAR_TRADE_CENTER_LOGS_COST",
+            "value": 0
+        }
+    },
+
+    "COMPUTE_TRADE_CENTER_CRYSTALS_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+                "value": "resource@crystals"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_TUNGSTEN_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+                "value": "resource@tungsten"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_CHROMIUM_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+                "value": "resource@chromium"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_ALUMINIUM_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+                "value": "resource@aluminium"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_STEEL_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_REQ",
+                "value": "resource@steel"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_COAL_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_REQ",
+                "value": "resource@coal"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_RUBBER_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+                "value": "resource@rubber"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_OIL_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_REQ",
+                "value": "resource@oil"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_LOGS_REQ": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_BUY"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_REQ",
+                "value": "resource@logs"
+            },
+            "multiply_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_REQ",
+                "value": -1
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_REQ",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_REQ",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_CREDIT_REQ": {
+        "COMPUTE_TRADE_CENTER_CRYSTALS_REQ": true,
+        "COMPUTE_TRADE_CENTER_TUNGSTEN_REQ": true,
+        "COMPUTE_TRADE_CENTER_CHROMIUM_REQ": true,
+        "COMPUTE_TRADE_CENTER_ALUMINIUM_REQ": true,
+        "COMPUTE_TRADE_CENTER_STEEL_REQ": true,
+        "COMPUTE_TRADE_CENTER_COAL_REQ": true,
+        "COMPUTE_TRADE_CENTER_RUBBER_REQ": true,
+        "COMPUTE_TRADE_CENTER_OIL_REQ": true,
+        "COMPUTE_TRADE_CENTER_LOGS_REQ": true,
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": 0
+        },        
+        "set_temp_variable": {
+            "var": "crystals_req_credit",
+            "value": "VAR_TRADE_CENTER_CRYSTALS_REQ"
+        },
+        "multiply_temp_variable": {
+            "var": "crystals_req_credit",
+            "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+        },
+        "add_to_variable": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "crystals_req_credit"
+        },
+        "set_temp_variable__D1": {
+            "var": "tungsten_req_credit",
+            "value": "VAR_TRADE_CENTER_TUNGSTEN_REQ"
+        },
+        "multiply_temp_variable__D1": {
+            "var": "tungsten_req_credit",
+            "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+        },
+        "add_to_variable__D1": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "tungsten_req_credit"
+        },
+        "set_temp_variable__D2": {
+            "var": "chromium_req_credit",
+            "value": "VAR_TRADE_CENTER_CHROMIUM_REQ"
+        },
+        "multiply_temp_variable__D2": {
+            "var": "chromium_req_credit",
+            "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+        },
+        "add_to_variable__D2": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "chromium_req_credit"
+        },
+        "set_temp_variable__D3": {
+            "var": "aluminium_req_credit",
+            "value": "VAR_TRADE_CENTER_ALUMINIUM_REQ"
+        },
+        "multiply_temp_variable__D3": {
+            "var": "aluminium_req_credit",
+            "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+        },
+        "add_to_variable__D3": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "aluminium_req_credit"
+        },
+        "set_temp_variable__D4": {
+            "var": "steel_req_credit",
+            "value": "VAR_TRADE_CENTER_STEEL_REQ"
+        },
+        "multiply_temp_variable__D4": {
+            "var": "steel_req_credit",
+            "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+        },
+        "add_to_variable__D4": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "steel_req_credit"
+        },
+        "set_temp_variable__D5": {
+            "var": "coal_req_credit",
+            "value": "VAR_TRADE_CENTER_COAL_REQ"
+        },
+        "multiply_temp_variable__D5": {
+            "var": "coal_req_credit",
+            "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+        },
+        "add_to_variable__D5": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "coal_req_credit"
+        },
+        "set_temp_variable__D6": {
+            "var": "rubber_req_credit",
+            "value": "VAR_TRADE_CENTER_RUBBER_REQ"
+        },
+        "multiply_temp_variable__D6": {
+            "var": "rubber_req_credit",
+            "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+        },
+        "add_to_variable__D6": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "rubber_req_credit"
+        },
+        "set_temp_variable__D7": {
+            "var": "oil_req_credit",
+            "value": "VAR_TRADE_CENTER_OIL_REQ"
+        },
+        "multiply_temp_variable__D7": {
+            "var": "oil_req_credit",
+            "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+        },
+        "add_to_variable__D7": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "oil_req_credit"
+        },
+        "set_temp_variable__D8": {
+            "var": "logs_req_credit",
+            "value": "VAR_TRADE_CENTER_LOGS_REQ"
+        },
+        "multiply_temp_variable__D8": {
+            "var": "logs_req_credit",
+            "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+        },
+        "add_to_variable__D8": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "value": "logs_req_credit"
+        },
+        "clamp_variable": {
+            "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+            "max": "VAR_TRADE_CENTER_LIMIT"
+        }
+    },
+
+    "COMPUTE_TRADE_CENTER_CRYSTALS_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                "value": "resource@crystals"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                "value": "VAR_TRADE_CENTER_CRYSTALS_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_TUNGSTEN_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                "value": "resource@tungsten"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                "value": "VAR_TRADE_CENTER_TUNGSTEN_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_CHROMIUM_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                "value": "resource@chromium"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                "value": "VAR_TRADE_CENTER_CHROMIUM_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_ALUMINIUM_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                "value": "resource@aluminium"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                "value": "VAR_TRADE_CENTER_ALUMINIUM_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_STEEL_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_OFF",
+                "value": "resource@steel"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_OFF",
+                "value": "VAR_TRADE_CENTER_STEEL_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_COAL_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_OFF",
+                "value": "resource@coal"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_OFF",
+                "value": "VAR_TRADE_CENTER_COAL_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_RUBBER_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+                "value": "resource@rubber"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+                "value": "VAR_TRADE_CENTER_RUBBER_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_OIL_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_OFF",
+                "value": "resource@oil"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_OFF",
+                "value": "VAR_TRADE_CENTER_OIL_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_LOGS_OFF": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL"
+                }
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_OFF",
+                "value": "resource@logs"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_OFF",
+                "value": "VAR_TRADE_CENTER_LOGS_PRESERVE"
+            },
+            "clamp_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_OFF",
+                "min": 0
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_OFF",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_CREDIT_OFF": {
+        "COMPUTE_TRADE_CENTER_CRYSTALS_OFF": true,
+        "COMPUTE_TRADE_CENTER_TUNGSTEN_OFF": true,
+        "COMPUTE_TRADE_CENTER_CHROMIUM_OFF": true,
+        "COMPUTE_TRADE_CENTER_ALUMINIUM_OFF": true,
+        "COMPUTE_TRADE_CENTER_STEEL_OFF": true,
+        "COMPUTE_TRADE_CENTER_COAL_OFF": true,
+        "COMPUTE_TRADE_CENTER_RUBBER_OFF": true,
+        "COMPUTE_TRADE_CENTER_OIL_OFF": true,
+        "COMPUTE_TRADE_CENTER_LOGS_OFF": true
+    },
+
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_CRYSTALS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CRYSTALS_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_CRYSTALS_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CRYSTALS_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_TUNGSTEN": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_TUNGSTEN_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_TUNGSTEN_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_TUNGSTEN_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_CHROMIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CHROMIUM_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_CHROMIUM_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CHROMIUM_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_GAIN",
+                "value": 0
+            }
+        },
+        "set_temp_variable": {
+            "var": "auto_trade_credit",
+            "value": "VAR_TRADE_CENTER_CHROMIUM_GAIN"
+        },
+        "multiply_temp_variable": {
+            "var": "auto_trade_credit",
+            "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+        },
+        "subtract_from_variable": {
+            "var": "VAR_TRADE_CENTER_CREDIT",
+            "value": "auto_trade_credit"
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_ALUMINIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_ALUMINIUM_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_ALUMINIUM_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_ALUMINIUM_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_STEEL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_STEEL_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_STEEL_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_STEEL_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_COAL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_COAL_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_COAL_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_COAL_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_RUBBER": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_RUBBER_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_RUBBER_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_RUBBER_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_OIL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_OIL_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_OIL_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_OIL_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY_LOGS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_BUY"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_LOGS_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_LOGS_REQ"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_GAIN",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_LOGS_GAIN"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_GAIN",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_BUY": {
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_CRYSTALS": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_TUNGSTEN": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_CHROMIUM": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_ALUMINIUM": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_STEEL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_COAL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_RUBBER": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_OIL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_BUY_LOGS": true
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_CRYSTALS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_CRYSTALS_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CRYSTALS_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_TUNGSTEN": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_TUNGSTEN_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_TUNGSTEN_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_CHROMIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_CHROMIUM_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CHROMIUM_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_ALUMINIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_ALUMINIUM_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_ALUMINIUM_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_STEEL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_STEEL_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_STEEL_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_STEEL_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_STEEL_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_COAL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_COAL_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_COAL_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_COAL_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_COAL_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_RUBBER": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_RUBBER_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_RUBBER_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "min": 0,
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_RUBBER_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_RUBBER_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_OIL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_OIL_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_OIL_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_OIL_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_OIL_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL_LOGS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_LOGS_OFF",
+                    "value": 0,
+                    "compare": "greater_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_amount",
+                "value": "VAR_TRADE_CENTER_LOGS_OFF"
+            },
+            "set_temp_variable__D1": {
+                "var": "auto_trade_max_amount",
+                "value": "VAR_TRADE_CENTER_CREDIT_REQ"
+            },
+            "set_temp_variable__D2": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "auto_trade_max_amount"
+            },
+            "modulo_temp_variable": {
+                "var": "auto_trade_max_amount_mod",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "subtract_from_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "auto_trade_max_amount_mod"
+            },
+            "divide_temp_variable": {
+                "var": "auto_trade_max_amount",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "round_temp_variable": "auto_trade_max_amount",
+            "clamp_temp_variable": {
+                "var": "auto_trade_amount",
+                "max": "auto_trade_max_amount"
+            },
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_COST",
+                "value": "auto_trade_amount"
+            },
+            "set_temp_variable__D3": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_LOGS_COST"
+            },
+            "multiply_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "subtract_from_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                "value": "auto_trade_credit"
+            },
+            "add_to_variable": {
+                "var": "VAR_TRADE_CENTER_CREDIT",
+                "value": "auto_trade_credit"
+            }
+        },
+        "else": {
+            "set_variable": {
+                "var": "VAR_TRADE_CENTER_LOGS_COST",
+                "value": 0
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_CRYSTALS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+                    "value": "VAR_TRADE_CENTER_CRYSTALS_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_CRYSTALS_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_CRYSTALS_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_TUNGSTEN": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+                    "value": "VAR_TRADE_CENTER_TUNGSTEN_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_TUNGSTEN_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_TUNGSTEN_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_CHROMIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+                    "value": "VAR_TRADE_CENTER_CHROMIUM_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_CHROMIUM_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_CHROMIUM_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_ALUMINIUM": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+                    "value": "VAR_TRADE_CENTER_ALUMINIUM_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_ALUMINIUM_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_ALUMINIUM_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_STEEL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_STEEL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_STEEL_COST",
+                    "value": "VAR_TRADE_CENTER_STEEL_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_STEEL_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_STEEL_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_COAL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_COAL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_COAL_COST",
+                    "value": "VAR_TRADE_CENTER_COAL_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_COAL_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_COAL_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_RUBBER": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_RUBBER_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_RUBBER_COST",
+                    "value": "VAR_TRADE_CENTER_RUBBER_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_RUBBER_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_RUBBER_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_OIL": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_OIL_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_OIL_COST",
+                    "value": "VAR_TRADE_CENTER_OIL_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_OIL_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_OIL_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_SELL_ONE_LOGS": {
+        "if": {
+            "limit": {
+                "OR": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_AUTO_TRADE",
+                    "has_country_flag__D1": "PIHC_COUNTRY_FLAG_AUTO_TRADE_LOGS_SELL"
+                },
+                "check_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": 0,
+                    "compare": "greater_than"
+                },
+                "check_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_LOGS_COST",
+                    "value": "VAR_TRADE_CENTER_LOGS_OFF",
+                    "compare": "less_than"
+                }
+            },
+            "set_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "VAR_TRADE_CENTER_CREDIT"
+            },
+            "add_to_temp_variable": {
+                "var": "auto_trade_credit",
+                "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+            },
+            "if": {
+                "limit": {
+                    "check_variable": {
+                        "var": "auto_trade_credit",
+                        "value": "VAR_TRADE_CENTER_LIMIT",
+                        "compare": "less_than_or_equals"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "VAR_TRADE_CENTER_LOGS_COST",
+                    "value": 1
+                },
+                "add_to_variable__D1": {
+                    "var": "VAR_TRADE_CENTER_CREDIT",
+                    "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+                },
+                "subtract_from_variable": {
+                    "var": "VAR_TRADE_CENTER_CREDIT_REQ",
+                    "value": "global.VAR_TRADE_CENTER_LOGS_VALUE"
+                }
+            }
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_SELL": {
+        "set_variable": {
+            "var": "VAR_TRADE_CENTER_CREDIT",
+            "value": 0
+        },
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_LOGS": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_OIL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_RUBBER": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_COAL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_STEEL": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_ALUMINIUM": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_CHROMIUM": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_TUNGSTEN": true,
+        "COMPUTE_TRADE_CENTER_AUTO_SELL_CRYSTALS": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_LOGS": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_OIL": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_RUBBER": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_COAL": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_STEEL": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_ALUMINIUM": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_CHROMIUM": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_TUNGSTEN": true,
+        "COMPUTE_TRADE_CENTER_SELL_ONE_CRYSTALS": true,
+        "set_variable__D1": {
+            "var": "VAR_TRADE_CENTER_CREDIT_MAX",
+            "value": "VAR_TRADE_CENTER_CREDIT"
+        }
+    },
+    "COMPUTE_TRADE_CENTER_AUTO_TRADE": {
+        "hidden_effect": {
+            "COMPUTE_TRADE_CENTER_LIMIT": true,
+            "COMPUTE_TRADE_CENTER_CLEAR": true,
+            "COMPUTE_TRADE_CENTER_CREDIT_REQ": true,
+            "COMPUTE_TRADE_CENTER_CREDIT_OFF": true,
+
+            "COMPUTE_TRADE_CENTER_AUTO_SELL": true,
+            "COMPUTE_TRADE_CENTER_AUTO_BUY": true
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+"if": {
+                "limit": {
+                    "OR":{
+                    "owns_state":590,
+                    "C02":{
+                        "is_subject_of":"C08",
+                        "owns_state":590
+                    }
+                    }
+                    
+                },
+                "C12": {
+                    "transfer_state": 590,
+                    "add_state_core":590
+                }
+            },
+"if__D1": {
+                "limit": {
+                    "OR":{
+                    "owns_state":579,
+                    "C02":{
+                        "is_subject_of":"C08",
+                        "owns_state":579
+                    }
+                }
+            },
+                "C12": {
+                    "transfer_state": 579,
+                    "add_state_core":579
+                }
+            },
+"if__D2": {
+                "limit": {
+                        "OR":{
+                    "owns_state":553,
+                    "C02":{
+                        "is_subject_of":"C08",
+                        "owns_state":553
+                    }
+                    }
+                },
+                "C12": {
+                    "transfer_state": 553,
+                    "add_state_core":553
+                }
+            },
+            "if__D4": {
+                "limit": {
+                "OR":{
+                    "owns_state":567,
+                    "C02":{
+                        "is_subject_of":"C08",
+                        "owns_state":567
+                    }
+                    }
+                },
+                "C12": {
+                    "transfer_state": 567,
+                    "add_state_core":567
+                }
+            },
+            "if__D5": {
+                "limit": {
+                        "OR":{
+                    "owns_state":545,
+                    "C02":{
+                        "is_subject_of":"C08",
+                        "owns_state":545
+                    }
+                    }
+                },
+                "C12": {
+                    "transfer_state": 545,
+                    "add_state_core":545
+                }
+            },
+            "add_political_power": 150
+        },
+        {
+            "ai_chance": {
+                "factor": 0
+            },
+            "declare_war_on":{ 
+                "target" : "C12",
+                "type" : "puppet_wargoal_focus" 
+            },
+            "add_political_power": -100
+        }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

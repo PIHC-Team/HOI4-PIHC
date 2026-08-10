@@ -1,0 +1,34 @@
+{
+    "tree": "C02_MAIN",
+    "parent": "FOCUS_C02_THE_FIVE_MONTHS_PLAN",
+    "dx": -1,
+    "dw": 2,
+    "priority": 10,
+    "prerequisite": {
+        "focus": "FOCUS_C02_THE_FIVE_MONTHS_PLAN"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_civil"
+        },
+        "add_tech_bonus__D1": {
+            "bonus": 0.3,
+            "uses": 1,
+            "category": "pihc_energy"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "specialization": "specialization_oilpunk",
+    "project_tags": "sp_tag_pihc_oilpunk",
+
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "FROM": {
+            "NOT": {
+                "is_special_project_completed": "SP_ELEC_ENGINE_GENERATOR"
+            },
+            "NOT__D1": {
+                "has_tech": "TECHNOLOGY_SP_HIDDEN_GENERATOR"
+            }
+        }
+    },
+    "available": {
+        "FROM": {
+            "has_tech": "TECHNOLOGY_TECH_ENER_II",
+            "NOT": {
+                "is_special_project_being_researched": "SP_ELEC_ENGINE_GENERATOR"
+            }
+        }
+    },
+    "resource_cost": {
+        "resources": {
+            "steel": 6,
+            "rubber": 6,
+            "aluminium": 3
+        }
+    },
+    "complexity": "sp_complexity.small",
+    "prototype_time": "sp_time.prototype.short",
+    "project_output": {
+        "country_effects": {
+            "set_technology": {
+                "TECHNOLOGY_SP_HIDDEN_GENERATOR": 1
+            }
+        }
+    },
+    "generic_prototype_rewards": [
+        "SP_REWARD_GENERIC_OIL",
+        "SP_REWARD_GENERIC_OIL_EXP",
+        "SP_REWARD_GENERIC_FAILURE_PHYSICAL",
+        "SP_REWARD_GENERIC_EUREKA"
+    ]
+}

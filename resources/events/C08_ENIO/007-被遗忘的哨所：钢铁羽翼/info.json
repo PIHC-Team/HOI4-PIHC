@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_C08_ENIO_7_TOOLTIP",
+            "custom_effect_tooltip__D1": "C08_OCCURTISM_INC_10",
+            "hidden_effect": {
+                "set_country_flag": "PIHC_COUNTRY_FLAG_C08_PLANE"
+            },
+            "add_tech_bonus": {
+                "bonus": 0.25,
+                "uses": 2,
+                "category": "pihc_air"
+            },
+            "add_to_variable": {
+                "var": "VAR_C08_OCCULTISM",
+                "value": 10
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

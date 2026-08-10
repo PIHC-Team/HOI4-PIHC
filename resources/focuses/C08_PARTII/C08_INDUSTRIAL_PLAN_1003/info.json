@@ -1,0 +1,34 @@
+{
+    "tree": "C08_PARTII",
+    "parent": "FOCUS_C08_WINTER_WARM_UP",
+    "dx": -1,
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C08_WINTER_WARM_UP"
+    },
+    "allow_branch": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C08_PARTII_2"
+    },
+    "cost": 1,
+    "completion_reward": {
+        "add_political_power": 20,
+        "country_event": {
+            "id": "C08_MAIN.24",
+            "days": 1
+        },
+        "hidden_effect": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_C08_REPORT_27B0A"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

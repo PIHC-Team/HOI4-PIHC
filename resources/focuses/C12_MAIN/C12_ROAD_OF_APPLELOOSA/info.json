@@ -1,0 +1,35 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TAKE_OVER_BUFFALO",
+    "dw": -4,
+    "dc": -2,
+    "dy": 1,
+    "priority": 40,
+    "prerequisite": {
+        "focus": "FOCUS_C12_TAKE_OVER_BUFFALO"
+    },
+    "cost": 4,
+    "bypass": {
+        "NOT": {
+            "country_exists": "C14"
+        }
+    },
+    "completion_reward": {
+        "country_event": {
+            "id": "C12_MAIN.61",
+            "days": 2,
+            "random_days": 2
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "tree": "C08_PARTIII",
+    "parent": "FOCUS_C08_TROTTINGHAM_REFORM",
+    "prerequisite": {
+        "focus": "FOCUS_C08_NEW_HOME_PLAN"
+    },
+    "prerequisite__D1": {
+        "focus": "FOCUS_C08_TROTTINGHAM_REFORM"
+    },
+    "dx": 1,
+    "priority": 0,
+    "cost": 3,
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_01"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_C08_RECONSTRUCTION_01",
+                "add_idea": "IDEA_C08_RECONSTRUCTION_02"
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_02"
+            },
+            "swap_ideas": {
+                "remove_idea": "IDEA_C08_RECONSTRUCTION_02",
+                "add_idea": "IDEA_C08_RECONSTRUCTION_03"
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "IDEA_C08_RECONSTRUCTION_03"
+            },
+            "remove_ideas": "IDEA_C08_RECONSTRUCTION_03"
+        },
+        "4": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 2
+            }
+        },
+        "450": {
+            "add_extra_state_shared_building_slots": 1,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            },
+            "set_state_category": "pastoral"
+        },
+        "401": {
+            "add_extra_state_shared_building_slots": 1,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            }
+        },
+        "481": {
+            "add_extra_state_shared_building_slots": 2,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            },
+            "add_building_construction__D1": {
+                "type": "arms_factory",
+                "instant_build": true,
+                "level": 1
+            }
+        },
+        "415": {
+            "add_extra_state_shared_building_slots": 1,
+            "add_building_construction": {
+                "type": "industrial_complex",
+                "instant_build": true,
+                "level": 1
+            }
+        },
+        "413": {
+            "add_extra_state_shared_building_slots": 1,
+            "add_building_construction__D1": {
+                "type": "arms_factory",
+                "instant_build": true,
+                "level": 1
+            },
+            "set_state_category": "pastoral"
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "FOCUS_C08_MANEHATTAN_BAY_AREA_TOOLTIP",
+            "check_variable": {
+                "VAR_C08_URBANIZATION > 74": null
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

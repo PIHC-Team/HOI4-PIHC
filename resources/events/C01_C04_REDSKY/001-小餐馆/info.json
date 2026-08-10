@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "C01": {
+                "add_intel": {
+                    "target": "C04",
+                    "civilian_intel": 20
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

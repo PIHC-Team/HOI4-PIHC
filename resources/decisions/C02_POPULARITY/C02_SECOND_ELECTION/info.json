@@ -1,0 +1,32 @@
+{
+    "name": "Second Election",
+    "priority": 999,
+    
+    "cost": 0,
+    "selectable_mission": false,
+    "days_mission_timeout": 1298,
+    "is_good": false,
+    "fire_only_once": true,
+    "activation": {
+        "tag": "C02"
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "DECISION_C02_SECOND_ELECTION_TRIGGER_TOOLTIP",
+            "has_global_flag": "PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED"
+        }
+    },
+    "complete_effect": {
+    },
+    "timeout_effect": {
+        "custom_effect_tooltip": "DECISION_C02_SECOND_ELECTION_EFFECT_TOOLTIP",
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "tag": "C02"
+                },
+                "C02_SECOND_PONYVILLE_ELECTION": true
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "dist": {
+            "C01": 2,
+            "C02": 2,
+            "C06": 1,
+            "C07": 3,
+            "C15": 1,
+            "C23": 1
+        },
+        "gen": [
+            [["scientist_trait_genius", "scientist_trait_brilliant_theorist", "scientist_trait_gifted_engineer", "scientist_trait_bright", "scientist_trait_fast_learner", "scientist_trait_resourceful", "scientist_trait_schrodingers_trait"], "random"]
+        ]
+    },
+    {
+        "dist": {
+            "C01": 1,
+            "C07": 2
+        },
+        "gen": [
+            [["scientist_trait_genius", "scientist_trait_brilliant_theorist", "scientist_trait_gifted_engineer", "scientist_trait_bright", "scientist_trait_fast_learner", "scientist_trait_resourceful", "scientist_trait_schrodingers_trait"], "expert"]
+        ]
+    },
+    {
+        "dist": {
+            "all": "all"
+        },
+        "gen": [
+            [["scientist_trait_genius", "scientist_trait_brilliant_theorist", "scientist_trait_gifted_engineer", "scientist_trait_bright", "scientist_trait_fast_learner", "scientist_trait_resourceful", "scientist_trait_schrodingers_trait"], "specialization_steampunk"],
+            [["scientist_trait_genius", "scientist_trait_brilliant_theorist", "scientist_trait_gifted_engineer", "scientist_trait_bright", "scientist_trait_fast_learner", "scientist_trait_resourceful", "scientist_trait_schrodingers_trait"], "specialization_magic"]
+        ]
+    },
+    {
+        "dist": {
+            "C01": 1,
+            "C05": 1,
+            "C15": 1,
+            "C23": 1
+        },
+        "gen": [
+            [["scientist_trait_genius", "scientist_trait_brilliant_theorist", "scientist_trait_gifted_engineer", "scientist_trait_bright", "scientist_trait_fast_learner", "scientist_trait_resourceful", "scientist_trait_schrodingers_trait"], "specialization_witchcraft"]
+        ]
+    }
+]

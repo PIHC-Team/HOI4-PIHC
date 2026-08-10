@@ -1,0 +1,18 @@
+{
+    "on_actions": {
+        "on_weekly_C02": {
+            "effect": {
+                "if": {
+                    "limit": {
+                        "has_idea": "IDEA_C02_RABID_RHODODENDRONS_NEUTRALIZER_PRODUCTION"
+                    }
+                },
+                "add_to_variable": {
+                    "var": "C02.VAR_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER",
+                    "value": "C02.VAR_WEEKLY_PRODUCTION_RABID_RHODODENDRONS"
+                },
+                "INVENTORY_RELOAD_ONLY_WHEN_OPEN": true
+            }
+        }
+    }
+}

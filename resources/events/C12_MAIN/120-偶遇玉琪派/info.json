@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "add_political_power": 25,
+        "hidden_effect":{
+            "if": {
+            "limit": {
+                "has_country_flag": "PIHC_C12_BRAEBURN_IS_DEAD"
+            },
+            "country_event": {
+                "id": "C12_MAIN.121",
+                "days": 28,
+                "random_days": 3
+            }
+        },
+            "if__D1": {
+            "limit": {
+                "has_country_flag": "PIHC_C12_BRAEBURN_IS_ALIVE"
+            },
+            "country_event": {
+                "id": "C12_MAIN.128",
+                "days": 28,
+                "random_days": 3
+            }
+        }
+        }
+    }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

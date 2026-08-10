@@ -1,0 +1,35 @@
+{
+    "enable_operative_missions": {
+        "enable": {
+            "any_operative_leader": {
+                "always": true
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "operative_mission",
+            "mission": "build_intel_network",
+            "value": 100
+        },
+        "ai_strategy__D1": {
+            "type": "operative_mission",
+            "mission": "counter_intelligence",
+            "value": 100
+        },
+        "ai_strategy__D2": {
+            "type": "operative_mission",
+            "mission": "quiet_network",
+            "value": 100
+        },
+        "ai_strategy__D3": {
+            "type": "operative_mission",
+            "mission": "root_out_resistance",
+            "value": 100
+        },
+        "ai_strategy__D4": {
+            "type": "operative_mission",
+            "mission": "control_trade",
+            "value": 100
+        }
+    }
+}

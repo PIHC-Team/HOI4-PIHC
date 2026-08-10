@@ -1,0 +1,13 @@
+{
+    "name": "Fuel Fee",
+    "removal_cost": -1,
+    "targeted_modifier": {
+        "tag": "C01",
+        "cic_to_target_factor": 0.10
+    },
+    "modifier": {
+        "base_fuel_gain_factor": 0.30,
+        "max_fuel_factor": 2.0,
+        "production_speed_fuel_silo_factor": 0.5
+    }
+}

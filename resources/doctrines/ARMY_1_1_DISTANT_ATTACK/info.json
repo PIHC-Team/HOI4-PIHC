@@ -1,0 +1,41 @@
+{
+    "category": "land",
+    "x": 0,
+    "y": 2,
+
+    "cannon_light": {
+        "combat_width": -0.2
+    },
+    "cannon_medium": {
+        "combat_width": -0.2
+    },
+    "cannon_heavy": {
+        "combat_width": -0.2
+    },
+    "infantry_magical": {
+        "combat_width": -0.2
+    },
+    "coordination_bonus": 0.03,
+    "enable_tactic": "tactic_overwhelming_fire",
+    
+    "categories": [
+        "pihc_doctrine",
+        "pihc_army_doctrine",
+        "pihc_army_doctrine_flame_of_rage"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_ARMY_1_2_VERTICAL_ATTACK",
+        "research_cost_coeff": 1.0
+    },
+
+    "research_cost": 2.25,
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_army_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}

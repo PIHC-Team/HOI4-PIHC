@@ -1,0 +1,25 @@
+{
+    "name": "Silence Decree",
+    "priority": 99,
+    
+    "cost": 0,
+    "days_re_enable": 0,
+    "allowed": {
+        "tag": "C15"
+    },
+    "visible": {
+        "has_completed_focus": "FOCUS_C15_SOMBRA_CRYSTAL_SILENCE",
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C15_SOMBRA_SILENCE_DECREE"
+    },
+    "complete_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C15_SOMBRA_SILENCE_DECREE",
+        "set_country_flag": {
+            "flag": "PIHC_COUNTRY_FLAG_C15_SOMBRA_SILENCE_DECREE_COOLDOWN",
+            "days": 60,
+            "value": 1
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    }
+}

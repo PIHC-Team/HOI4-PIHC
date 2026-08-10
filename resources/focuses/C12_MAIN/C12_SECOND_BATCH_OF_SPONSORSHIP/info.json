@@ -1,0 +1,34 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_HEAVY_EQUIPMENT_IMPORTATION",
+    "prerequisite": {
+        "focus": "FOCUS_C12_HEAVY_EQUIPMENT_IMPORTATION"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "country_event": {
+            "id": "C12_MAIN.14",
+            "days": 2,
+            "random_days": 2
+        },
+        "hidden_effect": {
+            "country_event": {
+                "id": "C12_MAIN.11",
+                "days": 120,
+                "random_days": 90
+            }
+        }
+    },
+    "available": {
+        "country_exists": "C07",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

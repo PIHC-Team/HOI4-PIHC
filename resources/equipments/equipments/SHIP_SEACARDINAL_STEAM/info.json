@@ -1,0 +1,37 @@
+{
+    "name": "Steampunk Carrier",
+    "archetype": "ship_hull_carrier",
+    "parent": "EQUIPMENT_SHIP_SEACARDINAL_IRON",
+
+    "priority": 1003,
+    "module_slots": "inherit",
+    "default_modules": {
+        "fixed_ship_deck_slot_1": "ship_deck_space",
+        "fixed_ship_deck_slot_2": "ship_deck_space",
+        "fixed_ship_anti_air_slot": "ship_anti_air_4",
+        "fixed_ship_radar_slot": "empty",
+        "fixed_ship_engine_slot": "carrier_ship_engine_1",
+        "fixed_ship_secondaries_slot": "ship_secondaries_1",
+        "front_1_custom_slot": "ship_deck_space"
+    },
+    "lg_armor_piercing": 0,
+    "lg_attack": 0,
+    "torpedo_attack": 0,
+    "carrier_size": 10,
+    "anti_air_attack": 10,
+    "armor_value": 40,
+    "surface_detection": 30,
+    "sub_detection": 5,
+    "surface_visibility": 30,
+    "naval_speed": 28.5,
+    "reliability": 0.9,
+    "naval_range": 6000,
+    "max_strength": 400,
+    "build_cost_ic": 6000,
+    "resources": {
+        "steel": 6,
+        "coal": 6,
+        "chromium": 3
+    },
+    "manpower": 8
+}

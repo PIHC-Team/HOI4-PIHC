@@ -1,0 +1,418 @@
+[zh.open_landlord_tooltip]
+[open_landlord_tooltip_s]
+[en.open_landlord_tooltip]
+[open_landlord_tooltip_s]
+
+[zh.open_landlord_tooltip_open]
+§Y打开核心菜单§!
+[en.open_landlord_tooltip_open]
+§YClick here to open the core menu§!
+
+[zh.open_landlord_tooltip_close]
+§Y关闭核心菜单§!
+[en.open_landlord_tooltip_close]
+§YClick here to close the core menu§!
+
+[zh.CHECK_CORE_STATE_DESC]
+§Y计算费用§!
+
+£population_icon §Y[core_state_cost_game_rule]K 马口§! / £pol_power_icon 
+如果拥有§Y宣称§!，费用将§Y减半§!。
+[en.CHECK_CORE_STATE_DESC]
+§YCalculate cost§!
+
+£population_icon  §YPopulation§! /£pol_power_icon §Y[core_state_cost_game_rule]k§!.
+The cost will be §Yhalved§! if you have a §Yclaim§!.
+
+[zh.CORE_STATE_DESC]
+§Y制造核心§!
+[core_state_claimed]为该地区制造核心需要花费£pol_power_icon£§Y[?ROOT.cost_to_core]§!。
+[core_state_button_desc]
+--------------------------------------------
+§g制造核心是临时措施，不属于高堡奇驹模组的正常游戏内容。§!
+[en.CORE_STATE_DESC]
+§YCore State§!
+[core_state_claimed]It will cost you£pol_power_icon£§Y[?ROOT.cost_to_core]§! to core this state.
+[core_state_button_desc]
+--------------------------------------------
+§gCoring states is a temporary measure, not a normal gameplay content of The Pony In The High Castle MOD.§!
+
+[zh.core_state_req_not_owned_peace]
+--------------------------------------------
+§R未拥有此地区！§!
+[en.core_state_req_not_owned_peace]
+--------------------------------------------
+§RYou do not own this state!§!
+
+[zh.core_state_req_not_owned_war]
+--------------------------------------------
+§R未控制此地区！§!
+[en.core_state_req_not_owned_war]
+--------------------------------------------
+§RYou do not control this state!§!
+
+[zh.core_state_req_already_cored]
+--------------------------------------------
+§R此地区已经是你的核心地区！§!
+[en.core_state_req_already_cored]
+--------------------------------------------
+§RThis state is already your core!§!
+
+[zh.core_state_req_no_compliance_100]
+--------------------------------------------
+§R此地区的顺从度小于100%！§!
+[en.core_state_req_no_compliance_100]
+--------------------------------------------
+§RThis state has less than 100% compliance!§!
+
+[zh.core_state_req_no_compliance_80]
+--------------------------------------------
+§R此地区的顺从度小于80%！§!
+[en.core_state_req_no_compliance_80]
+--------------------------------------------
+§RThis state has less than 80% compliance!§!
+
+[zh.core_state_req_no_compliance_60]
+--------------------------------------------
+§R此地区的顺从度小于60%！§!
+[en.core_state_req_no_compliance_60]
+--------------------------------------------
+§RThis state has less than 60% compliance!§!
+
+[zh.core_state_req_no_compliance_40]
+--------------------------------------------
+§R此地区的顺从度小于40！§!
+[en.core_state_req_no_compliance_40]
+--------------------------------------------
+§RThis state has less than 40% compliance!§!
+
+[zh.core_state_req_no_compliance_20]
+--------------------------------------------
+§R此地区的顺从度小于20%！§!
+[en.core_state_req_no_compliance_20]
+--------------------------------------------
+§RThis state has less than 20% compliance!§!
+
+[zh.core_state_req_no_pp]
+--------------------------------------------
+§R政治点数不足！§!
+[en.core_state_req_no_pp]
+--------------------------------------------
+§RYou do not have enough political power!§!
+
+[zh.core_state_req_no_claim]
+--------------------------------------------
+§R未拥有此地区的宣称！§!
+[en.core_state_req_no_claim]
+--------------------------------------------
+§RYou do not have a claim on this state!§!
+
+[zh.CWC_FORMULA_PP_COST_GROUP]
+Core With Compliance++
+[en.CWC_FORMULA_PP_COST_GROUP]
+Core With Compliance++
+
+[zh.CWC_FORMULA_PP_COST]
+制造核心花费
+[en.CWC_FORMULA_PP_COST]
+Cost to core states
+
+[zh.CWC_COMP_COST]
+顺从度需求
+[en.CWC_COMP_COST]
+Compliance requirement
+
+[zh.CWC_OCCUPY]
+占领/完全控制
+[en.CWC_OCCUPY]
+Occupy/fully control
+
+[zh.CWC_CLAIM_FOR_CORE]
+仅能核心化有宣称的地区
+[en.CWC_CLAIM_FOR_CORE]
+Only core claimed states
+
+[zh.core_state_claimed_true]
+§C拥有此地区的宣称，因此花费减半。§!
+[en.core_state_claimed_true]
+§CYou have a claim on this state, therefore reducing the cost by half!§!
+
+[zh.CWC_FORMULA_PP_COST_5K_NAME]
+§Y马口§! / §Y5K§!
+[en.CWC_FORMULA_PP_COST_5K_NAME]
+§YPopulation§! / §Y5k§!
+
+[zh.CWC_FORMULA_PP_COST_10K_NAME]
+§Y马口§! / §Y10K§!
+[en.CWC_FORMULA_PP_COST_10K_NAME]
+§YPopulation§! / §Y10k§!
+
+[zh.CWC_FORMULA_PP_COST_20K_NAME]
+§Y马口§! / §Y20K§!
+[en.CWC_FORMULA_PP_COST_20K_NAME]
+§YPopulation§! / §Y20k§!
+
+[zh.CWC_FORMULA_PP_COST_40K_NAME]
+§Y马口§! / §Y40K§!
+[en.CWC_FORMULA_PP_COST_40K_NAME]
+§YPopulation§! / §Y40k§!
+
+[zh.CWC_FORMULA_PP_COST_5K_DESC]
+每£manpower_icon §Y1K§!马口大约需要£pol_power_icon §Y4§!。
+£population_icon §Y5K 马口§! / £pol_power_icon
+--------------------------------------
+§g制造核心非常昂贵。§!
+[en.CWC_FORMULA_PP_COST_5K_DESC]
+Roughly £pol_power_icon §Y4§!  per £manpower_icon  §Y1k§!.
+£population_icon  §YPopulation§! / £pol_power_icon §Y5k§!
+--------------------------------------
+§gMakes coring very expensive.§!
+
+[zh.CWC_FORMULA_PP_COST_10K_DESC]
+每£manpower_icon §Y1K§!马口大约需要£pol_power_icon §Y2§!。
+£population_icon §Y10K 马口§! / £pol_power_icon
+--------------------------------------
+§g制造核心费用高昂。§!
+[en.CWC_FORMULA_PP_COST_10K_DESC]
+Roughly £pol_power_icon §Y2§!  per £manpower_icon  §Y1k§!.
+£population_icon  §YPopulation§! / £pol_power_icon §Y10k§!
+--------------------------------------
+§gMakes coring expensive.§!
+
+[zh.CWC_FORMULA_PP_COST_20K_DESC]
+每£manpower_icon §Y1K§!马口大约需要£pol_power_icon §Y1§!。
+£population_icon §Y20K 马口§! / £pol_power_icon
+--------------------------------------
+§g制造核心费用低廉。§!
+[en.CWC_FORMULA_PP_COST_20K_DESC]
+Roughly £pol_power_icon §Y1§!  per £manpower_icon  §Y1k§!.
+£population_icon  §YPopulation§! / £pol_power_icon §Y20k§!
+--------------------------------------
+§gMakes coring cheap.§!
+
+[zh.CWC_FORMULA_PP_COST_40K_DESC]
+每£manpower_icon §Y1K§!马口大约需要£pol_power_icon §Y0.5§!。
+£population_icon §Y10K 马口§! / £pol_power_icon
+--------------------------------------
+§g制造核心非常便宜。§!
+[en.CWC_FORMULA_PP_COST_40K_DESC]
+Roughly £pol_power_icon §Y0.5§!  per £manpower_icon  §Y1k§!.
+£population_icon  §YPopulation§! / £pol_power_icon §Y40k§!
+--------------------------------------
+§gMakes coring very cheap.§!
+
+[zh.CWC_COMP_COST_20_NAME]
+§C20%§!顺从度
+[en.CWC_COMP_COST_20_NAME]
+§C20%§! Compliance
+
+[zh.CWC_COMP_COST_40_NAME]
+§C40%§!顺从度
+[en.CWC_COMP_COST_40_NAME]
+§C40%§! Compliance
+
+[zh.CWC_COMP_COST_60_NAME]
+§C60%§!顺从度
+[en.CWC_COMP_COST_60_NAME]
+§C60%§! Compliance
+
+[zh.CWC_COMP_COST_80_NAME]
+§C80%§!顺从度
+[en.CWC_COMP_COST_80_NAME]
+§C80%§! Compliance
+
+[zh.CWC_COMP_COST_100_NAME]
+§C100%§!顺从度
+[en.CWC_COMP_COST_100_NAME]
+§C100%§! Compliance
+
+[zh.CWC_COMP_COST_20_DESC]
+制造核心需要£compliance_icon §C20%§!
+[en.CWC_COMP_COST_20_DESC]
+Requires £compliance_icon §C20%§! to core states
+
+[zh.CWC_COMP_COST_40_DESC]
+制造核心需要£compliance_icon §C40%§!
+[en.CWC_COMP_COST_40_DESC]
+Requires £compliance_icon §C40%§! to core states
+
+[zh.CWC_COMP_COST_60_DESC]
+制造核心需要£compliance_icon §C60%§!
+[en.CWC_COMP_COST_60_DESC]
+Requires £compliance_icon §C60%§! to core states
+
+[zh.CWC_COMP_COST_80_DESC]
+制造核心需要£compliance_icon §C80%§!
+[en.CWC_COMP_COST_80_DESC]
+Requires £compliance_icon §C80%§! to core states
+
+[zh.CWC_COMP_COST_100_DESC]
+制造核心需要£compliance_icon §C100%§!
+[en.CWC_COMP_COST_100_DESC]
+Requires £compliance_icon §C100%§! to core states
+
+[zh.CWC_OCCUPY_PEACE_NAME]
+完全控制
+[en.CWC_OCCUPY_PEACE_NAME]
+Fully control
+
+[zh.CWC_OCCUPY_PEACE_DESC]
+仅在§t完全控制§!地区时才能制造核心。
+[en.CWC_OCCUPY_PEACE_DESC]
+Only allows you to core states when you have §tfull control§! of them.
+
+[zh.CWC_OCCUPY_WAR_NAME]
+占领
+[en.CWC_OCCUPY_WAR_NAME]
+Occupy
+
+[zh.CWC_OCCUPY_WAR_DESC]
+也能制造所§t占领§!地区的核心。
+[en.CWC_OCCUPY_WAR_DESC]
+Also allows you to core states when you §toccupy§! them.
+
+[zh.CWC_NO_CLAIM_FOR_CORE_NAME]
+无需宣称
+[en.CWC_NO_CLAIM_FOR_CORE_NAME]
+No claim required
+
+[zh.CWC_NO_CLAIM_FOR_CORE_DESC]
+在制造核心时不需要拥有该地区的§t宣称§!。
+[en.CWC_NO_CLAIM_FOR_CORE_DESC]
+Does not require you to have a §tclaim§! on a state to core it.
+
+[zh.CWC_CLAIM_FOR_CORE_NAME]
+需要宣称
+[en.CWC_CLAIM_FOR_CORE_NAME]
+Claim required
+
+[zh.CWC_CLAIM_FOR_CORE_DESC]
+在制造核心时需要拥有该地区的§t宣称§!。
+[en.CWC_CLAIM_FOR_CORE_DESC]
+Requires you to have a §tclaim§! on a state to core it.
+
+[zh.CLAIM_STATE_DESC]
+§Y宣称地区§!
+需要花费£pol_power_icon£§Y[?ROOT.cost_to_claim]§!。
+[en.CLAIM_STATE_DESC]
+§YClaim State§!
+It will cost you£pol_power_icon£§Y[?ROOT.cost_to_claim]§! to claim this state.
+
+[zh.core_state_cost_not_checked]
+--------------------------------------------
+§R尚未检查花费！§!
+[en.core_state_cost_not_checked]
+--------------------------------------------
+§RYou haven’t checked the cost yet!§!
+
+[zh.claim_state_already_owned]
+--------------------------------------------
+§R无法宣称已经拥有的地区！§!
+[en.claim_state_already_owned]
+--------------------------------------------
+§RYou can’t claim states that you own!§!
+
+[zh.claim_state_req_already_claimed]
+--------------------------------------------
+§R已经宣称了该地区！§!
+[en.claim_state_req_already_claimed]
+--------------------------------------------
+§RYou already have a claim on this state!§!
+
+[zh.claim_state_disabled]
+--------------------------------------------
+§R在高堡奇驹中，随意制造宣称不被允许。§!
+[en.claim_state_disabled]
+--------------------------------------------
+§RIn PIHC, making claims at will is not allowed.§!
+
+[zh.REVOKE_CORE_DESC]
+§Y消除核心§!
+移除你在该地区的核心
+[revoke_core_button_desc]
+[en.REVOKE_CORE_DESC]
+§YRevoke Core§!
+Removes your core on this state.
+[revoke_core_button_desc]
+
+[zh.revoke_core_not_core]
+--------------------------------------------
+§该地区不是你的核心！§!
+[en.revoke_core_not_core]
+--------------------------------------------
+§RThis state is not your core!§!
+
+[zh.revoke_core_capital]
+--------------------------------------------
+§R不能消除首都的核心！§!
+[en.revoke_core_capital]
+--------------------------------------------
+§RYou cannot revoke the core on your capital!§!
+
+[zh.revoke_core_confirmation]
+你确定要§R消除§!位于§Y[?ROOT.landlord_state.GetName]§!的核心吗？
+[en.revoke_core_confirmation]
+Are you sure you want to §Rrevoke§! your core on §Y[?ROOT.landlord_state.GetName]§!?
+
+[zh.REVOKE_CLAIM_DESC]
+§Y清除宣称§!
+移除你在该地区的宣称
+[revoke_claim_button_desc]
+[en.REVOKE_CLAIM_DESC]
+§YRevoke Claim§!
+Removes your claim on this state.
+[revoke_claim_button_desc]
+
+[zh.revoke_claim_no_claim]
+--------------------------------------------
+§R未宣称该地区！§!
+[en.revoke_claim_no_claim]
+--------------------------------------------
+§RYou don’t have a claim on this state!§!
+
+[zh.revoke_claim_confirmation]
+你确定要§R消除§!在§Y[?ROOT.landlord_state.GetName]§!的宣称吗？
+[en.revoke_claim_confirmation]
+Are you sure you want to §Rrevoke§! your claim on §Y[?ROOT.landlord_state.GetName]§!?
+
+[zh.RETURN_STATE_DESC]
+§Y归还地区§!
+将该地区归还给拥有该地区核心/宣称的国家。也会消除你在该地区的核心。
+[en.RETURN_STATE_DESC]
+§YReturn State§!
+Returns the state to the country with a core/claim on it. Also revokes your core if you have one.
+
+[zh.return_state_confirmation]
+选择归还国家§Y[?ROOT.landlord_state.GetName]§!：
+[en.return_state_confirmation]
+Select a country to give §Y[?ROOT.landlord_state.GetName]§! to:
+
+[zh.return_state_selected]
+已选择的国家：[?ROOT.landlord_selected_country]
+[en.return_state_selected]
+Selected country: [?ROOT.landlord_selected_country]
+
+[zh.CWCPP_CALCULATE_COST]
+计算费用
+[en.CWCPP_CALCULATE_COST]
+Calc Cost
+
+[zh.CORE_STATE_REVOKE_YES]
+移除核心
+[en.CORE_STATE_REVOKE_YES]
+Revoke Core
+
+[zh.CORE_STATE_REVOKE_NO]
+取消
+[en.CORE_STATE_REVOKE_NO]
+Cancel
+
+[zh.CLAIM_STATE_REVOKE_YES]
+移除宣称
+[en.CLAIM_STATE_REVOKE_YES]
+Revoke Claim
+
+[zh.CLAIM_STATE_REVOKE_NO]
+取消
+[en.CLAIM_STATE_REVOKE_NO]
+Cancel

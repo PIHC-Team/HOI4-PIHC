@@ -1,0 +1,23 @@
+{
+    "category": "news",
+    "date": "1005.01.01 ~ 1005.02.01",
+    "date_scope": "C35",
+    "immediate": {
+        "hidden_effect": {
+            "C35": {
+                "C35_CIVIL_WAR": true,
+                "set_global_flag": "PIHC_GLOBAL_FLAG_C35_CIVIL_WAR_HAPPENED"
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

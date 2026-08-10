@@ -1,0 +1,281 @@
+[en.BCE_negative_opinion]
+§RWill negatively affect relations with this country and their guarenteers§!
+[zh.BCE_negative_opinion]
+§R将对与该国及其保证国的关系产生负面影响§!
+
+[en.BCE_buildings_damaged]
+Damage done in the state.
+[zh.BCE_buildings_damaged]
+该地区将遭到破坏。
+
+[en.BCE_has_border_troops]
+[Root.GetName] has troops on the border
+[zh.BCE_has_border_troops]
+[Root.GetName]在边境上部署了军队
+
+[en.border_conflict_started]
+Disrespected Borders
+[zh.border_conflict_started]
+不被尊重的边界
+
+[en.border_conflict_started_overlord]
+Disrespected Borders of Subjects
+[zh.border_conflict_started_overlord]
+不被尊重的附属国边界
+
+[en.BCE_border_clash_with_from]
+Border War With [FROM.GetNameDef]
+[zh.BCE_border_clash_with_from]
+和[FROM.GetNameDef]的边境战争
+
+[en.BCE_border_war_with_opposition]
+Border War With [FROM.GetNameDef]
+[zh.BCE_border_war_with_opposition]
+和[FROM.GetNameDef]的边境战争
+
+[en.BCE_border_conflict_initiate_incident]
+Stage Incident at §Y[FROM.FROM.GetName]§! Border
+[zh.BCE_border_conflict_initiate_incident]
+在毗邻§Y[FROM.FROM.GetName]§!的边境制造事端
+
+[en.BCE_border_conflict_incident_warning_defender]
+Incident at [FROM.FROM.GetName] border to [FROM.GetNameDef]
+[zh.BCE_border_conflict_incident_warning_defender]
+[FROM.FROM.GetName]和[FROM.GetNameDef]双方边境发生事端
+
+[en.BCE_border_conflict_incident_warning_defender_desc]
+§WMove divisions to §H[FROM.FROM.GetName]§!
+[zh.BCE_border_conflict_incident_warning_defender_desc]
+§W将部队移动至§H[FROM.FROM.GetName]§!§!
+
+[en.BCE_border_conflict_escalation_warning_defender]
+Incident at [FROM.FROM.GetName] border to [FROM.GetNameDef]
+[zh.BCE_border_conflict_escalation_warning_defender]
+[FROM.FROM.GetName]和[FROM.GetNameDef]双方边境发生事端
+
+[en.BCE_border_conflict_escalation_warning_defender_desc]
+§WMaintain divisions in §H[FROM.FROM.GetName]§!
+§H[FROM.GetNameDef]§! can escalate to a §HBorder Conflict§!
+[zh.BCE_border_conflict_escalation_warning_defender_desc]
+§W将部队驻扎在§H[FROM.FROM.GetName]§!
+§H[FROM.GetNameDef]§!的事端可升级为§H边境冲突§!§!。
+
+[en.escalation_possible_tooltip_for_defender]
+§H[FROM.GetNameDef]§! can escalate incident to a §HBorder Conflict§!.
+We will instantly lose if we have no divisions in the state
+[zh.escalation_possible_tooltip_for_defender]
+§H[FROM.GetNameDef]§!可将事端升级为§H边境冲突§!。
+若我方在该地区未部署部队则会立即失败
+
+[en.effects_if_border_conflict_is_lost]
+§HEffects if Border Conflict is lost§!:
+[zh.effects_if_border_conflict_is_lost]
+§H将在边境冲突失败时生效§!：
+
+[en.from_cannot_escalate]
+§H[FROM.GetNameDef]§! can no longer escalate to a §HBorder Conflict§!.
+[zh.from_cannot_escalate]
+§H[FROM.GetNameDef]§!已不能将事端升级为§H边境冲突§!。
+
+[en.BCE_escalate_incident_to_border_conflict]
+Escalate to Border Conflict with [FROM.GetName]
+[zh.BCE_escalate_incident_to_border_conflict]
+将和[FROM.GetName]的事端升级为边境冲突
+
+[en.BCE_border_incident_forgotten]
+Incident in [FROM.FROM.GetName] Forgotten
+[zh.BCE_border_incident_forgotten]
+[FROM.FROM.GetName]的事端已经淡化
+
+[en.BCE_border_incident_delay_until_new_incident_120]
+Cannot stage a new incident against §H[FROM.GetName]§! for §H120§! days.
+[zh.BCE_border_incident_delay_until_new_incident_120]
+无法在§H120§!日内再向§H[FROM.GetName]§!挑起事端。
+
+[en.BCE_border_incident_delay_until_new_incident_150]
+Cannot stage a new incident against §H[FROM.GetName]§! for §H150§! days.
+[zh.BCE_border_incident_delay_until_new_incident_150]
+无法在§H150§!日内再向§H[FROM.GetName]§!挑起事端。
+
+[en.BCE_border_conflict_time_until_cancelled]
+No Progress in [FROM.FROM.GetName]
+[zh.BCE_border_conflict_time_until_cancelled]
+未在[FROM.FROM.GetName]取得进展
+
+[en.BCE_border_conflict_back_out_of_conflict]
+Withdraw from Conflict
+[zh.BCE_border_conflict_back_out_of_conflict]
+从冲突中撤退
+
+[en.BCE_border_conflict_escalate_conflict]
+Escalate Conflict
+[zh.BCE_border_conflict_escalate_conflict]
+加剧冲突
+
+[en.BCE_border_conflict_escalate_to_war]
+Escalate To War
+[zh.BCE_border_conflict_escalate_to_war]
+升级为战争
+
+[en.defensive_border_conflict_won]
+Defensive Border Conflict Won
+[zh.defensive_border_conflict_won]
+边境冲突的防御方获胜
+
+[en.not_initiated_border_incident_with_FROM]
+Has not initiated a Border Incident with [FROM.GetNameDef]
+[zh.not_initiated_border_incident_with_FROM]
+尚未与[FROM.GetNameDef]挑起边境事端
+
+[en.not_initiated_border_incident_with_ROOT]
+Has not initiated a Border Incident with [Root.GetNameDef]
+[zh.not_initiated_border_incident_with_ROOT]
+尚未与[Root.GetNameDef]挑起边境事端
+
+[en.at_least_one_division_in_state]
+At least §H1§! division in the State
+[zh.at_least_one_division_in_state]
+在该地区至少驻扎§H1§!个师
+
+[en.in_45_days]
+In 45 Days:
+[zh.in_45_days]
+在45日内：
+
+[en.border_incident_active]
+States do not have an active border incident
+[zh.border_incident_active]
+各地区没有正在进行的边境冲突
+
+[en.BCE_border_conflict_won_attacker.1.t]
+Victory in [their_state.GetName]
+[zh.BCE_border_conflict_won_attacker.1.t]
+[their_state.GetName]大捷
+
+[en.BCE_border_conflict_won_attacker.1.desc]
+The clash in the borderlands between [our_state.GetName] and [their_state.GetName] saw our forces win a clear victory over the forces of [their_country.GetLeader]. The [their_country.GetAdjective] forces have fallen back to regroup, and our forces have taken control of the disputed area.
+[zh.BCE_border_conflict_won_attacker.1.desc]
+日前在[our_state.GetName]和[their_state.GetName]交界地区发生的冲突最终以我军完胜[their_country.GetLeader]军队而告捷。[their_country.GetAdjective]军队现已被击退，而我方则顺势攻占了此争议地区。
+
+[en.BCE_border_conflict_won_attacker.1.a]
+We’ve shown them our strength!
+[zh.BCE_border_conflict_won_attacker.1.a]
+我们展现了自身的实力！
+
+[en.BCE_border_conflict_won_defender.1.t]
+Victory in [their_state.GetName]
+[zh.BCE_border_conflict_won_defender.1.t]
+[their_state.GetName]大捷
+
+[en.BCE_border_conflict_won_defender.1.desc]
+The clash in the borderlands between [our_state.GetName] and [their_state.GetName] saw our forces win a clear victory over the forces of [their_country.GetLeader]. The [their_country.GetAdjective] forces have fallen back to regroup, and our forces have taken control of the disputed area.
+[zh.BCE_border_conflict_won_defender.1.desc]
+日前在[our_state.GetName]和[their_state.GetName]交界地区发生的冲突最终以我军完胜[their_country.GetLeader]军队而告捷。[their_country.GetAdjective]军队现已被击退，我方依旧保持着对此争议地区的控制。
+
+[en.BCE_border_conflict_won_defender.1.a]
+We’ve shown them our strength!
+[zh.BCE_border_conflict_won_defender.1.a]
+我们展现了自身的实力！
+
+[en.BCE_border_conflict_lost_attacker.1.t]
+Defeat in [our_state.GetName]
+[zh.BCE_border_conflict_lost_attacker.1.t]
+[our_state.GetName]兵败
+
+[en.BCE_border_conflict_lost_attacker.1.desc]
+Forces under the command of [their_country.GetLeader] have succeeded in pushing us out of the disputed area between [our_state.GetName] and [their_state.GetName]. Our forces have retreated in good order and are reorganising should we want to renew the battle in the future.
+[zh.BCE_border_conflict_lost_attacker.1.desc]
+日前[their_country.GetLeader]麾下的军队在[our_state.GetName]和[their_state.GetName]的争议地区击退了我军。所幸我军转进途中秩序井然，正在重整以备未来的再战。
+
+[en.BCE_border_conflict_lost_attacker.1.a]
+We must counterattack as soon as possible!
+[zh.BCE_border_conflict_lost_attacker.1.a]
+我们必须尽快反击！
+
+[en.BCE_border_conflict_lost_defender.1.t]
+Defeat in [our_state.GetName]
+[zh.BCE_border_conflict_lost_defender.1.t]
+[our_state.GetName]兵败
+
+[en.BCE_border_conflict_lost_defender.1.desc]
+Forces under the command of [their_country.GetLeader] have succeeded in pushing us out of the disputed area between [our_state.GetName] and [their_state.GetName]. Our forces have retreated in good order and are reorganising should we want to renew the battle in the future.
+[zh.BCE_border_conflict_lost_defender.1.desc]
+日前[their_country.GetLeader]麾下的军队从[our_state.GetName]和[their_state.GetName]的争议地区击退了我军。所幸我军转进途中秩序井然，正在重整以备未来的再战。
+
+[en.BCE_border_conflict_lost_defender.1.a]
+We must counterattack as soon as possible!
+[zh.BCE_border_conflict_lost_defender.1.a]
+我们必须尽快反击！
+
+[en.BCE_border_conflict_canceled_attacker.1.t]
+Stalemate in [their_state.GetName]
+[zh.BCE_border_conflict_canceled_attacker.1.t]
+[their_state.GetName]困局
+
+[en.BCE_border_conflict_canceled_attacker.1.desc]
+The fighting in the [our_state.GetName]-[their_state.GetName] Area has ground to a halt as both sides have proven unable to dislodge the other. Little territory has been gained by either side. Scouts report that the [their_country.GetAdjective] soldiers on the other side are digging in on defensive terrain. It would appear that they intend to keep the territory they have, but probably won’t push against our lines.
+[zh.BCE_border_conflict_canceled_attacker.1.desc]
+由于双方均无力击退对方，日前在[our_state.GetName]和[their_state.GetName]交界地区的交火已陷入了僵局，敌我两军均未取得任何较大进展。侦察兵报告称[their_country.GetAdjective]的士兵正在其战线一侧构筑防御工事，看起来相比于进攻，他们更希望维持现状。
+
+[en.BCE_border_conflict_canceled_attacker.1.a]
+We will return.
+[zh.BCE_border_conflict_canceled_attacker.1.a]
+我们还会杀回来的。
+
+[en.BCE_border_conflict_canceled_defender.1.t]
+Stalemate in [their_state.GetName]
+[zh.BCE_border_conflict_canceled_defender.1.t]
+[their_state.GetName]困局
+
+[en.BCE_border_conflict_canceled_defender.1.desc]
+The fighting in the [our_state.GetName]-[their_state.GetName] Area has ground to a halt as both sides have proven unable to dislodge the other. Little territory has been gained by either side. Scouts report that the [their_country.GetAdjective] soldiers on the other side are digging in on defensive terrain. It would appear that they intend to keep the territory they have, but probably won’t push against our lines.
+[zh.BCE_border_conflict_canceled_defender.1.desc]
+由于双方均无力击退对方，日前在[our_state.GetName]和[their_state.GetName]交界地区的战斗已经陷入了僵局，敌我两军均未取得任何较大进展。侦察兵报告称[their_country.GetAdjective]的士兵正在其战线一侧构筑防御工事，看起来相比于进攻，他们更希望维持现状。
+
+[en.BCE_border_conflict_canceled_defender.1.a]
+We will return.
+[zh.BCE_border_conflict_canceled_defender.1.a]
+我们还会杀回去的。
+
+[en.BCE_border_incident_defender_warning.1.t]
+[FROM.GetNameDefCap] threatens our border
+[zh.BCE_border_incident_defender_warning.1.t]
+[FROM.GetNameDefCap]进犯我方边境
+
+[en.BCE_border_incident_defender_warning.1.desc]
+Earlier yesterday, [their_country.GetAdjective] soldiers were spotted crossing the border from [attacker_state.GetName] into [defender_state.GetName]. During the night, more [their_country.GetAdjective] forces have poured into the area and set up defensive positions inside our territory. 
+
+This follows a series of minor skirmishes and border violations by forces under the command of [their_country.GetLeader] all along our shared border.
+
+This time, however, it is clear that the [their_country.GetAdjective] forces are here to stay. We must send forces into the region as soon as possible to check their advance.
+[zh.BCE_border_incident_defender_warning.1.desc]
+昨日早些时候，我们发现[their_country.GetAdjective]的士兵正自[attacker_state.GetName]出击越境侵入[defender_state.GetName]。而在当日晚间，更多的[their_country.GetAdjective]部队业已开抵此地区，并在我方领土内构筑防御阵地。
+
+在此之后，[their_country.GetLeader]麾下的军队与我方在整条边境线上爆发了一系列的边境冲突以及交火。
+
+至此，形势已然十分明显，[their_country.GetAdjective]军队进犯我方疆界且拒不撤退。我们必须尽快组织力量进行反击，阻止其进一步的侵略。
+
+[en.BCE_border_incident_defender_warning.1.a]
+Mobilize all available forces!
+[zh.BCE_border_incident_defender_warning.1.a]
+全军立即动员！
+
+[en.BCE_border_conflict_escalate_to_war.1.t]
+[FROM.GetNameDefCap] Is Mobilizing for War
+[zh.BCE_border_conflict_escalate_to_war.1.t]
+[FROM.GetNameDefCap]备战动员
+
+[en.BCE_border_conflict_escalate_to_war.1.desc]
+Scouting reports indicate that [FROM.GetAdjective] forces are massing inside [their_state.GetName] for a major operation to push deeper into [our_state.GetName]. Given the amount of resources [FROM.GetLeader] is willing to expend on this adventure, it is clear that this is no longer a mere dispute over the exact location of a demarcation line.
+
+Full scale war is on the horizon.
+[zh.BCE_border_conflict_escalate_to_war.1.desc]
+侦察兵报告称，[FROM.GetAdjective]的军队目前正在其[their_state.GetName]地区集结，意欲采取大规模军事行动进犯我[our_state.GetName]疆界。根据[FROM.GetLeader]调配的物资判断，其意图似在扩大局势，这已不再是一场局限于争议边境的边界冲突了。
+
+全面战争已迫在眉睫。
+
+[en.BCE_border_conflict_escalate_to_war.1.a]
+We must be ready to meet them!
+[zh.BCE_border_conflict_escalate_to_war.1.a]
+做好狭路相逢的准备！
+

@@ -1,0 +1,40 @@
+state = {
+    id = 741
+    name = STATE_741
+    provinces = {
+        533
+        553
+        1543
+        1598
+        2110
+        4318
+        5538
+        8667
+        12021
+        12032
+        12055
+        12108
+        12147
+    }
+    manpower = 5513
+    state_category = rural
+    history = {
+        owner = C54
+        victory_points = {
+            533
+            10
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            533 = {
+                magic_facility = 1
+                supply_node = 1
+            }
+        }
+        add_core_of = C54
+    }
+    resources = {
+        crystals = 24
+    }
+}

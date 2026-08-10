@@ -1,0 +1,589 @@
+{
+    "replace_civ_with_arms_factories": {
+        "random_owned_controlled_state": {
+            "limit": {
+                "is_fully_controlled_by": "ROOT",
+                "industrial_complex > 0": null
+            },
+            "remove_building": {
+                "type": "industrial_complex",
+                "level": 1
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 1,
+                "instant_build": true
+            }
+        },
+        "random_owned_controlled_state__D1": {
+            "limit": {
+                "is_fully_controlled_by": "ROOT",
+                "industrial_complex > 0": null
+            },
+            "remove_building": {
+                "type": "industrial_complex",
+                "level": 1
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 1,
+                "instant_build": true
+            }
+        },
+        "random_owned_controlled_state__D2": {
+            "limit": {
+                "is_fully_controlled_by": "ROOT",
+                "industrial_complex > 0": null
+            },
+            "remove_building": {
+                "type": "industrial_complex",
+                "level": 1
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 1,
+                "instant_build": true
+            }
+        },
+        "random_owned_controlled_state__D3": {
+            "limit": {
+                "is_fully_controlled_by": "ROOT",
+                "industrial_complex > 0": null
+            },
+            "remove_building": {
+                "type": "industrial_complex",
+                "level": 1
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 1,
+                "instant_build": true
+            }
+        },
+        "random_owned_controlled_state__D4": {
+            "limit": {
+                "is_fully_controlled_by": "ROOT",
+                "industrial_complex > 0": null
+            },
+            "remove_building": {
+                "type": "industrial_complex",
+                "level": 1
+            },
+            "add_building_construction": {
+                "type": "arms_factory",
+                "level": 1,
+                "instant_build": true
+            }
+        }
+    },
+    "instantiate_collaboration_government": {
+        "custom_effect_tooltip": "compliance_80_effect_tooltip",
+        "hidden_effect": {
+            "set_variable": {
+                "collaboration_formed@var:country_to_initiate": 1
+            },
+            "if": {
+                "limit": {
+                    "var:country_to_initiate": {
+                        "exists": false
+                    }
+                },
+                "var:country_to_initiate": {
+                    "set_variable": {
+                        "collaboration_formed_by": "PREV"
+                    }
+                },
+                "release_autonomy": {
+                    "target": "country_to_initiate",
+                    "autonomy_state": "autonomy_collaboration_government",
+                    "freedom_level": 0.5,
+                    "release_non_owned_controlled": true
+                }
+            },
+            "else": {
+                "create_dynamic_country": {
+                    "original_tag": "country_to_initiate",
+                    "set_variable": {
+                        "collaboration_formed_by": "PREV"
+                    },
+                    "set_temp_variable": {
+                        "new_country": "this"
+                    },
+                    "PREV": {
+                        "every_controlled_state": {
+                            "limit": {
+                                "occupied_country_tag": "country_to_initiate"
+                            },
+                            "var:new_country": {
+                                "transfer_state": "PREV"
+                            }
+                        },
+                        "puppet": "new_country",
+                        "set_autonomy": {
+                            "target": "new_country",
+                            "autonomy_state": "autonomy_collaboration_government",
+                            "freedom_level": 0.5
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "ROOT_inherit_current_scope_wars_effect": {
+        "custom_effect_tooltip": "ROOT_inherit_current_scope_wars_effect",
+        "hidden_effect": {
+            "every_country": {
+                "limit": {
+                    "has_defensive_war_with": "PREV"
+                },
+                "ROOT": {
+                    "declare_war_on": {
+                        "target": "PREV",
+                        "type": "annex_everything"
+                    }
+                }
+            },
+            "every_country__D1": {
+                "limit": {
+                    "has_offensive_war_with": "PREV"
+                },
+                "declare_war_on": {
+                    "target": "ROOT",
+                    "type": "annex_everything"
+                }
+            }
+        }
+    },
+    "clear_sabotaged_resources_if_necesary": {
+        "if": {
+            "limit": {
+                "NOT": {
+                    "has_dynamic_modifier": {
+                        "modifier": "sabotaged_resources"
+                    }
+                }
+            },
+            "clear_variable": "sabotaged_oil",
+            "clear_variable__D1": "sabotaged_aluminium",
+            "clear_variable__D2": "sabotaged_rubber",
+            "clear_variable__D3": "sabotaged_tungsten",
+            "clear_variable__D4": "sabotaged_steel",
+            "clear_variable__D5": "sabotaged_chromium"
+        }
+    },
+    "upgrade_economy_law": {
+        "if": {
+            "limit": {
+                "has_idea": "civilian_economy"
+            },
+            "add_ideas": "low_economic_mobilisation"
+        },
+        "else_if": {
+            "limit": {
+                "has_idea": "low_economic_mobilisation"
+            },
+            "add_ideas": "partial_economic_mobilisation"
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_idea": "partial_economic_mobilisation"
+            },
+            "add_ideas": "war_economy"
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_idea": "war_economy"
+            },
+            "add_ideas": "tot_economic_mobilisation"
+        },
+        "else": {
+            "add_political_power": 150
+        }
+    },
+    "gain_random_agency_upgrade": {
+        "custom_effect_tooltip": "free_agency_upgrade_tt",
+        "hidden_effect": {
+            "if": {
+                "limit": {
+                    "has_intelligence_agency": false
+                },
+                "create_intelligence_agency": true
+            },
+            "else": {
+                "random_list": {
+                    "1": {
+                        "upgrade_intelligence_agency": "upgrade_economy_civilian",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_economy_civilian"
+                        }
+                    },
+                    "1__D1": {
+                        "upgrade_intelligence_agency": "upgrade_army_department",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_army_department"
+                        }
+                    },
+                    "1__D2": {
+                        "upgrade_intelligence_agency": "upgrade_naval_department",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_naval_department"
+                        }
+                    },
+                    "1__D3": {
+                        "upgrade_intelligence_agency": "upgrade_airforce_department",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_airforce_department"
+                        }
+                    },
+                    "1__D4": {
+                        "upgrade_intelligence_agency": "upgrade_passive_defense",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_passive_defense"
+                        }
+                    },
+                    "1__D5": {
+                        "upgrade_intelligence_agency": "upgrade_anti_partisan",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_anti_partisan"
+                        }
+                    },
+                    "1__D6": {
+                        "upgrade_intelligence_agency": "upgrade_blueprint_stealing",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_blueprint_stealing"
+                        }
+                    },
+                    "1__D7": {
+                        "upgrade_intelligence_agency": "upgrade_portable_radios",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_portable_radios"
+                        }
+                    },
+                    "1__D8": {
+                        "upgrade_intelligence_agency": "upgrade_invisible_ink",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_invisible_ink"
+                        }
+                    },
+                    "1__D9": {
+                        "upgrade_intelligence_agency": "upgrade_plastic_explosives",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_plastic_explosives"
+                        }
+                    },
+                    "1__D10": {
+                        "upgrade_intelligence_agency": "upgrade_suicide_pills",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_suicide_pills"
+                        }
+                    },
+                    "1__D11": {
+                        "upgrade_intelligence_agency": "upgrade_training_centers",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_training_centers"
+                        }
+                    },
+                    "1__D12": {
+                        "upgrade_intelligence_agency": "upgrade_commando_training",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_commando_training"
+                        }
+                    },
+                    "1__D13": {
+                        "upgrade_intelligence_agency": "upgrade_interrogation_techniques",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_interrogation_techniques"
+                        }
+                    },
+                    "1__D14": {
+                        "upgrade_intelligence_agency": "upgrade_diplo_training",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_diplo_training"
+                        }
+                    },
+                    "1__D15": {
+                        "upgrade_intelligence_agency": "upgrade_psycho_warfare",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_psycho_warfare"
+                        }
+                    },
+                    "1__D16": {
+                        "upgrade_intelligence_agency": "upgrade_form_department",
+                        "modifier": {
+                            "factor": 0,
+                            "has_done_agency_upgrade": "upgrade_form_department"
+                        }
+                    },
+                    "1__D17": {
+                        "upgrade_intelligence_agency": "upgrade_decryption_boost",
+                        "modifier": {
+                            "factor": 0,
+                            "OR": {
+                                "has_done_agency_upgrade": "upgrade_decryption_boost",
+                                "NOT": {
+                                    "has_done_agency_upgrade": "upgrade_form_department"
+                                }
+                            }
+                        }
+                    },
+                    "1__D18": {
+                        "upgrade_intelligence_agency": "upgrade_decryption_boost_2",
+                        "modifier": {
+                            "factor": 0,
+                            "OR": {
+                                "has_done_agency_upgrade": "upgrade_decryption_boost_2",
+                                "NOT": {
+                                    "has_done_agency_upgrade": "upgrade_form_department"
+                                },
+                                "NOT__D1": {
+                                    "has_done_agency_upgrade": "upgrade_decryption_boost"
+                                }
+                            }
+                        }
+                    },
+                    "1__D19": {
+                        "upgrade_intelligence_agency": "upgrade_crypto_strength",
+                        "modifier": {
+                            "factor": 0,
+                            "OR": {
+                                "has_done_agency_upgrade": "upgrade_crypto_strength",
+                                "NOT": {
+                                    "has_done_agency_upgrade": "upgrade_form_department"
+                                }
+                            }
+                        }
+                    },
+                    "1__D20": {
+                        "upgrade_intelligence_agency": "upgrade_crypto_strength_2",
+                        "modifier": {
+                            "factor": 0,
+                            "OR": {
+                                "has_done_agency_upgrade": "upgrade_crypto_strength_2",
+                                "NOT": {
+                                    "has_done_agency_upgrade": "upgrade_form_department"
+                                },
+                                "NOT__D1": {
+                                    "has_done_agency_upgrade": "upgrade_crypto_strength"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "remove_any_country_role_from_character": {
+        "if": {
+            "limit": {
+                "is_character_slot": "air_chief"
+            },
+            "remove_advisor_role": {
+                "slot": "air_chief"
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "is_character_slot": "army_chief"
+            },
+            "remove_advisor_role": {
+                "slot": "army_chief"
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "is_character_slot": "navy_chief"
+            },
+            "remove_advisor_role": {
+                "slot": "navy_chief"
+            }
+        },
+        "if__D3": {
+            "limit": {
+                "is_character_slot": "high_command"
+            },
+            "remove_advisor_role": {
+                "slot": "high_command"
+            }
+        },
+        "if__D4": {
+            "limit": {
+                "is_character_slot": "theorist"
+            },
+            "remove_advisor_role": {
+                "slot": "theorist"
+            }
+        },
+        "if__D5": {
+            "limit": {
+                "is_character_slot": "political_advisor"
+            },
+            "remove_advisor_role": {
+                "slot": "political_advisor"
+            }
+        }
+    },
+    "SF_PARA_sabotage_effect": {
+        "damage_building": {
+            "type": "infrastructure",
+            "damage": 2
+        },
+        "damage_building__D1": {
+            "type": "industrial_complex",
+            "damage": 1
+        },
+        "damage_building__D2": {
+            "type": "arms_factory",
+            "damage": 1
+        },
+        "set_state_flag": {
+            "flag": "para_drop_effect",
+            "days": 30
+        }
+    },
+    "SF_PARA_combat_effect": {
+        "every_state_division": {
+            "limit": {
+                "OWNER": {
+                    "has_war_with": "FROM"
+                }
+            },
+            "set_unit_organization": 0.5
+        },
+        "set_state_flag": {
+            "flag": "para_drop_effect",
+            "days": 30
+        }
+    },
+    "SF_marine_demoliton_effect": {
+        "damage_building": {
+            "type": "radar_station",
+            "damage": 1
+        },
+        "damage_building__D1": {
+            "type": "naval_base",
+            "damage": 1
+        },
+        "damage_building__D2": {
+            "type": "dockyard",
+            "damage": 1
+        },
+        "damage_building__D3": {
+            "type": "nuclear_reactor",
+            "damage": 1
+        },
+        "damage_building__D4": {
+            "type": "rocket_site",
+            "damage": 1
+        },
+        "damage_building__D5": {
+            "type": "fuel_silo",
+            "damage": 1
+        },
+        "set_state_flag": {
+            "flag": "marines_commando_effect",
+            "days": 30
+        }
+    },
+    "increase_state_category": {
+        "if": {
+            "limit": {
+                "has_state_category": "tiny_island"
+            },
+            "set_state_category": "small_island",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "OR": {
+                    "has_state_category": "wasteland",
+                    "has_state_category__D1": "enclave"
+                }
+            },
+            "set_state_category": "pastoral",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 1
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_state_category": "pastoral"
+            },
+            "set_state_category": "rural",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 1
+            }
+        },
+        "else_if__D1": {
+            "limit": {
+                "has_state_category": "rural"
+            },
+            "set_state_category": "town",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 2
+            }
+        },
+        "else_if__D2": {
+            "limit": {
+                "has_state_category": "town"
+            },
+            "set_state_category": "large_town",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 1
+            }
+        },
+        "else_if__D3": {
+            "limit": {
+                "has_state_category": "large_town"
+            },
+            "set_state_category": "city",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 1
+            }
+        },
+        "else_if__D4": {
+            "limit": {
+                "has_state_category": "city"
+            },
+            "set_state_category": "large_city",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 2
+            }
+        },
+        "else_if__D5": {
+            "limit": {
+                "has_state_category": "large_city"
+            },
+            "set_state_category": "metropolis",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 2
+            }
+        },
+        "else_if__D6": {
+            "limit": {
+                "has_state_category": "metropolis"
+            },
+            "set_state_category": "megalopolis",
+            "effect_tooltip": {
+                "add_extra_state_shared_building_slots": 2
+            }
+        }
+    }
+}

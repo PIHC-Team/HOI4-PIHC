@@ -1,0 +1,28 @@
+{
+    "options": [
+        {
+            "iteration_output": {
+                "country_effects": {
+                    "add_tech_bonus": {
+                        "name": "SP_REWARD_GENERIC_NUCLEAR_MAGIC",
+                        "bonus": 0.30,
+                        "uses": 1,
+                        "category": "pihc_magical"
+                    }
+                }
+            }
+        },
+        {
+            "iteration_output": {
+                "country_effects": {
+                    "add_tech_bonus": {
+                        "name": "SP_REWARD_GENERIC_NUCLEAR_MAGIC",
+                        "bonus": 0.30,
+                        "uses": 1,
+                        "category": "pihc_magictronics"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_111_ARCHEOLOGY",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C18_111_ARCHEOLOGY"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "add_tech_bonus": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_electronics",
+            "name": "FOCUS_C18_111_TECHNOLOGY"
+        },
+        "add_tech_bonus__D1": {
+            "bonus": 0.5,
+            "uses": 2,
+            "category": "pihc_magical",
+            "name": "FOCUS_C18_111_TECHNOLOGY"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

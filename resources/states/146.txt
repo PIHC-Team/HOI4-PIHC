@@ -1,0 +1,51 @@
+state = {
+    id = 146
+    name = STATE_146
+    provinces = {
+        2753
+        3445
+        3539
+        3829
+        4159
+        4440
+        5429
+        6467
+        6802
+        6828
+        7502
+        7661
+        8052
+        8696
+        9512
+        13649
+        13667
+        13672
+        13746
+        13770
+        13795
+        13814
+        13836
+        13899
+        15113
+        15114
+    }
+    manpower = 5703
+    state_category = small_island
+    history = {
+        owner = C44
+        victory_points = {
+            2753
+            1
+        }
+        buildings = {
+            industrial_complex = 2
+            2753 = {
+                naval_base = 1
+            }
+        }
+        add_core_of = C44
+    }
+    resources = {
+        oil = 2
+    }
+}

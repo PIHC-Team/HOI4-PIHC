@@ -1,0 +1,98 @@
+{
+    "tree": "C03_MAIN",
+    "parent": null,
+    "x": 3,
+    "y": 3,
+    "cost": 4,
+    "bypass": {
+        "hidden_trigger": {
+            "C01": {
+                "has_completed_focus": "FOCUS_C01_C03_MUFFIN_V"
+            }
+        }
+    },
+    "completion_reward": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_BLUE"
+            },
+            "effect_tooltip": {
+                "365": {
+                    "BUILD_AN_AIR_BASE": true
+                },
+                "388": {
+                    "BUILD_AN_AIR_BASE": true
+                },
+                "410": {
+                    "BUILD_AN_AIR_BASE": true
+                },
+                "412": {
+                    "BUILD_AN_AIR_BASE": true
+                }
+            }
+        },
+        "else_if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C03_RED"
+            },
+            "effect_tooltip": {
+                "365": {
+                    "remove_building": {
+                        "type": "air_base",
+                        "level": 1
+                    }
+                },
+                "388": {
+                    "remove_building": {
+                        "type": "air_base",
+                        "level": 1
+                    }
+                },
+                "410": {
+                    "remove_building": {
+                        "type": "air_base",
+                        "level": 1
+                    }
+                },
+                "412": {
+                    "remove_building": {
+                        "type": "air_base",
+                        "level": 1
+                    }
+                }
+            }
+        },
+        "else": {
+            "custom_effect_tooltip": "FOCUS_C03_MUFFIN_22_TOOLTIP"
+        },
+        "hidden_effect": {
+            "365": {
+                "BUILD_AN_AIR_BASE": true
+            },
+            "388": {
+                "BUILD_AN_AIR_BASE": true
+            },
+            "410": {
+                "BUILD_AN_AIR_BASE": true
+            },
+            "412": {
+                "BUILD_AN_AIR_BASE": true
+            },
+            "mark_focus_tree_layout_dirty": true
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C03_MUFFIN_21"
+    }
+}

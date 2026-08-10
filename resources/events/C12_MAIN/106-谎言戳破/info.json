@@ -1,0 +1,23 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+        "custom_effect_tooltip": "EVENT_C12_MAIN_106_TOOLTIP",
+        "add_political_power": -25,
+                "hidden_effect":{
+        "C12":{
+                "country_event": {
+                "id": "C12_MAIN.107",
+                "days": 28,
+                "random_days": 3
+        }
+                    
+            }
+        }
+    }
+    ],
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

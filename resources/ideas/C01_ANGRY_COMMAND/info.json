@@ -1,0 +1,15 @@
+{
+    "name": "Angry",
+    "removal_cost": -1,
+    "modifier": {
+        "max_command_power": 50,
+        "command_power_gain_mult": 0.2,
+        "army_org_factor": 0.2,
+        "army_morale_factor": -0.1,
+        "army_strength_factor": 0.1,
+        "org_loss_when_moving": 0.1,
+        "org_loss_at_low_org_factor": 0.2,
+        "planning_speed": 0.2,
+        "max_planning_factor": 0.5
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Storm Titan",
+    "category": "air_techs",
+
+    "x": 7,
+    "y": 24,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air",
+        "pihc_leviathan",
+        "pihc_storm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_AIR_AIRSHIP_TITAN"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_AIR_STORM_AIRSHIP": 1,
+        "TECHNOLOGY_AIR_DESTROYER": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1008
+}

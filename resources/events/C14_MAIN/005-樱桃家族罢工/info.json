@@ -1,0 +1,60 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C02"
+            },
+            "579": {
+                "set_demilitarized_zone": true
+            },
+            "give_resource_rights": {
+                "receiver": "C14",
+                "state": "579"
+            },
+            "590": {
+                "set_demilitarized_zone": true
+            },
+            "give_resource_rights__D1": {
+                "receiver": "C14",
+                "state": "590"
+            },
+            "add_to_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "value": -0.05
+            },
+            "clamp_variable": {
+                "var": "C02.VAR_C02_ELECTION_TRIXIE_LULAMOON",
+                "min": 0.0,
+                "max": 1.0
+            }
+        },
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C14"
+            },
+            "effect_tooltip": {
+                "579": {
+                    "set_demilitarized_zone": true
+                },
+                "give_resource_rights": {
+                    "receiver": "C14",
+                    "state": "579"
+                },
+                "590": {
+                    "set_demilitarized_zone": true
+                },
+                "give_resource_rights__D1": {
+                    "receiver": "C14",
+                    "state": "590"
+                }
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

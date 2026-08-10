@@ -1,0 +1,15 @@
+{
+    "name": "Mr. Carrot Cake",
+    "gender": "male",
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "civilian",
+        "cost": 350,
+        "removal_cost": 350,
+        "traits": [
+            "TRAIT_POLITICAL_IDIOT",
+            "TRAIT_POPULAR",
+            "TRAIT_ECONOMICAL_GENIUS"
+        ]
+    }
+}

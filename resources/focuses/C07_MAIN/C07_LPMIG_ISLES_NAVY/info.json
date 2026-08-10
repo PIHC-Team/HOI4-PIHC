@@ -1,0 +1,33 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_ISLES",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_ISLES"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "147": {
+            "add_building_construction": {
+                "type": "naval_base",
+                "level": 1,
+                "instant_build": true,
+                "province": 7571
+            }
+        }
+    },
+    "available": {
+        "147": {
+            "is_owned_and_controlled_by": "C07"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

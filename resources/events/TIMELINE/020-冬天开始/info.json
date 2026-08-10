@@ -1,0 +1,28 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "custom_effect_tooltip": "EVENT_TIMELINE_20_TOOLTIP",
+            "set_country_flag": "PIHC_COUNTRY_FLAG_WINTER_LOCK",
+            "if": {
+                "limit": {
+                    "NOT": {
+                        "tag": "C26"
+                    }
+                },
+                "APPLY_WINTER_PENALTY": true
+            },
+            "else": {
+                "add_named_threat": {
+                    "threat": 2,
+                    "name": "EVENT_TIMELINE_20_THREAT"
+                }
+            }
+        }
+    ],
+    "major": true,
+    "is_triggered_only": true
+}

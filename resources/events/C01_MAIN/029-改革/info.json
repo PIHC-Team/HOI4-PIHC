@@ -1,0 +1,19 @@
+{
+    "category": "news",
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "trigger": {
+                "tag": "C01"
+            },
+            "load_focus_tree": "C01_DEM",
+            "hidden_effect": {
+                "complete_national_focus": "FOCUS_C01_DEM_CHANGE_1",
+                "set_global_flag": "PIHC_ACHIEVEMENT_FLAG_C01_DEM_REFORM"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

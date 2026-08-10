@@ -1,0 +1,27 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPMIG_SOUTH_LUNA",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPMIG_SOUTH_LUNA"
+    },
+    "cost": 6,
+    "completion_reward": {
+        "147": {
+            "transfer_state_to": "C07"
+        }
+    },
+    "available": {
+        "147": {
+            "is_owned_and_controlled_by": "C25"
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

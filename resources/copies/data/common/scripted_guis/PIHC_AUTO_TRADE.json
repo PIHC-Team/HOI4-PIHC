@@ -1,0 +1,194 @@
+{
+    "scripted_gui": {
+        "PIHC_AUTO_TRADE_GUI": {
+            "context_type": "decision_category",
+            "window_name": "pihc_auto_trade_container",
+            "triggers": {
+                "auto_buy_resource_crystals_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_crystals_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_tungsten_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_tungsten_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_chromium_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_chromium_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_aluminium_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_aluminium_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_steel_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_steel_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_coal_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_coal_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_rubber_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_rubber_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_oil_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_oil_btn_visible": {
+                    "always": true
+                },
+                "auto_buy_resource_logs_btn_visible": {
+                    "always": true
+                },
+                "auto_sell_resource_logs_btn_visible": {
+                    "always": true
+                }
+            },
+            "properties": {
+                "auto_buy_resource_crystals_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_CRYSTALS_BUY_FRAME"
+                },
+                "auto_sell_resource_crystals_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_CRYSTALS_SELL_FRAME"
+                },
+                "auto_buy_resource_tungsten_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_TUNGSTEN_BUY_FRAME"
+                },
+                "auto_sell_resource_tungsten_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_TUNGSTEN_SELL_FRAME"
+                },
+                "auto_buy_resource_chromium_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_CHROMIUM_BUY_FRAME"
+                },
+                "auto_sell_resource_chromium_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_CHROMIUM_SELL_FRAME"
+                },
+                "auto_buy_resource_aluminium_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_ALUMINIUM_BUY_FRAME"
+                },
+                "auto_sell_resource_aluminium_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_ALUMINIUM_SELL_FRAME"
+                },
+                "auto_buy_resource_steel_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_STEEL_BUY_FRAME"
+                },
+                "auto_sell_resource_steel_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_STEEL_SELL_FRAME"
+                },
+                "auto_buy_resource_coal_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_COAL_BUY_FRAME"
+                },
+                "auto_sell_resource_coal_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_COAL_SELL_FRAME"
+                },
+                "auto_buy_resource_rubber_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_RUBBER_BUY_FRAME"
+                },
+                "auto_sell_resource_rubber_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_RUBBER_SELL_FRAME"
+                },
+                "auto_buy_resource_oil_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_OIL_BUY_FRAME"
+                },
+                "auto_sell_resource_oil_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_OIL_SELL_FRAME"
+                },
+                "auto_buy_resource_logs_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_LOGS_BUY_FRAME"
+                },
+                "auto_sell_resource_logs_btn": {
+                    "image": "GFX_pihc_metal_switch_with_light",
+                    "frame": "VAR_AUTO_TRADE_GUI_LOGS_SELL_FRAME"
+                }
+            },
+            "effects": {
+                "auto_buy_resource_crystals_btn_click": {
+                    "TOGGLE_AUTO_TRADE_CRYSTALS_BUY": true
+                },
+                "auto_sell_resource_crystals_btn_click": {
+                    "TOGGLE_AUTO_TRADE_CRYSTALS_SELL": true
+                },
+                "auto_buy_resource_tungsten_btn_click": {
+                    "TOGGLE_AUTO_TRADE_TUNGSTEN_BUY": true
+                },
+                "auto_sell_resource_tungsten_btn_click": {
+                    "TOGGLE_AUTO_TRADE_TUNGSTEN_SELL": true
+                },
+                "auto_buy_resource_chromium_btn_click": {
+                    "TOGGLE_AUTO_TRADE_CHROMIUM_BUY": true
+                },
+                "auto_sell_resource_chromium_btn_click": {
+                    "TOGGLE_AUTO_TRADE_CHROMIUM_SELL": true
+                },
+                "auto_buy_resource_aluminium_btn_click": {
+                    "TOGGLE_AUTO_TRADE_ALUMINIUM_BUY": true
+                },
+                "auto_sell_resource_aluminium_btn_click": {
+                    "TOGGLE_AUTO_TRADE_ALUMINIUM_SELL": true
+                },
+                "auto_buy_resource_steel_btn_click": {
+                    "TOGGLE_AUTO_TRADE_STEEL_BUY": true
+                },
+                "auto_sell_resource_steel_btn_click": {
+                    "TOGGLE_AUTO_TRADE_STEEL_SELL": true
+                },
+                "auto_buy_resource_coal_btn_click": {
+                    "TOGGLE_AUTO_TRADE_COAL_BUY": true
+                },
+                "auto_sell_resource_coal_btn_click": {
+                    "TOGGLE_AUTO_TRADE_COAL_SELL": true
+                },
+                "auto_buy_resource_rubber_btn_click": {
+                    "TOGGLE_AUTO_TRADE_RUBBER_BUY": true
+                },
+                "auto_sell_resource_rubber_btn_click": {
+                    "TOGGLE_AUTO_TRADE_RUBBER_SELL": true
+                },
+                "auto_buy_resource_oil_btn_click": {
+                    "TOGGLE_AUTO_TRADE_OIL_BUY": true
+                },
+                "auto_sell_resource_oil_btn_click": {
+                    "TOGGLE_AUTO_TRADE_OIL_SELL": true
+                },
+                "auto_buy_resource_logs_btn_click": {
+                    "TOGGLE_AUTO_TRADE_LOGS_BUY": true
+                },
+                "auto_sell_resource_logs_btn_click": {
+                    "TOGGLE_AUTO_TRADE_LOGS_SELL": true
+                }
+            }
+        }
+    }
+}

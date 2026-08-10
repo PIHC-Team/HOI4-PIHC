@@ -1,0 +1,21 @@
+{
+    "tree": "GENERIC",
+    "parent": null,
+    "x": 0,
+    "y": 0,
+    "cost": 4,
+    "completion_reward": {
+        "add_political_power": 50
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

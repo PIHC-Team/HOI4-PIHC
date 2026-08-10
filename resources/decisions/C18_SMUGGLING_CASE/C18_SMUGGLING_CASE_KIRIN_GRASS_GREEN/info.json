@@ -1,0 +1,40 @@
+{
+    "name": "Grass Green",
+    "priority": 202,
+    
+    "cost": 5,
+    "days_remove": 21,
+    "visible": {
+        "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE",
+        "has_country_flag__D1": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE",
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED"
+        }
+    },
+    "available": {
+        "custom_trigger_tooltip": {
+            "tooltip": "C18_SMUGGLING_CASE_ONLY_ONE_INVESTIGATION_TOOLTIP",
+            "NOT": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+            }
+        }
+    },
+    "complete_effect": {
+        "set_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+    },
+    "remove_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING",
+        "hidden_effect": {
+            "country_event": {
+                "id": "C18_MAIN.36"
+            }
+        }
+    },
+    "cancel_effect": {
+        "clr_country_flag": "PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING"
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 100
+    }
+}

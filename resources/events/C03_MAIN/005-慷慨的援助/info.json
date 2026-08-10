@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "UPGRADE_HUNGER": true,
+            "add_stability": 0.02,
+            "add_opinion_modifier": {
+                "target": "C03",
+                "modifier": "FOCUS_ALL_C03_GENEROUS_AID_OPINION_MODIFIER"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

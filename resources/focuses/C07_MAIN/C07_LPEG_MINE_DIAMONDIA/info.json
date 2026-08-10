@@ -1,0 +1,29 @@
+{
+    "tree": "C07_MAIN",
+    "parent": "FOCUS_C07_LPEG_MINE",
+    "prerequisite": {
+        "focus": "FOCUS_C07_LPEG_MINE"
+    },
+    "cost": 5,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C07_LPEG_MINE_DIAMONDIA_TOOLTIP",
+        "annex_country": {
+            "target": "C39",
+            "transfer_troops": true
+        }
+    },
+    "available": {
+        "C39": {
+            "is_ai": true
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Immune",
+    "removal_cost": -1,
+    "available": {
+        "is_magical_creatures": true
+    },
+    "modifier": {
+        "monthly_population": 0.05,
+        "custom_modifier_tooltip": "IDEA_ERA_HYGIENE_1_IMMUNE_TOOLTIP"
+    },
+    "cost": 0,
+    "cancel_if_invalid": true
+}

@@ -1,0 +1,36 @@
+{
+    "tree": "C18_MAIN",
+    "parent": "FOCUS_C18_101_CIVIL_INDUSTRY",
+    "prerequisite": {
+        "focus": "FOCUS_C18_101_CIVIL_INDUSTRY"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "217": {
+            "add_resource": {
+                "type": "crystals",
+                "amount": 4
+            },
+            "add_resource__D1": {
+                "type": "steel",
+                "amount": 2
+            },
+            "add_resource__D2": {
+                "type": "tungsten",
+                "amount": 1
+            }
+        }
+    },
+    "available": {
+        "has_tech": "construction1",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

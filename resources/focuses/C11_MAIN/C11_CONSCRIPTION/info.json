@@ -1,0 +1,26 @@
+{
+    "tree": "C11_MAIN",
+    "parent": "FOCUS_C11_BORDER_RECRUIT",
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C11_BORDER_RECRUIT"
+    },
+    "cost": 2,
+    "completion_reward": {
+        "swap_ideas": {
+            "remove_idea": "extensive_conscription",
+            "add_idea": "service_by_requirement"
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

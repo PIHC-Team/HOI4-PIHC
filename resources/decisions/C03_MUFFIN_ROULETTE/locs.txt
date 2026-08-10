@@ -1,0 +1,27 @@
+[en.@]
+Muffin Roulette
+[zh.@]
+马芬轮盘赌
+
+[en.@desc]
+§g“Please sign the waiver.”§!
+Currently there are [?ROOT.VAR_MUFFIN_ROULETTE_BOXES|Y0] blind boxes on the table, [?ROOT.VAR_MUFFIN_ROULETTE_BOXES_GOOD|G0] good ones and [?ROOT.VAR_MUFFIN_ROULETTE_BOXES_BAD|R0] bad ones.
+Each good blind box contains a [?ROOT.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN|G0] $C03_MUFFINS$ free coupon, while each bad blind box contains a [?ROOT.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST|R0] $C03_MUFFINS$ debt iou.
+You have to deal with the boxes in a fixed ordering.
+Statistics:
+You have played: [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GAMES|Y0] games of Muffin Roulette.
+Total profit   : [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT|+*G2] $C03_MUFFINS$. (Quest Reward not Included)
+Good box count : [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GOOD|G0].
+Bad box count  : [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_BAD|R0].
+Max good streak: [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK|G0].
+[zh.@desc]
+§g“请签署免责协议。”§!
+当前在桌子上有[?ROOT.VAR_MUFFIN_ROULETTE_BOXES|Y0]个盲盒，其中有[?ROOT.VAR_MUFFIN_ROULETTE_BOXES_GOOD|G0]个好的，[?ROOT.VAR_MUFFIN_ROULETTE_BOXES_BAD|R0]个坏的。
+每个好盲盒里面包含一张免费领取[?ROOT.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN|G0]个$C03_MUFFINS$的优惠券，而每个坏盲盒里面则包含一张[?ROOT.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST|R0]个$C03_MUFFINS$的欠条。
+你必须以一个固定的顺序处理这些盲盒。
+统计数据：
+你进行了： [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GAMES|Y0] 局马芬轮盘赌。
+累计收益： [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT|+*G2] $C03_MUFFINS$。(任务奖励不计入)
+好盲盒数： [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GOOD|G0]。
+坏盲盒数： [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_BAD|R0]。
+最高连胜： [?ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK|G0]。

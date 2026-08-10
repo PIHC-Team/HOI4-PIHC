@@ -1,0 +1,158 @@
+{
+    "derpy_dislike_war": {
+        "allowed": {
+            "original_tag": "C03"
+        },
+        "enable": {
+            "C03": {
+                "has_country_leader": {
+                    "ruling_only": true,
+                    "character": "CHARACTER_DERPY_HOOVES"
+                }
+            }
+        },
+        "abort_when_not_enabled": true,
+        "ai_strategy": {
+            "type": "dont_join_wars_with",
+            "id": "C02",
+            "value": 9999
+        },
+        "ai_strategy__D1": {
+            "type": "dont_join_wars_with",
+            "id": "C10",
+            "value": 9999
+        },
+        "ai_strategy__D2": {
+            "type": "dont_join_wars_with",
+            "id": "C01",
+            "value": 9999
+        },
+        "ai_strategy__D3": {
+            "type": "dont_join_wars_with",
+            "id": "C33",
+            "value": 9999
+        },
+        "ai_strategy__D4": {
+            "type": "dont_join_wars_with",
+            "id": "C04",
+            "value": 9999
+        },
+        "ai_strategy__D5": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D6": {
+            "type": "diplo_action_acceptance",
+            "id": "C02",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D7": {
+            "type": "diplo_action_acceptance",
+            "id": "C10",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D8": {
+            "type": "diplo_action_acceptance",
+            "id": "C33",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D9": {
+            "type": "diplo_action_acceptance",
+            "id": "C31",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D10": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D11": {
+            "type": "diplo_action_acceptance",
+            "id": "C02",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D12": {
+            "type": "diplo_action_acceptance",
+            "id": "C33",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D13": {
+            "type": "diplo_action_acceptance",
+            "id": "C10",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D14": {
+            "type": "diplo_action_acceptance",
+            "id": "C01",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D15": {
+            "type": "diplo_action_acceptance",
+            "id": "C04",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D16": {
+            "type": "diplo_action_acceptance",
+            "id": "C04",
+            "value": -9999,
+            "target": "call_allies"
+        },
+        "ai_strategy__D17": {
+            "type": "ignore",
+            "id": "C01",
+            "value": 9999
+        },
+        "ai_strategy__D18": {
+            "type": "ignore",
+            "id": "C04",
+            "value": 9999
+        },
+        "ai_strategy__D19": {
+            "type": "dont_join_wars_with",
+            "id": "C03",
+            "value": 9999
+        },
+        "ai_strategy__D20": {
+            "type": "diplo_action_desire",
+            "id": "C01",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D21": {
+            "type": "diplo_action_desire",
+            "id": "C04",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D22": {
+            "type": "diplo_action_desire",
+            "id": "C10",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D23": {
+            "type": "diplo_action_desire",
+            "id": "C33",
+            "value": -9999,
+            "target": "join_allies"
+        },
+        "ai_strategy__D24": {
+            "type": "diplo_action_desire",
+            "id": "C02",
+            "value": -9999,
+            "target": "join_allies"
+        }
+    }
+}

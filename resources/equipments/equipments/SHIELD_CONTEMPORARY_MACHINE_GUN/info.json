@@ -1,0 +1,17 @@
+{
+    "name": "Contemporary Heavy Machine Gun",
+    "parent": "EQUIPMENT_SHIELD_MODERN_MACHINE_GUN",
+    "alpha_global": 0.5,
+
+    "reliability": 0.99,
+    
+    "resources": {
+        "steel": 5,
+        "aluminium": 2,
+        "tungsten": 1
+    },
+
+    "maximum_speed": 3.0,
+    "entrenchment": 0.0,
+    "recon": 1
+}

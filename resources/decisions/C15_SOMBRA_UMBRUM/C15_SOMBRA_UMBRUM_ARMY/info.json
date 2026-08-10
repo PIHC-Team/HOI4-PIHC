@@ -1,0 +1,59 @@
+{
+    "name": "Umbrum Division",
+    "priority": 102,
+    
+    "cost": 10,
+    "days_remove": 90,
+    "days_re_enable": 90,
+    "allowed": {
+        "tag": "C15"
+    },
+    "available": {
+        "265": {
+            "is_owned_and_controlled_by": "C15"
+        },
+        "288": {
+            "is_owned_and_controlled_by": "C15"
+        }
+    },
+    "remove_effect": {
+        "if": {
+            "limit": {
+                "has_completed_focus": "FOCUS_C15_SOMBRA_MIL_ARMY_SPEED"
+            },
+            "277": {
+                "create_unit": {
+                    "division": "name = \"荒原影魔师 (Umbrum Division)\" division_template = \"荒原影魔师 (Umbrum Division)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C15",
+                    "count": 1
+                }
+            },
+            "288": {
+                "create_unit": {
+                    "division": "name = \"荒原影魔师 (Umbrum Division)\" division_template = \"荒原影魔师 (Umbrum Division)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0",
+                    "owner": "C15",
+                    "count": 1
+                }
+            }
+        },
+        "else": {
+            "277": {
+                "create_unit": {
+                    "division": "name = \"荒原影魔师 (Umbrum Division)\" division_template = \"荒原影魔师 (Umbrum Division)\" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.9",
+                    "owner": "C15",
+                    "count": 1
+                }
+            },
+            "288": {
+                "create_unit": {
+                    "division": "name = \"荒原影魔师 (Umbrum Division)\" division_template = \"荒原影魔师 (Umbrum Division)\" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.9",
+                    "owner": "C15",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "ai_will_do": {
+        "base": 1000
+    }
+}

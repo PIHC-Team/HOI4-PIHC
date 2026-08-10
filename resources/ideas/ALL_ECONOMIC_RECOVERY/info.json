@@ -1,0 +1,20 @@
+{
+    "name": "ALL_ECONOMIC_RECOVERY",
+    "removal_cost": -1,
+    "cancel": {
+        "has_war": true
+    },
+    "on_remove": {
+        "if": {
+            "limit": {
+                "has_war": false
+            },
+            "add_ideas": "IDEA_ALL_ECONOMIC_GROWTH"
+        }
+    },
+    "modifier": {
+        "stability_factor": 0.1,
+        "stability_weekly_factor": 0.01,
+        "local_resources_factor": 0.1
+    }
+}

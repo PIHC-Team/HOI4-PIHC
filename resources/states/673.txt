@@ -1,0 +1,51 @@
+state = {
+    id = 673
+    name = STATE_673
+    provinces = {
+        1634
+        1975
+        2232
+        3091
+        3916
+        4113
+        4605
+        5433
+        5562
+        5730
+        6593
+        6668
+        6855
+        6870
+        7649
+        7928
+        8677
+        12894
+        12938
+        13000
+        13037
+        13077
+        13102
+        13108
+    }
+    manpower = 31794
+    state_category = town
+    history = {
+        owner = C20
+        victory_points = {
+            1634
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            1634 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C20
+    }
+    resources = {
+        steel = 20
+    }
+}

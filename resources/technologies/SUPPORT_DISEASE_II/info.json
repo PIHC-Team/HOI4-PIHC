@@ -1,0 +1,40 @@
+{
+    "name": "Support",
+    "category": "support",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 2,
+    "y": 3,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_support",
+        "pihc_support_nurse",
+        "pihc_support_disease"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_SUPPORT_DISEASE_II_TOOLTIP"
+    },
+    "special_project_specialization": [
+        "specialization_bio"
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_SUPPORT_NURSE_II": 1,
+        "TECHNOLOGY_SUPPORT_DISEASE_I": 1
+    },
+    "path": {
+    },
+
+    "research_cost": 1.5,
+    "start_year": 1005
+}

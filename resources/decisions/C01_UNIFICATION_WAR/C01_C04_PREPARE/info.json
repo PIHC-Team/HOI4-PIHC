@@ -1,0 +1,56 @@
+{
+    "name": "Prepare Against Cloudsdale",
+    "priority": 100,
+    
+    "cost": 50,
+    "selectable_mission": true,
+    "days_mission_timeout": 60,
+    "activation": {
+        "has_completed_focus": "FOCUS_C01_LAST_RESORT",
+        "C04": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+        },
+        "if": {
+            "limit": {
+                "ROOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+                }
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    },
+    "available": {
+        "num_divisions_in_states": {
+            "count > 15": null,
+            "states": ["365", "388", "400"]
+        }
+    },
+    "war_with_on_timeout": "C04",
+    "war_with_on_complete": "C04",
+    "complete_effect": {
+        "add_timed_idea": {
+            "idea": "IDEA_C01_C04_PREPARED",
+            "days": 360
+        },
+        "create_wargoal": {
+            "type": "annex_everything",
+            "target": "C04"
+        },
+        "create_wargoal__D1": {
+            "type": "puppet_wargoal_focus",
+            "target": "C04"
+        }
+    },
+    "timeout_effect": {
+        "C04": {
+            "set_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01_TIMEOUT"
+        }
+    },
+    "ai_will_do": {
+        "base": 0
+    },
+    "fire_only_once": true
+}

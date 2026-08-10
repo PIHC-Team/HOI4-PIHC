@@ -1,0 +1,21 @@
+{
+    "gender": "male",
+    "corps_commander": {
+        "skill": 2,
+        "attack_skill": 2,
+        "defense_skill": 2,
+        "planning_skill": 4,
+        "logistics_skill": 3,
+        "traits": []
+    },
+    "advisor": {
+        "slot": "political_advisor",
+        "ledger": "all",
+        "traits": [
+            "TRAIT_DOUBLE_DIAMOND"
+        ],
+        "cost": 0,
+        "can_be_fired": false,
+        "removal_cost": -1
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "name": "DINFANTRY_EEMD",
+    "designer": true,
+    "category": "materiel_manufacturer",
+    "traits": [
+        "infantry_equipment_manufacturer"
+    ],
+    "cost": 50,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "always": true
+    },
+    "available": {
+        "country_exists": "C01",
+        "OR": {
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE_TOOLTIP",
+                "has_country_flag": "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+            },
+            "tag": "C01",
+            "is_in_faction_with": "C01"
+        }
+    },
+    "research_bonus": {
+        "pihc_infantry": 0.02
+    },
+    "equipment_bonus": {
+        "ARCHETYPE_INFANTRY": {
+            "defense": 0.03
+        }
+    },
+    "modifier": {
+        "production_factory_start_efficiency_factor": -0.05,
+        "production_factory_efficiency_gain_factor": -0.05,
+        "production_factory_max_efficiency_factor": 0.20,
+        "line_change_production_efficiency_factor": -0.05
+    },
+    "ai_will_do": {
+        "base": 1
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "DIND_C04_STRATUSBURG_DINER",
+    "designer": true,
+    "category": "industrial_concern",
+    "traits": [
+        "catering_company"
+    ],
+    "cost": 50,
+    "removal_cost": -1,
+    "allowed": {
+        "always": true
+    },
+    "visible": {
+        "C04": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_C04_STRATUSBURG_DINER_BRAND"
+        }
+    },
+    "available": {
+        "always": true
+    },
+    "modifier": {
+        "custom_modifier_tooltip": "IDEA_DIND_C04_STRATUSBURG_DINER_TOOLTIP"
+    },
+    "targeted_modifier": {
+        "tag": "C04",
+        "cic_to_target_factor": 0.03
+    },
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "add": 400,
+            "tag": "C03"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Early Firearm I",
+    "category": "infantry",
+
+    "x": 4,
+    "y": 3,
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_infantry",
+        "pihc_firearm"
+    ],
+    "enable_equipments": [
+        "EQUIPMENT_RANGED_FIRELANCE"
+    ],
+    "enable_subunits": [
+    ],
+
+    "dependencies": {
+        "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+        "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1
+    },
+    "path": {
+        "leads_to_tech": "TECHNOLOGY_FIREARM_II",
+        "research_cost_coeff": 1
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1001
+}

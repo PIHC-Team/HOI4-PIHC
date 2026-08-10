@@ -1,0 +1,21 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_IMPROVE_ROCKFORGED",
+    "prerequisite": {
+        "focus": "FOCUS_C12_IMPROVE_ROCKFORGED"
+    },
+    "cost": 3,
+    "completion_reward": {},
+    "available": {
+        "has_tech": "TECHNOLOGY_SUPPORT_AUTO_IV",
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

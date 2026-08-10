@@ -1,0 +1,630 @@
+{
+    "faction_goal_unlock_research": {
+        "name": "faction_goal_unlock_research_name",
+        "description": "faction_goal_unlock_research_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_INTERNAL_AFFAIRS",
+        "available": {
+            "FROM": {
+                "num_faction_members > 2": null
+            }
+        },
+        "visible": {
+            "FROM": {
+                "has_faction_research_unlocked": false
+            }
+        },
+        "select_effect": {
+            "set_temp_variable": {
+                "total_techs": 0
+            },
+            "every_collection_element": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ]
+                },
+                "add_to_temp_variable": {
+                    "total_techs": "num_researched_technologies"
+                }
+            },
+            "multiply_temp_variable": {
+                "var": "total_techs",
+                "value": 1.2
+            },
+            "scope:faction": {
+                "set_variable": {
+                    "unlock_military_techs_researched_target": "total_techs"
+                }
+            }
+        },
+        "completed": {
+            "scope:faction": {
+                "hidden_trigger": {
+                    "tooltip_evaluation": "eval",
+                    "set_temp_variable": {
+                        "unlock_military_techs_researched_compare": 0
+                    },
+                    "all_collection_elements": {
+                        "collection": {
+                            "input": "game:scope",
+                            "operators": [
+                                "faction_members"
+                            ]
+                        },
+                        "add_to_temp_variable": {
+                            "unlock_military_techs_researched_compare": "num_researched_technologies"
+                        }
+                    },
+                    "set_temp_variable__D1": {
+                        "unlock_military_techs_researched_compare_temp_target": "unlock_military_techs_researched_compare"
+                    },
+                    "multiply_temp_variable": {
+                        "unlock_military_techs_researched_compare_temp_target": 1.2
+                    }
+                },
+                "if": {
+                    "limit": {
+                        "has_variable": "unlock_military_techs_researched_target"
+                    },
+                    "check_variable": {
+                        "var": "unlock_military_techs_researched_compare",
+                        "value": "unlock_military_techs_researched_target",
+                        "compare": "greater_than",
+                        "tooltip": "GOAL_T_TRIGGER_A"
+                    }
+                },
+                "else": {
+                    "check_variable": {
+                        "var": "unlock_military_techs_researched_compare",
+                        "value": "unlock_military_techs_researched_compare_temp_target",
+                        "compare": "greater_than",
+                        "tooltip": "GOAL_T_TRIGGER_A"
+                    }
+                }
+            }
+        },
+        "complete_effect": {
+            "set_faction_research_unlocked": true,
+            "add_faction_initiative": 1
+        },
+        "ai_will_do": {
+            "base": 1000
+        }
+    },
+    "faction_goal_unlock_military": {
+        "name": "faction_goal_unlock_military_name",
+        "description": "faction_goal_unlock_military_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_INTERNAL_AFFAIRS",
+        "available": {
+            "FROM": {
+                "num_faction_members > 2": null
+            }
+        },
+        "visible": {
+            "FROM": {
+                "has_faction_military_unlocked": false
+            }
+        },
+        "select_effect": {
+            "set_temp_variable": {
+                "total_divs": 0
+            },
+            "every_collection_element": {
+                "input": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ]
+                },
+                "add_to_temp_variable": {
+                    "total_divs": "num_armies"
+                }
+            },
+            "multiply_temp_variable": {
+                "var": "total_divs",
+                "value": 1.2
+            },
+            "scope:faction": {
+                "set_variable": {
+                    "unlock_target": "total_divs"
+                }
+            }
+        },
+        "completed": {
+            "scope:faction": {
+                "hidden_trigger": {
+                    "tooltip_evaluation": "eval",
+                    "set_temp_variable": {
+                        "unlock_compare": 0
+                    },
+                    "all_collection_elements": {
+                        "collection": {
+                            "input": "game:scope",
+                            "operators": [
+                                "faction_members"
+                            ]
+                        },
+                        "add_to_temp_variable": {
+                            "unlock_compare": "num_armies"
+                        },
+                        "set_temp_variable": {
+                            "unlock_military_techs_researched_compare_temp_target": "unlock_compare"
+                        },
+                        "multiply_temp_variable": {
+                            "unlock_military_techs_researched_compare_temp_target": 1.2
+                        }
+                    }
+                },
+                "if": {
+                    "limit": {
+                        "has_variable": "unlock_target"
+                    },
+                    "check_variable": {
+                        "var": "unlock_compare",
+                        "value": "unlock_target",
+                        "compare": "greater_than",
+                        "tooltip": "GOAL_T_TRIGGER_B"
+                    }
+                },
+                "else": {
+                    "check_variable": {
+                        "var": "unlock_compare",
+                        "value": "unlock_military_techs_researched_compare_temp_target",
+                        "compare": "greater_than",
+                        "tooltip": "GOAL_T_TRIGGER_B"
+                    }
+                }
+            }
+        },
+        "complete_effect": {
+            "set_faction_military_unlocked": true,
+            "add_faction_initiative": 1
+        },
+        "ai_will_do": {
+            "base": 1000
+        }
+    },
+    "faction_goal_growing_the_faction": {
+        "name": "growing_the_faction",
+        "description": "growing_the_faction_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_POLITICAL_CHARACTER",
+        "visible": {
+            "num_faction_members < 5": null
+        },
+        "completed": {
+            "num_faction_members > 4": null
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 50,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_FACTION_LEADER",
+            "add_faction_initiative": 1
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "num_faction_members < 5": null
+            },
+            "modifier__D1": {
+                "add": 1,
+                "num_faction_members < 4": null
+            },
+            "modifier__D2": {
+                "add": 3,
+                "num_faction_members < 3": null
+            }
+        }
+    },
+    "faction_goal_spy_master": {
+        "name": "spy_master_goal_name",
+        "description": "spy_master_goal_desc",
+        "group": "FOCUS_FILTER_POLITICAL_CHARACTER",
+        "category": "short_term",
+        "allowed": {
+            "has_dlc": "La Resistance"
+        },
+        "visible": {
+            "FROM": {
+                "is_spymaster": false,
+                "any_allied_country": {
+                    "is_spymaster": false
+                }
+            }
+        },
+        "completed": {
+            "OR": {
+                "is_spymaster": true,
+                "any_allied_country": {
+                    "is_spymaster": true
+                }
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 50,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_SPY_MASTER",
+            "add_faction_initiative": 1,
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "limit": {
+                    "has_intelligence_agency": false
+                },
+                "create_intelligence_agency": true
+            },
+            "every_faction_member__D1": {
+                "limit": {
+                    "has_intelligence_agency": true,
+                    "NOT": {
+                        "has_done_agency_upgrade": "upgrade_form_department"
+                    }
+                },
+                "upgrade_intelligence_agency": "upgrade_form_department"
+            },
+            "every_faction_member__D2": {
+                "limit": {
+                    "has_intelligence_agency": true,
+                    "has_done_agency_upgrade": "upgrade_form_department",
+                    "NOT": {
+                        "has_done_agency_upgrade": "upgrade_crypto_strength"
+                    }
+                },
+                "upgrade_intelligence_agency": "upgrade_crypto_strength"
+            },
+            "every_faction_member__D3": {
+                "limit": {
+                    "has_intelligence_agency": true,
+                    "has_done_agency_upgrade": "upgrade_crypto_strength",
+                    "has_tech": "mechanical_computing",
+                    "NOT": {
+                        "has_done_agency_upgrade": "upgrade_crypto_strength_2"
+                    }
+                },
+                "add_faction_initiative": 1,
+                "upgrade_intelligence_agency": "upgrade_crypto_strength_2"
+            },
+            "every_faction_member__D4": {
+                "limit": {
+                    "has_intelligence_agency": true,
+                    "NOT": {
+                        "agency_upgrade_number > 30": null
+                    },
+                    "OR": {
+                        "has_done_agency_upgrade": "upgrade_crypto_strength_2",
+                        "NOT": {
+                            "has_tech": "mechanical_computing"
+                        }
+                    }
+                },
+                "add_faction_initiative": 1,
+                "gain_random_agency_upgrade": true
+            },
+            "every_faction_member__D5": {
+                "visible_when_empty": true,
+                "limit": {
+                    "has_intelligence_agency": true,
+                    "agency_upgrade_number > 30": null
+                },
+                "add_faction_initiative": 1,
+                "add_political_power": 100
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": 2,
+                "has_intelligence_agency": true
+            }
+        }
+    },
+    "faction_goal_convoy_sufficiency": {
+        "name": "convoy_sufficiency_goal_name",
+        "description": "convoy_sufficiency_goal_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_INDUSTRY",
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION_NAME"
+                },
+                "unit": "convoy",
+                "size > 999": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "THE_FACTION_LEADER",
+            "add_faction_initiative": 1,
+            "custom_effect_tooltip__D2": "generic_skip_one_line_tt",
+            "every_faction_member": {
+                "tooltip": "AT_LEAST_200_CONVOYS",
+                "visible_when_empty": true,
+                "limit": {
+                    "has_navy_size": {
+                        "size > 199": null,
+                        "type": "convoy"
+                    }
+                },
+                "navy_experience": 50
+            }
+        },
+        "ai_will_do": {
+            "base": 1,
+            "modifier": {
+                "add": -1,
+                "collection_size": {
+                    "input": {
+                        "input": "game:all_states",
+                        "operators": {
+                            "limit": {
+                                "is_coastal": true,
+                                "is_controlled_by_ROOT_or_ally": true
+                            }
+                        }
+                    },
+                    "value < 1": null
+                }
+            },
+            "modifier__D1": {
+                "add": 1,
+                "OR": {
+                    "original_tag": "ENG",
+                    "original_tag__D1": "USA",
+                    "original_tag__D2": "JAP",
+                    "original_tag__D3": "ITA",
+                    "original_tag__D4": "FRA"
+                }
+            },
+            "modifier__D2": {
+                "add": 1,
+                "collection_size": {
+                    "input": {
+                        "input": "game:all_states",
+                        "operators": {
+                            "limit": {
+                                "is_coastal": true,
+                                "is_controlled_by_ROOT_or_ally": true
+                            }
+                        }
+                    },
+                    "value > 19": null
+                }
+            }
+        }
+    },
+    "faction_goal_military_infrastructure": {
+        "name": "military_infrastructure_goal_name",
+        "description": "military_infrastructure_goal_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_CONSOLIDATION",
+        "visible": {
+            "collection_size": {
+                "input": {
+                    "input": "game:all_states",
+                    "operators": {
+                        "limit": {
+                            "is_core_of": "CONTROLLER",
+                            "is_controlled_by_ROOT_or_ally": true,
+                            "any_neighbor_state": {
+                                "controller": {
+                                    "NOT": {
+                                        "is_in_faction_with": "ROOT"
+                                    }
+                                }
+                            },
+                            "infrastructure < 4": null
+                        }
+                    },
+                    "name": "COLLECTION_FACTION_BORDER_STATES_FULL_INFRASTRUCTURE"
+                },
+                "value > 0": null
+            }
+        },
+        "completed": {
+            "collection_size": {
+                "input": {
+                    "input": "game:all_states",
+                    "operators": {
+                        "limit": {
+                            "is_controlled_by_ROOT_or_ally": true,
+                            "any_neighbor_state": {
+                                "controller": {
+                                    "NOT": {
+                                        "is_in_faction_with": "ROOT"
+                                    }
+                                }
+                            },
+                            "infrastructure < 4": null
+                        }
+                    },
+                    "name": "COLLECTION_FACTION_BORDER_STATES_FULL_INFRASTRUCTURE"
+                },
+                "value < 10": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "army_experience": 50
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "has_war": false
+            }
+        }
+    },
+    "faction_goal_a_great_fortress": {
+        "name": "a_great_fortress_goal_name",
+        "description": "a_great_fortress_goal_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_CONSOLIDATION",
+        "visible": [],
+        "available": {
+            "collection_size": {
+                "input": {
+                    "input": "collection:faction_owned_core_states",
+                    "operators": {
+                        "limit": {
+                            "NOT": {
+                                "is_fully_controlled_by": "OWNER"
+                            }
+                        }
+                    },
+                    "name": "FACTION_CORE_STATES_NOT_FULLY_CONTROLLED"
+                },
+                "value < 1": null
+            }
+        },
+        "completed": {
+            "OR": {
+                "ROOT": {
+                    "has_tech": "coastal_fort_tech_2",
+                    "has_tech__D1": "land_fort_tech_2"
+                },
+                "any_allied_country": {
+                    "has_tech": "coastal_fort_tech_2",
+                    "has_tech__D1": "land_fort_tech_2"
+                },
+                "count_in_collection": {
+                    "collection": {
+                        "input": "game:scope",
+                        "operators": [
+                            "faction_members"
+                        ],
+                        "name": "FACTION_NAME"
+                    },
+                    "buildings": [
+                        "bunker",
+                        "coastal_bunker"
+                    ],
+                    "size > 29": null
+                }
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 100,
+            "custom_effect_tooltip": "generic_skip_one_line_tt",
+            "custom_effect_tooltip__D1": "ALL_FACTION_MEMBERS",
+            "// every_faction_member": {
+                "limit": {
+                    "NOT": {
+                        "has_idea": "deterrence"
+                    }
+                },
+                "add_timed_idea": {
+                    "idea": "deterrence",
+                    "days": 360
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 0,
+            "modifier": {
+                "add": 1,
+                "has_tech": "basic_fortification_tech"
+            }
+        }
+    },
+    "faction_goal_an_armored_fist": {
+        "name": "an_armored_fist_goal_name",
+        "description": "an_armored_fist_goal_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_ARMY_XP",
+        "visible": [],
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "unit": "armor",
+                "equipment_ratio": 0.9,
+                "size > 49": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "army_experience": 50,
+                "random_character": {
+                    "tooltip": "ONE_PANZER_GENERAL",
+                    "visible_when_empty": true,
+                    "limit": {
+                        "is_unit_leader": true,
+                        "OR": {
+                            "has_trait": "armor_officer",
+                            "has_trait__D1": "panzer_leader",
+                            "has_trait__D2": "panzer_expert"
+                        }
+                    },
+                    "gain_xp": 400,
+                    "add_attack": 1
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 1
+        }
+    },
+    "faction_goal_an_infantry_army": {
+        "name": "an_infantry_army_goal_name",
+        "description": "an_infantry_army_goal_desc",
+        "category": "short_term",
+        "group": "FOCUS_FILTER_ARMY_XP",
+        "completed": {
+            "count_in_collection": {
+                "collection": {
+                    "input": "game:scope",
+                    "operators": [
+                        "faction_members"
+                    ],
+                    "name": "FACTION"
+                },
+                "unit": "infantry",
+                "size > 249": null
+            }
+        },
+        "complete_effect": {
+            "add_faction_power_projection": 200,
+            "custom_effect_tooltip": "ALL_FACTION_MEMBERS",
+            "every_faction_member": {
+                "army_experience": 50,
+                "random_character": {
+                    "tooltip": "ONE_INFANTRY_GENERAL",
+                    "visible_when_empty": true,
+                    "limit": {
+                        "is_unit_leader": true,
+                        "OR": {
+                            "has_trait": "infantry_officer",
+                            "has_trait__D1": "infantry_leader",
+                            "has_trait__D2": "infantry_expert"
+                        }
+                    },
+                    "gain_xp": 400,
+                    "add_logistics": 1
+                }
+            }
+        },
+        "ai_will_do": {
+            "base": 1
+        }
+    }
+}

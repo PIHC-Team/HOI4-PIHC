@@ -1,0 +1,33 @@
+{
+    "tree": "C01_MAIN",
+    "parent": "FOCUS_C01_C02_PHASE_I",
+    "priority": 10,
+    "dy": 1,
+    "prerequisite": {
+        "focus": "FOCUS_C01_C02_PHASE_I"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "custom_effect_tooltip": "FOCUS_C01_C02_PHASE_II_TOOLTIP"
+    },
+    "available": {
+        "C02": {
+            "has_war_with": "C08",
+            "custom_trigger_tooltip": {
+                "tooltip": "NOT_INDEPENDENT_YET_TOOLTIP",
+                "NOT": {
+                    "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+                }
+            }
+        },
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

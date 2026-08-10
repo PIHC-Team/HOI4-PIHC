@@ -1,0 +1,16 @@
+{
+    "name": "Fallen",
+    "removal_cost": -1,
+    "modifier": {
+        "harmonicism_drift": 0.03,
+        "cannot_call_allies_or_join_wars": 1,
+        "custom_modifier_tooltip": "IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS_TOOLTIP"
+    },
+    "targeted_modifier": {
+        "tag": "C08",
+        "cic_to_target_factor": 1.00,
+        "mic_to_target_factor": 1.00,
+        "extra_trade_to_target_factor": 0.75,
+        "trade_cost_for_target_factor": -0.75
+    }
+}

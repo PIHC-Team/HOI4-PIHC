@@ -1,0 +1,38 @@
+state = {
+    id = 527
+    name = STATE_527
+    provinces = {
+        1777
+        5419
+        7535
+        8922
+        9567
+        9595
+        11817
+        11851
+        11923
+    }
+    manpower = 128341
+    state_category = large_city
+    history = {
+        owner = C54
+        victory_points = {
+            1777
+            25
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 4
+            arms_factory = 2
+            air_base = 1
+            1777 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C54
+    }
+    resources = {
+        steel = 24
+        aluminium = 12
+    }
+}

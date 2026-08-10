@@ -1,0 +1,39 @@
+state = {
+    id = 270
+    name = STATE_270
+    provinces = {
+        367
+        1627
+        2495
+        3867
+        4406
+        4993
+        6459
+        6609
+        9789
+        14747
+        14839
+    }
+    manpower = 100644
+    state_category = rural
+    history = {
+        owner = C47
+        victory_points = {
+            367
+            3
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 4
+            arms_factory = 2
+            air_base = 1
+            367 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C47
+    }
+    resources = {
+
+    }
+}

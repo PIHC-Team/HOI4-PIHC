@@ -1,0 +1,20 @@
+{
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            },
+            "add_country_leader_trait": "TRAIT_POWER_OF_POTIONS",
+            "every_army_leader": {
+                "add_attack": 3,
+                "add_defense": 3,
+                "add_planning": 3,
+                "add_logistics": 3
+            },
+            "hidden_effect": {
+                "set_country_flag": "PIHC_C12_LIMESTONE_HAS_ENHANCEMENT"
+            }
+        }
+    ],
+    "is_triggered_only": true
+}

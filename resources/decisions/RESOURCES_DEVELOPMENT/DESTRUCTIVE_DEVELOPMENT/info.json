@@ -1,0 +1,28 @@
+{
+    "name": "Destructive Development",
+    "priority": 75,
+    
+    "cost": 100,
+    "days_remove": 120,
+    "modifier": {
+        "local_resources_factor": 0.75
+    },
+    "remove_effect": {
+        "hidden_effect": {
+            "every_controlled_state": {
+                "add_province_modifier": {
+                    "static_modifiers": [
+                        "MODIFIER_DESTRUCTIVE_DEVELOPMENT"
+                    ],
+                    "province": {
+                        "all_provinces": true
+                    }
+                }
+            }
+        }
+    },
+    "fire_only_once": true,
+    "ai_will_do": {
+        "base": 0
+    }
+}

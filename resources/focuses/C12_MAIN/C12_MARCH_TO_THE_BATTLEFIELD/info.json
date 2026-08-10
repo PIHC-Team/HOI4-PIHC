@@ -1,0 +1,53 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_MINING_INDUSTRY_SYSTEM",
+    "prerequisite": {
+        "focus": "FOCUS_C12_MINING_INDUSTRY_SYSTEM"
+    },
+    "allow_branch": {
+        "has_completed_focus": "FOCUS_C12_MINING_INDUSTRY_SYSTEM"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_equipment_bonus": {
+            "name": "FOCUS_C12_MARCH_TO_THE_BATTLEFIELD",
+            "bonus": {
+                "ARCHETYPE_TANK_LIGHT": {
+                    "build_cost_ic": -0.05,
+                    "instant": true
+                },
+                "ARCHETYPE_TANK_MEDIUM": {
+                    "build_cost_ic": -0.05,
+                    "instant": true
+                },
+                "ARCHETYPE_TANK_HEAVY": {
+                    "build_cost_ic": -0.10,
+                    "instant": true
+                },
+                "ARCHETYPE_CANNON_LIGHT": {
+                    "build_cost_ic": -0.05,
+                    "instant": true
+                },
+                "ARCHETYPE_CANNON_MEDIUM": {
+                    "build_cost_ic": -0.05,
+                    "instant": true
+                },
+                "ARCHETYPE_CANNON_HEAVY": {
+                    "build_cost_ic": -0.10,
+                    "instant": true
+                }
+            }
+        }
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

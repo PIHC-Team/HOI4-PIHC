@@ -1,0 +1,36 @@
+{
+    "add_stats": {
+        "build_cost_ic": 2.00,
+        "weight": 0.3,
+        "maximum_speed": 12.0,
+        "reliability": -0.12
+    },
+    "multiply_stats": {
+        "fuel_consumption": -0.90
+    },
+    "xp_cost": 10,
+
+    "allowed_module_categories": {
+        "armor_type_slot": [
+            "pihc_tank_armor_type_2_elec"
+        ],
+        "turret_type_slot": [
+            "pihc_tank_turret_type_2_elec"
+        ],
+        "crew_type_slot": [
+            "pihc_tank_crew_type_2_auto"
+        ],
+        "projectile_type_slot": [
+            "pihc_tank_projectile_type_2_elec"
+        ],
+        "suspension_type_slot": [
+            "pihc_tank_suspension_type_2"
+        ],
+        "special_type_slot_1": [
+            "pihc_tank_special_type_2_elec"
+        ],
+        "special_type_slot_2": [
+            "pihc_tank_special_type_2_elec"
+        ]
+    }
+}

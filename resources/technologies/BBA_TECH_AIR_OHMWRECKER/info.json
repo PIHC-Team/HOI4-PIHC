@@ -1,0 +1,35 @@
+{
+    "name": "Air Tech",
+    "category": "bba_air_techs",
+
+    "is_root": true,
+    "root_x": 130,
+    "root_y": 200,
+
+    "x": 14,
+    "y": 15,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_military",
+        "pihc_air"
+    ],
+    "enable_equipments": [
+    ],
+    "enable_subunits": [
+    ],
+    "enable_equipment_modules": [
+        "MODULE_SPECIAL_OHMWRECKER"
+    ],
+
+    "path": {
+    },
+    "allow_branch": {
+        "has_dlc": "By Blood Alone"
+    },
+
+    "research_cost": 3.0,
+    "start_year": 1005
+}

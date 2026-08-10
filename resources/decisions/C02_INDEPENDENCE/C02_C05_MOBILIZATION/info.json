@@ -1,0 +1,78 @@
+{
+    "name": "War Mobilization",
+    "priority": 100,
+    
+    "cost": 200,
+    "days_remove": 28,
+    "visible": {
+        "has_completed_focus": "FOCUS_C02_WAR_TO_C05",
+        "NOT": {
+            "has_country_flag": "PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01"
+        }
+    },
+    "remove_effect": {
+        "add_power_balance_value": {
+            "id": "BOP_C02_INDEPENDENCE",
+            "value": 0.20,
+            "tooltip_side": "BOP_C02_INDEPENDENCE_RIGHT_SIDE"
+        },
+        "504": {
+            "if": {
+                "limit": {
+                    "is_owned_by": "C02",
+                    "is_controlled_by": "C02"
+                },
+                "create_unit": {
+                    "division": "name = \"小马谷民兵师 (Ponyville Militia Division)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                    "prioritize_location": 940,
+                    "owner": "C02"
+                }
+            }
+        },
+        "529": {
+            "if": {
+                "limit": {
+                    "is_owned_by": "C02",
+                    "is_controlled_by": "C02"
+                },
+                "create_unit": {
+                    "division": "name = \"小马谷民兵师 (Ponyville Militia Division)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                    "prioritize_location": 2271,
+                    "owner": "C02"
+                }
+            }
+        },
+        "545": {
+            "if": {
+                "limit": {
+                    "is_owned_by": "C02",
+                    "is_controlled_by": "C02"
+                },
+                "create_unit": {
+                    "division": "name = \"小马谷民兵师 (Ponyville Militia Division)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                    "prioritize_location": 2699,
+                    "owner": "C02"
+                }
+            }
+        },
+        "567": {
+            "if": {
+                "limit": {
+                    "is_owned_by": "C02",
+                    "is_controlled_by": "C02"
+                },
+                "create_unit": {
+                    "division": "name = \"小马谷民兵师 (Ponyville Militia Division)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                    "prioritize_location": 12155,
+                    "owner": "C02"
+                },
+                "create_unit__D1": {
+                    "division": "name = \"小马谷民兵师 (Ponyville Militia Division)\" division_template = \"小型步兵师 (Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9",
+                    "prioritize_location": 4780,
+                    "owner": "C02"
+                }
+            }
+        }
+    },
+    "fire_only_once": true
+}

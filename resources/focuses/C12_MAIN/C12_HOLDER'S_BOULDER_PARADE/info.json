@@ -1,0 +1,22 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_WOODEN_FOSSIL_EXHIBITION",
+    "prerequisite": {
+        "focus": "FOCUS_C12_WOODEN_FOSSIL_EXHIBITION"
+    },
+    "cost": 3,
+    "completion_reward": {
+        "add_ideas" : "IDEA_C12_HOLDERS_BOULDER"
+    },
+    "available": {
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

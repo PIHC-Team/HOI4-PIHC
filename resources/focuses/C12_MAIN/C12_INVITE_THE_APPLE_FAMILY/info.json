@@ -1,0 +1,28 @@
+{
+    "tree": "C12_MAIN",
+    "parent": "FOCUS_C12_TREASURE_EVERYWHERE",
+    "priority": 20,
+    "prerequisite": {
+        "focus": "FOCUS_C12_TREASURE_EVERYWHERE"
+    },
+    "mutually_exclusive": {
+        "focus": "FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS"
+    },
+    "cost": 4,
+    "completion_reward": {
+        "UPGRADE_C12_C14_RELATION": true
+    },
+    "available": {
+        "country_exists": "C14",
+        "has_war": false,
+        "if": {
+            "limit": {
+                "has_country_flag": "PIHC_COUNTRY_FLAG_NO_FOCUS"
+            },
+            "custom_trigger_tooltip": {
+                "tooltip": "PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP",
+                "always": false
+            }
+        }
+    }
+}

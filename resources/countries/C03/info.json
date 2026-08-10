@@ -1,0 +1,170 @@
+{
+    "name": "Duchy of Cloudsdale",
+    "rgb": [
+        121,
+        175,
+        222
+    ],
+    "history": {
+        "set_rule": {
+            "can_join_factions": false
+        },
+        "capital": 412,
+        "set_popularities": {
+            "democratic": 45,
+            "harmonicism": 35,
+            "despotic": 20
+        },
+        "set_politics": {
+            "ruling_party": "democratic",
+            "last_election": "1002.3.2",
+            "election_frequency": 48,
+            "elections_allowed": false
+        },
+        "recruit_character_batch": [
+            "CHARACTER_OPEN_SKIES",
+            "CHARACTER_FLEETFOOT_C03",
+            "CHARACTER_SNOW_VIOLET",
+            "CHARACTER_SOARIN",
+            "CHARACTER_DERPY_HOOVES",
+            "CHARACTER_UNITY_COMMITTEE_C03",
+            "CHARACTER_SAINT_DERPY_HOOVES"
+        ],
+        "add_ideas_batch": [
+            "export_focus",
+            "disarmed_nation",
+            "civilian_economy",
+            "IDEA_ERA_MAGIC_4_MUGGLE",
+            "IDEA_ERA_TECH_3_NEUTRAL",
+            "IDEA_C03_MUFFIN",
+            "IDEA_DINFANTRY_EEMD"
+        ],
+        "set_research_slots": 2,
+        "set_technology": {
+            "TECHNOLOGY_SUPPORT": 1,
+            "TECHNOLOGY_TRAIN_I": 1,
+            "TECHNOLOGY_ANCIENT_MELEE_WEAPON": 1,
+            "TECHNOLOGY_ANCIENT_RANGED_WEAPON": 1,
+            "TECHNOLOGY_POWDER_EXPLOSIVE": 1,
+            "TECHNOLOGY_FIREARM_I": 1,
+            "TECHNOLOGY_VEHICLE_I": 1,
+            "TECHNOLOGY_VEHICLE_II": 1,
+            "TECHNOLOGY_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_AIR_ANCIENT": 1,
+            "TECHNOLOGY_BBA_FRAME_BALLOON": 1,
+            "TECHNOLOGY_AIR_CREATURES": 1,
+            "TECHNOLOGY_BBA_AIR_CREATURES": 1,
+            "TECHNOLOGY_CREATURE_TRAINING": 1,
+            "TECHNOLOGY_TECH_COMM": 1,
+            "TECHNOLOGY_TECH_COMM_I": 1,
+            "TECHNOLOGY_TECH_INFO": 1,
+            "TECHNOLOGY_TECH_INFO_I": 1,
+            "TECHNOLOGY_TECH_ENER": 1,
+            "TECHNOLOGY_TECH_MAGI": 1
+        },
+        "set_power_balance": {
+            "id": "BOP_C03_INDEPENDENCE",
+            "set_default": true
+        },
+        "add_power_balance_modifier": {
+            "id": "BOP_C03_INDEPENDENCE",
+            "modifier": "BOP_C03_INDEPENDENCE_DAILY_DRIFT"
+        },
+        "add_political_power": 250,
+        "set_stability": 0.5,
+        "add_command_power": 50,
+        "army_experience": 10,
+        "set_war_support": 0.3,
+        "set_convoys": 150,
+        "add_manpower": 1000,
+        "add_equipment_to_stockpile_batch": [
+            {
+                "type": "ARCHETYPE_SUPPORT",
+                "amount": 500
+            },
+            {
+                "type": "ARCHETYPE_INFANTRY",
+                "amount": 60
+            },
+            {
+                "type": "ARCHETYPE_AIR_TRANSPORT",
+                "amount": 600
+            },
+            {
+                "type": "ARCHETYPE_AIR_SCOUT",
+                "amount": 40
+            },
+            {
+                "type": "ARCHETYPE_AIR_ARMED",
+                "amount": 160
+            },
+            {
+                "type": "train_equipment",
+                "amount": 60
+            }
+        ],
+        "add_equipment_production_batch": [
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_SUPPORT_I",
+                    "creator": "C03"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "EQUIPMENT_RANGED_FIRELANCE",
+                    "creator": "C03"
+                },
+                "requested_factories": 2,
+                "progress": 0.0,
+                "efficiency": 100
+            },
+            {
+                "equipment": {
+                    "type": "train_equipment_1",
+                    "creator": "C03"
+                },
+                "requested_factories": 1,
+                "progress": 0.0,
+                "efficiency": 80
+            }
+        ],
+        "set_country_flag_batch": [
+            "PIHC_COUNTRY_FLAG_C01_INTELLIGENCE"
+        ],
+        "400": {
+            "set_demilitarized_zone": true
+        },
+        "set_major": false,
+        "if": {
+            "limit": {
+                "has_dlc": "Man the Guns"
+            },
+            "set_technology": {
+                "TECHNOLOGY_MTG_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D1": {
+            "limit": {
+                "NOT": {
+                    "has_dlc": "Man the Guns"
+                }
+            },
+            "set_technology": {
+                "TECHNOLOGY_SHIP_ANCIENT": 1
+            }
+        },
+        "if__D2": {
+            "limit": {
+                "has_dlc": "No Step Back"
+            },
+            "set_technology": {
+                "TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN": 1,
+                "TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN": 1
+            }
+        }
+    }
+}

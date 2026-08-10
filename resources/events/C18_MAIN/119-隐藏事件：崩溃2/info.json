@@ -1,0 +1,47 @@
+{
+    "immediate": {
+        "hidden_effect": {
+            "883": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "203": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "793": {
+                "if": {
+                    "limit": {
+                        "is_core_of": "C18"
+                    },
+                    "remove_core_of": "C18",
+                    "ADD_TO_C00_WASTELAND": true
+                }
+            },
+            "country_event": {
+                "id": "C18_MAIN.120",
+                "days": 21
+            }
+        }
+    },
+    "options": [
+        {
+            "ai_chance": {
+                "factor": 100
+            }
+        }
+    ],
+    "hidden": true,
+    "is_triggered_only": true,
+    "fire_only_once": true
+}

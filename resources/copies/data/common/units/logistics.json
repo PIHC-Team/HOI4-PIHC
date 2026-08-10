@@ -1,0 +1,41 @@
+{
+    "sub_units": {
+        "logistics_company": {
+            "abbreviation": "LOG",
+            "sprite": "infantry",
+            "map_icon_category": "infantry",
+            "priority": 0,
+            "ai_priority": 5,
+            "active": false,
+            "affects_speed": false,
+            "type": [
+                "infantry",
+                "support"
+            ],
+            "group": "support",
+            "categories": [
+                "category_army",
+                "category_all_support"
+            ],
+            "combat_width": 0,
+            "max_strength": 1,
+            "max_organisation": 10,
+            "default_morale": 0.3,
+            "manpower": 12,
+            "training_time": 120,
+            "weight": 0.1,
+            "can_be_parachuted": true,
+            "supply_consumption_factor": -0.1,
+            "fuel_consumption_factor": -0.05,
+            "own_equipment_fuel_consumption_mult": 0.0,
+            "essential": [
+                "ARCHETYPE_SUPPORT",
+                "ARCHETYPE_VEHICLE"
+            ],
+            "need": {
+                "ARCHETYPE_SUPPORT": 36,
+                "ARCHETYPE_VEHICLE": 12
+            }
+        }
+    }
+}

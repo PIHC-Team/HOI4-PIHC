@@ -1,0 +1,15 @@
+{
+    "name": "C08_WAR_SPIRIT",
+    "removal_cost": -1,
+    "modifier": {
+        "command_power_gain_mult": 0.2,
+        "experience_gain_army_factor": 0.2,
+        "training_time_factor": -0.2,
+        "army_morale_factor": 0.15,
+        "offence": 0.05,
+        "defence": 0.5,
+        "local_resources_factor": 0.05,
+        "stability_factor": 0.05,
+        "war_support_factor": 0.15
+    }
+}

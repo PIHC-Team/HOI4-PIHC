@@ -1,0 +1,33 @@
+{
+    "name": "Muffins",
+    "category": "muffins",
+
+    "x": 0,
+    "y": 24,
+
+    "size": "small",
+
+    "categories": [
+        "pihc_all",
+        "pihc_muffins"
+    ],
+    "enable_equipments": {},
+    "on_research_complete": {
+        "custom_effect_tooltip": "TECHNOLOGY_C03_MUFFINS_BASE_V_TOOLTIP",
+        "multiply_variable": {
+            "var": "ROOT.VAR_MUFFINS_PRODUCE_BASE",
+            "value": 2.0
+        }
+    },
+
+    "ai_will_do": {
+        "base": 0,
+        "modifier": {
+            "factor": 1000,
+            "tag": "C03"
+        }
+    },
+
+    "research_cost": 1.0,
+    "start_year": 1008
+}

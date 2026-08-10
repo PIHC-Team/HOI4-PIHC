@@ -1,0 +1,36 @@
+{
+    "category": "air",
+    "x": 0,
+    "y": 12,
+
+    "air_manpower_requirement_factor": -0.20,
+    "air_weather_penalty": -0.10,
+    "air_accidents_factor": -0.10,
+    "category_all_artillery": {
+        "air_attack": 5.00
+    },
+    "category_air": {
+        "build_cost_ic": -0.10
+    },
+
+    "research_cost": 2.25,
+    "categories": [
+        "pihc_doctrine",
+        "pihc_air_doctrine",
+        "pihc_air_doctrine_open_sky"
+    ],
+    "path": {
+        "leads_to_tech": "DOCTRINE_AIR_0_7_AIR_RANGE",
+        "research_cost_coeff": 1.0
+    },
+
+    "ai_will_do": {
+        "factor": 20,
+        "modifier": {
+            "NOT": {
+                "has_air_experience > 120": null
+            },
+            "factor": 0.8
+        }
+    }
+}
