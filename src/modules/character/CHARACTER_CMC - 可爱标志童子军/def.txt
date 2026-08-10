@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_CMC = {
+        name = CHARACTER_CMC_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CMC.dds"
+                small = "gfx/leaders/CHARACTER_CMC_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CMC_army.dds"
+                small = "gfx/leaders/CHARACTER_CMC_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CMC_navy.dds"
+                small = "gfx/leaders/CHARACTER_CMC_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_CMC_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_democracy
+        }
+    }
+}

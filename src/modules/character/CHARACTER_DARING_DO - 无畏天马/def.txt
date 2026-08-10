@@ -1,0 +1,41 @@
+characters = {
+    CHARACTER_DARING_DO = {
+        name = CHARACTER_DARING_DO_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DARING_DO.dds"
+                small = "gfx/leaders/CHARACTER_DARING_DO_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DARING_DO_army.dds"
+                small = "gfx/leaders/CHARACTER_DARING_DO_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DARING_DO_navy.dds"
+                small = "gfx/leaders/CHARACTER_DARING_DO_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_DARING_DO_DESC
+            traits = {
+                TRAIT_GUERRILLA
+                TRAIT_RUTHLESS
+            }
+            ideology = anarchy_anarchy
+        }
+        advisor = {
+            idea_token = CHARACTER_DARING_DO
+            desc = CHARACTER_DARING_DO_DESC
+            traits = {
+                TRAIT_GUERRILLA
+                TRAIT_RUTHLESS
+            }
+            ledger = military
+            can_be_fired = no
+            cost = 150
+            removal_cost = 150
+            slot = army_chief
+        }
+    }
+}

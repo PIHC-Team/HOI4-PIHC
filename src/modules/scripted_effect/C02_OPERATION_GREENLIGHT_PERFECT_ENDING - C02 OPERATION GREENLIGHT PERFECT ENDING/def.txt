@@ -1,0 +1,26 @@
+C02_OPERATION_GREENLIGHT_PERFECT_ENDING = {
+	hidden_effect = {
+		C02 = {
+			remove_all_power_balance_modifiers = {
+				id = BOP_C02_INDEPENDENCE
+			}
+			remove_power_balance = {
+				id = BOP_C02_INDEPENDENCE
+			}
+			set_variable = {
+				var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+				value = 1.0
+			}
+			set_global_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+			END_ALL_WARS = yes
+		}
+		clr_global_flag = PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY
+	}
+	custom_effect_tooltip = DECISION_C02_LIBERATION_FRONT_UPRISE_TOOLTIP
+	C08 = {
+		country_event = {
+			id = C08_MAIN.81
+			days = 1
+		}
+	}
+}

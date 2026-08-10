@@ -1,0 +1,48 @@
+capital = 299
+set_popularities = {
+    anarchy = 100
+}
+set_politics = {
+    ruling_party = anarchy
+    elections_allowed = no
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+oob = C00
+recruit_character = CHARACTER_NOPONY_1
+add_ideas = closed_economy
+add_ideas = disarmed_nation
+add_ideas = civilian_economy
+add_ideas = IDEA_ERA_TECH_5_STAGNATE
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+set_rule = {
+    can_join_factions = no
+}
+add_manpower = -100000000
+add_political_power = -100000000
+set_research_slots = 0
+set_stability = 0.0
+set_war_support = 0.0
+country_lock_all_division_template = yes
+every_other_country = {
+    ROOT = {
+        give_military_access = PREV
+    }
+}
+set_major = no

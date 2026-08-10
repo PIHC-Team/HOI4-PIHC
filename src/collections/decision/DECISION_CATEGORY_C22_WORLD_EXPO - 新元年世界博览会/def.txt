@@ -1,0 +1,9 @@
+DECISION_CATEGORY_C22_WORLD_EXPO = {
+    icon = C22_WORLD_EXPO
+    picture = GFX_decision_category_picture
+    priority = 101
+    visible = {
+        has_country_flag = PIHC_COUNTRY_FLAG_WORLD_EXPO_INVITED
+        date < 1003.10.11
+    }
+}

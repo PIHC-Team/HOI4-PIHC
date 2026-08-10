@@ -1,0 +1,163 @@
+PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE = {
+	C08 = {
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5
+		clear_array = C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 1
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 2
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 3
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 5
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 16
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 4
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 6
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 10
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 1
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 6
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 17
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 12
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 4
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 21
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 7
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 18
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 17
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 11
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 13
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 3
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 12
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 8
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 14
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 9
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 16
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 11
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 21
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 17
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 15
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 3
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 9
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 19
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 14
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 20
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 21
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		clear_array = ARRAY_LOCS_SOURCE
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 8
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 10
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 19
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 2
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 15
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 16
+		}
+		add_to_array = {
+			ARRAY_LOCS_SOURCE = 20
+		}
+		PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = yes
+	}
+	C08 = {
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INITIALIZED
+	}
+}

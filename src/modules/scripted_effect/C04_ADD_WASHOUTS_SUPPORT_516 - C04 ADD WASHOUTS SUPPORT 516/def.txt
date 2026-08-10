@@ -1,0 +1,7 @@
+C04_ADD_WASHOUTS_SUPPORT_516 = {
+	set_variable = {
+		var = C04.VAR_DELTA
+		value = 51.6
+	}
+	MODIFY_C04_BY_ELECTION_WASHOUTS_SUPPORT = yes
+}

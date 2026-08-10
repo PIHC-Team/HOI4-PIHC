@@ -1,0 +1,146 @@
+NAMES_GROUP_C41_ARTILLERY = {
+    name = "星座火炮力量 (Ursa Artillery Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "星座火炮力量%d幻影 (Ursa Artillery Force %d Phantom)"
+}
+NAMES_GROUP_C41_TANK_LIGHT = {
+    name = "星座轻型装甲力量 (Ursa Light Armor Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "星座轻型装甲力量%d幻影 (Ursa Light Armor Force %d Phantom)"
+}
+NAMES_GROUP_C41_TRADITIONAL_REGULAR = {
+    name = "星座常规步兵力量 (Ursa Regular Infantry Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "星座常规步兵力量%d幻影 (Ursa Regular Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C41_TANK_HEAVY = {
+    name = "星座重型装甲力量 (Ursa Heavy Armor Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "星座重型装甲力量%d幻影 (Ursa Heavy Armor Force %d Phantom)"
+}
+NAMES_GROUP_C41_TRADITIONAL_SMALL = {
+    name = "星座小型步兵力量 (Ursa Small Infantry Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "星座小型步兵力量%d幻影 (Ursa Small Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C41_AUTOMATA = {
+    name = "星座自动作战力量 (Ursa Automata Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "星座自动作战力量%d幻影 (Ursa Automata Force %d Phantom)"
+}
+NAMES_GROUP_C41_SHIELD = {
+    name = "星座重装步兵力量 (Ursa Heavy Infantry Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "星座重装步兵力量%d幻影 (Ursa Heavy Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C41_MAGICAL = {
+    name = "星座魔法步兵力量 (Ursa Magical Infantry Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "星座魔法步兵力量%d幻影 (Ursa Magical Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C41_INFANTRY_MIX = {
+    name = "星座协同力量 (Ursa Concerted Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "星座协同力量%d幻影 (Ursa Concerted Force %d Phantom)"
+}
+NAMES_GROUP_C41_MOTORIZED = {
+    name = "星座机动步兵力量 (Ursa Motorized Infantry Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "星座机动步兵力量%d幻影 (Ursa Motorized Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C41_TANK_MEDIUM = {
+    name = "星座中型装甲力量 (Ursa Medium Armor Force)"
+    for_countries = {
+        C41
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "星座中型装甲力量%d幻影 (Ursa Medium Armor Force %d Phantom)"
+}

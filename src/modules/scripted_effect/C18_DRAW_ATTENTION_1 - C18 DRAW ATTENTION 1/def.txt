@@ -1,0 +1,26 @@
+C18_DRAW_ATTENTION_1 = {
+	custom_effect_tooltip = C18_DRAW_ATTENTION_1_TOOLITP
+	add_to_variable = {
+		var = C18.VAR_ATTENTION_OF_THE_CENTAURS
+		value = 1
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.VAR_ATTENTION_OF_THE_CENTAURS
+				value = 3
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = C18_MAIN.58
+				days = 7
+				random_days = 21
+			}
+		}
+	}
+}

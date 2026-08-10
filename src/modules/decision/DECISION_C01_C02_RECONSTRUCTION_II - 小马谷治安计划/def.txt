@@ -1,0 +1,42 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    DECISION_C01_C02_RECONSTRUCTION_II = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 50
+        days_remove = 90
+        fire_only_once = yes
+        visible = {
+            has_completed_focus = FOCUS_C01_C02_PHASE_II
+            has_country_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_COMPLETED
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C01_C02_RECONSTRUCTION_II_TRIGGER_TOOLTIP
+                has_country_flag = PIHC_COUNTRY_FLAG_C01_RECONSTRUCTION_I_COMPLETED
+            }
+            country_exists = C02
+            C02 = {
+                NOT = {
+                    is_subject_of = C01
+                }
+                has_government = anarchy
+            }
+        }
+        war_with_on_remove = C02
+        remove_effect = {
+            C02 = {
+                every_owned_state = {
+                    add_claim_by = C01
+                }
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = C02
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_C02_RECONSTRUCTION_II
+    }
+}

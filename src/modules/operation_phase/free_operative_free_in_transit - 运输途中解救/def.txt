@@ -1,0 +1,12 @@
+free_operative_free_in_transit = {
+	name = free_operative_free_in_transit
+	desc = free_operative_free_in_transit_desc
+	outcome = free_operative_free_in_transit_outcome
+	picture = GFX_phase_free_operative_free_in_transit
+	icon = GFX_phase_free_operative_free_in_transit_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_INFANTRY = 200
+	}
+}

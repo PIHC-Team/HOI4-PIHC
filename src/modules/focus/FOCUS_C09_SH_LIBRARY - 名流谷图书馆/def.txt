@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C09_SH_LIBRARY
+	icon = GFX_FOCUS_C09_SH_LIBRARY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SH
+	}
+	cost = 5
+	completion_reward = {
+		531 = {
+			add_manpower = -800
+		}
+		529 = {
+			add_manpower = -400
+		}
+		432 = {
+			add_manpower = 1200
+			BUILD_A_CIC = yes
+			BUILD_A_RESEARCH = yes
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 19
+	y = 4
+}

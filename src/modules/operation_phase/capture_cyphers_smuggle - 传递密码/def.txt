@@ -1,0 +1,15 @@
+capture_cyphers_smuggle = {
+	name = capture_cyphers_smuggle
+	desc = capture_cyphers_smuggle_desc
+	outcome = capture_cyphers_smuggle_outcome
+	picture = GFX_phase_capture_cyphers_smuggle
+	icon = GFX_phase_capture_cyphers_smuggle_small
+	requirements = {
+	}
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

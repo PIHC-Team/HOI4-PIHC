@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_DIAMOND_WAVE = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = 0.15
+		political_power_gain = 0.25
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+	}
+}

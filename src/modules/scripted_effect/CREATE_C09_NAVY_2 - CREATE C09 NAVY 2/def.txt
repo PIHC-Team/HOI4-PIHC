@@ -1,0 +1,9 @@
+CREATE_C09_NAVY_2 = {
+	C09 = {
+		create_equipment_variant = {
+			name = "City Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		load_oob = C09_navy_2
+	}
+}

@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_KING_SOMBRA_VOWED_LEADER = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		conscription_factor = 0.1
+		training_time_army_factor = -0.1
+	}
+}

@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_HODA_KOTB_ARMY_EXPERIENCE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		experience_gain_army = 0.1
+	}
+}

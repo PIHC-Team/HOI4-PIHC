@@ -1,0 +1,146 @@
+NAMES_GROUP_C58_ARTILLERY = {
+    name = "蘑菇火炮孢子 (Mushroom Artillery Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "蘑菇火炮孢子%d (Mushroom Artillery Spores %d)"
+}
+NAMES_GROUP_C58_TANK_LIGHT = {
+    name = "蘑菇轻型装甲孢子 (Mushroom Light Armor Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "蘑菇轻型装甲孢子%d (Mushroom Light Armor Spores %d)"
+}
+NAMES_GROUP_C58_TRADITIONAL_REGULAR = {
+    name = "蘑菇常规步兵孢子 (Mushroom Regular Infantry Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "蘑菇常规步兵孢子%d (Mushroom Regular Infantry Spores %d)"
+}
+NAMES_GROUP_C58_TANK_HEAVY = {
+    name = "蘑菇重型装甲孢子 (Mushroom Heavy Armor Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "蘑菇重型装甲孢子%d (Mushroom Heavy Armor Spores %d)"
+}
+NAMES_GROUP_C58_TRADITIONAL_SMALL = {
+    name = "蘑菇小型步兵孢子 (Mushroom Small Infantry Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "蘑菇小型步兵孢子%d (Mushroom Small Infantry Spores %d)"
+}
+NAMES_GROUP_C58_AUTOMATA = {
+    name = "蘑菇自动作战孢子 (Mushroom Automata Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "蘑菇自动作战孢子%d (Mushroom Automata Spores %d)"
+}
+NAMES_GROUP_C58_SHIELD = {
+    name = "蘑菇重装步兵孢子 (Mushroom Heavy Infantry Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "蘑菇重装步兵孢子%d (Mushroom Heavy Infantry Spores %d)"
+}
+NAMES_GROUP_C58_MAGICAL = {
+    name = "蘑菇魔法步兵孢子 (Mushroom Magical Infantry Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "蘑菇魔法步兵孢子%d (Mushroom Magical Infantry Spores %d)"
+}
+NAMES_GROUP_C58_INFANTRY_MIX = {
+    name = "蘑菇协同孢子 (Mushroom Concerted Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "蘑菇协同孢子%d (Mushroom Concerted Spores %d)"
+}
+NAMES_GROUP_C58_MOTORIZED = {
+    name = "蘑菇机动步兵孢子 (Mushroom Motorized Infantry Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "蘑菇机动步兵孢子%d (Mushroom Motorized Infantry Spores %d)"
+}
+NAMES_GROUP_C58_TANK_MEDIUM = {
+    name = "蘑菇中型装甲孢子 (Mushroom Medium Armor Spores)"
+    for_countries = {
+        C58
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "蘑菇中型装甲孢子%d (Mushroom Medium Armor Spores %d)"
+}

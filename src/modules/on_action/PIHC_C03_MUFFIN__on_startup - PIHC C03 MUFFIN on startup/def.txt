@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C03 = {
+				set_variable = {
+					var = VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+					value = 3000
+				}
+				set_variable = {
+					var = VAR_MUFFINS_PRODUCE_BASE
+					value = 80
+				}
+				set_variable = {
+					var = VAR_MUFFINS_PRODUCE_FARM
+					value = 60
+				}
+				C03_ROULETTE_INIT = yes
+			}
+		}
+	}
+}

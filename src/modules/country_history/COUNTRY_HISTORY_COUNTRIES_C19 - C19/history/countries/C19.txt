@@ -1,0 +1,103 @@
+capital = 478
+set_popularities = {
+    despotic = 70
+    anarchy = 10
+    harmonicism = 5
+    democratic = 5
+    fascism = 5
+    equatism = 5
+}
+set_politics = {
+    ruling_party = despotic
+    elections_allowed = no
+}
+create_faction = FACTION_ANTI_TIREK_FRONT
+add_to_faction = C19
+add_to_faction = C20
+add_to_faction = C55
+add_to_faction = C65
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C19
+recruit_character = CHARACTER_LORD_GESTAL
+recruit_character = CHARACTER_GRUFF
+add_ideas = closed_economy
+add_ideas = extensive_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+set_rule = {
+    can_join_factions = no
+}
+516 = {
+    add_core_of = C19
+}
+66 = {
+    add_core_of = C19
+}
+460 = {
+    add_core_of = C19
+}
+444 = {
+    add_core_of = C19
+}
+420 = {
+    add_core_of = C19
+}
+435 = {
+    add_core_of = C19
+}
+292 = {
+    add_core_of = C19
+}
+392 = {
+    add_core_of = C19
+}
+417 = {
+    add_core_of = C19
+}
+set_research_slots = 2
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE
+set_major = no

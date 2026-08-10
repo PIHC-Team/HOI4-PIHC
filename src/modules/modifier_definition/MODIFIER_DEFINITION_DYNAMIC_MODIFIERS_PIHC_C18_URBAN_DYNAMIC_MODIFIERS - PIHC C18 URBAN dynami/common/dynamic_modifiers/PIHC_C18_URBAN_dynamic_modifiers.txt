@@ -1,0 +1,10 @@
+C18_URBAN_DYNAMIC_MODIFIER = {
+	production_speed_buildings_factor = C18.VAR_URBAN_CONSTRUCTION
+	industrial_capacity_factory = C18.VAR_URBAN_FACTORY
+	industrial_capacity_dockyard = C18.VAR_URBAN_DOCKYARD
+	industry_repair_factor = C18.VAR_URBAN_REPAIR
+	industry_free_repair_factor = C18.VAR_URBAN_SELF_REPAIR
+	local_resources_factor = C18.VAR_URBAN_RESOURCE
+	supply_node_range = C18.VAR_URBAN_SUPPLY_RANGE
+	political_power_gain = C18.VAR_URBAN_POLITICAL_GAIN
+}

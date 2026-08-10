@@ -1,0 +1,38 @@
+pihc_land_tide_of_iron_infantry_core = {
+	track = infantry
+	name = DOCTRINE_ARMY_0_1_ARMOR_BLADE
+	description = DOCTRINE_ARMY_0_1_ARMOR_BLADE_DESC
+	icon = GFX_doctrine_pihc_land_tide_of_iron_infantry_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_all_armor = {
+		breakthrough = 0.15
+	}
+	category_infantry_motorized = {
+		breakthrough = 0.15
+	}
+	category_infantry_traditional = {
+		breakthrough = 0.15
+	}
+	army_speed_factor = 0.1
+	enable_tactic = tactic_blitz
+	rewards = {
+		armor_sheild = {
+			coordination_bonus = 0.04
+			army_core_attack_factor = 0.1
+			enable_tactic = tactic_backhand_blow
+		}
+	}
+}

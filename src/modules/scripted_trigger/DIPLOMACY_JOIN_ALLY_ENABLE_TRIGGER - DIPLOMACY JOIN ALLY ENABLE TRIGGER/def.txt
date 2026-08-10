@@ -1,0 +1,11 @@
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			cannot_call_allies_or_join_wars_trigger = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_CANNOT_CALL_ALLIES_OR_JOIN_WARS_DESC
+			always = no
+		}
+	}
+}

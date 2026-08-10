@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_DEPARTMENT_C08_AIR = {
+        name = CHARACTER_DEPARTMENT_C08_AIR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR_army.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR_navy.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_AIR_navy_small.dds"
+            }
+        }
+        gender = undefined
+        advisor = {
+            idea_token = CHARACTER_DEPARTMENT_C08_AIR
+            desc = CHARACTER_DEPARTMENT_C08_AIR_DESC
+            traits = {
+
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = air_chief
+        }
+    }
+}

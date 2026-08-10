@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_DEPARTMENT_C08_THEORY_ARMY = {
+        name = CHARACTER_DEPARTMENT_C08_THEORY_ARMY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_default.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_default_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_army.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_navy.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C08_THEORY_ARMY_navy_small.dds"
+            }
+        }
+        gender = undefined
+        advisor = {
+            idea_token = CHARACTER_DEPARTMENT_C08_THEORY_ARMY
+            desc = CHARACTER_DEPARTMENT_C08_THEORY_ARMY_DESC
+            traits = {
+                TRAIT_JOINT_COMMAND_ARMY
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = theorist
+        }
+    }
+}

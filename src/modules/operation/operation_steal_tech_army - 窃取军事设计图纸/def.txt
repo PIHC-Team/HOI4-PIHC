@@ -1,0 +1,281 @@
+operation_steal_tech_army = {
+	icon = GFX_operations_steal_blueprints
+	map_icon = GFX_operations_steal_blueprints_map
+	name = operation_steal_tech_army
+	desc = operation_steal_tech_army_desc
+	priority = 16
+	days = 120
+	network_strength = 50
+	operatives = 3
+	cost_multiplier = 0.05
+	visible = {
+		num_of_operatives > 1
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		has_operation_token = {
+			tag = FROM
+			token = token_army
+		}
+	}
+	equipment = {
+	}
+	required_tokens = {
+		token_army
+	}
+	risk_chance = 0.2
+	experience = 2
+	risk_modifiers = {
+		operation_steal_tech_risk
+		operation_risk
+	}
+	outcome_extra_chance = 0.25
+	outcome_modifiers = {
+		operation_steal_tech_outcome
+		operation_outcome
+	}
+	cost_modifiers = {
+		operation_cost
+	}
+	outcome_execute = {
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			ROOT = {
+				steal_random_tech_bonus = {
+					folder = armour_folder
+					folder = artillery_folder
+					folder = infantry_folder
+					folder = support_folder
+					bonus = 3.0
+					dynamic = yes
+					instant = yes
+					name = operation_steal_tech_army
+					target = FROM
+					uses = 1
+				}
+				remove_operation_token = {
+					tag = FROM
+					token = token_army
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				steal_random_tech_bonus = {
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = infantry_folder
+					folder = support_folder
+					bonus = 3.0
+					dynamic = yes
+					instant = yes
+					name = operation_steal_tech_army
+					target = FROM
+					uses = 1
+				}
+				remove_operation_token = {
+					tag = FROM
+					token = token_army
+				}
+			}
+		}
+	}
+	outcome_extra_execute = {
+		random_list = {
+			33 = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+					}
+					ROOT = {
+						steal_random_tech_bonus = {
+							folder = armour_folder
+							folder = artillery_folder
+							folder = infantry_folder
+							folder = support_folder
+							bonus = 3.0
+							ahead_reduction = 2
+							dynamic = yes
+							instant = yes
+							name = operation_steal_tech_army
+							target = FROM
+							uses = 1
+						}
+					}
+				}
+				else = {
+					ROOT = {
+						steal_random_tech_bonus = {
+							folder = nsb_armour_folder
+							folder = artillery_folder
+							folder = infantry_folder
+							folder = support_folder
+							bonus = 3.0
+							ahead_reduction = 2
+							dynamic = yes
+							instant = yes
+							name = operation_steal_tech_army
+							target = FROM
+							uses = 1
+						}
+					}
+				}
+			}
+			67 = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+					}
+					ROOT = {
+						steal_random_tech_bonus = {
+							folder = armour_folder
+							folder = artillery_folder
+							folder = infantry_folder
+							folder = support_folder
+							bonus = 3.0
+							dynamic = yes
+							instant = yes
+							ahead_reduction = 1
+							name = operation_steal_tech_army
+							target = FROM
+							uses = 1
+						}
+					}
+				}
+				else = {
+					ROOT = {
+						steal_random_tech_bonus = {
+							folder = nsb_armour_folder
+							folder = artillery_folder
+							folder = infantry_folder
+							folder = support_folder
+							bonus = 3.0
+							dynamic = yes
+							instant = yes
+							ahead_reduction = 1
+							name = operation_steal_tech_army
+							target = FROM
+							uses = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	outcome_potential = {
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			ROOT = {
+				steal_random_tech_bonus = {
+					folder = armour_folder
+					folder = artillery_folder
+					folder = infantry_folder
+					folder = support_folder
+					bonus = 3.0
+					dynamic = yes
+					instant = yes
+					name = operation_steal_tech_army
+					target = FROM
+					uses = 1
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				steal_random_tech_bonus = {
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = infantry_folder
+					folder = support_folder
+					bonus = 3.0
+					dynamic = yes
+					instant = yes
+					name = operation_steal_tech_army
+					target = FROM
+					uses = 1
+				}
+			}
+		}
+		custom_effect_tooltip = operation_outcome_consumes_token_tt
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war = no
+				}
+			}
+			modifier = {
+				FROM = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		steal_blueprints_bribe = {
+			base = 50
+		}
+		steal_blueprints_seduction = {
+			base = 50
+		}
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = {
+			base = 30
+		}
+		exfiltration_go_to_ground = {
+			base = 30
+		}
+		exfiltration_submarine_pickup = {
+			base = 25
+		}
+	}
+}

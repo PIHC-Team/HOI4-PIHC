@@ -1,0 +1,42 @@
+focus = {
+	id = FOCUS_C12_SEIZE_BREEZIE
+	icon = GFX_FOCUS_C12_SEIZE_BREEZIE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_TAKE_OVER_BUFFALO
+	}
+	cost = 4
+	bypass = {
+		NOT = {
+			country_exists = C40
+		}
+	}
+	completion_reward = {
+		C40 = {
+			country_event = {
+				id = C12_MAIN.52
+				days = 2
+				random_days = 2
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = PIHC_COUNTY_FLAG_C12_LIMESTONE_PIE_REMAINS_RATIONAL
+		}
+	}
+	available = {
+		country_exists = C40
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 22
+	y = 26
+}

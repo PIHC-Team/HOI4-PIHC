@@ -1,0 +1,47 @@
+state = {
+    id = 821
+    name = STATE_821
+    provinces = {
+        85
+        1651
+        1671
+        2521
+        3716
+        3897
+        4218
+        4346
+        6820
+        7532
+        7652
+        8652
+        9500
+        14296
+        14329
+        14330
+        14414
+        14456
+        14485
+    }
+    manpower = 8543
+    state_category = city
+    history = {
+        owner = C36
+        victory_points = {
+            85
+            20
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 3
+            arms_factory = 3
+            85 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C36
+    }
+    resources = {
+        chromium = 12
+        crystals = 48
+    }
+}

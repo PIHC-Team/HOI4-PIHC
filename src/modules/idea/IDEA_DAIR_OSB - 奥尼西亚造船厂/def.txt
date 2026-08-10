@@ -1,0 +1,62 @@
+ideas = {
+	aircraft_manufacturer = {
+		IDEA_DAIR_OSB = {
+			picture = DAIR_OSB
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			cost = 150
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C25
+			}
+			research_bonus = {
+				pihc_air = 0.15
+			}
+			equipment_bonus = {
+				ARCHETYPE_AIR_TRANSPORT = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ARCHETYPE_AIR_SCOUT = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ARCHETYPE_AIR_TBOMBER = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ARCHETYPE_AIR_SBOMBER = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ARCHETYPE_AIR_ARMED = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					add = -1
+					FROM = {
+						tag = C08
+						controls_state = 389
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

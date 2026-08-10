@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_HOO_FAR = {
+        name = CHARACTER_HOO_FAR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_HOO_FAR.dds"
+                small = "gfx/leaders/CHARACTER_HOO_FAR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_HOO_FAR_army.dds"
+                small = "gfx/leaders/CHARACTER_HOO_FAR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_HOO_FAR_navy.dds"
+                small = "gfx/leaders/CHARACTER_HOO_FAR_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_HOO_FAR_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

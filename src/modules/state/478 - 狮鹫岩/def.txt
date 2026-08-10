@@ -1,0 +1,45 @@
+state = {
+    id = 478
+    name = STATE_478
+    provinces = {
+        715
+        1844
+        1985
+        3993
+        6289
+        7629
+        7675
+        8445
+        9013
+        11386
+        11420
+        11442
+        11475
+        11530
+        11544
+        11560
+    }
+    manpower = 101463
+    state_category = large_city
+    history = {
+        owner = C19
+        victory_points = {
+            715
+            25
+        }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 5
+            arms_factory = 4
+            air_base = 1
+            715 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C19
+    }
+    resources = {
+        steel = 24
+        logs = 18
+    }
+}

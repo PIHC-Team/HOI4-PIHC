@@ -1,0 +1,17 @@
+@cost = 30
+unit_medals = {
+	neutral_sword = {
+		available = {
+			has_government = despotic
+		}
+		frame = 3
+		icon = GFX_medal_icon_default
+		cost = @cost
+		unit_modifiers = {
+			army_attack_factor = 0.05
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

@@ -1,0 +1,121 @@
+add_namespace = C15_SOMBRA
+country_event = {
+    id = C15_SOMBRA.1
+    picture = GFX_EVENT_C15_SOMBRA_1
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_1
+    desc = EVENT_C15_SOMBRA_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_SOMBRA_1_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.2
+    picture = GFX_EVENT_C15_SOMBRA_2
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_2
+    desc = EVENT_C15_SOMBRA_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_SOMBRA_2_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.3
+    picture = GFX_EVENT_C15_SOMBRA_3
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_3
+    desc = EVENT_C15_SOMBRA_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_SOMBRA_3_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.4
+    picture = GFX_EVENT_C15_SOMBRA_4
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_4
+    desc = EVENT_C15_SOMBRA_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C15_RETURNED_RADIANT_HOPE
+        effect_tooltip = {
+            recruit_character = CHARACTER_RADIANT_HOPE
+        }
+        activate_advisor = CHARACTER_RADIANT_HOPE
+        name = EVENT_C15_SOMBRA_4_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.5
+    picture = GFX_EVENT_C15_SOMBRA_5
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_5
+    desc = EVENT_C15_SOMBRA_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C15_SOMBRA.6
+                days = 14
+            }
+        }
+        name = EVENT_C15_SOMBRA_5_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.6
+    picture = GFX_EVENT_C15_SOMBRA_6
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_6
+    desc = EVENT_C15_SOMBRA_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_SOMBRA_6_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.7
+    picture = GFX_EVENT_C15_SOMBRA_7
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_7
+    desc = EVENT_C15_SOMBRA_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_SOMBRA_7_o0
+    }
+}
+country_event = {
+    id = C15_SOMBRA.8
+    picture = GFX_EVENT_C15_SOMBRA_8
+    is_triggered_only = yes
+    title = EVENT_C15_SOMBRA_8
+    desc = EVENT_C15_SOMBRA_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            news_event = {
+                id = SUPER_NEWS.8
+            }
+        }
+        name = EVENT_C15_SOMBRA_8_o0
+    }
+}

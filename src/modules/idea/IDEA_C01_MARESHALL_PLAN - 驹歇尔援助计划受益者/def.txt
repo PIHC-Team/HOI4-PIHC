@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		IDEA_C01_MARESHALL_PLAN = {
+			picture = C01_MARESHALL_PLAN
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C01
+				cic_to_target_factor = -0.15
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.25
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

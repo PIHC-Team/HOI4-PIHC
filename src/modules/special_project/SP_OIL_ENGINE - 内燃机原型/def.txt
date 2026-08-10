@@ -1,0 +1,43 @@
+SP_OIL_ENGINE = {
+	icon = GFX_SP_OIL_ENGINE
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.long
+	specialization = specialization_oilpunk
+	project_tags = sp_tag_pihc_oilpunk
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_TECH_ENER_II
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_ENER_I
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 12
+			rubber = 12
+			aluminium = 6
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_TECH_ENER_II = 1
+				popup = no
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_OIL
+		SP_REWARD_GENERIC_OIL_EXP
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

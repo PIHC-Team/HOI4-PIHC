@@ -1,0 +1,30 @@
+equipments = {
+	EQUIPMENT_MAGICAL_RANGED_SNIPER = {
+		archetype = ARCHETYPE_WITCHCRAFT
+		priority = 30004
+		visual_level = 30004
+		build_cost_ic = 1200.0
+		lend_lease_cost = 1
+		can_license = no
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 22.308
+		hard_attack = 15.0
+		air_attack = 0.2
+		ap_attack = 8.788000000000002
+		breakthrough = 6.760000000000001
+		defense = 13.520000000000001
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 2
+		picture = EQUIPMENT_MAGICAL_RANGED_SNIPER
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS
+		resources = {
+			logs = 2
+			steel = 1
+			crystals = 3
+		}
+	}
+}

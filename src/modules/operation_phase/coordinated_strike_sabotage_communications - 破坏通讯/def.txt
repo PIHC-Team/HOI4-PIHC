@@ -1,0 +1,12 @@
+coordinated_strike_sabotage_communications = {
+	name = coordinated_strike_sabotage_communications
+	desc = coordinated_strike_sabotage_communications_desc
+	outcome = coordinated_strike_sabotage_communications_outcome
+	picture = GFX_phase_coordinated_strike_sabotage_communications
+	icon = GFX_phase_coordinated_strike_sabotage_communications_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 100
+	}
+}

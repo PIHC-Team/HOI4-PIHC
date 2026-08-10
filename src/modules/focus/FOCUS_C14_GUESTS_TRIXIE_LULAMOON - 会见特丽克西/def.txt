@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C14_GUESTS_TRIXIE_LULAMOON
+	icon = GFX_FOCUS_C14_GUESTS_TRIXIE_LULAMOON_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C14_GUESTS
+	}
+	cost = 2
+	completion_reward = {
+	}
+	available = {
+		always = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 6
+}

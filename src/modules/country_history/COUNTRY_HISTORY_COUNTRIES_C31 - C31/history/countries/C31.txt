@@ -1,0 +1,93 @@
+capital = 610
+set_popularities = {
+    harmonicism = 70
+    democratic = 20
+    peacism = 10
+}
+set_politics = {
+    ruling_party = harmonicism
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C31
+recruit_character = CHARACTER_THUNDERHOOVES
+add_ideas = closed_economy
+add_ideas = limited_conscription
+add_ideas = low_economic_mobilisation
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 1
+set_variable = {
+    var = VAR_C02_PROVIDED_CIV_FACTORIES
+    value = 0
+}
+set_variable = {
+    var = VAR_C14_PROVIDED_CIV_FACTORIES
+    value = 0
+}
+587 = {
+    add_core_of = C31
+}
+589 = {
+    add_core_of = C31
+}
+577 = {
+    add_core_of = C31
+}
+set_major = no
+give_military_access = C01
+give_military_access = C02
+give_military_access = C03
+give_military_access = C04
+give_military_access = C05
+give_military_access = C08
+give_military_access = C09
+give_military_access = C10
+give_military_access = C12
+give_military_access = C13
+give_military_access = C14

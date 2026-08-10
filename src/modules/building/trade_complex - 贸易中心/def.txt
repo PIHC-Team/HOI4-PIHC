@@ -1,0 +1,14 @@
+buildings = {
+	trade_complex = {
+		base_cost = 18000
+		value = 5
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+		}
+		show_on_map = 1
+		icon_frame = 42
+	}
+}
+

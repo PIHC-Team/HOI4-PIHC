@@ -1,0 +1,19 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C18_C34_TRADE = {
+			picture = C18_C34_TRADE
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_supply_node_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				country_resource_cost_logs = 10
+				production_speed_farm_complex_factor = -0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

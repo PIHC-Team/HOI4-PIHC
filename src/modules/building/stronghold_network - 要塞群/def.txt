@@ -1,0 +1,26 @@
+buildings = {
+	stronghold_network = {
+		base_cost = 18000
+		value = 1
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		state_modifiers = {
+			local_supplies_for_controller = 0.1
+			state_bunker_max_level_terrain_limit = 2
+			state_coastal_bunker_max_level_terrain_limit = 2
+			enemy_attrition = 0.1
+			state_production_speed_bunker_factor = 0.1
+			state_production_speed_coastal_bunker_factor = 0.1
+		}
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+		}
+		show_on_map = 1
+		has_destroyed_mesh = yes
+		icon_frame = 23
+		hide_if_missing_tech = yes
+	}
+}
+

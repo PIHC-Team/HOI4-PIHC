@@ -1,0 +1,33 @@
+guiTypes = {
+    containerWindowType = {
+        name = C01_angry_power_progressbar_container
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 500
+            height = 600
+        }
+        iconType = {
+            name = progressbar
+            spriteType = GFX_C01_angry_power_progressbar
+            position = {
+                x = 0
+                y = 0
+            }
+        }
+        instantTextBoxType = {
+            name = angry_power_value
+            position = {
+                x = 0
+                y = 400
+            }
+            font = hoi_36header
+            text = "[?C01.VAR_ANGRY_POWER]"
+            format = center
+            maxWidth = 500
+            maxHeight = 24
+        }
+    }
+}

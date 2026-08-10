@@ -1,0 +1,43 @@
+state = {
+    id = 733
+    name = STATE_733
+    provinces = {
+        551
+        1386
+        1810
+        3577
+        4458
+        5565
+        6136
+        13356
+        13402
+        13441
+        13523
+        15102
+    }
+    manpower = 57239
+    state_category = town
+    history = {
+        owner = C35
+        victory_points = {
+            551
+            20
+        }
+        buildings = {
+            infrastructure = 3
+            arms_factory = 1
+            dockyard = 1
+            radar_station = 2
+            5565 = {
+                naval_base = 1
+            }
+            551 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C35
+    }
+    resources = {
+        logs = 1
+    }
+}

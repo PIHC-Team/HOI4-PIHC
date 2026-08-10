@@ -1,0 +1,18 @@
+MODULE_PROJECTILE_4B_HOTIRONBALL = {
+	category = pihc_tank_projectile_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.72
+		weight = 0.1
+		soft_attack = 16.0
+		hard_attack = 10.0
+		ap_attack = 8.0
+		maximum_speed = -0.5
+		reliability = -0.05
+	}
+	build_cost_resources = {
+		steel = 1
+		coal = 1
+	}
+	xp_cost = 8
+}

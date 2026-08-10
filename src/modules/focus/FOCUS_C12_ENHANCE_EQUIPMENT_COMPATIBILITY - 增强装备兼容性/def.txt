@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C12_ENHANCE_EQUIPMENT_COMPATIBILITY
+	icon = GFX_FOCUS_C12_ENHANCE_EQUIPMENT_COMPATIBILITY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_IMPROVE_ROCKFORGED
+	}
+	cost = 4
+	completion_reward = {
+	}
+	available = {
+		has_tech = TECHNOLOGY_SUPPORT_AUTO_IV
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 28
+}

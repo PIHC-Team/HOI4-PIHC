@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C15_SOMBRA_C01_PREPARED = {
+			picture = C15_SOMBRA_C01_PREPARED
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 0.3
+			}
+			targeted_modifier = {
+				tag = C01
+				attack_bonus_against = 0.2
+				breakthrough_bonus_against = 0.2
+				defense_bonus_against = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

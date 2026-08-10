@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_URSA_MAJOR = {
+        name = CHARACTER_URSA_MAJOR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_URSA_MAJOR.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MAJOR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_URSA_MAJOR_army.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MAJOR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_URSA_MAJOR_navy.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MAJOR_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_URSA_MAJOR_DESC
+            traits = {
+                TRAIT_URSA
+            }
+            ideology = fascism_spirit
+        }
+    }
+}

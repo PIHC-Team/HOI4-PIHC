@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C23_GLOBAL_INTERVENTION = {
+			picture = C23_GLOBAL_INTERVENTION
+			removal_cost = -1
+			modifier = {
+				send_volunteer_divisions_required = -0.75
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

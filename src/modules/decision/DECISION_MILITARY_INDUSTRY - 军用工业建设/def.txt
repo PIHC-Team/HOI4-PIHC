@@ -1,0 +1,33 @@
+DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
+    DECISION_MILITARY_INDUSTRY = {
+        fixed_random_seed = no
+        priority = 99
+        cost = 125
+        days_remove = 60
+        days_re_enable = 240
+        remove_effect = {
+            random_owned_controlled_state = {
+                BUILD_A_MIC = yes
+            }
+        }
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = 20
+                has_political_power > 250
+            }
+            modifier = {
+                add = 20
+                has_war = yes
+            }
+            modifier = {
+                add = -5
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+        }
+        icon = MILITARY_INDUSTRY
+    }
+}

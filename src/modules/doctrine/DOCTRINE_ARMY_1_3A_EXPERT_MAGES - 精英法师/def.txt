@@ -1,0 +1,40 @@
+pihc_land_flame_of_rage_combat_support_a = {
+	track = combat_support
+	name = DOCTRINE_ARMY_1_3A_EXPERT_MAGES
+	description = DOCTRINE_ARMY_1_3A_EXPERT_MAGES_DESC
+	icon = GFX_doctrine_pihc_land_flame_of_rage_combat_support_a_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_infantry_magical = {
+		soft_attack = 0.07
+		hard_attack = 0.1
+		max_organisation = 10.0
+	}
+	command_power_gain = 0.2
+	rewards = {
+		magic_shield = {
+			category_infantry_magical = {
+				defense = 0.2
+			}
+			enable_tactic = tactic_pihc_magic_seal
+		}
+		teleport_attack = {
+			category_infantry_magical = {
+				breakthrough = 0.15
+			}
+			enable_tactic = tactic_pihc_teleportation_attack
+		}
+	}
+}

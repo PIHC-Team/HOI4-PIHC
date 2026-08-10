@@ -1,0 +1,27 @@
+PIHC_C08_PIN_GAME_1_CHECK = {
+	hidden_effect = {
+		C08 = {
+			if = {
+				limit = {
+					check_variable = {
+						C08.ARRAY_C08_PIN_GAME_1_ANSWERS^0 = C08.ARRAY_C08_PIN_GAME_1_PUZZLE^0
+					}
+					check_variable = {
+						C08.ARRAY_C08_PIN_GAME_1_ANSWERS^1 = C08.ARRAY_C08_PIN_GAME_1_PUZZLE^1
+					}
+					check_variable = {
+						C08.ARRAY_C08_PIN_GAME_1_ANSWERS^2 = C08.ARRAY_C08_PIN_GAME_1_PUZZLE^2
+					}
+					check_variable = {
+						C08.ARRAY_C08_PIN_GAME_1_ANSWERS^3 = C08.ARRAY_C08_PIN_GAME_1_PUZZLE^3
+					}
+				}
+				SOLVE_PIHC_C08_PIN_GAME_1 = yes
+			}
+			else = {
+				set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT
+				scoped_sound_effect = wrong_ev
+			}
+		}
+	}
+}

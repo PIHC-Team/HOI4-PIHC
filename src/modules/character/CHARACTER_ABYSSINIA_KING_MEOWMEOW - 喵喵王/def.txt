@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_ABYSSINIA_KING_MEOWMEOW = {
+        name = CHARACTER_ABYSSINIA_KING_MEOWMEOW_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW.dds"
+                small = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW_army.dds"
+                small = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW_navy.dds"
+                small = "gfx/leaders/CHARACTER_ABYSSINIA_KING_MEOWMEOW_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_ABYSSINIA_KING_MEOWMEOW_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

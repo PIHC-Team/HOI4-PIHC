@@ -1,0 +1,80 @@
+division_template = {
+    name = "荒原影魔师 (Umbrum Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}
+division_template = {
+    name = "黑晶奴隶师 (Sombra Slave Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+        engineer = 1
+    }
+    is_locked = yes
+    priority = 0
+}

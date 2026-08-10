@@ -1,0 +1,1339 @@
+add_namespace = C02_HOTLINE
+country_event = {
+    id = C02_HOTLINE.1
+    picture = GFX_EVENT_C02_HOTLINE_1
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_1
+    desc = EVENT_C02_HOTLINE_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C02_HOTLINE_1_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.2
+    picture = GFX_EVENT_C02_HOTLINE_2
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_2
+    desc = EVENT_C02_HOTLINE_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C02_HOTLINE_2_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.3
+    picture = GFX_EVENT_C02_HOTLINE_3
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_3
+    desc = EVENT_C02_HOTLINE_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_003
+        custom_effect_tooltip = EVENT_C02_HOTLINE_3_TOOLTIP
+        name = EVENT_C02_HOTLINE_3_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.4
+    picture = GFX_EVENT_C02_HOTLINE_4
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_4
+    desc = EVENT_C02_HOTLINE_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_15
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.15
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        custom_effect_tooltip = C02_FILTHY_RICH_INC_10
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            value = 0.1
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C02_HOTLINE_4_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.5
+    picture = GFX_EVENT_C02_HOTLINE_5
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_5
+    desc = EVENT_C02_HOTLINE_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_3
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.03
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        custom_effect_tooltip = C02_MARE_INC_10
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_MARE
+            value = 0.1
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_MARE
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C02_HOTLINE_5_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.6
+    picture = GFX_EVENT_C02_HOTLINE_6
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_6
+    desc = EVENT_C02_HOTLINE_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.7
+                days = 7
+                random_days = 7
+            }
+        }
+        name = EVENT_C02_HOTLINE_6_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.7
+    picture = GFX_EVENT_C02_HOTLINE_7
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_7
+    desc = EVENT_C02_HOTLINE_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.8
+                days = 15
+                random_days = 60
+            }
+        }
+        name = EVENT_C02_HOTLINE_7_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.8
+    picture = GFX_EVENT_C02_HOTLINE_8
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_8
+    desc = EVENT_C02_HOTLINE_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_008
+        custom_effect_tooltip = EVENT_C02_HOTLINE_8_TOOLTIP
+        name = EVENT_C02_HOTLINE_8_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.9
+    picture = GFX_EVENT_C02_HOTLINE_9
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_9
+    desc = EVENT_C02_HOTLINE_9_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.10
+            }
+        }
+        name = EVENT_C02_HOTLINE_9_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C02_HOTLINE_9_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.10
+    picture = GFX_EVENT_C02_HOTLINE_10
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_10
+    desc = EVENT_C02_HOTLINE_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        hidden_effect = {
+            random_list = {
+                seed = random
+                40 = {
+                    country_event = {
+                        id = C02_HOTLINE.11
+                        days = 180
+                        random_days = 120
+                    }
+                }
+                60 = {
+                    country_event = {
+                        id = C02_HOTLINE.13
+                        days = 180
+                        random_days = 120
+                    }
+                }
+            }
+        }
+        name = EVENT_C02_HOTLINE_10_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.11
+    picture = GFX_EVENT_C02_HOTLINE_11
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_11
+    desc = EVENT_C02_HOTLINE_11_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.12
+            }
+        }
+        name = EVENT_C02_HOTLINE_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            random_list = {
+                seed = random
+                80 = {
+                    country_event = {
+                        id = C02_HOTLINE.11
+                        days = 180
+                        random_days = 120
+                    }
+                }
+                20 = {
+                    country_event = {
+                        id = C02_HOTLINE.13
+                        days = 180
+                        random_days = 120
+                    }
+                }
+            }
+        }
+        name = EVENT_C02_HOTLINE_11_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.12
+    picture = GFX_EVENT_C02_HOTLINE_12
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_12
+    desc = EVENT_C02_HOTLINE_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        hidden_effect = {
+            random_list = {
+                seed = random
+                60 = {
+                    country_event = {
+                        id = C02_HOTLINE.11
+                        days = 180
+                        random_days = 120
+                    }
+                }
+                40 = {
+                    country_event = {
+                        id = C02_HOTLINE.13
+                        days = 180
+                        random_days = 120
+                    }
+                }
+            }
+        }
+        name = EVENT_C02_HOTLINE_12_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.13
+    picture = GFX_EVENT_C02_HOTLINE_13
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_13
+    desc = EVENT_C02_HOTLINE_13_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.14
+            }
+        }
+        name = EVENT_C02_HOTLINE_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            random_list = {
+                seed = random
+                80 = {
+                    country_event = {
+                        id = C02_HOTLINE.11
+                        days = 180
+                        random_days = 120
+                    }
+                }
+                20 = {
+                    country_event = {
+                        id = C02_HOTLINE.13
+                        days = 180
+                        random_days = 120
+                    }
+                }
+            }
+        }
+        name = EVENT_C02_HOTLINE_13_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.14
+    picture = GFX_EVENT_C02_HOTLINE_14
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+                news_event = {
+                    id = C02_HOTLINE.15
+                    days = 7
+                    random_days = 7
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_14
+    desc = EVENT_C02_HOTLINE_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            random_list = {
+                seed = random
+                80 = {
+                    country_event = {
+                        id = C02_HOTLINE.11
+                        days = 180
+                        random_days = 120
+                    }
+                }
+                20 = {
+                    country_event = {
+                        id = C02_HOTLINE.13
+                        days = 180
+                        random_days = 120
+                    }
+                }
+            }
+        }
+        name = EVENT_C02_HOTLINE_14_o0
+    }
+}
+news_event = {
+    id = C02_HOTLINE.15
+    picture = GFX_EVENT_C02_HOTLINE_15
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_15
+    desc = EVENT_C02_HOTLINE_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C02
+            }
+        }
+        name = EVENT_C02_HOTLINE_15_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        set_global_flag = PIHC_ACHIEVEMENT_FLAG_C02_DAY_SPA
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_35
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.35
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        hidden_effect = {
+            add_to_variable = {
+                var = C02.VAR_C02_ELECTION_FILTHY_RICH
+                value = 0.05
+            }
+            clamp_variable = {
+                var = C02.VAR_C02_ELECTION_FILTHY_RICH
+                min = 0.0
+                max = 1.0
+            }
+        }
+        name = EVENT_C02_HOTLINE_15_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.16
+    picture = GFX_EVENT_C02_HOTLINE_16
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_16
+    desc = EVENT_C02_HOTLINE_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_5
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        custom_effect_tooltip = C02_DOCTOR_HOOVES_INC_15
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+            value = 0.15
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C02_HOTLINE_16_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.17
+    picture = GFX_EVENT_C02_HOTLINE_17
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_17
+    desc = EVENT_C02_HOTLINE_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_017
+        custom_effect_tooltip = EVENT_C02_HOTLINE_17_TOOLTIP
+        name = EVENT_C02_HOTLINE_17_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.18
+    picture = GFX_EVENT_C02_HOTLINE_18
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_18
+    desc = EVENT_C02_HOTLINE_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_018
+        custom_effect_tooltip = EVENT_C02_HOTLINE_18_TOOLTIP
+        name = EVENT_C02_HOTLINE_18_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.19
+    picture = GFX_EVENT_C02_HOTLINE_19
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_19
+    desc = EVENT_C02_HOTLINE_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_019
+        custom_effect_tooltip = EVENT_C02_HOTLINE_19_TOOLTIP
+        name = EVENT_C02_HOTLINE_19_o0
+    }
+}
+news_event = {
+    id = C02_HOTLINE.20
+    picture = GFX_EVENT_C02_HOTLINE_20
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_20
+    desc = EVENT_C02_HOTLINE_20_desc
+    option = {
+        ai_chance = {
+            factor = 90
+        }
+        trigger = {
+            tag = C02
+        }
+        name = EVENT_C02_HOTLINE_20_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        trigger = {
+            tag = C02
+        }
+        country_event = {
+            id = C02_HOTLINE.21
+            days = 3
+        }
+        name = EVENT_C02_HOTLINE_20_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C02
+            }
+        }
+        name = EVENT_C02_HOTLINE_20_o2
+    }
+}
+news_event = {
+    id = C02_HOTLINE.21
+    picture = GFX_EVENT_C02_HOTLINE_21
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_21
+    desc = EVENT_C02_HOTLINE_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_10
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.1
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        custom_effect_tooltip = C02_DOCTOR_HOOVES_DEC_25
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+            value = -0.25
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+            min = 0.0
+            max = 1.0
+        }
+        set_technology = {
+            TECHNOLOGY_TECH_MAGI_MODERN = 1
+        }
+        add_tech_bonus = {
+            technology = TECHNOLOGY_TECH_MAGI_I
+            bonus = 0.5
+            name = EVENT_C02_HOTLINE_21_TECH_BONUS
+        }
+        name = EVENT_C02_HOTLINE_21_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.22
+    picture = GFX_EVENT_C02_HOTLINE_22
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_22
+    desc = EVENT_C02_HOTLINE_22_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C02_HOTLINE_22_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED
+        C11 = {
+            add_intel = {
+                target = C02
+                civilian_intel = 10
+            }
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.23
+                days = 30
+                random_days = 30
+            }
+        }
+        name = EVENT_C02_HOTLINE_22_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.23
+    picture = GFX_EVENT_C02_HOTLINE_23
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_23
+    desc = EVENT_C02_HOTLINE_23_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C02_HOTLINE_23_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_2
+        C11 = {
+            add_intel = {
+                target = C02
+                civilian_intel = 30
+            }
+        }
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+            value = 0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+            min = 0.0
+            max = 1.0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.24
+                days = 30
+                random_days = 30
+            }
+        }
+        name = EVENT_C02_HOTLINE_23_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.24
+    picture = GFX_EVENT_C02_HOTLINE_24
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_24
+    desc = EVENT_C02_HOTLINE_24_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C02_HOTLINE_24_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_CONTACT
+        country_event = {
+            id = C02_HOTLINE.25
+            days = 3
+        }
+        name = EVENT_C02_HOTLINE_24_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.25
+    picture = GFX_EVENT_C02_HOTLINE_25
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_25
+    desc = EVENT_C02_HOTLINE_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C02_HOTLINE.26
+            days = 1
+        }
+        name = EVENT_C02_HOTLINE_25_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.26
+    picture = GFX_EVENT_C02_HOTLINE_26
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_26
+    desc = EVENT_C02_HOTLINE_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = IDEA_DIND_C02_PLUSH_TOY_LOGS_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3
+        add_ideas = IDEA_DIND_C02_PLUSH_TOY_LOGS
+        country_event = {
+            id = C02_HOTLINE.27
+            days = 7
+        }
+        name = EVENT_C02_HOTLINE_26_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.27
+    picture = GFX_EVENT_C02_HOTLINE_27
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_27
+    desc = EVENT_C02_HOTLINE_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+        custom_effect_tooltip = C02_FILTHY_RICH_DEC_15
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            value = -0.15
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            min = 0.0
+            max = 1.0
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELINGS_ENABLE
+        name = EVENT_C02_HOTLINE_27_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.28
+    picture = GFX_EVENT_C02_HOTLINE_28
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_28
+    desc = EVENT_C02_HOTLINE_28_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_ideas = IDEA_C02_EMPIRE_FUEL_FEE
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.29
+                days = 16
+            }
+            C01 = {
+                country_event = {
+                    id = C02_HOTLINE.29
+                    days = 16
+                }
+            }
+        }
+        set_fuel_ratio = 1.0
+        name = EVENT_C02_HOTLINE_28_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.29
+    picture = GFX_EVENT_C02_HOTLINE_29
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_29
+    desc = EVENT_C02_HOTLINE_29_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        swap_ideas = {
+            remove_idea = IDEA_C02_EMPIRE_FUEL_FEE
+            add_idea = IDEA_C02_EMPIRE_FUEL_FEE_2
+        }
+        hidden_effect = {
+            504 = {
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+            }
+            543 = {
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+            }
+            235 = {
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+            }
+            545 = {
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+            }
+            529 = {
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+                BUILD_A_SILO = yes
+            }
+        }
+        set_fuel_ratio = 1.0
+        name = EVENT_C02_HOTLINE_29_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_SILO_INSPECTION_AVAILABLE
+        name = EVENT_C02_HOTLINE_29_o1
+    }
+}
+country_event = {
+    id = C02_HOTLINE.30
+    picture = GFX_EVENT_C02_HOTLINE_30
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_30
+    desc = EVENT_C02_HOTLINE_30_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_030
+        custom_effect_tooltip = EVENT_C02_HOTLINE_30_TOOLTIP
+        name = EVENT_C02_HOTLINE_30_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.31
+    picture = GFX_EVENT_C02_HOTLINE_31
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_31
+    desc = EVENT_C02_HOTLINE_31_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C07 = {
+            add_intel = {
+                target = C02
+                civilian_intel = 15
+            }
+        }
+        C02 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C07_TRADE
+        }
+        name = EVENT_C02_HOTLINE_31_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.32
+    picture = GFX_EVENT_C02_HOTLINE_32
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_32
+    desc = EVENT_C02_HOTLINE_32_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_5
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C02_HOTLINE_32_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.33
+    picture = GFX_EVENT_C02_HOTLINE_33
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_33
+    desc = EVENT_C02_HOTLINE_33_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_033
+        custom_effect_tooltip = EVENT_C02_HOTLINE_33_TOOLTIP
+        name = EVENT_C02_HOTLINE_33_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.34
+    picture = GFX_EVENT_C02_HOTLINE_34
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_34
+    desc = EVENT_C02_HOTLINE_34_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_034
+        custom_effect_tooltip = EVENT_C02_HOTLINE_34_TOOLTIP
+        name = EVENT_C02_HOTLINE_34_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.35
+    picture = GFX_EVENT_C02_HOTLINE_35
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_35
+    desc = EVENT_C02_HOTLINE_35_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_035
+        custom_effect_tooltip = EVENT_C02_HOTLINE_35_TOOLTIP
+        name = EVENT_C02_HOTLINE_35_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.36
+    picture = GFX_EVENT_C02_HOTLINE_36
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_36
+    desc = EVENT_C02_HOTLINE_36_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_036
+        set_country_flag = {
+            flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_036_WAITING
+            days = 49
+            value = 1
+        }
+        custom_effect_tooltip = EVENT_C02_HOTLINE_36_TOOLTIP
+        name = EVENT_C02_HOTLINE_36_o0
+    }
+}
+news_event = {
+    id = C02_HOTLINE.37
+    picture = GFX_EVENT_C02_HOTLINE_37
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_37
+    desc = EVENT_C02_HOTLINE_37_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_5
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = 0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        custom_effect_tooltip = C02_FILTHY_RICH_DEC_5
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            value = -0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_FILTHY_RICH
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C02_HOTLINE_37_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.38
+    picture = GFX_EVENT_C02_HOTLINE_38
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_38
+    desc = EVENT_C02_HOTLINE_38_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_C03_PONYVILLE_INFILTRATION
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C02_HOTLINE_38_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.39
+    picture = GFX_EVENT_C02_HOTLINE_39
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_39
+    desc = EVENT_C02_HOTLINE_39_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_039
+        custom_effect_tooltip = EVENT_C02_HOTLINE_39_TOOLTIP
+        name = EVENT_C02_HOTLINE_39_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.40
+    picture = GFX_EVENT_C02_HOTLINE_40
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_40
+    desc = EVENT_C02_HOTLINE_40_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.07
+        custom_effect_tooltip = C02_OCTAVIA_INC_15
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_OCTAVIA
+            value = 0.15
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_OCTAVIA
+            min = 0.0
+            max = 1.0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.41
+                days = 5
+            }
+        }
+        name = EVENT_C02_HOTLINE_40_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.41
+    picture = GFX_EVENT_C02_HOTLINE_41
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_41
+    desc = EVENT_C02_HOTLINE_41_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.07
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_DEINSTRUMENTALIZATION
+        custom_effect_tooltip = C02_OCTAVIA_INC_15
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_OCTAVIA
+            value = 0.15
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_OCTAVIA
+            min = 0.0
+            max = 1.0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C02_HOTLINE.42
+                days = 30
+            }
+        }
+        name = EVENT_C02_HOTLINE_41_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.42
+    picture = GFX_EVENT_C02_HOTLINE_42
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                ADD_INVENTORY_ITEM_2UN_C02_PIANO_KEY_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C02_HOTLINE_42
+    desc = EVENT_C02_HOTLINE_42_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C02_HOTLINE_42_o0
+    }
+}
+country_event = {
+    id = C02_HOTLINE.43
+    picture = GFX_EVENT_C02_HOTLINE_43
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                scoped_sound_effect = ringring_ev
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C02_HOTLINE_43
+    desc = EVENT_C02_HOTLINE_43_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_1 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS
+        name = EVENT_C02_HOTLINE_43_o0
+    }
+}

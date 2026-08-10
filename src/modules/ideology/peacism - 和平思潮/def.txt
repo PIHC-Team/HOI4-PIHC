@@ -1,0 +1,79 @@
+ideologies = {
+	peacism = {
+		types = {
+			peacism_republic = {
+			}
+			peacism_democracy = {
+			}
+			peacism_monarchy = {
+			}
+			peacism_oligarchy = {
+			}
+			peacism_tribe = {
+			}
+			peacism_freestate = {
+			}
+			peacism_organization = {
+			}
+			peacism_duchy = {
+				can_be_randomly_selected = no
+			}
+			peacism_theocracy = {
+			}
+			peacism_technocracy = {
+			}
+			peacism_militarism = {
+			}
+			peacism_dogmatism = {
+			}
+			peacism_federal = {
+				can_be_randomly_selected = no
+			}
+			peacism_spirit = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = {
+			125
+			180
+			113
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		can_host_government_in_exile = yes
+		can_be_boosted = yes
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.3
+		faction_impact_on_world_tension = -0.5
+		modifiers = {
+			generate_wargoal_tension = 1.0
+			join_faction_tension = 1.0
+			lend_lease_tension = 0.8
+			send_volunteers_tension = 0.8
+			guarantee_tension = 0.8
+			annex_cost_factor = 0.8
+			puppet_cost_factor = 1.0
+			justify_war_goal_when_in_major_war_time = 0.0
+			drift_defence_factor = 0.1
+			civilian_intel_to_others = 5.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 5.0
+			embargo_cost_factor = 0.5
+			embargo_threshold_factor = 0.5
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.5
+		}
+		ai_neutral = yes
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

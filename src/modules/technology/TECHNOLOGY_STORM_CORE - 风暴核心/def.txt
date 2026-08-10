@@ -1,0 +1,35 @@
+technologies = {
+    TECHNOLOGY_STORM_CORE = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 5
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+            pihc_storm
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_ENGINE_5A_STORM
+            MODULE_PLANE_ENGINE_5A_STORM
+        }
+        on_research_complete_limit = {
+            always = yes
+        }
+        on_research_complete = {
+            custom_effect_tooltip = TECHNOLOGY_STORM_CORE_TOOLTIP
+        }
+        research_cost = 3.0
+        start_year = 1006
+    }
+}

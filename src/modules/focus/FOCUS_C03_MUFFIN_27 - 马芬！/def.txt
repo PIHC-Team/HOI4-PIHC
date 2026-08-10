@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_27
+	icon = GFX_FOCUS_C03_MUFFIN_27_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	completion_reward = {
+		add_to_variable = {
+			var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+			value = 20000
+		}
+		INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		custom_effect_tooltip = FOCUS_C03_MUFFIN_27_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				C01 = {
+					has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+				}
+			}
+			always = no
+		}
+		hidden_trigger = {
+			is_ai = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C03_MUFFIN_27_TRIGGER_TOOLTIP
+			check_variable = {
+				var = ROOT.VAR_MUFFINS_AID_TOTAL_C03
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_26
+	}
+	x = 7
+	y = 0
+}

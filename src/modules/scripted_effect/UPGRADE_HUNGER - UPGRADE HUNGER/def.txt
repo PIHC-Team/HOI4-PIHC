@@ -1,0 +1,30 @@
+UPGRADE_HUNGER = {
+	custom_effect_tooltip = PIHC_UPGRADE_HUNGER_TOOLTIP
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_5_FAMINE
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HUNGER_4_HUNGER
+			remove_idea = IDEA_ERA_HUNGER_5_FAMINE
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_4_HUNGER
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HUNGER_3_NORMAL
+			remove_idea = IDEA_ERA_HUNGER_4_HUNGER
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_3_NORMAL
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HUNGER_2_FULL
+			remove_idea = IDEA_ERA_HUNGER_3_NORMAL
+		}
+	}
+}

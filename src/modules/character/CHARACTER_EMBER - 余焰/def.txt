@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_EMBER = {
+        name = CHARACTER_EMBER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_EMBER.dds"
+                small = "gfx/leaders/CHARACTER_EMBER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_EMBER_army.dds"
+                small = "gfx/leaders/CHARACTER_EMBER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_EMBER_navy.dds"
+                small = "gfx/leaders/CHARACTER_EMBER_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_EMBER_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

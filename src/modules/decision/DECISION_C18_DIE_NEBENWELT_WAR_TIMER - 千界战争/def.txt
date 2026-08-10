@@ -1,0 +1,32 @@
+DECISION_CATEGORY_C18_DIE_NEBENWELT = {
+    DECISION_C18_DIE_NEBENWELT_WAR_TIMER = {
+        fixed_random_seed = no
+        priority = 99999
+        cost = 0
+        selectable_mission = no
+        days_mission_timeout = 180
+        is_good = no
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        visible = {
+            has_decision = DECISION_C18_DIE_NEBENWELT_WAR_TIMER
+        }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            custom_effect_tooltip = DECISION_C18_DIE_NEBENWELT_WAR_TIMER_TOOLTIP
+            news_event = {
+                id = C18_MAIN.114
+            }
+            hidden_effect = {
+                news_event = {
+                    id = TIMELINE.22
+                }
+            }
+        }
+        icon = C18_DIE_NEBENWELT_WAR_TIMER
+    }
+}

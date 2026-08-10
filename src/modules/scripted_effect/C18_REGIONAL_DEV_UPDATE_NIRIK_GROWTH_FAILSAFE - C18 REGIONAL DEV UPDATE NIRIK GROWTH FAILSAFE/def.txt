@@ -1,0 +1,92 @@
+C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH_FAILSAFE = {
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 0.99
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1 = 0.99
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2 = 0.99
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3 = 0.99
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4 = 0.99
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5
+				value = 1.105
+				compare = greater_than_or_equals
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5 = 0.99
+		}
+	}
+}

@@ -1,0 +1,17 @@
+MODULE_PROJECTILE_4D_TNT = {
+	category = pihc_tank_projectile_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+		weight = 0.1
+		soft_attack = 20.0
+		hard_attack = 15.0
+		ap_attack = 3.0
+		maximum_speed = -0.6
+		reliability = -0.08
+	}
+	build_cost_resources = {
+		coal = 1
+	}
+	xp_cost = 8
+}

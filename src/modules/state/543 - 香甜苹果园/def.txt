@@ -1,0 +1,34 @@
+state = {
+    id = 543
+    name = STATE_543
+    provinces = {
+        2919
+        4877
+        6726
+        11808
+        11853
+        11858
+    }
+    manpower = 37565
+    state_category = rural
+    history = {
+        owner = C02
+        victory_points = {
+            2919
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+            arms_factory = 1
+            farm_complex = 1
+            2919 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C02
+    }
+    resources = {
+
+    }
+}

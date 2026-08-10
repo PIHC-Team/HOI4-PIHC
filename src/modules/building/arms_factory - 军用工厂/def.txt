@@ -1,0 +1,17 @@
+buildings = {
+	arms_factory = {
+		base_cost = 6400
+		value = 8
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		base_cost_conversion = 2000
+		military_production = 1
+		level_cap = {
+			state_max = 20
+			shares_slots = yes
+		}
+		show_on_map = 6
+		icon_frame = 2
+	}
+}
+

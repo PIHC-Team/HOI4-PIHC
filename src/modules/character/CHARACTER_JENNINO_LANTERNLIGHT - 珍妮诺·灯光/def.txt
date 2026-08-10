@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_JENNINO_LANTERNLIGHT = {
+        name = CHARACTER_JENNINO_LANTERNLIGHT_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT.dds"
+                small = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT_army.dds"
+                small = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT_navy.dds"
+                small = "gfx/leaders/CHARACTER_JENNINO_LANTERNLIGHT_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_JENNINO_LANTERNLIGHT_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

@@ -1,0 +1,9 @@
+rescue_mussolini_infiltration = {
+	name = rescue_mussolini_infiltration
+	desc = rescue_mussolini_infiltration_desc
+	icon = GFX_phase_capture_tito_infiltration_small
+	picture = GFX_phase_capture_tito_infiltration
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 2
+	}
+}

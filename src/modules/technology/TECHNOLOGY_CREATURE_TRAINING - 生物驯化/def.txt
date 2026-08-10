@@ -1,0 +1,31 @@
+technologies = {
+    TECHNOLOGY_CREATURE_TRAINING = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 12
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_electronics
+            pihc_military
+            pihc_infantry
+            pihc_air
+            pihc_summon
+        }
+        enable_equipments = {
+            EQUIPMENT_AUTOMATA_CREATURE
+        }
+        enable_subunits = {
+            infantry_automata
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

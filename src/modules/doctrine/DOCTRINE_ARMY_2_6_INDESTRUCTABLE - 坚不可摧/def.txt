@@ -1,0 +1,39 @@
+pihc_land_wall_of_unity_armor_core = {
+	track = armor
+	name = DOCTRINE_ARMY_2_6_INDESTRUCTABLE
+	description = DOCTRINE_ARMY_2_6_INDESTRUCTABLE_DESC
+	icon = GFX_doctrine_pihc_land_wall_of_unity_armor_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_all_armor = {
+		armor_value = 0.2
+	}
+	category_infantry_motorized = {
+		armor_value = 0.12
+	}
+	category_infantry_shield = {
+		armor_value = 0.5
+	}
+	rewards = {
+		natural_defense = {
+			winter_attrition_factor = -0.25
+			heat_attrition_factor = -0.25
+			terrain_penalty_reduction = 0.1
+			land_night_attack = 0.05
+			acclimatization_cold_climate_gain_factor = 0.25
+			acclimatization_hot_climate_gain_factor = 0.25
+		}
+	}
+}

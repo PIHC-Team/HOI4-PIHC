@@ -1,0 +1,192 @@
+operation_make_resistance_contacts = {
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
+	name = operation_make_resistance_contacts
+	desc = operation_make_resistance_contacts_desc
+	priority = 9
+	days = 60
+	network_strength = 40
+	operatives = 2
+	visible = {
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		FROM = {
+			any_controlled_state = {
+				has_resistance = yes
+			}
+		}
+		NOT = {
+			has_operation_token = {
+				tag = FROM
+				token = token_resistance_contacts
+			}
+		}
+		FROM = {
+			any_controlled_state = {
+				has_resistance = yes
+			}
+		}
+	}
+	equipment = {
+	}
+	selection_target = {
+		targets = {
+			FROM
+		}
+	}
+	selection_target_state = {
+		has_resistance = yes
+	}
+	available = {
+	}
+	awarded_tokens = {
+		token_resistance_contacts
+	}
+	risk_chance = 0.1
+	outcome_extra_chance = 0.25
+	risk_modifiers = {
+		operation_infiltrate_risk
+		operation_risk
+	}
+	outcome_modifiers = {
+		operation_infiltrate_outcome
+		operation_outcome
+	}
+	cost_modifiers = {
+		operation_infiltrate_cost
+		operation_cost
+	}
+	outcome_execute = {
+		ROOT = {
+			add_operation_token = {
+				tag = FROM
+				token = token_resistance_contacts
+			}
+		}
+	}
+	outcome_extra_execute = {
+		random_list = {
+			33 = {
+				ROOT = {
+					add_operation_token = {
+						tag = FROM
+						token = token_resistance_contacts
+					}
+				}
+				FROM.FROM = {
+					add_resistance_target = {
+						amount = 10
+						tooltip = intelligency_agency_resistance_boost_tt
+						days = 180
+					}
+					subtract_from_variable = {
+						boost_resistance_chance = 10
+					}
+				}
+			}
+			67 = {
+				ROOT = {
+					add_operation_token = {
+						tag = FROM
+						token = token_resistance_contacts
+					}
+				}
+				FROM.FROM = {
+					add_resistance_target = {
+						amount = 10
+						tooltip = intelligency_agency_resistance_boost_tt
+						days = 60
+					}
+					subtract_from_variable = {
+						boost_resistance_chance = 10
+					}
+				}
+			}
+		}
+	}
+	outcome_potential = {
+		ROOT = {
+			add_operation_token = {
+				tag = FROM
+				token = token_resistance_contacts
+			}
+		}
+	}
+	target_weight = {
+		base = 100
+		modifier = {
+			add = boost_resistance_chance
+		}
+		modifier = {
+			set_temp_variable = {
+				t = distance_to@ROOT.capital
+			}
+			divide_temp_variable = {
+				t = 600
+			}
+			clamp_temp_variable = {
+				var = t
+				min = 0
+				max = 1
+			}
+			multiply_temp_variable = {
+				t = -40
+			}
+			add = t
+		}
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		resistance_contacts_radio_circuits = {
+			base = 33
+		}
+		resistance_support_pidgeons = {
+			base = 33
+		}
+		resistance_contacts_briefings = {
+			base = 33
+		}
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = {
+			base = 30
+		}
+		exfiltration_go_to_ground = {
+			base = 30
+		}
+		exfiltration_submarine_pickup = {
+			base = 25
+		}
+	}
+}

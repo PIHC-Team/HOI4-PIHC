@@ -1,0 +1,146 @@
+NAMES_GROUP_C28_ARTILLERY = {
+    name = "骏鹰火炮师 (Hippogriff Artillery Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "骏鹰火炮师%d师 (Hippogriff Artillery Division %d)"
+}
+NAMES_GROUP_C28_TANK_LIGHT = {
+    name = "骏鹰轻型装甲师 (Hippogriff Light Armor Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "骏鹰轻型装甲师%d师 (Hippogriff Light Armor Division %d)"
+}
+NAMES_GROUP_C28_TRADITIONAL_REGULAR = {
+    name = "骏鹰常规步兵师 (Hippogriff Regular Infantry Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "骏鹰常规步兵师%d师 (Hippogriff Regular Infantry Division %d)"
+}
+NAMES_GROUP_C28_TANK_HEAVY = {
+    name = "骏鹰重型装甲师 (Hippogriff Heavy Armor Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "骏鹰重型装甲师%d师 (Hippogriff Heavy Armor Division %d)"
+}
+NAMES_GROUP_C28_TRADITIONAL_SMALL = {
+    name = "骏鹰小型步兵师 (Hippogriff Small Infantry Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "骏鹰小型步兵师%d师 (Hippogriff Small Infantry Division %d)"
+}
+NAMES_GROUP_C28_AUTOMATA = {
+    name = "骏鹰自动作战师 (Hippogriff Automata Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "骏鹰自动作战师%d师 (Hippogriff Automata Division %d)"
+}
+NAMES_GROUP_C28_SHIELD = {
+    name = "骏鹰重装步兵师 (Hippogriff Heavy Infantry Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "骏鹰重装步兵师%d师 (Hippogriff Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C28_MAGICAL = {
+    name = "骏鹰魔法步兵师 (Hippogriff Magical Infantry Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "骏鹰魔法步兵师%d师 (Hippogriff Magical Infantry Division %d)"
+}
+NAMES_GROUP_C28_INFANTRY_MIX = {
+    name = "骏鹰协同师 (Hippogriff Concerted Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "骏鹰协同师%d师 (Hippogriff Concerted Division %d)"
+}
+NAMES_GROUP_C28_MOTORIZED = {
+    name = "骏鹰机动步兵师 (Hippogriff Motorized Infantry Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "骏鹰机动步兵师%d师 (Hippogriff Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C28_TANK_MEDIUM = {
+    name = "骏鹰中型装甲师 (Hippogriff Medium Armor Division)"
+    for_countries = {
+        C28
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "骏鹰中型装甲师%d师 (Hippogriff Medium Armor Division %d)"
+}

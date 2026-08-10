@@ -1,0 +1,101 @@
+focus = {
+	id = FOCUS_C01_MARESHALL_PLAN
+	icon = GFX_FOCUS_C01_MARESHALL_PLAN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_ECONOMIC_POLICY
+	}
+	completion_reward = {
+		C02 = {
+			if = {
+				limit = {
+					is_in_faction_with = C01
+				}
+				random_owned_controlled_state = {
+					BUILD_A_CIC = yes
+					BUILD_A_CIC = yes
+				}
+				add_ideas = IDEA_C01_MARESHALL_PLAN
+				add_power_balance_value = {
+					id = BOP_C02_INDEPENDENCE
+					value = -0.15
+					tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+				}
+			}
+		}
+		C03 = {
+			if = {
+				limit = {
+					is_in_faction_with = C01
+				}
+				random_owned_controlled_state = {
+					BUILD_A_CIC = yes
+					BUILD_A_CIC = yes
+				}
+				add_ideas = IDEA_C01_MARESHALL_PLAN
+				add_power_balance_value = {
+					id = BOP_C03_INDEPENDENCE
+					value = -0.15
+					tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+				}
+			}
+		}
+		C04 = {
+			if = {
+				limit = {
+					is_in_faction_with = C01
+				}
+				random_owned_controlled_state = {
+					BUILD_A_CIC = yes
+					BUILD_A_CIC = yes
+				}
+				add_ideas = IDEA_C01_MARESHALL_PLAN
+				add_power_balance_value = {
+					id = BOP_C04_INDEPENDENCE
+					value = -0.15
+					tooltip_side = BOP_C04_INDEPENDENCE_LEFT_SIDE
+				}
+			}
+		}
+		C10 = {
+			if = {
+				limit = {
+					is_in_faction_with = C01
+				}
+				random_owned_controlled_state = {
+					BUILD_A_CIC = yes
+					BUILD_A_CIC = yes
+				}
+				add_ideas = IDEA_C01_MARESHALL_PLAN
+				add_power_balance_value = {
+					id = BOP_C10_INDEPENDENCE
+					value = -0.15
+					tooltip_side = BOP_C10_INDEPENDENCE_LEFT_SIDE
+				}
+			}
+		}
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 5
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 3
+}

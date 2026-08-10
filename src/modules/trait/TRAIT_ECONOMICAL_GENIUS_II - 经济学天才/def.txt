@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_ECONOMICAL_GENIUS_II = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		local_resources_factor = 0.08
+	}
+}

@@ -1,0 +1,62 @@
+DECISION_CATEGORY_C18_SMUGGLING_CASE = {
+    DECISION_C18_SMUGGLING_CASE_INVESTIGATE_NAN_DU = {
+        fixed_random_seed = no
+        priority = 98
+        cost = 5
+        days_remove = 30
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        highlight_states = {
+            highlight_state_targets = {
+                state = 60
+            }
+        }
+        targets = {
+            state = 60
+        }
+        target_trigger = {
+            always = yes
+        }
+        visible = {
+            C18 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7
+                }
+            }
+        }
+        available = {
+            60 = {
+                is_owned_by = C18
+                is_fully_controlled_by = C18
+            }
+            custom_trigger_tooltip = {
+                tooltip = C18_SMUGGLING_CASE_ONLY_ONE_INVESTIGATION_TOOLTIP
+                C18 = {
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+        }
+        remove_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+            hidden_effect = {
+                country_event = {
+                    id = C18_MAIN.21
+                }
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 100
+        }
+        icon = C18_SMUGGLING_CASE_INVESTIGATE_NAN_DU
+    }
+}

@@ -1,0 +1,12 @@
+has_not_initiated_border_incident_with_ROOT = {
+	custom_trigger_tooltip = {
+		tooltip = not_initiated_border_incident_with_ROOT
+		NOT = {
+			any_state = {
+				check_variable = {
+					ROOT.defender_state_vs_@PREV = id
+				}
+			}
+		}
+	}
+}

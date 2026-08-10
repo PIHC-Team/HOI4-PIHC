@@ -1,0 +1,101 @@
+DECISION_CATEGORY_C02_POPULARITY = {
+    DECISION_C02_PRAISE_OCTAVIA = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 75
+        days_re_enable = 150
+        allowed = {
+            tag = C02
+        }
+        visible = {
+            has_character = CHARACTER_OCTAVIA
+        }
+        available = {
+            has_character = CHARACTER_OCTAVIA
+            CHARACTER_OCTAVIA = {
+                is_hired_as_advisor = yes
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = C02_MARE_DEC_5
+            custom_effect_tooltip = C02_OCTAVIA_INC_15
+            custom_effect_tooltip = C02_FILTHY_RICH_DEC_5
+            custom_effect_tooltip = C02_DOCTOR_HOOVES_DEC_5
+            hidden_effect = {
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    value = -0.05
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    min = 0.0
+                    max = 1.0
+                }
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_OCTAVIA
+                    value = 0.15
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_OCTAVIA
+                    min = 0.0
+                    max = 1.0
+                }
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_FILTHY_RICH
+                    value = -0.05
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_FILTHY_RICH
+                    min = 0.0
+                    max = 1.0
+                }
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+                    value = -0.05
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+                    min = 0.0
+                    max = 1.0
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 100
+                check_variable = {
+                    var = C02.VAR_C02_ELECTION_OCTAVIA
+                    value = 0.25
+                    compare = less_than_or_equals
+                }
+            }
+            modifier = {
+                add = 100
+                check_variable = {
+                    var = C02.VAR_C02_ELECTION_OCTAVIA
+                    value = 0.45
+                    compare = less_than_or_equals
+                }
+                OR = {
+                    check_variable = {
+                        var = C02.VAR_C02_ELECTION_FILTHY_RICH
+                        value = 0.75
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = {
+                        var = C02.VAR_C02_ELECTION_MARE
+                        value = 0.75
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = {
+                        var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+                        value = 0.75
+                        compare = greater_than_or_equals
+                    }
+                }
+            }
+        }
+        icon = C02_PRAISE_OCTAVIA
+    }
+}

@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C07_LPEG_MINE_DIAMONDIA
+	icon = GFX_FOCUS_C07_LPEG_MINE_DIAMONDIA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPEG_MINE
+	}
+	cost = 5
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C07_LPEG_MINE_DIAMONDIA_TOOLTIP
+		annex_country = {
+			target = C39
+			transfer_troops = yes
+		}
+	}
+	available = {
+		C39 = {
+			is_ai = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 5
+}

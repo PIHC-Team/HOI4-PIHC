@@ -1,0 +1,19 @@
+ADD_TO_C00_WASTELAND = {
+	if = {
+		limit = {
+			NOT = {
+				pihc_bgfx_fog > 0
+			}
+		}
+		add_building_construction = {
+			type = pihc_bgfx_fog
+			level = 1
+			instant_build = yes
+			province = {
+				all_provinces = yes
+			}
+		}
+	}
+	add_core_of = C00
+	transfer_state_to = C00
+}

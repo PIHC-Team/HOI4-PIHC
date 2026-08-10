@@ -1,0 +1,107 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/state
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-state
+items:
+-   kind: entity
+    identifier: pihc3-state
+    name: PIHC3 State Module
+    desc: Project-owned state source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3State
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-state
+    name: PIHC3 State
+    desc: PIHC3 state module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-state
+        definition:
+            identifier: pihc3-state
+            name: PIHC3 State
+            version: 0.2.3
+            desc: PIHC3 state module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-state
+            meta:
+                project: PIHC3
+                family: state
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-state
+    name: PIHC3 State Compiler
+    desc: Registry-backed source slots and compiler hooks for state.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: states
+            title: States
+            group: world
+            title_key: modules.states.title
+        dependencies:
+        - extension:pihc3-state
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-c38481895c8cbd9e
+    name: PIHC3 Basic State
+    desc: PIHC3 authoring template pihc3:state/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:state/basic
+            declaration:
+                title: PIHC3 Basic State
+                family: state
+                args:
+                    title:
+                        required: true
+                    owner:
+                        default: TAG
+                    manpower:
+                        default: '1000'
+                    state_category:
+                        default: rural
+                    infrastructure:
+                        default: '1'
+                    language:
+                        default: en
+                files:
+                    def.txt: "state = {{\n\tid = {object_id}\n\tname = STATE_{object_id}\n\
+                        \tmanpower = {manpower}\n\tstate_category = {state_category}\n\
+                        \n\thistory = {{\n\t\towner = {owner}\n\t\tadd_core_of = {owner}\n\
+                        \n\t\tbuildings = {{\n\t\t\tinfrastructure = {infrastructure}\n\
+                        \t\t}}\n\t}}\n\n\tprovinces = {{\n\t}}\n}}\n"
+                    main.loc: '[{language}.STATE_{object_id}]
+
+                        {title}
+
+                        '
+                directory: '{object_id} - {title}'

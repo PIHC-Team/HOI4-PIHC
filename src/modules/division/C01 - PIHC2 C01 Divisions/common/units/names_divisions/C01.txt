@@ -1,0 +1,146 @@
+NAMES_GROUP_C01_ARTILLERY = {
+    name = "帝国火炮师 (Imperial Artillery Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "帝国火炮师%d师 (Imperial Artillery Division %d)"
+}
+NAMES_GROUP_C01_TANK_LIGHT = {
+    name = "帝国轻型装甲师 (Imperial Light Armor Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "帝国轻型装甲师%d师 (Imperial Light Armor Division %d)"
+}
+NAMES_GROUP_C01_TRADITIONAL_REGULAR = {
+    name = "帝国常规步兵师 (Imperial Regular Infantry Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "帝国常规步兵师%d师 (Imperial Regular Infantry Division %d)"
+}
+NAMES_GROUP_C01_TANK_HEAVY = {
+    name = "帝国重型装甲师 (Imperial Heavy Armor Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "帝国重型装甲师%d师 (Imperial Heavy Armor Division %d)"
+}
+NAMES_GROUP_C01_TRADITIONAL_SMALL = {
+    name = "帝国小型步兵师 (Imperial Small Infantry Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "帝国小型步兵师%d师 (Imperial Small Infantry Division %d)"
+}
+NAMES_GROUP_C01_AUTOMATA = {
+    name = "帝国自动作战师 (Imperial Automata Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "帝国自动作战师%d师 (Imperial Automata Division %d)"
+}
+NAMES_GROUP_C01_SHIELD = {
+    name = "帝国重装步兵师 (Imperial Heavy Infantry Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "帝国重装步兵师%d师 (Imperial Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C01_MAGICAL = {
+    name = "帝国魔法步兵师 (Imperial Magical Infantry Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "帝国魔法步兵师%d师 (Imperial Magical Infantry Division %d)"
+}
+NAMES_GROUP_C01_INFANTRY_MIX = {
+    name = "帝国协同师 (Imperial Concerted Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "帝国协同师%d师 (Imperial Concerted Division %d)"
+}
+NAMES_GROUP_C01_MOTORIZED = {
+    name = "帝国机动步兵师 (Imperial Motorized Infantry Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "帝国机动步兵师%d师 (Imperial Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C01_TANK_MEDIUM = {
+    name = "帝国中型装甲师 (Imperial Medium Armor Division)"
+    for_countries = {
+        C01
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "帝国中型装甲师%d师 (Imperial Medium Armor Division %d)"
+}

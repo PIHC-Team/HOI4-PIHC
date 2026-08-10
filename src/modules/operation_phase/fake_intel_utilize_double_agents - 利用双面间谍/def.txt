@@ -1,0 +1,13 @@
+fake_intel_utilize_double_agents = {
+	name = fake_intel_utilize_double_agents
+	desc = fake_intel_utilize_double_agents_desc
+	outcome = fake_intel_utilize_double_agents_outcome
+	picture = GFX_phase_fake_intel_utilize_double_agents
+	icon = GFX_phase_fake_intel_utilize_double_agents_small
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

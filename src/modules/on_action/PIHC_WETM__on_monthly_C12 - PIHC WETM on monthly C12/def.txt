@@ -1,0 +1,15 @@
+on_actions = {
+	on_monthly_C12 = {
+		effect = {
+			add_to_variable = {
+				var = VAR_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER
+				value = VAR_ORE_BOULDERS_PRODUCE
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			add_to_variable = {
+				var = global.VAR_ORE_BOULDERS_MARKET
+				value = 50
+			}
+		}
+	}
+}

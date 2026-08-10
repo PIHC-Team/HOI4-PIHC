@@ -1,0 +1,29 @@
+DECISION_CATEGORY_GOLD_FINGER = {
+    DECISION_WAR_SINGLE = {
+        fixed_random_seed = no
+        priority = 1
+        cost = 1000
+        days_remove = 30
+        available = {
+            is_ironman = no
+        }
+        target_trigger = {
+            country_exists = FROM
+            FROM = {
+                NOT = {
+                    tag = C00
+                }
+            }
+        }
+        war_with_target_on_remove = yes
+        remove_effect = {
+            ROOT = {
+                create_wargoal = {
+                    type = annex_everything
+                    target = FROM
+                }
+            }
+        }
+        icon = WAR_SINGLE
+    }
+}

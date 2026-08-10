@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C08_T_TRIXIE
+	icon = GFX_FOCUS_C08_T_TRIXIE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 2
+	prerequisite = {
+		focus = FOCUS_C08_THE_RISING_FIRE
+	}
+	completion_reward = {
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C08_T_TRIXIE_TOOLTIP
+			has_country_flag = PIHC_COUNTRY_FLAG_C08_TRIXIE_ALIVE
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 6
+	y = 6
+}

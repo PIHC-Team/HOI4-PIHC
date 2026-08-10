@@ -1,0 +1,18 @@
+@cost = 30
+unit_medals = {
+	communist_service_medal = {
+		available = {
+			has_government = equatism
+		}
+		frame = 1
+		icon = GFX_medal_icon_equatism
+		cost = @cost
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

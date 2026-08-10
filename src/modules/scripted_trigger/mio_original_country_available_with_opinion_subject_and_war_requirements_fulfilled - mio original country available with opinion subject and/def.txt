@@ -1,0 +1,14 @@
+mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = {
+	has_opinion = {
+		target = ROOT
+		value > 49
+	}
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
+	}
+	has_capitulated = no
+	NOT = {
+		has_war_with = ROOT
+	}
+}

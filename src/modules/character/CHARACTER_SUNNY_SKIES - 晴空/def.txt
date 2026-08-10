@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SUNNY_SKIES = {
+        name = CHARACTER_SUNNY_SKIES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SUNNY_SKIES.dds"
+                small = "gfx/leaders/CHARACTER_SUNNY_SKIES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SUNNY_SKIES_army.dds"
+                small = "gfx/leaders/CHARACTER_SUNNY_SKIES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SUNNY_SKIES_navy.dds"
+                small = "gfx/leaders/CHARACTER_SUNNY_SKIES_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_SUNNY_SKIES_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_freestate
+        }
+    }
+}

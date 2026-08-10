@@ -1,0 +1,15 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_3RA_C01_SWANIFYING_COMMITTEE = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		tag = C01
+	}
+	happened = {
+		hidden_trigger = {
+			has_idea = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+		}
+	}
+}

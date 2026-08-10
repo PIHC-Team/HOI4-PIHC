@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_EXPERIENCED_COMMANDER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.05
+		defence = 0.05
+		command_power_gain = 0.2
+		experience_gain_factor = 0.3
+	}
+}

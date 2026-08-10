@@ -1,0 +1,69 @@
+capital = 774
+set_popularities = {
+    democratic = 60
+    despotic = 20
+    harmonicism = 15
+    fascism = 5
+}
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C35
+recruit_character = CHARACTER_ANUGYPT_CITYSTATES
+add_ideas = closed_economy
+add_ideas = disarmed_nation
+add_ideas = civilian_economy
+set_rule = {
+    can_join_factions = no
+}
+set_stability = 1.0
+set_war_support = 0.0
+set_research_slots = 2
+country_lock_all_division_template = yes
+add_manpower = 10000
+set_major = no

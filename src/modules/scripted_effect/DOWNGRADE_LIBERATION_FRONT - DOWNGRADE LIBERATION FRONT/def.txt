@@ -1,0 +1,74 @@
+DOWNGRADE_LIBERATION_FRONT = {
+	add_to_variable = {
+		var = VAR_C08_LIBERATION_FRONT
+		value = -1
+	}
+	clamp_variable = {
+		var = VAR_C08_LIBERATION_FRONT
+		min = 1
+		max = 8
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_2
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_2
+			add_idea = IDEA_C08_LIBERATION_FRONT_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_3
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_3
+			add_idea = IDEA_C08_LIBERATION_FRONT_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_4
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_4
+			add_idea = IDEA_C08_LIBERATION_FRONT_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_5
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_5
+			add_idea = IDEA_C08_LIBERATION_FRONT_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_6
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_6
+			add_idea = IDEA_C08_LIBERATION_FRONT_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_7
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_7
+			add_idea = IDEA_C08_LIBERATION_FRONT_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C08_LIBERATION_FRONT_8
+		}
+		swap_ideas = {
+			remove_idea = IDEA_C08_LIBERATION_FRONT_8
+			add_idea = IDEA_C08_LIBERATION_FRONT_7
+		}
+	}
+}

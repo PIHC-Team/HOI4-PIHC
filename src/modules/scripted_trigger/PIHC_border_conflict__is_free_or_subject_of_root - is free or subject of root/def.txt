@@ -1,0 +1,6 @@
+is_free_or_subject_of_root = {
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
+	}
+}

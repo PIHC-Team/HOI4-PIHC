@@ -1,0 +1,51 @@
+technologies = {
+    TECHNOLOGY_FIREARM_EXPLOSIVE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 4
+                y = 8
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_firearm
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        infantry_traditional = {
+            soft_attack = 0.1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_III
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_IV
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = 50
+                arms_factory > 30
+            }
+            modifier = {
+                add = 20
+                arms_factory > 10
+            }
+            modifier = {
+                add = 10
+                date > 1005.1.1
+            }
+        }
+        research_cost = 3
+        start_year = 1002
+    }
+}

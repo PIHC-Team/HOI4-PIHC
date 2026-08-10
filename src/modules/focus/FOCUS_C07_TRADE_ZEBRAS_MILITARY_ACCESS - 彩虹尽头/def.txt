@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C07_TRADE_ZEBRAS_MILITARY_ACCESS
+	icon = GFX_FOCUS_C07_TRADE_ZEBRAS_MILITARY_ACCESS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_TRADE_CONTACT_ZEBRAS
+	}
+	cost = 3
+	completion_reward = {
+		C30 = {
+			give_military_access = C07
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 3
+	y = 5
+}

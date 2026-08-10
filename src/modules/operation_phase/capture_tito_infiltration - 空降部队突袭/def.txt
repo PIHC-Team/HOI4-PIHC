@@ -1,0 +1,9 @@
+capture_tito_infiltration = {
+	name = capture_tito_infiltration
+	desc = capture_tito_infiltration_desc
+	icon = GFX_phase_capture_tito_infiltration_small
+	picture = GFX_phase_capture_tito_infiltration
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 2
+	}
+}

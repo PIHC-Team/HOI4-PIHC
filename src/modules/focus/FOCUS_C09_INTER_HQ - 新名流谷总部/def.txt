@@ -1,0 +1,46 @@
+focus = {
+	id = FOCUS_C09_INTER_HQ
+	icon = GFX_FOCUS_C09_INTER_HQ_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_INTER_PURCHASE_EAST
+	}
+	cost = 6
+	completion_reward = {
+		set_capital = {
+			state = 531
+			remember_old_capital = yes
+		}
+		C09 = {
+			add_ideas = IDEA_EIJC_MEMBER
+		}
+		every_possible_country = {
+			limit = {
+				is_in_faction_with = C09
+				NOT = {
+					has_idea = IDEA_EIJC_MEMBER
+				}
+			}
+			add_ideas = IDEA_EIJC_MEMBER
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 13
+}

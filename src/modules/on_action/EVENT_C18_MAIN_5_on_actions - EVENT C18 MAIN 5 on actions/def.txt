@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C18 = {
+				country_event = {
+					id = C18_MAIN.5
+					days = 31
+					random_days = 90
+				}
+			}
+		}
+	}
+}

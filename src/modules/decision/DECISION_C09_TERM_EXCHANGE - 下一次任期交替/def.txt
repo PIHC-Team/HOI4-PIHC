@@ -1,0 +1,43 @@
+DECISION_CATEGORY_C09_TERM = {
+    DECISION_C09_TERM_EXCHANGE = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 0
+        selectable_mission = no
+        days_mission_timeout = 358
+        days_re_enable = 7
+        allowed = {
+            tag = C09
+        }
+        activation = {
+            always = yes
+        }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    C09 = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_STELLAR_FLARE
+                    }
+                }
+                clr_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_STELLAR_FLARE
+                set_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_FIRELIGHT
+                promote_character = {
+                    character = CHARACTER_FIRELIGHT
+                    ideology = democratic_democracy
+                }
+            }
+            else = {
+                clr_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_FIRELIGHT
+                set_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_STELLAR_FLARE
+                promote_character = {
+                    character = CHARACTER_STELLAR_FLARE
+                    ideology = democratic_oligarchy
+                }
+            }
+        }
+        icon = C09_TERM_EXCHANGE
+    }
+}

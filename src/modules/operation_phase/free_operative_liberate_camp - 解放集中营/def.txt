@@ -1,0 +1,10 @@
+free_operative_liberate_camp = {
+	name = free_operative_liberate_camp
+	desc = free_operative_liberate_camp_desc
+	outcome = free_operative_liberate_camp_outcome
+	picture = GFX_phase_free_operative_liberate_camp
+	icon = GFX_phase_free_operative_liberate_camp_small
+	equipment = {
+		ARCHETYPE_INFANTRY = 200
+	}
+}

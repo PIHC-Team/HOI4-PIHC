@@ -1,0 +1,19 @@
+MODULE_PLANE_ENGINE_3C_NECRO = {
+	category = pihc_plane_engine_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 10.0
+		weight = 10.0
+	}
+	multiply_stats = {
+		maximum_speed = 0.5
+		fuel_consumption = -1.0
+		air_range = 1.0
+	}
+	xp_cost = 15
+	allowed_module_categories = {
+		armor_type_slot = {
+			pihc_plane_armor_type_2_necro
+		}
+	}
+}

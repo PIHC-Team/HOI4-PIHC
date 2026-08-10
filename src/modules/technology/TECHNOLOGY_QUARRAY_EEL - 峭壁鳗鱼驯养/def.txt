@@ -1,0 +1,37 @@
+technologies = {
+    TECHNOLOGY_QUARRAY_EEL = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 16
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+            pihc_special
+        }
+        enable_equipments = {
+            EQUIPMENT_SPECIAL_COLOSSAL_QUARRAY_EEL
+        }
+        enable_subunits = {
+            infantry_colossal
+        }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = TECHNOLOGY_QUARRAY_EEL_TOOLTIP
+                has_country_flag = PIHC_COUNTRY_FLAG_C12_QUARRAY_EEL_KNOWN
+            }
+        }
+        allow_branch = {
+            tag = C12
+        }
+        research_cost = 1.0
+        start_year = 1005
+    }
+}

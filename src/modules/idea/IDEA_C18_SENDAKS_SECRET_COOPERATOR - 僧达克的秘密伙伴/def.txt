@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C18_SENDAKS_SECRET_COOPERATOR = {
+			picture = C18_SENDAKS_SECRET_COOPERATOR
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_C18_SENDAKS_SECRET_COOPERATOR_MODIFIER_TOOLTIP
+				cic_construction_boost_factor = 0.1
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				monthly_population = -0.05
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

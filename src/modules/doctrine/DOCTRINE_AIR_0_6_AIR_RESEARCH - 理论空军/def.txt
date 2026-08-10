@@ -1,0 +1,49 @@
+pihc_air_open_sky_heavy_aircraft_core = {
+	track = heavy_aircraft
+	name = DOCTRINE_AIR_0_6_AIR_RESEARCH
+	description = DOCTRINE_AIR_0_6_AIR_RESEARCH_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_heavy_aircraft_core_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	air_manpower_requirement_factor = -0.2
+	air_weather_penalty = -0.1
+	air_accidents_factor = -0.1
+	category_all_artillery = {
+		air_attack = 5.0
+	}
+	category_air = {
+		build_cost_ic = -0.1
+	}
+	rewards = {
+		air_range = {
+			air_range_factor = 0.1
+			air_power_projection_factor = 0.1
+			air_fuel_consumption_factor = -0.25
+			air_superiority_detect_factor = 0.15
+			category_air_balloon = {
+				air_defence = 0.05
+				air_superiority = 0.1
+			}
+			category_air_galleon = {
+				air_defence = 0.08
+				air_superiority = 0.1
+			}
+			category_air_airship = {
+				air_defence = 0.12
+				air_superiority = 0.1
+			}
+		}
+	}
+}

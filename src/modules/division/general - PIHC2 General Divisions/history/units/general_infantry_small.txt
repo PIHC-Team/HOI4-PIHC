@@ -1,0 +1,22 @@
+division_template = {
+    name = "通用小型步兵师 (Generic Small Infantry Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

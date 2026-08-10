@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_ALL_ARTIFACT_DIAMOND_OF_LAPIS_LUX = {
+			picture = ALL_ARTIFACT_DIAMOND_OF_LAPIS_LUX
+			removal_cost = -1
+			modifier = {
+				country_resource_crystals = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

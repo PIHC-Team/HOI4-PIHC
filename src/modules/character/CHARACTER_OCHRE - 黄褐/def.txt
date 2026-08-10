@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_OCHRE = {
+        name = CHARACTER_OCHRE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_OCHRE.dds"
+                small = "gfx/leaders/CHARACTER_OCHRE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_OCHRE_army.dds"
+                small = "gfx/leaders/CHARACTER_OCHRE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_OCHRE_navy.dds"
+                small = "gfx/leaders/CHARACTER_OCHRE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_OCHRE
+            desc = CHARACTER_OCHRE_DESC
+            traits = {
+                TRAIT_FREIGHT_SUPPLY_BUREAU
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = army_chief
+        }
+    }
+}

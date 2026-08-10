@@ -1,0 +1,40 @@
+focus = {
+	id = FOCUS_C08_TOGETHER_FOR_VICTORY
+	icon = GFX_FOCUS_C08_TOGETHER_FOR_VICTORY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_VOICE_OF_FRIENDSHIP
+	}
+	prerequisite = {
+		focus = FOCUS_C08_OLD_FRIENDS
+	}
+	prerequisite = {
+		focus = FOCUS_C08_WASTELAND_ADVENTURE
+	}
+	cost = 4
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_TOGETHER_FOR_VICTORY_TOOLTIP
+		add_political_power = 75
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_command_power = 20
+		army_experience = 30
+		navy_experience = 10
+		air_experience = 30
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 6
+}

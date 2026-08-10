@@ -1,0 +1,19 @@
+DECISION_CATEGORY_POLITICAL_PROPAGANDA = {
+    DECISION_EMERGENT_PR = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 90
+        visible = {
+            has_political_power > -200
+            has_political_power < 16
+        }
+        complete_effect = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = EMERGENT_PR
+    }
+}

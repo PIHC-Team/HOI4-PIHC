@@ -1,0 +1,1233 @@
+add_namespace = C14_MAIN
+country_event = {
+    id = C14_MAIN.1
+    picture = GFX_EVENT_C14_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_1
+    desc = EVENT_C14_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_variable = {
+            var = VAR_ZAP_APPLES_HARVEST
+            value = 1.0
+        }
+        CALCULATE_ZAP_APPLES_YEARLY = yes
+        add_to_variable = {
+            var = VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE
+            value = VAR_ZAP_APPLES_YEARLY
+        }
+        INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        custom_effect_tooltip = EVENT_C14_MAIN_1_TOOLTIP
+        name = EVENT_C14_MAIN_1_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.2
+    picture = GFX_EVENT_C14_MAIN_2
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_2
+    desc = EVENT_C14_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_variable = {
+            var = VAR_ZAP_APPLES_HARVEST
+            value = 0.75
+        }
+        CALCULATE_ZAP_APPLES_YEARLY = yes
+        add_to_variable = {
+            var = VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE
+            value = VAR_ZAP_APPLES_YEARLY
+        }
+        INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        custom_effect_tooltip = EVENT_C14_MAIN_2_TOOLTIP
+        name = EVENT_C14_MAIN_2_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.3
+    picture = GFX_EVENT_C14_MAIN_3
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_3
+    desc = EVENT_C14_MAIN_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_variable = {
+            var = VAR_ZAP_APPLES_HARVEST
+            value = 1.5
+        }
+        CALCULATE_ZAP_APPLES_YEARLY = yes
+        add_to_variable = {
+            var = VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE
+            value = VAR_ZAP_APPLES_YEARLY
+        }
+        INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        custom_effect_tooltip = EVENT_C14_MAIN_3_TOOLTIP
+        name = EVENT_C14_MAIN_3_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.4
+    picture = GFX_EVENT_C14_MAIN_4
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_4
+    desc = EVENT_C14_MAIN_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_variable = {
+            var = VAR_ZAP_APPLES_HARVEST
+            value = 0.25
+        }
+        CALCULATE_ZAP_APPLES_YEARLY = yes
+        add_to_variable = {
+            var = VAR_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE
+            value = VAR_ZAP_APPLES_YEARLY
+        }
+        INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        custom_effect_tooltip = EVENT_C14_MAIN_3_TOOLTIP
+        name = EVENT_C14_MAIN_4_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.5
+    picture = GFX_EVENT_C14_MAIN_5
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_5
+    desc = EVENT_C14_MAIN_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        579 = {
+            set_demilitarized_zone = yes
+        }
+        give_resource_rights = {
+            receiver = C14
+            state = 579
+        }
+        590 = {
+            set_demilitarized_zone = yes
+        }
+        give_resource_rights = {
+            receiver = C14
+            state = 590
+        }
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C14_MAIN_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        effect_tooltip = {
+            579 = {
+                set_demilitarized_zone = yes
+            }
+            give_resource_rights = {
+                receiver = C14
+                state = 579
+            }
+            590 = {
+                set_demilitarized_zone = yes
+            }
+            give_resource_rights = {
+                receiver = C14
+                state = 590
+            }
+        }
+        name = EVENT_C14_MAIN_5_o1
+    }
+}
+country_event = {
+    id = C14_MAIN.6
+    picture = GFX_EVENT_C14_MAIN_6
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_6
+    desc = EVENT_C14_MAIN_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        553 = {
+            set_demilitarized_zone = yes
+        }
+        give_resource_rights = {
+            receiver = C14
+            state = 553
+        }
+        533 = {
+            set_demilitarized_zone = yes
+        }
+        give_resource_rights = {
+            receiver = C14
+            state = 533
+        }
+        add_to_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            value = -0.05
+        }
+        clamp_variable = {
+            var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+            min = 0.0
+            max = 1.0
+        }
+        name = EVENT_C14_MAIN_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        effect_tooltip = {
+            553 = {
+                set_demilitarized_zone = yes
+            }
+            give_resource_rights = {
+                receiver = C14
+                state = 553
+            }
+            533 = {
+                set_demilitarized_zone = yes
+            }
+            give_resource_rights = {
+                receiver = C14
+                state = 533
+            }
+        }
+        name = EVENT_C14_MAIN_6_o1
+    }
+}
+country_event = {
+    id = C14_MAIN.7
+    picture = GFX_EVENT_C14_MAIN_7
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_7
+    desc = EVENT_C14_MAIN_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_power_balance_value = {
+            id = BOP_C12_INDEPENDENCE
+            value = 0.1
+            tooltip_side = BOP_C12_INDEPENDENCE_RIGHT_SIDE
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C12_IN_METEORITE_INCIDENT
+        name = EVENT_C14_MAIN_7_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C14_MAIN_7_o1
+    }
+}
+news_event = {
+    id = C14_MAIN.8
+    picture = GFX_EVENT_C14_MAIN_8
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_8
+    desc = EVENT_C14_MAIN_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        name = EVENT_C14_MAIN_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        trigger = {
+            tag = C01
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_8_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_CRUSADE_C14
+        name = EVENT_C14_MAIN_8_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 90
+        }
+        trigger = {
+            tag = C01
+        }
+        C14 = {
+            add_power_balance_value = {
+                id = BOP_C14_INDEPENDENCE
+                value = 0.2
+                tooltip_side = BOP_C14_INDEPENDENCE_RIGHT_SIDE
+            }
+        }
+        C12 = {
+            add_power_balance_value = {
+                id = BOP_C12_INDEPENDENCE
+                value = 0.1
+                tooltip_side = BOP_C12_INDEPENDENCE_RIGHT_SIDE
+            }
+        }
+        name = EVENT_C14_MAIN_8_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C01
+            }
+        }
+        name = EVENT_C14_MAIN_8_o3
+    }
+}
+news_event = {
+    id = C14_MAIN.9
+    picture = GFX_EVENT_C14_MAIN_9
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_9
+    desc = EVENT_C14_MAIN_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        C14 = {
+            add_power_balance_value = {
+                id = BOP_C14_INDEPENDENCE
+                value = 0.3
+                tooltip_side = BOP_C14_INDEPENDENCE_RIGHT_SIDE
+            }
+        }
+        if = {
+            limit = {
+                C12 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C12_IN_METEORITE_INCIDENT
+                }
+            }
+            add_power_balance_value = {
+                id = BOP_C12_INDEPENDENCE
+                value = 0.15
+                tooltip_side = BOP_C12_INDEPENDENCE_RIGHT_SIDE
+            }
+        }
+        C01 = {
+            remove_resource_rights = 86
+        }
+        name = EVENT_C14_MAIN_9_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_8_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_CRUSADE_C14
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_C14_METEORITE_INCIDENT_OVER
+        effect_tooltip = {
+            C01 = {
+                remove_resource_rights = 86
+            }
+        }
+        name = EVENT_C14_MAIN_9_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C01
+            }
+        }
+        name = EVENT_C14_MAIN_9_o2
+    }
+}
+news_event = {
+    id = C14_MAIN.10
+    picture = GFX_EVENT_C14_MAIN_10
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_10
+    desc = EVENT_C14_MAIN_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        C14 = {
+            add_power_balance_value = {
+                id = BOP_C14_INDEPENDENCE
+                value = -0.3
+                tooltip_side = BOP_C14_INDEPENDENCE_LEFT_SIDE
+            }
+            give_military_access = C01
+        }
+        if = {
+            limit = {
+                C12 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C12_IN_METEORITE_INCIDENT
+                }
+            }
+            add_power_balance_value = {
+                id = BOP_C12_INDEPENDENCE
+                value = -0.15
+                tooltip_side = BOP_C12_INDEPENDENCE_LEFT_SIDE
+            }
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_C14_METEORITE_INCIDENT_OVER
+        name = EVENT_C14_MAIN_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        name = EVENT_C14_MAIN_10_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C01
+            }
+        }
+        name = EVENT_C14_MAIN_10_o2
+    }
+}
+country_event = {
+    id = C14_MAIN.11
+    picture = GFX_EVENT_C14_MAIN_11
+    immediate = {
+        C01 = {
+            news_event = {
+                id = C14_MAIN.9
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_11
+    desc = EVENT_C14_MAIN_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C14_MAIN_11_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.12
+    picture = GFX_EVENT_C14_MAIN_12
+    immediate = {
+        C01 = {
+            news_event = {
+                id = C14_MAIN.10
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_12
+    desc = EVENT_C14_MAIN_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C14_MAIN_12_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.13
+    picture = GFX_EVENT_C14_MAIN_13
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_13
+    desc = EVENT_C14_MAIN_13_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_13_CIV_0_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C14_PROVIDED_CIV_FACTORIES
+                    value = 0
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_13_CIV_2_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C14_PROVIDED_CIV_FACTORIES
+                    value = 2
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_13_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_13_CIV_4_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C14_PROVIDED_CIV_FACTORIES
+                    value = 4
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_13_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_13_CIV_6_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C14_PROVIDED_CIV_FACTORIES
+                    value = 6
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_13_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_13_CIV_8_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C14_PROVIDED_CIV_FACTORIES
+                    value = 8
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_13_o4
+    }
+}
+country_event = {
+    id = C14_MAIN.14
+    picture = GFX_EVENT_C14_MAIN_14
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_14
+    desc = EVENT_C14_MAIN_14_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            tag = C02
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_14_CIV_0_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C02_PROVIDED_CIV_FACTORIES
+                    value = 0
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_14_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C02
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_14_CIV_2_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C02_PROVIDED_CIV_FACTORIES
+                    value = 2
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_14_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C02
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_14_CIV_4_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C02_PROVIDED_CIV_FACTORIES
+                    value = 4
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_14_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C02
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_14_CIV_6_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C02_PROVIDED_CIV_FACTORIES
+                    value = 6
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_14_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 25
+        }
+        trigger = {
+            tag = C02
+        }
+        custom_effect_tooltip = EVENT_C14_MAIN_14_CIV_8_TOOLTIP
+        hidden_effect = {
+            C31 = {
+                set_variable = {
+                    var = VAR_C02_PROVIDED_CIV_FACTORIES
+                    value = 8
+                }
+                country_event = {
+                    id = C14_MAIN.15
+                    days = 42
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_14_o4
+    }
+}
+country_event = {
+    id = C14_MAIN.15
+    picture = GFX_EVENT_C14_MAIN_15
+    immediate = {
+        C31 = {
+            if = {
+                limit = {
+                    check_variable = {
+                        var = VAR_C02_PROVIDED_CIV_FACTORIES
+                        value = VAR_C14_PROVIDED_CIV_FACTORIES
+                        compare = greater_than
+                    }
+                }
+                C02 = {
+                    country_event = {
+                        id = C14_MAIN.16
+                    }
+                }
+                C14 = {
+                    country_event = {
+                        id = C14_MAIN.17
+                    }
+                }
+            }
+            else = {
+                C02 = {
+                    country_event = {
+                        id = C14_MAIN.18
+                    }
+                }
+                C14 = {
+                    country_event = {
+                        id = C14_MAIN.19
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_15
+    desc = EVENT_C14_MAIN_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C14_MAIN_15_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.16
+    picture = GFX_EVENT_C14_MAIN_16
+    trigger = {
+        tag = C02
+        has_completed_focus = FOCUS_C02_APPLE_SOUTHERN_FRIEND
+    }
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_16
+    desc = EVENT_C14_MAIN_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C02_PROVIDED_CIV_FACTORIES
+                        value = 2
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_2
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C02_PROVIDED_CIV_FACTORIES
+                        value = 4
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_4
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C02_PROVIDED_CIV_FACTORIES
+                        value = 6
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_6
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C02_PROVIDED_CIV_FACTORIES
+                        value = 8
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_8
+        }
+        C31 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C31_WAR_AGAINST_C14
+        }
+        name = EVENT_C14_MAIN_16_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.17
+    picture = GFX_EVENT_C14_MAIN_17
+    trigger = {
+        tag = C14
+        has_completed_focus = FOCUS_C14_GUESTS_THUNDERHOOVES
+    }
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_17
+    desc = EVENT_C14_MAIN_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        name = EVENT_C14_MAIN_17_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.18
+    picture = GFX_EVENT_C14_MAIN_18
+    trigger = {
+        tag = C02
+        has_completed_focus = FOCUS_C02_APPLE_SOUTHERN_FRIEND
+    }
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_18
+    desc = EVENT_C14_MAIN_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        name = EVENT_C14_MAIN_18_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.19
+    picture = GFX_EVENT_C14_MAIN_19
+    trigger = {
+        tag = C14
+        has_completed_focus = FOCUS_C14_GUESTS_THUNDERHOOVES
+    }
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_19
+    desc = EVENT_C14_MAIN_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C14_PROVIDED_CIV_FACTORIES
+                        value = 2
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_2
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C14_PROVIDED_CIV_FACTORIES
+                        value = 4
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_4
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C14_PROVIDED_CIV_FACTORIES
+                        value = 6
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_6
+        }
+        else_if = {
+            limit = {
+                C31 = {
+                    check_variable = {
+                        var = VAR_C14_PROVIDED_CIV_FACTORIES
+                        value = 8
+                        compare = equals
+                    }
+                }
+            }
+            add_ideas = IDEA_C31_APPLE_PIE_TRADE_CIV_8
+        }
+        name = EVENT_C14_MAIN_19_o0
+    }
+}
+news_event = {
+    id = C14_MAIN.20
+    picture = GFX_EVENT_C14_MAIN_20
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_20
+    desc = EVENT_C14_MAIN_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C12
+            }
+        }
+        name = EVENT_C14_MAIN_20_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        add_opinion_modifier = {
+            target = C12
+            modifier = FOCUS_C14_C12_ETERNAL_FRIENDSHIP_OPINION_MODIFIER
+        }
+        name = EVENT_C14_MAIN_20_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C12
+        }
+        add_opinion_modifier = {
+            target = C14
+            modifier = FOCUS_C12_C14_ETERNAL_FRIENDSHIP_OPINION_MODIFIER
+        }
+        name = EVENT_C14_MAIN_20_o2
+    }
+}
+news_event = {
+    id = C14_MAIN.21
+    picture = GFX_EVENT_C14_MAIN_21
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_21
+    desc = EVENT_C14_MAIN_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C12
+            }
+        }
+        name = EVENT_C14_MAIN_21_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        C14 = {
+            effect_tooltip = {
+                annex_country = {
+                    target = C12
+                    transfer_troops = yes
+                }
+            }
+            hidden_effect = {
+                set_variable = {
+                    var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                    value = C12
+                }
+                CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+                clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+            }
+            set_cosmetic_tag = C14_APPLEPIE
+            add_country_leader_role = {
+                character = CHARACTER_BRAEBURN
+                promote_leader = yes
+                country_leader = {
+                    ideology = democratic_republic
+                    traits = {
+
+                    }
+                }
+            }
+        }
+        name = EVENT_C14_MAIN_21_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C12
+        }
+        name = EVENT_C14_MAIN_21_o2
+    }
+}
+news_event = {
+    id = C14_MAIN.22
+    picture = GFX_EVENT_C14_MAIN_22
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_22
+    desc = EVENT_C14_MAIN_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C14
+                tag = C12
+            }
+        }
+        name = EVENT_C14_MAIN_22_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        declare_war_on = {
+            target = C01
+            type = independence_wargoal
+        }
+        add_named_threat = {
+            threat = 5
+            name = EVENT_C14_MAIN_22_THREAT
+        }
+        name = EVENT_C14_MAIN_22_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C12
+        }
+        name = EVENT_C14_MAIN_22_o2
+    }
+}
+country_event = {
+    id = C14_MAIN.23
+    picture = GFX_EVENT_C14_MAIN_23
+    immediate = {
+        C14 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C02_FORGIVEN
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_23
+    desc = EVENT_C14_MAIN_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C02
+                tag = C14
+            }
+        }
+        name = EVENT_C14_MAIN_23_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        C02 = {
+            add_ideas = IDEA_C02_C14_TRADE_2
+            590 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+            579 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+            533 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+            553 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+        }
+        C14 = {
+            remove_resource_rights = 590
+            remove_resource_rights = 579
+            remove_resource_rights = 533
+            remove_resource_rights = 553
+        }
+        name = EVENT_C14_MAIN_23_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        name = EVENT_C14_MAIN_23_o2
+    }
+}
+country_event = {
+    id = C14_MAIN.24
+    picture = GFX_EVENT_C14_MAIN_24
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_24
+    desc = EVENT_C14_MAIN_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        587 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = C14
+                }
+                transfer_state_to = C31
+            }
+        }
+        name = EVENT_C14_MAIN_24_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.25
+    picture = GFX_EVENT_C14_MAIN_25
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_25
+    desc = EVENT_C14_MAIN_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_political_power = -250
+        name = EVENT_C14_MAIN_25_o0
+    }
+}
+country_event = {
+    id = C14_MAIN.26
+    picture = GFX_EVENT_C14_MAIN_26
+    is_triggered_only = yes
+    title = EVENT_C14_MAIN_26
+    desc = EVENT_C14_MAIN_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C14_MAIN_26_o0
+    }
+}

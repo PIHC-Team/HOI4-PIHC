@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		IDEA_C01_ROYAL_SWANIFYING_COMMITTEE = {
+			picture = C01_ROYAL_SWANIFYING_COMMITTEE
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.05
+				stability_factor = 0.04
+				political_power_gain = 1
+			}
+			on_add = {
+				add_power_balance_modifier = {
+					id = BOP_C01_COZY_GLOW_EXHAUSTION
+					modifier = BOP_C01_COZY_GLOW_EXHAUSTION_COMMITTEE
+				}
+			}
+			on_remove = {
+				remove_power_balance_modifier = {
+					id = BOP_C01_COZY_GLOW_EXHAUSTION
+					modifier = BOP_C01_COZY_GLOW_EXHAUSTION_COMMITTEE
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

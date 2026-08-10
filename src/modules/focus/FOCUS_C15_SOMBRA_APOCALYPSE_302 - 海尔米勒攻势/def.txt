@@ -1,0 +1,45 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_APOCALYPSE_302
+	icon = GFX_FOCUS_C15_SOMBRA_APOCALYPSE_302_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_APOCALYPSE
+	}
+	bypass = {
+		controls_state = 302
+	}
+	cost = 4
+	completion_reward = {
+		start_border_war = {
+			change_state_after_war = no
+			defender = {
+				state = 302
+			}
+			attacker = {
+				state = 3
+			}
+			on_win = C15_SOMBRA.2
+			on_lose = C15_SOMBRA.3
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		controls_state = 3
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 10
+}

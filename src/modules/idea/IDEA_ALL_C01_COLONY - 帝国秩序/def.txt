@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		IDEA_ALL_C01_COLONY = {
+			picture = ALL_C01_COLONY
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C01
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.2
+				extra_trade_to_target_factor = 0.2
+				trade_cost_for_target_factor = -0.1
+			}
+			cancel = {
+				has_war_with = C01
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

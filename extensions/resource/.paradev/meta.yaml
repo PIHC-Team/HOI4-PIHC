@@ -1,0 +1,120 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/resource
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-resource
+items:
+-   kind: entity
+    identifier: pihc3-resource-module
+    name: PIHC3 Resource Module
+    desc: Project-owned resource source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ResourceModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-resource
+    name: PIHC3 Resource
+    desc: PIHC3 resource module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-resource-module
+        definition:
+            identifier: pihc3-resource
+            name: PIHC3 Resource
+            version: 0.2.4
+            desc: PIHC3 resource module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-resource-module
+            meta:
+                project: PIHC3
+                family: resource
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-resource
+    name: PIHC3 Resource Compiler
+    desc: Registry-backed source slots and compiler hooks for resource.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: resources
+            title: Resources
+            group: world
+            title_key: modules.resources.title
+        dependencies:
+        - extension:pihc3-resource
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-04e2dd96fb1beaa9
+    name: PIHC3 Basic Resource
+    desc: PIHC3 authoring template pihc3:resource/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:resource/basic
+            declaration:
+                title: PIHC3 Basic Resource
+                family: resource
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    icon_frame:
+                        default: '7'
+                    cic:
+                        default: '0.125'
+                    convoys:
+                        default: '0.1'
+                    language:
+                        default: en
+                files:
+                    def.txt: "resources = {{\n\t{object_id} = {{\n\t\ticon_frame =\
+                        \ {icon_frame}\n\t\tcic = {cic}\n\t\tconvoys = {convoys}\n\
+                        \t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.country_resource_{object_id}]
+
+                        {title}
+
+
+                        [{language}.country_resource_cost_{object_id}]
+
+                        {title}
+
+                        '
+                directory: '{object_id} - {title}'

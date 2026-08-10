@@ -1,0 +1,59 @@
+characters = {
+    CHARACTER_UPPER_CRUST = {
+        name = CHARACTER_UPPER_CRUST_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_UPPER_CRUST.dds"
+                small = "gfx/leaders/CHARACTER_UPPER_CRUST_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_UPPER_CRUST_army.dds"
+                small = "gfx/leaders/CHARACTER_UPPER_CRUST_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_UPPER_CRUST_navy.dds"
+                small = "gfx/leaders/CHARACTER_UPPER_CRUST_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_UPPER_CRUST
+            desc = CHARACTER_UPPER_CRUST_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+            on_add = {
+                owner = {
+                    if = {
+                        limit = {
+                            has_idea = CHARACTER_JET_SET
+                            has_idea = CHARACTER_FANCY_PANTS
+                            NOT = {
+                                has_idea = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                            }
+                        }
+                        add_ideas = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                    }
+                }
+            }
+            on_remove = {
+                owner = {
+                    if = {
+                        limit = {
+                            has_idea = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                        }
+                        remove_ideas = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                    }
+                }
+            }
+            ai_will_do = {
+                base = 1000
+            }
+        }
+    }
+}

@@ -1,0 +1,240 @@
+C02_SECOND_PONYVILLE_ELECTION = {
+	C02 = {
+		if = {
+			limit = {
+				check_variable = {
+					var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = VAR_C02_ELECTION_CRACKLE_COSETTE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = VAR_C02_ELECTION_FILTHY_RICH
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = VAR_C02_ELECTION_MARE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = VAR_C02_ELECTION_DOCTOR_HOOVES
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = VAR_C02_ELECTION_OCTAVIA
+					compare = greater_than_or_equals
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			load_focus_tree = C02_ALT
+			news_event = {
+				id = C02_MAIN.5
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = VAR_C02_ELECTION_CRACKLE_COSETTE
+					value = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_CRACKLE_COSETTE
+					value = VAR_C02_ELECTION_FILTHY_RICH
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_CRACKLE_COSETTE
+					value = VAR_C02_ELECTION_MARE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_CRACKLE_COSETTE
+					value = VAR_C02_ELECTION_DOCTOR_HOOVES
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_CRACKLE_COSETTE
+					value = VAR_C02_ELECTION_OCTAVIA
+					compare = greater_than_or_equals
+				}
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			deactivate_advisor = CHARACTER_CRACKLE_COSETTE
+			promote_character = {
+				character = CHARACTER_CRACKLE_COSETTE
+				ideology = fascism_duchy
+			}
+			load_focus_tree = C02_ALT_CRACKLE_COSETTE
+			news_event = {
+				id = C02_MAIN.10
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = VAR_C02_ELECTION_FILTHY_RICH
+					value = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_FILTHY_RICH
+					value = VAR_C02_ELECTION_CRACKLE_COSETTE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_FILTHY_RICH
+					value = VAR_C02_ELECTION_MARE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_FILTHY_RICH
+					value = VAR_C02_ELECTION_DOCTOR_HOOVES
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_FILTHY_RICH
+					value = VAR_C02_ELECTION_OCTAVIA
+					compare = greater_than_or_equals
+				}
+			}
+			add_popularity = {
+				ideology = corporation
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = corporation
+			}
+			deactivate_advisor = CHARACTER_FILTHY_RICH
+			promote_character = {
+				character = CHARACTER_FILTHY_RICH
+				ideology = corporation_democracy
+			}
+			load_focus_tree = C02_ALT_FILTHY_RICH
+			news_event = {
+				id = C02_MAIN.9
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = VAR_C02_ELECTION_MARE
+					value = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_MARE
+					value = VAR_C02_ELECTION_CRACKLE_COSETTE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_MARE
+					value = VAR_C02_ELECTION_FILTHY_RICH
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_MARE
+					value = VAR_C02_ELECTION_DOCTOR_HOOVES
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_MARE
+					value = VAR_C02_ELECTION_OCTAVIA
+					compare = greater_than_or_equals
+				}
+			}
+			add_popularity = {
+				ideology = harmonicism
+				popularity = 0.35
+			}
+			set_politics = {
+				ruling_party = harmonicism
+			}
+			deactivate_advisor = CHARACTER_MARE
+			promote_character = {
+				character = CHARACTER_MARE
+				ideology = harmonicism_freestate
+			}
+			load_focus_tree = C02_ALT_MARE
+			news_event = {
+				id = C02_MAIN.7
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = VAR_C02_ELECTION_DOCTOR_HOOVES
+					value = VAR_C02_ELECTION_TRIXIE_LULAMOON
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_DOCTOR_HOOVES
+					value = VAR_C02_ELECTION_CRACKLE_COSETTE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_DOCTOR_HOOVES
+					value = VAR_C02_ELECTION_FILTHY_RICH
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_DOCTOR_HOOVES
+					value = VAR_C02_ELECTION_MARE
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = VAR_C02_ELECTION_DOCTOR_HOOVES
+					value = VAR_C02_ELECTION_OCTAVIA
+					compare = greater_than_or_equals
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+			deactivate_advisor = CHARACTER_DOCTOR_HOOVES
+			promote_character = {
+				character = CHARACTER_DOCTOR_HOOVES
+				ideology = democratic_technocracy
+			}
+			load_focus_tree = C02_ALT_DOCTOR_HOOVES
+			news_event = {
+				id = C02_MAIN.8
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = peacism
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = peacism
+			}
+			deactivate_advisor = CHARACTER_OCTAVIA
+			promote_character = {
+				character = CHARACTER_OCTAVIA
+				ideology = peacism_dogmatism
+			}
+			load_focus_tree = C02_ALT_OCTAVIA
+			news_event = {
+				id = C02_MAIN.6
+			}
+		}
+		set_global_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+	}
+}

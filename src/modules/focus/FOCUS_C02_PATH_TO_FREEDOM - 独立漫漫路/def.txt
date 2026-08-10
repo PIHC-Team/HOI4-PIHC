@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C02_PATH_TO_FREEDOM
+	icon = GFX_FOCUS_C02_PATH_TO_FREEDOM_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_AS_A_DUKE
+	}
+	cost = 1
+	completion_reward = {
+		add_political_power = 50
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 2
+}

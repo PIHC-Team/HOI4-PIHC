@@ -1,0 +1,101 @@
+PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE_ADD_ROW = {
+	random_list = {
+		seed = random
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_1 = v
+				}
+			}
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_2 = v
+				}
+			}
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_3 = v
+				}
+			}
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_4 = v
+				}
+			}
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_5 = v
+				}
+			}
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				check_variable = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6^num > 0
+				}
+			}
+			for_each_loop = {
+				array = ARRAY_LOCS_SOURCE
+				index = i
+				value = v
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_1_CODE_TABLE_6 = v
+				}
+			}
+		}
+	}
+}

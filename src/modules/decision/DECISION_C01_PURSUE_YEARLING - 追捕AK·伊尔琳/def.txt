@@ -1,0 +1,76 @@
+DECISION_CATEGORY_THE_GRIFFON_LIES_HEAVY = {
+    DECISION_C01_PURSUE_YEARLING = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_remove = 35
+        days_re_enable = 8
+        visible = {
+            tag = C01
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_3
+            }
+        }
+        available = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2
+                }
+                684 = {
+                    C01 = {
+                        num_divisions_in_states = {
+                            count > 2
+                            states = {
+                                684
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_3
+                    }
+                }
+                hidden_effect = {
+                    country_event = {
+                        id = EEMO.3
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_1
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2
+                    }
+                }
+                hidden_effect = {
+                    country_event = {
+                        id = EEMO.2
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_1
+                    }
+                }
+                hidden_effect = {
+                    country_event = {
+                        id = EEMO.1
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_PURSUE_YEARLING
+    }
+}

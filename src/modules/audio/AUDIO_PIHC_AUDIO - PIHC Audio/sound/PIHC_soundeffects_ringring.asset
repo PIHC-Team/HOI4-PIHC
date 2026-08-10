@@ -1,0 +1,21 @@
+######################################
+sound = {
+    name = "ringring"
+    file = "PIHC_soundeffects/ringring.wav"
+}
+
+soundeffect = {
+	name = "ringring_ev"
+	sounds = {
+		sound = "ringring"
+	}
+	volume = 1.0
+}
+
+category = {
+	name = "ringring_cat"
+	soundeffects = {
+		ringring_ev
+	}
+	compressor = master_compressor
+}

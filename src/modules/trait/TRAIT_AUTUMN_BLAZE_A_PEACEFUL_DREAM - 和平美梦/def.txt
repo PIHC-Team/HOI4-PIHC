@@ -1,0 +1,13 @@
+leader_traits = {
+	TRAIT_AUTUMN_BLAZE_A_PEACEFUL_DREAM = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		trade_opinion_factor = 0.3
+		political_power_gain = 0.05
+		local_resources_factor = 0.05
+		war_support_factor = -0.35
+		peacism_drift = 0.01
+	}
+}

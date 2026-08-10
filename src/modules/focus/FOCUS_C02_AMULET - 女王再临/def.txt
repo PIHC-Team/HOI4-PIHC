@@ -1,0 +1,133 @@
+focus = {
+	id = FOCUS_C02_AMULET
+	icon = GFX_FOCUS_C02_AMULET_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_ARMY_MILITARIZATION
+	}
+	cost = 6
+	allow_branch = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C02_AMULET_TOOLTIP
+			check_variable = {
+				var = VAR_INVENTORY_ITEM_ARTIFACT_ALICORN_AMULET
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C02_AMULET_TOOLTIP
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C02_INDEPENDENCE
+				value = 1.0
+				tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+			}
+			set_global_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+			set_cosmetic_tag = C02_AMULET
+			set_popularities = {
+				fascism = 100
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C02_AMULET_TRANSCENDENCE
+			promote_character = {
+				character = CHARACTER_TRIXIE_LULAMOON_AMULET
+				ideology = fascism_theocracy
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_EMPIRE_FUEL_FEE
+				}
+				remove_ideas = IDEA_C02_EMPIRE_FUEL_FEE
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_EMPIRE_FUEL_FEE_2
+				}
+				remove_ideas = IDEA_C02_EMPIRE_FUEL_FEE_2
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_PUPPET_GOVERNMENT
+				}
+				remove_ideas = IDEA_C02_PUPPET_GOVERNMENT
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_PUPPET_GOVERNMENT_2
+				}
+				remove_ideas = IDEA_C02_PUPPET_GOVERNMENT_2
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_C14_TRADE
+				}
+				remove_ideas = IDEA_C02_C14_TRADE
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_C14_TRADE_2
+				}
+				remove_ideas = IDEA_C02_C14_TRADE_2
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_C02_C07_TRADE
+				}
+				remove_ideas = IDEA_C02_C07_TRADE
+			}
+			if = {
+				limit = {
+					C14 = {
+						has_idea = IDEA_C14_C02_TRADE
+					}
+				}
+				C14 = {
+					remove_ideas = IDEA_C14_C02_TRADE
+				}
+			}
+			load_focus_tree = C02_AMULET
+		}
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C02_AMULET_TOOLTIP
+			check_variable = {
+				var = VAR_INVENTORY_ITEM_ARTIFACT_ALICORN_AMULET
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		date > 1004.06.01
+		has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 7
+}

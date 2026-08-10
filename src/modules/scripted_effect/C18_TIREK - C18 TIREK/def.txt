@@ -1,0 +1,33 @@
+C18_TIREK = {
+	hidden_effect = {
+		C18 = {
+			set_country_flag = {
+				flag = PIHC_COUNTRY_FLAG_FAKE_NUKE_DROP
+				days = 1
+				value = 1
+			}
+		}
+		C22 = {
+			declare_war_on = {
+				target = C18
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = C37
+				type = annex_everything
+			}
+			launch_nuke = {
+				state = 772
+				controller = C18
+			}
+			launch_nuke = {
+				state = 799
+				controller = C37
+			}
+		}
+		country_event = {
+			id = C18_MAIN.82
+			hours = 7
+		}
+	}
+}

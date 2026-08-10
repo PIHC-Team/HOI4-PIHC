@@ -1,0 +1,146 @@
+NAMES_GROUP_C43_ARTILLERY = {
+    name = "森林火炮群 (Forest Artillery Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "森林火炮群%d群 (Forest Artillery Pack %d)"
+}
+NAMES_GROUP_C43_TANK_LIGHT = {
+    name = "森林轻型装甲群 (Forest Light Armor Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "森林轻型装甲群%d群 (Forest Light Armor Pack %d)"
+}
+NAMES_GROUP_C43_TRADITIONAL_REGULAR = {
+    name = "森林常规步兵群 (Forest Regular Infantry Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "森林常规步兵群%d群 (Forest Regular Infantry Pack %d)"
+}
+NAMES_GROUP_C43_TANK_HEAVY = {
+    name = "森林重型装甲群 (Forest Heavy Armor Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "森林重型装甲群%d群 (Forest Heavy Armor Pack %d)"
+}
+NAMES_GROUP_C43_TRADITIONAL_SMALL = {
+    name = "森林小型步兵群 (Forest Small Infantry Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "森林小型步兵群%d群 (Forest Small Infantry Pack %d)"
+}
+NAMES_GROUP_C43_AUTOMATA = {
+    name = "森林自动作战群 (Forest Automata Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "森林自动作战群%d群 (Forest Automata Pack %d)"
+}
+NAMES_GROUP_C43_SHIELD = {
+    name = "森林重装步兵群 (Forest Heavy Infantry Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "森林重装步兵群%d群 (Forest Heavy Infantry Pack %d)"
+}
+NAMES_GROUP_C43_MAGICAL = {
+    name = "森林魔法步兵群 (Forest Magical Infantry Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "森林魔法步兵群%d群 (Forest Magical Infantry Pack %d)"
+}
+NAMES_GROUP_C43_INFANTRY_MIX = {
+    name = "森林协同群 (Forest Concerted Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "森林协同群%d群 (Forest Concerted Pack %d)"
+}
+NAMES_GROUP_C43_MOTORIZED = {
+    name = "森林机动步兵群 (Forest Motorized Infantry Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "森林机动步兵群%d群 (Forest Motorized Infantry Pack %d)"
+}
+NAMES_GROUP_C43_TANK_MEDIUM = {
+    name = "森林中型装甲群 (Forest Medium Armor Pack)"
+    for_countries = {
+        C43
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "森林中型装甲群%d群 (Forest Medium Armor Pack %d)"
+}

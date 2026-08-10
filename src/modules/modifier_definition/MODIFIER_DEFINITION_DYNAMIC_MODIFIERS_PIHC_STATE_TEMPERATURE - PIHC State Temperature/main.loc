@@ -1,0 +1,307 @@
+[en.PIHC_ERA_COLD_DYNAMIC_MODIFIER]
+Cold Heating Policy
+
+[zh.PIHC_ERA_COLD_DYNAMIC_MODIFIER]
+耐寒政策
+
+[en.PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER]
+State Heating Subsidies
+
+[zh.PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER]
+地区供暖补助
+
+[en.PIHC_state_temperature_DYNAMIC_MODIFIER]
+State Temperature
+
+[zh.PIHC_state_temperature_DYNAMIC_MODIFIER]
+地区温度
+
+[en.PIHC_average_temperature_DYNAMIC_MODIFIER]
+Average Temperature
+
+[zh.PIHC_average_temperature_DYNAMIC_MODIFIER]
+平均温度
+
+[en.pihc_state_temperature_tt]
+§Y[THIS.GetName]§! current state:
+Outdoor temperature: [THIS.GetPIHCStateOutdoorTemperatureColored]
+Indoor temperature: [THIS.GetPIHCStateIndoorTemperatureColored]
+Indoor temperature class: [THIS.GetPIHCStateTemperatureClassName]
+Comfort score: §Y[?THIS.PIHC_var_state_indoor_temperature_comfort_score|1] / 10.0§! (§Y[?THIS.PIHC_var_state_temperature_population_share_percent|1] %§!)
+-----
+National temperature comfort: §Y[?THIS.PIHC_var_state_controller_temperature_comfort_score|1] / 10.0§!
+
+State effects:
+Supply factor: [?THIS.PIHC_var_state_supply_factor|1+%]
+Local manpower: [?THIS.PIHC_var_state_local_manpower|1+%]
+State construction speed: [?THIS.PIHC_var_state_production_speed_buildings_factor|1+%]
+[THIS.GetPIHCStateTemperatureNationalModifierEffects]
+-----
+§LEach state's §Youtdoor temperature§L (§Ymercury thermometer§L reading) is determined by §Yenvironment§L, §Ydisharmony§L, and similar factors.
+§YIndoor temperature§L (§Yspherical gauge§L value) starts from outdoor temperature, then changes with §Yheating policies§L, §Yenergy towers§L, and related effects.
+Only §Yindoor temperature§L determines the §Ytemperature class§L (§Ygauge pointer§L) and its §Ycomfort score§L.
+The country receives population, construction speed, and other modifiers from the §Ypopulation-weighted national average comfort score§L.
+Keep the regions containing most of your §Ycore population§L in the comfortable range (§Y-10 ~ 30§L) whenever possible.§!
+
+[zh.pihc_state_temperature_tt]
+§Y[THIS.GetName]§! 地块当前：
+室外温度为：[THIS.GetPIHCStateOutdoorTemperatureColored]
+室内温度为：[THIS.GetPIHCStateIndoorTemperatureColored]
+室内温度等级：[THIS.GetPIHCStateTemperatureClassName]
+舒适度分数：§Y[?THIS.PIHC_var_state_indoor_temperature_comfort_score|1] / 10.0§!（§Y[?THIS.PIHC_var_state_temperature_population_share_percent|1] %§!）
+-----
+全国温度舒适度：§Y[?THIS.PIHC_var_state_controller_temperature_comfort_score|1] / 10.0§!
+
+地区修正：
+补给效率：[?THIS.PIHC_var_state_supply_factor|1+%]
+当地人力：[?THIS.PIHC_var_state_local_manpower|1+%]
+地区建造速度：[?THIS.PIHC_var_state_production_speed_buildings_factor|1+%]
+[THIS.GetPIHCStateTemperatureNationalModifierEffects]
+-----
+§L每个地块的§Y室外温度§L（§Y水银温度计读数§L）由§Y环境§L、§Y不和谐度§L等因素决定。
+§Y室内温度§L（§Y球形仪表温度数值§L）以室外温度为基础，并受到§Y供暖政策§L、§Y能量塔§L等因素影响。
+最终仅根据§Y室内温度§L计算§Y温度档位§L（§Y仪表指针§L），进而获得对应的§Y舒适度等级分§L。
+全国的人口、建造速度等修正来自按§Y马口§L加权的§Y全国平均舒适度等级分§L。
+因此，请尽可能保障国家主要§Y马口§L所在地区的温度处于舒适范围（§Y-10 ~ 30§L之间）。§!
+
+[en.pihc_state_temperature_outdoor_value]
+[THIS.GetPIHCStateIndoorTemperatureDisplay]
+
+[zh.pihc_state_temperature_outdoor_value]
+[THIS.GetPIHCStateIndoorTemperatureDisplay]
+
+[en.pihc_state_temperature_outdoor_temperature_positive]
+§O[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_outdoor_temperature_positive]
+§O[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_outdoor_temperature_negative]
+§C[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_outdoor_temperature_negative]
+§C[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_outdoor_temperature_zero]
+§Y[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_outdoor_temperature_zero]
+§Y[?THIS.PIHC_var_state_outdoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_indoor_temperature_positive]
+§O[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_indoor_temperature_positive]
+§O[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_indoor_temperature_negative]
+§C[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_indoor_temperature_negative]
+§C[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_indoor_temperature_zero]
+§Y[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[zh.pihc_state_temperature_indoor_temperature_zero]
+§Y[?THIS.PIHC_var_state_indoor_temperature|1] °C§!
+
+[en.pihc_state_temperature_indoor_display_positive]
+§O[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[zh.pihc_state_temperature_indoor_display_positive]
+§O[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[en.pihc_state_temperature_indoor_display_negative]
+§C[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[zh.pihc_state_temperature_indoor_display_negative]
+§C[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[en.pihc_state_temperature_indoor_display_zero]
+§Y[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[zh.pihc_state_temperature_indoor_display_zero]
+§Y[?THIS.PIHC_var_state_indoor_temperature|0]°C§!
+
+[en.pihc_state_temperature_indoor_label]
+Indoor
+Temperature
+
+[zh.pihc_state_temperature_indoor_label]
+室内
+温度
+
+[en.pihc_state_temperature_outdoor_label]
+Outdoor
+Temperature
+
+[zh.pihc_state_temperature_outdoor_label]
+室外
+温度
+
+[en.pihc_state_temperature_class_scorching_label]
+Scorching
+
+[zh.pihc_state_temperature_class_scorching_label]
+灼烧
+
+[en.pihc_state_temperature_class_hot_label]
+Hot
+
+[zh.pihc_state_temperature_class_hot_label]
+炎热
+
+[en.pihc_state_temperature_class_warm_label]
+Warm
+
+[zh.pihc_state_temperature_class_warm_label]
+温暖
+
+[en.pihc_state_temperature_class_chilly_label]
+Chilly
+
+[zh.pihc_state_temperature_class_chilly_label]
+阴冷
+
+[en.pihc_state_temperature_class_cold_label]
+Cold
+
+[zh.pihc_state_temperature_class_cold_label]
+寒冷
+
+[en.pihc_state_temperature_class_frigid_label]
+Frigid
+
+[zh.pihc_state_temperature_class_frigid_label]
+极寒
+
+[en.pihc_state_temperature_class_permafrost_label]
+Permafrost
+
+[zh.pihc_state_temperature_class_permafrost_label]
+冰封
+
+[en.pihc_state_temperature_class_1_colored]
+§CPermafrost§!
+
+[zh.pihc_state_temperature_class_1_colored]
+§C冰封§!
+
+[en.pihc_state_temperature_class_2_colored]
+§CFrigid§!
+
+[zh.pihc_state_temperature_class_2_colored]
+§C极寒§!
+
+[en.pihc_state_temperature_class_3_colored]
+§CCold§!
+
+[zh.pihc_state_temperature_class_3_colored]
+§C寒冷§!
+
+[en.pihc_state_temperature_class_4_colored]
+§CChilly§!
+
+[zh.pihc_state_temperature_class_4_colored]
+§C阴冷§!
+
+[en.pihc_state_temperature_class_5_colored]
+§OWarm§!
+
+[zh.pihc_state_temperature_class_5_colored]
+§O温暖§!
+
+[en.pihc_state_temperature_class_6_colored]
+§OHot§!
+
+[zh.pihc_state_temperature_class_6_colored]
+§O炎热§!
+
+[en.pihc_state_temperature_class_7_colored]
+§OScorching§!
+
+[zh.pihc_state_temperature_class_7_colored]
+§O灼烧§!
+
+[en.pihc_state_temperature_national_modifiers_worst]
+National effects:
+Monthly population: [?THIS.PIHC_var_state_controller_monthly_population|1+%]
+Winter attrition: [?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+Cold acclimatization gain: [?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+Construction speed: [?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[zh.pihc_state_temperature_national_modifiers_worst]
+全国修正：
+月度人口：[?THIS.PIHC_var_state_controller_monthly_population|1+%]
+冬季损耗：[?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+寒冷适应获得：[?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+建造速度：[?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[en.pihc_state_temperature_national_modifiers_poor]
+National effects:
+Monthly population: [?THIS.PIHC_var_state_controller_monthly_population|1+%]
+Winter attrition: [?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+Cold acclimatization gain: [?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+Construction speed: [?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[zh.pihc_state_temperature_national_modifiers_poor]
+全国修正：
+月度人口：[?THIS.PIHC_var_state_controller_monthly_population|1+%]
+冬季损耗：[?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+寒冷适应获得：[?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+建造速度：[?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[en.pihc_state_temperature_national_modifiers_strained]
+National effects:
+Monthly population: [?THIS.PIHC_var_state_controller_monthly_population|1+%]
+Winter attrition: [?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+Cold acclimatization gain: [?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+Construction speed: [?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[zh.pihc_state_temperature_national_modifiers_strained]
+全国修正：
+月度人口：[?THIS.PIHC_var_state_controller_monthly_population|1+%]
+冬季损耗：[?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+寒冷适应获得：[?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+建造速度：[?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[en.pihc_state_temperature_national_modifiers_fair]
+National effects:
+Monthly population: [?THIS.PIHC_var_state_controller_monthly_population|1+%]
+Winter attrition: [?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+Cold acclimatization gain: [?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+Construction speed: [?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[zh.pihc_state_temperature_national_modifiers_fair]
+全国修正：
+月度人口：[?THIS.PIHC_var_state_controller_monthly_population|1+%]
+冬季损耗：[?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+寒冷适应获得：[?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+建造速度：[?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[en.pihc_state_temperature_national_modifiers_best]
+National effects:
+Monthly population: [?THIS.PIHC_var_state_controller_monthly_population|1+%]
+Winter attrition: [?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+Cold acclimatization gain: [?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+Construction speed: [?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[zh.pihc_state_temperature_national_modifiers_best]
+全国修正：
+月度人口：[?THIS.PIHC_var_state_controller_monthly_population|1+%]
+冬季损耗：[?THIS.PIHC_var_state_controller_winter_attrition_factor|1-%]
+寒冷适应获得：[?THIS.PIHC_var_state_controller_cold_gain_factor|1+%]
+建造速度：[?THIS.PIHC_var_state_controller_production_speed_buildings_factor|1+%]
+
+[en.pihc_state_temperature_coal_subsidies_tt]
+Toggle coal heating subsidies for this state.
+
+[zh.pihc_state_temperature_coal_subsidies_tt]
+切换该地区的煤炭供暖补助。
+
+[en.pihc_state_temperature_logs_subsidies_tt]
+Toggle log heating subsidies for this state.
+
+[zh.pihc_state_temperature_logs_subsidies_tt]
+切换该地区的木材供暖补助。

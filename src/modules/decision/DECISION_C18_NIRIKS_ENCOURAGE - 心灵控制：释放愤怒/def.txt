@@ -1,0 +1,49 @@
+DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT = {
+    DECISION_C18_NIRIKS_ENCOURAGE = {
+        fixed_random_seed = no
+        priority = 1
+        cost = 0
+        days_remove = 90
+        days_re_enable = 42
+        visible = {
+            tag = C18
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+        }
+        available = {
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+        }
+        complete_effect = {
+            hidden_effect = {
+                C18_ADD_GROWTH_0_10 = yes
+            }
+        }
+        modifier = {
+            custom_modifier_tooltip = DECISION_C18_NIRIKS_ENCOURAGE_TOOLTIP
+        }
+        remove_effect = {
+            hidden_effect = {
+                C18_DEL_GROWTH_0_9 = yes
+            }
+        }
+        cancel_effect = {
+            hidden_effect = {
+                C18_DEL_GROWTH_0_9 = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 100
+                AND = {
+                    has_war = yes
+                    check_variable = {
+                        var = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+                        value = 2.0
+                        compare = less_than
+                    }
+                }
+            }
+        }
+        icon = C18_NIRIKS_ENCOURAGE
+    }
+}

@@ -1,0 +1,8 @@
+C18_INIT_CURE = {
+	set_variable = {
+		C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT = 60
+	}
+	set_variable = {
+		C18.VAR_STREAM_OF_SILENCE_CURE_SPEED = 1
+	}
+}

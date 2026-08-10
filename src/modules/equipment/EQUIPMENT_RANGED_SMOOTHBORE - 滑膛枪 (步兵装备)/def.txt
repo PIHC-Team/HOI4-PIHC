@@ -1,0 +1,32 @@
+equipments = {
+	EQUIPMENT_RANGED_SMOOTHBORE = {
+		archetype = ARCHETYPE_INFANTRY
+		priority = 10007
+		visual_level = 10007
+		build_cost_ic = 0.6095437920000001
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 7.6192974000000016
+		hard_attack = 0.6926634
+		air_attack = 0.0
+		ap_attack = 4.5023121
+		breakthrough = 3.4633170000000004
+		defense = 30.297097116000003
+		armor_value = 0.3463317
+		hardness = 0.0
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 1
+		picture = EQUIPMENT_RANGED_SMOOTHBORE
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_RANGED_HANDGUN
+		resources = {
+			logs = 2
+			steel = 2
+			coal = 1
+		}
+	}
+}

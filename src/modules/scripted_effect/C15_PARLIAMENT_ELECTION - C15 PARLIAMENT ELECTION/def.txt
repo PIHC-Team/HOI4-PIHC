@@ -1,0 +1,23 @@
+C15_PARLIAMENT_ELECTION = {
+	C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = yes
+	clear_array = C15.parliament_seat_array
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_1_expected_pop
+	}
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_2_expected_pop
+	}
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_3_expected_pop
+	}
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_4_expected_pop
+	}
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_5_expected_pop
+	}
+	add_to_array = {
+		C15.parliament_seat_array = C15.temp_party_6_expected_pop
+	}
+	C15_PARLIAMENT_GUI_RELOAD = yes
+}

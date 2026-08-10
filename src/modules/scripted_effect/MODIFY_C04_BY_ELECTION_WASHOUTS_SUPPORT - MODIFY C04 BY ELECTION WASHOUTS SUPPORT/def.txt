@@ -1,0 +1,80 @@
+MODIFY_C04_BY_ELECTION_WASHOUTS_SUPPORT = {
+	if = {
+		limit = {
+			check_variable = {
+				var = C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT
+				value = 100.0
+				compare = less_than
+			}
+		}
+		set_temp_variable = {
+			sky_stinger_ratio = C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT
+		}
+		set_temp_variable = {
+			sky_stinger_wind_rider = C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT
+		}
+		add_to_temp_variable = {
+			sky_stinger_wind_rider = C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT
+		}
+		divide_temp_variable = {
+			sky_stinger_ratio = sky_stinger_wind_rider
+		}
+	}
+	else = {
+		set_temp_variable = {
+			sky_stinger_ratio = 0.5
+		}
+	}
+	set_temp_variable = {
+		added_old = C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT = C04.VAR_DELTA
+	}
+	clamp_variable = {
+		var = C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT
+		min = 0.0
+		max = 100.0
+	}
+	set_temp_variable = {
+		added_delta = C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT
+	}
+	subtract_from_temp_variable = {
+		added_delta = added_old
+	}
+	multiply_temp_variable = {
+		added_delta = -1
+	}
+	set_temp_variable = {
+		sky_stinger_delta = added_delta
+	}
+	multiply_temp_variable = {
+		sky_stinger_delta = sky_stinger_ratio
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT = sky_stinger_delta
+	}
+	clamp_variable = {
+		var = C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT
+		min = 0.0
+		max = 100.0
+	}
+	set_temp_variable = {
+		wind_rider_delta = added_delta
+	}
+	subtract_from_temp_variable = {
+		wind_rider_delta = sky_stinger_delta
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT = wind_rider_delta
+	}
+	clamp_variable = {
+		var = C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT
+		min = 0.0
+		max = 100.0
+	}
+	set_variable = {
+		C04.VAR_DELTA = 0.0
+	}
+	COMPUTE_C04_BY_ELECTION = yes
+}

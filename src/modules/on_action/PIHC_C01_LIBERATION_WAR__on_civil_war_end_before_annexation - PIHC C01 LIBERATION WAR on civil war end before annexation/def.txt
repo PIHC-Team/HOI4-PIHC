@@ -1,0 +1,21 @@
+on_actions = {
+	on_civil_war_end_before_annexation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = C01
+					}
+					FROM = {
+						tag = Z01
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.16
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+is_pony_country = {
+	custom_trigger_tooltip = {
+		tooltip = IS_PONY_COUNTRY_TOOLTIP
+		OR = {
+			tag = C01
+			tag = C02
+			tag = C03
+			tag = C04
+			tag = C05
+			tag = C06
+			tag = C07
+			tag = C08
+			tag = C09
+			tag = C10
+			tag = C12
+			tag = C14
+			tag = C15
+			tag = C23
+			tag = C24
+			tag = C33
+			tag = C34
+		}
+	}
+}

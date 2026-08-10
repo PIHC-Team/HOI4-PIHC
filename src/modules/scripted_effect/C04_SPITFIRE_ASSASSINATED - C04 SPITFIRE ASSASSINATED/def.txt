@@ -1,0 +1,19 @@
+C04_SPITFIRE_ASSASSINATED = {
+	set_country_flag = PIHC_COUNTRY_FLAG_SPITFIRE_ASSASSINATED
+	kill_country_leader = yes
+	retire_character = CHARACTER_SHORT_FUSE
+	deactivate_advisor = CHARACTER_SKY_STINGER
+	promote_character = {
+		character = CHARACTER_SKY_STINGER
+		ideology = harmonicism_revengeism
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_ECONOMIC_GROWTH
+		}
+		remove_ideas = IDEA_ALL_ECONOMIC_GROWTH
+	}
+	load_focus_tree = C04_BY_ELECTION
+	complete_national_focus = FOCUS_C04_AFTER_THE_GUNSHOT
+	DEL_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_1 = yes
+}

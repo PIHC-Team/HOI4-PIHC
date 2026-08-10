@@ -1,0 +1,47 @@
+focus = {
+	id = FOCUS_C09_INTER_APPROACH_TIREK
+	icon = GFX_FOCUS_C09_INTER_APPROACH_TIREK_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL
+	}
+	cost = 3
+	completion_reward = {
+		C22 = {
+			add_opinion_modifier = {
+				target = C09
+				modifier = FOCUS_C22_C09_BUSINESS_OPINION_MODIFIER
+			}
+		}
+		add_opinion_modifier = {
+			target = C22
+			modifier = FOCUS_C09_C22_BUSINESS_OPINION_MODIFIER
+		}
+	}
+	available = {
+		C22 = {
+			has_country_leader = {
+				character = CHARACTER_LORD_TIREK
+				ruling_only = yes
+			}
+			is_in_faction = no
+		}
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 8
+}

@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_POWER_CHORD = {
+        name = CHARACTER_POWER_CHORD_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_POWER_CHORD.dds"
+                small = "gfx/leaders/CHARACTER_POWER_CHORD_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_POWER_CHORD_army.dds"
+                small = "gfx/leaders/CHARACTER_POWER_CHORD_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_POWER_CHORD_navy.dds"
+                small = "gfx/leaders/CHARACTER_POWER_CHORD_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_POWER_CHORD
+            desc = CHARACTER_POWER_CHORD_DESC
+            traits = {
+                TRAIT_POLITICAL_GENIUS
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

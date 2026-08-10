@@ -1,0 +1,49 @@
+characters = {
+    CHARACTER_BLOSSOM_BURST = {
+        name = CHARACTER_BLOSSOM_BURST_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_BLOSSOM_BURST.dds"
+                small = "gfx/leaders/CHARACTER_BLOSSOM_BURST_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BLOSSOM_BURST_army.dds"
+                small = "gfx/leaders/CHARACTER_BLOSSOM_BURST_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BLOSSOM_BURST_navy.dds"
+                small = "gfx/leaders/CHARACTER_BLOSSOM_BURST_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_BLOSSOM_BURST
+            desc = CHARACTER_BLOSSOM_BURST_DESC
+            traits = {
+                TRAIT_FREIGHT_SUPPLY_BUREAU
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = army_chief
+            available = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = CHARACTER_BLOSSOM_BURST_TOOLTIP_CRIMINAL
+                        always = no
+                    }
+                }
+                else = {
+                    custom_trigger_tooltip = {
+                        tooltip = CHARACTER_BLOSSOM_BURST_TOOLTIP
+                        always = no
+                    }
+                }
+            }
+        }
+    }
+}

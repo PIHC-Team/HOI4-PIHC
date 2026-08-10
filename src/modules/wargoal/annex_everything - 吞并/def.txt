@@ -1,0 +1,13 @@
+wargoal_types = {
+	annex_everything = {
+		war_name = WAR_NAME
+		allowed = {
+			always = no
+		}
+		available = {
+		}
+		take_states = {
+		}
+		threat = 0.5
+	}
+}

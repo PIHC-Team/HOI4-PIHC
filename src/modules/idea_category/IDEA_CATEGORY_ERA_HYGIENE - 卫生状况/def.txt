@@ -1,0 +1,127 @@
+ideas = {
+	IDEA_CATEGORY_ERA_HYGIENE = {
+		law = yes
+		use_list_view = yes
+		IDEA_ERA_HYGIENE_1_IMMUNE = {
+			picture = ERA_HYGIENE_1_IMMUNE
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.05
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_1_IMMUNE_TOOLTIP
+			}
+			available = {
+				is_magical_creatures = yes
+			}
+			cost = 0
+			cancel_if_invalid = yes
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 7
+		}
+		IDEA_ERA_HYGIENE_2_MYSO = {
+			picture = ERA_HYGIENE_2_MYSO
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.02
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_2_MYSO_TOOLTIP
+			}
+			available = {
+				has_tech = TECHNOLOGY_SUPPORT_NURSE_III
+			}
+			cost = 350
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 6
+		}
+		IDEA_ERA_HYGIENE_3_CLEAN = {
+			picture = ERA_HYGIENE_3_CLEAN
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_3_CLEAN_TOOLTIP
+			}
+			available = {
+				has_tech = TECHNOLOGY_SUPPORT_NURSE_I
+			}
+			cost = 150
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 5
+		}
+		IDEA_ERA_HYGIENE_4_NORMAL = {
+			picture = ERA_HYGIENE_4_NORMAL
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.01
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_4_NORMAL_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 150
+			default = yes
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 4
+		}
+		IDEA_ERA_HYGIENE_5_DIRTY = {
+			picture = ERA_HYGIENE_5_DIRTY
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.03
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_5_DIRTY_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 150
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 3
+		}
+		IDEA_ERA_HYGIENE_6_FILTHY = {
+			picture = ERA_HYGIENE_6_FILTHY
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.08
+				stability_weekly_factor = -0.01
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_6_FILTHY_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 150
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 2
+		}
+		IDEA_ERA_HYGIENE_7_PLAGUE = {
+			picture = ERA_HYGIENE_7_PLAGUE
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.15
+				stability_weekly_factor = -0.05
+				custom_modifier_tooltip = IDEA_ERA_HYGIENE_7_PLAGUE_TOOLTIP
+			}
+			available = {
+				always = no
+			}
+			cost = 250
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 1
+		}
+	}
+}

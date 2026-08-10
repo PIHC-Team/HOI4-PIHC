@@ -1,0 +1,146 @@
+NAMES_GROUP_C38_ARTILLERY = {
+    name = "裂隙火炮 (Rift Artillery Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "裂隙火炮%d分支 (Rift Artillery Branch %d)"
+}
+NAMES_GROUP_C38_TANK_LIGHT = {
+    name = "裂隙轻型装甲 (Rift Light Armor Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "裂隙轻型装甲%d分支 (Rift Light Armor Branch %d)"
+}
+NAMES_GROUP_C38_TRADITIONAL_REGULAR = {
+    name = "裂隙常规步兵 (Rift Regular Infantry Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "裂隙常规步兵%d分支 (Rift Regular Infantry Branch %d)"
+}
+NAMES_GROUP_C38_TANK_HEAVY = {
+    name = "裂隙重型装甲 (Rift Heavy Armor Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "裂隙重型装甲%d分支 (Rift Heavy Armor Branch %d)"
+}
+NAMES_GROUP_C38_TRADITIONAL_SMALL = {
+    name = "裂隙小型步兵 (Rift Small Infantry Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "裂隙小型步兵%d分支 (Rift Small Infantry Branch %d)"
+}
+NAMES_GROUP_C38_AUTOMATA = {
+    name = "裂隙自动作战 (Rift Automata Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "裂隙自动作战%d分支 (Rift Automata Branch %d)"
+}
+NAMES_GROUP_C38_SHIELD = {
+    name = "裂隙重装步兵 (Rift Heavy Infantry Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "裂隙重装步兵%d分支 (Rift Heavy Infantry Branch %d)"
+}
+NAMES_GROUP_C38_MAGICAL = {
+    name = "裂隙魔法步兵 (Rift Magical Infantry Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "裂隙魔法步兵%d分支 (Rift Magical Infantry Branch %d)"
+}
+NAMES_GROUP_C38_INFANTRY_MIX = {
+    name = "裂隙协同 (Rift Concerted Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "裂隙协同%d分支 (Rift Concerted Branch %d)"
+}
+NAMES_GROUP_C38_MOTORIZED = {
+    name = "裂隙机动步兵 (Rift Motorized Infantry Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "裂隙机动步兵%d分支 (Rift Motorized Infantry Branch %d)"
+}
+NAMES_GROUP_C38_TANK_MEDIUM = {
+    name = "裂隙中型装甲 (Rift Medium Armor Branch)"
+    for_countries = {
+        C38
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "裂隙中型装甲%d分支 (Rift Medium Armor Branch %d)"
+}

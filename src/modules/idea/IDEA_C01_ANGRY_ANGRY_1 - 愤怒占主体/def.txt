@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_ANGRY_1 = {
+			picture = C01_ANGRY_ANGRY_1
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				war_support_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,171 @@
+add_namespace = C01_C03_BLUEBERRY
+country_event = {
+    id = C01_C03_BLUEBERRY.1
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_1
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_1
+    desc = EVENT_C01_C03_BLUEBERRY_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_1_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.2
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_2
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_2
+    desc = EVENT_C01_C03_BLUEBERRY_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_2_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.3
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_3
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_3
+    desc = EVENT_C01_C03_BLUEBERRY_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_3_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.4
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_4
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_4
+    desc = EVENT_C01_C03_BLUEBERRY_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_4_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.5
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_5
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_5
+    desc = EVENT_C01_C03_BLUEBERRY_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_5_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.6
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_6
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_6
+    desc = EVENT_C01_C03_BLUEBERRY_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C01_C03_DERPY_POISON = yes
+        name = EVENT_C01_C03_BLUEBERRY_6_o0
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.7
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_7
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_7
+    desc = EVENT_C01_C03_BLUEBERRY_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_7_o0
+    }
+}
+news_event = {
+    id = C01_C03_BLUEBERRY.8
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_8
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C03_BLUEBERRY_8
+    desc = EVENT_C01_C03_BLUEBERRY_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        C01_C03_DERPY_AND_DOCTOR_HOOVES = yes
+        name = EVENT_C01_C03_BLUEBERRY_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_C01_C03_BLUEBERRY_8_o1
+    }
+}
+country_event = {
+    id = C01_C03_BLUEBERRY.9
+    picture = GFX_EVENT_C01_C03_BLUEBERRY_9
+    immediate = {
+        hidden_effect = {
+            C03 = {
+                retire_character = CHARACTER_SAINT_DERPY_HOOVES
+                add_popularity = {
+                    ideology = despotic
+                    popularity = 1.0
+                }
+                set_politics = {
+                    ruling_party = despotic
+                }
+                hidden_effect = {
+                    remove_all_power_balance_modifiers = {
+                        id = BOP_C03_INDEPENDENCE
+                    }
+                    remove_power_balance = {
+                        id = BOP_C03_INDEPENDENCE
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_VISIBLE_CHARACTER_UNITY_COMMITTEE_C03
+                    promote_character = {
+                        character = CHARACTER_UNITY_COMMITTEE_C03
+                        ideology = despotic_duchy
+                    }
+                }
+            }
+            C01 = {
+                puppet = {
+                    target = C03
+                    end_wars = no
+                }
+                set_country_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_BLUEBERRY_COMPLETED
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C03_BLUEBERRY_9
+    desc = EVENT_C01_C03_BLUEBERRY_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C03_BLUEBERRY_9_o0
+    }
+}

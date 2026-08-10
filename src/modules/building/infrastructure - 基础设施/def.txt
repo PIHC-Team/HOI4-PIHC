@@ -1,0 +1,24 @@
+buildings = {
+	infrastructure = {
+		base_cost = 4500
+		value = 3
+		allied_build = yes
+		infrastructure_construction_effect = yes
+		infrastructure = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				max_fuel_building = 1.5
+			}
+		}
+		tags = {
+			state_infrastructure
+		}
+		level_cap = {
+			state_max = 5
+			group_by = state_infrastructure
+		}
+		icon_frame = 3
+	}
+}
+

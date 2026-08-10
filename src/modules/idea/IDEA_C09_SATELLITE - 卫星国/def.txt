@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		IDEA_C09_SATELLITE = {
+			picture = C09_SATELLITE
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_C15_DISARMED_TOOLTIP
+				local_resources_factor = -0.3
+				political_power_cost = 0.5
+				war_support_factor = -1
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

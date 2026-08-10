@@ -1,0 +1,139 @@
+on_actions = {
+	on_daily_C02 = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C02_HARSH_WINTER
+				}
+				C02_CALCULATE_LOGS_REQUIRED = yes
+				set_temp_variable = {
+					var = C02.VAR_C02_WINTER_FIRE_60
+					value = C02.VAR_C02_WINTER_FIRE
+				}
+				subtract_from_variable = {
+					var = C02.VAR_C02_WINTER_FIRE_60
+					value = 60
+				}
+				set_temp_variable = {
+					var = C02.VAR_C02_WINTER_FIRE_30
+					value = C02.VAR_C02_WINTER_FIRE
+				}
+				subtract_from_variable = {
+					var = C02.VAR_C02_WINTER_FIRE_30
+					value = 30
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = C02.VAR_C02_WINTER_FIRE_PRODUCED
+							value = C02.VAR_C02_WINTER_FIRE_60
+							compare = less_than
+						}
+					}
+					add_stability = -0.006
+					if = {
+						limit = {
+							has_completed_focus = FOCUS_C02_PONYVILLE_AGRICULTURE_3
+						}
+						add_manpower = -150
+					}
+					else = {
+						add_manpower = -600
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						value = -0.005
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						min = 0.0
+						max = 1.0
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						value = 0.001
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						min = 0.0
+						max = 1.0
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = C02.VAR_C02_WINTER_FIRE_PRODUCED
+							value = C02.VAR_C02_WINTER_FIRE_30
+							compare = less_than
+						}
+					}
+					add_stability = -0.002
+					if = {
+						limit = {
+							has_completed_focus = FOCUS_C02_PONYVILLE_AGRICULTURE_3
+						}
+						add_manpower = -80
+					}
+					else = {
+						add_manpower = -300
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						value = -0.002
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						min = 0.0
+						max = 1.0
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						value = 0.001
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						min = 0.0
+						max = 1.0
+					}
+				}
+				else = {
+					limit = {
+						check_variable = {
+							var = C02.VAR_C02_WINTER_FIRE_PRODUCED
+							value = C02.VAR_C02_WINTER_FIRE
+							compare = less_than
+						}
+					}
+					add_stability = -0.001
+					if = {
+						limit = {
+							has_completed_focus = FOCUS_C02_PONYVILLE_AGRICULTURE_3
+						}
+						add_manpower = -50
+					}
+					else = {
+						add_manpower = -200
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						value = -0.001
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+						min = 0.0
+						max = 1.0
+					}
+					add_to_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						value = 0.001
+					}
+					clamp_variable = {
+						var = C02.VAR_C02_ELECTION_MARE
+						min = 0.0
+						max = 1.0
+					}
+				}
+			}
+		}
+	}
+}

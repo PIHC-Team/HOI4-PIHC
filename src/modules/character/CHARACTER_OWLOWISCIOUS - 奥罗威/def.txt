@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_OWLOWISCIOUS = {
+        name = CHARACTER_OWLOWISCIOUS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_OWLOWISCIOUS.dds"
+                small = "gfx/leaders/CHARACTER_OWLOWISCIOUS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_OWLOWISCIOUS_army.dds"
+                small = "gfx/leaders/CHARACTER_OWLOWISCIOUS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_OWLOWISCIOUS_navy.dds"
+                small = "gfx/leaders/CHARACTER_OWLOWISCIOUS_navy_small.dds"
+            }
+        }
+        gender = undefined
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

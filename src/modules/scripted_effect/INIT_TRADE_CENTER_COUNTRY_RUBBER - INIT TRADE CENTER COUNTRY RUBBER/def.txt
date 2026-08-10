@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_RUBBER = {
+	ENABLE_AUTO_TRADE_RUBBER_BUY = yes
+	ENABLE_AUTO_TRADE_RUBBER_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_COST
+		value = 0
+	}
+}

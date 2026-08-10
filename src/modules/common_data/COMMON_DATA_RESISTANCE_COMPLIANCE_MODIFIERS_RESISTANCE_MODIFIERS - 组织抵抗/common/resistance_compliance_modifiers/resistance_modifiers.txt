@@ -1,0 +1,54 @@
+resistance_25 = {
+    type = state_resistance_modifier
+    icon = GFX_occupation_resistance_modifier_strip:1
+    small_icon = GFX_occupation_resistance_modifier_small_strip:1
+    threshold = 25
+    margin = 2
+    state_modifier = {
+        resistance_garrison_penetration_chance = 0.5
+    }
+}
+resistance_50 = {
+    type = state_resistance_modifier
+    icon = GFX_occupation_resistance_modifier_strip:2
+    small_icon = GFX_occupation_resistance_modifier_small_strip:2
+    threshold = 50
+    margin = 2
+    state_modifier = {
+        resistance_damage_to_garrison = 1
+    }
+}
+resistance_75 = {
+    type = state_resistance_modifier
+    icon = GFX_occupation_resistance_modifier_strip:3
+    small_icon = GFX_occupation_resistance_modifier_small_strip:3
+    threshold = 75
+    margin = 2
+    state_modifier = {
+        army_speed_factor_for_controller = -0.5
+        local_supplies_for_controller = -0.5
+        attrition_for_controller = 0.3
+        disable_strategic_redeployment_for_controller = 1
+    }
+}
+resistance_90 = {
+    type = core_resistance_modifier
+    icon = GFX_occupation_resistance_modifier_strip:4
+    small_icon = GFX_occupation_resistance_modifier_small_strip:4
+    threshold = 90
+    margin = 2
+    alert_level = high
+    alert_margin = 20
+    state_modifier = {
+        local_factories = -0.03
+    }
+    on_enable = {
+        custom_effect_tooltip = resistance_90_effect_tooltip
+        hidden_effect = {
+            country_event = {
+                id = occupied_countries.2
+                hours = 1
+            }
+        }
+    }
+}

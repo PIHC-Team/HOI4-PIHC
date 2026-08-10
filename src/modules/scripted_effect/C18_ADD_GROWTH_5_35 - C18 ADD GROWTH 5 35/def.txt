@@ -1,0 +1,11 @@
+C18_ADD_GROWTH_5_35 = {
+	custom_effect_tooltip = C18_ADD_GROWTH_5_35_TOOLTIP
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4 = 1.35
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4
+		min = 0.005
+		max = 100.0
+	}
+}

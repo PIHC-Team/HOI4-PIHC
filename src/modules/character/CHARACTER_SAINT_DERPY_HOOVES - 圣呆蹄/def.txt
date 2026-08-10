@@ -1,0 +1,28 @@
+characters = {
+    CHARACTER_SAINT_DERPY_HOOVES = {
+        name = CHARACTER_SAINT_DERPY_HOOVES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES.dds"
+                small = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES_army.dds"
+                small = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES_navy.dds"
+                small = "gfx/leaders/CHARACTER_SAINT_DERPY_HOOVES_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_SAINT_DERPY_HOOVES_DESC
+            traits = {
+                TRAIT_DERPY_HOOVES_CHAOTIC
+                TRAIT_DERPY_HOOVES_POPULAR
+            }
+            ideology = harmonicism_theocracy
+        }
+    }
+}

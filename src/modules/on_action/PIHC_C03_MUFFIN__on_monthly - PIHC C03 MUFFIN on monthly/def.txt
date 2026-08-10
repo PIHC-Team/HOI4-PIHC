@@ -1,0 +1,12 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = IDEA_DIND_C04_STRATUSBURG_DINER
+				}
+				ADD_INVENTORY_ITEM_3RA_C03_MUFFIN_100 = yes
+			}
+		}
+	}
+}

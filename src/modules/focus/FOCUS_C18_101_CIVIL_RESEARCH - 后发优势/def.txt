@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C18_101_CIVIL_RESEARCH
+	icon = GFX_FOCUS_C18_101_CIVIL_RESEARCH_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_101_CIVIL_INDUSTRY
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = pihc_industry
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 5
+}

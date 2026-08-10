@@ -1,0 +1,45 @@
+state = {
+    id = 774
+    name = STATE_774
+    provinces = {
+        405
+        1103
+        1768
+        2385
+        3322
+        3418
+        4326
+        4609
+        5783
+        6254
+        7528
+        7847
+        9750
+        13754
+        13815
+        13817
+        13844
+        13895
+        13924
+        13949
+        13976
+    }
+    manpower = 1216
+    state_category = wasteland
+    history = {
+        owner = C35
+        victory_points = {
+            405
+            35
+        }
+        buildings = {
+            405 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C35
+    }
+    resources = {
+        oil = 2
+    }
+}

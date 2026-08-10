@@ -1,0 +1,41 @@
+technologies = {
+    TECHNOLOGY_MAGICAL_YOVIDAPHONE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 0
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_magical
+        }
+        enable_equipments = {
+            EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE
+        }
+        enable_subunits = {
+        }
+        allow = {
+            if = {
+                limit = {
+                    tag = C21
+                }
+                custom_trigger_tooltip = {
+                    tooltip = TECHNOLOGY_MAGICAL_YOVIDAPHONE_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        dependencies = {
+            TECHNOLOGY_TROMBONE = 1
+            TECHNOLOGY_MAGICAL_BLUNDERBUSS = 1
+        }
+        research_cost = 3.0
+        start_year = 1005
+    }
+}

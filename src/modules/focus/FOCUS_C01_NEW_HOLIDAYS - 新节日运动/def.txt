@@ -1,0 +1,35 @@
+focus = {
+	id = FOCUS_C01_NEW_HOLIDAYS
+	icon = GFX_FOCUS_C01_NEW_HOLIDAYS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_EMPRESS_PRESTIGE
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.04
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 12
+	y = 5
+}

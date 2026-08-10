@@ -1,0 +1,12 @@
+fake_intel_decoy_tanks = {
+	name = fake_intel_decoy_tanks
+	desc = fake_intel_decoy_tanks_desc
+	outcome = fake_intel_decoy_tanks_outcome
+	picture = GFX_phase_fake_intel_decoy_tanks
+	icon = GFX_phase_fake_intel_decoy_tanks_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 500
+	}
+}

@@ -1,0 +1,13 @@
+capture_cyphers_raid = {
+	name = capture_cyphers_raid
+	desc = capture_cyphers_raid_desc
+	outcome = capture_cyphers_raid_outcome
+	picture = GFX_phase_capture_cyphers_raid
+	icon = GFX_phase_capture_cyphers_raid_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_INFANTRY = 500
+		ARCHETYPE_SUPPORT = 100
+	}
+}

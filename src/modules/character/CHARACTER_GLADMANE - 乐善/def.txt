@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_GLADMANE = {
+        name = CHARACTER_GLADMANE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_GLADMANE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_GLADMANE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_GLADMANE_army.dds"
+                small = "gfx/leaders/CHARACTER_GLADMANE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_GLADMANE_navy.dds"
+                small = "gfx/leaders/CHARACTER_GLADMANE_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_GLADMANE_DESC
+            traits = {
+
+            }
+            ideology = corporation_tribe
+        }
+    }
+}

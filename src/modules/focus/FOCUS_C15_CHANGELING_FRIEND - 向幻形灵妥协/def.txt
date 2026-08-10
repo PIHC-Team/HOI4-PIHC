@@ -1,0 +1,83 @@
+focus = {
+	id = FOCUS_C15_CHANGELING_FRIEND
+	icon = GFX_FOCUS_C15_CHANGELING_FRIEND_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_ECONOMIC_LEFTOVER
+	}
+	bypass = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C15_INDEPENDENCE_WAR
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C15_CHANGELING_ENEMY
+	}
+	cost = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	completion_reward = {
+		news_event = {
+			id = C15_MAIN.6
+			days = 1
+		}
+		345 = {
+			transfer_state_to = C11
+			set_state_name = STATE_345_CHANGELING_ENCLAVE
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_C15_TRIBUTED_LOVE_2
+			}
+			swap_ideas = {
+				add_idea = IDEA_C15_TRIBUTED_LOVE_3
+				remove_idea = IDEA_C15_TRIBUTED_LOVE_2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_C15_TRIBUTED_LOVE
+			}
+			swap_ideas = {
+				add_idea = IDEA_C15_TRIBUTED_LOVE_2
+				remove_idea = IDEA_C15_TRIBUTED_LOVE
+			}
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+		40 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C15
+				}
+				BUILD_A_MIC = yes
+				BUILD_A_CIC = yes
+				BUILD_A_CIC = yes
+				BUILD_A_CIC = yes
+			}
+		}
+		C11 = {
+			give_guarantee = C15
+		}
+		C01 = {
+			diplomatic_relation = {
+				country = C15
+				relation = guarantee
+				active = no
+			}
+		}
+	}
+	x = 7
+	y = 7
+}

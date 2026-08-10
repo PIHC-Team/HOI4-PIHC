@@ -1,0 +1,51 @@
+C18_DEL_GROWTH_0_15 = {
+	custom_effect_tooltip = C18_DEL_GROWTH_0_15_TOOLTIP
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0
+		min = 0.005
+		max = 100.0
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1
+		min = 0.005
+		max = 100.0
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2
+		min = 0.005
+		max = 100.0
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3
+		min = 0.005
+		max = 100.0
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4
+		min = 0.005
+		max = 100.0
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5 = 0.85
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5
+		min = 0.005
+		max = 100.0
+	}
+}

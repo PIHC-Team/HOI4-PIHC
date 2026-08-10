@@ -1,0 +1,17 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_MANEHATTAN_UNSTABLE = {
+			picture = C08_MANEHATTAN_UNSTABLE
+			removal_cost = -1
+			modifier = {
+				land_reinforce_rate = -0.1
+				army_morale_factor = -0.8
+				army_org_factor = -0.8
+				army_org_regain = -0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

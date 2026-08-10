@@ -1,0 +1,25 @@
+# PIHC3-compatible adaptation of HOI4 1.19.2 common/ai_templates/generic.txt.
+# The base-game template is retained with PIHC3's dedicated HQ regiment.
+hq_generic = {
+	role = hq_role
+
+	upgrade_prio = {
+		base = 0
+	}
+
+	hq_default = {
+		upgrade_prio = {
+			base = 0
+		}
+
+		target_template = {
+			support = {
+				hq_support_company = 1
+			}
+
+			regiments = {
+				hq_infantry = 2
+			}
+		}
+	}
+}

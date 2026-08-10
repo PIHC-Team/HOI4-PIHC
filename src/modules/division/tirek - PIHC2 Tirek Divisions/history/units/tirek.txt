@@ -1,0 +1,15 @@
+division_template = {
+    name = "提雷克 (Tirek)"
+    regiments = {
+        tirek = {
+            x = 0
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    division_cap = 1
+    priority = 0
+}

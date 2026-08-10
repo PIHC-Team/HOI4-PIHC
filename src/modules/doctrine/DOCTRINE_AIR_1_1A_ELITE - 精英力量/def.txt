@@ -1,0 +1,40 @@
+pihc_air_bloodthirsty_flock_fighter_aircraft_a = {
+	track = fighter_aircraft
+	name = DOCTRINE_AIR_1_1A_ELITE
+	description = DOCTRINE_AIR_1_1A_ELITE_DESC
+	icon = GFX_doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_a_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	air_ace_bonuses_factor = 0.15
+	ace_effectiveness_factor = 0.15
+	air_ace_generation_chance_factor = 0.05
+	rewards = {
+		flagship = {
+			category_air_airship = {
+				air_attack = 0.12
+				air_bombing = 0.15
+			}
+			category_air_galleon = {
+				air_attack = 0.08
+				air_bombing = 0.08
+			}
+		}
+		efficient = {
+			air_mission_efficiency = 0.1
+			ground_attack_factor = 0.1
+			air_accidents_factor = -0.1
+		}
+	}
+}

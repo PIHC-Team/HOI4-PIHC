@@ -1,0 +1,14 @@
+PV_0_3 = {
+	C01 = {
+		every_owned_state = {
+			if = {
+				limit = {
+					NOT = {
+						state = 369
+					}
+				}
+				transfer_state_to = C00
+			}
+		}
+	}
+}

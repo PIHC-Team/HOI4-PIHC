@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C18_SPONSORED_OVERSEA = {
+			picture = C18_SPONSORED_OVERSEA
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.35
+				research_sharing_per_country_bonus_factor = 0.25
+				civilian_factory_use = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

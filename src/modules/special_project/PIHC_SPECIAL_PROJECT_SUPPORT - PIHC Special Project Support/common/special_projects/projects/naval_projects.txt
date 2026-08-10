@@ -1,0 +1,180 @@
+sp_naval_cruiser_submarine = {
+	specialization = specialization_naval
+	project_tags = sp_tag_submarine
+
+	ai_will_do = {
+		base = 1
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	allowed = {
+		always = yes
+	}
+
+	available = {
+		always = yes
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 8
+		}
+	}
+
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_EUREKA
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+	}
+}
+
+sp_naval_midget_submarine = {
+	specialization = specialization_naval
+	project_tags = sp_tag_submarine
+
+	ai_will_do = {
+		base = 1
+	}
+
+	complexity = sp_complexity.small
+	prototype_time = sp_time.prototype.short
+
+	allowed = {
+		always = yes
+	}
+
+	available = {
+		always = yes
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 4
+		}
+	}
+
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_EUREKA
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+	}
+}
+
+sp_naval_submarine_carrier = {
+	specialization = specialization_naval
+	project_tags = sp_tag_submarine
+
+	ai_will_do = {
+		base = 1
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.long
+
+	allowed = {
+		always = yes
+	}
+
+	available = {
+		always = yes
+	}
+
+	special_project_parent = {
+		sp_naval_cruiser_submarine
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 12
+			chromium = 4
+		}
+	}
+
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_EUREKA
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+	}
+}
+
+sp_naval_support_ships = {
+	specialization = specialization_naval
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+	}
+
+	complexity = sp_complexity.small
+	prototype_time = sp_time.prototype.short
+
+	allowed = {
+		always = yes
+	}
+
+	available = {
+		always = yes
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 4
+		}
+	}
+
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_EUREKA
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+	}
+}
+
+sp_naval_escort_carrier = {
+	specialization = specialization_naval
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	allowed = {
+		always = yes
+	}
+
+	available = {
+		always = yes
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 8
+			aluminium = 4
+		}
+	}
+
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_EUREKA
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+	}
+}

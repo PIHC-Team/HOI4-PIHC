@@ -1,0 +1,54 @@
+technologies = {
+    TECHNOLOGY_CANNON_HEAVY_STEAM = {
+        folder = {
+            name = artillery_folder
+            position = {
+                x = 4
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_artillery
+        }
+        enable_equipments = {
+            EQUIPMENT_CANNON_HEAVY_STEAM
+        }
+        enable_building = {
+            building = mega_gun_emplacement
+            level = 1
+        }
+        enable_subunits = {
+            cannon_heavy
+            cannon_tank_heavy
+            cannon_mot_heavy
+        }
+        dependencies = {
+            TECHNOLOGY_CANNON_CATAPULT = 1
+            TECHNOLOGY_TECH_ENER_I = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_CANNON_HEAVY_MODERN
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            modifier = {
+                factor = 10
+                arms_factory > 50
+            }
+            modifier = {
+                factor = -10
+                arms_factory < 30
+            }
+            modifier = {
+                factor = 10
+                date > 1005.1.1
+            }
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

@@ -1,0 +1,45 @@
+state = {
+    id = 394
+    name = STATE_394
+    provinces = {
+        641
+        1001
+        1342
+        1893
+        2905
+        3138
+        3505
+        3777
+        5901
+        7693
+        8822
+        9210
+        9410
+        9724
+        9793
+        10690
+        10767
+        10817
+        10873
+        10948
+        10972
+        10973
+        10986
+    }
+    manpower = 25044
+    state_category = pastoral
+    history = {
+        owner = C17
+        victory_points = {
+            641
+            1
+        }
+        buildings = {
+            farm_complex = 1
+        }
+        add_core_of = C17
+    }
+    resources = {
+        steel = 2
+    }
+}

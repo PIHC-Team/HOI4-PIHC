@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_ARROGANT_AIR_COMMANDER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		air_cas_present_factor = 0.15
+		army_bonus_air_superiority_factor = 0.1
+		air_accidents = 0.1
+		experience_gain_air = 0.2
+	}
+}

@@ -1,0 +1,8 @@
+DECISION_CATEGORY_C08_EASTERN_EQUESTRIA_PROBLEM = {
+    icon = C08_EASTERN_EQUESTRIA_PROBLEM
+    picture = GFX_decision_category_picture
+    priority = 30000
+    allowed = {
+        always = no
+    }
+}

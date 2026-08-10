@@ -1,0 +1,36 @@
+ideas = {
+	materiel_manufacturer = {
+		IDEA_DINFANTRY_MBM = {
+			picture = DINFANTRY_MBM
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.05
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			cost = 150
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C06
+			}
+			equipment_bonus = {
+				ARCHETYPE_INFANTRY = {
+					build_cost_ic = -0.35
+				}
+			}
+			ai_will_do = {
+				base = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

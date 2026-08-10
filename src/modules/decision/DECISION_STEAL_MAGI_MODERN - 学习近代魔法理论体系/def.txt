@@ -1,0 +1,47 @@
+DECISION_CATEGORY_RESEARCH_SPEEDUP = {
+    DECISION_STEAL_MAGI_MODERN = {
+        fixed_random_seed = no
+        priority = 50
+        visible = {
+            NOT = {
+                OR = {
+                    has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+                    is_blank_country = yes
+                }
+            }
+        }
+        available = {
+            any_neighbor_country = {
+                NOT = {
+                    OR = {
+                        is_forbidden_to_interact = yes
+                        has_government = transcendence
+                    }
+                }
+                has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+            }
+            OR = {
+                NOT = {
+                    has_idea = IDEA_ERA_MAGIC_4_MUGGLE
+                }
+                has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+            }
+        }
+        cost = 75
+        days_remove = 120
+        remove_effect = {
+            set_technology = {
+                TECHNOLOGY_TECH_MAGI_MODERN = 1
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 100
+            modifier = {
+                add = -100
+                is_blank_country = yes
+            }
+        }
+        icon = STEAL_MAGI_MODERN
+    }
+}

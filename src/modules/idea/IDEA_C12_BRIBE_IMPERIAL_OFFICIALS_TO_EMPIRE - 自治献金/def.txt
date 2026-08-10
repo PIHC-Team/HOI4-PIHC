@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		IDEA_C12_BRIBE_IMPERIAL_OFFICIALS_TO_EMPIRE = {
+			picture = C12_BRIBE_IMPERIAL_OFFICIALS_TO_EMPIRE
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			allowed = {
+				tag = C01
+			}
+			available = {
+				country_exists = C01
+				NOT = {
+					has_war_with = C12
+				}
+			}
+			on_add = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 4
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

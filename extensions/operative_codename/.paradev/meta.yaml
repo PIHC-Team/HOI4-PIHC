@@ -1,0 +1,107 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/operative_codename
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-operative-codename
+items:
+-   kind: entity
+    identifier: pihc3-operative-codename-module
+    name: PIHC3 Operative Codename Module
+    desc: Project-owned operative_codename source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3OperativeCodenameModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-operative-codename
+    name: PIHC3 Operative Codename
+    desc: PIHC3 operative_codename module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-operative-codename-module
+        definition:
+            identifier: pihc3-operative-codename
+            name: PIHC3 Operative Codename
+            version: 0.2.3
+            desc: PIHC3 operative_codename module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-operative-codename-module
+            meta:
+                project: PIHC3
+                family: operative_codename
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-operative-codename
+    name: PIHC3 Operative Codename Compiler
+    desc: Registry-backed source slots and compiler hooks for operative_codename.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: operative-codenames
+            title: Operative Codenames
+            group: military
+            title_key: modules.operativeCodenames.title
+        dependencies:
+        - extension:pihc3-operative-codename
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-06d752077f320948
+    name: PIHC3 Basic Operative Codename Theme
+    desc: PIHC3 authoring template pihc3:operative_codename/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:operative_codename/basic
+            declaration:
+                title: PIHC3 Basic Operative Codename Theme
+                family: operative_codename
+                args:
+                    title:
+                        required: true
+                    countries:
+                        default: C01
+                    fallback_name:
+                        default: Agent %d
+                    codename_one:
+                        default: Friendship
+                    codename_two:
+                        default: Harmony
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n    name = {object_id}_NAME_THEME\n\
+                        \    for_countries = {{ {countries} }}\n\n    type = codename\n\
+                        \    fallback_name = \"{fallback_name}\"\n\n    unique = {{\n\
+                        \        \"{codename_one}\"\n        \"{codename_two}\"\n\
+                        \    }}\n}}\n"
+                    main.loc: '[{language}.{object_id}_NAME_THEME]
+
+                        {title}
+
+                        '
+                directory: '{object_id} - {title}'

@@ -1,0 +1,28 @@
+COMPUTE_TRADE_CENTER_CHROMIUM_REQ = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_CHROMIUM_BUY
+			}
+		}
+		set_variable = {
+			var = VAR_TRADE_CENTER_CHROMIUM_REQ
+			value = resource@chromium
+		}
+		multiply_variable = {
+			var = VAR_TRADE_CENTER_CHROMIUM_REQ
+			value = -1
+		}
+		clamp_variable = {
+			var = VAR_TRADE_CENTER_CHROMIUM_REQ
+			min = 0
+		}
+	}
+	else = {
+		set_variable = {
+			var = VAR_TRADE_CENTER_CHROMIUM_REQ
+			value = 0
+		}
+	}
+}

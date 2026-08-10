@@ -1,0 +1,264 @@
+add_namespace = C23_MAIN
+country_event = {
+    id = C23_MAIN.1
+    picture = GFX_EVENT_C23_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_1
+    desc = EVENT_C23_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C23_MAIN.2
+                days = 5
+            }
+        }
+        name = EVENT_C23_MAIN_1_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.2
+    picture = GFX_EVENT_C23_MAIN_2
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_2
+    desc = EVENT_C23_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_2_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.3
+    picture = GFX_EVENT_C23_MAIN_3
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_3
+    desc = EVENT_C23_MAIN_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C23_MAIN.7
+                days = 20
+            }
+        }
+        name = EVENT_C23_MAIN_3_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.4
+    picture = GFX_EVENT_C23_MAIN_4
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_4
+    desc = EVENT_C23_MAIN_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_4_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.5
+    picture = GFX_EVENT_C23_MAIN_5
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_5
+    desc = EVENT_C23_MAIN_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_5_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.6
+    picture = GFX_EVENT_C23_MAIN_6
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_6
+    desc = EVENT_C23_MAIN_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_6_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.7
+    picture = GFX_EVENT_C23_MAIN_7
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_7
+    desc = EVENT_C23_MAIN_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_7_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.8
+    picture = GFX_EVENT_C23_MAIN_8
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_8
+    desc = EVENT_C23_MAIN_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C23_MAIN.9
+            }
+        }
+        name = EVENT_C23_MAIN_8_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.9
+    picture = GFX_EVENT_C23_MAIN_9
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_9
+    desc = EVENT_C23_MAIN_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_9_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.10
+    picture = GFX_EVENT_C23_MAIN_10
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_10
+    desc = EVENT_C23_MAIN_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C23 = {
+            add_ideas = IDEA_C23_GLOBAL_INTERVENTION
+        }
+        C28 = {
+            add_ideas = IDEA_C23_GLOBAL_INTERVENTION
+        }
+        name = EVENT_C23_MAIN_10_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.11
+    picture = GFX_EVENT_C23_MAIN_11
+    trigger = {
+        NOT = {
+            C07 = {
+                has_completed_focus = FOCUS_C07_LPMIG_ISLES_WAR_C23
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_11
+    desc = EVENT_C23_MAIN_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            annex_country = {
+                target = C44
+                transfer_troops = yes
+            }
+        }
+        hidden_effect = {
+            set_variable = {
+                var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                value = C44
+            }
+            CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+            clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+        }
+        name = EVENT_C23_MAIN_11_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.12
+    picture = GFX_EVENT_C23_MAIN_12
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_12
+    desc = EVENT_C23_MAIN_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_12_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.13
+    picture = GFX_EVENT_C23_MAIN_13
+    immediate = {
+        hidden_effect = {
+            C27_CIVIL_WAR = yes
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_13
+    desc = EVENT_C23_MAIN_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_13_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.14
+    picture = GFX_EVENT_C23_MAIN_14
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_14
+    desc = EVENT_C23_MAIN_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_14_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.15
+    picture = GFX_EVENT_C23_MAIN_15
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_15
+    desc = EVENT_C23_MAIN_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C23_MAIN_15_o0
+    }
+}
+country_event = {
+    id = C23_MAIN.16
+    picture = GFX_EVENT_C23_MAIN_16
+    is_triggered_only = yes
+    title = EVENT_C23_MAIN_16
+    desc = EVENT_C23_MAIN_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C23 = {
+            promote_character = {
+                character = CHARACTER_HUMAN_TWILIGHT_SPARKLE
+                ideology = democratic_harmonicism
+            }
+        }
+        name = EVENT_C23_MAIN_16_o0
+    }
+}

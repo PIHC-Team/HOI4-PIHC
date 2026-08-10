@@ -1,0 +1,60 @@
+[en.IDEA_C18_MODERNIZATION]
+Modernization
+
+[en.IDEA_C18_MODERNIZATION_MODIFIER_TOOLTIP]
+Every §Y1.0%§! of the §0National Urbanization Rate§! above §Y25.0%§! will bring:
+Construction Speed: [?C18.VAR_URBAN_CONSTRUCTION_FACTOR|=.1+%%]
+Factory Output: [?C18.VAR_URBAN_FACTORY_FACTOR|=.1+%%]
+Dockyard Output: [?C18.VAR_URBAN_DOCKYARD_FACTOR|=.1+%%]
+Factory Repair Speed: [?C18.VAR_URBAN_REPAIR_FACTOR|=.1+%%]
+Free Repair: [?C18.VAR_URBAN_SELF_REPAIR_FACTOR|=.1+%%]
+Resource Gain Efficiency: [?C18.VAR_URBAN_RESOURCE_FACTOR|=.1+%%]
+Supply Range: [?C18.VAR_URBAN_SUPPLY_RANGE_FACTOR|=.1+%%]
+Daily Political Power Gain: [?C18.VAR_URBAN_POLITICAL_GAIN_FACTOR|=.2+]
+
+--------------------------------------------
+Current Effects (National Urbanization Rate: §Y[?C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO|%]§!):
+Construction Speed: [?C18.VAR_URBAN_CONSTRUCTION|=.1+%]
+Factory Output: [?C18.VAR_URBAN_FACTORY|=.1+%]
+Dockyard Output: [?C18.VAR_URBAN_DOCKYARD|=.1+%]
+Factory Repair Speed: [?C18.VAR_URBAN_REPAIR|=.1+%]
+Free Repair: [?C18.VAR_URBAN_SELF_REPAIR|=.1+%]
+Resource Gain Efficiency: [?C18.VAR_URBAN_RESOURCE|=.1+%]
+Supply Range: [?C18.VAR_URBAN_SUPPLY_RANGE|=.1+%]
+Daily Political Power Gain: [?C18.VAR_URBAN_POLITICAL_GAIN|=.2+]
+
+--------------------------------------------
+The Urbanization Rate of a region is determined by the buildings within it. Each §YCivilian Factory§!, §YMilitary Factory§!, and §YDockyard§! will increase the Urbanization Rate of the region, while §YFarm§! will decrease it.
+
+[en.IDEA_C18_MODERNIZATION_desc]
+
+
+[zh.IDEA_C18_MODERNIZATION]
+现代化
+
+[zh.IDEA_C18_MODERNIZATION_MODIFIER_TOOLTIP]
+超过§Y25.0%§!的每§Y1.0%§!的§0全国城镇化率§!将带来：
+建造速度：[?C18.VAR_URBAN_CONSTRUCTION_FACTOR|=.1+%%]
+工厂产出：[?C18.VAR_URBAN_FACTORY_FACTOR|=.1+%%]
+海军船坞产出：[?C18.VAR_URBAN_DOCKYARD_FACTOR|=.1+%%]
+工厂修复速度：[?C18.VAR_URBAN_REPAIR_FACTOR|=.1+%%]
+免费维修：[?C18.VAR_URBAN_SELF_REPAIR_FACTOR|=.1+%%]
+战略资源获取效率：[?C18.VAR_URBAN_RESOURCE_FACTOR|=.1+%%]
+补给范围：[?C18.VAR_URBAN_SUPPLY_RANGE_FACTOR|=.1+%%]
+每日获得的政治点数：[?C18.VAR_URBAN_POLITICAL_GAIN_FACTOR|=.2+]
+
+--------------------------------------------
+当前的效果（全国城镇化率：§Y[?C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO|%]§!）：
+建造速度：[?C18.VAR_URBAN_CONSTRUCTION|=.1+%]
+工厂产出：[?C18.VAR_URBAN_FACTORY|=.1+%]
+海军船坞产出：[?C18.VAR_URBAN_DOCKYARD|=.1+%]
+工厂修复速度：[?C18.VAR_URBAN_REPAIR|=.1+%]
+免费维修：[?C18.VAR_URBAN_SELF_REPAIR|=.1+%]
+战略资源获取效率：[?C18.VAR_URBAN_RESOURCE|=.1+%]
+补给范围：[?C18.VAR_URBAN_SUPPLY_RANGE|=.1+%]
+每日获得的政治点数：[?C18.VAR_URBAN_POLITICAL_GAIN|=.2+]
+
+--------------------------------------------
+地区城镇化率取决于地区内的建筑物。每一座 §Y民用工厂§!、§Y军用工厂§! 和 §Y船坞§! 都会提高该地区的城镇化率，§Y农场§! 则会降低城镇化率。
+
+[zh.IDEA_C18_MODERNIZATION_desc]

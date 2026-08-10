@@ -1,0 +1,151 @@
+capital = 412
+set_popularities = {
+    democratic = 45
+    harmonicism = 35
+    despotic = 20
+}
+set_politics = {
+    ruling_party = democratic
+    last_election = 1002.3.2
+    election_frequency = 48
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C03
+recruit_character = CHARACTER_OPEN_SKIES
+recruit_character = CHARACTER_FLEETFOOT_C03
+recruit_character = CHARACTER_SNOW_VIOLET
+recruit_character = CHARACTER_SOARIN
+recruit_character = CHARACTER_DERPY_HOOVES
+recruit_character = CHARACTER_UNITY_COMMITTEE_C03
+recruit_character = CHARACTER_SAINT_DERPY_HOOVES
+add_ideas = export_focus
+add_ideas = disarmed_nation
+add_ideas = civilian_economy
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+add_ideas = IDEA_ERA_TECH_3_NEUTRAL
+add_ideas = IDEA_C03_MUFFIN
+add_ideas = IDEA_DINFANTRY_EEMD
+set_power_balance = {
+    id = BOP_C03_INDEPENDENCE
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C03_INDEPENDENCE
+    modifier = BOP_C03_INDEPENDENCE_DAILY_DRIFT
+}
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = 1000
+400 = {
+    set_demilitarized_zone = yes
+}
+set_major = no
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 60
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 600
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_SCOUT
+    amount = 40
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_ARMED
+    amount = 160
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 60
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C03
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_FIRELANCE
+        creator = C03
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = train_equipment_1
+        creator = C03
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE

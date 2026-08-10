@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C12_AIR_TO_GROUND_SPECIAL_FROSTING
+	icon = GFX_FOCUS_C12_AIR_TO_GROUND_SPECIAL_FROSTING_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_FLY_HIGHER
+	}
+	cost = 4
+	completion_reward = {
+		add_ideas = IDEA_C12_SPECIAL_FROSTING
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 7
+}

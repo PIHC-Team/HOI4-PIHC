@@ -1,0 +1,35 @@
+characters = {
+    CHARACTER_UMBRUM_RABIA = {
+        name = CHARACTER_UMBRUM_RABIA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_UMBRUM_RABIA.dds"
+                small = "gfx/leaders/CHARACTER_UMBRUM_RABIA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_UMBRUM_RABIA_army.dds"
+                small = "gfx/leaders/CHARACTER_UMBRUM_RABIA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_UMBRUM_RABIA_navy.dds"
+                small = "gfx/leaders/CHARACTER_UMBRUM_RABIA_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_UMBRUM_RABIA
+            desc = CHARACTER_UMBRUM_RABIA_DESC
+            traits = {
+                TRAIT_UMBRUM_RABIA
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 50
+            removal_cost = -1
+            slot = political_advisor
+            visible = {
+                has_completed_focus = FOCUS_C15_SOMBRA_CRYSTAL_CABINATE
+            }
+        }
+    }
+}

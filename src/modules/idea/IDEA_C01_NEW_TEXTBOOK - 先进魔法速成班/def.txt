@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C01_NEW_TEXTBOOK = {
+			picture = C01_NEW_TEXTBOOK
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			on_remove = {
+				add_ideas = IDEA_C01_NEW_TEXTBOOK_2
+			}
+			research_bonus = {
+				pihc_magic_theory = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

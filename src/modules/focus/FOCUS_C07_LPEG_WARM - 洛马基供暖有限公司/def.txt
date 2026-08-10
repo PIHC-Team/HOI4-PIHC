@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C07_LPEG_WARM
+	icon = GFX_FOCUS_C07_LPEG_WARM_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPEG
+	}
+	cost = 2
+	completion_reward = {
+		add_ideas = IDEA_C07_HEAT_CO
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 4
+}

@@ -1,0 +1,15 @@
+MODULE_PROJECTILE_6C_IGNIS = {
+	category = pihc_tank_projectile_type_2_necro
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.5
+		soft_attack = 20.0
+		hard_attack = 12.0
+		ap_attack = 36.0
+		reliability = -0.05
+	}
+	multiply_stats = {
+		equipment_capture_factor = 0.05
+	}
+	xp_cost = 10
+}

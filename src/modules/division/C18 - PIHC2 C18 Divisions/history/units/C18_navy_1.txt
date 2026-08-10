@@ -1,0 +1,47 @@
+units = {
+    fleet = {
+        name = "Kirin Bao Chuan Fleet"
+        naval_base = 5174
+        task_force = {
+            name = "Kirin Bao Chuan Fleet 1"
+            location = 17644
+            ship = {
+                name = "Kirin Bao Chuan"
+                definition = battleship
+                pride_of_the_fleet = yes
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C18
+                        version_name = "Bao Chuan Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Kirin Liang Chuan"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C18
+                        version_name = "Liang Chuan Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Kirin Zuo Chuan"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C18
+                        version_name = "Zuo Chuan Class"
+                    }
+                }
+            }
+        }
+    }
+}

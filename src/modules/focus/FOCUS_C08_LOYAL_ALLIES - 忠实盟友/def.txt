@@ -1,0 +1,42 @@
+focus = {
+	id = FOCUS_C08_LOYAL_ALLIES
+	icon = GFX_FOCUS_C08_LOYAL_ALLIES_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_STARLIGHT_RADIO
+	}
+	cost = 1
+	completion_reward = {
+		country_event = {
+			id = C08_MAIN.30
+			days = 1
+		}
+		C05 = {
+			country_event = {
+				id = C08_MAIN.30
+				days = 1
+			}
+		}
+		C23 = {
+			country_event = {
+				id = C08_MAIN.30
+				days = 1
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 13
+	y = 4
+}

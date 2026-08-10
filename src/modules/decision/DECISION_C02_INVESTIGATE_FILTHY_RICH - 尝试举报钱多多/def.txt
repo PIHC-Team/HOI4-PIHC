@@ -1,0 +1,35 @@
+DECISION_CATEGORY_C02_POPULARITY = {
+    DECISION_C02_INVESTIGATE_FILTHY_RICH = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 25
+        days_remove = 35
+        fire_only_once = yes
+        allowed = {
+            tag = C02
+        }
+        visible = {
+            has_character = CHARACTER_FILTHY_RICH
+        }
+        available = {
+            has_character = CHARACTER_FILTHY_RICH
+        }
+        remove_effect = {
+            hidden_effect = {
+                country_event = {
+                    id = EEMO.7
+                    random_days = 3
+                }
+                add_power_balance_value = {
+                    id = BOP_C02_INDEPENDENCE
+                    value = -0.05
+                    tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+                }
+            }
+        }
+        ai_will_do = {
+            base = 400
+        }
+        icon = C02_INVESTIGATE_FILTHY_RICH
+    }
+}

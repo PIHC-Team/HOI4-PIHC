@@ -1,0 +1,29 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_MANEHATTAN_INVADE = {
+        fixed_random_seed = no
+        priority = 79988
+        cost = 100
+        days_remove = 3
+        visible = {
+            tag = C08
+            has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+        }
+        available = {
+            has_full_control_of_state = 4
+            has_full_control_of_state = 415
+            has_full_control_of_state = 450
+        }
+        remove_effect = {
+            C06 = {
+                add_timed_idea = {
+                    idea = IDEA_C08_MANEHATTAN_UNSTABLE
+                    days = 21
+                }
+            }
+        }
+        ai_will_do = {
+            base = 114514
+        }
+        icon = C08_MANEHATTAN_INVADE
+    }
+}

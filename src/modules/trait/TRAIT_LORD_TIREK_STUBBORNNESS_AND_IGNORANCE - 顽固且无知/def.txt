@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_LORD_TIREK_STUBBORNNESS_AND_IGNORANCE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		research_speed_factor = -0.2
+		stability_factor = -0.1
+		local_resources_factor = -0.05
+	}
+}

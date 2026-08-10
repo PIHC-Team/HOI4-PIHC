@@ -1,0 +1,36 @@
+technologies = {
+    TECHNOLOGY_BBA_TECH_BMB_WEAPON_III = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 2
+                y = 12
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+            pihc_air_bmb
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_PLANE_WEAPON_GRDBMB_3A_BOMB
+            MODULE_PLANE_WEAPON_GRDBMB_3B_THUMBTACKS
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_IV
+            research_cost_coeff = 1
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        research_cost = 1.5
+        start_year = 1004
+    }
+}

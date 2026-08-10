@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_PHARYNX = {
+        name = CHARACTER_PHARYNX_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PHARYNX.dds"
+                small = "gfx/leaders/CHARACTER_PHARYNX_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PHARYNX_army.dds"
+                small = "gfx/leaders/CHARACTER_PHARYNX_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PHARYNX_navy.dds"
+                small = "gfx/leaders/CHARACTER_PHARYNX_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_PHARYNX_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_revengeism
+        }
+    }
+}

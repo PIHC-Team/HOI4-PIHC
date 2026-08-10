@@ -1,0 +1,37 @@
+focus = {
+	id = FOCUS_C12_SHADOWS_OF_THE_PAST
+	icon = GFX_FOCUS_C12_SHADOWS_OF_THE_PAST_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_UNPRECEDENTED_PROSPERITY
+	}
+	allow_branch = {
+		OR = {
+			has_completed_focus = FOCUS_C12_UNPRECEDENTED_PROSPERITY
+			has_country_flag = PIHC_COUNTRY_FLAG_DEBUG_C12
+		}
+	}
+	cost = 1
+	completion_reward = {
+		country_event = {
+			id = C12_MAIN.39
+			days = 2
+			random_days = 2
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 16
+}

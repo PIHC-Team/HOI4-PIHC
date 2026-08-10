@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_RADIANT_HOPE = {
+        name = CHARACTER_RADIANT_HOPE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_RADIANT_HOPE.dds"
+                small = "gfx/leaders/CHARACTER_RADIANT_HOPE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_RADIANT_HOPE_army.dds"
+                small = "gfx/leaders/CHARACTER_RADIANT_HOPE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_RADIANT_HOPE_navy.dds"
+                small = "gfx/leaders/CHARACTER_RADIANT_HOPE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_RADIANT_HOPE_DESC
+            traits = {
+                TRAIT_RADIANT_HOPE
+            }
+            ideology = harmonicism_democracy
+        }
+        advisor = {
+            idea_token = CHARACTER_RADIANT_HOPE
+            desc = CHARACTER_RADIANT_HOPE_DESC
+            traits = {
+                TRAIT_RADIANT_HOPE
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+            visible = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C15_RETURNED_RADIANT_HOPE
+            }
+        }
+    }
+}

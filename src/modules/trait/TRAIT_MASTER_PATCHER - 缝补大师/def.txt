@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_MASTER_PATCHER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		equipment_capture_factor = 0.2
+	}
+}

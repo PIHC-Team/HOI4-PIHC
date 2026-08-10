@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_OAK_PIE_IRON_FIST = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.15
+		experience_gain_army = 0.2
+	}
+}

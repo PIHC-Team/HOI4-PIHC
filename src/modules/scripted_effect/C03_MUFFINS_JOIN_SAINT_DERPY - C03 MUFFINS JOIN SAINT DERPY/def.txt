@@ -1,0 +1,8 @@
+C03_MUFFINS_JOIN_SAINT_DERPY = {
+	leave_faction = yes
+	END_ALL_WARS = yes
+	add_stability = 0.1
+	C03 = {
+		add_to_faction = PREV
+	}
+}

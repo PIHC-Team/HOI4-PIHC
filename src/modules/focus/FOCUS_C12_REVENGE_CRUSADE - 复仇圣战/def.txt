@@ -1,0 +1,77 @@
+focus = {
+	id = FOCUS_C12_REVENGE_CRUSADE
+	icon = GFX_FOCUS_C12_REVENGE_CRUSADE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_ROAD_OF_APPLELOOSA
+	}
+	cost = 4
+	bypass = {
+		OR = {
+			NOT = {
+				country_exists = C01
+			}
+			C01 = {
+				has_war_with = C12
+			}
+		}
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = C01
+			type = take_state_focus
+		}
+		add_war_support = 0.15
+		remove_power_balance = {
+			id = BOP_C12_INDEPENDENCE
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_C12_BRIBE_IMPERIAL_OFFICIALS
+			}
+			remove_ideas = IDEA_C12_BRIBE_IMPERIAL_OFFICIALS
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ALL_C01_COLONY
+			}
+			remove_ideas = IDEA_ALL_C01_COLONY
+		}
+		add_timed_idea = {
+			idea = IDEA_C12_REVENGE_CRUSADE_EMPIRE
+			days = 180
+		}
+		hidden_effect = {
+			country_event = {
+				id = C12_MAIN.104
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			OR = {
+				has_war = no
+				date > 1008.2.1
+			}
+		}
+		else = {
+			has_war = no
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 28
+}

@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C12_REBUILD_WEST_EQUESTRIA
+	icon = GFX_FOCUS_C12_REBUILD_WEST_EQUESTRIA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_SECOND_BATCH_OF_SPONSORSHIP
+	}
+	cost = 4
+	completion_reward = {
+		644 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			set_state_category = large_town
+			add_victory_points = {
+				province = 489
+				value = 25
+			}
+		}
+		give_market_access = C07
+	}
+	available = {
+		country_exists = C07
+		custom_trigger_tooltip = {
+			tooltip = PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP_TRIGGER_TOOLTIP
+			has_country_flag = PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP
+		}
+		owns_state = 644
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 10
+}

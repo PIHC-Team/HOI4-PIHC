@@ -1,0 +1,65 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/modifier
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-modifier
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-modifier
+    name: PIHC3 Modifier Compiler
+    desc: Compiles standalone modifiers and modifier collections.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: modifiers
+            title: Modifiers
+            group: shared
+            title_key: modules.modifiers.title
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-3144b04b0adf9fd7
+    name: PIHC3 Basic Modifier
+    desc: PIHC3 authoring template pihc3:modifier/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:modifier/basic
+            declaration:
+                title: PIHC3 Basic Modifier
+                family: modifier
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    modifier:
+                        default: stability_factor
+                    value:
+                        default: '0.05'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n\t{modifier} = {value}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

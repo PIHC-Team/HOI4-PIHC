@@ -1,0 +1,134 @@
+C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = {
+	set_temp_variable = {
+		C15.temp_party_2_expected_pop = C15.party_popularity_100@despotic
+	}
+	multiply_temp_variable = {
+		C15.temp_party_2_expected_pop = 5
+	}
+	multiply_temp_variable = {
+		C15.temp_party_2_expected_pop = C15.C15_royal_support_factor
+	}
+	round_variable = C15.temp_party_2_expected_pop
+	clamp_variable = {
+		var = C15.temp_party_2_expected_pop
+		min = 0
+		max = 500
+	}
+	set_temp_variable = {
+		C15.temp_party_3_expected_pop = C15.party_popularity_100@harmonicism
+	}
+	multiply_temp_variable = {
+		C15.temp_party_3_expected_pop = 5
+	}
+	clamp_variable = {
+		var = C15.temp_party_3_expected_pop
+		min = 0
+		max = 500
+	}
+	set_temp_variable = {
+		C15.temp_party_4_expected_pop = C15.party_popularity_100@democratic
+	}
+	multiply_temp_variable = {
+		C15.temp_party_4_expected_pop = 5
+	}
+	clamp_variable = {
+		var = C15.temp_party_4_expected_pop
+		min = 0
+		max = 500
+	}
+	set_temp_variable = {
+		C15.temp_party_5_expected_pop = C15.party_popularity_100@fascism
+	}
+	multiply_temp_variable = {
+		C15.temp_party_5_expected_pop = 5
+	}
+	clamp_variable = {
+		var = C15.temp_party_5_expected_pop
+		min = 0
+		max = 500
+	}
+	set_temp_variable = {
+		C15.temp_party_6_expected_pop = C15.party_popularity_100@equatism
+	}
+	multiply_temp_variable = {
+		C15.temp_party_6_expected_pop = 5
+	}
+	clamp_variable = {
+		var = C15.temp_party_6_expected_pop
+		min = 0
+		max = 500
+	}
+	set_temp_variable = {
+		C15.temp_party_1_expected_pop = 500
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_expected_pop = C15.temp_party_2_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_expected_pop = C15.temp_party_3_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_expected_pop = C15.temp_party_4_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_expected_pop = C15.temp_party_5_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_expected_pop = C15.temp_party_6_expected_pop
+	}
+	set_temp_variable = {
+		C15.temp_party_1_delta = C15.temp_party_1_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_1_delta = C15.parliament_seat_array^0
+	}
+	set_temp_variable = {
+		C15.temp_party_2_delta = C15.temp_party_2_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_2_delta = C15.parliament_seat_array^1
+	}
+	set_temp_variable = {
+		C15.temp_party_3_delta = C15.temp_party_3_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_3_delta = C15.parliament_seat_array^2
+	}
+	set_temp_variable = {
+		C15.temp_party_4_delta = C15.temp_party_4_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_4_delta = C15.parliament_seat_array^3
+	}
+	set_temp_variable = {
+		C15.temp_party_5_delta = C15.temp_party_5_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_5_delta = C15.parliament_seat_array^4
+	}
+	set_temp_variable = {
+		C15.temp_party_6_delta = C15.temp_party_6_expected_pop
+	}
+	subtract_from_temp_variable = {
+		C15.temp_party_6_delta = C15.parliament_seat_array^5
+	}
+	clear_array = C15.parliament_delta_array
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_1_delta
+	}
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_2_delta
+	}
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_3_delta
+	}
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_4_delta
+	}
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_5_delta
+	}
+	add_to_array = {
+		C15.parliament_delta_array = C15.temp_party_6_delta
+	}
+}

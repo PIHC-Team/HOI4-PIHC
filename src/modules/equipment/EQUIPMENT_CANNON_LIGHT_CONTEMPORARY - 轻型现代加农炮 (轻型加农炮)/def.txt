@@ -1,0 +1,34 @@
+equipments = {
+	EQUIPMENT_CANNON_LIGHT_CONTEMPORARY = {
+		archetype = ARCHETYPE_CANNON_LIGHT
+		priority = 70002
+		visual_level = 70002
+		build_cost_ic = 15.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.99
+		soft_attack = 36.0
+		hard_attack = 36.0
+		air_attack = 0.8999999999999999
+		ap_attack = 32.0
+		breakthrough = 30.0
+		defense = 6.0
+		armor_value = 6.0
+		hardness = 0.1
+		weight = 1.2
+		maximum_speed = 6.0
+		entrenchment = 1.0
+		recon = 2
+		picture = EQUIPMENT_CANNON_LIGHT_CONTEMPORARY
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_CANNON_LIGHT_MODERN
+		resources = {
+			steel = 6
+			rubber = 3
+			tungsten = 2
+		}
+		fuel_consumption = 0.16
+	}
+}

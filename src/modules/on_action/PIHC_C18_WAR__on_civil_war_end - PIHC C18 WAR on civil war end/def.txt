@@ -1,0 +1,20 @@
+on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = C18
+						has_global_flag = PIHC_GLOBAL_FLAG_CULANIKA_LOKADHATU
+					}
+				}
+				C18 = {
+					country_event = {
+						id = C18_MAIN.115
+						days = 3
+					}
+				}
+			}
+		}
+	}
+}

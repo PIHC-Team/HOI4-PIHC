@@ -1,0 +1,19 @@
+SP_REWARD_GENERIC_FAILURE_PHYSICAL = {
+	fire_only_once = no
+	threshold = {
+		min = 30
+		max = 100
+	}
+	option = {
+		iteration_output = {
+			facility_state_effects = {
+				damage_building = {
+					tags = facility
+					damage = 0.1
+					province = var:facility_province_id
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_FAILURE_PHYSICAL_o0
+	}
+}

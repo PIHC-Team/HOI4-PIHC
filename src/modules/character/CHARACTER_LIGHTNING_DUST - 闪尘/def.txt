@@ -1,0 +1,55 @@
+characters = {
+    CHARACTER_LIGHTNING_DUST = {
+        name = CHARACTER_LIGHTNING_DUST_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LIGHTNING_DUST.dds"
+                small = "gfx/leaders/CHARACTER_LIGHTNING_DUST_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LIGHTNING_DUST_army.dds"
+                small = "gfx/leaders/CHARACTER_LIGHTNING_DUST_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LIGHTNING_DUST_navy.dds"
+                small = "gfx/leaders/CHARACTER_LIGHTNING_DUST_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_LIGHTNING_DUST
+            desc = CHARACTER_LIGHTNING_DUST_DESC
+            traits = {
+                TRAIT_LIGHTNING_DUST_TRAINING_CAMP
+                TRAIT_WASHOUTS_LIGHTNING_DUST
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = high_command
+            available = {
+                if = {
+                    limit = {
+                        tag = C04
+                        NOT = {
+                            has_government = fascism
+                        }
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP
+                        always = no
+                    }
+                }
+            }
+        }
+        country_leader = {
+            desc = CHARACTER_LIGHTNING_DUST_DESC
+            traits = {
+                TRAIT_LIGHTNING_DUST_TRAINING_CAMP
+                TRAIT_WASHOUTS_LIGHTNING_DUST
+            }
+            ideology = fascism_pegasi
+        }
+    }
+}

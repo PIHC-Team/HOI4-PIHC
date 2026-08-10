@@ -1,0 +1,29 @@
+add_namespace = C28_MAIN
+country_event = {
+    id = C28_MAIN.1
+    picture = GFX_EVENT_C28_MAIN_1
+    immediate = {
+        hidden_effect = {
+            white_peace = {
+                tag = C26
+            }
+            C26 = {
+                set_state_owner = 192
+                set_state_owner = 271
+                set_state_owner = 323
+                set_state_owner = 346
+                set_state_owner = 857
+                set_state_owner = 216
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C28_MAIN_1
+    desc = EVENT_C28_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C28_MAIN_1_o0
+    }
+}

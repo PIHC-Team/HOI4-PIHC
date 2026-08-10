@@ -1,0 +1,36 @@
+equipments = {
+	EQUIPMENT_TANK_HEAVY_MODERN = {
+		archetype = ARCHETYPE_TANK_HEAVY
+		priority = 30001
+		visual_level = 30001
+		build_cost_ic = 50.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 36.0
+		hard_attack = 20.0
+		air_attack = 1.5
+		ap_attack = 8.0
+		breakthrough = 40.0
+		defense = 120.0
+		armor_value = 45.0
+		hardness = 0.99
+		weight = 3.0
+		maximum_speed = 13.0
+		entrenchment = 10.0
+		recon = 3
+		picture = EQUIPMENT_TANK_HEAVY_MODERN
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_TANK_HEAVY_STEAM
+		manpower = 3
+		resources = {
+			steel = 11
+			rubber = 6
+			tungsten = 6
+		}
+		fuel_consumption = 0.2
+		fuel_capacity = 100.0
+	}
+}

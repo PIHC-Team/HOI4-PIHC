@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C08_SOURCE_OF_SIN
+	icon = GFX_FOCUS_C08_SOURCE_OF_SIN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_ENIO
+	}
+	prerequisite = {
+		focus = FOCUS_C08_TOGETHER_FOR_VICTORY
+	}
+	allow_branch = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C08_PARTII_3
+	}
+	cost = 1
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_SOURCE_OF_SIN_TOOLTIP
+		create_intelligence_agency = yes
+		set_country_flag = PIHC_COUNTRY_FLAG_MANEHATTAN_WAR_READY
+		country_event = {
+			id = C08_MAIN.1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 7
+}

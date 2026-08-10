@@ -1,0 +1,13 @@
+INVENTORY_RELOAD_ONLY_WHEN_OPEN = {
+	if = {
+		limit = {
+			check_variable = {
+				pihc_inventory_open = 1
+			}
+		}
+		INVENTORY_RELOAD = yes
+	}
+	else = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}

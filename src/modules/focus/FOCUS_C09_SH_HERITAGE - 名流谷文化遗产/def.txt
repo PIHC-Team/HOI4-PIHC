@@ -1,0 +1,61 @@
+focus = {
+	id = FOCUS_C09_SH_HERITAGE
+	icon = GFX_FOCUS_C09_SH_HERITAGE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SH_LIBRARY
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SH_BOOKSTORE
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SH_BAKERY
+	}
+	cost = 6
+	completion_reward = {
+		531 = {
+			add_manpower = -2000
+		}
+		529 = {
+			add_manpower = -1000
+		}
+		432 = {
+			add_manpower = 5000
+			set_victory_points = {
+				province = 1328
+				value = 50
+			}
+			set_state_category = large_town
+			add_extra_state_shared_building_slots = 8
+			add_building_construction = {
+				type = infrastructure
+				instant_build = yes
+				level = 3
+			}
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 2
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 5
+}

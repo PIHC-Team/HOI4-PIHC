@@ -1,0 +1,18 @@
+equipments = {
+	ARCHETYPE_AIR_SBOMBER = {
+		is_archetype = yes
+		is_buildable = no
+		active = yes
+		group_by = archetype
+		type = {
+			tactical_bomber
+			strategic_bomber
+		}
+		interface_category = interface_category_air
+		allow_mission_type = {
+			training
+			strategic_bomber
+			port_strike
+		}
+	}
+}

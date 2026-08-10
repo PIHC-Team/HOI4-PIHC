@@ -1,0 +1,48 @@
+state = {
+    id = 442
+    name = STATE_442
+    provinces = {
+        91
+        145
+        543
+        1268
+        1536
+        1932
+        2365
+        2614
+        4846
+        5149
+        7385
+        7554
+        7822
+        7949
+        8571
+        9519
+        9626
+        11200
+        11271
+        11325
+        11382
+    }
+    manpower = 53110
+    state_category = town
+    history = {
+        owner = C11
+        victory_points = {
+            91
+            5
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            arms_factory = 2
+            91 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C11
+    }
+    resources = {
+        aluminium = 10
+    }
+}

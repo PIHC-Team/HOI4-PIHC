@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/modifier_definition
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-modifier-definition
+items:
+-   kind: entity
+    identifier: pihc3-modifier-definition-module
+    name: PIHC3 Modifier Definition Module
+    desc: Project-owned modifier_definition source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ModifierDefinitionModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-modifier-definition
+    name: PIHC3 Modifier Definition
+    desc: PIHC3 modifier_definition module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-modifier-definition-module
+        definition:
+            identifier: pihc3-modifier-definition
+            name: PIHC3 Modifier Definition
+            version: 0.2.3
+            desc: PIHC3 modifier_definition module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-modifier-definition-module
+            meta:
+                project: PIHC3
+                family: modifier_definition
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-modifier-definition
+    name: PIHC3 Modifier Definition Compiler
+    desc: Registry-backed source slots and compiler hooks for modifier_definition.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: modifier-definition
+            title: Modifier Definition
+            group: shared
+        dependencies:
+        - extension:pihc3-modifier-definition

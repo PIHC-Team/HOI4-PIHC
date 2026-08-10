@@ -1,0 +1,11 @@
+MODULE_ENGINE_1A_PONY = {
+	category = pihc_tank_engine_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		maximum_speed = 3.0
+	}
+	multiply_stats = {
+		fuel_consumption = -1.0
+	}
+	xp_cost = 5
+}

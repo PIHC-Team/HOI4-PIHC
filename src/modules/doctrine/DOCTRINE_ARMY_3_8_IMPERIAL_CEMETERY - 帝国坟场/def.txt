@@ -1,0 +1,29 @@
+pihc_land_rose_of_will_operations_core = {
+	track = operations
+	name = DOCTRINE_ARMY_3_8_IMPERIAL_CEMETERY
+	description = DOCTRINE_ARMY_3_8_IMPERIAL_CEMETERY_DESC
+	icon = GFX_doctrine_pihc_land_rose_of_will_operations_core_medium
+	xp_cost = 200
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		imperial_cemetery = {
+			army_defence_against_major_factor = 0.2
+			surrender_limit = 0.1
+			resistance_damage_to_garrison_on_our_occupied_states = 0.75
+			resistance_growth_on_our_occupied_states = 0.25
+			static_anti_air_damage_factor = 0.15
+		}
+	}
+}

@@ -1,0 +1,33 @@
+COMPUTE_NUM_COAL_MINES_IN_STATE = {
+	set_variable = {
+		var = VAR_NUM_COAL_MINES_IN_CURRENT_STATE
+		value = 0
+	}
+	if = {
+		limit = {
+			coal_mine > 0
+		}
+		add_to_variable = {
+			var = VAR_NUM_COAL_MINES_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			coal_mine > 1
+		}
+		add_to_variable = {
+			var = VAR_NUM_COAL_MINES_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			coal_mine > 2
+		}
+		add_to_variable = {
+			var = VAR_NUM_COAL_MINES_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+}

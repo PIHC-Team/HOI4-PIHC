@@ -1,0 +1,59 @@
+C18_REGIONAL_DEV_COMPUTE_NATIONAL_POPULATION = {
+	set_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = 0
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+	set_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5
+	}
+	multiply_temp_variable = {
+		temp_nirik_population = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5
+	}
+	add_to_variable = {
+		C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO = temp_nirik_population
+	}
+}

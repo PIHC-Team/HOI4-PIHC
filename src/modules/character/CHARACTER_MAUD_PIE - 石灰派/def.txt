@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_MAUD_PIE = {
+        name = CHARACTER_MAUD_PIE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_MAUD_PIE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_MAUD_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MAUD_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_MAUD_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MAUD_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MAUD_PIE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_MAUD_PIE_DESC
+            traits = {
+
+            }
+            ideology = corporation_freestate
+        }
+    }
+}

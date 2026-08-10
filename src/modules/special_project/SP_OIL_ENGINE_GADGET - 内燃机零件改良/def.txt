@@ -1,0 +1,37 @@
+SP_OIL_ENGINE_GADGET = {
+	icon = GFX_SP_OIL_ENGINE_GADGET
+	complexity = sp_complexity.small
+	prototype_time = sp_time.prototype.short
+	specialization = specialization_oilpunk
+	project_tags = sp_tag_pihc_oilpunk
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_ENER_II
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			rubber = 6
+			aluminium = 3
+		}
+	}
+	project_output = {
+		enable_equipment_modules = {
+			MODULE_SPECIAL_ICE_GADGET
+			MODULE_SPECIAL_AIR_ICE_GADGET
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_OIL
+		SP_REWARD_GENERIC_OIL_EXP
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

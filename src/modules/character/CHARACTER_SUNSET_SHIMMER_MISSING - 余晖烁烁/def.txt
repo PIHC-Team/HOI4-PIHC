@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SUNSET_SHIMMER_MISSING = {
+        name = CHARACTER_SUNSET_SHIMMER_MISSING_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING.dds"
+                small = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING_army.dds"
+                small = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING_navy.dds"
+                small = "gfx/leaders/CHARACTER_SUNSET_SHIMMER_MISSING_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_SUNSET_SHIMMER_MISSING_DESC
+            traits = {
+                TRAIT_SUNSET_SHIMMER_MAGICAL_TALENTS
+            }
+            ideology = democratic_harmonicism
+        }
+    }
+}

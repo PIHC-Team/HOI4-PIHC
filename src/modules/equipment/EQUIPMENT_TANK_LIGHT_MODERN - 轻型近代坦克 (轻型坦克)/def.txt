@@ -1,0 +1,37 @@
+equipments = {
+	EQUIPMENT_TANK_LIGHT_MODERN = {
+		archetype = ARCHETYPE_TANK_LIGHT
+		priority = 10001
+		visual_level = 10001
+		build_cost_ic = 30.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 36.0
+		hard_attack = 20.0
+		air_attack = 1.5
+		ap_attack = 8.0
+		breakthrough = 40.0
+		defense = 60.0
+		armor_value = 20.0
+		hardness = 0.8
+		max_strength = 50.0
+		weight = 2.0
+		maximum_speed = 20.0
+		entrenchment = 6.0
+		recon = 3
+		picture = EQUIPMENT_TANK_LIGHT_MODERN
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_TANK_LIGHT_STEAM
+		manpower = 2
+		resources = {
+			steel = 7
+			rubber = 4
+			tungsten = 4
+		}
+		fuel_consumption = 0.15
+		fuel_capacity = 100.0
+	}
+}

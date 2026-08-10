@@ -1,0 +1,70 @@
+division_template = {
+    name = "夜骐精锐师 (Thestral Elite Division)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+        infantry_automata = {
+            x = 0
+            y = 1
+        }
+        infantry_automata = {
+            x = 1
+            y = 1
+        }
+        infantry_automata = {
+            x = 2
+            y = 1
+        }
+        infantry_automata = {
+            x = 0
+            y = 2
+        }
+        infantry_automata = {
+            x = 1
+            y = 2
+        }
+        infantry_automata = {
+            x = 2
+            y = 2
+        }
+        infantry_traditional = {
+            x = 0
+            y = 3
+        }
+        infantry_traditional = {
+            x = 1
+            y = 3
+        }
+        infantry_traditional = {
+            x = 2
+            y = 3
+        }
+        infantry_magical = {
+            x = 0
+            y = 4
+        }
+        infantry_magical = {
+            x = 1
+            y = 4
+        }
+        infantry_magical = {
+            x = 2
+            y = 4
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

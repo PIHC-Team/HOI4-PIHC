@@ -1,0 +1,29 @@
+DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT = {
+    DECISION_C18_PRESSURE_FOR_OPEN_FLOWER_MARKET = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 0
+        selectable_mission = no
+        days_mission_timeout = 90
+        is_good = no
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        visible = {
+            has_decision = DECISION_C18_PRESSURE_FOR_OPEN_FLOWER_MARKET
+        }
+        available = {
+            has_completed_focus = FOCUS_C18_011_TRADE_FLOWER
+        }
+        complete_effect = {
+            add_political_power = 25
+        }
+        timeout_effect = {
+            C18_ADD_NIRIK_0_50 = yes
+            C18_ADD_GROWTH_0_5 = yes
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_NO_FAILSAFE
+        }
+        icon = C18_PRESSURE_FOR_OPEN_FLOWER_MARKET
+    }
+}

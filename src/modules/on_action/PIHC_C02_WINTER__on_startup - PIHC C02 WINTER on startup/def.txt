@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C02 = {
+				add_to_variable = {
+					var = VAR_C02_WINTER_FIRE_BASE
+					value = C02.resource_produced@logs
+				}
+				add_to_variable = {
+					var = VAR_C02_WINTER_FIRE_BASE
+					value = C02.resource_produced@coal
+				}
+			}
+		}
+	}
+}

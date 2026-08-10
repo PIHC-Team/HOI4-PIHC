@@ -1,0 +1,68 @@
+division_template = {
+    name = "警察 (Police Force)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C02_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "魔法步兵师 (Magical Infantry Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C02_MAGICAL
+    priority = 6
+}

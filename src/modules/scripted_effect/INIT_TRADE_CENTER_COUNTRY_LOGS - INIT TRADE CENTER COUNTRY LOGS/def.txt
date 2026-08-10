@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_LOGS = {
+	ENABLE_AUTO_TRADE_LOGS_BUY = yes
+	ENABLE_AUTO_TRADE_LOGS_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_COST
+		value = 0
+	}
+}

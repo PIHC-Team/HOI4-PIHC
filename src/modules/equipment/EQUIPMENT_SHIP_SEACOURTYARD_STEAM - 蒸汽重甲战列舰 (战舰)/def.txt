@@ -1,0 +1,46 @@
+equipments = {
+	EQUIPMENT_SHIP_SEACOURTYARD_STEAM = {
+		archetype = ship_hull_heavy
+		priority = 1503
+		visual_level = 2
+		build_cost_ic = 6000
+		reliability = 0.92
+		armor_value = 40
+		max_strength = 550
+		naval_speed = 26
+		lg_armor_piercing = 0
+		lg_attack = 1
+		hg_armor_piercing = 0
+		hg_attack = 0
+		torpedo_attack = 0
+		anti_air_attack = 0
+		surface_detection = 40
+		sub_detection = 5
+		surface_visibility = 30
+		naval_range = 6000
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			fixed_ship_armor_slot = ship_armor_bb_3
+			front_1_custom_slot = ship_anti_air_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = dp_ship_secondaries_3
+			rear_1_custom_slot = ship_heavy_battery_4
+		}
+		picture = EQUIPMENT_SHIP_SEACOURTYARD_STEAM
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_SHIP_SEACOURTYARD_ARMED_LINER
+		resources = {
+			steel = 10
+			coal = 8
+			chromium = 3
+		}
+		manpower = 12
+	}
+}

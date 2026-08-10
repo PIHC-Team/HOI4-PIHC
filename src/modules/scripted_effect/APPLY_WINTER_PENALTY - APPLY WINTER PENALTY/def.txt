@@ -1,0 +1,231 @@
+APPLY_WINTER_PENALTY = {
+	if = {
+		limit = {
+			threat > 0.99
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_100
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_070
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = IDEA_ERA_COLD_1_COAL
+					has_idea = IDEA_ERA_COLD_2_WOOD
+				}
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_040
+		}
+		else = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_5_BURN
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_020
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.89
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_090
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_060
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = IDEA_ERA_COLD_1_COAL
+					has_idea = IDEA_ERA_COLD_2_WOOD
+				}
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_030
+		}
+		else = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_5_BURN
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_010
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.79
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_080
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_050
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = IDEA_ERA_COLD_1_COAL
+					has_idea = IDEA_ERA_COLD_2_WOOD
+				}
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_020
+		}
+		else = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_5_BURN
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_000
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.69
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_070
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_040
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = IDEA_ERA_COLD_1_COAL
+					has_idea = IDEA_ERA_COLD_2_WOOD
+				}
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_010
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.59
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_060
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_030
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = IDEA_ERA_COLD_1_COAL
+					has_idea = IDEA_ERA_COLD_2_WOOD
+				}
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_000
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.49
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_050
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_020
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.39
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_040
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_010
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.29
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_030
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_000
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.19
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_020
+		}
+	}
+	else_if = {
+		limit = {
+			threat > 0.9
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_010
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_4_SELF
+			}
+			add_ideas = IDEA_ALL_WINTER_PENALTY_000
+		}
+	}
+}

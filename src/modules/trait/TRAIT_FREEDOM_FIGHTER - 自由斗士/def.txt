@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_FREEDOM_FIGHTER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		autonomy_gain = 0.4
+		democratic_drift = 0.02
+	}
+}

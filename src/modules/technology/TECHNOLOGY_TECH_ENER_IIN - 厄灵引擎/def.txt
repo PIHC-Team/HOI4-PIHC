@@ -1,0 +1,42 @@
+technologies = {
+    TECHNOLOGY_TECH_ENER_IIN = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 11
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_energy
+            pihc_magical
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_ENGINE_3C_NECRO
+            MODULE_PLANE_ENGINE_3C_NECRO
+            MODULE_ARMOR_4C_CURSED
+            MODULE_PLANE_ARMOR_4C_CURSED
+            MODULE_CREW_4A_SPECTRAL
+            MODULE_TURRET_5C_ACCORD
+        }
+        on_research_complete_limit = {
+            always = yes
+        }
+        on_research_complete = {
+            custom_effect_tooltip = TECHNOLOGY_TECH_ENER_IIN_TOOLTIP
+        }
+        special_project_specialization = {
+            specialization_witchcraft
+        }
+        research_cost = 3.0
+        start_year = 1005
+    }
+}

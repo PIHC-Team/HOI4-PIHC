@@ -1,0 +1,16 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C18_DETECT_CHANGELING = {
+			picture = C18_DETECT_CHANGELING
+			removal_cost = -1
+			modifier = {
+				foreign_subversive_activites = -0.25
+				civilian_intel_to_others = -0.5
+				army_intel_to_others = -0.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

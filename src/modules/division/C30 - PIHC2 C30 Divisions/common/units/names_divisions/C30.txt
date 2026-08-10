@@ -1,0 +1,146 @@
+NAMES_GROUP_C30_ARTILLERY = {
+    name = "斑马火炮游击队 (Zebra Artillery Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "斑马火炮游击队%d师 (Zebra Artillery Guerrilla %d)"
+}
+NAMES_GROUP_C30_TANK_LIGHT = {
+    name = "斑马轻型装甲游击队 (Zebra Light Armor Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "斑马轻型装甲游击队%d师 (Zebra Light Armor Guerrilla %d)"
+}
+NAMES_GROUP_C30_TRADITIONAL_REGULAR = {
+    name = "斑马常规步兵游击队 (Zebra Regular Infantry Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "斑马常规步兵游击队%d师 (Zebra Regular Infantry Guerrilla %d)"
+}
+NAMES_GROUP_C30_TANK_HEAVY = {
+    name = "斑马重型装甲游击队 (Zebra Heavy Armor Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "斑马重型装甲游击队%d师 (Zebra Heavy Armor Guerrilla %d)"
+}
+NAMES_GROUP_C30_TRADITIONAL_SMALL = {
+    name = "斑马小型步兵游击队 (Zebra Small Infantry Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "斑马小型步兵游击队%d师 (Zebra Small Infantry Guerrilla %d)"
+}
+NAMES_GROUP_C30_AUTOMATA = {
+    name = "斑马自动作战游击队 (Zebra Automata Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "斑马自动作战游击队%d师 (Zebra Automata Guerrilla %d)"
+}
+NAMES_GROUP_C30_SHIELD = {
+    name = "斑马重装步兵游击队 (Zebra Heavy Infantry Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "斑马重装步兵游击队%d师 (Zebra Heavy Infantry Guerrilla %d)"
+}
+NAMES_GROUP_C30_MAGICAL = {
+    name = "斑马魔法步兵游击队 (Zebra Magical Infantry Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "斑马魔法步兵游击队%d师 (Zebra Magical Infantry Guerrilla %d)"
+}
+NAMES_GROUP_C30_INFANTRY_MIX = {
+    name = "斑马协同游击队 (Zebra Concerted Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "斑马协同游击队%d师 (Zebra Concerted Guerrilla %d)"
+}
+NAMES_GROUP_C30_MOTORIZED = {
+    name = "斑马机动步兵游击队 (Zebra Motorized Infantry Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "斑马机动步兵游击队%d师 (Zebra Motorized Infantry Guerrilla %d)"
+}
+NAMES_GROUP_C30_TANK_MEDIUM = {
+    name = "斑马中型装甲游击队 (Zebra Medium Armor Guerrilla)"
+    for_countries = {
+        C30
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "斑马中型装甲游击队%d师 (Zebra Medium Armor Guerrilla %d)"
+}

@@ -1,0 +1,31 @@
+scripted_gui = {
+	pihc_inventory_item_3RA_C04_MUFFIN_1_buttons = {
+		context_type = player_context
+		window_name = pihc_inventory_item_3RA_C04_MUFFIN_1_buttons_container
+		parent_window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+			has_variable = PIHC_INVENTORY_DISPLAY
+			check_variable = {
+				var = PIHC_INVENTORY_DISPLAY
+				value = 152
+				compare = equals
+			}
+		}
+		triggers = {
+			pihc_inventory_item_3RA_C04_MUFFIN_1_o0_button_visible = {
+				always = yes
+			}
+			pihc_inventory_item_3RA_C04_MUFFIN_1_o0_button_click_enabled = {
+				TRIGGER_HAVE_INVENTORY_ITEM_3RA_C04_MUFFIN_1 = yes
+			}
+		}
+		effects = {
+			pihc_inventory_item_3RA_C04_MUFFIN_1_o0_button_click = {
+				DEL_INVENTORY_ITEM_3RA_C04_MUFFIN_1_1 = yes
+				navy_experience = 25
+			}
+		}
+	}
+}

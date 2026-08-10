@@ -1,0 +1,38 @@
+characters = {
+    CHARACTER_SCIENCE_NEXUS = {
+        name = CHARACTER_SCIENCE_NEXUS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SCIENCE_NEXUS.dds"
+                small = "gfx/leaders/CHARACTER_SCIENCE_NEXUS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SCIENCE_NEXUS_army.dds"
+                small = "gfx/leaders/CHARACTER_SCIENCE_NEXUS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SCIENCE_NEXUS_navy.dds"
+                small = "gfx/leaders/CHARACTER_SCIENCE_NEXUS_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_SCIENCE_NEXUS
+            desc = CHARACTER_SCIENCE_NEXUS_DESC
+            traits = {
+                TRAIT_SCIENCE_NEXUS
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = high_command
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = CHARACTER_SCIENCE_NEXUS_TOOLTIP
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_SCIENCE_NEXUS
+                }
+            }
+        }
+    }
+}

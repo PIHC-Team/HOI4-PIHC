@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C01_SCHOOL_FOR_LOYAL_UNICORNS = {
+			picture = C01_SCHOOL_FOR_LOYAL_UNICORNS
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

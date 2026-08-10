@@ -1,0 +1,15 @@
+INIT_C04_BY_ELECTION = {
+	set_variable = {
+		C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT = 51.0
+	}
+	set_variable = {
+		C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT = 21.0
+	}
+	set_variable = {
+		C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT = 31.0
+	}
+	set_variable = {
+		C04.VAR_DELTA = 0.0
+	}
+	COMPUTE_C04_BY_ELECTION = yes
+}

@@ -1,0 +1,10 @@
+C18_KIRINS_PASS_ON = {
+	C18 = {
+		retire_character = CHARACTER_RAIN_SHINE
+		promote_character = {
+			character = CHARACTER_AUTUMN_BLAZE
+			ideology = peacism_dogmatism
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_RETIRED
+	}
+}

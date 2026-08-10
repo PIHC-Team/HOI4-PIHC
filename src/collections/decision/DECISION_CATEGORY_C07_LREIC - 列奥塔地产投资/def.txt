@@ -1,0 +1,11 @@
+DECISION_CATEGORY_C07_LREIC = {
+    icon = C07_LREIC
+    picture = GFX_decision_category_picture
+    priority = 29999
+    allowed = {
+        tag = C07
+    }
+    visible = {
+        has_completed_focus = FOCUS_C07_LREIC
+    }
+}

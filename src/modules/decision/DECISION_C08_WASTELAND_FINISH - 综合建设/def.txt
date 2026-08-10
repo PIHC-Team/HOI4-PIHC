@@ -1,0 +1,79 @@
+DECISION_CATEGORY_C08_WASTELAND_DEVELOP = {
+    DECISION_C08_WASTELAND_FINISH = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 15
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_WASTELAND_5
+        }
+        available = {
+
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 1
+        }
+        remove_effect = {
+            custom_effect_tooltip = DECISION_C08_WASTELAND_FINISH_TOOLTIP
+            hidden_effect = {
+                clr_country_flag = PIHC_COUNTRY_FLAG_C08_WASTELAND_5
+                clr_country_flag = PIHC_COUNTRY_FLAG_C08_WASTELAND_DEVELOP
+            }
+            337 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 150
+            }
+            362 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 58
+            }
+            344 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 26
+            }
+            34 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 176
+            }
+            319 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 90
+            }
+            299 = {
+                add_building_construction = {
+                    type = infrastructure
+                    instant_build = yes
+                    level = 1
+                }
+                add_manpower = 70
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        days_remove = 28
+        fire_only_once = yes
+        ai_will_do = {
+            base = 100
+        }
+    }
+}

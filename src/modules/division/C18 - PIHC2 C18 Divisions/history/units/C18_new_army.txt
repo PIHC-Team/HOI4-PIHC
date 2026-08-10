@@ -1,0 +1,22 @@
+division_template = {
+    name = "战斗组 (Combat Group)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

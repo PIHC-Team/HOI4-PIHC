@@ -1,0 +1,18 @@
+buildings = {
+	industrial_infrastructure = {
+		base_cost = 12000
+		icon_frame = 31
+		value = 1
+		show_modifier = yes
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+			group_by = infrastructure_keystone
+		}
+		state_modifiers = {
+			local_resource_gain_efficiency_per_infrastructure = 0.10
+		}
+	}
+}
+

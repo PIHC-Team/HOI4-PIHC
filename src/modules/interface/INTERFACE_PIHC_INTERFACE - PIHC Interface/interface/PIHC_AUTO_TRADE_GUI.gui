@@ -1,0 +1,896 @@
+guiTypes = {
+    containerWindowType = {
+        name = pihc_auto_trade_container
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 430
+            height = 500
+        }
+        orientation = center
+        origo = center
+        clipping = no
+        instantTextboxType = {
+            name = auto_trade_available
+            position = {
+                x = -20
+                y = 20
+            }
+            font = hoi_18mbs
+            text = PIHC_AUTO_TRADE_AVAILABLE
+            maxWidth = 200
+            maxHeight = 20
+            format = center
+            alwaystransparent = yes
+            vertical_alignment = center
+        }
+        instantTextboxType = {
+            name = auto_trade_cost
+            position = {
+                x = 70
+                y = 20
+            }
+            font = hoi_18mbs
+            text = PIHC_AUTO_TRADE_COST
+            maxWidth = 200
+            maxHeight = 20
+            format = center
+            alwaystransparent = yes
+            vertical_alignment = center
+        }
+        instantTextboxType = {
+            name = auto_buy_title
+            position = {
+                x = 150
+                y = 20
+            }
+            font = hoi_18mbs
+            text = PIHC_AUTO_TRADE_BUY
+            maxWidth = 200
+            maxHeight = 20
+            format = center
+            alwaystransparent = yes
+            vertical_alignment = center
+        }
+        instantTextboxType = {
+            name = auto_sell_title
+            position = {
+                x = 250
+                y = 20
+            }
+            font = hoi_18mbs
+            text = PIHC_AUTO_TRADE_SELL
+            maxWidth = 200
+            maxHeight = 20
+            format = center
+            alwaystransparent = yes
+            vertical_alignment = center
+        }
+        instantTextboxType = {
+            name = auto_trade_amount
+            position = {
+                x = 350
+                y = 20
+            }
+            font = hoi_18mbs
+            text = PIHC_AUTO_TRADE_AMOUNT
+            maxWidth = 200
+            maxHeight = 20
+            format = center
+            alwaystransparent = yes
+            vertical_alignment = center
+        }
+        iconType = {
+            name = icon_CRYSTALS
+            spriteType = GFX_resources_strip
+            frame = 7
+            scale = 1.5
+            position = {
+                x = 10
+                y = 53
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_CRY
+        }
+        instantTextBoxType = {
+            name = available_CRYSTALS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 65
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_CRY_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_CRYSTALS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 65
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_CRYSTALS_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceCrystalsIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_crystals_btn
+            position = {
+                x = 218
+                y = 45
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_crystals_btn
+            position = {
+                x = 318
+                y = 45
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_CRYSTALS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 65
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceCrystals]
+            text = [GetTradeCenterResourceCrystalsShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_TUNGSTEN
+            spriteType = GFX_resources_strip
+            frame = 4
+            scale = 1.5
+            position = {
+                x = 10
+                y = 103
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_TUN
+        }
+        instantTextBoxType = {
+            name = available_TUNGSTEN
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 115
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_TUN_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_TUNGSTEN
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 115
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_TUNGSTEN_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceTungstenIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_tungsten_btn
+            position = {
+                x = 218
+                y = 92
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_tungsten_btn
+            position = {
+                x = 318
+                y = 92
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_TUNGSTEN
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 115
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceTungsten]
+            text = [GetTradeCenterResourceTungstenShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_CHROMIUM
+            spriteType = GFX_resources_strip
+            frame = 6
+            scale = 1.5
+            position = {
+                x = 10
+                y = 153
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_CHR
+        }
+        instantTextBoxType = {
+            name = available_CHROMIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 165
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_CHR_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_CHROMIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 165
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_CHROMIUM_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceChromiumIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_chromium_btn
+            position = {
+                x = 218
+                y = 142
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_chromium_btn
+            position = {
+                x = 318
+                y = 142
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_CHROMIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 165
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceChromium]
+            text = [GetTradeCenterResourceChromiumShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_ALUMINIUM
+            spriteType = GFX_resources_strip
+            frame = 2
+            scale = 1.5
+            position = {
+                x = 10
+                y = 203
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_ALM
+        }
+        instantTextBoxType = {
+            name = available_ALUMINIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 215
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_ALM_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_ALUMINIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 215
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_ALUMINIUM_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceAluminiumIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_aluminium_btn
+            position = {
+                x = 218
+                y = 192
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_aluminium_btn
+            position = {
+                x = 318
+                y = 192
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_ALUMINIUM
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 215
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceAluminium]
+            text = [GetTradeCenterResourceAluminiumShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_STEEL
+            spriteType = GFX_resources_strip
+            frame = 5
+            scale = 1.5
+            position = {
+                x = 10
+                y = 253
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_STE
+        }
+        instantTextBoxType = {
+            name = available_STEEL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 265
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_STE_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_STEEL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 265
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_STEEL_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceSteelIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_steel_btn
+            position = {
+                x = 218
+                y = 242
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_steel_btn
+            position = {
+                x = 318
+                y = 242
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_STEEL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 265
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceSteel]
+            text = [GetTradeCenterResourceSteelShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_COAL
+            spriteType = GFX_resources_strip
+            frame = 9
+            scale = 1.5
+            position = {
+                x = 10
+                y = 303
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_COA
+        }
+        instantTextBoxType = {
+            name = available_COAL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 315
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_COA_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_COAL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 315
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_COAL_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceCoalIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_coal_btn
+            position = {
+                x = 218
+                y = 292
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_coal_btn
+            position = {
+                x = 318
+                y = 292
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_COAL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 315
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceCoal]
+            text = [GetTradeCenterResourceCoalShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_RUBBER
+            spriteType = GFX_resources_strip
+            frame = 3
+            scale = 1.5
+            position = {
+                x = 10
+                y = 353
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_RUB
+        }
+        instantTextBoxType = {
+            name = available_RUBBER
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 365
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_RUB_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_RUBBER
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 365
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_RUBBER_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceRubberIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_rubber_btn
+            position = {
+                x = 218
+                y = 342
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_rubber_btn
+            position = {
+                x = 318
+                y = 342
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_RUBBER
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 365
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceRubber]
+            text = [GetTradeCenterResourceRubberShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_OIL
+            spriteType = GFX_resources_strip
+            frame = 1
+            scale = 1.5
+            position = {
+                x = 10
+                y = 403
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_OIL
+        }
+        instantTextBoxType = {
+            name = available_OIL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 415
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_OIL_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_OIL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 415
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_OIL_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceOilIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_oil_btn
+            position = {
+                x = 218
+                y = 392
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_oil_btn
+            position = {
+                x = 318
+                y = 392
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_OIL
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 415
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceOil]
+            text = [GetTradeCenterResourceOilShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+        iconType = {
+            name = icon_LOGS
+            spriteType = GFX_resources_strip
+            frame = 8
+            scale = 1.5
+            position = {
+                x = 10
+                y = 453
+            }
+            pdx_tooltip = IB_RESOURCE_TRADE_LOG
+        }
+        instantTextBoxType = {
+            name = available_LOGS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 50
+                y = 465
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_LOG_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = PIHC_AUTO_TRADE_RESOURCE_EXCHANGE_DELAY
+        }
+        instanttextBoxType = {
+            name = rec_LOGS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 140
+                y = 465
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [?global.VAR_TRADE_CENTER_LOGS_VALUE|Y0]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = [GetTradeCenterResourceLogsIcon]
+        }
+        buttonType = {
+            name = auto_buy_resource_logs_btn
+            position = {
+                x = 218
+                y = 442
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        ButtonType = {
+            name = auto_sell_resource_logs_btn
+            position = {
+                x = 318
+                y = 442
+            }
+            clicksound = decisions_ui_checkbox
+            spriteType = GFX_pihc_metal_switch_with_light
+            format = center
+            vertical_alignment = center
+        }
+        instanttextboxType = {
+            name = amount_LOGS
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 420
+                y = 465
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = [GetTradeCenterResourceLogs]
+            text = [GetTradeCenterResourceLogsShort]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+        }
+    }
+}

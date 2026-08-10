@@ -1,0 +1,71 @@
+focus = {
+	id = FOCUS_C09_SEA_COORDINATION
+	icon = GFX_FOCUS_C09_SEA_COORDINATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SEA_TREES
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C09_SEA_BATTLESHIPISM
+	}
+	cost = 2
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				technology = TECHNOLOGY_MTG_SHIP_SEASURGE
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				technology = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.3
+				technology = TECHNOLOGY_SHIP_SEASURGE
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				technology = TECHNOLOGY_SHIP_SEACARDINAL
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			add_tech_bonus = {
+				bonus = 0.3
+				technology = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.2
+				technology = TECHNOLOGY_AIR_CLOUDCANNON
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 7
+}

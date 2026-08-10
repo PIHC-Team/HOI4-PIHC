@@ -1,0 +1,182 @@
+C03_ROULETTE_OPEN_NEXT = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+					}
+				}
+				AND = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+				}
+			}
+		}
+		hidden_effect = {
+			C03 = {
+				scoped_sound_effect = correct_ev
+			}
+		}
+		add_to_variable = {
+			var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+			value = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN
+		}
+		INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+			value = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE
+			}
+			clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE
+			add_to_variable = {
+				var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+				value = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			add_to_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+				value = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN
+			}
+		}
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD
+			value = 1
+		}
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK
+					value = C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK
+					compare = greater_than
+				}
+			}
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK
+				value = C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK
+			}
+		}
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES
+			value = 1
+		}
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK
+			value = 1
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT_DONE
+			clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				AND = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+					}
+				}
+				AND = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+					has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+				}
+			}
+		}
+		hidden_effect = {
+			C03 = {
+				scoped_sound_effect = wrong_ev
+			}
+		}
+		subtract_from_variable = {
+			var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+			value = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST
+		}
+		INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		subtract_from_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+			value = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE
+			}
+			clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE
+			subtract_from_variable = {
+				var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+				value = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			subtract_from_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+				value = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST
+			}
+		}
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TOTAL_BAD
+			value = 1
+		}
+		set_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK
+			value = 0
+		}
+		set_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK
+			value = 0
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT
+			}
+			clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+				check_variable = {
+					var = C03.VAR_MUFFIN_ROULETTE_BOXES
+					value = 1
+					compare = equals
+				}
+			}
+			set_global_flag = PIHC_ACHIEVEMENT_FLAG_C03_MUFFIN_ROULETTE_IDIOT
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_BREED_COUNT
+				value = 0
+				compare = greater_than
+			}
+		}
+		add_to_variable = {
+			var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+			value = 100
+		}
+		INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		add_to_variable = {
+			var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+			value = 100
+		}
+	}
+	add_to_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+		value = 1
+	}
+	clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING
+	C03_ROULETTE_DROP_NEXT = yes
+}

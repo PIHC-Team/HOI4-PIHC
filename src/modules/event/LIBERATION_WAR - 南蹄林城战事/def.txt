@@ -1,0 +1,523 @@
+add_namespace = LIBERATION_WAR
+news_event = {
+    id = LIBERATION_WAR.1
+    picture = GFX_EVENT_LIBERATION_WAR_1
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_415
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C06
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_1
+    desc = EVENT_LIBERATION_WAR_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_1_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.2
+    picture = GFX_EVENT_LIBERATION_WAR_2
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_2
+    desc = EVENT_LIBERATION_WAR_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C08_MAIN.42
+                days = 10
+            }
+        }
+        name = EVENT_LIBERATION_WAR_2_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.3
+    picture = GFX_EVENT_LIBERATION_WAR_3
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_3
+    desc = EVENT_LIBERATION_WAR_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_3_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.4
+    picture = GFX_EVENT_LIBERATION_WAR_4
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_450
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C06
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_4
+    desc = EVENT_LIBERATION_WAR_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_4_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.5
+    picture = GFX_EVENT_LIBERATION_WAR_5
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_5
+    desc = EVENT_LIBERATION_WAR_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_5_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.6
+    picture = GFX_EVENT_LIBERATION_WAR_6
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_6
+    desc = EVENT_LIBERATION_WAR_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_6_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.7
+    picture = GFX_EVENT_LIBERATION_WAR_7
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_888
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C06
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_7
+    desc = EVENT_LIBERATION_WAR_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_7_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.8
+    picture = GFX_EVENT_LIBERATION_WAR_8
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_8
+    desc = EVENT_LIBERATION_WAR_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_8_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.9
+    picture = GFX_EVENT_LIBERATION_WAR_9
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_9
+    desc = EVENT_LIBERATION_WAR_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_9_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.10
+    picture = GFX_EVENT_LIBERATION_WAR_10
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_481
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C06
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_10
+    desc = EVENT_LIBERATION_WAR_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_10_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.11
+    picture = GFX_EVENT_LIBERATION_WAR_11
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_11
+    desc = EVENT_LIBERATION_WAR_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_11_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.12
+    picture = GFX_EVENT_LIBERATION_WAR_12
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_12
+    desc = EVENT_LIBERATION_WAR_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_12_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.13
+    picture = GFX_EVENT_LIBERATION_WAR_13
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_LIBERATION_WAR_549
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C06
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_13
+    desc = EVENT_LIBERATION_WAR_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_13_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.14
+    picture = GFX_EVENT_LIBERATION_WAR_14
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_14
+    desc = EVENT_LIBERATION_WAR_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_14_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.15
+    picture = GFX_EVENT_LIBERATION_WAR_15
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_15
+    desc = EVENT_LIBERATION_WAR_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_15_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.16
+    picture = GFX_EVENT_LIBERATION_WAR_16
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_CMC_UPRISE_ENDED
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_16
+    desc = EVENT_LIBERATION_WAR_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_16_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.17
+    picture = GFX_EVENT_LIBERATION_WAR_17
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C01
+            tag = C05
+        }
+    }
+    fire_for_sender = no
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_17
+    desc = EVENT_LIBERATION_WAR_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_17_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.18
+    picture = GFX_EVENT_LIBERATION_WAR_18
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_18
+    desc = EVENT_LIBERATION_WAR_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_18_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.19
+    picture = GFX_EVENT_LIBERATION_WAR_19
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_19
+    desc = EVENT_LIBERATION_WAR_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_19_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.20
+    picture = GFX_EVENT_LIBERATION_WAR_20
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C01
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_20
+    desc = EVENT_LIBERATION_WAR_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_20_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.21
+    picture = GFX_EVENT_LIBERATION_WAR_21
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_21
+    desc = EVENT_LIBERATION_WAR_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_21_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.22
+    picture = GFX_EVENT_LIBERATION_WAR_22
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_22
+    desc = EVENT_LIBERATION_WAR_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_22_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.23
+    picture = GFX_EVENT_LIBERATION_WAR_23
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C01
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_23
+    desc = EVENT_LIBERATION_WAR_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_23_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.24
+    picture = GFX_EVENT_LIBERATION_WAR_24
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_24
+    desc = EVENT_LIBERATION_WAR_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_24_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.25
+    picture = GFX_EVENT_LIBERATION_WAR_25
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_25
+    desc = EVENT_LIBERATION_WAR_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_25_o0
+    }
+}
+news_event = {
+    id = LIBERATION_WAR.26
+    picture = GFX_EVENT_LIBERATION_WAR_26
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        NOT = {
+            tag = C08
+            tag = C01
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_26
+    desc = EVENT_LIBERATION_WAR_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_26_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.27
+    picture = GFX_EVENT_LIBERATION_WAR_27
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_27
+    desc = EVENT_LIBERATION_WAR_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_27_o0
+    }
+}
+country_event = {
+    id = LIBERATION_WAR.28
+    picture = GFX_EVENT_LIBERATION_WAR_28
+    is_triggered_only = yes
+    title = EVENT_LIBERATION_WAR_28
+    desc = EVENT_LIBERATION_WAR_28_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_LIBERATION_WAR_28_o0
+    }
+}

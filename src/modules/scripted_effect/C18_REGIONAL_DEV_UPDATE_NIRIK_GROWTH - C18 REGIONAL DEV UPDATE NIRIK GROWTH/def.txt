@@ -1,0 +1,212 @@
+C18_REGIONAL_DEV_UPDATE_NIRIK_GROWTH = {
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 1.005
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^1
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_2
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1 = 1.005
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^2
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_3
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^2 = 1.005
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^3
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_4
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^3 = 1.005
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^4
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_5
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^4 = 1.005
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5 = 0.99
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5
+				value = 30
+				compare = less_than
+			}
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5
+				value = 1.02
+				compare = less_than
+			}
+			NOT = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_6
+			}
+			NOT = {
+				has_completed_focus = FOCUS_C18_TALK_TO_RAINSHINE
+			}
+		}
+		multiply_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^5 = 1.005
+		}
+	}
+}

@@ -1,0 +1,31 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C00 = {
+				every_owned_state = {
+					add_building_construction = {
+						type = pihc_bgfx_fog
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			}
+			C26 = {
+				every_owned_state = {
+					ADD_FOG_OF_WAR_BUILDING = yes
+				}
+			}
+			C36 = {
+				every_owned_state = {
+					ADD_FOG_OF_WAR_BUILDING = yes
+				}
+			}
+			218 = {
+				ADD_FOG_OF_WAR_BUILDING = yes
+			}
+		}
+	}
+}

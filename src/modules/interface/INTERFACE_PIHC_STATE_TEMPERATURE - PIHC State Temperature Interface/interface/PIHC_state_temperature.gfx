@@ -1,0 +1,54 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_pihc_state_temperature_base
+		texturefile = "gfx/interface/PIHC_state_temperature/base.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_1"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_1.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_2"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_2.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_3"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_3.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_4"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_4.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_5"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_5.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_6"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_6.dds"
+	}
+	spriteType = {
+		name = "GFX_pihc_state_temperature_needle_7"
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_7.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = GFX_pihc_state_temperature_indoor_needle
+		texturefile = "gfx/interface/PIHC_state_temperature/needle_strip.dds"
+		noOfFrames = 7
+		animation_rate_fps = 1
+		looping = no
+		play_on_show = no
+	}
+	frameAnimatedSpriteType = {
+		name = GFX_pihc_state_temperature_mercury_indicator
+		texturefile = "gfx/interface/PIHC_state_temperature/mercury_indicator_strip.dds"
+		noOfFrames = 82
+		animation_rate_fps = 1
+		looping = no
+		play_on_show = no
+	}
+	spriteType = {
+		name = GFX_pihc_state_temperature_scale
+		texturefile = "gfx/interface/PIHC_state_temperature/scale.dds"
+	}
+}

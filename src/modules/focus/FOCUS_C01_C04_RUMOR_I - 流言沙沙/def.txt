@@ -1,0 +1,50 @@
+focus = {
+	id = FOCUS_C01_C04_RUMOR_I
+	icon = GFX_FOCUS_C01_C04_RUMOR_I_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C04_STRATUSBURG_SURVEY
+	}
+	cost = 1
+	completion_reward = {
+		country_event = {
+			id = C01_C04_REDSKY.2
+		}
+	}
+	available = {
+		C04 = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				any_controlled_state = {
+					C01 = {
+						divisions_in_state = {
+							size > 2
+							state = PREV
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 12
+}

@@ -1,0 +1,15 @@
+infiltrate_military_bribe = {
+	name = infiltrate_military_bribe
+	desc = infiltrate_military_bribe_desc
+	outcome = infiltrate_military_bribe_outcome
+	picture = GFX_phase_infiltrate_military_bribe
+	icon = GFX_phase_infiltrate_military_bribe_small
+	requirements = {
+	}
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

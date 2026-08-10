@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_POWDER_ROUGE = {
+        name = CHARACTER_POWDER_ROUGE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_POWDER_ROUGE.dds"
+                small = "gfx/leaders/CHARACTER_POWDER_ROUGE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_POWDER_ROUGE_army.dds"
+                small = "gfx/leaders/CHARACTER_POWDER_ROUGE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_POWDER_ROUGE_navy.dds"
+                small = "gfx/leaders/CHARACTER_POWDER_ROUGE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_POWDER_ROUGE
+            desc = CHARACTER_POWDER_ROUGE_DESC
+            traits = {
+                TRAIT_MAKEUP_ARTIST
+                TRAIT_DOVISH
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 100
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

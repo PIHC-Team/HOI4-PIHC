@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_SHERIFF_SILVERSTAR = {
+        name = CHARACTER_SHERIFF_SILVERSTAR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR.dds"
+                small = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR_army.dds"
+                small = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR_navy.dds"
+                small = "gfx/leaders/CHARACTER_SHERIFF_SILVERSTAR_navy_small.dds"
+            }
+        }
+        gender = male
+        field_marshal = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

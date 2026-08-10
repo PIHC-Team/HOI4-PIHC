@@ -1,0 +1,52 @@
+"""PIHC3 ideology Entity extension."""
+
+from __future__ import annotations
+
+import heavenbase as hb
+
+from paradev.build import SimpleSourceFamily, Slot
+
+
+class PIHC3IdeologyModule(hb.Entity):
+    """One independently editable PIHC3 ideology module."""
+
+    identifier = "pihc3-ideology-module"
+    module_id = (
+        hb.field(hb.ShortText).default("").desc("Stable ParaDev module identifier.")
+    )
+    data = (
+        hb.field(hb.Json)
+        .default({})
+        .desc("Structured metadata, localization, and resource references.")
+    )
+    family = "ideology"
+    resource_slots = (
+        Slot(
+            name="def",
+            match="def.txt",
+            required=True,
+            kind="pdx",
+        ),
+        Slot(
+            name="loc",
+            match="**/*.loc",
+            many=True,
+            kind="loc",
+        ),
+    )
+    compilation_hooks = ("normalize", "check", "emit")
+
+
+def build_family() -> SimpleSourceFamily:
+    """Return the Registry compiler owned by this Entity extension."""
+
+    return SimpleSourceFamily(
+        family=PIHC3IdeologyModule.family,
+        source_slots=PIHC3IdeologyModule.resource_slots,
+        pdx_path_template="common/ideologies/{object_id}.txt",
+        loc_path_template="localisation/{language_folder}/{object_id}_{language}.yml",
+        required_loc_keys=("{object_id}", "{object_id}_desc"),
+    )
+
+
+__all__ = ["PIHC3IdeologyModule", "build_family"]

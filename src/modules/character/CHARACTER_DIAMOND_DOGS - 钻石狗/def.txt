@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_DIAMOND_DOGS = {
+        name = CHARACTER_DIAMOND_DOGS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_DOGS.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_DOGS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_DOGS_army.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_DOGS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_DOGS_navy.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_DOGS_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_DIAMOND_DOGS_DESC
+            traits = {
+
+            }
+            ideology = corporation_tribe
+        }
+    }
+}

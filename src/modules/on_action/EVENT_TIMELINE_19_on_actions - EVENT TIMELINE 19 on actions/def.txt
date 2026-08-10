@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C26 = {
+				country_event = {
+					id = TIMELINE.19
+					days = 243
+				}
+			}
+		}
+	}
+}

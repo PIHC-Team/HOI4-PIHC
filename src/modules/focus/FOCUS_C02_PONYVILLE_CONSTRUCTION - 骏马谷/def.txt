@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C02_PONYVILLE_CONSTRUCTION
+	icon = GFX_FOCUS_C02_PONYVILLE_CONSTRUCTION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_THE_FIVE_MONTHS_PLAN
+	}
+	cost = 8
+	completion_reward = {
+		504 = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		add_ideas = IDEA_C02_STALLIONCON_VALLEY
+	}
+	available = {
+		504 = {
+			is_owned_by = C02
+			is_controlled_by = C02
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 3
+}

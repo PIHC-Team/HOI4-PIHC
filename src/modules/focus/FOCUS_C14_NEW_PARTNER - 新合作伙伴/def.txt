@@ -1,0 +1,36 @@
+focus = {
+	id = FOCUS_C14_NEW_PARTNER
+	icon = GFX_FOCUS_C14_NEW_PARTNER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C14_TERRIBLE_DECISION
+	}
+	cost = 2
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C14_NEW_PARTNER_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C02_FORGIVEN
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_C02_FORGIVEN_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 12
+	y = 4
+}

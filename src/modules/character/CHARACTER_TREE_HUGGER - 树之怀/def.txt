@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_TREE_HUGGER = {
+        name = CHARACTER_TREE_HUGGER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_TREE_HUGGER.dds"
+                small = "gfx/leaders/CHARACTER_TREE_HUGGER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_TREE_HUGGER_army.dds"
+                small = "gfx/leaders/CHARACTER_TREE_HUGGER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_TREE_HUGGER_navy.dds"
+                small = "gfx/leaders/CHARACTER_TREE_HUGGER_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_TREE_HUGGER
+            desc = CHARACTER_TREE_HUGGER_DESC
+            traits = {
+                TRAIT_DOVISH
+                TRAIT_FREEDOM_FIGHTER
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 350
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

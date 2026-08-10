@@ -1,0 +1,79 @@
+focus = {
+	id = FOCUS_C02_POLICE_STATE
+	icon = GFX_FOCUS_C02_POLICE_STATE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_HIDDEN_MILITARIZATION
+	}
+	cost = 4
+	completion_reward = {
+		hidden_effect = {
+			load_oob = C02_police
+		}
+		504 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C02
+				}
+				create_unit = {
+					division = "name = \"小马谷防暴警察 (Ponyville Riot Police)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+					owner = C02
+					count = 2
+				}
+			}
+		}
+		567 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C02
+				}
+				create_unit = {
+					division = "name = \"小马谷防暴警察 (Ponyville Riot Police)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+					owner = C02
+					count = 1
+				}
+			}
+		}
+		514 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C02
+				}
+				create_unit = {
+					division = "name = \"小马谷防暴警察 (Ponyville Riot Police)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.9"
+					owner = C02
+					count = 1
+				}
+			}
+		}
+		add_power_balance_value = {
+			id = BOP_C02_INDEPENDENCE
+			value = 0.15
+			tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 4
+}

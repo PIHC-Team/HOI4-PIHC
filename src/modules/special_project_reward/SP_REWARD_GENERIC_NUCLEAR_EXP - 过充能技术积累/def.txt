@@ -1,0 +1,26 @@
+SP_REWARD_GENERIC_NUCLEAR_EXP = {
+	fire_only_once = no
+	threshold = {
+		min = 0
+		max = 100
+	}
+	option = {
+		iteration_output = {
+			country_effects = {
+				add_tech_bonus = {
+					name = SP_REWARD_GENERIC_NUCLEAR_EXP
+					bonus = 0.5
+					uses = 1
+					category = pihc_nuclear
+				}
+			}
+			scientist_effects = {
+				add_scientist_xp = {
+					experience = constant:sp_scientist_xp_gain.low
+					specialization = specialization_nuclear
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_NUCLEAR_EXP_o0
+	}
+}

@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_ARCHITECT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		production_speed_buildings_factor = 0.1
+	}
+}

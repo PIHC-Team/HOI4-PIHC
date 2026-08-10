@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_GEN_INDUSTRY_HYGIENE
+	icon = GFX_FOCUS_GEN_INDUSTRY_HYGIENE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY
+	}
+	cost = 6
+	bypass = {
+		OR = {
+			has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+			has_idea = IDEA_ERA_HYGIENE_2_MYSO
+		}
+	}
+	completion_reward = {
+		UPGRADE_HYGIENE = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 2
+}

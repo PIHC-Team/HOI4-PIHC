@@ -1,0 +1,46 @@
+division_template = {
+    name = "精灵飞蝇大群 (Large Parasprite Swarm)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+        infantry_automata = {
+            x = 0
+            y = 1
+        }
+        infantry_automata = {
+            x = 1
+            y = 1
+        }
+        infantry_automata = {
+            x = 2
+            y = 1
+        }
+        infantry_automata = {
+            x = 0
+            y = 2
+        }
+        infantry_automata = {
+            x = 1
+            y = 2
+        }
+        infantry_automata = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

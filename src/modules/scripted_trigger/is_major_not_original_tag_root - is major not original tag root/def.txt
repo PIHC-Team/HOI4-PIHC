@@ -1,0 +1,8 @@
+is_major_not_original_tag_root = {
+	is_major = yes
+	hidden_trigger = {
+		NOT = {
+			original_tag = ROOT
+		}
+	}
+}

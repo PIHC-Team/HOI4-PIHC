@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_DEPARTMENT_NAVY = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		experience_gain_navy = 0.2
+	}
+}

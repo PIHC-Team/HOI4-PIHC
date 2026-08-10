@@ -1,0 +1,52 @@
+pihc_air_open_sky_fighter_aircraft_b = {
+	track = fighter_aircraft
+	name = DOCTRINE_AIR_0_1B_PATROL
+	description = DOCTRINE_AIR_0_1B_PATROL_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_fighter_aircraft_b_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_air_balloon = {
+		air_attack = 0.08
+		air_ground_attack = 0.2
+	}
+	category_air_creatures = {
+		air_ground_attack = 0.1
+	}
+	rewards = {
+		mobility = {
+			air_agility_factor = 0.1
+			air_cas_present_factor = 0.1
+		}
+		rise = {
+			air_defence_factor = 0.1
+			category_air_balloon = {
+				air_attack = 0.05
+				air_ground_attack = 0.05
+			}
+			category_air_creatures = {
+				air_attack = 0.05
+				air_ground_attack = 0.05
+			}
+			category_air_galleon = {
+				air_attack = 0.05
+				air_ground_attack = 0.05
+			}
+			category_air_plane = {
+				air_attack = 0.05
+				air_ground_attack = 0.05
+			}
+		}
+	}
+}

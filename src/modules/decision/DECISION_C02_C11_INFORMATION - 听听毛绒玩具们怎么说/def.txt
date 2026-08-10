@@ -1,0 +1,27 @@
+DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI = {
+    DECISION_C02_C11_INFORMATION = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 50
+        days_remove = 14
+        days_re_enable = 0
+        allowed = {
+            tag = C02
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3
+        }
+        available = {
+            has_idea = IDEA_DIND_C02_PLUSH_TOY_LOGS
+        }
+        remove_effect = {
+            country_event = {
+                id = C01_C02_GREENLIGHT.36
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C02_C11_INFORMATION
+    }
+}

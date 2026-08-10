@@ -1,0 +1,7 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			CHANGE_HUNGER_LEVEL = yes
+		}
+	}
+}

@@ -1,0 +1,17 @@
+leader_traits = {
+	TRAIT_LORD_PROTECTOR_OF_EQUESTRIA = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		industrial_capacity_factory = 0.25
+		conscription_factor = 0.25
+		army_org_factor = 0.15
+		drift_defence_factor = 0.2
+		resistance_target = -0.5
+		political_power_gain = 1
+		war_support_weekly = 0.1
+		stability_weekly = 0.1
+		ai_focus_aggressive_factor = 0.2
+	}
+}

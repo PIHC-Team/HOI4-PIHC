@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_BRAEBURN = {
+        name = CHARACTER_BRAEBURN_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_BRAEBURN_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_BRAEBURN_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BRAEBURN_army.dds"
+                small = "gfx/leaders/CHARACTER_BRAEBURN_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BRAEBURN_navy.dds"
+                small = "gfx/leaders/CHARACTER_BRAEBURN_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_BRAEBURN_DESC
+            traits = {
+
+            }
+            ideology = democratic_freestate
+        }
+    }
+}

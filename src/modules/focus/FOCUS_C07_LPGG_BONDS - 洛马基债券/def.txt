@@ -1,0 +1,43 @@
+focus = {
+	id = FOCUS_C07_LPGG_BONDS
+	icon = GFX_FOCUS_C07_LPGG_BONDS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPGG_STOCK
+	}
+	cost = 2
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+					tag = C09
+					is_in_faction_with = C09
+					AND = {
+						owns_state = 432
+						controls_state = 432
+					}
+				}
+			}
+			ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_500 = yes
+		}
+		else = {
+			ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 31
+	y = 5
+}

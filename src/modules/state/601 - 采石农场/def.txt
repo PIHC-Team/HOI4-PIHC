@@ -1,0 +1,54 @@
+state = {
+    id = 601
+    name = STATE_601
+    provinces = {
+        714
+        2233
+        2841
+        3444
+        3649
+        4212
+        4251
+        5685
+        5744
+        6103
+        6142
+        6323
+        7181
+        7584
+        7894
+        8426
+        9032
+        9169
+        9392
+        9624
+        12317
+        12328
+        12352
+        12370
+        12402
+        12445
+    }
+    manpower = 7842
+    state_category = large_town
+    history = {
+        owner = C12
+        victory_points = {
+            714
+            5
+        }
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 2
+            arms_factory = 2
+            714 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C12
+    }
+    resources = {
+        steel = 3
+        coal = 4
+    }
+}

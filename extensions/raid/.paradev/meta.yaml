@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/raid
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-raid
+items:
+-   kind: entity
+    identifier: pihc3-raid-module
+    name: PIHC3 Raid Module
+    desc: Project-owned raid source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3RaidModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-raid
+    name: PIHC3 Raid
+    desc: PIHC3 raid module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-raid-module
+        definition:
+            identifier: pihc3-raid
+            name: PIHC3 Raid
+            version: 0.2.3
+            desc: PIHC3 raid module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-raid-module
+            meta:
+                project: PIHC3
+                family: raid
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-raid
+    name: PIHC3 Raid Compiler
+    desc: Registry-backed source slots and compiler hooks for raid.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: raid
+            title: Raid
+            group: other
+        dependencies:
+        - extension:pihc3-raid

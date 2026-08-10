@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_DOUBLE_DIAMOND = {
+        name = CHARACTER_DOUBLE_DIAMOND_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND.dds"
+                small = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND_army.dds"
+                small = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND_navy.dds"
+                small = "gfx/leaders/CHARACTER_DOUBLE_DIAMOND_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+        advisor = {
+            idea_token = CHARACTER_DOUBLE_DIAMOND
+            desc = CHARACTER_DOUBLE_DIAMOND_DESC
+            traits = {
+                TRAIT_DOUBLE_DIAMOND
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

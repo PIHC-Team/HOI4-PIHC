@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C01_C03_WHAT_IS_SHE_LIKE
+	icon = GFX_FOCUS_C01_C03_WHAT_IS_SHE_LIKE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C03_OPERATION_BLUEBERRY
+	}
+	cost = 3
+	completion_reward = {
+		country_event = {
+			id = C01_C03_BLUEBERRY.1
+		}
+	}
+	available = {
+		C03 = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		has_intelligence_agency = yes
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 11
+}

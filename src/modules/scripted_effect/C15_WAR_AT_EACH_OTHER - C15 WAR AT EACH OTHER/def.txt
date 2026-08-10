@@ -1,0 +1,34 @@
+C15_WAR_AT_EACH_OTHER = {
+	every_country = {
+		limit = {
+			original_tag = C15
+		}
+		every_other_country = {
+			limit = {
+				original_tag = C15
+				NOT = {
+					OR = {
+						has_war_with = PREV
+						AND = {
+							PREV = {
+								tag = X15
+							}
+							tag = Q15
+						}
+						AND = {
+							PREV = {
+								tag = Q15
+							}
+							tag = X15
+						}
+					}
+				}
+			}
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+			add_civil_war_target = PREV
+		}
+	}
+}

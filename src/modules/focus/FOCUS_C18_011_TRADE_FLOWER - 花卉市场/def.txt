@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C18_011_TRADE_FLOWER
+	icon = GFX_FOCUS_C18_011_TRADE_FLOWER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_011_XUN
+	}
+	cost = 3
+	completion_reward = {
+		country_event = {
+			id = C18_MAIN.4
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 4
+}

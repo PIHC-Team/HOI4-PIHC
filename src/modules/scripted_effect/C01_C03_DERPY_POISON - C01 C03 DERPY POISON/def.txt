@@ -1,0 +1,21 @@
+C01_C03_DERPY_POISON = {
+	C03 = {
+		complete_national_focus = FOCUS_C03_MUFFIN_26
+		add_power_balance_value = {
+			id = BOP_C03_INDEPENDENCE
+			value = -1.0
+			tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+		}
+	}
+	hidden_effect = {
+		C01 = {
+			ADD_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_REPLY_1 = yes
+		}
+		C03 = {
+			country_event = {
+				id = C01_C03_BLUEBERRY.9
+				days = 7
+			}
+		}
+	}
+}

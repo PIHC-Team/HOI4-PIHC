@@ -1,0 +1,32 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_COZYBURG_START = {
+        fixed_random_seed = no
+        priority = 89
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            custom_effect_tooltip = FOCUS_C08_ON_THE_CRYSTAL_MOUNT_TOOLTIP
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C08_REPORT_16A1A
+                set_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+            }
+            country_event = {
+                id = C08_MAIN.70
+            }
+            C01 = {
+                country_event = {
+                    id = C08_MAIN.75
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_COZYBURG_START
+    }
+}

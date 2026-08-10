@@ -1,0 +1,6 @@
+is_democracy_seller_trigger = {
+	NOT = {
+		has_war_with = ROOT
+	}
+	has_government = democratic
+}

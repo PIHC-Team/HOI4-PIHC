@@ -1,0 +1,60 @@
+# Basic ignores
+.DS_Store
+Thumbs.db
+*.pyc
+*.pyd
+*.pyo
+__pycache__/
+*.egg-info/
+.eggs/
+.venv/
+.idea/
+.vscode/
+*.code-workspace
+.pytest_cache/
+.ruff_cache/
+pytest_cache/
+env/
+venv/
+site/
+dist/
+build/
+.pypirc
+
+# Temporary artifacts
+*.test
+*.cache
+*.log
+*.temp
+*.lock
+temp.py
+temp.bash
+session.json
+log.json
+log.txt
+
+# Local-only project data
+.paradev/
+!extensions/**/.paradev/
+extensions/**/.paradev/*
+!extensions/**/.paradev/meta.yaml
+!src/modules/**/.paradev/
+src/modules/**/.paradev/*
+!src/modules/**/.paradev/meta.yaml
+!src/modules/**/.paradev/import.yaml
+!src/modules/**/.paradev/diagram.yaml
+!src/modules/entity/HOI4DEV_ENTITIES - PIHC2 HOI4DEV Entities/.paradev/entities.json
+!src/modules/**/.paradev/evidence/
+!src/modules/**/.paradev/evidence/**
+!src/collections/**/.paradev/
+src/collections/**/.paradev/*
+!src/collections/**/.paradev/meta.yaml
+!src/collections/**/.paradev/import.yaml
+!src/collections/**/.paradev/diagram.yaml
+!src/collections/**/.paradev/evidence/
+!src/collections/**/.paradev/evidence/**
+copies/
+secret/
+
+# Local high-resolution source artwork not consumed by the compiler.
+assets/loadingscreens/

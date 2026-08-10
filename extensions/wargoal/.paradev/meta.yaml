@@ -1,0 +1,132 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/wargoal
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-wargoal
+items:
+-   kind: entity
+    identifier: pihc3-wargoal-module
+    name: PIHC3 Wargoal Module
+    desc: Project-owned wargoal source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3WargoalModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-wargoal
+    name: PIHC3 Wargoal
+    desc: PIHC3 wargoal module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-wargoal-module
+        definition:
+            identifier: pihc3-wargoal
+            name: PIHC3 Wargoal
+            version: 0.2.3
+            desc: PIHC3 wargoal module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-wargoal-module
+            meta:
+                project: PIHC3
+                family: wargoal
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-wargoal
+    name: PIHC3 Wargoal Compiler
+    desc: Registry-backed source slots and compiler hooks for wargoal.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: wargoals
+            title: Wargoals
+            group: country
+            title_key: modules.wargoals.title
+        dependencies:
+        - extension:pihc3-wargoal
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-f42e72f8666c7a69
+    name: PIHC3 Basic Wargoal
+    desc: PIHC3 authoring template pihc3:wargoal/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:wargoal/basic
+            declaration:
+                title: PIHC3 Basic Wargoal
+                family: wargoal
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    war_name:
+                        default: '{object_id}_WAR_NAME'
+                    war_name_title:
+                        default: $ORDER$$FIRST$-$SECOND$ War
+                    allowed:
+                        default: 'no'
+                    generate_base_cost:
+                        default: '200'
+                    generate_per_state_cost:
+                        default: '50'
+                    take_states_limit:
+                        default: '5'
+                    take_states_cost:
+                        default: '-20'
+                    expire:
+                        default: '730'
+                    threat:
+                        default: '2'
+                    language:
+                        default: en
+                files:
+                    def.txt: "wargoal_types = {{\n\t{object_id} = {{\n\t\twar_name\
+                        \ = {war_name}\n\n\t\tallowed = {{\n\t\t\talways = {allowed}\n\
+                        \t\t}}\n\n\t\tavailable = {{\n\t\t}}\n\n\t\ttake_states =\
+                        \ {{\n\t\t}}\n\n\t\tgenerate_base_cost = {generate_base_cost}\n\
+                        \t\tgenerate_per_state_cost = {generate_per_state_cost}\n\n\
+                        \t\ttake_states_limit = {take_states_limit}\n\t\ttake_states_cost\
+                        \ = {take_states_cost}\n\n\t\texpire = {expire}\n\n\t\tthreat\
+                        \ = {threat}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_WAR_NAME]
+
+                        {war_name_title}
+
+                        '
+                directory: '{object_id} - {title}'

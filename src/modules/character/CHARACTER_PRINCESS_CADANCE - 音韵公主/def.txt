@@ -1,0 +1,35 @@
+characters = {
+    CHARACTER_PRINCESS_CADANCE = {
+        name = CHARACTER_PRINCESS_CADANCE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_CADANCE.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_CADANCE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_CADANCE_army.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_CADANCE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_CADANCE_navy.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_CADANCE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PRINCESS_CADANCE
+            desc = CHARACTER_PRINCESS_CADANCE_DESC
+            traits = {
+                TRAIT_PRINCESS_CADANCE
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+            visible = {
+                always = no
+            }
+        }
+    }
+}

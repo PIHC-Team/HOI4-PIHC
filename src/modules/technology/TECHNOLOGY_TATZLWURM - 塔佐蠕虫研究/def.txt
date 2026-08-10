@@ -1,0 +1,36 @@
+technologies = {
+    TECHNOLOGY_TATZLWURM = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 18
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+            pihc_special
+        }
+        enable_equipments = {
+            EQUIPMENT_SPECIAL_BIOCHEMI_TATZLWURM
+        }
+        enable_subunits = {
+            infantry_biochemi
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = general_infantry_biochemi
+            }
+        }
+        dependencies = {
+            TECHNOLOGY_SUPPORT_BIOCHEMI = 1
+        }
+        research_cost = 5.0
+        start_year = 1006
+    }
+}

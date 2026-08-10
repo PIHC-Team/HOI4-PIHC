@@ -1,0 +1,146 @@
+NAMES_GROUP_C18_ARTILLERY = {
+    name = "麒麟火炮师 (Kirin Artillery Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "麒麟火炮师%d师 (Kirin Artillery Division %d)"
+}
+NAMES_GROUP_C18_TANK_LIGHT = {
+    name = "麒麟轻型装甲师 (Kirin Light Armor Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "麒麟轻型装甲师%d师 (Kirin Light Armor Division %d)"
+}
+NAMES_GROUP_C18_TRADITIONAL_REGULAR = {
+    name = "麒麟常规步兵师 (Kirin Regular Infantry Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "麒麟常规步兵师%d师 (Kirin Regular Infantry Division %d)"
+}
+NAMES_GROUP_C18_TANK_HEAVY = {
+    name = "麒麟重型装甲师 (Kirin Heavy Armor Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "麒麟重型装甲师%d师 (Kirin Heavy Armor Division %d)"
+}
+NAMES_GROUP_C18_TRADITIONAL_SMALL = {
+    name = "麒麟小型步兵师 (Kirin Small Infantry Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "麒麟小型步兵师%d师 (Kirin Small Infantry Division %d)"
+}
+NAMES_GROUP_C18_AUTOMATA = {
+    name = "麒麟自动作战师 (Kirin Automata Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "麒麟自动作战师%d师 (Kirin Automata Division %d)"
+}
+NAMES_GROUP_C18_SHIELD = {
+    name = "麒麟重装步兵师 (Kirin Heavy Infantry Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "麒麟重装步兵师%d师 (Kirin Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C18_MAGICAL = {
+    name = "麒麟魔法步兵师 (Kirin Magical Infantry Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "麒麟魔法步兵师%d师 (Kirin Magical Infantry Division %d)"
+}
+NAMES_GROUP_C18_INFANTRY_MIX = {
+    name = "麒麟协同师 (Kirin Concerted Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "麒麟协同师%d师 (Kirin Concerted Division %d)"
+}
+NAMES_GROUP_C18_MOTORIZED = {
+    name = "麒麟机动步兵师 (Kirin Motorized Infantry Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "麒麟机动步兵师%d师 (Kirin Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C18_TANK_MEDIUM = {
+    name = "麒麟中型装甲师 (Kirin Medium Armor Division)"
+    for_countries = {
+        C18
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "麒麟中型装甲师%d师 (Kirin Medium Armor Division %d)"
+}

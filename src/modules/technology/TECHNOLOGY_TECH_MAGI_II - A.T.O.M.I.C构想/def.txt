@@ -1,0 +1,50 @@
+technologies = {
+    TECHNOLOGY_TECH_MAGI_II = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 10
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_magical
+            pihc_magic_theory
+            pihc_magictronics
+            pihc_nuclear
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_building = {
+            building = nuclear_facility
+            level = 1
+        }
+        nuclear_production = 1
+        on_research_complete_limit = {
+            always = yes
+        }
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    nukes = 1
+                    popup = no
+                }
+            }
+        }
+        special_project_specialization = {
+            specialization_nuclear
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_MAGI_III
+            research_cost_coeff = 1
+        }
+        research_cost = 8.0
+        start_year = 1006
+    }
+}

@@ -1,0 +1,73 @@
+focus = {
+	id = FOCUS_C12_TAKE_BACK_TREE_OF_HARMONY
+	icon = GFX_FOCUS_C12_TAKE_BACK_TREE_OF_HARMONY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_CLAIM_PONYVILLE
+	}
+	cost = 6
+	bypass = {
+		owns_state = 550
+		owns_state = 585
+	}
+	completion_reward = {
+		550 = {
+			add_claim_by = C12
+		}
+		585 = {
+			add_claim_by = C12
+		}
+		550 = {
+			owner = {
+				C12 = {
+					declare_war_on = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+		}
+		585 = {
+			owner = {
+				C12 = {
+					declare_war_on = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = PIHC_COUNTRY_FLAG_C12_LIMESTONE_PIE_REMAINS_RATIONAL
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			always = no
+		}
+		550 = {
+			owner = {
+				NOT = {
+					tag = C08
+					is_in_faction_with = C12
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 34
+}

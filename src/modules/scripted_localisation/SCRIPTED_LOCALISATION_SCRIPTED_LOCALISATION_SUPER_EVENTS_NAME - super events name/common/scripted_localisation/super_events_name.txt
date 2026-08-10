@@ -1,0 +1,90 @@
+defined_text = {
+    name = GetSuperEventTitle
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_1_ON
+        }
+        localization_key = EVENT_SUPER_1_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_2_ON
+        }
+        localization_key = EVENT_SUPER_2_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_ON
+        }
+        localization_key = EVENT_SUPER_3_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_ON
+        }
+        localization_key = EVENT_SUPER_4_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_5_ON
+        }
+        localization_key = EVENT_SUPER_5_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_6_ON
+        }
+        localization_key = EVENT_SUPER_6_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_ON
+        }
+        localization_key = EVENT_SUPER_7_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_ON
+        }
+        localization_key = EVENT_SUPER_8_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_9_ON
+        }
+        localization_key = EVENT_SUPER_9_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_10_ON
+        }
+        localization_key = EVENT_SUPER_10_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_11_ON
+        }
+        localization_key = EVENT_SUPER_11_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_12_ON
+        }
+        localization_key = EVENT_SUPER_12_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_13_ON
+        }
+        localization_key = EVENT_SUPER_13_NAME
+    }
+    text = {
+        trigger = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_14_ON
+        }
+        localization_key = EVENT_SUPER_14_NAME
+    }
+    text = {
+        localization_key = Error
+    }
+}

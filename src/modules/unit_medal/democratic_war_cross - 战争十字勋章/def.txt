@@ -1,0 +1,18 @@
+@cost = 30
+unit_medals = {
+	democratic_war_cross = {
+		available = {
+			has_government = democratic
+		}
+		frame = 3
+		icon = GFX_medal_icon_democratic
+		cost = @cost
+		unit_modifiers = {
+			army_defence_factor = 0.05
+			recon_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

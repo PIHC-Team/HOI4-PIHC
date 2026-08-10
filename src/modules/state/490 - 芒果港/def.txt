@@ -1,0 +1,45 @@
+state = {
+    id = 490
+    name = STATE_490
+    provinces = {
+        510
+        3632
+        4170
+        4246
+        4664
+        6059
+        6834
+        7134
+        7782
+        9262
+        9830
+        14169
+        14215
+        14239
+        14262
+        14290
+        14315
+    }
+    manpower = 52959
+    state_category = town
+    history = {
+        owner = C48
+        victory_points = {
+            510
+            20
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+            510 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C48
+    }
+    resources = {
+        rubber = 24
+        crystals = 10
+        oil = 12
+    }
+}

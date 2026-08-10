@@ -1,0 +1,32 @@
+C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_7 = {
+	400 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	410 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	412 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	426 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	441 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	446 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	436 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	set_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_CLOUDSDALE
+	C04_REGIONAL_DEV_COMPUTE = yes
+}

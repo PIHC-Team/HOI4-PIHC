@@ -1,0 +1,16 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_SHINING_METROPOLIS = {
+			picture = C08_SHINING_METROPOLIS
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

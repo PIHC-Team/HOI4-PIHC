@@ -1,0 +1,22 @@
+scripted_gui = {
+	landlord_popup_confirm_claim = {
+		context_type = player_context
+		window_name = landlord_popup_confirm_claim
+		visible = {
+			ROOT = {
+				has_country_flag = landlord_revoking_claim
+			}
+		}
+		effects = {
+			cancel_click = {
+				clr_country_flag = landlord_revoking_claim
+			}
+			confirm_click = {
+				clr_country_flag = landlord_revoking_claim
+				ROOT = {
+					remove_state_claim = var:landlord_state
+				}
+			}
+		}
+	}
+}

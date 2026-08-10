@@ -1,0 +1,19 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_MNS = {
+			picture = C08_MNS
+			removal_cost = -1
+			modifier = {
+				encryption = 2
+				crypto_strength = 1
+				decryption_power = 1
+				agency_upgrade_time = -0.25
+				intel_from_combat_factor = 0.15
+				intel_network_gain_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

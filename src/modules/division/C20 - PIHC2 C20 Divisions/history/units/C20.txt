@@ -1,0 +1,519 @@
+division_template = {
+    name = "龙族火炮师 (Dragon Artillery Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C20_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "龙族轻型装甲师 (Dragon Light Armor Division)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "龙族小型步兵师 (Dragon Small Infantry Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "龙族自动作战师 (Dragon Automata Division)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "龙族重装步兵师 (Dragon Heavy Infantry Division)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "龙族魔法步兵师 (Dragon Magical Infantry Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "龙族协同师 (Dragon Concerted Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "龙族机动步兵师 (Dragon Motorized Infantry Division)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 17
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 18
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 19
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 20
+        }
+        division_template = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+        location = 1634
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+}

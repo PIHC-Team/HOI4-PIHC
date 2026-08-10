@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C03_C04_TRADE = {
+			picture = C03_C04_TRADE
+			removal_cost = -1
+			modifier = {
+				civilian_factory_use = -6
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

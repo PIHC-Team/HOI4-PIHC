@@ -1,0 +1,118 @@
+pihc_air_open_sky = {
+	folder = air
+	name = DOCTRINE_AIR_0_0_OPEN_SKY
+	description = DOCTRINE_AIR_0_0_OPEN_SKY_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_medium
+	available = {
+		always = yes
+	}
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	tracks = {
+		fighter_aircraft
+		strike_aircraft
+		medium_aircraft
+		heavy_aircraft
+	}
+	milestones = {
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_open_sky_fighter_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_open_sky_fighter_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_open_sky_fighter_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_open_sky_strike_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_open_sky_strike_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_open_sky_strike_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_open_sky_medium_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_open_sky_medium_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_open_sky_medium_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_open_sky_heavy_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_open_sky_heavy_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_open_sky_heavy_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+	}
+	category_all_infantry = {
+		air_attack = 3.0
+	}
+	category_all_artillery = {
+		air_attack = 3.0
+	}
+	category_all_armor = {
+		air_attack = 1.5
+	}
+	air_intercept_efficiency = 0.1
+	static_anti_air_damage_factor = 0.05
+	air_home_defence_factor = 0.08
+	industry_air_damage_factor = -0.08
+	enemy_army_bonus_air_superiority_factor = -0.12
+}

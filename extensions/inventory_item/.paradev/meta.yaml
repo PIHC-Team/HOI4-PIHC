@@ -1,0 +1,112 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/inventory_item
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-inventory-item
+items:
+-   kind: entity
+    identifier: pihc3-inventory-item
+    aliases:
+    - InventoryItem
+    name: PIHC3 Inventory Item
+    desc: Project-owned compact inventory item data and generated-helper contract.
+    source: path
+    target:
+        module: null
+        qualname: InventoryItem
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-inventory
+    name: PIHC3 Inventory
+    desc: PIHC3-exclusive compact inventory item authoring and persistence.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-inventory-item
+        definition:
+            identifier: pihc3-inventory
+            name: PIHC3 Inventory
+            version: 0.2.4
+            desc: PIHC3-exclusive compact inventory item authoring and persistence.
+            required: false
+            requires: []
+            entities:
+            - pihc3-inventory-item
+            meta:
+                project: PIHC3
+                family: inventory_item
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-inventory-item
+    name: PIHC3 Inventory Item Compiler
+    desc: Generate one inventory item's helpers from its compact semantic definition.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: inventory-items
+            title: Inventory Items
+            group: events
+            title_key: modules.inventoryItems.title
+        dependencies:
+        - entity:pihc3-inventory-item
+        - extension:pihc3-inventory
+-   kind: paradev_authoring_template
+    identifier: pihc3-inventory-item-basic
+    name: Inventory Item
+    desc: Novice-facing compact source scaffold for one PIHC3 inventory item.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - paradev_build_family:pihc3-inventory-item
+        definition:
+            template_id: pihc3:inventory_item/basic
+            declaration:
+                title: Inventory Item
+                family: inventory_item
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    count:
+                        type: number
+                        default: 1
+                        label: Helper quantity
+                        description: Quantity used by the generated add, remove, and ownership helpers.
+                    language:
+                        default: en
+                files:
+                    item.json: "{{\n  \"helper_quantities\": \"{count}\"\n}}\n"
+                    main.loc: '[{language}.INVENTORY_ITEM_{object_id}]
+
+                        {title}
+
+
+                        [{language}.INVENTORY_ITEM_{object_id}_DESC]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

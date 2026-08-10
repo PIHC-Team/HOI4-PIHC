@@ -1,0 +1,31 @@
+ideas = {
+	industrial_concern = {
+		IDEA_DIND_C02_PLUSH_TOY_LOGS = {
+			picture = DIND_C02_PLUSH_TOY_LOGS
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				energy_company
+			}
+			cost = 150
+			allowed = {
+				tag = C02
+			}
+			visible = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3
+				country_exists = C11
+			}
+			available = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C02_CHANGELING_SPIES_ALLOWED_3
+			}
+			ai_will_do = {
+				base = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

@@ -1,0 +1,54 @@
+C03_ROULETTE_RANDOM_TASK = {
+	set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK
+	random_list = {
+		seed = random
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_1_NUM_GAMES
+		}
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_2_NUM_BOXES
+		}
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_3_NUM_GOOD_BOXES
+		}
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_4_NUM_WINNING_STREAK
+		}
+		1 = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING
+		}
+		1 = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_6_WIN_NEXT
+		}
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_7_FORTUNE_TELL
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_7_FORTUNE_TELL
+		}
+		1 = {
+			set_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_8_SHUFFLE
+		}
+	}
+}

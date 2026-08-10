@@ -1,0 +1,48 @@
+focus = {
+	id = FOCUS_C09_INTER_OPEN_UP_SADDLE
+	icon = GFX_FOCUS_C09_INTER_OPEN_UP_SADDLE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_INTER_APPROACH_SADDLE
+	}
+	cost = 6
+	bypass = {
+		C24 = {
+			OR = {
+				has_idea = limited_exports
+				has_idea = export_focus
+				has_idea = free_trade
+			}
+		}
+	}
+	completion_reward = {
+		C24 = {
+			add_ideas = export_focus
+		}
+	}
+	available = {
+		C24 = {
+			has_opinion = {
+				target = C09
+				value > 29
+			}
+		}
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 9
+}

@@ -1,0 +1,44 @@
+state = {
+    id = 570
+    name = STATE_570
+    provinces = {
+        675
+        1200
+        1531
+        2021
+        4487
+        4536
+        5795
+        6722
+        7274
+        8240
+        12048
+        12099
+        12116
+        12154
+        12188
+    }
+    manpower = 73813
+    state_category = city
+    history = {
+        owner = C53
+        victory_points = {
+            675
+            20
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 2
+            industrial_complex = 2
+            arms_factory = 2
+            675 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C53
+    }
+    resources = {
+        steel = 12
+        crystals = 24
+    }
+}

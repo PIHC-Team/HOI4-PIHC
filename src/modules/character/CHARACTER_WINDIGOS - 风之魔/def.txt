@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_WINDIGOS = {
+        name = CHARACTER_WINDIGOS_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_WINDIGOS_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_WINDIGOS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_WINDIGOS_army.dds"
+                small = "gfx/leaders/CHARACTER_WINDIGOS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_WINDIGOS_navy.dds"
+                small = "gfx/leaders/CHARACTER_WINDIGOS_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_WINDIGOS_DESC
+            traits = {
+                TRAIT_WINDIGOS_SOURCE_OF_BLIZZARDS
+            }
+            ideology = transcendence_spirit
+        }
+    }
+}

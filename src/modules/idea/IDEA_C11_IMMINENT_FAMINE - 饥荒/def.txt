@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		IDEA_C11_IMMINENT_FAMINE = {
+			picture = C11_IMMINENT_FAMINE
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.7
+				political_power_cost = 0.5
+				stability_factor = -0.1
+				party_popularity_stability_factor = -0.1
+				conscription_factor = -0.1
+				monthly_population = -0.05
+			}
+			allowed = {
+				tag = C11
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI = {
+    DECISION_C08_INVESTIGATE_FIRE_EXPERTS = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 5
+        days_remove = 14
+        fire_only_once = yes
+        allowed = {
+            tag = C08
+        }
+        available = {
+            C08 = {
+                has_country_leader = {
+                    character = CHARACTER_STARLIGHT_GLIMMER
+                    ruling_only = yes
+                }
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                START_PIHC_C08_PIN_GAME_2 = yes
+                if = {
+                    limit = {
+                        is_ai = yes
+                    }
+                    country_event = {
+                        id = C01_C02_GREENLIGHT.33
+                        days = 360
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C08_INVESTIGATE_FIRE_EXPERTS
+    }
+}

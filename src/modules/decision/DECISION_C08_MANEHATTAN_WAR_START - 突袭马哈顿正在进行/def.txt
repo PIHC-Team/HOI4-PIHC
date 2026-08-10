@@ -1,0 +1,20 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_MANEHATTAN_WAR_START = {
+        fixed_random_seed = no
+        priority = 79999
+        visible = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        complete_effect = {
+
+        }
+        cost = 0
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_MANEHATTAN_WAR_START
+    }
+}

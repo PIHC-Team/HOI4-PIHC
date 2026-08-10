@@ -1,0 +1,297 @@
+division_template = {
+    name = "裂隙火炮 (Rift Artillery Branch)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C38_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "裂隙轻型装甲 (Rift Light Armor Branch)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "裂隙常规步兵 (Rift Regular Infantry Branch)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "裂隙小型步兵 (Rift Small Infantry Branch)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "裂隙自动作战 (Rift Automata Branch)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "裂隙重装步兵 (Rift Heavy Infantry Branch)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "裂隙魔法步兵 (Rift Magical Infantry Branch)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "裂隙协同 (Rift Concerted Branch)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "裂隙机动步兵 (Rift Motorized Infantry Branch)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C38_MOTORIZED
+    priority = 3
+}

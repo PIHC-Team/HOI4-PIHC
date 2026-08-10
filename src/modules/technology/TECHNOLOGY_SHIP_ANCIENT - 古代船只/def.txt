@@ -1,0 +1,44 @@
+technologies = {
+    TECHNOLOGY_SHIP_ANCIENT = {
+        folder = {
+            name = naval_folder
+            position = {
+                x = 0
+                y = 1
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_navy
+            pihc_transport_ship
+        }
+        enable_equipments = {
+            convoy_1
+        }
+        enable_subunits = {
+        }
+        transport_capacity = -0.33
+        naval_invasion_capacity = 10
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIP_SEASURGE
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIP_SEACOURTYARD
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIP_SEACARDINAL
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIP_STORM_SUBMARINE
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

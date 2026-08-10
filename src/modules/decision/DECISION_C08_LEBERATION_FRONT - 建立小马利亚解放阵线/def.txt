@@ -1,0 +1,22 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_LEBERATION_FRONT = {
+        fixed_random_seed = no
+        priority = 97
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            country_event = {
+                id = C08_MAIN.38
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_LEBERATION_FRONT
+    }
+}

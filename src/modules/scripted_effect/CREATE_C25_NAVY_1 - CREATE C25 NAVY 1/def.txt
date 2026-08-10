@@ -1,0 +1,17 @@
+CREATE_C25_NAVY_1 = {
+	C25 = {
+		UNLOCK_NAVY_BASIC = yes
+		create_equipment_variant = {
+			name = "Harmony Class"
+			type = EQUIPMENT_SHIP_SEACOURTYARD
+		}
+		create_equipment_variant = {
+			name = "Leader Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		create_equipment_variant = {
+			name = "Awesome Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+	}
+}

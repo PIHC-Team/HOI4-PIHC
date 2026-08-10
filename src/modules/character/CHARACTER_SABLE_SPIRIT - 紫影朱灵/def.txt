@@ -1,0 +1,39 @@
+characters = {
+    CHARACTER_SABLE_SPIRIT = {
+        name = CHARACTER_SABLE_SPIRIT_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SABLE_SPIRIT.dds"
+                small = "gfx/leaders/CHARACTER_SABLE_SPIRIT_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SABLE_SPIRIT_army.dds"
+                small = "gfx/leaders/CHARACTER_SABLE_SPIRIT_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SABLE_SPIRIT_navy.dds"
+                small = "gfx/leaders/CHARACTER_SABLE_SPIRIT_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_SABLE_SPIRIT_DESC
+            traits = {
+                TRAIT_SABLE_SPIRIT_ETERNAL_GRACE
+            }
+            ideology = peacism_dogmatism
+        }
+        advisor = {
+            idea_token = CHARACTER_SABLE_SPIRIT
+            desc = CHARACTER_SABLE_SPIRIT_DESC
+            traits = {
+                TRAIT_SABLE_SPIRIT_ETERNAL_GRACE
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 150
+            removal_cost = 150
+            slot = political_advisor
+        }
+    }
+}

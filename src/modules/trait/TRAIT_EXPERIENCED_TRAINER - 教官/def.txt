@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_EXPERIENCED_TRAINER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		experience_gain_army = 0.3
+		training_time_army_factor = -0.2
+	}
+}

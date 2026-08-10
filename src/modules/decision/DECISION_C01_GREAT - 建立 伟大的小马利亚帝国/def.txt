@@ -1,0 +1,202 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    DECISION_C01_GREAT = {
+        fixed_random_seed = no
+        priority = 0
+        cost = 50
+        days_remove = 90
+        fire_only_once = yes
+        visible = {
+            OR = {
+                AND = {
+                    has_completed_focus = FOCUS_C01_UNIFICATION_POLICY
+                }
+                has_country_flag = PIHC_COUNTRY_FLAG_DEBUG_GREAT_EMPIRE
+            }
+        }
+        available = {
+            has_country_leader = {
+                character = CHARACTER_COZY_GLOW
+                ruling_only = yes
+            }
+            has_civil_war = no
+            OR = {
+                C02 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C02
+                    }
+                    504 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    529 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    543 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    545 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    567 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C03 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C03
+                    }
+                    412 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    365 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C04 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C04
+                    }
+                    336 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C06 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C06
+                    }
+                    888 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                    481 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C12 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C12
+                    }
+                }
+            }
+            OR = {
+                C14 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C14
+                    }
+                }
+            }
+            OR = {
+                C08 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C08
+                    }
+                    389 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C05 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C05
+                    }
+                    528 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            OR = {
+                C05 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C05
+                    }
+                }
+            }
+            OR = {
+                C33 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C33
+                    }
+                }
+            }
+            OR = {
+                C10 = {
+                    is_subject_of = C01
+                }
+                AND = {
+                    NOT = {
+                        country_exists = C10
+                    }
+                    539 = {
+                        is_owned_and_controlled_by = C01
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        remove_effect = {
+            C01 = {
+                set_cosmetic_tag = C01_GREAT
+                set_country_leader_name = {
+                    name = CHARACTER_COZY_GLOW_THE_GREAT
+                }
+                hidden_effect = {
+                    set_global_flag = PIHC_ACHIEVEMENT_FLAG_C01_GREAT_EMPIRE
+                }
+                remove_ideas = C01_FEUDAL_SYSTEM
+                remove_ideas = C01_FEUDAL_SYSTEM_2
+                remove_ideas = C01_FEUDAL_SYSTEM_3
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_GREAT
+    }
+}

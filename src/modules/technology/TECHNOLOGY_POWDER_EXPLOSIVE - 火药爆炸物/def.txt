@@ -1,0 +1,30 @@
+technologies = {
+    TECHNOLOGY_POWDER_EXPLOSIVE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 2
+                y = 3
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_firearm
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_I
+            research_cost_coeff = 1
+            ignore_for_layout = yes
+        }
+        research_cost = 1.5
+        start_year = 1001
+    }
+}

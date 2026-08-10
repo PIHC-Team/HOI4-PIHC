@@ -1,0 +1,6 @@
+FROM_is_twice_as_strong = {
+	strength_ratio = {
+		tag = FROM
+		ratio < 0.5
+	}
+}

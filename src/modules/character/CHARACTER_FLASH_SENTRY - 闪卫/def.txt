@@ -1,0 +1,37 @@
+characters = {
+    CHARACTER_FLASH_SENTRY = {
+        name = CHARACTER_FLASH_SENTRY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_FLASH_SENTRY.dds"
+                small = "gfx/leaders/CHARACTER_FLASH_SENTRY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FLASH_SENTRY_army.dds"
+                small = "gfx/leaders/CHARACTER_FLASH_SENTRY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FLASH_SENTRY_navy.dds"
+                small = "gfx/leaders/CHARACTER_FLASH_SENTRY_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_FLASH_SENTRY_DESC
+            traits = {
+
+            }
+            ideology = despotic_harmonicism
+        }
+        field_marshal = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

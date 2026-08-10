@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C08_OLD_FRIENDS
+	icon = GFX_FOCUS_C08_OLD_FRIENDS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_LOYAL_ALLIES
+	}
+	cost = 2
+	completion_reward = {
+		add_political_power = 20
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_OLD_FRIENDS
+		custom_effect_tooltip = FOCUS_C08_OLD_FRIENDS_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 5
+}

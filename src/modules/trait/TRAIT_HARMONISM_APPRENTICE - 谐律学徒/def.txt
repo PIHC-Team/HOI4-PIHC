@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_HARMONISM_APPRENTICE = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		harmonicism_drift = 0.03
+	}
+}

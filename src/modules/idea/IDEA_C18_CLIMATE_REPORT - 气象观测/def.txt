@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C18_CLIMATE_REPORT = {
+			picture = C18_CLIMATE_REPORT
+			removal_cost = -1
+			modifier = {
+				winter_attrition_factor = -0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

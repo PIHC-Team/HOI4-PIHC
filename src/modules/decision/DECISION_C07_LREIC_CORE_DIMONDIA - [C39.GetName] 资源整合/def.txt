@@ -1,0 +1,36 @@
+DECISION_CATEGORY_C07_LREIC = {
+    DECISION_C07_LREIC_CORE_DIMONDIA = {
+        fixed_random_seed = no
+        priority = 101
+        days_remove = 60
+        visible = {
+            tag = C07
+            has_completed_focus = FOCUS_C07_LREIC
+        }
+        available = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_200 = yes
+        }
+        custom_cost_trigger = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_200 = yes
+        }
+        custom_cost_text = CUSTOM_COST_DEV_BONDS_200
+        complete_effect = {
+            DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_200 = yes
+        }
+        remove_effect = {
+            every_owned_state = {
+                limit = {
+                    is_core_of = C39
+                }
+                add_core_of = C07
+                remove_core_of = C39
+            }
+            ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 40000
+        }
+        icon = C07_LREIC_CORE_DIMONDIA
+    }
+}

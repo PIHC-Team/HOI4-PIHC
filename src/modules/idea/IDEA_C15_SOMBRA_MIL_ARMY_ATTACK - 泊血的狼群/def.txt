@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C15_SOMBRA_MIL_ARMY_ATTACK = {
+			picture = C15_SOMBRA_MIL_ARMY_ATTACK
+			removal_cost = -1
+			modifier = {
+				offence = 0.15
+				breakthrough_factor = 0.05
+				army_morale_factor = -0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

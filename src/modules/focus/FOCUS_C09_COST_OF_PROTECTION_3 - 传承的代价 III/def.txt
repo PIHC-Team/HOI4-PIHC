@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C09_COST_OF_PROTECTION_3
+	icon = GFX_FOCUS_C09_COST_OF_PROTECTION_3_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_COST_OF_PROTECTION_2
+	}
+	cost = 2
+	completion_reward = {
+		UPGRADE_HYGIENE = yes
+		add_stability = 0.02
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		has_completed_focus = FOCUS_C09_COST_OF_DEVELOPMENT_1
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 6
+}

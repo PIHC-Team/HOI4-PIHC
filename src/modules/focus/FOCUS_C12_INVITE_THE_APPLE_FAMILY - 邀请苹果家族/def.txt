@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C12_INVITE_THE_APPLE_FAMILY
+	icon = GFX_FOCUS_C12_INVITE_THE_APPLE_FAMILY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_TREASURE_EVERYWHERE
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C12_FREE_SPONSORSHIP_OF_LAS_PEGASUS
+	}
+	cost = 4
+	completion_reward = {
+		UPGRADE_C12_C14_RELATION = yes
+	}
+	available = {
+		country_exists = C14
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 6
+}

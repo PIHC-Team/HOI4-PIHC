@@ -1,0 +1,109 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = C06
+					}
+					FROM = {
+						tag = C08
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.12
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = C01
+					}
+					FROM = {
+						tag = C08
+					}
+				}
+				set_variable = {
+					var = global.VAR_THE_COUNTRY_THAT_DEFEATED_C01
+					value = FROM
+				}
+				C01 = {
+					news_event = {
+						id = C01_MAIN.31
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.58
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = C08
+					}
+					FROM = {
+						tag = C01
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.60
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = C28
+					}
+					FROM = {
+						tag = C26
+					}
+				}
+				C28 = {
+					country_event = {
+						id = C28_MAIN.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = C01
+					}
+					FROM = {
+						tag = C12
+					}
+				}
+				set_variable = {
+					var = global.VAR_THE_COUNTRY_THAT_DEFEATED_C01
+					value = FROM
+				}
+				C01 = {
+					news_event = {
+						id = C01_MAIN.31
+					}
+				}
+				C12 = {
+					if = {
+						limit = {
+							has_country_flag = PIHC_C12_LIMESTONE_HAS_ENHANCEMENT
+						}
+						country_event = {
+							id = C12_MAIN.91
+						}
+					}
+					else = {
+						country_event = {
+							id = C12_MAIN.89
+						}
+					}
+				}
+			}
+		}
+	}
+}

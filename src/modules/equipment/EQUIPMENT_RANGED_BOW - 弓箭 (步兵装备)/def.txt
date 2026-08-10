@@ -1,0 +1,31 @@
+equipments = {
+	EQUIPMENT_RANGED_BOW = {
+		archetype = ARCHETYPE_INFANTRY
+		priority = 10002
+		visual_level = 10002
+		build_cost_ic = 0.264
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.8
+		soft_attack = 2.64
+		hard_attack = 0.24
+		air_attack = 0.0
+		ap_attack = 1.56
+		breakthrough = 1.2
+		defense = 14.399999999999999
+		armor_value = 0.12
+		hardness = 0.0
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 1
+		picture = EQUIPMENT_RANGED_BOW
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_MELEE_STEEL
+		resources = {
+			logs = 1
+			steel = 2
+		}
+	}
+}

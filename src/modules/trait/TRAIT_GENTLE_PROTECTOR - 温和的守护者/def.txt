@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_GENTLE_PROTECTOR = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		compliance_growth = 0.2
+		stability_weekly = 0.001
+		experience_gain_army = 0.1
+	}
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_VEHOOVIUS_HEX = {
+        name = CHARACTER_VEHOOVIUS_HEX_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX.dds"
+                small = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX_army.dds"
+                small = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX_navy.dds"
+                small = "gfx/leaders/CHARACTER_VEHOOVIUS_HEX_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_VEHOOVIUS_HEX_DESC
+            traits = {
+
+            }
+            ideology = democratic_theocracy
+        }
+    }
+}

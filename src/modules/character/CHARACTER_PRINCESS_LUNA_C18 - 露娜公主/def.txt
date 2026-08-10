@@ -1,0 +1,38 @@
+characters = {
+    CHARACTER_PRINCESS_LUNA_C18 = {
+        name = CHARACTER_PRINCESS_LUNA_C18_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18_army.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18_navy.dds"
+                small = "gfx/leaders/CHARACTER_PRINCESS_LUNA_C18_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PRINCESS_LUNA_C18
+            desc = CHARACTER_PRINCESS_LUNA_C18_DESC
+            traits = {
+
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+            visible = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EMBRACE
+            }
+            available = {
+                always = no
+            }
+        }
+    }
+}

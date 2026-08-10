@@ -1,0 +1,39 @@
+technologies = {
+    TECHNOLOGY_MAGICAL_SNIPER = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 0
+                y = 21
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_magical
+        }
+        enable_equipments = {
+            EQUIPMENT_MAGICAL_RANGED_SNIPER
+        }
+        enable_subunits = {
+        }
+        allow_branch = {
+            OR = {
+                tag = C07
+                tag = C23
+            }
+        }
+        allow = {
+            always = no
+        }
+        dependencies = {
+            TECHNOLOGY_MAGICAL_BLUNDERBUSS = 1
+            TECHNOLOGY_TECH_ENER_III = 1
+        }
+        research_cost = 5.0
+        start_year = 1007
+    }
+}

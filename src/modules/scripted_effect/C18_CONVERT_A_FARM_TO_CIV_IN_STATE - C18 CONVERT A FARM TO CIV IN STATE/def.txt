@@ -1,0 +1,11 @@
+C18_CONVERT_A_FARM_TO_CIV_IN_STATE = {
+	remove_building = {
+		type = farm_complex
+		level = 1
+	}
+	add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+	}
+}

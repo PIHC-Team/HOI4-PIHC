@@ -1,0 +1,63 @@
+focus = {
+	id = FOCUS_C02_ARMY_HAMBURGER
+	icon = GFX_FOCUS_C02_ARMY_HAMBURGER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_ARMY_COUNCIL
+	}
+	prerequisite = {
+		focus = FOCUS_C02_MAGIC_IMPROVE
+	}
+	cost = 4
+	completion_reward = {
+		news_event = {
+			id = C02_MAIN.15
+			days = 1
+		}
+		custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_5
+		add_to_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			value = 0.05
+		}
+		clamp_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			min = 0.0
+			max = 1.0
+		}
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C02_ARMY_HAMBURGER_TOOLTIP
+			OR = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_HAPPENED
+				C06 = {
+					NOT = {
+						has_idea = IDEA_C06_SLAVE_TRADE
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 7
+}

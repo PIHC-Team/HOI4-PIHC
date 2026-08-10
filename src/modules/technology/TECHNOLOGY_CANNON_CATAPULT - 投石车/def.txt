@@ -1,0 +1,48 @@
+technologies = {
+    TECHNOLOGY_CANNON_CATAPULT = {
+        folder = {
+            name = artillery_folder
+            position = {
+                x = 2
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_artillery
+        }
+        enable_equipments = {
+            EQUIPMENT_CANNON_LIGHT_CATAPULT
+        }
+        enable_building = {
+            building = anti_air_building
+            level = 5
+        }
+        enable_subunits = {
+            cannon_light
+            cannon_tank_light
+            cannon_mot_light
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_CANNON_LIGHT_STEAM
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_CANNON_MEDIUM_STEAM
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_CANNON_HEAVY_STEAM
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_CANNON_LIGHT_PINKIE
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_ALL_MAGICTRON_THEORY = {
+			picture = ALL_MAGICTRON_THEORY
+			removal_cost = -1
+			modifier = {
+			}
+			research_bonus = {
+				pihc_magical = 0.2
+				pihc_magictronics = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

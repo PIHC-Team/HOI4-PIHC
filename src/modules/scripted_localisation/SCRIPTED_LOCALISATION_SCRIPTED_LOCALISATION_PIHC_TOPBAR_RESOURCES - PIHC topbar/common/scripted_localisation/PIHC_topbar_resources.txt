@@ -1,0 +1,180 @@
+defined_text = {
+    name = IB_OIL_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@oil > 0
+            }
+            check_variable = {
+                resource@oil > resource_imported@oil
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_OIL
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_OIL_0
+    }
+}
+defined_text = {
+    name = IB_ALM_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@aluminium > 0
+            }
+            check_variable = {
+                resource@aluminium > resource_imported@aluminium
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_ALUMINIUM
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_ALUMINIUM_0
+    }
+}
+defined_text = {
+    name = IB_RUB_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@rubber > 0
+            }
+            check_variable = {
+                resource@rubber > resource_imported@rubber
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_RUBBER
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_RUBBER_0
+    }
+}
+defined_text = {
+    name = IB_TUN_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@tungsten > 0
+            }
+            check_variable = {
+                resource@tungsten > resource_imported@tungsten
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_TUNGSTEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_TUNGSTEN_0
+    }
+}
+defined_text = {
+    name = IB_STE_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@steel > 0
+            }
+            check_variable = {
+                resource@steel > resource_imported@steel
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_STEEL
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_STEEL_0
+    }
+}
+defined_text = {
+    name = IB_CHR_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@chromium > 0
+            }
+            check_variable = {
+                resource@chromium > resource_imported@chromium
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_CHROMIUM
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_CHROMIUM_0
+    }
+}
+defined_text = {
+    name = IB_LOG_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@logs > 0
+            }
+            check_variable = {
+                resource@logs > resource_imported@logs
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_LOGS
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_LOGS_0
+    }
+}
+defined_text = {
+    name = IB_COA_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@coal > 0
+            }
+            check_variable = {
+                resource@coal > resource_imported@coal
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_COAL
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_COAL_0
+    }
+}
+defined_text = {
+    name = IB_CRY_TEXT
+    text = {
+        trigger = {
+            check_variable = {
+                resource_imported@crystals > 0
+            }
+            check_variable = {
+                resource@crystals > resource_imported@crystals
+            }
+        }
+        localization_key = TOPBAR_RESOURCE_CRYSTALS
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = TOPBAR_RESOURCE_CRYSTALS_0
+    }
+}

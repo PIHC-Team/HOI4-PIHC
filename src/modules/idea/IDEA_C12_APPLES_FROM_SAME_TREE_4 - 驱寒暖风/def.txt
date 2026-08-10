@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C12_APPLES_FROM_SAME_TREE_4 = {
+			picture = C12_APPLES_FROM_SAME_TREE_4
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_C12_APPLES_FROM_SAME_TREE_4_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

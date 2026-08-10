@@ -1,0 +1,65 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_18
+	icon = GFX_FOCUS_C03_MUFFIN_18_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	bypass = {
+		hidden_trigger = {
+			C01 = {
+				has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_BLUE
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = IDEA_C03_STABILITY_MUFFIN_2
+					remove_idea = IDEA_C03_STABILITY_MUFFIN
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_RED
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = IDEA_C03_STABILITY_MUFFIN_2_FAKE
+					remove_idea = IDEA_C03_STABILITY_MUFFIN
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = FOCUS_C03_MUFFIN_18_TOOLTIP
+		}
+		hidden_effect = {
+			swap_ideas = {
+				add_idea = IDEA_C03_STABILITY_MUFFIN_2
+				remove_idea = IDEA_C03_STABILITY_MUFFIN
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_17
+	}
+	x = 11
+	y = 4
+}

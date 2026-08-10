@@ -1,0 +1,17 @@
+SP_REWARD_GENERIC_EUREKA_2 = {
+	fire_only_once = no
+	threshold = {
+		min = 0
+		max = 60
+	}
+	option = {
+		iteration_output = {
+			country_effects = {
+				FROM = {
+					add_project_progress_ratio = constant:sp_progress.gain.medium
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_EUREKA_2_o0
+	}
+}

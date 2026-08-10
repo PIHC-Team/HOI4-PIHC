@@ -1,0 +1,98 @@
+ai_focus_defense = {
+    research = {
+        defensive = 5.0
+        pihc_commu_tech = 1.0
+        pihc_construction = 2.0
+        pihc_artillery = 2.0
+    }
+}
+ai_focus_aggressive = {
+    research = {
+        offensive = 5.0
+        pihc_synth = 1.0
+        pihc_vehicle = 2.0
+        pihc_armor = 2.0
+    }
+}
+ai_focus_war_production = {
+    research = {
+        pihc_industry = 10.0
+        pihc_construction = 2.0
+        pihc_electronics = 2.0
+        pihc_info_tech = 2.0
+        pihc_steam_tech = 2.0
+        pihc_ice_tech = 2.0
+    }
+}
+ai_focus_military_equipment = {
+    research = {
+        pihc_infantry = 50.0
+        pihc_shield = 15.0
+        pihc_magical = 15.0
+        pihc_summon = 5.0
+        pihc_witchcraft = 20.0
+        pihc_artillery = 8.0
+        pihc_support = 6.5
+    }
+}
+ai_focus_military_advancements = {
+    research = {
+        pihc_armor = 10.0
+        jet_technology = 5.0
+        land_doctrine = 100.0
+        rocketry = 7.5
+        pihc_commu_tech = 3.0
+        encryption_tech = 7.5
+        decryption_tech = 7.5
+        pihc_synth = 3.0
+        pihc_vehicle = 4.0
+        pihc_nuclear = 5.0
+        night_vision = 5.0
+        pihc_train = 5.0
+    }
+}
+ai_focus_peaceful = {
+    research = {
+        pihc_industry = 15.0
+        pihc_construction = 5.0
+        pihc_electronics = 10.0
+        pihc_info_tech = 10.0
+        pihc_chips = 5.0
+    }
+}
+ai_focus_naval = {
+    research = {
+        naval_equipment = 5.0
+        naval_doctrine = 100.0
+        marine_tech = 10.0
+        dd_tech = 3.0
+        cl_tech = 3.0
+        ca_tech = 3.0
+        bc_tech = 3.0
+        bb_tech = 3.0
+        shbb_tech = 3.0
+        tp_tech = 3.0
+        cv_tech = 3.0
+        ss_tech = 3.0
+    }
+}
+ai_focus_naval_air = {
+    research = {
+        naval_air = 4.0
+        naval_bomber = 3.0
+    }
+}
+ai_focus_aviation = {
+    research = {
+        air_doctrine = 50.0
+        light_air = 20.0
+        light_fighter = 20.0
+        jet_technology = 1.0
+        cas_bomber = 2.0
+        medium_air = 4.0
+        tactical_bomber = 5.0
+        heavy_air = 1.5
+        air_equipment = 5.0
+        para_tech = 10
+    }
+}

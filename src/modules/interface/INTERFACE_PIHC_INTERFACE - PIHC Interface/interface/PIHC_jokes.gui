@@ -1,0 +1,21 @@
+guiTypes = {
+    containerWindowType = {
+        name = pihc_jokes_newspaper_icon
+        position = {
+            x = 0
+            y = 0
+        }
+        orientation = lower_right
+        moveable = no
+        buttonType = {
+            name = open_jokes
+            quadTextureSprite = GFX_pihc_jokes_icon
+            pdx_tooltip = PIHC_JOKES_TOGGLE_TT
+            position = {
+                x = -64
+                y = -492
+            }
+            scale = 0.5
+        }
+    }
+}

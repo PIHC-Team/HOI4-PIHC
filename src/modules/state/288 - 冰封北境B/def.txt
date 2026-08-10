@@ -1,0 +1,53 @@
+state = {
+    id = 288
+    name = STATE_288
+    provinces = {
+        751
+        752
+        1742
+        2115
+        2573
+        2820
+        2863
+        4612
+        4821
+        5018
+        6436
+        6875
+        7214
+        7415
+        7548
+        7602
+        7784
+        8552
+        8638
+        9961
+        10045
+        10061
+        10068
+        10149
+    }
+    manpower = 880
+    state_category = pastoral
+    history = {
+        owner = C15
+        victory_points = {
+            751
+            1
+        }
+        buildings = {
+            infrastructure = 2
+            dockyard = 1
+            7415 = {
+                naval_base = 1
+            }
+            751 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C15
+    }
+    resources = {
+        chromium = 2
+    }
+}

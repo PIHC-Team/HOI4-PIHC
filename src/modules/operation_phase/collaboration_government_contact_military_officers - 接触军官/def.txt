@@ -1,0 +1,13 @@
+collaboration_government_contact_military_officers = {
+	name = collaboration_government_contact_military_officers
+	desc = collaboration_government_contact_military_officers_desc
+	outcome = collaboration_government_contact_military_officers_outcome
+	picture = GFX_phase_collaboration_government_contact_military_officers
+	icon = GFX_phase_collaboration_government_contact_military_officers_small
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

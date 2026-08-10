@@ -1,0 +1,39 @@
+INIT_TRADE_CENTER_COUNTRY = {
+	set_variable = {
+		var = VAR_TRADE_CENTER_LIMIT_PER
+		value = 6
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LIMIT_EXTRA
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LIMIT
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CREDIT
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_MAX
+		value = 0
+	}
+	INIT_TRADE_CENTER_COUNTRY_CRYSTALS = yes
+	INIT_TRADE_CENTER_COUNTRY_TUNGSTEN = yes
+	INIT_TRADE_CENTER_COUNTRY_CHROMIUM = yes
+	INIT_TRADE_CENTER_COUNTRY_ALUMINIUM = yes
+	INIT_TRADE_CENTER_COUNTRY_STEEL = yes
+	INIT_TRADE_CENTER_COUNTRY_COAL = yes
+	INIT_TRADE_CENTER_COUNTRY_RUBBER = yes
+	INIT_TRADE_CENTER_COUNTRY_OIL = yes
+	INIT_TRADE_CENTER_COUNTRY_LOGS = yes
+	add_dynamic_modifier = {
+		modifier = PIHC_TRADE_DYNAMIC_MODIFIER
+		scope = THIS
+	}
+}

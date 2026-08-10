@@ -1,0 +1,358 @@
+scripted_gui = {
+	C04_REGIONAL_DEV_GUI = {
+		context_type = decision_category
+		window_name = C04_regional_dev_container
+		dynamic_lists = {
+			map_gridbox = {
+				array = C04.ARRAY_REGIONAL_DEV_REGIONS
+				entry_container = C04_state_group_gui_entry_container
+				index = i
+				value = v
+			}
+		}
+		triggers = {
+			state_group_btn_visible = {
+				C04 = {
+					OR = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_CLOUDSDALE
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_WEATHER_FACTORY
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+						}
+					}
+					set_temp_variable = {
+						VAR_STATE_GROUP_GUI_STRATUS_FRAME = 2
+					}
+				}
+				else = {
+					set_temp_variable = {
+						VAR_STATE_GROUP_GUI_STRATUS_FRAME = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 1
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_1
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 2
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_2
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 3
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_3
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 4
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_4
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 5
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_5
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 6
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_6
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 7
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_7
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 8
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_8
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+			}
+			state_group_btn_2x_visible = {
+				C04 = {
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_CLOUDSDALE
+					}
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_WEATHER_FACTORY
+					}
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+						}
+					}
+					set_temp_variable = {
+						VAR_STATE_GROUP_GUI_STRATUS_2x_FRAME = 2
+					}
+				}
+				else = {
+					set_temp_variable = {
+						VAR_STATE_GROUP_GUI_STRATUS_2x_FRAME = 1
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 1
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_1
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 2
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_2
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 3
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_3
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 4
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_4
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 5
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_5
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 6
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_6
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 7
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_7
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C04_REGIONAL_DEV_DEBUG
+						}
+						check_variable = {
+							v = 8
+						}
+					}
+					any_state_in = {
+						array = C04.ARRAY_REGIONAL_DEV_STATES_8
+						is_core_of = C04
+						is_owned_by = C04
+					}
+				}
+			}
+		}
+		properties = {
+			state_group_btn = {
+				image = "GFX_state_group_gui_STRATUS_[?v]"
+				frame = VAR_STATE_GROUP_GUI_STRATUS_FRAME
+				x = 0
+				y = 0
+			}
+			state_group_btn_2x = {
+				image = "GFX_state_group_gui_STRATUS_[?v]"
+				frame = VAR_STATE_GROUP_GUI_STRATUS_2x_FRAME
+				x = -250
+				y = -25
+			}
+		}
+		effects = {
+			state_group_btn_click = {
+				if = {
+					limit = {
+						check_variable = {
+							C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+						}
+					}
+					set_variable = {
+						C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = 0
+					}
+				}
+				else = {
+					set_variable = {
+						C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+					}
+				}
+			}
+			state_group_btn_2x_click = {
+				if = {
+					limit = {
+						check_variable = {
+							C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+						}
+					}
+					set_variable = {
+						C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = 0
+					}
+				}
+				else = {
+					set_variable = {
+						C04.VAR_CURRENT_REGIONAL_DEV_STATE_VALUE = v
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/localisation
+version: 0.2.3
+compatibility: {heavenbase: {min: 0.1.2.1, before: 0.1.3.0}}
+bundle: pihc3-localisation
+items:
+  - kind: paradev_build_writer
+    identifier: pihc3-localisation
+    name: PIHC3 Localisation Writer
+    desc: Exact-byte writer for reconciled PIHC3 localisation.
+    source: path
+    target: {module: null, qualname: PIHC3LocalisationWriter}
+    active: true
+    meta: {schema_version: 1, version: 0.2.3}
+  - kind: paradev_build_postprocessor
+    identifier: pihc3-localisation
+    name: PIHC3 Localisation Reconciler
+    desc: Deterministic whole-plan localisation precedence and replacement processing.
+    source: path
+    target: {module: null, qualname: PIHC3LocalisationPostprocessor}
+    active: true
+    meta:
+      schema_version: 1
+      version: 0.2.3
+      dependencies: [paradev_build_writer:pihc3-localisation]

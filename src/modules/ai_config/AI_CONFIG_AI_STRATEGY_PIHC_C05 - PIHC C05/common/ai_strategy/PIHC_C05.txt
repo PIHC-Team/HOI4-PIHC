@@ -1,0 +1,385 @@
+C05_save_pp_from_empire = {
+    allowed = {
+        original_tag = C04
+    }
+    enable = {
+        NOT = {
+            has_government = despotic
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = C01
+        value = -100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = C01
+        value = -100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = C02
+        value = -100
+    }
+}
+C05_help_starlight = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        date > 1002.1.1
+        OR = {
+            has_government = harmonicism
+            has_government = democratic
+        }
+        C08 = {
+            OR = {
+                has_government = harmonicism
+                has_government = democratic
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = befriend
+        id = C08
+        value = 100
+    }
+    ai_strategy = {
+        type = support
+        id = C08
+        value = 100
+    }
+}
+C05_stand_with_sunset_shimmer = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        date > 1002.1.1
+        OR = {
+            has_government = harmonicism
+            has_government = democratic
+        }
+        C23 = {
+            OR = {
+                has_government = harmonicism
+                has_government = democratic
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = befriend
+        id = C23
+        value = 100
+    }
+    ai_strategy = {
+        type = support
+        id = C23
+        value = 100
+    }
+}
+C05_mainly_defense_empire_not_appleloosa = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        has_government = harmonicism
+        C14 = {
+            OR = {
+                has_government = corporation
+                has_government = harmonicism
+                has_government = democratic
+            }
+        }
+    }
+    abort = {
+        has_war_with = C14
+    }
+    ai_strategy = {
+        type = befriend
+        id = C14
+        value = 25
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = C01
+        value = 10
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = C14
+        value = 10
+    }
+}
+C05_keep_building_arimies_in_forest = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        has_government = harmonicism
+        is_subject = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = build_army
+        id = suppression
+        value = -1000
+    }
+}
+C05_advance_research_enginers = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        date > 1002.1.1
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = research_weight_factor
+        id = TECHNOLOGY_SUPPORT_ENGINEER_I
+        value = 2000
+    }
+}
+C05_advance_research_enginers = {
+    allowed = {
+        tag = C05
+    }
+    enable = {
+        date > 1003.1.1
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = research_weight_factor
+        id = TECHNOLOGY_PAPER_SQUIZARD
+        value = 2000
+    }
+}
+C05_spend_xp_to_template_before = {
+    allowed = {
+        tag = C05
+    }
+    enable = {
+        date > 1002.1.1
+    }
+    abort = {
+        date > 1005.1.1
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 40
+    }
+}
+C05_have_enough_auto_soilders = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        date > 1005.1.1
+        stockpile_ratio = {
+            archetype = ARCHETYPE_AUTOMATA
+            ratio < 1.3
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = ARCHETYPE_AUTOMATA
+        value = -200
+    }
+    ai_strategy = {
+        type = equipment_production_min_factories_archetype
+        id = ARCHETYPE_AUTOMATA
+        value = 4
+    }
+}
+C05_advance_contribute_enginer_and_boom = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        num_of_military_factories > 3
+        date > 1002.1.1
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = equipment_production_min_factories_archetype
+        id = ARCHETYPE_CANNON_LIGHT
+        value = 1
+    }
+    ai_strategy = {
+        type = equipment_production_min_factories_archetype
+        id = ARCHETYPE_SUPPORT
+        value = 1
+    }
+}
+C05_pay_no_attention_in_sky = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        num_of_factories < 50
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = air_factory_balance
+        value = -1000
+    }
+}
+C05_pay_no_attention_to_armor_and_something_else = {
+    allowed = {
+        original_tag = C05
+    }
+    enable = {
+        num_of_factories < 30
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = ARCHETYPE_SHIELD
+        value = -500
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = ARCHETYPE_VEHICLE
+        value = -200
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = ARCHETYPE_WITCHCRAFT
+        value = -500
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = ARCHETYPE_TANK_LIGHT
+        value = -500
+    }
+}
+C05_unit_production = {
+    allowed = {
+        tag = C05
+    }
+    enable = {
+        always = yes
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = infantry_traditional_small
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = infantry_traditional
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = infantry_magical_small
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = infantry_magical
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = discord_infantry_automata_default
+        value = 90
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = discord_infantry_automata_large
+        value = 15
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = armor_generic
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = titan_generic
+        value = 0
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = special_generic
+        value = 5
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = fighter
+        value = 50
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = cas
+        value = 25
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = tactical_bomber
+        value = 15
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = strategic_bomber
+        value = 1
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = naval_bomber
+        value = 10
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = heavy_fighter
+        value = -40
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = heavy_fighter
+        value = 20
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = capital_ship
+        value = 10
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = submarine
+        value = 10
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = screen_ship
+        value = 40
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = convoy
+        value = 15
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = fighter
+        value = 55
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = 20
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = artillery
+        value = 10
+    }
+}

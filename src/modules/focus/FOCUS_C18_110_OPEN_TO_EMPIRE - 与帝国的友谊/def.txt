@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C18_110_OPEN_TO_EMPIRE
+	icon = GFX_FOCUS_C18_110_OPEN_TO_EMPIRE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_110_OPEN_TO_ORNITHIA
+	}
+	cost = 5
+	completion_reward = {
+		country_event = {
+			id = C18_MAIN.130
+		}
+	}
+	available = {
+		country_exists = C01
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 6
+}

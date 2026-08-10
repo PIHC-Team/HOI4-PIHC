@@ -1,0 +1,10 @@
+targeted_sabotage_immobilize_rolling_stock = {
+	name = targeted_sabotage_immobilize_rolling_stock
+	desc = targeted_sabotage_immobilize_rolling_stock_desc
+	outcome = targeted_sabotage_immobilize_rolling_stock_outcome
+	picture = GFX_phase_targeted_sabotage_immobilize_rolling_stock
+	icon = GFX_phase_targeted_sabotage_immobilize_rolling_stock_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 250
+	}
+}

@@ -1,0 +1,31 @@
+buildings = {
+	bitumen_infrastructure = {
+		base_cost = 6400
+		value = 1
+		allied_build = yes
+		infrastructure_construction_effect = yes
+		infrastructure = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				max_fuel_building = 1.5
+			}
+		}
+		state_modifiers = {
+			state_resource_cost_oil = 1
+			state_resources_factor = 0.04
+			state_production_speed_buildings_factor = 0.04
+			local_supplies_for_controller = 0.04
+			army_speed_factor_for_controller = 0.08
+		}
+		tags = {
+			state_infrastructure
+		}
+		level_cap = {
+			state_max = 5
+			group_by = state_infrastructure
+		}
+		icon_frame = 41
+	}
+}
+

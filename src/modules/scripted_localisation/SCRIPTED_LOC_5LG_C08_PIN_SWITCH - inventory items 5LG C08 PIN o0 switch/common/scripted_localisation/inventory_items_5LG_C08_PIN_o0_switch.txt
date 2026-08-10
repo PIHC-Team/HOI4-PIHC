@@ -1,0 +1,12 @@
+defined_text = {
+    name = GetItemSwitchName_5LG_C08_PIN
+    text = {
+        trigger = {
+            has_country_flag = PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON
+        }
+        localization_key = INVENTORY_ITEM_5LG_C08_PIN_o0_off
+    }
+    text = {
+        localization_key = INVENTORY_ITEM_5LG_C08_PIN_o0_on
+    }
+}

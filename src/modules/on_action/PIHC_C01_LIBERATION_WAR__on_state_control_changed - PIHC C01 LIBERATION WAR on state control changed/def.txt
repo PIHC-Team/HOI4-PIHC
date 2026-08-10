@@ -1,0 +1,371 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 415
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.1
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.2
+					}
+				}
+				C06 = {
+					country_event = {
+						id = LIBERATION_WAR.3
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 450
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.4
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.5
+					}
+				}
+				C06 = {
+					country_event = {
+						id = LIBERATION_WAR.6
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 888
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.7
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.8
+					}
+				}
+				C06 = {
+					country_event = {
+						id = LIBERATION_WAR.9
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 481
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.10
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.11
+					}
+				}
+				C06 = {
+					country_event = {
+						id = LIBERATION_WAR.12
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 549
+						has_state_flag = PIHC_STATE_FLAG_BALTIMARE_UPRISING
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+					}
+				}
+				C01 = {
+					news_event = {
+						id = LIBERATION_WAR.13
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.14
+					}
+				}
+				C06 = {
+					country_event = {
+						id = LIBERATION_WAR.15
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 63
+					}
+					FROM = {
+						tag = C01
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C01
+					}
+				}
+				C26 = {
+					news_event = {
+						id = LIBERATION_WAR.20
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.21
+					}
+				}
+				C01 = {
+					country_event = {
+						id = LIBERATION_WAR.22
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 431
+					}
+					FROM = {
+						tag = C01
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C01
+					}
+				}
+				C26 = {
+					news_event = {
+						id = LIBERATION_WAR.23
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.24
+					}
+				}
+				C01 = {
+					country_event = {
+						id = LIBERATION_WAR.25
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 374
+					}
+					FROM = {
+						tag = C01
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C01
+					}
+				}
+				C26 = {
+					news_event = {
+						id = LIBERATION_WAR.26
+					}
+				}
+				C08 = {
+					country_event = {
+						id = LIBERATION_WAR.27
+					}
+				}
+				C01 = {
+					country_event = {
+						id = LIBERATION_WAR.28
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 481
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+						controls_state = 888
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.12
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 888
+					}
+					FROM = {
+						tag = C06
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C06
+						controls_state = 481
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.12
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 504
+					}
+					FROM = {
+						tag = C02
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						has_war_with = C02
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.48
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 481
+					}
+					FROM = {
+						tag = C08
+					}
+					ROOT = {
+						tag = C02
+					}
+					C08 = {
+						has_war_with = C02
+					}
+				}
+				C08 = {
+					country_event = {
+						id = C08_MAIN.49
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 86
+					}
+					FROM = {
+						tag = C01
+					}
+					ROOT = {
+						tag = C08
+					}
+					C08 = {
+						owns_state = 86
+						OR = {
+							is_in_faction_with = C12
+							is_in_faction_with = C14
+						}
+					}
+					OR = {
+						country_exists = C12
+						country_exists = C14
+					}
+				}
+				C08 = {
+					set_country_flag = PIHC_C08_STARLIGHT_HAVE_DECIDE_SISTER_CASTLE
+					country_event = {
+						id = C12_MAIN.102
+					}
+				}
+			}
+		}
+	}
+}

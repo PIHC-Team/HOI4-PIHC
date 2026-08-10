@@ -1,0 +1,76 @@
+DECISION_CATEGORY_BCE_BORDER_CONFLICTS = {
+    DECISION_C14_METEORITE_INCIDENT_START = {
+        fixed_random_seed = no
+        cost = 100
+        days_remove = 30
+        days_re_enable = 150
+        available = {
+            C14 = {
+                power_balance_value = {
+                    id = BOP_C14_INDEPENDENCE
+                    value > 0.65
+                }
+            }
+            86 = {
+                any_neighbor_state = {
+                    is_fully_controlled_by = C14
+                    has_ROOT_at_least_1_div_in_current_state_scope = yes
+                }
+            }
+            has_completed_focus = FOCUS_C14_METEOR_END_MILITARY
+        }
+        visible = {
+            tag = C14
+            86 = {
+                is_owned_and_controlled_by = C01
+            }
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C14_IN_METEORITE_INCIDENT
+            }
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 86
+            }
+        }
+        war_with_on_remove = C01
+        complete_effect = {
+            hidden_effect = {
+                C14 = {
+                    random_state = {
+                        limit = {
+                            is_fully_controlled_by = C14
+                            has_ROOT_at_least_1_div_in_current_state_scope = yes
+                            any_neighbor_state = {
+                                state = 86
+                            }
+                        }
+                        set_variable = {
+                            var = C14.VAR_METEORITE_CONFLICT_STATE
+                            value = id
+                        }
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C14_IS_PREPARING_FOR_METEORITE_CONFLICT
+                }
+            }
+        }
+        remove_effect = {
+            start_border_war = {
+                change_state_after_war = no
+                defender = {
+                    state = 86
+                }
+                attacker = {
+                    state = var:C14.VAR_METEORITE_CONFLICT_STATE
+                    on_win = C14_MAIN.11
+                    on_lose = C14_MAIN.12
+                }
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C14_IN_METEORITE_INCIDENT
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = C14_METEORITE_INCIDENT_START
+    }
+}

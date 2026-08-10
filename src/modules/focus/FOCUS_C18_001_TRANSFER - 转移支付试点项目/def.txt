@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C18_001_TRANSFER
+	icon = GFX_FOCUS_C18_001_TRANSFER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_001_GEN
+	}
+	cost = 3
+	completion_reward = {
+		C18_DEL_NIRIK_6_25 = yes
+		C18_DEL_NIRIK_4_25 = yes
+		C18_ADD_NIRIK_1_8 = yes
+		C18_ADD_NIRIK_2_5 = yes
+		mark_focus_tree_layout_dirty = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 25
+	y = 4
+}

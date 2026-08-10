@@ -1,0 +1,108 @@
+bookmarks = {
+	bookmark = {
+		name = PIHC_DIE_NEBENWELT_NAME
+		desc = PIHC_DIE_NEBENWELT_DESC
+		date = 1002.12.1.12
+		picture = GFX_PIHC_DIE_NEBENWELT_bookmark
+		default = yes
+		default_country = C01
+		C23 = {
+			history = C23_DESC
+			ideology = harmonicism
+			ideas = {
+				IDEA_ALL_HARMONICISM_ORTHODOXY
+				IDEA_ALL_RESISTANCE
+				IDEA_ALL_EUREKA
+			}
+			focuses = {
+			}
+		}
+		C07 = {
+			history = C07_DESC
+			ideology = corporation
+			ideas = {
+				IDEA_ALL_EUREKA
+				IDEA_ALL_ECONOMIC_GROWTH
+			}
+			focuses = {
+				FOCUS_C07_LAS_PEGASUS_GROUP
+				FOCUS_C07_LPLAB
+				FOCUS_C07_LPMIG_FF_MAGICAL
+			}
+		}
+		C08 = {
+			history = C08_DESC
+			ideology = harmonicism
+			ideas = {
+				IDEA_C08_LIBERATION_FRONT_4
+				IDEA_C08_LONG_MARCH
+				IDEA_C08_ENEMY_AROUND
+			}
+			focuses = {
+				FOCUS_C08_MANEHATTAN_SERVE_THE_CHAINS
+				FOCUS_C08_UPRISE
+				FOCUS_C08_CITY_SUMMIT
+			}
+		}
+		C01 = {
+			history = C01_DESC
+			ideology = despotic
+			ideas = {
+				IDEA_C01_FEUDAL_SYSTEM
+				IDEA_C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED
+				IDEA_ALL_LAW_ORTHODOXY
+			}
+			focuses = {
+				FOCUS_C01_NEO_HARMONICISM
+				FOCUS_C01_UNIVERSAL_SURVEILLANCE
+				FOCUS_C01_GREAT_JAHR_NULL
+			}
+		}
+		C11 = {
+			history = C11_DESC
+			ideology = fascism
+			ideas = {
+				IDEA_C11_IMMINENT_FAMINE
+			}
+			focuses = {
+				FOCUS_C11_VENI_VIDI_VICI
+				FOCUS_C11_INVADE_TARTARUS
+				FOCUS_C11_CONQUER_REINDEER
+			}
+		}
+		C02 = {
+			history = C02_DESC
+			ideology = democratic
+			ideas = {
+				IDEA_C02_PUPPET_GOVERNMENT
+				IDEA_C02_C14_TRADE
+				IDEA_ALL_ECONOMIC_RECOVERY
+			}
+			focuses = {
+				FOCUS_C02_HIDDEN_MILITARIZATION
+				FOCUS_C02_AN_OLD_FRIEND
+				FOCUS_C02_PONYVILLE_CHIPS
+			}
+		}
+		C15 = {
+			history = C15_DESC
+			ideology = despotic
+			ideas = {
+				IDEA_C15_DISARMED
+				IDEA_C15_TRIBUTED_LOVE
+				IDEA_ALL_THE_DARK_AGE
+			}
+			focuses = {
+				FOCUS_C15_HEALING_THE_TRAUMA
+				FOCUS_C15_ROYAL_DESTINY
+				FOCUS_C15_SACRAMENT
+			}
+		}
+		--- = {
+			history = OTHER_DESC
+		}
+		effect = {
+			randomize_weather = 12345
+		}
+	}
+}

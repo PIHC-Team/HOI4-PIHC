@@ -1,0 +1,49 @@
+technologies = {
+    TECHNOLOGY_AIR_ANCIENT = {
+        folder = {
+            name = air_techs_folder
+            position = {
+                x = 3
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        enable_equipments = {
+            EQUIPMENT_AIR_TRANSPORT_BALLOON
+            EQUIPMENT_AIR_SCOUT_BALLOON
+            EQUIPMENT_AIR_ARMED_BALLOON
+            EQUIPMENT_AIR_BOMBING_BALLOON
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_AIR_CLOUDSHIP
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_AIR_CLOUDMAST
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_AIR_CLOUDCANNON
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_AIR_CLOUDAVA
+            research_cost_coeff = 1
+        }
+        allow_branch = {
+            NOT = {
+                has_dlc = "By Blood Alone"
+            }
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

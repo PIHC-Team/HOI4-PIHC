@@ -1,0 +1,93 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/scripted_effect
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-scripted-effect
+items:
+-   kind: entity
+    identifier: pihc3-scripted-effect-module
+    name: PIHC3 Scripted Effect Module
+    desc: Project-owned scripted_effect source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ScriptedEffectModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-scripted-effect
+    name: PIHC3 Scripted Effect
+    desc: PIHC3 scripted_effect module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-scripted-effect-module
+        definition:
+            identifier: pihc3-scripted-effect
+            name: PIHC3 Scripted Effect
+            version: 0.2.4
+            desc: PIHC3 scripted_effect module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-scripted-effect-module
+            meta:
+                project: PIHC3
+                family: scripted_effect
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-scripted-effect
+    name: PIHC3 Scripted Effect Compiler
+    desc: Registry-backed source slots and compiler hooks for scripted_effect.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: scripted-effects
+            title: Scripted Effects
+            group: shared
+            title_key: modules.scriptedEffects.title
+        dependencies:
+        - extension:pihc3-scripted-effect
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-3601a69f9eee8d5f
+    name: PIHC3 Basic Scripted Effect
+    desc: PIHC3 authoring template pihc3:scripted_effect/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:scripted_effect/basic
+            declaration:
+                title: PIHC3 Basic Scripted Effect
+                family: scripted_effect
+                args:
+                    title:
+                        required: true
+                    body:
+                        type: text
+                        label: Effect body
+                        description: PDX statements inside the scripted effect; outer braces are added automatically.
+                        advanced: false
+                files:
+                    def.txt: "{object_id} = {{\n{body}\n}}\n"
+                directory: '{object_id} - {title}'

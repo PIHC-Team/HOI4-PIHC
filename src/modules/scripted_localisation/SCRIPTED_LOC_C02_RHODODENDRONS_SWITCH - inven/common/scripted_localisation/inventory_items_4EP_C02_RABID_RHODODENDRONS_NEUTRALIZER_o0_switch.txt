@@ -1,0 +1,12 @@
+defined_text = {
+    name = GetItemSwitchName_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER
+    text = {
+        trigger = {
+            has_country_flag = PIHC_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER_o0_SWITCH_ON
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER_o0_off
+    }
+    text = {
+        localization_key = INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER_o0_on
+    }
+}

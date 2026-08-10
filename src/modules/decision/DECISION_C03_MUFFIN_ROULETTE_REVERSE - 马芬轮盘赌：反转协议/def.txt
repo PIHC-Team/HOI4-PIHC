@@ -1,0 +1,30 @@
+DECISION_CATEGORY_C03_MUFFIN_ROULETTE = {
+    DECISION_C03_MUFFIN_ROULETTE_REVERSE = {
+        fixed_random_seed = no
+        priority = 46
+        cost = 100
+        days_re_enable = 28
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = FOCUS_C03_MUFFIN_12_TRIGGER_TOOLTIP
+                has_completed_focus = FOCUS_C03_MUFFIN_12
+            }
+            has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+        }
+        complete_effect = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C03_MUFFIN_ROULETTE_REVERSE
+    }
+}

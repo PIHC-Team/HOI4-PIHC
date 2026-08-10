@@ -1,0 +1,10 @@
+fake_intel_plant_evidence = {
+	name = fake_intel_plant_evidence
+	desc = fake_intel_plant_evidence_desc
+	outcome = fake_intel_plant_evidence_outcome
+	picture = GFX_phase_fake_intel_plant_evidence
+	icon = GFX_phase_fake_intel_plant_evidence_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 250
+	}
+}

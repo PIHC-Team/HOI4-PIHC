@@ -1,0 +1,113 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/operation_token
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-operation-token
+items:
+-   kind: entity
+    identifier: pihc3-operation-token-module
+    name: PIHC3 Operation Token Module
+    desc: Project-owned operation_token source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3OperationTokenModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-operation-token
+    name: PIHC3 Operation Token
+    desc: PIHC3 operation_token module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-operation-token-module
+        definition:
+            identifier: pihc3-operation-token
+            name: PIHC3 Operation Token
+            version: 0.2.4
+            desc: PIHC3 operation_token module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-operation-token-module
+            meta:
+                project: PIHC3
+                family: operation_token
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-operation-token
+    name: PIHC3 Operation Token Compiler
+    desc: Registry-backed source slots and compiler hooks for operation_token.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: operation-tokens
+            title: Operation Tokens
+            group: military
+            title_key: modules.operationTokens.title
+        dependencies:
+        - extension:pihc3-operation-token
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-a17475106ec54292
+    name: PIHC3 Basic Operation Token
+    desc: PIHC3 authoring template pihc3:operation_token/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:operation_token/basic
+            declaration:
+                title: PIHC3 Basic Operation Token
+                family: operation_token
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    icon:
+                        default: GFX_infiltrate_civilian_bg
+                    text_icon:
+                        default: GFX_text_infiltrate_civilian_token
+                    intel_source:
+                        default: civilian
+                    intel_gain:
+                        default: '10'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n    name = {object_id}\n    desc =\
+                        \ {object_id}_DESC\n    icon = {icon}\n    text_icon = {text_icon}\n\
+                        \n    intel_source = {intel_source}\n    intel_gain = {intel_gain}\n\
+                        }}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_DESC]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

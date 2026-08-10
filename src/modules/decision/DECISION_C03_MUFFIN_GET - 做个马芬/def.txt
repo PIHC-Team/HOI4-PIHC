@@ -1,0 +1,25 @@
+DECISION_CATEGORY_C03_MUFFIN = {
+    DECISION_C03_MUFFIN_GET = {
+        fixed_random_seed = no
+        priority = 1
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            NOT = {
+                has_completed_focus = FOCUS_C03_MUFFIN_19
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = CUSTOM_GAIN_MUFFINS_1
+            add_to_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 1
+            }
+            INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        }
+        ai_will_do = {
+            base = 40
+        }
+        icon = C03_MUFFIN_GET
+    }
+}

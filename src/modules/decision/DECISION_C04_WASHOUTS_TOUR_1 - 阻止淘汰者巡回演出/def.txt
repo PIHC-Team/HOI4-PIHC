@@ -1,0 +1,25 @@
+DECISION_CATEGORY_C04_BY_ELECTION = {
+    DECISION_C04_WASHOUTS_TOUR_1 = {
+        fixed_random_seed = no
+        priority = 998
+        cost = 50
+        selectable_mission = yes
+        days_mission_timeout = 21
+        is_good = no
+        fire_only_once = yes
+        activation = {
+            tag = C04
+            has_country_flag = PIHC_COUNTRY_FLAG_C04_WASHOUTS_TOUR_MISSION_1
+        }
+        available = {
+            always = no
+        }
+        complete_effect = {
+            add_stability = -0.05
+        }
+        timeout_effect = {
+            C04_ADD_WASHOUTS_SUPPORT_50 = yes
+        }
+        icon = C04_WASHOUTS_TOUR_1
+    }
+}

@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C12_HIGHWAY_OF_PONDEROSA
+	icon = GFX_FOCUS_C12_HIGHWAY_OF_PONDEROSA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_SEARCH_IN_BIG_THUNDER_MINE
+		focus = FOCUS_C12_GREEN_MOUNTAIN_VEINS
+	}
+	cost = 3
+	completion_reward = {
+		608 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	available = {
+		owns_state = 608
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 9
+}

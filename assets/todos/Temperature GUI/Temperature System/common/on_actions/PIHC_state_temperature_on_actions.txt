@@ -1,0 +1,34 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = {
+				global.PIHC_var_current_month = 12
+			}
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = PIHC_ERA_COLD_DYNAMIC_MODIFIER
+				}
+				add_dynamic_modifier = {
+					modifier = PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER
+				}
+				add_dynamic_modifier = {
+					modifier = PIHC_average_temperature_DYNAMIC_MODIFIER
+				}
+			}
+			every_state = {
+				add_dynamic_modifier = {
+					modifier = PIHC_state_temperature_DYNAMIC_MODIFIER
+				}
+			}
+			C26 = {
+				PIHC_update_monthly_global_variables = yes
+			}
+		}
+	}
+
+	on_monthly_C26 = {
+		effect = {
+			PIHC_update_current_month = yes
+		}
+	}
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY = {
+        name = CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY.dds"
+                small = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_army.dds"
+                small = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_navy.dds"
+                small = "gfx/leaders/CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_CUNABULA_KNIGHTS_OF_HARMONY_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_militarism
+        }
+    }
+}

@@ -1,0 +1,24 @@
+SOLVE_PIHC_C08_PIN_GAME_2 = {
+	C08 = {
+		set_variable = {
+			var = C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT
+			value = 5
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_CORRECT
+		set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+		set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+		clr_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_READY
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT
+			}
+			C02 = {
+				country_event = {
+					id = C01_C02_GREENLIGHT.31
+					days = 3
+				}
+			}
+		}
+		scoped_sound_effect = correct_ev
+	}
+}

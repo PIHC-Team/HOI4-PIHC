@@ -1,0 +1,985 @@
+add_namespace = CECIA
+country_event = {
+    id = CECIA.1
+    picture = GFX_EVENT_CECIA_1
+    is_triggered_only = yes
+    title = EVENT_CECIA_1
+    desc = EVENT_CECIA_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.1
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.1
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_1_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_1_o2
+    }
+}
+country_event = {
+    id = CECIA.2
+    picture = GFX_EVENT_CECIA_2
+    is_triggered_only = yes
+    title = EVENT_CECIA_2
+    desc = EVENT_CECIA_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.2
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 90
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.2
+                        days = 3
+                    }
+                }
+            }
+            C02 = {
+                random_list = {
+                    seed = random
+                    30 = {
+                        add_power_balance_value = {
+                            id = BOP_C02_INDEPENDENCE
+                            value = 0.05
+                            tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+                        }
+                    }
+                    70 = {
+                        add_power_balance_value = {
+                            id = BOP_C02_INDEPENDENCE
+                            value = -0.05
+                            tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+                        }
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_2_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.2
+                        days = 3
+                    }
+                }
+            }
+            C02 = {
+                random_list = {
+                    seed = random
+                    70 = {
+                        add_power_balance_value = {
+                            id = BOP_C02_INDEPENDENCE
+                            value = 0.05
+                            tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+                        }
+                    }
+                    30 = {
+                        add_power_balance_value = {
+                            id = BOP_C02_INDEPENDENCE
+                            value = -0.1
+                            tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+                        }
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_2_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        C02 = {
+            add_power_balance_value = {
+                id = BOP_C02_INDEPENDENCE
+                value = -0.05
+                tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+            }
+        }
+        name = EVENT_CECIA_2_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+                tag = C02
+            }
+        }
+        name = EVENT_CECIA_2_o4
+    }
+}
+country_event = {
+    id = CECIA.3
+    picture = GFX_EVENT_CECIA_3
+    is_triggered_only = yes
+    title = EVENT_CECIA_3
+    desc = EVENT_CECIA_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.3
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_3_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.3
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_3_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        name = EVENT_CECIA_3_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+                tag = C02
+            }
+        }
+        name = EVENT_CECIA_3_o3
+    }
+}
+country_event = {
+    id = CECIA.4
+    picture = GFX_EVENT_CECIA_4
+    is_triggered_only = yes
+    title = EVENT_CECIA_4
+    desc = EVENT_CECIA_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.4
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.4
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_4_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_4_o2
+    }
+}
+country_event = {
+    id = CECIA.5
+    picture = GFX_EVENT_CECIA_5
+    is_triggered_only = yes
+    title = EVENT_CECIA_5
+    desc = EVENT_CECIA_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.5
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.5
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_5_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_5_o2
+    }
+}
+country_event = {
+    id = CECIA.6
+    picture = GFX_EVENT_CECIA_6
+    is_triggered_only = yes
+    title = EVENT_CECIA_6
+    desc = EVENT_CECIA_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.6
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.6
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_6_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_6_o2
+    }
+}
+country_event = {
+    id = CECIA.7
+    picture = GFX_EVENT_CECIA_7
+    is_triggered_only = yes
+    title = EVENT_CECIA_7
+    desc = EVENT_CECIA_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.7
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_7_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_idea = IDEA_C01_C52_PREPARED
+                }
+            }
+            add_timed_idea = {
+                idea = IDEA_C01_C52_PREPARED
+                days = 360
+            }
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.7
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_7_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_7_o2
+    }
+}
+country_event = {
+    id = CECIA.8
+    picture = GFX_EVENT_CECIA_8
+    is_triggered_only = yes
+    title = EVENT_CECIA_8
+    desc = EVENT_CECIA_8_desc
+    option = {
+        ai_chance = {
+            factor = 80
+        }
+        trigger = {
+            tag = C11
+        }
+        name = EVENT_CECIA_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 2
+        }
+        trigger = {
+            tag = C11
+        }
+        country_event = {
+            id = CECIA.9
+            days = 2
+        }
+        name = EVENT_CECIA_8_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 18
+        }
+        trigger = {
+            tag = C11
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C11_TRICKSTER_EXECUTED
+        retire_character = CHARACTER_TRICKSTER
+        name = EVENT_CECIA_8_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.8
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_8_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_8_o4
+    }
+}
+country_event = {
+    id = CECIA.9
+    picture = GFX_EVENT_CECIA_9
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_CECIA_9
+    desc = EVENT_CECIA_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = CECIA.10
+            days = 1
+        }
+        name = EVENT_CECIA_9_o0
+    }
+}
+news_event = {
+    id = CECIA.10
+    picture = GFX_EVENT_CECIA_10
+    major = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_CECIA_10
+    desc = EVENT_CECIA_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        C11 = {
+            kill_country_leader = yes
+        }
+        C02 = {
+            retire_character = CHARACTER_CRACKLE_COSETTE
+            add_to_variable = {
+                var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+                value = -1.0
+            }
+            clamp_variable = {
+                var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+                min = 0.0
+                max = 1.0
+            }
+        }
+        set_global_flag = PIHC_ACHIEVEMENT_FLAG_C11_SURPASS_THE_TEACHER
+        set_country_flag = PIHC_COUNTRY_FLAG_C11_CIVIL_WAR_TRICKSTER
+        promote_character = {
+            character = CHARACTER_TRICKSTER
+            ideology = fascism_totalitarianism
+        }
+        hidden_effect = {
+            set_cosmetic_tag = X11
+        }
+        name = EVENT_CECIA_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+            }
+        }
+        name = EVENT_CECIA_10_o1
+    }
+}
+country_event = {
+    id = CECIA.11
+    picture = GFX_EVENT_CECIA_11
+    is_triggered_only = yes
+    title = EVENT_CECIA_11
+    desc = EVENT_CECIA_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+            country_event = {
+                id = CECIA.12
+                days = 30
+                random_days = 30
+            }
+        }
+        name = EVENT_CECIA_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_11_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_11_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_11_o3
+    }
+}
+country_event = {
+    id = CECIA.12
+    picture = GFX_EVENT_CECIA_12
+    is_triggered_only = yes
+    title = EVENT_CECIA_12
+    desc = EVENT_CECIA_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+            country_event = {
+                id = CECIA.13
+                days = 30
+                random_days = 30
+            }
+        }
+        name = EVENT_CECIA_12_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_12_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_12_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_12_o3
+    }
+}
+country_event = {
+    id = CECIA.13
+    picture = GFX_EVENT_CECIA_13
+    is_triggered_only = yes
+    title = EVENT_CECIA_13
+    desc = EVENT_CECIA_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+            country_event = {
+                id = CECIA.8
+                days = 30
+                random_days = 30
+            }
+        }
+        name = EVENT_CECIA_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            tag = C11
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_13_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+                        }
+                    }
+                    country_event = {
+                        id = CECIA.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_CECIA_13_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+                tag = C01
+            }
+        }
+        name = EVENT_CECIA_13_o3
+    }
+}

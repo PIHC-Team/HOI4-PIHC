@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C26 = {
+				INIT_TRADE_CENTER = yes
+			}
+			every_possible_country = {
+				INIT_TRADE_CENTER_COUNTRY = yes
+				COMPUTE_TRADE_CENTER_AUTO_TRADE = yes
+			}
+		}
+	}
+}

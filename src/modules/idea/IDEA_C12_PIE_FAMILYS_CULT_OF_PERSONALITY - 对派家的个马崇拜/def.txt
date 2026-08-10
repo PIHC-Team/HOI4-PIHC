@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C12_PIE_FAMILYS_CULT_OF_PERSONALITY = {
+			picture = C12_PIE_FAMILYS_CULT_OF_PERSONALITY
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

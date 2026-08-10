@@ -1,0 +1,40 @@
+DECISION_CATEGORY_C08_C01_COZYBURG_SCRAMBLE = {
+    DECISION_C01_COZ_SUPPORT_TIME = {
+        fixed_random_seed = no
+        priority = 10000
+        selectable_mission = no
+        days_mission_timeout = 90
+        activation = {
+            has_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+            tag = C01
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C01_COZ_SUPPORT_TIME_TOOLTIP
+                NOT = {
+                    has_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+                }
+            }
+        }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            country_event = {
+                id = C08_MAIN.74
+            }
+            C08 = {
+                country_event = {
+                    id = C08_MAIN.73
+                }
+            }
+            hidden_effect = {
+                clr_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        fire_only_once = yes
+    }
+}

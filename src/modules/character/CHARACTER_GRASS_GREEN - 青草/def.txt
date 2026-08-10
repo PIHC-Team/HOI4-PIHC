@@ -1,0 +1,38 @@
+characters = {
+    CHARACTER_GRASS_GREEN = {
+        name = CHARACTER_GRASS_GREEN_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_GRASS_GREEN.dds"
+                small = "gfx/leaders/CHARACTER_GRASS_GREEN_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_GRASS_GREEN_army.dds"
+                small = "gfx/leaders/CHARACTER_GRASS_GREEN_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_GRASS_GREEN_navy.dds"
+                small = "gfx/leaders/CHARACTER_GRASS_GREEN_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_GRASS_GREEN
+            desc = CHARACTER_GRASS_GREEN_DESC
+            traits = {
+                TRAIT_GRASS_GREEN_AGRICULTURE
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = political_advisor
+            on_add = {
+                C18_DEL_GROWTH_0_3 = yes
+            }
+            on_remove = {
+                C18_ADD_GROWTH_0_3 = yes
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+MODULE_SUSPENSION_3A_SPIDER = {
+	category = pihc_tank_suspension_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+		maximum_speed = 1.0
+		reliability = -0.12
+		breakthrough = 24.0
+	}
+	multiply_stats = {
+		maximum_speed = 0.1
+	}
+	build_cost_resources = {
+		tungsten = 1
+	}
+	xp_cost = 8
+}

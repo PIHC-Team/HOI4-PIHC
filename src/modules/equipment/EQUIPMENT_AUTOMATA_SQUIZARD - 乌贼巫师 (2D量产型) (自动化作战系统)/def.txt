@@ -1,0 +1,30 @@
+equipments = {
+	EQUIPMENT_AUTOMATA_SQUIZARD = {
+		archetype = ARCHETYPE_AUTOMATA
+		priority = 0
+		visual_level = 40002
+		build_cost_ic = 0.2
+		lend_lease_cost = 1
+		can_license = no
+		is_convertable = no
+		reliability = 0.95
+		soft_attack = 12.0
+		hard_attack = 1.0
+		air_attack = 0.8
+		ap_attack = 4.0
+		breakthrough = 4.0
+		defense = 36.0
+		armor_value = 0.2
+		maximum_speed = 6.0
+		entrenchment = 1.0
+		recon = 3
+		picture = EQUIPMENT_AUTOMATA_SQUIZARD
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_AUTOMATA_SKELETON
+		resources = {
+			logs = 3
+			crystals = 1
+		}
+	}
+}

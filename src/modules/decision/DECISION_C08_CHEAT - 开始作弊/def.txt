@@ -1,0 +1,20 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_CHEAT = {
+        fixed_random_seed = no
+        priority = 1
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            is_debug = yes
+        }
+        complete_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_CHEAT
+    }
+}

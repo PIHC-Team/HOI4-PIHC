@@ -1,0 +1,70 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_PRODUCE_BONDS = {
+        fixed_random_seed = no
+        priority = 96
+        days_remove = 180
+        days_re_enable = 0
+        visible = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
+                has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+                is_in_faction_with = C09
+            }
+        }
+        available = {
+            num_of_civilian_factories_available_for_projects > 5
+            hidden_trigger = {
+                has_political_power > 49
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 5
+            has_political_power > 49
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_6_PP_50
+        modifier = {
+            civilian_factory_use = 6
+        }
+        ai_hint_pp_cost = 50
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -50
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+                        tag = C09
+                        is_in_faction_with = C09
+                        AND = {
+                            owns_state = 432
+                            controls_state = 432
+                        }
+                    }
+                }
+                ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1500 = yes
+            }
+            else = {
+                ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_800 = yes
+            }
+            hidden_effect = {
+                add_to_variable = {
+                    var = global.VAR_DEV_BONDS_EXCHANGE
+                    value = 3
+                }
+                UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
+            }
+        }
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = 300
+                tag = C09
+                num_of_civilian_factories_available_for_projects > 5
+            }
+        }
+        icon = WETM_PRODUCE_BONDS
+    }
+}

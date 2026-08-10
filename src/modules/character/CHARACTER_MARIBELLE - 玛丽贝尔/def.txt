@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_MARIBELLE = {
+        name = CHARACTER_MARIBELLE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MARIBELLE.dds"
+                small = "gfx/leaders/CHARACTER_MARIBELLE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MARIBELLE_army.dds"
+                small = "gfx/leaders/CHARACTER_MARIBELLE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MARIBELLE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MARIBELLE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_MARIBELLE
+            desc = CHARACTER_MARIBELLE_DESC
+            traits = {
+                TRAIT_DIPLOMATIC_GENIUS_II
+                TRAIT_POLITICAL_IDIOT
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 100
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

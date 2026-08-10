@@ -1,0 +1,6 @@
+FROM_is_weaker = {
+	strength_ratio = {
+		tag = FROM
+		ratio > 1
+	}
+}

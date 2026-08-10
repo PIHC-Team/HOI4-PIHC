@@ -1,0 +1,36 @@
+state = {
+    id = 173
+    name = STATE_173
+    provinces = {
+        2453
+        3301
+        5206
+        6445
+        7011
+        7222
+        8131
+        8966
+        9184
+        9214
+        9231
+        14118
+        14181
+        14207
+    }
+    manpower = 5154
+    state_category = large_town
+    history = {
+        owner = C18
+        victory_points = {
+            2453
+            10
+        }
+        buildings = {
+            industrial_complex = 1
+        }
+        add_core_of = C18
+    }
+    resources = {
+        aluminium = 2
+    }
+}

@@ -1,0 +1,37 @@
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_coups
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_coups
+				option = AI_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_COUP_AI_ONLY_TT
+			FROM = {
+				is_ai = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_coups
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_COUP_BLOCKED_TT
+			always = no
+		}
+	}
+}

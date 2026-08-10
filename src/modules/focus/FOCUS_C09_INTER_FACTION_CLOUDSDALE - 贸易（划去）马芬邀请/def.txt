@@ -1,0 +1,60 @@
+focus = {
+	id = FOCUS_C09_INTER_FACTION_CLOUDSDALE
+	icon = GFX_FOCUS_C09_INTER_FACTION_CLOUDSDALE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_INTER_APPROACH_CLOUDSDALE
+	}
+	cost = 8
+	completion_reward = {
+		C09 = {
+			add_to_faction = C03
+		}
+		C03 = {
+			set_country_flag = PIHC_COUNTRY_FLAG_HAS_AGE_INTERNATIONAL
+			add_ideas = IDEA_ERA_AGE_INTERNATIONAL
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_EIJC_MEMBER
+			}
+			C03 = {
+				add_ideas = IDEA_EIJC_MEMBER
+			}
+		}
+	}
+	available = {
+		C03 = {
+			has_war = no
+			has_country_leader = {
+				character = CHARACTER_DERPY_HOOVES
+				ruling_only = yes
+			}
+			hidden_trigger = {
+				has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+			}
+			is_in_faction = no
+			has_opinion = {
+				target = C09
+				value > 39
+			}
+		}
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 9
+}

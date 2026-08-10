@@ -1,0 +1,6612 @@
+STEAL_RANDOM_TECHNOLOGY_BONUS_200 = {
+	if = {
+		limit = {
+			has_variable = PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE
+		}
+		random_list = {
+			seed = random
+			1 = {
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_AIRSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_AIRSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_AIRSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_ANCIENT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_ANCIENT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_ANCIENT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CLOUDAVA
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CLOUDAVA
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CLOUDAVA
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CLOUDCANNON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CLOUDCANNON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CLOUDCANNON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CLOUDFLAG
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CLOUDFLAG
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CLOUDFLAG
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CLOUDMAST
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CLOUDMAST
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CLOUDMAST
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CLOUDSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CLOUDSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CLOUDSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_CREATURES
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_CREATURES
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_CREATURES
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_DESTROYER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_DESTROYER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_DESTROYER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_FIXEDWING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_FIXEDWING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_FIXEDWING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_FIXEDWING_SOLAR
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_FIXEDWING_SOLAR
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_FIXEDWING_SOLAR
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_MACHINE_PEGASUS
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_MACHINE_PEGASUS
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_MACHINE_PEGASUS
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_STORM_AIRSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_STORM_AIRSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_STORM_AIRSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_STORM_TITAN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_STORM_TITAN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_STORM_TITAN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_STORM_UFO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_STORM_UFO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_STORM_UFO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_AIR_STORM_VANGUARD
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_AIR_STORM_VANGUARD
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_AIR_STORM_VANGUARD
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_ANCIENT_MELEE_WEAPON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_ANCIENT_MELEE_WEAPON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_ANCIENT_MELEE_WEAPON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_ANCIENT_RANGED_WEAPON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_ANCIENT_RANGED_WEAPON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_ANCIENT_RANGED_WEAPON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_AIRSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_AIRSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_AIRSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_ANCIENT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_ANCIENT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_ANCIENT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CLOUDAVA
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CLOUDAVA
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CLOUDAVA
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CLOUDMAST
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CLOUDMAST
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CLOUDMAST
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_CREATURES
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_CREATURES
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_CREATURES
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_DESTROYER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_DESTROYER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_DESTROYER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_FIXEDWING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_STORM_AIRSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_STORM_AIRSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_STORM_AIRSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_STORM_TITAN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_STORM_TITAN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_STORM_TITAN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_STORM_UFO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_STORM_UFO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_STORM_UFO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_AIRSHIP
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_AIRSHIP
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_AIRSHIP
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_BALLOON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_BALLOON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_BALLOON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_GALLEON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_GALLEON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_GALLEON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_PLANE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_PLANE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_PLANE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_PLANE_C_17B
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_PLANE_C_17B
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_PLANE_C_17B
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_PLANE_F_26D
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_PLANE_F_26D
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_PLANE_F_26D
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_FRAME_UFO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_FRAME_UFO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_FRAME_UFO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_WEAPON_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_WEAPON_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_WEAPON_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_BMB_WEAPON_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_BMB_WEAPON_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_BMB_WEAPON_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GRD_WEAPON_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GRD_WEAPON_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_BBA_TECH_GRD_WEAPON_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_BASE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_BASE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_BASE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_BASE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_BASE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_BASE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_BASE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_BASE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_BASE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_BASE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_BASE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_BASE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_BASE_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_BASE_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_BASE_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_FARM_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_FARM_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_FARM_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_FARM_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_FARM_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_FARM_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_FARM_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_FARM_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_FARM_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_FARM_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_FARM_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_FARM_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_FARM_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_FARM_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_FARM_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III2
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III2
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_III2
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_GAMBLE_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_PROD_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_PROD_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_PROD_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_PROD_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_PROD_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_PROD_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_C03_MUFFINS_PROD_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_C03_MUFFINS_PROD_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_C03_MUFFINS_PROD_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_CATAPULT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_CATAPULT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_CATAPULT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_HEAVY_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_HEAVY_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_HEAVY_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_HEAVY_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_HEAVY_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_HEAVY_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_LIGHT_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_LIGHT_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_LIGHT_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_LIGHT_PINKIE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_LIGHT_PINKIE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_LIGHT_PINKIE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_LIGHT_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_LIGHT_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_LIGHT_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_MEDIUM_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_MEDIUM_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_MEDIUM_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CANNON_MEDIUM_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CANNON_MEDIUM_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CANNON_MEDIUM_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CHANGELING_TRAINING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CHANGELING_TRAINING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CHANGELING_TRAINING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CREATURE_TRAINING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CREATURE_TRAINING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CREATURE_TRAINING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_CUPCAKE_EXPLOSIVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_CUPCAKE_EXPLOSIVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_CUPCAKE_EXPLOSIVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_DRAGON_TRAINING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_DRAGON_TRAINING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_DRAGON_TRAINING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_EXPLOSIVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_EXPLOSIVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_EXPLOSIVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_IV_IMPROVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_IV_IMPROVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_IV_IMPROVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_IX
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_IX
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_IX
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_VI
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_VI
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_VI
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_VII
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_VII
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_VII
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_VIII
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_VIII
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_VIII
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_FIREARM_VI_IMPROVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_FIREARM_VI_IMPROVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_FIREARM_VI_IMPROVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_ICY_BOW
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_ICY_BOW
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_ICY_BOW
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_LANDMINE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_LANDMINE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_LANDMINE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MACHINE_PONY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MACHINE_PONY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MACHINE_PONY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MACHINE_UNICORN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MACHINE_UNICORN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MACHINE_UNICORN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MAGICAL_HANDGONNE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MAGICAL_HANDGONNE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MAGICAL_HANDGONNE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MAGICAL_MELEE_WEAPON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MAGICAL_MELEE_WEAPON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MAGICAL_MELEE_WEAPON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MAGICAL_SNIPER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MAGICAL_SNIPER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MAGICAL_SNIPER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_ANCIENT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_ANCIENT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_ANCIENT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACOURTYARD
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEASURGE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEASURGE_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_HEAVY_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_HEAVY_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_HEAVY_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_HEAVY_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_HEAVY_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_HEAVY_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_LIGHT_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_LIGHT_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_LIGHT_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_LIGHT_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_LIGHT_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_LIGHT_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_APPLE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_APPLE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_MEDIUM_APPLE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_MEDIUM_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_MEDIUM_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_RAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_RAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_RAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_TITAN_TIREK
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_TITAN_TIREK
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_TITAN_TIREK
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_NSB_TANK_TITAN_WINDIGO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_NSB_TANK_TITAN_WINDIGO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_NSB_TANK_TITAN_WINDIGO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_PAPER_SKELETON_PONY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_PAPER_SKELETON_PONY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_PAPER_SKELETON_PONY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_PAPER_SQUIZARD
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_PAPER_SQUIZARD
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_PAPER_SQUIZARD
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_PARASPRITE_TRAINING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_PARASPRITE_TRAINING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_PARASPRITE_TRAINING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_PINKIE_PLAY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_PINKIE_PLAY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_PINKIE_PLAY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_POWDER_EXPLOSIVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_POWDER_EXPLOSIVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_POWDER_EXPLOSIVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_QUARRAY_EEL
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_QUARRAY_EEL
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_QUARRAY_EEL
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_ROCK_BREAKING_WARRIOR
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_ROCK_BREAKING_WARRIOR
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_ROCK_BREAKING_WARRIOR
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_CROSSBOW
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_CROSSBOW
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_CROSSBOW
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_IMPROVE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_IMPROVE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_IMPROVE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_IMPROVE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_IMPROVE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_IMPROVE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_IMPROVE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_IMPROVE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_IMPROVE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIELD_RIOT_POLICE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIELD_RIOT_POLICE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIELD_RIOT_POLICE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_ANCIENT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_ANCIENT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_ANCIENT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACARDINAL
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACARDINAL
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACARDINAL
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACARDINAL_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACARDINAL_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACARDINAL_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACARDINAL_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACARDINAL_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACARDINAL_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACOURTYARD
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACOURTYARD
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACOURTYARD
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACOURTYARD_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEASURGE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEASURGE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEASURGE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEASURGE_IRON
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEASURGE_IRON
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEASURGE_IRON
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_SEASURGE_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_SEASURGE_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_SEASURGE_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SHIP_STORM_SUBMARINE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SHIP_STORM_SUBMARINE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SHIP_STORM_SUBMARINE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SOMBRA_SLAVES
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SOMBRA_SLAVES
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SOMBRA_SLAVES
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SP_HIDDEN_GENERATOR
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SP_HIDDEN_GENERATOR
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SP_HIDDEN_GENERATOR
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_STONE_GARGOYLES
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_STONE_GARGOYLES
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_STONE_GARGOYLES
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_STORM_CORE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_STORM_CORE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_STORM_CORE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_STORM_GUARDS
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_STORM_GUARDS
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_STORM_GUARDS
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_AUTO_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_AUTO_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_AUTO_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_AUTO_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_AUTO_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_AUTO_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_AUTO_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_AUTO_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_AUTO_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_AUTO_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_AUTO_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_AUTO_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_BIOCHEMI
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_BIOCHEMI
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_BIOCHEMI
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_COLD_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_COLD_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_COLD_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_COLD_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_COLD_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_COLD_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_COLD_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_COLD_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_COLD_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_COLD_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_COLD_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_COLD_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_DISEASE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_DISEASE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_DISEASE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_DISEASE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_DISEASE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_DISEASE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ENGINEER_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ENGINEER_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ENGINEER_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ENGINEER_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ENGINEER_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ENGINEER_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ENGINEER_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ENGINEER_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ENGINEER_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ENGINEER_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ENGINEER_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ENGINEER_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_LOGI_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_LOGI_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_LOGI_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_LOGI_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_LOGI_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_LOGI_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_LOGI_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_LOGI_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_LOGI_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_LOGI_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_LOGI_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_LOGI_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAGIC_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAGIC_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAGIC_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAGIC_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAGIC_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAGIC_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAGIC_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAGIC_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAGIC_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAGIC_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAGIC_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAGIC_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAGIC_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAGIC_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAGIC_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAINTENANCE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAINTENANCE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAINTENANCE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MAINTENANCE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MARINES_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MARINES_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MARINES_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_MARINES_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_MARINES_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_MARINES_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_NURSE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_NURSE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_NURSE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_NURSE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_NURSE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_NURSE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_NURSE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_NURSE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_NURSE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_NURSE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_NURSE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_NURSE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ORG_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ORG_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ORG_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ORG_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ORG_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ORG_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ORG_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ORG_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ORG_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_ORG_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_ORG_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_ORG_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_PARATROOPER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_PARATROOPER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_PARATROOPER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_TELEPORT_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_TELEPORT_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_TELEPORT_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_TELEPORT_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_TELEPORT_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_TELEPORT_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_TELEPORT_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_TELEPORT_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_TELEPORT_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_SUPPORT_TELEPORT_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_SUPPORT_TELEPORT_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_SUPPORT_TELEPORT_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_HEAVY_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_HEAVY_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_HEAVY_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_HEAVY_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_HEAVY_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_HEAVY_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_HEAVY_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_HEAVY_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_HEAVY_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_LIGHT_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_LIGHT_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_LIGHT_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_LIGHT_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_LIGHT_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_LIGHT_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_LIGHT_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_LIGHT_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_LIGHT_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_MEDIUM_APPLE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_MEDIUM_APPLE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_MEDIUM_APPLE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_MEDIUM_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_MEDIUM_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_MEDIUM_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_MEDIUM_STEAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_MEDIUM_STEAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_MEDIUM_STEAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_RAM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_RAM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_RAM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_TITAN_SSCS6000M
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_TITAN_SSCS6000M
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_TITAN_SSCS6000M
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_TITAN_TIREK
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_TITAN_TIREK
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_TITAN_TIREK
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TANK_TITAN_WINDIGO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TANK_TITAN_WINDIGO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TANK_TITAN_WINDIGO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TATZLWURM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TATZLWURM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TATZLWURM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_COMM_VI
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_COMM_VI
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_COMM_VI
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER_IIE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER_IIE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER_IIE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_ENER_IIN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_ENER_IIN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_ENER_IIN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_IIIC
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_IIIC
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_IIIC
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_INFO_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_INFO_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_INFO_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_MODERN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_NONUNICORN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TECH_MAGI_UNICORN
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TECH_MAGI_UNICORN
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TECH_MAGI_UNICORN
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_THESTRALS_TRAINING
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_THESTRALS_TRAINING
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_THESTRALS_TRAINING
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TRAIN_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TRAIN_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TRAIN_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TRAIN_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TRAIN_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TRAIN_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TRAIN_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TRAIN_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TRAIN_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_TROMBONE
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_TROMBONE
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_TROMBONE
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_VEHICLE_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_VEHICLE_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_VEHICLE_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_VEHICLE_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_VEHICLE_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_VEHICLE_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_VEHICLE_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_VEHICLE_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_VEHICLE_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_VEHICLE_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_VEHICLE_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_VEHICLE_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_VEHICLE_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_VEHICLE_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_VEHICLE_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_WITCHCRAFT_I
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_WITCHCRAFT_I
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_WITCHCRAFT_I
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_WITCHCRAFT_II
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_WITCHCRAFT_II
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_WITCHCRAFT_II
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_WITCHCRAFT_III
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_WITCHCRAFT_III
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_WITCHCRAFT_III
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_WITCHCRAFT_IV
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_WITCHCRAFT_IV
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_WITCHCRAFT_IV
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+								has_tech = TECHNOLOGY_WITCHCRAFT_V
+							}
+						}
+						PREV = {
+							has_tech = TECHNOLOGY_WITCHCRAFT_V
+						}
+					}
+				}
+				PREV = {
+					add_tech_bonus = {
+						technology = TECHNOLOGY_WITCHCRAFT_V
+						bonus = 2.0
+						name = PIHC_STEALED_TECHNOLOGY
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+intelligence_agency = {
+	picture = GFX_INTEL_AGENCY_SEPAL
+	names = {
+		"The Sepal"
+	}
+	default = {
+		tag = C04
+	}
+	available = {
+		original_tag = C04
+		has_country_leader = {
+			character = CHARACTER_SKY_STINGER
+			ruling_only = yes
+		}
+	}
+}

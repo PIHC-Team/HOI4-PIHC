@@ -1,0 +1,10 @@
+free_operative_smuggle_in_escape_gear = {
+	name = free_operative_smuggle_in_escape_gear
+	desc = free_operative_smuggle_in_escape_gear_desc
+	outcome = free_operative_smuggle_in_escape_gear_outcome
+	picture = GFX_phase_free_operative_smuggle_in_escape_gear
+	icon = GFX_phase_free_operative_smuggle_in_escape_gear_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 50
+	}
+}

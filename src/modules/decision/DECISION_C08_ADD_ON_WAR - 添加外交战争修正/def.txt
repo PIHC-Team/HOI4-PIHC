@@ -1,0 +1,20 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_ADD_ON_WAR = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_ADD_ON_WAR
+    }
+}

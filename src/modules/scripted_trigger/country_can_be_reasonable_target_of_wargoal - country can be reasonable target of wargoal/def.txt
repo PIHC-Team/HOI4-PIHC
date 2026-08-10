@@ -1,0 +1,10 @@
+country_can_be_reasonable_target_of_wargoal = {
+	NOT = {
+		has_war_with = ROOT
+		is_in_faction_with = PREV
+		has_guaranteed = PREV
+		is_guaranteed_by = PREV
+		has_non_aggression_pact_with = PREV
+		is_subject_of = PREV
+	}
+}

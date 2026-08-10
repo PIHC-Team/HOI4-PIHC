@@ -1,0 +1,44 @@
+characters = {
+    CHARACTER_CLOUDY_QUARTZ = {
+        name = CHARACTER_CLOUDY_QUARTZ_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ.dds"
+                small = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ_army.dds"
+                small = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ_navy.dds"
+                small = "gfx/leaders/CHARACTER_CLOUDY_QUARTZ_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_CLOUDY_QUARTZ
+            desc = CHARACTER_CLOUDY_QUARTZ_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 100
+            removal_cost = 350
+            slot = high_command
+        }
+        advisor = {
+            idea_token = CHARACTER_CLOUDY_QUARTZ
+            desc = CHARACTER_CLOUDY_QUARTZ_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 100
+            removal_cost = 100
+            slot = political_advisor
+        }
+    }
+}

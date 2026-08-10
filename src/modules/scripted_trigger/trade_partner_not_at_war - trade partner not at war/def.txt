@@ -1,0 +1,8 @@
+trade_partner_not_at_war = {
+	custom_trigger_tooltip = {
+		tooltip = trade_partner_not_at_war_tt
+		FROM = {
+			has_war = yes
+		}
+	}
+}

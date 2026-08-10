@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C08_SECOND_SUMMIT
+	icon = GFX_FOCUS_C08_SECOND_SUMMIT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 5
+	prerequisite = {
+		focus = FOCUS_C08_CANTERLOT_MIND
+	}
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_SECOND_SUMMIT_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 12
+	y = 1
+}

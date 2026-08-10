@@ -1,0 +1,47 @@
+units = {
+    fleet = {
+        name = "Sire’s Hollow First Fleet"
+        naval_base = 10877
+        task_force = {
+            name = "Sire’s Hollow Fleet 1"
+            location = 17355
+            ship = {
+                name = "Fruit Smoothie"
+                definition = battleship
+                pride_of_the_fleet = yes
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C09
+                        version_name = "Smoothie Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Chocolate Essence"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C09
+                        version_name = "Essence Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Fruity Essence"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C09
+                        version_name = "Essence Class"
+                    }
+                }
+            }
+        }
+    }
+}

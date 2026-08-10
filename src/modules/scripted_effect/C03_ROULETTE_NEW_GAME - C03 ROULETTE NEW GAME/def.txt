@@ -1,0 +1,31 @@
+C03_ROULETTE_NEW_GAME = {
+	set_global_flag = PIHC_ACHIEVEMENT_FLAG_C03_MUFFIN_ROULETTE_FIRST_GAME
+	add_to_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GAMES
+		value = 1
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD
+		value = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_BOXES_BAD
+		value = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_BOXES
+		value = C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD
+	}
+	add_to_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_BOXES
+		value = C03.VAR_MUFFIN_ROULETTE_BOXES_BAD
+	}
+	set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING
+	clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_REVERSE
+	clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_DOUBLE
+	add_to_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES
+		value = 1
+	}
+	C03_ROULETTE_REGEN_NEXT = yes
+}

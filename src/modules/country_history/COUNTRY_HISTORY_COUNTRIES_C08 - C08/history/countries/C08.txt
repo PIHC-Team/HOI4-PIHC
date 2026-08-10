@@ -1,0 +1,203 @@
+capital = 389
+set_popularities = {
+    equatism = 8
+    harmonicism = 87
+    despotic = 5
+}
+set_politics = {
+    ruling_party = harmonicism
+    elections_allowed = no
+}
+create_faction = FACTION_UNITED_RESISTANCE
+add_to_faction = C08
+add_to_faction = C05
+add_to_faction = C52
+add_to_faction = C54
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_FIREARM_II = 1
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_UNICORN = 1
+    TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+    TECHNOLOGY_BBA_TECH_AIR_WEAPON_I = 1
+    TECHNOLOGY_BBA_TECH_AIR_WEAPON_II = 1
+    TECHNOLOGY_BBA_TECH_GRD_WEAPON_I = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C08
+recruit_character = CHARACTER_FEATHER_BANGS
+recruit_character = CHARACTER_SUNBURST
+recruit_character = CHARACTER_NIGHT_GLIDER
+recruit_character = CHARACTER_DOUBLE_DIAMOND
+recruit_character = CHARACTER_STARLIGHT_GLIMMER
+recruit_character = CHARACTER_PARTY_FAVOR
+recruit_character = CHARACTER_SUGAR_BELLE
+recruit_character = CHARACTER_DEPARTMENT_C08_THEORY
+recruit_character = CHARACTER_SCIENCE_NEXUS
+recruit_character = CHARACTER_SILVERSTREAM
+recruit_character = CHARACTER_TRIXIE_LULAMOON_C08
+recruit_character = CHARACTER_PRINCESS_CADANCE
+recruit_character = CHARACTER_DEPARTMENT_C08_THEORY_ARMY
+recruit_character = CHARACTER_DEPARTMENT_C08_THEORY_AIR
+activate_advisor = CHARACTER_SUNBURST
+activate_advisor = CHARACTER_DOUBLE_DIAMOND
+activate_advisor = CHARACTER_SUGAR_BELLE
+activate_advisor = CHARACTER_FEATHER_BANGS
+activate_advisor = CHARACTER_DEPARTMENT_C08_THEORY
+activate_advisor = CHARACTER_NIGHT_GLIDER
+activate_advisor = CHARACTER_PARTY_FAVOR
+add_ideas = closed_economy
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_ERA_TECH_3_NEUTRAL
+add_ideas = IDEA_ALL_HARMONICISM_ORTHODOXY
+add_ideas = IDEA_C08_LIBERATION_FRONT_4
+add_ideas = IDEA_C08_LONG_MARCH
+add_ideas = IDEA_C08_ENEMY_AROUND
+add_ideas = IDEA_DINFANTRY_OTA
+add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+add_ideas = IDEA_DIND_OTA
+set_rule = {
+    can_join_factions = no
+}
+give_guarantee = C09
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.5
+set_convoys = 20
+country_lock_all_division_template = yes
+set_major = yes
+set_variable = {
+    var = VAR_C08_LIBERATION_FRONT
+    value = 4
+}
+set_variable = {
+    var = VAR_C08_OCCULTISM
+    value = 0
+}
+set_variable = {
+    var = VAR_C08_URBANIZATION
+    value = 0
+}
+set_variable = {
+    var = VAR_C08_EAST_ROUTE
+    value = 0
+}
+set_variable = {
+    var = VAR_C08_EAST_ROUTE_MAX
+    value = 20
+}
+set_variable = {
+    var = VAR_C08_TRIAL_KILLED
+    value = 0
+}
+set_variable = {
+    var = VAR_C08_TRIAL_ARRESTED
+    value = 0
+}
+set_variable = {
+    var = VAR_C08_TRIAL_RELEASED
+    value = 0
+}
+complete_national_focus = FOCUS_C08_CANTERLOT_PACT
+complete_national_focus = FOCUS_C08_UPRISE
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 20
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 100
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_WITCHCRAFT
+    amount = 150
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 20
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_HANDGONNE
+        creator = C08
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C08
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+        creator = C08
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C08_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN
+set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN
+set_country_flag = PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON

@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C07_LPMIG
+	icon = GFX_FOCUS_C07_LPMIG_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LAS_PEGASUS_GROUP
+	}
+	cost = 1
+	completion_reward = {
+		add_ideas = IDEA_DINFANTRY_LPMIG
+		add_ideas = IDEA_DTANK_LPMIG
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 3
+}

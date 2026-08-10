@@ -1,0 +1,51 @@
+DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = AI_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_AI_ONLY_TT
+			FROM = {
+				is_ai = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = PLAYER_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_PLAYER_ONLY_TT
+			FROM = {
+				is_ai = no
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_party_boosting
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BOOST_PARTY_BLOCKED_TT
+			always = no
+		}
+	}
+}

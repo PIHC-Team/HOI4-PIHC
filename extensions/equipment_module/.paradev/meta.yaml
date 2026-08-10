@@ -1,0 +1,128 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/equipment_module
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-equipment-module
+items:
+-   kind: entity
+    identifier: pihc3-equipment-module
+    aliases:
+    - PIHC3EquipmentModule
+    name: PIHC3 Equipment Module
+    desc: Project-owned equipment-designer module and icon resource contract.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3EquipmentModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-equipment-modules
+    name: PIHC3 Equipment Modules
+    desc: PIHC3 equipment-designer module authoring and compilation.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-equipment-module
+        definition:
+            identifier: pihc3-equipment-modules
+            name: PIHC3 Equipment Modules
+            version: 0.2.4
+            desc: PIHC3 equipment-designer module authoring and compilation.
+            required: false
+            requires: []
+            entities:
+            - pihc3-equipment-module
+            meta:
+                project: PIHC3
+                family: equipment_module
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-equipment-module
+    name: PIHC3 Equipment Module Compiler
+    desc: Resource slots and aggregate compilation hooks for equipment modules.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3EquipmentModule.build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: equipment-module
+            title: Equipment Modules
+            group: military
+            title_key: modules.equipmentModules.title
+        dependencies:
+        - extension:pihc3-equipment-modules
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-253f98440206cbd5
+    name: Equipment Module
+    desc: PIHC3 authoring template pihc3:equipment_module/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:equipment_module/basic
+            declaration:
+                title: Equipment Module
+                family: equipment_module
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    category_id:
+                        default: pihc_plane_special_type_0
+                        label: Module category
+                        description: Equipment-designer category; its pihc_plane_ or
+                            pihc_tank_ prefix selects the aggregate file and DLC.
+                    sfx:
+                        default: sfx_ui_sd_module_engine
+                    stat:
+                        default: build_cost_ic
+                        label: Stat
+                    stat_value:
+                        default: 0
+                        type: number
+                        label: Stat value
+                        description: Raw numeric modifier assigned to the selected
+                            equipment stat.
+                    xp_cost:
+                        default: 0
+                        type: number
+                        label: XP cost
+                        description: Experience cost required to install this equipment
+                            module.
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n  category = {category_id}\n  sfx\
+                        \ = {sfx}\n  add_stats = {{\n    {stat} = {stat_value}\n \
+                        \ }}\n  xp_cost = {xp_cost}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

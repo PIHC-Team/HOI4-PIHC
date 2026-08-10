@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C02 = {
+				news_event = {
+					id = TIMELINE.25
+					days = 182
+				}
+			}
+		}
+	}
+}

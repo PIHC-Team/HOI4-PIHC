@@ -1,0 +1,55 @@
+technologies = {
+    TECHNOLOGY_TANK_LIGHT_STEAM = {
+        folder = {
+            name = armour_folder
+            position = {
+                x = 0
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_TANK_LIGHT_STEAM
+        }
+        enable_subunits = {
+            tank_light
+        }
+        dependencies = {
+            TECHNOLOGY_TANK_RAM = 1
+            TECHNOLOGY_TECH_ENER_I = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TANK_LIGHT_MODERN
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            modifier = {
+                factor = 10
+                arms_factory > 30
+            }
+            modifier = {
+                factor = -10
+                arms_factory < 20
+            }
+            modifier = {
+                factor = 10
+                date > 1005.1.1
+            }
+            modifier = {
+                add = 50
+                date > 1003.1.1
+                OR = {
+                    tag = C01
+                }
+            }
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

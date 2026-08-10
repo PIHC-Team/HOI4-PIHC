@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_THE_DARK_AGE = {
+			picture = ALL_THE_DARK_AGE
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_weekly_factor = -0.02
+				local_manpower = -0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

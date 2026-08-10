@@ -1,0 +1,58 @@
+PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY4 = {
+	if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 1
+			}
+		}
+		set_temp_variable = {
+			i = C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^0
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 2
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = 0
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 3
+			}
+		}
+		set_temp_variable = {
+			i = C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^1
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i
+		}
+	}
+	else = {
+		set_temp_variable = {
+			i = C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^1
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^i
+		}
+	}
+}

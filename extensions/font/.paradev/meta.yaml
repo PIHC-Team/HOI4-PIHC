@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/font
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-font
+items:
+-   kind: entity
+    identifier: pihc3-font-module
+    name: PIHC3 Font Module
+    desc: Project-owned font source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3FontModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-font
+    name: PIHC3 Font
+    desc: PIHC3 font module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-font-module
+        definition:
+            identifier: pihc3-font
+            name: PIHC3 Font
+            version: 0.2.3
+            desc: PIHC3 font module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-font-module
+            meta:
+                project: PIHC3
+                family: font
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-font
+    name: PIHC3 Font Compiler
+    desc: Registry-backed source slots and compiler hooks for font.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: font
+            title: Font
+            group: shared
+        dependencies:
+        - extension:pihc3-font

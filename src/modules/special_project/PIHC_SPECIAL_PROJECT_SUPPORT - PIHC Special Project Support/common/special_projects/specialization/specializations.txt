@@ -1,0 +1,89 @@
+specialization_nuclear = {
+    blueprint_image = GFX_generic_plane_blueprint_background
+    color = {
+        255
+        255
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_naval = {
+    color = {
+        0
+        0
+        255
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_air = {
+    color = {
+        255
+        0
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_land = {
+    color = {
+        0
+        255
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_magic = {
+    color = {
+        255
+        0
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_steampunk = {
+    color = {
+        255
+        255
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_oilpunk = {
+    color = {
+        0
+        0
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_elecpunk = {
+    color = {
+        0
+        0
+        255
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_witchcraft = {
+    color = {
+        255
+        0
+        255
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_future = {
+    color = {
+        0
+        255
+        255
+    }
+    program_background = GFX_sp_facility_card_bg
+}
+specialization_bio = {
+    color = {
+        0
+        255
+        0
+    }
+    program_background = GFX_sp_facility_card_bg
+}

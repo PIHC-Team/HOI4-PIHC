@@ -1,0 +1,215 @@
+DECISION_CATEGORY_MAGICAL = {
+    DECISION_MIRROR_POOL = {
+        fixed_random_seed = no
+        priority = 97
+        visible = {
+            controls_state = 48
+        }
+        available = {
+            num_divisions_in_states = {
+                count > 0
+                states = {
+                    48
+                }
+                types = {
+                    infantry_traditional
+                }
+            }
+        }
+        cost = 150
+        days_re_enable = 180
+        complete_effect = {
+            custom_effect_tooltip = DECISION_MIRROR_POOL_TOOLTIP
+            hidden_effect = {
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 0
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 1
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 2
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 3
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 4
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        num_divisions_in_states = {
+                            count > 5
+                            states = {
+                                48
+                            }
+                            types = {
+                                infantry_traditional
+                            }
+                        }
+                    }
+                    48 = {
+                        create_unit = {
+                            division = "name = \"镜像水潭低质克隆 (Cheap Knockoff from the Mirror Pool)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = ROOT
+                            count = 1
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = 2
+                num_divisions_in_states = {
+                    count > 1
+                    states = {
+                        48
+                    }
+                    types = {
+                        infantry_traditional
+                    }
+                }
+            }
+            modifier = {
+                add = 5
+                num_divisions_in_states = {
+                    count > 2
+                    states = {
+                        48
+                    }
+                    types = {
+                        infantry_traditional
+                    }
+                }
+            }
+            modifier = {
+                add = 40
+                num_divisions_in_states = {
+                    count > 3
+                    states = {
+                        48
+                    }
+                    types = {
+                        infantry_traditional
+                    }
+                }
+            }
+            modifier = {
+                add = 200
+                num_divisions_in_states = {
+                    count > 4
+                    states = {
+                        48
+                    }
+                    types = {
+                        infantry_traditional
+                    }
+                }
+            }
+            modifier = {
+                add = 1000
+                num_divisions_in_states = {
+                    count > 5
+                    states = {
+                        48
+                    }
+                    types = {
+                        infantry_traditional
+                    }
+                }
+            }
+            modifier = {
+                add = -1000
+                tag = C52
+            }
+        }
+        icon = MIRROR_POOL
+    }
+}

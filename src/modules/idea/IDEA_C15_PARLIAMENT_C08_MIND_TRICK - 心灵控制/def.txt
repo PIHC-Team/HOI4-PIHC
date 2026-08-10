@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C15_PARLIAMENT_C08_MIND_TRICK = {
+			picture = C15_PARLIAMENT_C08_MIND_TRICK
+			removal_cost = -1
+			modifier = {
+				equatism_drift = 0.06
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

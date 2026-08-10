@@ -1,0 +1,310 @@
+{
+    "mesh": {
+        "scale": 0.45
+    },
+    "entities": [
+        {
+            "scale": 1.0,
+            "default_state": "idle",
+            "state": {
+                "name": "idle",
+                "animation": "idle01",
+                "animation_speed": 1.0,
+                "chance": 2,
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D1": {
+                "name": "idle",
+                "animation": "idle02",
+                "animation_speed": 1.0,
+                "chance": 2,
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D2": {
+                "name": "idle",
+                "animation": "idle03",
+                "animation_speed": 1.0,
+                "chance": 4,
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D3": {
+                "name": "idle",
+                "animation": "reload",
+                "animation_speed": 1.0,
+                "chance": 6,
+                "looping": false,
+                "next_state": "idle"
+            },
+            "state__D4": {
+                "name": "attack",
+                "animation": "attack01",
+                "animation_blend_time": 0.0,
+                "animation_speed": 0.8,
+                "chance": 2,
+                "looping": false,
+                "next_state": "attack",
+                "propagate_state": {
+                    "gun": "fire01"
+                }
+            },
+            "state__D5": {
+                "name": "attack",
+                "animation": "attack02",
+                "animation_blend_time": 0.0,
+                "animation_speed": 0.6,
+                "chance": 2,
+                "looping": false,
+                "next_state": "attack",
+                "propagate_state": {
+                    "gun": "fire02"
+                }
+            },
+            "state__D6": {
+                "name": "attack",
+                "animation": "attack03",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 4,
+                "looping": false,
+                "next_state": "attack",
+                "propagate_state": {
+                    "gun": "fire03"
+                }
+            },
+            "state__D7": {
+                "name": "attack",
+                "animation": "reload",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 6,
+                "looping": false,
+                "next_state": "attack"
+            },
+            "state__D8": {
+                "name": "defend",
+                "animation": "attack01",
+                "animation_blend_time": 0.0,
+                "animation_speed": 0.8,
+                "chance": 2,
+                "looping": false,
+                "next_state": "defend",
+                "propagate_state": {
+                    "gun": "fire01"
+                }
+            },
+            "state__D9": {
+                "name": "defend",
+                "animation": "attack02",
+                "animation_blend_time": 0.0,
+                "animation_speed": 0.6,
+                "chance": 2,
+                "looping": false,
+                "next_state": "defend",
+                "propagate_state": {
+                    "gun": "fire02"
+                }
+            },
+            "state__D10": {
+                "name": "defend",
+                "animation": "attack03",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 4,
+                "looping": false,
+                "next_state": "defend",
+                "propagate_state": {
+                    "gun": "fire03"
+                }
+            },
+            "state__D11": {
+                "name": "defend",
+                "animation": "reload",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 6,
+                "looping": false,
+                "next_state": "defend"
+            },
+            "state__D12": {
+                "name": "support_attack",
+                "animation": "move_attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "gun": "fire04"
+                }
+            },
+            "state__D13": {
+                "name": "move",
+                "animation": "move",
+                "animation_speed": 1.0,
+                "event": {
+                    "sound": {
+                        "soundeffect": "infantry_move_animation"
+                    }
+                }
+            },
+            "state__D14": {
+                "name": "retreat",
+                "animation": "retreat",
+                "animation_speed": 1.0,
+                "event": {
+                    "sound": {
+                        "soundeffect": "infantry_move_animation"
+                    }
+                }
+            },
+            "state__D15": {
+                "name": "training",
+                "animation": "reload",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 2,
+                "looping": false,
+                "next_state": "training"
+            },
+            "state__D16": {
+                "name": "training",
+                "animation": "attack01",
+                "animation_blend_time": 0.0,
+                "animation_speed": 0.8,
+                "chance": 2,
+                "looping": false,
+                "next_state": "training"
+            },
+            "state__D17": {
+                "name": "training",
+                "animation": "attack03",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "chance": 6,
+                "looping": false,
+                "next_state": "training"
+            },
+            "state__D20": {
+                "name": "death",
+                "animation": "retreat",
+                "animation_speed": 1.0
+            }
+        },
+        {
+            "apply": {
+                "tags": [
+                    [
+                        "infantry",
+                        999
+                    ]
+                ],
+                "countries": [
+                    "C09"
+                ]
+            },
+            "name": "WEAPON_RIFLE",
+            "clone": true,
+            "attach": {
+                "name": "gun",
+                "gun": "VIENTO_WEAPON_RIFLE_entity"
+            }
+        },
+        {
+            "apply": {
+                "tags": [
+                    [
+                        "cannon",
+                        999
+                    ]
+                ],
+                "countries": [
+                    "C09"
+                ]
+            },
+            "name": "CANNON_FRAME",
+            "pdxmesh": "frame_artillery_mesh",
+            "scale": 1.0,
+            "attach": {
+                "name": "artillery",
+                "artillery": "artillery_gun_entity"
+            },
+            "attach__D1": {
+                "name": "infantry",
+                "infantry": "VIENTO_PONY_IMPERIAL_entity"
+            },
+            "default_state": "idle",
+            "state": {
+                "name": "idle",
+                "animation": "idle",
+                "animation_blend_time": 0.3,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "idle"
+                }
+            },
+            "state__D5": {
+                "name": "attack",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "idle"
+                }
+            },
+            "state__D6": {
+                "name": "defend",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "idle"
+                }
+            },
+            "state__D4": {
+                "name": "support_attack",
+                "animation": "attack",
+                "animation_blend_time": 0.0,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "support_attack"
+                }
+            },
+            "state__D7": {
+                "name": "move",
+                "animation": "move",
+                "animation_blend_time": 0.3,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "support_attack"
+                }
+            },
+            "state__D8": {
+                "name": "retreat",
+                "animation": "move",
+                "animation_blend_time": 0.3,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "retreat"
+                }
+            },
+            "state__D2": {
+                "name": "training",
+                "animation": "idle",
+                "animation_blend_time": 0.3,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "idle"
+                }
+            },
+            "state__D3": {
+                "name": "death",
+                "animation": "idle",
+                "animation_blend_time": 0.3,
+                "animation_speed": 1.0,
+                "propagate_state": {
+                    "infantry": "death"
+                }
+            }
+        }
+    ]
+}

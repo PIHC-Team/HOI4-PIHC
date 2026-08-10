@@ -1,0 +1,16 @@
+buildings = {
+	air_base = {
+		base_cost = 800
+		value = 1
+		allied_build = yes
+		infrastructure_construction_effect = yes
+		damage_factor = 0.5
+		air_base = yes
+		level_cap = {
+			state_max = 10
+		}
+		show_on_map = 1
+		icon_frame = 5
+	}
+}
+

@@ -1,0 +1,12 @@
+intelligence_agency = {
+	picture = GFX_INTEL_AGENCY_MNS
+	names = {
+		"Liberation Front Ministry of National Security"
+	}
+	default = {
+		tag = C08
+	}
+	available = {
+		original_tag = C08
+	}
+}

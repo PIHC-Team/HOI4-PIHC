@@ -1,0 +1,33 @@
+technologies = {
+    TECHNOLOGY_DRAGON_TRAINING = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 14
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+        }
+        enable_equipments = {
+            EQUIPMENT_AUTOMATA_DRAGON
+        }
+        enable_subunits = {
+            infantry_automata
+        }
+        dependencies = {
+            TECHNOLOGY_CREATURE_TRAINING = 1
+        }
+        allow = {
+            tag = C20
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

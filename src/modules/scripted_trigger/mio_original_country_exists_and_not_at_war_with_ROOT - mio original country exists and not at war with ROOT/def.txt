@@ -1,0 +1,7 @@
+mio_original_country_exists_and_not_at_war_with_ROOT = {
+	exists = yes
+	has_capitulated = no
+	NOT = {
+		has_war_with = ROOT
+	}
+}

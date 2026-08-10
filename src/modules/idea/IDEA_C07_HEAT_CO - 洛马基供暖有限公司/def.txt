@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C07_HEAT_CO = {
+			picture = C07_HEAT_CO
+			removal_cost = -1
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.15
+				winter_attrition_factor = -0.2
+				production_lack_of_resource_penalty_factor = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

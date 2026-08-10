@@ -1,0 +1,18 @@
+@cost = 30
+unit_medals = {
+	neutral_military_order = {
+		available = {
+			has_government = despotic
+		}
+		frame = 2
+		icon = GFX_medal_icon_default
+		cost = @cost
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_morale_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

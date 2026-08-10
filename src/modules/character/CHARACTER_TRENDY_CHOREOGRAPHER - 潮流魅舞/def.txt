@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_TRENDY_CHOREOGRAPHER = {
+        name = CHARACTER_TRENDY_CHOREOGRAPHER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER.dds"
+                small = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER_army.dds"
+                small = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER_navy.dds"
+                small = "gfx/leaders/CHARACTER_TRENDY_CHOREOGRAPHER_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_TRENDY_CHOREOGRAPHER_DESC
+            traits = {
+
+            }
+            ideology = equatism_democracy
+        }
+    }
+}

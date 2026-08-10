@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_WAR_PREPARATION = {
+			picture = C12_WAR_PREPARATION
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = 0.5
+				production_speed_arms_factory_factor = 0.25
+				production_speed_bunker_factor = 0.25
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

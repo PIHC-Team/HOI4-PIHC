@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_CHROMIUM = {
+	ENABLE_AUTO_TRADE_CHROMIUM_BUY = yes
+	ENABLE_AUTO_TRADE_CHROMIUM_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_COST
+		value = 0
+	}
+}

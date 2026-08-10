@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				set_variable = {
+					var = VAR_FINANCIAL_CENTER_DEV_BONDS_PER
+					value = 20
+				}
+				COMPUTE_NUM_FINANCIAL_CENTERS = yes
+			}
+		}
+	}
+}

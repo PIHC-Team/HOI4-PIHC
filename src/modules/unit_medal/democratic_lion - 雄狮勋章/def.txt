@@ -1,0 +1,17 @@
+@cost = 30
+unit_medals = {
+	democratic_lion = {
+		available = {
+			has_government = democratic
+		}
+		frame = 4
+		icon = GFX_medal_icon_democratic
+		cost = @cost
+		unit_modifiers = {
+			experience_loss_factor = -0.25
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

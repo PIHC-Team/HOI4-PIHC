@@ -1,0 +1,37 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_07
+	icon = GFX_FOCUS_C03_MUFFIN_07_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	bypass = {
+		hidden_trigger = {
+			C01 = {
+				has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+			}
+		}
+	}
+	completion_reward = {
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		custom_effect_tooltip = FOCUS_C03_MUFFIN_07_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_06
+	}
+	x = 11
+	y = 0
+}

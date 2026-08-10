@@ -1,0 +1,50 @@
+focus = {
+	id = FOCUS_C09_MSHGA_QUIT
+	icon = GFX_FOCUS_C09_MSHGA_QUIT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_MSHGA_EVAL
+	}
+	cost = 5
+	completion_reward = {
+		hidden_effect = {
+			C03 = {
+				set_faction_leader = yes
+			}
+		}
+		leave_faction = yes
+		set_capital = {
+			state = 432
+			remember_old_capital = yes
+		}
+		remove_ideas = IDEA_EIJC_MEMBER
+		add_named_threat = {
+			threat = 2
+			name = FOCUS_C09_MSHGA_QUIT_THREAT
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		has_completed_focus = FOCUS_C09_INTER_FACTION_CLOUDSDALE
+		has_completed_focus = FOCUS_C09_INTER_HQ
+		C03 = {
+			is_in_faction_with = C09
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 22
+	y = 8
+}

@@ -1,0 +1,47 @@
+SP_WITCHCRAFT_ROCKET = {
+	icon = GFX_SP_WITCHCRAFT_ROCKET
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	specialization = specialization_witchcraft
+	project_tags = sp_tag_pihc_witchcraft
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+		}
+	}
+	resource_cost = {
+		resources = {
+			crystals = 12
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT = 1
+				popup = no
+			}
+		}
+		enable_equipments = {
+			EQUIPMENT_AIR_MISSILE_WITCHCRAFT
+		}
+		enable_equipment_modules = {
+			MODULE_SUSPENSION_4A_FLOAT
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_WITCHCRAFT
+		SP_REWARD_GENERIC_WITCHCRAFT_EXP
+		SP_REWARD_GENERIC_FAILURE_SPIRITUAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

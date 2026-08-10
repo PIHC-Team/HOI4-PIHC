@@ -1,0 +1,72 @@
+C15_PARLIAMENT_GUI_INIT = {
+	C15_PARLIAMENT_GUI_CLEAR = yes
+	add_to_array = {
+		C15.parliament_seat_array = 120
+	}
+	add_to_array = {
+		C15.parliament_seat_array = 180
+	}
+	add_to_array = {
+		C15.parliament_seat_array = 75
+	}
+	add_to_array = {
+		C15.parliament_seat_array = 35
+	}
+	add_to_array = {
+		C15.parliament_seat_array = 65
+	}
+	add_to_array = {
+		C15.parliament_seat_array = 25
+	}
+	add_to_array = {
+		C15.parliament_member_array = 1
+	}
+	add_to_array = {
+		C15.parliament_member_array = 2
+	}
+	add_to_array = {
+		C15.parliament_member_array = 3
+	}
+	add_to_array = {
+		C15.parliament_member_array = 4
+	}
+	add_to_array = {
+		C15.parliament_member_array = 5
+	}
+	add_to_array = {
+		C15.parliament_member_array = 6
+	}
+	C15 = {
+		set_country_flag = PIHC_COUNTRY_FLAG_C15_PARLIAMENT_WORKING
+		set_variable = {
+			C15_royal_support_factor = 0.6
+		}
+		set_variable = {
+			C15_full_support = C15.parliament_seat_array^1
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C15_GET_EQUALISM_SUPPORT
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^5
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C15_GET_DEMOCRATIC_SUPPORT
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^2
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^3
+			}
+		}
+	}
+	C15_PARLIAMENT_GUI_POSITIONS = yes
+	C15_PARLIAMENT_GUI_RELOAD = yes
+}

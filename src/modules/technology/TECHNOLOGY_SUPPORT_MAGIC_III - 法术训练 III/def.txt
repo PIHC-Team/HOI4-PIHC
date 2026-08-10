@@ -1,0 +1,41 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_MAGIC_III = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 4
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_magical
+            pihc_magical
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        infantry_magical = {
+            soft_attack = 0.08
+            hard_attack = 0.02
+            defense = 0.04
+        }
+        special_project_specialization = {
+            specialization_magic
+        }
+        allow = {
+            is_magic_country = yes
+        }
+        dependencies = {
+            TECHNOLOGY_SUPPORT_MAGIC_II = 1
+        }
+        path = {
+        }
+        research_cost = 1.5
+        start_year = 1006
+    }
+}

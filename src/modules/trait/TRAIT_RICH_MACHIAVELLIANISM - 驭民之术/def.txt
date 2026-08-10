@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_RICH_MACHIAVELLIANISM = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		stability_weekly_factor = 0.02
+		corporation_drift = 0.01
+	}
+}

@@ -1,0 +1,25 @@
+exfiltration_border = {
+	name = exfiltration_border
+	desc = exfiltration_border_desc
+	outcome = exfiltration_border_outcome
+	risk_extra = exfiltration_border_outcome_fail
+	picture = GFX_phase_exfiltration_border
+	icon = GFX_phase_exfiltration_border_small
+	requirements = {
+		FROM = {
+			any_owned_state = {
+				is_controlled_by = PREV
+				any_neighbor_state = {
+					CONTROLLER = {
+						NOT = {
+							tag = FROM
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	equipment = {
+	}
+}

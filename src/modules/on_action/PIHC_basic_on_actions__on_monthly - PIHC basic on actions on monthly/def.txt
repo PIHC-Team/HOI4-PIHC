@@ -1,0 +1,25 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_focus_tree = generic_focus
+					is_ai = yes
+				}
+				random_list = {
+					seed = random
+					8 = {
+						set_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+						country_event = {
+							id = UNIVERSAL_RANDOM.4
+							days = 1
+							random_days = 7
+						}
+					}
+					92 = {
+					}
+				}
+			}
+		}
+	}
+}

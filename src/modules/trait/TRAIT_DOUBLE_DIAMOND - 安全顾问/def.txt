@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_DOUBLE_DIAMOND = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = 0.1
+		enemy_operative_detection_chance_factor = 0.2
+	}
+}

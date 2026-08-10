@@ -1,0 +1,15 @@
+MODULE_CREW_3B_BONELESS = {
+	category = pihc_tank_crew_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.1
+		reliability = 0.05
+	}
+	multiply_stats = {
+		initiative = 0.1
+	}
+	build_cost_resources = {
+		rubber = 1
+	}
+	xp_cost = 5
+}

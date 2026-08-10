@@ -1,0 +1,50 @@
+state = {
+    id = 352
+    name = STATE_352
+    provinces = {
+        65
+        432
+        881
+        934
+        3415
+        4366
+        4841
+        5016
+        5547
+        6152
+        6670
+        7357
+        7499
+        8158
+        9071
+        9607
+        10476
+        10487
+        10500
+        10509
+        10522
+        10528
+        10548
+        10583
+        10586
+        10615
+        10620
+    }
+    manpower = 3505
+    state_category = town
+    history = {
+        owner = C65
+        victory_points = {
+            65
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 3
+        }
+        add_core_of = C65
+    }
+    resources = {
+        logs = 8
+    }
+}

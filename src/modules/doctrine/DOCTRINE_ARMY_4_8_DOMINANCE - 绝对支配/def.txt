@@ -1,0 +1,28 @@
+pihc_land_breeze_of_death_operations_core = {
+	track = operations
+	name = DOCTRINE_ARMY_4_8_DOMINANCE
+	description = DOCTRINE_ARMY_4_8_DOMINANCE_DESC
+	icon = GFX_doctrine_pihc_land_breeze_of_death_operations_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		dominance = {
+			army_attack_factor = 0.08
+			army_attack_speed_factor = 0.12
+			army_bonus_air_superiority_factor = 0.3
+			recon_factor = 0.3
+		}
+	}
+}

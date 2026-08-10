@@ -1,0 +1,85 @@
+capital = 539
+set_popularities = {
+    harmonicism = 65
+    despotic = 20
+    democratic = 10
+    corporation = 5
+}
+set_politics = {
+    ruling_party = harmonicism
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_UNICORN = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C10
+recruit_character = CHARACTER_CHANCELLOR_NEIGHSAY
+add_ideas = limited_exports
+add_ideas = volunteer_only
+add_ideas = civilian_economy
+add_ideas = IDEA_DINFANTRY_EEMD
+set_power_balance = {
+    id = BOP_C10_INDEPENDENCE
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C10_INDEPENDENCE
+    modifier = BOP_C10_INDEPENDENCE_DAILY_DRIFT
+}
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_manpower = -1500
+517 = {
+    set_demilitarized_zone = yes
+}
+set_major = no
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN

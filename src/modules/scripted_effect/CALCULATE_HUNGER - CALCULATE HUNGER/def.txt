@@ -1,0 +1,30 @@
+CALCULATE_HUNGER = {
+	set_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_2
+		value = max_manpower_k
+	}
+	divide_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_2
+		value = 60
+	}
+	round_variable = VAR_NUM_FARMS_REQUIRED_2
+	set_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_3
+		value = max_manpower_k
+	}
+	divide_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_3
+		value = 96
+	}
+	round_variable = VAR_NUM_FARMS_REQUIRED_3
+	set_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_4
+		value = max_manpower_k
+	}
+	divide_variable = {
+		var = VAR_NUM_FARMS_REQUIRED_4
+		value = 240
+	}
+	round_variable = VAR_NUM_FARMS_REQUIRED_4
+	COMPUTE_NUM_FARMS = yes
+}

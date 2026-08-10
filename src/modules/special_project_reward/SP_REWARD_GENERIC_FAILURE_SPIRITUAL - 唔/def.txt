@@ -1,0 +1,17 @@
+SP_REWARD_GENERIC_FAILURE_SPIRITUAL = {
+	fire_only_once = no
+	threshold = {
+		min = 30
+		max = 60
+	}
+	option = {
+		iteration_output = {
+			country_effects = {
+				FROM = {
+					add_project_progress_ratio = constant:sp_progress.loss.high
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_FAILURE_SPIRITUAL_o0
+	}
+}

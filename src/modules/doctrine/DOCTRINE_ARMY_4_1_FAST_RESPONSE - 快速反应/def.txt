@@ -1,0 +1,32 @@
+pihc_land_breeze_of_death_infantry_core = {
+	track = infantry
+	name = DOCTRINE_ARMY_4_1_FAST_RESPONSE
+	description = DOCTRINE_ARMY_4_1_FAST_RESPONSE_DESC
+	icon = GFX_doctrine_pihc_land_breeze_of_death_infantry_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	army_speed_factor = 0.1
+	org_loss_when_moving = -0.1
+	planning_speed = 0.35
+	enable_tactic = tactic_backhand_blow
+	rewards = {
+		unpredictable_force = {
+			recon_factor = 0.15
+			coordination_bonus = 0.04
+			breakthrough_factor = 0.1
+			enable_tactic = tactic_breakthrough
+		}
+	}
+}

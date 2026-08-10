@@ -1,0 +1,32 @@
+scripted_gui = {
+	pihc_inventory_toggle = {
+		window_name = pihc_inventory_backpack_icon
+		context_type = player_context
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			open_inv_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_inventory_open
+						}
+					}
+					INVENTORY_OPEN = yes
+				}
+				else = {
+					INVENTORY_CLOSE = yes
+				}
+				set_country_flag = PIHC_COUNTRY_FLAG_ALL_INVENTORY_GUI_ALERT_HIDDEN
+			}
+		}
+		triggers = {
+			inventory_gui_alert_visible = {
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_ALL_INVENTORY_GUI_ALERT_HIDDEN
+				}
+			}
+		}
+	}
+}

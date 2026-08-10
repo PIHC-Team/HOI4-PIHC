@@ -1,0 +1,27 @@
+scripted_gui = {
+	pihc_state_lore_mapicon_gui = {
+		context_type = state_mapicon
+		window_name = pihc_state_lore_mapicon_gui
+		dirty = ROOT.state_lore_text_state_id
+		visible = {
+			ROOT = {
+				has_country_flag = pihc_state_lore_mapicons_visible
+			}
+		}
+		mapicon_targets = {
+			target_array = global.states_with_lore
+		}
+		effects = {
+			state_lore_mapicon_button_click = {
+				set_variable = {
+					ROOT.state_lore_text_state_id = FROM
+				}
+			}
+		}
+		properties = {
+			state_lore_mapicon_button = {
+				image = [FROM.state_lore_get_button_gfx]
+			}
+		}
+	}
+}

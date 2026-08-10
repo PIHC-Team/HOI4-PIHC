@@ -1,0 +1,36 @@
+C04_CIVIL_WAR = {
+	hidden_effect = {
+		C04 = {
+			transfer_state = 400
+			create_dynamic_country = {
+				original_tag = C04
+				reserve_dynamic_country = yes
+				set_country_flag = PIHC_COUNTRY_FLAG_C04_CIVIL_WAR_WASHOUTS
+				set_cosmetic_tag = Z04
+				transfer_state = 400
+				set_capital = {
+					state = 400
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1.0
+				}
+			}
+			CHARACTER_LIGHTNING_DUST = {
+				set_nationality = Z04
+			}
+			CHARACTER_ROLLING_THUNDER = {
+				set_nationality = Z04
+			}
+			Z04 = {
+				promote_character = {
+					character = CHARACTER_LIGHTNING_DUST
+					ideology = fascism_pegasi
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C07_TRADE_ALLIANCE
+	icon = GFX_FOCUS_C07_TRADE_ALLIANCE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LICENSED
+	}
+	cost = 3
+	completion_reward = {
+		create_faction = FACTION_WESTERN_ALLIANCE
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 2
+}

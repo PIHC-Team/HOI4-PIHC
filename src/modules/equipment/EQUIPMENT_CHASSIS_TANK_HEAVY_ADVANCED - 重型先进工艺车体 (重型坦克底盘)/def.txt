@@ -1,0 +1,111 @@
+equipments = {
+	EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED = {
+		archetype = ARCHETYPE_TANK_HEAVY
+		priority = 2
+		visual_level = 2
+		build_cost_ic = 12.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 1.1
+		defense = 96.0
+		armor_value = 36.0
+		hardness = 0.99
+		max_strength = 200.0
+		weight = 1.5
+		module_slots = {
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_engine_type_0
+					pihc_tank_engine_type_1
+					pihc_tank_engine_type_2
+				}
+			}
+			crew_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_crew_type_0
+				}
+			}
+			painting_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_painting_type_0
+					pihc_tank_painting_type_1
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_turret_type_0
+					pihc_tank_turret_type_1
+					pihc_tank_turret_type_2
+				}
+			}
+			projectile_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_projectile_type_0
+					pihc_tank_projectile_type_1
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_armor_type_0
+					pihc_tank_armor_type_1
+					pihc_tank_armor_type_2
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_suspension_type_0
+					pihc_tank_suspension_type_1
+				}
+			}
+		}
+		default_modules = {
+			turret_type_slot = MODULE_TURRET_4A_SPHERE
+			projectile_type_slot = MODULE_PROJECTILE_5B_SHELL
+			painting_type_slot = MODULE_PAINTING_CAMOU
+			crew_type_slot = MODULE_CREW_1A_NONE
+			suspension_type_slot = MODULE_SUSPENSION_3A_SPIDER
+			armor_type_slot = MODULE_ARMOR_4B_MODERN
+			engine_type_slot = MODULE_ENGINE_2A_STEAM
+		}
+		maximum_speed = 1.0
+		entrenchment = 8.0
+		recon = 3
+		picture = EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_CHASSIS_TANK_HEAVY_IMPROVED
+		is_frame = yes
+		manpower = 3
+		resources = {
+			steel = 9
+			tungsten = 4
+			rubber = 6
+		}
+		fuel_consumption = 0.4
+		fuel_capacity = 40.0
+		module_count_limit = {
+			module = any
+			count < 10
+		}
+	}
+}

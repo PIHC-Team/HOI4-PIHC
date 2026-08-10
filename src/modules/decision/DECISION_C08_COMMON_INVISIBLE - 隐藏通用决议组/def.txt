@@ -1,0 +1,21 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_COMMON_INVISIBLE = {
+        fixed_random_seed = no
+        priority = 90000
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON
+        }
+        available = {
+            hidden_trigger = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON
+            }
+        }
+        complete_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON
+        }
+        cost = 0
+        ai_will_do = {
+            base = 0
+        }
+    }
+}

@@ -1,0 +1,18 @@
+DECISION_CATEGORY_GOLD_FINGER = {
+    DECISION_TITAN_SUMMON = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 1000
+        days_re_enable = 7
+        available = {
+            is_ironman = no
+        }
+        complete_effect = {
+            PANZER = yes
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = TITAN_SUMMON
+    }
+}

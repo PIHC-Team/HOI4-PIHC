@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_MYSTERY = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		custom_modifier_tooltip = TRAIT_MYSTERY_MODIFER_TOOLTIP
+	}
+}

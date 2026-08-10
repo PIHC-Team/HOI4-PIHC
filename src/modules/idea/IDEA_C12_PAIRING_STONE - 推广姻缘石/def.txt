@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C12_PAIRING_STONE = {
+			picture = C12_PAIRING_STONE
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

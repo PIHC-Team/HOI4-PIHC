@@ -1,0 +1,26 @@
+DECISION_CATEGORY_C15_PARLIAMENT = {
+    icon = C15_PARLIAMENT
+    picture = GFX_decision_category_picture
+    priority = 20000
+    allowed = {
+        OR = {
+            tag = C15
+            tag = C01
+            tag = C08
+            tag = C11
+        }
+    }
+    visible = {
+        C15 = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C15_PARLIAMENT_WORKING
+        }
+        if = {
+            limit = {
+                tag = C08
+            }
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_PARLIAMENT
+        }
+    }
+    scripted_gui = C15_PARLIAMENT_GUI
+    visible_when_empty = yes
+}

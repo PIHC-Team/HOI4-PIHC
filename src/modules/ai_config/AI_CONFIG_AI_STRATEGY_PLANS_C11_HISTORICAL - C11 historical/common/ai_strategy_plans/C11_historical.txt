@@ -1,0 +1,30 @@
+C11_historical = {
+    name = historical
+    desc = "Changeling Empire Historical AI"
+    allowed = {
+        tag = C11
+    }
+    enable = {
+        country_exists = C11
+    }
+    ai_national_focuses = {
+        FOCUS_C11_CONQUER_TARTARUS
+        FOCUS_C11_BUGBEAR_EXCUSE
+        FOCUS_C11_BUGBEAR_CONTROLLED
+        FOCUS_C11_THESTRAL_EXCUSE
+        FOCUS_C11_THESTRAL_CONTROLLED
+        FOCUS_C11_INVADE_TARTARUS
+        FOCUS_C11_THESTRAL_EMPIRE
+        FOCUS_C11_CONQUER_REINDEER
+        FOCUS_C11_REINDEER_WARNING
+        FOCUS_C11_REINDEER_ULTIMATUM
+        FOCUS_C11_REINDEER_DESTINY
+        FOCUS_C11_REINDEER_WAR
+        FOCUS_C11_CONQUER_ZEBRA
+        FOCUS_C11_WAR_OF_HOLDING
+        FOCUS_C11_BORDER_RECRUIT
+        FOCUS_C11_INVADE_ZEBRA
+        FOCUS_C11_SCORCHED_EARTH
+        FOCUS_C11_CONSCRIPTION
+    }
+}

@@ -1,0 +1,119 @@
+STEAL_TECHNOLOGY_BY_INTEL = {
+	var:VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+		PREV = {
+			if = {
+				limit = {
+					intel_level_over = {
+						target = PREV
+						civilian_intel > 0.9
+						army_intel > 0.5
+						navy_intel > 0.3
+						airforce_intel > 0.3
+					}
+				}
+				steal_random_tech_bonus = {
+					category = pihc_all
+					folder = infantry_folder
+					folder = support_folder
+					folder = armour_folder
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = air_techs_folder
+					folder = bba_air_techs_folder
+					folder = naval_folder
+					folder = mtgnavalfolder
+					folder = mtgnavalsupportfolder
+					folder = industry_folder
+					folder = electronics_folder
+					bonus = 2.0
+					dynamic = yes
+					name = PIHC_STEALED_TECHNOLOGY
+					target = PREV
+					uses = 2
+				}
+			}
+			else_if = {
+				limit = {
+					intel_level_over = {
+						target = PREV
+						civilian_intel > 0.75
+						army_intel > 0.3
+						navy_intel > 0.1
+						airforce_intel > 0.1
+					}
+				}
+				steal_random_tech_bonus = {
+					category = pihc_all
+					folder = infantry_folder
+					folder = support_folder
+					folder = armour_folder
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = air_techs_folder
+					folder = bba_air_techs_folder
+					folder = naval_folder
+					folder = mtgnavalfolder
+					folder = mtgnavalsupportfolder
+					folder = industry_folder
+					folder = electronics_folder
+					bonus = 1.0
+					dynamic = yes
+					name = PIHC_STEALED_TECHNOLOGY
+					target = PREV
+					uses = 2
+				}
+			}
+			else_if = {
+				limit = {
+					intel_level_over = {
+						target = PREV
+						civilian_intel > 0.6
+						army_intel > 0.1
+					}
+				}
+				steal_random_tech_bonus = {
+					category = pihc_all
+					folder = infantry_folder
+					folder = support_folder
+					folder = armour_folder
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = air_techs_folder
+					folder = bba_air_techs_folder
+					folder = naval_folder
+					folder = mtgnavalfolder
+					folder = mtgnavalsupportfolder
+					folder = industry_folder
+					folder = electronics_folder
+					bonus = 0.5
+					dynamic = yes
+					name = PIHC_STEALED_TECHNOLOGY
+					target = PREV
+					uses = 2
+				}
+			}
+			else = {
+				steal_random_tech_bonus = {
+					category = pihc_all
+					folder = infantry_folder
+					folder = support_folder
+					folder = armour_folder
+					folder = nsb_armour_folder
+					folder = artillery_folder
+					folder = air_techs_folder
+					folder = bba_air_techs_folder
+					folder = naval_folder
+					folder = mtgnavalfolder
+					folder = mtgnavalsupportfolder
+					folder = industry_folder
+					folder = electronics_folder
+					bonus = 0.3
+					dynamic = yes
+					name = PIHC_STEALED_TECHNOLOGY
+					target = PREV
+					uses = 2
+				}
+			}
+		}
+	}
+}

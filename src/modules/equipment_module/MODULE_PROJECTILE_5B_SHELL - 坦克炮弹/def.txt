@@ -1,0 +1,18 @@
+MODULE_PROJECTILE_5B_SHELL = {
+	category = pihc_tank_projectile_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.5
+		weight = 0.2
+		soft_attack = 28.0
+		hard_attack = 15.0
+		ap_attack = 8.0
+		maximum_speed = -0.8
+		reliability = -0.1
+	}
+	build_cost_resources = {
+		coal = 1
+		steel = 1
+	}
+	xp_cost = 10
+}

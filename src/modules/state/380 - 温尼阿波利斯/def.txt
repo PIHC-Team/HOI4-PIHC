@@ -1,0 +1,48 @@
+state = {
+    id = 380
+    name = STATE_380
+    provinces = {
+        377
+        889
+        1226
+        2504
+        3143
+        6867
+        6889
+        7315
+        8495
+        8555
+        8745
+        9132
+        9451
+        9683
+        10669
+        10725
+        10824
+        10891
+    }
+    manpower = 120226
+    state_category = large_city
+    history = {
+        owner = C59
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 3
+            arms_factory = 6
+            air_base = 1
+            377 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C59
+        victory_points = {
+            6867
+            25
+        }
+    }
+    resources = {
+        coal = 32
+        steel = 64
+        crystals = 4
+    }
+}

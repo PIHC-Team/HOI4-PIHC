@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SHIRE_LANKA_ROYALS = {
+        name = CHARACTER_SHIRE_LANKA_ROYALS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS.dds"
+                small = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS_army.dds"
+                small = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS_navy.dds"
+                small = "gfx/leaders/CHARACTER_SHIRE_LANKA_ROYALS_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_SHIRE_LANKA_ROYALS_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

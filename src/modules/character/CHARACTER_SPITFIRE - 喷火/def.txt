@@ -1,0 +1,29 @@
+characters = {
+    CHARACTER_SPITFIRE = {
+        name = CHARACTER_SPITFIRE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_SPITFIRE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_SPITFIRE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SPITFIRE_army.dds"
+                small = "gfx/leaders/CHARACTER_SPITFIRE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SPITFIRE_navy.dds"
+                small = "gfx/leaders/CHARACTER_SPITFIRE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_SPITFIRE_DESC
+            traits = {
+                TRAIT_POPULAR
+                TRAIT_DIPLOMATIC_GENIUS
+                TRAIT_FREEDOM_FIGHTER
+            }
+            ideology = democratic_freestate
+        }
+    }
+}

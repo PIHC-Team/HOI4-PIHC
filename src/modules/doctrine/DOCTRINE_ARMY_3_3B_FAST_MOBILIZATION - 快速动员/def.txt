@@ -1,0 +1,36 @@
+pihc_land_rose_of_will_combat_support_b = {
+	track = combat_support
+	name = DOCTRINE_ARMY_3_3B_FAST_MOBILIZATION
+	description = DOCTRINE_ARMY_3_3B_FAST_MOBILIZATION_DESC
+	icon = GFX_doctrine_pihc_land_rose_of_will_combat_support_b_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	training_time_army_factor = -0.1
+	minimum_training_level = -0.1
+	enable_tactic = tactic_infantry_charge
+	rewards = {
+		war_of_will = {
+			army_strength_factor = 0.15
+			army_morale_factor = 0.07
+			coordination_bonus = 0.04
+			pocket_penalty = -0.1
+		}
+		heroism = {
+			experience_gain_army_factor = 0.3
+			equipment_capture_factor = 0.12
+			enable_tactic = tactic_banzai_charge
+		}
+	}
+}

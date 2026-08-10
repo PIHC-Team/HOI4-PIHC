@@ -1,0 +1,24 @@
+focus = {
+	id = FOCUS_C11_VENI_VIDI_VICI
+	icon = GFX_FOCUS_C11_VENI_VIDI_VICI_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_CANTERLOT_PACT
+	}
+	cost = 2
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 2
+}

@@ -1,0 +1,66 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_MANEHATTAN_RECRUITS_ENLIST = {
+        fixed_random_seed = no
+        priority = 79989
+        cost = 35
+        days_remove = 14
+        visible = {
+            tag = C08
+            has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+        }
+        available = {
+            controls_state = 389
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C08_MANEHATTAN_WAR_START_TOOLTIP
+                has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+            }
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_TROTTINGHAM_MNS
+                }
+                hidden_effect = {
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_ENLIST_MNS
+                }
+                389 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = C08
+                        }
+                        create_unit = {
+                            division = "name = \"战斗组 (Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.2 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = C08
+                            count = 3
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_MANEHATTAN_RUSH_VANGUARD
+                }
+                hidden_effect = {
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_ENLIST_ARMY
+                }
+                389 = {
+                    if = {
+                        limit = {
+                            is_owned_and_controlled_by = C08
+                        }
+                        create_unit = {
+                            division = "name = \"战斗组 (Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.2 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                            owner = C08
+                            count = 6
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 11111
+        }
+        fire_only_once = yes
+        icon = C08_MANEHATTAN_RECRUITS_ENLIST
+    }
+}

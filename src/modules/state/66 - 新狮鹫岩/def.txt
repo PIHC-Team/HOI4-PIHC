@@ -1,0 +1,53 @@
+state = {
+    id = 66
+    name = STATE_66
+    provinces = {
+        252
+        292
+        362
+        580
+        1417
+        2529
+        2607
+        2951
+        3771
+        3917
+        3953
+        4635
+        5329
+        6560
+        7218
+        8242
+        9149
+        11381
+        11463
+        11480
+        11575
+        11610
+        11615
+        11651
+    }
+    manpower = 85575
+    state_category = rural
+    history = {
+        owner = C64
+        victory_points = {
+            252
+            3
+        }
+        buildings = {
+            industrial_complex = 4
+            infrastructure = 4
+            arms_factory = 1
+            air_base = 1
+            252 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C64
+    }
+    resources = {
+        steel = 32
+        coal = 36
+    }
+}

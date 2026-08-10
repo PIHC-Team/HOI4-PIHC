@@ -1,0 +1,8 @@
+DECISION_CATEGORY_C04_INDEPENDENCE = {
+    icon = C04_INDEPENDENCE
+    picture = GFX_decision_category_picture
+    priority = 10001
+    allowed = {
+        tag = C04
+    }
+}

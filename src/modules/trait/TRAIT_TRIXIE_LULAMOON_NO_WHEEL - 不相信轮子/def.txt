@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_TRIXIE_LULAMOON_NO_WHEEL = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		army_armor_speed_factor = -0.25
+	}
+}

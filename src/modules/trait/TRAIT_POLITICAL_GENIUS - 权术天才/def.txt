@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_POLITICAL_GENIUS = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = 0.02
+		political_power_gain = 0.4
+		subjects_autonomy_gain = -0.1
+	}
+}

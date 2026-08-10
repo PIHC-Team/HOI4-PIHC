@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_DANCE_FEVER = {
+        name = CHARACTER_DANCE_FEVER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DANCE_FEVER.dds"
+                small = "gfx/leaders/CHARACTER_DANCE_FEVER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DANCE_FEVER_army.dds"
+                small = "gfx/leaders/CHARACTER_DANCE_FEVER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DANCE_FEVER_navy.dds"
+                small = "gfx/leaders/CHARACTER_DANCE_FEVER_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_DANCE_FEVER_DESC
+            traits = {
+
+            }
+            ideology = equatism_democracy
+        }
+    }
+}

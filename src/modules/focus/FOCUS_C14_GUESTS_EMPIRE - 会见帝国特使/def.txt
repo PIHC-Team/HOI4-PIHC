@@ -1,0 +1,39 @@
+focus = {
+	id = FOCUS_C14_GUESTS_EMPIRE
+	icon = GFX_FOCUS_C14_GUESTS_EMPIRE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C14_GUESTS
+	}
+	prerequisite = {
+		focus = FOCUS_C14_METEOR_END_MILITARY_ROCK
+	}
+	cost = 8
+	will_lead_to_war_with = C01
+	completion_reward = {
+		country_event = {
+			id = C14_MAIN.22
+		}
+	}
+	available = {
+		C14 = {
+			power_balance_value = {
+				id = BOP_C14_INDEPENDENCE
+				value > 0.80
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 8
+}

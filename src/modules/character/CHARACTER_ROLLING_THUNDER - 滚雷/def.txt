@@ -1,0 +1,47 @@
+characters = {
+    CHARACTER_ROLLING_THUNDER = {
+        name = CHARACTER_ROLLING_THUNDER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ROLLING_THUNDER.dds"
+                small = "gfx/leaders/CHARACTER_ROLLING_THUNDER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ROLLING_THUNDER_army.dds"
+                small = "gfx/leaders/CHARACTER_ROLLING_THUNDER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ROLLING_THUNDER_navy.dds"
+                small = "gfx/leaders/CHARACTER_ROLLING_THUNDER_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_ROLLING_THUNDER
+            desc = CHARACTER_ROLLING_THUNDER_DESC
+            traits = {
+                TRAIT_FEARLESS
+                TRAIT_WASHOUTS_ROLLING_THUNDER
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = air_chief
+            available = {
+                if = {
+                    limit = {
+                        tag = C04
+                        NOT = {
+                            has_government = fascism
+                        }
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP
+                        always = no
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+ideologies = {
+	despotic = {
+		types = {
+			despotic_republic = {
+			}
+			despotic_democracy = {
+			}
+			despotic_monarchy = {
+			}
+			despotic_oligarchy = {
+			}
+			despotic_tribe = {
+			}
+			despotic_freestate = {
+			}
+			despotic_organization = {
+			}
+			despotic_duchy = {
+				can_be_randomly_selected = no
+			}
+			despotic_authoritarianism = {
+				can_be_randomly_selected = no
+			}
+			despotic_totalitarianism = {
+				can_be_randomly_selected = no
+			}
+			despotic_utopia = {
+				can_be_randomly_selected = no
+			}
+			despotic_dystopia = {
+				can_be_randomly_selected = no
+			}
+			despotic_theocracy = {
+			}
+			despotic_technocracy = {
+			}
+			despotic_militarism = {
+			}
+			despotic_dogmatism = {
+			}
+			despotic_federal = {
+				can_be_randomly_selected = no
+			}
+			despotic_equatism = {
+			}
+			despotic_harmonicism = {
+			}
+			despotic_neoharmonicism = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = {
+			120
+			120
+			125
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		can_be_boosted = yes
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.3
+		faction_impact_on_world_tension = 0.2
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.6
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			annex_cost_factor = 0.0
+			puppet_cost_factor = 0.2
+			justify_war_goal_when_in_major_war_time = -0.25
+			drift_defence_factor = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 20.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 20.0
+			embargo_cost_factor = 0.0
+			embargo_threshold_factor = -0.3
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.2
+		}
+		ai_neutral = yes
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

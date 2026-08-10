@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_CINNAMON_CHAI = {
+        name = CHARACTER_CINNAMON_CHAI_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CINNAMON_CHAI.dds"
+                small = "gfx/leaders/CHARACTER_CINNAMON_CHAI_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CINNAMON_CHAI_army.dds"
+                small = "gfx/leaders/CHARACTER_CINNAMON_CHAI_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CINNAMON_CHAI_navy.dds"
+                small = "gfx/leaders/CHARACTER_CINNAMON_CHAI_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 5
+            traits = {
+
+            }
+        }
+    }
+}

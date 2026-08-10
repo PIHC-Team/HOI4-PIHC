@@ -1,0 +1,49 @@
+PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY1 = {
+	if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 1
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = 1
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 2
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = 1
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 3
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = 2
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2
+		}
+	}
+	else = {
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = 3
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3
+		}
+	}
+}

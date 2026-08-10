@@ -1,0 +1,36 @@
+pihc_land_breeze_of_death_combat_support_a = {
+	track = combat_support
+	name = DOCTRINE_ARMY_4_3A_TACTICAL_WITHDRAW
+	description = DOCTRINE_ARMY_4_3A_TACTICAL_WITHDRAW_DESC
+	icon = GFX_doctrine_pihc_land_breeze_of_death_combat_support_a_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	coordination_bonus = 0.04
+	enable_tactic = tactic_tactical_withdrawal
+	enable_tactic = tactic_elastic_defense
+	rewards = {
+		full_support = {
+			land_reinforce_rate = 0.08
+			army_speed_factor = 0.1
+			initiative_factor = 0.1
+			terrain_penalty_reduction = 0.1
+		}
+		blitz = {
+			breakthrough_factor = 0.1
+			combat_width_factor = -0.08
+			enable_tactic = tactic_blitz
+		}
+	}
+}

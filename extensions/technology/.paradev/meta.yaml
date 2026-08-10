@@ -1,0 +1,175 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/technology
+version: 0.2.7
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-technology
+items:
+-   kind: entity
+    identifier: pihc3-technology
+    name: PIHC3 Technology Module
+    desc: Project-owned technology source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Technology
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+-   kind: extension
+    identifier: pihc3-technology
+    name: PIHC3 Technology
+    desc: PIHC3 technology module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        dependencies:
+        - entity:pihc3-technology
+        definition:
+            identifier: pihc3-technology
+            name: PIHC3 Technology
+            version: 0.2.7
+            desc: PIHC3 technology module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-technology
+            meta:
+                project: PIHC3
+                family: technology
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-technology
+    name: PIHC3 Technology Compiler
+    desc: Registry-backed source slots and compiler hooks for technology.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        presentation:
+            id: technologies
+            title: Technologies
+            group: military
+            title_key: modules.technologies.title
+        dependencies:
+        - extension:pihc3-technology
+-   kind: paradev_diagram_provider
+    identifier: pihc3-technology
+    name: PIHC3 Technology Tree Provider
+    desc: Projects and edits PIHC3 technologies through the registered tree interface.
+    source: path
+    target:
+        module: null
+        qualname: diagram_provider
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        dependencies:
+        - paradev_build_family:pihc3-technology
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-22d2ef6b66f1e88a
+    name: PIHC3 Basic Technology
+    desc: PIHC3 authoring template pihc3:technology/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        definition:
+            template_id: pihc3:technology/basic
+            declaration:
+                title: PIHC3 Basic Technology
+                family: technology
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        label: Display name
+                        description: Preferred-language technology name used for the
+                            readable folder and localization.
+                    description:
+                        default: ''
+                        type: text
+                        label: Description
+                        description: Preferred-language technology tooltip written to
+                            the `_desc` localization key.
+                    folder:
+                        default: support_folder
+                        label: Technology folder
+                        description: HoI4 technology-tree folder identifier.
+                    category:
+                        default: pihc_all
+                        label: Research category
+                        description: Technology category token used by research bonuses
+                            and other category-based rules.
+                    research_cost:
+                        default: '1.5'
+                        type: number
+                        label: Research cost
+                        description: Relative research-cost multiplier; 1.5 means
+                            150% of the base cost.
+                    start_year:
+                        default: '1936'
+                        type: number
+                        label: Start year
+                        description: Calendar year used for ahead-of-time research
+                            penalties.
+                    x:
+                        default: '0'
+                        type: number
+                        label: Grid X
+                        description: Horizontal grid position in the selected technology
+                            folder.
+                    y:
+                        default: '0'
+                        type: number
+                        label: Grid Y
+                        description: Vertical grid position in the selected technology
+                            folder.
+                    dependencies:
+                        default: ''
+                        type: text
+                        label: Prerequisite source
+                        description: Optional reviewed dependencies block inherited
+                            from the selected technology.
+                        advanced: true
+                    language:
+                        default: en
+                        type: choice
+                        label: Localization language
+                        choices:
+                        - en
+                        - zh
+                        description: Localization language for the generated technology
+                            name and tooltip.
+                files:
+                    def.txt: "technologies = {{\n\t{object_id} = {{\n\t\tfolder =\
+                        \ {{\n\t\t\tname = {folder}\n\t\t\tposition = {{\n\t\t\t\t\
+                        x = {x}\n\t\t\t\ty = {y}\n\t\t\t}}\n\t\t}}\n\t\tcategories\
+                        \ = {{\n\t\t\t{category}\n\t\t}}\n\t\t{dependencies}\n\t\t\
+                        research_cost = {research_cost}\n\t\tstart_year = {start_year}\n\
+                        \t\tai_will_do = {{\n\t\t\tfactor = 1\n\t\t}}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

@@ -1,0 +1,27 @@
+scripted_gui = {
+	pihc_help_button = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = pihc_help_button_container
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			pihc_help_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_help_tab_on
+						}
+					}
+					set_variable = {
+						pihc_help_tab_on = 1
+					}
+				}
+				else = {
+					clear_variable = pihc_help_tab_on
+				}
+			}
+		}
+	}
+}

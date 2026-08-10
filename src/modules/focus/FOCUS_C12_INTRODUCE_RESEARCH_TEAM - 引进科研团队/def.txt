@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C12_INTRODUCE_RESEARCH_TEAM
+	icon = GFX_FOCUS_C12_INTRODUCE_RESEARCH_TEAM_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_REBUILD_WEST_EQUESTRIA
+	}
+	cost = 4
+	completion_reward = {
+		add_ideas = IDEA_C12_RESEARCH_TEAM_FROM_LAS_PEGASUS
+	}
+	available = {
+		country_exists = C07
+		custom_trigger_tooltip = {
+			tooltip = PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP_TRIGGER_TOOLTIP
+			has_country_flag = PIHC_COUNTRY_FLAG_C12_ACCEPT_SECOND_BATCH_OF_SPONSORSHIP
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 11
+}

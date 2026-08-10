@@ -1,0 +1,55 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_CRISIS_SELF
+	icon = GFX_FOCUS_C15_SOMBRA_CRISIS_SELF_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_APOCALYPSE_END
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C15_SOMBRA_CRISIS_FRIEND
+	}
+	cost = 12
+	will_lead_to_war_with = C26
+	completion_reward = {
+		add_country_leader_role = {
+			character = CHARACTER_KING_SOMBRA
+			promote_leader = yes
+			country_leader = {
+				ideology = transcendence_crisis
+				traits = {
+					TRAIT_KING_SOMBRA_KING_OF_MONSTERS
+					TRAIT_KING_SOMBRA_SOURCE_OF_TERROR
+				}
+			}
+		}
+		hidden_effect = {
+			set_popularities = {
+				transcendence = 100
+			}
+		}
+		declare_war_on = {
+			target = C26
+			type = annex_everything
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 15
+}

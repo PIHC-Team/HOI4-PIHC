@@ -1,0 +1,48 @@
+technologies = {
+    TECHNOLOGY_NSB_TANK_TITAN_WINDIGO = {
+        folder = {
+            name = nsb_armour_folder
+            position = {
+                x = 6
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_TANK_TITAN_WINDIGO
+            EQUIPMENT_TANK_TITAN_WINDIGO_INVINCIBLE
+        }
+        enable_subunits = {
+            tank_light
+            tank_medium
+            tank_heavy
+            titan
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = windigo
+            }
+        }
+        allow = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_WINDIGO_POWER
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = TECHNOLOGY_TANK_TITAN_WINDIGO_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        research_cost = 6.0
+        start_year = 1007
+    }
+}

@@ -1,0 +1,12 @@
+wargoal_types = {
+	trade_request_wargoal = {
+		allowed = {
+			always = no
+		}
+		take_states_cost = 200
+		puppet_cost = -75
+		force_government_cost = -75
+		expire = 180
+		threat = 0.5
+	}
+}

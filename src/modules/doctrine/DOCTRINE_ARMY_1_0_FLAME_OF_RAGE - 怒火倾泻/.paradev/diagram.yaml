@@ -1,0 +1,11 @@
+schema: paradev.hoi4.doctrine-diagram-state.v1
+position:
+  x: 0
+  y: 0
+paths:
+- DOCTRINE_ARMY_1_1_DISTANT_ATTACK
+mutually_exclusive:
+- DOCTRINE_ARMY_0_0_TIDE_OF_IRON
+- DOCTRINE_ARMY_2_0_WALL_OF_UNITY
+- DOCTRINE_ARMY_3_0_ROSE_OF_WILL
+- DOCTRINE_ARMY_4_0_BREEZE_OF_DEATH

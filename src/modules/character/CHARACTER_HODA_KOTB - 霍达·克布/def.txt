@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_HODA_KOTB = {
+        name = CHARACTER_HODA_KOTB_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_HODA_KOTB.dds"
+                small = "gfx/leaders/CHARACTER_HODA_KOTB_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_HODA_KOTB_army.dds"
+                small = "gfx/leaders/CHARACTER_HODA_KOTB_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_HODA_KOTB_navy.dds"
+                small = "gfx/leaders/CHARACTER_HODA_KOTB_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_HODA_KOTB
+            desc = CHARACTER_HODA_KOTB_DESC
+            traits = {
+                TRAIT_INDECISIVE
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

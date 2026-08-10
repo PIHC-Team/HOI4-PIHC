@@ -1,0 +1,15 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = C09
+						is_in_faction_with = C09
+					}
+				}
+				ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_20 = yes
+			}
+		}
+	}
+}

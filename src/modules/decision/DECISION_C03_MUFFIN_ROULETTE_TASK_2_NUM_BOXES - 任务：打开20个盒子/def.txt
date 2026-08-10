@@ -1,0 +1,38 @@
+DECISION_CATEGORY_C03_MUFFIN_ROULETTE = {
+    DECISION_C03_MUFFIN_ROULETTE_TASK_2_NUM_BOXES = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 60
+        activation = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_2_NUM_BOXES
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C03_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+                check_variable = {
+                    var = ROOT.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK
+            clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_2_NUM_BOXES
+            custom_effect_tooltip = CUSTOM_GAIN_MUFFINS_2000
+            add_to_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 2000
+            }
+            INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+        }
+        timeout_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_HAS_A_TASK
+            clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_2_NUM_BOXES
+        }
+        icon = C03_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+    }
+}

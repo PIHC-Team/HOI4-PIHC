@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C08_NEW_OPPORTUNITY
+	icon = GFX_FOCUS_C08_NEW_OPPORTUNITY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_CITY_SUMMIT
+	}
+	cost = 1
+	completion_reward = {
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_START
+		}
+		custom_effect_tooltip = FOCUS_C08_NEW_OPPORTUNITY_TOOLTIP
+		swap_ideas = {
+			remove_idea = closed_economy
+			add_idea = export_focus
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 4
+}

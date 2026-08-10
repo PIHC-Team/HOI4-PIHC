@@ -1,0 +1,14 @@
+MODULE_PROJECTILE_3E_BRICK = {
+	category = pihc_tank_projectile_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.4
+		weight = 0.1
+		soft_attack = 10.0
+		hard_attack = 4.0
+		ap_attack = 2.5
+		maximum_speed = -0.3
+		reliability = -0.03
+	}
+	xp_cost = 6
+}

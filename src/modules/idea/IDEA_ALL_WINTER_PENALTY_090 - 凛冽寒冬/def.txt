@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_ALL_WINTER_PENALTY_090 = {
+			picture = ALL_WINTER_PENALTY_090
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.65
+				stability_factor = -0.35
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

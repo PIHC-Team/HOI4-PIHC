@@ -1,0 +1,47 @@
+C18_PRODUCE_CURE = {
+	COMPUTE_NUM_FARMS = yes
+	set_temp_variable = {
+		temp_num_cure_per_month = VAR_NUM_FARMS_OWNED
+	}
+	multiply_temp_variable = {
+		temp_num_cure_per_month = C18.VAR_STREAM_OF_SILENCE_CURE_SPEED
+	}
+	round_temp_variable = temp_num_cure_per_month
+	clamp_temp_variable = {
+		var = temp_num_cure_per_month
+		min = 0
+		max = C18.VAR_STREAM_OF_SILENCE_CURE_LIMIT
+	}
+	add_to_variable = {
+		C18.VAR_INVENTORY_ITEM_3RA_C18_CURE = temp_num_cure_per_month
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_C18_FLOWER_MARKET_1
+		}
+		add_to_variable = {
+			C18.VAR_INVENTORY_ITEM_3RA_C18_CURE = -10
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C18_FLOWER_MARKET_2
+		}
+		add_to_variable = {
+			C18.VAR_INVENTORY_ITEM_3RA_C18_CURE = -3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_C18_FLOWER_MARKET_3
+		}
+		add_to_variable = {
+			C18.VAR_INVENTORY_ITEM_3RA_C18_CURE = -1
+		}
+	}
+	clamp_variable = {
+		var = C18.VAR_INVENTORY_ITEM_3RA_C18_CURE
+		min = 0
+	}
+	INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+}

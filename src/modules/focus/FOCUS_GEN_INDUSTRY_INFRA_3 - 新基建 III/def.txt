@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_GEN_INDUSTRY_INFRA_3
+	icon = GFX_FOCUS_GEN_INDUSTRY_INFRA_3_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY_INFRA_2
+	}
+	cost = 6
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				instant_build = yes
+				level = 3
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 4
+}

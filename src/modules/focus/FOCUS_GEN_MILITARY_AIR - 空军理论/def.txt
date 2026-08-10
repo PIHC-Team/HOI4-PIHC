@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_GEN_MILITARY_AIR
+	icon = GFX_FOCUS_GEN_MILITARY_AIR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY
+	}
+	cost = 8
+	completion_reward = {
+		air_experience = 20
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 2
+}

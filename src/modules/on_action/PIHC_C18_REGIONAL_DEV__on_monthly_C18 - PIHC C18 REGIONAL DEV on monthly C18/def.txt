@@ -1,0 +1,49 @@
+on_actions = {
+	on_monthly_C18 = {
+		effect = {
+			C18_PRODUCE_CURE = yes
+			C18_REGIONAL_DEV_BUILDINGS_DAMAGE = yes
+			if = {
+				limit = {
+					has_idea = IDEA_C18_SENDAKS_SECRET_COOPERATOR
+				}
+				add_to_variable = {
+					C18.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = C18.VAR_MONTHLY_DEV_BONDS_FROM_SENDAK
+				}
+				INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							var = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+							value = 75.0
+							compare = greater_than
+						}
+						has_idea = unleash_your_inner_nirik_lokadhatu
+					}
+				}
+				set_country_flag = PIHC_COUNTRY_FLAG_C18_COLLAPSING
+			}
+			if = {
+				limit = {
+					has_country_flag = PIHC_COUNTRY_FLAG_C18_COLLAPSING
+					OR = {
+						has_war = no
+						check_variable = {
+							var = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+							value = 85.0
+							compare = greater_than
+						}
+					}
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C18_COLLAPSED
+					}
+				}
+				country_event = {
+					id = C18_MAIN.116
+				}
+			}
+		}
+	}
+}

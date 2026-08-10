@@ -1,0 +1,116 @@
+C18_CIVIL_WAR = {
+	C18 = {
+		hidden_effect = {
+			start_civil_war = {
+				ideology = fascism
+				keep_all_characters = yes
+				set_country_flag = PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_NIRIK
+				set_cosmetic_tag = Z18
+				size = 0.4
+				army_ratio = 0.0
+				navy_ratio = 0.0
+				air_ratio = 0.0
+				capital = 217
+				states = {
+					217
+					179
+					203
+					184
+					820
+					205
+					788
+					202
+					799
+					114
+				}
+				states_filter = {
+					is_owned_and_controlled_by = C18
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1.0
+				}
+				recruit_character = CHARACTER_AUTUMN_BLAZE_NIRIK
+				promote_character = {
+					character = CHARACTER_AUTUMN_BLAZE_NIRIK
+					ideology = fascism_militarism
+				}
+			}
+			Z18 = {
+				load_oob = Z18_nirik
+				217 = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 18
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 6
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 6
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 6
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 3
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"逆麟军团 (Nirik Army)\" division_template = \"逆麟师 (Nirik Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.4 start_manpower_factor = 0.7"
+						owner = Z18
+						count = 3
+					}
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 6
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 4
+				}
+				add_ideas = unleash_your_inner_nirik_lokadhatu
+				add_political_power = 100
+				add_manpower = 100000
+			}
+			217 = {
+				set_state_name = STATE_217_CULANIKA
+				add_victory_points = {
+					province = 164
+					value = 35
+				}
+				set_province_name = {
+					id = 164
+					name = STATE_217_CULANIKA
+				}
+			}
+			set_global_flag = PIHC_GLOBAL_FLAG_CULANIKA_LOKADHATU
+			add_named_threat = {
+				threat = 5
+				name = EVENT_TIMELINE_22_THREAT
+			}
+		}
+	}
+}

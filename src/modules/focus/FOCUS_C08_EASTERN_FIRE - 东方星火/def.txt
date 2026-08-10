@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C08_EASTERN_FIRE
+	icon = GFX_FOCUS_C08_EASTERN_FIRE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 3
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_EASTERN_FIRE_TOOLTIP
+		add_political_power = 80
+		add_stability = 0.15
+		add_war_support = 0.1
+		country_event = {
+			id = C08_MAIN.38
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 0
+}

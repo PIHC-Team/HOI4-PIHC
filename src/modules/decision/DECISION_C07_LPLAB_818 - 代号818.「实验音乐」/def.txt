@@ -1,0 +1,62 @@
+DECISION_CATEGORY_C07_LPLAB = {
+    DECISION_C07_LPLAB_818 = {
+        fixed_random_seed = no
+        priority = 101
+        days_remove = 60
+        days_re_enable = 0
+        visible = {
+            tag = C07
+            has_completed_focus = FOCUS_C07_LPLAB_818
+            NOT = {
+                has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+            }
+        }
+        available = {
+            num_of_civilian_factories_available_for_projects > 2
+            hidden_trigger = {
+                has_political_power > 24
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 2
+            has_political_power > 24
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_3_PP_25
+        modifier = {
+            civilian_factory_use = 3
+        }
+        ai_hint_pp_cost = 25
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -25
+            }
+        }
+        remove_effect = {
+            effect_tooltip = {
+                set_technology = {
+                    TECHNOLOGY_MAGICAL_YOVIDAPHONE = 1
+                }
+            }
+            custom_effect_tooltip = DECISION_C07_LPLAB_818_TOOLTIP
+            hidden_effect = {
+                random_list = {
+                    seed = random
+                    30 = {
+                        set_technology = {
+                            TECHNOLOGY_MAGICAL_YOVIDAPHONE = 1
+                        }
+                    }
+                    70 = {
+                        country_event = {
+                            id = LPLAB.9818
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C07_LPLAB_818
+    }
+}

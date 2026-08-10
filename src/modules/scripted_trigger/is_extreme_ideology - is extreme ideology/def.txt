@@ -1,0 +1,16 @@
+is_extreme_ideology = {
+	custom_trigger_tooltip = {
+		tooltip = IS_EXTREME_IDEOLOGY_TOOLTIP
+		OR = {
+			has_government = transcendence
+			has_country_leader_ideology = fascism_totalitarianism
+			has_country_leader_ideology = fascism_dystopia
+			has_country_leader_ideology = fascism_spirit
+			has_country_leader_ideology = democratic_dystopia
+			has_country_leader_ideology = despotic_dystopia
+			has_country_leader_ideology = harmonicism_dystopia
+			has_country_leader_ideology = corporation_dystopia
+			has_country_leader_ideology = equatism_dystopia
+		}
+	}
+}

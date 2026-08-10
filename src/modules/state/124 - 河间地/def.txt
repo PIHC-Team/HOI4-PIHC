@@ -1,0 +1,46 @@
+state = {
+    id = 124
+    name = STATE_124
+    provinces = {
+        2056
+        2948
+        3881
+        5637
+        5787
+        5872
+        5886
+        6601
+        7125
+        7663
+        8214
+        8612
+        8619
+        9638
+        9651
+        13246
+        13409
+        13446
+        13482
+        13521
+        13546
+        13547
+        15101
+    }
+    manpower = 69069
+    state_category = large_town
+    history = {
+        owner = C25
+        victory_points = {
+            2056
+            10
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 1
+        }
+        add_core_of = C25
+    }
+    resources = {
+
+    }
+}

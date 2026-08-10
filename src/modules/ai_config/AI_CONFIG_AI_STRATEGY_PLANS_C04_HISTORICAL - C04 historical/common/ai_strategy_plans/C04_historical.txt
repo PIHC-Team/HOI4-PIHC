@@ -1,0 +1,24 @@
+C04_historical = {
+    name = historical
+    desc = "Stratusburg Historical AI"
+    allowed = {
+        tag = C04
+    }
+    enable = {
+        country_exists = C04
+    }
+    ai_national_focuses = {
+        FOCUS_C04_TO_DEV_OR_NOT
+        FOCUS_C04_START_OF_CHANGE
+        FOCUS_C04_INVESTIGATE_WASHOUTS
+        FOCUS_C04_CRYSTAL_MINE
+        FOCUS_C04_CRYSTAL_APPROVE
+        FOCUS_C04_MUFFIN_INVESTIGATE
+        FOCUS_C04_RETURN_OF_ACADEMY
+        FOCUS_C04_REBUILD_WONDERBOLTS
+        FOCUS_C04_REBUILD_HARMONY
+        FOCUS_C04_DINER_EXPANSION
+        FOCUS_C04_DINER_EXPANSION_CONSTRUCTION
+        FOCUS_C04_NEW_EMPLOYEE
+    }
+}

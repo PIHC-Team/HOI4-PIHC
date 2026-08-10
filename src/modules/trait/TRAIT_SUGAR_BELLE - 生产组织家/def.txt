@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_SUGAR_BELLE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		consumer_goods_factor = -0.05
+	}
+}

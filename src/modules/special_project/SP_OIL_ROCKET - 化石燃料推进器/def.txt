@@ -1,0 +1,46 @@
+SP_OIL_ROCKET = {
+	icon = GFX_SP_OIL_ROCKET
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	specialization = specialization_oilpunk
+	project_tags = sp_tag_pihc_oilpunk
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_ENER_II
+			has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			rubber = 9
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_SP_HIDDEN_ROCKET_OIL = 1
+				popup = no
+			}
+		}
+		enable_equipments = {
+			EQUIPMENT_AIR_MISSILE_OIL
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_OIL
+		SP_REWARD_GENERIC_OIL_EXP
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

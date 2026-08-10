@@ -1,0 +1,26 @@
+focus = {
+	id = FOCUS_C07_LAS_PEGASUS_GROUP
+	icon = GFX_FOCUS_C07_LAS_PEGASUS_GROUP_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LICENSED
+	}
+	cost = 1
+	completion_reward = {
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 24
+	y = 2
+}

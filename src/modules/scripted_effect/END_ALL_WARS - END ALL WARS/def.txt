@@ -1,0 +1,11 @@
+END_ALL_WARS = {
+	custom_effect_tooltip = PIHC_END_ALL_WARS_TOOLTIP
+	hidden_effect = {
+		every_enemy_country = {
+			limit = {
+				has_war_with = PREV
+			}
+			white_peace = PREV
+		}
+	}
+}

@@ -1,0 +1,46 @@
+DECISION_CATEGORY_C12_QUARRAY_EEL = {
+    DECISION_C12_EEL_UPGRADE_RADAR = {
+        fixed_random_seed = no
+        priority = 100
+        days_remove = 90
+        fire_only_once = yes
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C12_EEL_EXECUTION_PLAN
+        }
+        available = {
+            num_of_civilian_factories_available_for_projects > 4
+            hidden_trigger = {
+                has_political_power > 49
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 4
+            hidden_trigger = {
+                has_political_power > 49
+            }
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_5_PP_50
+        modifier = {
+            civilian_factory_use = 5
+        }
+        ai_hint_pp_cost = 50
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -50
+            }
+        }
+        remove_effect = {
+            add_tech_bonus = {
+                name = pihc_info_tech
+                bonus = 75
+                uses = 1
+            }
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C12_EEL_UPGRADE_RADAR
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+    }
+}

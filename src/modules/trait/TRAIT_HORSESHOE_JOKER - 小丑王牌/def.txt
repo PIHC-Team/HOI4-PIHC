@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_HORSESHOE_JOKER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		breakthrough_factor = 0.06
+		max_dig_in_factor = 0.1
+		experience_gain_army = 0.2
+	}
+}

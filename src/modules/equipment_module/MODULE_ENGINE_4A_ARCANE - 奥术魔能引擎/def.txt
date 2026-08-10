@@ -1,0 +1,31 @@
+MODULE_ENGINE_4A_ARCANE = {
+	category = pihc_tank_engine_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 3.0
+		weight = 0.3
+		maximum_speed = 16.0
+		reliability = -0.15
+	}
+	multiply_stats = {
+		fuel_consumption = -1.0
+	}
+	xp_cost = 20
+	allowed_module_categories = {
+		armor_type_slot = {
+			pihc_tank_armor_type_2_magic
+		}
+		turret_type_slot = {
+			pihc_tank_turret_type_2_magic
+		}
+		projectile_type_slot = {
+			pihc_tank_projectile_type_2_magic
+		}
+		suspension_type_slot = {
+			pihc_tank_suspension_type_2
+		}
+		crew_type_slot = {
+			pihc_tank_crew_type_2_auto
+		}
+	}
+}

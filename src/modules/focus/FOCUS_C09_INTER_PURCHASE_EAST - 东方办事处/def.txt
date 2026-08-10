@@ -1,0 +1,63 @@
+focus = {
+	id = FOCUS_C09_INTER_PURCHASE_EAST
+	icon = GFX_FOCUS_C09_INTER_PURCHASE_EAST_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_INTER_PURCHASE_SADDLE
+	}
+	prerequisite = {
+		focus = FOCUS_C09_INTER_PURCHASE_TIREK
+	}
+	cost = 6
+	completion_reward = {
+		DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+		C25 = {
+			ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+		}
+		198 = {
+			remove_core_of = C25
+			transfer_state_to = C09
+			set_state_name = STATE_198_SIRES_HOLLOW
+			set_victory_points = {
+				province = 4166
+				value = 10
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = supply_node
+				instant_build = yes
+				level = 1
+				province = 4166
+			}
+			add_building_construction = {
+				type = naval_base
+				instant_build = yes
+				level = 1
+				province = 4166
+			}
+		}
+	}
+	available = {
+		198 = {
+			is_owned_and_controlled_by = C25
+		}
+		TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 12
+}

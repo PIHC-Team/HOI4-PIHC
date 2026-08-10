@@ -1,0 +1,41 @@
+DECISION_CATEGORY_RESEARCH_SPEEDUP = {
+    DECISION_STEAL_ELEC_ENGINE = {
+        fixed_random_seed = no
+        priority = 73
+        visible = {
+            NOT = {
+                OR = {
+                    has_tech = TECHNOLOGY_TECH_ENER_IIE
+                    is_blank_country = yes
+                }
+            }
+        }
+        available = {
+            any_neighbor_country = {
+                NOT = {
+                    OR = {
+                        is_forbidden_to_interact = yes
+                        has_government = transcendence
+                    }
+                }
+                has_tech = TECHNOLOGY_TECH_ENER_IIE
+            }
+        }
+        cost = 150
+        days_remove = 240
+        remove_effect = {
+            set_technology = {
+                TECHNOLOGY_TECH_ENER_IIE = 1
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 100
+            modifier = {
+                add = -100
+                is_blank_country = yes
+            }
+        }
+        icon = STEAL_ELEC_ENGINE
+    }
+}

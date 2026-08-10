@@ -1,0 +1,25 @@
+exfiltration_submarine_pickup = {
+	name = exfiltration_submarine_pickup
+	desc = exfiltration_submarine_pickup_desc
+	outcome = exfiltration_submarine_pickup_outcome
+	risk_extra = exfiltration_submarine_pickup_outcome_fail
+	picture = GFX_phase_exfiltration_submarine_pickup
+	icon = GFX_phase_exfiltration_submarine_pickup_small
+	equipment = {
+	}
+	requirements = {
+		any_owned_state = {
+			is_coastal = yes
+		}
+		has_navy_size = {
+			size > 0
+			type = submarine
+		}
+		FROM = {
+			any_owned_state = {
+				is_controlled_by = PREV
+				is_coastal = yes
+			}
+		}
+	}
+}

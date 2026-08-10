@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C02_PONYVILLE_OVERLORD
+	icon = GFX_FOCUS_C02_PONYVILLE_OVERLORD_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_OPENMIND
+	}
+	cost = 4
+	completion_reward = {
+		add_power_balance_value = {
+			id = BOP_C02_INDEPENDENCE
+			value = 0.1
+			tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+		}
+		add_opinion_modifier = {
+			target = C23
+			modifier = FOCUS_C02_C23_COLLABORATION_OPINION_MODIFIER
+		}
+		remove_opinion_modifier = {
+			target = C07
+			modifier = FOCUS_C02_C07_COLLABORATION_OPINION_MODIFIER
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = pihc_electronics
+			name = FOCUS_C02_PONYVILLE_OVERLORD_BONUS
+		}
+	}
+	available = {
+		C07 = {
+			has_tech = TECHNOLOGY_TECH_ENER_II
+		}
+		C23 = {
+			has_tech = TECHNOLOGY_TECH_ENER_IIE
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 7
+}

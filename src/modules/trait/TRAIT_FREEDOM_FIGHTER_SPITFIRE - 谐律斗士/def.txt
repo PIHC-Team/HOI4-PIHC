@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_FREEDOM_FIGHTER_SPITFIRE = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		autonomy_gain = 0.4
+		harmonicism_drift = 0.02
+	}
+}

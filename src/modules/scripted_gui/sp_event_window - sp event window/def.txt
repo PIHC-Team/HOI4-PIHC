@@ -1,0 +1,168 @@
+scripted_gui = {
+	sp_event_window = {
+		window_name = sp_event_window
+		context_type = player_context
+		visible = {
+			has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENTS_VISIBLE
+		}
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENTS_VISIBLE
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_1_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_1_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_2_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_2_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_5_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_5_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_6_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_6_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_9_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_9_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_10_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_10_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_11_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_11_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_12_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_12_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_13_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_13_ON
+				}
+				if = {
+					limit = {
+						has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_14_ON
+					}
+					clr_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_14_ON
+				}
+			}
+		}
+		triggers = {
+			sp_event_picture_1_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_1_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_2_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_2_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_3_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_4_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_5_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_5_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_6_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_6_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_7_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_8_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_9_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_9_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_10_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_10_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_11_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_11_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_12_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_12_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_13_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_13_ON
+			}
+		}
+		triggers = {
+			sp_event_picture_14_visible = {
+				has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_14_ON
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		IDEA_ALL_WINTER_PENALTY = {
+			picture = ALL_WINTER_PENALTY
+			removal_cost = -1
+			modifier = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

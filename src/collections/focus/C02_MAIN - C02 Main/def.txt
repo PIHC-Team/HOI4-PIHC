@@ -1,0 +1,15 @@
+focus_tree = {
+	default = no
+	continuous_focus_position = {
+		x = 0
+		y = 2400
+	}
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = C02
+		}
+	}
+	id = C02_MAIN
+}

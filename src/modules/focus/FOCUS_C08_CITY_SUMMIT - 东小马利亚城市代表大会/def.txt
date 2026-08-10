@@ -1,0 +1,47 @@
+focus = {
+	id = FOCUS_C08_CITY_SUMMIT
+	icon = GFX_FOCUS_C08_CITY_SUMMIT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_FILL_IN_THE_GAPS
+	}
+	prerequisite = {
+		focus = FOCUS_C08_HEALS_SCARS
+	}
+	cost = 3
+	completion_reward = {
+		add_state_core = 4
+		add_state_core = 415
+		add_state_core = 450
+		add_state_core = 401
+		add_state_core = 499
+		add_state_core = 506
+		add_state_core = 221
+		news_event = {
+			id = C08_MAIN.7
+			days = 1
+		}
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_TEST_END
+			country_event = {
+				id = C08_MEMORY.1
+				days = 7
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 3
+}

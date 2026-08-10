@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_BULK_BICEPS = {
+        name = CHARACTER_BULK_BICEPS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_BULK_BICEPS.dds"
+                small = "gfx/leaders/CHARACTER_BULK_BICEPS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BULK_BICEPS_army.dds"
+                small = "gfx/leaders/CHARACTER_BULK_BICEPS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BULK_BICEPS_navy.dds"
+                small = "gfx/leaders/CHARACTER_BULK_BICEPS_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+        }
+    }
+}

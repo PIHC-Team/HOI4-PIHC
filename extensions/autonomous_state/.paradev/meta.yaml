@@ -1,0 +1,140 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/autonomous_state
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-autonomous-state
+items:
+-   kind: entity
+    identifier: pihc3-autonomous-state-module
+    name: PIHC3 Autonomous State Module
+    desc: Project-owned autonomous_state source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3AutonomousStateModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-autonomous-state
+    name: PIHC3 Autonomous State
+    desc: PIHC3 autonomous_state module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-autonomous-state-module
+        definition:
+            identifier: pihc3-autonomous-state
+            name: PIHC3 Autonomous State
+            version: 0.2.3
+            desc: PIHC3 autonomous_state module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-autonomous-state-module
+            meta:
+                project: PIHC3
+                family: autonomous_state
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-autonomous-state
+    name: PIHC3 Autonomous State Compiler
+    desc: Registry-backed source slots and compiler hooks for autonomous_state.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: autonomous-states
+            title: Autonomous States
+            group: country
+            title_key: modules.autonomousStates.title
+        dependencies:
+        - extension:pihc3-autonomous-state
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-2a108d72a0be8374
+    name: PIHC3 Basic Autonomous State
+    desc: PIHC3 authoring template pihc3:autonomous_state/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:autonomous_state/basic
+            declaration:
+                title: PIHC3 Basic Autonomous State
+                family: autonomous_state
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    default:
+                        default: 'no'
+                    is_puppet:
+                        default: 'yes'
+                    min_freedom_level:
+                        default: '0.4'
+                    manpower_influence:
+                        default: '0.9'
+                    rule_desc:
+                        default: RULE_DESC_IS_A_SUBJECT
+                    can_not_declare_war:
+                        default: 'yes'
+                    can_decline_call_to_war:
+                        default: 'no'
+                    can_be_spymaster:
+                        default: 'no'
+                    autonomy_manpower_share:
+                        default: '0.9'
+                    ai_subject_wants_higher_factor:
+                        default: '1.0'
+                    ai_overlord_wants_lower_factor:
+                        default: '1.0'
+                    ai_overlord_wants_garrison:
+                        default: 'no'
+                    allowed:
+                        default: 'yes'
+                    language:
+                        default: en
+                files:
+                    def.txt: "autonomy_state = {{\n\tid = {object_id}\n\n\tdefault\
+                        \ = {default}\n\tis_puppet = {is_puppet}\n\n\tmin_freedom_level\
+                        \ = {min_freedom_level}\n\n\tmanpower_influence = {manpower_influence}\n\
+                        \n\trule = {{\n\t\tdesc = \"{rule_desc}\"\n\n\t\tcan_not_declare_war\
+                        \ = {can_not_declare_war}\n\t\tcan_decline_call_to_war = {can_decline_call_to_war}\n\
+                        \t\tcan_be_spymaster = {can_be_spymaster}\n\t}}\n\n\tmodifier\
+                        \ = {{\n\t\tautonomy_manpower_share = {autonomy_manpower_share}\n\
+                        \t}}\n\n\tai_subject_wants_higher = {{\n\t\tfactor = {ai_subject_wants_higher_factor}\n\
+                        \t}}\n\n\tai_overlord_wants_lower = {{\n\t\tfactor = {ai_overlord_wants_lower_factor}\n\
+                        \t}}\n\n\tai_overlord_wants_garrison = {{\n\t\talways = {ai_overlord_wants_garrison}\n\
+                        \t}}\n\n\tallowed = {{\n\t\talways = {allowed}\n\t}}\n\n\t\
+                        can_take_level = {{\n\t}}\n\n\tcan_lose_level = {{\n\t}}\n\
+                        }}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

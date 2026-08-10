@@ -1,0 +1,12 @@
+MODULE_CREW_5B_CRYSTAL = {
+	category = pihc_tank_crew_type_2_auto
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 2.25
+		reliability = 0.15
+	}
+	build_cost_resources = {
+		crystals = 2
+	}
+	xp_cost = 5
+}

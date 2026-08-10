@@ -1,0 +1,25 @@
+DECISION_CATEGORY_GOLD_FINGER = {
+    DECISION_WAR_ALL = {
+        fixed_random_seed = no
+        priority = 2
+        cost = 1999
+        days_remove = 30
+        available = {
+            is_ironman = no
+        }
+        remove_effect = {
+            every_other_country = {
+                limit = {
+                    NOT = {
+                        tag = C00
+                    }
+                }
+                declare_war_on = {
+                    type = crusade_wargoal
+                    target = ROOT
+                }
+            }
+        }
+        icon = WAR_ALL
+    }
+}

@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C23_STORM_CREATURES_PROTEST_3 = {
+			picture = C23_STORM_CREATURES_PROTEST_3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

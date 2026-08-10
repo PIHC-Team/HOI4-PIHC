@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_COAL = {
+	ENABLE_AUTO_TRADE_COAL_BUY = yes
+	ENABLE_AUTO_TRADE_COAL_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_COST
+		value = 0
+	}
+}

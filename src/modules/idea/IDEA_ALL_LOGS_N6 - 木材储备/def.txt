@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_ALL_LOGS_N6 = {
+			picture = ALL_LOGS_N6
+			removal_cost = -1
+			modifier = {
+				country_resource_logs = 60
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

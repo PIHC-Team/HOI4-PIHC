@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_FANTASY_LITERATURE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		custom_modifier_tooltip = TRAIT_FANTASY_LITERATURE_MODIFER_TOOLTIP
+		stability_factor = 0.05
+	}
+}

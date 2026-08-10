@@ -1,0 +1,483 @@
+guiTypes = {
+    containerWindowType = {
+        name = equipment_designer_EQUIPMENT_SHIP_SEACOURTYARD
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 508
+            height = 248
+        }
+        iconType = {
+            name = equipment_image_overlay
+            spriteType = GFX_EQUIPMENT_SHIP_SEACOURTYARD_designer
+            position = {
+                x = 0
+                y = 0
+            }
+        }
+        containerWindowType = {
+            name = module_slots
+            position = {
+                x = 0
+                y = 0
+            }
+            size = {
+                width = 100%
+                height = 100%
+            }
+            containerWindowType = {
+                name = fixed_ship_battery_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_battery_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_battery_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_anti_air_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_anti_air_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_anti_air_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_fire_control_system_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_fire_control_system_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_fire_control_system_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_radar_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_radar_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_radar_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_engine_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_engine_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_engine_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_secondaries_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_secondaries_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_secondaries_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = fixed_ship_armor_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = fixed_ship_armor_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = fixed_ship_armor_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = front_1_custom_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = front_1_custom_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = front_1_custom_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = mid_1_custom_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = mid_1_custom_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = mid_1_custom_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = mid_2_custom_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = mid_2_custom_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = mid_2_custom_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+            containerWindowType = {
+                name = rear_1_custom_slot
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 100%
+                    height = 100%
+                }
+                containerWindowType = {
+                    name = rear_1_custom_slot
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                }
+                containerWindowType = {
+                    name = rear_1_custom_slot@highlight
+                    position = {
+                        x = 0
+                        y = 0
+                    }
+                    size = {
+                        width = 100%
+                        height = 100%
+                    }
+                    iconType = {
+                        name = blueprint
+                        spriteType = GFX_TM_light_tank_chassis_turret_type_slot
+                        position = {
+                            x = 0
+                            y = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

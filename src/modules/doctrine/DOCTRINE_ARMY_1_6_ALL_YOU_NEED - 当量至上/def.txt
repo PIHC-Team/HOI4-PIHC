@@ -1,0 +1,41 @@
+pihc_land_flame_of_rage_armor_core = {
+	track = armor
+	name = DOCTRINE_ARMY_1_6_ALL_YOU_NEED
+	description = DOCTRINE_ARMY_1_6_ALL_YOU_NEED_DESC
+	icon = GFX_doctrine_pihc_land_flame_of_rage_armor_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_all_artillery = {
+		ap_attack = 0.25
+	}
+	category_infantry_magical = {
+		ap_attack = 0.25
+	}
+	enable_tactic = tactic_pihc_scorched_earth
+	rewards = {
+		sky_web = {
+			category_all_artillery = {
+				air_attack = 3.0
+			}
+			category_infantry_magical = {
+				air_attack = 3.0
+			}
+			static_anti_air_damage_factor = 0.08
+			static_anti_air_hit_chance_factor = 0.25
+			enemy_army_bonus_air_superiority_factor = -0.15
+			cas_damage_reduction = 0.15
+		}
+	}
+}

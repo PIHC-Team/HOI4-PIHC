@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C08 = {
+				country_event = {
+					id = C08_MAIN.36
+					days = 260
+				}
+			}
+		}
+	}
+}

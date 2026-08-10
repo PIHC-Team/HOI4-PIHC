@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_RETURN_OF_THE_SHADOW
+	icon = GFX_FOCUS_C15_SOMBRA_RETURN_OF_THE_SHADOW_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 1
+	completion_reward = {
+		country_event = {
+			id = C15_SOMBRA.1
+			days = 7
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 0
+}

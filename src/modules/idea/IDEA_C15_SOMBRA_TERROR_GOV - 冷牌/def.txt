@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C15_SOMBRA_TERROR_GOV = {
+			picture = C15_SOMBRA_TERROR_GOV
+			removal_cost = -1
+			modifier = {
+				stability_weekly_factor = -0.01
+				political_power_cost = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

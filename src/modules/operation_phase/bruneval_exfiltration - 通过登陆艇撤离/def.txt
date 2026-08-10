@@ -1,0 +1,15 @@
+bruneval_exfiltration = {
+	name = bruneval_exfiltration
+	desc = bruneval_exfiltration_desc
+	outcome = bruneval_exfiltration_outcome
+	risk_extra = bruneval_exfiltration_outcome_fail
+	icon = GFX_phase_bruneval_exfiltration_small
+	picture = GFX_phase_bruneval_exfiltration
+	requirements = {
+		has_equipment = {
+			convoy > 0
+		}
+	}
+	equipment = {
+	}
+}

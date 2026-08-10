@@ -1,0 +1,262 @@
+capital = 369
+set_popularities = {
+    despotic = 75
+    democratic = 10
+    harmonicism = 10
+    equatism = 3
+    fascism = 2
+}
+set_politics = {
+    ruling_party = despotic
+    elections_allowed = no
+}
+create_faction = FACTION_EQUESTRIA_EMPIRE_ORDER
+add_to_faction = C01
+add_to_faction = C02
+add_to_faction = C03
+add_to_faction = C04
+add_to_faction = C10
+add_to_faction = C33
+add_to_faction = C59
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_UNICORN = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = 1
+    }
+}
+oob = C01
+recruit_character = CHARACTER_NIGHTINGALE
+recruit_character = CHARACTER_LILY_LACE
+recruit_character = CHARACTER_SAPPHIRE_SHORES
+recruit_character = CHARACTER_DIAMOND_TIARA
+recruit_character = CHARACTER_DESCENT
+recruit_character = CHARACTER_JET_SET
+recruit_character = CHARACTER_FANCY_PANTS
+recruit_character = CHARACTER_THE_HEADLESS_HORSE
+recruit_character = CHARACTER_MORNING_GLORY
+recruit_character = CHARACTER_UPPER_CRUST
+recruit_character = CHARACTER_ROYAL_GUARD
+recruit_character = CHARACTER_FLEUR_DE_LIS
+recruit_character = CHARACTER_FIRE_FLARE
+recruit_character = CHARACTER_COZY_GLOW
+recruit_character = CHARACTER_SKY_FLOWER
+recruit_character = CHARACTER_MIDNIGHT_FUN
+recruit_character = CHARACTER_MOON_DANCER
+recruit_character = CHARACTER_FEATHER_FLATTERFLY
+recruit_character = CHARACTER_CINNAMON_CHAI
+recruit_character = CHARACTER_ROXIE_RAVE
+recruit_character = CHARACTER_REFLECTIVE_ROCK
+recruit_character = CHARACTER_PRETTY_VISION
+recruit_character = CHARACTER_POWDER_ROUGE
+recruit_character = CHARACTER_PEACH_MELBA
+recruit_character = CHARACTER_OCEAN_SPRAY
+recruit_character = CHARACTER_OCEAN_DREAM
+activate_advisor = CHARACTER_FANCY_PANTS
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_C01_FEUDAL_SYSTEM
+add_ideas = IDEA_C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED
+add_ideas = IDEA_ALL_THE_DARK_AGE
+add_ideas = IDEA_ALL_LAW_ORTHODOXY
+add_ideas = IDEA_DINFANTRY_EEMD
+set_power_balance = {
+    id = BOP_C01_COZY_GLOW_EXHAUSTION
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C01_COZY_GLOW_EXHAUSTION
+    modifier = BOP_C01_COZY_GLOW_EXHAUSTION_DAILY_COST
+}
+set_rule = {
+    can_join_factions = no
+}
+puppet = C33
+set_autonomy = {
+    target = C33
+    autonomous_state = autonomy_pihc_district
+}
+puppet = C59
+set_autonomy = {
+    target = C59
+    autonomous_state = autonomy_pihc_licensed
+}
+489 = {
+    add_core_of = C53
+}
+set_research_slots = 3
+add_political_power = 400
+set_stability = 0.45
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = 10000
+542 = {
+    remove_core_of = C01
+}
+459 = {
+    remove_core_of = C01
+}
+487 = {
+    remove_core_of = C01
+}
+set_major = yes
+give_guarantee = C06
+give_guarantee = C07
+give_guarantee = C09
+give_guarantee = C15
+give_guarantee = C16
+send_embargo = C05
+send_embargo = C08
+send_embargo = C23
+complete_national_focus = FOCUS_C01_CANTERLOT_PACT
+complete_national_focus = FOCUS_C01_COZY_GLOW_CORONATION
+complete_national_focus = FOCUS_C01_IDEOLOGY_POLICY
+complete_national_focus = FOCUS_C01_ECONOMIC_POLICY
+complete_national_focus = FOCUS_C01_MILITARY_POLICY
+complete_national_focus = FOCUS_C01_SCIENCE_POLICY
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 1500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 1500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_WITCHCRAFT
+    amount = 300
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SHIELD
+    amount = 300
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_VEHICLE
+    amount = 80
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 200
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_SCOUT
+    amount = 20
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_ARMED
+    amount = 120
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 120
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C01
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_FIRELANCE
+        creator = C01
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SHIELD_CROSSBOW
+        creator = C01
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_VEHICLE_STEEL
+        creator = C01
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+        creator = C01
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_TANK_LIGHT_RAM
+        creator = C01
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN

@@ -1,0 +1,44 @@
+state = {
+    id = 274
+    name = STATE_274
+    provinces = {
+        26
+        1146
+        1691
+        2728
+        3180
+        3372
+        4158
+        4413
+        5135
+        6747
+        7005
+        7778
+        8223
+        8906
+        10920
+        10945
+        10994
+        11012
+        11080
+        11118
+    }
+    manpower = 59983
+    state_category = large_town
+    history = {
+        owner = C01
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+        }
+        add_core_of = C01
+        victory_points = {
+            11118
+            10
+        }
+    }
+    resources = {
+        crystals = 1
+        logs = 4
+    }
+}

@@ -1,0 +1,43 @@
+DECISION_CATEGORY_C08_COMMAND = {
+    DECISION_C08_T_MOBILE_DEFENCE = {
+        fixed_random_seed = no
+        priority = 89999
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_ARMY_STRATEGY
+        }
+        available = {
+            command_power > 24
+            has_war = yes
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+                }
+                tooltip = DECISION_C08_T_CONCENTRATED_BREAKTHROUGHS_TOOLTIP
+            }
+        }
+        complete_effect = {
+            add_command_power = -25
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+            }
+        }
+        modifier = {
+            army_attack_factor = -0.15
+            army_defence_factor = 0.25
+            breakthrough_factor = -0.25
+            army_speed_factor = 0.2
+            org_loss_when_moving = -0.2
+            army_org_factor = 0.1
+            supply_consumption_factor = 0.35
+        }
+        remove_effect = {
+            hidden_effect = {
+                clr_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+            }
+        }
+        days_remove = 30
+        ai_will_do = {
+            base = 0
+        }
+    }
+}

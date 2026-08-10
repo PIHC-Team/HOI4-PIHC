@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/audio
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-audio
+items:
+-   kind: entity
+    identifier: pihc3-audio-module
+    name: PIHC3 Audio Module
+    desc: Project-owned audio source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3AudioModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-audio
+    name: PIHC3 Audio
+    desc: PIHC3 audio module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-audio-module
+        definition:
+            identifier: pihc3-audio
+            name: PIHC3 Audio
+            version: 0.2.3
+            desc: PIHC3 audio module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-audio-module
+            meta:
+                project: PIHC3
+                family: audio
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-audio
+    name: PIHC3 Audio Compiler
+    desc: Registry-backed source slots and compiler hooks for audio.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: audio
+            title: Audio
+            group: shared
+        dependencies:
+        - extension:pihc3-audio

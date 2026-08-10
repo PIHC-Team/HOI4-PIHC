@@ -1,0 +1,236 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/doctrine
+version: 0.2.6
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-doctrine
+items:
+-   kind: entity
+    identifier: pihc3-doctrine
+    name: PIHC3 Doctrine Module
+    desc: Project-owned doctrine source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Doctrine
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+-   kind: extension
+    identifier: pihc3-doctrine
+    name: PIHC3 Doctrine
+    desc: PIHC3 doctrine module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        dependencies:
+        - entity:pihc3-doctrine
+        definition:
+            identifier: pihc3-doctrine
+            name: PIHC3 Doctrine
+            version: 0.2.6
+            desc: PIHC3 doctrine module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-doctrine
+            meta:
+                project: PIHC3
+                family: doctrine
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-doctrine
+    name: PIHC3 Doctrine Compiler
+    desc: Registry-backed source slots and compiler hooks for doctrine.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        presentation:
+            id: doctrines
+            title: Doctrines
+            group: military
+            title_key: modules.doctrines.title
+        dependencies:
+        - extension:pihc3-doctrine
+-   kind: paradev_diagram_provider
+    identifier: pihc3-doctrine
+    name: PIHC3 Doctrine Tree Provider
+    desc: Projects and edits PIHC3 doctrines through the registered tree interface.
+    source: path
+    target:
+        module: null
+        qualname: diagram_provider
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        dependencies:
+        - paradev_build_family:pihc3-doctrine
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-9769fce3057ff22f
+    name: PIHC3 Basic Grand Doctrine
+    desc: PIHC3 authoring template pihc3:doctrine/grand-basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        definition:
+            template_id: pihc3:doctrine/grand-basic
+            declaration:
+                title: PIHC3 Basic Grand Doctrine
+                family: doctrine
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    folder:
+                        default: land
+                    icon:
+                        default: GFX_doctrine_mobile_warfare_medium
+                    xp_cost:
+                        default: '100'
+                    xp_type:
+                        default: army
+                    ai_base:
+                        default: '1'
+                    track:
+                        default: infantry
+                    modifier:
+                        default: planning_speed
+                    value:
+                        default: '0.05'
+                    language:
+                        default: en
+                    diagram_x:
+                        default: '0'
+                        type: number
+                        label: Diagram X
+                        description: Hidden tree-layout X inherited from the selected
+                            doctrine.
+                        advanced: true
+                    diagram_y:
+                        default: '0'
+                        type: number
+                        label: Diagram Y
+                        description: Hidden tree-layout Y inherited from the selected
+                            doctrine.
+                        advanced: true
+                    diagram_paths:
+                        default: '[]'
+                        type: text
+                        label: Doctrine path
+                        description: Optional reviewed path relationship inherited
+                            from the selected doctrine.
+                        advanced: true
+                files:
+                    def.txt: "{object_id} = {{\n\tfolder = {folder}\n\n\tname = {object_id}\n\
+                        \tdescription = {object_id}_desc\n\ticon = {icon}\n\tavailable\
+                        \ = {{\n\t\talways = yes\n\t}}\n\n\txp_cost = {xp_cost}\n\t\
+                        xp_type = {xp_type}\n\n\tai_will_do = {{\n\t\tbase = {ai_base}\n\
+                        \t}}\n\n\ttracks = {{\n\t\t{track}\n\t}}\n\n\t{modifier} =\
+                        \ {value}\n\n\tmilestones = {{\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                system_files:
+                    .paradev/diagram.yaml: "schema: paradev.hoi4.doctrine-diagram-state.v1\n\
+                        position:\n    x: {diagram_x}\n    y: {diagram_y}\npaths:\
+                        \ {diagram_paths}\nmutually_exclusive: []\n"
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-doctrine-subdoctrine-basic
+    name: PIHC3 Basic Subdoctrine
+    desc: PIHC3 authoring template pihc3:doctrine/subdoctrine-basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        definition:
+            template_id: pihc3:doctrine/subdoctrine-basic
+            declaration:
+                title: PIHC3 Basic Subdoctrine
+                family: doctrine
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    track:
+                        default: infantry
+                    xp_type:
+                        default: army
+                    icon:
+                        default: GFX_doctrine_mobile_warfare_medium
+                    xp_cost:
+                        default: '100'
+                    ai_factor:
+                        default: '1'
+                    modifier:
+                        default: planning_speed
+                    modifier_value:
+                        default: '0.05'
+                    language:
+                        default: en
+                    diagram_x:
+                        default: '0'
+                        type: number
+                        label: Diagram X
+                        description: Hidden tree-layout X owned by this doctrine.
+                        advanced: true
+                    diagram_y:
+                        default: '0'
+                        type: number
+                        label: Diagram Y
+                        description: Hidden tree-layout Y owned by this doctrine.
+                        advanced: true
+                    diagram_paths:
+                        default: '[]'
+                        type: text
+                        label: Next doctrines
+                        description: Optional reviewed successors in the doctrine tree.
+                        advanced: true
+                files:
+                    def.txt: "{object_id} = {{\n\ttrack = {track}\n\tname = {object_id}\n\
+                        \tdescription = {object_id}_desc\n\ticon = {icon}\n\txp_cost = {xp_cost}\n\
+                        \txp_type = {xp_type}\n\tavailable = {{\n\t\talways = yes\n\t}}\n\tai_will_do\
+                        \ = {{\n\t\tfactor = {ai_factor}\n\t}}\n\t{modifier} = {modifier_value}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                system_files:
+                    .paradev/diagram.yaml: "schema: paradev.hoi4.doctrine-diagram-state.v1\n\
+                        position:\n    x: {diagram_x}\n    y: {diagram_y}\npaths:\
+                        \ {diagram_paths}\nmutually_exclusive: []\n"

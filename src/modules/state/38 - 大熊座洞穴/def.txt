@@ -1,0 +1,38 @@
+state = {
+    id = 38
+    name = STATE_38
+    provinces = {
+        1465
+        2516
+        3354
+        4429
+        5477
+        6854
+        8027
+        8093
+        8891
+        9831
+        13115
+        13231
+        13233
+        13267
+    }
+    manpower = 1899
+    state_category = large_town
+    history = {
+        owner = C41
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C41
+        victory_points = {
+            4429
+            25
+        }
+    }
+    resources = {
+        steel = 8
+        rubber = 2
+        chromium = 1
+    }
+}

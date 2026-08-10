@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_HARSH_WHINNY = {
+        name = CHARACTER_HARSH_WHINNY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_HARSH_WHINNY.dds"
+                small = "gfx/leaders/CHARACTER_HARSH_WHINNY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_HARSH_WHINNY_army.dds"
+                small = "gfx/leaders/CHARACTER_HARSH_WHINNY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_HARSH_WHINNY_navy.dds"
+                small = "gfx/leaders/CHARACTER_HARSH_WHINNY_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_HARSH_WHINNY
+            desc = CHARACTER_HARSH_WHINNY_DESC
+            traits = {
+                TRAIT_DIPLOMATIC_GENIUS
+                TRAIT_HIGH_POLITICAL_ESTEEM
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

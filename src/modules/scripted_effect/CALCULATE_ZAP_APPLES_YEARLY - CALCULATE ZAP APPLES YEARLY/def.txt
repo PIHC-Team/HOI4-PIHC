@@ -1,0 +1,13 @@
+CALCULATE_ZAP_APPLES_YEARLY = {
+	C14 = {
+		set_variable = {
+			var = VAR_ZAP_APPLES_YEARLY
+			value = VAR_ZAP_APPLES_PRODUCE
+		}
+		multiply_variable = {
+			var = VAR_ZAP_APPLES_YEARLY
+			value = VAR_ZAP_APPLES_HARVEST
+		}
+		round_variable = VAR_ZAP_APPLES_YEARLY
+	}
+}

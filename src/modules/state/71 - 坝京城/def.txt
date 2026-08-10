@@ -1,0 +1,32 @@
+state = {
+    id = 71
+    name = STATE_71
+    provinces = {
+        8467
+        2446
+        7290
+        8009
+        11297
+    }
+    manpower = 44135
+    state_category = large_city
+    history = {
+        owner = C22
+        victory_points = {
+            8467
+            25
+        }
+        buildings = {
+            industrial_complex = 3
+            arms_factory = 1
+            infrastructure = 3
+            8467 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C22
+    }
+    resources = {
+        logs = 24
+    }
+}

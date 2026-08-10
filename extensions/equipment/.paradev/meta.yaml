@@ -1,0 +1,142 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/equipment
+version: 0.2.5
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-equipment
+items:
+-   kind: entity
+    identifier: pihc3-equipment
+    aliases:
+    - PIHC3Equipment
+    name: PIHC3 Equipment
+    desc: Project-owned equipment definition, localization, and asset contract.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Equipment
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+-   kind: extension
+    identifier: pihc3-equipments
+    name: PIHC3 Equipment
+    desc: PIHC3 equipment authoring and aggregate compilation.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        dependencies:
+        - entity:pihc3-equipment
+        definition:
+            identifier: pihc3-equipments
+            name: PIHC3 Equipment
+            version: 0.2.5
+            desc: PIHC3 equipment authoring and aggregate compilation.
+            required: false
+            requires: []
+            entities:
+            - pihc3-equipment
+            meta:
+                project: PIHC3
+                family: equipment
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-equipment
+    name: PIHC3 Equipment Compiler
+    desc: Resource slots and aggregate compilation hooks for equipment.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Equipment.build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        presentation:
+            id: equipment
+            title: Equipment
+            group: military
+            title_key: modules.equipment.title
+        dependencies:
+        - extension:pihc3-equipments
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-f4b4c8e193f84494
+    name: PIHC3 Basic Equipment
+    desc: PIHC3 authoring template pihc3:equipment/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        definition:
+            template_id: pihc3:equipment/basic
+            declaration:
+                title: PIHC3 Basic Equipment
+                family: equipment
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        description: Preferred-language equipment name written to the
+                            base equipment localization key.
+                    description:
+                        default: ''
+                        type: text
+                        description: Preferred-language equipment tooltip written to
+                            the `_desc` localization key.
+                    year:
+                        default: '1936'
+                        type: number
+                        label: Model year
+                        description: Model year recorded in the equipment definition.
+                    archetype:
+                        default: infantry_equipment
+                        description: Parent equipment or archetype id whose shared behavior
+                            this definition uses.
+                    is_archetype:
+                        default: 'no'
+                        type: choice
+                        choices:
+                        - 'yes'
+                        - 'no'
+                        description: Whether this definition is an equipment archetype
+                            rather than a concrete model.
+                    picture:
+                        default: '{object_id}'
+                        description: Equipment picture identifier; the template defaults
+                            it to the new object id.
+                    active:
+                        default: 'yes'
+                        type: choice
+                        choices:
+                        - 'yes'
+                        - 'no'
+                        description: Whether the equipment definition is active for the
+                            game to use.
+                    language:
+                        default: en
+                        description: Localization language code for the generated equipment
+                            name and tooltip; PIHC3 commonly uses `zh` or `en`.
+                files:
+                    def.txt: "equipments = {{\n\t{object_id} = {{\n\t\tyear = {year}\n\
+                        \t\tarchetype = {archetype}\n\t\tis_archetype = {is_archetype}\n\
+                        \t\tpicture = {picture}\n\t\tactive = {active}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

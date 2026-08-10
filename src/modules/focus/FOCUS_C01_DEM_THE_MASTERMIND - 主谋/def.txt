@@ -1,0 +1,18 @@
+focus = {
+	id = FOCUS_C01_DEM_THE_MASTERMIND
+	icon = GFX_FOCUS_C01_DEM_THE_MASTERMIND_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_DEM_A_LIGHTER_HOOF
+	}
+	completion_reward = {
+		country_event = {
+			id = C01_MAIN.28
+		}
+	}
+	cost = 1
+	x = 0
+	y = 5
+}

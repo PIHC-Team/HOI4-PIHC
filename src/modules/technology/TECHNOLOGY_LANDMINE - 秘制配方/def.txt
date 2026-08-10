@@ -1,0 +1,32 @@
+technologies = {
+    TECHNOLOGY_LANDMINE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 2
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_special
+        }
+        enable_equipments = {
+            EQUIPMENT_SPECIAL_LANDMINE_PIE
+        }
+        enable_subunits = {
+            infantry_landmine
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = general_infantry_landmine
+            }
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

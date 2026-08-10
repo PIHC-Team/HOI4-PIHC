@@ -1,0 +1,21 @@
+MODULE_ENGINE_3A_IC = {
+	category = pihc_tank_engine_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 2.0
+		weight = 0.3
+		maximum_speed = 12.0
+	}
+	xp_cost = 10
+	allowed_module_categories = {
+		special_type_slot_1 = {
+			pihc_tank_special_type_2_oil
+		}
+		special_type_slot_2 = {
+			pihc_tank_special_type_2_oil
+		}
+		crew_type_slot = {
+			pihc_tank_crew_type_2_auto
+		}
+	}
+}

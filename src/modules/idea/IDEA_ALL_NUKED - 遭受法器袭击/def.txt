@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_NUKED = {
+			picture = ALL_NUKED
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.15
+				stability_factor = -0.07
+				local_resources_factor = -0.07
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

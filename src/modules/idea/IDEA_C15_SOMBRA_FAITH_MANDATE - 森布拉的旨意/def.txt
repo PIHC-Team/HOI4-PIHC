@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C15_SOMBRA_FAITH_MANDATE = {
+			picture = C15_SOMBRA_FAITH_MANDATE
+			removal_cost = -1
+			modifier = {
+				stability_weekly_factor = 0.01
+				weekly_manpower = 80
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

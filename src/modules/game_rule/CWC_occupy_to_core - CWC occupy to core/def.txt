@@ -1,0 +1,17 @@
+CWC_occupy_to_core = {
+	name = CWC_OCCUPY
+	group = CWC_FORMULA_PP_COST_GROUP
+	icon = GFX_core_button_small
+	default = {
+		name = CWC_OCCUPY_PEACE
+		text = CWC_OCCUPY_PEACE_NAME
+		desc = CWC_OCCUPY_PEACE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_OCCUPY_WAR
+		text = CWC_OCCUPY_WAR_NAME
+		desc = CWC_OCCUPY_WAR_DESC
+		allow_achievements = yes
+	}
+}

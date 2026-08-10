@@ -1,0 +1,12 @@
+PV_RESTORE = {
+	every_state = {
+		if = {
+			limit = {
+				check_variable = {
+					PIHC_STATE_VAR_PV_0 = PREV
+				}
+			}
+			transfer_state_to = PREV
+		}
+	}
+}

@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_CRYSTAL_WAR
+	icon = GFX_FOCUS_C15_SOMBRA_CRYSTAL_WAR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_CRYSTAL_SILENCE
+	}
+	cost = 4
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = service_by_requirement
+			add_idea = all_adults_serve
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 5
+}

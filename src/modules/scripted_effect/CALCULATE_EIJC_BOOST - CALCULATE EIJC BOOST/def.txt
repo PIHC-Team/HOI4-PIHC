@@ -1,0 +1,104 @@
+CALCULATE_EIJC_BOOST = {
+	set_variable = {
+		var = global.VAR_EIJC_NUM_MEMBERS
+		value = 0
+	}
+	every_possible_country = {
+		limit = {
+			has_idea = IDEA_EIJC_MEMBER
+		}
+		add_to_variable = {
+			var = global.VAR_EIJC_NUM_MEMBERS
+			value = 1
+		}
+	}
+	set_variable = {
+		var = global.VAR_EIJC_SLOTS_BOOST
+		value = global.VAR_EIJC_NUM_MEMBERS
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_SLOTS_BOOST
+		value = 0.05
+	}
+	add_to_variable = {
+		var = global.VAR_EIJC_SLOTS_BOOST
+		value = 0.05
+	}
+	clamp_variable = {
+		var = global.VAR_EIJC_SLOTS_BOOST
+		min = 0.0
+		max = 1.0
+	}
+	set_variable = {
+		var = global.VAR_EIJC_INDUSTRY_BOOST
+		value = global.VAR_EIJC_NUM_MEMBERS
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_INDUSTRY_BOOST
+		value = 0.05
+	}
+	add_to_variable = {
+		var = global.VAR_EIJC_INDUSTRY_BOOST
+		value = 0.05
+	}
+	clamp_variable = {
+		var = global.VAR_EIJC_INDUSTRY_BOOST
+		min = 0.0
+		max = 0.75
+	}
+	set_variable = {
+		var = global.VAR_EIJC_GOODS_BOOST
+		value = global.VAR_EIJC_NUM_MEMBERS
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_GOODS_BOOST
+		value = 0.03
+	}
+	add_to_variable = {
+		var = global.VAR_EIJC_GOODS_BOOST
+		value = 0.01
+	}
+	clamp_variable = {
+		var = global.VAR_EIJC_GOODS_BOOST
+		min = 0.0
+		max = 0.25
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_GOODS_BOOST
+		value = -1
+	}
+	set_variable = {
+		var = global.VAR_EIJC_BUILDINGS_BOOST
+		value = global.VAR_EIJC_NUM_MEMBERS
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_BUILDINGS_BOOST
+		value = 0.05
+	}
+	add_to_variable = {
+		var = global.VAR_EIJC_BUILDINGS_BOOST
+		value = 0.05
+	}
+	clamp_variable = {
+		var = global.VAR_EIJC_BUILDINGS_BOOST
+		min = 0.0
+		max = 0.75
+	}
+	set_variable = {
+		var = global.VAR_EIJC_RESOURCES_BOOST
+		value = global.VAR_EIJC_NUM_MEMBERS
+	}
+	multiply_variable = {
+		var = global.VAR_EIJC_RESOURCES_BOOST
+		value = 0.03
+	}
+	add_to_variable = {
+		var = global.VAR_EIJC_RESOURCES_BOOST
+		value = 0.01
+	}
+	clamp_variable = {
+		var = global.VAR_EIJC_RESOURCES_BOOST
+		min = 0.0
+		max = 0.25
+	}
+}

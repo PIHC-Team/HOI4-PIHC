@@ -1,0 +1,17 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_6MY_C08_JUSTICE_NOW = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+		tag = C08
+	}
+	happened = {
+		date < 1004.1.1
+		hidden_trigger = {
+			has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_4_HAPPENED
+		}
+	}
+}

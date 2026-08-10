@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_sp_event_window
+        textureFile = "gfx/interface/super_events/Super_Event_Window.dds"
+    }
+    spriteType = {
+        name = GFX_sp_event_close_button
+        textureFile = "gfx/interface/super_events/Super_Event_Close_Button.dds"
+    }
+    spriteType = {
+        name = GFX_sp_event_underlay
+        textureFile = "gfx/interface/super_events/Super_Event_Underlay.dds"
+    }
+}

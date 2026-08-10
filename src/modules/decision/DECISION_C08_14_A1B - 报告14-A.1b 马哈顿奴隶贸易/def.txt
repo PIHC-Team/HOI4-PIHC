@@ -1,0 +1,22 @@
+DECISION_CATEGORY_C08_ARCHIVES = {
+    DECISION_C08_14_A1B = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        visible = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C08_REPORT_14A1B
+                has_country_flag = PIHC_COUNTRY_FLAG_C08_ALL_REPORTS_UNLOCKED
+            }
+        }
+        complete_effect = {
+            country_event = {
+                id = C08_MAIN.3
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = C08_14_A1B
+    }
+}

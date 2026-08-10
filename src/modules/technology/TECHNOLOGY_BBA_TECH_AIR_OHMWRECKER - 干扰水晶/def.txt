@@ -1,0 +1,32 @@
+technologies = {
+    TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 14
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_SPECIAL_OHMWRECKER
+        }
+        path = {
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        research_cost = 3.0
+        start_year = 1005
+    }
+}

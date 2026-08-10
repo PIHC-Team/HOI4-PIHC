@@ -1,0 +1,35 @@
+focus = {
+	id = FOCUS_C01_RENDERING_THREATS
+	icon = GFX_FOCUS_C01_RENDERING_THREATS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_MILITARY_FAST_TRAINING
+	}
+	completion_reward = {
+		add_war_support = 0.25
+		add_stability = -0.1
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 2
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 28
+	y = 5
+}

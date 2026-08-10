@@ -1,0 +1,5 @@
+is_diplomatic_action_valid_boost_party_popularity = {
+	NOT = {
+		has_dlc = "La Resistance"
+	}
+}

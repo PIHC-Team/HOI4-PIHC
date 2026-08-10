@@ -1,0 +1,12 @@
+coordinated_strike_direct_units = {
+	name = coordinated_strike_direct_units
+	desc = coordinated_strike_direct_units_desc
+	outcome = coordinated_strike_direct_units_outcome
+	picture = GFX_phase_coordinated_strike_direct_units
+	icon = GFX_phase_coordinated_strike_direct_units_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 100
+	}
+}

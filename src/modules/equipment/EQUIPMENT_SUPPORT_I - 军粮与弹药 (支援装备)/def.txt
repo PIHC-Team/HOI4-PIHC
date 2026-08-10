@@ -1,0 +1,20 @@
+equipments = {
+	EQUIPMENT_SUPPORT_I = {
+		picture = EQUIPMENT_SUPPORT_I
+		is_archetype = no
+		group_by = type
+		archetype = ARCHETYPE_SUPPORT
+		priority = 0
+		visual_level = 0
+		active = yes
+		build_cost_ic = 2.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.85
+		resources = {
+			logs = 2
+			coal = 1
+		}
+	}
+}

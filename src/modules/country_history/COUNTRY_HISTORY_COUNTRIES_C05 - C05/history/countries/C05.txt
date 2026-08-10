@@ -1,0 +1,158 @@
+capital = 668
+set_popularities = {
+    harmonicism = 57
+    anarchy = 30
+    fascism = 10
+    peacism = 3
+}
+set_politics = {
+    ruling_party = harmonicism
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_CUPCAKE_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_DRAGON_TRAINING = 1
+    TECHNOLOGY_PAPER_SKELETON_PONY = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+    TECHNOLOGY_SUPPORT_DISEASE_I = 1
+    TECHNOLOGY_SUPPORT_DISEASE_II = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C05
+recruit_character = CHARACTER_SQUIZARD
+recruit_character = CHARACTER_GRAPE_SODA
+recruit_character = CHARACTER_DISCORD
+recruit_character = CHARACTER_ZEPHYR_BREEZE
+recruit_character = CHARACTER_TREE_HUGGER
+recruit_character = CHARACTER_MARE_DO_WELL_1
+recruit_character = CHARACTER_SCREWBALL
+activate_advisor = CHARACTER_TREE_HUGGER
+activate_advisor = CHARACTER_SCREWBALL
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_ALL_RESISTANCE
+add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = 3000
+set_major = yes
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 60
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AUTOMATA
+    amount = 200
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 40
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 60
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C05
+    }
+    requested_factories = 2
+    progress = 0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_FIRELANCE
+        creator = C05
+    }
+    requested_factories = 2
+    progress = 0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_AUTOMATA_DRAGON
+        creator = C05
+    }
+    requested_factories = 2
+    progress = 0
+    efficiency = 80
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+        creator = C05
+    }
+    requested_factories = 1
+    progress = 0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C08_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE

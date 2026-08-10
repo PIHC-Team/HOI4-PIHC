@@ -1,0 +1,45 @@
+focus = {
+	id = FOCUS_C12_MINING_INDUSTRY_SYSTEM
+	icon = GFX_FOCUS_C12_MINING_INDUSTRY_SYSTEM_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_ROCKVILLE_GEOLOGICAL_UNIVERSITY
+	}
+	cost = 4
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_controlled_by = C12
+				is_core_of = C12
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	available = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			has_completed_focus = FOCUS_C12_ROAD_OF_APPLELOOSA
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 13
+}

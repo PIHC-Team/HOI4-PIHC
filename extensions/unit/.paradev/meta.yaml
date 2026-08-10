@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/unit
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-unit
+items:
+-   kind: entity
+    identifier: pihc3-unit-module
+    name: PIHC3 Unit Module
+    desc: Project-owned unit source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3UnitModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-unit
+    name: PIHC3 Unit
+    desc: PIHC3 unit module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-unit-module
+        definition:
+            identifier: pihc3-unit
+            name: PIHC3 Unit
+            version: 0.2.3
+            desc: PIHC3 unit module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-unit-module
+            meta:
+                project: PIHC3
+                family: unit
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-unit
+    name: PIHC3 Unit Compiler
+    desc: Registry-backed source slots and compiler hooks for unit.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: unit
+            title: Unit
+            group: military
+        dependencies:
+        - extension:pihc3-unit

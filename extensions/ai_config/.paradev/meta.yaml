@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/ai_config
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-ai-config
+items:
+-   kind: entity
+    identifier: pihc3-ai-config-module
+    name: PIHC3 AI Configuration Module
+    desc: Project-owned ai_config source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3AiConfigModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-ai-config
+    name: PIHC3 AI Configuration
+    desc: PIHC3 ai_config module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-ai-config-module
+        definition:
+            identifier: pihc3-ai-config
+            name: PIHC3 AI Configuration
+            version: 0.2.3
+            desc: PIHC3 ai_config module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-ai-config-module
+            meta:
+                project: PIHC3
+                family: ai_config
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-ai-config
+    name: PIHC3 AI Configuration Compiler
+    desc: Registry-backed source slots and compiler hooks for ai_config.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: ai-config
+            title: Ai Config
+            group: other
+        dependencies:
+        - extension:pihc3-ai-config

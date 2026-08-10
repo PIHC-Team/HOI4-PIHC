@@ -1,0 +1,123 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/special_project
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-special-project
+items:
+-   kind: entity
+    identifier: pihc3-special-project-module
+    name: PIHC3 Special Project Module
+    desc: Project-owned special_project source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3SpecialProjectModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-special-project
+    name: PIHC3 Special Project
+    desc: PIHC3 special_project module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-special-project-module
+        definition:
+            identifier: pihc3-special-project
+            name: PIHC3 Special Project
+            version: 0.2.3
+            desc: PIHC3 special_project module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-special-project-module
+            meta:
+                project: PIHC3
+                family: special_project
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-special-project
+    name: PIHC3 Special Project Compiler
+    desc: Registry-backed source slots and compiler hooks for special_project.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: special-projects
+            title: Special Projects
+            group: military
+            title_key: modules.specialProjects.title
+        dependencies:
+        - extension:pihc3-special-project
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-83bb19c7f70a7afd
+    name: PIHC3 Basic Special Project
+    desc: PIHC3 authoring template pihc3:special_project/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:special_project/basic
+            declaration:
+                title: PIHC3 Basic Special Project
+                family: special_project
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    specialization:
+                        default: specialization_land
+                    project_tag:
+                        default: sp_tag_tank
+                    breakthrough_specialization:
+                        default: specialization_land
+                    breakthrough_cost:
+                        default: '1'
+                    prototype_time:
+                        default: sp_time.prototype.short
+                    complexity:
+                        default: sp_complexity.small
+                    reward:
+                        default: sp_land_generic_reward_scientist_xp_1
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n\tspecialization = {specialization}\n\
+                        \tproject_tags = {project_tag}\n\n\tai_will_do = {{\n\t\t\
+                        base = 1\n\t}}\n\n\tavailable = {{\n\t\talways = yes\n\t}}\n\
+                        \n\tbreakthrough_cost = {{\n\t\t{breakthrough_specialization}\
+                        \ = {breakthrough_cost}\n\t}}\n\n\tprototype_time = {prototype_time}\n\
+                        \tcomplexity = {complexity}\n\n\tproject_output = {{\n\t\t\
+                        country_effects = {{\n\t\t}}\n\t}}\n\n\tgeneric_prototype_rewards\
+                        \ = {{\n\t\t{reward}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

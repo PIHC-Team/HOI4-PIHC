@@ -1,0 +1,15 @@
+steal_blueprints_bribe = {
+	name = steal_blueprints_bribe
+	desc = steal_blueprints_bribe_desc
+	outcome = steal_blueprints_bribe_outcome
+	picture = GFX_phase_infiltrate_military_bribe
+	icon = GFX_phase_infiltrate_military_bribe_small
+	requirements = {
+	}
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

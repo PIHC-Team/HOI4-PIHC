@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C01_NEW_TEXTBOOK_LOYALTY = {
+			picture = C01_NEW_TEXTBOOK_LOYALTY
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = 0.09
+				drift_defence_factor = 0.1
+			}
+			on_remove = {
+				add_ideas = IDEA_C01_NEW_TEXTBOOK_LOYALTY_2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

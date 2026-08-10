@@ -1,0 +1,9 @@
+should_initiate_resistance = {
+	impassable = no
+	check_variable = {
+		core_countries^num > 0
+	}
+	NOT = {
+		is_core_of = FROM
+	}
+}

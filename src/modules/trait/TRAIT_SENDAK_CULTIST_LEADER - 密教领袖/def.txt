@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_SENDAK_CULTIST_LEADER = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		research_speed_factor = 0.25
+		political_power_gain = 0.5
+		transcendence_drift = 0.1
+	}
+}

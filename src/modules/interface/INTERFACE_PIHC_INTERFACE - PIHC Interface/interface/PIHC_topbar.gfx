@@ -1,0 +1,37 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_IB_civ_fac
+        texturefile = "gfx/texticons/IB_civ_fac_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_IB_mil_fac
+        texturefile = "gfx/texticons/IB_mil_fac_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_IB_dockyard
+        texturefile = "gfx/texticons/IB_dockyard_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_IB_divison
+        texturefile = "gfx/texticons/IB_divison_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_IB_planes
+        texturefile = "gfx/texticons/IB_planes_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_IB_ships
+        texturefile = "gfx/texticons/IB_ships_20x20.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_ib_bg_half
+        texturefile = "gfx/interface/ib_background_extended_half.dds"
+        transparencecheck = yes
+    }
+}

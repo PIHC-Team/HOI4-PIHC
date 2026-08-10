@@ -1,0 +1,14 @@
+leader_traits = {
+	TRAIT_KING_SOMBRA_KING_OF_MONSTERS = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.25
+		defence = 0.15
+		breakthrough_factor = 0.2
+		ai_focus_aggressive_factor = 1
+		modifier_army_sub_unit_infantry_magical_attack_factor = 0.35
+		minimum_training_level = -0.15
+	}
+}

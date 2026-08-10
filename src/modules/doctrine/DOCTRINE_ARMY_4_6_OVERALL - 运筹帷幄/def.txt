@@ -1,0 +1,31 @@
+pihc_land_breeze_of_death_armor_core = {
+	track = armor
+	name = DOCTRINE_ARMY_4_6_OVERALL
+	description = DOCTRINE_ARMY_4_6_OVERALL_DESC
+	icon = GFX_doctrine_pihc_land_breeze_of_death_armor_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	additional_brigade_column_size = 1
+	army_speed_factor = 0.1
+	coordination_bonus = 0.04
+	enable_tactic = tactic_elastic_defense
+	rewards = {
+		nightmare = {
+			land_night_attack = 0.6
+			initiative_factor = 0.25
+			enable_tactic = tactic_pihc_teleportation_attack
+		}
+	}
+}

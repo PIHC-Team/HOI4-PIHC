@@ -1,0 +1,16 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_6MY_C01_TOO_GREAT_TO_FAIL = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+		tag = C01
+	}
+	happened = {
+		hidden_trigger = {
+			has_global_flag = PIHC_ACHIEVEMENT_FLAG_C01_GREAT_EMPIRE
+		}
+	}
+}

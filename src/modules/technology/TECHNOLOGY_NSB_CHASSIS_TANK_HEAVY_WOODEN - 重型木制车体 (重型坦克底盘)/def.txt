@@ -1,0 +1,57 @@
+technologies = {
+    TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = {
+        folder = {
+            name = nsb_armour_folder
+            position = {
+                x = 4
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN
+        }
+        enable_subunits = {
+            tank_heavy
+        }
+        enable_equipment_modules = {
+            MODULE_SUSPENSION_1A_WHEELS
+            MODULE_ARMOR_1A_WOODEN
+            MODULE_ARMOR_2B_STEEL
+            MODULE_ARMOR_2A_BRASS
+            MODULE_ENGINE_1A_PONY
+            MODULE_TURRET_1A_THROW
+            MODULE_TURRET_2A_HORIZONTAL
+            MODULE_PROJECTILE_1A_TOMATO
+            MODULE_PROJECTILE_1B_CARROT
+            MODULE_PROJECTILE_1C_PIE
+            MODULE_PROJECTILE_1D_DONUT
+            MODULE_PROJECTILE_2A_CHEESE
+            MODULE_PROJECTILE_2B_HAY
+            MODULE_PROJECTILE_2C_DEERCRACKER
+            MODULE_PROJECTILE_3A_PUMPKIN
+            MODULE_PROJECTILE_3C_CHOCOLATE
+            MODULE_PROJECTILE_3D_WATERMELON
+            MODULE_PROJECTILE_3E_BRICK
+            MODULE_PAINTING_NORMAL
+            MODULE_CREW_1A_NONE
+            MODULE_CREW_2A_SINGER
+            MODULE_CREW_2C_CROWDED
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+            research_cost_coeff = 1
+        }
+        allow_branch = {
+            has_dlc = "No Step Back"
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

@@ -1,0 +1,74 @@
+DECISION_CATEGORY_C02_INDEPENDENCE = {
+    DECISION_C02_C06_HORSESHOE_BAY = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 75
+        selectable_mission = no
+        days_mission_timeout = 60
+        activation = {
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_TROOPS_AT_C06
+            }
+        }
+        available = {
+            C06 = {
+                has_war_with = C08
+            }
+            518 = {
+                is_owned_and_controlled_by = C06
+            }
+            568 = {
+                is_owned_and_controlled_by = C06
+            }
+            578 = {
+                is_owned_and_controlled_by = C06
+            }
+            619 = {
+                is_owned_and_controlled_by = C06
+            }
+            if = {
+                limit = {
+                    is_ai = no
+                }
+                num_divisions_in_states = {
+                    count > 4
+                    states = {
+                        518
+                        568
+                        578
+                        619
+                    }
+                }
+            }
+        }
+        war_with_on_timeout = C06
+        war_with_on_complete = C06
+        complete_effect = {
+            518 = {
+                transfer_state_to = C02
+            }
+            568 = {
+                transfer_state_to = C02
+            }
+            578 = {
+                transfer_state_to = C02
+            }
+            619 = {
+                transfer_state_to = C02
+            }
+            549 = {
+                if = {
+                    limit = {
+                        is_owned_and_controlled_by = C06
+                    }
+                    transfer_state_to = C02
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        fire_only_once = yes
+        icon = C02_C06_HORSESHOE_BAY
+    }
+}

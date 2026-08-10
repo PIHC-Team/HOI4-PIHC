@@ -1,0 +1,13 @@
+CREATE_C44_NAVY_1 = {
+	C44 = {
+		UNLOCK_NAVY_BASIC = yes
+		create_equipment_variant = {
+			name = "Princess Class"
+			type = EQUIPMENT_SHIP_SEACOURTYARD
+		}
+		create_equipment_variant = {
+			name = "City Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+	}
+}

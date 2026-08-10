@@ -1,0 +1,216 @@
+guiTypes = {
+	containerWindowType = {
+		name = pihc_state_temperature
+		position = {
+			x = 30
+			y = -362
+		}
+		size = {
+			width = 180
+			height = 410
+		}
+		scale = 1.28
+		orientation = lower_right
+		moveable = no
+		clipping = no
+		iconType = {
+			name = pihc_state_temperature_base
+			spriteType = GFX_pihc_state_temperature_base
+			position = {
+				x = 0
+				y = 0
+			}
+			pdx_tooltip = pihc_state_temperature_tt
+			alwaystransparent = no
+		}
+		iconType = {
+			name = pihc_state_temperature_scale
+			spriteType = GFX_pihc_state_temperature_scale
+			position = {
+				x = 0
+				y = 0
+			}
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = pihc_state_temperature_mercury_indicator
+			spriteType = GFX_pihc_state_temperature_mercury_indicator
+			position = {
+				x = 0
+				y = 0
+			}
+			pdx_tooltip = pihc_state_temperature_tt
+			alwaystransparent = no
+		}
+		iconType = {
+			name = pihc_state_temperature_indoor_needle
+			spriteType = GFX_pihc_state_temperature_indoor_needle
+			position = {
+				x = 0
+				y = 0
+			}
+			pdx_tooltip = pihc_state_temperature_tt
+			alwaystransparent = no
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_scorching_label
+			position = {
+				x = 30
+				y = 100
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_scorching_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_hot_label
+			position = {
+				x = 70
+				y = 120
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_hot_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_warm_label
+			position = {
+				x = 96
+				y = 153
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_warm_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_chilly_label
+			position = {
+				x = 102
+				y = 196
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_chilly_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_cold_label
+			position = {
+				x = 96
+				y = 240
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_cold_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_frigid_label
+			position = {
+				x = 70
+				y = 270
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_frigid_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_class_permafrost_label
+			position = {
+				x = 30
+				y = 290
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_class_permafrost_label
+			format = right
+			maxWidth = 76
+			maxHeight = 18
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_outdoor_value
+			position = {
+				x = 12
+				y = 194
+			}
+			font = hoi_18mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_outdoor_value
+			format = center
+			maxWidth = 56
+			maxHeight = 20
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_indoor_label
+			position = {
+				x = 100
+				y = 320
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_indoor_label
+			format = center
+			maxWidth = 68
+			maxHeight = 42
+		}
+		instantTextBoxType = {
+			name = pihc_state_temperature_outdoor_label
+			position = {
+				x = 30
+				y = 350
+			}
+			font = hoi_16mbs
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = pihc_state_temperature_outdoor_label
+			format = center
+			maxWidth = 68
+			maxHeight = 42
+		}
+	}
+}

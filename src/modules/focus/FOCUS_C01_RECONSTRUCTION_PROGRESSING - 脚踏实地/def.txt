@@ -1,0 +1,86 @@
+focus = {
+	id = FOCUS_C01_RECONSTRUCTION_PROGRESSING
+	icon = GFX_FOCUS_C01_RECONSTRUCTION_PROGRESSING_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_RECONSTRUCTION_PLANNING
+	}
+	available = {
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		if = {
+			limit = {
+				has_completed_focus = FOCUS_C01_CANTERLOT_CENTER
+				369 = {
+					is_owned_by = C01
+					is_controlled_by = C01
+				}
+			}
+			369 = {
+				BUILD_AN_INFRA = yes
+				BUILD_A_CIC = yes
+			}
+		}
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 7
+	x = 16
+	y = 7
+}

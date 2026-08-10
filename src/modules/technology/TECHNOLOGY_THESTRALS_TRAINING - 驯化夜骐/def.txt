@@ -1,0 +1,46 @@
+technologies = {
+    TECHNOLOGY_THESTRALS_TRAINING = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 18
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+        }
+        enable_equipments = {
+            EQUIPMENT_AUTOMATA_THESTRALS
+        }
+        enable_subunits = {
+            infantry_automata
+        }
+        allow = {
+            if = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            tag = C32
+                            is_in_faction_with = C32
+                        }
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = TECHNOLOGY_THESTRALS_TRAINING_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        dependencies = {
+            TECHNOLOGY_CREATURE_TRAINING = 1
+        }
+        research_cost = 5.0
+        start_year = 1003
+    }
+}

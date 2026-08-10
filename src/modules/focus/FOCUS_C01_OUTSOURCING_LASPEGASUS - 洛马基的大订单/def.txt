@@ -1,0 +1,36 @@
+focus = {
+	id = FOCUS_C01_OUTSOURCING_LASPEGASUS
+	icon = GFX_FOCUS_C01_OUTSOURCING_LASPEGASUS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_OUTSOURCING_INFRASTRUCTURE
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		add_resource = {
+			type = steel
+			amount = 48
+			state = 423
+		}
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 2
+	x = 20
+	y = 5
+}

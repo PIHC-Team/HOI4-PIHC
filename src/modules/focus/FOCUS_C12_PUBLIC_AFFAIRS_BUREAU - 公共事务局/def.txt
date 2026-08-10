@@ -1,0 +1,53 @@
+focus = {
+	id = FOCUS_C12_PUBLIC_AFFAIRS_BUREAU
+	icon = GFX_FOCUS_C12_PUBLIC_AFFAIRS_BUREAU_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_RECONNECTING_WITH_DISTANT_RELATIVES
+	}
+	prerequisite = {
+		focus = FOCUS_C12_RENOVATE_TRAIN_STATIONS
+	}
+	cost = 4
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM_2
+			}
+			remove_ideas = IDEA_C12_DESOLATE_FARM_2
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM_1
+			}
+			swap_ideas = {
+				add_idea = IDEA_C12_DESOLATE_FARM_2
+				remove_idea = IDEA_C12_DESOLATE_FARM_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM
+			}
+			swap_ideas = {
+				add_idea = IDEA_C12_DESOLATE_FARM_1
+				remove_idea = IDEA_C12_DESOLATE_FARM
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 7
+}

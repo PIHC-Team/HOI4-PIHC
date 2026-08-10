@@ -1,0 +1,27 @@
+allow_wargoals = {
+	name = RULE_ALLOW_WARGOALS
+	group = RULE_GROUP_GENERAL_FOREIGN_POLICY
+	icon = GFX_wargoals
+	option = {
+		name = ALWAYS_FREE
+		text = RULE_OPTION_ALWAYS_FREE
+		desc = RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC
+	}
+	option = {
+		name = LIMITED
+		text = RULE_OPTION_LIMITED
+		desc = RULE_ALLOW_WARGOALS_LIMITED_DESC
+	}
+	default = {
+		name = PIHC_WARGOALS
+		text = RULE_OPTION_PIHC
+		desc = RULE_ALLOW_WARGOALS_PIHC_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = FOCUSES_ONLY
+		text = RULE_OPTION_FOCUSES_ONLY
+		desc = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC
+		allow_achievements = yes
+	}
+}

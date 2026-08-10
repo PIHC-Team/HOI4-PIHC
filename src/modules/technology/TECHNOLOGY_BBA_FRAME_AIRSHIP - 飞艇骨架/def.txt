@@ -1,0 +1,69 @@
+technologies = {
+    TECHNOLOGY_BBA_FRAME_AIRSHIP = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 8
+                y = 12
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+            pihc_air_airship
+        }
+        enable_equipments = {
+            EQUIPMENT_FRAME_AIRSHIP
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_PLANE_ARMOR_1A_WOODEN
+            MODULE_PLANE_ARMOR_2B_STEEL
+            MODULE_PLANE_ARMOR_2A_BRASS
+            MODULE_PLANE_ENGINE_1A_AIR
+            MODULE_SPECIAL_SUPPLY
+            MODULE_SPECIAL_PARADROP
+            MODULE_SPECIAL_TANK
+            MODULE_PLANE_WEAPON_AIRREC_1A_BINOCULAR
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+            research_cost_coeff = 1
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 25
+                arms_factory > 80
+            }
+            modifier = {
+                factor = 5
+                date > 1004.8.1
+                is_major = yes
+            }
+            modifier = {
+                factor = 50
+                arms_factory > 150
+            }
+            modifier = {
+                factor = 5
+                has_army_manpower = {
+                    size > 20000
+                }
+            }
+            modifier = {
+                factor = 25
+                tag = C01
+            }
+        }
+        research_cost = 3
+        start_year = 1004
+    }
+}

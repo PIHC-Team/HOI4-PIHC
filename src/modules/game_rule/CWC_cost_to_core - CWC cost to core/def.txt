@@ -1,0 +1,29 @@
+CWC_cost_to_core = {
+	name = CWC_FORMULA_PP_COST
+	group = CWC_FORMULA_PP_COST_GROUP
+	icon = GFX_core_button_small
+	default = {
+		name = CWC_FORMULA_PP_COST_5K
+		text = CWC_FORMULA_PP_COST_5K_NAME
+		desc = CWC_FORMULA_PP_COST_5K_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_FORMULA_PP_COST_10K
+		text = CWC_FORMULA_PP_COST_10K_NAME
+		desc = CWC_FORMULA_PP_COST_10K_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_FORMULA_PP_COST_20K
+		text = CWC_FORMULA_PP_COST_20K_NAME
+		desc = CWC_FORMULA_PP_COST_20K_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_FORMULA_PP_COST_40K
+		text = CWC_FORMULA_PP_COST_40K_NAME
+		desc = CWC_FORMULA_PP_COST_40K_DESC
+		allow_achievements = yes
+	}
+}

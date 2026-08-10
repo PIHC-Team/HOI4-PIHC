@@ -1,0 +1,35 @@
+technologies = {
+    TECHNOLOGY_MAGICAL_HANDGONNE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 0
+                y = 6
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_magical
+        }
+        enable_equipments = {
+            EQUIPMENT_MAGICAL_RANGED_HANDGONNE
+        }
+        enable_subunits = {
+        }
+        dependencies = {
+            TECHNOLOGY_FIREARM_II = 1
+            TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+            TECHNOLOGY_CUPCAKE_EXPLOSIVE = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1002
+    }
+}

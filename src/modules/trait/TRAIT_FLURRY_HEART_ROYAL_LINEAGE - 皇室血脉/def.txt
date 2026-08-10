@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_FLURRY_HEART_ROYAL_LINEAGE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		political_advisor_cost_factor = -0.2
+		stability_factor = 0.08
+		stability_weekly_factor = 0.03
+	}
+}

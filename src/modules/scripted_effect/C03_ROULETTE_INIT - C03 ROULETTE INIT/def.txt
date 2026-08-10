@@ -1,0 +1,70 @@
+C03_ROULETTE_INIT = {
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD
+		value = 4
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD
+		value = 4
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_CONFIG_GOOD_GAIN
+		value = 500
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_CONFIG_BAD_COST
+		value = 600
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_CONFIG
+		value = 8
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GAMES
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_BAD
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TOTAL_GOOD_STREAK
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_GOOD_STREAK
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_1_NUM_GAMES
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_2_NUM_BOXES
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_3_NUM_GOOD_BOXES
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_4_NUM_WINNING_STREAK
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_7_FORTUNE_TELL
+		value = 0
+	}
+	set_variable = {
+		var = C03.VAR_MUFFIN_ROULETTE_TASK_8_SHUFFLE
+		value = 0
+	}
+}

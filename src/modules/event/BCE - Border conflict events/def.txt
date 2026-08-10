@@ -1,0 +1,403 @@
+add_namespace = BCE_border_conflict_won_attacker
+country_event = {
+    id = BCE_border_conflict_won_attacker.1
+    title = BCE_border_conflict_won_attacker.1.t
+    desc = BCE_border_conflict_won_attacker.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+                clr_state_flag = border_incident_active
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+                clr_state_flag = border_incident_active
+            }
+            remove_targeted_decision = {
+                target = event_target:their_country
+                decision = BCE_border_conflict_time_until_cancelled
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_won_attacker.1.a
+        add_political_power = 50
+        add_war_support = 0.02
+        if = {
+            limit = {
+                check_variable = {
+                    FROM.FROM.num_owned_states > 1
+                }
+            }
+            transfer_state = FROM.FROM.FROM
+        }
+        else = {
+            FROM.FROM = {
+                ROOT = {
+                    annex_country = {
+                        target = PREV
+                    }
+                }
+            }
+        }
+        custom_effect_tooltip = BCE_buildings_damaged
+        hidden_effect = {
+            FROM.FROM.FROM = {
+                random_list = {
+                    seed = random
+                    60 = {
+                        damage_building = {
+                            type = arms_factory
+                            damage = 0.6
+                        }
+                    }
+                    30 = {
+                        damage_building = {
+                            type = arms_factory
+                            damage = 0.3
+                        }
+                    }
+                    10 = {
+                        damage_building = {
+                            type = industrial_complex
+                            damage = 0.9
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+add_namespace = BCE_border_conflict_won_defender
+country_event = {
+    id = BCE_border_conflict_won_defender.1
+    title = BCE_border_conflict_won_defender.1.t
+    desc = BCE_border_conflict_won_defender.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+                clr_state_flag = border_incident_active
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+                clr_state_flag = border_incident_active
+            }
+            set_country_flag = show_effect_tooltips
+            clear_variable = attacker_state_vs_@FROM.FROM
+            clear_variable = defender_state_vs_@FROM.FROM
+            remove_targeted_decision = {
+                target = event_target:their_country
+                decision = BCE_border_conflict_time_until_cancelled
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_won_defender.1.a
+        add_political_power = 150
+        army_experience = 30
+        add_war_support = 0.05
+        PIHC_DOCTRINE_LAND_SMALL_BOOST = yes
+        if = {
+            limit = {
+                has_country_flag = show_effect_tooltips
+            }
+            event_target:their_country = {
+                effect_tooltip = {
+                    add_political_power = -50
+                    army_experience = 10
+                }
+            }
+            clr_country_flag = show_effect_tooltips
+        }
+    }
+}
+add_namespace = BCE_border_conflict_lost_attacker
+country_event = {
+    id = BCE_border_conflict_lost_attacker.1
+    title = BCE_border_conflict_lost_attacker.1.t
+    desc = BCE_border_conflict_lost_attacker.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+            }
+            set_country_flag = show_effect_tooltips
+            remove_targeted_decision = {
+                target = event_target:their_country
+                decision = BCE_border_conflict_time_until_cancelled
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_lost_attacker.1.a
+        add_political_power = -50
+        army_experience = 10
+        add_war_support = -0.02
+        custom_effect_tooltip = BCE_buildings_damaged
+        hidden_effect = {
+            add_popularity = {
+                ideology = var:ROOT.current_party_ideology_group
+                popularity = -0.03
+            }
+            FROM = {
+                random_list = {
+                    seed = random
+                    60 = {
+                        damage_building = {
+                            type = arms_factory
+                            damage = 0.6
+                        }
+                    }
+                    30 = {
+                        damage_building = {
+                            type = arms_factory
+                            damage = 0.3
+                        }
+                    }
+                    5 = {
+                        damage_building = {
+                            type = industrial_complex
+                            damage = 0.9
+                        }
+                    }
+                    5 = {
+                        add_manpower = -500
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = show_effect_tooltips
+            }
+            event_target:their_country = {
+                effect_tooltip = {
+                    add_political_power = 150
+                    army_experience = 30
+                    PIHC_DOCTRINE_LAND_SMALL_BOOST = yes
+                }
+            }
+            clr_country_flag = show_effect_tooltips
+        }
+    }
+}
+add_namespace = BCE_border_conflict_lost_defender
+country_event = {
+    id = BCE_border_conflict_lost_defender.1
+    title = BCE_border_conflict_lost_defender.1.t
+    desc = BCE_border_conflict_lost_defender.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+                clr_state_flag = border_incident_active
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+                clr_state_flag = border_incident_active
+            }
+            set_country_flag = show_effect_tooltips
+            clear_variable = attacker_state_vs_@FROM.FROM
+            clear_variable = defender_state_vs_@FROM.FROM
+            remove_targeted_decision = {
+                target = event_target:their_country
+                decision = BCE_border_conflict_time_until_cancelled
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_lost_defender.1.a
+        if = {
+            limit = {
+                has_country_flag = show_effect_tooltips
+            }
+            effect_tooltip = {
+                add_political_power = 50
+                add_manpower = -500
+                add_war_support = 0.1
+                if = {
+                    limit = {
+                        check_variable = {
+                            num_owned_states > 1
+                        }
+                    }
+                }
+                else = {
+                    FROM.FROM = {
+                        annex_country = {
+                            target = ROOT
+                        }
+                    }
+                }
+            }
+            clr_country_flag = show_effect_tooltips
+        }
+    }
+}
+add_namespace = BCE_border_conflict_canceled_attacker
+country_event = {
+    id = BCE_border_conflict_canceled_attacker.1
+    title = BCE_border_conflict_canceled_attacker.1.t
+    desc = BCE_border_conflict_canceled_attacker.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+            }
+            set_country_flag = show_effect_tooltips
+        }
+    }
+    option = {
+        name = BCE_border_conflict_canceled_attacker.1.a
+        army_experience = 15
+        if = {
+            limit = {
+                has_country_flag = show_effect_tooltips
+            }
+            event_target:their_country = {
+                effect_tooltip = {
+                    army_experience = 30
+                    add_political_power = 50
+                }
+            }
+            clr_country_flag = show_effect_tooltips
+        }
+    }
+}
+add_namespace = BCE_border_conflict_canceled_defender
+country_event = {
+    id = BCE_border_conflict_canceled_defender.1
+    title = BCE_border_conflict_canceled_defender.1.t
+    desc = BCE_border_conflict_canceled_defender.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = our_state
+                clr_state_flag = border_incident_active
+            }
+            FROM.FROM = {
+                save_event_target_as = their_country
+            }
+            FROM.FROM.FROM = {
+                save_event_target_as = their_state
+                clr_state_flag = border_incident_active
+            }
+            set_country_flag = show_effect_tooltips
+            clear_variable = attacker_state_vs_@FROM.FROM
+            clear_variable = defender_state_vs_@FROM.FROM
+        }
+    }
+    option = {
+        name = BCE_border_conflict_canceled_defender.1.a
+        army_experience = 30
+        add_political_power = 50
+        if = {
+            limit = {
+                has_country_flag = show_effect_tooltips
+            }
+            event_target:their_country = {
+                effect_tooltip = {
+                    army_experience = 15
+                }
+            }
+            clr_country_flag = show_effect_tooltips
+        }
+    }
+}
+add_namespace = BCE_border_incident_defender_warning
+country_event = {
+    id = BCE_border_incident_defender_warning.1
+    title = BCE_border_incident_defender_warning.1.t
+    desc = BCE_border_incident_defender_warning.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = their_country
+            }
+        }
+    }
+    option = {
+        name = BCE_border_incident_defender_warning.1.a
+    }
+}
+add_namespace = BCE_border_conflict_escalation
+country_event = {
+    id = BCE_border_conflict_escalation.1
+    title = BCE_border_conflict_escalation.1.t
+    desc = BCE_border_conflict_escalation.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = their_country
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_escalation.1.a
+    }
+}
+add_namespace = BCE_border_conflict_escalate_to_war
+country_event = {
+    id = BCE_border_conflict_escalate_to_war.1
+    title = BCE_border_conflict_escalate_to_war.1.t
+    desc = BCE_border_conflict_escalate_to_war.1.desc
+    picture = GFX_BCE_border_war_event
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = our_country
+            FROM = {
+                save_event_target_as = their_country
+            }
+        }
+    }
+    option = {
+        name = BCE_border_conflict_escalate_to_war.1.a
+    }
+}

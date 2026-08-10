@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_THUNDERHOOVES = {
+        name = CHARACTER_THUNDERHOOVES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_THUNDERHOOVES.dds"
+                small = "gfx/leaders/CHARACTER_THUNDERHOOVES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_THUNDERHOOVES_army.dds"
+                small = "gfx/leaders/CHARACTER_THUNDERHOOVES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_THUNDERHOOVES_navy.dds"
+                small = "gfx/leaders/CHARACTER_THUNDERHOOVES_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_THUNDERHOOVES_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_tribe
+        }
+    }
+}

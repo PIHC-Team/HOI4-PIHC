@@ -1,0 +1,23 @@
+division_template = {
+    name = "多元宇宙裂隙 (Multiverse Rift)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    force_allow_recruiting = yes
+    priority = 0
+}

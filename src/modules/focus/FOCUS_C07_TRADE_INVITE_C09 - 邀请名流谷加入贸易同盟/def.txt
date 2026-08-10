@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C07_TRADE_INVITE_C09
+	icon = GFX_FOCUS_C07_TRADE_INVITE_C09_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_TRADE_CONTACT_C09
+	}
+	cost = 3
+	completion_reward = {
+		C09 = {
+			country_event = {
+				id = C07_MAIN.10
+				days = 7
+			}
+		}
+	}
+	available = {
+		C09 = {
+			has_opinion = {
+				target = C07
+				value > 9
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 4
+}

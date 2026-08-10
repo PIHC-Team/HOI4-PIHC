@@ -1,0 +1,431 @@
+division_template = {
+    name = "星座火炮力量 (Ursa Artillery Force)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C41_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "星座轻型装甲力量 (Ursa Light Armor Force)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "星座常规步兵力量 (Ursa Regular Infantry Force)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "星座小型步兵力量 (Ursa Small Infantry Force)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "星座自动作战力量 (Ursa Automata Force)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "星座重装步兵力量 (Ursa Heavy Infantry Force)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "星座魔法步兵力量 (Ursa Magical Infantry Force)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "星座协同力量 (Ursa Concerted Force)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "星座机动步兵力量 (Ursa Motorized Infantry Force)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C41_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 4429
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 13383
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 13383
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 13383
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "星座自动作战力量 (Ursa Automata Force)"
+        location = 13383
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+}

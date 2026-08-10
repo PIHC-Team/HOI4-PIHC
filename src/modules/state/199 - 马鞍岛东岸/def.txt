@@ -1,0 +1,44 @@
+state = {
+    id = 199
+    name = STATE_199
+    provinces = {
+        345
+        1637
+        3122
+        3304
+        3578
+        4579
+        5238
+        6580
+        7113
+        14488
+        14531
+        14550
+        14581
+        14582
+        14615
+        14635
+    }
+    manpower = 14001
+    state_category = town
+    history = {
+        owner = C24
+        victory_points = {
+            345
+            5
+        }
+        buildings = {
+            infrastructure = 2
+            farm_complex = 1
+            345 = {
+                naval_base = 1
+                supply_node = 1
+            }
+        }
+        add_core_of = C24
+    }
+    resources = {
+        aluminium = 1
+        oil = 3
+    }
+}

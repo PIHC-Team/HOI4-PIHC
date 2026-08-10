@@ -1,0 +1,57 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_NURSE_III = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 3
+                y = 2
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_nurse
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        field_hospital = {
+            casualty_trickleback = 0.1
+            experience_loss_factor = -0.1
+        }
+        experience_loss_factor = -0.1
+        dependencies = {
+            TECHNOLOGY_SUPPORT_ORG_III = 1
+            TECHNOLOGY_SUPPORT_NURSE_II = 1
+        }
+        path = {
+        }
+        ai_will_do = {
+            modifier = {
+                factor = 10
+                has_idea = extensive_conscription
+            }
+            modifier = {
+                factor = 25
+                has_idea = service_by_requirement
+            }
+            modifier = {
+                factor = 50
+                has_idea = all_adults_serve
+            }
+            modifier = {
+                factor = 75
+                has_idea = scraping_the_barrel
+            }
+            modifier = {
+                factor = -50
+                date < 1009.1.1
+            }
+        }
+        research_cost = 1.5
+        start_year = 1006
+    }
+}

@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C02_HOTLINE_HOOVES_PROJECT_018_DONE = {
+			picture = C02_HOTLINE_HOOVES_PROJECT_018_DONE
+			removal_cost = -1
+			modifier = {
+				stability_weekly_factor = 0.08
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

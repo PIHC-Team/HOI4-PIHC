@@ -1,0 +1,231 @@
+units = {
+    fleet = {
+        name = "Sea of Clouds Fleet"
+        naval_base = 5800
+        task_force = {
+            name = "Sea of Clouds Fleet 1"
+            location = 16198
+            ship = {
+                name = "Prism Wing"
+                definition = battleship
+                pride_of_the_fleet = yes
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Harmony Class"
+                    }
+                }
+            }
+            ship = {
+                name = Celaeno
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = Mullet
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Lix Spittle"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = Boyle
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = Squabble
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Sea of Clouds Fleet 2"
+            location = 16319
+            ship = {
+                name = "Sonic Rainboom"
+                definition = battleship
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Harmony Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Awesome Time"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Awesome Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Gem Stones"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Awesome Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Rainy Days"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Awesome Class"
+                    }
+                }
+            }
+        }
+    }
+    fleet = {
+        name = "Ornithia Fleet"
+        naval_base = 742
+        task_force = {
+            name = "Ornithia Fleet 1"
+            location = 15373
+            ship = {
+                name = Ornithia
+                definition = battleship
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Harmony Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Prince Aello"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Princess Ocypete"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Princess Zephyra"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Ornithia Fleet 2"
+            location = 16781
+            ship = {
+                name = "Tree of Love"
+                definition = battleship
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Harmony Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Queen Ozomene"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+            ship = {
+                name = "King Thaumus"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C25
+                        version_name = "Leader Class"
+                    }
+                }
+            }
+        }
+    }
+}

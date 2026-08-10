@@ -1,0 +1,20 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_ARMY_CRUSADERS = {
+			picture = C08_ARMY_CRUSADERS
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				armor = {
+					reliability = 0.05
+					soft_attack = 0.05
+					build_cost_ic = -0.05
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

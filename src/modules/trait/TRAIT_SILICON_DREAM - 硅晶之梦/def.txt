@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_SILICON_DREAM = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		custom_modifier_tooltip = TRAIT_SILICON_DREAM_MODIFER_TOOLTIP
+	}
+}

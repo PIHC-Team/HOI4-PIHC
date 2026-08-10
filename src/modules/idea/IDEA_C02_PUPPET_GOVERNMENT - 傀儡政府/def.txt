@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_C02_PUPPET_GOVERNMENT = {
+			picture = C02_PUPPET_GOVERNMENT
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.7
+				stability_factor = -0.25
+				party_popularity_stability_factor = -0.1
+				war_support_factor = -0.05
+				conscription_factor = -0.4
+			}
+			allowed = {
+				tag = C02
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

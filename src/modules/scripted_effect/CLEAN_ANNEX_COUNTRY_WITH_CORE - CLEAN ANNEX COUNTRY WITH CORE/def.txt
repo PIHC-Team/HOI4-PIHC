@@ -1,0 +1,37 @@
+CLEAN_ANNEX_COUNTRY_WITH_CORE = {
+	effect_tooltip = {
+		var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE = {
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		set_variable = {
+			var = VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE
+			value = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+		}
+		STEAL_ALL_TECHNOLOGY = yes
+		clear_variable = VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE
+		var:VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE = {
+			END_ALL_WARS = yes
+			every_state = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_core_of = PREV.PREV
+				remove_core_of = PREV
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+	}
+}

@@ -1,0 +1,28 @@
+characters = {
+    CHARACTER_KING_SOMBRA = {
+        name = CHARACTER_KING_SOMBRA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_KING_SOMBRA.dds"
+                small = "gfx/leaders/CHARACTER_KING_SOMBRA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_KING_SOMBRA_army.dds"
+                small = "gfx/leaders/CHARACTER_KING_SOMBRA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_KING_SOMBRA_navy.dds"
+                small = "gfx/leaders/CHARACTER_KING_SOMBRA_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_KING_SOMBRA_DESC
+            traits = {
+                TRAIT_KING_SOMBRA_KING_OF_MONSTERS
+                TRAIT_KING_SOMBRA_SOURCE_OF_TERROR
+            }
+            ideology = transcendence_deity
+        }
+    }
+}

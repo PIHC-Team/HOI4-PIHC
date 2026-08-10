@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C09_FREE_TRADE
+	icon = GFX_FOCUS_C09_FREE_TRADE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_ECO_WAR
+	}
+	cost = 2
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = export_focus
+			add_idea = free_trade
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 11
+	y = 4
+}

@@ -1,0 +1,7 @@
+C04_DEL_SKY_STINGER_SUPPORT_722 = {
+	set_variable = {
+		var = C04.VAR_DELTA
+		value = -72.2
+	}
+	MODIFY_C04_BY_ELECTION_SKY_STINGER_SUPPORT = yes
+}

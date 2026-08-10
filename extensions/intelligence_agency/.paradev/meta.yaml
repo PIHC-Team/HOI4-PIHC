@@ -1,0 +1,113 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/intelligence_agency
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-intelligence-agency
+items:
+-   kind: entity
+    identifier: pihc3-intelligence-agency-module
+    name: PIHC3 Intelligence Agency Module
+    desc: Project-owned intelligence_agency source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3IntelligenceAgencyModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-intelligence-agency
+    name: PIHC3 Intelligence Agency
+    desc: PIHC3 intelligence_agency module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-intelligence-agency-module
+        definition:
+            identifier: pihc3-intelligence-agency
+            name: PIHC3 Intelligence Agency
+            version: 0.2.3
+            desc: PIHC3 intelligence_agency module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-intelligence-agency-module
+            meta:
+                project: PIHC3
+                family: intelligence_agency
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-intelligence-agency
+    name: PIHC3 Intelligence Agency Compiler
+    desc: Registry-backed source slots and compiler hooks for intelligence_agency.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: intelligence-agencies
+            title: Intelligence Agencies
+            group: military
+            aliases:
+            - intel_agency
+            - intel_agencies
+            title_key: modules.intelligenceAgencies.title
+        dependencies:
+        - extension:pihc3-intelligence-agency
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-8405430af29d6783
+    name: PIHC3 Basic Intelligence Agency
+    desc: PIHC3 authoring template pihc3:intelligence_agency/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:intelligence_agency/basic
+            declaration:
+                title: PIHC3 Basic Intelligence Agency
+                family: intelligence_agency
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    picture:
+                        default: GFX_intelligence_agency_logo_generic_1
+                    default_trigger:
+                        default: always = yes
+                    available_trigger:
+                        default: always = yes
+                    language:
+                        default: en
+                files:
+                    def.txt: "intelligence_agency = {{\n\tpicture = {picture}\n\t\
+                        names = {{ {object_id} }}\n\n\tdefault = {{ {default_trigger}\
+                        \ }}\n\tavailable = {{ {available_trigger} }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

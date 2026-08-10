@@ -1,0 +1,48 @@
+state = {
+    id = 567
+    name = STATE_567
+    provinces = {
+        213
+        2547
+        4780
+        4811
+        5163
+        5314
+        5394
+        5499
+        6091
+        6250
+        9295
+        9465
+        12062
+        12098
+        12140
+        12155
+        12211
+    }
+    manpower = 86090
+    state_category = town
+    history = {
+        owner = C02
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            farm_complex = 1
+            12140 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C02
+        victory_points = {
+            12140
+            10
+        }
+    }
+    resources = {
+        steel = 16
+        rubber = 4
+        aluminium = 8
+        chromium = 8
+    }
+}

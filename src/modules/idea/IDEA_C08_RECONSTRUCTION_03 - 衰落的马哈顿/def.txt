@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C08_RECONSTRUCTION_03 = {
+			picture = C08_RECONSTRUCTION_03
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.05
+				industrial_capacity_factory = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

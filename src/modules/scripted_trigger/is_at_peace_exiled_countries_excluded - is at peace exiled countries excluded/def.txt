@@ -1,0 +1,10 @@
+is_at_peace_exiled_countries_excluded = {
+	custom_trigger_tooltip = {
+		tooltip = is_at_peace_exiled_countries_excluded_tt
+		NOT = {
+			any_enemy_country = {
+				is_government_in_exile = no
+			}
+		}
+	}
+}

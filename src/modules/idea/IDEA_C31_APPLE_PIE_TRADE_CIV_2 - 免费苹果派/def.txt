@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C31_APPLE_PIE_TRADE_CIV_2 = {
+			picture = C31_APPLE_PIE_TRADE_CIV_2
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C31
+				cic_to_target_factor = 0.02
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

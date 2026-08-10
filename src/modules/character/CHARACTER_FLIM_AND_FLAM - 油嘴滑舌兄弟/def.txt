@@ -1,0 +1,28 @@
+characters = {
+    CHARACTER_FLIM_AND_FLAM = {
+        name = CHARACTER_FLIM_AND_FLAM_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_FLIM_AND_FLAM_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_FLIM_AND_FLAM_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FLIM_AND_FLAM_army.dds"
+                small = "gfx/leaders/CHARACTER_FLIM_AND_FLAM_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FLIM_AND_FLAM_navy.dds"
+                small = "gfx/leaders/CHARACTER_FLIM_AND_FLAM_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_FLIM_AND_FLAM_DESC
+            traits = {
+                TRAIT_TECHNOLOGICAL_GENIUS_III
+                TRAIT_FLIM_AND_FLAM_LIAR_IN_VEIN
+            }
+            ideology = corporation_monarchy
+        }
+    }
+}

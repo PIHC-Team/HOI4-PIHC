@@ -1,0 +1,129 @@
+capital = 528
+set_popularities = {
+    harmonicism = 95
+    despotic = 5
+}
+set_politics = {
+    ruling_party = harmonicism
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_WITCHCRAFT_III = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C52
+recruit_character = CHARACTER_KING_ASPEN
+add_ideas = closed_economy
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_ERA_MAGIC_2_EXCEL
+add_ideas = IDEA_ALL_RESISTANCE
+add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+add_ideas = IDEA_C52_HEART_OF_FOREST
+48 = {
+    add_province_modifier = {
+        static_modifiers = {
+            MODIFIER_EVERFREE_FOREST
+        }
+        province = {
+            all_provinces = yes
+        }
+    }
+}
+524 = {
+    add_province_modifier = {
+        static_modifiers = {
+            MODIFIER_EVERFREE_FOREST
+        }
+        province = {
+            all_provinces = yes
+        }
+    }
+}
+528 = {
+    add_province_modifier = {
+        static_modifiers = {
+            MODIFIER_EVERFREE_FOREST
+        }
+        province = {
+            all_provinces = yes
+        }
+    }
+}
+546 = {
+    add_province_modifier = {
+        static_modifiers = {
+            MODIFIER_EVERFREE_FOREST
+        }
+        province = {
+            all_provinces = yes
+        }
+    }
+}
+565 = {
+    add_core_of = C49
+}
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.8
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = 1000
+set_major = no
+set_country_flag = PIHC_COUNTRY_FLAG_C08_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE

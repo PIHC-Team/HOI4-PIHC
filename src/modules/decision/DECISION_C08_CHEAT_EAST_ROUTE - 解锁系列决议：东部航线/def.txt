@@ -1,0 +1,21 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_CHEAT_EAST_ROUTE = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_ALL_EAST_ROUTE
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C08_YES
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_CHEAT_EAST_ROUTE
+    }
+}

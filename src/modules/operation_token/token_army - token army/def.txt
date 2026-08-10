@@ -1,0 +1,8 @@
+token_army = {
+	name = OPERATION_TOKEN_INFILTRATED_ARMY
+	desc = OPERATION_TOKEN_INFILTRATED_ARMY_DESC
+	icon = GFX_infiltrate_army_bg
+	text_icon = GFX_text_infiltrate_army_token
+	intel_source = army
+	intel_gain = 10
+}

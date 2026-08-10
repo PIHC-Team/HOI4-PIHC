@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_TUNGSTEN = {
+	ENABLE_AUTO_TRADE_TUNGSTEN_BUY = yes
+	ENABLE_AUTO_TRADE_TUNGSTEN_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_COST
+		value = 0
+	}
+}

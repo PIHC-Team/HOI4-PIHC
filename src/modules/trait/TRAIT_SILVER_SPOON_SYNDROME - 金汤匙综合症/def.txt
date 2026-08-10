@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_SILVER_SPOON_SYNDROME = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = -0.01
+	}
+}

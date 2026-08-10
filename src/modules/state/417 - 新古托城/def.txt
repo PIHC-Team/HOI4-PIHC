@@ -1,0 +1,67 @@
+state = {
+    id = 417
+    name = STATE_417
+    provinces = {
+        218
+        392
+        674
+        1135
+        1159
+        1429
+        1689
+        1913
+        2660
+        3398
+        3876
+        4151
+        4365
+        4549
+        4640
+        5985
+        6419
+        6444
+        6610
+        7029
+        7337
+        7412
+        7965
+        8690
+        9405
+        9591
+        10929
+        10938
+        10968
+        10981
+        11018
+        11047
+        11071
+        11076
+        11110
+        11119
+        11160
+        11190
+        11259
+        11266
+        11289
+    }
+    manpower = 64609
+    state_category = large_town
+    history = {
+        owner = C64
+        victory_points = {
+            218
+            10
+        }
+        buildings = {
+            industrial_complex = 2
+            infrastructure = 2
+            218 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C64
+    }
+    resources = {
+        rubber = 20
+    }
+}

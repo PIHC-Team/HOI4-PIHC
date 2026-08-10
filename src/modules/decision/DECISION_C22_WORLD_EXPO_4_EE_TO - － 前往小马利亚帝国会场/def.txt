@@ -1,0 +1,39 @@
+DECISION_CATEGORY_C22_WORLD_EXPO = {
+    DECISION_C22_WORLD_EXPO_4_EE_TO = {
+        fixed_random_seed = no
+        priority = 5
+        visible = {
+            check_variable = {
+                VAR_PIHC_WORLD_EXPO_VENUE > 0
+            }
+            NOT = {
+                check_variable = {
+                    VAR_PIHC_WORLD_EXPO_VENUE = 4
+                }
+            }
+        }
+        available = {
+            always = yes
+        }
+        complete_effect = {
+            if = {
+                limit = {
+                    check_variable = {
+                        VAR_PIHC_WORLD_EXPO_VENUE = 3
+                    }
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_WORLD_EXPO_LP_PURCHASE
+                    }
+                }
+                ADD_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_1 = yes
+            }
+            set_variable = {
+                VAR_PIHC_WORLD_EXPO_VENUE = 4
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C22_WORLD_EXPO_4_EE_TO
+    }
+}

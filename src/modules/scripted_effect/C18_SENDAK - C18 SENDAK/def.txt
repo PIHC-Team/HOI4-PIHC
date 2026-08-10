@@ -1,0 +1,102 @@
+C18_SENDAK = {
+	set_country_flag = PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED
+	114 = {
+		REMOVE_FROM_C00_WASTELAND = yes
+		transfer_state_to = C37
+		set_state_name = STATE_114_SENDAK
+		set_victory_points = {
+			province = 2415
+			value = 5
+		}
+		set_province_name = {
+			id = 2415
+			name = STATE_114_SENDAK
+		}
+		add_building_construction = {
+			type = naval_base
+			instant_build = yes
+			level = 1
+			province = 4484
+		}
+	}
+	167 = {
+		remove_core_of = C25
+		transfer_state_to = C37
+		set_state_name = STATE_167_SENDAK
+		set_victory_points = {
+			province = 5258
+			value = 10
+		}
+		add_extra_state_shared_building_slots = 6
+		add_building_construction = {
+			type = supply_node
+			instant_build = yes
+			level = 1
+			province = 5258
+		}
+		add_building_construction = {
+			type = naval_base
+			instant_build = yes
+			level = 1
+			province = 4166
+		}
+		add_building_construction = {
+			type = dockyard
+			instant_build = yes
+			level = 1
+		}
+		add_building_construction = {
+			type = industrial_complex
+			instant_build = yes
+			level = 1
+		}
+	}
+	799 = {
+		REMOVE_FROM_C00_WASTELAND = yes
+		transfer_state_to = C37
+		set_state_name = STATE_799_SENDAK
+		set_victory_points = {
+			province = 14199
+			value = 15
+		}
+		set_province_name = {
+			id = 14199
+			name = STATE_799_SENDAK
+		}
+	}
+	C37 = {
+		set_capital = {
+			state = 799
+		}
+		load_oob = C37_sendak
+		799 = {
+			create_unit = {
+				division = "name = \"僧达克密教团 (Sendak Cult)\" division_template = \"黑魔法教团 (Dark Magic Cult)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C37
+				count = 4
+			}
+		}
+		167 = {
+			create_unit = {
+				division = "name = \"僧达克密教团 (Sendak Cult)\" division_template = \"黑魔法教团 (Dark Magic Cult)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C37
+				count = 2
+			}
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 5
+		}
+	}
+	C18 = {
+		set_country_flag = PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED
+		country_event = {
+			id = C18_MAIN.8
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}

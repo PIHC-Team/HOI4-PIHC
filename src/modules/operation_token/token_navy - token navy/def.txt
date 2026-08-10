@@ -1,0 +1,8 @@
+token_navy = {
+	name = OPERATION_TOKEN_INFILTRATED_NAVY
+	desc = OPERATION_TOKEN_INFILTRATED_NAVY_DESC
+	icon = GFX_infiltrate_navy_bg
+	text_icon = GFX_text_infiltrate_navy_token
+	intel_source = navy
+	intel_gain = 10
+}

@@ -1,0 +1,9 @@
+phase_1 = {
+	name = "Dig the tunnels!"
+	desc = "Infiltrating by digging underground tunnels to enter undetected"
+	icon = GFX_total_operatives
+	picture = GFX_report_event_hitler_handshake
+	equipment = {
+		ARCHETYPE_INFANTRY = 1000
+	}
+}

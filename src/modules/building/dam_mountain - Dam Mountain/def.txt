@@ -1,0 +1,33 @@
+buildings = {
+	dam_mountain = {
+		base_cost = 16000
+		value = 5
+		is_buildable = no
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		damage_factor = -1
+		need_detection = yes
+		detecting_intel_type = civilian
+		show_modifier = yes
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.15
+			local_building_slots_factor = 0.15
+			state_resources_factor = 0.1
+		}
+		province_damage_modifiers = {
+			flooded
+		}
+		tags = {
+			dam_building
+		}
+		level_cap = {
+			province_max = 1
+		}
+		show_on_map = 1
+		icon_frame = 26
+		spawn_point = dam_spawn
+		special_icon = GFX_dam_icon_small
+		only_display_if_exists = yes
+	}
+}
+

@@ -1,0 +1,41 @@
+scientist_trait_genius = {
+    icon = GFX_scientist_trait_genius
+    modifier = {
+        special_project_speed_factor = 0.1
+        scientist_breakthrough_bonus_factor = 0.05
+        scientist_research_bonus_factor = 0.05
+    }
+}
+scientist_trait_brilliant_theorist = {
+    modifier = {
+        special_project_speed_factor = 0.05
+        scientist_breakthrough_bonus_factor = 0.02
+    }
+}
+scientist_trait_gifted_engineer = {
+    modifier = {
+        special_project_speed_factor = 0.05
+        scientist_research_bonus_factor = 0.02
+    }
+}
+scientist_trait_bright = {
+    modifier = {
+        special_project_speed_factor = 0.05
+        scientist_xp_gain_factor = 0.05
+    }
+}
+scientist_trait_fast_learner = {
+    modifier = {
+        scientist_xp_gain_factor = 0.1
+    }
+}
+scientist_trait_resourceful = {
+    modifier = {
+        special_project_facility_supply_consumption_factor = -0.1
+    }
+}
+scientist_trait_schrodingers_trait = {
+    modifier = {
+        custom_modifier_tooltip = scientist_trait_schrodingers_trait_tt
+    }
+}

@@ -1,0 +1,118 @@
+DECISION_CATEGORY_C03_MUFFIN_ROULETTE = {
+    DECISION_C03_MUFFIN_ROULETTE_FORTUNE_TELL = {
+        fixed_random_seed = no
+        priority = 48
+        cost = 0
+        days_re_enable = 28
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING
+        }
+        available = {
+            has_political_power > 24
+            check_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 200
+                compare = greater_than_or_equals
+            }
+        }
+        custom_cost_trigger = {
+            has_political_power > 24
+            check_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 200
+                compare = greater_than_or_equals
+            }
+        }
+        custom_cost_text = CUSTOM_COST_MUFFINS_200_PP_25
+        complete_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+                    }
+                }
+                custom_effect_tooltip = DECISION_C03_MUFFIN_ROULETTE_FORTUNE_TELL_TOOLTIP
+            }
+            hidden_effect = {
+                add_to_variable = {
+                    var = ROOT.VAR_MUFFIN_ROULETTE_TASK_7_FORTUNE_TELL
+                    value = 1
+                }
+                subtract_from_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 200
+                }
+                INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+                add_political_power = -25
+                subtract_from_variable = {
+                    var = ROOT.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+                    value = 200
+                }
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+                            }
+                        }
+                        random_list = {
+                            seed = random
+                            80 = {
+                                country_event = {
+                                    id = C03_MAIN.3
+                                }
+                            }
+                            20 = {
+                                country_event = {
+                                    id = C03_MAIN.4
+                                }
+                            }
+                        }
+                    }
+                    else = {
+                        country_event = {
+                            id = C03_MAIN.3
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+                            }
+                        }
+                        random_list = {
+                            seed = random
+                            80 = {
+                                country_event = {
+                                    id = C03_MAIN.4
+                                }
+                            }
+                            20 = {
+                                country_event = {
+                                    id = C03_MAIN.3
+                                }
+                            }
+                        }
+                    }
+                    else = {
+                        country_event = {
+                            id = C03_MAIN.4
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C03_MUFFIN_ROULETTE_FORTUNE_TELL
+    }
+}

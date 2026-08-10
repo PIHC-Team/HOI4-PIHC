@@ -1,0 +1,12 @@
+C04_ADD_ECO_4_75 = {
+	custom_effect_tooltip = C04_ADD_ECO_4_75_TOOLTIP
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^3 = 1.75
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^3
+		min = 0.0
+		max = 100.0
+	}
+	C04_REGIONAL_DEV_COMPUTE = yes
+}

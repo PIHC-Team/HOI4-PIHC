@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_STARSTREAK = {
+        name = CHARACTER_STARSTREAK_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_STARSTREAK.dds"
+                small = "gfx/leaders/CHARACTER_STARSTREAK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_STARSTREAK_army.dds"
+                small = "gfx/leaders/CHARACTER_STARSTREAK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_STARSTREAK_navy.dds"
+                small = "gfx/leaders/CHARACTER_STARSTREAK_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 6
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

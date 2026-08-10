@@ -1,0 +1,146 @@
+NAMES_GROUP_C29_ARTILLERY = {
+    name = "王国火炮师 (Kingdom Artillery Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "王国火炮师%d师 (Kingdom Artillery Division %d)"
+}
+NAMES_GROUP_C29_TANK_LIGHT = {
+    name = "王国轻型装甲师 (Kingdom Light Armor Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "王国轻型装甲师%d师 (Kingdom Light Armor Division %d)"
+}
+NAMES_GROUP_C29_TRADITIONAL_REGULAR = {
+    name = "王国常规步兵师 (Kingdom Regular Infantry Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "王国常规步兵师%d师 (Kingdom Regular Infantry Division %d)"
+}
+NAMES_GROUP_C29_TANK_HEAVY = {
+    name = "王国重型装甲师 (Kingdom Heavy Armor Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "王国重型装甲师%d师 (Kingdom Heavy Armor Division %d)"
+}
+NAMES_GROUP_C29_TRADITIONAL_SMALL = {
+    name = "王国小型步兵师 (Kingdom Small Infantry Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "王国小型步兵师%d师 (Kingdom Small Infantry Division %d)"
+}
+NAMES_GROUP_C29_AUTOMATA = {
+    name = "王国自动作战师 (Kingdom Automata Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "王国自动作战师%d师 (Kingdom Automata Division %d)"
+}
+NAMES_GROUP_C29_SHIELD = {
+    name = "王国重装步兵师 (Kingdom Heavy Infantry Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "王国重装步兵师%d师 (Kingdom Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C29_MAGICAL = {
+    name = "王国魔法步兵师 (Kingdom Magical Infantry Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "王国魔法步兵师%d师 (Kingdom Magical Infantry Division %d)"
+}
+NAMES_GROUP_C29_INFANTRY_MIX = {
+    name = "王国协同师 (Kingdom Concerted Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "王国协同师%d师 (Kingdom Concerted Division %d)"
+}
+NAMES_GROUP_C29_MOTORIZED = {
+    name = "王国机动步兵师 (Kingdom Motorized Infantry Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "王国机动步兵师%d师 (Kingdom Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C29_TANK_MEDIUM = {
+    name = "王国中型装甲师 (Kingdom Medium Armor Division)"
+    for_countries = {
+        C29
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "王国中型装甲师%d师 (Kingdom Medium Armor Division %d)"
+}

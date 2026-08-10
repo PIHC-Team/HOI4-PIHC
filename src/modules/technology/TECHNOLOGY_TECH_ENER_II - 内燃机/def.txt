@@ -1,0 +1,48 @@
+technologies = {
+    TECHNOLOGY_TECH_ENER_II = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 6
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_energy
+            pihc_ice_tech
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_ENGINE_3A_IC
+            MODULE_PLANE_ENGINE_3A_IC
+            MODULE_SPECIAL_FUEL_TANK
+            MODULE_SPECIAL_FUEL_TANK_LARGE
+        }
+        on_research_complete_limit = {
+            always = yes
+        }
+        on_research_complete = {
+            custom_effect_tooltip = TECHNOLOGY_TECH_ENER_II_TOOLTIP
+        }
+        special_project_specialization = {
+            specialization_oilpunk
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_ENER_III
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_INFO_IIIC
+            research_cost_coeff = 1
+        }
+        research_cost = 8.0
+        start_year = 1005
+    }
+}

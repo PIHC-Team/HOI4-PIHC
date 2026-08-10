@@ -1,0 +1,33 @@
+COMPUTE_NUM_FARMS_IN_STATE = {
+	set_variable = {
+		var = VAR_NUM_FARMS_IN_CURRENT_STATE
+		value = 0
+	}
+	if = {
+		limit = {
+			farm_complex > 0
+		}
+		add_to_variable = {
+			var = VAR_NUM_FARMS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			farm_complex > 1
+		}
+		add_to_variable = {
+			var = VAR_NUM_FARMS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			farm_complex > 2
+		}
+		add_to_variable = {
+			var = VAR_NUM_FARMS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+}

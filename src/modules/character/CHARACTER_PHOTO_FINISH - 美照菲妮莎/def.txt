@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_PHOTO_FINISH = {
+        name = CHARACTER_PHOTO_FINISH_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PHOTO_FINISH.dds"
+                small = "gfx/leaders/CHARACTER_PHOTO_FINISH_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PHOTO_FINISH_army.dds"
+                small = "gfx/leaders/CHARACTER_PHOTO_FINISH_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PHOTO_FINISH_navy.dds"
+                small = "gfx/leaders/CHARACTER_PHOTO_FINISH_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PHOTO_FINISH
+            desc = CHARACTER_PHOTO_FINISH_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+                TRAIT_HIGH_POLITICAL_ESTEEM
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 200
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

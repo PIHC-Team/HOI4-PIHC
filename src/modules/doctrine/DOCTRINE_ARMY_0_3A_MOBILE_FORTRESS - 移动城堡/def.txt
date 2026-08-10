@@ -1,0 +1,60 @@
+pihc_land_tide_of_iron_combat_support_a = {
+	track = combat_support
+	name = DOCTRINE_ARMY_0_3A_MOBILE_FORTRESS
+	description = DOCTRINE_ARMY_0_3A_MOBILE_FORTRESS_DESC
+	icon = GFX_doctrine_pihc_land_tide_of_iron_combat_support_a_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_all_armor = {
+		defense = 0.15
+		max_strength = 0.05
+		max_organisation = 8.0
+	}
+	category_infantry_motorized = {
+		defense = 0.15
+		max_strength = 0.05
+		max_organisation = 8.0
+	}
+	army_morale_factor = 0.05
+	dig_in_speed_factor = 0.05
+	rewards = {
+		long_range = {
+			category_all_armor = {
+				supply_consumption = -0.1
+			}
+			category_infantry_motorized = {
+				supply_consumption = -0.1
+			}
+			category_all_infantry = {
+				maximum_speed = 0.15
+			}
+			out_of_supply_factor = -0.08
+			enable_tactic = tactic_breakthrough
+		}
+		coffin_nail = {
+			category_all_armor = {
+				max_organisation = 5.0
+				defense = 0.05
+			}
+			category_all_infantry = {
+				max_organisation = 3.0
+				defense = 0.05
+			}
+			coordination_bonus = 0.02
+			pocket_penalty = -0.1
+			enable_tactic = tactic_pihc_iron_curtain
+		}
+	}
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_DUDLEY_NIGHTSHADE = {
+        name = CHARACTER_DUDLEY_NIGHTSHADE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE.dds"
+                small = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE_army.dds"
+                small = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE_navy.dds"
+                small = "gfx/leaders/CHARACTER_DUDLEY_NIGHTSHADE_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_DUDLEY_NIGHTSHADE_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

@@ -1,0 +1,36 @@
+DECISION_CATEGORY_C08_C01_COZYBURG_SCRAMBLE = {
+    DECISION_C01_COZ_MARTERIAL = {
+        fixed_random_seed = no
+        priority = 999
+        days_remove = 14
+        visible = {
+            has_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+            tag = C01
+        }
+        available = {
+            always = no
+        }
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = EQUIPMENT_RANGED_HANDGONNE
+                amount = 150
+                producer = C33
+            }
+            add_equipment_to_stockpile = {
+                type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+                amount = 100
+                producer = C33
+            }
+            add_political_power = 15
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = DECISION_C01_COZ_SUPPORT_TIME
+                days = 14
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+}

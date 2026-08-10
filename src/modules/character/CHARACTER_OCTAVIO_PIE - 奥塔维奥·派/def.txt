@@ -1,0 +1,35 @@
+characters = {
+    CHARACTER_OCTAVIO_PIE = {
+        name = CHARACTER_OCTAVIO_PIE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_OCTAVIO_PIE.dds"
+                small = "gfx/leaders/CHARACTER_OCTAVIO_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_OCTAVIO_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_OCTAVIO_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_OCTAVIO_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_OCTAVIO_PIE_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_OCTAVIO_PIE
+            desc = CHARACTER_OCTAVIO_PIE_DESC
+            traits = {
+                TRAIT_ARROGANT_AIR_COMMANDER
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = air_chief
+            visible = {
+                has_completed_focus = FOCUS_C12_RECONNECTING_WITH_DISTANT_RELATIVES
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+technologies = {
+    TECHNOLOGY_PARASPRITE_TRAINING = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 16
+                y = 3
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+        }
+        enable_equipments = {
+            EQUIPMENT_AUTOMATA_PARASPRITE
+        }
+        enable_subunits = {
+            infantry_automata
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = parasprite_1
+                load_oob = parasprite_2
+                load_oob = parasprite_3
+            }
+        }
+        allow = {
+            always = no
+        }
+        dependencies = {
+            TECHNOLOGY_CREATURE_TRAINING = 1
+        }
+        research_cost = 3.0
+        start_year = 1001
+    }
+}

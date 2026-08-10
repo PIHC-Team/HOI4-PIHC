@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C08_FADED_FRIENDSHIP_1 = {
+			picture = C08_FADED_FRIENDSHIP_1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.5
+				custom_modifier_tooltip = IDEA_C08_FADED_FRIENDSHIP_1_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

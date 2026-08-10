@@ -1,0 +1,43 @@
+technologies = {
+    TECHNOLOGY_FIREARM_VII = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 5
+                y = 22
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_firearm
+        }
+        enable_equipments = {
+            EQUIPMENT_RANGED_CARBINE
+        }
+        enable_subunits = {
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 4
+                date > 1009.8.1
+            }
+            modifier = {
+                factor = -1
+                date < 1006.8.1
+            }
+            modifier = {
+                factor = -15
+                has_equipment = {
+                    ARCHETYPE_INFANTRY < 20000
+                }
+            }
+        }
+        research_cost = 2.0
+        start_year = 1007
+    }
+}

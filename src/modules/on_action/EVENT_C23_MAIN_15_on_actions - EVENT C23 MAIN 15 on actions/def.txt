@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C23 = {
+				country_event = {
+					id = C23_MAIN.15
+					days = 852
+					random_days = 275
+				}
+			}
+		}
+	}
+}

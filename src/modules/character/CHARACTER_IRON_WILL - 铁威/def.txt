@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_IRON_WILL = {
+        name = CHARACTER_IRON_WILL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_IRON_WILL.dds"
+                small = "gfx/leaders/CHARACTER_IRON_WILL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_IRON_WILL_army.dds"
+                small = "gfx/leaders/CHARACTER_IRON_WILL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_IRON_WILL_navy.dds"
+                small = "gfx/leaders/CHARACTER_IRON_WILL_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_IRON_WILL
+            desc = CHARACTER_IRON_WILL_DESC
+            traits = {
+                TRAIT_HAWKISH
+                TRAIT_IRON_WILL_IRON_FIST
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

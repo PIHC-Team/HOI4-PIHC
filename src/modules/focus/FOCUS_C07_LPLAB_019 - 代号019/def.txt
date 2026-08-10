@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C07_LPLAB_019
+	icon = GFX_FOCUS_C07_LPLAB_019_icon
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+		has_tech = TECHNOLOGY_SUPPORT_TELEPORT_I
+	}
+	cost = 2
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C07_LPLAB_TOOLTIP
+	}
+	available = {
+		has_tech = TECHNOLOGY_SUPPORT_MAGIC_I
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 33
+	y = 4
+}

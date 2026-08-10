@@ -1,0 +1,9 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    icon = C01_UNIFICATION
+    picture = GFX_decision_category_picture
+    priority = 30000
+    allowed = {
+        tag = C01
+    }
+    visible_when_empty = yes
+}

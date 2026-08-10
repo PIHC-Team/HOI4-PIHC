@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C09_APPLEWOOD_ACQUISITION
+	icon = GFX_FOCUS_C09_APPLEWOOD_ACQUISITION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_TERM_EXCHANGE
+	}
+	cost = 6
+	completion_reward = {
+		DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+		C01 = {
+			country_event = {
+				id = C09_MAIN.1
+				days = 1
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 8
+	y = 2
+}

@@ -1,0 +1,17 @@
+C02_TRIXIE_LULAMOON_DEAD = {
+	C02 = {
+		add_popularity = {
+			ideology = anarchy
+			popularity = 1.0
+		}
+		set_politics = {
+			ruling_party = anarchy
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C02_ANARCHY
+		promote_character = {
+			character = CHARACTER_NOPONY_3
+			ideology = anarchy_anarchy
+		}
+		set_global_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+	}
+}

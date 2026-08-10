@@ -1,0 +1,108 @@
+equipments = {
+	EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED = {
+		archetype = ARCHETYPE_TANK_LIGHT
+		priority = 1
+		visual_level = 1
+		build_cost_ic = 4.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		defense = 20.0
+		armor_value = 10.0
+		hardness = 0.75
+		max_strength = 50.0
+		weight = 1.0
+		module_slots = {
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_engine_type_0
+					pihc_tank_engine_type_1
+				}
+			}
+			crew_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_crew_type_0
+				}
+			}
+			painting_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_painting_type_0
+					pihc_tank_painting_type_1
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_turret_type_0
+					pihc_tank_turret_type_1
+				}
+			}
+			projectile_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_projectile_type_0
+					pihc_tank_projectile_type_1
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_armor_type_0
+					pihc_tank_armor_type_1
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_suspension_type_0
+					pihc_tank_suspension_type_1
+				}
+			}
+		}
+		default_modules = {
+			turret_type_slot = MODULE_TURRET_3B_SPIN
+			projectile_type_slot = MODULE_PROJECTILE_4A_IRONBALL
+			painting_type_slot = MODULE_PAINTING_CAMOU
+			crew_type_slot = MODULE_CREW_1A_NONE
+			suspension_type_slot = MODULE_SUSPENSION_2B_ROD
+			armor_type_slot = MODULE_ARMOR_2A_BRASS
+			engine_type_slot = MODULE_ENGINE_2A_STEAM
+		}
+		maximum_speed = 4.0
+		entrenchment = 2.0
+		recon = 2
+		picture = EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_CHASSIS_TANK_LIGHT_WOODEN
+		is_frame = yes
+		manpower = 1
+		resources = {
+			steel = 5
+			rubber = 4
+		}
+		fuel_consumption = 0.12
+		fuel_capacity = 10.0
+		module_count_limit = {
+			module = any
+			count < 9
+			title = CHASSIS_HAS_ONLY_9_SLOTS_TOOLTIP
+		}
+	}
+}

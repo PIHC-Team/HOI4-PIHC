@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C02_EMPIRE_MARSHAL = {
+			picture = C02_EMPIRE_MARSHAL
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

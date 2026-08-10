@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C11 = {
+				country_event = {
+					id = CECIA.11
+					days = 102
+				}
+			}
+		}
+	}
+}

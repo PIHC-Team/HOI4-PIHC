@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C04_HONORED_GUEST_WIND_RIDER
+	icon = GFX_FOCUS_C04_HONORED_GUEST_WIND_RIDER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C04_DINER_EXPANSION_CONSTRUCTION
+	}
+	cost = 3
+	allow_branch = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C04_WIND_RIDERS_INVEST
+		has_country_flag = PIHC_COUNTRY_FLAG_C04_DINER_RUNNING
+	}
+	select_effect = {
+		hidden_effect = {
+			ADD_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_II_1 = yes
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = C04_MAIN.53
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 8
+}

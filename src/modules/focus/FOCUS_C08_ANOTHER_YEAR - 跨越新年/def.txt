@@ -1,0 +1,44 @@
+focus = {
+	id = FOCUS_C08_ANOTHER_YEAR
+	icon = GFX_FOCUS_C08_ANOTHER_YEAR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cancel_if_invalid = yes
+	prerequisite = {
+		focus = FOCUS_C08_THE_SITUATION
+	}
+	prerequisite = {
+		focus = FOCUS_C08_CONTACT_COMRADES
+	}
+	cost = 5
+	completion_reward = {
+		country_event = {
+			id = C08_MAIN.16
+			days = 1
+		}
+	}
+	bypass = {
+		hidden_trigger = {
+			has_global_flag = PIHC_GLOBAL_FLAG_JAHR_NULL
+		}
+	}
+	available = {
+		hidden_trigger = {
+			NOT = {
+				has_global_flag = PIHC_GLOBAL_FLAG_JAHR_NULL
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 4
+}

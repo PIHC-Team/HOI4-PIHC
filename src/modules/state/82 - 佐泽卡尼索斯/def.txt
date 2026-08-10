@@ -1,0 +1,45 @@
+state = {
+    id = 82
+    name = STATE_82
+    provinces = {
+        216
+        498
+        1222
+        1413
+        1585
+        2899
+        3109
+        4892
+        5594
+        8487
+        8610
+        9530
+        9570
+        10679
+        10735
+        10775
+        10804
+        10826
+        10834
+        10864
+    }
+    manpower = 1592
+    state_category = pastoral
+    history = {
+        owner = C22
+        victory_points = {
+            216
+            1
+        }
+        buildings = {
+            industrial_complex = 1
+            arms_factory = 1
+            infrastructure = 1
+        }
+        add_core_of = C22
+    }
+    resources = {
+        steel = 16
+        aluminium = 32
+    }
+}

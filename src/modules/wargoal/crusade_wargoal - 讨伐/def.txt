@@ -1,0 +1,11 @@
+wargoal_types = {
+	crusade_wargoal = {
+		allowed = {
+			always = no
+		}
+		take_states_cost = -50
+		puppet_cost = -50
+		expire = 180
+		threat = 0.5
+	}
+}

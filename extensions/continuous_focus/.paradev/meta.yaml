@@ -1,0 +1,141 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/continuous_focus
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-continuous-focus
+items:
+-   kind: entity
+    identifier: pihc3-continuous-focus-module
+    name: PIHC3 Continuous Focus Module
+    desc: Project-owned continuous_focus source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ContinuousFocusModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-continuous-focus
+    name: PIHC3 Continuous Focus
+    desc: PIHC3 continuous_focus module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-continuous-focus-module
+        definition:
+            identifier: pihc3-continuous-focus
+            name: PIHC3 Continuous Focus
+            version: 0.2.3
+            desc: PIHC3 continuous_focus module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-continuous-focus-module
+            meta:
+                project: PIHC3
+                family: continuous_focus
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-continuous-focus
+    name: PIHC3 Continuous Focus Compiler
+    desc: Registry-backed source slots and compiler hooks for continuous_focus.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: continuous-focuses
+            title: Continuous Focuses
+            group: country
+            title_key: modules.continuousFocuses.title
+        dependencies:
+        - extension:pihc3-continuous-focus
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-8256680e68ad70db
+    name: PIHC3 Basic Continuous Focus
+    desc: PIHC3 authoring template pihc3:continuous_focus/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:continuous_focus/basic
+            declaration:
+                title: PIHC3 Basic Continuous Focus
+                family: continuous_focus
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    palette_id:
+                        default: '{object_id}_palette'
+                    icon:
+                        default: GFX_goal_generic_propaganda
+                    available:
+                        default: always = no
+                    enable:
+                        default: always = yes
+                    country_factor:
+                        default: '1'
+                    default:
+                        default: 'no'
+                    reset_on_civilwar:
+                        default: 'no'
+                    x:
+                        default: '50'
+                    y:
+                        default: '1000'
+                    ai_factor:
+                        default: '0'
+                    ai_strategy:
+                        default: ai_focus_defense
+                    daily_cost:
+                        default: '1'
+                    available_if_capitulated:
+                        default: 'yes'
+                    language:
+                        default: en
+                files:
+                    def.txt: "continuous_focus_palette = {{\n    id = {palette_id}\n\
+                        \n    country = {{\n        factor = {country_factor}\n  \
+                        \  }}\n\n    default = {default}\n    reset_on_civilwar =\
+                        \ {reset_on_civilwar}\n\n    position = {{ x = {x} y = {y}\
+                        \ }}\n\n    focus = {{\n        id = {object_id}\n       \
+                        \ icon = {icon}\n\n        available = {{\n            {available}\n\
+                        \        }}\n\n        enable = {{\n            {enable}\n\
+                        \        }}\n\n        modifier = {{\n        }}\n\n     \
+                        \   ai_will_do = {{\n            factor = {ai_factor}\n  \
+                        \      }}\n\n        supports_ai_strategy = {ai_strategy}\n\
+                        \        daily_cost = {daily_cost}\n\n        available_if_capitulated\
+                        \ = {available_if_capitulated}\n\n        select_effect =\
+                        \ {{\n        }}\n\n        cancel_effect = {{\n        }}\n\
+                        \    }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

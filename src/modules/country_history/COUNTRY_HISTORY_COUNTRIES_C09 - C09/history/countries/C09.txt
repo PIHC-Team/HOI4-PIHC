@@ -1,0 +1,131 @@
+capital = 432
+set_popularities = {
+    democratic = 72
+    harmonicism = 12
+    corporation = 8
+    despotic = 8
+}
+set_politics = {
+    ruling_party = democratic
+    last_election = 1002.12.1
+    election_frequency = 24
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_FIREARM_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+    }
+}
+oob = C09
+recruit_character = CHARACTER_STELLAR_FLARE
+recruit_character = CHARACTER_FIRELIGHT
+add_ideas = export_focus
+add_ideas = disarmed_nation
+add_ideas = civilian_economy
+add_ideas = IDEA_C09_TERM_EXCHANGE
+add_ideas = IDEA_C09_SATELLITE
+add_ideas = IDEA_ALL_ECONOMIC_GROWTH
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.35
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = -3000
+country_lock_all_division_template = yes
+set_major = no
+complete_national_focus = FOCUS_C09_CANTERLOT_PACT
+complete_national_focus = FOCUS_C09_TERM_EXCHANGE
+complete_national_focus = FOCUS_C09_CANTERLOT_PACT_2
+complete_national_focus = FOCUS_C09_TERM_EXCHANGE_2
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 60
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 60
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C09
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_HANDGONNE
+        creator = C09
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 100
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN
+set_country_flag = PIHC_COUNTRY_FLAG_C09_TERM_OF_STELLAR_FLARE
+give_military_access = C01
+give_military_access = C02
+give_military_access = C03
+give_military_access = C04
+give_military_access = C08
+give_military_access = C10
+give_military_access = C11
+give_military_access = C15

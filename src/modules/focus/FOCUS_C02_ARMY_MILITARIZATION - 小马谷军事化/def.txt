@@ -1,0 +1,75 @@
+focus = {
+	id = FOCUS_C02_ARMY_MILITARIZATION
+	icon = GFX_FOCUS_C02_ARMY_MILITARIZATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_ARMY_COUNCIL
+	}
+	cost = 6
+	completion_reward = {
+		hidden_effect = {
+			load_oob = C02_police
+		}
+		504 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C02
+				}
+				create_unit = {
+					division = "name = \"小马谷军队 (Ponyville Army)\" division_template = \"警察 (Police Force)\" start_experience_factor = 0.2 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = C02
+					count = 3
+				}
+				create_unit = {
+					division = "name = \"小马谷军队 (Ponyville Army)\" division_template = \"魔法步兵师 (Magical Infantry Division)\" start_experience_factor = 0.2 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = C02
+					count = 2
+				}
+			}
+		}
+		custom_effect_tooltip = C02_TRIXIE_LULAMOON_DEC_5
+		add_to_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			value = -0.05
+		}
+		clamp_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			min = 0.0
+			max = 1.0
+		}
+		custom_effect_tooltip = C02_OCTAVIA_INC_15
+		add_to_variable = {
+			var = C02.VAR_C02_ELECTION_OCTAVIA
+			value = 0.15
+		}
+		clamp_variable = {
+			var = C02.VAR_C02_ELECTION_OCTAVIA
+			min = 0.0
+			max = 1.0
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 6
+}

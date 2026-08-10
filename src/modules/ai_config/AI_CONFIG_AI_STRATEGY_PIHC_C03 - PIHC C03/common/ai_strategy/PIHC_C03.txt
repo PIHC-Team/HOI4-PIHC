@@ -1,0 +1,156 @@
+derpy_dislike_war = {
+    allowed = {
+        original_tag = C03
+    }
+    enable = {
+        C03 = {
+            has_country_leader = {
+                ruling_only = yes
+                character = CHARACTER_DERPY_HOOVES
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C02
+        value = 9999
+    }
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C10
+        value = 9999
+    }
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C01
+        value = 9999
+    }
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C33
+        value = 9999
+    }
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C04
+        value = 9999
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C01
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C02
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C10
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C33
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C31
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C01
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C02
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C33
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C10
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C01
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C04
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C04
+        value = -9999
+        target = call_allies
+    }
+    ai_strategy = {
+        type = ignore
+        id = C01
+        value = 9999
+    }
+    ai_strategy = {
+        type = ignore
+        id = C04
+        value = 9999
+    }
+    ai_strategy = {
+        type = dont_join_wars_with
+        id = C03
+        value = 9999
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C01
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C04
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C10
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C33
+        value = -9999
+        target = join_allies
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C02
+        value = -9999
+        target = join_allies
+    }
+}

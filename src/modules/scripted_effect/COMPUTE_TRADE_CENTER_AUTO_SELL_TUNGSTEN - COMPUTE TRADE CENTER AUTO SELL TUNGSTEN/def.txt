@@ -1,0 +1,70 @@
+COMPUTE_TRADE_CENTER_AUTO_SELL_TUNGSTEN = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_SELL
+			}
+			check_variable = {
+				var = VAR_TRADE_CENTER_TUNGSTEN_OFF
+				value = 0
+				compare = greater_than
+			}
+		}
+		set_temp_variable = {
+			var = auto_trade_amount
+			value = VAR_TRADE_CENTER_TUNGSTEN_OFF
+		}
+		set_temp_variable = {
+			var = auto_trade_max_amount
+			value = VAR_TRADE_CENTER_CREDIT_REQ
+		}
+		set_temp_variable = {
+			var = auto_trade_max_amount_mod
+			value = auto_trade_max_amount
+		}
+		modulo_temp_variable = {
+			var = auto_trade_max_amount_mod
+			value = global.VAR_TRADE_CENTER_TUNGSTEN_VALUE
+		}
+		subtract_from_temp_variable = {
+			var = auto_trade_max_amount
+			value = auto_trade_max_amount_mod
+		}
+		divide_temp_variable = {
+			var = auto_trade_max_amount
+			value = global.VAR_TRADE_CENTER_TUNGSTEN_VALUE
+		}
+		round_temp_variable = auto_trade_max_amount
+		clamp_temp_variable = {
+			var = auto_trade_amount
+			max = auto_trade_max_amount
+		}
+		set_variable = {
+			var = VAR_TRADE_CENTER_TUNGSTEN_COST
+			value = auto_trade_amount
+		}
+		set_temp_variable = {
+			var = auto_trade_credit
+			value = VAR_TRADE_CENTER_TUNGSTEN_COST
+		}
+		multiply_temp_variable = {
+			var = auto_trade_credit
+			value = global.VAR_TRADE_CENTER_TUNGSTEN_VALUE
+		}
+		subtract_from_variable = {
+			var = VAR_TRADE_CENTER_CREDIT_REQ
+			value = auto_trade_credit
+		}
+		add_to_variable = {
+			var = VAR_TRADE_CENTER_CREDIT
+			value = auto_trade_credit
+		}
+	}
+	else = {
+		set_variable = {
+			var = VAR_TRADE_CENTER_TUNGSTEN_COST
+			value = 0
+		}
+	}
+}

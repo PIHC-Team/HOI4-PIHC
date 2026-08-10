@@ -1,0 +1,108 @@
+scripted_gui = {
+	pihc_welcome_screen = {
+		context_type = player_context
+		window_name = pihc_welcome_screen_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_welcome_screen
+		}
+		triggers = {
+			tab_1_on_visible = {
+				check_variable = {
+					pihc_welcome_screen = 1
+				}
+			}
+			tab_1_off_visible = {
+				NOT = {
+					check_variable = {
+						pihc_welcome_screen = 1
+					}
+				}
+			}
+			tab_2_on_visible = {
+				check_variable = {
+					pihc_welcome_screen = 2
+				}
+			}
+			tab_2_off_visible = {
+				NOT = {
+					check_variable = {
+						pihc_welcome_screen = 2
+					}
+				}
+			}
+			tab_3_on_visible = {
+				check_variable = {
+					pihc_welcome_screen = 3
+				}
+			}
+			tab_3_off_visible = {
+				NOT = {
+					check_variable = {
+						pihc_welcome_screen = 3
+					}
+				}
+			}
+			tab_4_on_visible = {
+				check_variable = {
+					pihc_welcome_screen = 4
+				}
+			}
+			tab_4_off_visible = {
+				NOT = {
+					check_variable = {
+						pihc_welcome_screen = 4
+					}
+				}
+			}
+			tab_1_header_visible = {
+				check_variable = {
+					pihc_welcome_screen = 1
+				}
+			}
+			tab_2_header_visible = {
+				check_variable = {
+					pihc_welcome_screen = 2
+				}
+			}
+			tab_3_header_visible = {
+				check_variable = {
+					pihc_welcome_screen = 3
+				}
+			}
+			tab_4_header_visible = {
+				check_variable = {
+					pihc_welcome_screen = 4
+				}
+			}
+		}
+		effects = {
+			close_button_click = {
+				clear_variable = pihc_welcome_screen
+			}
+			pihc_play_button_click = {
+				clear_variable = pihc_welcome_screen
+			}
+			tab_1_off_click = {
+				set_variable = {
+					pihc_welcome_screen = 1
+				}
+			}
+			tab_2_off_click = {
+				set_variable = {
+					pihc_welcome_screen = 2
+				}
+			}
+			tab_3_off_click = {
+				set_variable = {
+					pihc_welcome_screen = 3
+				}
+			}
+			tab_4_off_click = {
+				set_variable = {
+					pihc_welcome_screen = 4
+				}
+			}
+		}
+	}
+}

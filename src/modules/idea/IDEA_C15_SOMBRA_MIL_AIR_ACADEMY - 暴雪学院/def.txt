@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		IDEA_C15_SOMBRA_MIL_AIR_ACADEMY = {
+			picture = C15_SOMBRA_MIL_AIR_ACADEMY
+			removal_cost = -1
+			modifier = {
+				air_training_xp_gain_factor = 0.25
+				air_mission_xp_gain_factor = 0.25
+				air_mission_efficiency = 0.1
+				air_ace_generation_chance_factor = 0.15
+				air_manpower_requirement_factor = 0.1
+				air_power_projection_factor = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		IDEA_C03_MUFFIN = {
+			picture = C03_MUFFIN
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.03
+				research_speed_factor = -0.15
+				local_resources_factor = 0.05
+				trade_opinion_factor = 0.2
+				party_popularity_stability_factor = 0.1
+				political_power_factor = 0.1
+				stability_factor = 0.25
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.2
+				civilian_intel_to_others = -0.4
+				training_time_factor = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

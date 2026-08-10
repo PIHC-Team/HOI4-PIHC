@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_US_MILITARY = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		research_speed_factor = 0.25
+		offence = 0.15
+		country_resource_cost_oil = 10
+	}
+}

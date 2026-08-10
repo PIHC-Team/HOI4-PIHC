@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_AHUIZOTL = {
+        name = CHARACTER_AHUIZOTL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_AHUIZOTL.dds"
+                small = "gfx/leaders/CHARACTER_AHUIZOTL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_AHUIZOTL_army.dds"
+                small = "gfx/leaders/CHARACTER_AHUIZOTL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_AHUIZOTL_navy.dds"
+                small = "gfx/leaders/CHARACTER_AHUIZOTL_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_AHUIZOTL_DESC
+            traits = {
+
+            }
+            ideology = peacism_spirit
+        }
+    }
+}

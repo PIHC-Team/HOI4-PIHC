@@ -1,0 +1,256 @@
+defined_text = {
+    name = GetC08PinGame1KeysNested
+    text = {
+        trigger = {
+            THIS = {
+                state = 1
+            }
+        }
+        localization_key = C08_PIN_GAME_1_01_TIE
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 2
+            }
+        }
+        localization_key = C08_PIN_GAME_1_02_RIGHT_COLLAR
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 3
+            }
+        }
+        localization_key = C08_PIN_GAME_1_03_LEFT_COLLAR
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 4
+            }
+        }
+        localization_key = C08_PIN_GAME_1_04_RIGHT_CHEST
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 5
+            }
+        }
+        localization_key = C08_PIN_GAME_1_05_LEFT_CHEST
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 6
+            }
+        }
+        localization_key = C08_PIN_GAME_1_06_RIGHT_CUFF
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 7
+            }
+        }
+        localization_key = C08_PIN_GAME_1_07_LEFT_CUFF
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 8
+            }
+        }
+        localization_key = C08_PIN_GAME_1_08_RIGHT_EAR
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 9
+            }
+        }
+        localization_key = C08_PIN_GAME_1_09_LEFT_EAR
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 10
+            }
+        }
+        localization_key = C08_PIN_GAME_1_10_RIGHT_FRONT_LEG
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 11
+            }
+        }
+        localization_key = C08_PIN_GAME_1_11_LEFT_FRONT_LEG
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 12
+            }
+        }
+        localization_key = C08_PIN_GAME_1_12_RIGHT_SIDE
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 13
+            }
+        }
+        localization_key = C08_PIN_GAME_1_13_LEFT_SIDE
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 14
+            }
+        }
+        localization_key = C08_PIN_GAME_1_14_RIGHT_HIND_LEG
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 15
+            }
+        }
+        localization_key = C08_PIN_GAME_1_15_LEFT_HIND_LEG
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 16
+            }
+        }
+        localization_key = C08_PIN_GAME_1_16_HAT
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 17
+            }
+        }
+        localization_key = C08_PIN_GAME_1_17_BACK
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 18
+            }
+        }
+        localization_key = C08_PIN_GAME_1_18_NECK
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 19
+            }
+        }
+        localization_key = C08_PIN_GAME_1_19_CUTIE_MARK
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 20
+            }
+        }
+        localization_key = C08_PIN_GAME_1_20_TAIL
+    }
+    text = {
+        trigger = {
+            THIS = {
+                state = 21
+            }
+        }
+        localization_key = C08_PIN_GAME_1_21_MANE
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = wtf
+    }
+}
+defined_text = {
+    name = GetC08PinGame1Status
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT
+        }
+        localization_key = C08_PIN_GAME_1_CORRECT
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT
+        }
+        localization_key = C08_PIN_GAME_1_INCORRECT
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_PIN_GAME_1_NOT_SUBMITTED
+    }
+}
+defined_text = {
+    name = GetC08PinGame1SentCode
+    text = {
+        trigger = {
+            check_variable = {
+                C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 4
+            }
+        }
+        localization_key = C08_PIN_GAME_1_ANSWERS_4
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 3
+            }
+        }
+        localization_key = C08_PIN_GAME_1_ANSWERS_3
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 2
+            }
+        }
+        localization_key = C08_PIN_GAME_1_ANSWERS_2
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 1
+            }
+        }
+        localization_key = C08_PIN_GAME_1_ANSWERS_1
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 0
+            }
+        }
+        localization_key = C08_PIN_GAME_1_ANSWERS_0
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = GetC08PinGame1Keys
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = [GetC08PinGame1KeysNested]
+    }
+}

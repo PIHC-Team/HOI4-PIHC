@@ -1,0 +1,14 @@
+equipments = {
+	ARCHETYPE_VEHICLE = {
+		is_archetype = yes
+		is_buildable = no
+		active = yes
+		group_by = archetype
+		type = {
+			infantry
+			motorized
+			support
+		}
+		interface_category = interface_category_land
+	}
+}

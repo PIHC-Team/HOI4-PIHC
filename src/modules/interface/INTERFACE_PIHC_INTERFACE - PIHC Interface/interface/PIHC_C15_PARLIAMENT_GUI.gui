@@ -1,0 +1,121 @@
+guiTypes = {
+    containerWindowType = {
+        name = parliament_gui_container
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 400
+            height = 450
+        }
+        instantTextBoxType = {
+            name = semicircle_parliament_gui_title
+            position = {
+                x = 35
+                y = 0
+            }
+            font = hoi_24header
+            text = C15_PARLIAMENT_TITLE
+            maxWidth = 400
+            maxHeight = 24
+            format = center
+        }
+        containerWindowType = {
+            name = parliament_semicircle_main_container
+            position = {
+                x = 0
+                y = 25
+            }
+            size = {
+                width = 490
+                height = 260
+            }
+            background = {
+                name = Background
+                quadTextureSprite = GFX_tiled_window_thin_border2
+            }
+            gridboxtype = {
+                name = parliament_semicircle_main_grid
+                position = {
+                    x = 3
+                    y = 0
+                }
+                size = {
+                    width = 90%%
+                    height = 90%%
+                }
+                slotsize = {
+                    width = 100%%
+                    height = 0
+                }
+                max_slots_horizontal = 1
+                add_horizontal = no
+            }
+        }
+        gridboxtype = {
+            name = parliament_member_grid
+            position = {
+                x = -150
+                y = 300
+            }
+            size = {
+                width = 100%%
+                height = 100%%
+            }
+            slotsize = {
+                width = 200
+                height = 18
+            }
+            max_slots_vertical = 8
+            add_horizontal = no
+        }
+    }
+    containerWindowType = {
+        name = parliament_semicircle_main_entry
+        position = {
+            x = 0
+            y = 0
+        }
+        iconType = {
+            name = parliament_semicircle_main_icon
+            spriteType = GFX_C15_parliament_party_icon
+            position = {
+                x = 0
+                y = 0
+            }
+            pdx_tooltip = C15_PARLIAMENT_SEAT_DATA_DESC
+        }
+    }
+    containerWindowType = {
+        name = parliament_member_entry
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 300
+            height = 18
+        }
+        iconType = {
+            name = parliament_member_icon
+            spriteType = GFX_C15_parliament_party_icon
+            position = {
+                x = -20
+                y = 0
+            }
+        }
+        instantTextboxType = {
+            name = parliament_member_text
+            position = {
+                x = 0
+                y = 0
+            }
+            font = hoi_16mbs
+            maxWidth = 400
+            maxHeight = 16
+            format = left
+            text = C15_PARLIAMENT_PARTY_TEXT
+        }
+    }
+}

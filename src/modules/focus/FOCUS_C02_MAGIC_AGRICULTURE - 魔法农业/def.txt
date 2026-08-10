@@ -1,0 +1,43 @@
+focus = {
+	id = FOCUS_C02_MAGIC_AGRICULTURE
+	icon = GFX_FOCUS_C02_MAGIC_AGRICULTURE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_MAGIC_EDUCATION
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_AGRICULTURE
+	}
+	cost = 3
+	completion_reward = {
+		add_timed_idea = {
+			idea = IDEA_C02_FAST_FARM_CONSTRUCTION
+			days = 360
+		}
+		custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_5
+		add_to_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			value = 0.05
+		}
+		clamp_variable = {
+			var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+			min = 0.0
+			max = 1.0
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 11
+	y = 4
+}

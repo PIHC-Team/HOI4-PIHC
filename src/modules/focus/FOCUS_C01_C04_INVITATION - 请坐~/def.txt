@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C01_C04_INVITATION
+	icon = GFX_FOCUS_C01_C04_INVITATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C04_MILITARY_PRESSURE
+	}
+	cost = 3
+	completion_reward = {
+		country_event = {
+			id = C01_C04_REDSKY.4
+		}
+	}
+	available = {
+		C04 = {
+			power_balance_value = {
+				id = BOP_C04_INDEPENDENCE
+				value < -0.15
+			}
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 13
+}

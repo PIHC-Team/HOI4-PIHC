@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C18_101_CIVIL_EFFICIENCY
+	icon = GFX_FOCUS_C18_101_CIVIL_EFFICIENCY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_101_CIVIL_RESEARCH
+	}
+	cost = 2
+	completion_reward = {
+		add_ideas = IDEA_C18_KIRIN_DIVIDEND
+		C18_ADD_NIRIK_0_8 = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 6
+}

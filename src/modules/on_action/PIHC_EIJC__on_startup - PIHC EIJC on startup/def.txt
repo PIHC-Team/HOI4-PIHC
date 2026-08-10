@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C09 = {
+				INITIALIZE_EIJC = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C23_STORM_EMPIRE_HERITAGE = {
+			picture = C23_STORM_EMPIRE_HERITAGE
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				custom_modifier_tooltip = IDEA_C23_STORM_EMPIRE_HERITAGE_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

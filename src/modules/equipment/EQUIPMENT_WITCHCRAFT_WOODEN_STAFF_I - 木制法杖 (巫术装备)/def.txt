@@ -1,0 +1,28 @@
+equipments = {
+	EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_I = {
+		picture = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_I
+		is_archetype = no
+		group_by = type
+		archetype = ARCHETYPE_WITCHCRAFT
+		priority = 40000
+		visual_level = 40000
+		build_cost_ic = 0.6
+		lend_lease_cost = 1
+		can_license = no
+		is_convertable = no
+		reliability = 0.8
+		soft_attack = 16.0
+		hard_attack = 0.8
+		air_attack = 0.2
+		ap_attack = 5.0
+		breakthrough = 2.5
+		defense = 8.0
+		resources = {
+			logs = 8
+			crystals = 4
+		}
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 2.0
+	}
+}

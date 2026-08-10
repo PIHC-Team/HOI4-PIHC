@@ -1,0 +1,23 @@
+buildings = {
+	research_complex = {
+		base_cost = 20000
+		value = 2
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				research_speed_factor = 0.04
+			}
+		}
+		state_modifiers = {
+			state_production_speed_facility_factor = 0.25
+		}
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+		}
+		show_on_map = 1
+		icon_frame = 30
+	}
+}
+

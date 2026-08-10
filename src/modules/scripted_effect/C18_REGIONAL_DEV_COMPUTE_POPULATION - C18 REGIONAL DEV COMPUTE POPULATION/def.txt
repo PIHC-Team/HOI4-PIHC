@@ -1,0 +1,169 @@
+C18_REGIONAL_DEV_COMPUTE_POPULATION = {
+	clear_array = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO
+	set_variable = {
+		C18.VAR_SUM_POPULATION_k = 0
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_1
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^0
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_2
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^1
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_3
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^2
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_4
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^3
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_5
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^4
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4
+	}
+	add_to_array = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO = 0
+	}
+	for_each_scope_loop = {
+		array = C18.ARRAY_REGIONAL_DEV_STATES_6
+		add_to_variable = {
+			C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5 = state_population_k
+		}
+	}
+	set_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^5
+	}
+	add_to_temp_variable = {
+		temp_population_display_factor = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5
+	}
+	divide_temp_variable = {
+		temp_population_display_factor = 100
+	}
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5 = temp_population_display_factor
+	}
+	add_to_variable = {
+		C18.VAR_SUM_POPULATION_k = C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0 = C18.VAR_SUM_POPULATION_k
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1 = C18.VAR_SUM_POPULATION_k
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2 = C18.VAR_SUM_POPULATION_k
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3 = C18.VAR_SUM_POPULATION_k
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4 = C18.VAR_SUM_POPULATION_k
+	}
+	divide_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5 = C18.VAR_SUM_POPULATION_k
+	}
+	C18_REGIONAL_DEV_COMPUTE_NATIONAL_POPULATION = yes
+}

@@ -1,0 +1,52 @@
+C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE = {
+	set_variable = {
+		C04.VAR_ECONOMIC_FACTOR = C04.VAR_TOTAL_ECONOMIC_SCORE
+	}
+	divide_variable = {
+		C04.VAR_ECONOMIC_FACTOR = 1000.0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = C04.VAR_ECONOMIC_FACTOR
+				value = 1.0
+				compare = less_than_or_equals
+			}
+		}
+		set_variable = {
+			C04.VAR_ECONOMIC_LEVEL = 0.0
+		}
+	}
+	else = {
+		C04_REGIONAL_DEV_COMPUTE_LOG_ECONOMIC_SCORE_GET_INITIAL_GUESS = yes
+		set_variable = {
+			C04.VAR_ECONOMIC_LEVEL = C04.VAR_ECONOMIC_FACTOR
+		}
+		subtract_from_variable = {
+			C04.VAR_ECONOMIC_LEVEL = 1.0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = C04.VAR_ECONOMIC_LEVEL
+					value = 0.5
+					compare = less_than_or_equals
+				}
+			}
+			multiply_variable = {
+				C04.VAR_ECONOMIC_LEVEL = 1.17
+			}
+		}
+		else = {
+			multiply_variable = {
+				C04.VAR_ECONOMIC_LEVEL = 0.83
+			}
+			add_to_variable = {
+				C04.VAR_ECONOMIC_LEVEL = 0.17
+			}
+		}
+		add_to_variable = {
+			C04.VAR_ECONOMIC_LEVEL = C04.VAR_INITIAL_GUESS
+		}
+	}
+}

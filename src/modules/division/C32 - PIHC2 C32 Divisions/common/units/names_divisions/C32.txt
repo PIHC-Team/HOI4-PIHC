@@ -1,0 +1,146 @@
+NAMES_GROUP_C32_ARTILLERY = {
+    name = "夜骐火炮小队 (Thestral Artillery Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "夜骐火炮小队%d分队 (Thestral Artillery Squad %d)"
+}
+NAMES_GROUP_C32_TANK_LIGHT = {
+    name = "夜骐轻型装甲小队 (Thestral Light Armor Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "夜骐轻型装甲小队%d分队 (Thestral Light Armor Squad %d)"
+}
+NAMES_GROUP_C32_TRADITIONAL_REGULAR = {
+    name = "夜骐常规步兵小队 (Thestral Regular Infantry Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "夜骐常规步兵小队%d分队 (Thestral Regular Infantry Squad %d)"
+}
+NAMES_GROUP_C32_TANK_HEAVY = {
+    name = "夜骐重型装甲小队 (Thestral Heavy Armor Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "夜骐重型装甲小队%d分队 (Thestral Heavy Armor Squad %d)"
+}
+NAMES_GROUP_C32_TRADITIONAL_SMALL = {
+    name = "夜骐小型步兵小队 (Thestral Small Infantry Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "夜骐小型步兵小队%d分队 (Thestral Small Infantry Squad %d)"
+}
+NAMES_GROUP_C32_AUTOMATA = {
+    name = "夜骐自动作战小队 (Thestral Automata Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "夜骐自动作战小队%d分队 (Thestral Automata Squad %d)"
+}
+NAMES_GROUP_C32_SHIELD = {
+    name = "夜骐重装步兵小队 (Thestral Heavy Infantry Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "夜骐重装步兵小队%d分队 (Thestral Heavy Infantry Squad %d)"
+}
+NAMES_GROUP_C32_MAGICAL = {
+    name = "夜骐魔法步兵小队 (Thestral Magical Infantry Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "夜骐魔法步兵小队%d分队 (Thestral Magical Infantry Squad %d)"
+}
+NAMES_GROUP_C32_INFANTRY_MIX = {
+    name = "夜骐协同小队 (Thestral Concerted Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "夜骐协同小队%d分队 (Thestral Concerted Squad %d)"
+}
+NAMES_GROUP_C32_MOTORIZED = {
+    name = "夜骐机动步兵小队 (Thestral Motorized Infantry Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "夜骐机动步兵小队%d分队 (Thestral Motorized Infantry Squad %d)"
+}
+NAMES_GROUP_C32_TANK_MEDIUM = {
+    name = "夜骐中型装甲小队 (Thestral Medium Armor Squad)"
+    for_countries = {
+        C32
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "夜骐中型装甲小队%d分队 (Thestral Medium Armor Squad %d)"
+}

@@ -1,0 +1,146 @@
+NAMES_GROUP_C42_ARTILLERY = {
+    name = "木狼火炮群 (Timberwolves Artillery Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "木狼火炮群%d群 (Timberwolves Artillery Pack %d)"
+}
+NAMES_GROUP_C42_TANK_LIGHT = {
+    name = "木狼轻型装甲群 (Timberwolves Light Armor Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "木狼轻型装甲群%d群 (Timberwolves Light Armor Pack %d)"
+}
+NAMES_GROUP_C42_TRADITIONAL_REGULAR = {
+    name = "木狼常规步兵群 (Timberwolves Regular Infantry Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "木狼常规步兵群%d群 (Timberwolves Regular Infantry Pack %d)"
+}
+NAMES_GROUP_C42_TANK_HEAVY = {
+    name = "木狼重型装甲群 (Timberwolves Heavy Armor Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "木狼重型装甲群%d群 (Timberwolves Heavy Armor Pack %d)"
+}
+NAMES_GROUP_C42_TRADITIONAL_SMALL = {
+    name = "木狼小型步兵群 (Timberwolves Small Infantry Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "木狼小型步兵群%d群 (Timberwolves Small Infantry Pack %d)"
+}
+NAMES_GROUP_C42_AUTOMATA = {
+    name = "木狼自动作战群 (Timberwolves Automata Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "木狼自动作战群%d群 (Timberwolves Automata Pack %d)"
+}
+NAMES_GROUP_C42_SHIELD = {
+    name = "木狼重装步兵群 (Timberwolves Heavy Infantry Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "木狼重装步兵群%d群 (Timberwolves Heavy Infantry Pack %d)"
+}
+NAMES_GROUP_C42_MAGICAL = {
+    name = "木狼魔法步兵群 (Timberwolves Magical Infantry Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "木狼魔法步兵群%d群 (Timberwolves Magical Infantry Pack %d)"
+}
+NAMES_GROUP_C42_INFANTRY_MIX = {
+    name = "木狼协同群 (Timberwolves Concerted Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "木狼协同群%d群 (Timberwolves Concerted Pack %d)"
+}
+NAMES_GROUP_C42_MOTORIZED = {
+    name = "木狼机动步兵群 (Timberwolves Motorized Infantry Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "木狼机动步兵群%d群 (Timberwolves Motorized Infantry Pack %d)"
+}
+NAMES_GROUP_C42_TANK_MEDIUM = {
+    name = "木狼中型装甲群 (Timberwolves Medium Armor Pack)"
+    for_countries = {
+        C42
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "木狼中型装甲群%d群 (Timberwolves Medium Armor Pack %d)"
+}

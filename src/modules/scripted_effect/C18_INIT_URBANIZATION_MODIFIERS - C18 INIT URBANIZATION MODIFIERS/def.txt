@@ -1,0 +1,27 @@
+C18_INIT_URBANIZATION_MODIFIERS = {
+	set_variable = {
+		C18.VAR_URBAN_CONSTRUCTION_FACTOR = 1.0
+	}
+	set_variable = {
+		C18.VAR_URBAN_FACTORY_FACTOR = 0.5
+	}
+	set_variable = {
+		C18.VAR_URBAN_DOCKYARD_FACTOR = 0.5
+	}
+	set_variable = {
+		C18.VAR_URBAN_REPAIR_FACTOR = 0.5
+	}
+	set_variable = {
+		C18.VAR_URBAN_SELF_REPAIR_FACTOR = 0.4
+	}
+	set_variable = {
+		C18.VAR_URBAN_RESOURCE_FACTOR = 0.4
+	}
+	set_variable = {
+		C18.VAR_URBAN_SUPPLY_RANGE_FACTOR = 2.0
+	}
+	set_variable = {
+		C18.VAR_URBAN_POLITICAL_GAIN_FACTOR = 0.02
+	}
+	C18_REGIONAL_DEV_COMPUTE_UBRAN_MODIFIER = yes
+}

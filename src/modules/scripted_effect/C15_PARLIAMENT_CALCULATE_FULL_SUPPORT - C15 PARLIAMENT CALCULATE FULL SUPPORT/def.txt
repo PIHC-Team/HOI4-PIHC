@@ -1,0 +1,29 @@
+C15_PARLIAMENT_CALCULATE_FULL_SUPPORT = {
+	C15 = {
+		set_variable = {
+			C15_full_support = C15.parliament_seat_array^1
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C15_GET_EQUALISM_SUPPORT
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^5
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C15_GET_DEMOCRATIC_SUPPORT
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^2
+			}
+			add_to_variable = {
+				var = C15_full_support
+				value = C15.parliament_seat_array^3
+			}
+		}
+	}
+}

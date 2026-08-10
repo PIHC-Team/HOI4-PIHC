@@ -1,0 +1,36 @@
+technologies = {
+    TECHNOLOGY_FIREARM_IV_IMPROVE = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 4
+                y = 14
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_firearm
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        infantry_traditional = {
+            soft_attack = 0.05
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_V
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_VI
+            research_cost_coeff = 1
+        }
+        research_cost = 1.5
+        start_year = 1004
+    }
+}

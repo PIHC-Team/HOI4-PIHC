@@ -1,0 +1,200 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = PIHC_GAME_RULE_DYNAMIC_PORTRAITS
+						option = RULE_OPTION_PIHC_DISABLE
+					}
+				}
+				C01 = {
+					CHARACTER_COZY_GLOW = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_COZY_GLOW_portrait
+							}
+						}
+					}
+				}
+				C02 = {
+					CHARACTER_TRIXIE_LULAMOON = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_TRIXIE_LULAMOON_portrait
+							}
+						}
+					}
+				}
+				C03 = {
+					CHARACTER_DERPY_HOOVES = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_DERPY_HOOVES_portrait
+							}
+						}
+					}
+				}
+				C04 = {
+					CHARACTER_SPITFIRE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_SPITFIRE_portrait
+							}
+						}
+					}
+					CHARACTER_SKY_STINGER = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_SKY_STINGER_portrait
+							}
+						}
+					}
+				}
+				C06 = {
+					CHARACTER_GLADMANE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_GLADMANE_portrait
+							}
+						}
+					}
+				}
+				C07 = {
+					CHARACTER_STARLIGHT_GLIMMER = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_FLIM_AND_FLAM_portrait
+							}
+						}
+					}
+				}
+				C08 = {
+					CHARACTER_STARLIGHT_GLIMMER = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait
+							}
+						}
+					}
+				}
+				C09 = {
+					CHARACTER_FIRELIGHT = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_FIRELIGHT_portrait
+							}
+						}
+					}
+					CHARACTER_STELLAR_FLARE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_STELLAR_FLARE_portrait
+							}
+						}
+					}
+				}
+				C10 = {
+					CHARACTER_CHANCELLOR_NEIGHSAY = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_CHANCELLOR_NEIGHSAY_portrait
+							}
+						}
+					}
+				}
+				C11 = {
+					CHARACTER_QUEEN_CHRYSALIS = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_QUEEN_CHRYSALIS_ANIMATED_portrait
+							}
+						}
+					}
+				}
+				C12 = {
+					CHARACTER_MAUD_PIE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_MAUD_PIE_ANIMATED_portrait
+							}
+						}
+					}
+					CHARACTER_LIMESTONE_PIE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_LIMESTONE_PIE_portrait
+							}
+						}
+					}
+					CHARACTER_MARBLE_PIE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_MARBLE_PIE_portrait
+							}
+						}
+					}
+				}
+				C14 = {
+					CHARACTER_BRAEBURN = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_BRAEBURN_ANIMATED_portrait
+							}
+						}
+					}
+				}
+				C15 = {
+					CHARACTER_FLURRY_HEART = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_FLURRY_HEART_ANIMATED_portrait
+							}
+						}
+					}
+				}
+				C18 = {
+					CHARACTER_RAIN_SHINE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_RAIN_SHINE_ANIMATED_portrait
+							}
+						}
+					}
+					CHARACTER_AUTUMN_BLAZE = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_AUTUMN_BLAZE_ANIMATED_portrait
+							}
+						}
+					}
+					CHARACTER_AUTUMN_BLAZE_NIRIK = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_ANIMATED_portrait
+							}
+						}
+					}
+				}
+				C23 = {
+					CHARACTER_SUNSET_SHIMMER = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_SUNSET_SHIMMER_ANIMATED_portrait
+							}
+						}
+					}
+				}
+				C26 = {
+					CHARACTER_WINDIGOS = {
+						set_portraits = {
+							civilian = {
+								large = GFX_CHARACTER_WINDIGOS_ANIMATED_portrait
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

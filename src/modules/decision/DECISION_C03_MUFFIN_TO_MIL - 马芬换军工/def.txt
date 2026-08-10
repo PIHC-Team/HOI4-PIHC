@@ -1,0 +1,63 @@
+DECISION_CATEGORY_C03_MUFFIN = {
+    DECISION_C03_MUFFIN_TO_MIL = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 90
+        state_target = yes
+        on_map_mode = map_only
+        target_root_trigger = {
+            check_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 0
+                compare = greater_than
+            }
+            has_completed_focus = FOCUS_C03_MUFFIN_17
+        }
+        target_array = ROOT.owned_controlled_states
+        available = {
+            ROOT = {
+                custom_trigger_tooltip = {
+                    tooltip = CUSTOM_OWN_MUFFINS_4500
+                    check_variable = {
+                        var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                        value = 4500
+                        compare = greater_than_or_equals
+                    }
+                }
+            }
+        }
+        custom_cost_trigger = {
+            check_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 4500
+                compare = greater_than_or_equals
+            }
+        }
+        custom_cost_text = CUSTOM_COST_MUFFINS_4500
+        complete_effect = {
+            ROOT = {
+                subtract_from_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 4500
+                }
+                INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+            }
+            FROM = {
+                BUILD_A_MIC = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 5
+                check_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 12000
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        icon = C03_MUFFIN_TO_MIL
+    }
+}

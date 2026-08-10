@@ -1,0 +1,34 @@
+pihc_land_tide_of_iron_armor_core = {
+	track = armor
+	name = DOCTRINE_ARMY_0_6_MASSIVE_WAR
+	description = DOCTRINE_ARMY_0_6_MASSIVE_WAR_DESC
+	icon = GFX_doctrine_pihc_land_tide_of_iron_armor_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	land_reinforce_rate = 0.05
+	additional_brigade_column_size = 1
+	experience_gain_army_factor = 0.1
+	industrial_capacity_factory = 0.15
+	enable_tactic = tactic_overwhelming_fire
+	rewards = {
+		air_land = {
+			army_bonus_air_superiority_factor = 0.15
+			coordination_bonus = 0.04
+			max_planning = 0.1
+			tech_air_damage_factor = -0.1
+			enable_tactic = tactic_masterful_blitz
+		}
+	}
+}

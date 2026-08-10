@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/scripted_localisation
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-scripted-localisation
+items:
+-   kind: entity
+    identifier: pihc3-scripted-localisation-module
+    name: PIHC3 Scripted Localisation Module
+    desc: Project-owned scripted_localisation source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ScriptedLocalisationModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-scripted-localisation
+    name: PIHC3 Scripted Localisation
+    desc: PIHC3 scripted_localisation module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-scripted-localisation-module
+        definition:
+            identifier: pihc3-scripted-localisation
+            name: PIHC3 Scripted Localisation
+            version: 0.2.3
+            desc: PIHC3 scripted_localisation module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-scripted-localisation-module
+            meta:
+                project: PIHC3
+                family: scripted_localisation
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-scripted-localisation
+    name: PIHC3 Scripted Localisation Compiler
+    desc: Registry-backed source slots and compiler hooks for scripted_localisation.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: scripted-localisation
+            title: Scripted Localisation
+            group: shared
+        dependencies:
+        - extension:pihc3-scripted-localisation

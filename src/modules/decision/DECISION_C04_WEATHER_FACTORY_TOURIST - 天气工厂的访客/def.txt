@@ -1,0 +1,32 @@
+DECISION_CATEGORY_C04_REGIONAL_DEVLOPMENT = {
+    DECISION_C04_WEATHER_FACTORY_TOURIST = {
+        fixed_random_seed = no
+        priority = 100
+        days_remove = 60
+        available = {
+            always = yes
+        }
+        visible = {
+            NOT = {
+                OR = {
+                    has_completed_focus = FOCUS_C04_HONORED_GUEST_FEATHER_FLATTERFLY
+                    has_completed_focus = FOCUS_C04_HONORED_GUEST_WIND_RIDER
+                }
+            }
+        }
+        ai_hint_pp_cost = 0
+        remove_effect = {
+            add_political_power = 50
+            hidden_effect = {
+                country_event = {
+                    id = C04_MAIN.30
+                }
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 400
+        }
+        icon = C04_WEATHER_FACTORY_TOURIST
+    }
+}

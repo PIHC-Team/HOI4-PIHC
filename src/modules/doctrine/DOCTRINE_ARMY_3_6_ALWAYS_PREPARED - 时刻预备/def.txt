@@ -1,0 +1,37 @@
+pihc_land_rose_of_will_armor_core = {
+	track = armor
+	name = DOCTRINE_ARMY_3_6_ALWAYS_PREPARED
+	description = DOCTRINE_ARMY_3_6_ALWAYS_PREPARED_DESC
+	icon = GFX_doctrine_pihc_land_rose_of_will_armor_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	army_org_factor = 0.15
+	army_core_defence_factor = 0.08
+	category_infantry_traditional = {
+		max_organisation = 8.0
+	}
+	experience_loss_factor = -0.15
+	enable_tactic = tactic_relentless_assault
+	rewards = {
+		weak_against_strong = {
+			org_loss_at_low_org_factor = -0.15
+			industry_air_damage_factor = -0.25
+			industry_free_repair_factor = 0.15
+			land_bunker_effectiveness_factor = 0.15
+			army_speed_factor = 0.1
+			initiative_factor = 0.1
+		}
+	}
+}

@@ -1,0 +1,89 @@
+add_namespace = C08_RED_RADIO
+news_event = {
+    id = C08_RED_RADIO.1
+    picture = GFX_EVENT_C08_RED_RADIO_1
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C08_RED_RADIO_1
+    desc = EVENT_C08_RED_RADIO_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        news_event = {
+            id = C08_MAIN.5
+            days = 3
+        }
+        name = EVENT_C08_RED_RADIO_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_C08_RED_RADIO_1_o1
+    }
+}
+news_event = {
+    id = C08_RED_RADIO.2
+    picture = GFX_EVENT_C08_RED_RADIO_2
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C08_RED_RADIO_2
+    desc = EVENT_C08_RED_RADIO_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C08
+        }
+        declare_war_on = {
+            target = C06
+            type = liberate_wargoal
+        }
+        add_named_threat = {
+            threat = 5
+            name = EVENT_C08_RED_RADIO_2_THREAT
+        }
+        hidden_effect = {
+            C01 = {
+                country_event = {
+                    id = C01_MAIN.24
+                    days = 7
+                }
+            }
+            C02 = {
+                country_event = {
+                    id = C01_MAIN.24
+                    days = 7
+                }
+            }
+            C06 = {
+                country_event = {
+                    id = C01_MAIN.24
+                    days = 7
+                }
+            }
+        }
+        name = EVENT_C08_RED_RADIO_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C08
+            }
+        }
+        name = EVENT_C08_RED_RADIO_2_o1
+    }
+}

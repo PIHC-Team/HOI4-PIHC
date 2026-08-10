@@ -1,0 +1,456 @@
+types = {
+    facility_strike = {
+        days_to_prepare = 90
+        ai_will_do = {
+            base = 2
+            modifier = {
+                factor = 0
+                is_major = no
+            }
+            modifier = {
+                factor = 0
+                NOT = {
+                    is_in_array = {
+                        array = potential_and_current_enemies
+                        value = FROM
+                    }
+                }
+            }
+        }
+        category = air_raids
+        command_power = 25
+        allowed = {
+            has_dlc = Gotterdammerung
+        }
+        visible = {
+
+        }
+        show_target = {
+            NOT = {
+                is_in_faction_with = FROM
+            }
+        }
+        available = {
+
+        }
+        launchable = {
+            has_war_with = FROM
+        }
+        target_type = {
+            building = {
+                tags = facility
+            }
+        }
+        target_icon = GFX_facility_icon
+        launch_sound = raid_launch_air
+        custom_map_icon = GFX_raid_type_icon_facility_raid
+        arrow = {
+            type = air
+        }
+        unit_requirements = {
+            equipment = {
+                type = {
+                    ARCHETYPE_AIR_TBOMBER
+                }
+                amount = {
+                    min = 70
+                }
+            }
+        }
+        unit_requirements = {
+            equipment = {
+                type = {
+                    ARCHETYPE_AIR_SBOMBER
+                }
+                amount = {
+                    min = 70
+                }
+            }
+        }
+        starting_point = {
+            types = {
+                air_base
+            }
+        }
+        success_factors = {
+            success = {
+                base = 0.65
+                experience = {
+                    weight = 0.2
+                    start_weight = -0.2
+                    reference = 1.0
+                }
+                air_agility = {
+                    reference = 100.0
+                    weight = 0.1
+                    start_weight = -0.1
+                }
+                reliability = {
+                    reference = 1
+                    weight = 0.05
+                    start_weight = -0.1
+                }
+                air_defence = {
+                    reference = 100
+                    weight = 0.05
+                    start_weight = -0.05
+                }
+                air_superiority = {
+                    reference = 1
+                    weight = 0.1
+                    start_weight = -0.1
+                }
+                anti_air = {
+                    reference = 5
+                    weight = -0.25
+                }
+                interception = {
+                    reference = 500
+                    weight = -0.2
+                }
+                intel = {
+                    weight = 0.3
+                    reference = 100
+                }
+            }
+            critical = {
+                base = 0.15
+            }
+        }
+        success_levels = {
+            failure = {
+                victim_effects = {
+                    var:target_state = {
+                        custom_effect_tooltip = {
+                            localization_key = raid_facility_damage_tt
+                            DAMAGE = 5
+                        }
+                        hidden_effect = {
+                            damage_building = {
+                                tags = facility
+                                damage = 0.05
+                                province = var:ROOT.target_province
+                            }
+                        }
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 70
+                        ratio = no
+                    }
+                    raid_add_unit_experience = 0.05
+                }
+                visual_effect = {
+                    entity = raid_failed_entity
+                    animation = attack
+                }
+            }
+            limited_success = {
+                victim_effects = {
+                    var:target_state = {
+                        custom_effect_tooltip = {
+                            localization_key = raid_facility_damage_tt
+                            DAMAGE = 15
+                        }
+                        hidden_effect = {
+                            damage_building = {
+                                tags = facility
+                                damage = 0.15
+                                province = var:ROOT.target_province
+                                repair_speed_modifier = -0.05
+                            }
+                        }
+                        raid_reduce_project_progress_ratio = 0.05
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 40
+                        ratio = no
+                    }
+                    raid_add_unit_experience = 0.1
+                }
+                visual_effect = {
+                    entity = air_raids_1_limited_success_entity
+                    animation = attack
+                }
+            }
+            success = {
+                victim_effects = {
+                    var:target_state = {
+                        custom_effect_tooltip = {
+                            localization_key = raid_facility_damage_tt
+                            DAMAGE = 55
+                        }
+                        hidden_effect = {
+                            damage_building = {
+                                tags = facility
+                                damage = 0.55
+                                province = var:ROOT.target_province
+                                repair_speed_modifier = -0.25
+                            }
+                        }
+                        raid_reduce_project_progress_ratio = 0.15
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 30
+                        ratio = no
+                    }
+                    raid_add_unit_experience = 0.2
+                }
+                visual_effect = {
+                    entity = air_raids_1_success_entity
+                    animation = attack
+                }
+            }
+            critical_success = {
+                victim_effects = {
+                    var:target_state = {
+                        custom_effect_tooltip = {
+                            localization_key = raid_facility_damage_tt
+                            DAMAGE = 85
+                        }
+                        hidden_effect = {
+                            damage_building = {
+                                tags = facility
+                                damage = 0.85
+                                province = var:ROOT.target_province
+                                repair_speed_modifier = -0.5
+                            }
+                        }
+                        raid_reduce_project_progress_ratio = 0.25
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 10
+                        ratio = no
+                    }
+                    raid_add_unit_experience = 0.35
+                }
+                visual_effect = {
+                    entity = air_raids_1_critical_success_entity
+                    animation = attack
+                }
+            }
+        }
+    }
+    oilfield_raid = {
+        days_to_prepare = 90
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    is_in_array = {
+                        array = potential_and_current_enemies
+                        value = FROM
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.25
+                NOT = {
+                    has_war_with = FROM
+                }
+            }
+        }
+        category = air_raids
+        command_power = 20
+        allowed = {
+            has_dlc = Gotterdammerung
+        }
+        visible = {
+
+        }
+        show_target = {
+            NOT = {
+                is_in_faction_with = FROM
+            }
+        }
+        available = {
+
+        }
+        launchable = {
+            has_war_with = FROM
+        }
+        target_type = {
+            state = {
+                oil > 24
+                NOT = {
+                    OR = {
+                        has_dynamic_modifier = {
+                            modifier = refinery_damaged_modifier
+                        }
+                        has_dynamic_modifier = {
+                            modifier = refinery_critically_damaged_modifier
+                        }
+                        has_dynamic_modifier = {
+                            modifier = refinery_lightly_damaged_modifier
+                        }
+                    }
+                }
+            }
+        }
+        target_icon = GFX_oilfield_target_icon
+        target_loc_key = raid_target_name_oil_field
+        arrow = {
+            type = air
+        }
+        launch_sound = raid_launch_air
+        unit_requirements = {
+            equipment = {
+                type = {
+                    ARCHETYPE_AIR_SBOMBER
+                }
+                amount = {
+                    min = 40
+                }
+            }
+        }
+        starting_point = {
+            types = {
+                air_base
+            }
+        }
+        success_factors = {
+            success = {
+                base = 0.65
+                experience = {
+                    weight = 0.1
+                    start_weight = -0.1
+                    reference = 1.0
+                }
+                air_agility = {
+                    reference = 100.0
+                    weight = 0.1
+                    start_weight = -0.1
+                }
+                reliability = {
+                    reference = 1
+                    weight = 0.1
+                    start_weight = -0.1
+                }
+                air_defence = {
+                    reference = 100
+                    weight = 0.05
+                    start_weight = -0.05
+                }
+                air_superiority = {
+                    reference = 1
+                    weight = 0.2
+                    start_weight = -0.2
+                }
+                anti_air = {
+                    reference = 5
+                    weight = -0.25
+                }
+                interception = {
+                    reference = 500
+                    weight = -0.2
+                }
+                intel = {
+                    weight = 0.3
+                    reference = 100
+                }
+            }
+            critical = {
+                base = 0.15
+            }
+        }
+        success_levels = {
+            failure = {
+                victim_effects = {
+
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 0.95
+                        ratio = yes
+                    }
+                    raid_add_unit_experience = 0.05
+                }
+                visual_effect = {
+                    entity = nuke_entity
+                    animation = attack
+                }
+                visual_effect = {
+                    entity = raid_failed_entity
+                    animation = attack
+                }
+            }
+            limited_success = {
+                victim_effects = {
+                    var:target_state = {
+                        add_dynamic_modifier = {
+                            modifier = refinery_lightly_damaged_modifier
+                            days = 90
+                        }
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 0.65
+                        ratio = yes
+                    }
+                    raid_add_unit_experience = 0.1
+                }
+                visual_effect = {
+                    entity = air_raids_2_limited_success_entity
+                    animation = attack
+                }
+            }
+            success = {
+                victim_effects = {
+                    var:target_state = {
+                        add_dynamic_modifier = {
+                            modifier = refinery_damaged_modifier
+                            days = 180
+                        }
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 0.25
+                        ratio = yes
+                    }
+                    raid_add_unit_experience = 0.2
+                    var:actor_country = {
+                        air_experience = 10
+                    }
+                }
+                visual_effect = {
+                    entity = air_raids_2_success_entity
+                    animation = attack
+                }
+            }
+            critical_success = {
+                victim_effects = {
+                    var:target_state = {
+                        add_dynamic_modifier = {
+                            modifier = refinery_critically_damaged_modifier
+                            days = 360
+                        }
+                    }
+                }
+                actor_effects = {
+                    raid_damage_units = {
+                        plane_loss = 0.1
+                        ratio = yes
+                    }
+                    raid_add_unit_experience = 0.35
+                    var:actor_country = {
+                        air_experience = 20
+                    }
+                }
+                visual_effect = {
+                    entity = air_raids_2_critical_success_entity
+                    animation = attack
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+pihc_land_tide_of_iron_operations_core = {
+	track = operations
+	name = DOCTRINE_ARMY_0_8_EARTHQUAKE
+	description = DOCTRINE_ARMY_0_8_EARTHQUAKE_DESC
+	icon = GFX_doctrine_pihc_land_tide_of_iron_operations_core_medium
+	xp_cost = 200
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		earthquake = {
+			combat_width_factor = -0.2
+			enable_tactic = tactic_pihc_earthquake
+		}
+	}
+}

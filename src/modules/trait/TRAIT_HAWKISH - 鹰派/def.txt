@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_HAWKISH = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		faction_trade_opinion_factor = -0.05
+		opinion_gain_monthly_factor = -0.1
+		war_support_factor = 0.3
+	}
+}

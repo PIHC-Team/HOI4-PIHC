@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER
+	icon = GFX_FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_MINE_TRAINING_CAMP
+	}
+	cost = 4
+	completion_reward = {
+		army_experience = 50
+		mark_focus_tree_layout_dirty = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 22
+	y = 13
+}

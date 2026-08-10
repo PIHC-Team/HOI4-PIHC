@@ -1,0 +1,35 @@
+state = {
+    id = 521
+    name = STATE_521
+    provinces = {
+        1513
+        4568
+        5434
+        6073
+        6322
+        6852
+        7256
+        8642
+        9397
+        11756
+        11825
+        11918
+        11930
+    }
+    manpower = 1182
+    state_category = wasteland
+    history = {
+        owner = C11
+        victory_points = {
+            1513
+            1
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C11
+    }
+    resources = {
+        logs = 4
+    }
+}

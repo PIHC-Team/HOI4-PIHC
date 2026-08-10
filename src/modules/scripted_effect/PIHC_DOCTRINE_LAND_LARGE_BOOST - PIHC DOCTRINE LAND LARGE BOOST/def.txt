@@ -1,0 +1,26 @@
+PIHC_DOCTRINE_LAND_LARGE_BOOST = {
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_LAND_LARGE_BOOST_INFANTRY
+		track = infantry
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_LAND_LARGE_BOOST_COMBAT_SUPPORT
+		track = combat_support
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_LAND_LARGE_BOOST_ARMOR
+		track = armor
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_LAND_LARGE_BOOST_OPERATIONS
+		track = operations
+	}
+}

@@ -1,0 +1,29 @@
+technologies = {
+    TECHNOLOGY_TECH_INFO_I = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 2
+                y = 3
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_info_tech
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        research_speed_factor = 0.05
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_INFO_II
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1001
+    }
+}

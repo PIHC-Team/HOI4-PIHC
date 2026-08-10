@@ -1,0 +1,20 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			COMPUTE_NUM_FINANCIAL_CENTERS = yes
+			set_temp_variable = {
+				var = num_dev_bonds_to_produce
+				value = VAR_NUM_FINANCIAL_CENTERS_OWNED
+			}
+			multiply_temp_variable = {
+				var = num_dev_bonds_to_produce
+				value = VAR_FINANCIAL_CENTER_DEV_BONDS_PER
+			}
+			add_to_variable = {
+				var = VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS
+				value = num_dev_bonds_to_produce
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		}
+	}
+}

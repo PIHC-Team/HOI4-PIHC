@@ -1,0 +1,39 @@
+focus = {
+	id = FOCUS_C07_LPMIG_NIGHT_SHIFT_TRAINING
+	icon = GFX_FOCUS_C07_LPMIG_NIGHT_SHIFT_TRAINING_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPMIG_NIGHT_SHIFT
+	}
+	cost = 5
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = pihc_support_magical
+		}
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = pihc_support_auto
+		}
+	}
+	available = {
+		580 = {
+			is_owned_and_controlled_by = C07
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 6
+}

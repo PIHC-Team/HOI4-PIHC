@@ -1,0 +1,102 @@
+capital = 261
+set_popularities = {
+    democratic = 30
+    harmonicism = 25
+    despotic = 15
+    peacism = 20
+    anarchy = 4
+    equatism = 3
+    fascism = 1
+    corporation = 1
+    transcendence = 1
+}
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = no
+}
+create_faction = FACTION_MATO
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_ENER_I = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = 1
+    }
+}
+oob = C23
+recruit_character = CHARACTER_SUNSET_SHIMMER
+recruit_character = CHARACTER_SUNSET_SHIMMER_MISSING
+recruit_character = CHARACTER_HUMAN_TWILIGHT_SPARKLE
+recruit_character = CHARACTER_HUMAN_RAINBOW_DASH
+recruit_character = CHARACTER_HUMAN_PINKIE_PIE
+recruit_character = CHARACTER_HUMAN_RARITY
+recruit_character = CHARACTER_HUMAN_APPLE_JACK
+recruit_character = CHARACTER_HUMAN_FLUTTERSHY
+recruit_character = CHARACTER_MARE_DO_WELL_2
+recruit_character = CHARACTER_COLORATURA
+recruit_character = CHARACTER_US_MILITARY
+add_ideas = export_focus
+add_ideas = limited_conscription
+add_ideas = civilian_economy
+add_ideas = IDEA_ERA_TECH_3_NEUTRAL
+add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+add_ideas = IDEA_ALL_HARMONICISM_ORTHODOXY
+add_ideas = IDEA_C23_STORM_EMPIRE_HERITAGE
+add_ideas = IDEA_C23_GREAT_DEPRESSION
+set_rule = {
+    can_join_factions = no
+}
+set_stability = 0.1
+promote_character = {
+    character = CHARACTER_SUNSET_SHIMMER
+    ideology = democratic_harmonicism
+}
+set_research_slots = 2
+country_lock_all_division_template = yes
+add_manpower = 800
+set_major = yes
+set_country_flag = PIHC_COUNTRY_FLAG_C08_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN

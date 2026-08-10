@@ -1,0 +1,21 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_5LG_C03_MUFFIN_ROULETTE_3_PT_EXPERT = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+		tag = C03
+	}
+	happened = {
+		hidden_trigger = {
+			has_variable = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+			check_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_TOTAL_PROFIT
+				value = 100000
+				compare = greater_than_or_equals
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+DECISION_CATEGORY_C04_SEPAL_FILES = {
+    icon = C04_SEPAL_FILES
+    picture = GFX_decision_category_picture
+    priority = 99998
+    allowed = {
+        tag = C04
+    }
+    visible = {
+        has_country_flag = PIHC_COUNTRY_FLAG_SEPAL_INVESTIGATION
+    }
+    visible_when_empty = yes
+}

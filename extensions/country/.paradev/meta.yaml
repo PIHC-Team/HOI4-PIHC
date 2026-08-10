@@ -1,0 +1,145 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/country
+version: 0.2.6
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-country
+items:
+-   kind: entity
+    identifier: pihc3-country
+    name: PIHC3 Country Module
+    desc: Project-owned country source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Country
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+-   kind: extension
+    identifier: pihc3-country
+    name: PIHC3 Country
+    desc: PIHC3 country module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        dependencies:
+        - entity:pihc3-country
+        definition:
+            identifier: pihc3-country
+            name: PIHC3 Country
+            version: 0.2.6
+            desc: PIHC3 country module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-country
+            meta:
+                project: PIHC3
+                family: country
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_writer
+    identifier: pihc3-country-flag
+    name: PIHC3 Country Flag Writer
+    desc: Deterministic medium and small TGA flag variants.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3CountryFlagWriter
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+-   kind: paradev_build_family
+    identifier: pihc3-country
+    name: PIHC3 Country Compiler
+    desc: Registry-backed source slots and compiler hooks for country.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        presentation:
+            id: countries
+            title: Countries
+            group: country
+            aliases:
+            - country_def
+            - country_defs
+            title_key: modules.countries.title
+        dependencies:
+        - extension:pihc3-country
+        - paradev_build_writer:pihc3-country-flag
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-352e141c2002568f
+    name: PIHC3 Basic Country
+    desc: PIHC3 authoring template pihc3:country/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.6
+        definition:
+            template_id: pihc3:country/basic
+            declaration:
+                title: PIHC3 Basic Country
+                family: country
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        description: Preferred-language country name written to the base
+                            country localization key.
+                    description:
+                        default: ''
+                        type: text
+                        description: Preferred-language country description written to
+                            the `_DESC` localization key.
+                    graphical_culture:
+                        default: western_european_gfx
+                        description: HoI4 3D graphical-culture identifier used by the
+                            country definition.
+                    graphical_culture_2d:
+                        default: western_european_2d
+                        description: HoI4 2D graphical-culture identifier used by the
+                            country definition.
+                    color:
+                        default: 100 160 220
+                        description: Space-separated red, green, and blue values used
+                            for both map and UI colors.
+                    language:
+                        default: en
+                        description: Localization language code for the generated country
+                            name and description; PIHC3 commonly uses `zh` or `en`.
+                files:
+                    def.txt: 'graphical_culture = {graphical_culture}
+
+                        graphical_culture_2d = {graphical_culture_2d}
+
+                        color = rgb {{ {color} }}
+
+                        color_ui = rgb {{ {color} }}
+
+                        '
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_DESC]
+
+                        {description}
+
+                        '

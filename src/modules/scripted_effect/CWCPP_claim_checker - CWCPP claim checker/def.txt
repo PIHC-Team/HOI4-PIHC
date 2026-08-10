@@ -1,0 +1,45 @@
+CWCPP_claim_checker = {
+	if = {
+		limit = {
+			PREV = {
+				is_claimed_by = ROOT
+			}
+		}
+		ROOT = {
+			divide_variable = {
+				cost_to_core = 2
+			}
+		}
+		log = "State has a claim, diving by 2: [?ROOT.cost_to_core]"
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					cost_to_core < 1
+				}
+			}
+		}
+		ROOT = {
+			set_variable = {
+				cost_to_core = 1
+			}
+		}
+		log = "Cost is 0, setting it to 1: [?ROOT.cost_to_core]"
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					cost_to_core > 2000
+				}
+			}
+		}
+		ROOT = {
+			set_variable = {
+				cost_to_core = 2000
+			}
+		}
+		log = "Cost higher than 2000, setting it to 2000: [?ROOT.cost_to_core]"
+	}
+}

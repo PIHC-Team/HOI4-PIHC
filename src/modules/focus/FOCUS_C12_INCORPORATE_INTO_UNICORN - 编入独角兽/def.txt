@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C12_INCORPORATE_INTO_UNICORN
+	icon = GFX_FOCUS_C12_INCORPORATE_INTO_UNICORN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_TOP_SECRET_PERFORMANCE_TECHNIQUE
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = pihc_magical
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 27
+	y = 15
+}

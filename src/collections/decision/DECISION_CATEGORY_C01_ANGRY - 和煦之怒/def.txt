@@ -1,0 +1,13 @@
+DECISION_CATEGORY_C01_ANGRY = {
+    icon = C01_ANGRY
+    picture = GFX_decision_category_picture
+    priority = 10000
+    allowed = {
+        tag = C01
+    }
+    visible = {
+        tag = C01
+    }
+    scripted_gui = C01_ANGRY_POWER_PROGRESSBAR
+    visible_when_empty = yes
+}

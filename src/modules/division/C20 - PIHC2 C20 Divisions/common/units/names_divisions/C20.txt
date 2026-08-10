@@ -1,0 +1,146 @@
+NAMES_GROUP_C20_ARTILLERY = {
+    name = "龙族火炮师 (Dragon Artillery Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "龙族火炮师%d师 (Dragon Artillery Division %d)"
+}
+NAMES_GROUP_C20_TANK_LIGHT = {
+    name = "龙族轻型装甲师 (Dragon Light Armor Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "龙族轻型装甲师%d师 (Dragon Light Armor Division %d)"
+}
+NAMES_GROUP_C20_TRADITIONAL_REGULAR = {
+    name = "龙族常规步兵师 (Dragon Regular Infantry Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "龙族常规步兵师%d师 (Dragon Regular Infantry Division %d)"
+}
+NAMES_GROUP_C20_TANK_HEAVY = {
+    name = "龙族重型装甲师 (Dragon Heavy Armor Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "龙族重型装甲师%d师 (Dragon Heavy Armor Division %d)"
+}
+NAMES_GROUP_C20_TRADITIONAL_SMALL = {
+    name = "龙族小型步兵师 (Dragon Small Infantry Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "龙族小型步兵师%d师 (Dragon Small Infantry Division %d)"
+}
+NAMES_GROUP_C20_AUTOMATA = {
+    name = "龙族自动作战师 (Dragon Automata Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "龙族自动作战师%d师 (Dragon Automata Division %d)"
+}
+NAMES_GROUP_C20_SHIELD = {
+    name = "龙族重装步兵师 (Dragon Heavy Infantry Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "龙族重装步兵师%d师 (Dragon Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C20_MAGICAL = {
+    name = "龙族魔法步兵师 (Dragon Magical Infantry Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "龙族魔法步兵师%d师 (Dragon Magical Infantry Division %d)"
+}
+NAMES_GROUP_C20_INFANTRY_MIX = {
+    name = "龙族协同师 (Dragon Concerted Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "龙族协同师%d师 (Dragon Concerted Division %d)"
+}
+NAMES_GROUP_C20_MOTORIZED = {
+    name = "龙族机动步兵师 (Dragon Motorized Infantry Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "龙族机动步兵师%d师 (Dragon Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C20_TANK_MEDIUM = {
+    name = "龙族中型装甲师 (Dragon Medium Armor Division)"
+    for_countries = {
+        C20
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "龙族中型装甲师%d师 (Dragon Medium Armor Division %d)"
+}

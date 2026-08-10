@@ -1,0 +1,12 @@
+coordinated_strike_scout_target = {
+	name = coordinated_strike_scout_target
+	desc = coordinated_strike_scout_target_desc
+	outcome = coordinated_strike_scout_target_outcome
+	picture = GFX_phase_coordinated_strike_scout_target
+	icon = GFX_phase_coordinated_strike_scout_target_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 100
+	}
+}

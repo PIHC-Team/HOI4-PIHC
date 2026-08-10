@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C12_AMMUNITION_BOTANY_2 = {
+			picture = C12_AMMUNITION_BOTANY_2
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_infantry_attack_factor = 0.08
+				army_infantry_defence_factor = 0.08
+				monthly_population = 0.05
+				army_morale_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

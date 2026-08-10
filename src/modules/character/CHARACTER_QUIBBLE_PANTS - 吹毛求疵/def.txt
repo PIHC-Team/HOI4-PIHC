@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_QUIBBLE_PANTS = {
+        name = CHARACTER_QUIBBLE_PANTS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_QUIBBLE_PANTS.dds"
+                small = "gfx/leaders/CHARACTER_QUIBBLE_PANTS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_QUIBBLE_PANTS_army.dds"
+                small = "gfx/leaders/CHARACTER_QUIBBLE_PANTS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_QUIBBLE_PANTS_navy.dds"
+                small = "gfx/leaders/CHARACTER_QUIBBLE_PANTS_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_QUIBBLE_PANTS
+            desc = CHARACTER_QUIBBLE_PANTS_DESC
+            traits = {
+                TRAIT_BREAKTHROUGH
+                TRAIT_SILVER_SPOON_SYNDROME
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 250
+            removal_cost = -1
+            slot = army_chief
+        }
+    }
+}

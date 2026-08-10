@@ -1,0 +1,29 @@
+buildings = {
+	nuclear_reactor = {
+		base_cost = 30000
+		value = 10
+		infrastructure_construction_effect = yes
+		nuclear_reactor = yes
+		country_modifiers = {
+			modifiers = {
+				nuclear_production_factor = 1.0
+				thermonuclear_production_factor = 2.0
+				SP_NUCLEAR_OVERCHARGE_speed_factor = 0.05
+			}
+		}
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+			group_by = reactors
+		}
+		show_on_map = 1
+		icon_frame = 13
+		spawn_point = nuclear_reactor_spawn
+		hide_if_missing_tech = yes
+		missing_tech_loc = {
+			localization_key = SP_BUILDING_MISSING_PROJECT
+			PROJECT = SP_NUCLEAR_OVERCHARGE
+		}
+	}
+}
+

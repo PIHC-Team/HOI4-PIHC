@@ -1,0 +1,40 @@
+characters = {
+    CHARACTER_SHORT_FUSE = {
+        name = CHARACTER_SHORT_FUSE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SHORT_FUSE.dds"
+                small = "gfx/leaders/CHARACTER_SHORT_FUSE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SHORT_FUSE_army.dds"
+                small = "gfx/leaders/CHARACTER_SHORT_FUSE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SHORT_FUSE_navy.dds"
+                small = "gfx/leaders/CHARACTER_SHORT_FUSE_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_SHORT_FUSE
+            desc = CHARACTER_SHORT_FUSE_DESC
+            traits = {
+                TRAIT_SHORT_FUSE
+                TRAIT_BREAKTHROUGH
+                TRAIT_WASHOUTS_SHORT_FUSE
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = army_chief
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_C04_WASHOUTS_NOT_OUR_GOVERNMENT_TOOLTIP
+                    has_country_flag = PIHC_COUNTRY_FLAG_C04_NEW_EMPLOYEE_SHORT_FUSE
+                }
+            }
+        }
+    }
+}

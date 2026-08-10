@@ -1,0 +1,36 @@
+characters = {
+    CHARACTER_FEATHER_FLATTERFLY_C04 = {
+        name = CHARACTER_FEATHER_FLATTERFLY_C04_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04.dds"
+                small = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04_army.dds"
+                small = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04_navy.dds"
+                small = "gfx/leaders/CHARACTER_FEATHER_FLATTERFLY_C04_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_FEATHER_FLATTERFLY_C04
+            desc = CHARACTER_FEATHER_FLATTERFLY_C04_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS_II
+                TRAIT_INDECISIVE
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+            visible = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLY_ARRIVES
+            }
+        }
+    }
+}

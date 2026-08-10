@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C08_PONIES_WILL
+	icon = GFX_FOCUS_C08_PONIES_WILL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_FADED_FRIENDSHIP
+	}
+	cost = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = IDEA_C08_FADED_FRIENDSHIP_2
+			add_idea = IDEA_C08_FADED_FRIENDSHIP_3
+		}
+		country_event = {
+			id = C08_MAIN.19
+			days = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 1
+}

@@ -1,0 +1,114 @@
+pihc_land_flame_of_rage = {
+	folder = land
+	name = DOCTRINE_ARMY_1_0_FLAME_OF_RAGE
+	description = DOCTRINE_ARMY_1_0_FLAME_OF_RAGE_DESC
+	icon = GFX_doctrine_pihc_land_flame_of_rage_medium
+	available = {
+		always = yes
+	}
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	tracks = {
+		infantry
+		combat_support
+		armor
+		operations
+	}
+	milestones = {
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_flame_of_rage_infantry_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_flame_of_rage_infantry_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_flame_of_rage_infantry_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_flame_of_rage_combat_support_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_flame_of_rage_combat_support_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_flame_of_rage_combat_support_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_flame_of_rage_armor_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_flame_of_rage_armor_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_flame_of_rage_armor_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_flame_of_rage_operations_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_flame_of_rage_operations_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_flame_of_rage_operations_milestone_var = 1
+					}
+				}
+			}
+		}
+	}
+	category_all_artillery = {
+		soft_attack = 0.15
+		hard_attack = 0.07
+	}
+	category_infantry_magical = {
+		soft_attack = 0.15
+		hard_attack = 0.07
+	}
+	max_dig_in_factor = 0.05
+	enable_tactic = tactic_barrage
+}

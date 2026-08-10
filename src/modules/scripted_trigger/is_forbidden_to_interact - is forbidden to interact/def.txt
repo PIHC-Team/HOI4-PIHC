@@ -1,0 +1,7 @@
+is_forbidden_to_interact = {
+	OR = {
+		tag = C00
+		tag = C16
+		tag = C26
+	}
+}

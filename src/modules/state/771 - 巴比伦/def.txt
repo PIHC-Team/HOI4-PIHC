@@ -1,0 +1,44 @@
+state = {
+    id = 771
+    name = STATE_771
+    provinces = {
+        858
+        975
+        2732
+        2799
+        3253
+        5276
+        6527
+        13714
+        13725
+        13764
+        13774
+        13835
+        13856
+        13892
+        15112
+    }
+    manpower = 96098
+    state_category = city
+    history = {
+        owner = C50
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            radar_station = 1
+            air_base = 1
+            858 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C50
+        victory_points = {
+            13856
+            20
+        }
+    }
+    resources = {
+        steel = 18
+    }
+}

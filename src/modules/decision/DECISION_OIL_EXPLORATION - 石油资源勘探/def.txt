@@ -1,0 +1,78 @@
+DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
+    DECISION_OIL_EXPLORATION = {
+        fixed_random_seed = no
+        priority = 93
+        days_remove = 120
+        days_re_enable = 90
+        available = {
+            num_of_civilian_factories_available_for_projects > 2
+            hidden_trigger = {
+                has_political_power > 49
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 2
+            has_political_power > 49
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_3_PP_50
+        modifier = {
+            civilian_factory_use = 3
+        }
+        ai_hint_pp_cost = 50
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -50
+            }
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                random = {
+                    chance = 80
+                    add_resource = {
+                        type = oil
+                        amount = 6
+                    }
+                }
+                random = {
+                    chance = 80
+                    add_resource = {
+                        type = rubber
+                        amount = 3
+                    }
+                }
+                random = {
+                    chance = 1
+                    add_resource = {
+                        type = oil
+                        amount = 15
+                    }
+                    if = {
+                        limit = {
+                            ROOT = {
+                                tag = C23
+                            }
+                            state = 252
+                        }
+                        C23 = {
+                            scoped_play_song = unwelcome_school
+                            country_event = {
+                                id = MEME.1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = -5
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+        }
+        icon = OIL_EXPLORATION
+    }
+}

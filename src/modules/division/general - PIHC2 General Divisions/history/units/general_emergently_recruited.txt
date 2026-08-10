@@ -1,0 +1,22 @@
+division_template = {
+    name = "紧急应征部队 (Emergently Recruited Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

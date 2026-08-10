@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_SUNSET_SHIMMER_MAGICAL_TALENTS = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		research_speed_factor = 0.1
+	}
+}

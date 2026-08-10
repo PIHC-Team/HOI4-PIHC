@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_SUNBURST = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		research_speed_factor = 0.15
+		political_power_gain = 0.05
+	}
+}

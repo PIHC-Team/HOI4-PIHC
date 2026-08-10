@@ -1,0 +1,26 @@
+pihc_air_bloodthirsty_flock_medium_aircraft_c = {
+	track = medium_aircraft
+	name = DOCTRINE_AIR_1_5C_TERN
+	description = DOCTRINE_AIR_1_5C_TERN_DESC
+	icon = GFX_doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_c_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		tern = {
+			air_maximum_speed_factor = 0.2
+			air_agility_factor = 0.05
+		}
+	}
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_SKY_STINGER_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_SKY_STINGER_ANIMATED_default_strip.dds"
+        noOfFrames = 85
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 3.72
+    }
+}

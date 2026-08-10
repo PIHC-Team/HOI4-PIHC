@@ -1,0 +1,15 @@
+REMOVE_FROM_C00_WASTELAND = {
+	if = {
+		limit = {
+			pihc_bgfx_fog > 0
+		}
+		set_building_level = {
+			type = pihc_bgfx_fog
+			level = 0
+			province = {
+				all_provinces = yes
+			}
+		}
+	}
+	remove_core_of = C00
+}

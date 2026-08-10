@@ -1,0 +1,367 @@
+sub_units = {
+    tank_light = {
+        abbreviation = LTK
+        sprite = light_armor
+        map_icon_category = armored
+        priority = 1000
+        ai_priority = 800
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_armor_light
+            category_all_armor
+            category_army
+        }
+        combat_width = 2
+        need = {
+            ARCHETYPE_TANK_LIGHT = 36
+        }
+        manpower = 36
+        max_organisation = 10
+        default_morale = 0.3
+        training_time = 180
+        max_strength = 1.3
+        weight = 1.5
+        supply_consumption = 0.3
+        breakthrough = 0.2
+        soft_attack = 0.05
+        hard_attack = 0.05
+        suppression = 2.5
+        can_be_parachuted = yes
+        forest = {
+            attack = -0.2
+            movement = -0.4
+        }
+        mountain = {
+            attack = -0.1
+        }
+        jungle = {
+            attack = -0.3
+            movement = -0.4
+        }
+        marsh = {
+            attack = -0.1
+            movement = -0.1
+        }
+        urban = {
+            attack = -0.4
+            defence = -0.1
+        }
+        river = {
+            attack = -0.2
+            movement = -0.2
+        }
+        amphibious = {
+            attack = -0.4
+        }
+    }
+    tank_medium = {
+        abbreviation = MTK
+        sprite = medium_armor
+        map_icon_category = armored
+        priority = 1001
+        ai_priority = 1000
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_armor_medium
+            category_all_armor
+            category_army
+        }
+        combat_width = 3
+        need = {
+            ARCHETYPE_TANK_MEDIUM = 30
+        }
+        manpower = 32
+        max_organisation = 10
+        default_morale = 0.3
+        training_time = 180
+        max_strength = 1.5
+        weight = 2.5
+        supply_consumption = 0.45
+        breakthrough = 0.25
+        suppression = 3.0
+        can_be_parachuted = no
+        forest = {
+            attack = -0.3
+            movement = -0.4
+        }
+        hills = {
+            attack = -0.1
+        }
+        mountain = {
+            attack = -0.1
+        }
+        jungle = {
+            attack = -0.4
+            movement = -0.4
+        }
+        marsh = {
+            attack = -0.1
+            movement = -0.1
+        }
+        urban = {
+            attack = -0.4
+            defence = -0.1
+        }
+        river = {
+            attack = -0.2
+            movement = -0.2
+        }
+        amphibious = {
+            attack = -0.8
+        }
+    }
+    tank_heavy = {
+        abbreviation = HTK
+        sprite = heavy_armor
+        map_icon_category = armored
+        priority = 1002
+        ai_priority = 1200
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_armor_heavy
+            category_all_armor
+            category_army
+        }
+        combat_width = 4
+        need = {
+            ARCHETYPE_TANK_HEAVY = 24
+        }
+        manpower = 32
+        max_organisation = 10
+        default_morale = 0.3
+        training_time = 180
+        max_strength = 1
+        weight = 1.5
+        supply_consumption = 0.32
+        breakthrough = 0.4
+        suppression = 3.5
+        can_be_parachuted = no
+        forest = {
+            attack = -0.4
+            movement = -0.4
+        }
+        hills = {
+            attack = -0.2
+        }
+        mountain = {
+            attack = -0.3
+        }
+        jungle = {
+            attack = -0.6
+            movement = -0.4
+        }
+        marsh = {
+            attack = -0.4
+            movement = -0.2
+        }
+        urban = {
+            attack = -0.5
+            defence = -0.2
+        }
+        river = {
+            attack = -0.4
+            movement = -0.4
+        }
+        amphibious = {
+            attack = -0.9
+        }
+        fort = {
+            attack = 0.1
+        }
+    }
+    titan = {
+        abbreviation = TTK
+        sprite = heavy_armor
+        map_icon_category = armored
+        priority = 9999
+        ai_priority = 2500
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_titan
+            category_all_armor
+            category_army
+        }
+        combat_width = 12
+        need = {
+            ARCHETYPE_TITAN = 1
+        }
+        manpower = 180
+        max_organisation = 60
+        default_morale = 0.8
+        training_time = 360
+        max_strength = 2.0
+        weight = 5.0
+        supply_consumption = 0.8
+        breakthrough = 1.0
+        suppression = 2.5
+        can_be_parachuted = no
+        forest = {
+            attack = -0.4
+            movement = -0.4
+        }
+        hills = {
+            attack = -0.2
+        }
+        mountain = {
+            attack = -0.3
+        }
+        jungle = {
+            attack = -0.6
+            movement = -0.4
+        }
+        marsh = {
+            attack = -0.4
+            movement = -0.2
+        }
+        urban = {
+            attack = -0.5
+            defence = -0.2
+        }
+        river = {
+            attack = -0.4
+            movement = -0.4
+        }
+        amphibious = {
+            attack = -0.9
+        }
+        fort = {
+            attack = 0.3
+        }
+    }
+    windigo_fraction = {
+        abbreviation = WDF
+        sprite = heavy_armor
+        map_icon_category = armored
+        priority = 9999
+        ai_priority = 2500
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_titan
+            category_all_armor
+            category_army
+        }
+        combat_width = 12
+        need = {
+            EQUIPMENT_TANK_TITAN_WINDIGO = 1
+        }
+        manpower = 180
+        max_organisation = 60
+        default_morale = 0.8
+        training_time = 360
+        max_strength = 2.0
+        weight = 5.0
+        supply_consumption = 0.8
+        breakthrough = 1.0
+        suppression = 2.5
+        can_be_parachuted = no
+        forest = {
+            attack = -0.4
+            movement = -0.4
+        }
+        hills = {
+            attack = -0.2
+        }
+        mountain = {
+            attack = -0.3
+        }
+        jungle = {
+            attack = -0.6
+            movement = -0.4
+        }
+        marsh = {
+            attack = -0.4
+            movement = -0.2
+        }
+        urban = {
+            attack = -0.5
+            defence = -0.2
+        }
+        river = {
+            attack = -0.4
+            movement = -0.4
+        }
+        amphibious = {
+            attack = -0.9
+        }
+        fort = {
+            attack = 0.3
+        }
+    }
+    windigo = {
+        abbreviation = WDG
+        sprite = heavy_armor
+        map_icon_category = armored
+        priority = 9999
+        ai_priority = 2500
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_titan
+            category_all_armor
+            category_army
+        }
+        combat_width = 12
+        need = {
+            EQUIPMENT_TANK_TITAN_WINDIGO_INVINCIBLE = 1
+        }
+        manpower = 0
+        max_organisation = 99999
+        default_morale = 99999
+        training_time = 0.0
+        supply_consumption = 0.0
+        can_be_parachuted = no
+    }
+    tirek = {
+        abbreviation = TRK
+        sprite = heavy_armor
+        map_icon_category = armored
+        priority = 9999
+        ai_priority = 2500
+        active = no
+        type = {
+            armor
+        }
+        group = armor
+        categories = {
+            category_titan
+            category_all_armor
+            category_army
+        }
+        combat_width = 12
+        need = {
+            EQUIPMENT_TANK_TITAN_TIREK_INVINCIBLE = 1
+        }
+        manpower = 0
+        max_organisation = 99999
+        default_morale = 99999
+        training_time = 0.0
+        supply_consumption = 0.0
+        can_be_parachuted = no
+        forest = {
+            attack = 1.0
+        }
+    }
+}

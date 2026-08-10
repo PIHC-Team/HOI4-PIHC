@@ -1,0 +1,63 @@
+on_actions = {
+	on_nuke_drop = {
+		effect = {
+			FROM = {
+				owner = {
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = PIHC_COUNTRY_FLAG_FAKE_NUKE_DROP
+							}
+						}
+						country_event = {
+							id = NUKES.1
+						}
+					}
+				}
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.3
+						local_org_regain = -0.5
+						state_resources_factor = -0.2
+					}
+				}
+				every_state_division = {
+					random_list = {
+						seed = random
+						60 = {
+							destroy_unit = yes
+						}
+						40 = {
+							set_unit_organization = 0.0
+						}
+					}
+				}
+				every_neighbor_state = {
+					add_state_modifier = {
+						modifier = {
+							local_manpower = -0.15
+							local_org_regain = -0.1
+							state_resources_factor = -0.05
+						}
+					}
+					every_state_division = {
+						random_list = {
+							seed = random
+							10 = {
+								destroy_unit = yes
+							}
+							30 = {
+								set_unit_organization = 0.0
+							}
+							40 = {
+								set_unit_organization = 0.1
+							}
+							20 = {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+focus = {
+	id = FOCUS_C01_DEM_CHANGE_1
+	icon = GFX_FOCUS_C01_DEM_CHANGE_1_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 0
+}

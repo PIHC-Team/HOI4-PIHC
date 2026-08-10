@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_DJ_PON3 = {
+        name = CHARACTER_DJ_PON3_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DJ_PON3.dds"
+                small = "gfx/leaders/CHARACTER_DJ_PON3_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DJ_PON3_army.dds"
+                small = "gfx/leaders/CHARACTER_DJ_PON3_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DJ_PON3_navy.dds"
+                small = "gfx/leaders/CHARACTER_DJ_PON3_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_DJ_PON3
+            desc = CHARACTER_DJ_PON3_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+                TRAIT_DJ_PON3_UNEXPECTED_WEAPON
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

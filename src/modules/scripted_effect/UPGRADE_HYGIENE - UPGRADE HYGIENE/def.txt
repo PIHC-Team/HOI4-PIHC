@@ -1,0 +1,48 @@
+UPGRADE_HYGIENE = {
+	custom_effect_tooltip = PIHC_UPGRADE_HYGIENE_TOOLTIP
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HYGIENE_2_MYSO
+			remove_idea = IDEA_ERA_HYGIENE_3_CLEAN
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HYGIENE_3_CLEAN
+			remove_idea = IDEA_ERA_HYGIENE_4_NORMAL
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HYGIENE_4_NORMAL
+			remove_idea = IDEA_ERA_HYGIENE_5_DIRTY
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HYGIENE_5_DIRTY
+			remove_idea = IDEA_ERA_HYGIENE_6_FILTHY
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_HYGIENE_6_FILTHY
+			remove_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+		}
+	}
+}

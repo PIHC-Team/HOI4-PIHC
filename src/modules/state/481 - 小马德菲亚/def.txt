@@ -1,0 +1,41 @@
+state = {
+    id = 481
+    name = STATE_481
+    provinces = {
+        1091
+        1940
+        2664
+        5103
+        5503
+        5736
+        5740
+        7142
+        8361
+        11373
+        11457
+        11507
+    }
+    manpower = 146686
+    state_category = megalopolis
+    history = {
+        owner = C06
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            dockyard = 4
+            2664 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C06
+        victory_points = {
+            2664
+            35
+        }
+    }
+    resources = {
+        chromium = 8
+        logs = 10
+    }
+}

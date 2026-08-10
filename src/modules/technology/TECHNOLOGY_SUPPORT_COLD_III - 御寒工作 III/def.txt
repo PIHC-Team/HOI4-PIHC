@@ -1,0 +1,45 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_COLD_III = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 1
+                y = 12
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_cold
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        acclimatization_cold_climate_gain_factor = 0.75
+        winter_attrition_factor = -0.25
+        air_weather_penalty = -0.1
+        terrain_penalty_reduction = 0.03
+        dependencies = {
+            TECHNOLOGY_SUPPORT_COLD_II = 1
+        }
+        path = {
+        }
+        on_research_complete = {
+            if = {
+                limit = {
+                    tag = C18
+                    has_decision = DECISION_C18_DIE_NEBENWELT_WAR_TIMER
+                }
+                add_days_mission_timeout = {
+                    mission = DECISION_C18_DIE_NEBENWELT_WAR_TIMER
+                    days = 30
+                }
+            }
+        }
+        research_cost = 0.5
+        start_year = 1006
+    }
+}

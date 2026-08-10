@@ -1,0 +1,179 @@
+capital = 66
+set_politics = {
+    ruling_party = peacism
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_SHIP_SEASURGE = 1
+    TECHNOLOGY_MTG_SHIP_SEASURGE = 1
+    TECHNOLOGY_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_MTG_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_SHIP_SEACARDINAL = 1
+    TECHNOLOGY_MTG_SHIP_SEACARDINAL = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+oob = C64
+recruit_character = CHARACTER_GUSTAVE_LE_GRAND
+add_ideas = closed_economy
+add_ideas = disarmed_nation
+add_ideas = civilian_economy
+add_ideas = IDEA_C06_SECURITY_FORCES
+33 = {
+    add_core_of = C64
+}
+373 = {
+    add_core_of = C64
+}
+377 = {
+    add_core_of = C64
+}
+381 = {
+    add_core_of = C64
+}
+405 = {
+    add_core_of = C64
+}
+407 = {
+    add_core_of = C64
+}
+421 = {
+    add_core_of = C64
+}
+433 = {
+    add_core_of = C64
+}
+452 = {
+    add_core_of = C64
+}
+457 = {
+    add_core_of = C64
+}
+460 = {
+    add_core_of = C64
+}
+461 = {
+    add_core_of = C64
+}
+472 = {
+    add_core_of = C64
+}
+476 = {
+    add_core_of = C64
+}
+478 = {
+    add_core_of = C64
+}
+492 = {
+    add_core_of = C64
+}
+497 = {
+    add_core_of = C64
+}
+505 = {
+    add_core_of = C64
+}
+507 = {
+    add_core_of = C64
+}
+508 = {
+    add_core_of = C64
+}
+541 = {
+    add_core_of = C64
+}
+560 = {
+    add_core_of = C64
+}
+654 = {
+    add_core_of = C64
+}
+708 = {
+    add_core_of = C64
+}
+816 = {
+    add_core_of = C64
+}
+set_rule = {
+    can_join_factions = no
+}
+add_popularity = {
+    ideology = peacism
+    popularity = 1
+}
+promote_character = {
+    character = CHARACTER_GUSTAVE_LE_GRAND
+    ideology = peacism_duchy
+}
+C22 = {
+    puppet = C64
+    set_autonomy = {
+        target = C64
+        autonomous_state = autonomy_pihc_licensed
+    }
+}
+C64 = {
+    set_politics = {
+        ruling_party = peacism
+    }
+    add_popularity = {
+        ideology = peacism
+        popularity = 1
+    }
+    add_popularity = {
+        ideology = democratic
+        popularity = 0.1
+    }
+    add_popularity = {
+        ideology = harmonicism
+        popularity = 0.1
+    }
+    promote_character = {
+        character = CHARACTER_GUSTAVE_LE_GRAND
+        ideology = peacism_duchy
+    }
+    add_ideas = disarmed_nation
+    add_ideas = limited_exports
+    every_owned_state = {
+        set_demilitarized_zone = yes
+    }
+}
+give_military_access = C22
+add_manpower = 5000
+add_political_power = 150
+set_research_slots = 2
+set_stability = 50
+set_war_support = 50
+set_major = no

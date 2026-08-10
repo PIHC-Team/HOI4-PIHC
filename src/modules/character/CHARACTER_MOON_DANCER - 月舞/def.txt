@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_MOON_DANCER = {
+        name = CHARACTER_MOON_DANCER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MOON_DANCER.dds"
+                small = "gfx/leaders/CHARACTER_MOON_DANCER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MOON_DANCER_army.dds"
+                small = "gfx/leaders/CHARACTER_MOON_DANCER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MOON_DANCER_navy.dds"
+                small = "gfx/leaders/CHARACTER_MOON_DANCER_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+pihc_land_rose_of_will = {
+	folder = land
+	name = DOCTRINE_ARMY_3_0_ROSE_OF_WILL
+	description = DOCTRINE_ARMY_3_0_ROSE_OF_WILL_DESC
+	icon = GFX_doctrine_pihc_land_rose_of_will_medium
+	available = {
+		always = yes
+	}
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	tracks = {
+		infantry
+		combat_support
+		armor
+		operations
+	}
+	milestones = {
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_rose_of_will_infantry_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_rose_of_will_infantry_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_rose_of_will_infantry_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_rose_of_will_combat_support_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_rose_of_will_combat_support_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_rose_of_will_combat_support_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_rose_of_will_armor_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_rose_of_will_armor_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_rose_of_will_armor_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_land_rose_of_will_operations_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_land_rose_of_will_operations_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_land_rose_of_will_operations_milestone_var = 1
+					}
+				}
+			}
+		}
+	}
+	category_infantry_traditional = {
+		max_organisation = 4.0
+		default_morale = 0.2
+	}
+	experience_gain_army = 0.4
+	surrender_limit = 0.05
+	army_core_defence_factor = 0.1
+	enable_tactic = tactic_tactical_withdrawal
+}

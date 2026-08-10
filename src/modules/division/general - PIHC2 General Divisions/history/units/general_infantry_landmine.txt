@@ -1,0 +1,24 @@
+division_template = {
+    name = "地雷部队 (Landmine Division)"
+    regiments = {
+        infantry_landmine = {
+            x = 0
+            y = 0
+        }
+        infantry_landmine = {
+            x = 1
+            y = 0
+        }
+        infantry_landmine = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    force_allow_recruiting = yes
+    division_cap = 1
+    priority = 0
+}

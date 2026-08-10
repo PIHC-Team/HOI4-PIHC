@@ -1,0 +1,39 @@
+characters = {
+    CHARACTER_DEPARTMENT_C44_NAVY = {
+        name = CHARACTER_DEPARTMENT_C44_NAVY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY_army.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY_navy.dds"
+                small = "gfx/leaders/CHARACTER_DEPARTMENT_C44_NAVY_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_DEPARTMENT_C44_NAVY_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_republic
+        }
+        advisor = {
+            idea_token = CHARACTER_DEPARTMENT_C44_NAVY
+            desc = CHARACTER_DEPARTMENT_C44_NAVY_DESC
+            traits = {
+
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = navy_chief
+        }
+    }
+}

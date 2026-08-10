@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_RUTHLESS = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		political_power_gain = 0.1
+		subjects_autonomy_gain = -0.1
+	}
+}

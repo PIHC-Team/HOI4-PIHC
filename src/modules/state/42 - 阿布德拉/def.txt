@@ -1,0 +1,53 @@
+state = {
+    id = 42
+    name = STATE_42
+    provinces = {
+        275
+        276
+        283
+        466
+        774
+        1120
+        2705
+        2711
+        3207
+        3536
+        3588
+        4209
+        4859
+        5299
+        5495
+        6810
+        6866
+        8191
+        8281
+        8313
+        8477
+        8804
+        10323
+        10545
+        10575
+        10580
+        10617
+        10640
+        10676
+        10694
+    }
+    manpower = 40505
+    state_category = city
+    history = {
+        owner = C29
+        victory_points = {
+            275
+            20
+        }
+        buildings = {
+            infrastructure = 3
+        }
+        add_core_of = C29
+    }
+    resources = {
+        steel = 2
+        tungsten = 3
+    }
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_QUEEN_NOVO = {
+        name = CHARACTER_QUEEN_NOVO_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_QUEEN_NOVO.dds"
+                small = "gfx/leaders/CHARACTER_QUEEN_NOVO_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_QUEEN_NOVO_army.dds"
+                small = "gfx/leaders/CHARACTER_QUEEN_NOVO_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_QUEEN_NOVO_navy.dds"
+                small = "gfx/leaders/CHARACTER_QUEEN_NOVO_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_QUEEN_NOVO_DESC
+            traits = {
+                TRAIT_QUEEN_NOVO
+            }
+            ideology = despotic_federal
+        }
+    }
+}

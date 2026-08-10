@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C08_TROTTINGHAM_REFORM
+	icon = GFX_FOCUS_C08_TROTTINGHAM_REFORM_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_URBANIZATION
+	}
+	cost = 2
+	completion_reward = {
+		custom_effect_tooltip = C08_URBANIZATION_INC_15
+		4 = {
+			add_resource = {
+				type = logs
+				amount = 5
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 2
+			}
+			set_state_category = town
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = VAR_C08_URBANIZATION
+				value = 15
+			}
+			clamp_variable = {
+				var = VAR_C08_URBANIZATION
+				min = 0
+				max = 100
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 6
+}

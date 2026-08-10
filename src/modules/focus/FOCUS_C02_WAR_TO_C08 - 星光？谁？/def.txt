@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C02_WAR_TO_C08
+	icon = GFX_FOCUS_C02_WAR_TO_C08_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_WAR_TO_C05
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C02_WAR_TO_C05
+	}
+	cost = 24
+	will_lead_to_war_with = C08
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C02_WAR_TO_C08_TOOLTIP
+		set_global_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+		declare_war_on = {
+			target = C08
+			type = crusade_wargoal
+		}
+	}
+	available = {
+		OR = {
+			has_war_with = C05
+			has_war_with = C08
+			has_war_with = C23
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 6
+	y = 6
+}

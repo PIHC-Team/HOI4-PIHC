@@ -1,0 +1,146 @@
+NAMES_GROUP_C63_ARTILLERY = {
+    name = "苹果火炮军团 (Apple Artillery Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "苹果火炮军团%d师 (Apple Artillery Legion %d)"
+}
+NAMES_GROUP_C63_TANK_LIGHT = {
+    name = "苹果轻型装甲军团 (Apple Light Armor Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "苹果轻型装甲军团%d师 (Apple Light Armor Legion %d)"
+}
+NAMES_GROUP_C63_TRADITIONAL_REGULAR = {
+    name = "苹果常规步兵军团 (Apple Regular Infantry Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "苹果常规步兵军团%d师 (Apple Regular Infantry Legion %d)"
+}
+NAMES_GROUP_C63_TANK_HEAVY = {
+    name = "苹果重型装甲军团 (Apple Heavy Armor Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "苹果重型装甲军团%d师 (Apple Heavy Armor Legion %d)"
+}
+NAMES_GROUP_C63_TRADITIONAL_SMALL = {
+    name = "苹果小型步兵军团 (Apple Small Infantry Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "苹果小型步兵军团%d师 (Apple Small Infantry Legion %d)"
+}
+NAMES_GROUP_C63_AUTOMATA = {
+    name = "苹果自动作战军团 (Apple Automata Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "苹果自动作战军团%d师 (Apple Automata Legion %d)"
+}
+NAMES_GROUP_C63_SHIELD = {
+    name = "苹果重装步兵军团 (Apple Heavy Infantry Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "苹果重装步兵军团%d师 (Apple Heavy Infantry Legion %d)"
+}
+NAMES_GROUP_C63_MAGICAL = {
+    name = "苹果魔法步兵军团 (Apple Magical Infantry Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "苹果魔法步兵军团%d师 (Apple Magical Infantry Legion %d)"
+}
+NAMES_GROUP_C63_INFANTRY_MIX = {
+    name = "苹果协同军团 (Apple Concerted Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "苹果协同军团%d师 (Apple Concerted Legion %d)"
+}
+NAMES_GROUP_C63_MOTORIZED = {
+    name = "苹果机动步兵军团 (Apple Motorized Infantry Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "苹果机动步兵军团%d师 (Apple Motorized Infantry Legion %d)"
+}
+NAMES_GROUP_C63_TANK_MEDIUM = {
+    name = "苹果中型装甲军团 (Apple Medium Armor Legion)"
+    for_countries = {
+        C63
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "苹果中型装甲军团%d师 (Apple Medium Armor Legion %d)"
+}

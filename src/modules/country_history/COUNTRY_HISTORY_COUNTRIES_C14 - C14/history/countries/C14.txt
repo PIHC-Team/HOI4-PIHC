@@ -1,0 +1,111 @@
+capital = 190
+set_popularities = {
+    democratic = 37
+    despotic = 35
+    corporation = 13
+    harmonicism = 10
+    peacism = 4
+    fascism = 1
+}
+set_politics = {
+    ruling_party = democratic
+    last_election = 1002.4.1
+    election_frequency = 48
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_TANK_MEDIUM_APPLE = 1
+    TECHNOLOGY_NSB_TANK_MEDIUM_APPLE = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C14
+recruit_character = CHARACTER_BRAEBURN
+recruit_character = CHARACTER_APPLE_TOP
+recruit_character = CHARACTER_SHERIFF_SILVERSTAR
+recruit_character = CHARACTER_PEACHY_CREAM
+add_ideas = export_focus
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = IDEA_C14_C02_TRADE
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+set_power_balance = {
+    id = BOP_C14_INDEPENDENCE
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C14_INDEPENDENCE
+    modifier = BOP_C14_INDEPENDENCE_DAILY_DRIFT
+}
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.6
+set_convoys = 150
+add_manpower = 3000
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE
+set_major = no
+complete_national_focus = FOCUS_C14_CANTERLOT_PACT
+complete_national_focus = FOCUS_C14_TRADE_AGREEMENT
+complete_national_focus = FOCUS_C14_FRIEND_REPAY
+complete_national_focus = FOCUS_C14_ENEMY_REPAY
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 200
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 100
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 120
+}

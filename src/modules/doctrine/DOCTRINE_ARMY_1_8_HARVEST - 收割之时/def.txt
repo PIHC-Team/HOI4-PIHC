@@ -1,0 +1,28 @@
+pihc_land_flame_of_rage_operations_core = {
+	track = operations
+	name = DOCTRINE_ARMY_1_8_HARVEST
+	description = DOCTRINE_ARMY_1_8_HARVEST_DESC
+	icon = GFX_doctrine_pihc_land_flame_of_rage_operations_core_medium
+	xp_cost = 200
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		harvest = {
+			army_attack_against_minor_factor = 0.12
+			enable_tactic = tactic_unexpected_thrust
+			enable_tactic = tactic_breakthrough
+			enable_tactic = tactic_pihc_iron_curtain
+		}
+	}
+}

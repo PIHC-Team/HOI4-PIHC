@@ -1,0 +1,136 @@
+sub_units = {
+    engineer = {
+        abbreviation = ENG
+        sprite = infantry
+        map_icon_category = infantry
+        priority = 0
+        ai_priority = 5
+        active = no
+        affects_speed = no
+        type = {
+            infantry
+            support
+            flame
+        }
+        group = support
+        categories = {
+            category_army
+            category_all_support
+        }
+        combat_width = 0
+        max_strength = 2
+        max_organisation = 20
+        default_morale = 0.3
+        manpower = 8
+        training_time = 120
+        weight = 0.1
+        supply_consumption = 0.02
+        entrenchment = 2.0
+        battalion_mult = {
+            category = category_infantry_traditional
+            entrenchment = 0.2
+            add = yes
+        }
+        battalion_mult = {
+            category = category_infantry_magical
+            entrenchment = 0.2
+            add = yes
+        }
+        battalion_mult = {
+            category = category_infantry_shield
+            entrenchment = 0.4
+            add = yes
+        }
+        defense = 0.1
+        breakthrough = 0.5
+        soft_attack = -0.5
+        essential = {
+            ARCHETYPE_SUPPORT
+        }
+        need = {
+            ARCHETYPE_INFANTRY = 8
+            ARCHETYPE_SUPPORT = 32
+        }
+        can_be_parachuted = yes
+        forest = {
+            defence = 0.25
+            movement = 0.05
+        }
+        hills = {
+            defence = 0.1
+        }
+        jungle = {
+            defence = 0.25
+        }
+        marsh = {
+            defence = 0.25
+            movement = 0.2
+        }
+        fort = {
+            attack = 0.1
+            defence = 0.25
+        }
+        river = {
+            defence = 0.25
+            movement = 0.25
+        }
+        amphibious = {
+            attack = 0.15
+        }
+        same_support_type = engineer
+    }
+    pioneer_support = {
+        abbreviation = PIO
+        sprite = infantry
+        map_icon_category = infantry
+        priority = 0
+        ai_priority = 5
+        active = no
+        affects_speed = no
+        type = {
+            infantry
+            support
+        }
+        group = support
+        categories = {
+            category_army
+            category_all_support
+        }
+        combat_width = 0
+        max_strength = 2
+        max_organisation = 20
+        default_morale = 0.3
+        manpower = 8
+        training_time = 120
+        weight = 0.1
+        supply_consumption = 0.02
+        entrenchment = 2.0
+        entrenchment = 2.5
+        defense = 0.1
+        breakthrough = 0.5
+        soft_attack = -0.5
+        essential = {
+            ARCHETYPE_SUPPORT
+        }
+        need = {
+            ARCHETYPE_INFANTRY = 8
+            ARCHETYPE_SUPPORT = 32
+        }
+        can_be_parachuted = yes
+        marsh = {
+            attack = 0.1
+            defence = 0.2
+            movement = 0.2
+        }
+        fort = {
+            attack = 0.15
+            defence = 0.2
+        }
+        river = {
+            attack = 0.1
+            defence = 0.2
+            movement = 0.25
+        }
+        same_support_type = engineer
+    }
+}

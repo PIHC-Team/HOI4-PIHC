@@ -1,0 +1,8 @@
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
+	NOT = {
+		has_game_rule = {
+			rule = allow_guarantees
+			option = LIMITED
+		}
+	}
+}

@@ -1,0 +1,53 @@
+technologies = {
+    TECHNOLOGY_ROCK_BREAKING_WARRIOR = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 16
+                y = 12
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_shield
+        }
+        enable_equipments = {
+            EQUIPMENT_SHIELD_ROCKBREAKER
+        }
+        enable_subunits = {
+            infantry_rockbreaker
+        }
+        allow = {
+            always = no
+            if = {
+                limit = {
+                    NOT = {
+                        C12 = {
+                            has_country_leader = {
+                                character = CHARACTER_LIMESTONE_PIE
+                                ruling_only = yes
+                            }
+                        }
+                        OR = {
+                            tag = C12
+                            is_in_faction_with = C12
+                        }
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = TECHNOLOGY_ROCKBREAKER_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        dependencies = {
+            TECHNOLOGY_CREATURE_TRAINING = 1
+        }
+        research_cost = 5.0
+        start_year = 1007
+    }
+}

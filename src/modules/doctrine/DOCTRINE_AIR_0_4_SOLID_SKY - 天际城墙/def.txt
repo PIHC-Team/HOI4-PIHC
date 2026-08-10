@@ -1,0 +1,28 @@
+pihc_air_open_sky_strike_aircraft_core = {
+	track = strike_aircraft
+	name = DOCTRINE_AIR_0_4_SOLID_SKY
+	description = DOCTRINE_AIR_0_4_SOLID_SKY_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_strike_aircraft_core_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		solid_sky = {
+			static_anti_air_damage_factor = 0.15
+			air_home_defence_factor = 0.12
+			air_mission_efficiency = 0.1
+			cas_damage_reduction = 0.15
+		}
+	}
+}

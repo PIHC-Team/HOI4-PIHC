@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C18_HEAL_THE_WOUND
+	icon = GFX_FOCUS_C18_HEAL_THE_WOUND_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_TALK_TO_RAINSHINE
+	}
+	allow_branch = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED
+	}
+	cost = 6
+	completion_reward = {
+		C18_DEL_NIRIK_0_25 = yes
+		C18_DEL_GROWTH_0_10 = yes
+	}
+	available = {
+		has_war = no
+		has_civil_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 9
+}

@@ -1,0 +1,22 @@
+scripted_gui = {
+	landlord_popup_confirm = {
+		context_type = player_context
+		window_name = landlord_popup_confirm
+		visible = {
+			ROOT = {
+				has_country_flag = landlord_revoking_core
+			}
+		}
+		effects = {
+			cancel_click = {
+				clr_country_flag = landlord_revoking_core
+			}
+			confirm_click = {
+				clr_country_flag = landlord_revoking_core
+				var:landlord_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+	}
+}

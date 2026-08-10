@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_SILVERSTREAM = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		experience_gain_navy = 0.12
+	}
+}

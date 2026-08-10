@@ -1,0 +1,33 @@
+equipments = {
+	EQUIPMENT_CANNON_LIGHT_PINKIE = {
+		picture = EQUIPMENT_CANNON_LIGHT_PINKIE
+		is_archetype = no
+		group_by = type
+		archetype = ARCHETYPE_CANNON_LIGHT
+		priority = 80000
+		visual_level = 80000
+		build_cost_ic = 4.2
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		manpower = 1
+		weight = 0.5
+		soft_attack = 12.0
+		hard_attack = 18.0
+		air_attack = 0.5
+		ap_attack = 32.0
+		breakthrough = 12.0
+		defense = 2.0
+		armor_value = 0.0
+		hardness = 0.0
+		resources = {
+			crystals = 1
+			rubber = 3
+		}
+		fuel_consumption = 0.0
+		maximum_speed = 6.4
+		entrenchment = 2.0
+		recon = 3
+	}
+}

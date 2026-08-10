@@ -1,0 +1,68 @@
+C18_REGIONAL_DEV_BUILDINGS_DAMAGE_6 = {
+	if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5
+				value = 25.0
+				compare = greater_than_or_equals
+			}
+		}
+		for_each_scope_loop = {
+			array = C18.ARRAY_REGIONAL_DEV_STATES_6
+			random = {
+				chance = 75
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			random = {
+				chance = 75
+				damage_building = {
+					type = industrial_complex
+					damage = 0.3
+				}
+			}
+			random = {
+				chance = 75
+				damage_building = {
+					type = farm_complex
+					damage = 0.2
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5
+				value = 10.0
+				compare = greater_than_or_equals
+			}
+		}
+		for_each_scope_loop = {
+			array = C18.ARRAY_REGIONAL_DEV_STATES_6
+			random = {
+				chance = 50
+				damage_building = {
+					type = infrastructure
+					damage = 0.1
+				}
+			}
+			random = {
+				chance = 50
+				damage_building = {
+					type = industrial_complex
+					damage = 0.1
+				}
+			}
+			random = {
+				chance = 50
+				damage_building = {
+					type = farm_complex
+					damage = 0.1
+				}
+			}
+		}
+	}
+}

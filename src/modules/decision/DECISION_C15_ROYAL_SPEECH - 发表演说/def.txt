@@ -1,0 +1,52 @@
+DECISION_CATEGORY_C15_PARLIAMENT = {
+    DECISION_C15_ROYAL_SPEECH = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 90
+        visible = {
+            tag = C15
+        }
+        available = {
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        complete_effect = {
+            add_political_power = 100
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.002
+            }
+            add_popularity = {
+                ideology = despotic
+                popularity = 0.006
+            }
+            custom_effect_tooltip = C15_PARLIAMENT_INCREASE_ROYAL
+            hidden_effect = {
+                multiply_variable = {
+                    var = C15_royal_support_factor
+                    value = 1.03
+                }
+                clamp_variable = {
+                    var = C15_royal_support_factor
+                    min = 0.3
+                    max = 0.9
+                }
+                C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = yes
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C15_ROYAL_SPEECH
+    }
+}

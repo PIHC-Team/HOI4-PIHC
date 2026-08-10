@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C01_CHEAPER_TREATMENT = {
+			picture = C01_CHEAPER_TREATMENT
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

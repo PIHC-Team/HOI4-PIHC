@@ -1,0 +1,23 @@
+buildings = {
+	rocket_site = {
+		base_cost = 6400
+		value = 1
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		rocket_production = 0
+		rocket_launch_capacity = 1
+		level_cap = {
+			state_max = 3
+			shares_slots = yes
+			exclusive_with = mega_gun_emplacement
+		}
+		show_on_map = 1
+		icon_frame = 12
+		spawn_point = rocket_site_spawn
+		missing_tech_loc = {
+			localization_key = SP_BUILDING_MISSING_PROJECT
+			PROJECT = SP_STEAM_ROCKET
+		}
+	}
+}
+

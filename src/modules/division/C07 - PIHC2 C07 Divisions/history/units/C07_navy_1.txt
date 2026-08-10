@@ -1,0 +1,82 @@
+units = {
+    fleet = {
+        name = "South Luna Ocean Fleet"
+        naval_base = 7571
+        task_force = {
+            name = "South Luna Ocean Fleet 1"
+            location = 16616
+            ship = {
+                name = Flim
+                definition = battleship
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C07
+                        version_name = "Twins Class"
+                    }
+                }
+            }
+            ship = {
+                name = Flam
+                definition = battleship
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEACOURTYARD = {
+                        amount = 1
+                        owner = C07
+                        version_name = "Twins Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Las Pegasus"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C07
+                        version_name = "City Class"
+                    }
+                }
+            }
+            ship = {
+                name = "New Horseleans"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C07
+                        version_name = "City Class"
+                    }
+                }
+            }
+            ship = {
+                name = Dimondia
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C07
+                        version_name = "City Class"
+                    }
+                }
+            }
+            ship = {
+                name = "San Palomino"
+                definition = destroyer
+                start_experience_factor = 0.8
+                equipment = {
+                    EQUIPMENT_SHIP_SEASURGE = {
+                        amount = 1
+                        owner = C07
+                        version_name = "City Class"
+                    }
+                }
+            }
+        }
+    }
+}

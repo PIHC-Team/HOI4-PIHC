@@ -1,0 +1,7 @@
+INITIALIZE_EIJC = {
+	set_variable = {
+		var = global.VAR_EIJC_NUM_MEMBERS
+		value = 0
+	}
+	CALCULATE_EIJC_BOOST = yes
+}

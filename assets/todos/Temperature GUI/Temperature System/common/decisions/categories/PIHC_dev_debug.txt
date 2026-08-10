@@ -1,0 +1,9 @@
+PIHC_dev_debug = {
+	icon = generic_research
+	priority = {
+		base = 1000000
+	}
+	visible = {
+		is_debug = yes
+	}
+}

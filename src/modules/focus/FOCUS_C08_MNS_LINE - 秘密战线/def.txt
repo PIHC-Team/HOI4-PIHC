@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C08_MNS_LINE
+	icon = GFX_FOCUS_C08_MNS_LINE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_ARMY_INTEGRATION
+	}
+	cost = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = despotic
+			popularity = -1.0
+		}
+		add_manpower = -381
+		add_ideas = IDEA_C08_MNS
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 5
+}

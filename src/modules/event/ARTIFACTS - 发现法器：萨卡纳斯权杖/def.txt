@@ -1,0 +1,1053 @@
+add_namespace = ARTIFACTS
+country_event = {
+    id = ARTIFACTS.1
+    picture = GFX_EVENT_ARTIFACTS_1
+    fire_only_once = no
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+        modifier = {
+            factor = 2.0
+            always = yes
+        }
+    }
+    title = EVENT_ARTIFACTS_1
+    desc = EVENT_ARTIFACTS_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_STAFF_OF_SACANAS_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_STAFF_OF_SACANAS
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_1_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.2
+    picture = GFX_EVENT_ARTIFACTS_2
+    fire_only_once = no
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_2
+    desc = EVENT_ARTIFACTS_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_OBSIDIAN_ORB_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_OBSIDIAN_ORB
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_2_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.3
+    picture = GFX_EVENT_ARTIFACTS_3
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_3
+    desc = EVENT_ARTIFACTS_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_MEMORY_STONE_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_MEMORY_STONE
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_3_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.4
+    picture = GFX_EVENT_ARTIFACTS_4
+    fire_only_once = no
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_4
+    desc = EVENT_ARTIFACTS_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_POWER_PONIES_COMIC_BOOK_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_POWER_PONIES_COMIC_BOOK
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_4_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.5
+    picture = GFX_EVENT_ARTIFACTS_5
+    fire_only_once = no
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_5
+    desc = EVENT_ARTIFACTS_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_KEY_OF_UNFETTERED_ENTRANCE_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_KEY_OF_UNFETTERED_ENTRANCE
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_5_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.6
+    picture = GFX_EVENT_ARTIFACTS_6
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_6
+    desc = EVENT_ARTIFACTS_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_TRUTH_TALISMAN_OF_TONATIUH_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_TRUTH_TALISMAN_OF_TONATIUH
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_6_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.7
+    picture = GFX_EVENT_ARTIFACTS_7
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_7
+    desc = EVENT_ARTIFACTS_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_TIME_TWIRLER_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_TIME_TWIRLER
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_7_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.8
+    picture = GFX_EVENT_ARTIFACTS_8
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_8
+    desc = EVENT_ARTIFACTS_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_ENCHANTED_SMARTPHONE_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_ENCHANTED_SMARTPHONE
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_8_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.9
+    picture = GFX_EVENT_ARTIFACTS_9
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+        modifier = {
+            factor = 0.06
+            tag = C02
+        }
+        modifier = {
+            factor = 5.0
+            NOT = {
+                tag = C02
+            }
+        }
+        modifier = {
+            factor = 0.1
+            tag = C02
+            date > 1004.06.01
+        }
+    }
+    title = EVENT_ARTIFACTS_9
+    desc = EVENT_ARTIFACTS_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_ALICORN_AMULET_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_ALICORN_AMULET
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_9_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.10
+    picture = GFX_EVENT_ARTIFACTS_10
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_10
+    desc = EVENT_ARTIFACTS_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_STAR_SWIRLS_TIME_TRAVEL_SPELL_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_STAR_SWIRLS_TIME_TRAVEL_SPELL
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_10_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.11
+    picture = GFX_EVENT_ARTIFACTS_11
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_11
+    desc = EVENT_ARTIFACTS_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_RINGS_OF_SCORCHERO_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_RINGS_OF_SCORCHERO
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_11_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.12
+    picture = GFX_EVENT_ARTIFACTS_12
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_12
+    desc = EVENT_ARTIFACTS_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_AMULET_OF_AURORA_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_AMULET_OF_AURORA
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_12_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.13
+    picture = GFX_EVENT_ARTIFACTS_13
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_13
+    desc = EVENT_ARTIFACTS_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_TALISMAN_OF_MIRAGE_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_TALISMAN_OF_MIRAGE
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_13_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.14
+    picture = GFX_EVENT_ARTIFACTS_14
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_14
+    desc = EVENT_ARTIFACTS_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_HELM_OF_YKSLER_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_HELM_OF_YKSLER
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_14_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.15
+    picture = GFX_EVENT_ARTIFACTS_15
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_15
+    desc = EVENT_ARTIFACTS_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_CROWN_OF_GROVER_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_CROWN_OF_GROVER
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_15_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.16
+    picture = GFX_EVENT_ARTIFACTS_16
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_16
+    desc = EVENT_ARTIFACTS_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_KNUCKERBOCKERS_SHELL_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_KNUCKERBOCKERS_SHELL
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_16_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.17
+    picture = GFX_EVENT_ARTIFACTS_17
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_17
+    desc = EVENT_ARTIFACTS_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_CLOVER_THE_CLEVERS_CLOAK_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_CLOVER_THE_CLEVERS_CLOAK
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_17_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.18
+    picture = GFX_EVENT_ARTIFACTS_18
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+        modifier = {
+            factor = 0.1
+            has_idea = CHARACTER_DOCTOR_HOOVES
+        }
+    }
+    title = EVENT_ARTIFACTS_18
+    desc = EVENT_ARTIFACTS_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_SONIC_SCREWDRIVER_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_SONIC_SCREWDRIVER
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_18_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.19
+    picture = GFX_EVENT_ARTIFACTS_19
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_19
+    desc = EVENT_ARTIFACTS_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_DIAMOND_OF_LAPIS_LUX_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_DIAMOND_OF_LAPIS_LUX
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_19_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.20
+    picture = GFX_EVENT_ARTIFACTS_20
+    fire_only_once = no
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_20
+    desc = EVENT_ARTIFACTS_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_SOMNAMBULA_GLOWPAZ_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_SOMNAMBULA_GLOWPAZ
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_20_o0
+    }
+}
+country_event = {
+    id = ARTIFACTS.21
+    picture = GFX_EVENT_ARTIFACTS_21
+    fire_only_once = yes
+    mean_time_to_happen = {
+        years = 35
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+        }
+        modifier = {
+            factor = 0.5
+            has_tech = TECHNOLOGY_TECH_MAGI_II
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_with_trait = TRAIT_ARCHAEOLOGIST
+        }
+        modifier = {
+            factor = 0.6
+            has_idea_with_trait = TRAIT_FANTASY_LITERATURE
+        }
+    }
+    title = EVENT_ARTIFACTS_21
+    desc = EVENT_ARTIFACTS_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_ARTIFACT_BOOK_OF_MANIFESTATION_1 = yes
+        add_tech_bonus = {
+            bonus = 0.15
+            uses = 1
+            category = pihc_magical
+        }
+        add_ideas = IDEA_ALL_ARTIFACT_BOOK_OF_MANIFESTATION
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_tech = TECHNOLOGY_TECH_MAGI_II
+                    }
+                }
+                add_nuclear_bombs = 1
+            }
+        }
+        name = EVENT_ARTIFACTS_21_o0
+    }
+}

@@ -1,0 +1,98 @@
+DECISION_CATEGORY_C07_LPLAB = {
+    DECISION_C07_LPLAB_215 = {
+        fixed_random_seed = no
+        priority = 101
+        days_remove = 60
+        days_re_enable = 0
+        visible = {
+            tag = C07
+            has_completed_focus = FOCUS_C07_LPLAB_215
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C07_LPLAB_SSCS6000_SUCCESS
+            }
+            if = {
+                limit = {
+                    has_dlc = "No Step Back"
+                }
+                NOT = {
+                    has_tech = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+                }
+            }
+            else = {
+                NOT = {
+                    has_tech = TECHNOLOGY_TANK_TITAN_SSCS6000M
+                }
+            }
+        }
+        available = {
+            num_of_civilian_factories_available_for_projects > 2
+            hidden_trigger = {
+                has_political_power > 24
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 2
+            has_political_power > 24
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_3_PP_25
+        modifier = {
+            civilian_factory_use = 3
+        }
+        ai_hint_pp_cost = 25
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -25
+            }
+        }
+        remove_effect = {
+            effect_tooltip = {
+                if = {
+                    limit = {
+                        has_dlc = "No Step Back"
+                    }
+                    set_technology = {
+                        TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M = 1
+                    }
+                }
+                else = {
+                    set_technology = {
+                        TECHNOLOGY_TANK_TITAN_SSCS6000M = 1
+                    }
+                }
+            }
+            custom_effect_tooltip = DECISION_C07_LPLAB_215_TOOLTIP
+            hidden_effect = {
+                random_list = {
+                    seed = random
+                    30 = {
+                        if = {
+                            limit = {
+                                has_dlc = "No Step Back"
+                            }
+                            add_tech_bonus = {
+                                bonus = 0.3
+                                technology = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+                            }
+                        }
+                        else = {
+                            add_tech_bonus = {
+                                bonus = 0.3
+                                technology = TECHNOLOGY_TANK_TITAN_SSCS6000M
+                            }
+                        }
+                        set_country_flag = PIHC_COUNTRY_FLAG_C07_LPLAB_SSCS6000_SUCCESS
+                    }
+                    70 = {
+                        country_event = {
+                            id = LPLAB.9215
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C07_LPLAB_215
+    }
+}

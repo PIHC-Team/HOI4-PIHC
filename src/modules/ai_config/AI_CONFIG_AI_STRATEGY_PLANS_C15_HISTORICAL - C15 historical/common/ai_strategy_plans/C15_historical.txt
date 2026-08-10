@@ -1,0 +1,29 @@
+C15_historical = {
+    name = historical
+    desc = "Crystal Empire Historical AI"
+    allowed = {
+        tag = C15
+    }
+    enable = {
+        country_exists = C15
+    }
+    ai_national_focuses = {
+        FOCUS_C15_ROYAL_DESTINY
+        FOCUS_C15_GLORY_CRYSTAL
+        FOCUS_C15_GLORY_CROWN
+        FOCUS_C15_GLORY_PONIES
+        FOCUS_C15_SACRAMENT
+        FOCUS_C15_REVELATION
+        FOCUS_C15_DARK_MAGIC
+        FOCUS_C15_INDEPENDENCE_WAR_THEOLOGY
+        FOCUS_C15_RETURN_OF_THE_SHADOW
+        FOCUS_C15_HEALING_THE_TRAUMA
+        FOCUS_C15_ECONOMIC_RECOVERY
+        FOCUS_C15_ECONOMIC_RECOVERY_II
+        FOCUS_C15_MILITARY_RECOVERY
+        FOCUS_C15_CONSCRIPTION
+        FOCUS_C15_ECONOMIC_LEFTOVER
+        FOCUS_C15_CHANGELING_ENEMY
+        FOCUS_C15_SOMBRA_CRISIS_FRIEND
+    }
+}

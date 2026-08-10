@@ -1,0 +1,186 @@
+guiTypes = {
+    containerWindowType = {
+        name = pihc_state_lore_icon
+        position = {
+            x = 0
+            y = 0
+        }
+        orientation = lower_right
+        moveable = no
+        buttonType = {
+            name = open_state_lore
+            quadTextureSprite = GFX_pihc_state_lore_icon
+            pdx_tooltip = PIHC_STATE_LORE_TOGGLE_TT
+            position = {
+                x = -64
+                y = -556
+            }
+            scale = 0.5
+        }
+    }
+    containerWindowType = {
+        name = state_lore_container
+        position = {
+            x = 155
+            y = -48
+        }
+        size = {
+            width = 200%
+            height = 200%
+        }
+        iconType = {
+            name = background
+            spriteType = GFX_state_lore_frame_bg
+        }
+        buttonType = {
+            name = state_lore_button
+            spriteType = GFX_state_lore_button
+            position = {
+                x = 59
+                y = 8
+            }
+            pdx_tooltip = state_lore_text_tt
+        }
+    }
+    containerWindowType = {
+        name = state_lore_text_container
+        show_position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 500
+            height = 500
+        }
+        fade_time = 300
+        fade_type = linear
+        show_sound = menu_open_window
+        orientation = center
+        origo = center
+        moveable = yes
+        clipping = no
+        background = {
+            name = Background
+            quadTextureSprite = GFX_tiled_plain_bg
+        }
+        iconType = {
+            name = "book icon"
+            spriteType = GFX_state_lore_button
+            position = {
+                x = 3
+                y = 3
+            }
+        }
+        instantTextboxType = {
+            name = title
+            position = {
+                x = 52
+                y = 5
+            }
+            font = hoi_24header
+            text = state_lore_text_container_title
+            maxWidth = 400
+            maxHeight = 15
+            format = center
+        }
+        containerWindowType = {
+            name = "state description"
+            position = {
+                x = 0
+                y = 50
+            }
+            size = {
+                width = 500
+                height = 100%%
+            }
+            containerWindowType = {
+                name = grid
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 500
+                    height = -4
+                }
+                margin = {
+                    top = 4
+                    bottom = 4
+                }
+                iconType = {
+                    name = background
+                    position = {
+                        x = 0
+                        y = 8
+                    }
+                    spriteType = GFX_diplo_details_header_elongated
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "state name"
+                    position = {
+                        x = 22
+                        y = 15
+                    }
+                    font = hoi_30header
+                    text = [GetCurentStateLoreName]
+                    maxWidth = 450
+                    maxHeight = 20
+                    orientation = UPPER_LEFT
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "state description text"
+                    position = {
+                        x = 22
+                        y = 55
+                    }
+                    font = hoi4_typewriter16_inverted
+                    text = [GetCurentStateLoreDesc]
+                    maxWidth = 450
+                    maxHeight = 375
+                    format = left
+                    scrollbarType = standardtext_slider
+                }
+                background = {
+                    name = Background
+                    quadTextureSprite = GFX_tiled_window2_1b_border
+                    alwaystransparent = yes
+                }
+            }
+        }
+        buttonType = {
+            name = state_lore_text_close_button
+            position = {
+                x = -44
+                y = 5
+            }
+            quadTextureSprite = GFX_closebutton
+            buttonFont = Main_14_black
+            shortcut = ESCAPE
+            Orientation = UPPER_RIGHT
+            clicksound = click_close
+            pdx_tooltip = CLOSE
+        }
+    }
+    containerWindowType = {
+        name = pihc_state_lore_mapicon_gui
+        position = {
+            x = -10
+            y = 5
+        }
+        size = {
+            width = 86
+            height = 60
+        }
+        buttonType = {
+            name = state_lore_mapicon_button
+            position = {
+                x = 0
+                y = 0
+            }
+            quadtexturesprite = GFX_state_lore_button
+            pdx_tooltip = mapicon_state_lore_text_tt
+        }
+    }
+}

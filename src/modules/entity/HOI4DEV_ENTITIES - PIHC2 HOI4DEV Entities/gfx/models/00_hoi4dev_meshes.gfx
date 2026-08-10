@@ -1,0 +1,4284 @@
+objectTypes = {
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C00_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C00_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C01_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C01_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C02_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C02_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C03_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C03_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C04_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C04_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C05_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C05_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C06_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C06_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C07_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C07_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C08_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C08_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C09_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C09_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C10_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C10_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C11_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C11_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C12_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C12_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C13_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C13_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C14_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C14_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C15_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C15_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C16_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C16_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C17_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C17_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C18_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C18_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C19_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C19_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C20_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C20_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C21_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C21_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C22_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C22_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C23_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C23_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C24_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C24_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C25_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C25_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C26_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C26_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C27_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C27_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C28_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C28_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C29_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C29_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C30_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C30_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C31_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C31_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C32_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C32_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C33_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C33_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C34_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C34_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C35_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C35_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C36_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C36_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C37_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C37_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C38_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C38_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C39_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C39_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C40_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C40_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C41_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C41_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C42_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C42_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C43_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C43_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C44_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C44_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C45_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C45_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C46_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C46_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C47_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C47_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C48_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C48_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C49_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C49_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C50_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C50_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C51_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C51_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C52_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C52_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C53_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C53_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C54_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C54_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C55_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C55_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C56_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C56_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C57_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C57_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C58_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C58_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C59_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C59_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C60_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C60_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C61_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C61_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C62_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C62_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C63_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C63_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C64_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C64_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C65_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C65_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_AIR_AIRSHIP_C66_mesh"
+        file = "gfx/models/viento/air/airship/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_AIR_AIRSHIP_C66_diffuse.dds
+            texture_normal = nonormal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_AIR_AIRSHIP_idle"
+        }
+        scale = 3.0
+    }
+    pdxmesh = {
+        name = "VIENTO_MIRROR_mesh"
+        file = "gfx/models/viento/mirror/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_MIRROR_diffuse.dds
+            texture_normal = VIENTO_MIRROR_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_MIRROR_idle"
+        }
+        scale = 4.0
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C00_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C00_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C01_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C01_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C02_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C02_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C03_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C03_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C04_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C04_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C06_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C06_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C07_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C07_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C09_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C09_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C10_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C10_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C11_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C11_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C12_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C12_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C14_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C14_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C15_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C15_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C16_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C16_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C21_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C21_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C22_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C22_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C23_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C23_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C24_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C24_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C25_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C25_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C26_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C26_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C27_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C27_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C28_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C28_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C29_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C29_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C30_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C30_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C32_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C32_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C33_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C33_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C34_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C34_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C36_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C36_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C37_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C37_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C38_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C38_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C39_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C39_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C48_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C48_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C49_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C49_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C50_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C50_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C53_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C53_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C55_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C55_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_IMPERIAL_C59_mesh"
+        file = "gfx/models/viento/pony/imperial/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_IMPERIAL_C59_diffuse.dds
+            texture_normal = VIENTO_PONY_IMPERIAL_normal.dds
+            texture_specular = VIENTO_PONY_IMPERIAL_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_IMPERIAL_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_IMPERIAL_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_IMPERIAL_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_IMPERIAL_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_IMPERIAL_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_IMPERIAL_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_IMPERIAL_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_IMPERIAL_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_IMPERIAL_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_IMPERIAL_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C05_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C05_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C08_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C08_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C13_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C13_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C17_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C17_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C18_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C18_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C19_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C19_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C20_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C20_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C25_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C25_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C27_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C27_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C29_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C29_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C31_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C31_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C35_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C35_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C40_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C40_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C41_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C41_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C42_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C42_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C43_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C43_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C44_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C44_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C45_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C45_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C46_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C46_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C47_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C47_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C51_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C51_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C52_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C52_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C54_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C54_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_PONY_RESISTANCE_C58_mesh"
+        file = "gfx/models/viento/pony/resistance/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_PONY_RESISTANCE_C58_diffuse.dds
+            texture_normal = VIENTO_PONY_RESISTANCE_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack01"
+            type = "VIENTO_PONY_RESISTANCE_attack01"
+        }
+        animation = {
+            id = "attack02"
+            type = "VIENTO_PONY_RESISTANCE_attack02"
+        }
+        animation = {
+            id = "attack03"
+            type = "VIENTO_PONY_RESISTANCE_attack03"
+        }
+        animation = {
+            id = "idle01"
+            type = "VIENTO_PONY_RESISTANCE_idle01"
+        }
+        animation = {
+            id = "idle02"
+            type = "VIENTO_PONY_RESISTANCE_idle02"
+        }
+        animation = {
+            id = "idle03"
+            type = "VIENTO_PONY_RESISTANCE_idle03"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_PONY_RESISTANCE_move"
+        }
+        animation = {
+            id = "move_attack"
+            type = "VIENTO_PONY_RESISTANCE_move_attack"
+        }
+        animation = {
+            id = "reload"
+            type = "VIENTO_PONY_RESISTANCE_reload"
+        }
+        animation = {
+            id = "retreat"
+            type = "VIENTO_PONY_RESISTANCE_retreat"
+        }
+        scale = 0.45
+    }
+    pdxmesh = {
+        name = "VIENTO_TANK_NORMAL_mesh"
+        file = "gfx/models/viento/tank/normal/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_TANK_NORMAL_diffuse.dds
+            texture_normal = VIENTO_TANK_NORMAL_normal.dds
+            texture_specular = nospec.dds
+            shader = PdxMeshAdvanced
+        }
+        animation = {
+            id = "attack"
+            type = "VIENTO_TANK_NORMAL_attack"
+        }
+        animation = {
+            id = "idle"
+            type = "VIENTO_TANK_NORMAL_idle"
+        }
+        animation = {
+            id = "move"
+            type = "VIENTO_TANK_NORMAL_move"
+        }
+        scale = 1.0
+    }
+    pdxmesh = {
+        name = "VIENTO_WEAPON_RIFLE_mesh"
+        file = "gfx/models/viento/weapon/rifle/mesh.mesh"
+        meshsettings = {
+            texture_diffuse = VIENTO_WEAPON_RIFLE_diffuse.dds
+            texture_normal = VIENTO_WEAPON_RIFLE_normal.dds
+            texture_specular = VIENTO_WEAPON_RIFLE_spec.dds
+            shader = PdxMeshAdvanced
+        }
+        scale = 0.35
+    }
+}

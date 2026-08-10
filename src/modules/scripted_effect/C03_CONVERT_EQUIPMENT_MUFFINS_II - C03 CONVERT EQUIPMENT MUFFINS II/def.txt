@@ -1,0 +1,19 @@
+C03_CONVERT_EQUIPMENT_MUFFINS_II = {
+	set_temp_variable = {
+		C03.temp_num_muffins_2 = num_equipment@EQUIPMENT_MUFFIN_II
+	}
+	multiply_temp_variable = {
+		C03.temp_num_muffins_2 = -1
+	}
+	add_equipment_to_stockpile = {
+		type = EQUIPMENT_MUFFIN_II
+		amount = C03.temp_num_muffins_2
+	}
+	multiply_temp_variable = {
+		C03.temp_num_muffins_2 = -20
+	}
+	add_to_variable = {
+		var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+		value = C03.temp_num_muffins_2
+	}
+}

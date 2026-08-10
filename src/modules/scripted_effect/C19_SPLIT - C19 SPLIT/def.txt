@@ -1,0 +1,79 @@
+C19_SPLIT = {
+	C19 = {
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = C19
+				reserve_dynamic_country = yes
+				set_country_flag = PIHC_COUNTRY_FLAG_C19_CIVIL_WAR_GESTAL
+				set_cosmetic_tag = Z19
+				transfer_state = 417
+				transfer_state = 516
+				transfer_state = 516
+				transfer_state = 444
+				transfer_state = 420
+				transfer_state = 460
+				transfer_state = 66
+				set_capital = {
+					state = 66
+				}
+				set_politics = {
+					ruling_party = peacism
+				}
+				add_popularity = {
+					ideology = peacism
+					popularity = 1.0
+				}
+				recruit_character = CHARACTER_GUSTAVE_LE_GRAND
+				promote_character = {
+					character = CHARACTER_GUSTAVE_LE_GRAND
+					ideology = peacism_duchy
+				}
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C19_CIVIL_WAR_GOLDSTONE
+			set_politics = {
+				ruling_party = despotic
+			}
+			add_popularity = {
+				ideology = despotic
+				popularity = 1.0
+			}
+			add_popularity = {
+				ideology = equatism
+				popularity = 0.1
+			}
+			C22 = {
+				puppet = Z19
+				set_autonomy = {
+					target = Z19
+					autonomous_state = autonomy_pihc_licensed
+				}
+			}
+			Z19 = {
+				set_politics = {
+					ruling_party = peacism
+				}
+				add_popularity = {
+					ideology = peacism
+					popularity = 1.0
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = harmonicism
+					popularity = 0.1
+				}
+				promote_character = {
+					character = CHARACTER_LORD_GESTAL
+					ideology = peacism_duchy
+				}
+				add_ideas = disarmed_nation
+				add_ideas = limited_exports
+				every_owned_state = {
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+}

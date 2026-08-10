@@ -1,0 +1,41 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_VOICE_OF_FRIENDSHIP = {
+        fixed_random_seed = no
+        priority = 89997
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO_COMMON
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_VIOCE_OF_FRIENDSHIP
+        }
+        available = {
+
+        }
+        complete_effect = {
+            custom_effect_tooltip = DECISION_C08_VOICE_OF_FRIENDSHIP_TOOLTIP
+            hidden_effect = {
+                random_list = {
+                    seed = random
+                    99 = {
+                        every_country = {
+                            country_event = {
+                                id = C08_RADIO.3
+                            }
+                        }
+                    }
+                    1 = {
+                        every_country = {
+                            country_event = {
+                                id = C08_RADIO.4
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        days_re_enable = 35
+        cost = 20
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_VOICE_OF_FRIENDSHIP
+    }
+}

@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C07_LPMIG_POLICE
+	icon = GFX_FOCUS_C07_LPMIG_POLICE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPMIG_FF_TRADITIONAL
+	}
+	cost = 6
+	bypass = {
+		has_tech = TECHNOLOGY_SHIELD_RIOT_POLICE
+	}
+	completion_reward = {
+		set_technology = {
+			TECHNOLOGY_SHIELD_RIOT_POLICE = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 19
+	y = 5
+}

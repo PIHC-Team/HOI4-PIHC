@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_PRANCE_ROYALS = {
+        name = CHARACTER_PRANCE_ROYALS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PRANCE_ROYALS.dds"
+                small = "gfx/leaders/CHARACTER_PRANCE_ROYALS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PRANCE_ROYALS_army.dds"
+                small = "gfx/leaders/CHARACTER_PRANCE_ROYALS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PRANCE_ROYALS_navy.dds"
+                small = "gfx/leaders/CHARACTER_PRANCE_ROYALS_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_PRANCE_ROYALS_DESC
+            traits = {
+
+            }
+            ideology = democratic_monarchy
+        }
+    }
+}

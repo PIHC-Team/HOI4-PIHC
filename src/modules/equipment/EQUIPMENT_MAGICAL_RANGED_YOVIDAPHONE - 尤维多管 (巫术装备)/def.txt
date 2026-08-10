@@ -1,0 +1,30 @@
+equipments = {
+	EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE = {
+		archetype = ARCHETYPE_WITCHCRAFT
+		priority = 30004
+		visual_level = 30004
+		build_cost_ic = 0.8923200000000002
+		lend_lease_cost = 1
+		can_license = no
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 17.8464
+		hard_attack = 1.0816000000000001
+		air_attack = 0.16000000000000003
+		ap_attack = 7.030400000000002
+		breakthrough = 5.408000000000001
+		defense = 10.816000000000003
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 2
+		picture = EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS
+		resources = {
+			steel = 3
+			coal = 1
+			crystals = 3
+		}
+	}
+}

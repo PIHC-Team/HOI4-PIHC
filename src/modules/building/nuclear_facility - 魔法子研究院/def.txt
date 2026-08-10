@@ -1,0 +1,33 @@
+buildings = {
+	nuclear_facility = {
+		base_cost = 15000
+		per_controlled_building_extra_cost = 5000
+		value = 1
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		damage_factor = 0.0
+		need_supply = yes
+		need_detection = yes
+		specialization = {
+			specialization_nuclear
+		}
+		tags = {
+			facility
+		}
+		level_cap = {
+			state_max = 1
+			province_max = 1
+			group_by = special_project_facility
+		}
+		show_on_map = 1
+		icon_frame = 20
+		spawn_point = special_project_facility_spawn
+		special_icon = GFX_specialization_nuclear
+		only_display_if_exists = yes
+		missing_tech_loc = {
+			localization_key = SP_BUILDING_MISSING_PROJECT
+			PROJECT = sp_nuclear_reactor
+		}
+	}
+}
+

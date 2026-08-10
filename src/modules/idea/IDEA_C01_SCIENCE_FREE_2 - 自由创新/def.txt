@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C01_SCIENCE_FREE_2 = {
+			picture = C01_SCIENCE_FREE_2
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

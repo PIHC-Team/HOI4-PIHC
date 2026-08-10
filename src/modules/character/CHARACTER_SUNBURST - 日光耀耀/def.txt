@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_SUNBURST = {
+        name = CHARACTER_SUNBURST_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SUNBURST.dds"
+                small = "gfx/leaders/CHARACTER_SUNBURST_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SUNBURST_army.dds"
+                small = "gfx/leaders/CHARACTER_SUNBURST_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SUNBURST_navy.dds"
+                small = "gfx/leaders/CHARACTER_SUNBURST_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_SUNBURST
+            desc = CHARACTER_SUNBURST_DESC
+            traits = {
+                TRAIT_SUNBURST
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

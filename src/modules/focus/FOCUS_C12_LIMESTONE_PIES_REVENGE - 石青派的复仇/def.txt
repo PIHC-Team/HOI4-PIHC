@@ -1,0 +1,19 @@
+focus = {
+	id = FOCUS_C12_LIMESTONE_PIES_REVENGE
+	icon = GFX_FOCUS_C12_LIMESTONE_PIES_REVENGE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_CONFRONTATION_WITH_THE_EMPIRE
+	}
+	cost = 4
+	completion_reward = {
+		add_ideas = IDEA_C12_PROSPEROUS_FARM
+	}
+	available = {
+		always = no
+	}
+	x = 17
+	y = 19
+}

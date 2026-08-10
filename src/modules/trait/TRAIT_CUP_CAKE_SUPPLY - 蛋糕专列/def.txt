@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_CUP_CAKE_SUPPLY = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		supply_factor = 0.12
+		experience_gain_army = 0.2
+	}
+}

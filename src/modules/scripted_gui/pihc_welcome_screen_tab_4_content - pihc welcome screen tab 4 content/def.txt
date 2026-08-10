@@ -1,0 +1,13 @@
+scripted_gui = {
+	pihc_welcome_screen_tab_4_content = {
+		context_type = player_context
+		window_name = pihc_ws_tab_4_slider
+		parent_window_name = pihc_welcome_screen_container
+		visible = {
+			is_ai = no
+			check_variable = {
+				pihc_welcome_screen = 4
+			}
+		}
+	}
+}

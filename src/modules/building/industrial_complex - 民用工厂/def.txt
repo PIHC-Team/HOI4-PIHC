@@ -1,0 +1,16 @@
+buildings = {
+	industrial_complex = {
+		base_cost = 9600
+		value = 5
+		infrastructure_construction_effect = yes
+		base_cost_conversion = 4500
+		general_production = 1
+		level_cap = {
+			state_max = 20
+			shares_slots = yes
+		}
+		show_on_map = 6
+		icon_frame = 1
+	}
+}
+

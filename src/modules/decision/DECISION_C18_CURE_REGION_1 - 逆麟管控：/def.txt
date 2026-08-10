@@ -1,0 +1,105 @@
+DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT = {
+    DECISION_C18_CURE_REGION_1 = {
+        fixed_random_seed = no
+        priority = 106
+        cost = 25
+        days_remove = 60
+        days_re_enable = 0
+        highlight_states = {
+            highlight_state_targets = {
+                state = 772
+                state = 883
+                state = 211
+            }
+        }
+        visible = {
+            tag = C18
+            has_country_flag = PIHC_COUNTRY_FLAG_C18_REGIONAL_DEV_WORKING
+        }
+        available = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_C18_CURE_60 = yes
+            has_political_power > 24
+        }
+        custom_cost_trigger = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_C18_CURE_60 = yes
+            has_political_power > 24
+        }
+        custom_cost_text = CUSTOM_COST_CURE_60_PP_25
+        complete_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+            custom_effect_tooltip = DECISION_C18_CURE_REGION_1_START_TOOLTIP
+            multiply_variable = {
+                C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 0.85
+            }
+            hidden_effect = {
+                DEL_INVENTORY_ITEM_3RA_C18_CURE_60 = yes
+                add_political_power = -25
+            }
+        }
+        remove_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+            custom_effect_tooltip = DECISION_C18_CURE_REGION_1_END_TOOLTIP
+            multiply_variable = {
+                C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 1.176
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+            custom_effect_tooltip = DECISION_C18_CURE_REGION_1_END_TOOLTIP
+            multiply_variable = {
+                C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^0 = 1.176
+            }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = 10
+                check_variable = {
+                    var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0
+                    value = 2.0
+                    compare = greater_than_or_equals
+                }
+            }
+            modifier = {
+                add = 100
+                check_variable = {
+                    var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0
+                    value = 5.0
+                    compare = greater_than_or_equals
+                }
+            }
+            modifier = {
+                add = 4000
+                check_variable = {
+                    var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^0
+                    value = 10.0
+                    compare = greater_than_or_equals
+                }
+            }
+            modifier = {
+                add = 10
+                check_variable = {
+                    var = C18.VAR_INVENTORY_ITEM_3RA_C18_CURE
+                    value = 100
+                    compare = greater_than_or_equals
+                }
+            }
+            modifier = {
+                add = 100
+                check_variable = {
+                    var = C18.VAR_INVENTORY_ITEM_3RA_C18_CURE
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        icon = C18_CURE_REGION_1
+    }
+}

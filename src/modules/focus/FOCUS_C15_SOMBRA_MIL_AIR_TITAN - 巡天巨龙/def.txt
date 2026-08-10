@@ -1,0 +1,36 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_MIL_AIR_TITAN
+	icon = GFX_FOCUS_C15_SOMBRA_MIL_AIR_TITAN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_MIL_AIR_DOOM
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = pihc_flyer
+			name = FOCUS_C15_SOMBRA_MIL_AIR_TITAN
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 19
+	y = 5
+}

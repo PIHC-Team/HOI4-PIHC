@@ -1,0 +1,70 @@
+BOP_C01_COZY_GLOW_EXHAUSTION = {
+	left_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+	right_side = BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE
+	initial_value = 0.1
+	decision_category = DECISION_CATEGORY_C01_COZY_GLOW_EXHAUSTION
+	side = {
+		id = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+		icon = GFX_BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+		range = {
+			id = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE_r0
+			min = -1.0
+			max = -0.8
+			modifier = {
+				political_power_cost = 1.5
+				party_popularity_stability_factor = -0.15
+				stability_weekly_factor = -0.07
+				custom_modifier_tooltip = BOP_C01_COZY_GLOW_EXHAUSTION_BREAKDOWN_TOOLTIP
+			}
+			on_activate = {
+				set_global_flag = PIHC_ACHIEVEMENT_FLAG_C01_MENTAL_BREAKDOWN
+				set_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+				country_event = {
+					id = C01_MAIN.25
+				}
+			}
+			on_deactivate = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_AWAY_FROM_OFFICE
+						}
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+				}
+			}
+		}
+		range = {
+			id = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE_r1
+			min = -0.8
+			max = -0.0
+			modifier = {
+				political_power_cost = 0.5
+				party_popularity_stability_factor = -0.05
+				stability_weekly_factor = -0.02
+			}
+		}
+	}
+	side = {
+		id = BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE
+		icon = GFX_BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE
+		range = {
+			id = BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE_r0
+			min = 0.0
+			max = 0.5
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		range = {
+			id = BOP_C01_COZY_GLOW_EXHAUSTION_RIGHT_SIDE_r1
+			min = 0.5
+			max = 1.0
+			modifier = {
+				political_power_gain = 1.0
+				party_popularity_stability_factor = 0.1
+				stability_weekly_factor = 0.05
+			}
+		}
+	}
+}

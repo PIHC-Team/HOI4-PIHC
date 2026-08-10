@@ -1,0 +1,30 @@
+equipments = {
+	EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_II = {
+		archetype = ARCHETYPE_WITCHCRAFT
+		priority = 40003
+		visual_level = 40003
+		build_cost_ic = 1.6380000000000001
+		lend_lease_cost = 1
+		can_license = no
+		is_convertable = no
+		reliability = 0.95
+		soft_attack = 43.67999999999999
+		hard_attack = 2.184
+		air_attack = 0.546
+		ap_attack = 13.649999999999999
+		breakthrough = 6.824999999999999
+		defense = 21.839999999999996
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 2.0
+		picture = EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_II
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_I
+		resources = {
+			logs = 1
+			steel = 1
+			crystals = 16
+		}
+	}
+}

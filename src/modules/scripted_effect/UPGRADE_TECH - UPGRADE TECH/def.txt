@@ -1,0 +1,39 @@
+UPGRADE_TECH = {
+	custom_effect_tooltip = PIHC_UPGRADE_TECH_TOOLTIP
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_TECH_3_NEUTRAL
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_TECH_2_CHEER
+			remove_idea = IDEA_ERA_TECH_3_NEUTRAL
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_TECH_4_FEAR
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_TECH_3_NEUTRAL
+			remove_idea = IDEA_ERA_TECH_4_FEAR
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_TECH_5_STAGNATE
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_TECH_4_FEAR
+			remove_idea = IDEA_ERA_TECH_5_STAGNATE
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_TECH_6_DECLINE
+		}
+		swap_ideas = {
+			add_idea = IDEA_ERA_TECH_5_STAGNATE
+			remove_idea = IDEA_ERA_TECH_6_DECLINE
+		}
+	}
+}

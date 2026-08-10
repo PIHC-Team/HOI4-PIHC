@@ -1,0 +1,11 @@
+MODULE_CREW_2A_SINGER = {
+	category = pihc_tank_crew_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.1
+	}
+	multiply_stats = {
+		default_morale = 0.2
+	}
+	xp_cost = 5
+}

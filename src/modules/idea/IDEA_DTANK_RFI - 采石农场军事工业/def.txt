@@ -1,0 +1,68 @@
+ideas = {
+	tank_manufacturer = {
+		IDEA_DTANK_RFI = {
+			picture = DTANK_RFI
+			removal_cost = -1
+			modifier = {
+				license_production_speed = 0.15
+				equipment_capture_factor = 0.05
+			}
+			traits = {
+				artillery_manufacturer
+			}
+			cost = 200
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C12
+				OR = {
+					tag = C12
+					C12 = {
+						has_opinion = {
+							target = ROOT
+							value > -21
+						}
+					}
+				}
+			}
+			research_bonus = {
+				pihc_artillery = 0.15
+			}
+			equipment_bonus = {
+				ARCHETYPE_CANNON_LIGHT = {
+					hard_attack = 0.03
+					soft_attack = 0.05
+					build_cost_ic = 0.03
+				}
+				ARCHETYPE_CANNON_MEDIUM = {
+					hard_attack = 0.03
+					soft_attack = 0.05
+					build_cost_ic = 0.03
+				}
+				ARCHETYPE_CANNON_HEAVY = {
+					hard_attack = 0.03
+					soft_attack = 0.05
+					build_cost_ic = 0.03
+				}
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					add = -1
+					FROM = {
+						tag = C08
+						controls_state = 389
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

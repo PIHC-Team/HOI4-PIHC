@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_INNER_FURY = {
+			picture = C12_INNER_FURY
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.015
+				training_time_army_factor = -0.15
+				experience_gain_army = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

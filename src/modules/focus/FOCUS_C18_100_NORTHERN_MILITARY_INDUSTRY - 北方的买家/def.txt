@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C18_100_NORTHERN_MILITARY_INDUSTRY
+	icon = GFX_FOCUS_C18_100_NORTHERN_MILITARY_INDUSTRY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_100_ZHEN
+	}
+	cost = 6
+	completion_reward = {
+		131 = {
+			BUILD_A_MIC = yes
+			BUILD_A_MIC = yes
+		}
+		225 = {
+			BUILD_A_MIC = yes
+			BUILD_A_MIC = yes
+		}
+		756 = {
+			BUILD_A_MIC = yes
+			BUILD_A_MIC = yes
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 4
+}

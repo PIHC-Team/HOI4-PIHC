@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_MARE_DO_WELL_3 = {
+        name = CHARACTER_MARE_DO_WELL_3_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MARE_DO_WELL_3.dds"
+                small = "gfx/leaders/CHARACTER_MARE_DO_WELL_3_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MARE_DO_WELL_3_army.dds"
+                small = "gfx/leaders/CHARACTER_MARE_DO_WELL_3_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MARE_DO_WELL_3_navy.dds"
+                small = "gfx/leaders/CHARACTER_MARE_DO_WELL_3_navy_small.dds"
+            }
+        }
+        gender = female
+        field_marshal = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

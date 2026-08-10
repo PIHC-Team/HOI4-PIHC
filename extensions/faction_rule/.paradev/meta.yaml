@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/faction_rule
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-faction-rule
+items:
+-   kind: entity
+    identifier: pihc3-faction-rule-module
+    name: PIHC3 Faction Rule Module
+    desc: Project-owned faction_rule source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3FactionRuleModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-faction-rule
+    name: PIHC3 Faction Rule
+    desc: PIHC3 faction_rule module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-faction-rule-module
+        definition:
+            identifier: pihc3-faction-rule
+            name: PIHC3 Faction Rule
+            version: 0.2.3
+            desc: PIHC3 faction_rule module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-faction-rule-module
+            meta:
+                project: PIHC3
+                family: faction_rule
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-faction-rule
+    name: PIHC3 Faction Rule Compiler
+    desc: Registry-backed source slots and compiler hooks for faction_rule.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: faction-rule
+            title: Faction Rule
+            group: country
+        dependencies:
+        - extension:pihc3-faction-rule

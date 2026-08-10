@@ -1,0 +1,39 @@
+state = {
+    id = 174
+    name = STATE_174
+    provinces = {
+        717
+        3633
+        3824
+        4501
+        5792
+        6811
+        9048
+        9117
+        14265
+        14266
+        14291
+        14317
+        14318
+        14326
+        14359
+        14361
+    }
+    manpower = 136
+    state_category = large_town
+    history = {
+        owner = C25
+        victory_points = {
+            717
+            10
+        }
+        buildings = {
+            infrastructure = 2
+        }
+        add_core_of = C25
+    }
+    resources = {
+        steel = 2
+        logs = 4
+    }
+}

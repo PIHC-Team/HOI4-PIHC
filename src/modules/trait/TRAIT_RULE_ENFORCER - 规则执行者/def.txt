@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_RULE_ENFORCER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.05
+		defence = 0.1
+		coordination_bonus = 0.05
+		experience_gain_army = 0.12
+	}
+}

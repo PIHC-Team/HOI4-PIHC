@@ -1,0 +1,70 @@
+DECISION_CATEGORY_C15_SOMBRA_UMBRUM = {
+    DECISION_C15_SOMBRA_REBUILD_CRYSTAL_PALACE = {
+        fixed_random_seed = no
+        priority = 100
+        days_remove = 120
+        fire_only_once = yes
+        available = {
+            3 = {
+                is_core_of = C15
+            }
+            C15 = {
+                has_political_power > 199
+                crystals > 2
+            }
+        }
+        visible = {
+            has_completed_focus = FOCUS_C15_SOMBRA_FAITH_NEW_PALACE
+        }
+        custom_cost_trigger = {
+            C15 = {
+                has_political_power > 199
+                crystals > 2
+            }
+        }
+        custom_cost_text = CUSTOM_COST_CRY_3_PP_200
+        complete_effect = {
+            hidden_effect = {
+                ROOT = {
+                    add_political_power = -200
+                }
+            }
+        }
+        modifier = {
+            country_resource_cost_crystals = 3
+        }
+        remove_effect = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = transcendence
+                popularity = 0.05
+            }
+            3 = {
+                add_province_modifier = {
+                    static_modifiers = {
+                        MODIFIER_WONDER_SOMBRA_BLOOD_TEMPLE
+                    }
+                    province = {
+                        all_provinces = yes
+                    }
+                }
+            }
+        }
+        cancel_trigger = {
+            3 = {
+                OR = {
+                    NOT = {
+                        is_core_of = C15
+                    }
+                    NOT = {
+                        is_owned_and_controlled_by = C15
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 10
+        }
+        icon = C15_SOMBRA_REBUILD_CRYSTAL_PALACE
+    }
+}

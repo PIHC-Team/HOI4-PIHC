@@ -1,0 +1,7 @@
+C18_LESS_ATTENTION_1 = {
+	custom_effect_tooltip = C18_LESS_ATTENTION_1_TOOLTIP
+	subtract_from_variable = {
+		var = C18.VAR_ATTENTION_OF_THE_CENTAURS
+		value = 1
+	}
+}

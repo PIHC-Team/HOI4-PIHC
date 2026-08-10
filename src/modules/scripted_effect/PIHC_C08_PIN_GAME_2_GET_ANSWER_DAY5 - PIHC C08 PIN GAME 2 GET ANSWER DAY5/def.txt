@@ -1,0 +1,109 @@
+PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY5 = {
+	if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 1
+			}
+		}
+		set_temp_variable = {
+			v2 = C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^0
+		}
+		for_each_loop = {
+			array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+			index = i
+			value = v
+			if = {
+				limit = {
+					check_variable = {
+						v = v2
+					}
+				}
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+				}
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = v2
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 2
+			}
+		}
+		set_temp_variable = {
+			v2 = C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^1
+		}
+		for_each_loop = {
+			array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+			index = i
+			value = v
+			if = {
+				limit = {
+					check_variable = {
+						v = v2
+					}
+				}
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+				}
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = v2
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_BILLBOARD = 3
+			}
+		}
+		set_temp_variable = {
+			v2 = C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^3
+		}
+		for_each_loop = {
+			array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+			index = i
+			value = v
+			if = {
+				limit = {
+					check_variable = {
+						v = v2
+					}
+				}
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+				}
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = v2
+		}
+	}
+	else = {
+		set_temp_variable = {
+			v2 = C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS^2
+		}
+		for_each_loop = {
+			array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+			index = i
+			value = v
+			if = {
+				limit = {
+					check_variable = {
+						v = v2
+					}
+				}
+				add_to_array = {
+					C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES = i
+				}
+			}
+		}
+		add_to_array = {
+			C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS = v2
+		}
+	}
+}

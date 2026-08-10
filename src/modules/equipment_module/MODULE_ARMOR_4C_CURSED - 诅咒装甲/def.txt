@@ -1,0 +1,20 @@
+MODULE_ARMOR_4C_CURSED = {
+	category = pihc_tank_armor_type_2_necro
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 2.0
+		armor_value = 24.0
+		weight = 0.3
+		reliability = -0.05
+	}
+	multiply_stats = {
+		defense = 0.3
+		armor_value = 0.05
+		max_strength = 0.3
+		default_morale = -0.05
+		maximum_speed = -0.08
+		reliability = -0.025
+		build_cost_ic = 0.15
+	}
+	xp_cost = 5
+}

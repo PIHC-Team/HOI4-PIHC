@@ -1,0 +1,257 @@
+capital = 69
+set_popularities = {
+    fascism = 70
+    despotic = 20
+    harmonicism = 8
+    equatism = 2
+}
+set_politics = {
+    ruling_party = fascism
+    elections_allowed = no
+}
+create_faction = FACTION_CHANGELING_HIVE
+add_to_faction = C11
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_CHANGELING_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+    TECHNOLOGY_TECH_MAGI_DARKMAGIC = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = 1
+    }
+}
+oob = C11
+recruit_character = CHARACTER_QUEEN_CHRYSALIS
+recruit_character = CHARACTER_TRICKSTER
+activate_advisor = CHARACTER_TRICKSTER
+add_ideas = limited_exports
+add_ideas = extensive_conscription
+add_ideas = war_economy
+set_power_balance = {
+    id = BOP_C11_STARVATION
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C11_STARVATION
+    modifier = BOP_C11_STARVATION_DAILY_COST
+}
+add_power_balance_modifier = {
+    id = BOP_C11_STARVATION
+    modifier = BOP_C11_STARVATION_CRYSTAL_EMPIRE_TRIBUTE
+}
+15 = {
+    remove_core_of = C11
+}
+30 = {
+    remove_core_of = C11
+}
+88 = {
+    remove_core_of = C11
+}
+332 = {
+    remove_core_of = C11
+}
+370 = {
+    remove_core_of = C11
+}
+387 = {
+    remove_core_of = C11
+}
+390 = {
+    remove_core_of = C11
+}
+395 = {
+    remove_core_of = C11
+}
+398 = {
+    remove_core_of = C11
+}
+414 = {
+    remove_core_of = C11
+}
+424 = {
+    remove_core_of = C11
+}
+425 = {
+    remove_core_of = C11
+}
+437 = {
+    remove_core_of = C11
+}
+451 = {
+    remove_core_of = C11
+}
+479 = {
+    remove_core_of = C11
+}
+483 = {
+    remove_core_of = C11
+}
+485 = {
+    remove_core_of = C11
+}
+502 = {
+    remove_core_of = C11
+}
+513 = {
+    remove_core_of = C11
+}
+519 = {
+    remove_core_of = C11
+}
+523 = {
+    remove_core_of = C11
+}
+534 = {
+    remove_core_of = C11
+}
+537 = {
+    remove_core_of = C11
+}
+593 = {
+    remove_core_of = C11
+}
+598 = {
+    remove_core_of = C11
+}
+602 = {
+    remove_core_of = C11
+}
+604 = {
+    remove_core_of = C11
+}
+605 = {
+    remove_core_of = C11
+}
+614 = {
+    remove_core_of = C11
+}
+630 = {
+    remove_core_of = C11
+}
+653 = {
+    remove_core_of = C11
+}
+687 = {
+    remove_core_of = C11
+}
+set_rule = {
+    can_join_factions = no
+}
+puppet = C58
+set_autonomy = {
+    target = C58
+    autonomous_state = autonomy_pihc_district
+}
+give_guarantee = C09
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.6
+set_convoys = 150
+set_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+set_major = yes
+complete_national_focus = FOCUS_C11_RETALIATION
+complete_national_focus = FOCUS_C11_CANTERLOT_PACT
+complete_national_focus = FOCUS_C11_VENI_VIDI_VICI
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 2500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 2500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 120
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_ARMED
+    amount = 120
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 120
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C11
+    }
+    requested_factories = 4
+    progress = 0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_FIRELANCE
+        creator = C11
+    }
+    requested_factories = 4
+    progress = 0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_AUTOMATA_CHANGELING
+        creator = C11
+    }
+    requested_factories = 5
+    progress = 0
+    efficiency = 80
+}
+send_embargo = C05
+send_embargo = C08
+send_embargo = C23

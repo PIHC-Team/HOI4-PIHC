@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C11_CONQUER_REINDEER
+	icon = GFX_FOCUS_C11_CONQUER_REINDEER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_VENI_VIDI_VICI
+	}
+	cost = 3
+	will_lead_to_war_with = C17
+	completion_reward = {
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 3
+}

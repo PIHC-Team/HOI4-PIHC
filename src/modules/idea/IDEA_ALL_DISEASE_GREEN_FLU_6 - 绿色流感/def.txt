@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_DISEASE_GREEN_FLU_6 = {
+			picture = ALL_DISEASE_GREEN_FLU_6
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.5
+				stability_factor = -0.15
+				recruitable_population_factor = -0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

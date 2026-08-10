@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C01_FAST_AIR_CONSTRUCTION = {
+			picture = C01_FAST_AIR_CONSTRUCTION
+			removal_cost = -1
+			modifier = {
+				production_speed_air_base_factor = 0.3
+				experience_gain_air_factor = 0.25
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

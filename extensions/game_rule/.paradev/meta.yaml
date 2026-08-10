@@ -1,0 +1,147 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/game_rule
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-game-rule
+items:
+-   kind: entity
+    identifier: pihc3-game-rule-module
+    name: PIHC3 Game Rule Module
+    desc: Project-owned game_rule source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3GameRuleModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-game-rule
+    name: PIHC3 Game Rule
+    desc: PIHC3 game_rule module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-game-rule-module
+        definition:
+            identifier: pihc3-game-rule
+            name: PIHC3 Game Rule
+            version: 0.2.3
+            desc: PIHC3 game_rule module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-game-rule-module
+            meta:
+                project: PIHC3
+                family: game_rule
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-game-rule
+    name: PIHC3 Game Rule Compiler
+    desc: Registry-backed source slots and compiler hooks for game_rule.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: game-rules
+            title: Game Rules
+            group: country
+            title_key: modules.gameRules.title
+        dependencies:
+        - extension:pihc3-game-rule
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-9a5a739b37b583d0
+    name: PIHC3 Basic Game Rule
+    desc: PIHC3 authoring template pihc3:game_rule/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:game_rule/basic
+            declaration:
+                title: PIHC3 Basic Game Rule
+                family: game_rule
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    group:
+                        default: RULE_GROUP_GENERAL_UI
+                    icon:
+                        default: GFX_wargoals
+                    default_option:
+                        default: ENABLED
+                    default_option_title:
+                        default: Enabled
+                    default_option_description:
+                        default: Use the default PIHC3 behavior.
+                    alternate_option:
+                        default: DISABLED
+                    alternate_option_title:
+                        default: Disabled
+                    alternate_option_description:
+                        default: Disable the custom behavior.
+                    alternate_allow_achievements:
+                        default: 'no'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n\tname = \"{object_id}\"\n\tdesc =\
+                        \ \"{object_id}_desc\"\n\tgroup = \"{group}\"\n\ticon = \"\
+                        {icon}\"\n\n\tdefault = {{\n\t\tname = \"{default_option}\"\
+                        \n\t\ttext = \"{object_id}_enabled\"\n\t\tdesc = \"{object_id}_enabled_desc\"\
+                        \n\t}}\n\toption = {{\n\t\tname = \"{alternate_option}\"\n\
+                        \t\ttext = \"{object_id}_disabled\"\n\t\tdesc = \"{object_id}_disabled_desc\"\
+                        \n\t\tallow_achievements = {alternate_allow_achievements}\n\
+                        \t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_enabled]
+
+                        {default_option_title}
+
+
+                        [{language}.{object_id}_enabled_desc]
+
+                        {default_option_description}
+
+
+                        [{language}.{object_id}_disabled]
+
+                        {alternate_option_title}
+
+
+                        [{language}.{object_id}_disabled_desc]
+
+                        {alternate_option_description}
+
+                        '
+                directory: '{object_id} - {title}'

@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C01_OUTSOURCING_SIRESHOLLOW
+	icon = GFX_FOCUS_C01_OUTSOURCING_SIRESHOLLOW_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_OUTSOURCING_INFRASTRUCTURE
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+		}
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 3
+	x = 22
+	y = 5
+}

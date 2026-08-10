@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C12_DEVELOPMENT_ALLOWANCE_OF_APPLELOOSA = {
+			picture = C12_DEVELOPMENT_ALLOWANCE_OF_APPLELOOSA
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

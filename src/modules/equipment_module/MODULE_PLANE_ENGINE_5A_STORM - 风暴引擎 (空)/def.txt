@@ -1,0 +1,36 @@
+MODULE_PLANE_ENGINE_5A_STORM = {
+	category = pihc_plane_engine_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 45.0
+		weight = 10.0
+		reliability = -0.15
+	}
+	multiply_stats = {
+		maximum_speed = 1.0
+		fuel_consumption = -1.0
+		air_range = 1.0
+	}
+	xp_cost = 30
+	allowed_module_categories = {
+		armor_type_slot = {
+			pihc_plane_armor_type_2_magic
+			pihc_plane_armor_type_2_elec
+		}
+		special_type_slot_1 = {
+			pihc_plane_special_type_2_elec
+		}
+		special_type_slot_2 = {
+			pihc_plane_special_type_2_elec
+		}
+		special_type_slot_3 = {
+			pihc_plane_special_type_2_elec
+		}
+		special_type_slot_4 = {
+			pihc_plane_special_type_2_elec
+		}
+		special_type_slot_5 = {
+			pihc_plane_special_type_2_elec
+		}
+	}
+}

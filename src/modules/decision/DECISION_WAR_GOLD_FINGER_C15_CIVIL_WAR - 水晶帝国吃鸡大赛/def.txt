@@ -1,0 +1,23 @@
+DECISION_CATEGORY_GOLD_FINGER = {
+    DECISION_WAR_GOLD_FINGER_C15_CIVIL_WAR = {
+        fixed_random_seed = no
+        priority = 102
+        cost = 1999
+        available = {
+            is_ironman = no
+        }
+        complete_effect = {
+            C15 = {
+                hidden_effect = {
+                    C15_FULL_ON_CIVIL_WAR = yes
+                    C15_WAR_AT_EACH_OTHER = yes
+                }
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+        }
+        icon = WAR_GOLD_FINGER_C15_CIVIL_WAR
+    }
+}

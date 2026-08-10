@@ -1,0 +1,18 @@
+infiltration_paradrop = {
+	name = infiltration_paradrop
+	desc = infiltration_paradrop_desc
+	outcome = infiltration_paradrop_outcome
+	picture = GFX_phase_infiltration_airplane
+	icon = GFX_phase_infiltration_airplane_small
+	requirements = {
+		ROOT = {
+			has_equipment = {
+				ARCHETYPE_AIR_TRANSPORT > 0
+			}
+		}
+	}
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 1
+	}
+	return_on_complete = yes
+}

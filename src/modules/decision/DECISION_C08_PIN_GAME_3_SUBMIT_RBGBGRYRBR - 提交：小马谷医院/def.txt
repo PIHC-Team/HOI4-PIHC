@@ -1,0 +1,49 @@
+DECISION_CATEGORY_C08_PIN_GAME_3 = {
+    DECISION_C08_PIN_GAME_3_SUBMIT_RBGBGRYRBR = {
+        fixed_random_seed = no
+        priority = 90
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            custom_trigger_tooltip = {
+                tooltip = C08_PIN_GAME_3_DONE_TOOLITP
+                NOT = {
+                    OR = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_3_CORRECT
+                        has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_3_INCORRECT
+                    }
+                }
+            }
+        }
+        available = {
+            C08 = {
+                TRIGGER_HAVE_INVENTORY_ITEM_5LG_C08_PIN = yes
+                has_country_leader = {
+                    character = CHARACTER_STARLIGHT_GLIMMER
+                    ruling_only = yes
+                }
+                custom_trigger_tooltip = {
+                    tooltip = C08_PIN_SWITCH_ON_TOOLITP
+                    has_country_flag = PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON
+                }
+                TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PIN_GAME_3_CODEBOOK = yes
+            }
+            C02 = {
+                has_country_leader = {
+                    character = CHARACTER_TRIXIE_LULAMOON
+                    ruling_only = yes
+                }
+            }
+        }
+        complete_effect = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_3_INCORRECT
+                scoped_sound_effect = wrong_ev
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_PIN_GAME_3_SUBMIT_RBGBGRYRBR
+    }
+}

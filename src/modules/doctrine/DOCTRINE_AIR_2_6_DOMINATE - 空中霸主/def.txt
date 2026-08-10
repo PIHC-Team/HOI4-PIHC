@@ -1,0 +1,36 @@
+pihc_air_flying_fortress_heavy_aircraft_core = {
+	track = heavy_aircraft
+	name = DOCTRINE_AIR_2_6_DOMINATE
+	description = DOCTRINE_AIR_2_6_DOMINATE_DESC
+	icon = GFX_doctrine_pihc_air_flying_fortress_heavy_aircraft_core_medium
+	xp_cost = 200
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_air_airship = {
+		air_superiority = 1.0
+		air_bombing = 0.1
+		air_ground_attack = 0.05
+	}
+	category_air_flyer = {
+		air_superiority = 1.0
+		air_bombing = 0.05
+		air_ground_attack = 0.1
+	}
+	rewards = {
+		arrival = {
+			air_accidents_factor = -1.0
+			air_range_factor = 9999.99
+		}
+	}
+}

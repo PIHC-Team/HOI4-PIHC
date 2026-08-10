@@ -1,0 +1,131 @@
+add_namespace = UNIVERSAL_RANDOM
+country_event = {
+    id = UNIVERSAL_RANDOM.1
+    picture = GFX_EVENT_UNIVERSAL_RANDOM_1
+    mean_time_to_happen = {
+        years = 3
+        modifier = {
+            factor = 9999
+            date < 1003.03.15
+        }
+    }
+    title = EVENT_UNIVERSAL_RANDOM_1
+    desc = EVENT_UNIVERSAL_RANDOM_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = pihc_all
+        }
+        random_list = {
+            seed = random
+            50 = {
+                add_breakthrough_progress = {
+                    specialization = specialization_magic
+                    value = 0.8
+                }
+            }
+            40 = {
+                add_breakthrough_progress = {
+                    specialization = specialization_witchcraft
+                    value = 0.8
+                }
+            }
+            10 = {
+                add_breakthrough_progress = {
+                    specialization = specialization_nuclear
+                    value = 0.8
+                }
+            }
+        }
+        name = EVENT_UNIVERSAL_RANDOM_1_o0
+    }
+}
+country_event = {
+    id = UNIVERSAL_RANDOM.2
+    picture = GFX_EVENT_UNIVERSAL_RANDOM_2
+    mean_time_to_happen = {
+        years = 3
+        modifier = {
+            factor = 9999
+            date < 1003.03.15
+        }
+    }
+    title = EVENT_UNIVERSAL_RANDOM_2
+    desc = EVENT_UNIVERSAL_RANDOM_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = 0.02
+        if = {
+            limit = {
+                NOT = {
+                    has_government = transcendence
+                    has_country_leader_ideology = fascism_totalitarianism
+                    has_country_leader_ideology = fascism_dystopia
+                    has_country_leader_ideology = corporation_dystopia
+                    has_country_leader_ideology = equatism_dystopia
+                    has_country_leader_ideology = harmonicism_dystopia
+                    has_country_leader_ideology = democratic_dystopia
+                }
+            }
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.03
+            }
+        }
+        name = EVENT_UNIVERSAL_RANDOM_2_o0
+    }
+}
+country_event = {
+    id = UNIVERSAL_RANDOM.3
+    picture = GFX_EVENT_UNIVERSAL_RANDOM_3
+    mean_time_to_happen = {
+        years = 4
+        modifier = {
+            factor = 9999
+            date < 1003.03.15
+        }
+    }
+    title = EVENT_UNIVERSAL_RANDOM_3
+    desc = EVENT_UNIVERSAL_RANDOM_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_manpower = 250
+        random_list = {
+            seed = random
+            80 = {
+                UPGRADE_HYGIENE = yes
+            }
+            20 = {
+                DOWNGRADE_HYGIENE = yes
+            }
+        }
+        name = EVENT_UNIVERSAL_RANDOM_3_o0
+    }
+}
+country_event = {
+    id = UNIVERSAL_RANDOM.4
+    picture = GFX_EVENT_UNIVERSAL_RANDOM_4
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_UNIVERSAL_RANDOM_4
+    desc = EVENT_UNIVERSAL_RANDOM_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_UNIVERSAL_RANDOM_4_o0
+    }
+}

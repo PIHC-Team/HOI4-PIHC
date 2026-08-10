@@ -1,0 +1,41 @@
+scripted_gui = {
+	pihc_state_temperature = {
+		context_type = selected_state_context
+		window_name = "pihc_state_temperature"
+		parent_window_token = selected_state_view
+
+		properties = {
+			pihc_state_temperature_indoor = {
+				frame = THIS.PIHC_var_state_indoor_temperature_frame
+			}
+			pihc_state_temperature_outdoor = {
+				frame = THIS.PIHC_var_state_outdoor_temperature_frame
+			}
+		}
+
+		effects = {
+			pihc_state_coal_subsidies_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								THIS.coal_subsidies = 1
+							}
+						}
+					}
+					set_variable = {
+						THIS.coal_subsidies = 1
+					}
+				}
+				else = {
+					set_variable = {
+						THIS.coal_subsidies = 0
+					}
+				}
+				controller = {
+					PIHC_update_state_temperature_subsidies_modifier = yes
+				}
+			}
+		}
+	}
+}

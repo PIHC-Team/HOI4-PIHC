@@ -1,0 +1,13 @@
+on_actions = {
+	on_monthly_C04 = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = IDEA_C04_TIMBUCKTU_BLESSING
+				}
+			}
+			ADD_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_50 = yes
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}

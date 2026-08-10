@@ -1,0 +1,36 @@
+peace_action_categories = {
+    other = {
+        default = yes
+        name = PEACE_ACTION_CATEGORY_OTHER
+    }
+    occupation = {
+        name = PEACE_ACTION_CATEGORY_OCCUPATION
+    }
+    ideology = {
+        name = PEACE_ACTION_CATEGORY_IDEOLOGY
+    }
+    is_core = {
+        name = PEACE_ACTION_CATEGORY_IS_CORE
+    }
+    core_of_ally = {
+        name = PEACE_ACTION_CATEGORY_CORE_OF_ALLY
+    }
+    has_claim = {
+        name = PEACE_ACTION_CATEGORY_HAS_CLAIM
+    }
+    defensive_war = {
+        name = PEACE_ACTION_CATEGORY_DEFENSIVE_WAR
+    }
+    treaties_or_conferences = {
+        name = PEACE_ACTION_CATEGORY_CONFERENCES
+    }
+    belonged_to_someone_else = {
+        name = PEACE_ACTION_CATEGORY_OTHER_CLAIMANT
+    }
+    events_or_focuses = {
+        name = PEACE_ACTION_CATEGORY_EVENTS_OR_FOCUSES
+    }
+    continuous_political_action = {
+        name = PEACE_ACTION_CATEGORY_CONTINUOUS_POLITICAL_ACTION
+    }
+}

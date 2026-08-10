@@ -1,0 +1,37 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_ENGINEER_I = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 3
+                y = 8
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_engineer
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+            engineer
+        }
+        dependencies = {
+            TECHNOLOGY_SUPPORT = 1
+        }
+        path = {
+        }
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                factor = 10
+                date > 1004.1.1
+            }
+        }
+        research_cost = 1.5
+        start_year = 1002
+    }
+}

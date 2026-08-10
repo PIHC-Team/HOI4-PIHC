@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/game_asset
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-game-asset
+items:
+-   kind: entity
+    identifier: pihc3-game-asset-module
+    name: PIHC3 Game Asset Module
+    desc: Project-owned game_asset source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3GameAssetModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-game-asset
+    name: PIHC3 Game Asset
+    desc: PIHC3 game_asset module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-game-asset-module
+        definition:
+            identifier: pihc3-game-asset
+            name: PIHC3 Game Asset
+            version: 0.2.3
+            desc: PIHC3 game_asset module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-game-asset-module
+            meta:
+                project: PIHC3
+                family: game_asset
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-game-asset
+    name: PIHC3 Game Asset Compiler
+    desc: Registry-backed source slots and compiler hooks for game_asset.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: game-asset
+            title: Game Asset
+            group: shared
+        dependencies:
+        - extension:pihc3-game-asset

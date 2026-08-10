@@ -1,0 +1,83 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_30
+	icon = GFX_FOCUS_C03_MUFFIN_30_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	completion_reward = {
+		hidden_effect = {
+			if = {
+				limit = {
+					C04 = {
+						is_ai = yes
+					}
+				}
+				effect_tooltip = {
+					annex_country = {
+						target = C04
+						transfer_troops = yes
+					}
+				}
+				hidden_effect = {
+					set_variable = {
+						var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+						value = C04
+					}
+					CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+					clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+				}
+				news_event = {
+					id = C03_MAIN.6
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+		custom_effect_tooltip = FOCUS_C03_MUFFIN_30_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				C01 = {
+					has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+				}
+			}
+			always = no
+		}
+		hidden_trigger = {
+			is_ai = no
+		}
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C03_MUFFIN_30_TRIGGER_TOOLTIP
+			check_variable = {
+				var = ROOT.VAR_MUFFINS_AID_TOTAL_C03
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C03_MUFFIN_30_STRATUSBURG_TRIGGER_TOOLTIP
+			C04 = {
+				check_variable = {
+					var = C04.VAR_MUFFINS_AID_FROM_C03
+					value = 10
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_29
+	}
+	x = 9
+	y = 4
+}

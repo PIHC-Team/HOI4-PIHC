@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_KATHERINA_PROUDPAWS = {
+        name = CHARACTER_KATHERINA_PROUDPAWS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS.dds"
+                small = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS_army.dds"
+                small = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS_navy.dds"
+                small = "gfx/leaders/CHARACTER_KATHERINA_PROUDPAWS_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_KATHERINA_PROUDPAWS_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

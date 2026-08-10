@@ -1,0 +1,28 @@
+technologies = {
+    TECHNOLOGY_FIREARM_IX = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 4
+                y = 27
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_firearm
+        }
+        enable_equipments = {
+            EQUIPMENT_RANGED_CONTEMPORARY_RIFLE
+        }
+        enable_subunits = {
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1009
+    }
+}

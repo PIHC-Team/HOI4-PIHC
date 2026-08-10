@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C08_WASTELAND_RESOURCE
+	icon = GFX_FOCUS_C08_WASTELAND_RESOURCE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_WASTELAND_DEVELOP
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C08_WASTELAND_CONSTRUCTION
+	}
+	cost = 3
+	completion_reward = {
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_WASTELAND_RESOURCE
+		}
+		custom_effect_tooltip = FOCUS_C08_WASTELAND_RESOURCE_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 27
+	y = 6
+}

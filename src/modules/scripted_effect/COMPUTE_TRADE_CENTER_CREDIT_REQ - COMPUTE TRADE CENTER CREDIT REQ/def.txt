@@ -1,0 +1,127 @@
+COMPUTE_TRADE_CENTER_CREDIT_REQ = {
+	COMPUTE_TRADE_CENTER_CRYSTALS_REQ = yes
+	COMPUTE_TRADE_CENTER_TUNGSTEN_REQ = yes
+	COMPUTE_TRADE_CENTER_CHROMIUM_REQ = yes
+	COMPUTE_TRADE_CENTER_ALUMINIUM_REQ = yes
+	COMPUTE_TRADE_CENTER_STEEL_REQ = yes
+	COMPUTE_TRADE_CENTER_COAL_REQ = yes
+	COMPUTE_TRADE_CENTER_RUBBER_REQ = yes
+	COMPUTE_TRADE_CENTER_OIL_REQ = yes
+	COMPUTE_TRADE_CENTER_LOGS_REQ = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = 0
+	}
+	set_temp_variable = {
+		var = crystals_req_credit
+		value = VAR_TRADE_CENTER_CRYSTALS_REQ
+	}
+	multiply_temp_variable = {
+		var = crystals_req_credit
+		value = global.VAR_TRADE_CENTER_CRYSTALS_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = crystals_req_credit
+	}
+	set_temp_variable = {
+		var = tungsten_req_credit
+		value = VAR_TRADE_CENTER_TUNGSTEN_REQ
+	}
+	multiply_temp_variable = {
+		var = tungsten_req_credit
+		value = global.VAR_TRADE_CENTER_TUNGSTEN_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = tungsten_req_credit
+	}
+	set_temp_variable = {
+		var = chromium_req_credit
+		value = VAR_TRADE_CENTER_CHROMIUM_REQ
+	}
+	multiply_temp_variable = {
+		var = chromium_req_credit
+		value = global.VAR_TRADE_CENTER_CHROMIUM_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = chromium_req_credit
+	}
+	set_temp_variable = {
+		var = aluminium_req_credit
+		value = VAR_TRADE_CENTER_ALUMINIUM_REQ
+	}
+	multiply_temp_variable = {
+		var = aluminium_req_credit
+		value = global.VAR_TRADE_CENTER_ALUMINIUM_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = aluminium_req_credit
+	}
+	set_temp_variable = {
+		var = steel_req_credit
+		value = VAR_TRADE_CENTER_STEEL_REQ
+	}
+	multiply_temp_variable = {
+		var = steel_req_credit
+		value = global.VAR_TRADE_CENTER_STEEL_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = steel_req_credit
+	}
+	set_temp_variable = {
+		var = coal_req_credit
+		value = VAR_TRADE_CENTER_COAL_REQ
+	}
+	multiply_temp_variable = {
+		var = coal_req_credit
+		value = global.VAR_TRADE_CENTER_COAL_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = coal_req_credit
+	}
+	set_temp_variable = {
+		var = rubber_req_credit
+		value = VAR_TRADE_CENTER_RUBBER_REQ
+	}
+	multiply_temp_variable = {
+		var = rubber_req_credit
+		value = global.VAR_TRADE_CENTER_RUBBER_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = rubber_req_credit
+	}
+	set_temp_variable = {
+		var = oil_req_credit
+		value = VAR_TRADE_CENTER_OIL_REQ
+	}
+	multiply_temp_variable = {
+		var = oil_req_credit
+		value = global.VAR_TRADE_CENTER_OIL_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = oil_req_credit
+	}
+	set_temp_variable = {
+		var = logs_req_credit
+		value = VAR_TRADE_CENTER_LOGS_REQ
+	}
+	multiply_temp_variable = {
+		var = logs_req_credit
+		value = global.VAR_TRADE_CENTER_LOGS_VALUE
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		value = logs_req_credit
+	}
+	clamp_variable = {
+		var = VAR_TRADE_CENTER_CREDIT_REQ
+		max = VAR_TRADE_CENTER_LIMIT
+	}
+}

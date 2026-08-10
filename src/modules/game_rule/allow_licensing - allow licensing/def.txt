@@ -1,0 +1,30 @@
+allow_licensing = {
+	name = RULE_ALLOW_LICENSING
+	group = RULE_GROUP_GENERAL_FOREIGN_POLICY
+	required_dlc = "Death or Dishonor"
+	icon = GFX_production_licenses
+	option = {
+		name = FREE
+		text = RULE_OPTION_FREE
+		desc = RULE_ALLOW_LICENSING_FREE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = RULE_OPTION_SAME_IDEOLOGY
+		desc = RULE_ALLOW_LICENSING_SAME_IDEOLOGY_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = SAME_FACTION
+		text = RULE_OPTION_SAME_FACTION
+		desc = RULE_ALLOW_LICENSING_SAME_FACTION_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = BLOCKED
+		text = RULE_OPTION_BLOCKED
+		desc = RULE_ALLOW_LICENSING_BLOCKED_DESC
+		allow_achievements = yes
+	}
+}

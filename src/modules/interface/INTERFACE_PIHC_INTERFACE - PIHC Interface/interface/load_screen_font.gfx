@@ -1,0 +1,160 @@
+bitmapfonts = {
+	textcolors = {
+		### HOI4 Colors ###
+		B = { 81 112 243 }  # Blue
+		C = { 35 206 255 }  # Cyan
+		G = { 0 159 3 }     # Green
+		H = { 255 189 0 }   # Header
+		L = { 195 176 145 } # Lilac
+		O = { 255 112 25 }  # Orange
+		R = { 255 50 50 }   # Red
+		T = { 255 255 255 } # Title
+		W = { 255 255 255 } # White
+		Y = { 255 189 0 }   # Yellow
+
+		b = { 100 100 100 } # Black -> Dark Grey
+		g = { 176 176 176 } # Grey
+		t = { 255 76 77 }	# Gradient Step 10 - red 		{ 229 0 0 }
+
+		0 = { 203 0 203 }   # Gradient Step 0 - purple 		{ 102 0 102 }
+		1 = { 128 120 211 } # Gradient Step 1 - lilac 		{ 51 43 133 }
+		2 = { 81 112 243 }	# Gradient Step 2 - blue 		{ 10 43 153 }
+		3 = { 81 143 220 }	# Gradient Step 3 - navy blue	{ 33 92 166 }
+		4 = { 90 190 231 }	# Gradient Step 4 - light blue	{ 28 143 191 }
+		5 = { 63 181 194 }	# Gradient Step 5 - cyan 		{ 63 181 194 }
+		6 = { 119 204 186 }	# Gradient Step 6 -	turquiose	{ 119 204 186 }
+		7 = { 153 209 153 }	# Gradient Step 7 - light green	{ 153 209 153 }
+		8 = { 204 163 51 }	# Gradient Step 8 - mustard		{ 204 163 51 }
+		9 = { 252 169 125 }	# Gradient Step 9 - orange		{ 250 102 25 }
+
+		### Default Colors ###
+		D = { 89 199 194 }  # Default CRT blue color (Baby Blue)
+		F = { 178 201 194 } # New default
+		M = { 35 206 255 }  # Light Neon Blue (old CRT default)
+
+		### Base Colors ###
+		I = { 116 71 209 }  # Deep Purple
+		P = { 169 27 79 }   # Pink
+		Q = { 0 84 142 }    # Prussian Blue
+		S = { 255 128 114 } # Salmon
+
+		e = { 146 0 0 }     # Dark Red
+		j = { 153 102 51 }  # Brown
+		l = { 147 112 219 } # Lavender
+		n = { 60 180 60 }   # Dark Green
+		p = { 204 0 204 }   # Magenta
+		q = { 65 65 65 }    # Darker Grey
+		r = { 132 50 0 }    # Rust Brown
+		w = { 211 201 0 }   # Gold
+		x = { 225 0 0 }     # Über-red
+		y = { 0 225 0 }     # Über-green
+		z = { 22 88 255 }   # Über-blue
+
+		### Tomsk GUI Colors ###
+		d = { 225 225 225 } # Gainsboro
+		h = { 161 16 107 }  # Jazzberry Jam
+		m = { 0 174 239 }   # Deep Sky Blue
+		s = { 137 137 137 } # Suva Gray
+
+		### Britain Parties ###
+		E = { 152 40 92 }	# Purple
+		J = { 213 87 57 }	# Light Orange
+		K = { 45 152 40 }	# Emerald Green
+		U = { 214 138 75 }	# Peru (Ideologues)
+		V = { 213 40 20 }	# Scarlet
+
+		f = { 255 193 12 }	# Amber
+		i = { 46 60 169 }	# Cerulean Blue
+		o = { 129 88 56 }	# Darker Brown
+
+		### Guangdong ###
+		A = { 0 108 114 }   # Teal (Government)
+		u = { 210 119 39 }  # Bitter Organe (Rioters)
+
+		### Branch Specific Colors ###
+		X = { 188 54 68 }   # Lighter Reddish-Brown
+		Z = { 128 48 56 }   # Reddish-Brown
+		a = { 60 114 240 }  # Royal Blue (PNM)
+		$ = { 28 74 104 }   # Midnight Blue
+		< = { 85 119 198 }  # Havelock Blue
+		* = { 0 155 178 }   # Cyan
+		. = { 170 98 52 }   # Brown-Orange
+		, = { 135 120 74 }  # Brown-Green
+		& = { 89 132 97 }   # Dark Olive
+
+		## OPEN SLOTS
+		# N = {  } #
+		# c = {  } #
+		# k = {  } #
+		# v = {  } #
+	}
+
+	bitmapfont = {
+		name = "loadscreen_header"
+		fontfiles = { 
+			"gfx/fonts/aldrich_30_outline"
+			"gfx/fonts/hoi_30header"
+			"gfx/fonts/Arial_26"
+		}		
+		color = 0xffffffff
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = { 
+			"gfx/fonts/hoi_20bs"
+			"gfx/fonts/hoi_20bs_cryllic"
+		}
+		languages = { "l_russian" "l_polish" } 
+	}
+	
+	bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = {
+			"gfx/fonts/japanese/hoi_30header"
+		}
+		languages = { "l_japanese" }
+	}
+
+	bitmapfont = {
+		name = "loadscreen_tip"
+		fontfiles = { 
+			"gfx/fonts/aldrich_22_outline"
+			"gfx/fonts/hoi_24header"
+			"gfx/fonts/Arial_20"
+		}
+		cursor_offset = { 0 4 }
+		color = 0xffffffff
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+	
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = { 
+			"gfx/fonts/hoi_20bs"
+			"gfx/fonts/hoi_20bs_cryllic"
+		}
+		languages = { "l_russian" "l_polish" } 
+	}
+	
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = {
+			"gfx/fonts/japanese/hoi_24header"
+		}
+		languages = { "l_japanese" }
+	}
+}

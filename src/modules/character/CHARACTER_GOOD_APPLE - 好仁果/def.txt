@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_GOOD_APPLE = {
+        name = CHARACTER_GOOD_APPLE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_GOOD_APPLE.dds"
+                small = "gfx/leaders/CHARACTER_GOOD_APPLE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_GOOD_APPLE_army.dds"
+                small = "gfx/leaders/CHARACTER_GOOD_APPLE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_GOOD_APPLE_navy.dds"
+                small = "gfx/leaders/CHARACTER_GOOD_APPLE_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_GOOD_APPLE_DESC
+            traits = {
+
+            }
+            ideology = peacism_duchy
+        }
+    }
+}

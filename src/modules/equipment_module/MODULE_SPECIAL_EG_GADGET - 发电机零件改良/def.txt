@@ -1,0 +1,8 @@
+MODULE_SPECIAL_EG_GADGET = {
+	category = pihc_tank_special_type_2_elec
+	sfx = sfx_ui_sd_module_engine
+	multiply_stats = {
+		build_cost_ic = -0.1
+	}
+	xp_cost = 0
+}

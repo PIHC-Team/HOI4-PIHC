@@ -1,0 +1,46 @@
+technologies = {
+    TECHNOLOGY_C03_MUFFINS_PROD_I = {
+        folder = {
+            name = muffins_folder
+            position = {
+                x = 4
+                y = 6
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_muffins
+        }
+        enable_equipments = {
+            EQUIPMENT_MUFFIN_I
+        }
+        on_research_complete = {
+            hidden_effect = {
+                add_equipment_production = {
+                    equipment = {
+                        type = EQUIPMENT_MUFFIN_I
+                        creator = C03
+                    }
+                    requested_factories = 15
+                    progress = 0.0
+                    efficiency = 100
+                }
+            }
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_C03_MUFFINS_PROD_II
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                factor = 1000
+                tag = C03
+            }
+        }
+        research_cost = 1.0
+        start_year = 1002
+    }
+}

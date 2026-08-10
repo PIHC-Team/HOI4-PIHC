@@ -1,0 +1,32 @@
+scripted_gui = {
+	pihc_inventory_item_4EP_C08_PIN_GAME_1_CODEBOOK_buttons = {
+		context_type = player_context
+		window_name = pihc_inventory_item_4EP_C08_PIN_GAME_1_CODEBOOK_buttons_container
+		parent_window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+			has_variable = PIHC_INVENTORY_DISPLAY
+			check_variable = {
+				var = PIHC_INVENTORY_DISPLAY
+				value = 126
+				compare = equals
+			}
+		}
+		triggers = {
+			pihc_inventory_item_4EP_C08_PIN_GAME_1_CODEBOOK_o0_button_visible = {
+				always = yes
+			}
+			pihc_inventory_item_4EP_C08_PIN_GAME_1_CODEBOOK_o0_button_click_enabled = {
+				TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK = yes
+			}
+		}
+		effects = {
+			pihc_inventory_item_4EP_C08_PIN_GAME_1_CODEBOOK_o0_button_click = {
+				country_event = {
+					id = C01_C02_GREENLIGHT.20
+				}
+			}
+		}
+	}
+}

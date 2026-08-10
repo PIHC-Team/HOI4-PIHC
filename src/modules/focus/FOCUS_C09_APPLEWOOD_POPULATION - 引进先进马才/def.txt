@@ -1,0 +1,47 @@
+focus = {
+	id = FOCUS_C09_APPLEWOOD_POPULATION
+	icon = GFX_FOCUS_C09_APPLEWOOD_POPULATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_APPLEWOOD_DEVELOPMENT
+	}
+	cost = 5
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C09_APPLEWOOD_POPULATION_TOOLTIP
+		hidden_effect = {
+			526 = {
+				add_state_modifier = {
+					modifier = {
+						local_manpower = 0.5
+					}
+				}
+			}
+			531 = {
+				add_state_modifier = {
+					modifier = {
+						local_manpower = 0.5
+					}
+				}
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 4
+}

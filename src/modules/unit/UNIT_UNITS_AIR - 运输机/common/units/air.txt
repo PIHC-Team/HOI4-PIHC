@@ -1,0 +1,603 @@
+sub_units = {
+    transport_plane = {
+        sprite = heavy_plane
+        priority = 1
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIR_TRANSPORT = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 10
+    }
+    cas = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIR_CAS = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+        }
+        land_air_wing_size = 100
+        mega_carrier_air_wing_size = 2
+    }
+    tact_bomber = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIR_TBOMBER = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    strat_bomber = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIR_SBOMBER = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    scout_plane = {
+        sprite = light_plane
+        priority = 2
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIR_SCOUT = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    fighter = {
+        sprite = light_plane
+        priority = 3
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIR_ARMED = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+        }
+        land_air_wing_size = 100
+        mega_carrier_air_wing_size = 3
+    }
+    balloon = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+            category_air_balloon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    balloon_cas = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+            category_air_balloon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    balloon_tbomber = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+            category_air_balloon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    balloon_sbomber = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+            category_air_balloon
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    balloon_scout = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+            category_air_balloon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    balloon_fighter = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIRFRAME_BALLOON = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_balloon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    galleon = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+            category_air_galleon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    galleon_cas = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+            category_air_galleon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    galleon_tbomber = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+            category_air_galleon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    galleon_sbomber = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+            category_air_galleon
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    galleon_scout = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+            category_air_galleon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    galleon_fighter = {
+        sprite = medium_plane
+        priority = 2
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIRFRAME_GALLEON = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_galleon
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    plane = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+            category_air_plane
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    plane_cas = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+            category_air_plane
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    plane_tbomber = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+            category_air_plane
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    plane_sbomber = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+            category_air_plane
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    plane_scout = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+            category_air_plane
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 1
+    }
+    plane_fighter = {
+        sprite = medium_plane
+        priority = 3
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIRFRAME_PLANE = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_plane
+        }
+        land_air_wing_size = 40
+        mega_carrier_air_wing_size = 2
+    }
+    ufo = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+            category_air_ufo
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    ufo_cas = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+            category_air_ufo
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    ufo_tbomber = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+            category_air_ufo
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    ufo_sbomber = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+            category_air_ufo
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    ufo_scout = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+            category_air_ufo
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    ufo_fighter = {
+        sprite = medium_plane
+        priority = 4
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIRFRAME_UFO = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_ufo
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    airship = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = air_transport
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_transport
+            category_air_airship
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    airship_cas = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = cas
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_cas
+            category_air_airship
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    airship_tbomber = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = tactical_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_tact_bomber
+            category_air_airship
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    airship_sbomber = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_strat_bomber
+            category_air_airship
+        }
+        land_air_wing_size = 10
+        mega_carrier_air_wing_size = 1
+    }
+    airship_scout = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = scout_plane
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_scout
+            category_air_airship
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    airship_fighter = {
+        sprite = heavy_plane
+        priority = 5
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIRFRAME_AIRSHIP = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_airship
+        }
+        land_air_wing_size = 20
+        mega_carrier_air_wing_size = 1
+    }
+    flying_creatures = {
+        sprite = light_plane
+        priority = 1
+        active = yes
+        type = fighter
+        need = {
+            ARCHETYPE_AIR_CREATURES = 1
+        }
+        categories = {
+            category_air
+            category_air_armed
+            category_air_creatures
+        }
+        land_air_wing_size = 100
+        mega_carrier_air_wing_size = 10
+    }
+    flyer = {
+        sprite = heavy_plane
+        priority = 999
+        active = yes
+        type = strategic_bomber
+        need = {
+            ARCHETYPE_AIR_TITAN = 1
+        }
+        categories = {
+            category_air
+            category_air_flyer
+        }
+        land_air_wing_size = 1
+        mega_carrier_air_wing_size = 1
+    }
+}

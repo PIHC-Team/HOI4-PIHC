@@ -1,0 +1,36 @@
+DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
+    DECISION_C12_INCREASE_INTIMACY = {
+        fixed_random_seed = no
+        priority = 100
+        days_remove = 180
+        days_re_enable = 180
+        available = {
+            num_of_civilian_factories_available_for_projects > 7
+            hidden_trigger = {
+                has_political_power > 199
+            }
+            country_exists = C14
+            has_war = no
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_8_PP_200
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 7
+            has_political_power > 199
+        }
+        modifier = {
+            civilian_factory_use = 8
+        }
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -200
+            }
+        }
+        remove_effect = {
+            UPGRADE_C12_C14_RELATION = yes
+        }
+        ai_will_do = {
+            base = 10
+        }
+        icon = C12_INCREASE_INTIMACY
+    }
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_STELLAR_FLARE = {
+        name = CHARACTER_STELLAR_FLARE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_STELLAR_FLARE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_STELLAR_FLARE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_STELLAR_FLARE_army.dds"
+                small = "gfx/leaders/CHARACTER_STELLAR_FLARE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_STELLAR_FLARE_navy.dds"
+                small = "gfx/leaders/CHARACTER_STELLAR_FLARE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_STELLAR_FLARE_DESC
+            traits = {
+
+            }
+            ideology = democratic_oligarchy
+        }
+    }
+}

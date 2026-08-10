@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_ZEPHYR_BREEZE = {
+        name = CHARACTER_ZEPHYR_BREEZE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE.dds"
+                small = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE_army.dds"
+                small = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE_navy.dds"
+                small = "gfx/leaders/CHARACTER_ZEPHYR_BREEZE_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

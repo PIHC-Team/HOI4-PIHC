@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_GEN_IDEOLOGY_FIGHT
+	icon = GFX_FOCUS_GEN_IDEOLOGY_FIGHT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_IDEOLOGY
+	}
+	cost = 6
+	completion_reward = {
+		add_ideas = IDEA_ALL_PURE_IDEOLOGY
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 31
+	y = 2
+}

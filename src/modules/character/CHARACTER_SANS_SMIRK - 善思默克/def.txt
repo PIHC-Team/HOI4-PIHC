@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_SANS_SMIRK = {
+        name = CHARACTER_SANS_SMIRK_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SANS_SMIRK.dds"
+                small = "gfx/leaders/CHARACTER_SANS_SMIRK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SANS_SMIRK_army.dds"
+                small = "gfx/leaders/CHARACTER_SANS_SMIRK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SANS_SMIRK_navy.dds"
+                small = "gfx/leaders/CHARACTER_SANS_SMIRK_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_SANS_SMIRK
+            desc = CHARACTER_SANS_SMIRK_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = political_advisor
+        }
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

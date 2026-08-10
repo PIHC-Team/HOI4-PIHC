@@ -1,0 +1,206 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_infantry_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_infantry_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_combat_support_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_combat_support_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_combat_support_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_combat_support_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_armor_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_armor_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_tide_of_iron_operations_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_tide_of_iron_operations_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_infantry_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_infantry_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_combat_support_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_combat_support_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_combat_support_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_combat_support_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_armor_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_armor_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_flame_of_rage_operations_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_flame_of_rage_operations_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_infantry_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_infantry_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_combat_support_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_combat_support_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_combat_support_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_combat_support_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_armor_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_armor_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_wall_of_unity_operations_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_wall_of_unity_operations_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_infantry_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_infantry_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_combat_support_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_combat_support_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_combat_support_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_combat_support_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_armor_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_armor_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_rose_of_will_operations_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_rose_of_will_operations_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_infantry_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_infantry_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_combat_support_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_combat_support_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_combat_support_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_combat_support_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_armor_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_armor_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_land_breeze_of_death_operations_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_land_breeze_of_death_operations_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_fighter_aircraft_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_fighter_aircraft_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_fighter_aircraft_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_fighter_aircraft_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_strike_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_strike_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_medium_aircraft_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_medium_aircraft_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_medium_aircraft_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_medium_aircraft_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_open_sky_heavy_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_open_sky_heavy_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_strike_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_strike_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_c_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_medium_aircraft_c_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_bloodthirsty_flock_heavy_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_bloodthirsty_flock_heavy_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_fighter_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_fighter_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_strike_aircraft_a_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_strike_aircraft_a_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_strike_aircraft_b_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_strike_aircraft_b_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_medium_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_medium_aircraft_core_medium.dds"
+    }
+    spriteType = {
+        name = GFX_doctrine_pihc_air_flying_fortress_heavy_aircraft_core_medium
+        textureFile = "gfx/interface/doctrines/doctrine_pihc_air_flying_fortress_heavy_aircraft_core_medium.dds"
+    }
+}

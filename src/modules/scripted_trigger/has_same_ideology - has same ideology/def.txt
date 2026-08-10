@@ -1,0 +1,61 @@
+has_same_ideology = {
+	custom_trigger_tooltip = {
+		tooltip = has_same_ideology_tt
+		OR = {
+			AND = {
+				has_government = democratic
+				ROOT = {
+					has_government = democratic
+				}
+			}
+			AND = {
+				has_government = fascism
+				ROOT = {
+					has_government = fascism
+				}
+			}
+			AND = {
+				has_government = equatism
+				ROOT = {
+					has_government = equatism
+				}
+			}
+			AND = {
+				has_government = despotic
+				ROOT = {
+					has_government = despotic
+				}
+			}
+			AND = {
+				has_government = corporation
+				ROOT = {
+					has_government = corporation
+				}
+			}
+			AND = {
+				has_government = harmonicism
+				ROOT = {
+					has_government = harmonicism
+				}
+			}
+			AND = {
+				has_government = peacism
+				ROOT = {
+					has_government = peacism
+				}
+			}
+			AND = {
+				has_government = transcendence
+				ROOT = {
+					has_government = transcendence
+				}
+			}
+			AND = {
+				has_government = anarchy
+				ROOT = {
+					has_government = anarchy
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_ALL_RESISTANCE = {
+			picture = ALL_RESISTANCE
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.1
+				stability_factor = -0.15
+				political_power_gain = 0.25
+				army_strength_factor = -0.1
+				army_morale_factor = 0.15
+				training_time_factor = 0.15
+				stability_weekly_factor = 0.01
+				out_of_supply_factor = -0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

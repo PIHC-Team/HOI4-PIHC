@@ -1,0 +1,39 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_TELEPORT_III = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 5
+                y = 16
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_magical
+            pihc_support_teleport
+            pihc_magical
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        infantry_magical = {
+            maximum_speed = 0.25
+            breakthrough = 0.1
+        }
+        allow = {
+            is_magic_country = yes
+        }
+        dependencies = {
+            TECHNOLOGY_SUPPORT_MAGIC_III = 1
+            TECHNOLOGY_SUPPORT_TELEPORT_II = 1
+        }
+        path = {
+        }
+        research_cost = 1.5
+        start_year = 1007
+    }
+}

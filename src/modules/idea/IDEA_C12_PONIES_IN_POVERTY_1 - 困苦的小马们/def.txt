@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C12_PONIES_IN_POVERTY_1 = {
+			picture = C12_PONIES_IN_POVERTY_1
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.15
+				mobilization_speed = -0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

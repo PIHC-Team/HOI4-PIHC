@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_ROSETTA = {
+        name = CHARACTER_ROSETTA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ROSETTA.dds"
+                small = "gfx/leaders/CHARACTER_ROSETTA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ROSETTA_army.dds"
+                small = "gfx/leaders/CHARACTER_ROSETTA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ROSETTA_navy.dds"
+                small = "gfx/leaders/CHARACTER_ROSETTA_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_ROSETTA
+            desc = CHARACTER_ROSETTA_DESC
+            traits = {
+                TRAIT_HIGH_POLITICAL_ESTEEM
+                TRAIT_FASHION_IDOL
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 140
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

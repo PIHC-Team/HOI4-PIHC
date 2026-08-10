@@ -1,0 +1,141 @@
+capital = 888
+set_popularities = {
+    corporation = 70
+    fascism = 15
+    democratic = 10
+    despotic = 2
+    harmonicism = 2
+    equatism = 1
+}
+set_politics = {
+    ruling_party = corporation
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_FIREARM_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C06
+recruit_character = CHARACTER_GLADMANE
+recruit_character = CHARACTER_SURI_POLOMARE
+recruit_character = CHARACTER_ON_STAGE
+recruit_character = CHARACTER_RASPBERRY_BERET
+recruit_character = CHARACTER_HODA_KOTB
+recruit_character = CHARACTER_STINKY_BOTTOM
+recruit_character = CHARACTER_COCO_POMMEL
+add_ideas = export_focus
+add_ideas = limited_conscription
+add_ideas = civilian_economy
+add_ideas = IDEA_C06_SLAVE_TRADE
+add_ideas = IDEA_C06_SECURITY_FORCES
+add_ideas = IDEA_DINFANTRY_MBM
+set_rule = {
+    can_join_factions = no
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = -10000
+country_lock_all_division_template = yes
+4 = {
+    remove_core_of = C06
+}
+set_major = no
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 500
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 40
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 60
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C06
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_HANDGONNE
+        creator = C06
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = train_equipment_1
+        creator = C06
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN
+give_military_access = C01

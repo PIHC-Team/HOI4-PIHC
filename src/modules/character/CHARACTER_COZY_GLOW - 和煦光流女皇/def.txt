@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_COZY_GLOW = {
+        name = CHARACTER_COZY_GLOW_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_COZY_GLOW_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_COZY_GLOW_army.dds"
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_COZY_GLOW_navy.dds"
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_COZY_GLOW_DESC
+            traits = {
+                TRAIT_COZY_GLOW_PARANOIA
+                TRAIT_COZY_GLOW_RED_TAPE_MACHINE
+                TRAIT_ECONOMICAL_IDIOT
+                TRAIT_POLITICAL_GENIUS_II
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

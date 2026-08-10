@@ -1,0 +1,1293 @@
+add_namespace = C04_MAIN
+country_event = {
+    id = C04_MAIN.1
+    picture = GFX_EVENT_C04_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_1
+    desc = EVENT_C04_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.2
+        }
+        name = EVENT_C04_MAIN_1_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.2
+    picture = GFX_EVENT_C04_MAIN_2
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_AVAILABLE
+                mark_focus_tree_layout_dirty = yes
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_2
+    desc = EVENT_C04_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.3
+        }
+        name = EVENT_C04_MAIN_2_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.3
+    picture = GFX_EVENT_C04_MAIN_3
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                country_event = {
+                    id = C04_MAIN.14
+                    days = 31
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_3
+    desc = EVENT_C04_MAIN_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.4
+        }
+        name = EVENT_C04_MAIN_3_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.4
+    picture = GFX_EVENT_C04_MAIN_4
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_CRYSTAL_MINE_AVAILABLE
+                mark_focus_tree_layout_dirty = yes
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_4
+    desc = EVENT_C04_MAIN_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.5
+        }
+        name = EVENT_C04_MAIN_4_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.5
+    picture = GFX_EVENT_C04_MAIN_5
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_MUFFIN_INVESTIGATE_AVAILABLE
+                mark_focus_tree_layout_dirty = yes
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_5
+    desc = EVENT_C04_MAIN_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_5_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.6
+    picture = GFX_EVENT_C04_MAIN_6
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_6
+    desc = EVENT_C04_MAIN_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_2 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_INVESTIGATE_WASHOUTS_AVAILABLE
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_6_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.7
+    picture = GFX_EVENT_C04_MAIN_7
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_7
+    desc = EVENT_C04_MAIN_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_7_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.8
+        }
+        name = EVENT_C04_MAIN_7_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.8
+    picture = GFX_EVENT_C04_MAIN_8
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_8
+    desc = EVENT_C04_MAIN_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.9
+        }
+        name = EVENT_C04_MAIN_8_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.7
+        }
+        name = EVENT_C04_MAIN_8_o2
+    }
+}
+country_event = {
+    id = C04_MAIN.9
+    picture = GFX_EVENT_C04_MAIN_9
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_9
+    desc = EVENT_C04_MAIN_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_9_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.10
+        }
+        name = EVENT_C04_MAIN_9_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.8
+        }
+        name = EVENT_C04_MAIN_9_o2
+    }
+}
+country_event = {
+    id = C04_MAIN.10
+    picture = GFX_EVENT_C04_MAIN_10
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_10
+    desc = EVENT_C04_MAIN_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.11
+        }
+        name = EVENT_C04_MAIN_10_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.9
+        }
+        name = EVENT_C04_MAIN_10_o2
+    }
+}
+country_event = {
+    id = C04_MAIN.11
+    picture = GFX_EVENT_C04_MAIN_11
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_11
+    desc = EVENT_C04_MAIN_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.10
+        }
+        name = EVENT_C04_MAIN_11_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.12
+    picture = GFX_EVENT_C04_MAIN_12
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_12
+    desc = EVENT_C04_MAIN_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_CUPCAKE_EXPLOSIVE = 1
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_RETURN_OF_ACADEMY_AVAILABLE
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_12_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.13
+    picture = GFX_EVENT_C04_MAIN_13
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_13
+    desc = EVENT_C04_MAIN_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            if = {
+                limit = {
+                    C03 = {
+                        is_ai = yes
+                    }
+                }
+                add_timed_idea = {
+                    idea = IDEA_C04_C03_TRADE
+                    days = 365
+                }
+                388 = {
+                    if = {
+                        limit = {
+                            is_controlled_by = C03
+                        }
+                        remove_core_of = C03
+                        transfer_state_to = C04
+                        add_core_of = C04
+                    }
+                }
+            }
+        }
+        hidden_effect = {
+            C03 = {
+                country_event = {
+                    id = C04_MAIN.18
+                }
+            }
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_REBUILD_WONDERBOLTS_AVAILABLE
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_13_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.14
+    picture = GFX_EVENT_C04_MAIN_14
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                country_event = {
+                    id = C04_MAIN.15
+                    days = 31
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_14
+    desc = EVENT_C04_MAIN_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_14_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.15
+    picture = GFX_EVENT_C04_MAIN_15
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                country_event = {
+                    id = C04_MAIN.16
+                    days = 61
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_15
+    desc = EVENT_C04_MAIN_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_15_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.16
+    picture = GFX_EVENT_C04_MAIN_16
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_16
+    desc = EVENT_C04_MAIN_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_16_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.17
+    picture = GFX_EVENT_C04_MAIN_17
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_17
+    desc = EVENT_C04_MAIN_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_CONSTRUCTION_AVAILABLE
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_17_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.18
+    picture = GFX_EVENT_C04_MAIN_18
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_18
+    desc = EVENT_C04_MAIN_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        388 = {
+            if = {
+                limit = {
+                    is_owned_by = C03
+                    is_controlled_by = C03
+                }
+                remove_core_of = C03
+                C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_4 = yes
+            }
+        }
+        add_timed_idea = {
+            idea = IDEA_C03_C04_TRADE
+            days = 365
+        }
+        C04 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C04_REBUILD_WONDERBOLTS_AVAILABLE
+            mark_focus_tree_layout_dirty = yes
+        }
+        name = EVENT_C04_MAIN_18_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C04_MAIN_18_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.19
+    picture = GFX_EVENT_C04_MAIN_19
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_19
+    desc = EVENT_C04_MAIN_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.20
+        }
+        name = EVENT_C04_MAIN_19_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.20
+    picture = GFX_EVENT_C04_MAIN_20
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_20
+    desc = EVENT_C04_MAIN_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_100 = yes
+        name = EVENT_C04_MAIN_20_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.21
+    picture = GFX_EVENT_C04_MAIN_21
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_21
+    desc = EVENT_C04_MAIN_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_SUPPORT_COLD_I = 1
+        }
+        add_tech_bonus = {
+            technology = TECHNOLOGY_ICY_BOW
+            bonus = 0.3
+            name = DECISION_C04_METEOROLOGICAL_BUREAU
+        }
+        name = EVENT_C04_MAIN_21_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.22
+    picture = GFX_EVENT_C04_MAIN_22
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_22
+    desc = EVENT_C04_MAIN_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.23
+        }
+        name = EVENT_C04_MAIN_22_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.23
+    picture = GFX_EVENT_C04_MAIN_23
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_23
+    desc = EVENT_C04_MAIN_23_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C04_MAIN.24
+        }
+        name = EVENT_C04_MAIN_23_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_WIND_RIDERS_INVEST
+        custom_effect_tooltip = EVENT_C04_MAIN_23_TOOLTIP
+        if = {
+            limit = {
+                has_completed_focus = FOCUS_C04_CRYSTAL_APPROVE
+            }
+            remove_ideas = IDEA_C04_TIMBUCKTU_BLESSING
+        }
+        if = {
+            limit = {
+                has_completed_focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+            }
+            uncomplete_national_focus = {
+                focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+                uncomplete_children = no
+                refund_political_power = no
+            }
+        }
+        376 = {
+            add_building_construction = {
+                type = trade_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        C04_ADD_ECO_2_20 = yes
+        add_popularity = {
+            ideology = corporation
+            popularity = 0.15
+        }
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.45
+                days = 30
+                random_Days = 7
+            }
+        }
+        name = EVENT_C04_MAIN_23_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.24
+    picture = GFX_EVENT_C04_MAIN_24
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_24
+    desc = EVENT_C04_MAIN_24_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        custom_effect_tooltip = EVENT_C04_MAIN_24_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLYS_INVEST
+        add_ideas = free_trade
+        add_ideas = civilian_economy
+        if = {
+            limit = {
+                has_completed_focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+            }
+            uncomplete_national_focus = {
+                focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+                uncomplete_children = no
+                refund_political_power = no
+            }
+            complete_national_focus = FOCUS_C04_CRYSTAL_APPROVE
+        }
+        add_power_balance_value = {
+            id = BOP_C04_INDEPENDENCE
+            value = -0.05
+            tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+        }
+        add_popularity = {
+            ideology = corporation
+            popularity = 0.05
+        }
+        336 = {
+            add_building_construction = {
+                type = trade_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        C04_ADD_ECO_0_10 = yes
+        hidden_effect = {
+            add_popularity = {
+                ideology = despotic
+                popularity = 0.1
+            }
+            country_event = {
+                id = C04_MAIN.46
+                days = 40
+                random_days = 30
+            }
+        }
+        name = EVENT_C04_MAIN_24_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_WIND_RIDERS_INVEST
+        custom_effect_tooltip = EVENT_C04_MAIN_23_TOOLTIP
+        if = {
+            limit = {
+                has_completed_focus = FOCUS_C04_CRYSTAL_APPROVE
+            }
+            remove_ideas = IDEA_C04_TIMBUCKTU_BLESSING
+        }
+        if = {
+            limit = {
+                has_completed_focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+            }
+            uncomplete_national_focus = {
+                focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+                uncomplete_children = no
+                refund_political_power = no
+            }
+        }
+        376 = {
+            add_building_construction = {
+                type = trade_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        C04_ADD_ECO_2_20 = yes
+        add_popularity = {
+            ideology = corporation
+            popularity = 0.15
+        }
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.45
+                days = 30
+                random_Days = 7
+            }
+        }
+        name = EVENT_C04_MAIN_24_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.25
+    picture = GFX_EVENT_C04_MAIN_25
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_25
+    desc = EVENT_C04_MAIN_25_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_WASHOUTS_RELEASED
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = FOCUS_C04_WASHOUTS_RELEASED
+        name = EVENT_C04_MAIN_25_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.26
+    picture = GFX_EVENT_C04_MAIN_26
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_26
+    desc = EVENT_C04_MAIN_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.27
+        }
+        name = EVENT_C04_MAIN_26_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.27
+    picture = GFX_EVENT_C04_MAIN_27
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_27
+    desc = EVENT_C04_MAIN_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            recruit_character = CHARACTER_SHORT_FUSE
+            activate_advisor = CHARACTER_SHORT_FUSE
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_NEW_EMPLOYEE_SHORT_FUSE
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_DINER_RUNNING
+        activate_advisor = CHARACTER_SHORT_FUSE
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_27_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.28
+    picture = GFX_EVENT_C04_MAIN_28
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_28
+    desc = EVENT_C04_MAIN_28_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        remove_trait = {
+            character = CHARACTER_SHORT_FUSE
+            slot = army_chief
+            trait = TRAIT_WASHOUTS_SHORT_FUSE
+        }
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.29
+                days = 30
+                random_days = 10
+            }
+        }
+        name = EVENT_C04_MAIN_28_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.29
+    picture = GFX_EVENT_C04_MAIN_29
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_29
+    desc = EVENT_C04_MAIN_29_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        remove_trait = {
+            character = CHARACTER_SHORT_FUSE
+            slot = army_chief
+            trait = TRAIT_SHORT_FUSE
+        }
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C04_PEGASUS_JOY_JUICE
+        }
+        name = EVENT_C04_MAIN_29_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.30
+    picture = GFX_EVENT_C04_MAIN_30
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_30
+    desc = EVENT_C04_MAIN_30_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.31
+        }
+        name = EVENT_C04_MAIN_30_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.31
+    picture = GFX_EVENT_C04_MAIN_31
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_31
+    desc = EVENT_C04_MAIN_31_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            recruit_character = CHARACTER_FEATHER_FLATTERFLY_C04
+        }
+        C01 = {
+            retire_character = CHARACTER_FEATHER_FLATTERFLY
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_FEATHER_FLATTERFLY_ARRIVES
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C04_MAIN_31_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.32
+    picture = GFX_EVENT_C04_MAIN_32
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_32
+    desc = EVENT_C04_MAIN_32_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.33
+        }
+        name = EVENT_C04_MAIN_32_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.33
+    picture = GFX_EVENT_C04_MAIN_33
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_33
+    desc = EVENT_C04_MAIN_33_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        364 = {
+            add_claim_by = C04
+        }
+        365 = {
+            add_claim_by = C04
+        }
+        hidden_effect = {
+            ADD_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_1 = yes
+        }
+        name = EVENT_C04_MAIN_33_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.34
+    picture = GFX_EVENT_C04_MAIN_34
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_34
+    desc = EVENT_C04_MAIN_34_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_C04_MUFFIN_1_1 = yes
+        name = EVENT_C04_MAIN_34_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.35
+    picture = GFX_EVENT_C04_MAIN_35
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_35
+    desc = EVENT_C04_MAIN_35_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_C04_MUFFIN_2_1 = yes
+        name = EVENT_C04_MAIN_35_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.36
+    picture = GFX_EVENT_C04_MAIN_36
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_36
+    desc = EVENT_C04_MAIN_36_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_C04_MUFFIN_3_1 = yes
+        name = EVENT_C04_MAIN_36_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.37
+    picture = GFX_EVENT_C04_MAIN_37
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_37
+    desc = EVENT_C04_MAIN_37_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_C04_MUFFIN_4_1 = yes
+        name = EVENT_C04_MAIN_37_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.38
+    picture = GFX_EVENT_C04_MAIN_38
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_38
+    desc = EVENT_C04_MAIN_38_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_C04_MUFFIN_5_1 = yes
+        name = EVENT_C04_MAIN_38_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.39
+    picture = GFX_EVENT_C04_MAIN_39
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_39
+    desc = EVENT_C04_MAIN_39_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_global_flag = PIHC_ACHIEVEMENT_FLAG_C04_RETURN_TO_THE_SKY_CHEAT
+        custom_effect_tooltip = PIHC_ENDING_TEXT
+        name = EVENT_C04_MAIN_39_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.40
+    picture = GFX_EVENT_C04_MAIN_40
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                C04_SPITFIRE_ASSASSINATED = yes
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_40
+    desc = EVENT_C04_MAIN_40_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.15
+        add_power_balance_value = {
+            id = BOP_C04_INDEPENDENCE
+            value = -0.35
+            tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+        }
+        C04_DEL_ECO_0_30 = yes
+        country_event = {
+            id = C04_MAIN.41
+        }
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.56
+                days = 60
+                random_days = 40
+            }
+        }
+        name = EVENT_C04_MAIN_40_o0
+    }
+}
+news_event = {
+    id = C04_MAIN.41
+    picture = GFX_EVENT_C04_MAIN_41
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_41
+    desc = EVENT_C04_MAIN_41_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C04
+            }
+        }
+        name = EVENT_C04_MAIN_41_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C04
+        }
+        country_event = {
+            id = C04_MAIN.42
+        }
+        name = EVENT_C04_MAIN_41_o1
+    }
+}
+country_event = {
+    id = C04_MAIN.42
+    picture = GFX_EVENT_C04_MAIN_42
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_42
+    desc = EVENT_C04_MAIN_42_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.43
+                days = 7
+            }
+        }
+        name = EVENT_C04_MAIN_42_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.43
+    picture = GFX_EVENT_C04_MAIN_43
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_BY_ELECTION
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_43
+    desc = EVENT_C04_MAIN_43_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C04_MAIN_43_TOOLTIP
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.48
+                days = 7
+                random_days = 30
+            }
+        }
+        name = EVENT_C04_MAIN_43_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.44
+    picture = GFX_EVENT_C04_MAIN_44
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_44
+    desc = EVENT_C04_MAIN_44_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_44_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.45
+    picture = GFX_EVENT_C04_MAIN_45
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_45
+    desc = EVENT_C04_MAIN_45_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.1
+        C04_DEL_ECO_0_5 = yes
+        C04_ADD_ECO_2_20 = yes
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.57
+                days = 30
+                random_days = 60
+            }
+        }
+        name = EVENT_C04_MAIN_45_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.46
+    picture = GFX_EVENT_C04_MAIN_46
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_46
+    desc = EVENT_C04_MAIN_46_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.1
+        C04_DEL_ECO_0_5 = yes
+        C04_ADD_ECO_2_20 = yes
+        hidden_effect = {
+            country_event = {
+                id = C04_MAIN.57
+                days = 30
+                random_days = 60
+            }
+        }
+        name = EVENT_C04_MAIN_46_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.47
+    picture = GFX_EVENT_C04_MAIN_47
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_47
+    desc = EVENT_C04_MAIN_47_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_47_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.48
+    picture = GFX_EVENT_C04_MAIN_48
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_48
+    desc = EVENT_C04_MAIN_48_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C04_ADD_WASHOUTS_SUPPORT_100 = yes
+        custom_effect_tooltip = EVENT_C04_MAIN_48_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_WASHOUTS_TOUR_MISSION_1
+        name = EVENT_C04_MAIN_48_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.49
+    picture = GFX_EVENT_C04_MAIN_49
+    immediate = {
+        hidden_effect = {
+            C04 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_VAPOR_TRAILS_FINDING
+                set_country_flag = PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_49
+    desc = EVENT_C04_MAIN_49_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C04_MAIN.50
+        }
+        name = EVENT_C04_MAIN_49_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.50
+    picture = GFX_EVENT_C04_MAIN_50
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_50
+    desc = EVENT_C04_MAIN_50_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        clr_country_flag = PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE
+        name = EVENT_C04_MAIN_50_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.51
+    picture = GFX_EVENT_C04_MAIN_51
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_51
+    desc = EVENT_C04_MAIN_51_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        clr_country_flag = PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE
+        name = EVENT_C04_MAIN_51_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.52
+    picture = GFX_EVENT_C04_MAIN_52
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_52
+    desc = EVENT_C04_MAIN_52_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        clr_country_flag = PIHC_COUNTRY_FLAG_C04_CANCEL_WAR_TO_EMPIRE
+        name = EVENT_C04_MAIN_52_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.53
+    picture = GFX_EVENT_C04_MAIN_53
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_53
+    desc = EVENT_C04_MAIN_53_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_53_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.54
+    picture = GFX_EVENT_C04_MAIN_54
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_54
+    desc = EVENT_C04_MAIN_54_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_54_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.55
+    picture = GFX_EVENT_C04_MAIN_55
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_55
+    desc = EVENT_C04_MAIN_55_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C04_MAIN_55_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.56
+    picture = GFX_EVENT_C04_MAIN_56
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_56
+    desc = EVENT_C04_MAIN_56_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_WIND_RIDER_STARSWIRL_COFFEE
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+        name = EVENT_C04_MAIN_56_o0
+    }
+}
+country_event = {
+    id = C04_MAIN.57
+    picture = GFX_EVENT_C04_MAIN_57
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_57
+    desc = EVENT_C04_MAIN_57_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+        C04_ADD_ECO_2_15 = yes
+        C04_DEL_ECO_5_20 = yes
+        add_popularity = {
+            ideology = equatism
+            popularity = 0.08
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C04_RETURN_TO_WEATHER_FACTORY
+        name = EVENT_C04_MAIN_57_o0
+    }
+}
+news_event = {
+    id = C04_MAIN.58
+    picture = GFX_EVENT_C04_MAIN_58
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C04_MAIN_58
+    desc = EVENT_C04_MAIN_58_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_tech_bonus = {
+            technology = TECHNOLOGY_TECH_MAGI_I
+            bonus = 0.15
+            name = PIHC_IHORN
+        }
+        add_breakthrough_progress = {
+            specialization = specialization_magic
+            value = 0.15
+        }
+        name = EVENT_C04_MAIN_58_o0
+    }
+}

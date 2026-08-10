@@ -1,0 +1,92 @@
+division_template = {
+    name = "森林重型装甲群 (Forest Heavy Armor Pack)"
+    regiments = {
+        tank_heavy = {
+            x = 0
+            y = 0
+        }
+        tank_heavy = {
+            x = 0
+            y = 1
+        }
+        tank_heavy = {
+            x = 0
+            y = 2
+        }
+        tank_heavy = {
+            x = 1
+            y = 0
+        }
+        tank_heavy = {
+            x = 1
+            y = 1
+        }
+        tank_heavy = {
+            x = 1
+            y = 2
+        }
+        tank_heavy = {
+            x = 2
+            y = 0
+        }
+        tank_heavy = {
+            x = 2
+            y = 1
+        }
+        tank_heavy = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_TANK_HEAVY
+    priority = 9
+}
+division_template = {
+    name = "森林中型装甲群 (Forest Medium Armor Pack)"
+    regiments = {
+        tank_medium = {
+            x = 0
+            y = 0
+        }
+        tank_medium = {
+            x = 0
+            y = 1
+        }
+        tank_medium = {
+            x = 0
+            y = 2
+        }
+        tank_medium = {
+            x = 1
+            y = 0
+        }
+        tank_medium = {
+            x = 1
+            y = 1
+        }
+        tank_medium = {
+            x = 1
+            y = 2
+        }
+        tank_medium = {
+            x = 2
+            y = 0
+        }
+        tank_medium = {
+            x = 2
+            y = 1
+        }
+        tank_medium = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_TANK_MEDIUM
+    priority = 8
+}

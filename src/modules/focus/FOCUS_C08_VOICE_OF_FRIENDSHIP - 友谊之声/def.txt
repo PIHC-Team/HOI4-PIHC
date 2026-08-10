@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C08_VOICE_OF_FRIENDSHIP
+	icon = GFX_FOCUS_C08_VOICE_OF_FRIENDSHIP_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_LOYAL_ALLIES
+	}
+	cost = 2
+	completion_reward = {
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_VIOCE_OF_FRIENDSHIP
+		custom_effect_tooltip = FOCUS_C08_VOICE_OF_FRIENDSHIP_TOOLTIP
+		country_event = {
+			id = C08_MAIN.33
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 12
+	y = 5
+}

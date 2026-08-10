@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C09_PRESERVATION_PLAN
+	icon = GFX_FOCUS_C09_PRESERVATION_PLAN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_TERM_EXCHANGE_2
+	}
+	cost = 5
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 150
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 2
+}

@@ -1,0 +1,13 @@
+DECISION_CATEGORY_C11_STARVATION = {
+    icon = C11_STARVATION
+    picture = GFX_decision_category_picture
+    priority = 30000
+    allowed = {
+        tag = C11
+    }
+    visible = {
+        NOT = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C11_CIVIL_WAR
+        }
+    }
+}

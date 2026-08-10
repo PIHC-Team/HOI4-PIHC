@@ -1,0 +1,31 @@
+state = {
+    id = 201
+    name = STATE_201
+    provinces = {
+        1406
+        6397
+        7906
+        8556
+        9757
+        14197
+        14235
+        14311
+    }
+    manpower = 2259
+    state_category = pastoral
+    history = {
+        owner = C18
+        victory_points = {
+            1406
+            1
+        }
+        buildings = {
+
+        }
+        add_core_of = C18
+    }
+    resources = {
+        steel = 1
+        chromium = 1
+    }
+}

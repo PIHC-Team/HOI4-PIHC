@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C08_CRYSTAL_AND_SNOW
+	icon = GFX_FOCUS_C08_CRYSTAL_AND_SNOW_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_STARLIGHT_RADIO
+	}
+	cost = 1
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_CRYSTAL_AND_SNOW_TOOLTIP
+		country_event = {
+			id = C08_MAIN.34
+			days = 1
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_REPORT_13A0A
+		set_country_flag = PIHC_COUNTRY_FLAG_C08_PARLIAMENT
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 4
+}

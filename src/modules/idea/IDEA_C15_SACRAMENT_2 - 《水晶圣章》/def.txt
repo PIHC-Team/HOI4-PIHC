@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C15_SACRAMENT_2 = {
+			picture = C15_SACRAMENT_2
+			removal_cost = -1
+			modifier = {
+				despotic_drift = 0.04
+				monthly_population = 0.08
+				stability_factor = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

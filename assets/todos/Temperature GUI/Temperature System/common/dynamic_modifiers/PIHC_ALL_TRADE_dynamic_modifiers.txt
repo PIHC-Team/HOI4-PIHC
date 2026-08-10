@@ -1,0 +1,18 @@
+PIHC_ERA_COLD_DYNAMIC_MODIFIER = {
+    country_resource_cost_coal = THIS.PIHC_var_country_modifier_cost_coal
+    country_resource_cost_logs = THIS.PIHC_var_country_modifier_cost_logs
+    civilian_factory_use = THIS.PIHC_var_country_modifier_cost_civ
+}
+PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER = {
+    country_resource_cost_coal = THIS.PIHC_var_state_subsidies_cost_coal
+    country_resource_cost_logs = THIS.PIHC_var_state_subsidies_cost_logs
+}
+PIHC_state_temperature_DYNAMIC_MODIFIER = {
+    supply_factor = THIS.PIHC_var_state_supply_factor
+    local_manpower = THIS.PIHC_var_state_local_manpower
+}
+PIHC_average_temperature_DYNAMIC_MODIFIER = {
+    monthly_population = THIS.PIHC_var_country_monthly_population
+    winter_attrition_factor = THIS.PIHC_var_country_winter_attrition_factor
+    acclimatization_cold_climate_gain_factor = THIS.PIHC_var_country_cold_gain_factor
+}

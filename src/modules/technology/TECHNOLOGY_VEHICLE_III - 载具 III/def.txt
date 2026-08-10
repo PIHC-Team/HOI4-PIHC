@@ -1,0 +1,30 @@
+technologies = {
+    TECHNOLOGY_VEHICLE_III = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 10
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_vehicle
+        }
+        enable_equipments = {
+            EQUIPMENT_VEHICLE_STEAM
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_VEHICLE_IV
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

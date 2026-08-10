@@ -1,0 +1,36 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_CRYSTAL_VOWS
+	icon = GFX_FOCUS_C15_SOMBRA_CRYSTAL_VOWS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_CRYSTAL_CABINATE
+	}
+	cost = 4
+	completion_reward = {
+		CHARACTER_KING_SOMBRA = {
+			add_trait = {
+				ideology = transcendence_deity
+				trait = TRAIT_KING_SOMBRA_VOWED_LEADER
+			}
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 5
+}

@@ -1,0 +1,97 @@
+INIT_CMC_SYSTEM = {
+	C01 = {
+		every_owned_state = {
+			set_variable = {
+				var = VAR_C01_CMC_UPRISE_VALUE
+				value = 0
+			}
+		}
+		487 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_HAS_SITE
+		}
+		459 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_HAS_SITE
+		}
+		542 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_HAS_SITE
+		}
+		466 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		480 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		474 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		440 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		496 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		422 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		462 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		367 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		443 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		246 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		489 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		63 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		363 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		397 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		439 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		434 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		83 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_RURAL
+		}
+		357 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		374 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		380 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		423 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		646 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		399 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		431 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		24 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+		274 = {
+			set_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+		}
+	}
+}

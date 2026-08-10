@@ -1,0 +1,10 @@
+targeted_sabotage_burn_storage = {
+	name = targeted_sabotage_burn_storage
+	desc = targeted_sabotage_burn_storage_desc
+	outcome = targeted_sabotage_burn_storage_outcome
+	picture = GFX_phase_targeted_sabotage_burn_storage
+	icon = GFX_phase_targeted_sabotage_burn_storage_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 250
+	}
+}

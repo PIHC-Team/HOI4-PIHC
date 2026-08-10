@@ -1,0 +1,22 @@
+on_actions = {
+	on_monthly_C12 = {
+		effect = {
+			if = {
+				limit = {
+					has_tech = TECHNOLOGY_TECH_COMM_II
+					641 = {
+						is_owned_and_controlled_by = C12
+						OR = {
+							radar_station > 0
+							any_neighbor_state = {
+								is_owned_and_controlled_by = C12
+								radar_station > 0
+							}
+						}
+					}
+				}
+				country_event = C12_MAIN.31
+			}
+		}
+	}
+}

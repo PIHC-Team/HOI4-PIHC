@@ -1,0 +1,46 @@
+pihc_land_tide_of_iron_combat_support_b = {
+	track = combat_support
+	name = DOCTRINE_ARMY_0_3B_WHOLESALE
+	description = DOCTRINE_ARMY_0_3B_WHOLESALE_DESC
+	icon = GFX_doctrine_pihc_land_tide_of_iron_combat_support_b_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_infantry_automata = {
+		defense = 0.05
+		soft_attack = 0.15
+		hard_attack = 0.05
+		max_strength = 0.15
+		max_organisation = 4.0
+	}
+	enable_tactic = tactic_pihc_drones_attack
+	rewards = {
+		autonomous = {
+			category_infantry_automata = {
+				supply_consumption = -0.1
+			}
+			coordination_bonus = 0.04
+			initiative_factor = 0.15
+			org_loss_when_moving = -0.15
+		}
+		empty_battle = {
+			infantry_automata = {
+				combat_width = -0.2
+				casualty_trickleback = 0.04
+			}
+			attrition = -0.1
+			enable_tactic = tactic_guerrilla_tactics
+		}
+	}
+}

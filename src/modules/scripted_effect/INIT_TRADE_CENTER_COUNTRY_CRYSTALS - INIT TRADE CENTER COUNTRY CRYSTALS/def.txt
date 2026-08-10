@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_CRYSTALS = {
+	ENABLE_AUTO_TRADE_CRYSTALS_BUY = yes
+	ENABLE_AUTO_TRADE_CRYSTALS_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_COST
+		value = 0
+	}
+}

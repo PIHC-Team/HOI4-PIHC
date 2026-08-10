@@ -1,0 +1,28 @@
+pihc_air_open_sky_medium_aircraft_a = {
+	track = medium_aircraft
+	name = DOCTRINE_AIR_0_5A_AUTOMATA
+	description = DOCTRINE_AIR_0_5A_AUTOMATA_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_medium_aircraft_a_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		automata = {
+			air_attack_factor = 0.05
+			category_infantry_automata = {
+				air_attack = 5.0
+			}
+		}
+	}
+}

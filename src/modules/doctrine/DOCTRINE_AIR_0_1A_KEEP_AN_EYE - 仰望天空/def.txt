@@ -1,0 +1,33 @@
+pihc_air_open_sky_fighter_aircraft_a = {
+	track = fighter_aircraft
+	name = DOCTRINE_AIR_0_1A_KEEP_AN_EYE
+	description = DOCTRINE_AIR_0_1A_KEEP_AN_EYE_DESC
+	icon = GFX_doctrine_pihc_air_open_sky_fighter_aircraft_a_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	air_superiority_detect_factor = 0.15
+	air_interception_detect_factor = 0.15
+	rewards = {
+		peaceful_sky = {
+			air_accidents_factor = -0.15
+			air_escort_efficiency = 0.1
+			air_fuel_consumption_factor = -0.2
+		}
+		fall = {
+			static_anti_air_damage_factor = 0.25
+			production_speed_anti_air_building_factor = 0.5
+		}
+	}
+}

@@ -1,0 +1,8 @@
+is_allied_seller_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = subsidy_allied_nation_tt
+		FROM = {
+			is_in_faction_with = ROOT
+		}
+	}
+}

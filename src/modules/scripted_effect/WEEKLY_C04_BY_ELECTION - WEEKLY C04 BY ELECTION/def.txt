@@ -1,0 +1,39 @@
+WEEKLY_C04_BY_ELECTION = {
+	set_temp_variable = {
+		support = party_popularity@democratic
+	}
+	add_to_temp_variable = {
+		support = party_popularity@harmonicism
+	}
+	multiply_temp_variable = {
+		support = C04.VAR_BY_ELECTION_POPULARITY_WEIGHT
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_SKY_STINGER_SUPPORT = support
+	}
+	set_temp_variable = {
+		support = party_popularity@fascism
+	}
+	add_to_temp_variable = {
+		support = party_popularity@anarchy
+	}
+	multiply_temp_variable = {
+		support = C04.VAR_BY_ELECTION_POPULARITY_WEIGHT
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_WASHOUTS_SUPPORT = support
+	}
+	set_temp_variable = {
+		support = party_popularity@corporation
+	}
+	add_to_temp_variable = {
+		support = party_popularity@despotic
+	}
+	multiply_temp_variable = {
+		support = C04.VAR_BY_ELECTION_POPULARITY_WEIGHT
+	}
+	add_to_variable = {
+		C04.VAR_BY_ELECTION_WIND_RIDER_SUPPORT = support
+	}
+	COMPUTE_C04_BY_ELECTION = yes
+}

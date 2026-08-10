@@ -1,0 +1,41 @@
+characters = {
+    CHARACTER_SURI_POLOMARE = {
+        name = CHARACTER_SURI_POLOMARE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SURI_POLOMARE.dds"
+                small = "gfx/leaders/CHARACTER_SURI_POLOMARE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SURI_POLOMARE_army.dds"
+                small = "gfx/leaders/CHARACTER_SURI_POLOMARE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SURI_POLOMARE_navy.dds"
+                small = "gfx/leaders/CHARACTER_SURI_POLOMARE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_SURI_POLOMARE
+            desc = CHARACTER_SURI_POLOMARE_DESC
+            traits = {
+                TRAIT_CORRUPT
+                TRAIT_PRINCE_OF_TERROR
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 100
+            removal_cost = -1
+            slot = political_advisor
+        }
+        country_leader = {
+            desc = CHARACTER_SURI_POLOMARE_DESC
+            traits = {
+                TRAIT_CORRUPT
+                TRAIT_PRINCE_OF_TERROR
+            }
+            ideology = corporation_oligarchy
+        }
+    }
+}

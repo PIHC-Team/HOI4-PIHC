@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_NIGHTINGALE = {
+        name = CHARACTER_NIGHTINGALE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_NIGHTINGALE.dds"
+                small = "gfx/leaders/CHARACTER_NIGHTINGALE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_NIGHTINGALE_army.dds"
+                small = "gfx/leaders/CHARACTER_NIGHTINGALE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_NIGHTINGALE_navy.dds"
+                small = "gfx/leaders/CHARACTER_NIGHTINGALE_navy_small.dds"
+            }
+        }
+        gender = female
+        field_marshal = {
+            skill = 4
+            attack_skill = 6
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

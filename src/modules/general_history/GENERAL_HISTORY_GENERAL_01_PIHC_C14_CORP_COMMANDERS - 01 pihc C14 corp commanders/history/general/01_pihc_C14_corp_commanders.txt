@@ -1,0 +1,111 @@
+C14 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_000
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 4
+                    planning_skill = 1
+                    logistics_skill = 1
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_000
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 4
+                    planning_skill = 1
+                    logistics_skill = 1
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = female
+            }
+        }
+    }
+}
+C14 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_001
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 4
+                    logistics_skill = 1
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_001
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 4
+                    logistics_skill = 1
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = female
+            }
+        }
+    }
+}
+C14 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_002
+                corps_commander = {
+                    attack_skill = 3
+                    defense_skill = 2
+                    planning_skill = 1
+                    logistics_skill = 3
+                    skill = 3
+                    traits = {
+
+                    }
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C14_01_002
+                corps_commander = {
+                    attack_skill = 3
+                    defense_skill = 2
+                    planning_skill = 1
+                    logistics_skill = 3
+                    skill = 3
+                    traits = {
+
+                    }
+                }
+                gender = female
+            }
+        }
+    }
+}

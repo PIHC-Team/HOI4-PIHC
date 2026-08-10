@@ -1,0 +1,45 @@
+technologies = {
+    TECHNOLOGY_TANK_TITAN_SSCS6000M = {
+        folder = {
+            name = armour_folder
+            position = {
+                x = 6
+                y = 21
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_TANK_TITAN_SSCS6000M
+        }
+        enable_subunits = {
+            titan
+        }
+        dependencies = {
+            TECHNOLOGY_TECH_ENER_III = 1
+        }
+        allow = {
+            if = {
+                limit = {
+                    has_dlc = "No Step Back"
+                }
+                has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+            }
+            else = {
+                has_tech = TECHNOLOGY_TANK_HEAVY_MODERN
+            }
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = titan
+            }
+        }
+        research_cost = 6.0
+        start_year = 1007
+    }
+}

@@ -1,0 +1,47 @@
+DECISION_CATEGORY_C15_PARLIAMENT = {
+    DECISION_C15_C11_FORMAL_PROTEST = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 75
+        days_remove = 7
+        days_re_enable = 60
+        visible = {
+            tag = C11
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C15_C11_FORMAL_PROTEST_LESS_THAN_80_TOOLTIP
+                C15 = {
+                    check_variable = {
+                        var = parliament_seat_array^4
+                        compare = less_than
+                        value = 80
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        remove_effect = {
+            C15 = {
+                add_popularity = {
+                    ideology = fascism
+                    popularity = 0.017
+                }
+                C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = yes
+            }
+        }
+        ai_will_do = {
+            base = 40
+        }
+    }
+}

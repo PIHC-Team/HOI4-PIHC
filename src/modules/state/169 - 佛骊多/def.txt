@@ -1,0 +1,47 @@
+state = {
+    id = 169
+    name = STATE_169
+    provinces = {
+        864
+        1695
+        4421
+        4482
+        4986
+        6856
+        7158
+        8646
+        9043
+        13646
+        13664
+        13711
+        13760
+        13777
+        13811
+        13845
+    }
+    manpower = 60724
+    state_category = large_town
+    history = {
+        owner = C13
+        buildings = {
+            infrastructure = 4
+            dockyard = 3
+            4482 = {
+                naval_base = 2
+            }
+            13760 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C13
+        victory_points = {
+            13760
+            35
+        }
+    }
+    resources = {
+        aluminium = 16
+        chromium = 16
+        logs = 6
+    }
+}

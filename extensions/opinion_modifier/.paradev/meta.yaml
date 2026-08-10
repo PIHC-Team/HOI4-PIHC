@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/opinion_modifier
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-opinion-modifier
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-opinion-modifier
+    name: PIHC3 Opinion Modifier Compiler
+    desc: Registry-backed source slots and compiler hooks for opinion modifiers.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: opinion-modifiers
+            title: Opinion Modifiers
+            group: country
+            title_key: modules.opinionModifiers.title
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-d679718501d91789
+    name: PIHC3 Basic Opinion Modifier
+    desc: PIHC3 authoring template pihc3:opinion_modifier/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:opinion_modifier/basic
+            declaration:
+                title: PIHC3 Basic Opinion Modifier
+                family: opinion_modifier
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    value:
+                        default: '25'
+                    decay:
+                        default: '1'
+                    language:
+                        default: en
+                files:
+                    def.txt: "opinion_modifiers = {{\n\t{object_id} = {{\n\t\tvalue\
+                        \ = {value}\n\t\tdecay = {decay}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '

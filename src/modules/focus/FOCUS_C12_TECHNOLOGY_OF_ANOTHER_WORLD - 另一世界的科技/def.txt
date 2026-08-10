@@ -1,0 +1,44 @@
+focus = {
+	id = FOCUS_C12_TECHNOLOGY_OF_ANOTHER_WORLD
+	icon = GFX_FOCUS_C12_TECHNOLOGY_OF_ANOTHER_WORLD_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_LARGER_BEASTS
+	}
+	cost = 4
+	completion_reward = {
+		steal_random_tech_bonus = {
+			category = pihc_military
+			ahead_reduction = 0.9
+			bonus = 1.2
+			base_bonus = 1.1
+			dynamic = yes
+			name = TECHNOLOGY_OF_ANOTHER_WORLD
+			target = C23
+			uses = 5
+		}
+	}
+	available = {
+		is_in_faction_with = C23
+		C23 = {
+			OR = {
+				has_government = harmonicism
+				has_government = democratic
+				has_government = equatism
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 16
+}

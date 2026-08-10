@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_ALL_EUREKA = {
+			picture = ALL_EUREKA
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

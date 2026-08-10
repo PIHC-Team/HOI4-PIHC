@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C02 = {
+				country_event = {
+					id = C02_HOTLINE.19
+					days = 487
+					random_days = 91
+				}
+			}
+		}
+	}
+}

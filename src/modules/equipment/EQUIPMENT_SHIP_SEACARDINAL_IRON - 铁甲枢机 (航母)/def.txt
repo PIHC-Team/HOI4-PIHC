@@ -1,0 +1,95 @@
+equipments = {
+	EQUIPMENT_SHIP_SEACARDINAL_IRON = {
+		archetype = ship_hull_carrier
+		priority = 1001
+		visual_level = 0
+		build_cost_ic = 4500
+		reliability = 0.8
+		armor_value = 40
+		max_strength = 325
+		naval_speed = 26
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 0
+		anti_air_attack = 2
+		surface_detection = 10
+		sub_detection = 5
+		surface_visibility = 30
+		naval_range = 4000
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					ship_deck_space
+				}
+			}
+			fixed_ship_deck_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+				}
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_radar
+				}
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					carrier_ship_engine
+				}
+			}
+			fixed_ship_secondaries_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruiser_armor
+				}
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_secondaries
+					ship_dp_secondaries
+					ship_anti_air
+				}
+			}
+		}
+		default_modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_anti_air_4
+		}
+		picture = EQUIPMENT_SHIP_SEACARDINAL_IRON
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_SHIP_SEACARDINAL
+		carrier_size = 6
+		resources = {
+			steel = 6
+			coal = 4
+		}
+		manpower = 8
+	}
+}

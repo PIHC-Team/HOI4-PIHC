@@ -1,0 +1,651 @@
+defined_text = {
+    name = GetInventoryItemPicture
+    text = {
+        trigger = {
+            check_variable = {
+                v = 0
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_DEFAULT
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 1
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_STAFF_OF_SACANAS
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 2
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_OBSIDIAN_ORB
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 3
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_MEMORY_STONE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 4
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_POWER_PONIES_COMIC_BOOK
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 5
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_KEY_OF_UNFETTERED_ENTRANCE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 6
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_TRUTH_TALISMAN_OF_TONATIUH
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 7
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_TIME_TWIRLER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 8
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_ENCHANTED_SMARTPHONE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 9
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_ALICORN_AMULET
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 10
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_STAR_SWIRLS_TIME_TRAVEL_SPELL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 11
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_RINGS_OF_SCORCHERO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 12
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_AMULET_OF_AURORA
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 13
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_TALISMAN_OF_MIRAGE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 14
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_HELM_OF_YKSLER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 15
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_CROWN_OF_GROVER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 16
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_KNUCKERBOCKERS_SHELL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 17
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_CLOVER_THE_CLEVERS_CLOAK
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 18
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_SONIC_SCREWDRIVER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 19
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_DIAMOND_OF_LAPIS_LUX
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 20
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_SOMNAMBULA_GLOWPAZ
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 21
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_ARTIFACT_BOOK_OF_MANIFESTATION
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 100
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 101
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C15_BLOOD_CRYSTAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 102
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C02_DERPY_LOVE_LETTER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 103
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C02_FILTHY_RICH_BRIBERY
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 104
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 105
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 106
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_WETM_BLUEPRINT
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 107
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_WETM_DEV_BONDS
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 108
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C03_MUFFIN
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 109
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C08_BLUNDERBUSS
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 110
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C08_PIN
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 111
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C02_PIN
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 112
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C01_LOCKET
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 113
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_BIG_BUCKS_DIARY
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 114
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C01_REPORT_RABID_RHODODENDRONS
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 115
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C01_REPORT_FUEL_SILO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 116
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 117
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 118
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_PERFUME_WAREHOUSE_MANAGER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 119
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_PERFUME_SALESPONY
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 120
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_REPLY
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 121
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 122
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_GLADMANE_CAMERA
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 123
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C08_STARLIGHT_RADIO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 124
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C23_SUNSET_RADIO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 125
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C05_DISCORD_RADIO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 126
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 127
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_PIN_GAME_2_CODEBOOK
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 128
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_2UN_C02_PIANO_KEY
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 129
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C01_CROWN_IN_MUD
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 130
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 131
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C02_REPORT_FUEL_SILO
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 132
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C08_PIN_GAME_3_CODEBOOK
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 133
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C18_RAIN_SHINE_FOALS_BREATH
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 134
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C18_CURE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 135
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 136
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 137
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 138
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 139
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 140
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 141
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_BEI_MING_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 142
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_YIN_YUN_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 143
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_HUA_HAI_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 144
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_LOG_I
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 145
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_LOG_II
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 146
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_LOG_III
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 147
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 148
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C18_PUNJAB_PICTURE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 149
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 150
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_4EP_C04_WASHOUTS_PROFILE
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 151
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 152
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C04_MUFFIN_1
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 153
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C04_MUFFIN_2
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 154
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C04_MUFFIN_3
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 155
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C04_MUFFIN_4
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 156
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_C04_MUFFIN_5
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 157
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                v = 158
+            }
+        }
+        localization_key = GFX_INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_II
+    }
+}

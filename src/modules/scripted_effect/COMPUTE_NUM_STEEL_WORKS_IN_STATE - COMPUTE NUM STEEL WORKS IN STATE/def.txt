@@ -1,0 +1,33 @@
+COMPUTE_NUM_STEEL_WORKS_IN_STATE = {
+	set_variable = {
+		var = VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE
+		value = 0
+	}
+	if = {
+		limit = {
+			steel_works > 0
+		}
+		add_to_variable = {
+			var = VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			steel_works > 1
+		}
+		add_to_variable = {
+			var = VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			steel_works > 2
+		}
+		add_to_variable = {
+			var = VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+}

@@ -1,0 +1,7 @@
+on_actions = {
+	on_weekly_C15 = {
+		effect = {
+			C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = yes
+		}
+	}
+}

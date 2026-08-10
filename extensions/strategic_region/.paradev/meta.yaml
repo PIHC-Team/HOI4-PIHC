@@ -1,0 +1,126 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/strategic_region
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-strategic-region
+items:
+-   kind: entity
+    identifier: pihc3-strategic-region-module
+    name: PIHC3 Strategic Region Module
+    desc: Project-owned strategic_region source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3StrategicRegionModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-strategic-region
+    name: PIHC3 Strategic Region
+    desc: PIHC3 strategic_region module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-strategic-region-module
+        definition:
+            identifier: pihc3-strategic-region
+            name: PIHC3 Strategic Region
+            version: 0.2.3
+            desc: PIHC3 strategic_region module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-strategic-region-module
+            meta:
+                project: PIHC3
+                family: strategic_region
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-strategic-region
+    name: PIHC3 Strategic Region Compiler
+    desc: Registry-backed source slots and compiler hooks for strategic_region.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: strategic-regions
+            title: Strategic Regions
+            group: world
+            title_key: modules.strategicRegions.title
+        dependencies:
+        - extension:pihc3-strategic-region
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-f0d4f2539996f13b
+    name: PIHC3 Basic Strategic Region
+    desc: PIHC3 authoring template pihc3:strategic_region/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:strategic_region/basic
+            declaration:
+                title: PIHC3 Basic Strategic Region
+                family: strategic_region
+                args:
+                    title:
+                        required: true
+                    province_ids:
+                        default: '1'
+                    temperature_min:
+                        default: '0.0'
+                    temperature_max:
+                        default: '30.0'
+                    no_phenomenon:
+                        default: '1.000'
+                    rain_light:
+                        default: '0.000'
+                    rain_heavy:
+                        default: '0.000'
+                    snow:
+                        default: '0.000'
+                    blizzard:
+                        default: '0.000'
+                    arctic_water:
+                        default: '0.000'
+                    mud:
+                        default: '0.000'
+                    sandstorm:
+                        default: '0.000'
+                    min_snow_level:
+                        default: '0.000'
+                    language:
+                        default: en
+                files:
+                    def.txt: "strategic_region={{\n\tid={object_id}\n\tname=STRATEGICREGION_{object_id}\
+                        \n\tprovinces={{\n\t\t{province_ids}\n\t}}\n\tweather={{\n\
+                        \t\tperiod={{\n\t\t\tbetween={{ 0.0 30.11 }}\n\t\t\ttemperature={{\
+                        \ {temperature_min} {temperature_max} }}\n\t\t\tno_phenomenon={no_phenomenon}\n\
+                        \t\t\train_light={rain_light}\n\t\t\train_heavy={rain_heavy}\n\
+                        \t\t\tsnow={snow}\n\t\t\tblizzard={blizzard}\n\t\t\tarctic_water={arctic_water}\n\
+                        \t\t\tmud={mud}\n\t\t\tsandstorm={sandstorm}\n\t\t\tmin_snow_level={min_snow_level}\n\
+                        \t\t}}\n\t}}\n}}\n"
+                    main.loc: '[{language}.STRATEGICREGION_{object_id}]
+
+                        {title}
+
+                        '
+                directory: '{object_id} - {title}'

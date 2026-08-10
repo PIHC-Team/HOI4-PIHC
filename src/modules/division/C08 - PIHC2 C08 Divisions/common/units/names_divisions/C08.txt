@@ -1,0 +1,146 @@
+NAMES_GROUP_C08_ARTILLERY = {
+    name = "火炮解放师 (Artillery Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮解放师%d师 (Artillery Liberation Division %d)"
+}
+NAMES_GROUP_C08_TANK_LIGHT = {
+    name = "轻型装甲解放师 (Light Armor Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲解放师%d师 (Light Armor Liberation Division %d)"
+}
+NAMES_GROUP_C08_TRADITIONAL_REGULAR = {
+    name = "常规步兵解放师 (Regular Infantry Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵解放师%d师 (Regular Infantry Liberation Division %d)"
+}
+NAMES_GROUP_C08_TANK_HEAVY = {
+    name = "重型装甲解放师 (Heavy Armor Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲解放师%d师 (Heavy Armor Liberation Division %d)"
+}
+NAMES_GROUP_C08_TRADITIONAL_SMALL = {
+    name = "小型步兵解放师 (Small Infantry Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵解放师%d师 (Small Infantry Liberation Division %d)"
+}
+NAMES_GROUP_C08_AUTOMATA = {
+    name = "自动作战解放师 (Automata Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战解放师%d师 (Automata Liberation Division %d)"
+}
+NAMES_GROUP_C08_SHIELD = {
+    name = "重装步兵解放师 (Heavy Infantry Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵解放师%d师 (Heavy Infantry Liberation Division %d)"
+}
+NAMES_GROUP_C08_MAGICAL = {
+    name = "魔法步兵解放师 (Magical Infantry Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵解放师%d师 (Magical Infantry Liberation Division %d)"
+}
+NAMES_GROUP_C08_INFANTRY_MIX = {
+    name = "协同解放师 (Concerted Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同解放师%d师 (Concerted Liberation Division %d)"
+}
+NAMES_GROUP_C08_MOTORIZED = {
+    name = "机动步兵解放师 (Motorized Infantry Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵解放师%d师 (Motorized Infantry Liberation Division %d)"
+}
+NAMES_GROUP_C08_TANK_MEDIUM = {
+    name = "中型装甲解放师 (Medium Armor Liberation Division)"
+    for_countries = {
+        C08
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲解放师%d师 (Medium Armor Liberation Division %d)"
+}

@@ -1,0 +1,13 @@
+spriteTypes = {
+	progressbartype = {
+		name = "pihc_state_temperature_progress"
+		textureFile1 = "gfx/interface/PIHC_state_temperature/progress_red.png"
+		textureFile2 = "gfx/interface/PIHC_state_temperature/progress_bar_frame.png"
+		size = {
+			x = 21
+			y = 160
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+}

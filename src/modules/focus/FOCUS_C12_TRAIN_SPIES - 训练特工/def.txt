@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C12_TRAIN_SPIES
+	icon = GFX_FOCUS_C12_TRAIN_SPIES_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_DISASSEMBLE_FIREARMS
+	}
+	cost = 4
+	completion_reward = {
+		create_intelligence_agency = {
+			name = R.O.C.K
+			icon = GFX_intelligence_agency_logo_agency
+		}
+	}
+	bypass = {
+		has_intelligence_agency = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 24
+	y = 10
+}

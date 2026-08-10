@@ -1,0 +1,29 @@
+characters = {
+    CHARACTER_LORD_TIREK = {
+        name = CHARACTER_LORD_TIREK_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LORD_TIREK.dds"
+                small = "gfx/leaders/CHARACTER_LORD_TIREK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LORD_TIREK_army.dds"
+                small = "gfx/leaders/CHARACTER_LORD_TIREK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LORD_TIREK_navy.dds"
+                small = "gfx/leaders/CHARACTER_LORD_TIREK_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_LORD_TIREK_DESC
+            traits = {
+                TRAIT_LORD_TIREK_DOMINANT_POWER
+                TRAIT_LORD_TIREK_STUBBORNNESS_AND_IGNORANCE
+                TRAIT_POLITICAL_IDIOT
+            }
+            ideology = transcendence_spirit
+        }
+    }
+}

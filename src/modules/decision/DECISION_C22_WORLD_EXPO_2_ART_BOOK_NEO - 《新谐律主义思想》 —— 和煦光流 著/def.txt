@@ -1,0 +1,28 @@
+DECISION_CATEGORY_C22_WORLD_EXPO = {
+    DECISION_C22_WORLD_EXPO_2_ART_BOOK_NEO = {
+        fixed_random_seed = no
+        priority = 797
+        visible = {
+            OR = {
+                check_variable = {
+                    VAR_PIHC_WORLD_EXPO_VENUE = 2
+                }
+                check_variable = {
+                    VAR_PIHC_WORLD_EXPO_VENUE = 4
+                }
+            }
+        }
+        available = {
+            always = yes
+        }
+        complete_effect = {
+            country_event = {
+                id = C22_MAIN.9
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C22_WORLD_EXPO_2_ART_BOOK_NEO
+    }
+}

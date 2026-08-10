@@ -1,0 +1,93 @@
+ideas = {
+	IDEA_CATEGORY_ERA_HUNGER = {
+		law = yes
+		use_list_view = yes
+		IDEA_ERA_HUNGER_1_NONEED = {
+			picture = ERA_HUNGER_1_NONEED
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = PIHC_HUNGER_TOOLTIP
+			}
+			available = {
+				is_magical_creatures = yes
+			}
+			cost = 30
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 5
+		}
+		IDEA_ERA_HUNGER_2_FULL = {
+			picture = ERA_HUNGER_2_FULL
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				custom_modifier_tooltip = PIHC_HUNGER_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 30
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 4
+		}
+		IDEA_ERA_HUNGER_3_NORMAL = {
+			picture = ERA_HUNGER_3_NORMAL
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				custom_modifier_tooltip = PIHC_HUNGER_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 30
+			default = yes
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 3
+		}
+		IDEA_ERA_HUNGER_4_HUNGER = {
+			picture = ERA_HUNGER_4_HUNGER
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.05
+				stability_factor = -0.12
+				custom_modifier_tooltip = PIHC_HUNGER_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 30
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 2
+		}
+		IDEA_ERA_HUNGER_5_FAMINE = {
+			picture = ERA_HUNGER_5_FAMINE
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.3
+				stability_factor = -0.25
+				custom_modifier_tooltip = PIHC_HUNGER_TOOLTIP
+			}
+			available = {
+				always = yes
+			}
+			cost = 30
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 1
+		}
+	}
+}

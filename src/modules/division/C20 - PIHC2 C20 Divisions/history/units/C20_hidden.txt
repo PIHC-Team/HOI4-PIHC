@@ -1,0 +1,92 @@
+division_template = {
+    name = "龙族重型装甲师 (Dragon Heavy Armor Division)"
+    regiments = {
+        tank_heavy = {
+            x = 0
+            y = 0
+        }
+        tank_heavy = {
+            x = 0
+            y = 1
+        }
+        tank_heavy = {
+            x = 0
+            y = 2
+        }
+        tank_heavy = {
+            x = 1
+            y = 0
+        }
+        tank_heavy = {
+            x = 1
+            y = 1
+        }
+        tank_heavy = {
+            x = 1
+            y = 2
+        }
+        tank_heavy = {
+            x = 2
+            y = 0
+        }
+        tank_heavy = {
+            x = 2
+            y = 1
+        }
+        tank_heavy = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_TANK_HEAVY
+    priority = 9
+}
+division_template = {
+    name = "龙族中型装甲师 (Dragon Medium Armor Division)"
+    regiments = {
+        tank_medium = {
+            x = 0
+            y = 0
+        }
+        tank_medium = {
+            x = 0
+            y = 1
+        }
+        tank_medium = {
+            x = 0
+            y = 2
+        }
+        tank_medium = {
+            x = 1
+            y = 0
+        }
+        tank_medium = {
+            x = 1
+            y = 1
+        }
+        tank_medium = {
+            x = 1
+            y = 2
+        }
+        tank_medium = {
+            x = 2
+            y = 0
+        }
+        tank_medium = {
+            x = 2
+            y = 1
+        }
+        tank_medium = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C20_TANK_MEDIUM
+    priority = 8
+}

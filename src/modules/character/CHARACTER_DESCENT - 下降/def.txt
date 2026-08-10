@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_DESCENT = {
+        name = CHARACTER_DESCENT_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DESCENT.dds"
+                small = "gfx/leaders/CHARACTER_DESCENT_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DESCENT_army.dds"
+                small = "gfx/leaders/CHARACTER_DESCENT_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DESCENT_navy.dds"
+                small = "gfx/leaders/CHARACTER_DESCENT_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

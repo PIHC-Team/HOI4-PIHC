@@ -1,0 +1,13 @@
+resistance_support_organize_training = {
+	name = resistance_support_organize_training
+	desc = resistance_support_organize_training_desc
+	outcome = resistance_support_organize_training_outcome
+	picture = GFX_phase_resistance_support_organize_training
+	icon = GFX_phase_resistance_support_organize_training_small
+	equipment = {
+		civilian_factories = {
+			amount = 2
+			days = 45
+		}
+	}
+}

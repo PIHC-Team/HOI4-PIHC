@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C12_EARTH_PONY_MAGIC
+	icon = GFX_FOCUS_C12_EARTH_PONY_MAGIC_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_MUDBRIARS_BREEDING
+	}
+	cost = 4
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = IDEA_C12_AMMUNITION_BOTANY_1
+			add_idea = IDEA_C12_AMMUNITION_BOTANY_2
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 26
+	y = 12
+}

@@ -1,0 +1,20 @@
+PIHC_C08_PIN_GAME_1_INIT = {
+	hidden_effect = {
+		C08 = {
+			clr_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT
+			clr_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INITIALIZED
+					}
+				}
+				PIHC_C08_PIN_GAME_1_CREATE_CODE_TABLE = yes
+			}
+			PIHC_C08_PIN_GAME_1_GET_A_PUZZLE_ARRAY = yes
+			PIHC_C08_PIN_GAME_1_CREATE_PUZZLE_DECISIONS = yes
+			clear_array = C08.ARRAY_C08_PIN_GAME_1_ANSWERS
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_READY
+		}
+	}
+}

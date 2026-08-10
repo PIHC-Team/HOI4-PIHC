@@ -1,0 +1,36 @@
+technologies = {
+    TECHNOLOGY_BBA_AIR_CLOUDSHIP = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 0
+                y = 6
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        enable_equipments = {
+            EQUIPMENT_AIR_TRANSPORT_CLOUDSHIP
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            base = 40
+            modifier = {
+                factor = 1000
+                tag = C07
+            }
+        }
+        research_cost = 3.0
+        start_year = 1002
+    }
+}

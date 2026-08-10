@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_TROUBLE_SHOES = {
+        name = CHARACTER_TROUBLE_SHOES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_TROUBLE_SHOES.dds"
+                small = "gfx/leaders/CHARACTER_TROUBLE_SHOES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_TROUBLE_SHOES_army.dds"
+                small = "gfx/leaders/CHARACTER_TROUBLE_SHOES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_TROUBLE_SHOES_navy.dds"
+                small = "gfx/leaders/CHARACTER_TROUBLE_SHOES_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_TROUBLE_SHOES
+            desc = CHARACTER_TROUBLE_SHOES_DESC
+            traits = {
+                TRAIT_HORSESHOE_UNLUCKY
+                TRAIT_HORSESHOE_JOKER
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 100
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

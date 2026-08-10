@@ -1,0 +1,259 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_country_selection_screen_blocker
+        textureFile = "gfx/interface/country_selection_screen_blocker.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+    spriteType = {
+        name = GFX_country_selection_screen_blocker_big
+        textureFile = "gfx/interface/country_selection_screen_blocker_big.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+    spriteType = {
+        name = GFX_country_selection_new
+        textureFile = "gfx/interface/country_selection_new.dds"
+    }
+    spriteType = {
+        name = GFX_country_selection_new_big
+        textureFile = "gfx/interface/country_selection_new_big.dds"
+    }
+    spriteType = {
+        name = GFX_country_selection_alert
+        textureFile = "gfx/interface/country_selection_alert.dds"
+    }
+    spriteType = {
+        name = GFX_country_selection_alert_big
+        textureFile = "gfx/interface/country_selection_alert_big.dds"
+    }
+    spriteType = {
+        name = GFX_country_selection_rec_big
+        textureFile = "gfx/interface/country_selection_rec_big.dds"
+    }
+    spriteType = {
+        name = GFX_country_selection_frz_big
+        textureFile = "gfx/interface/country_selection_frz_big.dds"
+    }
+    SpriteType = {
+        name = GFX_country_selection_alert_shine
+        texturefile = "gfx/interface/country_selection_alert.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_alert.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = yes
+            animationtime = 1.5
+            animationdelay = 1
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_alert.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 1.5
+            animationdelay = 1
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        legacy_lazy_load = no
+        transparencecheck = yes
+    }
+    SpriteType = {
+        name = GFX_country_selection_alert_big_shine
+        texturefile = "gfx/interface/country_selection_alert_big.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_alert_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 2
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_alert_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 2
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        legacy_lazy_load = no
+        transparencecheck = yes
+    }
+    SpriteType = {
+        name = GFX_country_selection_new_shine
+        texturefile = "gfx/interface/country_selection_new.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_new.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_new.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        legacy_lazy_load = no
+        transparencecheck = yes
+    }
+    SpriteType = {
+        name = GFX_country_selection_new_big_shine
+        texturefile = "gfx/interface/country_selection_new_big.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_new_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_new_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        legacy_lazy_load = no
+        transparencecheck = yes
+    }
+    SpriteType = {
+        name = GFX_country_selection_rec_big_shine
+        texturefile = "gfx/interface/country_selection_rec_big.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_rec_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/country_selection_rec_big.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2
+            animationdelay = 0.75
+            animationblendmode = add
+            animationtype = pulsing
+            animationrotationoffset = {
+                x = 0.0
+                y = 0.0
+            }
+            animationtexturescale = {
+                x = 1.0
+                y = 1.0
+            }
+        }
+        legacy_lazy_load = no
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_PIHC_bookmark
+        textureFile = "gfx/interface/bookmarks/PIHC.dds"
+    }
+    spriteType = {
+        name = GFX_PIHC_DIE_NEBENWELT_bookmark
+        textureFile = "gfx/interface/bookmarks/DIE_NEBENWELT.dds"
+    }
+}

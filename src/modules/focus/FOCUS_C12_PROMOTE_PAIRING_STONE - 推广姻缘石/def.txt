@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C12_PROMOTE_PAIRING_STONE
+	icon = GFX_FOCUS_C12_PROMOTE_PAIRING_STONE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_EXPAND_ORE_TRADE
+		focus = FOCUS_C12_ADVANCED_PRODUCTION_METHODS
+	}
+	cost = 3
+	completion_reward = {
+		add_ideas = IDEA_C12_PAIRING_STONE
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 16
+}

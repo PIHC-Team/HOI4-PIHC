@@ -1,0 +1,33 @@
+technologies = {
+    TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 0
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+            pihc_air_atk
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_PLANE_WEAPON_AIRATK_5A_LIGHTNING
+        }
+        path = {
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        research_cost = 3.0
+        start_year = 1006
+    }
+}

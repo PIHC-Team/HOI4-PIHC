@@ -1,0 +1,28 @@
+DECISION_CATEGORY_RESEARCH_SPEEDUP = {
+    DECISION_RESEARCH_INFRASTRUCTURE = {
+        fixed_random_seed = no
+        priority = 98
+        visible = {
+            amount_research_slots < 6
+        }
+        available = {
+            amount_research_slots < 6
+        }
+        cost = 800
+        days_re_enable = 300
+        complete_effect = {
+            add_research_slot = 1
+        }
+        ai_will_do = {
+            base = 2
+            modifier = {
+                add = -2
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+        }
+        icon = RESEARCH_INFRASTRUCTURE
+    }
+}

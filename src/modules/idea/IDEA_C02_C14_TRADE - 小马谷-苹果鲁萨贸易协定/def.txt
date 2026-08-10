@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C02_C14_TRADE = {
+			picture = C02_C14_TRADE
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C14
+				extra_trade_to_target_factor = 0.35
+				trade_cost_for_target_factor = -0.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

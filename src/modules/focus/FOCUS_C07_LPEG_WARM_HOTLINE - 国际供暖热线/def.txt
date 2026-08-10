@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C07_LPEG_WARM_HOTLINE
+	icon = GFX_FOCUS_C07_LPEG_WARM_HOTLINE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPEG_WARM
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPLIG_CIVIL
+	}
+	cost = 3
+	completion_reward = {
+		country_event = {
+			id = C07_MAIN.1
+			days = 3
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 5
+}

@@ -1,0 +1,15 @@
+MODULE_PROJECTILE_5D_GOLDBAR = {
+	category = pihc_tank_projectile_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 5.0
+		weight = 0.2
+		soft_attack = 8.0
+		hard_attack = 6.0
+		ap_attack = 8.0
+		maximum_speed = -0.5
+		reliability = -0.05
+		equipment_capture_factor = 0.4
+	}
+	xp_cost = 10
+}

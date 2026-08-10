@@ -1,0 +1,35 @@
+equipments = {
+	EQUIPMENT_CANNON_LIGHT_STEAM = {
+		archetype = ARCHETYPE_CANNON_LIGHT
+		priority = 70000
+		visual_level = 70000
+		build_cost_ic = 5.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 12.0
+		hard_attack = 12.0
+		air_attack = 0.3
+		ap_attack = 16.0
+		breakthrough = 10.0
+		defense = 2.0
+		armor_value = 2.0
+		hardness = 0.1
+		weight = 1.0
+		maximum_speed = 4.0
+		entrenchment = 1.0
+		recon = 2
+		picture = EQUIPMENT_CANNON_LIGHT_STEAM
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_CANNON_LIGHT_CATAPULT
+		manpower = 2
+		resources = {
+			steel = 4
+			rubber = 3
+			coal = 2
+		}
+		fuel_consumption = 0.0
+	}
+}

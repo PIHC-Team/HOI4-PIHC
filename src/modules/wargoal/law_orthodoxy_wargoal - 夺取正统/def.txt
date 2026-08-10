@@ -1,0 +1,11 @@
+wargoal_types = {
+	law_orthodoxy_wargoal = {
+		allowed = {
+			always = no
+		}
+		take_states_cost = 50
+		force_government_cost = -75
+		expire = 180
+		threat = 0.5
+	}
+}

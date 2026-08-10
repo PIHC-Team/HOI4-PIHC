@@ -1,0 +1,11 @@
+MODULE_CREW_2C_CROWDED = {
+	category = pihc_tank_crew_type_0
+	sfx = sfx_ui_sd_module_engine
+	multiply_stats = {
+		build_cost_ic = 0.05
+		weight = 0.2
+		max_strength = 0.2
+		maximum_speed = -0.1
+	}
+	xp_cost = 5
+}

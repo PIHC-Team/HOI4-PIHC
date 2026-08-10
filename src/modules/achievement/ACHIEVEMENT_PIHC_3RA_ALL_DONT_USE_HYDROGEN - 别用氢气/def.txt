@@ -1,0 +1,17 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_3RA_ALL_DONT_USE_HYDROGEN = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		hidden_trigger = {
+			OR = {
+				has_tech = TECHNOLOGY_AIR_AIRSHIP
+				has_tech = TECHNOLOGY_BBA_AIR_AIRSHIP
+			}
+		}
+	}
+}

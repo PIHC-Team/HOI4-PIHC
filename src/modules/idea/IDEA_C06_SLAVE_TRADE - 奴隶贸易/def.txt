@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C06_SLAVE_TRADE = {
+			picture = C06_SLAVE_TRADE
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.3
+				surrender_limit = -0.3
+				monthly_population = 0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

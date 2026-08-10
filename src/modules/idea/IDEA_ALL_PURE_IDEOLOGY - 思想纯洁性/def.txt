@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_PURE_IDEOLOGY = {
+			picture = ALL_PURE_IDEOLOGY
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.2
+				party_popularity_stability_factor = 0.2
+				foreign_subversive_activites = -0.75
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

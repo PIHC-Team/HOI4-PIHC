@@ -1,0 +1,68 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/localization
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-localization
+items:
+-   kind: entity
+    identifier: pihc3-localization-module
+    name: PIHC3 Localization Module
+    desc: Project-owned localization source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3LocalizationModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-localization
+    name: PIHC3 Localization
+    desc: PIHC3 localization module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-localization-module
+        definition:
+            identifier: pihc3-localization
+            name: PIHC3 Localization
+            version: 0.2.3
+            desc: PIHC3 localization module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-localization-module
+            meta:
+                project: PIHC3
+                family: localization
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-localization
+    name: PIHC3 Localization Compiler
+    desc: Registry-backed source slots and compiler hooks for localization.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: localization
+            title: Localization
+            group: shared
+            aliases:
+            - localisation
+        dependencies:
+        - extension:pihc3-localization

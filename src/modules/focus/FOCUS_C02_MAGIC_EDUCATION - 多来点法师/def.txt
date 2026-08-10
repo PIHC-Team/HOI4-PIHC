@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C02_MAGIC_EDUCATION
+	icon = GFX_FOCUS_C02_MAGIC_EDUCATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_THE_FIVE_MONTHS_PLAN
+	}
+	cost = 3
+	bypass = {
+		has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+	}
+	completion_reward = {
+		set_technology = {
+			TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 3
+}

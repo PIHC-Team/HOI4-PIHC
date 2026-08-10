@@ -1,0 +1,49 @@
+focus = {
+	id = FOCUS_C11_BUGBEAR_CONTROLLED
+	icon = GFX_FOCUS_C11_BUGBEAR_CONTROLLED_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_BUGBEAR_EXCUSE
+	}
+	cost = 2
+	completion_reward = {
+		581 = {
+			transfer_state_to = C11
+		}
+		add_power_balance_value = {
+			id = BOP_C11_STARVATION
+			value = 0.02
+			tooltip_side = BOP_C11_STARVATION_RIGHT_SIDE
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			581 = {
+				C11 = {
+					num_divisions_in_states = {
+						count > 5
+						states = {
+							581
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 5
+}

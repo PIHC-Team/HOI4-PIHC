@@ -1,0 +1,44 @@
+state = {
+    id = 900
+    name = STATE_900
+    provinces = {
+        966
+        1422
+        1752
+        2974
+        3525
+        3770
+        3903
+        4925
+        5696
+        6306
+        6990
+        8022
+        8128
+        9157
+        9633
+        10604
+        10627
+        10693
+        10695
+        10721
+        10753
+        10821
+    }
+    manpower = 1239
+    state_category = wasteland
+    history = {
+        owner = C22
+        victory_points = {
+            966
+            1
+        }
+        buildings = {
+
+        }
+        add_core_of = C22
+    }
+    resources = {
+
+    }
+}

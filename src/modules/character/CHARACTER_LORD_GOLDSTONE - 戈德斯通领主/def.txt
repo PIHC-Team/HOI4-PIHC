@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_LORD_GOLDSTONE = {
+        name = CHARACTER_LORD_GOLDSTONE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LORD_GOLDSTONE.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GOLDSTONE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LORD_GOLDSTONE_army.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GOLDSTONE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LORD_GOLDSTONE_navy.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GOLDSTONE_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_LORD_GOLDSTONE_DESC
+            traits = {
+
+            }
+            ideology = fascism_freestate
+        }
+    }
+}

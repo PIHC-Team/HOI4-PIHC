@@ -1,0 +1,63 @@
+characters = {
+    CHARACTER_MARE = {
+        name = CHARACTER_MARE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MARE.dds"
+                small = "gfx/leaders/CHARACTER_MARE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MARE_army.dds"
+                small = "gfx/leaders/CHARACTER_MARE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MARE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MARE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_MARE_DESC
+            traits = {
+                TRAIT_HIGH_POLITICAL_ESTEEM
+                TRAIT_DOVISH
+            }
+            ideology = harmonicism_freestate
+        }
+        advisor = {
+            idea_token = CHARACTER_MARE
+            desc = CHARACTER_MARE_DESC
+            traits = {
+                TRAIT_HIGH_POLITICAL_ESTEEM
+                TRAIT_DOVISH
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+            on_add = {
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    value = 0.1
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    min = 0.0
+                    max = 1.0
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    value = -0.1
+                }
+                clamp_variable = {
+                    var = C02.VAR_C02_ELECTION_MARE
+                    min = 0.0
+                    max = 1.0
+                }
+            }
+        }
+    }
+}

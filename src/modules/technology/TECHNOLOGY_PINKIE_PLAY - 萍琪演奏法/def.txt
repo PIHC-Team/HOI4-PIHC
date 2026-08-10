@@ -1,0 +1,29 @@
+technologies = {
+    TECHNOLOGY_PINKIE_PLAY = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 3
+                y = 15
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_special
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        on_research_complete = {
+            custom_effect_tooltip = TECHNOLOGY_PINKIE_PLAY_TOOLTIP
+            set_country_flag = PIHC_COUNTRY_FLAG_PINKIE_PLAY
+        }
+        research_cost = 1.5
+        start_year = 1005
+    }
+}

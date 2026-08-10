@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_ALL_IDEOLOGY_GESTALT = {
+			picture = ALL_IDEOLOGY_GESTALT
+			removal_cost = -1
+			modifier = {
+				stability_factor = 1.5
+				war_support_factor = 1.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

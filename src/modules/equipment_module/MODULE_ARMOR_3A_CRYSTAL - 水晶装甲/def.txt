@@ -1,0 +1,19 @@
+MODULE_ARMOR_3A_CRYSTAL = {
+	category = pihc_tank_armor_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 2.0
+		armor_value = 15.0
+		weight = 0.25
+	}
+	multiply_stats = {
+		defense = 0.25
+		armor_value = 0.2
+		maximum_speed = -0.1
+		build_cost_ic = 0.1
+	}
+	build_cost_resources = {
+		crystals = 1
+	}
+	xp_cost = 5
+}

@@ -1,0 +1,11 @@
+MODULE_SUSPENSION_2A_TRACK = {
+	category = pihc_tank_suspension_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.2
+		maximum_speed = 0.8
+		reliability = -0.05
+		breakthrough = 12.0
+	}
+	xp_cost = 5
+}

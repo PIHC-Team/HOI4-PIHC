@@ -1,0 +1,16 @@
+peace_score_to_faction_leader = {
+	name = PEACE_SCORE_TO_FACTION_LEADER
+	group = RULE_GROUP_PEACE_SCORE
+	default = {
+		name = yes
+		text = RULE_OPTION_YES
+		desc = RULE_OPTION_PEACE_SCORE_TO_FACTION_LEADER_YES_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = NO
+		text = RULE_OPTION_NO
+		desc = RULE_OPTION_PEACE_SCORE_TO_FACTION_LEADER_NO_DESC
+		allow_achievements = yes
+	}
+}

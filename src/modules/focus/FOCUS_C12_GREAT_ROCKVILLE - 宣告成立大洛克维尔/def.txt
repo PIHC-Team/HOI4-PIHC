@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C12_GREAT_ROCKVILLE
+	icon = GFX_FOCUS_C12_GREAT_ROCKVILLE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_REVENGE_CRUSADE
+	}
+	cost = 3
+	completion_reward = {
+		add_stability = 0.15
+		add_political_power = 150
+		set_cosmetic_tag = C12_ROCKVILLE
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 29
+}

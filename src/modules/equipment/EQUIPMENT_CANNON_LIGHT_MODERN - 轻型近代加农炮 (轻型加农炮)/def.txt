@@ -1,0 +1,34 @@
+equipments = {
+	EQUIPMENT_CANNON_LIGHT_MODERN = {
+		archetype = ARCHETYPE_CANNON_LIGHT
+		priority = 70001
+		visual_level = 70001
+		build_cost_ic = 7.5
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.95
+		soft_attack = 18.0
+		hard_attack = 18.0
+		air_attack = 0.44999999999999996
+		ap_attack = 24.0
+		breakthrough = 15.0
+		defense = 3.0
+		armor_value = 3.0
+		hardness = 0.1
+		weight = 1.2
+		maximum_speed = 5.0
+		entrenchment = 1.0
+		recon = 2
+		picture = EQUIPMENT_CANNON_LIGHT_MODERN
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_CANNON_LIGHT_STEAM
+		resources = {
+			steel = 5
+			rubber = 3
+			tungsten = 1
+		}
+		fuel_consumption = 0.08
+	}
+}

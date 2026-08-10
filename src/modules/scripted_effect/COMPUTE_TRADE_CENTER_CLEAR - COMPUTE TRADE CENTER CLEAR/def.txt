@@ -1,0 +1,74 @@
+COMPUTE_TRADE_CENTER_CLEAR = {
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_STEEL_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_OIL_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CRYSTALS_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_TUNGSTEN_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_CHROMIUM_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_STEEL_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_COAL_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_RUBBER_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_OIL_COST
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_LOGS_COST
+		value = 0
+	}
+}

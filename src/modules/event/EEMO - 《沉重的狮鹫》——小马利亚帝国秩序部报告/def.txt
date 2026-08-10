@@ -1,0 +1,555 @@
+add_namespace = EEMO
+country_event = {
+    id = EEMO.1
+    picture = GFX_EVENT_EEMO_1
+    is_triggered_only = yes
+    title = EVENT_EEMO_1
+    desc = EVENT_EEMO_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_1
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.1
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_1_o1
+    }
+}
+country_event = {
+    id = EEMO.2
+    picture = GFX_EVENT_EEMO_2
+    is_triggered_only = yes
+    title = EVENT_EEMO_2
+    desc = EVENT_EEMO_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.2
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_2_o1
+    }
+}
+country_event = {
+    id = EEMO.3
+    picture = GFX_EVENT_EEMO_3
+    is_triggered_only = yes
+    title = EVENT_EEMO_3
+    desc = EVENT_EEMO_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_3
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.3
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_3_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_3_o1
+    }
+}
+country_event = {
+    id = EEMO.4
+    picture = GFX_EVENT_EEMO_4
+    is_triggered_only = yes
+    title = EVENT_EEMO_4
+    desc = EVENT_EEMO_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.4
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        name = EVENT_EEMO_4_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+                tag = C02
+            }
+        }
+        name = EVENT_EEMO_4_o2
+    }
+}
+country_event = {
+    id = EEMO.5
+    picture = GFX_EVENT_EEMO_5
+    is_triggered_only = yes
+    title = EVENT_EEMO_5
+    desc = EVENT_EEMO_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.5
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_5_o1
+    }
+}
+country_event = {
+    id = EEMO.6
+    picture = GFX_EVENT_EEMO_6
+    is_triggered_only = yes
+    title = EVENT_EEMO_6
+    desc = EVENT_EEMO_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.6
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_6_o1
+    }
+}
+country_event = {
+    id = EEMO.7
+    picture = GFX_EVENT_EEMO_7
+    is_triggered_only = yes
+    title = EVENT_EEMO_7
+    desc = EVENT_EEMO_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        ADD_INVENTORY_ITEM_4EP_C02_FILTHY_RICH_BRIBERY_1 = yes
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.7
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_7_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C02
+            }
+        }
+        name = EVENT_EEMO_7_o1
+    }
+}
+country_event = {
+    id = EEMO.8
+    picture = GFX_EVENT_EEMO_8
+    is_triggered_only = yes
+    title = EVENT_EEMO_8
+    desc = EVENT_EEMO_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        ADD_INVENTORY_ITEM_4EP_C02_DERPY_LOVE_LETTER_1 = yes
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.8
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C02
+            }
+        }
+        name = EVENT_EEMO_8_o1
+    }
+}
+country_event = {
+    id = EEMO.9
+    picture = GFX_EVENT_EEMO_9
+    is_triggered_only = yes
+    title = EVENT_EEMO_9
+    desc = EVENT_EEMO_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.9
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_9_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C03
+        }
+        name = EVENT_EEMO_9_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+                tag = C03
+            }
+        }
+        name = EVENT_EEMO_9_o2
+    }
+}
+country_event = {
+    id = EEMO.10
+    picture = GFX_EVENT_EEMO_10
+    is_triggered_only = yes
+    title = EVENT_EEMO_10
+    desc = EVENT_EEMO_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.10
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+                tag = C14
+            }
+        }
+        name = EVENT_EEMO_10_o1
+    }
+}
+country_event = {
+    id = EEMO.11
+    picture = GFX_EVENT_EEMO_11
+    is_triggered_only = yes
+    title = EVENT_EEMO_11
+    desc = EVENT_EEMO_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.11
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_EEMO_11_o1
+    }
+}
+country_event = {
+    id = EEMO.12
+    picture = GFX_EVENT_EEMO_12
+    is_triggered_only = yes
+    title = EVENT_EEMO_12
+    desc = EVENT_EEMO_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        NOT = {
+                            tag = C02
+                        }
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = EEMO.12
+                        days = 3
+                    }
+                }
+            }
+        }
+        name = EVENT_EEMO_12_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C08
+        }
+        custom_effect_tooltip = EVENT_EEMO_13_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_KNOWS
+        ADD_INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO_1 = yes
+        if = {
+            limit = {
+                C08 = {
+                    is_ai = yes
+                }
+            }
+            C02 = {
+                country_event = {
+                    id = EEMO.13
+                    days = 21
+                }
+            }
+            C08 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C08_OPERATION_GREENLIGHT_SENT
+            }
+        }
+        name = EVENT_EEMO_12_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+                tag = C08
+            }
+        }
+        name = EVENT_EEMO_12_o2
+    }
+}
+country_event = {
+    id = EEMO.13
+    picture = GFX_EVENT_EEMO_13
+    is_triggered_only = yes
+    title = EVENT_EEMO_13
+    desc = EVENT_EEMO_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_EEMO_13_TOOLTIP
+        ADD_INVENTORY_ITEM_4EP_C02_REPORT_FUEL_SILO_1 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_KNOWS
+        name = EVENT_EEMO_13_o0
+    }
+}

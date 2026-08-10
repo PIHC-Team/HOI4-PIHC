@@ -1,0 +1,146 @@
+NAMES_GROUP_C40_ARTILLERY = {
+    name = "风仙子火炮巡逻队 (Breezie Artillery Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "风仙子火炮巡逻队%d分队 (Breezie Artillery Patrol Team %d)"
+}
+NAMES_GROUP_C40_TANK_LIGHT = {
+    name = "风仙子轻型装甲巡逻队 (Breezie Light Armor Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "风仙子轻型装甲巡逻队%d分队 (Breezie Light Armor Patrol Team %d)"
+}
+NAMES_GROUP_C40_TRADITIONAL_REGULAR = {
+    name = "风仙子常规步兵巡逻队 (Breezie Regular Infantry Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "风仙子常规步兵巡逻队%d分队 (Breezie Regular Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C40_TANK_HEAVY = {
+    name = "风仙子重型装甲巡逻队 (Breezie Heavy Armor Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "风仙子重型装甲巡逻队%d分队 (Breezie Heavy Armor Patrol Team %d)"
+}
+NAMES_GROUP_C40_TRADITIONAL_SMALL = {
+    name = "风仙子小型步兵巡逻队 (Breezie Small Infantry Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "风仙子小型步兵巡逻队%d分队 (Breezie Small Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C40_AUTOMATA = {
+    name = "风仙子自动作战巡逻队 (Breezie Automata Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "风仙子自动作战巡逻队%d分队 (Breezie Automata Patrol Team %d)"
+}
+NAMES_GROUP_C40_SHIELD = {
+    name = "风仙子重装步兵巡逻队 (Breezie Heavy Infantry Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "风仙子重装步兵巡逻队%d分队 (Breezie Heavy Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C40_MAGICAL = {
+    name = "风仙子魔法步兵巡逻队 (Breezie Magical Infantry Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "风仙子魔法步兵巡逻队%d分队 (Breezie Magical Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C40_INFANTRY_MIX = {
+    name = "风仙子协同巡逻队 (Breezie Concerted Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "风仙子协同巡逻队%d分队 (Breezie Concerted Patrol Team %d)"
+}
+NAMES_GROUP_C40_MOTORIZED = {
+    name = "风仙子机动步兵巡逻队 (Breezie Motorized Infantry Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "风仙子机动步兵巡逻队%d分队 (Breezie Motorized Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C40_TANK_MEDIUM = {
+    name = "风仙子中型装甲巡逻队 (Breezie Medium Armor Patrol Team)"
+    for_countries = {
+        C40
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "风仙子中型装甲巡逻队%d分队 (Breezie Medium Armor Patrol Team %d)"
+}

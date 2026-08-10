@@ -1,0 +1,907 @@
+add_namespace = TIMELINE
+news_event = {
+    id = TIMELINE.1
+    picture = GFX_EVENT_TIMELINE_1
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                C01 = {
+                    add_named_threat = {
+                        threat = 10
+                        name = EVENT_TIMELINE_1_THREAT
+                    }
+                }
+                C08 = {
+                    country_event = {
+                        id = C08_MAIN.17
+                        days = 1
+                    }
+                }
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_1
+    desc = EVENT_TIMELINE_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C08
+            }
+        }
+        name = EVENT_TIMELINE_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C08
+        }
+        name = EVENT_TIMELINE_1_o1
+    }
+}
+news_event = {
+    id = TIMELINE.2
+    picture = GFX_EVENT_TIMELINE_2
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JAHR_NULL
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_2
+    desc = EVENT_TIMELINE_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            OR = {
+                tag = C06
+                tag = C07
+                tag = C16
+                tag = C24
+                tag = C26
+                tag = C29
+                tag = C31
+                tag = C00
+                tag = C35
+                tag = C36
+                tag = C37
+                tag = C38
+                tag = C39
+                tag = C40
+                tag = C41
+                tag = C42
+                tag = C43
+            }
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C05
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C08
+        }
+        hidden_effect = {
+
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            OR = {
+                tag = C02
+                tag = C03
+                tag = C04
+                tag = C12
+                tag = C14
+                tag = C15
+                tag = C18
+                tag = C19
+                tag = C20
+                tag = C23
+                tag = C27
+                tag = C30
+            }
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        if = {
+            limit = {
+                tag = C23
+            }
+            hidden_effect = {
+                country_event = {
+                    id = C23_MAIN.3
+                    days = 1
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            OR = {
+                tag = C01
+                tag = C11
+                tag = C22
+                tag = C32
+                tag = C33
+            }
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o4
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            OR = {
+                tag = C09
+                tag = C10
+                tag = C13
+                tag = C17
+                tag = C21
+                tag = C25
+                tag = C28
+                tag = C34
+                tag = C44
+            }
+        }
+        if = {
+            limit = {
+                is_ai = no
+            }
+            hidden_effect = {
+                country_event = {
+                    id = SUPER.9
+                }
+            }
+        }
+        name = EVENT_TIMELINE_2_o5
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_2_o6
+    }
+}
+news_event = {
+    id = TIMELINE.3
+    picture = GFX_EVENT_TIMELINE_3
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_3
+    desc = EVENT_TIMELINE_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_global_flag = PIHC_GLOBAL_FLAG_PILLARS_ESCAPED
+        name = EVENT_TIMELINE_3_o0
+    }
+}
+news_event = {
+    id = TIMELINE.4
+    picture = GFX_EVENT_TIMELINE_4
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_4
+    desc = EVENT_TIMELINE_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            set_global_flag = PIHC_GLOBAL_FLAG_THE_GRIFFON_LIES_HEAVY
+        }
+        name = EVENT_TIMELINE_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_TIMELINE_4_o1
+    }
+}
+news_event = {
+    id = TIMELINE.5
+    picture = GFX_EVENT_TIMELINE_5
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_5
+    desc = EVENT_TIMELINE_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_5_o0
+    }
+}
+news_event = {
+    id = TIMELINE.6
+    picture = GFX_EVENT_TIMELINE_6
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_6
+    desc = EVENT_TIMELINE_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_6_o0
+    }
+}
+country_event = {
+    id = TIMELINE.7
+    picture = GFX_EVENT_TIMELINE_7
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_7
+    desc = EVENT_TIMELINE_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = -0.05
+        name = EVENT_TIMELINE_7_o0
+    }
+}
+country_event = {
+    id = TIMELINE.8
+    picture = GFX_EVENT_TIMELINE_8
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_8
+    desc = EVENT_TIMELINE_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_8_o0
+    }
+}
+country_event = {
+    id = TIMELINE.9
+    picture = GFX_EVENT_TIMELINE_9
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_9
+    desc = EVENT_TIMELINE_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C01_IMITATOR_MOVEMENT
+        mark_focus_tree_layout_dirty = yes
+        if = {
+            limit = {
+                NOT = {
+                    has_completed_focus = FOCUS_C01_SECRET_POLICE
+                }
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C01_COZY_MOM_ALIVE
+        }
+        name = EVENT_TIMELINE_9_o0
+    }
+}
+news_event = {
+    id = TIMELINE.10
+    picture = GFX_EVENT_TIMELINE_10
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                C01 = {
+                    add_named_threat = {
+                        threat = 5
+                        name = EVENT_TIMELINE_10_THREAT
+                    }
+                }
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_10
+    desc = EVENT_TIMELINE_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_TIMELINE_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        name = EVENT_TIMELINE_10_o1
+    }
+}
+news_event = {
+    id = TIMELINE.11
+    picture = GFX_EVENT_TIMELINE_11
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C01
+                }
+                C01 = {
+                    add_named_threat = {
+                        threat = 5
+                        name = EVENT_TIMELINE_11_THREAT
+                    }
+                }
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_11
+    desc = EVENT_TIMELINE_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_TIMELINE_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        name = EVENT_TIMELINE_11_o1
+    }
+}
+news_event = {
+    id = TIMELINE.12
+    picture = GFX_EVENT_TIMELINE_12
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_12
+    desc = EVENT_TIMELINE_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+            }
+        }
+        name = EVENT_TIMELINE_12_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        name = EVENT_TIMELINE_12_o1
+    }
+}
+news_event = {
+    id = TIMELINE.13
+    picture = GFX_EVENT_TIMELINE_13
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C23
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_MODERN_MAGIC_THEORY_PROPOSED
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_13
+    desc = EVENT_TIMELINE_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = Ç23
+            }
+        }
+        add_tech_bonus = {
+            bonus = 0.5
+            technology = TECHNOLOGY_TECH_MAGI_MODERN
+        }
+        name = EVENT_TIMELINE_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = Ç23
+        }
+        set_technology = {
+            TECHNOLOGY_TECH_MAGI_MODERN = 1
+        }
+        name = EVENT_TIMELINE_13_o1
+    }
+}
+news_event = {
+    id = TIMELINE.14
+    picture = GFX_EVENT_TIMELINE_14
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_14
+    desc = EVENT_TIMELINE_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_14_o0
+    }
+}
+country_event = {
+    id = TIMELINE.15
+    picture = GFX_EVENT_TIMELINE_15
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_15
+    desc = EVENT_TIMELINE_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C02 = {
+            custom_effect_tooltip = EVENT_TIMELINE_15_TOOLTIP
+            set_country_flag = {
+                flag = PIHC_COUNTRY_FLAG_C02_HARSH_WINTER
+                days = 240
+                value = 1
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_TIMELINE_15_o0
+    }
+}
+country_event = {
+    id = TIMELINE.16
+    picture = GFX_EVENT_TIMELINE_16
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                country_event = {
+                    id = EEMO.11
+                    days = 1
+                }
+            }
+            C11 = {
+                country_event = {
+                    id = CECIA.4
+                    days = 60
+                    random_days = 60
+                }
+            }
+        }
+    }
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_16
+    desc = EVENT_TIMELINE_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_16_o0
+    }
+}
+country_event = {
+    id = TIMELINE.17
+    picture = GFX_EVENT_TIMELINE_17
+    immediate = {
+        hidden_effect = {
+            random_list = {
+                seed = random
+                50 = {
+                    country_event = {
+                        id = C14_MAIN.1
+                    }
+                }
+                30 = {
+                    country_event = {
+                        id = C14_MAIN.2
+                    }
+                }
+                12 = {
+                    country_event = {
+                        id = C14_MAIN.3
+                    }
+                }
+                8 = {
+                    country_event = {
+                        id = C14_MAIN.4
+                    }
+                }
+            }
+            country_event = {
+                id = TIMELINE.17
+                days = 365
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_17
+    desc = EVENT_TIMELINE_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_17_o0
+    }
+}
+country_event = {
+    id = TIMELINE.18
+    picture = GFX_EVENT_TIMELINE_18
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_18
+    desc = EVENT_TIMELINE_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C14
+        }
+        custom_effect_tooltip = EVENT_TIMELINE_18_C14_TOOLTIP
+        name = EVENT_TIMELINE_18_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        C14 = {
+            give_resource_rights = {
+                receiver = C01
+                state = 86
+            }
+            country_event = {
+                id = TIMELINE.18
+            }
+        }
+        C01 = {
+            transfer_state = 86
+        }
+        86 = {
+            create_unit = {
+                division = "name = \"帝国陨铁特别行动小队 (Imperial Meteor Special Special Action Team)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = C01
+                count = 3
+            }
+        }
+        custom_effect_tooltip = EVENT_TIMELINE_18_C01_TOOLTIP
+        set_global_flag = PIHC_GLOBAL_FLAG_METEORITE_HAPPENED
+        name = EVENT_TIMELINE_18_o1
+    }
+}
+country_event = {
+    id = TIMELINE.19
+    picture = GFX_EVENT_TIMELINE_19
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_19
+    desc = EVENT_TIMELINE_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C26 = {
+            country_event = {
+                id = TIMELINE.19
+                days = 365
+            }
+            news_event = {
+                id = TIMELINE.20
+                days = 1
+                random_days = 60
+            }
+            news_event = {
+                id = TIMELINE.21
+                days = 153
+                random_days = 90
+            }
+        }
+        name = EVENT_TIMELINE_19_o0
+    }
+}
+news_event = {
+    id = TIMELINE.20
+    picture = GFX_EVENT_TIMELINE_20
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_20
+    desc = EVENT_TIMELINE_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_TIMELINE_20_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_WINTER_LOCK
+        if = {
+            limit = {
+                NOT = {
+                    tag = C26
+                }
+            }
+            APPLY_WINTER_PENALTY = yes
+        }
+        else = {
+            add_named_threat = {
+                threat = 2
+                name = EVENT_TIMELINE_20_THREAT
+            }
+        }
+        name = EVENT_TIMELINE_20_o0
+    }
+}
+news_event = {
+    id = TIMELINE.21
+    picture = GFX_EVENT_TIMELINE_21
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_21
+    desc = EVENT_TIMELINE_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_stability = 0.03
+        custom_effect_tooltip = EVENT_TIMELINE_21_TOOLTIP
+        REVOKE_WINTER_PENALTY = yes
+        clr_country_flag = PIHC_COUNTRY_FLAG_WINTER_LOCK
+        name = EVENT_TIMELINE_21_o0
+    }
+}
+news_event = {
+    id = TIMELINE.22
+    picture = GFX_EVENT_TIMELINE_22
+    major = yes
+    fire_for_sender = no
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_22
+    desc = EVENT_TIMELINE_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_22_o0
+    }
+}
+news_event = {
+    id = TIMELINE.23
+    picture = GFX_EVENT_TIMELINE_23
+    immediate = {
+        hidden_effect = {
+            C22 = {
+                news_event = {
+                    id = SUPER_NEWS.6
+                }
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_23
+    desc = EVENT_TIMELINE_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_23_o0
+    }
+}
+news_event = {
+    id = TIMELINE.24
+    picture = GFX_EVENT_TIMELINE_24
+    immediate = {
+        hidden_effect = {
+            C35 = {
+                C35_CIVIL_WAR = yes
+                set_global_flag = PIHC_GLOBAL_FLAG_C35_CIVIL_WAR_HAPPENED
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_24
+    desc = EVENT_TIMELINE_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_TIMELINE_24_o0
+    }
+}
+news_event = {
+    id = TIMELINE.25
+    picture = GFX_EVENT_TIMELINE_25
+    immediate = {
+        hidden_effect = {
+            add_named_threat = {
+                threat = -2
+                name = EVENT_TIMELINE_25_THREAT
+            }
+        }
+    }
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_25
+    desc = EVENT_TIMELINE_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C11
+            }
+        }
+        name = EVENT_TIMELINE_25_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C11
+        }
+        name = EVENT_TIMELINE_25_o1
+    }
+}
+news_event = {
+    id = TIMELINE.26
+    picture = GFX_EVENT_TIMELINE_26
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_26
+    desc = EVENT_TIMELINE_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_TIMELINE_26_o0
+    }
+}
+news_event = {
+    id = TIMELINE.27
+    picture = GFX_EVENT_TIMELINE_27
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_TIMELINE_27
+    desc = EVENT_TIMELINE_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_TIMELINE_27_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_WORLD_EXPO_INVITED
+        set_variable = {
+            VAR_PIHC_WORLD_EXPO_VENUE = 0
+        }
+        name = EVENT_TIMELINE_27_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_TIMELINE_27_o1
+    }
+}

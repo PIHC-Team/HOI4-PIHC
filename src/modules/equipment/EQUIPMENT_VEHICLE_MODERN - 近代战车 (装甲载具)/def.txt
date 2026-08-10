@@ -1,0 +1,27 @@
+equipments = {
+	EQUIPMENT_VEHICLE_MODERN = {
+		archetype = ARCHETYPE_VEHICLE
+		priority = 4
+		visual_level = 4
+		build_cost_ic = 7.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.99
+		breakthrough = 13.520000000000001
+		hardness = 0.45
+		maximum_speed = 14.0
+		recon = 4
+		picture = EQUIPMENT_VEHICLE_MODERN
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_VEHICLE_STEAM
+		resources = {
+			steel = 3
+			rubber = 2
+			tungsten = 1
+		}
+		fuel_consumption = 1.0
+		supply_truck = yes
+	}
+}

@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED = {
+			picture = C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.3
+				party_popularity_stability_factor = -0.1
+				conscription_factor = -0.3
+				war_support_factor = -0.2
+			}
+			allowed = {
+				tag = C01
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

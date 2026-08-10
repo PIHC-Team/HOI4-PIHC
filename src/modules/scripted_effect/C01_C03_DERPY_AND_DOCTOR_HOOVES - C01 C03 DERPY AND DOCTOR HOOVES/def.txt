@@ -1,0 +1,32 @@
+C01_C03_DERPY_AND_DOCTOR_HOOVES = {
+	C02 = {
+		retire_character = CHARACTER_DOCTOR_HOOVES
+		add_popularity = {
+			ideology = despotic
+			popularity = 1.0
+		}
+		set_politics = {
+			ruling_party = despotic
+		}
+		hidden_effect = {
+			remove_all_power_balance_modifiers = {
+				id = BOP_C02_INDEPENDENCE
+			}
+			remove_power_balance = {
+				id = BOP_C02_INDEPENDENCE
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_VISIBLE_CHARACTER_UNITY_COMMITTEE_C03
+			promote_character = {
+				character = CHARACTER_UNITY_COMMITTEE_C03
+				ideology = despotic_duchy
+			}
+		}
+		C01 = {
+			puppet = {
+				target = C02
+				end_wars = no
+			}
+			set_country_flag = PIHC_ACHIEVEMENT_FLAG_C01_TWO_BIRDS_ONE_STONE
+		}
+	}
+}

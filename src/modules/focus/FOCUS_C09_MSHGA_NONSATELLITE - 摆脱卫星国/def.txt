@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C09_MSHGA_NONSATELLITE
+	icon = GFX_FOCUS_C09_MSHGA_NONSATELLITE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_MSHGA_EVAL
+	}
+	cost = 5
+	completion_reward = {
+		swap_ideas = {
+			add_idea = IDEA_C09_SATELLITE_3
+			remove_idea = IDEA_C09_SATELLITE_2
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_FIRELIGHT
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 8
+}

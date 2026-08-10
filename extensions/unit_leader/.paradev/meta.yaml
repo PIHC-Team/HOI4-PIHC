@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/unit_leader
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-unit-leader
+items:
+-   kind: entity
+    identifier: pihc3-unit-leader-module
+    name: PIHC3 Unit Leader Module
+    desc: Project-owned unit_leader source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3UnitLeaderModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-unit-leader
+    name: PIHC3 Unit Leader
+    desc: PIHC3 unit_leader module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-unit-leader-module
+        definition:
+            identifier: pihc3-unit-leader
+            name: PIHC3 Unit Leader
+            version: 0.2.3
+            desc: PIHC3 unit_leader module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-unit-leader-module
+            meta:
+                project: PIHC3
+                family: unit_leader
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-unit-leader
+    name: PIHC3 Unit Leader Compiler
+    desc: Registry-backed source slots and compiler hooks for unit_leader.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: unit-leader
+            title: Unit Leader
+            group: military
+        dependencies:
+        - extension:pihc3-unit-leader

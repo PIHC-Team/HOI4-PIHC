@@ -1,0 +1,12 @@
+targeted_sabotage_plant_explosives = {
+	name = targeted_sabotage_plant_explosives
+	desc = targeted_sabotage_plant_explosives_desc
+	outcome = targeted_sabotage_plant_explosives_outcome
+	picture = GFX_phase_targeted_sabotage_plant_explosives
+	icon = GFX_phase_targeted_sabotage_plant_explosives_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 500
+	}
+}

@@ -1,0 +1,34 @@
+pihc_air_flying_fortress_strike_aircraft_b = {
+	track = strike_aircraft
+	name = DOCTRINE_AIR_2_3B_GLORY_TO_QUEEN
+	description = DOCTRINE_AIR_2_3B_GLORY_TO_QUEEN_DESC
+	icon = GFX_doctrine_pihc_air_flying_fortress_strike_aircraft_b_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		glory_to_queen = {
+			air_escort_efficiency = 0.1
+			category_air_galleon = {
+				air_agility = 0.1
+			}
+			category_air_creatures = {
+				air_agility = 0.1
+			}
+			category_air_ufo = {
+				air_agility = 0.1
+			}
+		}
+	}
+}

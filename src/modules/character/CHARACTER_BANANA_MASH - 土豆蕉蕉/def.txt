@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_BANANA_MASH = {
+        name = CHARACTER_BANANA_MASH_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_BANANA_MASH.dds"
+                small = "gfx/leaders/CHARACTER_BANANA_MASH_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BANANA_MASH_army.dds"
+                small = "gfx/leaders/CHARACTER_BANANA_MASH_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BANANA_MASH_navy.dds"
+                small = "gfx/leaders/CHARACTER_BANANA_MASH_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_BANANA_MASH
+            desc = CHARACTER_BANANA_MASH_DESC
+            traits = {
+                TRAIT_WAR_INDUSTRIALIST
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = political_advisor
+        }
+    }
+}

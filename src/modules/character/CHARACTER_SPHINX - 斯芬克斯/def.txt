@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SPHINX = {
+        name = CHARACTER_SPHINX_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SPHINX.dds"
+                small = "gfx/leaders/CHARACTER_SPHINX_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SPHINX_army.dds"
+                small = "gfx/leaders/CHARACTER_SPHINX_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SPHINX_navy.dds"
+                small = "gfx/leaders/CHARACTER_SPHINX_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_SPHINX_DESC
+            traits = {
+                TRAIT_SPINX_FALL
+            }
+            ideology = transcendence_spirit
+        }
+    }
+}

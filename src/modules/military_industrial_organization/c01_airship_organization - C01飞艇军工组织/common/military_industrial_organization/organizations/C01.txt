@@ -1,0 +1,321 @@
+"C01_Imperial_Royal_Airship_Manufacturing organization" = {
+    name = "C01_Imperial_Royal_Airship_Manufacturing organization"
+    icon = GFX_idea_generic_air_manufacturer_2
+    allowed = {
+        tag = C01
+    }
+    equipment_type = {
+        ARCHETYPE_AIRFRAME_AIRSHIP
+    }
+    research_categories = {
+        ARCHETYPE_AIRFRAME_AIRSHIP
+    }
+    tree_header_text = {
+        text = mio_header_design_department
+        x = 2
+    }
+    tree_header_text = {
+        text = mio_header_operational_department
+        x = 8
+    }
+    initial_trait = {
+        name = generic_mio_initial_trait_heavy_aircraft_designer
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.25
+        }
+        production_bonus = {
+            production_capacity_factor = 0.05
+        }
+        equipment_bonus = {
+            air_bombing = 0.05
+            air_agility = -0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_reinforced_frames
+        name = generic_mio_trait_reinforced_frames
+        icon = GFX_generic_mio_trait_icon_defense
+        position = {
+            x = 2
+            y = 0
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_defence = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_standardized_alloys
+        name = generic_mio_trait_standardized_alloys
+        icon = GFX_generic_mio_trait_icon_resources
+        position = {
+            x = 0
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_reinforced_frames
+        any_parent = {
+            generic_mio_trait_reinforced_frames
+        }
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_resource_penalty_factor = -0.1
+        }
+    }
+    trait = {
+        token = generic_mio_trait_transport_conversions
+        name = generic_mio_trait_transport_conversions
+        icon = GFX_generic_mio_department_icon_air_transport_production
+        position = {
+            x = -2
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_standardized_alloys
+        any_parent = {
+            generic_mio_trait_standardized_alloys
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        production_bonus = {
+            production_capacity_factor = 0.1
+        }
+    }
+    trait = {
+        token = generic_mio_trait_drop_hammer_alloy_straining
+        name = generic_mio_trait_drop_hammer_alloy_straining
+        icon = GFX_generic_mio_trait_icon_reliability
+        position = {
+            x = 0
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_standardized_alloys
+        any_parent = {
+            generic_mio_trait_standardized_alloys
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_defence = 0.05
+            reliability = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_refined_secondary_aluminium
+        name = generic_mio_trait_refined_secondary_aluminium
+        icon = GFX_generic_mio_trait_icon_resources
+        position = {
+            x = -1
+            y = 2
+        }
+        relative_position_id = generic_mio_trait_drop_hammer_alloy_straining
+        any_parent = {
+            generic_mio_trait_drop_hammer_alloy_straining
+        }
+        mutually_exclusive = {
+            generic_mio_trait_high_quality_aluminium_alloys
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        production_bonus = {
+            production_capacity_factor = 0.05
+            production_resource_need_factor = -0.15
+        }
+    }
+    trait = {
+        token = generic_mio_trait_high_quality_aluminium_alloys
+        name = generic_mio_trait_high_quality_aluminium_alloys
+        icon = GFX_generic_mio_trait_icon_air_agility
+        position = {
+            x = 1
+            y = 2
+        }
+        relative_position_id = generic_mio_trait_drop_hammer_alloy_straining
+        any_parent = {
+            generic_mio_trait_drop_hammer_alloy_straining
+        }
+        mutually_exclusive = {
+            generic_mio_trait_refined_secondary_aluminium
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_agility = 0.05
+            reliability = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_pressurized_cockpit
+        name = generic_mio_trait_pressurized_cockpit
+        icon = GFX_generic_mio_trait_icon_naval_range
+        position = {
+            x = 3
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_reinforced_frames
+        any_parent = {
+            generic_mio_trait_reinforced_frames
+            generic_mio_trait_extended_rear_fuselage
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_range = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_advanced_turbochargers
+        name = generic_mio_trait_advanced_turbochargers
+        icon = GFX_generic_mio_trait_icon_air_agility
+        position = {
+            x = 0
+            y = 2
+        }
+        relative_position_id = generic_mio_trait_pressurized_cockpit
+        any_parent = {
+            generic_mio_trait_pressurized_cockpit
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_agility = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_extended_rear_fuselage
+        name = generic_mio_trait_extended_rear_fuselage
+        icon = GFX_generic_mio_trait_icon_strategic_attack
+        position = {
+            x = 6
+            y = 0
+        }
+        relative_position_id = generic_mio_trait_reinforced_frames
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_bombing = 0.15
+        }
+    }
+    trait = {
+        token = generic_mio_trait_auto_levelled_bombsights
+        name = generic_mio_trait_auto_levelled_bombsights
+        icon = GFX_generic_mio_trait_icon_strategic_attack
+        position = {
+            x = -1
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_extended_rear_fuselage
+        any_parent = {
+            generic_mio_trait_extended_rear_fuselage
+        }
+        mutually_exclusive = {
+            generic_mio_trait_air_deployed_sonobuoys
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_bombing = 0.1
+        }
+    }
+    trait = {
+        token = generic_mio_trait_air_deployed_sonobuoys
+        name = generic_mio_trait_air_deployed_sonobuoys
+        icon = GFX_generic_mio_trait_icon_detection
+        position = {
+            x = 1
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_extended_rear_fuselage
+        any_parent = {
+            generic_mio_trait_extended_rear_fuselage
+        }
+        mutually_exclusive = {
+            generic_mio_trait_auto_levelled_bombsights
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            night_penalty = -0.2
+        }
+    }
+    trait = {
+        token = generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        name = generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+        position = {
+            x = 1
+            y = 1
+        }
+        relative_position_id = generic_mio_trait_auto_levelled_bombsights
+        any_parent = {
+            generic_mio_trait_auto_levelled_bombsights
+            generic_mio_trait_air_deployed_sonobuoys
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_attack = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_flying_fortress
+        name = generic_mio_trait_flying_fortress
+        icon = GFX_generic_mio_department_icon_plane_general_engine
+        position = {
+            x = -1
+            y = 2
+        }
+        relative_position_id = generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        any_parent = {
+            generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        }
+        mutually_exclusive = {
+            generic_mio_trait_advanced_instruments
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_defence = 0.1
+            air_range = 0.1
+            air_agility = -0.05
+            fuel_consumption = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_trait_advanced_instruments
+        name = generic_mio_trait_advanced_instruments
+        icon = GFX_generic_mio_trait_icon_strategic_attack
+        position = {
+            x = 1
+            y = 2
+        }
+        relative_position_id = generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        any_parent = {
+            generic_mio_trait_cockpit_controlled_remote_gun_turrets
+        }
+        mutually_exclusive = {
+            generic_mio_trait_flying_fortress
+        }
+        limit_to_equipment_type = {
+            ARCHETYPE_AIRFRAME_AIRSHIP
+        }
+        equipment_bonus = {
+            air_bombing = 0.05
+            naval_strike_targetting = 0.05
+        }
+    }
+}

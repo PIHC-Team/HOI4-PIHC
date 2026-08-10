@@ -1,0 +1,18 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_C28_SUPPORT = {
+			picture = C08_C28_SUPPORT
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C28
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.25
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+PIHC_dev_debug_desc: "[?THIS.PIHC_var_country_monthly_population]"
+
+PIHC_ERA_COLD_DYNAMIC_MODIFIER: "耐寒政策消耗"
+PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER: "地区耐寒补助消耗"
+PIHC_state_temperature_DYNAMIC_MODIFIER: "当地室内温度影响"
+PIHC_average_temperature_DYNAMIC_MODIFIER: "本国平均室温影响"
+
+pihc_state_temperature_indoor_tt: "当地室内温度为[?THIS.PIHC_var_state_indoor_temperature|Y0]"
+pihc_state_temperature_outdoor_tt: "当地室外温度为[?THIS.PIHC_var_state_outdoor_temperature|Y0]"

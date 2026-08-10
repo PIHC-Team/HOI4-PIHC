@@ -1,0 +1,26 @@
+PIHC_DOCTRINE_AIR_LARGE_BOOST = {
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_AIR_LARGE_BOOST_FIGHTER
+		track = fighter_aircraft
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_AIR_LARGE_BOOST_STRIKE
+		track = strike_aircraft
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_AIR_LARGE_BOOST_MEDIUM
+		track = medium_aircraft
+	}
+	add_mastery_bonus = {
+		bonus = 0.15
+		days = 365
+		name = PIHC_DOCTRINE_AIR_LARGE_BOOST_HEAVY
+		track = heavy_aircraft
+	}
+}

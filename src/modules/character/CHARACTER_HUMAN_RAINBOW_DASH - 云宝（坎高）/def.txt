@@ -1,0 +1,56 @@
+characters = {
+    CHARACTER_HUMAN_RAINBOW_DASH = {
+        name = CHARACTER_HUMAN_RAINBOW_DASH_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH_army.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH_navy.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_RAINBOW_DASH_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_HUMAN_RAINBOW_DASH
+            desc = CHARACTER_HUMAN_RAINBOW_DASH_DESC
+            traits = {
+
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+        }
+        advisor = {
+            idea_token = C23_RAINBOW_DASH_HUMAN
+            desc = CHARACTER_HUMAN_RAINBOW_DASH_DESC
+            traits = {
+
+            }
+            ledger = air
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = high_command
+        }
+        advisor = {
+            idea_token = C23_RAINBOW_DASH_HUMAN
+            desc = CHARACTER_HUMAN_RAINBOW_DASH_DESC
+            traits = {
+
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = air_chief
+        }
+    }
+}

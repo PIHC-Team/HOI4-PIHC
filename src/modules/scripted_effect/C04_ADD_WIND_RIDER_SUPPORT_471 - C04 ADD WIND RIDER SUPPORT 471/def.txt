@@ -1,0 +1,7 @@
+C04_ADD_WIND_RIDER_SUPPORT_471 = {
+	set_variable = {
+		var = C04.VAR_DELTA
+		value = 47.1
+	}
+	MODIFY_C04_BY_ELECTION_WIND_RIDER_SUPPORT = yes
+}

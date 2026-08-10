@@ -1,0 +1,42 @@
+SP_NUCLEAR_OVERCHARGE = {
+	icon = GFX_SP_NUCLEAR_OVERCHARGE
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.long
+	specialization = specialization_nuclear
+	project_tags = sp_tag_pihc_nuclear
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_TECH_MAGI_III
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_MAGI_II
+		}
+	}
+	resource_cost = {
+		resources = {
+			crystals = 12
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_TECH_MAGI_III = 1
+				popup = no
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_NUCLEAR_EXP
+		SP_REWARD_GENERIC_NUCLEAR_MAGIC
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_FAILURE_THEORETICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

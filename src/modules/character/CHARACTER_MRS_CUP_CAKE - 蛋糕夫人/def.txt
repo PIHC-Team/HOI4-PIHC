@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_MRS_CUP_CAKE = {
+        name = CHARACTER_MRS_CUP_CAKE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MRS_CUP_CAKE.dds"
+                small = "gfx/leaders/CHARACTER_MRS_CUP_CAKE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MRS_CUP_CAKE_army.dds"
+                small = "gfx/leaders/CHARACTER_MRS_CUP_CAKE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MRS_CUP_CAKE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MRS_CUP_CAKE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_MRS_CUP_CAKE
+            desc = CHARACTER_MRS_CUP_CAKE_DESC
+            traits = {
+                TRAIT_CUP_CAKE_SUPPLY
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 300
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

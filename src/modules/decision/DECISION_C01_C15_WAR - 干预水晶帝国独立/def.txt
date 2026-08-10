@@ -1,0 +1,39 @@
+DECISION_CATEGORY_C01_UNIFICATION_WAR = {
+    DECISION_C01_C15_WAR = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 150
+        days_remove = 96
+        fire_only_once = yes
+        visible = {
+            has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_1_HAPPENED
+            NOT = {
+                has_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_2_HAPPENED
+            }
+        }
+        available = {
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        war_with_on_remove = C15
+        remove_effect = {
+            declare_war_on = {
+                type = puppet_wargoal_focus
+                target = C15
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C01_C15_WAR
+    }
+}

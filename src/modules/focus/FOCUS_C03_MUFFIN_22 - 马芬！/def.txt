@@ -1,0 +1,101 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_22
+	icon = GFX_FOCUS_C03_MUFFIN_22_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	bypass = {
+		hidden_trigger = {
+			C01 = {
+				has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_BLUE
+			}
+			effect_tooltip = {
+				365 = {
+					BUILD_AN_AIR_BASE = yes
+				}
+				388 = {
+					BUILD_AN_AIR_BASE = yes
+				}
+				410 = {
+					BUILD_AN_AIR_BASE = yes
+				}
+				412 = {
+					BUILD_AN_AIR_BASE = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_RED
+			}
+			effect_tooltip = {
+				365 = {
+					remove_building = {
+						type = air_base
+						level = 1
+					}
+				}
+				388 = {
+					remove_building = {
+						type = air_base
+						level = 1
+					}
+				}
+				410 = {
+					remove_building = {
+						type = air_base
+						level = 1
+					}
+				}
+				412 = {
+					remove_building = {
+						type = air_base
+						level = 1
+					}
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = FOCUS_C03_MUFFIN_22_TOOLTIP
+		}
+		hidden_effect = {
+			365 = {
+				BUILD_AN_AIR_BASE = yes
+			}
+			388 = {
+				BUILD_AN_AIR_BASE = yes
+			}
+			410 = {
+				BUILD_AN_AIR_BASE = yes
+			}
+			412 = {
+				BUILD_AN_AIR_BASE = yes
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_21
+	}
+	x = 4
+	y = 3
+}

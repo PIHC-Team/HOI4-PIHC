@@ -1,0 +1,67 @@
+focus = {
+	id = FOCUS_C12_BUSY_TRADE_CENTER
+	icon = GFX_FOCUS_C12_BUSY_TRADE_CENTER_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_PROMOTE_PAIRING_STONE
+		focus = FOCUS_C12_SECRET_UNDER_THE_SEDIMENTARY
+	}
+	cost = 4
+	completion_reward = {
+		601 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = trade_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = " financial_complex"
+				level = 1
+				instant_build = yes
+			}
+		}
+		608 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = trade_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = " financial_complex"
+				level = 1
+				instant_build = yes
+			}
+		}
+		641 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = trade_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = " financial_complex"
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	available = {
+		owns_state = 601
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 17
+}

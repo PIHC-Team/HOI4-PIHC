@@ -1,0 +1,18 @@
+@cost = 30
+unit_medals = {
+	neutral_bravery = {
+		available = {
+			has_government = despotic
+		}
+		frame = 1
+		icon = GFX_medal_icon_default
+		cost = @cost
+		unit_modifiers = {
+			army_defence_factor = 0.05
+			max_dig_in_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

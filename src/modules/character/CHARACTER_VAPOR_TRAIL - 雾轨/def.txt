@@ -1,0 +1,39 @@
+characters = {
+    CHARACTER_VAPOR_TRAIL = {
+        name = CHARACTER_VAPOR_TRAIL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_VAPOR_TRAIL.dds"
+                small = "gfx/leaders/CHARACTER_VAPOR_TRAIL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_VAPOR_TRAIL_army.dds"
+                small = "gfx/leaders/CHARACTER_VAPOR_TRAIL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_VAPOR_TRAIL_navy.dds"
+                small = "gfx/leaders/CHARACTER_VAPOR_TRAIL_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_VAPOR_TRAIL_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS_II
+            }
+            ideology = harmonicism_organization
+        }
+        advisor = {
+            idea_token = CHARACTER_VAPOR_TRAIL
+            desc = CHARACTER_VAPOR_TRAIL_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS_II
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 150
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿l_english:
+	C15_PARLIAMENT_TITLE:0 "Distribution of CEC Representatives"
+	C15_PARLIAMENT_SEAT_DESC:0 "Rep. Seat #[?temp_seat|Y0]"
+	C15_PARLIAMENT_SEAT_DATA_DESC:0 "[GetParliamentSeatName] belongs to §Y[GetParliamentPartyName]§!"
+	C15_PARLIAMENT_PARTY_TEXT:0 "§Y[GetParliamentPartyName]§! - [?C15.parliament_seat_array^parliament_member_index|Y0] Rep. Seats (Expected to be [?C15.parliament_delta_array^parliament_member_index|+=0] in the next election)"
+	C15_PARLIAMENT_DATA_BEFORE_ELECTION:0 "Current distribution of CEC representatives:\n$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^0|+=0] in the next election)\n$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^1|+=0] in the next election)\n$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^2|+=0] in the next election)\n$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^3|+=0] in the next election)\n$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^4|+=0] in the next election)\n$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] Rep. Seats (Expected to be [?C15.parliament_delta_array^5|+=0] in the next election)"
+	C15_PARLIAMENT_DATA_AFTER_ELECTION:0 "New distribution of CEC representatives after the election:\n$C15_PARLIAMENT_PARTY_1$ - [?C15.parliament_seat_array^0|B0] Rep. Seats\n$C15_PARLIAMENT_PARTY_2$ - [?C15.parliament_seat_array^1|B0] Rep. Seats\n$C15_PARLIAMENT_PARTY_3$ - [?C15.parliament_seat_array^2|B0] Rep. Seats\n$C15_PARLIAMENT_PARTY_4$ - [?C15.parliament_seat_array^3|B0] Rep. Seats\n$C15_PARLIAMENT_PARTY_5$ - [?C15.parliament_seat_array^4|B0] Rep. Seats\n$C15_PARLIAMENT_PARTY_6$ - [?C15.parliament_seat_array^5|B0] Rep. Seats"
+	C15_PARLIAMENT_PARTY_1:0 "Equestria Unity Commission"
+	C15_PARLIAMENT_PARTY_2:0 "Crystal Empire Royal Cabinet"
+	C15_PARLIAMENT_PARTY_3:0 "Crystal Empire Harmony Party"
+	C15_PARLIAMENT_PARTY_4:0 "Crystal Empire Freedom Party"
+	C15_PARLIAMENT_PARTY_5:0 "Changeling Advisory Council"
+	C15_PARLIAMENT_PARTY_6:0 "Red Crystal"

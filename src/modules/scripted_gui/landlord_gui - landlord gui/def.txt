@@ -1,0 +1,239 @@
+scripted_gui = {
+	landlord_gui = {
+		context_type = selected_state_context
+		window_name = landlord_window
+		parent_window_token = selected_state_view
+		visible = {
+			ROOT = {
+				has_country_flag = landlord_window_opened
+			}
+		}
+		effects = {
+			open_window_click = {
+				ROOT = {
+					set_country_flag = landlord_window_opened
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_country_flag = landlord_window_opened
+						}
+					}
+					ROOT = {
+						clr_country_flag = landlord_window_opened
+					}
+				}
+			}
+			check_core_button_click = {
+				every_country = {
+					every_state = {
+						clr_state_flag = core_cost_checked
+					}
+				}
+				ROOT = {
+					set_variable = {
+						cost_to_core = PREV.state_population_k
+					}
+					CWCPP_cost_divider = yes
+					round_variable = cost_to_core
+					set_variable = {
+						cost_to_claim = cost_to_core
+					}
+					divide_variable = {
+						cost_to_claim = 2
+					}
+				}
+				PREV = {
+					set_state_flag = core_cost_checked
+				}
+			}
+			core_state_button_click = {
+				log = [?cost_to_core]
+				ROOT = {
+					multiply_variable = {
+						cost_to_core = -1
+					}
+					add_political_power = cost_to_core
+					add_state_core = PREV
+					multiply_variable = {
+						cost_to_core = -1
+					}
+				}
+			}
+			claim_state_button_click = {
+				ROOT = {
+					multiply_variable = {
+						cost_to_claim = -1
+					}
+					add_political_power = cost_to_claim
+					add_state_claim = PREV
+					multiply_variable = {
+						cost_to_claim = -1
+					}
+				}
+			}
+			revoke_core_button_click = {
+				ROOT = {
+					set_variable = {
+						landlord_state = PREV
+					}
+					set_country_flag = landlord_revoking_core
+					clr_country_flag = landlord_returning_state
+				}
+			}
+			revoke_claim_button_click = {
+				ROOT = {
+					set_variable = {
+						landlord_state = PREV
+					}
+					set_country_flag = landlord_revoking_claim
+					clr_country_flag = landlord_returning_state
+				}
+			}
+		}
+		triggers = {
+			check_core_button_click_enabled = {
+				ROOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_LANDLORD_ENABLED
+				}
+				NOT = {
+					PREV = {
+						has_state_flag = core_cost_checked
+					}
+				}
+			}
+			core_state_button_click_enabled = {
+				ROOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_LANDLORD_ENABLED
+				}
+				PREV = {
+					has_state_flag = core_cost_checked
+				}
+				OR = {
+					check_variable = {
+						ROOT.cost_to_core < ROOT.political_power
+					}
+					check_variable = {
+						ROOT.cost_to_core = ROOT.political_power
+					}
+				}
+				PREV = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_occupy_to_core
+								option = CWC_OCCUPY_PEACE
+							}
+						}
+						is_owned_and_controlled_by = ROOT
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_occupy_to_core
+								option = CWC_OCCUPY_WAR
+							}
+						}
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_comp_to_core
+								option = CWC_COMP_COST_100
+							}
+						}
+						compliance > 99.99
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_comp_to_core
+								option = CWC_COMP_COST_80
+							}
+						}
+						compliance > 79.99
+					}
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_comp_to_core
+								option = CWC_COMP_COST_60
+							}
+						}
+						compliance > 59.99
+					}
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_comp_to_core
+								option = CWC_COMP_COST_40
+							}
+						}
+						compliance > 29.99
+					}
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = CWC_comp_to_core
+								option = CWC_COMP_COST_20
+							}
+						}
+						compliance > 19.99
+					}
+				}
+			}
+			claim_state_button_click_enabled = {
+				ROOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_LANDLORD_ENABLED
+				}
+				PREV = {
+					has_state_flag = core_cost_checked
+					NOT = {
+						is_core_of = ROOT
+					}
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+				NOT = {
+					ROOT = {
+						has_full_control_of_state = PREV
+					}
+				}
+				OR = {
+					check_variable = {
+						ROOT.cost_to_claim < ROOT.political_power
+					}
+					check_variable = {
+						ROOT.cost_to_claim = ROOT.political_power
+					}
+				}
+			}
+			revoke_core_button_click_enabled = {
+				ROOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_LANDLORD_ENABLED
+				}
+				PREV = {
+					is_core_of = ROOT
+					NOT = {
+						is_capital = yes
+					}
+				}
+			}
+			revoke_claim_button_click_enabled = {
+				ROOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_LANDLORD_ENABLED
+				}
+				PREV = {
+					is_claimed_by = ROOT
+				}
+			}
+		}
+	}
+}

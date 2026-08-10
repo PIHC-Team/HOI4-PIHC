@@ -1,0 +1,15 @@
+wargoal_types = {
+	civil_war = {
+		war_name = CIVIL_WAR_NAME
+		allowed = {
+			always = no
+		}
+		available = {
+		}
+		take_states = {
+		}
+		threat = 1
+		take_states_threat_factor = 0.1
+		take_states_cost = -75
+	}
+}

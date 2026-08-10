@@ -1,0 +1,63 @@
+focus = {
+	id = FOCUS_C15_CHANGELING_ENEMY
+	icon = GFX_FOCUS_C15_CHANGELING_ENEMY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_ECONOMIC_LEFTOVER
+	}
+	bypass = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C15_INDEPENDENCE_WAR
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C15_CHANGELING_FRIEND
+	}
+	cost = 3
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	completion_reward = {
+		news_event = {
+			id = C15_MAIN.7
+			days = 1
+		}
+		345 = {
+			set_demilitarized_zone = no
+			set_state_name = STATE_345_FORMER_CONCESSION
+			remove_core_of = C11
+		}
+		C11 = {
+			remove_resource_rights = 345
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = despotic
+			popularity = 0.05
+		}
+		40 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = C15
+				}
+				BUILD_A_MIC = yes
+				BUILD_A_CIC = yes
+				BUILD_A_CIC = yes
+				BUILD_A_CIC = yes
+			}
+		}
+	}
+	x = 9
+	y = 7
+}

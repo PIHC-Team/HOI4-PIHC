@@ -1,0 +1,35 @@
+equipments = {
+	EQUIPMENT_TANK_LIGHT_CONTEMPORARY = {
+		archetype = ARCHETYPE_TANK_LIGHT
+		priority = 10002
+		visual_level = 10002
+		build_cost_ic = 45.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 54.0
+		hard_attack = 30.0
+		air_attack = 2.25
+		ap_attack = 12.0
+		breakthrough = 60.0
+		defense = 90.0
+		armor_value = 30.0
+		hardness = 0.8
+		max_strength = 50.0
+		weight = 2.0
+		maximum_speed = 22.0
+		entrenchment = 8.0
+		recon = 4
+		picture = EQUIPMENT_TANK_LIGHT_CONTEMPORARY
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_TANK_LIGHT_MODERN
+		resources = {
+			steel = 10
+			rubber = 6
+			tungsten = 6
+		}
+		fuel_consumption = 0.15
+	}
+}

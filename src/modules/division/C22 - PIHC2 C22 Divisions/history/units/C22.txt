@@ -1,0 +1,739 @@
+division_template = {
+    name = "提雷克火炮禁卫军 (Tirek Artillery Praetorian Guard)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C22_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "提雷克轻型装甲禁卫军 (Tirek Light Armor Praetorian Guard)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "提雷克自动作战禁卫军 (Tirek Automata Praetorian Guard)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "提雷克重装步兵禁卫军 (Tirek Heavy Infantry Praetorian Guard)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "提雷克魔法步兵禁卫军 (Tirek Magical Infantry Praetorian Guard)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "提雷克协同禁卫军 (Tirek Concerted Praetorian Guard)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "提雷克机动步兵禁卫军 (Tirek Motorized Infantry Praetorian Guard)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C22_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 3629
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 1181
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 3459
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 3459
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 8467
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 8467
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 4883
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 4883
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 130
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 5047
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 5047
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 116
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 17
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 1391
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 18
+        }
+        division_template = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+        location = 1391
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 43
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 1726
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 2622
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 2692
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 8171
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 8171
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 7412
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 7412
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 6419
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 1429
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 11289
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 3343
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 3343
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 278
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 17
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 8673
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 18
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 8673
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 19
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 2951
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 20
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 2951
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 21
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 6968
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 22
+        }
+        division_template = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+        location = 11196
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+}

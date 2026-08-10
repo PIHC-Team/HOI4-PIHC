@@ -1,0 +1,42 @@
+focus = {
+	id = FOCUS_C18_110_SECRET_CENTAUR
+	icon = GFX_FOCUS_C18_110_SECRET_CENTAUR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_110_DUI
+	}
+	bypass = {
+		hidden_trigger = {
+			has_country_flag = PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED
+		}
+	}
+	cost = 3
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_SENDAK_TRIGGERED
+			}
+			add_political_power = 150
+		}
+		else = {
+			add_political_power = 50
+			C18_LESS_ATTENTION_1 = yes
+		}
+	}
+	available = {
+		country_exists = C22
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 3
+	y = 4
+}

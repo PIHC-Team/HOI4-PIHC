@@ -1,0 +1,32 @@
+technologies = {
+    TECHNOLOGY_SHIP_SEACOURTYARD_STEAM = {
+        folder = {
+            name = naval_folder
+            position = {
+                x = 2
+                y = 21
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_navy
+            pihc_courtyard
+            pihc_steam_tech
+        }
+        enable_equipments = {
+            EQUIPMENT_SHIP_SEACOURTYARD_STEAM
+        }
+        enable_subunits = {
+        }
+        dependencies = {
+            TECHNOLOGY_TECH_ENER_I = 1
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1008
+    }
+}

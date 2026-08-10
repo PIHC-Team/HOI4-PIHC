@@ -1,0 +1,13 @@
+leader_traits = {
+	TRAIT_SABLE_SPIRIT_ETERNAL_GRACE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = 0.5
+		local_resources_factor = 0.15
+		monthly_population = 0.3
+		war_support_factor = -1
+		peacism_drift = 0.05
+	}
+}

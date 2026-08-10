@@ -1,0 +1,119 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/character
+version: 0.2.5
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-character
+items:
+-   kind: entity
+    identifier: pihc3-character
+    name: PIHC3 Character Module
+    desc: Project-owned character source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Character
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+-   kind: extension
+    identifier: pihc3-character
+    name: PIHC3 Character
+    desc: PIHC3 character module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        dependencies:
+        - entity:pihc3-character
+        definition:
+            identifier: pihc3-character
+            name: PIHC3 Character
+            version: 0.2.5
+            desc: PIHC3 character module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-character
+            meta:
+                project: PIHC3
+                family: character
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-character
+    name: PIHC3 Character Compiler
+    desc: Registry-backed source slots and compiler hooks for character.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        presentation:
+            id: characters
+            title: Characters
+            group: country
+            title_key: modules.characters.title
+        dependencies:
+        - extension:pihc3-character
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-9d1e618e5ee73050
+    name: PIHC3 Basic Character
+    desc: PIHC3 authoring template pihc3:character/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.5
+        definition:
+            template_id: pihc3:character/basic
+            declaration:
+                title: PIHC3 Basic Character
+                family: character
+                args:
+                    title:
+                        required: true
+                        description: Preferred-language character name written to the
+                            `_NAME` localization key.
+                    description:
+                        default: ''
+                        type: text
+                        description: Preferred-language character description written
+                            to the `_DESC` localization key.
+                    gender:
+                        default: female
+                        type: choice
+                        choices:
+                        - female
+                        - male
+                        - undefined
+                        description: Character gender token; existing PIHC3 characters
+                            use `female`, `male`, or `undefined`.
+                    language:
+                        default: en
+                        description: Localization language code for the generated character
+                            name and description; PIHC3 commonly uses `zh` or `en`.
+                files:
+                    def.txt: "characters = {{\n\t{object_id} = {{\n\t\tname = {object_id}_NAME\n\
+                        \t\tgender = {gender}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}_NAME]
+
+                        {title}
+
+
+                        [{language}.{object_id}_DESC]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

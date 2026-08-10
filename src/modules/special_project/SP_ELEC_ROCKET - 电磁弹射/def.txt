@@ -1,0 +1,50 @@
+SP_ELEC_ROCKET = {
+	icon = GFX_SP_ELEC_ROCKET
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	specialization = specialization_elecpunk
+	project_tags = sp_tag_pihc_elecpunk
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_ENER_II
+			has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			aluminium = 4
+			tungsten = 4
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_SP_HIDDEN_ROCKET_OIL = 1
+				popup = no
+			}
+		}
+		enable_equipments = {
+			EQUIPMENT_AIR_MISSILE_ELEC
+		}
+		enable_equipment_modules = {
+			MODULE_TURRET_5B_ELECMAG
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_ELEC
+		SP_REWARD_GENERIC_ELEC_EXP
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		IDEA_EIJC_MEMBER = {
+			picture = EIJC_MEMBER
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_EIJC_MEMBER_TOOLTIP
+			}
+			on_add = {
+				add_dynamic_modifier = {
+					modifier = FOCUS_C09_INTER_HQ_DYNAMIC_MODIFIER
+				}
+				CALCULATE_EIJC_BOOST = yes
+			}
+			on_remove = {
+				remove_dynamic_modifier = {
+					modifier = FOCUS_C09_INTER_HQ_DYNAMIC_MODIFIER
+				}
+				CALCULATE_EIJC_BOOST = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

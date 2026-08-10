@@ -1,0 +1,46 @@
+pihc_land_flame_of_rage_infantry_core = {
+	track = infantry
+	name = DOCTRINE_ARMY_1_1_DISTANT_ATTACK
+	description = DOCTRINE_ARMY_1_1_DISTANT_ATTACK_DESC
+	icon = GFX_doctrine_pihc_land_flame_of_rage_infantry_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	cannon_light = {
+		combat_width = -0.2
+	}
+	cannon_medium = {
+		combat_width = -0.2
+	}
+	cannon_heavy = {
+		combat_width = -0.2
+	}
+	infantry_magical = {
+		combat_width = -0.2
+	}
+	enable_tactic = tactic_overwhelming_fire
+	rewards = {
+		vertical_attack = {
+			category_all_artillery = {
+				recon = 0.25
+			}
+			category_infantry_magical = {
+				recon = 0.25
+			}
+			initiative_factor = 0.1
+			coordination_bonus = 0.03
+			enable_tactic = tactic_pihc_precise_elimination
+		}
+	}
+}

@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C12_ENLARGE_MILITARY_ORGANIZATION = {
+			picture = C12_ENLARGE_MILITARY_ORGANIZATION
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.15
+				conscription_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

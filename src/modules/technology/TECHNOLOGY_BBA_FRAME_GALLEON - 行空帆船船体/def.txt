@@ -1,0 +1,65 @@
+technologies = {
+    TECHNOLOGY_BBA_FRAME_GALLEON = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 6
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+            pihc_air_galleon
+        }
+        enable_equipments = {
+            EQUIPMENT_FRAME_GALLEON
+        }
+        enable_subunits = {
+        }
+        enable_equipment_modules = {
+            MODULE_PLANE_ARMOR_1A_WOODEN
+            MODULE_PLANE_ARMOR_2B_STEEL
+            MODULE_PLANE_ARMOR_2A_BRASS
+            MODULE_PLANE_ENGINE_1A_AIR
+            MODULE_SPECIAL_SUPPLY
+            MODULE_SPECIAL_PARADROP
+            MODULE_SPECIAL_TANK
+            MODULE_PLANE_WEAPON_AIRREC_1A_BINOCULAR
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+            research_cost_coeff = 1
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 25
+                arms_factory > 50
+            }
+            modifier = {
+                factor = 5
+                date > 1003.8.1
+                is_major = yes
+            }
+            modifier = {
+                factor = 50
+                arms_factory > 100
+            }
+            modifier = {
+                factor = 5
+                has_army_manpower = {
+                    size > 15000
+                }
+            }
+        }
+        research_cost = 2
+        start_year = 1000
+    }
+}

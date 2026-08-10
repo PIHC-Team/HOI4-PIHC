@@ -1,0 +1,108 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/division
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-division
+items:
+-   kind: entity
+    identifier: pihc3-division
+    name: PIHC3 Division Module
+    desc: Project-owned division source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Division
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-division
+    name: PIHC3 Division
+    desc: PIHC3 division module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-division
+        definition:
+            identifier: pihc3-division
+            name: PIHC3 Division
+            version: 0.2.3
+            desc: PIHC3 division module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-division
+            meta:
+                project: PIHC3
+                family: division
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-division
+    name: PIHC3 Division Compiler
+    desc: Registry-backed source slots and compiler hooks for division.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: divisions
+            title: Divisions
+            group: military
+            title_key: modules.divisions.title
+        dependencies:
+        - extension:pihc3-division
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-f3cfc9f6146b191e
+    name: PIHC3 Basic Division
+    desc: PIHC3 authoring template pihc3:division/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:division/basic
+            declaration:
+                title: PIHC3 Basic Division
+                family: division
+                args:
+                    title:
+                        required: true
+                    template_name:
+                        default: '{title}'
+                    division_name:
+                        default: '{title}'
+                    location:
+                        default: '11805'
+                    regiment:
+                        default: infantry
+                    start_experience_factor:
+                        default: '0.1'
+                    start_equipment_factor:
+                        default: '1'
+                files:
+                    history/units/{object_id}.txt: "division_template = {{\n\tname\
+                        \ = \"{template_name}\"\n\n\tregiments = {{\n\t\t{regiment}\
+                        \ = {{ x = 0 y = 0 }}\n\t\t{regiment} = {{ x = 0 y = 1 }}\n\
+                        \t\t{regiment} = {{ x = 0 y = 2 }}\n\t}}\n}}\n\nunits = {{\n\
+                        \tdivision = {{\n\t\tname = \"{division_name}\"\n\t\tlocation\
+                        \ = {location}\n\t\tdivision_template = \"{template_name}\"\
+                        \n\t\tstart_experience_factor = {start_experience_factor}\n\
+                        \t\tstart_equipment_factor = {start_equipment_factor}\n\t\
+                        }}\n}}\n"
+                directory: '{object_id} - {title}'

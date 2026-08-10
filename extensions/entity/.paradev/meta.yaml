@@ -1,0 +1,132 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/entity
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-model-entity
+items:
+-   kind: entity
+    identifier: pihc3-model-entity
+    aliases:
+    - PIHC3ModelEntity
+    name: PIHC3 Model Entity
+    desc: Project-owned portable model Entity, assignment, and binary resource contract.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ModelEntity
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-model-entities
+    name: PIHC3 Model Entities
+    desc: PIHC3 model Entity records and deterministic aggregate compilation.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-model-entity
+        definition:
+            identifier: pihc3-model-entities
+            name: PIHC3 Model Entities
+            version: 0.2.3
+            desc: PIHC3 model Entity records and deterministic aggregate compilation.
+            required: false
+            requires: []
+            entities:
+            - pihc3-model-entity
+            meta:
+                project: PIHC3
+                family: entity
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-model-entity
+    name: PIHC3 Model Entity Compiler
+    desc: Portable record validation and aggregate model compilation hooks.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ModelEntity.build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: entity
+            title: Entity
+            group: shared
+            title_key: modules.entity.title
+        dependencies:
+        - extension:pihc3-model-entities
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-aab91f740f6e84ce
+    name: PIHC3 Basic Model Entity
+    desc: PIHC3 authoring template pihc3:entity/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:entity/basic
+            declaration:
+                title: PIHC3 Basic Model Entity
+                family: entity
+                args:
+                    title:
+                        required: true
+                    entity_name:
+                        default: '{object_id}_entity'
+                    mesh_name:
+                        default: '{object_id}_mesh'
+                    mesh_file:
+                        default: gfx/models/{object_id}/mesh.mesh
+                    texture_diffuse:
+                        default: nodiffuse.dds
+                    texture_normal:
+                        default: nonormal.dds
+                    texture_specular:
+                        default: nospec.dds
+                    shader:
+                        default: PdxMeshAdvanced
+                    mesh_scale:
+                        default: '1.0'
+                    entity_scale:
+                        default: '1.0'
+                    default_state:
+                        default: idle
+                    animation:
+                        default: idle
+                files:
+                    gfx/models/{object_id}/mesh.gfx: "objectTypes = {{\n    pdxmesh\
+                        \ = {{\n        name = \"{mesh_name}\"\n        file = \"\
+                        {mesh_file}\"\n        meshsettings = {{\n            texture_diffuse\
+                        \ = {texture_diffuse}\n            texture_normal = {texture_normal}\n\
+                        \            texture_specular = {texture_specular}\n     \
+                        \       shader = {shader}\n        }}\n        animation =\
+                        \ {{\n            id = \"{default_state}\"\n            type\
+                        \ = \"{object_id}_{animation}\"\n        }}\n        scale\
+                        \ = {mesh_scale}\n    }}\n}}\n"
+                    gfx/models/{object_id}/entity.asset: "entity = {{\n    name =\
+                        \ \"{entity_name}\"\n    pdxmesh = \"{mesh_name}\"\n    scale\
+                        \ = {entity_scale}\n    default_state = {default_state}\n\
+                        \    state = {{\n        name = {default_state}\n        animation\
+                        \ = {default_state}\n    }}\n}}\n"
+                    gfx/models/{object_id}/animations.asset: "animation = {{\n   \
+                        \ name = \"{object_id}_{animation}\"\n    file = \"{animation}.anim\"\
+                        \n}}\n"
+                directory: '{object_id} - {title}'
+                system_files:
+                    .paradev/meta.yaml: "settings:\n  asset_kind: basic\n  mesh_file:\
+                        \ {mesh_file}\n  animation_file: gfx/models/{object_id}/{animation}.anim\n\
+                        \  authoring_contract: pihc3.entity.basic.v1\n"

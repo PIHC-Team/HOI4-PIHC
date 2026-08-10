@@ -1,0 +1,43 @@
+SP_MAGIC_EDUCATION_IV = {
+	icon = GFX_SP_MAGIC_EDUCATION_IV
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	specialization = specialization_magic
+	project_tags = sp_tag_pihc_magic
+	allowed = {
+		always = yes
+	}
+	visible = {
+		FROM = {
+			NOT = {
+				has_tech = TECHNOLOGY_SUPPORT_MAGIC_IV
+			}
+		}
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_SUPPORT_MAGIC_III
+		}
+	}
+	resource_cost = {
+		resources = {
+			logs = 24
+			crystals = 12
+		}
+	}
+	project_output = {
+		country_effects = {
+			set_technology = {
+				TECHNOLOGY_SUPPORT_MAGIC_IV = 1
+				popup = no
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_MAGIC
+		SP_REWARD_GENERIC_MAGIC_THEORY
+		SP_REWARD_GENERIC_FAILURE_THEORETICAL
+		SP_REWARD_GENERIC_FAILURE_SPIRITUAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

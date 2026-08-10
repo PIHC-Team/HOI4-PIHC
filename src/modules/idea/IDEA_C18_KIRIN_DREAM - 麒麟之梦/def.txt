@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		IDEA_C18_KIRIN_DREAM = {
+			picture = C18_KIRIN_DREAM
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.25
+				cic_construction_boost_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+				global_building_slots = 2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = 0.1
+			}
+			on_add = {
+				C18_DEL_GROWTH_0_1 = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

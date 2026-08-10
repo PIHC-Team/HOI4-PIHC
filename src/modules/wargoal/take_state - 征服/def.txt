@@ -1,0 +1,16 @@
+wargoal_types = {
+	take_state = {
+		allowed = {
+		}
+		available = {
+		}
+		take_states = {
+		}
+		generate_base_cost = 200
+		generate_per_state_cost = 50
+		take_states_limit = 5
+		take_states_cost = -20
+		expire = 60
+		threat = 2
+	}
+}

@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_UNITY_POWER = {
+			picture = ALL_UNITY_POWER
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.33
+				theorist_cost_factor = -0.33
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

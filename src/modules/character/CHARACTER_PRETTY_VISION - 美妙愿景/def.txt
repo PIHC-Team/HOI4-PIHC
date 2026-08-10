@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_PRETTY_VISION = {
+        name = CHARACTER_PRETTY_VISION_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PRETTY_VISION.dds"
+                small = "gfx/leaders/CHARACTER_PRETTY_VISION_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PRETTY_VISION_army.dds"
+                small = "gfx/leaders/CHARACTER_PRETTY_VISION_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PRETTY_VISION_navy.dds"
+                small = "gfx/leaders/CHARACTER_PRETTY_VISION_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PRETTY_VISION
+            desc = CHARACTER_PRETTY_VISION_DESC
+            traits = {
+                TRAIT_INDUSTRY_LEADER
+                TRAIT_WAR_INDUSTRIALIST
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 180
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

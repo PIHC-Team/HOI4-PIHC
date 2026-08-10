@@ -1,0 +1,18 @@
+MODULE_PROJECTILE_6B_ARC = {
+	category = pihc_tank_projectile_type_2_elec
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 2.0
+		weight = 0.2
+		soft_attack = 30.0
+		hard_attack = 24.0
+		ap_attack = 10.0
+		maximum_speed = -1.0
+		reliability = -0.05
+	}
+	build_cost_resources = {
+		tungsten = 1
+		chromium = 1
+	}
+	xp_cost = 10
+}

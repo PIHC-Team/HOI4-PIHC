@@ -1,0 +1,46 @@
+state = {
+    id = 391
+    name = STATE_391
+    provinces = {
+        792
+        1370
+        4100
+        6162
+        7161
+        7840
+        8243
+        8883
+        10776
+        10779
+        10783
+        10795
+        10833
+    }
+    manpower = 49564
+    state_category = town
+    history = {
+        owner = C08
+        buildings = {
+            infrastructure = 3
+            farm_complex = 3
+            1370 = {
+
+            }
+            8883 = {
+
+            }
+            10795 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C08
+        victory_points = {
+            10795
+            15
+        }
+    }
+    resources = {
+        logs = 1
+        steel = 2
+    }
+}

@@ -1,0 +1,27 @@
+focus = {
+	id = FOCUS_C01_ECONOMIC_POLICY
+	icon = GFX_FOCUS_C01_ECONOMIC_POLICY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_COZY_GLOW_CORONATION
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C01_GREAT_JAHR_NULL
+	}
+	cost = 52
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 2
+}

@@ -1,0 +1,64 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_MANEHATTAN_START = {
+        fixed_random_seed = no
+        priority = 99
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            declare_war_on = {
+                target = C06
+                type = liberate_wargoal
+            }
+            add_ideas = IDEA_C08_MANEHATTAN_WAR
+            news_event = {
+                id = C08_MAIN.37
+                days = 1
+            }
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_TROTTINGHAM_MNS
+                }
+                C08 = {
+                    set_state_controller = 4
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_MANEHATTAN_RUSH_VANGUARD
+                }
+                C08 = {
+                    add_timed_idea = {
+                        idea = IDEA_C08_ASSAULT
+                        days = 30
+                    }
+                }
+            }
+            hidden_effect = {
+                set_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+                add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+                C05 = {
+                    add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+                }
+                C23 = {
+                    add_ideas = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+                }
+                C01 = {
+                    diplomatic_relation = {
+                        country = C06
+                        relation = guarantee
+                        active = no
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_MANEHATTAN_START
+    }
+}

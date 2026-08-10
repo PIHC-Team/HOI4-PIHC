@@ -1,0 +1,24 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				army_experience = 125
+				air_experience = 25
+				if = {
+					limit = {
+						any_controlled_state = {
+							is_coastal = yes
+						}
+					}
+					navy_experience = 50
+				}
+				if = {
+					limit = {
+						is_magic_country = yes
+					}
+					add_political_power = 20
+				}
+			}
+		}
+	}
+}

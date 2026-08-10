@@ -1,0 +1,17 @@
+UPDATE_DEV_BONDS_EXCHANGE_RATE = {
+	round_variable = global.VAR_DEV_BONDS_EXCHANGE
+	clamp_variable = {
+		var = global.VAR_DEV_BONDS_EXCHANGE
+		min = 50
+		max = 500
+	}
+	set_variable = {
+		var = global.VAR_DEV_BONDS_EXCHANGE_INV
+		value = 10000
+	}
+	divide_variable = {
+		var = global.VAR_DEV_BONDS_EXCHANGE_INV
+		value = global.VAR_DEV_BONDS_EXCHANGE
+	}
+	round_variable = global.VAR_DEV_BONDS_EXCHANGE_INV
+}

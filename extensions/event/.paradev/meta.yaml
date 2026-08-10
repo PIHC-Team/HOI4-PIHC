@@ -1,0 +1,80 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/event
+version: 0.2.7
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-event
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-event
+    name: PIHC3 Event Compiler
+    desc: Compiles event namespaces together with owned event pictures.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        presentation:
+            id: events
+            title: Events
+            group: events
+            title_key: modules.events.title
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-cb1965176d3fe023
+    name: PIHC3 Basic Country Event
+    desc: PIHC3 authoring template pihc3:event/country-basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        definition:
+            template_id: pihc3:event/country-basic
+            declaration:
+                title: PIHC3 Basic Country Event
+                family: event
+                args:
+                    title:
+                        required: true
+                        description: Preferred-language country-event title written to
+                            the event title localization key.
+                    description:
+                        default: ''
+                        type: text
+                        description: Preferred-language event body written to the event
+                            description localization key.
+                    option_title:
+                        default: Continue
+                        description: Label for the template's single option; edit `def.txt`
+                            after creation to add its scripted effects.
+                    language:
+                        default: en
+                        description: Localization language code for the generated event
+                            title, body, and option; PIHC3 commonly uses `zh` or `en`.
+                files:
+                    def.txt: "add_namespace = {object_id}\ncountry_event = {{\n\t\
+                        id = {object_id}.1\n\ttitle = {object_id}\n\tdesc = {object_id}_desc\n\
+                        \tis_triggered_only = yes\n\toption = {{\n\t\tname = {object_id}_option_a\n\
+                        \t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_option_a]
+
+                        {option_title}
+
+                        '
+                directory: '{object_id} - {title}'

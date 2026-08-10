@@ -1,0 +1,39 @@
+characters = {
+    CHARACTER_SKY_STINGER = {
+        name = CHARACTER_SKY_STINGER_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_SKY_STINGER_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_SKY_STINGER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SKY_STINGER_army.dds"
+                small = "gfx/leaders/CHARACTER_SKY_STINGER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SKY_STINGER_navy.dds"
+                small = "gfx/leaders/CHARACTER_SKY_STINGER_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_SKY_STINGER_DESC
+            traits = {
+                TRAIT_HARMONISM_APPRENTICE
+            }
+            ideology = harmonicism_revengeism
+        }
+        advisor = {
+            idea_token = CHARACTER_SKY_STINGER
+            desc = CHARACTER_SKY_STINGER_DESC
+            traits = {
+                TRAIT_HARMONISM_APPRENTICE
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 150
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

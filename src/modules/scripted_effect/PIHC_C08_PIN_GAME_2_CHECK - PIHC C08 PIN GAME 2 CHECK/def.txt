@@ -1,0 +1,32 @@
+PIHC_C08_PIN_GAME_2_CHECK = {
+	hidden_effect = {
+		C08 = {
+			PIHC_C08_PIN_GAME_2_GET_ANSWER = yes
+			if = {
+				limit = {
+					check_variable = {
+						C08.VAR_C08_PIN_GAME_2_ANSWER_BOTTLE = C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES^VAR_C08_PIN_GAME_2_CONTACT_COUNT
+					}
+				}
+				add_to_variable = {
+					var = C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+					SOLVE_PIHC_C08_PIN_GAME_2 = yes
+				}
+				PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY = yes
+			}
+			else = {
+				PIHC_C08_PIN_GAME_2_INIT = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+characters = {
+    CHARACTER_DERPY_HOOVES = {
+        name = CHARACTER_DERPY_HOOVES_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_DERPY_HOOVES_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_DERPY_HOOVES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DERPY_HOOVES_army.dds"
+                small = "gfx/leaders/CHARACTER_DERPY_HOOVES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DERPY_HOOVES_navy.dds"
+                small = "gfx/leaders/CHARACTER_DERPY_HOOVES_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_DERPY_HOOVES_DESC
+            traits = {
+                TRAIT_DERPY_HOOVES_CHAOTIC
+                TRAIT_DERPY_HOOVES_POPULAR
+            }
+            ideology = democratic_duchy
+        }
+    }
+}

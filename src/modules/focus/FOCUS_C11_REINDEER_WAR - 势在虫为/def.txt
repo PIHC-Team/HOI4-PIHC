@@ -1,0 +1,35 @@
+focus = {
+	id = FOCUS_C11_REINDEER_WAR
+	icon = GFX_FOCUS_C11_REINDEER_WAR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_REINDEER_DESTINY
+	}
+	cost = 4
+	will_lead_to_war_with = C17
+	completion_reward = {
+		add_timed_idea = {
+			idea = IDEA_C11_C17_PREPARED
+			days = 360
+		}
+		declare_war_on = {
+			type = annex_everything
+			target = C17
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 8
+}

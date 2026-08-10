@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C07_LPEG_NEW_ENERGY
+	icon = GFX_FOCUS_C07_LPEG_NEW_ENERGY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPEG_WARM_HOTLINE
+	}
+	cost = 3
+	completion_reward = {
+		news_event = {
+			id = C07_MAIN.3
+			days = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 23
+	y = 6
+}

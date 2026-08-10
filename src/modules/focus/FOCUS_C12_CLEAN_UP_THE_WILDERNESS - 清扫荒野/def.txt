@@ -1,0 +1,49 @@
+focus = {
+	id = FOCUS_C12_CLEAN_UP_THE_WILDERNESS
+	icon = GFX_FOCUS_C12_CLEAN_UP_THE_WILDERNESS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_FINAL_RECKONING
+	}
+	cost = 5
+	bypass = {
+		owns_state = 667
+		owns_state = 661
+		owns_state = 688
+		owns_state = 694
+		owns_state = 748
+		owns_state = 141
+		owns_state = 38
+		owns_state = 659
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = C43
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = C41
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = C42
+			type = annex_everything
+		}
+	}
+	available = {
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 33
+}

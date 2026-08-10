@@ -1,0 +1,13 @@
+intelligence_agency = {
+	picture = GFX_INTEL_AGENCY_CECIA
+	names = {
+		"Changeling Empire Central Intelligence Agency"
+	}
+	default = {
+		tag = C11
+	}
+	available = {
+		original_tag = C11
+		has_government = fascism
+	}
+}

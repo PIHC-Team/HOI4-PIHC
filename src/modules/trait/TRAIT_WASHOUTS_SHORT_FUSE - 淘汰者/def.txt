@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_WASHOUTS_SHORT_FUSE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		fascism_drift = 0.02
+	}
+}

@@ -1,0 +1,40 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_BONDS_TO_STABILITY = {
+        fixed_random_seed = no
+        priority = 90
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+        }
+        available = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+            }
+        }
+        custom_cost_trigger = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+            }
+        }
+        custom_cost_text = CUSTOM_COST_DEV_BONDS_300
+        complete_effect = {
+            ROOT = {
+                DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+            }
+            add_stability = 0.01
+            add_political_power = 25
+            hidden_effect = {
+                subtract_from_variable = {
+                    var = global.VAR_DEV_BONDS_EXCHANGE
+                    value = 1
+                }
+                UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = WETM_BONDS_TO_STABILITY
+    }
+}

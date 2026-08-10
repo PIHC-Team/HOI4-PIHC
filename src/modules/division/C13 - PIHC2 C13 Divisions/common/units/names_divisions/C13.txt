@@ -1,0 +1,146 @@
+NAMES_GROUP_C13_ARTILLERY = {
+    name = "丛林火炮巡逻队 (Jungle Artillery Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "丛林火炮巡逻队%d分队 (Jungle Artillery Patrol Team %d)"
+}
+NAMES_GROUP_C13_TANK_LIGHT = {
+    name = "丛林轻型装甲巡逻队 (Jungle Light Armor Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "丛林轻型装甲巡逻队%d分队 (Jungle Light Armor Patrol Team %d)"
+}
+NAMES_GROUP_C13_TRADITIONAL_REGULAR = {
+    name = "丛林常规步兵巡逻队 (Jungle Regular Infantry Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "丛林常规步兵巡逻队%d分队 (Jungle Regular Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C13_TANK_HEAVY = {
+    name = "丛林重型装甲巡逻队 (Jungle Heavy Armor Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "丛林重型装甲巡逻队%d分队 (Jungle Heavy Armor Patrol Team %d)"
+}
+NAMES_GROUP_C13_TRADITIONAL_SMALL = {
+    name = "丛林小型步兵巡逻队 (Jungle Small Infantry Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "丛林小型步兵巡逻队%d分队 (Jungle Small Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C13_AUTOMATA = {
+    name = "丛林自动作战巡逻队 (Jungle Automata Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "丛林自动作战巡逻队%d分队 (Jungle Automata Patrol Team %d)"
+}
+NAMES_GROUP_C13_SHIELD = {
+    name = "丛林重装步兵巡逻队 (Jungle Heavy Infantry Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "丛林重装步兵巡逻队%d分队 (Jungle Heavy Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C13_MAGICAL = {
+    name = "丛林魔法步兵巡逻队 (Jungle Magical Infantry Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "丛林魔法步兵巡逻队%d分队 (Jungle Magical Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C13_INFANTRY_MIX = {
+    name = "丛林协同巡逻队 (Jungle Concerted Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "丛林协同巡逻队%d分队 (Jungle Concerted Patrol Team %d)"
+}
+NAMES_GROUP_C13_MOTORIZED = {
+    name = "丛林机动步兵巡逻队 (Jungle Motorized Infantry Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "丛林机动步兵巡逻队%d分队 (Jungle Motorized Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C13_TANK_MEDIUM = {
+    name = "丛林中型装甲巡逻队 (Jungle Medium Armor Patrol Team)"
+    for_countries = {
+        C13
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "丛林中型装甲巡逻队%d分队 (Jungle Medium Armor Patrol Team %d)"
+}

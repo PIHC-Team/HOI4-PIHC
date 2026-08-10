@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C12_COLORFUL_SKY
+	icon = GFX_FOCUS_C12_COLORFUL_SKY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_FLYING_SQUADRONS
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			category = pihc_air
+			bonus = 0.5
+			uses = 3
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 18
+	y = 10
+}

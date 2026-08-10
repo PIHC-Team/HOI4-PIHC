@@ -1,0 +1,8 @@
+token_civilian = {
+	name = OPERATION_TOKEN_INFILTRATED_CIVILIAN
+	desc = OPERATION_TOKEN_INFILTRATED_CIVILIAN_DESC
+	icon = GFX_infiltrate_civilian_bg
+	text_icon = GFX_text_infiltrate_civilian_token
+	intel_source = civilian
+	intel_gain = 10
+}

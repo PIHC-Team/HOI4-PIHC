@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_ALL_UNITY_ARMY = {
+			picture = ALL_UNITY_ARMY
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				army_chief_cost_factor = -0.33
+				navy_chief_cost_factor = -0.33
+				air_chief_cost_factor = -0.33
+				high_command_cost_factor = -0.33
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

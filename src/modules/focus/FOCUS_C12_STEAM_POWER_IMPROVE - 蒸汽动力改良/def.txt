@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C12_STEAM_POWER_IMPROVE
+	icon = GFX_FOCUS_C12_STEAM_POWER_IMPROVE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_ANALYZING_THE_WHIMSICAL_IDEAS
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = pihc_steam_tech
+		}
+	}
+	bypass = {
+		has_tech = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 6
+}

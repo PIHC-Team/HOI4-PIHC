@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C08_ASSAULT = {
+			picture = C08_ASSAULT
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.2
+				breakthrough_factor = 0.25
+				army_attack_factor = 0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

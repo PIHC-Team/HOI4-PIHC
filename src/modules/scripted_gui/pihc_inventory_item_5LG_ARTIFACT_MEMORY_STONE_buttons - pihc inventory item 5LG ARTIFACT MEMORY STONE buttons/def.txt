@@ -1,0 +1,43 @@
+scripted_gui = {
+	pihc_inventory_item_5LG_ARTIFACT_MEMORY_STONE_buttons = {
+		context_type = player_context
+		window_name = pihc_inventory_item_5LG_ARTIFACT_MEMORY_STONE_buttons_container
+		parent_window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+			has_variable = PIHC_INVENTORY_DISPLAY
+			check_variable = {
+				var = PIHC_INVENTORY_DISPLAY
+				value = 3
+				compare = equals
+			}
+		}
+		triggers = {
+			pihc_inventory_item_5LG_ARTIFACT_MEMORY_STONE_o0_button_visible = {
+				always = yes
+			}
+			pihc_inventory_item_5LG_ARTIFACT_MEMORY_STONE_o0_button_click_enabled = {
+				TRIGGER_HAVE_INVENTORY_ITEM_5LG_ARTIFACT_MEMORY_STONE = yes
+				has_tech = TECHNOLOGY_TECH_MAGI_II
+			}
+		}
+		effects = {
+			pihc_inventory_item_5LG_ARTIFACT_MEMORY_STONE_o0_button_click = {
+				DEL_INVENTORY_ITEM_5LG_ARTIFACT_MEMORY_STONE_1 = yes
+				if = {
+					limit = {
+						has_tech = TECHNOLOGY_TECH_MAGI_II
+					}
+					add_nuclear_bombs = 1
+				}
+				else = {
+					custom_effect_tooltip = PIHC_ARTIFACT_OVERCHARGE_EFFECT_UNKNOWN
+					hidden_effect = {
+						add_nuclear_bombs = 1
+					}
+				}
+			}
+		}
+	}
+}

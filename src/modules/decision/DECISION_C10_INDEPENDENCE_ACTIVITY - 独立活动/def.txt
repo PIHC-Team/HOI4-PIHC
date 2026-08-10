@@ -1,0 +1,45 @@
+DECISION_CATEGORY_C10_INDEPENDENCE = {
+    DECISION_C10_INDEPENDENCE_ACTIVITY = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 75
+        days_re_enable = 90
+        visible = {
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+            }
+        }
+        available = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+                    always = no
+                }
+            }
+            NOT = {
+                has_power_balance_modifier = {
+                    id = BOP_C10_INDEPENDENCE
+                    modifier = BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                }
+            }
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = PIHC_COUNTRY_FLAG_30_DAYS_SECRET_FOR_INDENDENCE
+                days = 30
+                value = 1
+            }
+            add_power_balance_modifier = {
+                id = BOP_C10_INDEPENDENCE
+                modifier = BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+            }
+        }
+        ai_will_do = {
+            base = 2
+        }
+        icon = C10_INDEPENDENCE_ACTIVITY
+    }
+}

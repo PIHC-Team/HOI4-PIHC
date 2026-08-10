@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/leader_trait
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-leader-trait
+items:
+-   kind: entity
+    identifier: pihc3-leader-trait-module
+    name: PIHC3 Leader Trait Module
+    desc: Project-owned leader_trait source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3LeaderTraitModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-leader-trait
+    name: PIHC3 Leader Trait
+    desc: PIHC3 leader_trait module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-leader-trait-module
+        definition:
+            identifier: pihc3-leader-trait
+            name: PIHC3 Leader Trait
+            version: 0.2.3
+            desc: PIHC3 leader_trait module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-leader-trait-module
+            meta:
+                project: PIHC3
+                family: leader_trait
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-leader-trait
+    name: PIHC3 Leader Trait Compiler
+    desc: Registry-backed source slots and compiler hooks for leader_trait.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: leader-trait
+            title: Leader Trait
+            group: military
+        dependencies:
+        - extension:pihc3-leader-trait

@@ -1,0 +1,37 @@
+technologies = {
+    TECHNOLOGY_BBA_AIR_CLOUDCANNON = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 4
+                y = 6
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        enable_equipments = {
+            EQUIPMENT_AIR_ARMED_CLOUDCANNON
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_AIR_FIXEDWING
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1002
+    }
+}

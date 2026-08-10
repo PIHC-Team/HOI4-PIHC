@@ -1,0 +1,54 @@
+DECISION_CATEGORY_C08_PIN_GAME_1 = {
+    DECISION_C08_PIN_GAME_1_SUBMIT = {
+        fixed_random_seed = no
+        priority = 99
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            custom_trigger_tooltip = {
+                tooltip = C08_PIN_GAME_1_DONE_TOOLITP
+                NOT = {
+                    OR = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_CORRECT
+                        has_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_1_INCORRECT
+                    }
+                }
+            }
+        }
+        available = {
+            C08 = {
+                TRIGGER_HAVE_INVENTORY_ITEM_5LG_C08_PIN = yes
+                has_country_leader = {
+                    character = CHARACTER_STARLIGHT_GLIMMER
+                    ruling_only = yes
+                }
+                custom_trigger_tooltip = {
+                    tooltip = C08_PIN_SWITCH_ON_TOOLITP
+                    has_country_flag = PIHC_INVENTORY_ITEM_5LG_C08_PIN_o0_SWITCH_ON
+                }
+                TRIGGER_HAVE_INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK = yes
+            }
+            C02 = {
+                has_country_leader = {
+                    character = CHARACTER_TRIXIE_LULAMOON
+                    ruling_only = yes
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = C08_PIN_GAME_1_SUBMIT_TOOLITP
+                check_variable = {
+                    C08.ARRAY_C08_PIN_GAME_1_ANSWERS^num = 4
+                }
+            }
+        }
+        complete_effect = {
+            hidden_effect = {
+                PIHC_C08_PIN_GAME_1_CHECK = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_PIN_GAME_1_SUBMIT
+    }
+}

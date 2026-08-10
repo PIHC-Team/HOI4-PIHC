@@ -1,0 +1,50 @@
+focus = {
+	id = FOCUS_C12_PROJECT_ROCKFORGED_WARRIORS
+	icon = GFX_FOCUS_C12_PROJECT_ROCKFORGED_WARRIORS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_GLORY_BELONGS_TO_PIE_FAMILY
+	}
+	cost = 3
+	completion_reward = {
+		custom_effect_tooltip = PIHC_C12_PROJECT_ROCKFORGED_WARRIORS_TOOLTIP
+		C12 = {
+			country_event = {
+				id = C12_MAIN.58
+				days = 2
+				random_days = 2
+			}
+		}
+	}
+	bypass = {
+		OR = {
+			C01 = {
+				OR = {
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			NOT = {
+				country_exists = C01
+			}
+		}
+	}
+	available = {
+		has_tech = TECHNOLOGY_TECH_INFO_III
+		has_tech = TECHNOLOGY_SUPPORT_AUTO_II
+		has_tech = TECHNOLOGY_FIREARM_VIII
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 11
+	y = 26
+}

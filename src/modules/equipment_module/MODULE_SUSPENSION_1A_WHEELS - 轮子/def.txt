@@ -1,0 +1,9 @@
+MODULE_SUSPENSION_1A_WHEELS = {
+	category = pihc_tank_suspension_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.1
+		maximum_speed = 1.0
+	}
+	xp_cost = 5
+}

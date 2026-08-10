@@ -1,0 +1,146 @@
+NAMES_GROUP_C11_ARTILLERY = {
+    name = "幻形火炮师 (Changeling Artillery Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "幻形火炮师%d师 (Changeling Artillery Division %d)"
+}
+NAMES_GROUP_C11_TANK_LIGHT = {
+    name = "幻形轻型装甲师 (Changeling Light Armor Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "幻形轻型装甲师%d师 (Changeling Light Armor Division %d)"
+}
+NAMES_GROUP_C11_TRADITIONAL_REGULAR = {
+    name = "幻形常规步兵师 (Changeling Regular Infantry Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "幻形常规步兵师%d师 (Changeling Regular Infantry Division %d)"
+}
+NAMES_GROUP_C11_TANK_HEAVY = {
+    name = "幻形重型装甲师 (Changeling Heavy Armor Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "幻形重型装甲师%d师 (Changeling Heavy Armor Division %d)"
+}
+NAMES_GROUP_C11_TRADITIONAL_SMALL = {
+    name = "幻形小型步兵师 (Changeling Small Infantry Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "幻形小型步兵师%d师 (Changeling Small Infantry Division %d)"
+}
+NAMES_GROUP_C11_AUTOMATA = {
+    name = "幻形自动作战师 (Changeling Automata Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "幻形自动作战师%d师 (Changeling Automata Division %d)"
+}
+NAMES_GROUP_C11_SHIELD = {
+    name = "幻形重装步兵师 (Changeling Heavy Infantry Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "幻形重装步兵师%d师 (Changeling Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C11_MAGICAL = {
+    name = "幻形魔法步兵师 (Changeling Magical Infantry Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "幻形魔法步兵师%d师 (Changeling Magical Infantry Division %d)"
+}
+NAMES_GROUP_C11_INFANTRY_MIX = {
+    name = "幻形协同师 (Changeling Concerted Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "幻形协同师%d师 (Changeling Concerted Division %d)"
+}
+NAMES_GROUP_C11_MOTORIZED = {
+    name = "幻形机动步兵师 (Changeling Motorized Infantry Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "幻形机动步兵师%d师 (Changeling Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C11_TANK_MEDIUM = {
+    name = "幻形中型装甲师 (Changeling Medium Armor Division)"
+    for_countries = {
+        C11
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "幻形中型装甲师%d师 (Changeling Medium Armor Division %d)"
+}

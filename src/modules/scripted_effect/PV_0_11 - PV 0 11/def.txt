@@ -1,0 +1,16 @@
+PV_0_11 = {
+	C07 = {
+		PV_RESTORE = yes
+		set_cosmetic_tag = PV_C07_SYNDICATE
+		every_owned_state = {
+			if = {
+				limit = {
+					NOT = {
+						has_state_flag = PIHC_STATE_FLAG_IS_CENTRAL_EQUESTRIA
+					}
+				}
+				transfer_state_to = C00
+			}
+		}
+	}
+}

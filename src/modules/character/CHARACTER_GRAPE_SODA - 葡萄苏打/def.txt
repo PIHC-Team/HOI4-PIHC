@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_GRAPE_SODA = {
+        name = CHARACTER_GRAPE_SODA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_GRAPE_SODA.dds"
+                small = "gfx/leaders/CHARACTER_GRAPE_SODA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_GRAPE_SODA_army.dds"
+                small = "gfx/leaders/CHARACTER_GRAPE_SODA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_GRAPE_SODA_navy.dds"
+                small = "gfx/leaders/CHARACTER_GRAPE_SODA_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 6
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

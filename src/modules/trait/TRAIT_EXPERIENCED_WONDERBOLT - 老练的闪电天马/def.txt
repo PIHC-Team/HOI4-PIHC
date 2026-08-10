@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_EXPERIENCED_WONDERBOLT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		air_agility_factor = 0.15
+		air_ace_generation_chance_factor = 0.25
+		air_mission_efficiency = 0.1
+	}
+}

@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C18_100_WAR_SENDAK
+	icon = GFX_FOCUS_C18_100_WAR_SENDAK_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_100_PREPARE_SENDAK
+	}
+	allow_branch = {
+		OR = {
+			has_country_flag = PIHC_COUNTRY_FLAG_C18_WAR_ON_C37
+			has_completed_focus = FOCUS_C18_100_PREPARE_SENDAK
+		}
+	}
+	cost = 1
+	will_lead_to_war_with = C37
+	completion_reward = {
+		declare_war_on = {
+			target = C37
+			type = annex_everything
+		}
+		add_named_threat = {
+			threat = 3
+			name = EVENT_C18_MAIN_60_TOOLTIP
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 6
+}

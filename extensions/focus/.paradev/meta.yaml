@@ -1,0 +1,180 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/focus
+version: 0.2.7
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-focus
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-focus
+    name: PIHC3 Focus Compiler
+    desc: Compiles ordered focus modules into focus-tree collections.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        presentation:
+            id: focuses
+            title: Focuses
+            group: country
+            title_key: modules.focuses.title
+-   kind: paradev_diagram_provider
+    identifier: pihc3-focus
+    name: PIHC3 Focus Tree Provider
+    desc: Projects and edits PIHC3 focus collections through the registered tree interface.
+    source: path
+    target:
+        module: null
+        qualname: diagram_provider
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        dependencies:
+        - paradev_build_family:pihc3-focus
+-   kind: paradev_authoring_template
+    identifier: pihc3-focus-basic
+    name: PIHC3 Basic Focus
+    desc: Create one focus node inside an existing focus-tree collection.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        dependencies:
+        - paradev_build_family:pihc3-focus
+        definition:
+            template_id: pihc3:focus/basic
+            declaration:
+                title: PIHC3 Basic Focus
+                family: focus
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        label: Focus name
+                        description: Preferred-language focus name used for the readable
+                            folder and localization.
+                    description:
+                        default: ''
+                        type: text
+                        label: Description
+                        description: Preferred-language focus tooltip written to the
+                            `_desc` localization key.
+                    tree:
+                        required: true
+                        label: Focus tree
+                        description: Existing focus-tree collection id, stored as hidden
+                            module metadata rather than repeated in `def.txt`.
+                        reference:
+                            kind: collection
+                            family: focus
+                    icon:
+                        default: GFX_goal_generic_construct_civ_factory
+                        label: Game icon
+                        description: GFX sprite id displayed for the focus node.
+                    cost:
+                        default: 10
+                        type: number
+                        label: Focus cost
+                        description: HoI4 focus-cost units; 10 is the standard
+                            70-day focus.
+                    x:
+                        default: 0
+                        type: number
+                        label: X position
+                        description: Horizontal grid position in the owning focus
+                            tree.
+                    y:
+                        default: 0
+                        type: number
+                        label: Y position
+                        description: Vertical grid position in the owning focus
+                            tree.
+                    relative_position:
+                        default: ''
+                        type: text
+                        label: Relative-position source
+                        description: Optional raw positioning statements, such as `relative_position_id`,
+                            inserted into the focus block.
+                    prerequisite:
+                        default: ''
+                        type: text
+                        label: Prerequisite source
+                        description: Optional raw prerequisite block inserted into the
+                            focus definition; the tree editor can maintain reviewed dependencies.
+                    language:
+                        default: zh
+                        type: choice
+                        label: Localization language
+                        choices:
+                        - zh
+                        - en
+                        description: Localization language for the generated focus name
+                            and tooltip.
+                files:
+                    def.txt: "focus = {{\n  id = {object_id}\n  icon = {icon}\n  cost\
+                        \ = {cost}\n  x = {x}\n  y = {y}\n  {relative_position}\n\
+                        \  {prerequisite}\n  completion_reward = {{\n  }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                system_files:
+                    .paradev/meta.yaml: 'collection: {tree}
+
+                        '
+-   kind: paradev_authoring_template
+    identifier: pihc3-focus-tree-basic
+    name: PIHC3 Basic Focus Tree
+    desc: Create one independently editable PIHC3 focus-tree collection.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        dependencies:
+        - paradev_build_family:pihc3-focus
+        definition:
+            template_id: pihc3:focus-tree/basic
+            declaration:
+                kind: collection
+                title: PIHC3 Basic Focus Tree
+                family: focus
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        label: Focus-tree name
+                        description: Readable collection folder title; the focus-tree
+                            object id remains the compiled tree id.
+                    country_tag:
+                        required: true
+                        label: Country tag
+                        description: Three-character country tag that receives this
+                            tree.
+                    continuous_focus_y:
+                        default: 2400
+                        type: number
+                        label: Continuous-focus Y
+                        description: Vertical position of the continuous-focus palette.
+                files:
+                    def.txt: "focus_tree = {{\n  id = {object_id}\n  default = no\n\
+                        \  continuous_focus_position = {{\n    x = 0\n    y = {continuous_focus_y}\n\
+                        \  }}\n  country = {{\n    factor = 0\n    modifier = {{\n\
+                        \      add = 100\n      tag = {country_tag}\n    }}\n  }}\n\
+                        }}\n"

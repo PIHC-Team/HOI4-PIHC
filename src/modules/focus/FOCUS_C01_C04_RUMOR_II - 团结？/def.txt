@@ -1,0 +1,58 @@
+focus = {
+	id = FOCUS_C01_C04_RUMOR_II
+	icon = GFX_FOCUS_C01_C04_RUMOR_II_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C04_INVITATION
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C04_RUMOR_I
+	}
+	cost = 6
+	select_effect = {
+		hidden_effect = {
+			country_event = {
+				id = C01_C04_REDSKY.5
+				days = 1
+			}
+			country_event = {
+				id = C01_C04_REDSKY.6
+				days = 30
+			}
+		}
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		country_event = {
+			id = C01_C04_REDSKY.7
+		}
+	}
+	available = {
+		C04 = {
+			power_balance_value = {
+				id = BOP_C04_INDEPENDENCE
+				value < -0.30
+			}
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 14
+}

@@ -1,0 +1,99 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/difficulty_setting
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-difficulty-setting
+items:
+-   kind: entity
+    identifier: pihc3-difficulty-setting-module
+    name: PIHC3 Difficulty Setting Module
+    desc: Project-owned difficulty_setting source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3DifficultySettingModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-difficulty-setting
+    name: PIHC3 Difficulty Setting
+    desc: PIHC3 difficulty_setting module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-difficulty-setting-module
+        definition:
+            identifier: pihc3-difficulty-setting
+            name: PIHC3 Difficulty Setting
+            version: 0.2.3
+            desc: PIHC3 difficulty_setting module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-difficulty-setting-module
+            meta:
+                project: PIHC3
+                family: difficulty_setting
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-difficulty-setting
+    name: PIHC3 Difficulty Setting Compiler
+    desc: Registry-backed source slots and compiler hooks for difficulty_setting.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: difficulty-settings
+            title: Difficulty Settings
+            group: country
+            title_key: modules.difficultySettings.title
+        dependencies:
+        - extension:pihc3-difficulty-setting
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-edae6984dea17f1b
+    name: PIHC3 Basic Difficulty Setting
+    desc: PIHC3 authoring template pihc3:difficulty_setting/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:difficulty_setting/basic
+            declaration:
+                title: PIHC3 Basic Difficulty Setting
+                family: difficulty_setting
+                args:
+                    title:
+                        required: true
+                    key:
+                        default: '{object_id}'
+                    modifier:
+                        default: diff_strong_ai_generic
+                    countries:
+                        default: C01
+                    multiplier:
+                        default: '2.0'
+                files:
+                    def.txt: "difficulty_settings = {{\n    difficulty_setting = {{\n\
+                        \        key = {key}\n        modifier = {modifier}\n    \
+                        \    countries = {{ {countries} }}\n        multiplier = {multiplier}\n\
+                        \    }}\n}}\n"
+                directory: '{object_id} - {title}'

@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_ALL_DAY_ALL_NIGHT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		land_night_attack = 0.08
+		experience_gain_army = 0.15
+	}
+}

@@ -1,0 +1,11 @@
+has_ROOT_at_least_1_div_in_current_state_scope = {
+	custom_trigger_tooltip = {
+		tooltip = at_least_one_division_in_state
+		ROOT = {
+			divisions_in_state = {
+				state = PREV
+				size > 0
+			}
+		}
+	}
+}

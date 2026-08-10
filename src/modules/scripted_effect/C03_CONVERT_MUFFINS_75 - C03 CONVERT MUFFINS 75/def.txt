@@ -1,0 +1,39 @@
+C03_CONVERT_MUFFINS_75 = {
+	set_temp_variable = {
+		C03.temp_stability = C03.stability
+	}
+	set_variable = {
+		var = C03.VAR_DEBUG_MUFFIN_STABILITY
+		value = C03.temp_stability
+	}
+	subtract_from_temp_variable = {
+		C03.temp_stability = 0.75
+	}
+	if = {
+		limit = {
+			check_variable = {
+				C03.temp_stability > 0
+			}
+		}
+		C03 = {
+			set_temp_variable = {
+				C03.temp_stability_subtract = C03.temp_stability
+			}
+			multiply_temp_variable = {
+				C03.temp_stability_subtract = -1
+			}
+			add_stability = C03.temp_stability_subtract
+			set_temp_variable = {
+				C03.temp_muffins_add = C03.temp_stability
+			}
+			multiply_temp_variable = {
+				C03.temp_muffins_add = 10000
+			}
+			round_temp_variable = C03.temp_muffins_add
+			add_to_variable = {
+				var = C03.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+				value = C03.temp_muffins_add
+			}
+		}
+	}
+}

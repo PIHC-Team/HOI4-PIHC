@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C11_INVADE_ZEBRA
+	icon = GFX_FOCUS_C11_INVADE_ZEBRA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_WAR_OF_HOLDING
+	}
+	prerequisite = {
+		focus = FOCUS_C11_BORDER_RECRUIT
+	}
+	cost = 5
+	will_lead_to_war_with = C30
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = C30
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 5
+}

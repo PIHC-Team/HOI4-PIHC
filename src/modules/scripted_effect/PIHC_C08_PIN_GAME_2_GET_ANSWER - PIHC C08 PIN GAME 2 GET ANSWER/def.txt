@@ -1,0 +1,42 @@
+PIHC_C08_PIN_GAME_2_GET_ANSWER = {
+	if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT = 0
+			}
+		}
+		PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY1 = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT = 1
+			}
+		}
+		PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY2 = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT = 2
+			}
+		}
+		PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY3 = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT = 3
+			}
+		}
+		PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY4 = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT = 4
+			}
+		}
+		PIHC_C08_PIN_GAME_2_GET_ANSWER_DAY5 = yes
+	}
+}

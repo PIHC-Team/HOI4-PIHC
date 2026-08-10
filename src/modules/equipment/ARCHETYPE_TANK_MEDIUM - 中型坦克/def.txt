@@ -1,0 +1,102 @@
+equipments = {
+	ARCHETYPE_TANK_MEDIUM = {
+		is_archetype = yes
+		is_buildable = no
+		active = yes
+		group_by = archetype
+		type = {
+			armor
+		}
+		interface_category = interface_category_armor
+		module_slots = {
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_engine_type
+				}
+			}
+			crew_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_crew_type_0
+				}
+			}
+			painting_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_painting_type
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_turret_type
+				}
+			}
+			projectile_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_projectile_type
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_armor_type
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_suspension_type
+				}
+			}
+		}
+		upgrades = {
+			pihc_tank_nsb_reliability_upgrade
+			pihc_tank_nsb_armor_value_upgrade
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_PHANTOM_WEDGE
+			count < 1
+			title = HEAVY_CHASSIS_REQUIRED_TOOLTIP
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_BROADCAST
+			count < 2
+			title = MODULE_SPECIAL_ONLY_1_TOOLTIP
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_BATTERY
+			count < 2
+			title = MODULE_SPECIAL_ONLY_1_TOOLTIP
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_PISTON
+			count < 2
+			title = MODULE_SPECIAL_ONLY_1_TOOLTIP
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_TELESCOPE
+			count < 2
+			title = MODULE_SPECIAL_ONLY_1_TOOLTIP
+		}
+		module_count_limit = {
+			module = MODULE_SPECIAL_DJ
+			count < 2
+			title = MODULE_SPECIAL_ONLY_1_TOOLTIP
+		}
+	}
+}

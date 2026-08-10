@@ -1,0 +1,18 @@
+CREATE_C18_NAVY_1 = {
+	C18 = {
+		UNLOCK_NAVY_BASIC = yes
+		create_equipment_variant = {
+			name = "Bao Chuan Class"
+			type = EQUIPMENT_SHIP_SEACOURTYARD
+		}
+		create_equipment_variant = {
+			name = "Liang Chuan Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		create_equipment_variant = {
+			name = "Zuo Chuan Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		load_oob = C18_navy_1
+	}
+}

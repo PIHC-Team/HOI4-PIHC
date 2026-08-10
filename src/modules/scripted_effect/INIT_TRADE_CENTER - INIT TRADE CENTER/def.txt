@@ -1,0 +1,38 @@
+INIT_TRADE_CENTER = {
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_CRYSTALS_VALUE
+		value = 6
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_TUNGSTEN_VALUE
+		value = 4
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_CHROMIUM_VALUE
+		value = 4
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_ALUMINIUM_VALUE
+		value = 4
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_STEEL_VALUE
+		value = 2
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_COAL_VALUE
+		value = 2
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_RUBBER_VALUE
+		value = 2
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_OIL_VALUE
+		value = 2
+	}
+	set_variable = {
+		var = global.VAR_TRADE_CENTER_LOGS_VALUE
+		value = 1
+	}
+}

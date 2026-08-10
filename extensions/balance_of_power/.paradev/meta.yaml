@@ -1,0 +1,172 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/balance_of_power
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-balance-of-power
+items:
+-   kind: entity
+    identifier: pihc3-balance-of-power-module
+    name: PIHC3 Balance Of Power Module
+    desc: Project-owned balance_of_power source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3BalanceOfPowerModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-balance-of-power
+    name: PIHC3 Balance Of Power
+    desc: PIHC3 balance_of_power module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-balance-of-power-module
+        definition:
+            identifier: pihc3-balance-of-power
+            name: PIHC3 Balance Of Power
+            version: 0.2.3
+            desc: PIHC3 balance_of_power module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-balance-of-power-module
+            meta:
+                project: PIHC3
+                family: balance_of_power
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-balance-of-power
+    name: PIHC3 Balance Of Power Compiler
+    desc: Registry-backed source slots and compiler hooks for balance_of_power.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: balance-of-power
+            title: Balance of Power
+            group: country
+            title_key: modules.balanceOfPower.title
+        dependencies:
+        - extension:pihc3-balance-of-power
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-77724e706fe80b15
+    name: PIHC3 Basic Balance Of Power
+    desc: PIHC3 authoring template pihc3:balance_of_power/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:balance_of_power/basic
+            declaration:
+                title: PIHC3 Basic Balance Of Power
+                family: balance_of_power
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    initial_value:
+                        default: '0'
+                    left_side_id:
+                        default: '{object_id}_left_side'
+                    left_side_title:
+                        default: '{title} Left'
+                    left_icon:
+                        default: GFX_goal_generic_political_pressure
+                    left_range_id:
+                        default: '{object_id}_left_range'
+                    left_range_title:
+                        default: '{title} Left Influence'
+                    left_weekly_modifier:
+                        default: war_support_weekly
+                    left_weekly_value:
+                        default: '0'
+                    right_side_id:
+                        default: '{object_id}_right_side'
+                    right_side_title:
+                        default: '{title} Right'
+                    right_icon:
+                        default: GFX_goal_generic_political_pressure
+                    right_range_id:
+                        default: '{object_id}_right_range'
+                    right_range_title:
+                        default: '{title} Right Influence'
+                    right_weekly_modifier:
+                        default: war_support_weekly
+                    right_weekly_value:
+                        default: '0'
+                    neutral_range_id:
+                        default: '{object_id}_mid_range'
+                    neutral_range_title:
+                        default: '{title} Equilibrium'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n\tinitial_value = {initial_value}\n\
+                        \tleft_side = {left_side_id}\n\tright_side = {right_side_id}\n\
+                        \n\trange = {{\n\t\tid = {neutral_range_id}\n\t\tmin = -0.1\n\
+                        \t\tmax = 0.1\n\t\tmodifier = {{\n\t\t}}\n\t}}\n\n\tside =\
+                        \ {{\n\t\tid = {left_side_id}\n\t\ticon = {left_icon}\n\t\t\
+                        range = {{\n\t\t\tid = {left_range_id}\n\t\t\tmin = -1\n\t\
+                        \t\tmax = -0.1\n\t\t\tmodifier = {{\n\t\t\t\t{left_weekly_modifier}\
+                        \ = {left_weekly_value}\n\t\t\t}}\n\t\t}}\n\t}}\n\n\tside\
+                        \ = {{\n\t\tid = {right_side_id}\n\t\ticon = {right_icon}\n\
+                        \t\trange = {{\n\t\t\tid = {right_range_id}\n\t\t\tmin = 0.1\n\
+                        \t\t\tmax = 1\n\t\t\tmodifier = {{\n\t\t\t\t{right_weekly_modifier}\
+                        \ = {right_weekly_value}\n\t\t\t}}\n\t\t}}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{neutral_range_id}]
+
+                        {neutral_range_title}
+
+
+                        [{language}.{left_side_id}]
+
+                        {left_side_title}
+
+
+                        [{language}.{left_range_id}]
+
+                        {left_range_title}
+
+
+                        [{language}.{right_side_id}]
+
+                        {right_side_title}
+
+
+                        [{language}.{right_range_id}]
+
+                        {right_range_title}
+
+                        '

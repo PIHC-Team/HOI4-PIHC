@@ -1,0 +1,27 @@
+technologies = {
+    TECHNOLOGY_AIR_CLOUDFLAG = {
+        folder = {
+            name = air_techs_folder
+            position = {
+                x = 0
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        enable_equipments = {
+            EQUIPMENT_AIR_TRANSPORT_CLOUDFLAG
+        }
+        enable_subunits = {
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

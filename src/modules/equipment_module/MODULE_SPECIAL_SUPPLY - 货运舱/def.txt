@@ -1,0 +1,11 @@
+MODULE_SPECIAL_SUPPLY = {
+	category = pihc_plane_special_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		weight = 4.0
+	}
+	allow_mission_type = {
+		air_supply
+	}
+	xp_cost = 5
+}

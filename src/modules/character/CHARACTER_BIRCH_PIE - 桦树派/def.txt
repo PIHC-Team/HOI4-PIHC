@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_BIRCH_PIE = {
+        name = CHARACTER_BIRCH_PIE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_BIRCH_PIE.dds"
+                small = "gfx/leaders/CHARACTER_BIRCH_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BIRCH_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_BIRCH_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BIRCH_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_BIRCH_PIE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_BIRCH_PIE
+            desc = CHARACTER_BIRCH_PIE_DESC
+            traits = {
+                IRON_WILL_IRON_FIST
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = army_chief
+        }
+    }
+}

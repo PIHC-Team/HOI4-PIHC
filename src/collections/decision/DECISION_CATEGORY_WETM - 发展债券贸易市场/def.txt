@@ -1,0 +1,16 @@
+DECISION_CATEGORY_WETM = {
+    icon = WETM
+    picture = GFX_decision_category_picture
+    priority = 10001
+    visible = {
+        OR = {
+            has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
+            has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+        }
+    }
+    visible_when_empty = yes
+}

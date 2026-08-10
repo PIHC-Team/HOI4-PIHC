@@ -1,0 +1,167 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    DECISION_C01_FORMAL_CONDEMN = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 30
+        days_re_enable = 0
+        available = {
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        target_trigger = {
+            FROM = {
+                OR = {
+                    AND = {
+                        tag = C02
+                        has_power_balance_modifier = {
+                            id = BOP_C02_INDEPENDENCE
+                            modifier = BOP_C02_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                    AND = {
+                        tag = C03
+                        has_power_balance_modifier = {
+                            id = BOP_C03_INDEPENDENCE
+                            modifier = BOP_C03_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                    AND = {
+                        tag = C04
+                        has_power_balance_modifier = {
+                            id = BOP_C04_INDEPENDENCE
+                            modifier = BOP_C04_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                    AND = {
+                        tag = C10
+                        has_power_balance_modifier = {
+                            id = BOP_C10_INDEPENDENCE
+                            modifier = BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                    AND = {
+                        tag = C12
+                        has_power_balance_modifier = {
+                            id = BOP_C12_INDEPENDENCE
+                            modifier = BOP_C12_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                    AND = {
+                        tag = C14
+                        has_power_balance_modifier = {
+                            id = BOP_C14_INDEPENDENCE
+                            modifier = BOP_C14_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                        }
+                    }
+                }
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+                }
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_30_DAYS_SECRET_FOR_INDENDENCE
+                }
+            }
+        }
+        complete_effect = {
+            FROM = {
+                if = {
+                    limit = {
+                        tag = C02
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C02_INDEPENDENCE
+                        modifier = BOP_C02_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C02_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C02_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C03
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C03_INDEPENDENCE
+                        modifier = BOP_C03_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C03_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C04
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C04_INDEPENDENCE
+                        modifier = BOP_C04_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C04_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C04_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C10
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C10_INDEPENDENCE
+                        modifier = BOP_C10_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C10_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C10_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C12
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C12_INDEPENDENCE
+                        modifier = BOP_C12_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C12_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C12_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C14
+                    }
+                    remove_power_balance_modifier = {
+                        id = BOP_C14_INDEPENDENCE
+                        modifier = BOP_C14_INDEPENDENCE_INDEPENDENCE_MOVEMENT
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C14_INDEPENDENCE
+                        value = -0.2
+                        tooltip_side = BOP_C14_INDEPENDENCE_LEFT_SIDE
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_FORMAL_CONDEMN
+    }
+}

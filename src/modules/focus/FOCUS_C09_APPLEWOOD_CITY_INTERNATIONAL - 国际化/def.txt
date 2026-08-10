@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL
+	icon = GFX_FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_APPLEWOOD_CITY_NEW
+	}
+	cost = 6
+	completion_reward = {
+		set_country_flag = PIHC_COUNTRY_FLAG_HAS_AGE_INTERNATIONAL
+		add_ideas = IDEA_ERA_AGE_INTERNATIONAL
+		create_faction = FACTION_JOINT_COUNCIL
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 7
+}

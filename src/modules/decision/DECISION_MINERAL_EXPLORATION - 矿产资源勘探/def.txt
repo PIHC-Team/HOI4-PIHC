@@ -1,0 +1,118 @@
+DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
+    DECISION_MINERAL_EXPLORATION = {
+        fixed_random_seed = no
+        priority = 95
+        days_remove = 120
+        days_re_enable = 90
+        available = {
+            num_of_civilian_factories_available_for_projects > 2
+            hidden_trigger = {
+                has_political_power > 59
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 2
+            has_political_power > 59
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_3_PP_60
+        modifier = {
+            civilian_factory_use = 3
+        }
+        ai_hint_pp_cost = 60
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -60
+                if = {
+                    limit = {
+                        tag = C12
+                        has_completed_focus = FOCUS_C12_LAND_EXPLORATION
+                    }
+                    add_political_power = 60
+                }
+            }
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                if = {
+                    limit = {
+                        owner = {
+                            tag = C12
+                            has_completed_focus = FOCUS_C12_LAND_EXPLORATION
+                        }
+                    }
+                    add_resource = {
+                        type = steel
+                        amount = 2
+                    }
+                }
+                random = {
+                    chance = 30
+                    add_resource = {
+                        type = crystals
+                        amount = 4
+                    }
+                }
+                random = {
+                    chance = 30
+                    add_resource = {
+                        type = chromium
+                        amount = 2
+                    }
+                }
+                random = {
+                    chance = 30
+                    add_resource = {
+                        type = aluminium
+                        amount = 3
+                    }
+                }
+                random = {
+                    chance = 30
+                    add_resource = {
+                        type = tungsten
+                        amount = 2
+                    }
+                }
+                random = {
+                    chance = 1
+                    add_resource = {
+                        type = crystals
+                        amount = 10
+                    }
+                }
+                random = {
+                    chance = 1
+                    add_resource = {
+                        type = chromium
+                        amount = 6
+                    }
+                }
+                random = {
+                    chance = 1
+                    add_resource = {
+                        type = aluminium
+                        amount = 9
+                    }
+                }
+                random = {
+                    chance = 1
+                    add_resource = {
+                        type = tungsten
+                        amount = 6
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 10
+            modifier = {
+                add = -10
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+        }
+        icon = MINERAL_EXPLORATION
+    }
+}

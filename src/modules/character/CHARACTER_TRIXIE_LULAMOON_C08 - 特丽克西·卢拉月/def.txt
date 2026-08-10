@@ -1,0 +1,38 @@
+characters = {
+    CHARACTER_TRIXIE_LULAMOON_C08 = {
+        name = CHARACTER_TRIXIE_LULAMOON_C08_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08.dds"
+                small = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08_army.dds"
+                small = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08_navy.dds"
+                small = "gfx/leaders/CHARACTER_TRIXIE_LULAMOON_C08_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_TRIXIE_LULAMOON_C08
+            desc = CHARACTER_TRIXIE_LULAMOON_C08_DESC
+            traits = {
+                TRAIT_TRIXIE_LULAMOON_C08
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+            visible = {
+                custom_trigger_tooltip = {
+                    tooltip = CHARACTER_TRIXIE_LULAMOON_C08_TOOLTIP
+                    has_country_flag = PIHC_COUNTRY_FLAG_TRIXIE_ALIVE
+                }
+            }
+        }
+    }
+}

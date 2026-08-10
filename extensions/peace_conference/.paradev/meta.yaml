@@ -1,0 +1,66 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/peace_conference
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-peace-conference
+items:
+-   kind: entity
+    identifier: pihc3-peace-conference-module
+    name: PIHC3 Peace Conference Module
+    desc: Project-owned peace_conference source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3PeaceConferenceModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-peace-conference
+    name: PIHC3 Peace Conference
+    desc: PIHC3 peace_conference module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-peace-conference-module
+        definition:
+            identifier: pihc3-peace-conference
+            name: PIHC3 Peace Conference
+            version: 0.2.3
+            desc: PIHC3 peace_conference module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-peace-conference-module
+            meta:
+                project: PIHC3
+                family: peace_conference
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-peace-conference
+    name: PIHC3 Peace Conference Compiler
+    desc: Registry-backed source slots and compiler hooks for peace_conference.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: peace-conference
+            title: Peace Conference
+            group: other
+        dependencies:
+        - extension:pihc3-peace-conference

@@ -1,0 +1,37 @@
+characters = {
+    CHARACTER_DR_CABALLERON = {
+        name = CHARACTER_DR_CABALLERON_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DR_CABALLERON.dds"
+                small = "gfx/leaders/CHARACTER_DR_CABALLERON_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DR_CABALLERON_army.dds"
+                small = "gfx/leaders/CHARACTER_DR_CABALLERON_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DR_CABALLERON_navy.dds"
+                small = "gfx/leaders/CHARACTER_DR_CABALLERON_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_DR_CABALLERON_DESC
+            traits = {
+
+            }
+            ideology = anarchy_anarchy
+        }
+        field_marshal = {
+            skill = 4
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

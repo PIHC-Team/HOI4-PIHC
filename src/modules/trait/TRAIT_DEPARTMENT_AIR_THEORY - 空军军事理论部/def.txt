@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_DEPARTMENT_AIR_THEORY = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		air_doctrine_cost_factor = -0.1
+	}
+}

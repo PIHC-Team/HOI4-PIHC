@@ -1,0 +1,47 @@
+state = {
+    id = 842
+    name = STATE_842
+    provinces = {
+        384
+        473
+        1308
+        1338
+        1714
+        1835
+        2543
+        3174
+        3598
+        4096
+        4127
+        5295
+        6061
+        6312
+        7013
+        9106
+        14348
+        14360
+        14395
+        14418
+        14419
+        14429
+        14443
+        14492
+    }
+    manpower = 38622
+    state_category = rural
+    history = {
+        owner = C24
+        victory_points = {
+            384
+            5
+        }
+        buildings = {
+            infrastructure = 3
+        }
+        add_core_of = C24
+    }
+    resources = {
+        oil = 20
+        aluminium = 8
+    }
+}

@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C14_NEW_PARTNER_PEAR
+	icon = GFX_FOCUS_C14_NEW_PARTNER_PEAR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C14_NEW_PARTNER
+	}
+	cost = 5
+	completion_reward = {
+		country_event = {
+			id = C14_MAIN.6
+		}
+		hidden_effect = {
+			C02 = {
+				country_event = {
+					id = C14_MAIN.6
+				}
+			}
+		}
+	}
+	available = {
+		553 = {
+			is_owned_and_controlled_by = C02
+		}
+		533 = {
+			is_owned_and_controlled_by = C02
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C02_FORGIVEN
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_C02_FORGIVEN_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 5
+}

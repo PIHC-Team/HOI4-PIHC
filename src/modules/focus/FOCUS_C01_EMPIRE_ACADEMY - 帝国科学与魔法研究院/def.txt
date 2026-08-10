@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C01_EMPIRE_ACADEMY
+	icon = GFX_FOCUS_C01_EMPIRE_ACADEMY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_EDUCATION_REFORM
+	}
+	prerequisite = {
+		focus = FOCUS_C01_SCHOOL_FOR_GIFTED_UNICORNS
+		focus = FOCUS_C01_FRUITFUL_WORK_LOYALTY
+	}
+	cost = 6
+	completion_reward = {
+		add_research_slot = 1
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 32
+	y = 8
+}

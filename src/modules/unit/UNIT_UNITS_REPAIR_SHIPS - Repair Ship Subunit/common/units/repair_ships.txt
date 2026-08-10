@@ -1,0 +1,16 @@
+sub_units = {
+    repair_ship = {
+        sprite = repair_ship
+        map_icon_category = ship
+        priority = 3
+        active = yes
+        type = {
+            support_ship
+        }
+        need = {
+            repair_ship_1 = 1
+        }
+        max_organisation = 40
+        supply_consumption = 0.04
+    }
+}

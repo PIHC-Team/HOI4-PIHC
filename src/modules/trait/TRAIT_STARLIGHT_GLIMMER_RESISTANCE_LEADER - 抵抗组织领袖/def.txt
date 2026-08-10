@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_STARLIGHT_GLIMMER_RESISTANCE_LEADER = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		political_power_factor = 0.1
+	}
+}

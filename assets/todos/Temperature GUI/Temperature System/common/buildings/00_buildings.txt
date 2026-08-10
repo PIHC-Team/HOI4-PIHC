@@ -1,0 +1,728 @@
+buildings = {
+    infrastructure = {
+        base_cost = 4500
+        value = 3
+        allied_build = yes
+        infrastructure_construction_effect = yes
+        infrastructure = yes
+        show_modifier = yes
+        country_modifiers = {
+            modifiers = {
+                max_fuel_building = 1.5
+            }
+        }
+        tags = {
+            state_infrastructure
+        }
+        level_cap = {
+            state_max = 5
+            group_by = state_infrastructure
+        }
+        icon_frame = 3
+    }
+    bitumen_infrastructure = {
+        base_cost = 6400
+        value = 1
+        allied_build = yes
+        infrastructure_construction_effect = yes
+        infrastructure = yes
+        show_modifier = yes
+        country_modifiers = {
+            modifiers = {
+                max_fuel_building = 1.5
+            }
+        }
+        state_modifiers = {
+            state_resource_cost_oil = 1
+            state_resources_factor = 0.04
+            state_production_speed_buildings_factor = 0.04
+            local_supplies_for_controller = 0.04
+            army_speed_factor_for_controller = 0.08
+        }
+        tags = {
+            state_infrastructure
+        }
+        level_cap = {
+            state_max = 5
+            group_by = state_infrastructure
+        }
+        icon_frame = 41
+    }
+    arms_factory = {
+        base_cost = 6400
+        value = 8
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        base_cost_conversion = 2000
+        military_production = 1
+        level_cap = {
+            state_max = 20
+            shares_slots = yes
+        }
+        show_on_map = 6
+        icon_frame = 2
+    }
+    industrial_complex = {
+        base_cost = 9600
+        value = 5
+        infrastructure_construction_effect = yes
+        base_cost_conversion = 4500
+        general_production = 1
+        level_cap = {
+            state_max = 20
+            shares_slots = yes
+        }
+        show_on_map = 6
+        icon_frame = 1
+    }
+    research_complex = {
+        base_cost = 20000
+        value = 2
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        country_modifiers = {
+            modifiers = {
+                research_speed_factor = 0.04
+            }
+        }
+        state_modifiers = {
+            state_production_speed_facility_factor = 0.25
+        }
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 30
+    }
+    farm_complex = {
+        base_cost = 3600
+        value = 5
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        country_modifiers = {
+            modifiers = {
+                monthly_population = 0.01
+            }
+        }
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+        }
+        show_on_map = 3
+        icon_frame = 32
+    }
+    trade_complex = {
+        base_cost = 18000
+        value = 5
+        infrastructure_construction_effect = yes
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 42
+    }
+    financial_complex = {
+        base_cost = 18000
+        value = 5
+        infrastructure_construction_effect = yes
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 43
+    }
+    generator_complex = {
+        base_cost = 3600
+        value = 1
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        state_modifiers = {
+            attrition_for_controller = -0.05
+            compliance_gain = 0.01
+            local_org_regain = 0.05
+            local_manpower = 0.1
+        }
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 40
+        missing_tech_loc = {
+            localization_key = SP_BUILDING_MISSING_PROJECT
+            PROJECT = SP_OIL_ENGINE_GENERATOR
+        }
+    }
+    air_base = {
+        base_cost = 800
+        value = 1
+        allied_build = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.5
+        air_base = yes
+        level_cap = {
+            state_max = 10
+        }
+        show_on_map = 1
+        icon_frame = 5
+    }
+    supply_node = {
+        base_cost = 12000
+        allied_build = yes
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.1
+        supply_node = yes
+        level_cap = {
+            province_max = 1
+        }
+        always_shown = yes
+        show_on_map = 1
+        icon_frame = 15
+        centered = yes
+    }
+    rail_way = {
+        base_cost = 80
+        per_level_extra_cost = 30
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        level_cap = {
+            province_max = 1
+        }
+        icon_frame = 16
+    }
+    naval_base = {
+        base_cost = 4000
+        per_level_extra_cost = 600
+        value = 1
+        allied_build = yes
+        infrastructure_construction_effect = yes
+        only_costal = yes
+        is_port = yes
+        level_cap = {
+            province_max = 10
+        }
+        always_shown = yes
+        show_on_map = 1
+        show_on_map_meshes = 3
+        icon_frame = 6
+        spawn_point = naval_base_spawn
+    }
+    bunker = {
+        base_cost = 400
+        per_level_extra_cost = 250
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        land_fort = 1
+        level_cap = {
+            province_max = 10
+        }
+        show_on_map = 1
+        has_destroyed_mesh = yes
+        icon_frame = 7
+    }
+    coastal_bunker = {
+        base_cost = 400
+        per_level_extra_cost = 250
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        only_costal = yes
+        naval_fort = 1
+        level_cap = {
+            province_max = 10
+        }
+        show_on_map = 1
+        has_destroyed_mesh = yes
+        icon_frame = 8
+    }
+    stronghold_network = {
+        base_cost = 18000
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        state_modifiers = {
+            local_supplies_for_controller = 0.1
+            state_bunker_max_level_terrain_limit = 2
+            state_coastal_bunker_max_level_terrain_limit = 2
+            enemy_attrition = 0.1
+            state_production_speed_bunker_factor = 0.1
+            state_production_speed_coastal_bunker_factor = 0.1
+        }
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+        }
+        show_on_map = 1
+        has_destroyed_mesh = yes
+        icon_frame = 23
+        hide_if_missing_tech = yes
+    }
+    dockyard = {
+        base_cost = 6400
+        value = 5
+        infrastructure_construction_effect = yes
+        only_costal = yes
+        naval_production = 1
+        level_cap = {
+            state_max = 20
+            shares_slots = yes
+        }
+        show_on_map = 1
+        show_on_map_meshes = 3
+        icon_frame = 4
+    }
+    anti_air_building = {
+        base_cost = 2000
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.1
+        anti_air = yes
+        air_defence = 1
+        level_cap = {
+            state_max = 5
+        }
+        show_on_map = 3
+        icon_frame = 9
+    }
+    steel_works = {
+        base_cost = 4000
+        value = 5
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        local_resources_steel = 1
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 28
+    }
+    aluminium_mill = {
+        base_cost = 5500
+        value = 5
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        local_resources_aluminium = 1
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 29
+    }
+    coal_mine = {
+        base_cost = 2500
+        value = 10
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        local_resources_coal = 1
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 31
+    }
+    synthetic_refinery = {
+        base_cost = 12000
+        value = 5
+        infrastructure_construction_effect = yes
+        show_modifier = yes
+        refinery = yes
+        local_resources_rubber = 1
+        country_modifiers = {
+            modifiers = {
+                fuel_gain_from_states = 2.0
+            }
+        }
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 10
+    }
+    fuel_silo = {
+        base_cost = 4000
+        per_level_extra_cost = -200
+        value = 5
+        infrastructure_construction_effect = yes
+        fuel_silo = yes
+        show_modifier = yes
+        country_modifiers = {
+            modifiers = {
+                max_fuel_building = 100.0
+            }
+        }
+        level_cap = {
+            shares_slots = yes
+        }
+        show_on_map = 1
+        icon_frame = 14
+    }
+    radar_station = {
+        base_cost = 2400
+        value = 4
+        allied_build = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.5
+        radar = yes
+        level_cap = {
+            state_max = 6
+        }
+        show_on_map = 1
+        icon_frame = 11
+        centered = yes
+    }
+    mega_gun_emplacement = {
+        dlc_allowed = {
+            has_dlc = Gotterdammerung
+        }
+        base_cost = 20000
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        gun_emplacement = yes
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+            exclusive_with = rocket_site
+        }
+        show_on_map = 1
+        icon_frame = 24
+        spawn_point = rocket_site_spawn
+        hide_if_missing_tech = yes
+    }
+    rocket_site = {
+        base_cost = 6400
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        rocket_production = 0
+        rocket_launch_capacity = 1
+        level_cap = {
+            state_max = 3
+            shares_slots = yes
+            exclusive_with = mega_gun_emplacement
+        }
+        show_on_map = 1
+        icon_frame = 12
+        spawn_point = rocket_site_spawn
+        missing_tech_loc = {
+            localization_key = SP_BUILDING_MISSING_PROJECT
+            PROJECT = SP_STEAM_ROCKET
+        }
+    }
+    nuclear_reactor = {
+        base_cost = 30000
+        value = 10
+        infrastructure_construction_effect = yes
+        nuclear_reactor = yes
+        country_modifiers = {
+            modifiers = {
+                nuclear_production_factor = 1.0
+                thermonuclear_production_factor = 2.0
+                SP_NUCLEAR_OVERCHARGE_speed_factor = 0.05
+            }
+        }
+        level_cap = {
+            state_max = 1
+            shares_slots = yes
+            group_by = reactors
+        }
+        show_on_map = 1
+        icon_frame = 13
+        spawn_point = nuclear_reactor_spawn
+        hide_if_missing_tech = yes
+        missing_tech_loc = {
+            localization_key = SP_BUILDING_MISSING_PROJECT
+            PROJECT = SP_NUCLEAR_OVERCHARGE
+        }
+    }
+    nuclear_facility = {
+        base_cost = 15000
+        per_controlled_building_extra_cost = 5000
+        value = 1
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        need_supply = yes
+        need_detection = yes
+        specialization = {
+            specialization_nuclear
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 1
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 20
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+        only_display_if_exists = yes
+        missing_tech_loc = {
+            localization_key = SP_BUILDING_MISSING_PROJECT
+            PROJECT = sp_nuclear_reactor
+        }
+    }
+    magic_facility = {
+        base_cost = 8000
+        per_controlled_building_extra_cost = 2500
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        specialization = {
+            specialization_magic
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 2
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 33
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    steampunk_facility = {
+        base_cost = 8000
+        per_controlled_building_extra_cost = 2500
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        specialization = {
+            specialization_steampunk
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 2
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 34
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+        only_display_if_exists = yes
+    }
+    oilpunk_facility = {
+        base_cost = 12000
+        per_controlled_building_extra_cost = 4000
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        specialization = {
+            specialization_oilpunk
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 2
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 35
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    elecpunk_facility = {
+        base_cost = 12000
+        per_controlled_building_extra_cost = 4000
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        specialization = {
+            specialization_elecpunk
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 2
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 36
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    witchcraft_facility = {
+        base_cost = 18000
+        per_controlled_building_extra_cost = 6000
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        specialization = {
+            specialization_witchcraft
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 1
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 37
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    bio_facility = {
+        base_cost = 12000
+        per_controlled_building_extra_cost = 4000
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        need_supply = yes
+        need_detection = yes
+        specialization = {
+            specialization_bio
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 1
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 38
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    future_facility = {
+        base_cost = 15000
+        per_controlled_building_extra_cost = 5000
+        value = 1
+        infrastructure_construction_effect = yes
+        damage_factor = 0.0
+        need_supply = yes
+        need_detection = yes
+        specialization = {
+            specialization_future
+        }
+        tags = {
+            facility
+        }
+        level_cap = {
+            state_max = 1
+            province_max = 1
+            group_by = special_project_facility
+        }
+        show_on_map = 1
+        icon_frame = 39
+        spawn_point = special_project_facility_spawn
+        special_icon = GFX_specialization_nuclear
+    }
+    dam = {
+        base_cost = 16000
+        value = 5
+        is_buildable = no
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = -1
+        need_detection = yes
+        detecting_intel_type = civilian
+        show_modifier = yes
+        state_modifiers = {
+            state_production_speed_buildings_factor = 0.15
+            local_building_slots_factor = 0.15
+            state_resources_factor = 0.1
+        }
+        province_damage_modifiers = {
+            flooded
+        }
+        tags = {
+            dam_building
+        }
+        level_cap = {
+            province_max = 1
+        }
+        show_on_map = 1
+        icon_frame = 26
+        spawn_point = dam_spawn
+        special_icon = GFX_dam_icon_small
+        only_display_if_exists = yes
+    }
+    dam_mountain = {
+        base_cost = 16000
+        value = 5
+        is_buildable = no
+        disabled_in_dmz = yes
+        infrastructure_construction_effect = yes
+        damage_factor = -1
+        need_detection = yes
+        detecting_intel_type = civilian
+        show_modifier = yes
+        state_modifiers = {
+            state_production_speed_buildings_factor = 0.15
+            local_building_slots_factor = 0.15
+            state_resources_factor = 0.1
+        }
+        province_damage_modifiers = {
+            flooded
+        }
+        tags = {
+            dam_building
+        }
+        level_cap = {
+            province_max = 1
+        }
+        show_on_map = 1
+        icon_frame = 26
+        spawn_point = dam_spawn
+        special_icon = GFX_dam_icon_small
+        only_display_if_exists = yes
+    }
+}
+spawn_points = {
+    nuclear_reactor_spawn = {
+        type = state
+        max = 1
+    }
+    special_project_facility_spawn = {
+        type = province
+        max = 1
+    }
+    rocket_site_spawn = {
+        type = state
+        max = 1
+    }
+    naval_base_spawn = {
+        type = province
+        max = 1
+        only_costal = yes
+    }
+    dam_spawn = {
+        type = province
+        max = 1
+        disable_auto_nudging = yes
+    }
+    locks_spawn = {
+        type = province
+        max = 1
+        disable_auto_nudging = yes
+    }
+}

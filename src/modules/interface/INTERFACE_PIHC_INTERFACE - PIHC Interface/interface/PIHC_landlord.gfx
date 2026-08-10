@@ -1,0 +1,52 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_button_right
+        texturefile = "gfx/interface/landlord/button_right.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_button_left
+        texturefile = "gfx/interface/landlord/button_left.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_core_button
+        texturefile = "gfx/interface/landlord/core_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_check_core_button
+        texturefile = "gfx/interface/landlord/check_core_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_claim_button
+        texturefile = "gfx/interface/landlord/claim_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = button_straight_96_32
+        texturefile = "gfx/interface/landlord/button_straight_96_32.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_return_state_button
+        texturefile = "gfx/interface/landlord/return_state_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_revoke_core_button
+        texturefile = "gfx/interface/landlord/revoke_core_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_revoke_claim_button
+        texturefile = "gfx/interface/landlord/revoke_claim_button.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_core_button_small
+        texturefile = "gfx/interface/landlord/core_button_small.dds"
+        legacy_lazy_load = no
+    }
+}

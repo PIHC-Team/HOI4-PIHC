@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_STARLIGHT_GLIMMER_FORMER_PRINCIPLE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		opinion_gain_monthly_same_ideology_factor = 0.05
+		harmonicism_acceptance = 90
+	}
+}

@@ -1,0 +1,35 @@
+DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI = {
+    DECISION_C02_FAKE_WARS = {
+        fixed_random_seed = no
+        priority = 998
+        cost = 0
+        fire_only_once = yes
+        allowed = {
+            tag = C02
+        }
+        visible = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C02_FAKE_WARS_TRIGGER_TOOLTIP
+                has_global_flag = PIHC_GLOBAL_FLAG_PONYVILLE_WAR_READY
+            }
+            NOT = {
+                has_country_flag = PIHC_GLOBAL_FLAG_C02_SECOND_ELECTION_ENDED
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C02_FAKE_WARS_TRIGGER_TOOLTIP
+                NOT = {
+                    has_completed_focus = FOCUS_C02_LOYALTY
+                }
+            }
+        }
+        complete_effect = {
+            add_ideas = IDEA_C02_FAKE_WAR
+        }
+        ai_will_do = {
+            base = 10000
+        }
+        icon = C02_FAKE_WARS
+    }
+}

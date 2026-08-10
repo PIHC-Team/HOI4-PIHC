@@ -1,0 +1,55 @@
+focus = {
+	id = FOCUS_C12_UNPRECEDENTED_PROSPERITY
+	icon = GFX_FOCUS_C12_UNPRECEDENTED_PROSPERITY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_ROCKVILLE_GEOLOGICAL_UNIVERSITY
+	}
+	prerequisite = {
+		focus = FOCUS_C12_GIGGLE_AT_GHOSTY
+	}
+	cost = 3
+	completion_reward = {
+		add_ideas = IDEA_C12_PROSPEROUS_FARM
+		mark_focus_tree_layout_dirty = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM_2
+			}
+			NOT = {
+				has_idea = IDEA_C12_DESOLATE_FARM_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM_1
+			}
+			NOT = {
+				has_idea = IDEA_C12_DESOLATE_FARM_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C12_DESOLATE_FARM
+			}
+			NOT = {
+				has_idea = IDEA_C12_DESOLATE_FARM
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 13
+	y = 15
+}

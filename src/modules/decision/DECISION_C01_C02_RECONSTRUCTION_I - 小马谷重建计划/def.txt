@@ -1,0 +1,54 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    DECISION_C01_C02_RECONSTRUCTION_I = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 50
+        days_remove = 90
+        fire_only_once = yes
+        visible = {
+            has_completed_focus = FOCUS_C01_C02_PHASE_II
+            has_country_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_COMPLETED
+        }
+        available = {
+            C00 = {
+                controls_state = 504
+                controls_state = 543
+                controls_state = 235
+                controls_state = 545
+                controls_state = 529
+            }
+        }
+        remove_effect = {
+            504 = {
+                REMOVE_FROM_C00_WASTELAND = yes
+                add_core_of = C01
+                transfer_state_to = C01
+            }
+            543 = {
+                REMOVE_FROM_C00_WASTELAND = yes
+                add_core_of = C01
+                transfer_state_to = C01
+            }
+            235 = {
+                REMOVE_FROM_C00_WASTELAND = yes
+                add_core_of = C01
+                transfer_state_to = C01
+            }
+            545 = {
+                REMOVE_FROM_C00_WASTELAND = yes
+                add_core_of = C01
+                transfer_state_to = C01
+            }
+            529 = {
+                REMOVE_FROM_C00_WASTELAND = yes
+                add_core_of = C01
+                transfer_state_to = C01
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C01_RECONSTRUCTION_I_COMPLETED
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_C02_RECONSTRUCTION_I
+    }
+}

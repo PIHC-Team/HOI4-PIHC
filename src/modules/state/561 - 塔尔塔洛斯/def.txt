@@ -1,0 +1,65 @@
+state = {
+    id = 561
+    name = STATE_561
+    provinces = {
+        56
+        264
+        441
+        905
+        951
+        1191
+        2176
+        3120
+        3270
+        3763
+        4505
+        4839
+        5425
+        7353
+        7597
+        7650
+        8153
+        8189
+        8899
+        8955
+        9215
+        9273
+        9474
+        9528
+        9739
+        11931
+        11951
+        11954
+        12042
+        12057
+        12064
+        12071
+        12072
+        12093
+        12109
+        12135
+        12148
+        12193
+    }
+    manpower = 4158
+    state_category = town
+    history = {
+        owner = C16
+        victory_points = {
+            56
+            1
+        }
+        buildings = {
+            infrastructure = 2
+            dockyard = 1
+            56 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C16
+    }
+    resources = {
+        rubber = 12
+        crystals = 24
+    }
+}

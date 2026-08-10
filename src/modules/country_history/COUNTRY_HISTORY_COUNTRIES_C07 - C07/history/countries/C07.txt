@@ -1,0 +1,120 @@
+capital = 562
+set_popularities = {
+    corporation = 95
+    harmonicism = 2
+    despotic = 2
+    democratic = 1
+}
+set_politics = {
+    ruling_party = corporation
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_SHIP_SEASURGE = 1
+    TECHNOLOGY_MTG_SHIP_SEASURGE = 1
+    TECHNOLOGY_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_MTG_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_FIREARM_II = 1
+    TECHNOLOGY_FIREARM_III = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_TANK_LIGHT_STEAM = 1
+    TECHNOLOGY_NSB_TANK_LIGHT_STEAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_CANNON_LIGHT_STEAM = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_COMM_II = 1
+    TECHNOLOGY_TECH_COMM_III = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_INFO_II = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_ENER_I = 1
+    TECHNOLOGY_TECH_MAGI = 1
+    TECHNOLOGY_TECH_MAGI_UNICORN = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED = 1
+    }
+}
+oob = C07
+recruit_character = CHARACTER_FLIM_AND_FLAM
+recruit_character = CHARACTER_MOONLIGHT_ZEPHYR
+recruit_character = CHARACTER_LAVENDER_SUNRISE
+add_ideas = export_focus
+add_ideas = volunteer_only
+add_ideas = civilian_economy
+add_ideas = IDEA_ERA_TECH_2_CHEER
+add_ideas = IDEA_ALL_EUREKA
+add_ideas = IDEA_ALL_ECONOMIC_GROWTH
+set_rule = {
+    can_join_factions = no
+}
+add_political_power = 250
+set_stability = 0.5
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.2
+set_convoys = 150
+set_research_slots = 4
+set_major = yes
+UNLOCK_NAVY_BASIC = yes
+create_equipment_variant = {
+    name = "Twins Class"
+    type = EQUIPMENT_SHIP_SEACOURTYARD
+}
+create_equipment_variant = {
+    name = "City Class"
+    type = EQUIPMENT_SHIP_SEASURGE
+}
+complete_national_focus = FOCUS_C07_CANTERLOT_PACT
+complete_national_focus = FOCUS_C07_LICENSED
+complete_national_focus = FOCUS_C07_LAS_PEGASUS_GROUP
+complete_national_focus = FOCUS_C07_LPLAB
+complete_national_focus = FOCUS_C07_LPEG
+complete_national_focus = FOCUS_C07_LPLIG
+complete_national_focus = FOCUS_C07_LPMIG
+complete_national_focus = FOCUS_C07_LPGG
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN

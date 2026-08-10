@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PEACHY_CREAM = {
+        name = CHARACTER_PEACHY_CREAM_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PEACHY_CREAM.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_CREAM_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PEACHY_CREAM_army.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_CREAM_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PEACHY_CREAM_navy.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_CREAM_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PEACHY_CREAM
+            desc = CHARACTER_PEACHY_CREAM_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 200
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

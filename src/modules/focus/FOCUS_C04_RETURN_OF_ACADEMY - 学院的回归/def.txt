@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C04_RETURN_OF_ACADEMY
+	icon = GFX_FOCUS_C04_RETURN_OF_ACADEMY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C04_MUFFIN_INVESTIGATE
+	}
+	cost = 6
+	allow_branch = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C04_RETURN_OF_ACADEMY_AVAILABLE
+	}
+	completion_reward = {
+		country_event = {
+			id = C04_MAIN.13
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 5
+}

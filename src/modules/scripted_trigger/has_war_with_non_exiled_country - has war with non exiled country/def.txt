@@ -1,0 +1,9 @@
+has_war_with_non_exiled_country = {
+	custom_trigger_tooltip = {
+		tooltip = has_war_with_non_exiled_country_tt
+		has_war = yes
+		any_enemy_country = {
+			is_government_in_exile = no
+		}
+	}
+}

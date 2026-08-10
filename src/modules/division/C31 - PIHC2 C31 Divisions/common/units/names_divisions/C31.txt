@@ -1,0 +1,146 @@
+NAMES_GROUP_C31_ARTILLERY = {
+    name = "公牛火炮小队 (Buffalo Artillery Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "公牛火炮小队%d分队 (Buffalo Artillery Squad %d)"
+}
+NAMES_GROUP_C31_TANK_LIGHT = {
+    name = "公牛轻型装甲小队 (Buffalo Light Armor Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "公牛轻型装甲小队%d分队 (Buffalo Light Armor Squad %d)"
+}
+NAMES_GROUP_C31_TRADITIONAL_REGULAR = {
+    name = "公牛常规步兵小队 (Buffalo Regular Infantry Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "公牛常规步兵小队%d分队 (Buffalo Regular Infantry Squad %d)"
+}
+NAMES_GROUP_C31_TANK_HEAVY = {
+    name = "公牛重型装甲小队 (Buffalo Heavy Armor Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "公牛重型装甲小队%d分队 (Buffalo Heavy Armor Squad %d)"
+}
+NAMES_GROUP_C31_TRADITIONAL_SMALL = {
+    name = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "公牛小型步兵小队%d分队 (Buffalo Small Infantry Squad %d)"
+}
+NAMES_GROUP_C31_AUTOMATA = {
+    name = "公牛自动作战小队 (Buffalo Automata Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "公牛自动作战小队%d分队 (Buffalo Automata Squad %d)"
+}
+NAMES_GROUP_C31_SHIELD = {
+    name = "公牛重装步兵小队 (Buffalo Heavy Infantry Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "公牛重装步兵小队%d分队 (Buffalo Heavy Infantry Squad %d)"
+}
+NAMES_GROUP_C31_MAGICAL = {
+    name = "公牛魔法步兵小队 (Buffalo Magical Infantry Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "公牛魔法步兵小队%d分队 (Buffalo Magical Infantry Squad %d)"
+}
+NAMES_GROUP_C31_INFANTRY_MIX = {
+    name = "公牛协同小队 (Buffalo Concerted Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "公牛协同小队%d分队 (Buffalo Concerted Squad %d)"
+}
+NAMES_GROUP_C31_MOTORIZED = {
+    name = "公牛机动步兵小队 (Buffalo Motorized Infantry Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "公牛机动步兵小队%d分队 (Buffalo Motorized Infantry Squad %d)"
+}
+NAMES_GROUP_C31_TANK_MEDIUM = {
+    name = "公牛中型装甲小队 (Buffalo Medium Armor Squad)"
+    for_countries = {
+        C31
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "公牛中型装甲小队%d分队 (Buffalo Medium Armor Squad %d)"
+}

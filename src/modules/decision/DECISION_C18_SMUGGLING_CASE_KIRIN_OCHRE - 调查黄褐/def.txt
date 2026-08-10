@@ -1,0 +1,42 @@
+DECISION_CATEGORY_C18_SMUGGLING_CASE = {
+    DECISION_C18_SMUGGLING_CASE_KIRIN_OCHRE = {
+        fixed_random_seed = no
+        priority = 204
+        cost = 5
+        days_remove = 21
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE
+            has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = C18_SMUGGLING_CASE_ONLY_ONE_INVESTIGATION_TOOLTIP
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+                }
+            }
+        }
+        complete_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+        }
+        remove_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+            hidden_effect = {
+                country_event = {
+                    id = C18_MAIN.38
+                }
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_INVESTIGATING
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 100
+        }
+        icon = C18_SMUGGLING_CASE_KIRIN_OCHRE
+    }
+}

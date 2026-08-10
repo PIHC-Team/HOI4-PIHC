@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_JACKALOPE_BITEY = {
+        name = CHARACTER_JACKALOPE_BITEY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_JACKALOPE_BITEY.dds"
+                small = "gfx/leaders/CHARACTER_JACKALOPE_BITEY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_JACKALOPE_BITEY_army.dds"
+                small = "gfx/leaders/CHARACTER_JACKALOPE_BITEY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_JACKALOPE_BITEY_navy.dds"
+                small = "gfx/leaders/CHARACTER_JACKALOPE_BITEY_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_JACKALOPE_BITEY_DESC
+            traits = {
+
+            }
+            ideology = fascism_spirit
+        }
+    }
+}

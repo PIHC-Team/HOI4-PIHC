@@ -1,0 +1,112 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/achievement
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-achievement
+items:
+-   kind: entity
+    identifier: pihc3-achievement
+    name: PIHC3 Achievement Module
+    desc: Project-owned achievement source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3Achievement
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-achievement
+    name: PIHC3 Achievement
+    desc: PIHC3 achievement module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-achievement
+        definition:
+            identifier: pihc3-achievement
+            name: PIHC3 Achievement
+            version: 0.2.4
+            desc: PIHC3 achievement module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-achievement
+            meta:
+                project: PIHC3
+                family: achievement
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-achievement
+    name: PIHC3 Achievement Compiler
+    desc: Registry-backed source slots and compiler hooks for achievement.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: achievements
+            title: Achievements
+            group: events
+            title_key: modules.achievements.title
+        dependencies:
+        - extension:pihc3-achievement
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-5c49ef917bc799cb
+    name: PIHC3 Basic Achievement
+    desc: PIHC3 authoring template pihc3:achievement/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:achievement/basic
+            declaration:
+                title: PIHC3 Basic Achievement
+                family: achievement
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    unique_id:
+                        default: pihc_3154495198
+                    possible_start_date:
+                        default: 1002.12.2
+                    happened:
+                        default: always = no
+                    language:
+                        default: en
+                files:
+                    def.txt: "unique_id = {unique_id}\n\n{object_id} = {{\n    possible\
+                        \ = {{\n        difficulty > 1\n        has_start_date < {possible_start_date}\n\
+                        \        has_any_custom_difficulty_setting = no\n        game_rules_allow_achievements\
+                        \ = yes\n    }}\n\n    happened = {{\n        {happened}\n\
+                        \    }}\n}}\n"
+                    main.loc: '[{language}.{object_id}_NAME]
+
+                        {title}
+
+
+                        [{language}.{object_id}_DESC]
+
+                        {description}
+
+                        '

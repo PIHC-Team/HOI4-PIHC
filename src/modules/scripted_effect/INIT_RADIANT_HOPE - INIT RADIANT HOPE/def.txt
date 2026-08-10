@@ -1,0 +1,16 @@
+INIT_RADIANT_HOPE = {
+	set_politics = {
+		ruling_party = harmonicism
+	}
+	add_popularity = {
+		ideology = harmonicism
+		popularity = 1.0
+	}
+	set_country_flag = PIHC_COUNTRY_FLAG_C15_VISIBLE_RADIANT_HOPE
+	promote_character = {
+		character = CHARACTER_RADIANT_HOPE
+		ideology = harmonicism_democracy
+	}
+	load_focus_tree = NULL
+	END_ALL_WARS = yes
+}

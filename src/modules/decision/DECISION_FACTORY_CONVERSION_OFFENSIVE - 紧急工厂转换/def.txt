@@ -1,0 +1,20 @@
+DECISION_CATEGORY_WAR_MEASURES = {
+    DECISION_FACTORY_CONVERSION_OFFENSIVE = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 100
+        days_re_enable = 90
+        visible = {
+            has_offensive_war = yes
+        }
+        available = {
+            num_of_civilian_factories > 5
+        }
+        complete_effect = {
+            replace_civ_with_arms_factories = yes
+            add_war_support = -0.05
+            add_stability = -0.03
+        }
+        icon = FACTORY_CONVERSION_OFFENSIVE
+    }
+}

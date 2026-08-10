@@ -1,0 +1,42 @@
+focus = {
+	id = FOCUS_C08_ON_THE_CRYSTAL_MOUNT
+	icon = GFX_FOCUS_C08_ON_THE_CRYSTAL_MOUNT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_NEW_OPPORTUNITY
+	}
+	prerequisite = {
+		focus = FOCUS_C08_MNS_LINE
+	}
+	cost = 1
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_ON_THE_CRYSTAL_MOUNT_TOOLTIP
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_REPORT_16A1A
+			set_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+		}
+		country_event = {
+			id = C08_MAIN.70
+		}
+		C01 = {
+			country_event = {
+				id = C08_MAIN.75
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 19
+	y = 6
+}

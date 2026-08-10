@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_LORD_TIREK_DOMINANT_POWER = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.3
+	}
+}

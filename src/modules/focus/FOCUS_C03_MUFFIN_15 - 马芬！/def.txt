@@ -1,0 +1,66 @@
+focus = {
+	id = FOCUS_C03_MUFFIN_15
+	icon = GFX_FOCUS_C03_MUFFIN_15_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 4
+	bypass = {
+		hidden_trigger = {
+			C01 = {
+				has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+			}
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_BLUE
+			}
+			custom_effect_tooltip = CUSTOM_GAIN_MUFFINS_4000
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C03_RED
+			}
+			custom_effect_tooltip = CUSTOM_SPEND_MUFFINS_4000
+		}
+		else = {
+			custom_effect_tooltip = FOCUS_C03_MUFFIN_15_TOOLTIP
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+				value = 4000
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+		}
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C03_MUFFIN_15_TRIGGER_TOOLTIP
+			OR = {
+				check_variable = {
+					var = ROOT.VAR_MUFFIN_ROULETTE_TOTAL_GAMES
+					value = 2
+					compare = greater_than_or_equals
+				}
+				is_ai = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C03_MUFFIN_14
+	}
+	x = 12
+	y = 8
+}

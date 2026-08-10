@@ -1,0 +1,37 @@
+pihc_land_wall_of_unity_combat_support_b = {
+	track = combat_support
+	name = DOCTRINE_ARMY_2_3B_ELASTIC_DEFENSE
+	description = DOCTRINE_ARMY_2_3B_ELASTIC_DEFENSE_DESC
+	icon = GFX_doctrine_pihc_land_wall_of_unity_combat_support_b_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	category_infantry_shield = {
+		maximum_speed = 0.2
+	}
+	category_infantry_motorized = {
+		defense = 0.2
+	}
+	enable_tactic = tactic_elastic_defense
+	rewards = {
+		comprehensive = {
+			category_army = {
+				defense = 0.08
+			}
+		}
+		great_wall = {
+			combat_width_factor = -0.1
+		}
+	}
+}

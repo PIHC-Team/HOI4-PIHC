@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_STINKY_BOTTOM = {
+        name = CHARACTER_STINKY_BOTTOM_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_STINKY_BOTTOM.dds"
+                small = "gfx/leaders/CHARACTER_STINKY_BOTTOM_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_STINKY_BOTTOM_army.dds"
+                small = "gfx/leaders/CHARACTER_STINKY_BOTTOM_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_STINKY_BOTTOM_navy.dds"
+                small = "gfx/leaders/CHARACTER_STINKY_BOTTOM_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

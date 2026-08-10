@@ -1,0 +1,297 @@
+division_template = {
+    name = "火炮师 (Artillery Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C47_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "轻型装甲师 (Light Armor Division)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "常规步兵师 (Regular Infantry Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "小型步兵师 (Small Infantry Division)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "自动作战师 (Automata Division)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "重装步兵师 (Heavy Infantry Division)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "魔法步兵师 (Magical Infantry Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "协同师 (Concerted Division)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "机动步兵师 (Motorized Infantry Division)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C47_MOTORIZED
+    priority = 3
+}

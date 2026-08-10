@@ -1,0 +1,5107 @@
+STEAL_ALL_TECHNOLOGY = {
+	if = {
+		limit = {
+			has_variable = PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_AIRSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_AIRSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_AIRSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_ANCIENT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_ANCIENT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_ANCIENT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CLOUDAVA
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CLOUDAVA
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CLOUDAVA = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CLOUDCANNON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CLOUDCANNON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CLOUDCANNON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CLOUDFLAG
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CLOUDFLAG
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CLOUDFLAG = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CLOUDMAST
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CLOUDMAST
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CLOUDMAST = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CLOUDSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CLOUDSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CLOUDSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_CREATURES
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_CREATURES
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_CREATURES = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_DESTROYER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_DESTROYER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_DESTROYER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_FIXEDWING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_FIXEDWING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_FIXEDWING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_FIXEDWING_SOLAR
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_FIXEDWING_SOLAR
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_FIXEDWING_SOLAR = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_MACHINE_PEGASUS
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_MACHINE_PEGASUS
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_MACHINE_PEGASUS = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_STORM_AIRSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_STORM_AIRSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_STORM_AIRSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_STORM_TITAN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_STORM_TITAN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_STORM_TITAN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_STORM_UFO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_STORM_UFO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_STORM_UFO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_AIR_STORM_VANGUARD
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_AIR_STORM_VANGUARD
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_AIR_STORM_VANGUARD = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_ANCIENT_MELEE_WEAPON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_ANCIENT_MELEE_WEAPON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_ANCIENT_RANGED_WEAPON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_ANCIENT_RANGED_WEAPON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_AIRSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_AIRSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_AIRSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_ANCIENT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_ANCIENT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_ANCIENT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CLOUDAVA
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CLOUDAVA
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CLOUDAVA = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CLOUDCANNON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CLOUDCANNON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CLOUDFLAG
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CLOUDFLAG = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CLOUDMAST
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CLOUDMAST
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CLOUDMAST = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CLOUDSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_CREATURES
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_CREATURES
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_CREATURES = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_DESTROYER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_DESTROYER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_DESTROYER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_FIXEDWING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_FIXEDWING_SOLAR = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_MACHINE_PEGASUS = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_STORM_AIRSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_STORM_AIRSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_STORM_AIRSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_STORM_TITAN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_STORM_TITAN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_STORM_TITAN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_STORM_UFO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_STORM_UFO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_STORM_UFO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_AIR_STORM_VANGUARD
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_AIR_STORM_VANGUARD = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_AIRSHIP
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_AIRSHIP
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_AIRSHIP = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_BALLOON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_BALLOON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_BALLOON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_GALLEON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_GALLEON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_GALLEON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_PLANE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_PLANE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_PLANE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_PLANE_C_17B
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_PLANE_C_17B
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_PLANE_C_17B = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_PLANE_F_26D
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_PLANE_F_26D
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_PLANE_F_26D = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_FRAME_UFO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_FRAME_UFO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_FRAME_UFO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_OHMWRECKER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_WEAPON_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_WEAPON_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_WEAPON_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_WEAPON_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_AIR_WEAPON_V_LIGHTNING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_BMB_WEAPON_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_BMB_WEAPON_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_BMB_WEAPON_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_BMB_WEAPON_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GALLEON_COST_IMPROVE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GRD_WEAPON_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GRD_WEAPON_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_BBA_TECH_GRD_WEAPON_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_BBA_TECH_GRD_WEAPON_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_BASE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_BASE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_BASE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_BASE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_BASE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_BASE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_BASE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_BASE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_BASE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_BASE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_BASE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_BASE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_BASE_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_BASE_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_BASE_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_FARM_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_FARM_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_FARM_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_FARM_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_FARM_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_FARM_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_FARM_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_FARM_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_FARM_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_FARM_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_FARM_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_FARM_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_FARM_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_FARM_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_FARM_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III2
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_III2
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_III2 = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_IV2 = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_BREED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_REVERSE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_TASK = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_GAMBLE_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_GAMBLE_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_PROD_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_PROD_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_PROD_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_PROD_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_PROD_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_PROD_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_C03_MUFFINS_PROD_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_C03_MUFFINS_PROD_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_C03_MUFFINS_PROD_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_CATAPULT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_CATAPULT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_CATAPULT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_HEAVY_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_HEAVY_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_HEAVY_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_HEAVY_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_HEAVY_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_HEAVY_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_HEAVY_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_LIGHT_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_LIGHT_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_LIGHT_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_LIGHT_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_LIGHT_PINKIE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_LIGHT_PINKIE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_LIGHT_PINKIE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_LIGHT_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_LIGHT_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_LIGHT_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_MEDIUM_CHEESE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_MEDIUM_CHEESE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_MEDIUM_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_MEDIUM_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_MEDIUM_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_MEDIUM_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CANNON_MEDIUM_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CANNON_MEDIUM_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CANNON_MEDIUM_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CHANGELING_TRAINING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CHANGELING_TRAINING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CHANGELING_TRAINING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CREATURE_TRAINING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CREATURE_TRAINING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CREATURE_TRAINING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_CUPCAKE_EXPLOSIVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_CUPCAKE_EXPLOSIVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_CUPCAKE_EXPLOSIVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_DRAGON_TRAINING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_DRAGON_TRAINING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_DRAGON_TRAINING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_EXPLOSIVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_EXPLOSIVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_EXPLOSIVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_IV_IMPROVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_IV_IMPROVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_IV_IMPROVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_IX
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_IX
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_IX = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_VI
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_VI
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_VI = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_VII
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_VII
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_VII = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_VIII
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_VIII
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_VIII = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_FIREARM_VI_IMPROVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_FIREARM_VI_IMPROVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_FIREARM_VI_IMPROVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_ICY_BOW
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_ICY_BOW
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_ICY_BOW = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_LANDMINE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_LANDMINE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_LANDMINE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MACHINE_PONY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MACHINE_PONY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MACHINE_PONY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MACHINE_UNICORN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MACHINE_UNICORN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MACHINE_UNICORN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MAGICAL_BLUNDERBUSS = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MAGICAL_HANDGONNE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MAGICAL_HANDGONNE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MAGICAL_HANDGONNE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MAGICAL_MELEE_WEAPON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MAGICAL_MELEE_WEAPON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MAGICAL_MELEE_WEAPON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MAGICAL_SNIPER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MAGICAL_SNIPER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MAGICAL_SNIPER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MAGICAL_YOVIDAPHONE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_ANCIENT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_ANCIENT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACARDINAL = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACOURTYARD = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACOURTYARD_ARMED_LINER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACOURTYARD_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEACOURTYARD_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEASURGE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEASURGE_ARMED_BOAT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEASURGE_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_SEASURGE_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_MTG_SHIP_STORM_SUBMARINE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_ADVANCED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_IMPROVED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_HEAVY_WOODEN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_ADVANCED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_IMPROVED = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_HEAVY_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_HEAVY_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_HEAVY_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_HEAVY_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_HEAVY_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_HEAVY_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_LIGHT_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_LIGHT_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_LIGHT_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_LIGHT_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_LIGHT_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_LIGHT_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_LIGHT_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_APPLE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_APPLE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_MEDIUM_APPLE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_MEDIUM_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_MEDIUM_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_MEDIUM_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_MEDIUM_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_RAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_RAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_RAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_TITAN_SSCS6000M = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_TITAN_TIREK
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_TITAN_TIREK
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_TITAN_TIREK = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_NSB_TANK_TITAN_WINDIGO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_NSB_TANK_TITAN_WINDIGO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_NSB_TANK_TITAN_WINDIGO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_PAPER_SKELETON_PONY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_PAPER_SKELETON_PONY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_PAPER_SKELETON_PONY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_PAPER_SQUIZARD
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_PAPER_SQUIZARD
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_PAPER_SQUIZARD = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_PARASPRITE_TRAINING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_PARASPRITE_TRAINING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_PARASPRITE_TRAINING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_PINKIE_PLAY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_PINKIE_PLAY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_PINKIE_PLAY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_POWDER_EXPLOSIVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_POWDER_EXPLOSIVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_POWDER_EXPLOSIVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_QUARRAY_EEL
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_QUARRAY_EEL
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_QUARRAY_EEL = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_ROCK_BREAKING_WARRIOR
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_ROCK_BREAKING_WARRIOR
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_ROCK_BREAKING_WARRIOR = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_CROSSBOW
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_CROSSBOW
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_CROSSBOW = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_IMPROVE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_IMPROVE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_IMPROVE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_IMPROVE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_IMPROVE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_IMPROVE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_IMPROVE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_IMPROVE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_IMPROVE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIELD_RIOT_POLICE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIELD_RIOT_POLICE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIELD_RIOT_POLICE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_ANCIENT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_ANCIENT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_ANCIENT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACARDINAL
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACARDINAL
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACARDINAL = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACARDINAL_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACARDINAL_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACARDINAL_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACARDINAL_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACARDINAL_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACARDINAL_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACOURTYARD
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACOURTYARD
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACOURTYARD = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACOURTYARD_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEACOURTYARD_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEASURGE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEASURGE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEASURGE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEASURGE_ARMED_BOAT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEASURGE_IRON
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEASURGE_IRON
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEASURGE_IRON = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_SEASURGE_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_SEASURGE_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_SEASURGE_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SHIP_STORM_SUBMARINE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SHIP_STORM_SUBMARINE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SHIP_STORM_SUBMARINE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SOMBRA_SLAVES
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SOMBRA_SLAVES
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SOMBRA_SLAVES = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SP_HIDDEN_GENERATOR
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SP_HIDDEN_GENERATOR
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_GENERATOR = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_ROCKET_ELEC = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_OIL
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_ROCKET_OIL = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_ROCKET_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_STONE_GARGOYLES
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_STONE_GARGOYLES
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_STONE_GARGOYLES = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_STORM_CORE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_STORM_CORE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_STORM_CORE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_STORM_GUARDS
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_STORM_GUARDS
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_STORM_GUARDS = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_AUTO_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_AUTO_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_AUTO_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_AUTO_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_AUTO_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_AUTO_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_AUTO_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_AUTO_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_AUTO_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_AUTO_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_AUTO_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_AUTO_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_BIOCHEMI
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_BIOCHEMI
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_BIOCHEMI = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_COLD_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_COLD_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_COLD_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_COLD_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_COLD_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_COLD_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_COLD_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_COLD_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_COLD_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_COLD_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_COLD_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_COLD_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_DISEASE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_DISEASE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_DISEASE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_DISEASE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_DISEASE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_DISEASE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ENGINEER_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ENGINEER_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ENGINEER_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ENGINEER_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ENGINEER_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ENGINEER_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ENGINEER_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ENGINEER_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ENGINEER_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ENGINEER_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ENGINEER_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ENGINEER_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_IDEOLOGY_GESTALT = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_IDEOLOGY_HIVE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_IDEOLOGY_SWARM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_LOGI_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_LOGI_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_LOGI_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_LOGI_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_LOGI_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_LOGI_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_LOGI_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_LOGI_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_LOGI_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_LOGI_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_LOGI_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_LOGI_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAGIC_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAGIC_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAGIC_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAGIC_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAGIC_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAGIC_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAGIC_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAGIC_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAGIC_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAGIC_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAGIC_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAGIC_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAGIC_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAGIC_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAGIC_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAINTENANCE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAINTENANCE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAINTENANCE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MAINTENANCE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MAINTENANCE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MARINES_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MARINES_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MARINES_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_MARINES_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_MARINES_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_MARINES_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_NURSE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_NURSE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_NURSE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_NURSE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_NURSE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_NURSE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_NURSE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_NURSE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_NURSE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_NURSE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_NURSE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_NURSE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ORG_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ORG_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ORG_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ORG_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ORG_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ORG_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ORG_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ORG_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ORG_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_ORG_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_ORG_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_ORG_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_PARATROOPER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_PARATROOPER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_PARATROOPER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_TELEPORT_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_TELEPORT_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_TELEPORT_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_TELEPORT_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_TELEPORT_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_TELEPORT_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_TELEPORT_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_TELEPORT_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_TELEPORT_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_SUPPORT_TELEPORT_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_SUPPORT_TELEPORT_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_SUPPORT_TELEPORT_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_HEAVY_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_HEAVY_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_HEAVY_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_HEAVY_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_HEAVY_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_HEAVY_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_HEAVY_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_HEAVY_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_HEAVY_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_LIGHT_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_LIGHT_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_LIGHT_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_LIGHT_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_LIGHT_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_LIGHT_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_LIGHT_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_LIGHT_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_LIGHT_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_MEDIUM_APPLE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_MEDIUM_APPLE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_MEDIUM_APPLE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_MEDIUM_CONTEMPORARY = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_MEDIUM_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_MEDIUM_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_MEDIUM_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_MEDIUM_STEAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_MEDIUM_STEAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_MEDIUM_STEAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_RAM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_RAM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_RAM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_TITAN_SSCS6000M
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_TITAN_SSCS6000M
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_TITAN_SSCS6000M = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_TITAN_TIREK
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_TITAN_TIREK
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_TITAN_TIREK = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TANK_TITAN_WINDIGO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TANK_TITAN_WINDIGO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TANK_TITAN_WINDIGO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TATZLWURM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TATZLWURM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TATZLWURM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_COMM_VI
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_COMM_VI
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_COMM_VI = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER_IIE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER_IIE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER_IIE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_ENER_IIN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_ENER_IIN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_ENER_IIN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_IIIC
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_IIIC
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_IIIC = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_INFO_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_INFO_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_INFO_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_DARKMAGIC = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_DARKPERCEPTION
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_DARKPERCEPTION = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_MODERN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_MODERN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_NONUNICORN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TECH_MAGI_UNICORN
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TECH_MAGI_UNICORN
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TECH_MAGI_UNICORN = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_THESTRALS_TRAINING
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_THESTRALS_TRAINING
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_THESTRALS_TRAINING = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TRAIN_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TRAIN_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TRAIN_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TRAIN_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TRAIN_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TRAIN_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TRAIN_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TRAIN_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TRAIN_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_TROMBONE
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_TROMBONE
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_TROMBONE = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_VEHICLE_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_VEHICLE_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_VEHICLE_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_VEHICLE_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_VEHICLE_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_VEHICLE_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_VEHICLE_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_VEHICLE_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_VEHICLE_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_VEHICLE_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_VEHICLE_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_VEHICLE_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_VEHICLE_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_VEHICLE_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_VEHICLE_V = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_WITCHCRAFT_I
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_WITCHCRAFT_I
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_WITCHCRAFT_I = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_WITCHCRAFT_II
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_WITCHCRAFT_II
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_WITCHCRAFT_II = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_WITCHCRAFT_III
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_WITCHCRAFT_III
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_WITCHCRAFT_III = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_WITCHCRAFT_IV
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_WITCHCRAFT_IV
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_WITCHCRAFT_IV = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				var:PREV.VAR_STEAL_TECHNOLOGY_SOURCE_COUNTRY_SCOPE = {
+					has_tech = TECHNOLOGY_WITCHCRAFT_V
+				}
+				NOT = {
+					PREV = {
+						has_tech = TECHNOLOGY_WITCHCRAFT_V
+					}
+				}
+			}
+			PREV = {
+				set_technology = {
+					TECHNOLOGY_WITCHCRAFT_V = 1
+				}
+			}
+		}
+	}
+}

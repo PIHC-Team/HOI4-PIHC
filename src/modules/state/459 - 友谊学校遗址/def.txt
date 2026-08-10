@@ -1,0 +1,38 @@
+state = {
+    id = 459
+    name = STATE_459
+    provinces = {
+        2804
+        4243
+        4769
+        5567
+        7239
+        8118
+        8450
+        8534
+        9233
+        9429
+        9431
+        11434
+        11455
+        11488
+        11551
+        11584
+    }
+    manpower = 441
+    state_category = pastoral
+    history = {
+        owner = C01
+        victory_points = {
+            2804
+            5
+        }
+        buildings = {
+            infrastructure = 1
+        }
+        add_core_of = C01
+    }
+    resources = {
+
+    }
+}

@@ -1,0 +1,19 @@
+WAR_ON_CENTRAL_EQUESTRIA = {
+	every_other_country = {
+		limit = {
+			has_country_flag = PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA
+			country_exists = THIS
+			PREV = {
+				NOT = {
+					has_war_with = THIS
+				}
+			}
+		}
+		PREV = {
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}

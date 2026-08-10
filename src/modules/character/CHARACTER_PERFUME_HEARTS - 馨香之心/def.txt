@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PERFUME_HEARTS = {
+        name = CHARACTER_PERFUME_HEARTS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PERFUME_HEARTS.dds"
+                small = "gfx/leaders/CHARACTER_PERFUME_HEARTS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PERFUME_HEARTS_army.dds"
+                small = "gfx/leaders/CHARACTER_PERFUME_HEARTS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PERFUME_HEARTS_navy.dds"
+                small = "gfx/leaders/CHARACTER_PERFUME_HEARTS_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PERFUME_HEARTS
+            desc = CHARACTER_PERFUME_HEARTS_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 160
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

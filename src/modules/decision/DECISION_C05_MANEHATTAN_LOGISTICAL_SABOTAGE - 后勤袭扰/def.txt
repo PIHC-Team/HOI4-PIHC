@@ -1,0 +1,30 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C05_MANEHATTAN_LOGISTICAL_SABOTAGE = {
+        fixed_random_seed = no
+        priority = 79997
+        cost = 30
+        days_re_enable = 35
+        visible = {
+            has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+            tag = C05
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C08_MANEHATTAN_WAR_START_TOOLTIP
+                has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+            }
+        }
+        complete_effect = {
+            C06 = {
+                add_timed_idea = {
+                    idea = IDEA_C08_MANEHATTAN_LOGISTICAL_SABOTAGE
+                    days = 30
+                }
+            }
+        }
+        ai_will_do = {
+            base = 10000
+        }
+        icon = C05_MANEHATTAN_LOGISTICAL_SABOTAGE
+    }
+}

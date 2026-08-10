@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C12_ADVANCED_PRODUCTION_METHODS
+	icon = GFX_FOCUS_C12_ADVANCED_PRODUCTION_METHODS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_EXPAND_THE_SETTLEMENT
+	}
+	cost = 3
+	completion_reward = {
+		add_tech_bonus = {
+			name = PIHC_industry
+			bonus = 1
+			ahead_reduction = 2
+			uses = 3
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 15
+}

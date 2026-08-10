@@ -1,0 +1,134 @@
+focus = {
+	id = FOCUS_C11_THESTRAL_EMPIRE
+	icon = GFX_FOCUS_C11_THESTRAL_EMPIRE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C11_INVADE_TARTARUS
+	}
+	cost = 6
+	completion_reward = {
+		C32 = {
+			transfer_state = 581
+			transfer_state = 575
+			transfer_state = 522
+			transfer_state = 548
+			transfer_state = 561
+			transfer_state = 44
+		}
+		581 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		575 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		522 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		548 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		561 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		44 = {
+			hidden_effect = {
+				remove_core_of = C16
+			}
+			add_core_of = C32
+		}
+		489 = {
+			add_core_of = C32
+			add_claim_by = C32
+		}
+		C11 = {
+			puppet = C32
+			hidden_effect = {
+				set_autonomy = {
+					target = C32
+					autonomous_state = autonomy_pihc_district
+				}
+			}
+		}
+		hidden_effect = {
+			C32 = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 1.0
+				}
+				add_popularity = {
+					ideology = transcendence
+					popularity = 0.2
+				}
+				load_oob = C32_thestrals
+				575 = {
+					set_state_name = STATE_575_NIGHTMARE_MOON
+					create_unit = {
+						division = "name = \"梦魇之月禁卫军 (Nightmare Moon Praetorian Guard)\" division_template = \"夜骐精锐师 (Thestral Elite Division)\" start_experience_factor = 0.8 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C32
+						count = 6
+					}
+				}
+				add_stability = 1.0
+				add_war_support = 1.0
+			}
+		}
+	}
+	available = {
+		OR = {
+			C16 = {
+				is_subject_of = C11
+			}
+			AND = {
+				NOT = {
+					country_exists = C16
+				}
+				581 = {
+					is_owned_and_controlled_by = C11
+				}
+				575 = {
+					is_owned_and_controlled_by = C11
+				}
+				522 = {
+					is_owned_and_controlled_by = C11
+				}
+				548 = {
+					is_owned_and_controlled_by = C11
+				}
+				561 = {
+					is_owned_and_controlled_by = C11
+				}
+				44 = {
+					is_owned_and_controlled_by = C11
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 9
+}

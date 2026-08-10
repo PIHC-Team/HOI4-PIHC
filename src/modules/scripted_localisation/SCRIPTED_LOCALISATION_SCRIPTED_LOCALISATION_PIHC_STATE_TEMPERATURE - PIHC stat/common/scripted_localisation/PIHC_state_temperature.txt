@@ -1,0 +1,195 @@
+defined_text = {
+	name = GetPIHCStateTemperatureClassName
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 1
+			}
+		}
+		localization_key = pihc_state_temperature_class_1_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 2
+			}
+		}
+		localization_key = pihc_state_temperature_class_2_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 3
+			}
+		}
+		localization_key = pihc_state_temperature_class_3_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 4
+			}
+		}
+		localization_key = pihc_state_temperature_class_4_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 5
+			}
+		}
+		localization_key = pihc_state_temperature_class_5_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 6
+			}
+		}
+		localization_key = pihc_state_temperature_class_6_colored
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature_frame = 7
+			}
+		}
+		localization_key = pihc_state_temperature_class_7_colored
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = pihc_state_temperature_class_5_colored
+	}
+}
+
+defined_text = {
+	name = GetPIHCStateOutdoorTemperatureColored
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_outdoor_temperature = 0
+				compare = greater_than
+			}
+		}
+		localization_key = pihc_state_temperature_outdoor_temperature_positive
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_outdoor_temperature = 0
+				compare = less_than
+			}
+		}
+		localization_key = pihc_state_temperature_outdoor_temperature_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = pihc_state_temperature_outdoor_temperature_zero
+	}
+}
+
+defined_text = {
+	name = GetPIHCStateIndoorTemperatureColored
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature = 0
+				compare = greater_than
+			}
+		}
+		localization_key = pihc_state_temperature_indoor_temperature_positive
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature = 0
+				compare = less_than
+			}
+		}
+		localization_key = pihc_state_temperature_indoor_temperature_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = pihc_state_temperature_indoor_temperature_zero
+	}
+}
+
+defined_text = {
+	name = GetPIHCStateIndoorTemperatureDisplay
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature = 0
+				compare = greater_than
+			}
+		}
+		localization_key = pihc_state_temperature_indoor_display_positive
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_indoor_temperature = 0
+				compare = less_than
+			}
+		}
+		localization_key = pihc_state_temperature_indoor_display_negative
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = pihc_state_temperature_indoor_display_zero
+	}
+}
+
+defined_text = {
+	name = GetPIHCStateTemperatureNationalModifierEffects
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_controller_temperature_comfort_score = 2.5
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = pihc_state_temperature_national_modifiers_worst
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_controller_temperature_comfort_score = 4.0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = pihc_state_temperature_national_modifiers_poor
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_controller_temperature_comfort_score = 6.0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = pihc_state_temperature_national_modifiers_strained
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.PIHC_var_state_controller_temperature_comfort_score = 7.5
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = pihc_state_temperature_national_modifiers_fair
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = pihc_state_temperature_national_modifiers_best
+	}
+}

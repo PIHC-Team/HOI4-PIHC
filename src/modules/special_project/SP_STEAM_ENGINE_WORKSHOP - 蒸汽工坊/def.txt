@@ -1,0 +1,36 @@
+SP_STEAM_ENGINE_WORKSHOP = {
+	icon = GFX_SP_STEAM_ENGINE_WORKSHOP
+	complexity = sp_complexity.small
+	prototype_time = sp_time.prototype.short
+	specialization = specialization_steampunk
+	project_tags = sp_tag_pihc_steampunk
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		FROM = {
+			has_tech = TECHNOLOGY_TECH_ENER_I
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			coal = 6
+			aluminium = 3
+		}
+	}
+	project_output = {
+		country_effects = {
+			add_ideas = IDEA_ALL_WORKSHOP_STEAM
+		}
+	}
+	generic_prototype_rewards = {
+		SP_REWARD_GENERIC_STEAM
+		SP_REWARD_GENERIC_STEAM_EXP
+		SP_REWARD_GENERIC_FAILURE_PHYSICAL
+		SP_REWARD_GENERIC_EUREKA
+	}
+}

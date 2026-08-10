@@ -1,0 +1,72 @@
+characters = {
+    CHARACTER_FANCY_PANTS = {
+        name = CHARACTER_FANCY_PANTS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_FANCY_PANTS.dds"
+                small = "gfx/leaders/CHARACTER_FANCY_PANTS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FANCY_PANTS_army.dds"
+                small = "gfx/leaders/CHARACTER_FANCY_PANTS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FANCY_PANTS_navy.dds"
+                small = "gfx/leaders/CHARACTER_FANCY_PANTS_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_FANCY_PANTS
+            desc = CHARACTER_FANCY_PANTS_DESC
+            traits = {
+                TRAIT_HIGH_POLITICAL_ESTEEM
+                TRAIT_SILVER_SPOON_SYNDROME
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 150
+            removal_cost = -1
+            slot = political_advisor
+            on_add = {
+                owner = {
+                    if = {
+                        limit = {
+                            has_idea = CHARACTER_JET_SET
+                            has_idea = CHARACTER_UPPER_CRUST
+                            NOT = {
+                                has_idea = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                            }
+                        }
+                        add_ideas = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                    }
+                    if = {
+                        limit = {
+                            has_idea = CHARACTER_FLEUR_DE_LIS
+                            NOT = {
+                                has_idea = IDEA_C01_HOUSE_OF_CARDS
+                            }
+                        }
+                        add_ideas = IDEA_C01_HOUSE_OF_CARDS
+                    }
+                }
+            }
+            on_remove = {
+                owner = {
+                    if = {
+                        limit = {
+                            has_idea = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                        }
+                        remove_ideas = IDEA_C01_ROYAL_SWANIFYING_COMMITTEE
+                    }
+                    if = {
+                        limit = {
+                            has_idea = IDEA_C01_HOUSE_OF_CARDS
+                        }
+                        remove_ideas = IDEA_C01_HOUSE_OF_CARDS
+                    }
+                }
+            }
+        }
+    }
+}

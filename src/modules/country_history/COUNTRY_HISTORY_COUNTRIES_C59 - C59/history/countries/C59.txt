@@ -1,0 +1,70 @@
+capital = 380
+set_popularities = {
+    equatism = 10
+    democratic = 50
+    harmonicism = 25
+    despotic = 15
+}
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_SHIP_SEASURGE = 1
+    TECHNOLOGY_MTG_SHIP_SEASURGE = 1
+    TECHNOLOGY_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_MTG_SHIP_SEACOURTYARD = 1
+    TECHNOLOGY_SHIP_SEACARDINAL = 1
+    TECHNOLOGY_MTG_SHIP_SEACARDINAL = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_WITCHCRAFT_II = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+oob = C59
+recruit_character = CHARACTER_MARCH_GUSTYSNOWS
+recruit_character = CHARACTER_IRON_WILL
+add_ideas = export_focus
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+set_rule = {
+    can_join_factions = no
+}
+add_manpower = 100
+add_political_power = 150
+set_research_slots = 1
+set_stability = 50
+set_war_support = 50
+set_major = no
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE

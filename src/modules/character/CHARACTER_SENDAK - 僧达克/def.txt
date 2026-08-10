@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SENDAK = {
+        name = CHARACTER_SENDAK_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SENDAK.dds"
+                small = "gfx/leaders/CHARACTER_SENDAK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SENDAK_army.dds"
+                small = "gfx/leaders/CHARACTER_SENDAK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SENDAK_navy.dds"
+                small = "gfx/leaders/CHARACTER_SENDAK_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_SENDAK_DESC
+            traits = {
+                TRAIT_SENDAK_CULTIST_LEADER
+            }
+            ideology = transcendence_spirit
+        }
+    }
+}

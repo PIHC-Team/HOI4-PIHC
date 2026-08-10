@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C01 = {
+				INIT_HUNGER_FARMS = yes
+			}
+			every_possible_country = {
+				CALCULATE_HUNGER = yes
+			}
+		}
+	}
+}

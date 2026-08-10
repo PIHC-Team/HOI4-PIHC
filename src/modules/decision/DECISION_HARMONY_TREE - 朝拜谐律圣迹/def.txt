@@ -1,0 +1,140 @@
+DECISION_CATEGORY_MAGICAL = {
+    DECISION_HARMONY_TREE = {
+        fixed_random_seed = no
+        priority = 97
+        visible = {
+            OR = {
+                controls_state = 585
+                controls_state = 550
+                controls_state = 487
+                controls_state = 459
+                controls_state = 533
+                controls_state = 80
+                controls_state = 40
+                has_country_flag = PIHC_COUNTRY_FLAG_IS_ALLIED_AGAINST_WINDIGOS
+            }
+        }
+        cost = 25
+        days_re_enable = 180
+        complete_effect = {
+            custom_effect_tooltip = DECISION_HARMONY_TREE_TOOLTIP
+            if = {
+                limit = {
+                    threat > 0.14
+                }
+                add_named_threat = {
+                    threat = -1
+                    name = DECISION_HARMONY_TREE_THREAT
+                }
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        C15 = {
+                            has_country_leader = {
+                                character = CHARACTER_KING_SOMBRA
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    every_country = {
+                        limit = {
+                            has_war_with = C15
+                        }
+                        add_timed_idea = {
+                            idea = IDEA_ALL_HARMONY_BLESSING
+                            days = 150
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C02
+                    }
+                    add_to_variable = {
+                        var = C02.VAR_C02_ELECTION_OCTAVIA
+                        value = 0.05
+                    }
+                    clamp_variable = {
+                        var = C02.VAR_C02_ELECTION_OCTAVIA
+                        min = 0.0
+                        max = 1.0
+                    }
+                    add_to_variable = {
+                        var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+                        value = 0.02
+                    }
+                    clamp_variable = {
+                        var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+                        min = 0.0
+                        max = 1.0
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 100
+                tag = C17
+            }
+            modifier = {
+                add = 5
+                tag = C02
+            }
+            modifier = {
+                add = 5
+                tag = C08
+            }
+            modifier = {
+                add = 5
+                has_country_flag = PIHC_COUNTRY_FLAG_IS_ALLIED_AGAINST_WINDIGOS
+            }
+            modifier = {
+                add = 40
+                tag = C02
+                date < 1004.04.01
+                threat > 0.29
+            }
+            modifier = {
+                add = 100
+                has_war_with = Z15
+            }
+            modifier = {
+                add = 1
+                NOT = {
+                    is_extreme_ideology = yes
+                }
+                NOT = {
+                    tag = C01
+                }
+                threat > 0.69
+            }
+            modifier = {
+                add = 40
+                NOT = {
+                    is_extreme_ideology = yes
+                }
+                NOT = {
+                    tag = C01
+                }
+                threat > 0.79
+            }
+            modifier = {
+                add = 100
+                NOT = {
+                    is_extreme_ideology = yes
+                }
+                NOT = {
+                    tag = C01
+                }
+                threat > 0.89
+            }
+            modifier = {
+                factor = 0
+                threat < 0.15
+            }
+        }
+        icon = HARMONY_TREE
+    }
+}

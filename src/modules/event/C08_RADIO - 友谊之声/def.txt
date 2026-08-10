@@ -1,0 +1,498 @@
+add_namespace = C08_RADIO
+country_event = {
+    id = C08_RADIO.1
+    picture = GFX_EVENT_C08_RADIO_1
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_1
+    desc = EVENT_C08_RADIO_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C01
+                NOT = {
+                    tag = C01
+                }
+            }
+        }
+        add_political_power = -15
+        add_stability = -0.01
+        add_popularity = {
+            ideology = harmonicism
+            popularity = 0.02
+        }
+        name = EVENT_C08_RADIO_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C08
+            }
+        }
+        add_political_power = 10
+        add_stability = 0.05
+        name = EVENT_C08_RADIO_1_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                NOT = {
+                    is_in_faction_with = C01
+                    is_in_faction_with = C08
+                }
+            }
+        }
+        name = EVENT_C08_RADIO_1_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                tag = C01
+            }
+        }
+        add_political_power = -30
+        add_stability = -0.03
+        add_popularity = {
+            ideology = harmonicism
+            popularity = 0.03
+        }
+        name = EVENT_C08_RADIO_1_o3
+    }
+}
+country_event = {
+    id = C08_RADIO.2
+    picture = GFX_EVENT_C08_RADIO_2
+    immediate = {
+        hidden_effect = {
+            random_list = {
+                seed = random
+                50 = {
+                    every_country = {
+                        country_event = {
+                            id = C08_RADIO.3
+                        }
+                    }
+                }
+                50 = {
+                    every_country = {
+                        country_event = {
+                            id = C08_RADIO.4
+                        }
+                    }
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_2
+    desc = EVENT_C08_RADIO_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C08_RADIO_2_o0
+    }
+}
+country_event = {
+    id = C08_RADIO.3
+    picture = GFX_EVENT_C08_RADIO_3
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_3
+    desc = EVENT_C08_RADIO_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C01
+            }
+        }
+        random = {
+            chance = 25
+            add_political_power = -10
+        }
+        random = {
+            chance = 25
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.02
+            }
+        }
+        random = {
+            chance = 25
+            add_stability = -0.02
+        }
+        random = {
+            chance = 25
+            add_war_support = -0.01
+        }
+        name = EVENT_C08_RADIO_3_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C08
+            }
+        }
+        random = {
+            chance = 25
+            add_political_power = 10
+        }
+        random = {
+            chance = 25
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.02
+            }
+        }
+        random = {
+            chance = 25
+            add_stability = 0.02
+        }
+        random = {
+            chance = 25
+            add_war_support = 0.01
+        }
+        name = EVENT_C08_RADIO_3_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                NOT = {
+                    is_in_faction_with = C01
+                    is_in_faction_with = C08
+                }
+            }
+        }
+        name = EVENT_C08_RADIO_3_o2
+    }
+}
+country_event = {
+    id = C08_RADIO.4
+    picture = GFX_EVENT_C08_RADIO_4
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_4
+    desc = EVENT_C08_RADIO_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C01
+            }
+        }
+        random = {
+            chance = 25
+            add_political_power = -10
+        }
+        random = {
+            chance = 25
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.02
+            }
+        }
+        random = {
+            chance = 25
+            add_stability = -0.02
+        }
+        random = {
+            chance = 25
+            add_war_support = -0.01
+        }
+        name = EVENT_C08_RADIO_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                is_in_faction_with = C08
+            }
+        }
+        random = {
+            chance = 25
+            add_political_power = 10
+        }
+        random = {
+            chance = 25
+            add_popularity = {
+                ideology = harmonicism
+                popularity = 0.02
+            }
+        }
+        random = {
+            chance = 25
+            add_stability = 0.02
+        }
+        random = {
+            chance = 25
+            add_war_support = 0.01
+        }
+        name = EVENT_C08_RADIO_4_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            AND = {
+                NOT = {
+                    is_in_faction_with = C01
+                    is_in_faction_with = C08
+                }
+            }
+        }
+        name = EVENT_C08_RADIO_4_o2
+    }
+}
+country_event = {
+    id = C08_RADIO.5
+    picture = GFX_EVENT_C08_RADIO_5
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_5
+    desc = EVENT_C08_RADIO_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_state_core = 337
+            transfer_state = 337
+            add_state_core = 362
+            transfer_state = 362
+            C00 = {
+                remove_state_core = 337
+                remove_state_core = 362
+            }
+            country_event = {
+                id = C08_RADIO.6
+                days = 1
+            }
+        }
+        name = EVENT_C08_RADIO_5_o0
+    }
+}
+country_event = {
+    id = C08_RADIO.6
+    picture = GFX_EVENT_C08_RADIO_6
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_6
+    desc = EVENT_C08_RADIO_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_state_core = 344
+            transfer_state = 344
+            add_state_core = 34
+            transfer_state = 34
+            C00 = {
+                remove_state_core = 344
+                remove_state_core = 34
+            }
+            country_event = {
+                id = C08_RADIO.7
+                days = 1
+            }
+        }
+        name = EVENT_C08_RADIO_6_o0
+    }
+}
+country_event = {
+    id = C08_RADIO.7
+    picture = GFX_EVENT_C08_RADIO_7
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_7
+    desc = EVENT_C08_RADIO_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_state_core = 299
+            transfer_state = 299
+            add_state_core = 319
+            transfer_state = 319
+            C00 = {
+                remove_state_core = 299
+                remove_state_core = 319
+            }
+        }
+        name = EVENT_C08_RADIO_7_o0
+    }
+}
+country_event = {
+    id = C08_RADIO.8
+    picture = GFX_EVENT_C08_RADIO_8
+    is_triggered_only = yes
+    title = EVENT_C08_RADIO_8
+    desc = EVENT_C08_RADIO_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C18
+                }
+                883 = {
+                    add_province_modifier = {
+                        static_modifiers = {
+                            MODIFIER_EAST_ROUTE
+                        }
+                        province = {
+                            all_provinces = yes
+                        }
+                    }
+                }
+                C08 = {
+                    add_to_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        value = 5
+                    }
+                    clamp_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        min = 0
+                        max = 100
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES
+                }
+            }
+            if = {
+                limit = {
+                    tag = C19
+                }
+                C08 = {
+                    add_to_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        value = 5
+                    }
+                    clamp_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        min = 0
+                        max = 100
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES
+                }
+            }
+            if = {
+                limit = {
+                    tag = C20
+                }
+                C08 = {
+                    add_to_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        value = 5
+                    }
+                    clamp_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        min = 0
+                        max = 100
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES
+                }
+                set_country_flag = PIHC_COUNTRY_FLAG_ALL_EAST_ROUTE
+            }
+            if = {
+                limit = {
+                    tag = C23
+                }
+                261 = {
+                    add_province_modifier = {
+                        static_modifiers = {
+                            MODIFIER_EAST_ROUTE
+                        }
+                        province = {
+                            all_provinces = yes
+                        }
+                    }
+                }
+                C08 = {
+                    add_to_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        value = 10
+                    }
+                    clamp_variable = {
+                        var = VAR_C08_EAST_ROUTE_MAX
+                        min = 0
+                        max = 100
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES
+                }
+                set_country_flag = PIHC_COUNTRY_FLAG_ALL_EAST_ROUTE
+            }
+        }
+        name = EVENT_C08_RADIO_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            hidden_effect = {
+                if = {
+                    limit = {
+                        tag = C18
+                    }
+                    C08 = {
+                        set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C19
+                    }
+                    C08 = {
+                        set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C20
+                    }
+                    C08 = {
+                        set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = C23
+                    }
+                    C08 = {
+                        set_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES
+                    }
+                }
+            }
+        }
+        name = EVENT_C08_RADIO_8_o1
+    }
+}

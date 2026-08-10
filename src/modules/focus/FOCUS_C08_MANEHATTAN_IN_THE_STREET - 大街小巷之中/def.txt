@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C08_MANEHATTAN_IN_THE_STREET
+	icon = GFX_FOCUS_C08_MANEHATTAN_IN_THE_STREET_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_MANEHATTAN_MNS
+	}
+	cost = 3
+	completion_reward = {
+		C06 = {
+			add_ideas = IDEA_C08_MANEHATTAN_THE_CALLING
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 8
+	y = 9
+}

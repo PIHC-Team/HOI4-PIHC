@@ -1,0 +1,9 @@
+DEBUG_OCTAVIA_WIN = {
+	C02 = {
+		set_variable = {
+			var = C02.VAR_C02_ELECTION_OCTAVIA
+			value = 1.0
+		}
+		C02_SECOND_PONYVILLE_ELECTION = yes
+	}
+}

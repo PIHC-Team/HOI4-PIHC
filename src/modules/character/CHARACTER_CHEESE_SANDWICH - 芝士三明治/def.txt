@@ -1,0 +1,48 @@
+characters = {
+    CHARACTER_CHEESE_SANDWICH = {
+        name = CHARACTER_CHEESE_SANDWICH_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CHEESE_SANDWICH.dds"
+                small = "gfx/leaders/CHARACTER_CHEESE_SANDWICH_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CHEESE_SANDWICH_army.dds"
+                small = "gfx/leaders/CHARACTER_CHEESE_SANDWICH_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CHEESE_SANDWICH_navy.dds"
+                small = "gfx/leaders/CHARACTER_CHEESE_SANDWICH_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_CHEESE_SANDWICH
+            desc = CHARACTER_CHEESE_SANDWICH_DESC
+            traits = {
+                TRAIT_EXPERIENCED_PLANNER
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = high_command
+            visible = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C12_CHEESE_SANDWICH
+            }
+        }
+        field_marshal = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 1
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+
+            }
+            visible = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C12_CHEESE_SANDWICH
+            }
+        }
+    }
+}

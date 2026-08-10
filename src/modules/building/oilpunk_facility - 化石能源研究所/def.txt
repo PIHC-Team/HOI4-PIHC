@@ -1,0 +1,25 @@
+buildings = {
+	oilpunk_facility = {
+		base_cost = 12000
+		per_controlled_building_extra_cost = 4000
+		value = 1
+		infrastructure_construction_effect = yes
+		damage_factor = 0.0
+		specialization = {
+			specialization_oilpunk
+		}
+		tags = {
+			facility
+		}
+		level_cap = {
+			state_max = 2
+			province_max = 1
+			group_by = special_project_facility
+		}
+		show_on_map = 1
+		icon_frame = 35
+		spawn_point = special_project_facility_spawn
+		special_icon = GFX_specialization_nuclear
+	}
+}
+

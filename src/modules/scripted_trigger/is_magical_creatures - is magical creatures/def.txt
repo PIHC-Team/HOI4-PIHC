@@ -1,0 +1,11 @@
+is_magical_creatures = {
+	custom_trigger_tooltip = {
+		tooltip = IS_MAGICAL_CREATURES_TOOLTIP
+		OR = {
+			has_government = transcendence
+			has_country_leader_ideology = harmonicism_spirit
+			has_country_leader_ideology = peacism_spirit
+			has_country_leader_ideology = fascism_spirit
+		}
+	}
+}

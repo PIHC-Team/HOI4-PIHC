@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_VENGEFUI_MASTERMIND = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		operative_slot = 2
+		agency_upgrade_time = -0.15
+		resistance_damage_to_garrison = -0.3
+	}
+}

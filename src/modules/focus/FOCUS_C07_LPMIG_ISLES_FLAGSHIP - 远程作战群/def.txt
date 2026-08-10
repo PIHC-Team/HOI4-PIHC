@@ -1,0 +1,52 @@
+focus = {
+	id = FOCUS_C07_LPMIG_ISLES_FLAGSHIP
+	icon = GFX_FOCUS_C07_LPMIG_ISLES_FLAGSHIP_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPMIG_ISLES_AIR
+	}
+	cost = 8
+	completion_reward = {
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			set_technology = {
+				TECHNOLOGY_BBA_AIR_CLOUDFLAG = 1
+			}
+		}
+		else = {
+			set_technology = {
+				TECHNOLOGY_AIR_CLOUDFLAG = 1
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.3
+			technology = TECHNOLOGY_SUPPORT_PARATROOPER
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			has_tech = TECHNOLOGY_BBA_AIR_CLOUDSHIP
+		}
+		else = {
+			has_tech = TECHNOLOGY_AIR_CLOUDSHIP
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 7
+}

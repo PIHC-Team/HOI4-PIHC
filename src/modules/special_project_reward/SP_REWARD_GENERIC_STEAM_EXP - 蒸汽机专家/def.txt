@@ -1,0 +1,18 @@
+SP_REWARD_GENERIC_STEAM_EXP = {
+	fire_only_once = no
+	threshold = {
+		min = 0
+		max = 100
+	}
+	option = {
+		iteration_output = {
+			scientist_effects = {
+				add_scientist_xp = {
+					experience = constant:sp_scientist_xp_gain.medium
+					specialization = specialization_steampunk
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_STEAM_EXP_o0
+	}
+}

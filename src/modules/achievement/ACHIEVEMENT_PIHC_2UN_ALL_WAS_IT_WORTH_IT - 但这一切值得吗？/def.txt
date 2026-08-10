@@ -1,0 +1,15 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_2UN_ALL_WAS_IT_WORTH_IT = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		hidden_trigger = {
+			has_idea = IDEA_ERA_COLD_5_BURN
+			has_country_flag = PIHC_COUNTRY_FLAG_WINTER_LOCK
+		}
+	}
+}

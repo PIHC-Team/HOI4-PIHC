@@ -1,0 +1,34 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_LOAN_BONDS = {
+        fixed_random_seed = no
+        priority = 91
+        days_remove = 360
+        days_re_enable = 1
+        visible = {
+            tag = C09
+            has_completed_focus = FOCUS_C09_ECONOMY_CENTER
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+        }
+        available = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600 = yes
+            }
+        }
+        custom_cost_trigger = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600 = yes
+            }
+        }
+        custom_cost_text = CUSTOM_COST_DEV_BONDS_600
+        complete_effect = {
+            DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600 = yes
+        }
+        remove_effect = {
+            ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = WETM_LOAN_BONDS
+    }
+}

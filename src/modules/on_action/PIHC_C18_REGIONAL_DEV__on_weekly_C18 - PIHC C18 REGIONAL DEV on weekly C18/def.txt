@@ -1,0 +1,33 @@
+on_actions = {
+	on_weekly_C18 = {
+		effect = {
+			C18_REGIONAL_DEV_UPDATE = yes
+			if = {
+				limit = {
+					check_variable = {
+						variable = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+						value = party_popularity_100@fascism
+						compare = greater_than
+					}
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.005
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						variable = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+						value = party_popularity_100@fascism
+						compare = less_than
+					}
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.005
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+focus = {
+	id = FOCUS_C04_THE_SUSPECTS_CONFESSION
+	icon = GFX_FOCUS_C04_THE_SUSPECTS_CONFESSION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C04_AFTER_THE_GUNSHOT
+	}
+	cost = 1
+	completion_reward = {
+		country_event = {
+			id = C04_MAIN.44
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 3
+	y = 1
+}

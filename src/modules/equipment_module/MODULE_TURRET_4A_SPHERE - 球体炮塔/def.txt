@@ -1,0 +1,15 @@
+MODULE_TURRET_4A_SPHERE = {
+	category = pihc_tank_turret_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.2
+		air_attack = 1.5
+		reliability = -0.16
+	}
+	multiply_stats = {
+		soft_attack = 0.3
+		hard_attack = 0.3
+		breakthrough = 0.1
+	}
+	xp_cost = 10
+}

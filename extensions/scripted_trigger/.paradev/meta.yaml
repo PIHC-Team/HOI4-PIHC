@@ -1,0 +1,94 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/scripted_trigger
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-scripted-trigger
+items:
+-   kind: entity
+    identifier: pihc3-scripted-trigger-module
+    name: PIHC3 Scripted Trigger Module
+    desc: Project-owned scripted_trigger source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ScriptedTriggerModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-scripted-trigger
+    name: PIHC3 Scripted Trigger
+    desc: PIHC3 scripted_trigger module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-scripted-trigger-module
+        definition:
+            identifier: pihc3-scripted-trigger
+            name: PIHC3 Scripted Trigger
+            version: 0.2.4
+            desc: PIHC3 scripted_trigger module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-scripted-trigger-module
+            meta:
+                project: PIHC3
+                family: scripted_trigger
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-scripted-trigger
+    name: PIHC3 Scripted Trigger Compiler
+    desc: Registry-backed source slots and compiler hooks for scripted_trigger.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: scripted-triggers
+            title: Scripted Triggers
+            group: shared
+            title_key: modules.scriptedTriggers.title
+        dependencies:
+        - extension:pihc3-scripted-trigger
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-d4acc8c535ef713b
+    name: PIHC3 Basic Scripted Trigger
+    desc: PIHC3 authoring template pihc3:scripted_trigger/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:scripted_trigger/basic
+            declaration:
+                title: PIHC3 Basic Scripted Trigger
+                family: scripted_trigger
+                args:
+                    title:
+                        required: true
+                    body:
+                        default: always = yes
+                        type: text
+                        label: Trigger conditions
+                        description: PDX conditions inside the scripted trigger; outer braces are added automatically.
+                        advanced: false
+                files:
+                    def.txt: "{object_id} = {{\n{body}\n}}\n"
+                directory: '{object_id} - {title}'

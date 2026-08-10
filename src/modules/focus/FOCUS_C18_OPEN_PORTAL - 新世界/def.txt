@@ -1,0 +1,51 @@
+focus = {
+	id = FOCUS_C18_OPEN_PORTAL
+	icon = GFX_FOCUS_C18_OPEN_PORTAL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_HEAL_THE_WOUND
+	}
+	cost = 6
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EMBRACE
+			}
+			custom_effect_tooltip = FOCUS_C18_OPEN_PORTAL_TOOLTIP_1
+			news_event = {
+				id = SUPER_NEWS.13
+			}
+			custom_effect_tooltip = FOCUS_C18_OPEN_PORTAL_TOOLTIP_CONTINUE_COLLAPSE
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EXPEL
+			}
+			custom_effect_tooltip = FOCUS_C18_OPEN_PORTAL_TOOLTIP_2
+			news_event = {
+				id = SUPER_NEWS.14
+			}
+			custom_effect_tooltip = FOCUS_C18_OPEN_PORTAL_TOOLTIP_END_COLLAPSE
+		}
+		else = {
+			custom_effect_tooltip = FOCUS_C18_OPEN_PORTAL_TOOLTIP_3
+		}
+	}
+	available = {
+		has_war = no
+		has_civil_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 10
+}

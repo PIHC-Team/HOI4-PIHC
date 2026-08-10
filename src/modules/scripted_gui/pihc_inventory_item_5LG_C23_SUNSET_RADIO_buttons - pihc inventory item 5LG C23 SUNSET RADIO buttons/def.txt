@@ -1,0 +1,21 @@
+scripted_gui = {
+	pihc_inventory_item_5LG_C23_SUNSET_RADIO_buttons = {
+		context_type = player_context
+		window_name = pihc_inventory_item_5LG_C23_SUNSET_RADIO_buttons_container
+		parent_window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+			has_variable = PIHC_INVENTORY_DISPLAY
+			check_variable = {
+				var = PIHC_INVENTORY_DISPLAY
+				value = 124
+				compare = equals
+			}
+		}
+		triggers = {
+		}
+		effects = {
+		}
+	}
+}

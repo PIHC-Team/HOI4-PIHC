@@ -1,0 +1,651 @@
+defined_text = {
+    name = GetInventoryDisplayItemDescription
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 0
+            }
+        }
+        localization_key = INVENTORY_ITEM_DEFAULT_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 1
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_STAFF_OF_SACANAS_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 2
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_OBSIDIAN_ORB_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 3
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_MEMORY_STONE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 4
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_POWER_PONIES_COMIC_BOOK_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 5
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_KEY_OF_UNFETTERED_ENTRANCE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 6
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_TRUTH_TALISMAN_OF_TONATIUH_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 7
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_TIME_TWIRLER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 8
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_ENCHANTED_SMARTPHONE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 9
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_ALICORN_AMULET_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 10
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_STAR_SWIRLS_TIME_TRAVEL_SPELL_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 11
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_RINGS_OF_SCORCHERO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 12
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_AMULET_OF_AURORA_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 13
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_TALISMAN_OF_MIRAGE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 14
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_HELM_OF_YKSLER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 15
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_CROWN_OF_GROVER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 16
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_KNUCKERBOCKERS_SHELL_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 17
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_CLOVER_THE_CLEVERS_CLOAK_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 18
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_SONIC_SCREWDRIVER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 19
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_DIAMOND_OF_LAPIS_LUX_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 20
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_SOMNAMBULA_GLOWPAZ_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 21
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_ARTIFACT_BOOK_OF_MANIFESTATION_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 100
+            }
+        }
+        localization_key = INVENTORY_ITEM_2UN_C02_PONYVILLE_DAYSPA_TICKET_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 101
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C15_BLOOD_CRYSTAL_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 102
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_DERPY_LOVE_LETTER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 103
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_FILTHY_RICH_BRIBERY_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 104
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 105
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 106
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_WETM_BLUEPRINT_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 107
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_WETM_DEV_BONDS_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 108
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C03_MUFFIN_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 109
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C08_BLUNDERBUSS_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 110
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C08_PIN_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 111
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C02_PIN_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 112
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C01_LOCKET_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 113
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_BIG_BUCKS_DIARY_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 114
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C01_REPORT_RABID_RHODODENDRONS_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 115
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C01_REPORT_FUEL_SILO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 116
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 117
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 118
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_PERFUME_WAREHOUSE_MANAGER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 119
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_PERFUME_SALESPONY_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 120
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_REPLY_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 121
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 122
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_GLADMANE_CAMERA_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 123
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C08_STARLIGHT_RADIO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 124
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C23_SUNSET_RADIO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 125
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C05_DISCORD_RADIO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 126
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_PIN_GAME_1_CODEBOOK_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 127
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_PIN_GAME_2_CODEBOOK_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 128
+            }
+        }
+        localization_key = INVENTORY_ITEM_2UN_C02_PIANO_KEY_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 129
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C01_CROWN_IN_MUD_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 130
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_REPORT_FUEL_SILO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 131
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C02_REPORT_FUEL_SILO_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 132
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C08_PIN_GAME_3_CODEBOOK_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 133
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C18_RAIN_SHINE_FOALS_BREATH_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 134
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C18_CURE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 135
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 136
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 137
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 138
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 139
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 140
+            }
+        }
+        localization_key = INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 141
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_BEI_MING_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 142
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_YIN_YUN_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 143
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_HUA_HAI_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 144
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_LOG_I_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 145
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_LOG_II_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 146
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_LOG_III_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 147
+            }
+        }
+        localization_key = INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 148
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C18_PUNJAB_PICTURE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 149
+            }
+        }
+        localization_key = INVENTORY_ITEM_1CO_C22_C07_TICKET_FINE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 150
+            }
+        }
+        localization_key = INVENTORY_ITEM_4EP_C04_WASHOUTS_PROFILE_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 151
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 152
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C04_MUFFIN_1_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 153
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C04_MUFFIN_2_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 154
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C04_MUFFIN_3_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 155
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C04_MUFFIN_4_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 156
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_C04_MUFFIN_5_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 157
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_DESC
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                PIHC_INVENTORY_DISPLAY = 158
+            }
+        }
+        localization_key = INVENTORY_ITEM_3RA_NOTE_FROM_VAPOR_TRAIL_II_DESC
+    }
+}

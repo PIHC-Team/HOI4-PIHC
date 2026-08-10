@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C12_FAMILY_LOYALTY = {
+			picture = C12_FAMILY_LOYALTY
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.015
+				command_power_gain_mult = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

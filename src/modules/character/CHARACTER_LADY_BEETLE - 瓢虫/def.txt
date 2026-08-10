@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_LADY_BEETLE = {
+        name = CHARACTER_LADY_BEETLE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LADY_BEETLE.dds"
+                small = "gfx/leaders/CHARACTER_LADY_BEETLE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LADY_BEETLE_army.dds"
+                small = "gfx/leaders/CHARACTER_LADY_BEETLE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LADY_BEETLE_navy.dds"
+                small = "gfx/leaders/CHARACTER_LADY_BEETLE_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_LADY_BEETLE
+            desc = CHARACTER_LADY_BEETLE_DESC
+            traits = {
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 200
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

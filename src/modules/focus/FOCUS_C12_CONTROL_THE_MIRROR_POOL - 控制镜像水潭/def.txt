@@ -1,0 +1,67 @@
+focus = {
+	id = FOCUS_C12_CONTROL_THE_MIRROR_POOL
+	icon = GFX_FOCUS_C12_CONTROL_THE_MIRROR_POOL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_TEAR_UP_ALL_AGREEMENTS
+	}
+	cost = 6
+	bypass = {
+		OR = {
+			owns_state = 48
+			has_country_flag = PIHC_C12_THE_EMPIRE_HAS_BEEN_DEFEATED
+		}
+	}
+	completion_reward = {
+		48 = {
+			add_claim_by = C12
+		}
+		48 = {
+			owner = {
+				C12 = {
+					declare_war_on = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			48 = {
+				owner = {
+					fighting_army_strength_ratio = {
+						tag = C12
+						ratio < 0.7
+					}
+				}
+			}
+		}
+		48 = {
+			owner = {
+				NOT = {
+					is_in_faction_with = C12
+					is_in_faction_with = C08
+				}
+			}
+		}
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 34
+}

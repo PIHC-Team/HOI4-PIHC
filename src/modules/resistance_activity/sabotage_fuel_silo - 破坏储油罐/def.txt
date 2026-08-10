@@ -1,0 +1,18 @@
+sabotage_fuel_silo = {
+	available = {
+		non_damaged_building_level = {
+			building = fuel_silo
+			level > 0
+		}
+	}
+	weight = {
+		base = 1
+	}
+	effect = {
+		damage_building = {
+			type = fuel_silo
+			damage = 0.25
+		}
+	}
+	alert_text = building_is_sabotaged
+}

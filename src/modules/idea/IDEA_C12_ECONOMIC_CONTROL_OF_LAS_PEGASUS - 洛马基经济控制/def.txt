@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C12_ECONOMIC_CONTROL_OF_LAS_PEGASUS = {
+			picture = C12_ECONOMIC_CONTROL_OF_LAS_PEGASUS
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.15
+				consumer_goods_factor = 0.25
+				local_building_slots_factor = -0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+C18_DEL_NIRIK_6_75 = {
+	custom_effect_tooltip = C18_DEL_NIRIK_6_75_TOOLTIP
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5 = 0.25
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE^5
+		min = 0.005
+		max = 100.0
+	}
+	C18_REGIONAL_DEV_COMPUTE = yes
+}

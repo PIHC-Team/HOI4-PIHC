@@ -1,0 +1,34 @@
+characters = {
+    CHARACTER_COLORATURA = {
+        name = CHARACTER_COLORATURA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_COLORATURA.dds"
+                small = "gfx/leaders/CHARACTER_COLORATURA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_COLORATURA_army.dds"
+                small = "gfx/leaders/CHARACTER_COLORATURA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_COLORATURA_navy.dds"
+                small = "gfx/leaders/CHARACTER_COLORATURA_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_COLORATURA
+            desc = CHARACTER_COLORATURA_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+                TRAIT_HIGH_POLITICAL_ESTEEM
+                TRAIT_POPULAR
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 400
+            removal_cost = -1
+            slot = high_command
+        }
+    }
+}

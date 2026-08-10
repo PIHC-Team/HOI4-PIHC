@@ -1,0 +1,46 @@
+INFECT_BLUE_FLU = {
+	CALCULATE_DISEASE_RISK_FACTOR = yes
+	set_temp_variable = {
+		var = VAR_DISEASE_CHANCE_BLUE_FLU
+		value = 10
+	}
+	multiply_temp_variable = {
+		var = VAR_DISEASE_CHANCE_BLUE_FLU
+		value = VAR_DISEASE_RISK_FACTOR
+	}
+	round_temp_variable = VAR_DISEASE_CHANCE_BLUE_FLU
+	clamp_temp_variable = {
+		var = VAR_DISEASE_CHANCE_BLUE_FLU
+		min = 0
+		max = 100
+	}
+	set_temp_variable = {
+		var = VAR_NON_DISEASE_CHANCE_BLUE_FLU
+		value = 100
+	}
+	subtract_from_temp_variable = {
+		var = VAR_NON_DISEASE_CHANCE_BLUE_FLU
+		value = VAR_DISEASE_RISK_BLUE_FLU
+	}
+	random_list = {
+		seed = random
+		var:VAR_DISEASE_CHANCE_BLUE_FLU = {
+			country_event = {
+				id = DISEASE.1
+				days = 1
+				random_days = 3
+			}
+		}
+		var:VAR_NON_DISEASE_CHANCE_BLUE_FLU = {
+		}
+	}
+	if = {
+		limit = {
+			tag = C18
+			NOT = {
+				has_completed_focus = FOCUS_C18_001_HEALTH_CARE
+			}
+		}
+		C18_ADD_NIRIK_0_10 = yes
+	}
+}

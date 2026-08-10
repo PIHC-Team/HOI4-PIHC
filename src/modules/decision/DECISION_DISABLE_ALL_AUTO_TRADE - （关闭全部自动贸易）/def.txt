@@ -1,0 +1,37 @@
+DECISION_CATEGORY_AUTO_TRADE = {
+    DECISION_DISABLE_ALL_AUTO_TRADE = {
+        fixed_random_seed = no
+        priority = 98
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            always = yes
+        }
+        complete_effect = {
+            ROOT = {
+                DISABLE_AUTO_TRADE_CRYSTALS_BUY = yes
+                DISABLE_AUTO_TRADE_CRYSTALS_SELL = yes
+                DISABLE_AUTO_TRADE_TUNGSTEN_BUY = yes
+                DISABLE_AUTO_TRADE_TUNGSTEN_SELL = yes
+                DISABLE_AUTO_TRADE_CHROMIUM_BUY = yes
+                DISABLE_AUTO_TRADE_CHROMIUM_SELL = yes
+                DISABLE_AUTO_TRADE_ALUMINIUM_BUY = yes
+                DISABLE_AUTO_TRADE_ALUMINIUM_SELL = yes
+                DISABLE_AUTO_TRADE_STEEL_BUY = yes
+                DISABLE_AUTO_TRADE_STEEL_SELL = yes
+                DISABLE_AUTO_TRADE_COAL_BUY = yes
+                DISABLE_AUTO_TRADE_COAL_SELL = yes
+                DISABLE_AUTO_TRADE_RUBBER_BUY = yes
+                DISABLE_AUTO_TRADE_RUBBER_SELL = yes
+                DISABLE_AUTO_TRADE_OIL_BUY = yes
+                DISABLE_AUTO_TRADE_OIL_SELL = yes
+                DISABLE_AUTO_TRADE_LOGS_BUY = yes
+                DISABLE_AUTO_TRADE_LOGS_SELL = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = DISABLE_ALL_AUTO_TRADE
+    }
+}

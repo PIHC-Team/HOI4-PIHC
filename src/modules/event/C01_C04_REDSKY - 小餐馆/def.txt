@@ -1,0 +1,114 @@
+add_namespace = C01_C04_REDSKY
+country_event = {
+    id = C01_C04_REDSKY.1
+    picture = GFX_EVENT_C01_C04_REDSKY_1
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_1
+    desc = EVENT_C01_C04_REDSKY_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C01 = {
+            add_intel = {
+                target = C04
+                civilian_intel = 20
+            }
+        }
+        name = EVENT_C01_C04_REDSKY_1_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.2
+    picture = GFX_EVENT_C01_C04_REDSKY_2
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_2
+    desc = EVENT_C01_C04_REDSKY_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C04_REDSKY_2_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.3
+    picture = GFX_EVENT_C01_C04_REDSKY_3
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_3
+    desc = EVENT_C01_C04_REDSKY_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_power_balance_value = {
+            id = BOP_C04_INDEPENDENCE
+            value = 0.05
+            tooltip_side = BOP_C04_INDEPENDENCE_RIGHT_SIDE
+        }
+        name = EVENT_C01_C04_REDSKY_3_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.4
+    picture = GFX_EVENT_C01_C04_REDSKY_4
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_4
+    desc = EVENT_C01_C04_REDSKY_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_power_balance_value = {
+            id = BOP_C04_INDEPENDENCE
+            value = 0.05
+            tooltip_side = BOP_C04_INDEPENDENCE_RIGHT_SIDE
+        }
+        name = EVENT_C01_C04_REDSKY_4_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.5
+    picture = GFX_EVENT_C01_C04_REDSKY_5
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_5
+    desc = EVENT_C01_C04_REDSKY_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C04_REDSKY_5_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.6
+    picture = GFX_EVENT_C01_C04_REDSKY_6
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_6
+    desc = EVENT_C01_C04_REDSKY_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C04_REDSKY_6_o0
+    }
+}
+country_event = {
+    id = C01_C04_REDSKY.7
+    picture = GFX_EVENT_C01_C04_REDSKY_7
+    is_triggered_only = yes
+    title = EVENT_C01_C04_REDSKY_7
+    desc = EVENT_C01_C04_REDSKY_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C04 = {
+            add_power_balance_modifier = {
+                id = BOP_C04_INDEPENDENCE
+                modifier = BOP_C04_INDEPENDENCE_RUMOR
+            }
+        }
+        name = EVENT_C01_C04_REDSKY_7_o0
+    }
+}

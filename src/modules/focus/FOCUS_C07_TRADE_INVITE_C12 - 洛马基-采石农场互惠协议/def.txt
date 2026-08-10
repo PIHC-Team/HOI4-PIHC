@@ -1,0 +1,32 @@
+focus = {
+	id = FOCUS_C07_TRADE_INVITE_C12
+	icon = GFX_FOCUS_C07_TRADE_INVITE_C12_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_TRADE_ALLIANCE
+	}
+	cost = 3
+	completion_reward = {
+		C12 = {
+			country_event = {
+				id = C07_MAIN.7
+				days = 7
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 9
+	y = 3
+}

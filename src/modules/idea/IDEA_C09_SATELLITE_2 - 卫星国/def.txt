@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C09_SATELLITE_2 = {
+			picture = C09_SATELLITE_2
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.3
+				political_power_cost = 0.5
+				war_support_factor = -1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

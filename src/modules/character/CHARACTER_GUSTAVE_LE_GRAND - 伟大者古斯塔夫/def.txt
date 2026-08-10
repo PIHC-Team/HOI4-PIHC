@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_GUSTAVE_LE_GRAND = {
+        name = CHARACTER_GUSTAVE_LE_GRAND_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND.dds"
+                small = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND_army.dds"
+                small = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND_navy.dds"
+                small = "gfx/leaders/CHARACTER_GUSTAVE_LE_GRAND_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_GUSTAVE_LE_GRAND_DESC
+            traits = {
+
+            }
+            ideology = peacism_duchy
+        }
+    }
+}

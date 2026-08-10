@@ -1,0 +1,69 @@
+add_namespace = SUPER
+country_event = {
+	id = SUPER.3
+	title = EVENT_SUPER_3_NAME
+	desc = EVENT_SUPER_3_DESC
+	picture = GFX_EVENT_SUPER_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			play_song = superevent_music_03
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_ON
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENTS_VISIBLE
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+add_namespace = SUPER_NEWS
+news_event = {
+	id = SUPER_NEWS.3
+	title = EVENT_SUPER_3_NEWS_NAME
+	desc = EVENT_SUPER_3_NEWS_DESC
+	picture = GFX_EVENT_SUPER_NEWS_3
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			C11 = {
+				declare_war_on = {
+					target = C16
+					type = annex_everything
+				}
+				add_named_threat = {
+					threat = 5
+					name = EVENT_SUPER_3_THREAT
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = yes
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = no
+		}
+		name = EVENT_SUPER_3_NEWS_o
+		hidden_effect = {
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_3_HAPPENED
+			country_event = {
+				id = SUPER.3
+			}
+		}
+	}
+}

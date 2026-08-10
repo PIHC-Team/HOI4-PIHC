@@ -1,0 +1,20 @@
+DECISION_CATEGORY_C03_MUFFIN_ROULETTE = {
+    DECISION_C03_MUFFIN_ROULETTE_DROP = {
+        fixed_random_seed = no
+        priority = 49
+        cost = 0
+        days_re_enable = 1
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING
+        }
+        complete_effect = {
+            hidden_effect = {
+                C03_ROULETTE_DROP_NEXT = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C03_MUFFIN_ROULETTE_DROP
+    }
+}

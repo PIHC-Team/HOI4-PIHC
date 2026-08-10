@@ -1,0 +1,63 @@
+[en.DECISION_CATEGORY_C08_EAST_ROUTE]
+East Route
+
+[en.DECISION_CATEGORY_C08_EAST_ROUTE_desc]
+Led by the §CEquestrian Liberation Front§!, the “§CEast Route§!” plan has been formally established and now sends invitations to countries that are wary of or openly opposed to the §YEquestrian Empire§!.
+
+The §CEast Route§! starts in eastern Equestria and builds sea lanes to ports across other countries and regions, linking them through a chain of §Cstations§!. The §CLiberation Front§! hopes to use the route to request support for Equestria's resistance, spread Harmony, and encourage economic exchange between countries.
+
+As long as we §Ycontrol§! the station in our territory, we can use the East Route to send aid or ask for help.
+
+Route efficiency/efficiency limit: [?C08.VAR_C08_EAST_ROUTE|C]/[?C08.VAR_C08_EAST_ROUTE_MAX|Y]
+
+Potential member countries:
+Liberation Front: [GetEastRouteC08Location]
+Griffons: [GetEastRouteC19Location]
+Dragons: [GetEastRouteC20Location]
+Kirin: [GetEastRouteC18Location]
+Storm Island: [GetEastRouteC23Location]
+Hippogriffs-Seaponies: [GetEastRouteC28Location]
+
+[en.C08_EAST_ROUTE_UNKNOWN]
+§YNot contacted§!
+
+[en.C08_EAST_ROUTE_YES]
+§GJoined§!
+
+[en.C08_EAST_ROUTE_NO]
+§RRefused§!
+
+[en.C08_EAST_ROUTE_FALLEN]
+§gDisconnected§!
+
+[zh.DECISION_CATEGORY_C08_EAST_ROUTE]
+东部航线
+
+[zh.DECISION_CATEGORY_C08_EAST_ROUTE_desc]
+在§C小马利亚解放阵线§!牵头下，“§C东部航线§!”这一计划正式立项，并逐步向对§Y小马利亚帝国§!持消极乃至反对态度的国家发出邀请。
+
+§C东部航线§!以东小马利亚为起点，建立通往各国家或地区港口的海上航路，通过各个§C站点§!联系各国。主要目的是§C解放阵线§!希望建立航线以请求各国支援小马利亚的抵抗事业，同时促进谐律传播及各国之间的经济交流。
+
+只要我们§Y控制§!着我们境内的站点，我们就能使用东部航线发出援助或求援。
+
+航线效率/效率上限：[?C08.VAR_C08_EAST_ROUTE|C]/[?C08.VAR_C08_EAST_ROUTE_MAX|Y]
+
+可能加入的国家：
+解放阵线：[GetEastRouteC08Location]
+狮鹫：[GetEastRouteC19Location]
+龙族：[GetEastRouteC20Location]
+麒麟：[GetEastRouteC18Location]
+风暴岛：[GetEastRouteC23Location]
+骏鹰-海马：[GetEastRouteC28Location]
+
+[zh.C08_EAST_ROUTE_UNKNOWN]
+§Y未联络§!
+
+[zh.C08_EAST_ROUTE_YES]
+§G已加入§!
+
+[zh.C08_EAST_ROUTE_NO]
+§R拒绝加入§!
+
+[zh.C08_EAST_ROUTE_FALLEN]
+§g失去联络§!

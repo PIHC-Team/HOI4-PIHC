@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_FIRE_PLACEMENT_MASTER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		max_dig_in_factor = 0.2
+		army_defence_factor = 0.05
+		experience_gain_army = 0.2
+	}
+}

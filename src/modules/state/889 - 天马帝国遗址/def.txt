@@ -1,0 +1,26 @@
+state = {
+    id = 889
+    name = STATE_889
+    provinces = {
+        1244
+        3858
+    }
+    manpower = 372
+    state_category = large_town
+    history = {
+        owner = C25
+        victory_points = {
+            1244
+            10
+        }
+        buildings = {
+            1244 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C25
+    }
+    resources = {
+        logs = 12
+    }
+}

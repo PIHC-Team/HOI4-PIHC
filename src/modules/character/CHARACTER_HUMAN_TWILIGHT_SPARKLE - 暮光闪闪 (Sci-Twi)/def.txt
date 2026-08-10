@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_HUMAN_TWILIGHT_SPARKLE = {
+        name = CHARACTER_HUMAN_TWILIGHT_SPARKLE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE_army.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE_navy.dds"
+                small = "gfx/leaders/CHARACTER_HUMAN_TWILIGHT_SPARKLE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_HUMAN_TWILIGHT_SPARKLE_DESC
+            traits = {
+                TRAIT_TECHNOLOGICAL_GENIUS_III
+            }
+            ideology = democratic_harmonicism
+        }
+    }
+}

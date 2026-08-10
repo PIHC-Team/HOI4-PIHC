@@ -1,0 +1,26 @@
+C14_historical = {
+    name = historical
+    desc = "Appleloosa Historical AI"
+    allowed = {
+        tag = C14
+    }
+    enable = {
+        country_exists = C14
+    }
+    ai_national_focuses = {
+        FOCUS_C14_METEOR
+        FOCUS_C14_METEOR_END_MILITARY
+        FOCUS_C14_METEOR_END_MILITARY_ROCK
+        FOCUS_C14_TERRIBLE_DECISION
+        FOCUS_C14_NEW_PARTNER
+        FOCUS_C14_NEW_PARTNER_FILTHY_RICH
+        FOCUS_C14_NEW_PARTNER_NON_TRIXIE
+        FOCUS_C14_NEW_PARTNER_CHERRY
+        FOCUS_C14_NEW_PARTNER_PEAR
+        FOCUS_C14_FAMILY_APPLE_TO_THE_CORE
+        FOCUS_C14_FAMILY_RAISE_THIS_BARN
+        FOCUS_C14_FAMILY_FACTORY
+        FOCUS_C14_GUESTS
+        FOCUS_C14_GUESTS_MAUD
+    }
+}

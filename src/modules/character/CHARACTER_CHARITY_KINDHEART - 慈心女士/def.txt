@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_CHARITY_KINDHEART = {
+        name = CHARACTER_CHARITY_KINDHEART_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CHARITY_KINDHEART.dds"
+                small = "gfx/leaders/CHARACTER_CHARITY_KINDHEART_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CHARITY_KINDHEART_army.dds"
+                small = "gfx/leaders/CHARACTER_CHARITY_KINDHEART_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CHARITY_KINDHEART_navy.dds"
+                small = "gfx/leaders/CHARACTER_CHARITY_KINDHEART_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

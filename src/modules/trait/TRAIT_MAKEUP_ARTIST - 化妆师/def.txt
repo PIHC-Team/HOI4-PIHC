@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_MAKEUP_ARTIST = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		encryption_factor = 0.3
+		civilian_intel_to_others = -0.5
+		political_power_gain = 0.2
+		stability_factor = 0.02
+	}
+}

@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C12_MARCH_TO_BATTLEFIELD = {
+			picture = C12_MARCH_TO_BATTLEFIELD
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

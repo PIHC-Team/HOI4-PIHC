@@ -1,0 +1,14 @@
+scripted_gui = {
+	C01_ANGRY_POWER_PROGRESSBAR = {
+		context_type = decision_category
+		window_name = C01_angry_power_progressbar_container
+		properties = {
+			progressbar = {
+				frame = C01.VAR_ANGRY_POWER
+			}
+		}
+		visible = {
+			tag = C01
+		}
+	}
+}

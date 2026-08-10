@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_PICTURE_FRAME = {
+        name = CHARACTER_PICTURE_FRAME_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PICTURE_FRAME.dds"
+                small = "gfx/leaders/CHARACTER_PICTURE_FRAME_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PICTURE_FRAME_army.dds"
+                small = "gfx/leaders/CHARACTER_PICTURE_FRAME_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PICTURE_FRAME_navy.dds"
+                small = "gfx/leaders/CHARACTER_PICTURE_FRAME_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PICTURE_FRAME
+            desc = CHARACTER_PICTURE_FRAME_DESC
+            traits = {
+                TRAIT_SILICON_DREAM
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 50
+            removal_cost = 350
+            slot = political_advisor
+            on_add = {
+                owner = {
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = pihc_chips
+                        name = TRAIT_SILICON_DREAM
+                    }
+                }
+            }
+        }
+    }
+}

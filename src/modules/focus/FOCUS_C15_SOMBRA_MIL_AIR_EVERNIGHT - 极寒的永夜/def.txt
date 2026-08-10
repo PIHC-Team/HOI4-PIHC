@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_MIL_AIR_EVERNIGHT
+	icon = GFX_FOCUS_C15_SOMBRA_MIL_AIR_EVERNIGHT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_MIL_AIR_MODERN
+		focus = FOCUS_C15_SOMBRA_MIL_AIR_BLADE
+		focus = FOCUS_C15_SOMBRA_MIL_AIR_TITAN
+	}
+	cost = 6
+	completion_reward = {
+		air_experience = 100
+		add_ideas = IDEA_C15_SOMBRA_MIL_AIR_FULL
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 7
+}

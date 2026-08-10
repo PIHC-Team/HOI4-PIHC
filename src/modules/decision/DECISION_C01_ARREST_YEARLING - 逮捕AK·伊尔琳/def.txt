@@ -1,0 +1,170 @@
+DECISION_CATEGORY_THE_GRIFFON_LIES_HEAVY = {
+    DECISION_C01_ARREST_YEARLING = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_remove = 7
+        visible = {
+            tag = C01
+            has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_3
+        }
+        available = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C01_PURSUE_YEARLING_2
+                }
+                718 = {
+                    C01 = {
+                        num_divisions_in_states = {
+                            count > 2
+                            states = {
+                                718
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                if = {
+                    limit = {
+                        C13 = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C13_AMBUSH
+                        }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                718 = {
+                                    C01 = {
+                                        num_divisions_in_states = {
+                                            count > 6
+                                            states = {
+                                                718
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        718 = {
+                            every_state_division = {
+                                destroy_unit = yes
+                            }
+                        }
+                        news_event = {
+                            id = C01_MAIN.22
+                            days = 1
+                        }
+                    }
+                    if = {
+                        limit = {
+                            718 = {
+                                C01 = {
+                                    num_divisions_in_states = {
+                                        count > 8
+                                        states = {
+                                            718
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        718 = {
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                        }
+                        C13 = {
+                            retire_character = CHARACTER_AK_YEARLING
+                        }
+                        news_event = {
+                            id = C01_MAIN.23
+                            days = 1
+                        }
+                    }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                718 = {
+                                    C01 = {
+                                        num_divisions_in_states = {
+                                            count > 3
+                                            states = {
+                                                718
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        718 = {
+                            every_state_division = {
+                                destroy_unit = yes
+                            }
+                        }
+                        news_event = {
+                            id = C01_MAIN.22
+                            days = 1
+                        }
+                    }
+                    if = {
+                        limit = {
+                            718 = {
+                                C01 = {
+                                    num_divisions_in_states = {
+                                        count > 3
+                                        states = {
+                                            718
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        718 = {
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                            random_state_division = {
+                                destroy_unit = yes
+                            }
+                        }
+                        C13 = {
+                            retire_character = CHARACTER_AK_YEARLING
+                        }
+                        news_event = {
+                            id = C01_MAIN.23
+                            days = 1
+                        }
+                    }
+                }
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_ARREST_YEARLING
+    }
+}

@@ -1,0 +1,76 @@
+BOP_C03_INDEPENDENCE = {
+	left_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+	right_side = BOP_C03_INDEPENDENCE_RIGHT_SIDE
+	initial_value = -0.2
+	decision_category = DECISION_CATEGORY_C03_INDEPENDENCE
+	side = {
+		id = BOP_C03_INDEPENDENCE_LEFT_SIDE
+		icon = GFX_BOP_C03_INDEPENDENCE_LEFT_SIDE
+		range = {
+			id = BOP_C03_INDEPENDENCE_LEFT_SIDE_r0
+			min = -1.0
+			max = -0.8
+			on_activate = {
+				add_ideas = IDEA_ALL_C01_COLONY_2
+			}
+			on_deactivate = {
+				remove_ideas = IDEA_ALL_C01_COLONY_2
+			}
+		}
+		range = {
+			id = BOP_C03_INDEPENDENCE_LEFT_SIDE_r1
+			min = -0.8
+			max = 0.0
+			on_activate = {
+				add_ideas = IDEA_ALL_C01_COLONY_1
+			}
+			on_deactivate = {
+				remove_ideas = IDEA_ALL_C01_COLONY_1
+			}
+		}
+	}
+	side = {
+		id = BOP_C03_INDEPENDENCE_RIGHT_SIDE
+		icon = GFX_BOP_C03_INDEPENDENCE_RIGHT_SIDE
+		range = {
+			id = BOP_C03_INDEPENDENCE_RIGHT_SIDE_r0
+			min = 0.0
+			max = 0.8
+			on_activate = {
+				add_ideas = IDEA_ALL_C01_COLONY
+			}
+			on_deactivate = {
+				remove_ideas = IDEA_ALL_C01_COLONY
+			}
+		}
+		range = {
+			id = BOP_C03_INDEPENDENCE_RIGHT_SIDE_r1
+			min = 0.8
+			max = 0.99
+			on_activate = {
+				C01 = {
+					country_event = {
+						id = C01_MAIN.17
+						days = 7
+					}
+				}
+			}
+		}
+		range = {
+			id = BOP_C03_INDEPENDENCE_RIGHT_SIDE_r2
+			min = 0.99
+			max = 1.0
+			on_activate = {
+				set_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				leave_faction = yes
+				remove_all_power_balance_modifiers = {
+					id = BOP_C03_INDEPENDENCE
+				}
+				add_power_balance_value = {
+					id = BOP_C03_INDEPENDENCE
+					value = 1.0
+				}
+			}
+		}
+	}
+}

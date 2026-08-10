@@ -1,0 +1,13 @@
+MODULE_CREW_4A_SPECTRAL = {
+	category = pihc_tank_crew_type_2_necro
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+		reliability = -0.15
+	}
+	multiply_stats = {
+		max_strength = -0.75
+		ap_attack = 0.5
+	}
+	xp_cost = 5
+}

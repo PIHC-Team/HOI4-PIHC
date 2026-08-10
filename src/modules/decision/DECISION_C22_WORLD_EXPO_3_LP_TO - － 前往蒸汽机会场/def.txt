@@ -1,0 +1,28 @@
+DECISION_CATEGORY_C22_WORLD_EXPO = {
+    DECISION_C22_WORLD_EXPO_3_LP_TO = {
+        fixed_random_seed = no
+        priority = 6
+        visible = {
+            check_variable = {
+                VAR_PIHC_WORLD_EXPO_VENUE > 0
+            }
+            NOT = {
+                check_variable = {
+                    VAR_PIHC_WORLD_EXPO_VENUE = 3
+                }
+            }
+        }
+        available = {
+            always = yes
+        }
+        complete_effect = {
+            set_variable = {
+                VAR_PIHC_WORLD_EXPO_VENUE = 3
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C22_WORLD_EXPO_3_LP_TO
+    }
+}

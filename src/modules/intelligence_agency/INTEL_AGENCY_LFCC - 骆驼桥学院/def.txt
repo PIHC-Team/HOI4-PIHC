@@ -1,0 +1,13 @@
+intelligence_agency = {
+	picture = GFX_INTEL_AGENCY_LFCC
+	names = {
+		"Camelbridge College"
+	}
+	default = {
+		tag = C08
+	}
+	available = {
+		original_tag = C08
+		has_government = equatism
+	}
+}

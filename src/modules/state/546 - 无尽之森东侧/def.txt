@@ -1,0 +1,43 @@
+state = {
+    id = 546
+    name = STATE_546
+    provinces = {
+        1803
+        1984
+        2328
+        3092
+        3819
+        3924
+        5208
+        5564
+        6739
+        7923
+        8802
+        8964
+        9527
+        11827
+        11847
+        11902
+        11920
+        11957
+        11972
+        11973
+    }
+    manpower = 48663
+    state_category = pastoral
+    history = {
+        owner = C52
+        victory_points = {
+            1803
+            1
+        }
+        buildings = {
+            industrial_complex = 1
+        }
+        add_core_of = C52
+    }
+    resources = {
+        chromium = 10
+        logs = 18
+    }
+}

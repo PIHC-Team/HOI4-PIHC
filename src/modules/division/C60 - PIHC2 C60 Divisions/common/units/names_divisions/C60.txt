@@ -1,0 +1,146 @@
+NAMES_GROUP_C60_ARTILLERY = {
+    name = "火炮巡逻队 (Artillery Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮巡逻队%d分队 (Artillery Patrol Team %d)"
+}
+NAMES_GROUP_C60_TANK_LIGHT = {
+    name = "轻型装甲巡逻队 (Light Armor Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲巡逻队%d分队 (Light Armor Patrol Team %d)"
+}
+NAMES_GROUP_C60_TRADITIONAL_REGULAR = {
+    name = "常规步兵巡逻队 (Regular Infantry Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵巡逻队%d分队 (Regular Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C60_TANK_HEAVY = {
+    name = "重型装甲巡逻队 (Heavy Armor Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲巡逻队%d分队 (Heavy Armor Patrol Team %d)"
+}
+NAMES_GROUP_C60_TRADITIONAL_SMALL = {
+    name = "小型步兵巡逻队 (Small Infantry Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵巡逻队%d分队 (Small Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C60_AUTOMATA = {
+    name = "自动作战巡逻队 (Automata Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战巡逻队%d分队 (Automata Patrol Team %d)"
+}
+NAMES_GROUP_C60_SHIELD = {
+    name = "重装步兵巡逻队 (Heavy Infantry Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵巡逻队%d分队 (Heavy Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C60_MAGICAL = {
+    name = "魔法步兵巡逻队 (Magical Infantry Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵巡逻队%d分队 (Magical Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C60_INFANTRY_MIX = {
+    name = "协同巡逻队 (Concerted Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同巡逻队%d分队 (Concerted Patrol Team %d)"
+}
+NAMES_GROUP_C60_MOTORIZED = {
+    name = "机动步兵巡逻队 (Motorized Infantry Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵巡逻队%d分队 (Motorized Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C60_TANK_MEDIUM = {
+    name = "中型装甲巡逻队 (Medium Armor Patrol Team)"
+    for_countries = {
+        C60
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲巡逻队%d分队 (Medium Armor Patrol Team %d)"
+}

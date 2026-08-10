@@ -1,0 +1,55 @@
+focus = {
+	id = FOCUS_C02_PONYVILLE_MILSCHOOL
+	icon = GFX_FOCUS_C02_PONYVILLE_MILSCHOOL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_RESEARCH
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_INDUSTRY
+	}
+	cost = 3
+	completion_reward = {
+		effect_tooltip = {
+			random_list = {
+				seed = random
+				20 = {
+					country_event = {
+						id = C02_MAIN.16
+						days = 1
+					}
+				}
+				80 = {
+					country_event = {
+						id = C02_MAIN.17
+						days = 1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = C02_MAIN.18
+				days = 1
+			}
+		}
+	}
+	available = {
+		567 = {
+			is_owned_and_controlled_by = C02
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 5
+}

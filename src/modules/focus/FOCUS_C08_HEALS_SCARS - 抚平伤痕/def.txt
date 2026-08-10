@@ -1,0 +1,30 @@
+focus = {
+	id = FOCUS_C08_HEALS_SCARS
+	icon = GFX_FOCUS_C08_HEALS_SCARS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_EASTERN_FIRE
+	}
+	cost = 1
+	completion_reward = {
+		add_state_core = 888
+		country_event = {
+			id = C08_MAIN.44
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 19
+	y = 1
+}

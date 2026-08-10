@@ -1,0 +1,14 @@
+CREATE_C09_NAVY_1 = {
+	C09 = {
+		UNLOCK_NAVY_BASIC = yes
+		create_equipment_variant = {
+			name = "Smoothie Class"
+			type = EQUIPMENT_SHIP_SEACOURTYARD
+		}
+		create_equipment_variant = {
+			name = "Essence Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		load_oob = C09_navy_1
+	}
+}

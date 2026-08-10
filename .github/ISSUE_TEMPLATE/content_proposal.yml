@@ -1,0 +1,42 @@
+name: Content proposal
+description: Propose a focused PIHC3 story, gameplay, localization, or art contribution.
+title: "[Proposal]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Player-facing goal
+      description: What should the player experience, learn, or decide?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: List likely families, object IDs, countries, states, events, focuses, or assets.
+    validations:
+      required: true
+  - type: textarea
+    id: lore
+    attributes:
+      label: Lore and gameplay rationale
+    validations:
+      required: true
+  - type: textarea
+    id: assets
+    attributes:
+      label: Localization and asset plan
+      description: State language coverage, asset sources, and permission status.
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution readiness
+      options:
+        - label: I have read the PIHC3 developer guide.
+          required: true
+        - label: I will keep the change focused and validate it with ParaDev.
+          required: true

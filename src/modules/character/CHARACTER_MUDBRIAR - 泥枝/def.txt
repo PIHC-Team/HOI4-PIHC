@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_MUDBRIAR = {
+        name = CHARACTER_MUDBRIAR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MUDBRIAR.dds"
+                small = "gfx/leaders/CHARACTER_MUDBRIAR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MUDBRIAR_army.dds"
+                small = "gfx/leaders/CHARACTER_MUDBRIAR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MUDBRIAR_navy.dds"
+                small = "gfx/leaders/CHARACTER_MUDBRIAR_navy_small.dds"
+            }
+        }
+        gender = male
+        field_marshal = {
+            skill = 4
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 5
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+        advisor = {
+            idea_token = CHARACTER_MUDBRIAR
+            desc = CHARACTER_MUDBRIAR_DESC
+            traits = {
+                TRAIT_LOGICAL_ANALYST
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = theorist
+        }
+    }
+}

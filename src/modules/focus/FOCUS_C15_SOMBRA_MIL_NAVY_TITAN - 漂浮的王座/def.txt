@@ -1,0 +1,37 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_MIL_NAVY_TITAN
+	icon = GFX_FOCUS_C15_SOMBRA_MIL_NAVY_TITAN_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_MIL_NAVY_SURGE
+		focus = FOCUS_C15_SOMBRA_MIL_NAVY_CARDINAL
+		focus = FOCUS_C15_SOMBRA_MIL_NAVY_COURTYARD
+	}
+	cost = 4
+	completion_reward = {
+		add_tech_bonus = {
+			category = pihc_leviathan
+			bonus = 1.0
+			name = FOCUS_C15_SOMBRA_MIL_NAVY_TITAN
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 29
+	y = 6
+}

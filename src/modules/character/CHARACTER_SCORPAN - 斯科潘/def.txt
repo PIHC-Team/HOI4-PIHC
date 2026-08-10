@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_SCORPAN = {
+        name = CHARACTER_SCORPAN_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SCORPAN.dds"
+                small = "gfx/leaders/CHARACTER_SCORPAN_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SCORPAN_army.dds"
+                small = "gfx/leaders/CHARACTER_SCORPAN_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SCORPAN_navy.dds"
+                small = "gfx/leaders/CHARACTER_SCORPAN_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_SCORPAN_DESC
+            traits = {
+
+            }
+            ideology = despotic_harmonicism
+        }
+    }
+}

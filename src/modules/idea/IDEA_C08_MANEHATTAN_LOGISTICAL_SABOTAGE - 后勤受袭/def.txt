@@ -1,0 +1,16 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_MANEHATTAN_LOGISTICAL_SABOTAGE = {
+			picture = C08_MANEHATTAN_LOGISTICAL_SABOTAGE
+			removal_cost = -1
+			modifier = {
+				attrition = 0.05
+				supply_consumption_factor = 0.1
+				army_speed_factor = -0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

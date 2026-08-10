@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_ROYAL_GUARD = {
+        name = CHARACTER_ROYAL_GUARD_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ROYAL_GUARD.dds"
+                small = "gfx/leaders/CHARACTER_ROYAL_GUARD_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ROYAL_GUARD_army.dds"
+                small = "gfx/leaders/CHARACTER_ROYAL_GUARD_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ROYAL_GUARD_navy.dds"
+                small = "gfx/leaders/CHARACTER_ROYAL_GUARD_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

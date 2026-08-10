@@ -1,0 +1,32 @@
+state = {
+    id = 90
+    name = STATE_90
+    provinces = {
+        1259
+        1952
+        7673
+        9403
+        13212
+    }
+    manpower = 6122
+    state_category = town
+    history = {
+        owner = C20
+        victory_points = {
+            1259
+            5
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+            arms_factory = 1
+            1259 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C20
+    }
+    resources = {
+        coal = 4
+    }
+}

@@ -1,0 +1,17 @@
+[en.DECISION_REFRESH_AUTO_TRADE]
+(Refresh Auto Trade)
+
+[en.DECISION_REFRESH_AUTO_TRADE_desc]
+§gIn Auto Trade mode, the system will automatically exchange resources when you have spare Resource Exchange Credits (RECs).§!
+§gMonthly, when the RECs are not enough to cover all resource consumption, the system will exchange resources from high to low value by default: £resources_strip|7, £resources_strip|4, £resources_strip|6, £resources_strip|2, £resources_strip|5, £resources_strip|9, £resources_strip|3, £resources_strip|1, £resources_strip|8.§!
+§gAt the same time, when a resource has more than §Y2§! spare units and there are missing resources, the system will automatically sell these resources from low to high value and use the obtained RECs to purchase the missing resources. Excess RECs will be retained.§!
+§gMonthly, when the RECs decrease, the system will also stop exchanging resources in the same order: from low to high value (e.g., stop exchanging £resources_strip|8 first, and so on).§!
+
+[zh.DECISION_REFRESH_AUTO_TRADE]
+（刷新自动贸易）
+
+[zh.DECISION_REFRESH_AUTO_TRADE_desc]
+§g在自动贸易模式下，当拥有空余的资源置换点数(REC)时，系统会对所有资源自动进行资源置换。§!
+§g每月，REC不足以置换全部所需资源时，自动贸易系统默认按照价值从高到低的顺序进行购买：£resources_strip|7，£resources_strip|4，£resources_strip|6，£resources_strip|2，£resources_strip|5，£resources_strip|9，£resources_strip|3，£resources_strip|1，£resources_strip|8。§!
+§g同时，当某个资源增加到超过 §Y2§! 个空闲单位时且有缺失的资源时，系统会自动将这些资源按照价值从低到高的顺序进行出售，并用所得的REC购买缺失的资源。多余的REC会被保留。§!
+§g每月，当REC减少时，系统也会按照相同的顺序从低到高停止的资源置换（例如，首先停止置换£resources_strip|8，依此类推）。§!

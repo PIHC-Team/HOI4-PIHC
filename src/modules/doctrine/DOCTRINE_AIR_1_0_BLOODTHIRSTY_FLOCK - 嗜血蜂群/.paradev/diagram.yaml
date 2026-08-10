@@ -1,0 +1,10 @@
+schema: paradev.hoi4.doctrine-diagram-state.v1
+position:
+  x: 0
+  y: 0
+paths:
+- DOCTRINE_AIR_1_1A_ELITE
+- DOCTRINE_AIR_1_1B_CROWD
+mutually_exclusive:
+- DOCTRINE_AIR_0_0_OPEN_SKY
+- DOCTRINE_AIR_2_0_FLYING_FORTRESS

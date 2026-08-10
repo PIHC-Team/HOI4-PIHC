@@ -1,0 +1,12 @@
+DECISION_CATEGORY_C08_COMMAND = {
+    icon = C08_COMMAND
+    picture = GFX_decision_category_picture
+    priority = 29999
+    allowed = {
+        tag = C08
+    }
+    visible = {
+        always = yes
+    }
+    visible_when_empty = yes
+}

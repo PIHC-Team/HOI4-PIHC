@@ -1,0 +1,26 @@
+equipments = {
+	EQUIPMENT_VEHICLE_STEEL = {
+		archetype = ARCHETYPE_VEHICLE
+		priority = 2
+		visual_level = 2
+		build_cost_ic = 4.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.85
+		breakthrough = 8.0
+		hardness = 0.2
+		maximum_speed = 10.0
+		recon = 2
+		picture = EQUIPMENT_VEHICLE_STEEL
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_VEHICLE_WOODEN
+		resources = {
+			steel = 4
+			rubber = 3
+		}
+		fuel_consumption = 0.0
+		supply_truck = yes
+	}
+}

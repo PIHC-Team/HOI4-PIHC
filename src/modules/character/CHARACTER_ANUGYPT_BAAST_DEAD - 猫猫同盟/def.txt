@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_ANUGYPT_BAAST_DEAD = {
+        name = CHARACTER_ANUGYPT_BAAST_DEAD_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD_army.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD_navy.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_BAAST_DEAD_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_ANUGYPT_BAAST_DEAD_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_freestate
+        }
+    }
+}

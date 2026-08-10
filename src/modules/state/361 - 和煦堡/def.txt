@@ -1,0 +1,48 @@
+state = {
+    id = 361
+    name = STATE_361
+    provinces = {
+        94
+        570
+        1518
+        1592
+        1827
+        3151
+        3413
+        3718
+        4001
+        4513
+        7529
+        9350
+        10632
+        10651
+        10677
+        10709
+        10732
+        10741
+        10788
+    }
+    manpower = 36779
+    state_category = pastoral
+    history = {
+        owner = C33
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+            arms_factory = 1
+            radar_station = 1
+            7529 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C33
+        victory_points = {
+            7529
+            10
+        }
+    }
+    resources = {
+        steel = 20
+        coal = 20
+    }
+}

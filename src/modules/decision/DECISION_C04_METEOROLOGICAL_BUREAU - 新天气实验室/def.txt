@@ -1,0 +1,34 @@
+DECISION_CATEGORY_C04_REGIONAL_DEVLOPMENT = {
+    DECISION_C04_METEOROLOGICAL_BUREAU = {
+        fixed_random_seed = no
+        priority = 100
+        days_remove = 30
+        available = {
+            num_of_civilian_factories_available_for_projects > 2
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 2
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_3
+        modifier = {
+            civilian_factory_use = 3
+        }
+        ai_hint_pp_cost = 0
+        remove_effect = {
+            360 = {
+                BUILD_AN_INFRA = yes
+            }
+            C04_ADD_ECO_3_10 = yes
+            hidden_effect = {
+                country_event = {
+                    id = C04_MAIN.21
+                }
+            }
+        }
+        fire_only_once = yes
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C04_METEOROLOGICAL_BUREAU
+    }
+}

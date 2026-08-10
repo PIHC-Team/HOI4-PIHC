@@ -1,0 +1,29 @@
+DECISION_CATEGORY_C04_REGIONAL_DEVLOPMENT = {
+    DECISION_C04_WEST_STRATUSBURG_ALLOWANCE = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 25
+        days_remove = 35
+        days_re_enable = 270
+        available = {
+            has_power_balance = {
+                id = BOP_C04_INDEPENDENCE
+            }
+            has_country_leader = {
+                character = CHARACTER_SPITFIRE
+            }
+        }
+        remove_effect = {
+            C04_ADD_ECO_1_5 = yes
+            add_power_balance_value = {
+                id = BOP_C04_INDEPENDENCE
+                value = -0.05
+                tooltip_side = BOP_C03_INDEPENDENCE_LEFT_SIDE
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C04_WEST_STRATUSBURG_ALLOWANCE
+    }
+}

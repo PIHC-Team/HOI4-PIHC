@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_DIAMOND_TIARA = {
+        name = CHARACTER_DIAMOND_TIARA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_TIARA.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_TIARA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_TIARA_army.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_TIARA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DIAMOND_TIARA_navy.dds"
+                small = "gfx/leaders/CHARACTER_DIAMOND_TIARA_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C18_100_PREPARE_SENDAK
+	icon = GFX_FOCUS_C18_100_PREPARE_SENDAK_icon
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		country_exists = C37
+	}
+	cost = 4
+	completion_reward = {
+		add_ideas = IDEA_C18_C37_PREPARED
+		mark_focus_tree_layout_dirty = yes
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 5
+}

@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_IGNEOUS_ROCK_PIE = {
+        name = CHARACTER_IGNEOUS_ROCK_PIE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE.dds"
+                small = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_IGNEOUS_ROCK_PIE_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
+            traits = {
+
+            }
+        }
+    }
+}

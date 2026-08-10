@@ -1,0 +1,10 @@
+collaboration_government_train_paramilitary_forces = {
+	name = collaboration_government_train_paramilitary_forces
+	desc = collaboration_government_train_paramilitary_forces_desc
+	outcome = collaboration_government_train_paramilitary_forces_outcome
+	picture = GFX_phase_collaboration_government_train_paramilitary_forces
+	icon = GFX_phase_collaboration_government_train_paramilitary_forces_small
+	equipment = {
+		ARCHETYPE_INFANTRY = 1000
+	}
+}

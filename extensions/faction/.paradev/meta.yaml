@@ -1,0 +1,124 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/faction
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-faction
+items:
+-   kind: entity
+    identifier: pihc3-faction-module
+    name: PIHC3 Faction Module
+    desc: Project-owned faction source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3FactionModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-faction
+    name: PIHC3 Faction
+    desc: PIHC3 faction module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-faction-module
+        definition:
+            identifier: pihc3-faction
+            name: PIHC3 Faction
+            version: 0.2.3
+            desc: PIHC3 faction module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-faction-module
+            meta:
+                project: PIHC3
+                family: faction
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-faction
+    name: PIHC3 Faction Compiler
+    desc: Registry-backed source slots and compiler hooks for faction.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: factions
+            title: Factions
+            group: country
+            title_key: modules.factions.title
+        dependencies:
+        - extension:pihc3-faction
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-3bf5f68a20ad4d82
+    name: PIHC3 Basic Faction Template
+    desc: PIHC3 authoring template pihc3:faction/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:faction/basic
+            declaration:
+                title: PIHC3 Basic Faction Template
+                family: faction
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    manifest:
+                        default: faction_manifest_strength_in_unity
+                    icon:
+                        default: GFX_faction_logo_generic
+                    can_leader_join_other_factions:
+                        default: 'yes'
+                    visible:
+                        default: 'no'
+                    available:
+                        default: 'yes'
+                    goal:
+                        default: faction_goal_a_military_base
+                    joining_rule:
+                        default: joining_rule_has_no_offensive_war
+                    leader_rule:
+                        default: change_leader_rule_industry
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n\tname = {object_id}\n\tmanifest =\
+                        \ {manifest}\n\ticon = {icon}\n\tcan_leader_join_other_factions\
+                        \ = {can_leader_join_other_factions}\n\n\tvisible = {{\n\t\
+                        \talways = {visible}\n\t}}\n\n\tavailable = {{\n\t\talways\
+                        \ = {available}\n\t}}\n\n\tgoals = {{\n\t\t{goal}\n\t}}\n\n\
+                        \tdefault_rules = {{\n\t\t{joining_rule}\n\t\t{leader_rule}\n\
+                        \t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

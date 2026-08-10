@@ -1,0 +1,46 @@
+state = {
+    id = 411
+    name = STATE_411
+    provinces = {
+        941
+        1468
+        1663
+        1737
+        2298
+        2995
+        3392
+        5307
+        5749
+        5857
+        7201
+        8617
+        8769
+        9371
+        10534
+        10536
+        10538
+        10552
+        10589
+        10658
+    }
+    manpower = 2658
+    state_category = pastoral
+    history = {
+        owner = C33
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            8769 = {
+
+            }
+        }
+        add_core_of = C33
+        victory_points = {
+            7201
+            3
+        }
+    }
+    resources = {
+
+    }
+}

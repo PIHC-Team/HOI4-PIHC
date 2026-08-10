@@ -1,0 +1,32 @@
+technologies = {
+    TECHNOLOGY_MAGICAL_MELEE_WEAPON = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 0
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_magical
+        }
+        enable_equipments = {
+            EQUIPMENT_MAGICAL_MELEE_WOODEN
+            EQUIPMENT_MAGICAL_MELEE_STEEL
+        }
+        enable_subunits = {
+            infantry_magical
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_MAGICAL_HANDGONNE
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

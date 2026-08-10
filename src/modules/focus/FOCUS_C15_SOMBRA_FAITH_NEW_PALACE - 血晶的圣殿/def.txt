@@ -1,0 +1,38 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_FAITH_NEW_PALACE
+	icon = GFX_FOCUS_C15_SOMBRA_FAITH_NEW_PALACE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_FAITH_ENSLAVE
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_FAITH_MANDATE
+	}
+	cost = 4
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C15_SOMBRA_FAITH_NEW_PALACE_TOOLTIP
+		add_to_variable = {
+			var = C15.VAR_SOMBRA_STATUE_MAX
+			value = 2
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 2
+	y = 6
+}

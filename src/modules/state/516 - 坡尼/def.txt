@@ -1,0 +1,45 @@
+state = {
+    id = 516
+    name = STATE_516
+    provinces = {
+        278
+        4093
+        4409
+        5037
+        6398
+        7227
+        7908
+        8398
+        8673
+        9145
+        11515
+        11567
+        11588
+        11601
+        11633
+        11657
+        11683
+        11688
+        11694
+        11709
+        11739
+        11740
+    }
+    manpower = 34192
+    state_category = large_town
+    history = {
+        owner = C64
+        victory_points = {
+            278
+            10
+        }
+        buildings = {
+            infrastructure = 3
+        }
+        add_core_of = C64
+    }
+    resources = {
+        aluminium = 2
+        crystals = 2
+    }
+}

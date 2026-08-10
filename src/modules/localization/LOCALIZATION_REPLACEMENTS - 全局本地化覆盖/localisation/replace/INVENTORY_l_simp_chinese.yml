@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+	PIHC_INVENTORY_TOGGLE_TT:0 "打开物品栏"
+	PIHC_INVENTORY_HEADER:0 "物品栏"
+	PIHC_INVENTORY_ITEM_COUNT:0 "×[GetInventoryItemIconCount]"
+	PIHC_INVENTORY_ITEM_TOOLTIP:0 "[GetInventoryItemName]"
+	PIHC_INVENTORY_ITEM_NAME:0 "[GetInventoryDisplayItemName]"
+	PIHC_INVENTORY_ITEM_DESC:0 "[GetInventoryDisplayItemDescription]"
+	INVENTORY_ITEM_DEFAULT:0 "默认调试物品"
+	INVENTORY_ITEM_DEFAULT_DESC:0 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id aliquet sem. Morbi sit amet orci ut mi tincidunt commodo. Sed condimentum mi nec turpis ultricies egestas. Nulla ullamcorper ut quam sed congue. Nulla aliquet tellus nec dolor pellentesque vestibulum. Sed accumsan ornare lorem at sodales. Etiam sed facilisis dolor. Phasellus blandit aliquam lacinia.\n\nAenean aliquam felis nec sodales tempor. Pellentesque quis congue enim. Donec dapibus orci ac pretium faucibus. Nam blandit ligula ipsum, vel viverra ex aliquam sit amet. Curabitur egestas lacus a neque blandit pellentesque. Cras accumsan magna nibh, nec maximus tortor suscipit eget. Mauris vitae scelerisque lacus, id fringilla lorem. In congue ex tincidunt suscipit porta. Phasellus dapibus porta faucibus.\n\nPellentesque elementum lectus eu metus volutpat porta. Aenean et libero justo. Fusce at nulla vel est dignissim molestie in in lacus. Vivamus sit amet nunc eu felis condimentum tincidunt nec quis orci. Aliquam erat volutpat. Praesent ligula magna, aliquam ac lorem ac, maximus suscipit ligula. Suspendisse potenti. Quisque venenatis nulla quis ultricies laoreet."
+	INVENTORY_ITEM_DEFAULT_COUNT:0 "[?VAR_INVENTORY_ITEM_DEFAULT|Y0]"

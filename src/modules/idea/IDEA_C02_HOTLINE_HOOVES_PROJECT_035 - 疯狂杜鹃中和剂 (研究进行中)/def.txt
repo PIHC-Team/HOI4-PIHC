@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+		IDEA_C02_HOTLINE_HOOVES_PROJECT_035 = {
+			picture = C02_HOTLINE_HOOVES_PROJECT_035
+			removal_cost = -1
+			modifier = {
+				civilian_factory_use = 2
+			}
+			on_remove = {
+				random_list = {
+					seed = random
+					33 = {
+						custom_effect_tooltip = SUCCESS
+						ADD_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_NEUTRALIZER_100 = yes
+						set_variable = {
+							var = C02.VAR_WEEKLY_PRODUCTION_RABID_RHODODENDRONS
+							value = 10
+						}
+						custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_5
+						add_to_variable = {
+							var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+							value = 0.05
+						}
+						clamp_variable = {
+							var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+							min = 0
+							max = 1
+						}
+						custom_effect_tooltip = C02_DOCTOR_HOOVES_INC_5
+						add_to_variable = {
+							var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+							value = 0.05
+						}
+						clamp_variable = {
+							var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+							min = 0
+							max = 1
+						}
+					}
+					67 = {
+						custom_effect_tooltip = FAILURE
+						add_timed_idea = {
+							idea = IDEA_C02_HOTLINE_HOOVES_PROJECT_035
+							days = 30
+						}
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+DECISION_CATEGORY_C08_C01_COZYBURG_SCRAMBLE = {
+    DECISION_C01_COZ_TRANSPOT = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 25
+        days_re_enable = 14
+        days_remove = 14
+        visible = {
+            has_global_flag = PIHC_GLOBAL_FLAG_COZYBURG_SCRAMBLE
+            tag = C01
+        }
+        available = {
+            num_of_civilian_factories_available_for_projects > 1
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = DECISION_C01_COZ_SUPPORT_TIME
+                days = -21
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+}

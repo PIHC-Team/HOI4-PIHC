@@ -1,0 +1,31 @@
+MODULE_ENGINE_3C_NECRO = {
+	category = pihc_tank_engine_type_2
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.5
+		weight = 0.3
+		maximum_speed = 10.0
+		reliability = -0.08
+	}
+	multiply_stats = {
+		fuel_consumption = -1.0
+	}
+	xp_cost = 15
+	allowed_module_categories = {
+		armor_type_slot = {
+			pihc_tank_armor_type_2_necro
+		}
+		projectile_type_slot = {
+			pihc_tank_projectile_type_2_necro
+		}
+		crew_type_slot = {
+			pihc_tank_crew_type_2_necro
+		}
+		suspension_type_slot = {
+			pihc_tank_suspension_type_2
+		}
+		turret_type_slot = {
+			pihc_tank_turret_type_2_necro
+		}
+	}
+}

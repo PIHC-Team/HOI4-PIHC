@@ -1,0 +1,44 @@
+DECISION_CATEGORY_C08_COMMAND = {
+    DECISION_C08_T_BLITZ = {
+        fixed_random_seed = no
+        priority = 89999
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_ARMY_STRATEGY
+        }
+        available = {
+            command_power > 34
+            has_war = yes
+            custom_trigger_tooltip = {
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+                }
+                tooltip = DECISION_C08_T_CONCENTRATED_BREAKTHROUGHS_TOOLTIP
+            }
+        }
+        complete_effect = {
+            add_command_power = -35
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+            }
+        }
+        modifier = {
+            army_attack_factor = 0.35
+            army_defence_factor = -0.3
+            breakthrough_factor = 0.2
+            army_speed_factor = 0.2
+            org_loss_when_moving = -0.25
+            planning_speed = 0.35
+            army_org_regain = 0.25
+            supply_consumption_factor = 0.8
+        }
+        remove_effect = {
+            hidden_effect = {
+                clr_country_flag = PIHC_COUNTRY_FLAG_C08_COMMAND
+            }
+        }
+        days_remove = 20
+        ai_will_do = {
+            base = 100
+        }
+    }
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_LIMESTONE_PIE_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_LIMESTONE_PIE_ANIMATED_default_strip.dds"
+        noOfFrames = 96
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 4.55
+    }
+}

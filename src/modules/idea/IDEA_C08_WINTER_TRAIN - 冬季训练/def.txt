@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_WINTER_TRAIN = {
+			picture = C08_WINTER_TRAIN
+			removal_cost = -1
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.75
+				winter_attrition_factor = -0.35
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

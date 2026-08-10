@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C23_GREAT_DEPRESSION_3 = {
+			picture = C23_GREAT_DEPRESSION_3
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = 0.35
+				conscription_factor = -0.2
+				local_resources_factor = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

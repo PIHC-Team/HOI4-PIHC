@@ -1,0 +1,11 @@
+resistance_support_arms_depots = {
+	name = resistance_support_arms_depots
+	desc = resistance_support_arms_depots_desc
+	outcome = resistance_support_arms_depots_outcome
+	picture = GFX_phase_resistance_support_arms_depots
+	icon = GFX_phase_resistance_support_arms_depots_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 300
+		ARCHETYPE_INFANTRY = 2000
+	}
+}

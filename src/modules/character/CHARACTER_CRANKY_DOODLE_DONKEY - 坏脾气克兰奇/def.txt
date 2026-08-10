@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_CRANKY_DOODLE_DONKEY = {
+        name = CHARACTER_CRANKY_DOODLE_DONKEY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY.dds"
+                small = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY_army.dds"
+                small = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY_navy.dds"
+                small = "gfx/leaders/CHARACTER_CRANKY_DOODLE_DONKEY_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

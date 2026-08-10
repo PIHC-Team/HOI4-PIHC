@@ -1,0 +1,36 @@
+guiTypes = {
+	containerwindowtype = {
+		name = "pihc_state_temperature"
+		position = {
+			x = 85
+			y = -365
+		}
+
+		buttonType = {
+			name = "pihc_state_coal_subsidies_button"
+            position = {
+                x = 500
+                y = 800
+            }
+			quadTextureSprite = "GFX_core_button"
+		}
+		iconType = {
+			name = "pihc_state_temperature_indoor"
+			spriteType = "pihc_state_temperature_progress"
+			position = {
+				x = 400
+				y = 800
+			}
+			pdx_tooltip = "pihc_state_temperature_indoor_tt"
+		}
+		iconType = {
+			name = "pihc_state_temperature_outdoor"
+			spriteType = "pihc_state_temperature_progress"
+			position = {
+				x = 450
+				y = 800
+			}
+			pdx_tooltip = "pihc_state_temperature_outdoor_tt"
+		}
+	}
+}

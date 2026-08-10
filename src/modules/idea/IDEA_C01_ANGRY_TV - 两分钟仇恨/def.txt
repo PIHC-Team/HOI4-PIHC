@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_TV = {
+			picture = C01_ANGRY_TV
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				offensive_war_stability_factor = 0.2
+				conscription_factor = 0.1
+				mobilization_speed = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

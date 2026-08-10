@@ -1,0 +1,27 @@
+C01 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_bio = 3
+                }
+                traits = {
+                    scientist_trait_fast_learner
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_bio = 3
+                }
+                traits = {
+                    scientist_trait_fast_learner
+                }
+                gender = female
+            }
+        }
+    }
+}

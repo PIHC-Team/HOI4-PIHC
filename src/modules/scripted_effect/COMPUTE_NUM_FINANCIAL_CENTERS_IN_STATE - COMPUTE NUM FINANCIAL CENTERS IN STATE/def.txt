@@ -1,0 +1,15 @@
+COMPUTE_NUM_FINANCIAL_CENTERS_IN_STATE = {
+	set_variable = {
+		var = VAR_NUM_FINANCIAL_CENTERS_IN_CURRENT_STATE
+		value = 0
+	}
+	if = {
+		limit = {
+			financial_complex > 0
+		}
+		add_to_variable = {
+			var = VAR_NUM_FINANCIAL_CENTERS_IN_CURRENT_STATE
+			value = 1
+		}
+	}
+}

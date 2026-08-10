@@ -1,0 +1,31 @@
+state = {
+    id = 443
+    name = STATE_443
+    provinces = {
+        66
+        4923
+        6088
+        6877
+        8887
+        11273
+        11327
+        11372
+        11400
+    }
+    manpower = 1197
+    state_category = wasteland
+    history = {
+        owner = C01
+        victory_points = {
+            66
+            1
+        }
+        buildings = {
+            farm_complex = 1
+        }
+        add_core_of = C01
+    }
+    resources = {
+
+    }
+}

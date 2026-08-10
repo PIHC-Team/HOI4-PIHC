@@ -1,0 +1,33 @@
+state = {
+    id = 628
+    name = STATE_628
+    provinces = {
+        1179
+        1297
+        2886
+        9582
+        9806
+        13627
+        13721
+        13831
+    }
+    manpower = 3056
+    state_category = rural
+    history = {
+        owner = C18
+        buildings = {
+            9582 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C18
+        victory_points = {
+            9582
+            10
+        }
+    }
+    resources = {
+        rubber = 2
+        crystals = 1
+    }
+}

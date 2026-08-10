@@ -1,0 +1,14 @@
+CREATE_C07_NAVY_1 = {
+	C07 = {
+		UNLOCK_NAVY_BASIC = yes
+		create_equipment_variant = {
+			name = "Twins Class"
+			type = EQUIPMENT_SHIP_SEACOURTYARD
+		}
+		create_equipment_variant = {
+			name = "City Class"
+			type = EQUIPMENT_SHIP_SEASURGE
+		}
+		load_oob = C07_navy_1
+	}
+}

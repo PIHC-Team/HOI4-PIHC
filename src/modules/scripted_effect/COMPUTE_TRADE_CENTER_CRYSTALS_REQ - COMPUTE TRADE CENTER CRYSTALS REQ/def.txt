@@ -1,0 +1,28 @@
+COMPUTE_TRADE_CENTER_CRYSTALS_REQ = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_BUY
+			}
+		}
+		set_variable = {
+			var = VAR_TRADE_CENTER_CRYSTALS_REQ
+			value = resource@crystals
+		}
+		multiply_variable = {
+			var = VAR_TRADE_CENTER_CRYSTALS_REQ
+			value = -1
+		}
+		clamp_variable = {
+			var = VAR_TRADE_CENTER_CRYSTALS_REQ
+			min = 0
+		}
+	}
+	else = {
+		set_variable = {
+			var = VAR_TRADE_CENTER_CRYSTALS_REQ
+			value = 0
+		}
+	}
+}

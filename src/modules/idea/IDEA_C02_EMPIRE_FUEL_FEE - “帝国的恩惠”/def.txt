@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C02_EMPIRE_FUEL_FEE = {
+			picture = C02_EMPIRE_FUEL_FEE
+			removal_cost = -1
+			modifier = {
+				base_fuel_gain_factor = 0.3
+			}
+			targeted_modifier = {
+				tag = C01
+				cic_to_target_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C12_DESOLATE_FARM_2 = {
+			picture = C12_DESOLATE_FARM_2
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

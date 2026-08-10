@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_ON_STAGE = {
+        name = CHARACTER_ON_STAGE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ON_STAGE.dds"
+                small = "gfx/leaders/CHARACTER_ON_STAGE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ON_STAGE_army.dds"
+                small = "gfx/leaders/CHARACTER_ON_STAGE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ON_STAGE_navy.dds"
+                small = "gfx/leaders/CHARACTER_ON_STAGE_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 6
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

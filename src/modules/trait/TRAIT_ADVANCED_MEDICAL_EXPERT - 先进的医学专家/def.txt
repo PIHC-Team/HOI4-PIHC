@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_ADVANCED_MEDICAL_EXPERT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		experience_loss_factor = -0.25
+		research_speed_factor = 0.05
+	}
+}

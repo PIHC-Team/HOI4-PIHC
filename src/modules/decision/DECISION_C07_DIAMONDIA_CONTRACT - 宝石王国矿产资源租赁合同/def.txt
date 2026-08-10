@@ -1,0 +1,23 @@
+DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
+    DECISION_C07_DIAMONDIA_CONTRACT = {
+        fixed_random_seed = no
+        priority = 200
+        cost = 75
+        days_remove = 90
+        days_re_enable = 0
+        visible = {
+            tag = C07
+            has_completed_focus = FOCUS_C07_LPEG_MINE_DIAMONDIA
+        }
+        modifier = {
+            country_resource_crystals = 5
+            country_resource_chromium = 2
+            country_resource_tungsten = 2
+            country_resource_aluminium = 3
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = C07_DIAMONDIA_CONTRACT
+    }
+}

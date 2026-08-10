@@ -1,0 +1,33 @@
+DECISION_CATEGORY_WAR_MEASURES = {
+    DECISION_WAR_RADIO = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 60
+        days_remove = 120
+        visible = {
+            NOT = {
+                tag = C08
+            }
+        }
+        modifier = {
+            war_support_weekly_factor = 0.1
+            supply_consumption_factor = -0.1
+            training_time_factor = -0.1
+            consumer_goods_factor = -0.05
+            offence = 0.05
+            defence = 0.08
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = -10
+                has_political_power < 150
+            }
+            modifier = {
+                factor = 12
+                surrender_progress > 0.25
+            }
+        }
+        icon = WAR_RADIO
+    }
+}

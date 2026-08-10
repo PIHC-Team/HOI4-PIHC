@@ -1,0 +1,42 @@
+technologies = {
+    TECHNOLOGY_TECH_MAGI_UNICORN = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 10
+                y = 3
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        allow = {
+            is_unicorn_country = yes
+        }
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_magical
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        production_lack_of_resource_penalty_factor = 0.15
+        training_time_factor = 0.1
+        offence = 0.12
+        defence = 0.12
+        special_project_specialization = {
+            specialization_magic
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_MAGI_MODERN
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+            research_cost_coeff = 1
+        }
+        research_cost = 5.0
+        start_year = 1001
+    }
+}

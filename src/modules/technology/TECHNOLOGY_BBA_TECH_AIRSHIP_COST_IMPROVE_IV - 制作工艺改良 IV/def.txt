@@ -1,0 +1,31 @@
+technologies = {
+    TECHNOLOGY_BBA_TECH_AIRSHIP_COST_IMPROVE_IV = {
+        folder = {
+            name = bba_air_techs_folder
+            position = {
+                x = 8
+                y = 24
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_air
+        }
+        on_research_complete = {
+            swap_ideas = {
+                remove_idea = IDEA_ALL_TECH_AIR_AIRSHIP_COST_3
+                add_idea = IDEA_ALL_TECH_AIR_AIRSHIP_COST_4
+            }
+        }
+        path = {
+        }
+        allow_branch = {
+            has_dlc = "By Blood Alone"
+        }
+        research_cost = 1.5
+        start_year = 1008
+    }
+}

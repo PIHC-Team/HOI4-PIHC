@@ -1,0 +1,10 @@
+steal_blueprints_steal_prototype = {
+	name = steal_blueprints_steal_prototype
+	desc = steal_blueprints_steal_prototype_desc
+	outcome = steal_blueprints_steal_prototype_outcome
+	picture = GFX_phase_steal_blueprints_steal_prototype
+	icon = GFX_phase_steal_blueprints_steal_prototype_small
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 10
+	}
+}

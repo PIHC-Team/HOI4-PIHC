@@ -1,0 +1,26 @@
+equipments = {
+	EQUIPMENT_AIR_MISSILE_OIL = {
+		archetype = ARCHETYPE_MISSILE
+		priority = 1
+		visual_level = 1
+		build_cost_ic = 12.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.8
+		air_bombing = 400.0
+		air_range = 2400.0
+		air_agility = 10.0
+		maximum_speed = 640.0
+		picture = EQUIPMENT_AIR_MISSILE_OIL
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_AIR_MISSILE_STEAM
+		resources = {
+			steel = 4
+			oil = 6
+		}
+		fuel_consumption = 0.0
+		one_use_only = yes
+	}
+}

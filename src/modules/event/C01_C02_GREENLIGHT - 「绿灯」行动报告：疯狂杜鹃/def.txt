@@ -1,0 +1,880 @@
+add_namespace = C01_C02_GREENLIGHT
+country_event = {
+    id = C01_C02_GREENLIGHT.1
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_1
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_1
+    desc = EVENT_C01_C02_GREENLIGHT_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_1_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.2
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_2
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_2
+    desc = EVENT_C01_C02_GREENLIGHT_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_2_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.3
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_3
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_3
+    desc = EVENT_C01_C02_GREENLIGHT_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_3_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.4
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_4
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_4
+    desc = EVENT_C01_C02_GREENLIGHT_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_4_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.5
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_5
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_5
+    desc = EVENT_C01_C02_GREENLIGHT_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_5_o0
+    }
+}
+news_event = {
+    id = C01_C02_GREENLIGHT.6
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_6
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_6
+    desc = EVENT_C01_C02_GREENLIGHT_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        name = EVENT_C01_C02_GREENLIGHT_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            is_in_faction_with = C08
+        }
+        name = EVENT_C01_C02_GREENLIGHT_6_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C02
+        }
+        name = EVENT_C01_C02_GREENLIGHT_6_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = C01
+                    is_in_faction_with = C08
+                }
+            }
+        }
+        name = EVENT_C01_C02_GREENLIGHT_6_o3
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.7
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_7
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                launch_nuke = {
+                    state = 504
+                    controller = C02
+                }
+                every_country = {
+                    if = {
+                        limit = {
+                            is_ai = no
+                        }
+                        goto_state = 504
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_7
+    desc = EVENT_C01_C02_GREENLIGHT_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_7_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.8
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_8
+    immediate = {
+        hidden_effect = {
+            504 = {
+                if = {
+                    limit = {
+                        is_core_of = C02
+                    }
+                    remove_core_of = C02
+                    ADD_TO_C00_WASTELAND = yes
+                    set_state_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND
+                }
+            }
+            C02 = {
+                C02_TRIXIE_LULAMOON_DEAD = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_8
+    desc = EVENT_C01_C02_GREENLIGHT_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_8_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.9
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_9
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                launch_nuke = {
+                    state = 543
+                    controller = C02
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_9
+    desc = EVENT_C01_C02_GREENLIGHT_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_9_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.10
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_10
+    immediate = {
+        hidden_effect = {
+            543 = {
+                if = {
+                    limit = {
+                        is_core_of = C02
+                    }
+                    remove_core_of = C02
+                    ADD_TO_C00_WASTELAND = yes
+                    set_state_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_10
+    desc = EVENT_C01_C02_GREENLIGHT_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_10_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.11
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_11
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                launch_nuke = {
+                    state = 235
+                    controller = C02
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_11
+    desc = EVENT_C01_C02_GREENLIGHT_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_11_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.12
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_12
+    immediate = {
+        hidden_effect = {
+            235 = {
+                if = {
+                    limit = {
+                        is_core_of = C02
+                    }
+                    remove_core_of = C02
+                    ADD_TO_C00_WASTELAND = yes
+                    set_state_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_12
+    desc = EVENT_C01_C02_GREENLIGHT_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_12_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.13
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_13
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                launch_nuke = {
+                    state = 545
+                    controller = C02
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_13
+    desc = EVENT_C01_C02_GREENLIGHT_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_13_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.14
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_14
+    immediate = {
+        hidden_effect = {
+            545 = {
+                if = {
+                    limit = {
+                        is_core_of = C02
+                    }
+                    remove_core_of = C02
+                    ADD_TO_C00_WASTELAND = yes
+                    set_state_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_14
+    desc = EVENT_C01_C02_GREENLIGHT_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_14_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.15
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_15
+    immediate = {
+        hidden_effect = {
+            C01 = {
+                launch_nuke = {
+                    state = 529
+                    controller = C02
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_15
+    desc = EVENT_C01_C02_GREENLIGHT_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_15_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.16
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_16
+    immediate = {
+        hidden_effect = {
+            529 = {
+                if = {
+                    limit = {
+                        is_core_of = C02
+                    }
+                    remove_core_of = C02
+                    ADD_TO_C00_WASTELAND = yes
+                    set_state_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_WASTELAND
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_16
+    desc = EVENT_C01_C02_GREENLIGHT_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_16_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.17
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_17
+    immediate = {
+        hidden_effect = {
+            C02 = {
+                END_ALL_WARS = yes
+                leave_faction = yes
+                set_major = no
+                country_lock_all_division_template = yes
+                remove_ideas = IDEA_ALL_NUKED
+            }
+            C00 = {
+                remove_ideas = IDEA_ALL_NUKED
+            }
+            C08 = {
+                remove_ideas = IDEA_ALL_NUKED
+            }
+            C01 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C01_OPERATION_GREENLIGHT_COMPLETED
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C01_C02_GREENLIGHT_17
+    desc = EVENT_C01_C02_GREENLIGHT_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_17_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.18
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_18
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_18
+    desc = EVENT_C01_C02_GREENLIGHT_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_18_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.19
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_19
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_19
+    desc = EVENT_C01_C02_GREENLIGHT_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_19_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.20
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_20
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_20
+    desc = EVENT_C01_C02_GREENLIGHT_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_20_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.21
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_21
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_21
+    desc = EVENT_C01_C02_GREENLIGHT_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_21_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.22
+        }
+        name = EVENT_C01_C02_GREENLIGHT_21_o1
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.22
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_22
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_22
+    desc = EVENT_C01_C02_GREENLIGHT_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_22_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.23
+        }
+        name = EVENT_C01_C02_GREENLIGHT_22_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.21
+        }
+        name = EVENT_C01_C02_GREENLIGHT_22_o2
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.23
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_23
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_23
+    desc = EVENT_C01_C02_GREENLIGHT_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_23_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.24
+        }
+        name = EVENT_C01_C02_GREENLIGHT_23_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.22
+        }
+        name = EVENT_C01_C02_GREENLIGHT_23_o2
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.24
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_24
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_24
+    desc = EVENT_C01_C02_GREENLIGHT_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_24_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.25
+        }
+        name = EVENT_C01_C02_GREENLIGHT_24_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.23
+        }
+        name = EVENT_C01_C02_GREENLIGHT_24_o2
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.25
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_25
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_25
+    desc = EVENT_C01_C02_GREENLIGHT_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_25_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.24
+        }
+        name = EVENT_C01_C02_GREENLIGHT_25_o1
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.26
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_26
+    immediate = {
+        hidden_effect = {
+            C08 = {
+                PIHC_C08_PIN_GAME_2_CHECK = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_26
+    desc = EVENT_C01_C02_GREENLIGHT_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_26_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.27
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_27
+    immediate = {
+        hidden_effect = {
+            C08 = {
+                PIHC_C08_PIN_GAME_2_INIT = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_27
+    desc = EVENT_C01_C02_GREENLIGHT_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_27_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.29
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_29
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_29
+    desc = EVENT_C01_C02_GREENLIGHT_29_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_29_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.30
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_30
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_30
+    desc = EVENT_C01_C02_GREENLIGHT_30_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C01_C02_GREENLIGHT_30_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS
+        name = EVENT_C01_C02_GREENLIGHT_30_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.31
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_31
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_31
+    desc = EVENT_C01_C02_GREENLIGHT_31_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C01_C02_GREENLIGHT_30_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+        name = EVENT_C01_C02_GREENLIGHT_31_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.32
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_32
+    immediate = {
+        hidden_effect = {
+            C08 = {
+                SOLVE_PIHC_C08_PIN_GAME_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_32
+    desc = EVENT_C01_C02_GREENLIGHT_32_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_32_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.33
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_33
+    immediate = {
+        hidden_effect = {
+            C08 = {
+                SOLVE_PIHC_C08_PIN_GAME_2 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_33
+    desc = EVENT_C01_C02_GREENLIGHT_33_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_33_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.34
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_34
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_34
+    desc = EVENT_C01_C02_GREENLIGHT_34_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.35
+        }
+        name = EVENT_C01_C02_GREENLIGHT_34_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.35
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_35
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_35
+    desc = EVENT_C01_C02_GREENLIGHT_35_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_35_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.36
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_36
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_36
+    desc = EVENT_C01_C02_GREENLIGHT_36_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C01_C02_GREENLIGHT_36_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_CENTER_KNOWS
+        hidden_effect = {
+            add_to_variable = {
+                var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+                value = 0.15
+            }
+            clamp_variable = {
+                var = C02.VAR_C02_ELECTION_CRACKLE_COSETTE
+                min = 0.0
+                max = 1.0
+            }
+        }
+        name = EVENT_C01_C02_GREENLIGHT_36_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.37
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_37
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_37
+    desc = EVENT_C01_C02_GREENLIGHT_37_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_37_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.38
+        }
+        name = EVENT_C01_C02_GREENLIGHT_37_o1
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.38
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_38
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_38
+    desc = EVENT_C01_C02_GREENLIGHT_38_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_38_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C01_C02_GREENLIGHT.37
+        }
+        name = EVENT_C01_C02_GREENLIGHT_38_o1
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.39
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_39
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_39
+    desc = EVENT_C01_C02_GREENLIGHT_39_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_39_o0
+    }
+}
+country_event = {
+    id = C01_C02_GREENLIGHT.40
+    picture = GFX_EVENT_C01_C02_GREENLIGHT_40
+    immediate = {
+        hidden_effect = {
+            hidden_effect = {
+                C02 = {
+                    END_ALL_WARS = yes
+                    leave_faction = yes
+                    set_major = no
+                }
+                C08 = {
+                    set_variable = {
+                        var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                        value = C02
+                    }
+                    CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+                    clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                }
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C01_C02_GREENLIGHT_40
+    desc = EVENT_C01_C02_GREENLIGHT_40_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C01_C02_GREENLIGHT_40_o0
+    }
+}

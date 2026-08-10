@@ -1,0 +1,9 @@
+DEBUG_MARE_WIN = {
+	C02 = {
+		set_variable = {
+			var = C02.VAR_C02_ELECTION_MARE
+			value = 1.0
+		}
+		C02_SECOND_PONYVILLE_ELECTION = yes
+	}
+}

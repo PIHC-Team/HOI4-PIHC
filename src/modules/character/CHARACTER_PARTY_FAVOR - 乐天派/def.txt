@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_PARTY_FAVOR = {
+        name = CHARACTER_PARTY_FAVOR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PARTY_FAVOR.dds"
+                small = "gfx/leaders/CHARACTER_PARTY_FAVOR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PARTY_FAVOR_army.dds"
+                small = "gfx/leaders/CHARACTER_PARTY_FAVOR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PARTY_FAVOR_navy.dds"
+                small = "gfx/leaders/CHARACTER_PARTY_FAVOR_navy_small.dds"
+            }
+        }
+        gender = male
+        field_marshal = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+        advisor = {
+            idea_token = CHARACTER_PARTY_FAVOR
+            desc = CHARACTER_PARTY_FAVOR_DESC
+            traits = {
+                TRAIT_PARTY_FAVOR_UNEXPECTED_WEAPON
+            }
+            ledger = military
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = army_chief
+        }
+    }
+}

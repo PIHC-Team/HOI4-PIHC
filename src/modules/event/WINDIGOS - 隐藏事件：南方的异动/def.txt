@@ -1,0 +1,225 @@
+add_namespace = WINDIGOS
+country_event = {
+    id = WINDIGOS.1
+    picture = GFX_EVENT_WINDIGOS_1
+    immediate = {
+        C26 = {
+            news_event = {
+                id = WINDIGOS.2
+            }
+        }
+    }
+    fire_only_once = yes
+    trigger = {
+        tag = C26
+        threat > 0.24
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    title = EVENT_WINDIGOS_1
+    desc = EVENT_WINDIGOS_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_WINDIGOS_1_o0
+    }
+}
+news_event = {
+    id = WINDIGOS.2
+    picture = GFX_EVENT_WINDIGOS_2
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_WINDIGOS_2
+    desc = EVENT_WINDIGOS_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C26
+        }
+        name = EVENT_WINDIGOS_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C26
+            }
+        }
+        name = EVENT_WINDIGOS_2_o1
+    }
+}
+country_event = {
+    id = WINDIGOS.3
+    picture = GFX_EVENT_WINDIGOS_3
+    immediate = {
+        C26 = {
+            news_event = {
+                id = WINDIGOS.4
+            }
+        }
+    }
+    fire_only_once = yes
+    trigger = {
+        tag = C26
+        threat > 0.39
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    title = EVENT_WINDIGOS_3
+    desc = EVENT_WINDIGOS_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_WINDIGOS_3_o0
+    }
+}
+news_event = {
+    id = WINDIGOS.4
+    picture = GFX_EVENT_WINDIGOS_4
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_WINDIGOS_4
+    desc = EVENT_WINDIGOS_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C26
+        }
+        name = EVENT_WINDIGOS_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C26
+            }
+        }
+        name = EVENT_WINDIGOS_4_o1
+    }
+}
+country_event = {
+    id = WINDIGOS.5
+    picture = GFX_EVENT_WINDIGOS_5
+    immediate = {
+        C26 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C26_STAGE_I
+        }
+    }
+    fire_only_once = yes
+    trigger = {
+        tag = C26
+        threat > 0.44
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    title = EVENT_WINDIGOS_5
+    desc = EVENT_WINDIGOS_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_WINDIGOS_5_o0
+    }
+}
+news_event = {
+    id = WINDIGOS.6
+    picture = GFX_EVENT_WINDIGOS_6
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_WINDIGOS_6
+    desc = EVENT_WINDIGOS_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C26
+        }
+        declare_war_on = {
+            type = annex_everything
+            target = C28
+        }
+        name = EVENT_WINDIGOS_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C26
+            }
+        }
+        name = EVENT_WINDIGOS_6_o1
+    }
+}
+country_event = {
+    id = WINDIGOS.7
+    picture = GFX_EVENT_WINDIGOS_7
+    immediate = {
+        C26 = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C26_STAGE_I_2
+        }
+    }
+    fire_only_once = yes
+    trigger = {
+        tag = C26
+        threat > 0.59
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    title = EVENT_WINDIGOS_7
+    desc = EVENT_WINDIGOS_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_WINDIGOS_7_o0
+    }
+}
+news_event = {
+    id = WINDIGOS.8
+    picture = GFX_EVENT_WINDIGOS_8
+    major = yes
+    is_triggered_only = yes
+    title = EVENT_WINDIGOS_8
+    desc = EVENT_WINDIGOS_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C26
+        }
+        declare_war_on = {
+            type = annex_everything
+            target = C27
+        }
+        name = EVENT_WINDIGOS_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C26
+            }
+        }
+        name = EVENT_WINDIGOS_8_o1
+    }
+}

@@ -1,0 +1,107 @@
+pihc_air_bloodthirsty_flock = {
+	folder = air
+	name = DOCTRINE_AIR_1_0_BLOODTHIRSTY_FLOCK
+	description = DOCTRINE_AIR_1_0_BLOODTHIRSTY_FLOCK_DESC
+	icon = GFX_doctrine_pihc_air_bloodthirsty_flock_medium
+	available = {
+		always = yes
+	}
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	tracks = {
+		fighter_aircraft
+		strike_aircraft
+		medium_aircraft
+		heavy_aircraft
+	}
+	milestones = {
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_bloodthirsty_flock_fighter_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_bloodthirsty_flock_fighter_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_bloodthirsty_flock_fighter_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_bloodthirsty_flock_strike_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_bloodthirsty_flock_strike_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_bloodthirsty_flock_strike_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_bloodthirsty_flock_medium_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_bloodthirsty_flock_medium_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_bloodthirsty_flock_medium_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+		{
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_air_bloodthirsty_flock_heavy_aircraft_milestone_var
+						}
+					}
+					set_variable = {
+						pihc_air_bloodthirsty_flock_heavy_aircraft_milestone_var = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						pihc_air_bloodthirsty_flock_heavy_aircraft_milestone_var = 1
+					}
+				}
+			}
+		}
+	}
+	air_agility_factor = 0.05
+	air_attack_factor = 0.05
+	air_superiority_efficiency = 0.1
+}

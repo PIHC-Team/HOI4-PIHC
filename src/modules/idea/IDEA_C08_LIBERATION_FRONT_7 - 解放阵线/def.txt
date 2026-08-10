@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C08_LIBERATION_FRONT_7 = {
+			picture = C08_LIBERATION_FRONT_7
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.12
+				political_power_gain = 0.17
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

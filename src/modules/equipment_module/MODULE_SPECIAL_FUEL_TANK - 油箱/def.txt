@@ -1,0 +1,14 @@
+MODULE_SPECIAL_FUEL_TANK = {
+	category = pihc_tank_special_type_2_oil
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+		weight = 0.35
+		fuel_capacity = 100
+	}
+	multiply_stats = {
+		maximum_speed = -0.03
+		reliability = -0.05
+	}
+	xp_cost = 5
+}

@@ -1,0 +1,37 @@
+characters = {
+    CHARACTER_LAURETTE = {
+        name = CHARACTER_LAURETTE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LAURETTE.dds"
+                small = "gfx/leaders/CHARACTER_LAURETTE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LAURETTE_army.dds"
+                small = "gfx/leaders/CHARACTER_LAURETTE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LAURETTE_navy.dds"
+                small = "gfx/leaders/CHARACTER_LAURETTE_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 0
+            defense_skill = 0
+            planning_skill = 0
+            logistics_skill = 6
+            traits = {
+
+            }
+        }
+        country_leader = {
+            desc = CHARACTER_LAURETTE_DESC
+            traits = {
+
+            }
+            ideology = peacism_oligarchy
+        }
+    }
+}

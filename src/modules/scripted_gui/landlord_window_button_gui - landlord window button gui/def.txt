@@ -1,0 +1,21 @@
+scripted_gui = {
+	landlord_window_button_gui = {
+		context_type = selected_state_context
+		window_name = landlord_window_button
+		parent_window_token = selected_state_view
+		visible = {
+			NOT = {
+				ROOT = {
+					has_country_flag = landlord_window_opened
+				}
+			}
+		}
+		effects = {
+			open_window_click = {
+				ROOT = {
+					set_country_flag = landlord_window_opened
+				}
+			}
+		}
+	}
+}

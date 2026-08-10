@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_SAPPHIRE_SHORES = {
+        name = CHARACTER_SAPPHIRE_SHORES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES.dds"
+                small = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES_army.dds"
+                small = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES_navy.dds"
+                small = "gfx/leaders/CHARACTER_SAPPHIRE_SHORES_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_SAPPHIRE_SHORES
+            desc = CHARACTER_SAPPHIRE_SHORES_DESC
+            traits = {
+                TRAIT_FASHION_IDOL
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 300
+            removal_cost = 350
+            slot = navy_chief
+        }
+    }
+}

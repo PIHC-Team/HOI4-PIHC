@@ -1,0 +1,61 @@
+DECISION_CATEGORY_C02_INDEPENDENCE = {
+    DECISION_C02_C05_PREPARE = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        selectable_mission = yes
+        days_mission_timeout = 60
+        activation = {
+            has_completed_focus = FOCUS_C02_WAR_TO_C05
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+            }
+        }
+        available = {
+            num_divisions_in_states = {
+                count > 15
+                states = {
+                    487
+                    542
+                    504
+                    529
+                    543
+                    545
+                    567
+                }
+            }
+        }
+        war_with_on_timeout = C05
+        war_with_on_complete = C05
+        complete_effect = {
+            add_timed_idea = {
+                idea = IDEA_C02_C05_PREPARED
+                days = 360
+            }
+            add_power_balance_value = {
+                id = BOP_C02_INDEPENDENCE
+                value = 0.1
+                tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = C05
+            }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = C05
+            }
+        }
+        timeout_effect = {
+            create_wargoal = {
+                type = annex_everything
+                target = C05
+            }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = C05
+            }
+        }
+        icon = C02_C05_PREPARE
+    }
+}

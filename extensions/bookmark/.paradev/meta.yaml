@@ -1,0 +1,137 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/bookmark
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-bookmark
+items:
+-   kind: entity
+    identifier: pihc3-bookmark-module
+    name: PIHC3 Bookmark Module
+    desc: Project-owned bookmark source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3BookmarkModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-bookmark
+    name: PIHC3 Bookmark
+    desc: PIHC3 bookmark module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-bookmark-module
+        definition:
+            identifier: pihc3-bookmark
+            name: PIHC3 Bookmark
+            version: 0.2.3
+            desc: PIHC3 bookmark module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-bookmark-module
+            meta:
+                project: PIHC3
+                family: bookmark
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-bookmark
+    name: PIHC3 Bookmark Compiler
+    desc: Registry-backed source slots and compiler hooks for bookmark.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: bookmarks
+            title: Bookmarks
+            group: country
+            title_key: modules.bookmarks.title
+        dependencies:
+        - extension:pihc3-bookmark
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-023d5aecf0907474
+    name: PIHC3 Basic Bookmark
+    desc: PIHC3 authoring template pihc3:bookmark/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:bookmark/basic
+            declaration:
+                title: PIHC3 Basic Bookmark
+                family: bookmark
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    date:
+                        default: 1936.1.1.12
+                    picture:
+                        default: GFX_select_date_1936
+                    default_country:
+                        default: TAG
+                    default:
+                        default: 'yes'
+                    ideology:
+                        default: democratic
+                    randomize_weather:
+                        default: '12345'
+                    country_history:
+                        default: A starting country entry for this bookmark.
+                    other_history:
+                        default: Other countries begin outside the highlighted setup.
+                    language:
+                        default: en
+                files:
+                    def.txt: "bookmarks = {{\n\tbookmark = {{\n\t\tname = \"{object_id}_NAME\"\
+                        \n\t\tdesc = \"{object_id}_DESC\"\n\t\tdate = {date}\n\t\t\
+                        picture = \"{picture}\"\n\t\tdefault_country = \"{default_country}\"\
+                        \n\t\tdefault = {default}\n\n\t\t{default_country} = {{\n\t\
+                        \t\thistory = \"{object_id}_{default_country}_DESC\"\n\t\t\
+                        \tideology = {ideology}\n\t\t\tideas = {{\n\t\t\t}}\n\t\t\t\
+                        focuses = {{\n\t\t\t}}\n\t\t}}\n\n\t\t\"---\" = {{\n\t\t\t\
+                        history = \"{object_id}_OTHER_DESC\"\n\t\t}}\n\n\t\teffect\
+                        \ = {{\n\t\t\trandomize_weather = {randomize_weather}\n\t\t\
+                        }}\n\t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}_NAME]
+
+                        {title}
+
+
+                        [{language}.{object_id}_DESC]
+
+                        {description}
+
+
+                        [{language}.{object_id}_{default_country}_DESC]
+
+                        {country_history}
+
+
+                        [{language}.{object_id}_OTHER_DESC]
+
+                        {other_history}
+
+                        '
+                directory: '{object_id} - {title}'

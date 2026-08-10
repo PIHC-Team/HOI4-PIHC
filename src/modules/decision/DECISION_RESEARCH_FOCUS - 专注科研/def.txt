@@ -1,0 +1,26 @@
+DECISION_CATEGORY_RESEARCH_SPEEDUP = {
+    DECISION_RESEARCH_FOCUS = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 50
+        days_remove = 60
+        days_re_enable = 120
+        modifier = {
+            research_speed_factor = 0.2
+            scientist_breakthrough_bonus_factor = 0.5
+            scientist_research_bonus_factor = 0.25
+            special_project_speed_factor = 0.12
+        }
+        ai_will_do = {
+            base = 2
+            modifier = {
+                add = -2
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+        }
+        icon = RESEARCH_FOCUS
+    }
+}

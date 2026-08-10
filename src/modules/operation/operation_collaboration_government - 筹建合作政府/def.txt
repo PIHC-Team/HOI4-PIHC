@@ -1,0 +1,125 @@
+operation_collaboration_government = {
+	icon = GFX_operations_collaboration_government
+	map_icon = GFX_operations_collaboration_government_map
+	name = operation_collaboration_government
+	desc = operation_collaboration_government_desc
+	priority = 10
+	days = 90
+	network_strength = 50
+	operatives = 2
+	cost_multiplier = 0.25
+	visible = {
+		network_strength = {
+			target = FROM
+			value > 25
+		}
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 200
+		ARCHETYPE_INFANTRY = 1000
+		civilian_factories = {
+			amount = 10
+			days = 60
+		}
+	}
+	allowed = {
+		has_rule = can_create_collaboration_government
+	}
+	available = {
+		has_collaboration = {
+			target = FROM
+			value < 1.0
+		}
+	}
+	risk_chance = 0.1
+	experience = 1.5
+	outcome_extra_chance = 0.33
+	outcome_execute = {
+		ROOT = {
+			add_collaboration = {
+				target = FROM
+				value = 0.3
+			}
+		}
+	}
+	outcome_extra_execute = {
+		ROOT = {
+			add_collaboration = {
+				target = FROM
+				value = 0.45
+			}
+		}
+	}
+	outcome_potential = {
+		ROOT = {
+			add_collaboration = {
+				target = FROM
+				value = 0.3
+			}
+		}
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war = no
+				}
+			}
+		}
+	}
+	phases = {
+		collaboration_government_set_up_planning_committees = {
+			base = 33
+		}
+		collaboration_government_train_paramilitary_forces = {
+			base = 33
+		}
+		collaboration_government_contact_military_officers = {
+			base = 33
+		}
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = {
+			base = 30
+		}
+		exfiltration_go_to_ground = {
+			base = 30
+		}
+		exfiltration_submarine_pickup = {
+			base = 25
+		}
+	}
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_CELAENO = {
+        name = CHARACTER_CELAENO_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CELAENO.dds"
+                small = "gfx/leaders/CHARACTER_CELAENO_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CELAENO_army.dds"
+                small = "gfx/leaders/CHARACTER_CELAENO_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CELAENO_navy.dds"
+                small = "gfx/leaders/CHARACTER_CELAENO_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_CELAENO_DESC
+            traits = {
+
+            }
+            ideology = anarchy_anarchy
+        }
+    }
+}

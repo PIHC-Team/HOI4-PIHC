@@ -1,0 +1,177 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/military_industrial_organization
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-military-industrial-organization
+items:
+-   kind: entity
+    identifier: pihc3-military-industrial-organization
+    name: PIHC3 Military Industrial Organization Module
+    desc: Project-owned military_industrial_organization source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3MilitaryIndustrialOrganization
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-military-industrial-organization
+    name: PIHC3 Military Industrial Organization
+    desc: PIHC3 military_industrial_organization module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-military-industrial-organization
+        definition:
+            identifier: pihc3-military-industrial-organization
+            name: PIHC3 Military Industrial Organization
+            version: 0.2.3
+            desc: PIHC3 military_industrial_organization module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-military-industrial-organization
+            meta:
+                project: PIHC3
+                family: military_industrial_organization
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-military-industrial-organization
+    name: PIHC3 Military Industrial Organization Compiler
+    desc: Registry-backed source slots and compiler hooks for military_industrial_organization.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: military-industrial-organizations
+            title: Military Industrial Organizations
+            group: military
+            aliases:
+            - mio
+            title_key: modules.militaryIndustrialOrganizations.title
+        dependencies:
+        - extension:pihc3-military-industrial-organization
+-   kind: paradev_diagram_provider
+    identifier: pihc3-military-industrial-organization
+    name: PIHC3 MIO Trait Tree Provider
+    desc: Projects and edits PIHC3 MIO traits through the registered tree interface.
+    source: path
+    target:
+        module: null
+        qualname: diagram_provider
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - paradev_build_family:pihc3-military-industrial-organization
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-ca300e0b1febd1d1
+    name: PIHC3 Basic Military Industrial Organization
+    desc: PIHC3 authoring template pihc3:military_industrial_organization/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:military_industrial_organization/basic
+            declaration:
+                title: PIHC3 Basic Military Industrial Organization
+                family: military_industrial_organization
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    country_tag:
+                        default: C01
+                        label: Country tag
+                    equipment_type:
+                        default: infantry_equipment
+                        label: Equipment type
+                    research_category:
+                        default: infantry_weapons
+                        label: Research category
+                    reliability:
+                        default: 0.05
+                        type: number
+                        label: Reliability bonus
+                        description: Decimal equipment bonus; use 0.05 for 5%.
+                    x:
+                        default: 0
+                        type: number
+                        label: Trait X
+                        description: Initial authored trait X position.
+                        advanced: true
+                    y:
+                        default: 0
+                        type: number
+                        label: Trait Y
+                        description: Initial authored trait Y position.
+                        advanced: true
+                    language:
+                        default: en
+                files:
+                    common/military_industrial_organization/organizations/{object_id}.txt: "{object_id}\
+                        \ = {{\n  name = {object_id}\n  icon = GFX_idea_generic_infantry_equipment_manufacturer_1\n\
+                        \  allowed = {{\n    tag = {country_tag}\n  }}\n  equipment_type\
+                        \ = {{\n    {equipment_type}\n  }}\n  research_categories\
+                        \ = {{\n    {research_category}\n  }}\n  initial_trait = {{\n\
+                        \    name = {object_id}_initial_trait\n    limit_to_equipment_type\
+                        \ = {{\n      {equipment_type}\n    }}\n    organization_modifier\
+                        \ = {{\n      military_industrial_organization_research_bonus\
+                        \ = 0.05\n    }}\n  }}\n  trait = {{\n    token = {object_id}_quality\n\
+                        \    name = {object_id}_quality\n    icon = GFX_generic_mio_trait_icon_reliability\n\
+                        \    position = {{\n      x = {x}\n      y = {y}\n    }}\n\
+                        \    limit_to_equipment_type = {{\n      {equipment_type}\n\
+                        \    }}\n    equipment_bonus = {{\n      reliability = {reliability}\n\
+                        \    }}\n  }}\n}}\n"
+                    localization/{object_id}.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_initial_trait]
+
+                        {title} Initial Trait
+
+
+                        [{language}.{object_id}_initial_trait_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_quality]
+
+                        {title} Quality
+
+
+                        [{language}.{object_id}_quality_desc]
+
+                        Improves equipment reliability.
+
+                        '
+                directory: '{object_id} - {title}'

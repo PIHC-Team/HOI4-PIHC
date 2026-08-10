@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_UNITY_COMMITTEE_C02 = {
+        name = CHARACTER_UNITY_COMMITTEE_C02_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02.dds"
+                small = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02_army.dds"
+                small = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02_navy.dds"
+                small = "gfx/leaders/CHARACTER_UNITY_COMMITTEE_C02_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_UNITY_COMMITTEE_C02_DESC
+            traits = {
+
+            }
+            ideology = despotic_duchy
+        }
+    }
+}

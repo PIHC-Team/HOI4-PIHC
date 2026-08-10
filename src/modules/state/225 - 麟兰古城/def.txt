@@ -1,0 +1,33 @@
+state = {
+    id = 225
+    name = STATE_225
+    provinces = {
+        3908
+        4446
+        5316
+        7503
+        7573
+        8047
+        8273
+        13345
+        13349
+        13418
+    }
+    manpower = 5446
+    state_category = pastoral
+    history = {
+        owner = C18
+        buildings = {
+
+        }
+        add_core_of = C18
+        victory_points = {
+            5316
+            5
+        }
+    }
+    resources = {
+        coal = 3
+        oil = 2
+    }
+}

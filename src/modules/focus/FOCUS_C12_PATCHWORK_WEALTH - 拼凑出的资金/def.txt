@@ -1,0 +1,31 @@
+focus = {
+	id = FOCUS_C12_PATCHWORK_WEALTH
+	icon = GFX_FOCUS_C12_PATCHWORK_WEALTH_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_INVITE_THE_APPLE_FAMILY
+	}
+	cost = 4
+	completion_reward = {
+		add_timed_idea = {
+			idea = IDEA_C12_DEVELOPMENT_ALLOWANCE_OF_APPLELOOSA
+			days = 180
+		}
+	}
+	available = {
+		country_exists = C14
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 8
+}

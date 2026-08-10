@@ -1,0 +1,12 @@
+MODULE_PLANE_ARMOR_4B_MODERN = {
+	category = pihc_plane_armor_type_2
+	sfx = sfx_ui_sd_module_engine
+	multiply_stats = {
+		air_defence = 0.8
+		build_cost_ic = 0.6
+	}
+	build_cost_resources = {
+		tungsten = 1
+	}
+	xp_cost = 5
+}

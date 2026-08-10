@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+	WETM_ZAP_APPLES:0 "£wetm_zap §Y魔虹苹果§!"
+	WETM_ORE_BOULDERS:0 "£wetm_boulder §Y原矿巨石§!"
+	WETM_BLUEPRINTS:0 "£wetm_blueprint §Y科技蓝图§!"
+	WETM_DEV_BONDS:0 "£wetm_bond §Y发展债券§!"
+	CUSTOM_COST_DEV_BONDS_DYNAMIC:0 "£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|Y0]"
+	CUSTOM_COST_DEV_BONDS_DYNAMIC_blocked:0 "£wetm_bond [?global.VAR_DEV_BONDS_EXCHANGE|R0]"
+	CUSTOM_COST_DEV_BONDS_DYNAMIC_tooltip:0 "消耗[?global.VAR_DEV_BONDS_EXCHANGE|Y0] 个 $WETM_DEV_BONDS$"
+	WETM_DEV_BONDS_APPRECIATION:0 "£wetm_bond §Y发展债券§! 将会升值"
+	WETM_DEV_BONDS_DEPRECIATION:0 "£wetm_bond §Y发展债券§! 将会贬值"

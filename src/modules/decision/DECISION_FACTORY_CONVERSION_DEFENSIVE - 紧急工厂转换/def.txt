@@ -1,0 +1,21 @@
+DECISION_CATEGORY_WAR_MEASURES = {
+    DECISION_FACTORY_CONVERSION_DEFENSIVE = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 100
+        days_re_enable = 90
+        visible = {
+            has_defensive_war = yes
+            has_offensive_war = no
+            num_of_controlled_states > 0
+        }
+        available = {
+            num_of_civilian_factories > 5
+        }
+        complete_effect = {
+            replace_civ_with_arms_factories = yes
+            add_war_support = -0.05
+        }
+        icon = FACTORY_CONVERSION_DEFENSIVE
+    }
+}

@@ -1,0 +1,151 @@
+operation_targeted_sabotage_resources = {
+	icon = GFX_operations_targeted_sabotage
+	map_icon = GFX_operations_targeted_sabotage_map
+	name = operation_targeted_sabotage_resources
+	desc = operation_targeted_sabotage_resources_desc
+	priority = 15
+	days = 90
+	network_strength = 35
+	operatives = 3
+	visible = {
+		num_of_operatives > 1
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		has_operation_token = {
+			tag = FROM
+			token = token_resistance_contacts
+		}
+	}
+	requirements = {
+		FROM = {
+			any_controlled_state = {
+				has_resistance = yes
+			}
+		}
+	}
+	selection_target_state = {
+		has_resistance = yes
+	}
+	selection_target = {
+		targets = {
+			FROM
+		}
+	}
+	required_tokens = {
+		token_resistance_contacts
+	}
+	equipment = {
+	}
+	risk_chance = 0.2
+	experience = 2
+	outcome_extra_chance = 0.25
+	outcome_modifiers = {
+		target_sabotage_factor
+		operation_outcome
+	}
+	risk_modifiers = {
+		target_sabotage_risk
+		operation_risk
+	}
+	cost_modifiers = {
+		target_sabotage_cost
+		operation_cost
+	}
+	outcome_execute = {
+		FROM.FROM = {
+			add_to_variable = {
+				var = targeted_sabotage_resources
+				value = 5
+			}
+			custom_effect_tooltip = targeted_sabotage_resources_2_tt
+		}
+		ROOT = {
+			remove_operation_token = {
+				tag = FROM
+				token = token_resistance_contacts
+			}
+		}
+	}
+	outcome_extra_execute = {
+		FROM.FROM = {
+			add_to_variable = {
+				var = targeted_sabotage_resources
+				value = 8
+			}
+			custom_effect_tooltip = targeted_sabotage_resources_2_tt
+		}
+	}
+	outcome_potential = {
+		custom_effect_tooltip = operation_outcome_sabotage_resources_tt
+		custom_effect_tooltip = operation_outcome_consumes_token_tt
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war = no
+				}
+			}
+			modifier = {
+				FROM = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		targeted_sabotage_burn_storage = {
+			base = 50
+		}
+		targeted_sabotage_destroy_mining_equipment = {
+			base = 50
+		}
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = {
+			base = 30
+		}
+		exfiltration_go_to_ground = {
+			base = 30
+		}
+		exfiltration_submarine_pickup = {
+			base = 25
+		}
+	}
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_COZY_GLOW_ANGRY_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_ANIMATED_default_strip.dds"
+        noOfFrames = 96
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+    }
+}

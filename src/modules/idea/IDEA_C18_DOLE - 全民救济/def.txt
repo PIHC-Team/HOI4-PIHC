@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C18_DOLE = {
+			picture = C18_DOLE
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				monthly_population = 0.02
+				political_power_gain = 0.05
+				custom_modifier_tooltip = IDEA_C18_DOLE_MODIFIER_TOOLTIP
+			}
+			on_add = {
+				C18_DEL_GROWTH_0_3 = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

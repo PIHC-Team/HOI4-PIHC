@@ -1,0 +1,12 @@
+coordinate_strike_mark_targets = {
+	name = coordinate_strike_mark_targets
+	desc = coordinate_strike_mark_targets_desc
+	outcome = coordinate_strike_mark_targets_outcome
+	picture = GFX_phase_coordinate_strike_mark_targets
+	icon = GFX_phase_coordinate_strike_mark_targets_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_SUPPORT = 100
+	}
+}

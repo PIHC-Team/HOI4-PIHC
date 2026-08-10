@@ -1,0 +1,25 @@
+on_actions = {
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = C07
+					}
+					ROOT = {
+						OR = {
+							tag = C41
+							tag = C42
+							tag = C43
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = C07_MAIN.13
+					}
+				}
+			}
+		}
+	}
+}

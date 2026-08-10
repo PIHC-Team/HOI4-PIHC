@@ -1,0 +1,42 @@
+characters = {
+    CHARACTER_MARBLE_PIE = {
+        name = CHARACTER_MARBLE_PIE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_MARBLE_PIE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_MARBLE_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MARBLE_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_MARBLE_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MARBLE_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MARBLE_PIE_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 1
+            defense_skill = 5
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+        advisor = {
+            idea_token = CHARACTER_MARBLE_PIE
+            desc = CHARACTER_MARBLE_PIE_DESC
+            traits = {
+                TRAIT_GENTLE_PROTECTOR
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = political_advisor
+        }
+    }
+}

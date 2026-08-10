@@ -1,0 +1,10 @@
+targeted_sabotage_destroy_mining_equipment = {
+	name = targeted_sabotage_destroy_mining_equipment
+	desc = targeted_sabotage_destroy_mining_equipment_desc
+	outcome = targeted_sabotage_destroy_mining_equipment_outcome
+	picture = GFX_phase_targeted_sabotage_destroy_mining_equipment
+	icon = GFX_phase_targeted_sabotage_destroy_mining_equipment_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 250
+	}
+}

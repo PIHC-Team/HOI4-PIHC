@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C04_DEVELOPMENT = {
+			picture = C04_DEVELOPMENT
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = C04_REGIONAL_DEV_DYNAMIC_MODIFIER_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

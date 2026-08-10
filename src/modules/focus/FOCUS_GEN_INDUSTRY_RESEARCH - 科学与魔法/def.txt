@@ -1,0 +1,36 @@
+focus = {
+	id = FOCUS_GEN_INDUSTRY_RESEARCH
+	icon = GFX_FOCUS_GEN_INDUSTRY_RESEARCH_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY_DEVELOP
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY_INFRA_3
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY_CONSTRUCTION_3
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_INDUSTRY_ARMS_3
+	}
+	cost = 10
+	completion_reward = {
+		add_research_slot = 1
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 26
+	y = 5
+}

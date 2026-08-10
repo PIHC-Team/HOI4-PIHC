@@ -1,0 +1,37 @@
+state = {
+    id = 777
+    name = STATE_777
+    provinces = {
+        838
+        2477
+        2725
+        3429
+        4524
+        5173
+        7460
+        8250
+        13837
+        13869
+        13888
+        13972
+        14008
+    }
+    manpower = 40069
+    state_category = large_town
+    history = {
+        owner = C13
+        victory_points = {
+            838
+            20
+        }
+        buildings = {
+            infrastructure = 3
+            farm_complex = 1
+        }
+        add_core_of = C13
+    }
+    resources = {
+        coal = 4
+        oil = 2
+    }
+}

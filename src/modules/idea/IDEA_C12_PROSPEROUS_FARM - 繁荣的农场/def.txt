@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_PROSPEROUS_FARM = {
+			picture = C12_PROSPEROUS_FARM
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				local_resources_factor = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

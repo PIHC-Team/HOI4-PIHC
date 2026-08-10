@@ -1,0 +1,8 @@
+C04_REGIONAL_DEV_DEBUG_ANNEX_AREA_5 = {
+	365 = {
+		add_core_of = C04
+		transfer_state_to = C04
+	}
+	set_country_flag = PIHC_COUNTRY_FLAG_C04_OWN_WEATHER_FACTORY
+	C04_REGIONAL_DEV_COMPUTE = yes
+}

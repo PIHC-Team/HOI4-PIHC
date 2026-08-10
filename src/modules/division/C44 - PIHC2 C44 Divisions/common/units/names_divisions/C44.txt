@@ -1,0 +1,146 @@
+NAMES_GROUP_C44_ARTILLERY = {
+    name = "火炮师 (Artillery Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮师%d师 (Artillery Division %d)"
+}
+NAMES_GROUP_C44_TANK_LIGHT = {
+    name = "轻型装甲师 (Light Armor Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲师%d师 (Light Armor Division %d)"
+}
+NAMES_GROUP_C44_TRADITIONAL_REGULAR = {
+    name = "常规步兵师 (Regular Infantry Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵师%d师 (Regular Infantry Division %d)"
+}
+NAMES_GROUP_C44_TANK_HEAVY = {
+    name = "重型装甲师 (Heavy Armor Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲师%d师 (Heavy Armor Division %d)"
+}
+NAMES_GROUP_C44_TRADITIONAL_SMALL = {
+    name = "小型步兵师 (Small Infantry Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵师%d师 (Small Infantry Division %d)"
+}
+NAMES_GROUP_C44_AUTOMATA = {
+    name = "自动作战师 (Automata Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战师%d师 (Automata Division %d)"
+}
+NAMES_GROUP_C44_SHIELD = {
+    name = "重装步兵师 (Heavy Infantry Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵师%d师 (Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C44_MAGICAL = {
+    name = "魔法步兵师 (Magical Infantry Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵师%d师 (Magical Infantry Division %d)"
+}
+NAMES_GROUP_C44_INFANTRY_MIX = {
+    name = "协同师 (Concerted Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同师%d师 (Concerted Division %d)"
+}
+NAMES_GROUP_C44_MOTORIZED = {
+    name = "机动步兵师 (Motorized Infantry Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵师%d师 (Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C44_TANK_MEDIUM = {
+    name = "中型装甲师 (Medium Armor Division)"
+    for_countries = {
+        C44
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲师%d师 (Medium Armor Division %d)"
+}

@@ -1,0 +1,104 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/state_lore
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-state-lore
+items:
+-   kind: entity
+    identifier: pihc3-state-lore
+    aliases:
+    - StateLore
+    name: PIHC3 State Lore
+    desc: Project-owned compact state lore and aggregate-script resource contract.
+    source: path
+    target:
+        module: null
+        qualname: StateLore
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-state-lores
+    name: PIHC3 State Lores
+    desc: PIHC3-exclusive state lore authoring and persistence.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-state-lore
+        definition:
+            identifier: pihc3-state-lores
+            name: PIHC3 State Lores
+            version: 0.2.4
+            desc: PIHC3-exclusive state lore authoring and persistence.
+            required: false
+            requires: []
+            entities:
+            - pihc3-state-lore
+            meta:
+                project: PIHC3
+                family: state_lore
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-state-lore
+    name: PIHC3 State Lore Compiler
+    desc: Compact resource slots and aggregate compilation hooks for state lore.
+    source: path
+    target:
+        module: null
+        qualname: StateLore.build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: state-lore
+            title: State Lore
+            group: events
+            title_key: modules.stateLore.title
+        dependencies:
+        - extension:pihc3-state-lores
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-4641fb721399dd93
+    name: PIHC3 Basic State Lore
+    desc: PIHC3 authoring template pihc3:state_lore/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:state_lore/basic
+            declaration:
+                title: PIHC3 Basic State Lore
+                family: state_lore
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    state_id:
+                        default: '{family_tag}'
+                        type: number
+                        advanced: true
+                        label: State ID check
+                        description: Validation-only value derived from STATE_LORE_<positive HoI4 state id>; it is never stored.
+                    language:
+                        default: en
+                files:
+                    main.loc: '[{language}.{object_id}]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

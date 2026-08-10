@@ -1,0 +1,61 @@
+focus = {
+	id = FOCUS_C07_LPMIG_SOUTH_LUNA
+	icon = GFX_FOCUS_C07_LPMIG_SOUTH_LUNA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPMIG
+	}
+	cost = 3
+	completion_reward = {
+		562 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 12077
+			}
+		}
+		if = {
+			limit = {
+				663 = {
+					is_owned_and_controlled_by = C07
+				}
+			}
+			663 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 7881
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				663 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						province = 7881
+					}
+				}
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 13
+	y = 4
+}

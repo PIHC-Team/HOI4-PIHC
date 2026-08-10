@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_NIGHTMARE_MOON_1_ETERNAL_QUEEN = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		offence = 0.25
+		defence = 0.25
+	}
+}

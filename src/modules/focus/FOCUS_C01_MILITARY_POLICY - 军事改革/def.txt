@@ -1,0 +1,24 @@
+focus = {
+	id = FOCUS_C01_MILITARY_POLICY
+	icon = GFX_FOCUS_C01_MILITARY_POLICY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_COZY_GLOW_CORONATION
+	}
+	cost = 52
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 26
+	y = 2
+}

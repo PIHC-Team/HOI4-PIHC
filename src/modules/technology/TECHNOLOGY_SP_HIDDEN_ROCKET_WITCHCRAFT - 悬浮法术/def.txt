@@ -1,0 +1,33 @@
+technologies = {
+    TECHNOLOGY_SP_HIDDEN_ROCKET_WITCHCRAFT = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 0
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        is_special_project_tech = yes
+        categories = {
+            pihc_all
+            pihc_project
+        }
+        enable_equipments = {
+            EQUIPMENT_AIR_MISSILE_WITCHCRAFT
+        }
+        enable_equipment_modules = {
+            MODULE_SUSPENSION_4A_FLOAT
+        }
+        enable_subunits = {
+        }
+        allow = {
+            always = no
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

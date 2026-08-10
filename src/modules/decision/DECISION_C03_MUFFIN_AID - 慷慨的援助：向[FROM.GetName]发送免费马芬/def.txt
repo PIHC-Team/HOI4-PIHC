@@ -1,0 +1,212 @@
+DECISION_CATEGORY_C03_MUFFIN = {
+    DECISION_C03_MUFFIN_AID = {
+        fixed_random_seed = no
+        priority = 0
+        cost = 0
+        days_remove = 14
+        days_re_enable = 60
+        target_trigger = {
+            FROM = {
+                NOT = {
+                    OR = {
+                        tag = C00
+                        original_tag = C11
+                        has_government = transcendence
+                    }
+                }
+                if = {
+                    limit = {
+                        C03 = {
+                            has_completed_focus = FOCUS_C03_MUFFIN_25
+                        }
+                    }
+                    OR = {
+                        has_idea = IDEA_ERA_HUNGER_5_FAMINE
+                        has_idea = IDEA_ERA_HUNGER_4_HUNGER
+                        has_idea = IDEA_ERA_HUNGER_3_NORMAL
+                        tag = C01
+                        tag = C04
+                    }
+                }
+                else = {
+                    OR = {
+                        has_idea = IDEA_ERA_HUNGER_5_FAMINE
+                        has_idea = IDEA_ERA_HUNGER_4_HUNGER
+                    }
+                    NOT = {
+                        has_idea = closed_economy
+                    }
+                }
+                has_opinion = {
+                    target = ROOT
+                    value > -11
+                }
+            }
+            ROOT = {
+                has_opinion = {
+                    target = FROM
+                    value > -11
+                }
+            }
+        }
+        available = {
+            FROM = {
+                if = {
+                    limit = {
+                        C03 = {
+                            has_completed_focus = FOCUS_C03_MUFFIN_25
+                        }
+                    }
+                    OR = {
+                        has_idea = IDEA_ERA_HUNGER_5_FAMINE
+                        has_idea = IDEA_ERA_HUNGER_4_HUNGER
+                        has_idea = IDEA_ERA_HUNGER_3_NORMAL
+                        tag = C01
+                        tag = C04
+                    }
+                }
+                else = {
+                    OR = {
+                        has_idea = IDEA_ERA_HUNGER_5_FAMINE
+                        has_idea = IDEA_ERA_HUNGER_4_HUNGER
+                    }
+                    NOT = {
+                        has_idea = closed_economy
+                    }
+                }
+                has_opinion = {
+                    target = ROOT
+                    value > -11
+                }
+            }
+            ROOT = {
+                custom_trigger_tooltip = {
+                    tooltip = CUSTOM_OWN_MUFFINS_500
+                    check_variable = {
+                        var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                        value = 500
+                        compare = greater_than_or_equals
+                    }
+                }
+                has_opinion = {
+                    target = FROM
+                    value > -11
+                }
+            }
+        }
+        target_root_trigger = {
+            tag = C03
+            has_completed_focus = FOCUS_C03_MUFFIN_20
+        }
+        custom_cost_trigger = {
+            check_variable = {
+                var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                value = 500
+                compare = greater_than_or_equals
+            }
+        }
+        custom_cost_text = CUSTOM_COST_MUFFINS_500
+        complete_effect = {
+            ROOT = {
+                subtract_from_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 500
+                }
+                INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+                random = {
+                    chance = 10
+                    add_named_threat = {
+                        threat = -0.5
+                        name = DECISION_C03_MUFFIN_AID_THREAT
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            FROM = {
+                country_event = {
+                    id = C03_MAIN.5
+                }
+                add_to_variable = {
+                    var = VAR_MUFFINS_AID_FROM_C03
+                    value = 1
+                }
+            }
+            ROOT = {
+                add_to_variable = {
+                    var = VAR_MUFFINS_AID_TOTAL_C03
+                    value = 1
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = C01
+                        }
+                    }
+                    add_power_balance_value = {
+                        id = BOP_C03_INDEPENDENCE
+                        value = 0.05
+                        tooltip_side = BOP_C03_INDEPENDENCE_RIGHT_SIDE
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 5
+                check_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 6000
+                    compare = greater_than_or_equals
+                }
+            }
+            modifier = {
+                add = 5
+                ROOT = {
+                    has_opinion = {
+                        target = FROM
+                        value > 19
+                    }
+                }
+            }
+            modifier = {
+                add = 5
+                threat > 0.49
+            }
+            modifier = {
+                add = 10
+                ROOT = {
+                    has_completed_focus = FOCUS_C03_MUFFIN_25
+                }
+            }
+            modifier = {
+                add = 40
+                FROM = {
+                    tag = C04
+                }
+            }
+            modifier = {
+                add = 40
+                FROM = {
+                    tag = C01
+                }
+            }
+            modifier = {
+                factor = 0
+                check_variable = {
+                    var = ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN
+                    value = 4000
+                    compare = less_than_or_equals
+                }
+            }
+            modifier = {
+                factor = 0
+                C01 = {
+                    has_completed_focus = FOCUS_C01_C03_MUFFIN_V
+                }
+            }
+        }
+        icon = C03_MUFFIN_AID
+    }
+}

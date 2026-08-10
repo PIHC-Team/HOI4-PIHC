@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_THE_HEADLESS_HORSE = {
+        name = CHARACTER_THE_HEADLESS_HORSE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE.dds"
+                small = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE_army.dds"
+                small = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE_navy.dds"
+                small = "gfx/leaders/CHARACTER_THE_HEADLESS_HORSE_navy_small.dds"
+            }
+        }
+        gender = undefined
+        corps_commander = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+NAMES_GROUP_C22_ARTILLERY = {
+    name = "提雷克火炮禁卫军 (Tirek Artillery Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "提雷克火炮禁卫军%d师 (Tirek Artillery Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_TANK_LIGHT = {
+    name = "提雷克轻型装甲禁卫军 (Tirek Light Armor Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "提雷克轻型装甲禁卫军%d师 (Tirek Light Armor Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_TRADITIONAL_REGULAR = {
+    name = "提雷克常规步兵禁卫军 (Tirek Regular Infantry Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "提雷克常规步兵禁卫军%d师 (Tirek Regular Infantry Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_TANK_HEAVY = {
+    name = "提雷克重型装甲禁卫军 (Tirek Heavy Armor Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "提雷克重型装甲禁卫军%d师 (Tirek Heavy Armor Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_TRADITIONAL_SMALL = {
+    name = "提雷克小型步兵禁卫军 (Tirek Small Infantry Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "提雷克小型步兵禁卫军%d师 (Tirek Small Infantry Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_AUTOMATA = {
+    name = "提雷克自动作战禁卫军 (Tirek Automata Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "提雷克自动作战禁卫军%d师 (Tirek Automata Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_SHIELD = {
+    name = "提雷克重装步兵禁卫军 (Tirek Heavy Infantry Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "提雷克重装步兵禁卫军%d师 (Tirek Heavy Infantry Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_MAGICAL = {
+    name = "提雷克魔法步兵禁卫军 (Tirek Magical Infantry Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "提雷克魔法步兵禁卫军%d师 (Tirek Magical Infantry Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_INFANTRY_MIX = {
+    name = "提雷克协同禁卫军 (Tirek Concerted Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "提雷克协同禁卫军%d师 (Tirek Concerted Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_MOTORIZED = {
+    name = "提雷克机动步兵禁卫军 (Tirek Motorized Infantry Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "提雷克机动步兵禁卫军%d师 (Tirek Motorized Infantry Praetorian Guard %d)"
+}
+NAMES_GROUP_C22_TANK_MEDIUM = {
+    name = "提雷克中型装甲禁卫军 (Tirek Medium Armor Praetorian Guard)"
+    for_countries = {
+        C22
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "提雷克中型装甲禁卫军%d师 (Tirek Medium Armor Praetorian Guard %d)"
+}

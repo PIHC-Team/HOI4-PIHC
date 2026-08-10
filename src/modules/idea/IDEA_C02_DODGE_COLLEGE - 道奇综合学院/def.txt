@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		IDEA_C02_DODGE_COLLEGE = {
+			picture = C02_DODGE_COLLEGE
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_C02_DODGE_COLLEGE_TOOLTIP_SCIENCE
+				hidden_modifier = {
+					research_speed_factor = 0.05
+				}
+				custom_modifier_tooltip = IDEA_C02_DODGE_COLLEGE_TOOLTIP_MAGIC
+				hidden_modifier = {
+					production_factory_max_efficiency_factor = 0.05
+				}
+				custom_modifier_tooltip = IDEA_C02_DODGE_COLLEGE_TOOLTIP_MINE
+				hidden_modifier = {
+					local_resources_factor = 0.05
+				}
+				custom_modifier_tooltip = IDEA_C02_DODGE_COLLEGE_TOOLTIP_SOCIOLOGY
+				hidden_modifier = {
+					stability_weekly_factor = 0.01
+				}
+				custom_modifier_tooltip = IDEA_C02_DODGE_COLLEGE_TOOLTIP_MILITARY
+				hidden_modifier = {
+					training_time_factor = -0.1
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

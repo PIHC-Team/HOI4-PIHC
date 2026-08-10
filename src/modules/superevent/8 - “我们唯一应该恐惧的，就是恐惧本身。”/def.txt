@@ -1,0 +1,64 @@
+add_namespace = SUPER
+country_event = {
+	id = SUPER.8
+	title = EVENT_SUPER_8_NAME
+	desc = EVENT_SUPER_8_DESC
+	picture = GFX_EVENT_SUPER_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			play_song = superevent_music_08
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_ON
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENTS_VISIBLE
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+add_namespace = SUPER_NEWS
+news_event = {
+	id = SUPER_NEWS.8
+	title = EVENT_SUPER_8_NEWS_NAME
+	desc = EVENT_SUPER_8_NEWS_DESC
+	picture = GFX_EVENT_SUPER_NEWS_8
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			C15 = {
+				set_global_flag = PIHC_ACHIEVEMENT_FLAG_C15_ENDING_LOST_IN_THE_SNOW
+				INIT_RADIANT_HOPE = yes
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = yes
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = no
+		}
+		name = EVENT_SUPER_8_NEWS_o
+		hidden_effect = {
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_8_HAPPENED
+			country_event = {
+				id = SUPER.8
+			}
+		}
+		custom_effect_tooltip = PIHC_ENDING_TEXT
+	}
+}

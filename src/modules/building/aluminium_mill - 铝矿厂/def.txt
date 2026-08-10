@@ -1,0 +1,16 @@
+buildings = {
+	aluminium_mill = {
+		base_cost = 5500
+		value = 5
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		local_resources_aluminium = 1
+		level_cap = {
+			state_max = 3
+			shares_slots = yes
+		}
+		show_on_map = 1
+		icon_frame = 29
+	}
+}
+

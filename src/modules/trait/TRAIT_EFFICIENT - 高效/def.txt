@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_EFFICIENT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		production_factory_max_efficiency_factor = 0.1
+	}
+}

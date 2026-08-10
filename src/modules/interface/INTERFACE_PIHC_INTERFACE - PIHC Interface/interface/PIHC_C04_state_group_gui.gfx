@@ -1,0 +1,50 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_1
+        textureFile = "gfx/interface/state_group_guis/STRATUS_STRATUSBURG.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_2
+        textureFile = "gfx/interface/state_group_guis/STRATUS_TIMBUCKTU.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_3
+        textureFile = "gfx/interface/state_group_guis/STRATUS_WEATHER_LAB.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_4
+        textureFile = "gfx/interface/state_group_guis/STRATUS_WONDERBOLTS.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_5
+        textureFile = "gfx/interface/state_group_guis/STRATUS_WEATHER_FACTORY.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_6
+        textureFile = "gfx/interface/state_group_guis/STRATUS_RAINBOW_FACTORY.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_7
+        textureFile = "gfx/interface/state_group_guis/STRATUS_CLOUDSDALE.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = GFX_state_group_gui_STRATUS_8
+        textureFile = "gfx/interface/state_group_guis/STRATUS_VANHOOVER.dds"
+        noOfFrames = 2
+        transparencecheck = yes
+    }
+}

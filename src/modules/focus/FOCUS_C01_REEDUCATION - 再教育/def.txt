@@ -1,0 +1,37 @@
+focus = {
+	id = FOCUS_C01_REEDUCATION
+	icon = GFX_FOCUS_C01_REEDUCATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_STRENGTHEN_PENETRATION
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = despotic
+			popularity = 0.04
+		}
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 2
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 5
+}

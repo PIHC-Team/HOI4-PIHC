@@ -1,0 +1,13 @@
+buildings = {
+	rail_way = {
+		base_cost = 80
+		per_level_extra_cost = 30
+		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
+		level_cap = {
+			province_max = 1
+		}
+		icon_frame = 16
+	}
+}
+

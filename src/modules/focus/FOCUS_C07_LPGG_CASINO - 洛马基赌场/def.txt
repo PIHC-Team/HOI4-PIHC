@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C07_LPGG_CASINO
+	icon = GFX_FOCUS_C07_LPGG_CASINO_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C07_LPGG
+	}
+	cost = 3
+	completion_reward = {
+		add_political_power = 150
+		effect_tooltip = {
+			add_stability = 0.02
+		}
+		hidden_effect = {
+			add_stability = -0.04
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 27
+	y = 4
+}

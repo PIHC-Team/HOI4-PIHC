@@ -1,0 +1,272 @@
+guiTypes = {
+    containerWindowType = {
+        name = ib_topbar_half_ui_window
+        position = {
+            x = -4
+            y = -1
+        }
+        moveable = yes
+        Orientation = UPPER_LEFT
+        iconType = {
+            name = ib_val_icon_1
+            spriteType = GFX_resources_strip
+            frame = 1
+            scale = 0.9
+            position = {
+                x = 735
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_1
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 745
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_OIL_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_OIL
+        }
+        iconType = {
+            name = ib_val_icon_2
+            spriteType = GFX_resources_strip
+            frame = 2
+            scale = 0.9
+            position = {
+                x = 800
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_2
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 810
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_ALM_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_ALM
+        }
+        iconType = {
+            name = ib_val_icon_3
+            spriteType = GFX_resources_strip
+            frame = 3
+            scale = 0.9
+            position = {
+                x = 865
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_3
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 875
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_RUB_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_RUB
+        }
+        iconType = {
+            name = ib_val_icon_4
+            spriteType = GFX_resources_strip
+            frame = 4
+            scale = 0.9
+            position = {
+                x = 930
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_4
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 940
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_TUN_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_TUN
+        }
+        iconType = {
+            name = ib_val_icon_5
+            spriteType = GFX_resources_strip
+            frame = 5
+            scale = 0.9
+            position = {
+                x = 995
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_5
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 1005
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_STE_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_STE
+        }
+        iconType = {
+            name = ib_val_icon_6
+            spriteType = GFX_resources_strip
+            frame = 6
+            scale = 0.9
+            position = {
+                x = 1060
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_6
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 1070
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_CHR_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_CHR
+        }
+        iconType = {
+            name = ib_val_icon_7
+            spriteType = GFX_resources_strip
+            frame = 7
+            scale = 0.9
+            position = {
+                x = 1125
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_7
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 1135
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_CRY_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_CRY
+        }
+        iconType = {
+            name = ib_val_icon_8
+            spriteType = GFX_resources_strip
+            frame = 8
+            scale = 0.9
+            position = {
+                x = 1190
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_8
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 1200
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_LOG_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_LOG
+        }
+        iconType = {
+            name = ib_val_icon_9
+            spriteType = GFX_resources_strip
+            frame = 9
+            scale = 0.9
+            position = {
+                x = 1255
+                y = 47
+            }
+        }
+        instantTextBoxType = {
+            name = ib_val_text_9
+            textureFile = ""
+            font = hoi_16mbs
+            position = {
+                x = 1265
+                y = 50
+            }
+            borderSize = {
+                x = 0
+                y = 0
+            }
+            text = [IB_COA_TEXT]
+            maxWidth = 57
+            maxHeight = 24
+            fixedsize = yes
+            format = center
+            pdx_tooltip = IB_RESOURCE_TRADE_COA
+        }
+    }
+}

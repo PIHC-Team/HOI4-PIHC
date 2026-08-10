@@ -1,0 +1,41 @@
+ideas = {
+	materiel_manufacturer = {
+		IDEA_DINFANTRY_OTA = {
+			picture = DINFANTRY_OTA
+			removal_cost = -1
+			modifier = {
+				equipment_upgrade_xp_cost = -0.1
+				equipment_conversion_speed = 0.2
+				equipment_capture_factor = 0.1
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			cost = 0
+			allowed = {
+				tag = C08
+			}
+			visible = {
+				tag = C08
+			}
+			available = {
+				tag = C08
+			}
+			research_bonus = {
+				pihc_infantry = 0.1
+			}
+			equipment_bonus = {
+				ARCHETYPE_INFANTRY = {
+					build_cost_ic = -0.1
+				}
+			}
+			ai_will_do = {
+				base = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

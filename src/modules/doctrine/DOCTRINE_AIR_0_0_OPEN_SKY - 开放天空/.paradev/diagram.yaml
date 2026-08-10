@@ -1,0 +1,10 @@
+schema: paradev.hoi4.doctrine-diagram-state.v1
+position:
+  x: 0
+  y: 0
+paths:
+- DOCTRINE_AIR_0_1A_KEEP_AN_EYE
+- DOCTRINE_AIR_0_1B_PATROL
+mutually_exclusive:
+- DOCTRINE_AIR_1_0_BLOODTHIRSTY_FLOCK
+- DOCTRINE_AIR_2_0_FLYING_FORTRESS

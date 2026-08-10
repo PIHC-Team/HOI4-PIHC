@@ -1,0 +1,55 @@
+ideas = {
+	naval_manufacturer = {
+		IDEA_DNAVY_ST = {
+			picture = DNAVY_ST
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				naval_manufacturer
+			}
+			cost = 250
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			research_bonus = {
+				pihc_navy = 0.15
+				pihc_storm = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.15
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.15
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.15
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.15
+				}
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					add = -1
+					FROM = {
+						tag = C08
+						controls_state = 389
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

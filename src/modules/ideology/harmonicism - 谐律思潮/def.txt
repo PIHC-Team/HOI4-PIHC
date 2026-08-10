@@ -1,0 +1,96 @@
+ideologies = {
+	harmonicism = {
+		types = {
+			harmonicism_republic = {
+			}
+			harmonicism_democracy = {
+			}
+			harmonicism_monarchy = {
+			}
+			harmonicism_oligarchy = {
+			}
+			harmonicism_tribe = {
+			}
+			harmonicism_freestate = {
+			}
+			harmonicism_organization = {
+			}
+			harmonicism_duchy = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_authoritarianism = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_totalitarianism = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_utopia = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_dystopia = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_theocracy = {
+			}
+			harmonicism_technocracy = {
+			}
+			harmonicism_militarism = {
+			}
+			harmonicism_dogmatism = {
+			}
+			harmonicism_federal = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_spirit = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_revengeism = {
+				can_be_randomly_selected = no
+			}
+			harmonicism_equatism = {
+			}
+		}
+		color = {
+			255
+			150
+			203
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		can_host_government_in_exile = yes
+		can_be_boosted = yes
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.3
+		faction_impact_on_world_tension = -0.5
+		modifiers = {
+			generate_wargoal_tension = 0.75
+			join_faction_tension = 0.75
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.25
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.75
+			puppet_cost_factor = 0.0
+			justify_war_goal_when_in_major_war_time = 0.0
+			drift_defence_factor = 0.3
+			civilian_intel_to_others = 5.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 5.0
+			embargo_cost_factor = 0.0
+			embargo_threshold_factor = 0.3
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.75
+		}
+		ai_democratic = yes
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

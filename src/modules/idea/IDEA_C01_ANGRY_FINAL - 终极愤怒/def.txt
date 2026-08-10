@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_FINAL = {
+			picture = C01_ANGRY_FINAL
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 1
+				army_speed_factor = 1
+				planning_speed = 1
+				max_planning = 1
+				army_org_factor = 1
+				army_morale_factor = 1
+				supply_consumption_factor = -1
+				breakthrough_factor = 1
+				land_reinforce_rate = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

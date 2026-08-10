@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_MILITARY_MODERN = {
+			picture = ALL_MILITARY_MODERN
+			removal_cost = -1
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				supply_consumption_factor = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

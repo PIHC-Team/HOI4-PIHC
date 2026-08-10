@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_CONTROL_ROCK_FARM = {
+			picture = C12_CONTROL_ROCK_FARM
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				local_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

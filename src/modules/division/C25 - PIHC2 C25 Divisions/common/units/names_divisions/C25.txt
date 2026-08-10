@@ -1,0 +1,146 @@
+NAMES_GROUP_C25_ARTILLERY = {
+    name = "海盗火炮团 (Pirate Artillery Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "海盗火炮团%d分支 (Pirate Artillery Band %d)"
+}
+NAMES_GROUP_C25_TANK_LIGHT = {
+    name = "海盗轻型装甲团 (Pirate Light Armor Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "海盗轻型装甲团%d分支 (Pirate Light Armor Band %d)"
+}
+NAMES_GROUP_C25_TRADITIONAL_REGULAR = {
+    name = "海盗常规步兵团 (Pirate Regular Infantry Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "海盗常规步兵团%d分支 (Pirate Regular Infantry Band %d)"
+}
+NAMES_GROUP_C25_TANK_HEAVY = {
+    name = "海盗重型装甲团 (Pirate Heavy Armor Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "海盗重型装甲团%d分支 (Pirate Heavy Armor Band %d)"
+}
+NAMES_GROUP_C25_TRADITIONAL_SMALL = {
+    name = "海盗小型步兵团 (Pirate Small Infantry Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "海盗小型步兵团%d分支 (Pirate Small Infantry Band %d)"
+}
+NAMES_GROUP_C25_AUTOMATA = {
+    name = "海盗自动作战团 (Pirate Automata Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "海盗自动作战团%d分支 (Pirate Automata Band %d)"
+}
+NAMES_GROUP_C25_SHIELD = {
+    name = "海盗重装步兵团 (Pirate Heavy Infantry Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "海盗重装步兵团%d分支 (Pirate Heavy Infantry Band %d)"
+}
+NAMES_GROUP_C25_MAGICAL = {
+    name = "海盗魔法步兵团 (Pirate Magical Infantry Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "海盗魔法步兵团%d分支 (Pirate Magical Infantry Band %d)"
+}
+NAMES_GROUP_C25_INFANTRY_MIX = {
+    name = "海盗协同团 (Pirate Concerted Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "海盗协同团%d分支 (Pirate Concerted Band %d)"
+}
+NAMES_GROUP_C25_MOTORIZED = {
+    name = "海盗机动步兵团 (Pirate Motorized Infantry Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "海盗机动步兵团%d分支 (Pirate Motorized Infantry Band %d)"
+}
+NAMES_GROUP_C25_TANK_MEDIUM = {
+    name = "海盗中型装甲团 (Pirate Medium Armor Band)"
+    for_countries = {
+        C25
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "海盗中型装甲团%d分支 (Pirate Medium Armor Band %d)"
+}

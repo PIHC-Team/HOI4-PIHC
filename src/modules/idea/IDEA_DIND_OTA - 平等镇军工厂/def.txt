@@ -1,0 +1,41 @@
+ideas = {
+	industrial_concern = {
+		IDEA_DIND_OTA = {
+			picture = DIND_OTA
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				resistance_company
+			}
+			cost = 150
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C08
+				OR = {
+					tag = C08
+					is_in_faction_with = C08
+				}
+			}
+			equipment_bonus = {
+				ARCHETYPE_INFANTRY = {
+					build_cost_ic = -0.05
+					soft_attack = 0.02
+					defense = 0.02
+				}
+			}
+			ai_will_do = {
+				base = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

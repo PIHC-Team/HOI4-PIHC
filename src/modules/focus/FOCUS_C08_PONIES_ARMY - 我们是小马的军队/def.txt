@@ -1,0 +1,56 @@
+focus = {
+	id = FOCUS_C08_PONIES_ARMY
+	icon = GFX_FOCUS_C08_PONIES_ARMY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_ARMY_STRATEGY
+		focus = FOCUS_C08_AIR_TEST_FLIGHTS
+	}
+	cost = 1
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_PONIES_ARMY_TOOLTIP
+		add_tech_bonus = {
+			category = pihc_support
+			bonus = 0.5
+			uses = 2
+		}
+		add_tech_bonus = {
+			category = pihc_military
+			bonus = 0.5
+			uses = 2
+		}
+		if = {
+			limit = {
+				has_completed_focus = FOCUS_C08_ARMY_LINE
+			}
+			hidden_effect = {
+				remove_ideas = CHARACTER_DEPARTMENT_C08_THEORY
+			}
+			add_ideas = CHARACTER_DEPARTMENT_C08_THEORY_ARMY
+		}
+		if = {
+			limit = {
+				has_completed_focus = FOCUS_C08_AIR_LINE
+			}
+			hidden_effect = {
+				remove_ideas = CHARACTER_DEPARTMENT_C08_THEORY
+			}
+			add_ideas = CHARACTER_DEPARTMENT_C08_THEORY_AIR
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 8
+}

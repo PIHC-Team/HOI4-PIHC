@@ -1,0 +1,11 @@
+MODULE_SPECIAL_DJ = {
+	category = pihc_tank_special_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.3
+	}
+	multiply_stats = {
+		initiative = 0.15
+	}
+	xp_cost = 8
+}

@@ -1,0 +1,27 @@
+technologies = {
+    TECHNOLOGY_NSB_TANK_HEAVY_CONTEMPORARY = {
+        folder = {
+            name = nsb_armour_folder
+            position = {
+                x = 4
+                y = 27
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_TANK_HEAVY_CONTEMPORARY
+        }
+        enable_subunits = {
+        }
+        path = {
+        }
+        research_cost = 3.0
+        start_year = 1009
+    }
+}

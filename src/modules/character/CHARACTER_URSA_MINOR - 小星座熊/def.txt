@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_URSA_MINOR = {
+        name = CHARACTER_URSA_MINOR_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_URSA_MINOR.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MINOR_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_URSA_MINOR_army.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MINOR_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_URSA_MINOR_navy.dds"
+                small = "gfx/leaders/CHARACTER_URSA_MINOR_navy_small.dds"
+            }
+        }
+        gender = undefined
+        advisor = {
+            idea_token = CHARACTER_URSA_MINOR
+            desc = CHARACTER_URSA_MINOR_DESC
+            traits = {
+                TRAIT_URSA
+            }
+            ledger = military
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = high_command
+        }
+    }
+}

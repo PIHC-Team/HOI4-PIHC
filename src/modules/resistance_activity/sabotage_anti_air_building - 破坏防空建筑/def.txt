@@ -1,0 +1,18 @@
+sabotage_anti_air_building = {
+	available = {
+		non_damaged_building_level = {
+			building = anti_air_building
+			level > 0
+		}
+	}
+	weight = {
+		base = 1
+	}
+	effect = {
+		damage_building = {
+			type = anti_air_building
+			damage = 0.25
+		}
+	}
+	alert_text = building_is_sabotaged
+}

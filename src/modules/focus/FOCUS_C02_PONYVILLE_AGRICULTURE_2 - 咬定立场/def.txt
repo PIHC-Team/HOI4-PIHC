@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C02_PONYVILLE_AGRICULTURE_2
+	icon = GFX_FOCUS_C02_PONYVILLE_AGRICULTURE_2_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_AGRICULTURE
+	}
+	cost = 2
+	completion_reward = {
+		remove_ideas = IDEA_C02_C14_TRADE
+		C14 = {
+			remove_ideas = IDEA_C14_C02_TRADE
+		}
+		news_event = {
+			id = C02_MAIN.2
+			days = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 13
+	y = 4
+}

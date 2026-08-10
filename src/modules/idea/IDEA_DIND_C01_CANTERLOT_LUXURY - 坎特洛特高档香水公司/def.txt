@@ -1,0 +1,44 @@
+ideas = {
+	industrial_concern = {
+		IDEA_DIND_C01_CANTERLOT_LUXURY = {
+			picture = DIND_C01_CANTERLOT_LUXURY
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+			traits = {
+				entertainment_company
+			}
+			cost = 150
+			allowed = {
+				OR = {
+					tag = C01
+					tag = C02
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = C01
+					}
+					add_political_power = 150
+				}
+			}
+			visible = {
+				C01 = {
+					has_completed_focus = FOCUS_C01_C02_PERFUME_BUSINESS
+				}
+			}
+			available = {
+				country_exists = C01
+			}
+			ai_will_do = {
+				base = 0
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

@@ -1,0 +1,146 @@
+NAMES_GROUP_C07_ARTILLERY = {
+    name = "火炮安保队 (Artillery Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮安保队%d分队 (Artillery Security Team %d)"
+}
+NAMES_GROUP_C07_TANK_LIGHT = {
+    name = "轻型装甲安保队 (Light Armor Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲安保队%d分队 (Light Armor Security Team %d)"
+}
+NAMES_GROUP_C07_TRADITIONAL_REGULAR = {
+    name = "常规步兵安保队 (Regular Infantry Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵安保队%d分队 (Regular Infantry Security Team %d)"
+}
+NAMES_GROUP_C07_TANK_HEAVY = {
+    name = "重型装甲安保队 (Heavy Armor Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲安保队%d分队 (Heavy Armor Security Team %d)"
+}
+NAMES_GROUP_C07_TRADITIONAL_SMALL = {
+    name = "小型步兵安保队 (Small Infantry Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵安保队%d分队 (Small Infantry Security Team %d)"
+}
+NAMES_GROUP_C07_AUTOMATA = {
+    name = "自动作战安保队 (Automata Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战安保队%d分队 (Automata Security Team %d)"
+}
+NAMES_GROUP_C07_SHIELD = {
+    name = "重装步兵安保队 (Heavy Infantry Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵安保队%d分队 (Heavy Infantry Security Team %d)"
+}
+NAMES_GROUP_C07_MAGICAL = {
+    name = "魔法步兵安保队 (Magical Infantry Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵安保队%d分队 (Magical Infantry Security Team %d)"
+}
+NAMES_GROUP_C07_INFANTRY_MIX = {
+    name = "协同安保队 (Concerted Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同安保队%d分队 (Concerted Security Team %d)"
+}
+NAMES_GROUP_C07_MOTORIZED = {
+    name = "机动步兵安保队 (Motorized Infantry Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵安保队%d分队 (Motorized Infantry Security Team %d)"
+}
+NAMES_GROUP_C07_TANK_MEDIUM = {
+    name = "中型装甲安保队 (Medium Armor Security Team)"
+    for_countries = {
+        C07
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲安保队%d分队 (Medium Armor Security Team %d)"
+}

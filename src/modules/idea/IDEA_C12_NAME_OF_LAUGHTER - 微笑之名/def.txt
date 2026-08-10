@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C12_NAME_OF_LAUGHTER = {
+			picture = C12_NAME_OF_LAUGHTER
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.075
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

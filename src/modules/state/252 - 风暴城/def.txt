@@ -1,0 +1,44 @@
+state = {
+    id = 252
+    name = STATE_252
+    provinces = {
+        645
+        2395
+        3661
+        3852
+        6368
+        7265
+        7471
+        9206
+        14899
+        14902
+        14912
+        14919
+        14922
+    }
+    manpower = 62805
+    state_category = large_city
+    history = {
+        owner = C23
+        victory_points = {
+            645
+            25
+        }
+        buildings = {
+            infrastructure = 2
+            radar_station = 2
+            air_base = 1
+            arms_factory = 1
+            farm_complex = 2
+            645 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C23
+    }
+    resources = {
+        logs = 8
+        coal = 4
+        tungsten = 2
+    }
+}

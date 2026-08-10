@@ -1,0 +1,67 @@
+add_namespace = SUPER
+country_event = {
+	id = SUPER.7
+	title = EVENT_SUPER_7_NAME
+	desc = EVENT_SUPER_7_DESC
+	picture = GFX_EVENT_SUPER_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			play_song = superevent_music_07
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_ON
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENTS_VISIBLE
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+add_namespace = SUPER_NEWS
+news_event = {
+	id = SUPER_NEWS.7
+	title = EVENT_SUPER_7_NEWS_NAME
+	desc = EVENT_SUPER_7_NEWS_DESC
+	picture = GFX_EVENT_SUPER_NEWS_7
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			C03 = {
+				set_global_flag = PIHC_ACHIEVEMENT_FLAG_C03_ENDING_MUFFIN_WORLD
+				add_named_threat = {
+					threat = -10
+					name = EVENT_SUPER_7_THREAT
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = yes
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			is_ai = no
+		}
+		name = EVENT_SUPER_7_NEWS_o
+		hidden_effect = {
+			set_global_flag = PIHC_GLOBAL_FLAG_SUPEREVENT_7_HAPPENED
+			country_event = {
+				id = SUPER.7
+			}
+		}
+		custom_effect_tooltip = PIHC_ENDING_TEXT
+	}
+}

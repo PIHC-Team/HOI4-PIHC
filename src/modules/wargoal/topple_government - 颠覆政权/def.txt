@@ -1,0 +1,13 @@
+wargoal_types = {
+	topple_government = {
+		allowed = {
+			always = no
+		}
+		available = {
+		}
+		take_states = {
+		}
+		force_government_cost = -50
+		threat = 0.5
+	}
+}

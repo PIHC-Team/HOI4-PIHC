@@ -1,0 +1,19 @@
+DECISION_CATEGORY_SPECIAL_FORCES = {
+    DECISION_MUSIC_UNMUTE = {
+        fixed_random_seed = no
+        priority = 0
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            has_template_majority_unit = infantry_music
+            has_country_flag = PIHC_COUNTRY_FLAG_MUTE_BATTLEFIELD_BAND
+        }
+        complete_effect = {
+            clr_country_flag = PIHC_COUNTRY_FLAG_MUTE_BATTLEFIELD_BAND
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = MUSIC_UNMUTE
+    }
+}

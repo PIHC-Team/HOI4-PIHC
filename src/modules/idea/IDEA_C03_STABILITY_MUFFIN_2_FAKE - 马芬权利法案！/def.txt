@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C03_STABILITY_MUFFIN_2_FAKE = {
+			picture = C03_STABILITY_MUFFIN_2_FAKE
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT = {
+    DECISION_C18_FOALS_BREATH_IMPORT = {
+        fixed_random_seed = no
+        priority = 50
+        days_remove = 30
+        days_re_enable = 0
+        available = {
+            always = yes
+        }
+        remove_effect = {
+            C18 = {
+                ADD_INVENTORY_ITEM_3RA_C18_CURE_60 = yes
+            }
+        }
+        custom_cost_trigger = {
+            num_of_civilian_factories_available_for_projects > 5
+        }
+        custom_cost_text = CUSTOM_COST_CIV_FACTORY_6
+        modifier = {
+            civilian_factory_use = 6
+        }
+        ai_will_do = {
+            base = 3
+            modifier = {
+                add = 1000
+                C18 = {
+                    check_variable = {
+                        var = C18.VAR_INVENTORY_ITEM_3RA_C18_CURE
+                        value = 60
+                        compare = less_than
+                    }
+                    NOT = {
+                        OR = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_1
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_2
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_3
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_4
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_5
+                            has_country_flag = PIHC_COUNTRY_FLAG_C18_CURING_6
+                        }
+                    }
+                }
+            }
+            modifier = {
+                add = 5
+                C18 = {
+                    check_variable = {
+                        var = C18.VAR_INVENTORY_ITEM_3RA_C18_CURE
+                        value = 120
+                        compare = less_than
+                    }
+                }
+            }
+            modifier = {
+                add = 40
+                C18 = {
+                    check_variable = {
+                        var = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+                        value = 10.0
+                        compare = greater_than_or_equals
+                    }
+                }
+            }
+        }
+        icon = C18_FOALS_BREATH_IMPORT
+    }
+}

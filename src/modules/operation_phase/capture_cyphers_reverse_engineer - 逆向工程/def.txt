@@ -1,0 +1,18 @@
+capture_cyphers_reverse_engineer = {
+	name = capture_cyphers_reverse_engineer
+	desc = capture_cyphers_reverse_engineer_desc
+	outcome = capture_cyphers_reverse_engineer_outcome
+	picture = GFX_phase_capture_cyphers_reverse_engineer
+	icon = GFX_phase_capture_cyphers_reverse_engineer_small
+	requirements = {
+		FROM = {
+			has_war = no
+		}
+	}
+	equipment = {
+		civilian_factories = {
+			amount = 3
+			days = 30
+		}
+	}
+}

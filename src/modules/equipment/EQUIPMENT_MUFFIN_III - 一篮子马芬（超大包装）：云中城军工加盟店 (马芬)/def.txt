@@ -1,0 +1,19 @@
+equipments = {
+	EQUIPMENT_MUFFIN_III = {
+		archetype = ARCHETYPE_MUFFINS
+		priority = 2
+		visual_level = 2
+		build_cost_ic = 400.0
+		lend_lease_cost = 2.0
+		can_license = yes
+		is_convertable = no
+		reliability = 1.0
+		picture = EQUIPMENT_MUFFIN_III
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_MUFFIN_II
+		resources = {
+			logs = 18
+		}
+	}
+}

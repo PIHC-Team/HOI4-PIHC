@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_MAREY_POPPINS = {
+        name = CHARACTER_MAREY_POPPINS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MAREY_POPPINS.dds"
+                small = "gfx/leaders/CHARACTER_MAREY_POPPINS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MAREY_POPPINS_army.dds"
+                small = "gfx/leaders/CHARACTER_MAREY_POPPINS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MAREY_POPPINS_navy.dds"
+                small = "gfx/leaders/CHARACTER_MAREY_POPPINS_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_MAREY_POPPINS
+            desc = CHARACTER_MAREY_POPPINS_DESC
+            traits = {
+                TRAIT_FANTASY_LITERATURE
+                TRAIT_POPULAR
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = theorist
+        }
+    }
+}

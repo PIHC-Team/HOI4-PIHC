@@ -1,0 +1,1356 @@
+{
+    "all_tags": [
+        "ARCHETYPE_AIRFRAME_AIRSHIP",
+        "ARCHETYPE_AIRFRAME_BALLOON",
+        "ARCHETYPE_AIRFRAME_GALLEON",
+        "ARCHETYPE_AIRFRAME_PLANE",
+        "ARCHETYPE_AIRFRAME_UFO",
+        "ARCHETYPE_AIR_ARMED",
+        "ARCHETYPE_AIR_CAS",
+        "ARCHETYPE_AIR_CREATURES",
+        "ARCHETYPE_AIR_SBOMBER",
+        "ARCHETYPE_AIR_SCOUT",
+        "ARCHETYPE_AIR_TBOMBER",
+        "ARCHETYPE_AIR_TITAN",
+        "ARCHETYPE_AIR_TRANSPORT",
+        "ARCHETYPE_AUTOMATA",
+        "ARCHETYPE_BIOCHEMI",
+        "ARCHETYPE_CANNON_HEAVY",
+        "ARCHETYPE_CANNON_LIGHT",
+        "ARCHETYPE_CANNON_MEDIUM",
+        "ARCHETYPE_COLOSSAL",
+        "ARCHETYPE_ICY",
+        "ARCHETYPE_INFANTRY",
+        "ARCHETYPE_LANDMINE",
+        "ARCHETYPE_MISSILE",
+        "ARCHETYPE_MUFFINS",
+        "ARCHETYPE_MUSIC",
+        "ARCHETYPE_ROCKBREAKER",
+        "ARCHETYPE_SHIELD",
+        "ARCHETYPE_SUPPORT",
+        "ARCHETYPE_TANK_HEAVY",
+        "ARCHETYPE_TANK_LIGHT",
+        "ARCHETYPE_TANK_MEDIUM",
+        "ARCHETYPE_TITAN",
+        "ARCHETYPE_VEHICLE",
+        "ARCHETYPE_WITCHCRAFT",
+        "EQUIPMENT_AIR_AIRSHIP",
+        "EQUIPMENT_AIR_AIRSHIP_STORM",
+        "EQUIPMENT_AIR_AIRSHIP_TITAN",
+        "EQUIPMENT_AIR_ARMED_BALLOON",
+        "EQUIPMENT_AIR_ARMED_CLOUDCANNON",
+        "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION",
+        "EQUIPMENT_AIR_ARMED_FIXEDWING",
+        "EQUIPMENT_AIR_ARMED_FIXEDWING_SOLAR",
+        "EQUIPMENT_AIR_ARMED_MACHINE_PEGASUS",
+        "EQUIPMENT_AIR_ARMED_STORMVANGUARD",
+        "EQUIPMENT_AIR_ARMED_UFO",
+        "EQUIPMENT_AIR_BOMBING_BALLOON",
+        "EQUIPMENT_AIR_BOMBING_CLOUDAVA",
+        "EQUIPMENT_AIR_BOMBING_DESTROYER",
+        "EQUIPMENT_AIR_MISSILE_ELEC",
+        "EQUIPMENT_AIR_MISSILE_OIL",
+        "EQUIPMENT_AIR_MISSILE_STEAM",
+        "EQUIPMENT_AIR_MISSILE_WITCHCRAFT",
+        "EQUIPMENT_AIR_SCOUT_BALLOON",
+        "EQUIPMENT_AIR_SCOUT_CLOUDMAST",
+        "EQUIPMENT_AIR_TRANSPORT_BALLOON",
+        "EQUIPMENT_AIR_TRANSPORT_CLOUDFLAG",
+        "EQUIPMENT_AIR_TRANSPORT_CLOUDSHIP",
+        "EQUIPMENT_AUTOMATA_CHANGELING",
+        "EQUIPMENT_AUTOMATA_CREATURE",
+        "EQUIPMENT_AUTOMATA_DRAGON",
+        "EQUIPMENT_AUTOMATA_GARGOYLES",
+        "EQUIPMENT_AUTOMATA_MACHINE_PONY",
+        "EQUIPMENT_AUTOMATA_MACHINE_UNICORN",
+        "EQUIPMENT_AUTOMATA_PARASPRITE",
+        "EQUIPMENT_AUTOMATA_SKELETON",
+        "EQUIPMENT_AUTOMATA_SOMBRA_SLAVES",
+        "EQUIPMENT_AUTOMATA_SQUIZARD",
+        "EQUIPMENT_AUTOMATA_STORM_GUARDS",
+        "EQUIPMENT_AUTOMATA_THESTRALS",
+        "EQUIPMENT_CANNON_HEAVY_CONTEMPORARY",
+        "EQUIPMENT_CANNON_HEAVY_MODERN",
+        "EQUIPMENT_CANNON_HEAVY_STEAM",
+        "EQUIPMENT_CANNON_LIGHT_CATAPULT",
+        "EQUIPMENT_CANNON_LIGHT_CONTEMPORARY",
+        "EQUIPMENT_CANNON_LIGHT_MODERN",
+        "EQUIPMENT_CANNON_LIGHT_PINKIE",
+        "EQUIPMENT_CANNON_LIGHT_STEAM",
+        "EQUIPMENT_CANNON_MEDIUM_CHEESE",
+        "EQUIPMENT_CANNON_MEDIUM_CONTEMPORARY",
+        "EQUIPMENT_CANNON_MEDIUM_MODERN",
+        "EQUIPMENT_CANNON_MEDIUM_STEAM",
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED",
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_IMPROVED",
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN",
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_ADVANCED",
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED",
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_WOODEN",
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_ADVANCED",
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_IMPROVED",
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_WOODEN",
+        "EQUIPMENT_FRAME_AIRSHIP",
+        "EQUIPMENT_FRAME_BALLOON",
+        "EQUIPMENT_FRAME_GALLEON",
+        "EQUIPMENT_FRAME_PLANE",
+        "EQUIPMENT_FRAME_PLANE_C_17B",
+        "EQUIPMENT_FRAME_PLANE_F_26D",
+        "EQUIPMENT_FRAME_UFO",
+        "EQUIPMENT_MAGICAL_MELEE_STEEL",
+        "EQUIPMENT_MAGICAL_MELEE_WOODEN",
+        "EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS",
+        "EQUIPMENT_MAGICAL_RANGED_HANDGONNE",
+        "EQUIPMENT_MAGICAL_RANGED_SNIPER",
+        "EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE",
+        "EQUIPMENT_MELEE_STEEL",
+        "EQUIPMENT_MELEE_WOODEN",
+        "EQUIPMENT_MUFFIN_I",
+        "EQUIPMENT_MUFFIN_II",
+        "EQUIPMENT_MUFFIN_III",
+        "EQUIPMENT_RANGED_BLUNDERBUSS",
+        "EQUIPMENT_RANGED_BOW",
+        "EQUIPMENT_RANGED_CARBINE",
+        "EQUIPMENT_RANGED_CONTEMPORARY_RIFLE",
+        "EQUIPMENT_RANGED_FIRELANCE",
+        "EQUIPMENT_RANGED_HANDGONNE",
+        "EQUIPMENT_RANGED_HANDGUN",
+        "EQUIPMENT_RANGED_MODERN_RIFLE",
+        "EQUIPMENT_RANGED_RIFLED",
+        "EQUIPMENT_RANGED_SMOOTHBORE",
+        "EQUIPMENT_SHIELD_CONTEMPORARY_MACHINE_GUN",
+        "EQUIPMENT_SHIELD_CROSSBOW",
+        "EQUIPMENT_SHIELD_HEAVY_STEEL",
+        "EQUIPMENT_SHIELD_MODERN_MACHINE_GUN",
+        "EQUIPMENT_SHIELD_RIOT_POLICE",
+        "EQUIPMENT_SHIELD_ROCKBREAKER",
+        "EQUIPMENT_SHIP_SEACARDINAL",
+        "EQUIPMENT_SHIP_SEACARDINAL_IRON",
+        "EQUIPMENT_SHIP_SEACARDINAL_STEAM",
+        "EQUIPMENT_SHIP_SEACOURTYARD",
+        "EQUIPMENT_SHIP_SEACOURTYARD_ARMED_LINER",
+        "EQUIPMENT_SHIP_SEACOURTYARD_IRON",
+        "EQUIPMENT_SHIP_SEACOURTYARD_STEAM",
+        "EQUIPMENT_SHIP_SEASURGE",
+        "EQUIPMENT_SHIP_SEASURGE_ARMED_BOAT",
+        "EQUIPMENT_SHIP_SEASURGE_IRON",
+        "EQUIPMENT_SHIP_SEASURGE_STEAM",
+        "EQUIPMENT_SHIP_STORM_SUBMARINE",
+        "EQUIPMENT_SPECIAL_BIOCHEMI_TATZLWURM",
+        "EQUIPMENT_SPECIAL_COLOSSAL_QUARRAY_EEL",
+        "EQUIPMENT_SPECIAL_ICY_BOW",
+        "EQUIPMENT_SPECIAL_LANDMINE_PIE",
+        "EQUIPMENT_SPECIAL_MUSIC_TROMBONE",
+        "EQUIPMENT_SUPPORT_I",
+        "EQUIPMENT_TANK_HEAVY_CONTEMPORARY",
+        "EQUIPMENT_TANK_HEAVY_MODERN",
+        "EQUIPMENT_TANK_HEAVY_STEAM",
+        "EQUIPMENT_TANK_LIGHT_CONTEMPORARY",
+        "EQUIPMENT_TANK_LIGHT_MODERN",
+        "EQUIPMENT_TANK_LIGHT_RAM",
+        "EQUIPMENT_TANK_LIGHT_STEAM",
+        "EQUIPMENT_TANK_MEDIUM_APPLE",
+        "EQUIPMENT_TANK_MEDIUM_CONTEMPORARY",
+        "EQUIPMENT_TANK_MEDIUM_MODERN",
+        "EQUIPMENT_TANK_MEDIUM_STEAM",
+        "EQUIPMENT_TANK_TITAN_SSCS6000M",
+        "EQUIPMENT_TANK_TITAN_TIREK_INVINCIBLE",
+        "EQUIPMENT_TANK_TITAN_WINDIGO",
+        "EQUIPMENT_TANK_TITAN_WINDIGO_INVINCIBLE",
+        "EQUIPMENT_VEHICLE_CONTEMPORARY",
+        "EQUIPMENT_VEHICLE_MODERN",
+        "EQUIPMENT_VEHICLE_STEAM",
+        "EQUIPMENT_VEHICLE_STEEL",
+        "EQUIPMENT_VEHICLE_WOODEN",
+        "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_I",
+        "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_II",
+        "EQUIPMENT_WITCHCRAFT_MYTHIC_STAFF",
+        "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_I",
+        "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II",
+        "air",
+        "airship",
+        "airship_cas",
+        "airship_fighter",
+        "airship_sbomber",
+        "airship_scout",
+        "airship_tbomber",
+        "ancient",
+        "balloon",
+        "balloon_cas",
+        "balloon_fighter",
+        "balloon_sbomber",
+        "balloon_scout",
+        "balloon_tbomber",
+        "battle_cruiser",
+        "battlecruiser",
+        "battleship",
+        "cannon",
+        "cannon_heavy",
+        "cannon_light",
+        "cannon_medium",
+        "cannon_mot_heavy",
+        "cannon_mot_light",
+        "cannon_mot_medium",
+        "cannon_tank_heavy",
+        "cannon_tank_light",
+        "cannon_tank_medium",
+        "carrier",
+        "cas",
+        "destroyer",
+        "elec",
+        "engineer",
+        "field_hospital",
+        "fighter",
+        "flyer",
+        "flying_creatures",
+        "galleon",
+        "galleon_cas",
+        "galleon_fighter",
+        "galleon_sbomber",
+        "galleon_scout",
+        "galleon_tbomber",
+        "infantry",
+        "infantry_automata",
+        "infantry_biochemi",
+        "infantry_colossal",
+        "infantry_icy",
+        "infantry_landmine",
+        "infantry_magical",
+        "infantry_motorized",
+        "infantry_music",
+        "infantry_rockbreaker",
+        "infantry_shield",
+        "infantry_traditional",
+        "light_cruiser",
+        "logistics",
+        "logistics_company",
+        "military_police",
+        "missile",
+        "oil",
+        "pioneer_support",
+        "plane",
+        "plane_cas",
+        "plane_fighter",
+        "plane_sbomber",
+        "plane_scout",
+        "plane_tbomber",
+        "scout_plane",
+        "ship",
+        "signal",
+        "signal_company",
+        "steam",
+        "strat_bomber",
+        "submarine",
+        "tact_bomber",
+        "tank",
+        "tank_heavy",
+        "tank_light",
+        "tank_medium",
+        "tirek",
+        "titan",
+        "transport_plane",
+        "ufo",
+        "ufo_cas",
+        "ufo_fighter",
+        "ufo_sbomber",
+        "ufo_scout",
+        "ufo_tbomber",
+        "windigo",
+        "windigo_fraction"
+    ],
+    "types": {
+        "infantry_traditional": [
+            "infantry",
+            "infantry_traditional"
+        ],
+        "infantry_shield": [
+            "infantry",
+            "infantry_shield"
+        ],
+        "infantry_magical": [
+            "infantry",
+            "infantry_magical"
+        ],
+        "infantry_automata": [
+            "infantry",
+            "infantry_automata"
+        ],
+        "infantry_motorized": [
+            "infantry",
+            "infantry_motorized"
+        ],
+        "infantry_biochemi": [
+            "infantry",
+            "infantry_biochemi"
+        ],
+        "infantry_landmine": [
+            "infantry",
+            "infantry_landmine"
+        ],
+        "infantry_music": [
+            "infantry",
+            "infantry_music"
+        ],
+        "infantry_icy": [
+            "infantry",
+            "infantry_icy"
+        ],
+        "infantry_colossal": [
+            "infantry",
+            "infantry_colossal"
+        ],
+        "infantry_rockbreaker": [
+            "infantry",
+            "infantry_rockbreaker"
+        ],
+        "tank_light": [
+            "tank",
+            "tank_light"
+        ],
+        "tank_medium": [
+            "tank",
+            "tank_medium"
+        ],
+        "tank_heavy": [
+            "tank",
+            "tank_heavy"
+        ],
+        "titan": [
+            "tank",
+            "titan"
+        ],
+        "windigo_fraction": [
+            "tank",
+            "titan",
+            "windigo_fraction"
+        ],
+        "windigo": [
+            "tank",
+            "titan",
+            "windigo"
+        ],
+        "tirek": [
+            "tank",
+            "titan",
+            "tirek"
+        ],
+        "transport_plane": [
+            "air",
+            "transport_plane"
+        ],
+        "cas": [
+            "air",
+            "cas"
+        ],
+        "tact_bomber": [
+            "air",
+            "tact_bomber"
+        ],
+        "strat_bomber": [
+            "air",
+            "strat_bomber"
+        ],
+        "scout_plane": [
+            "air",
+            "scout_plane"
+        ],
+        "fighter": [
+            "air",
+            "fighter"
+        ],
+        "balloon": [
+            "air",
+            "balloon"
+        ],
+        "balloon_cas": [
+            "air",
+            "balloon",
+            "balloon_cas"
+        ],
+        "balloon_tbomber": [
+            "air",
+            "balloon",
+            "balloon_tbomber"
+        ],
+        "balloon_sbomber": [
+            "air",
+            "balloon",
+            "balloon_sbomber"
+        ],
+        "balloon_scout": [
+            "air",
+            "balloon",
+            "balloon_scout"
+        ],
+        "balloon_fighter": [
+            "air",
+            "balloon",
+            "balloon_fighter"
+        ],
+        "galleon": [
+            "air",
+            "galleon"
+        ],
+        "galleon_cas": [
+            "air",
+            "galleon",
+            "galleon_cas"
+        ],
+        "galleon_tbomber": [
+            "air",
+            "galleon",
+            "galleon_tbomber"
+        ],
+        "galleon_sbomber": [
+            "air",
+            "galleon",
+            "galleon_sbomber"
+        ],
+        "galleon_scout": [
+            "air",
+            "galleon",
+            "galleon_scout"
+        ],
+        "galleon_fighter": [
+            "air",
+            "galleon",
+            "galleon_fighter"
+        ],
+        "plane": [
+            "air",
+            "plane"
+        ],
+        "plane_cas": [
+            "air",
+            "plane",
+            "plane_cas"
+        ],
+        "plane_tbomber": [
+            "air",
+            "plane",
+            "plane_tbomber"
+        ],
+        "plane_sbomber": [
+            "air",
+            "plane",
+            "plane_sbomber"
+        ],
+        "plane_scout": [
+            "air",
+            "plane",
+            "plane_scout"
+        ],
+        "plane_fighter": [
+            "air",
+            "plane",
+            "plane_fighter"
+        ],
+        "ufo": [
+            "air",
+            "ufo"
+        ],
+        "ufo_cas": [
+            "air",
+            "ufo",
+            "ufo_cas"
+        ],
+        "ufo_tbomber": [
+            "air",
+            "ufo",
+            "ufo_tbomber"
+        ],
+        "ufo_sbomber": [
+            "air",
+            "ufo",
+            "ufo_sbomber"
+        ],
+        "ufo_scout": [
+            "air",
+            "ufo",
+            "ufo_scout"
+        ],
+        "ufo_fighter": [
+            "air",
+            "ufo",
+            "ufo_fighter"
+        ],
+        "airship": [
+            "air",
+            "airship"
+        ],
+        "airship_cas": [
+            "air",
+            "airship",
+            "airship_cas"
+        ],
+        "airship_tbomber": [
+            "air",
+            "airship",
+            "airship_tbomber"
+        ],
+        "airship_sbomber": [
+            "air",
+            "airship",
+            "airship_sbomber"
+        ],
+        "airship_scout": [
+            "air",
+            "airship",
+            "airship_scout"
+        ],
+        "airship_fighter": [
+            "air",
+            "airship",
+            "airship_fighter"
+        ],
+        "flying_creatures": [
+            "air",
+            "flying_creatures"
+        ],
+        "flyer": [
+            "air",
+            "flyer"
+        ],
+        "engineer": [
+            "infantry",
+            "engineer"
+        ],
+        "pioneer_support": [
+            "infantry",
+            "engineer",
+            "pioneer_support"
+        ],
+        "field_hospital": [
+            "infantry",
+            "field_hospital"
+        ],
+        "military_police": [
+            "infantry",
+            "military_police"
+        ],
+        "signal_company": [
+            "infantry",
+            "signal",
+            "signal_company"
+        ],
+        "logistics_company": [
+            "infantry",
+            "logistics",
+            "logistics_company"
+        ],
+        "cannon_light": [
+            "cannon",
+            "cannon_light"
+        ],
+        "cannon_medium": [
+            "cannon",
+            "cannon_medium"
+        ],
+        "cannon_heavy": [
+            "cannon",
+            "cannon_heavy"
+        ],
+        "cannon_tank_light": [
+            "cannon",
+            "cannon_tank_light"
+        ],
+        "cannon_tank_medium": [
+            "cannon",
+            "cannon_tank_medium"
+        ],
+        "cannon_tank_heavy": [
+            "cannon",
+            "cannon_tank_heavy"
+        ],
+        "cannon_mot_light": [
+            "cannon",
+            "cannon_mot_light"
+        ],
+        "cannon_mot_medium": [
+            "cannon",
+            "cannon_mot_medium"
+        ],
+        "cannon_mot_heavy": [
+            "cannon",
+            "cannon_mot_heavy"
+        ],
+        "light_cruiser": [
+            "ship",
+            "light_cruiser"
+        ],
+        "destroyer": [
+            "ship",
+            "destroyer"
+        ],
+        "battleship": [
+            "ship",
+            "battleship"
+        ],
+        "battle_cruiser": [
+            "ship",
+            "battlecruiser",
+            "battle_cruiser"
+        ],
+        "carrier": [
+            "ship",
+            "carrier"
+        ],
+        "submarine": [
+            "ship",
+            "submarine"
+        ],
+        "ARCHETYPE_AIRFRAME_AIRSHIP": [
+            "air",
+            "airship",
+            "ARCHETYPE_AIRFRAME_AIRSHIP"
+        ],
+        "ARCHETYPE_AIRFRAME_BALLOON": [
+            "air",
+            "balloon",
+            "ARCHETYPE_AIRFRAME_BALLOON"
+        ],
+        "ARCHETYPE_AIRFRAME_GALLEON": [
+            "air",
+            "galleon",
+            "ARCHETYPE_AIRFRAME_GALLEON"
+        ],
+        "ARCHETYPE_AIRFRAME_PLANE": [
+            "air",
+            "plane",
+            "ARCHETYPE_AIRFRAME_PLANE"
+        ],
+        "ARCHETYPE_AIRFRAME_UFO": [
+            "air",
+            "ufo",
+            "ARCHETYPE_AIRFRAME_UFO"
+        ],
+        "ARCHETYPE_AIR_ARMED": [
+            "air",
+            "ARCHETYPE_AIR_ARMED"
+        ],
+        "ARCHETYPE_AIR_CAS": [
+            "air",
+            "ARCHETYPE_AIR_CAS"
+        ],
+        "ARCHETYPE_AIR_CREATURES": [
+            "air",
+            "ARCHETYPE_AIR_CREATURES"
+        ],
+        "ARCHETYPE_AIR_SBOMBER": [
+            "air",
+            "ARCHETYPE_AIR_SBOMBER"
+        ],
+        "ARCHETYPE_AIR_SCOUT": [
+            "air",
+            "ARCHETYPE_AIR_SCOUT"
+        ],
+        "ARCHETYPE_AIR_TBOMBER": [
+            "air",
+            "ARCHETYPE_AIR_TBOMBER"
+        ],
+        "ARCHETYPE_AIR_TITAN": [
+            "air",
+            "ARCHETYPE_AIR_TITAN"
+        ],
+        "ARCHETYPE_AIR_TRANSPORT": [
+            "air",
+            "ARCHETYPE_AIR_TRANSPORT"
+        ],
+        "ARCHETYPE_AUTOMATA": [
+            "infantry_automata",
+            "ARCHETYPE_AUTOMATA"
+        ],
+        "ARCHETYPE_BIOCHEMI": [
+            "infantry",
+            "ARCHETYPE_BIOCHEMI"
+        ],
+        "ARCHETYPE_CANNON_HEAVY": [
+            "cannon",
+            "cannon_heavy",
+            "ARCHETYPE_CANNON_HEAVY"
+        ],
+        "ARCHETYPE_CANNON_LIGHT": [
+            "cannon",
+            "cannon_light",
+            "ARCHETYPE_CANNON_LIGHT"
+        ],
+        "ARCHETYPE_CANNON_MEDIUM": [
+            "cannon",
+            "cannon_medium",
+            "ARCHETYPE_CANNON_MEDIUM"
+        ],
+        "ARCHETYPE_COLOSSAL": [
+            "infantry",
+            "ARCHETYPE_COLOSSAL"
+        ],
+        "ARCHETYPE_ICY": [
+            "infantry",
+            "ARCHETYPE_ICY"
+        ],
+        "ARCHETYPE_INFANTRY": [
+            "infantry",
+            "ARCHETYPE_INFANTRY"
+        ],
+        "ARCHETYPE_LANDMINE": [
+            "infantry",
+            "ARCHETYPE_LANDMINE"
+        ],
+        "ARCHETYPE_MISSILE": [
+            "missile",
+            "ARCHETYPE_MISSILE"
+        ],
+        "ARCHETYPE_MUFFINS": [
+            "infantry",
+            "ARCHETYPE_MUFFINS"
+        ],
+        "ARCHETYPE_MUSIC": [
+            "infantry",
+            "ARCHETYPE_MUSIC"
+        ],
+        "ARCHETYPE_ROCKBREAKER": [
+            "infantry",
+            "ARCHETYPE_ROCKBREAKER"
+        ],
+        "ARCHETYPE_SHIELD": [
+            "infantry_shield",
+            "ARCHETYPE_SHIELD"
+        ],
+        "ARCHETYPE_SUPPORT": [
+            "infantry",
+            "ARCHETYPE_SUPPORT"
+        ],
+        "ARCHETYPE_TANK_HEAVY": [
+            "tank",
+            "tank_heavy",
+            "ARCHETYPE_TANK_HEAVY"
+        ],
+        "ARCHETYPE_TANK_LIGHT": [
+            "tank",
+            "tank_light",
+            "ARCHETYPE_TANK_LIGHT"
+        ],
+        "ARCHETYPE_TANK_MEDIUM": [
+            "tank",
+            "tank_medium",
+            "ARCHETYPE_TANK_MEDIUM"
+        ],
+        "ARCHETYPE_TITAN": [
+            "titan",
+            "ARCHETYPE_TITAN"
+        ],
+        "ARCHETYPE_VEHICLE": [
+            "infantry_motorized",
+            "ARCHETYPE_VEHICLE"
+        ],
+        "ARCHETYPE_WITCHCRAFT": [
+            "infantry_magical",
+            "ARCHETYPE_WITCHCRAFT"
+        ],
+        "EQUIPMENT_AIR_AIRSHIP": [
+            "air",
+            "airship",
+            "EQUIPMENT_AIR_AIRSHIP"
+        ],
+        "EQUIPMENT_AIR_AIRSHIP_STORM": [
+            "air",
+            "airship",
+            "EQUIPMENT_AIR_AIRSHIP_STORM"
+        ],
+        "EQUIPMENT_AIR_AIRSHIP_TITAN": [
+            "air",
+            "airship",
+            "EQUIPMENT_AIR_AIRSHIP_TITAN"
+        ],
+        "EQUIPMENT_AIR_ARMED_BALLOON": [
+            "air",
+            "balloon",
+            "EQUIPMENT_AIR_ARMED_BALLOON"
+        ],
+        "EQUIPMENT_AIR_ARMED_CLOUDCANNON": [
+            "air",
+            "galleon",
+            "EQUIPMENT_AIR_ARMED_CLOUDCANNON"
+        ],
+        "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION": [
+            "air",
+            "EQUIPMENT_AIR_ARMED_CREATURES_FORMATION"
+        ],
+        "EQUIPMENT_AIR_ARMED_FIXEDWING": [
+            "air",
+            "plane",
+            "EQUIPMENT_AIR_ARMED_FIXEDWING"
+        ],
+        "EQUIPMENT_AIR_ARMED_FIXEDWING_SOLAR": [
+            "air",
+            "plane",
+            "EQUIPMENT_AIR_ARMED_FIXEDWING_SOLAR"
+        ],
+        "EQUIPMENT_AIR_ARMED_MACHINE_PEGASUS": [
+            "air",
+            "EQUIPMENT_AIR_ARMED_MACHINE_PEGASUS"
+        ],
+        "EQUIPMENT_AIR_ARMED_STORMVANGUARD": [
+            "air",
+            "EQUIPMENT_AIR_ARMED_STORMVANGUARD"
+        ],
+        "EQUIPMENT_AIR_ARMED_UFO": [
+            "air",
+            "ufo",
+            "EQUIPMENT_AIR_ARMED_UFO"
+        ],
+        "EQUIPMENT_AIR_BOMBING_BALLOON": [
+            "air",
+            "balloon",
+            "EQUIPMENT_AIR_BOMBING_BALLOON"
+        ],
+        "EQUIPMENT_AIR_BOMBING_CLOUDAVA": [
+            "air",
+            "galleon",
+            "EQUIPMENT_AIR_BOMBING_CLOUDAVA"
+        ],
+        "EQUIPMENT_AIR_BOMBING_DESTROYER": [
+            "air",
+            "EQUIPMENT_AIR_BOMBING_DESTROYER"
+        ],
+        "EQUIPMENT_AIR_MISSILE_ELEC": [
+            "air",
+            "elec",
+            "EQUIPMENT_AIR_MISSILE_ELEC"
+        ],
+        "EQUIPMENT_AIR_MISSILE_OIL": [
+            "air",
+            "oil",
+            "EQUIPMENT_AIR_MISSILE_OIL"
+        ],
+        "EQUIPMENT_AIR_MISSILE_STEAM": [
+            "air",
+            "steam",
+            "EQUIPMENT_AIR_MISSILE_STEAM"
+        ],
+        "EQUIPMENT_AIR_MISSILE_WITCHCRAFT": [
+            "air",
+            "EQUIPMENT_AIR_MISSILE_WITCHCRAFT"
+        ],
+        "EQUIPMENT_AIR_SCOUT_BALLOON": [
+            "air",
+            "balloon",
+            "EQUIPMENT_AIR_SCOUT_BALLOON"
+        ],
+        "EQUIPMENT_AIR_SCOUT_CLOUDMAST": [
+            "air",
+            "galleon",
+            "EQUIPMENT_AIR_SCOUT_CLOUDMAST"
+        ],
+        "EQUIPMENT_AIR_TRANSPORT_BALLOON": [
+            "air",
+            "balloon",
+            "EQUIPMENT_AIR_TRANSPORT_BALLOON"
+        ],
+        "EQUIPMENT_AIR_TRANSPORT_CLOUDFLAG": [
+            "air",
+            "galleon",
+            "EQUIPMENT_AIR_TRANSPORT_CLOUDFLAG"
+        ],
+        "EQUIPMENT_AIR_TRANSPORT_CLOUDSHIP": [
+            "air",
+            "galleon",
+            "EQUIPMENT_AIR_TRANSPORT_CLOUDSHIP"
+        ],
+        "EQUIPMENT_AUTOMATA_CHANGELING": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_CHANGELING"
+        ],
+        "EQUIPMENT_AUTOMATA_CREATURE": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_CREATURE"
+        ],
+        "EQUIPMENT_AUTOMATA_DRAGON": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_DRAGON"
+        ],
+        "EQUIPMENT_AUTOMATA_GARGOYLES": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_GARGOYLES"
+        ],
+        "EQUIPMENT_AUTOMATA_MACHINE_PONY": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_MACHINE_PONY"
+        ],
+        "EQUIPMENT_AUTOMATA_MACHINE_UNICORN": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_MACHINE_UNICORN"
+        ],
+        "EQUIPMENT_AUTOMATA_PARASPRITE": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_PARASPRITE"
+        ],
+        "EQUIPMENT_AUTOMATA_SKELETON": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_SKELETON"
+        ],
+        "EQUIPMENT_AUTOMATA_SOMBRA_SLAVES": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_SOMBRA_SLAVES"
+        ],
+        "EQUIPMENT_AUTOMATA_SQUIZARD": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_SQUIZARD"
+        ],
+        "EQUIPMENT_AUTOMATA_STORM_GUARDS": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_STORM_GUARDS"
+        ],
+        "EQUIPMENT_AUTOMATA_THESTRALS": [
+            "infantry_automata",
+            "EQUIPMENT_AUTOMATA_THESTRALS"
+        ],
+        "EQUIPMENT_CANNON_HEAVY_CONTEMPORARY": [
+            "cannon",
+            "cannon_heavy",
+            "elec",
+            "EQUIPMENT_CANNON_HEAVY_CONTEMPORARY"
+        ],
+        "EQUIPMENT_CANNON_HEAVY_MODERN": [
+            "cannon",
+            "cannon_heavy",
+            "oil",
+            "EQUIPMENT_CANNON_HEAVY_MODERN"
+        ],
+        "EQUIPMENT_CANNON_HEAVY_STEAM": [
+            "cannon",
+            "cannon_heavy",
+            "steam",
+            "EQUIPMENT_CANNON_HEAVY_STEAM"
+        ],
+        "EQUIPMENT_CANNON_LIGHT_CATAPULT": [
+            "cannon",
+            "cannon_light",
+            "EQUIPMENT_CANNON_LIGHT_CATAPULT"
+        ],
+        "EQUIPMENT_CANNON_LIGHT_CONTEMPORARY": [
+            "cannon",
+            "cannon_light",
+            "elec",
+            "EQUIPMENT_CANNON_LIGHT_CONTEMPORARY"
+        ],
+        "EQUIPMENT_CANNON_LIGHT_MODERN": [
+            "cannon",
+            "cannon_light",
+            "oil",
+            "EQUIPMENT_CANNON_LIGHT_MODERN"
+        ],
+        "EQUIPMENT_CANNON_LIGHT_PINKIE": [
+            "cannon",
+            "cannon_light",
+            "EQUIPMENT_CANNON_LIGHT_PINKIE"
+        ],
+        "EQUIPMENT_CANNON_LIGHT_STEAM": [
+            "cannon",
+            "cannon_light",
+            "steam",
+            "EQUIPMENT_CANNON_LIGHT_STEAM"
+        ],
+        "EQUIPMENT_CANNON_MEDIUM_CHEESE": [
+            "cannon",
+            "cannon_medium",
+            "EQUIPMENT_CANNON_MEDIUM_CHEESE"
+        ],
+        "EQUIPMENT_CANNON_MEDIUM_CONTEMPORARY": [
+            "cannon",
+            "cannon_medium",
+            "elec",
+            "EQUIPMENT_CANNON_MEDIUM_CONTEMPORARY"
+        ],
+        "EQUIPMENT_CANNON_MEDIUM_MODERN": [
+            "cannon",
+            "cannon_medium",
+            "oil",
+            "EQUIPMENT_CANNON_MEDIUM_MODERN"
+        ],
+        "EQUIPMENT_CANNON_MEDIUM_STEAM": [
+            "cannon",
+            "cannon_medium",
+            "steam",
+            "EQUIPMENT_CANNON_MEDIUM_STEAM"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED": [
+            "elec",
+            "EQUIPMENT_CHASSIS_TANK_HEAVY_ADVANCED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_IMPROVED": [
+            "oil",
+            "EQUIPMENT_CHASSIS_TANK_HEAVY_IMPROVED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN": [
+            "ancient",
+            "EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_ADVANCED": [
+            "elec",
+            "EQUIPMENT_CHASSIS_TANK_LIGHT_ADVANCED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED": [
+            "oil",
+            "EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_LIGHT_WOODEN": [
+            "ancient",
+            "EQUIPMENT_CHASSIS_TANK_LIGHT_WOODEN"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_ADVANCED": [
+            "elec",
+            "EQUIPMENT_CHASSIS_TANK_MEDIUM_ADVANCED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_IMPROVED": [
+            "oil",
+            "EQUIPMENT_CHASSIS_TANK_MEDIUM_IMPROVED"
+        ],
+        "EQUIPMENT_CHASSIS_TANK_MEDIUM_WOODEN": [
+            "ancient",
+            "EQUIPMENT_CHASSIS_TANK_MEDIUM_WOODEN"
+        ],
+        "EQUIPMENT_FRAME_AIRSHIP": [
+            "airship",
+            "EQUIPMENT_FRAME_AIRSHIP"
+        ],
+        "EQUIPMENT_FRAME_BALLOON": [
+            "balloon",
+            "EQUIPMENT_FRAME_BALLOON"
+        ],
+        "EQUIPMENT_FRAME_GALLEON": [
+            "galleon",
+            "EQUIPMENT_FRAME_GALLEON"
+        ],
+        "EQUIPMENT_FRAME_PLANE": [
+            "plane",
+            "EQUIPMENT_FRAME_PLANE"
+        ],
+        "EQUIPMENT_FRAME_PLANE_C_17B": [
+            "plane",
+            "EQUIPMENT_FRAME_PLANE_C_17B"
+        ],
+        "EQUIPMENT_FRAME_PLANE_F_26D": [
+            "plane",
+            "EQUIPMENT_FRAME_PLANE_F_26D"
+        ],
+        "EQUIPMENT_FRAME_UFO": [
+            "ufo",
+            "EQUIPMENT_FRAME_UFO"
+        ],
+        "EQUIPMENT_MAGICAL_MELEE_STEEL": [
+            "infantry_magical",
+            "ancient",
+            "EQUIPMENT_MAGICAL_MELEE_STEEL"
+        ],
+        "EQUIPMENT_MAGICAL_MELEE_WOODEN": [
+            "infantry_magical",
+            "ancient",
+            "EQUIPMENT_MAGICAL_MELEE_WOODEN"
+        ],
+        "EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS": [
+            "infantry_magical",
+            "EQUIPMENT_MAGICAL_RANGED_BLUNDERBUSS"
+        ],
+        "EQUIPMENT_MAGICAL_RANGED_HANDGONNE": [
+            "infantry_magical",
+            "EQUIPMENT_MAGICAL_RANGED_HANDGONNE"
+        ],
+        "EQUIPMENT_MAGICAL_RANGED_SNIPER": [
+            "infantry_magical",
+            "EQUIPMENT_MAGICAL_RANGED_SNIPER"
+        ],
+        "EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE": [
+            "infantry_magical",
+            "EQUIPMENT_MAGICAL_RANGED_YOVIDAPHONE"
+        ],
+        "EQUIPMENT_MELEE_STEEL": [
+            "ancient",
+            "EQUIPMENT_MELEE_STEEL"
+        ],
+        "EQUIPMENT_MELEE_WOODEN": [
+            "ancient",
+            "EQUIPMENT_MELEE_WOODEN"
+        ],
+        "EQUIPMENT_MUFFIN_I": [
+            "infantry",
+            "EQUIPMENT_MUFFIN_I"
+        ],
+        "EQUIPMENT_MUFFIN_II": [
+            "infantry",
+            "EQUIPMENT_MUFFIN_II"
+        ],
+        "EQUIPMENT_MUFFIN_III": [
+            "infantry",
+            "EQUIPMENT_MUFFIN_III"
+        ],
+        "EQUIPMENT_RANGED_BLUNDERBUSS": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_BLUNDERBUSS"
+        ],
+        "EQUIPMENT_RANGED_BOW": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_BOW"
+        ],
+        "EQUIPMENT_RANGED_CARBINE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_CARBINE"
+        ],
+        "EQUIPMENT_RANGED_CONTEMPORARY_RIFLE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_CONTEMPORARY_RIFLE"
+        ],
+        "EQUIPMENT_RANGED_FIRELANCE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_FIRELANCE"
+        ],
+        "EQUIPMENT_RANGED_HANDGONNE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_HANDGONNE"
+        ],
+        "EQUIPMENT_RANGED_HANDGUN": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_HANDGUN"
+        ],
+        "EQUIPMENT_RANGED_MODERN_RIFLE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_MODERN_RIFLE"
+        ],
+        "EQUIPMENT_RANGED_RIFLED": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_RIFLED"
+        ],
+        "EQUIPMENT_RANGED_SMOOTHBORE": [
+            "infantry_traditional",
+            "EQUIPMENT_RANGED_SMOOTHBORE"
+        ],
+        "EQUIPMENT_SHIELD_CONTEMPORARY_MACHINE_GUN": [
+            "infantry_shield",
+            "EQUIPMENT_SHIELD_CONTEMPORARY_MACHINE_GUN"
+        ],
+        "EQUIPMENT_SHIELD_CROSSBOW": [
+            "infantry_shield",
+            "EQUIPMENT_SHIELD_CROSSBOW"
+        ],
+        "EQUIPMENT_SHIELD_HEAVY_STEEL": [
+            "infantry_shield",
+            "ancient",
+            "EQUIPMENT_SHIELD_HEAVY_STEEL"
+        ],
+        "EQUIPMENT_SHIELD_MODERN_MACHINE_GUN": [
+            "infantry_shield",
+            "EQUIPMENT_SHIELD_MODERN_MACHINE_GUN"
+        ],
+        "EQUIPMENT_SHIELD_RIOT_POLICE": [
+            "infantry_shield",
+            "EQUIPMENT_SHIELD_RIOT_POLICE"
+        ],
+        "EQUIPMENT_SHIELD_ROCKBREAKER": [
+            "infantry_shield",
+            "EQUIPMENT_SHIELD_ROCKBREAKER"
+        ],
+        "EQUIPMENT_SHIP_SEACARDINAL": [
+            "ship",
+            "EQUIPMENT_SHIP_SEACARDINAL"
+        ],
+        "EQUIPMENT_SHIP_SEACARDINAL_IRON": [
+            "ship",
+            "EQUIPMENT_SHIP_SEACARDINAL_IRON"
+        ],
+        "EQUIPMENT_SHIP_SEACARDINAL_STEAM": [
+            "ship",
+            "steam",
+            "EQUIPMENT_SHIP_SEACARDINAL_STEAM"
+        ],
+        "EQUIPMENT_SHIP_SEACOURTYARD": [
+            "ship",
+            "EQUIPMENT_SHIP_SEACOURTYARD"
+        ],
+        "EQUIPMENT_SHIP_SEACOURTYARD_ARMED_LINER": [
+            "ship",
+            "EQUIPMENT_SHIP_SEACOURTYARD_ARMED_LINER"
+        ],
+        "EQUIPMENT_SHIP_SEACOURTYARD_IRON": [
+            "ship",
+            "EQUIPMENT_SHIP_SEACOURTYARD_IRON"
+        ],
+        "EQUIPMENT_SHIP_SEACOURTYARD_STEAM": [
+            "ship",
+            "steam",
+            "EQUIPMENT_SHIP_SEACOURTYARD_STEAM"
+        ],
+        "EQUIPMENT_SHIP_SEASURGE": [
+            "ship",
+            "EQUIPMENT_SHIP_SEASURGE"
+        ],
+        "EQUIPMENT_SHIP_SEASURGE_ARMED_BOAT": [
+            "ship",
+            "EQUIPMENT_SHIP_SEASURGE_ARMED_BOAT"
+        ],
+        "EQUIPMENT_SHIP_SEASURGE_IRON": [
+            "ship",
+            "EQUIPMENT_SHIP_SEASURGE_IRON"
+        ],
+        "EQUIPMENT_SHIP_SEASURGE_STEAM": [
+            "ship",
+            "steam",
+            "EQUIPMENT_SHIP_SEASURGE_STEAM"
+        ],
+        "EQUIPMENT_SHIP_STORM_SUBMARINE": [
+            "ship",
+            "EQUIPMENT_SHIP_STORM_SUBMARINE"
+        ],
+        "EQUIPMENT_SPECIAL_BIOCHEMI_TATZLWURM": [
+            "infantry",
+            "EQUIPMENT_SPECIAL_BIOCHEMI_TATZLWURM"
+        ],
+        "EQUIPMENT_SPECIAL_COLOSSAL_QUARRAY_EEL": [
+            "infantry",
+            "EQUIPMENT_SPECIAL_COLOSSAL_QUARRAY_EEL"
+        ],
+        "EQUIPMENT_SPECIAL_ICY_BOW": [
+            "infantry",
+            "EQUIPMENT_SPECIAL_ICY_BOW"
+        ],
+        "EQUIPMENT_SPECIAL_LANDMINE_PIE": [
+            "infantry",
+            "EQUIPMENT_SPECIAL_LANDMINE_PIE"
+        ],
+        "EQUIPMENT_SPECIAL_MUSIC_TROMBONE": [
+            "infantry",
+            "EQUIPMENT_SPECIAL_MUSIC_TROMBONE"
+        ],
+        "EQUIPMENT_SUPPORT_I": [
+            "infantry",
+            "EQUIPMENT_SUPPORT_I"
+        ],
+        "EQUIPMENT_TANK_HEAVY_CONTEMPORARY": [
+            "tank",
+            "tank_heavy",
+            "elec",
+            "EQUIPMENT_TANK_HEAVY_CONTEMPORARY"
+        ],
+        "EQUIPMENT_TANK_HEAVY_MODERN": [
+            "tank",
+            "tank_heavy",
+            "oil",
+            "EQUIPMENT_TANK_HEAVY_MODERN"
+        ],
+        "EQUIPMENT_TANK_HEAVY_STEAM": [
+            "tank",
+            "tank_heavy",
+            "steam",
+            "EQUIPMENT_TANK_HEAVY_STEAM"
+        ],
+        "EQUIPMENT_TANK_LIGHT_CONTEMPORARY": [
+            "tank",
+            "tank_light",
+            "elec",
+            "EQUIPMENT_TANK_LIGHT_CONTEMPORARY"
+        ],
+        "EQUIPMENT_TANK_LIGHT_MODERN": [
+            "tank",
+            "tank_light",
+            "oil",
+            "EQUIPMENT_TANK_LIGHT_MODERN"
+        ],
+        "EQUIPMENT_TANK_LIGHT_RAM": [
+            "tank",
+            "tank_light",
+            "EQUIPMENT_TANK_LIGHT_RAM"
+        ],
+        "EQUIPMENT_TANK_LIGHT_STEAM": [
+            "tank",
+            "tank_light",
+            "steam",
+            "EQUIPMENT_TANK_LIGHT_STEAM"
+        ],
+        "EQUIPMENT_TANK_MEDIUM_APPLE": [
+            "tank",
+            "tank_medium",
+            "EQUIPMENT_TANK_MEDIUM_APPLE"
+        ],
+        "EQUIPMENT_TANK_MEDIUM_CONTEMPORARY": [
+            "tank",
+            "tank_medium",
+            "elec",
+            "EQUIPMENT_TANK_MEDIUM_CONTEMPORARY"
+        ],
+        "EQUIPMENT_TANK_MEDIUM_MODERN": [
+            "tank",
+            "tank_medium",
+            "oil",
+            "EQUIPMENT_TANK_MEDIUM_MODERN"
+        ],
+        "EQUIPMENT_TANK_MEDIUM_STEAM": [
+            "tank",
+            "tank_medium",
+            "steam",
+            "EQUIPMENT_TANK_MEDIUM_STEAM"
+        ],
+        "EQUIPMENT_TANK_TITAN_SSCS6000M": [
+            "tank",
+            "titan",
+            "EQUIPMENT_TANK_TITAN_SSCS6000M"
+        ],
+        "EQUIPMENT_TANK_TITAN_TIREK_INVINCIBLE": [
+            "tank",
+            "titan",
+            "EQUIPMENT_TANK_TITAN_TIREK_INVINCIBLE"
+        ],
+        "EQUIPMENT_TANK_TITAN_WINDIGO": [
+            "tank",
+            "titan",
+            "EQUIPMENT_TANK_TITAN_WINDIGO"
+        ],
+        "EQUIPMENT_TANK_TITAN_WINDIGO_INVINCIBLE": [
+            "tank",
+            "titan",
+            "EQUIPMENT_TANK_TITAN_WINDIGO_INVINCIBLE"
+        ],
+        "EQUIPMENT_VEHICLE_CONTEMPORARY": [
+            "infantry_motorized",
+            "elec",
+            "EQUIPMENT_VEHICLE_CONTEMPORARY"
+        ],
+        "EQUIPMENT_VEHICLE_MODERN": [
+            "infantry_motorized",
+            "oil",
+            "EQUIPMENT_VEHICLE_MODERN"
+        ],
+        "EQUIPMENT_VEHICLE_STEAM": [
+            "infantry_motorized",
+            "steam",
+            "EQUIPMENT_VEHICLE_STEAM"
+        ],
+        "EQUIPMENT_VEHICLE_STEEL": [
+            "infantry_motorized",
+            "ancient",
+            "EQUIPMENT_VEHICLE_STEEL"
+        ],
+        "EQUIPMENT_VEHICLE_WOODEN": [
+            "infantry_motorized",
+            "ancient",
+            "EQUIPMENT_VEHICLE_WOODEN"
+        ],
+        "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_I": [
+            "infantry_magical",
+            "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_I"
+        ],
+        "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_II": [
+            "infantry_magical",
+            "EQUIPMENT_WITCHCRAFT_CRYSTAL_STAFF_II"
+        ],
+        "EQUIPMENT_WITCHCRAFT_MYTHIC_STAFF": [
+            "infantry_magical",
+            "EQUIPMENT_WITCHCRAFT_MYTHIC_STAFF"
+        ],
+        "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_I": [
+            "infantry_magical",
+            "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_I"
+        ],
+        "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II": [
+            "infantry_magical",
+            "EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II"
+        ]
+    }
+}

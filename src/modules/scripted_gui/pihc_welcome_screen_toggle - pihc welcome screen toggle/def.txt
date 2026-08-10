@@ -1,0 +1,24 @@
+scripted_gui = {
+	pihc_welcome_screen_toggle = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = pihc_welcome_screen_toggle_container
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			open_ws_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = pihc_welcome_screen
+						}
+					}
+					set_variable = {
+						pihc_welcome_screen = 1
+					}
+				}
+			}
+		}
+	}
+}

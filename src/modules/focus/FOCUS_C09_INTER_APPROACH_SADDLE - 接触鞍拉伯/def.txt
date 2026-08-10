@@ -1,0 +1,40 @@
+focus = {
+	id = FOCUS_C09_INTER_APPROACH_SADDLE
+	icon = GFX_FOCUS_C09_INTER_APPROACH_SADDLE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_APPLEWOOD_CITY_INTERNATIONAL
+	}
+	cost = 3
+	completion_reward = {
+		C24 = {
+			add_opinion_modifier = {
+				target = C09
+				modifier = FOCUS_C24_C09_BUSINESS_OPINION_MODIFIER
+			}
+		}
+		add_opinion_modifier = {
+			target = C24
+			modifier = FOCUS_C09_C24_BUSINESS_OPINION_MODIFIER
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 8
+}

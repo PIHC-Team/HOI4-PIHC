@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_NO_EQUAL = {
+			picture = C01_ANGRY_NO_EQUAL
+			removal_cost = -1
+			modifier = {
+				experience_loss_factor = 0.2
+				army_org_factor = -0.1
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				equipment_capture = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+leader_traits = {
+	TRAIT_WINDIGOS_SOURCE_OF_BLIZZARDS = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		ai_focus_aggressive_factor = 1
+		acclimatization_cold_climate_gain_factor = 10
+		winter_attrition_factor = -1
+		air_weather_penalty = -1
+		army_attack_factor = 0.2
+		army_attack_speed_factor = 0.2
+		breakthrough_factor = 0.2
+		army_speed_factor = 0.2
+		army_strength_factor = 0.5
+		terrain_penalty_reduction = 0.25
+		out_of_supply_factor = -0.35
+		surrender_limit = 1
+	}
+}

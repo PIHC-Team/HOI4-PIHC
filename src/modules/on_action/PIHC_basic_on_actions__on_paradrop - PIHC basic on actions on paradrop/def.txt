@@ -1,0 +1,9 @@
+on_actions = {
+	on_paradrop = {
+		effect = {
+			ROOT = {
+				set_country_flag = has_paradropped_flag
+			}
+		}
+	}
+}

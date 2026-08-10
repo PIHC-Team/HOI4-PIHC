@@ -1,0 +1,49 @@
+focus = {
+	id = FOCUS_C01_C03_MUFFIN_V
+	icon = GFX_FOCUS_C01_C03_MUFFIN_V_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C03_DISCOVERY
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C03_MUFFIN_IV
+	}
+	cost = 4
+	allow_branch = {
+		has_completed_focus = FOCUS_C01_C03_DISCOVERY
+		has_completed_focus = FOCUS_C01_C03_MUFFIN_IV
+	}
+	completion_reward = {
+		country_event = {
+			id = C01_C03_BLUEBERRY.6
+			days = 3
+		}
+	}
+	available = {
+		TRIGGER_HAVE_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER = yes
+		C03 = {
+			hidden_trigger = {
+				is_ai = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 16
+}

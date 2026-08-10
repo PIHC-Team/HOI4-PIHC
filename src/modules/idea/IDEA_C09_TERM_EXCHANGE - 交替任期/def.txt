@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		IDEA_C09_TERM_EXCHANGE = {
+			picture = C09_TERM_EXCHANGE
+			removal_cost = -1
+			modifier = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

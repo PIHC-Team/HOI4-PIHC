@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_RAIN_SHINE = {
+        name = CHARACTER_RAIN_SHINE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_RAIN_SHINE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_RAIN_SHINE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_RAIN_SHINE_army.dds"
+                small = "gfx/leaders/CHARACTER_RAIN_SHINE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_RAIN_SHINE_navy.dds"
+                small = "gfx/leaders/CHARACTER_RAIN_SHINE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_RAIN_SHINE_DESC
+            traits = {
+                TRAIT_RAIN_SHINE_A_PEACEFUL_DREAM
+            }
+            ideology = peacism_dogmatism
+        }
+    }
+}

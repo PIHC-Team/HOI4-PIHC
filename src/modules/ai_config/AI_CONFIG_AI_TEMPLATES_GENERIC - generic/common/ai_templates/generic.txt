@@ -1,0 +1,658 @@
+infantry_traditional_small_generic = {
+    role = infantry_traditional_small
+    upgrade_prio = {
+        factor = 2
+        modifier = {
+            factor = 1
+        }
+    }
+    infantry_traditional_small_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_traditional = 3
+            }
+        }
+        replace_with = infantry_traditional_shield_small_default
+    }
+    infantry_traditional_shield_small_default = {
+        upgrade_prio = {
+            factor = 4
+            modifier = {
+                factor = 1
+            }
+        }
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_INFANTRY > 500
+                ARCHETYPE_SHIELD > 1000
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_shield = 3
+            }
+        }
+        replace_with = infantry_traditional_concerted_small_default
+    }
+    infantry_traditional_concerted_small_default = {
+        upgrade_prio = {
+            factor = 4
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                logistics_company = 1
+            }
+            regiments = {
+                infantry_traditional = 3
+                infantry_shield = 3
+            }
+        }
+    }
+}
+infantry_traditional_generic = {
+    role = infantry_traditional
+    upgrade_prio = {
+        factor = 10
+        modifier = {
+            factor = 1
+        }
+    }
+    infantry_traditional_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                cannon_light = 1
+            }
+            regiments = {
+                infantry_traditional = 6
+            }
+        }
+        replace_with = infantry_traditional_full_default
+    }
+    infantry_traditional_full_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                recon = 1
+                field_hospital = 1
+                cannon_heavy = 1
+            }
+            regiments = {
+                infantry_traditional = 9
+                cannon_tank_light = 3
+            }
+        }
+        replace_with = infantry_traditional_full_concerted_default
+    }
+    infantry_traditional_full_concerted_default = {
+        upgrade_prio = {
+            factor = 5
+            modifier = {
+                factor = 40
+                has_equipment = {
+                    EQUIPMENT_CANNON_HEAVY_STEAM > 500
+                }
+                arms_factory > 50
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                recon = 1
+                field_hospital = 1
+                cannon_heavy = 1
+                maintenance_company = 1
+            }
+            regiments = {
+                infantry_traditional = 11
+                cannon_tank_light = 6
+            }
+        }
+    }
+}
+infantry_magical_small_generic = {
+    role = infantry_magical_small
+    upgrade_prio = {
+        factor = 12
+        modifier = {
+            factor = 1
+        }
+    }
+    infantry_magical_small_default = {
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_INFANTRY > 1000
+            }
+        }
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_traditional = 3
+                infantry_magical = 1
+            }
+        }
+        replace_with = infantry_magical_shield_default
+    }
+    infantry_magical_shield_default = {
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_INFANTRY > 5000
+                ARCHETYPE_SHIELD > 5000
+            }
+        }
+        upgrade_prio = {
+            factor = 4
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_shield = 4
+                infantry_magical = 2
+            }
+        }
+        replace_with = infantry_magical_concerted_small_default
+    }
+    infantry_magical_concerted_small_default = {
+        upgrade_prio = {
+            factor = 4
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_shield = 3
+                infantry_magical = 4
+            }
+        }
+    }
+}
+infantry_magical_generic = {
+    role = infantry_magical
+    upgrade_prio = {
+        factor = 20
+        modifier = {
+            factor = 1
+        }
+    }
+    infantry_magical_default = {
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_INFANTRY > 10000
+            }
+        }
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                cannon_medium = 1
+            }
+            regiments = {
+                infantry_magical = 3
+                infantry_traditional = 6
+            }
+        }
+        replace_with = infantry_magical_full_default
+    }
+    infantry_magical_full_default = {
+        upgrade_prio = {
+            factor = 4
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                recon = 1
+                field_hospital = 1
+                cannon_heavy = 1
+                maintenance_company = 1
+            }
+            regiments = {
+                infantry_traditional = 3
+                cannon_tank_light = 2
+                infantry_magical = 9
+            }
+        }
+    }
+}
+infantry_automata_generic = {
+    role = infantry_automata
+    blocked_for = {
+        C05
+    }
+    upgrade_prio = {
+        factor = 2
+        modifier = {
+            factor = 1
+        }
+    }
+    infantry_automata_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_automata = 12
+            }
+        }
+    }
+}
+Discord_automata_generic = {
+    role = discord_infantry_automata_default
+    available_for = {
+        C05
+    }
+    upgrade_prio = {
+        factor = 150
+        modifier = {
+            factor = 100
+        }
+    }
+    discord_automata_small = {
+        can_upgrade_in_field = {
+            date > 1005.1.1
+        }
+        upgrade_prio = {
+            factor = 10
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_automata = 6
+            }
+        }
+        replace_with = discord_automata_default
+    }
+    discord_automata_default = {
+        upgrade_prio = {
+            factor = 50
+            modifier = {
+                factor = 15
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+            }
+            regiments = {
+                infantry_automata = 9
+            }
+        }
+    }
+}
+Discord_automata_generic_large = {
+    role = discord_infantry_automata_large
+    available_for = {
+        C05
+    }
+    upgrade_prio = {
+        factor = 50
+        modifier = {
+            factor = 5
+        }
+    }
+    discord_automata_large = {
+        can_upgrade_in_field = {
+            date > 1005.1.1
+        }
+        upgrade_prio = {
+            factor = 50
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                cannon_light = 1
+            }
+            regiments = {
+                infantry_automata = 12
+            }
+        }
+    }
+}
+Rock_farm_cannon_army_generic = {
+    role = rock_farm_cannon_army_default
+    available_for = {
+        C12
+    }
+    upgrade_prio = {
+        factor = 150
+        modifier = {
+            factor = 100
+        }
+    }
+    rock_farm_cannon_army_small = {
+        can_upgrade_in_field = {
+            date > 1004.1.1
+        }
+        upgrade_prio = {
+            factor = 10
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_shield = 6
+                cannon_tank_medium = 1
+            }
+        }
+        replace_with = rock_farm_cannon_army_default
+    }
+    rock_farm_cannon_army_default = {
+        upgrade_prio = {
+            factor = 50
+            modifier = {
+                factor = 15
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                logistics_company = 1
+                maintenance_company = 1
+                infantry_colossal = 1
+                field_hospital = 1
+            }
+            regiments = {
+                infantry_shield = 8
+                cannon_tank_medium = 8
+            }
+        }
+    }
+}
+armor_generic = {
+    role = armor
+    upgrade_prio = {
+        factor = 2
+        modifier = {
+            arms_factory > 60
+            factor = 10
+        }
+        modifier = {
+            date > 1007.1.1
+            factor = 10
+        }
+    }
+    light_armor_default = {
+        upgrade_prio = {
+            factor = 5
+            modifier = {
+                has_equipment = {
+                    ARCHETYPE_TANK_LIGHT > 1000
+                }
+                factor = 20
+            }
+        }
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_TANK_LIGHT > 500
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                maintenance_company = 1
+                logistics_company = 1
+                signal_company = 1
+                pioneer_support = 1
+            }
+            regiments = {
+                tank_light = 6
+                infantry_motorized = 4
+            }
+        }
+        replace_at_match = 0.4
+        replace_with = medium_armor_default
+        target_min_match = 0.5
+    }
+    medium_armor_default = {
+        upgrade_prio = {
+            factor = 2
+        }
+        can_upgrade_in_field = {
+            has_equipment = {
+                ARCHETYPE_TANK_MEDIUM > 500
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                maintenance_company = 1
+                logistics_company = 1
+                signal_company = 1
+                pioneer_support = 1
+            }
+            regiments = {
+                tank_medium = 8
+                infantry_motorized = 8
+            }
+        }
+        replace_with = medium_armor_fulll_default
+    }
+    medium_armor_fulll_default = {
+        upgrade_prio = {
+            factor = 2
+        }
+        can_upgrade_in_field = {
+            date > 1009.1.1
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                maintenance_company = 1
+                logistics_company = 1
+                cannon_light = 1
+            }
+            regiments = {
+                tank_medium = 8
+                infantry_motorized = 8
+            }
+        }
+    }
+    heavy_armor_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                recon = 1
+                logistics_company = 1
+                maintenance_company = 1
+            }
+            regiments = {
+                tank_heavy = 8
+                infantry_traditional = 8
+            }
+        }
+    }
+}
+titan_generic = {
+    role = titan
+    upgrade_prio = {
+        factor = 5
+    }
+    titan_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+                recon = 1
+                logistics_company = 1
+                maintenance_company = 1
+                cannon_heavy = 2
+            }
+            regiments = {
+                titan = 1
+                tank_heavy = 3
+                infantry_magical = 6
+            }
+        }
+    }
+}
+special_generic = {
+    role = special
+    upgrade_prio = {
+        factor = 5
+    }
+    biochemi_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_biochemi = 1
+            }
+        }
+    }
+    landmine_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_landmine = 1
+            }
+        }
+    }
+    music_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_music = 1
+            }
+        }
+    }
+    icy_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_icy = 1
+            }
+        }
+    }
+    colossal_default = {
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            regiments = {
+                infantry_colossal = 1
+            }
+        }
+    }
+}
+garrison_generic = {
+    role = garrison
+    upgrade_prio = {
+        factor = 80
+        modifier = {
+            factor = 0
+            ai_has_role_template = garrison
+        }
+    }
+    garrison_generic = {
+        reinforce_prio = 0
+        custom_icon = 7
+        upgrade_prio = {
+            factor = 2
+            modifier = {
+                factor = 1
+            }
+        }
+        target_template = {
+            support = {
+                engineer = 1
+            }
+            regiments = {
+                infantry_traditional = 4
+            }
+        }
+    }
+}
+suppression_generic = {
+    role = suppression
+    upgrade_prio = {
+        factor = 1
+    }
+    suppression_generic = {
+        reinforce_prio = 0
+        custom_icon = 13
+        upgrade_prio = {
+            factor = 2
+        }
+        target_template = {
+            regiments = {
+                infantry_shield = 3
+            }
+        }
+    }
+}

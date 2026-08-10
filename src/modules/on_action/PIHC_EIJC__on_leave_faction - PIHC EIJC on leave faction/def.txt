@@ -1,0 +1,19 @@
+on_actions = {
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_idea = IDEA_EIJC_MEMBER
+					}
+					ROOT = {
+						has_idea = IDEA_EIJC_MEMBER
+					}
+				}
+				ROOT = {
+					remove_ideas = IDEA_EIJC_MEMBER
+				}
+			}
+		}
+	}
+}

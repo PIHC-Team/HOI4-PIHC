@@ -1,0 +1,17 @@
+buildings = {
+	radar_station = {
+		base_cost = 2400
+		value = 4
+		allied_build = yes
+		infrastructure_construction_effect = yes
+		damage_factor = 0.5
+		radar = yes
+		level_cap = {
+			state_max = 6
+		}
+		show_on_map = 1
+		icon_frame = 11
+		centered = yes
+	}
+}
+

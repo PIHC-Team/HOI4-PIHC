@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C18_FAST_SUPPLY_CONSTRUCTION = {
+			picture = C18_FAST_SUPPLY_CONSTRUCTION
+			removal_cost = -1
+			modifier = {
+				production_speed_supply_node_factor = 0.5
+				production_speed_rail_way_factor = 0.5
+				production_speed_fuel_silo_factor = 0.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

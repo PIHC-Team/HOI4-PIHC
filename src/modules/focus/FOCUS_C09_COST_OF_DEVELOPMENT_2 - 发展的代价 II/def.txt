@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C09_COST_OF_DEVELOPMENT_2
+	icon = GFX_FOCUS_C09_COST_OF_DEVELOPMENT_2_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_COST_OF_DEVELOPMENT_1
+	}
+	cost = 3
+	completion_reward = {
+		UPGRADE_TECH = yes
+		DOWNGRADE_HYGIENE = yes
+		add_political_power = 50
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 5
+}

@@ -1,0 +1,41 @@
+DECISION_CATEGORY_C02_HOTLINE = {
+    DECISION_C02_HOTLINE_033 = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 5
+        selectable_mission = yes
+        days_mission_timeout = 56
+        activation = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_033
+        }
+        complete_effect = {
+            custom_effect_tooltip = C02_OCTAVIA_INC_5
+            add_to_variable = {
+                var = C02.VAR_C02_ELECTION_OCTAVIA
+                value = 0.05
+            }
+            clamp_variable = {
+                var = C02.VAR_C02_ELECTION_OCTAVIA
+                min = 0.0
+                max = 1.0
+            }
+            custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_2
+            add_to_variable = {
+                var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+                value = 0.02
+            }
+            clamp_variable = {
+                var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+                min = 0.0
+                max = 1.0
+            }
+            ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+            ADD_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME_100 = yes
+        }
+        ai_will_do = {
+            base = 40
+        }
+        fire_only_once = yes
+        icon = C02_HOTLINE_033
+    }
+}

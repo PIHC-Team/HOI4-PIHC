@@ -1,0 +1,272 @@
+add_namespace = DISEASE
+country_event = {
+    id = DISEASE.1
+    picture = GFX_EVENT_DISEASE_1
+    is_triggered_only = yes
+    title = EVENT_DISEASE_1
+    desc = EVENT_DISEASE_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_timed_idea = {
+            idea = IDEA_ALL_DISEASE_BLUE_FLU
+            days = 60
+        }
+        name = EVENT_DISEASE_1_o0
+    }
+}
+country_event = {
+    id = DISEASE.2
+    picture = GFX_EVENT_DISEASE_2
+    mean_time_to_happen = {
+        years = 45
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+            factor = 1000
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_2_MYSO
+            factor = 5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+            factor = 1.25
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+            factor = 1.0
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+            factor = 0.8
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+            factor = 0.5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+            factor = 0.2
+        }
+    }
+    title = EVENT_DISEASE_2
+    desc = EVENT_DISEASE_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = DISEASE.1
+            days = 1
+            random_days = 3
+        }
+        name = EVENT_DISEASE_2_o0
+    }
+}
+country_event = {
+    id = DISEASE.3
+    picture = GFX_EVENT_DISEASE_3
+    is_triggered_only = yes
+    title = EVENT_DISEASE_3
+    desc = EVENT_DISEASE_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_timed_idea = {
+            idea = IDEA_ALL_DISEASE_SWAMP_FEVER
+            days = 60
+        }
+        name = EVENT_DISEASE_3_o0
+    }
+}
+country_event = {
+    id = DISEASE.4
+    picture = GFX_EVENT_DISEASE_4
+    mean_time_to_happen = {
+        years = 45
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+            factor = 1000
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_2_MYSO
+            factor = 5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+            factor = 1.25
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+            factor = 1.0
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+            factor = 0.8
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+            factor = 0.5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+            factor = 0.2
+        }
+        modifier = {
+            tag = C03
+            has_completed_focus = FOCUS_C03_MUFFIN_04
+            factor = 10
+        }
+    }
+    title = EVENT_DISEASE_4
+    desc = EVENT_DISEASE_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = DISEASE.3
+            days = 1
+            random_days = 3
+        }
+        name = EVENT_DISEASE_4_o0
+    }
+}
+country_event = {
+    id = DISEASE.5
+    picture = GFX_EVENT_DISEASE_5
+    is_triggered_only = yes
+    title = EVENT_DISEASE_5
+    desc = EVENT_DISEASE_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_timed_idea = {
+            idea = IDEA_ALL_DISEASE_CUTIE_POX
+            days = 60
+        }
+        name = EVENT_DISEASE_5_o0
+    }
+}
+country_event = {
+    id = DISEASE.6
+    picture = GFX_EVENT_DISEASE_6
+    mean_time_to_happen = {
+        years = 45
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+            factor = 1000
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_2_MYSO
+            factor = 5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+            factor = 1.25
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+            factor = 1.0
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+            factor = 0.8
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+            factor = 0.5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+            factor = 0.2
+        }
+        modifier = {
+            NOT = {
+                is_pony_country = yes
+            }
+            factor = 1000
+        }
+    }
+    title = EVENT_DISEASE_6
+    desc = EVENT_DISEASE_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = DISEASE.5
+            days = 1
+            random_days = 3
+        }
+        name = EVENT_DISEASE_6_o0
+    }
+}
+country_event = {
+    id = DISEASE.7
+    picture = GFX_EVENT_DISEASE_7
+    is_triggered_only = yes
+    title = EVENT_DISEASE_7
+    desc = EVENT_DISEASE_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_timed_idea = {
+            idea = IDEA_ALL_DISEASE_POISON_JOKE
+            days = 60
+        }
+        name = EVENT_DISEASE_7_o0
+    }
+}
+country_event = {
+    id = DISEASE.8
+    picture = GFX_EVENT_DISEASE_8
+    mean_time_to_happen = {
+        years = 45
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+            factor = 1000
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_2_MYSO
+            factor = 5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+            factor = 1.25
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+            factor = 1.0
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+            factor = 0.8
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+            factor = 0.5
+        }
+        modifier = {
+            has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+            factor = 0.2
+        }
+    }
+    title = EVENT_DISEASE_8
+    desc = EVENT_DISEASE_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = DISEASE.7
+            days = 1
+            random_days = 3
+        }
+        name = EVENT_DISEASE_8_o0
+    }
+}

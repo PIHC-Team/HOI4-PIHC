@@ -1,0 +1,17 @@
+guiTypes = {
+    containerWindowType = {
+        name = C18_state_group_gui_entry_container
+        buttonType = {
+            name = state_group_btn
+            spriteType = GFX_state_group_gui_KIRIN_1
+            pdx_tooltip = C18_state_group_btn_tooltip
+            scale = 0.75
+        }
+        buttonType = {
+            name = state_group_btn_nirik
+            spriteType = GFX_state_group_gui_KIRIN_1_nirik
+            pdx_tooltip = C18_state_group_btn_nirik_tooltip
+            scale = 0.75
+        }
+    }
+}

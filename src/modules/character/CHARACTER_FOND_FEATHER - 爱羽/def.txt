@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_FOND_FEATHER = {
+        name = CHARACTER_FOND_FEATHER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_FOND_FEATHER.dds"
+                small = "gfx/leaders/CHARACTER_FOND_FEATHER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FOND_FEATHER_army.dds"
+                small = "gfx/leaders/CHARACTER_FOND_FEATHER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FOND_FEATHER_navy.dds"
+                small = "gfx/leaders/CHARACTER_FOND_FEATHER_navy_small.dds"
+            }
+        }
+        gender = female
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

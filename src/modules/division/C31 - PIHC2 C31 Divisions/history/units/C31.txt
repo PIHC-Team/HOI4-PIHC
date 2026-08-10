@@ -1,0 +1,343 @@
+division_template = {
+    name = "公牛火炮小队 (Buffalo Artillery Squad)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C31_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "公牛轻型装甲小队 (Buffalo Light Armor Squad)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "公牛常规步兵小队 (Buffalo Regular Infantry Squad)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "公牛自动作战小队 (Buffalo Automata Squad)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "公牛重装步兵小队 (Buffalo Heavy Infantry Squad)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "公牛魔法步兵小队 (Buffalo Magical Infantry Squad)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "公牛协同小队 (Buffalo Concerted Squad)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "公牛机动步兵小队 (Buffalo Motorized Infantry Squad)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C31_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+        location = 234
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+        location = 234
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+        location = 234
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "公牛小型步兵小队 (Buffalo Small Infantry Squad)"
+        location = 234
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+}

@@ -1,0 +1,20 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_MANEHATTAN_WIN = {
+        fixed_random_seed = no
+        priority = 98
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            country_event = C08_MAIN.12
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_MANEHATTAN_WIN
+    }
+}

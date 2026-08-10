@@ -1,0 +1,14 @@
+SF_PARA_combat_effect = {
+	every_state_division = {
+		limit = {
+			OWNER = {
+				has_war_with = FROM
+			}
+		}
+		set_unit_organization = 0.5
+	}
+	set_state_flag = {
+		flag = para_drop_effect
+		days = 30
+	}
+}

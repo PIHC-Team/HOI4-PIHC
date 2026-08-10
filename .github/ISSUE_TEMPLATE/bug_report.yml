@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a reproducible PIHC3 content, build, or gameplay problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not disclose credentials or security-sensitive details here. Use the repository's private security-reporting flow instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - ParaDev GUI or authoring
+        - Clean, cached, or partial build
+        - HoI4 gameplay
+        - Localization
+        - Images, icons, or audio
+        - Project structure or documentation
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision
+      description: Commit hash or branch used when the problem occurred.
+    validations:
+      required: true
+  - type: input
+    id: object
+    attributes:
+      label: Family and object ID
+      placeholder: idea / IDEA_C99_EXAMPLE
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include the selected build mode and the smallest repeatable sequence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and diagnostics
+      description: Paste copyable diagnostics; attach screenshots only when they add context.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, ParaDev version, and whether uv, Miniforge, or another environment was used.
+    validations:
+      required: true

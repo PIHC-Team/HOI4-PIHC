@@ -1,0 +1,13 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_5LG_C22_BLESSING_IN_DISGUISE = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+	}
+	happened = {
+		has_country_flag = PIHC_ACHIEVEMENT_FLAG_C22_BLESSING_IN_DISGUISE
+	}
+}

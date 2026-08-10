@@ -1,0 +1,27 @@
+scripted_gui = {
+	pihc_state_lore_toggle = {
+		window_name = pihc_state_lore_icon
+		context_type = player_context
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			open_state_lore_click = {
+				if = {
+					limit = {
+						has_country_flag = pihc_state_lore_mapicons_visible
+					}
+					clr_country_flag = pihc_state_lore_mapicons_visible
+				}
+				else = {
+					set_country_flag = pihc_state_lore_mapicons_visible
+				}
+			}
+		}
+		properties = {
+			state_lore_mapicon_control = {
+				image = [state_lore_get_gfx_control_panel]
+			}
+		}
+	}
+}

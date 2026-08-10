@@ -1,0 +1,15 @@
+leader_traits = {
+	TRAIT_KING_SOMBRA_SOURCE_OF_TERROR = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		local_resources_factor = 0.2
+		stability_weekly_factor = 0.05
+		drift_defence_factor = 0.3
+		war_stability_factor = 1
+		war_support_factor = 1
+		trade_opinion_factor = -1
+		annex_cost_factor = -1
+	}
+}

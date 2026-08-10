@@ -1,0 +1,12 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+        name = GFX_gui_alert
+        texturefile = "gfx/interface/gui_alert.dds"
+        noOfFrames = 10
+        animation_rate_fps = 10
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+}

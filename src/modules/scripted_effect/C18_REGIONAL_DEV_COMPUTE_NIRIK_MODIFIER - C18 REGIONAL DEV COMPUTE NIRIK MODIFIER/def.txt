@@ -1,0 +1,50 @@
+C18_REGIONAL_DEV_COMPUTE_NIRIK_MODIFIER = {
+	set_temp_variable = {
+		nirik_100 = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+	}
+	divide_temp_variable = {
+		nirik_100 = 100
+	}
+	set_variable = {
+		C18.VAR_NIRIK_STABILITY = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_STABILITY = C18.VAR_NIRIK_STABILITY_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_CONSCRIPTION = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_CONSCRIPTION = C18.VAR_NIRIK_CONSCRIPTION_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_CONSTRUCTION = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_CONSTRUCTION = C18.VAR_NIRIK_CONSTRUCTION_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_FACTORY = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_FACTORY = C18.VAR_NIRIK_FACTORY_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_DOCKYARD = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_DOCKYARD = C18.VAR_NIRIK_DOCKYARD_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_TRAINING = nirik_100
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_TRAINING = C18.VAR_NIRIK_TRAINING_FACTOR
+	}
+	set_variable = {
+		C18.VAR_NIRIK_POLITICAL_COST = C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO
+	}
+	multiply_variable = {
+		C18.VAR_NIRIK_POLITICAL_COST = C18.VAR_NIRIK_POLITICAL_COST_FACTOR
+	}
+}

@@ -1,0 +1,32 @@
+equipments = {
+	EQUIPMENT_RANGED_CARBINE = {
+		archetype = ARCHETYPE_INFANTRY
+		priority = 10009
+		visual_level = 10009
+		build_cost_ic = 1.0301290084800003
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.9
+		soft_attack = 12.876612606000004
+		hard_attack = 1.170601146
+		air_attack = 0.0
+		ap_attack = 7.608907449000001
+		breakthrough = 5.853005730000001
+		defense = 41.47369624209241
+		armor_value = 0.585300573
+		hardness = 0.0
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 1
+		picture = EQUIPMENT_RANGED_CARBINE
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_RANGED_RIFLED
+		resources = {
+			logs = 2
+			steel = 2
+			coal = 1
+		}
+	}
+}

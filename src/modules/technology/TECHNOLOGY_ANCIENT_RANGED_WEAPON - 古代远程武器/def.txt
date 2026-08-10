@@ -1,0 +1,33 @@
+technologies = {
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 4
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+        }
+        enable_equipments = {
+            EQUIPMENT_RANGED_BOW
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_FIREARM_I
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIELD_CROSSBOW
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

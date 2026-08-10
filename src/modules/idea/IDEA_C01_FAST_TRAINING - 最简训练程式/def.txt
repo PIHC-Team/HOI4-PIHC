@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C01_FAST_TRAINING = {
+			picture = C01_FAST_TRAINING
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.15
+				minimum_training_level = -0.05
+				army_morale_factor = -0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

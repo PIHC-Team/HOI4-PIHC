@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PEACH_MELBA = {
+        name = CHARACTER_PEACH_MELBA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PEACH_MELBA.dds"
+                small = "gfx/leaders/CHARACTER_PEACH_MELBA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PEACH_MELBA_army.dds"
+                small = "gfx/leaders/CHARACTER_PEACH_MELBA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PEACH_MELBA_navy.dds"
+                small = "gfx/leaders/CHARACTER_PEACH_MELBA_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PEACH_MELBA
+            desc = CHARACTER_PEACH_MELBA_DESC
+            traits = {
+                TRAIT_INDUSTRY_LEADER
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 140
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

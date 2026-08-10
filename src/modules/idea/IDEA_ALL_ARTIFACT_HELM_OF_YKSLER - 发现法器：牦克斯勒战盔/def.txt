@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_ALL_ARTIFACT_HELM_OF_YKSLER = {
+			picture = ALL_ARTIFACT_HELM_OF_YKSLER
+			removal_cost = -1
+			modifier = {
+				country_resource_crystals = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

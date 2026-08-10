@@ -1,0 +1,37 @@
+technologies = {
+    TECHNOLOGY_MACHINE_PONY = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 14
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_summon
+            pihc_electronics
+            pihc_chips
+        }
+        enable_equipments = {
+            EQUIPMENT_AUTOMATA_MACHINE_PONY
+        }
+        enable_subunits = {
+            infantry_automata
+        }
+        dependencies = {
+            TECHNOLOGY_TECH_INFO_III = 1
+            TECHNOLOGY_CREATURE_TRAINING = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_MACHINE_UNICORN
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1006
+    }
+}

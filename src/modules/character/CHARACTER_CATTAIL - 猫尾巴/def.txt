@@ -1,0 +1,34 @@
+characters = {
+    CHARACTER_CATTAIL = {
+        name = CHARACTER_CATTAIL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_CATTAIL.dds"
+                small = "gfx/leaders/CHARACTER_CATTAIL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_CATTAIL_army.dds"
+                small = "gfx/leaders/CHARACTER_CATTAIL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_CATTAIL_navy.dds"
+                small = "gfx/leaders/CHARACTER_CATTAIL_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_CATTAIL
+            desc = CHARACTER_CATTAIL_DESC
+            traits = {
+                TRAIT_DIPLOMATIC_IDIOT
+                TRAIT_RUTHLESS
+                TRAIT_POPULAR
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 300
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

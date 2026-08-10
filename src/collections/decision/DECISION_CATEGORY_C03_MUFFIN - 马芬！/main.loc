@@ -1,0 +1,19 @@
+[en.DECISION_CATEGORY_C03_MUFFIN]
+Muffins!
+
+[en.DECISION_CATEGORY_C03_MUFFIN_desc]
+Derpy Hooves likes muffins so much, she can’t help but to shout out loud when she sees one, let alone one million of them.
+When Derpy gets §Y1.00M§! muffins, she will win the game, at least for her.
+$C03_MUFFINS$: [?ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN|*G2] (base [?ROOT.VAR_MUFFINS_PRODUCE_BASE|*=+2] per month) / §Y1.00M§!
+Every farm Derpy owns will produce §Y[?ROOT.VAR_MUFFINS_PRODUCE_FARM]§! extra muffins per month. Derpy can also produce muffins as §Yequipments§!, once the corresponding technology is researched.
+Besides, monthly, if Derpy Hooves has stability greater than §Y75%§!, the excess will be converted to §Y100§! muffins for every §Y1%§! of stability; if Derpy Hooves has stability less than §Y40%§!, she will have to pay §Y125§! muffins for every §Y1%§! of stability.
+
+[zh.DECISION_CATEGORY_C03_MUFFIN]
+马芬！
+
+[zh.DECISION_CATEGORY_C03_MUFFIN_desc]
+呆蹄太喜欢马芬了，她看到马芬就忍不住大声叫出来，更别说一百万个了。
+当呆蹄获得§Y1.00M§!马芬时，她将赢得游戏，至少对她来说是这样。
+$C03_MUFFINS$: [?ROOT.VAR_INVENTORY_ITEM_3RA_C03_MUFFIN|*G2]（基础月产量 [?ROOT.VAR_MUFFINS_PRODUCE_BASE|*=+2]）/ §Y1.00M§!
+呆蹄拥有的每个农场每月将额外产生[?ROOT.VAR_MUFFINS_PRODUCE_FARM|*G2]马芬。呆蹄还可以通过研究相应的技术来将马芬当做§Y装备§!生产。
+除此之外，每个月，如果呆蹄拥有稳定度高于§Y75%§!，超出的部分每§Y1%§!稳定度将转换为§G100§!马芬；如果呆蹄的稳定度低于§Y40%§!，她将每§Y1%§!稳定度支付§R125§!马芬。

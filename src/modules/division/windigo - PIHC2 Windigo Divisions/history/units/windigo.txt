@@ -1,0 +1,29 @@
+division_template = {
+    name = "风之魔 (Windigo)"
+    regiments = {
+        windigo = {
+            x = 0
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    division_cap = 3
+    priority = 0
+}
+division_template = {
+    name = "风之魔力量碎片 (Fraction of Windigo Power)"
+    regiments = {
+        windigo_fraction = {
+            x = 0
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    is_locked = yes
+    priority = 0
+}

@@ -1,0 +1,21 @@
+focus = {
+	id = FOCUS_C11_RETALIATION
+	icon = GFX_FOCUS_C11_RETALIATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 73
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 0
+}

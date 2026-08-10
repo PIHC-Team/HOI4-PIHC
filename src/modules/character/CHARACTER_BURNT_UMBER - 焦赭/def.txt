@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_BURNT_UMBER = {
+        name = CHARACTER_BURNT_UMBER_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_BURNT_UMBER.dds"
+                small = "gfx/leaders/CHARACTER_BURNT_UMBER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_BURNT_UMBER_army.dds"
+                small = "gfx/leaders/CHARACTER_BURNT_UMBER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_BURNT_UMBER_navy.dds"
+                small = "gfx/leaders/CHARACTER_BURNT_UMBER_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_BURNT_UMBER
+            desc = CHARACTER_BURNT_UMBER_DESC
+            traits = {
+                TRAIT_RULE_ENFORCER
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = high_command
+        }
+    }
+}

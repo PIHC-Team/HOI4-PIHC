@@ -1,0 +1,48 @@
+focus = {
+	id = FOCUS_C04_CRYSTAL_APPROVE
+	icon = GFX_FOCUS_C04_CRYSTAL_APPROVE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C04_CRYSTAL_MINE
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C04_CRYSTAL_DISAPPROVE
+	}
+	cost = 1
+	allow_branch = {
+		has_completed_focus = FOCUS_C04_CRYSTAL_MINE
+	}
+	completion_reward = {
+		C04_ADD_ECO_2_10 = yes
+		add_ideas = IDEA_C04_TIMBUCKTU_BLESSING
+	}
+	bypass = {
+		hidden_trigger = {
+			has_country_flag = PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C04_CRYSTAL_REAPPROVED
+			}
+			custom_trigger_tooltip = {
+				tooltip = EVENT_C04_MAIN_23_TRIGGER_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 5
+	y = 5
+}

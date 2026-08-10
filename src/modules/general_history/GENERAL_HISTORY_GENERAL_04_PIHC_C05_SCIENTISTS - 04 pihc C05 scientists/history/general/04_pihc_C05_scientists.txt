@@ -1,0 +1,27 @@
+C05 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_witchcraft = 2
+                }
+                traits = {
+
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_witchcraft = 2
+                }
+                traits = {
+
+                }
+                gender = female
+            }
+        }
+    }
+}

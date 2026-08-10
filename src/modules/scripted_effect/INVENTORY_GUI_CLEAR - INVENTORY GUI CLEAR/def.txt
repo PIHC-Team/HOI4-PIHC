@@ -1,0 +1,7 @@
+INVENTORY_GUI_CLEAR = {
+	clear_array = PIHC_INVENTORY_ARRAY
+	set_variable = {
+		var = PIHC_INVENTORY_DISPLAY
+		value = -1
+	}
+}

@@ -1,0 +1,33 @@
+SP_REWARD_GENERIC_WITCHCRAFT = {
+	fire_only_once = no
+	threshold = {
+		min = 0
+		max = 100
+	}
+	option = {
+		iteration_output = {
+			country_effects = {
+				add_tech_bonus = {
+					name = SP_REWARD_GENERIC_WITCHCRAFT
+					bonus = 0.3
+					uses = 1
+					category = pihc_witchcraft
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_WITCHCRAFT_o0
+	}
+	option = {
+		iteration_output = {
+			country_effects = {
+				add_tech_bonus = {
+					name = SP_REWARD_GENERIC_WITCHCRAFT
+					bonus = 0.5
+					uses = 1
+					category = pihc_dark_magic
+				}
+			}
+		}
+		token = SP_REWARD_GENERIC_WITCHCRAFT_o1
+	}
+}

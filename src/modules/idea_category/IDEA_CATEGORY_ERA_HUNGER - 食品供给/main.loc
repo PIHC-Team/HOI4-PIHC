@@ -1,0 +1,101 @@
+[en.IDEA_CATEGORY_ERA_HUNGER]
+Food Supply
+
+[en.IDEA_CATEGORY_ERA_HUNGER__cost_factor]
+Food Supply Policy Cost
+
+[en.PIHC_HUNGER_TOOLTIP]
+The country’s food supply level is calculated based on the ratio of §YFarms§! to the population.
+Currently, there are [?ROOT.VAR_NUM_FARMS_OWNED|Y0] §YFarms§! in our country.
+The required number of farms for each food supply level is as follows:
+§YAbundant Food§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_2|Y0] Farms are required based on our country’s population.
+§YNormal Supply§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_3|Y0] Farms are required based on our country’s population.
+§YFood Shortage§!: at least [?ROOT.VAR_NUM_FARMS_REQUIRED_4|Y0] Farms are required based on our country’s population.
+The level of supply will be checked monthly, and if the conditions are not met, the supply level will be lowered by one level.
+
+[en.IDEA_CATEGORY_ERA_HUNGER_desc]
+
+
+[en.IDEA_ERA_HUNGER_1_NONEED]
+No Need for Food
+
+[en.IDEA_ERA_HUNGER_1_NONEED_desc]
+This is a country consisting of spirits, deities, cyborgs, or other non-organic beings. Or maybe they live on another type of food, like love or magic. Or the country is having an extremely strange food policy. Whatever the case, the country does not need food to survive.
+
+[en.IDEA_ERA_HUNGER_2_FULL]
+Abundant Food
+
+[en.IDEA_ERA_HUNGER_2_FULL_desc]
+No risk of a famine, but real risk of diabetes.
+
+[en.IDEA_ERA_HUNGER_3_NORMAL]
+Normal Supply
+
+[en.IDEA_ERA_HUNGER_3_NORMAL_desc]
+It is Muffin Time!
+
+[en.IDEA_ERA_HUNGER_4_HUNGER]
+Food Shortage
+
+[en.IDEA_ERA_HUNGER_4_HUNGER_desc]
+“Nice can! It’s hard to eat, but at least It’s enough to keep you full. I wonder if there will be better things tomorrow.”
+§g“Tomorrow? The can issued yesterday are for this week!”§!
+
+[en.IDEA_ERA_HUNGER_5_FAMINE]
+Great Famine
+
+[en.IDEA_ERA_HUNGER_5_FAMINE_desc]
+“Our family hasn’t had a full meal for a long time. I only had something to eat last night for the first time this month.”
+§g“Oh my god! That’s terrible. Don’t you have a child? How is he?”§!
+“He’s fine. Quite delicious.”
+
+[zh.IDEA_CATEGORY_ERA_HUNGER]
+食品供给
+
+[zh.IDEA_CATEGORY_ERA_HUNGER__cost_factor]
+食品供给花费
+
+[zh.PIHC_HUNGER_TOOLTIP]
+国家的食品供给程度依据 §Y农场§! 与马口的比例进行计算。
+如今，我们国家中有 [?ROOT.VAR_NUM_FARMS_OWNED|Y0] §Y农场§!。
+各个食品供给等级的农场要求如下：
+§Y食品充裕§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_2|Y0] 农场。
+§Y正常供给§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_3|Y0] 农场。
+§Y食品短缺§!：根据我们国家的马口，需要至少 [?ROOT.VAR_NUM_FARMS_REQUIRED_4|Y0] 农场。
+供给程度将每月进行检查，不满足条件会下调供给等级一级。
+
+[zh.IDEA_CATEGORY_ERA_HUNGER_desc]
+
+
+[zh.IDEA_ERA_HUNGER_1_NONEED]
+无需食品
+
+[zh.IDEA_ERA_HUNGER_1_NONEED_desc]
+这个国家由精灵、神灵、赛博格或其他非有机生物组成。或者他们以其他类型的食物为生，比如爱意或魔法。或者这个国家有着极其奇怪的食品政策。无论如何，这个国家不需要食物来生存。
+
+[zh.IDEA_ERA_HUNGER_2_FULL]
+食品充裕
+
+[zh.IDEA_ERA_HUNGER_2_FULL_desc]
+没有饥荒的风险，但确实有糖尿病的风险。
+
+[zh.IDEA_ERA_HUNGER_3_NORMAL]
+正常供给
+
+[zh.IDEA_ERA_HUNGER_3_NORMAL_desc]
+马芬时间到！
+
+[zh.IDEA_ERA_HUNGER_4_HUNGER]
+食品短缺
+
+[zh.IDEA_ERA_HUNGER_4_HUNGER_desc]
+“不错的罐头！虽然很难吃，但至少足够吃饱了。不知道明天会不会有更好的东西。”
+§g“明天？昨天发的罐头是这个星期的！”§!
+
+[zh.IDEA_ERA_HUNGER_5_FAMINE]
+严重饥荒
+
+[zh.IDEA_ERA_HUNGER_5_FAMINE_desc]
+“我们家好久没有吃上一顿饱饭了，直到昨晚才是我这个月第一次吃到东西。”
+§g“天哪！太可怜了，你们不是还有一个孩子么？他怎么样？”§!
+“还不错，挺美味的。”

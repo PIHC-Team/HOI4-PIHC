@@ -1,0 +1,20 @@
+DECISION_CATEGORY_AUTO_TRADE = {
+    DECISION_REFRESH_AUTO_TRADE = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            always = yes
+        }
+        complete_effect = {
+            ROOT = {
+                COMPUTE_TRADE_CENTER_AUTO_TRADE = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = REFRESH_AUTO_TRADE
+    }
+}

@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C18_MODERNIZATION_STATIC = {
+			picture = C18_MODERNIZATION_STATIC
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = IDEA_C18_MODERNIZATION_STATIC_MODIFIER_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

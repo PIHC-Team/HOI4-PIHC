@@ -1,0 +1,107 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/resistance_activity
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-resistance-activity
+items:
+-   kind: entity
+    identifier: pihc3-resistance-activity-module
+    name: PIHC3 Resistance Activity Module
+    desc: Project-owned resistance_activity source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ResistanceActivityModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-resistance-activity
+    name: PIHC3 Resistance Activity
+    desc: PIHC3 resistance_activity module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-resistance-activity-module
+        definition:
+            identifier: pihc3-resistance-activity
+            name: PIHC3 Resistance Activity
+            version: 0.2.3
+            desc: PIHC3 resistance_activity module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-resistance-activity-module
+            meta:
+                project: PIHC3
+                family: resistance_activity
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-resistance-activity
+    name: PIHC3 Resistance Activity Compiler
+    desc: Registry-backed source slots and compiler hooks for resistance_activity.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: resistance-activities
+            title: Resistance Activities
+            group: military
+            title_key: modules.resistanceActivities.title
+        dependencies:
+        - extension:pihc3-resistance-activity
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-797da477172590c2
+    name: PIHC3 Basic Resistance Activity
+    desc: PIHC3 authoring template pihc3:resistance_activity/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:resistance_activity/basic
+            declaration:
+                title: PIHC3 Basic Resistance Activity
+                family: resistance_activity
+                args:
+                    title:
+                        required: true
+                    available:
+                        default: always = no
+                    weight:
+                        default: '1'
+                    max_amount:
+                        default: '1'
+                    duration:
+                        default: '10'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n    available = {{\n        {available}\n\
+                        \    }}\n\n    weight = {{\n        base = {weight}\n    }}\n\
+                        \n    max_amount = {max_amount}\n    duration = {duration}\n\
+                        \n    effect = {{\n    }}\n\n    state_modifier = {{\n   \
+                        \ }}\n\n    alert_text = {object_id}_alert\n}}\n"
+                    main.loc: '[{language}.{object_id}_alert]
+
+                        {title}
+
+                        '
+                directory: '{object_id} - {title}'

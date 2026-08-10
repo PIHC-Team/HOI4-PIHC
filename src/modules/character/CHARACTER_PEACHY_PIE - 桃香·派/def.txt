@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PEACHY_PIE = {
+        name = CHARACTER_PEACHY_PIE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PIE.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PIE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PIE_army.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PIE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PIE_navy.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PIE_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_PEACHY_PIE
+            desc = CHARACTER_PEACHY_PIE_DESC
+            traits = {
+                DIPLOMATIC_GENIUS_II
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = political_advisor
+        }
+    }
+}

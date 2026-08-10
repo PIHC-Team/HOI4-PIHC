@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_LORD_GESTAL = {
+        name = CHARACTER_LORD_GESTAL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_LORD_GESTAL.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GESTAL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_LORD_GESTAL_army.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GESTAL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_LORD_GESTAL_navy.dds"
+                small = "gfx/leaders/CHARACTER_LORD_GESTAL_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_LORD_GESTAL_DESC
+            traits = {
+
+            }
+            ideology = despotic_oligarchy
+        }
+    }
+}

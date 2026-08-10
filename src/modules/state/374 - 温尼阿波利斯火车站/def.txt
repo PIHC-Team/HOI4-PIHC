@@ -1,0 +1,38 @@
+state = {
+    id = 374
+    name = STATE_374
+    provinces = {
+        1347
+        1475
+        1789
+        3018
+        4314
+        5349
+        5936
+        6440
+        6678
+        7912
+        9095
+        10625
+    }
+    manpower = 12017
+    state_category = town
+    history = {
+        owner = C59
+        buildings = {
+            infrastructure = 2
+            radar_station = 1
+            industrial_complex = 1
+            arms_factory = 1
+        }
+        add_core_of = C59
+        victory_points = {
+            5349
+            10
+        }
+    }
+    resources = {
+        aluminium = 8
+        oil = 12
+    }
+}

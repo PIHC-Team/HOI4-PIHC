@@ -1,0 +1,57 @@
+ideologies = {
+	transcendence = {
+		types = {
+			transcendence_spirit = {
+			}
+			transcendence_deity = {
+				can_be_randomly_selected = no
+			}
+			transcendence_swarm = {
+				can_be_randomly_selected = no
+			}
+			transcendence_hive = {
+				can_be_randomly_selected = no
+			}
+			transcendence_gestalt = {
+				can_be_randomly_selected = no
+			}
+			transcendence_crisis = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = {
+			72
+			60
+			140
+		}
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = no
+		can_be_boosted = no
+		can_collaborate = no
+		war_impact_on_world_tension = 0.7
+		faction_impact_on_world_tension = 0.7
+		modifiers = {
+			annex_cost_factor = -0.25
+			puppet_cost_factor = -0.25
+			justify_war_goal_when_in_major_war_time = -0.5
+			drift_defence_factor = 0.8
+			civilian_intel_to_others = 0.0
+			army_intel_to_others = 0.0
+			navy_intel_to_others = 0.0
+			airforce_intel_to_others = 0.0
+			embargo_cost_factor = 0.0
+			embargo_threshold_factor = 0.0
+		}
+		ai_fascist = yes
+		ai_ideology_wanted_units_factor = 1.0
+	}
+}

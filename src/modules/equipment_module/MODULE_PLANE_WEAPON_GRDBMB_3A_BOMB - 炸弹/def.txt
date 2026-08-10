@@ -1,0 +1,35 @@
+MODULE_PLANE_WEAPON_GRDBMB_3A_BOMB = {
+	category = pihc_plane_weapon_type_grd_bmb
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		weight = 1.0
+		air_bombing = 10.0
+		air_ground_attack = 2.0
+		reliability = -0.04
+	}
+	mission_type_stats = {
+		limit = {
+			cas
+			port_strike
+			attack_logistics
+			strategic_bomber
+		}
+		add_stats = {
+			weight = 3.0
+		}
+	}
+	multiply_stats = {
+		air_bombing = 0.25
+		air_agility = -0.16
+	}
+	allow_mission_type = {
+		cas
+		port_strike
+		attack_logistics
+		strategic_bomber
+	}
+	add_equipment_type = {
+		tactical_bomber
+	}
+	xp_cost = 5
+}

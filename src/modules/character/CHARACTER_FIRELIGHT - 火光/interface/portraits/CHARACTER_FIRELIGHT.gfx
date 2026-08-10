@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_FIRELIGHT_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_FIRELIGHT_ANIMATED_default_strip.dds"
+        noOfFrames = 85
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 1.9
+    }
+}

@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PEACHY_PLUME = {
+        name = CHARACTER_PEACHY_PLUME_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PLUME.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PLUME_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PLUME_army.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PLUME_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PEACHY_PLUME_navy.dds"
+                small = "gfx/leaders/CHARACTER_PEACHY_PLUME_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_PEACHY_PLUME
+            desc = CHARACTER_PEACHY_PLUME_DESC
+            traits = {
+                TRAIT_EXPERIENCED_TRAINER
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = army_chief
+        }
+    }
+}

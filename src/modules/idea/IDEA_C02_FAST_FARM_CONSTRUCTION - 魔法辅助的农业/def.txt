@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_C02_FAST_FARM_CONSTRUCTION = {
+			picture = C02_FAST_FARM_CONSTRUCTION
+			removal_cost = -1
+			modifier = {
+				production_speed_farm_complex_factor = 0.75
+				monthly_population = 0.03
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

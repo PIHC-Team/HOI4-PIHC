@@ -1,0 +1,18 @@
+focus = {
+	id = FOCUS_C01_DEM_CHANGE
+	icon = GFX_FOCUS_C01_DEM_CHANGE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_DEM_THE_MASTERMIND
+	}
+	completion_reward = {
+		news_event = {
+			id = C01_MAIN.29
+		}
+	}
+	cost = 4
+	x = 0
+	y = 6
+}

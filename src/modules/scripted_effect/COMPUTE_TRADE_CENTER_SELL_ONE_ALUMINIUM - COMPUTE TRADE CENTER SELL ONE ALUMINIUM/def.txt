@@ -1,0 +1,49 @@
+COMPUTE_TRADE_CENTER_SELL_ONE_ALUMINIUM = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE
+				has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_ALUMINIUM_SELL
+			}
+			check_variable = {
+				var = VAR_TRADE_CENTER_CREDIT_REQ
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = VAR_TRADE_CENTER_ALUMINIUM_COST
+				value = VAR_TRADE_CENTER_ALUMINIUM_OFF
+				compare = less_than
+			}
+		}
+		set_temp_variable = {
+			var = auto_trade_credit
+			value = VAR_TRADE_CENTER_CREDIT
+		}
+		add_to_temp_variable = {
+			var = auto_trade_credit
+			value = global.VAR_TRADE_CENTER_ALUMINIUM_VALUE
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = auto_trade_credit
+					value = VAR_TRADE_CENTER_LIMIT
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = VAR_TRADE_CENTER_ALUMINIUM_COST
+				value = 1
+			}
+			add_to_variable = {
+				var = VAR_TRADE_CENTER_CREDIT
+				value = global.VAR_TRADE_CENTER_ALUMINIUM_VALUE
+			}
+			subtract_from_variable = {
+				var = VAR_TRADE_CENTER_CREDIT_REQ
+				value = global.VAR_TRADE_CENTER_ALUMINIUM_VALUE
+			}
+		}
+	}
+}

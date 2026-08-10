@@ -1,0 +1,35 @@
+focus = {
+	id = FOCUS_C02_APPLE_INSULT
+	icon = GFX_FOCUS_C02_APPLE_INSULT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_PONYVILLE_AGRICULTURE_3
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C02_APPLE_COMPENSATE
+	}
+	cost = 3
+	completion_reward = {
+		C14 = {
+			add_opinion_modifier = {
+				target = C02
+				modifier = FOCUS_C02_APPLE_INSULT_OPINION_MODIFIER
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 13
+	y = 6
+}

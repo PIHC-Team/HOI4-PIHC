@@ -1,0 +1,49 @@
+INIT_CMC_MILITARY_CITY = {
+	C01 = {
+		every_owned_state = {
+			limit = {
+				is_controlled_by = C01
+				has_state_flag = PIHC_STATE_FLAG_C01_CMC_IS_CITY
+				has_variable = VAR_C01_CMC_UPRISE_VALUE
+				check_variable = {
+					var = VAR_C01_CMC_UPRISE_VALUE
+					value = 2
+					compare = greater_than_or_equals
+				}
+			}
+			transfer_state_to = Z01
+			set_temp_variable = {
+				temp_num_of_arms = VAR_C01_CMC_UPRISE_VALUE
+			}
+			multiply_temp_variable = {
+				temp_num_of_arms = 240
+			}
+			Z01 = {
+				add_equipment_to_stockpile = {
+					type = ARCHETYPE_INFANTRY
+					amount = temp_num_of_arms
+				}
+			}
+			set_temp_variable = {
+				temp_num_of_support = VAR_C01_CMC_UPRISE_VALUE
+			}
+			multiply_temp_variable = {
+				temp_num_of_support = 24
+			}
+			Z01 = {
+				add_equipment_to_stockpile = {
+					type = ARCHETYPE_SUPPORT
+					amount = temp_num_of_support
+				}
+			}
+			set_temp_variable = {
+				temp_num_of_divisions = VAR_C01_CMC_UPRISE_VALUE
+			}
+			create_unit = {
+				division = "name = \"可爱标志童子军 (CMC)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 0.1 start_equipment_factor = 0.6 start_manpower_factor = 0.5"
+				owner = Z01
+				count = temp_num_of_divisions
+			}
+		}
+	}
+}

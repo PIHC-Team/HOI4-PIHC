@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C01_FEUDAL_SYSTEM = {
+			picture = C01_FEUDAL_SYSTEM
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 2
+				local_resources_factor = -0.3
+				stability_weekly_factor = -0.01
+				subjects_autonomy_gain = 0.2
+			}
+			allowed = {
+				tag = C01
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

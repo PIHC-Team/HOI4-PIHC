@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		IDEA_C08_NEVER_FORGET = {
+			picture = C08_NEVER_FORGET
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = C01
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+pihc_air_bloodthirsty_flock_strike_aircraft_core = {
+	track = strike_aircraft
+	name = DOCTRINE_AIR_1_4_CONTINUOUS_BOMB
+	description = DOCTRINE_AIR_1_4_CONTINUOUS_BOMB_DESC
+	icon = GFX_doctrine_pihc_air_bloodthirsty_flock_strike_aircraft_core_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		continuous_bomb = {
+			air_fuel_consumption_factor = -0.25
+			air_strategic_bomber_bombing_factor = 0.1
+			air_bombing_targetting = 0.1
+			air_cas_efficiency = 0.1
+		}
+	}
+}

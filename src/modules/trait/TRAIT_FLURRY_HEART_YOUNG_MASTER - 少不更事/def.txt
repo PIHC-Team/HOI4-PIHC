@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_FLURRY_HEART_YOUNG_MASTER = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		political_power_cost = 0.5
+	}
+}

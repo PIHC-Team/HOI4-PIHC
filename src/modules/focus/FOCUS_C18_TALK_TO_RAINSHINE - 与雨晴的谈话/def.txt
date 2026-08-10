@@ -1,0 +1,58 @@
+focus = {
+	id = FOCUS_C18_TALK_TO_RAINSHINE
+	icon = GFX_FOCUS_C18_TALK_TO_RAINSHINE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		OR = {
+			has_country_flag = PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED
+			TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_I = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_II = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_III = yes
+		}
+	}
+	prerequisite = {
+		focus = FOCUS_C18_101_NARROW_GATE_MINING
+		focus = FOCUS_C18_101_CLIMATE_RESEARCH_2
+		focus = FOCUS_C18_011_TRADE_FLOWER
+		focus = FOCUS_C18_010_CORRUPTION_CASE_CLOSE
+	}
+	cost = 4
+	select_effect = {
+		country_event = {
+			id = C18_MAIN.111
+			days = 1
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = C18_MAIN.112
+		}
+	}
+	available = {
+		has_war = no
+		TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_I = yes
+		TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_II = yes
+		custom_trigger_tooltip = {
+			tooltip = PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE_TOOLTIP
+			has_country_flag = PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE
+		}
+		TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_LOG_III = yes
+		custom_trigger_tooltip = {
+			tooltip = PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE_TOOLTIP
+			has_country_flag = PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 8
+}

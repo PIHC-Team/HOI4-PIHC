@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_ANUGYPT_CITYSTATES = {
+        name = CHARACTER_ANUGYPT_CITYSTATES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES_army.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES_navy.dds"
+                small = "gfx/leaders/CHARACTER_ANUGYPT_CITYSTATES_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_ANUGYPT_CITYSTATES_DESC
+            traits = {
+
+            }
+            ideology = democratic_federal
+        }
+    }
+}

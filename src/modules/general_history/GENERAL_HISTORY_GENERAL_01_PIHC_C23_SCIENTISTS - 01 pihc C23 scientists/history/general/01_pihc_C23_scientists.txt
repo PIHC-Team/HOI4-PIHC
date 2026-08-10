@@ -1,0 +1,27 @@
+C23 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_magic = 2
+                }
+                traits = {
+
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_scientist_character = {
+                skills = {
+                    specialization_magic = 2
+                }
+                traits = {
+
+                }
+                gender = female
+            }
+        }
+    }
+}

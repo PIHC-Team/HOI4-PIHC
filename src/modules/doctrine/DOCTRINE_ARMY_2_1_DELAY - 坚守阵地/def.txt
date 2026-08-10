@@ -1,0 +1,36 @@
+pihc_land_wall_of_unity_infantry_core = {
+	track = infantry
+	name = DOCTRINE_ARMY_2_1_DELAY
+	description = DOCTRINE_ARMY_2_1_DELAY_DESC
+	icon = GFX_doctrine_pihc_land_wall_of_unity_infantry_core_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	max_dig_in_factor = 0.15
+	land_bunker_effectiveness_factor = 0.15
+	enable_tactic = tactic_delay
+	rewards = {
+		recovery = {
+			category_infantry_shield = {
+				default_morale = 0.15
+				casualty_trickleback = 0.01
+			}
+			category_armor_heavy = {
+				default_morale = 0.15
+			}
+			army_morale_factor = 0.1
+			enable_tactic = tactic_pihc_iron_curtain
+		}
+	}
+}

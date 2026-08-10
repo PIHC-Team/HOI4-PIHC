@@ -1,0 +1,93 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/texticon
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-texticon
+items:
+-   kind: entity
+    identifier: pihc3-texticon
+    name: PIHC3 Text Icon
+    desc: One coherent PIHC3 text-icon resource set.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3TextIcon
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-texticon
+    name: PIHC3 Text Icon
+    desc: PIHC3 text-icon persistence, resources, and compilation.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-texticon
+        definition:
+            identifier: pihc3-texticon
+            name: PIHC3 Text Icon
+            version: 0.2.4
+            desc: PIHC3 text-icon persistence, resources, and compilation.
+            required: false
+            requires: []
+            entities:
+            - pihc3-texticon
+            meta:
+                project: PIHC3
+                family: texticon
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-texticon
+    name: PIHC3 Text Icon Compiler
+    desc: Copies owned text-icon resources to exact game paths.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: texticon
+            title: Text Icons
+            group: other
+        dependencies:
+        - extension:pihc3-texticon
+-   kind: paradev_authoring_template
+    identifier: pihc3-texticon-basic
+    name: PIHC3 Text Icon Set
+    desc: Create an editable text-icon sprite set.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - paradev_build_family:pihc3-texticon
+        definition:
+            template_id: pihc3:texticon/basic
+            declaration:
+                title: PIHC3 Text Icon Set
+                family: texticon
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                files:
+                    interface/PIHC_texticons.gfx: 'spriteTypes = {{
+
+                        }}
+
+                        '

@@ -1,0 +1,34 @@
+allow_lend_lease = {
+	name = RULE_ALLOW_LEND_LEASE
+	group = RULE_GROUP_GENERAL_FOREIGN_POLICY
+	icon = GFX_lend_lease
+	option = {
+		name = FREE
+		text = RULE_OPTION_FREE
+		desc = RULE_ALLOW_LEND_LEASE_FREE_DESC
+	}
+	default = {
+		name = LIMITED
+		text = RULE_OPTION_LIMITED
+		desc = RULE_ALLOW_LEND_LEASE_LIMITED_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = RULE_OPTION_SAME_IDEOLOGY
+		desc = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = SAME_FACTION
+		text = RULE_OPTION_SAME_FACTION
+		desc = RULE_ALLOW_LEND_LEASE_SAME_FACTION_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = BLOCKED
+		text = RULE_OPTION_BLOCKED
+		desc = RULE_ALLOW_LEND_LEASE_BLOCKED_DESC
+		allow_achievements = yes
+	}
+}

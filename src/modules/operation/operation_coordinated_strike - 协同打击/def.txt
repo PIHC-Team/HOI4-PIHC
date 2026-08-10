@@ -1,0 +1,115 @@
+operation_coordinated_strike = {
+	icon = GFX_operations_coordinated_strike
+	map_icon = GFX_operations_coordinated_strike_map
+	name = operation_coordinated_strike
+	desc = operation_coordinated_strike_desc
+	priority = 11
+	days = 3
+	network_strength = 70
+	operatives = 2
+	visible = {
+		network_strength = {
+			target = FROM
+			value > 35
+		}
+		NOT = {
+			has_war_with = FROM
+		}
+	}
+	equipment = {
+		civilian_factories = {
+			amount = 15
+			days = 5
+		}
+	}
+	available = {
+		NOT = {
+			has_war_with = FROM
+		}
+		has_wargoal_against = FROM
+		can_declare_war_on = FROM
+	}
+	target_type = strategic_region
+	selection_target = {
+		targets = {
+			FROM
+		}
+	}
+	will_lead_to_war_with = yes
+	risk_chance = 0.3
+	experience = 2
+	outcome_execute = {
+		ROOT = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+		execute_operation_coordinated_strike = {
+			amount = 12
+		}
+	}
+	outcome_potential = {
+		custom_effect_tooltip = coordinated_strike_tt
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war = no
+				}
+			}
+		}
+	}
+	phases = {
+		coordinated_strike_scout_target = {
+			base = 50
+		}
+		coordinate_strike_mark_targets = {
+			base = 50
+		}
+	}
+	phases = {
+		coordinated_strike_sabotage_communications = {
+			base = 34
+		}
+		coordinated_strike_direct_units = {
+			base = 34
+		}
+		coordinated_strike_occupy_bridges = {
+			base = 34
+			modifier = {
+				NOT = {
+					FROM = {
+						any_neighbor_country = {
+							tag = ROOT
+						}
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}

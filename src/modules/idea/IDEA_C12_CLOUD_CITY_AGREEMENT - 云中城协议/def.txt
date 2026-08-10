@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_CLOUD_CITY_AGREEMENT = {
+			picture = C12_CLOUD_CITY_AGREEMENT
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = 0.1
+				air_accidents = -0.15
+				civilian_factory_use = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

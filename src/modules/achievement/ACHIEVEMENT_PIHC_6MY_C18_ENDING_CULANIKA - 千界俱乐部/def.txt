@@ -1,0 +1,16 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_6MY_C18_ENDING_CULANIKA = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+		tag = C18
+	}
+	happened = {
+		hidden_trigger = {
+			has_completed_focus = FOCUS_C18_OPEN_PORTAL
+		}
+	}
+}

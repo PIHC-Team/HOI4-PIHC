@@ -1,0 +1,37 @@
+state = {
+    id = 404
+    name = STATE_404
+    provinces = {
+        17
+        407
+        4882
+        6760
+        7302
+        7915
+        9720
+        11045
+        11058
+        11090
+    }
+    manpower = 46951
+    state_category = pastoral
+    history = {
+        owner = C01
+        victory_points = {
+            17
+            1
+        }
+        buildings = {
+            17 = {
+
+            }
+            11058 = {
+
+            }
+        }
+        add_core_of = C01
+    }
+    resources = {
+        oil = 8
+    }
+}

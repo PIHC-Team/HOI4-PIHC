@@ -1,0 +1,13 @@
+resistance_support_coordinate_groups = {
+	name = resistance_support_coordinate_groups
+	desc = resistance_support_coordinate_groups_desc
+	outcome = resistance_support_coordinate_groups_outcome
+	picture = GFX_phase_resistance_support_coordinate_groups
+	icon = GFX_phase_resistance_support_coordinate_groups_small
+	equipment = {
+		civilian_factories = {
+			amount = 2
+			days = 45
+		}
+	}
+}

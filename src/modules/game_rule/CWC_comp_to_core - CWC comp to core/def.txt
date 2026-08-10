@@ -1,0 +1,35 @@
+CWC_comp_to_core = {
+	name = CWC_COMP_COST
+	group = CWC_FORMULA_PP_COST_GROUP
+	icon = GFX_core_button_small
+	option = {
+		name = CWC_COMP_COST_20
+		text = CWC_COMP_COST_20_NAME
+		desc = CWC_COMP_COST_20_DESC
+		allow_achievements = yes
+	}
+	default = {
+		name = CWC_COMP_COST_40
+		text = CWC_COMP_COST_40_NAME
+		desc = CWC_COMP_COST_40_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_COMP_COST_60
+		text = CWC_COMP_COST_60_NAME
+		desc = CWC_COMP_COST_60_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_COMP_COST_80
+		text = CWC_COMP_COST_80_NAME
+		desc = CWC_COMP_COST_80_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_COMP_COST_100
+		text = CWC_COMP_COST_100_NAME
+		desc = CWC_COMP_COST_100_DESC
+		allow_achievements = yes
+	}
+}

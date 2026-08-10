@@ -1,0 +1,12 @@
+MODULE_PLANE_ENGINE_1A_AIR = {
+	category = pihc_plane_engine_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		weight = 10.0
+	}
+	multiply_stats = {
+		fuel_consumption = -1.0
+		reliability = -0.2
+	}
+	xp_cost = 5
+}

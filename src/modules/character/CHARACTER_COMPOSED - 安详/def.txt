@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_COMPOSED = {
+        name = CHARACTER_COMPOSED_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_COMPOSED.dds"
+                small = "gfx/leaders/CHARACTER_COMPOSED_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_COMPOSED_army.dds"
+                small = "gfx/leaders/CHARACTER_COMPOSED_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_COMPOSED_navy.dds"
+                small = "gfx/leaders/CHARACTER_COMPOSED_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_COMPOSED
+            desc = CHARACTER_COMPOSED_DESC
+            traits = {
+                TRAIT_POPULAR
+                TRAIT_ARCHITECT
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 50
+            removal_cost = 150
+            slot = political_advisor
+        }
+    }
+}

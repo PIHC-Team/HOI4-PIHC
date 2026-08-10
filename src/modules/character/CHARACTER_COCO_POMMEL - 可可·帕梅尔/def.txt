@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_COCO_POMMEL = {
+        name = CHARACTER_COCO_POMMEL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_COCO_POMMEL.dds"
+                small = "gfx/leaders/CHARACTER_COCO_POMMEL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_COCO_POMMEL_army.dds"
+                small = "gfx/leaders/CHARACTER_COCO_POMMEL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_COCO_POMMEL_navy.dds"
+                small = "gfx/leaders/CHARACTER_COCO_POMMEL_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_COCO_POMMEL
+            desc = CHARACTER_COCO_POMMEL_DESC
+            traits = {
+                TRAIT_POLITICAL_GENIUS
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 200
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

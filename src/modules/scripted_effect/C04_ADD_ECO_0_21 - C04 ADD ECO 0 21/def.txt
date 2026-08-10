@@ -1,0 +1,68 @@
+C04_ADD_ECO_0_21 = {
+	custom_effect_tooltip = C04_ADD_ECO_0_21_TOOLTIP
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^0 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^0
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^1 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^1
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^2 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^2
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^3 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^3
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^4 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^4
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^5 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^5
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^6 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^6
+		min = 0.0
+		max = 100.0
+	}
+	multiply_variable = {
+		C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^7 = 1.21
+	}
+	clamp_variable = {
+		var = C04.ARRAY_REGIONAL_DEV_REGIONS_ECONOMIC_FACTOR^7
+		min = 0.0
+		max = 100.0
+	}
+	C04_REGIONAL_DEV_COMPUTE = yes
+}

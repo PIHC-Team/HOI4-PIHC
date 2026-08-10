@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C12_STREAMLINE_THE_CHAIN_OF_COMMAND = {
+			picture = C12_STREAMLINE_THE_CHAIN_OF_COMMAND
+			removal_cost = -1
+			modifier = {
+				initiative_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

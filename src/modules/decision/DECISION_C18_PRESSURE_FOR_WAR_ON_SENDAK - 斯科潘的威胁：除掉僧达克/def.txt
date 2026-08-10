@@ -1,0 +1,33 @@
+DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT = {
+    DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 0
+        selectable_mission = no
+        days_mission_timeout = 90
+        is_good = no
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        visible = {
+            has_decision = DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK
+        }
+        available = {
+            has_completed_focus = FOCUS_C18_100_WAR_SENDAK
+        }
+        complete_effect = {
+            add_political_power = 25
+        }
+        timeout_effect = {
+            custom_effect_tooltip = DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK_TIMEOUT_TOOLTIP
+            hidden_effect = {
+                news_event = {
+                    id = SUPER_NEWS.12
+                    days = 3
+                }
+            }
+        }
+        icon = C18_PRESSURE_FOR_WAR_ON_SENDAK
+    }
+}

@@ -1,0 +1,33 @@
+characters = {
+    CHARACTER_SCREWBALL = {
+        name = CHARACTER_SCREWBALL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SCREWBALL.dds"
+                small = "gfx/leaders/CHARACTER_SCREWBALL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SCREWBALL_army.dds"
+                small = "gfx/leaders/CHARACTER_SCREWBALL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SCREWBALL_navy.dds"
+                small = "gfx/leaders/CHARACTER_SCREWBALL_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_SCREWBALL
+            desc = CHARACTER_SCREWBALL_DESC
+            traits = {
+                TRAIT_ECONOMICAL_IDIOT
+                TRAIT_POLITICAL_IDIOT
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = -1
+            slot = political_advisor
+        }
+    }
+}

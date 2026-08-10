@@ -1,0 +1,100 @@
+capital = 772
+set_popularities = {
+    peacism = 45
+    equatism = 40
+    harmonicism = 10
+    fascism = 5
+}
+set_politics = {
+    ruling_party = peacism
+    last_election = 1001.5.1
+    election_frequency = 72
+    elections_allowed = yes
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_VEHICLE_II = 1
+    TECHNOLOGY_TANK_RAM = 1
+    TECHNOLOGY_NSB_TANK_RAM = 1
+    TECHNOLOGY_CANNON_CATAPULT = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+    }
+    set_technology = {
+        TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_WOODEN = 1
+        TECHNOLOGY_NSB_CHASSIS_TANK_MEDIUM_WOODEN = 1
+    }
+}
+oob = C18
+recruit_character = CHARACTER_AUTUMN_BLAZE
+recruit_character = CHARACTER_RAIN_SHINE
+recruit_character = CHARACTER_BURNT_UMBER
+recruit_character = CHARACTER_GRASS_GREEN
+recruit_character = CHARACTER_COMPOSED
+recruit_character = CHARACTER_AQUAMARINE
+recruit_character = CHARACTER_OCHRE
+recruit_character = CHARACTER_BLOSSOM_BURST
+recruit_character = CHARACTER_PRINCESS_CELESTIA_C18
+recruit_character = CHARACTER_PRINCESS_LUNA_C18
+activate_advisor = CHARACTER_BURNT_UMBER
+activate_advisor = CHARACTER_GRASS_GREEN
+activate_advisor = CHARACTER_COMPOSED
+activate_advisor = CHARACTER_AQUAMARINE
+activate_advisor = CHARACTER_OCHRE
+add_ideas = limited_exports
+add_ideas = unleash_your_inner_nirik
+add_ideas = civilian_economy
+add_ideas = IDEA_ERA_HUNGER_2_FULL
+add_ideas = IDEA_ERA_MAGIC_4_MUGGLE
+add_ideas = IDEA_C18_MODERNIZATION
+set_rule = {
+    can_join_factions = no
+}
+promote_character = {
+    character = CHARACTER_RAIN_SHINE
+    ideology = peacism_dogmatism
+}
+set_research_slots = 2
+set_country_flag = PIHC_COUNTRY_FLAG_C08_TRADE
+add_political_power = 100
+set_convoys = 150
+set_war_support = 0.5
+set_major = no
+complete_national_focus = FOCUS_C18_FOALS_BREATH
+complete_national_focus = FOCUS_C18_YANG
+complete_national_focus = FOCUS_C18_YIN
+complete_national_focus = FOCUS_C18_OLD_YANG
+complete_national_focus = FOCUS_C18_YOUNG_YANG
+complete_national_focus = FOCUS_C18_OLD_YIN
+complete_national_focus = FOCUS_C18_YOUNG_YIN

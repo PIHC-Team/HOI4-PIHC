@@ -1,0 +1,14 @@
+MODULE_PROJECTILE_1A_TOMATO = {
+	category = pihc_tank_projectile_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.07
+		soft_attack = 5.0
+		hard_attack = 1.0
+		ap_attack = 0.5
+	}
+	multiply_stats = {
+		supply_consumption = -0.02
+	}
+	xp_cost = 5
+}

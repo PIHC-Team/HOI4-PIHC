@@ -1,0 +1,81 @@
+ideas = {
+	IDEA_CATEGORY_ERA_MAGIC = {
+		law = yes
+		use_list_view = yes
+		IDEA_ERA_MAGIC_1_GODS = {
+			picture = ERA_MAGIC_1_GODS
+			removal_cost = -1
+			modifier = {
+			}
+			available = {
+				always = no
+			}
+			research_bonus = {
+				pihc_magical = 0.35
+				pihc_magic_theory = 0.15
+			}
+			cost = 0
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 4
+		}
+		IDEA_ERA_MAGIC_2_EXCEL = {
+			picture = ERA_MAGIC_2_EXCEL
+			removal_cost = -1
+			modifier = {
+			}
+			available = {
+				always = no
+			}
+			research_bonus = {
+				pihc_magical = 0.2
+			}
+			cost = 0
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 3
+		}
+		IDEA_ERA_MAGIC_3_NORMAL = {
+			picture = ERA_MAGIC_3_NORMAL
+			removal_cost = -1
+			modifier = {
+			}
+			available = {
+				always = no
+			}
+			research_bonus = {
+				pihc_magic_theory = -0.15
+			}
+			cost = 0
+			default = yes
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 2
+		}
+		IDEA_ERA_MAGIC_4_MUGGLE = {
+			picture = ERA_MAGIC_4_MUGGLE
+			removal_cost = -1
+			modifier = {
+			}
+			available = {
+				always = no
+			}
+			research_bonus = {
+				pihc_magical = -0.35
+				pihc_magic_theory = -0.35
+			}
+			cost = 0
+			cancel_if_invalid = no
+			allowed_civil_war = {
+				always = yes
+			}
+			level = 1
+		}
+	}
+}

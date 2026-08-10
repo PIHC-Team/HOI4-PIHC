@@ -1,0 +1,81 @@
+DECISION_CATEGORY_SPECIAL_FORCES = {
+    DECISION_MUSIC_HEALTH_2 = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 0
+        days_remove = 42
+        days_re_enable = 0
+        visible = {
+            has_template_majority_unit = infantry_music
+            has_tech = TECHNOLOGY_PINKIE_PLAY
+        }
+        available = {
+            any_country_division = {
+                division_has_majority_template = infantry_music
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_PINKIE_PLAY
+                    }
+                    check_variable = {
+                        var = VAR_BATTLEFIELD_BAND_PLAYING
+                        value = 1
+                        compare = greater_than_or_equals
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = DECISION_MUSIC_BATTLEFIELD_BAND_PLAYING_TOOLTIP_1
+                    always = no
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_PINKIE_PLAY
+                    check_variable = {
+                        var = VAR_BATTLEFIELD_BAND_PLAYING
+                        value = 2
+                        compare = greater_than_or_equals
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = DECISION_MUSIC_BATTLEFIELD_BAND_PLAYING_TOOLTIP_2
+                    always = no
+                }
+            }
+        }
+        complete_effect = {
+            add_to_variable = {
+                var = VAR_BATTLEFIELD_BAND_PLAYING
+                value = 1
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_MUTE_BATTLEFIELD_BAND
+                    }
+                }
+                scoped_play_song = find_the_music_in_you
+            }
+        }
+        modifier = {
+            army_org_regain = 0.3
+        }
+        cancel_effect = {
+            subtract_from_variable = {
+                var = VAR_BATTLEFIELD_BAND_PLAYING
+                value = 1
+            }
+        }
+        remove_effect = {
+            subtract_from_variable = {
+                var = VAR_BATTLEFIELD_BAND_PLAYING
+                value = 1
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = MUSIC_HEALTH_2
+    }
+}

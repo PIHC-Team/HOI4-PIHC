@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C08_ARMY_SCHOOL
+	icon = GFX_FOCUS_C08_ARMY_SCHOOL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_ARMY_LINE
+		focus = FOCUS_C08_AIR_LINE
+	}
+	cost = 2
+	completion_reward = {
+		set_technology = {
+			TECHNOLOGY_TECH_ENER_I = 1
+		}
+		custom_effect_tooltip = FOCUS_C08_ARMY_SCHOOL_TOOLTIP
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_ARMY_SCHOOL
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 6
+}

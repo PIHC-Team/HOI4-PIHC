@@ -1,0 +1,33 @@
+technologies = {
+    TECHNOLOGY_SHIP_SEACOURTYARD_ARMED_LINER = {
+        folder = {
+            name = naval_folder
+            position = {
+                x = 2
+                y = 16
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_navy
+            pihc_courtyard
+        }
+        enable_equipments = {
+            EQUIPMENT_SHIP_SEACOURTYARD_ARMED_LINER
+        }
+        enable_subunits = {
+        }
+        dependencies = {
+            TECHNOLOGY_TECH_ENER_I = 1
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_SHIP_SEACOURTYARD_STEAM
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1006
+    }
+}

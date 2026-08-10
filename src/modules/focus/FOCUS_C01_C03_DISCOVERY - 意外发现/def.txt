@@ -1,0 +1,39 @@
+focus = {
+	id = FOCUS_C01_C03_DISCOVERY
+	icon = GFX_FOCUS_C01_C03_DISCOVERY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C03_DELIVERY
+	}
+	cost = 2
+	allow_branch = {
+		has_completed_focus = FOCUS_C01_C03_DELIVERY
+		has_country_flag = PIHC_COUNTRY_FLAG_C01_C03_PONYVILLE_INFILTRATION
+	}
+	completion_reward = {
+		ADD_INVENTORY_ITEM_4EP_C01_DERPY_LOVE_LETTER_1 = yes
+	}
+	available = {
+		C03 = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 15
+}

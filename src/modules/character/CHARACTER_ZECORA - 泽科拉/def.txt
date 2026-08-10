@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_ZECORA = {
+        name = CHARACTER_ZECORA_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_ZECORA.dds"
+                small = "gfx/leaders/CHARACTER_ZECORA_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_ZECORA_army.dds"
+                small = "gfx/leaders/CHARACTER_ZECORA_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_ZECORA_navy.dds"
+                small = "gfx/leaders/CHARACTER_ZECORA_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_ZECORA_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_tribe
+        }
+    }
+}

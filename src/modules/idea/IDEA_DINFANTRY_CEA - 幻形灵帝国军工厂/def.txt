@@ -1,0 +1,49 @@
+ideas = {
+	materiel_manufacturer = {
+		IDEA_DINFANTRY_CEA = {
+			picture = DINFANTRY_CEA
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			cost = 150
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C11
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE_TOOLTIP
+						has_country_flag = PIHC_COUNTRY_FLAG_C11_INTELLIGENCE
+					}
+					tag = C11
+					is_in_faction_with = C11
+				}
+			}
+			research_bonus = {
+				pihc_summon = 0.25
+			}
+			equipment_bonus = {
+				ARCHETYPE_INFANTRY = {
+					reliability = 0.02
+				}
+				ARCHETYPE_AUTOMATA = {
+					reliability = 0.1
+				}
+			}
+			ai_will_do = {
+				base = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

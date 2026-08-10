@@ -1,0 +1,87 @@
+[en.DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI]
+Operation <=Redlight=>
+
+[en.DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI_desc]
+Through Starlight’s message, we have just learned... The Empire’s lunatic plan, the secret Operation <=Greenlight=>, is pushing the entire Ponyville to the brink of destruction...
+We are not sure how the Empire will blow up Ponyville, where the bombs are buried, and we cannot openly investigate under the Empire’s nose... But there is still time.
+
+Based on the information we have obtained so far, the Empire has prepared Operation <=Greenlight=> at §Y5§! locations, and we need to secretly find these “bombs” and dismantle them as soon as possible, without the Empire’s knowing.
+Bomb 1: Located at §Y[529.GetName]§! [GetC02OperationGreenlightBomb1Location] (Status: [GetC02OperationGreenlightBomb1Status])
+Bomb 2: Located at §Y[545.GetName]§! [GetC02OperationGreenlightBomb2Location] (Status: [GetC02OperationGreenlightBomb2Status])
+Bomb 3: Located at §Y[235.GetName]§! [GetC02OperationGreenlightBomb3Location] (Status: [GetC02OperationGreenlightBomb3Status])
+Bomb 4: Located at §Y[543.GetName]§! [GetC02OperationGreenlightBomb4Location] (Status: [GetC02OperationGreenlightBomb4Status])
+Bomb 5: Located at §Y[504.GetName]§! [GetC02OperationGreenlightBomb5Location] (Status: [GetC02OperationGreenlightBomb5Status])
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN]
+▇▇▇
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP]
+§RUnknown§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP]
+§GDiffused§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP]
+§YDiffusing...§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP]
+§YActive§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION]
+§Y[529.GetName]§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION]
+§Y[545.GetName]§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION]
+§Y[235.GetName]§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION]
+§Y[543.GetName]§!
+
+[en.C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION]
+§YPonyville Day Spa§!
+
+[zh.DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI]
+「红灯」行动
+
+[zh.DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI_desc]
+通过星光传递的消息，我们才刚刚得知... 帝国的疯狂计划，传说中的「绿灯」行动，正在将整个小马谷推向毁灭的边缘...
+我们还并不清楚帝国究竟要如何炸毁小马谷，炸弹都埋在哪里，我们也不能明目张胆地在帝国眼皮底下展开调查... 但一切还来得及。
+
+根据目前我们已经掌握的信息，帝国在§Y5§!处地点做好了「绿灯」行动的准备，我们需要尽快在暗中调查，找到这些“炸弹”，并想办法瞒着帝国拆除它们。
+炸弹1：位于[GetC02OperationGreenlightBomb1Location]（状态：[GetC02OperationGreenlightBomb1Status]）
+炸弹2：位于[GetC02OperationGreenlightBomb2Location]（状态：[GetC02OperationGreenlightBomb2Status]）
+炸弹3：位于[GetC02OperationGreenlightBomb3Location]（状态：[GetC02OperationGreenlightBomb3Status]）
+炸弹4：位于[GetC02OperationGreenlightBomb4Location]（状态：[GetC02OperationGreenlightBomb4Status]）
+炸弹5：位于§Y[504.GetName]§!的[GetC02OperationGreenlightBomb5Location]（状态：[GetC02OperationGreenlightBomb5Status]）
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN]
+▇▇▇
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP]
+§R未知§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP]
+§G已拆除§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP]
+§Y拆除中...§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP]
+§Y未拆除§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION]
+§Y[529.GetName]§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION]
+§Y[545.GetName]§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION]
+§Y[235.GetName]§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION]
+§Y[543.GetName]§!
+
+[zh.C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION]
+§Y小马谷水疗馆§!

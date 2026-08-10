@@ -1,0 +1,13 @@
+is_magic_country = {
+	custom_trigger_tooltip = {
+		tooltip = TECHNOLOGY_TECH_MAGI_UNICORN_TOOLTIP
+		OR = {
+			is_unicorn_country = yes
+			tag = C11
+			tag = C17
+			tag = C18
+			tag = C26
+			tag = C37
+		}
+	}
+}

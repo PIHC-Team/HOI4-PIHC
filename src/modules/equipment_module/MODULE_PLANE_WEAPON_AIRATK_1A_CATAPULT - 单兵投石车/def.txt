@@ -1,0 +1,21 @@
+MODULE_PLANE_WEAPON_AIRATK_1A_CATAPULT = {
+	category = pihc_plane_weapon_type_air_atk
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		weight = 4.0
+		air_attack = 8.0
+		reliability = -0.04
+	}
+	multiply_stats = {
+		air_attack = 0.08
+		air_agility = -0.05
+		air_superiority = 1.0
+	}
+	allow_mission_type = {
+		air_superiority
+	}
+	add_equipment_type = {
+		fighter
+	}
+	xp_cost = 5
+}

@@ -1,0 +1,10 @@
+resistance_support_pidgeons = {
+	name = resistance_support_pidgeons
+	desc = resistance_support_pidgeons_desc
+	outcome = resistance_support_pidgeons_outcome
+	picture = GFX_phase_resistance_support_pidgeons
+	icon = GFX_phase_resistance_support_pidgeons_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 50
+	}
+}

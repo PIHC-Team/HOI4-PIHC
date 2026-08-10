@@ -1,0 +1,13 @@
+spriteTypes = {
+    progressbartype = {
+        name = GFX_C01_angry_power_progressbar
+        texturefile1 = "gfx/interface/C01_angry_power_progressbar_full.dds"
+        texturefile2 = "gfx/interface/C01_angry_power_progressbar_empty.dds"
+        size = {
+            x = 500
+            y = 500
+        }
+        effectFile = "gfx/FX/progress.lua"
+        horizontal = no
+    }
+}

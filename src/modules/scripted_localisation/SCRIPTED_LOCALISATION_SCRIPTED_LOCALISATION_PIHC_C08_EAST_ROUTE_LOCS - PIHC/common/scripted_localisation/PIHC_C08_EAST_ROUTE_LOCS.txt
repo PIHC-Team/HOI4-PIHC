@@ -1,0 +1,210 @@
+defined_text = {
+    name = GetEastRouteC08Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C08_YES
+            C08 = {
+                controls_state = 888
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C08_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C08_YES
+            NOT = {
+                C08 = {
+                    controls_state = 888
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetEastRouteC18Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES
+            C18 = {
+                controls_state = 883
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C18_YES
+            NOT = {
+                C18 = {
+                    controls_state = 883
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetEastRouteC19Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES
+            C19 = {
+                controls_state = 560
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C19_YES
+            NOT = {
+                C19 = {
+                    controls_state = 560
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetEastRouteC20Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES
+            C20 = {
+                controls_state = 675
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C20_YES
+            NOT = {
+                C20 = {
+                    controls_state = 675
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetEastRouteC23Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES
+            C23 = {
+                controls_state = 261
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C23_YES
+            NOT = {
+                C23 = {
+                    controls_state = 261
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetEastRouteC28Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C28_YES
+            C28 = {
+                controls_state = 863
+            }
+        }
+        localization_key = C08_EAST_ROUTE_YES
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C28_NO
+        }
+        localization_key = C08_EAST_ROUTE_NO
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_EAST_ROUTE_C28_YES
+            NOT = {
+                C28 = {
+                    controls_state = 863
+                }
+            }
+        }
+        localization_key = C08_EAST_ROUTE_FALLEN
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C08_EAST_ROUTE_UNKNOWN
+    }
+}

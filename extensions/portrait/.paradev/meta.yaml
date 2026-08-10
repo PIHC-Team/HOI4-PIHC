@@ -1,0 +1,88 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/portrait
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-portrait
+items:
+-   kind: entity
+    identifier: pihc3-portrait-module
+    name: PIHC3 Portrait Module
+    desc: Project-owned portrait source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3PortraitModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+-   kind: extension
+    identifier: pihc3-portrait
+    name: PIHC3 Portrait
+    desc: PIHC3 portrait module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        dependencies:
+        - entity:pihc3-portrait-module
+        definition:
+            identifier: pihc3-portrait
+            name: PIHC3 Portrait
+            version: 0.2.3
+            desc: PIHC3 portrait module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-portrait-module
+            meta:
+                project: PIHC3
+                family: portrait
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-portrait
+    name: PIHC3 Portrait Compiler
+    desc: Registry-backed source slots and compiler hooks for portrait.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: portraits
+            title: Portraits
+            group: country
+            title_key: modules.portraits.title
+        dependencies:
+        - extension:pihc3-portrait
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-fd866154825311bc
+    name: PIHC3 Shared Portrait
+    desc: PIHC3 authoring template pihc3:portrait/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:portrait/basic
+            declaration:
+                title: PIHC3 Shared Portrait
+                family: portrait
+                args:
+                    title:
+                        required: true
+                files:
+                    portraits/{object_id}.txt: "{object_id} = {{\n    male = {{}}\n    female = {{}}\n}}\n"
+                directory: '{object_id} - {title}'

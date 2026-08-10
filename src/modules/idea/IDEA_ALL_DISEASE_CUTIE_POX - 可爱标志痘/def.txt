@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		IDEA_ALL_DISEASE_CUTIE_POX = {
+			picture = ALL_DISEASE_CUTIE_POX
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.25
+			}
+			on_remove = {
+				every_neighbor_country = {
+					if = {
+						limit = {
+							NOT = {
+								has_idea = IDEA_ALL_DISEASE_CUTIE_POX
+							}
+							is_pony_country = yes
+						}
+						INFECT_CUTIE_POX = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

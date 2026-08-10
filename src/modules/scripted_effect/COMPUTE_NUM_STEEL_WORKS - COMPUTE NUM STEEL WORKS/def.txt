@@ -1,0 +1,13 @@
+COMPUTE_NUM_STEEL_WORKS = {
+	set_variable = {
+		var = THIS.VAR_NUM_STEEL_WORKS_OWNED
+		value = 0
+	}
+	every_controlled_state = {
+		COMPUTE_NUM_STEEL_WORKS_IN_STATE = yes
+		add_to_variable = {
+			var = PREV.VAR_NUM_STEEL_WORKS_OWNED
+			value = THIS.VAR_NUM_STEEL_WORKS_IN_CURRENT_STATE
+		}
+	}
+}

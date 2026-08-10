@@ -1,0 +1,12 @@
+leader_traits = {
+	TRAIT_INDUSTRY_LEADER = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+	}
+}

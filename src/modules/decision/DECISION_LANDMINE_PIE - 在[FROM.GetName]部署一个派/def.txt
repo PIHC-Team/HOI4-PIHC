@@ -1,0 +1,83 @@
+DECISION_CATEGORY_SPECIAL_FORCES = {
+    DECISION_LANDMINE_PIE = {
+        fixed_random_seed = no
+        priority = 101
+        cost = 0
+        days_remove = 60
+        days_re_enable = 120
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        target_root_trigger = {
+            has_template_majority_unit = infantry_landmine
+            NOT = {
+                has_country_flag = PIHC_COUNTRY_FLAG_MINE_READY
+            }
+        }
+        target_trigger = {
+            ROOT = {
+                divisions_in_state = {
+                    size > 0
+                    state = FROM
+                    type = anti_tank
+                }
+            }
+        }
+        target_array = ROOT.controlled_states
+        available = {
+            any_country_division = {
+                division_has_majority_template = infantry_landmine
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = DECISION_LANDMINE_PIE_COMPLETE_EFFECT_TOOLTIP
+            hidden_effect = {
+                ROOT = {
+                    set_country_flag = PIHC_COUNTRY_FLAG_MINE_READY
+                }
+            }
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    ROOT = {
+                        controls_state = FROM
+                    }
+                }
+            }
+        }
+        cancel_effect = {
+            hidden_effect = {
+                FROM = {
+                    every_state_division = {
+                        limit = {
+                            OR = {
+                                division_has_battalion_in_template = tank_light
+                                division_has_battalion_in_template = tank_medium
+                                division_has_battalion_in_template = tank_heavy
+                                division_has_battalion_in_template = cannon_light
+                                division_has_battalion_in_template = cannon_medium
+                                division_has_battalion_in_template = cannon_heavy
+                            }
+                        }
+                        set_unit_organization = 0
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = PIHC_COUNTRY_FLAG_MINE_READY
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = DECISION_LANDMINE_PIE_REMOVE_EFFECT_TOOLTIP
+            hidden_effect = {
+                ROOT = {
+                    clr_country_flag = PIHC_COUNTRY_FLAG_MINE_READY
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = LANDMINE_PIE
+    }
+}

@@ -1,0 +1,14 @@
+MODULE_PROJECTILE_2C_DEERCRACKER = {
+	category = pihc_tank_projectile_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		soft_attack = -9999.9
+		hard_attack = -9999.9
+		recon = 20.0
+	}
+	multiply_stats = {
+		supply_consumption_factor = -1.0
+		default_morale = 1.0
+	}
+	xp_cost = 5
+}

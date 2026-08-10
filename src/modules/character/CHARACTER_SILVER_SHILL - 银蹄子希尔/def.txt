@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_SILVER_SHILL = {
+        name = CHARACTER_SILVER_SHILL_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SILVER_SHILL.dds"
+                small = "gfx/leaders/CHARACTER_SILVER_SHILL_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SILVER_SHILL_army.dds"
+                small = "gfx/leaders/CHARACTER_SILVER_SHILL_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SILVER_SHILL_navy.dds"
+                small = "gfx/leaders/CHARACTER_SILVER_SHILL_navy_small.dds"
+            }
+        }
+        gender = male
+        corps_commander = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 3
+            traits = {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+focus = {
+	id = FOCUS_C08_BALTIMARE_LINE
+	icon = GFX_FOCUS_C08_BALTIMARE_LINE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_NEW_OPPORTUNITY
+	}
+	cost = 1
+	completion_reward = {
+		518 = {
+			add_resistance = 30
+			add_resistance_target = 10
+			add_province_modifier = {
+				static_modifiers = {
+					MODIFIER_BALTIMARE_RESISTANCE
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		549 = {
+			add_resistance = 30
+			add_resistance_target = 10
+			add_province_modifier = {
+				static_modifiers = {
+					MODIFIER_BALTIMARE_RESISTANCE
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		665 = {
+			add_resistance = 30
+			add_resistance_target = 10
+			add_province_modifier = {
+				static_modifiers = {
+					MODIFIER_BALTIMARE_RESISTANCE
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		568 = {
+			add_resistance = 30
+			add_resistance_target = 10
+			add_province_modifier = {
+				static_modifiers = {
+					MODIFIER_BALTIMARE_RESISTANCE
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 21
+	y = 6
+}

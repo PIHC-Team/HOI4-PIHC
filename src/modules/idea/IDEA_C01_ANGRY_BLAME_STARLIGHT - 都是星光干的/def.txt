@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_BLAME_STARLIGHT = {
+			picture = C01_ANGRY_BLAME_STARLIGHT
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				stability_weekly_factor = 0.001
+				war_support_factor = 0.2
+				war_support_weekly = 0.001
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

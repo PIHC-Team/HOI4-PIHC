@@ -1,0 +1,13 @@
+MODULE_TURRET_3B_SPIN = {
+	category = pihc_tank_turret_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+		reliability = -0.12
+	}
+	multiply_stats = {
+		soft_attack = 0.3
+		hard_attack = 0.3
+	}
+	xp_cost = 8
+}

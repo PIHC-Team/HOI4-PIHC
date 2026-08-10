@@ -1,0 +1,44 @@
+focus = {
+	id = FOCUS_C01_LABOUR_DEVELOPMENT
+	icon = GFX_FOCUS_C01_LABOUR_DEVELOPMENT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_INDEPENDENT_INFRASTRUCTURE
+	}
+	available = {
+		has_war = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = C01_MAIN.32
+			days = 4
+			random_days = 3
+		}
+		add_timed_idea = {
+			idea = IDEA_ALL_POPULATION_GROWTH
+			days = 90
+		}
+		add_manpower = 8000
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+	}
+	cost = 2
+	x = 16
+	y = 5
+}

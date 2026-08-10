@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_MARCH_GUSTYSNOWS = {
+        name = CHARACTER_MARCH_GUSTYSNOWS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS.dds"
+                small = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS_army.dds"
+                small = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS_navy.dds"
+                small = "gfx/leaders/CHARACTER_MARCH_GUSTYSNOWS_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_MARCH_GUSTYSNOWS_DESC
+            traits = {
+
+            }
+            ideology = democratic_equatism
+        }
+    }
+}

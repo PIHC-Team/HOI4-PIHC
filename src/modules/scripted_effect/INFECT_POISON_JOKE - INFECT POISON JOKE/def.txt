@@ -1,0 +1,46 @@
+INFECT_POISON_JOKE = {
+	CALCULATE_DISEASE_RISK_FACTOR = yes
+	set_temp_variable = {
+		var = VAR_DISEASE_CHANCE_POISON_JOKE
+		value = 10
+	}
+	multiply_temp_variable = {
+		var = VAR_DISEASE_CHANCE_POISON_JOKE
+		value = VAR_DISEASE_RISK_FACTOR
+	}
+	round_temp_variable = VAR_DISEASE_CHANCE_POISON_JOKE
+	clamp_temp_variable = {
+		var = VAR_DISEASE_CHANCE_POISON_JOKE
+		min = 0
+		max = 100
+	}
+	set_temp_variable = {
+		var = VAR_NON_DISEASE_CHANCE_POISON_JOKE
+		value = 100
+	}
+	subtract_from_temp_variable = {
+		var = VAR_NON_DISEASE_CHANCE_POISON_JOKE
+		value = VAR_DISEASE_RISK_POISON_JOKE
+	}
+	random_list = {
+		seed = random
+		var:VAR_DISEASE_CHANCE_POISON_JOKE = {
+			country_event = {
+				id = DISEASE.7
+				days = 1
+				random_days = 3
+			}
+		}
+		var:VAR_NON_DISEASE_CHANCE_POISON_JOKE = {
+		}
+	}
+	if = {
+		limit = {
+			tag = C18
+			NOT = {
+				has_completed_focus = FOCUS_C18_001_HEALTH_CARE
+			}
+		}
+		C18_ADD_NIRIK_0_10 = yes
+	}
+}

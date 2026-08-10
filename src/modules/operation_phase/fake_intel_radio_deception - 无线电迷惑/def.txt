@@ -1,0 +1,10 @@
+fake_intel_radio_deception = {
+	name = fake_intel_radio_deception
+	desc = fake_intel_radio_deception_desc
+	outcome = fake_intel_radio_deception_outcome
+	picture = GFX_phase_fake_intel_radio_deception
+	icon = GFX_phase_fake_intel_radio_deception_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 500
+	}
+}

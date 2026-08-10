@@ -1,0 +1,17 @@
+UNLOCK_NAVY_BASIC = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			TECHNOLOGY_MTG_SHIP_SEASURGE = 1
+			TECHNOLOGY_MTG_SHIP_SEACOURTYARD = 1
+		}
+	}
+	else = {
+		set_technology = {
+			TECHNOLOGY_SHIP_SEASURGE = 1
+			TECHNOLOGY_SHIP_SEACOURTYARD = 1
+		}
+	}
+}

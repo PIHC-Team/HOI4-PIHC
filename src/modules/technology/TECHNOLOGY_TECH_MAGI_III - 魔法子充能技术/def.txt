@@ -1,0 +1,36 @@
+technologies = {
+    TECHNOLOGY_TECH_MAGI_III = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 10
+                y = 24
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_magical
+            pihc_magic_theory
+            pihc_magictronics
+            pihc_nuclear
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_building = {
+            building = nuclear_reactor
+            level = 1
+        }
+        special_project_specialization = {
+            specialization_nuclear
+        }
+        path = {
+        }
+        research_cost = 12.0
+        start_year = 1008
+    }
+}

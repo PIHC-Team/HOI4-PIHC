@@ -1,0 +1,145 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/special_project_reward
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-special-project-reward
+items:
+-   kind: entity
+    identifier: pihc3-special-project-reward-module
+    name: PIHC3 Special Project Reward Module
+    desc: Project-owned special_project_reward source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3SpecialProjectRewardModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-special-project-reward
+    name: PIHC3 Special Project Reward
+    desc: PIHC3 special_project_reward module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-special-project-reward-module
+        definition:
+            identifier: pihc3-special-project-reward
+            name: PIHC3 Special Project Reward
+            version: 0.2.4
+            desc: PIHC3 special_project_reward module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-special-project-reward-module
+            meta:
+                project: PIHC3
+                family: special_project_reward
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-special-project-reward
+    name: PIHC3 Special Project Reward Compiler
+    desc: Registry-backed source slots and compiler hooks for special_project_reward.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: special-project-reward
+            title: Special Project Rewards
+            group: military
+            title_key: modules.specialProjectRewards.title
+        dependencies:
+        - extension:pihc3-special-project-reward
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-93fef89f4a0a103d
+    name: PIHC3 Basic Special Project Reward
+    desc: PIHC3 authoring template pihc3:special_project_reward/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:special_project_reward/basic
+            declaration:
+                title: PIHC3 Basic Special Project Reward
+                family: special_project_reward
+                directory: '{object_id} - {title}'
+                args:
+                    title:
+                        required: true
+                        label: Reward name
+                    description:
+                        default: ''
+                        type: text
+                        label: Description
+                    option_title:
+                        default: Accept reward
+                        label: Option text
+                    effect:
+                        default: country_effects = {{ add_political_power = 50 }}
+                        type: text
+                        label: Reward effect
+                        description: PDX effect block inserted into the reward option.
+                    fire_only_once:
+                        default: 'no'
+                        type: choice
+                        label: Fire only once
+                        choices:
+                        - 'no'
+                        - 'yes'
+                    threshold_min:
+                        default: '0'
+                        type: number
+                        label: Minimum threshold
+                        description: Minimum project result included in this reward's
+                            threshold.
+                    threshold_max:
+                        default: '100'
+                        type: number
+                        label: Maximum threshold
+                        description: Maximum project result included in this reward's
+                            threshold.
+                    language:
+                        default: en
+                        type: choice
+                        label: Localization language
+                        choices:
+                        - en
+                        - zh
+                files:
+                    def.txt: "{object_id} = {{\n  fire_only_once = {fire_only_once}\n\
+                        \  threshold = {{\n    min = {threshold_min}\n    max = {threshold_max}\n\
+                        \  }}\n  option = {{\n    {effect}\n    token = {object_id}_o0\n\
+                        \  }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_o0]
+
+                        {option_title}
+
+                        '

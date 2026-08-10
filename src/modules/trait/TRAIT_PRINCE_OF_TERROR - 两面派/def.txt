@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_PRINCE_OF_TERROR = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		resistance_damage_to_garrison = -0.25
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+	}
+}

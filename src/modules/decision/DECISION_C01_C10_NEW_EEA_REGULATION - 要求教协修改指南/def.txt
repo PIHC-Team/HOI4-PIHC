@@ -1,0 +1,58 @@
+DECISION_CATEGORY_C01_UNIFICATION = {
+    DECISION_C01_C10_NEW_EEA_REGULATION = {
+        fixed_random_seed = no
+        priority = 110
+        cost = 100
+        days_remove = 28
+        fire_only_once = yes
+        visible = {
+            has_completed_focus = FOCUS_C01_UNIFICATION_POLICY
+            C10 = {
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+                }
+            }
+        }
+        available = {
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+            power_balance_value = {
+                id = BOP_C10_INDEPENDENCE
+                value < -0.01
+            }
+        }
+        remove_effect = {
+            C10 = {
+                remove_all_power_balance_modifiers = {
+                    id = BOP_C10_INDEPENDENCE
+                }
+                add_power_balance_value = {
+                    id = BOP_C10_INDEPENDENCE
+                    value = -0.3
+                    tooltip_side = BOP_C10_INDEPENDENCE_LEFT_SIDE
+                }
+                add_power_balance_modifier = {
+                    id = BOP_C10_INDEPENDENCE
+                    modifier = BOP_C10_INDEPENDENCE_NEW_EEA_REGULATION
+                }
+            }
+            news_event = {
+                id = C01_MAIN.7
+                days = 1
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        icon = C01_C10_NEW_EEA_REGULATION
+    }
+}

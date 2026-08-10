@@ -1,0 +1,8 @@
+is_democratic_seller_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = "Democratic Countries"
+		FROM = {
+			has_government = democratic
+		}
+	}
+}

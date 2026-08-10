@@ -1,0 +1,35 @@
+PIHC_C08_PIN_GAME_2_INIT = {
+	hidden_effect = {
+		C08 = {
+			clear_array = C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234
+			add_to_array = {
+				array = C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234
+				value = 1
+			}
+			add_to_array = {
+				array = C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234
+				value = 2
+			}
+			add_to_array = {
+				array = C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234
+				value = 3
+			}
+			add_to_array = {
+				array = C08.ARRAY_C08_PIN_GAME_2_CONSTANT_1234
+				value = 4
+			}
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_CONTACT_COUNT
+				value = 0
+			}
+			clear_array = C08.ARRAY_C08_PIN_GAME_2_CONTACT_SCENTS
+			clear_array = C08.ARRAY_C08_PIN_GAME_2_CONTACT_BOTTLES
+			PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY = yes
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_ANSWER_BOTTLE
+				value = 0
+			}
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_PIN_GAME_2_READY
+		}
+	}
+}

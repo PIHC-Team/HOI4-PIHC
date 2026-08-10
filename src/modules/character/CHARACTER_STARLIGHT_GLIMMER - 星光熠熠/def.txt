@@ -1,0 +1,28 @@
+characters = {
+    CHARACTER_STARLIGHT_GLIMMER = {
+        name = CHARACTER_STARLIGHT_GLIMMER_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_STARLIGHT_GLIMMER_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_army.dds"
+                small = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_navy.dds"
+                small = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_STARLIGHT_GLIMMER_DESC
+            traits = {
+                TRAIT_STARLIGHT_GLIMMER_RESISTANCE_LEADER
+                TRAIT_STARLIGHT_GLIMMER_FORMER_PRINCIPLE
+            }
+            ideology = harmonicism_monarchy
+        }
+    }
+}

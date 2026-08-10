@@ -1,0 +1,47 @@
+state = {
+    id = 336
+    name = STATE_336
+    provinces = {
+        1481
+        1818
+        2650
+        3865
+        4160
+        4820
+        5213
+        6293
+        6387
+        7205
+        7399
+        9361
+        10470
+        10483
+        10527
+        10551
+        10598
+    }
+    manpower = 84931
+    state_category = city
+    history = {
+        owner = C04
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 3
+            arms_factory = 1
+            farm_complex = 1
+            air_base = 2
+            9361 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C04
+        victory_points = {
+            9361
+            10
+        }
+    }
+    resources = {
+        logs = 8
+        steel = 18
+    }
+}

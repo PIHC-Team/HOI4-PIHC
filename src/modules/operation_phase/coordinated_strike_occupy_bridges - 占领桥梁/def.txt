@@ -1,0 +1,12 @@
+coordinated_strike_occupy_bridges = {
+	name = coordinated_strike_occupy_bridges
+	desc = coordinated_strike_occupy_bridges_desc
+	outcome = coordinated_strike_occupy_bridges_outcome
+	picture = GFX_phase_coordinated_strike_occupy_bridges
+	icon = GFX_phase_coordinated_strike_occupy_bridges_small
+	requirements = {
+	}
+	equipment = {
+		ARCHETYPE_INFANTRY = 1000
+	}
+}

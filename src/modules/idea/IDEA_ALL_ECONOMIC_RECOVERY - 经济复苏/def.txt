@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		IDEA_ALL_ECONOMIC_RECOVERY = {
+			picture = ALL_ECONOMIC_RECOVERY
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				stability_weekly_factor = 0.01
+				local_resources_factor = 0.1
+			}
+			cancel = {
+				has_war = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_war = no
+					}
+					add_ideas = IDEA_ALL_ECONOMIC_GROWTH
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

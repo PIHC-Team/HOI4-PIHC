@@ -1,0 +1,146 @@
+NAMES_GROUP_C17_ARTILLERY = {
+    name = "驯鹿火炮巡逻队 (Reindeer Artillery Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "驯鹿火炮巡逻队%d分队 (Reindeer Artillery Patrol Team %d)"
+}
+NAMES_GROUP_C17_TANK_LIGHT = {
+    name = "驯鹿轻型装甲巡逻队 (Reindeer Light Armor Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "驯鹿轻型装甲巡逻队%d分队 (Reindeer Light Armor Patrol Team %d)"
+}
+NAMES_GROUP_C17_TRADITIONAL_REGULAR = {
+    name = "驯鹿常规步兵巡逻队 (Reindeer Regular Infantry Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "驯鹿常规步兵巡逻队%d分队 (Reindeer Regular Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C17_TANK_HEAVY = {
+    name = "驯鹿重型装甲巡逻队 (Reindeer Heavy Armor Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "驯鹿重型装甲巡逻队%d分队 (Reindeer Heavy Armor Patrol Team %d)"
+}
+NAMES_GROUP_C17_TRADITIONAL_SMALL = {
+    name = "驯鹿小型步兵巡逻队 (Reindeer Small Infantry Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "驯鹿小型步兵巡逻队%d分队 (Reindeer Small Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C17_AUTOMATA = {
+    name = "驯鹿自动作战巡逻队 (Reindeer Automata Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "驯鹿自动作战巡逻队%d分队 (Reindeer Automata Patrol Team %d)"
+}
+NAMES_GROUP_C17_SHIELD = {
+    name = "驯鹿重装步兵巡逻队 (Reindeer Heavy Infantry Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "驯鹿重装步兵巡逻队%d分队 (Reindeer Heavy Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C17_MAGICAL = {
+    name = "驯鹿魔法步兵巡逻队 (Reindeer Magical Infantry Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "驯鹿魔法步兵巡逻队%d分队 (Reindeer Magical Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C17_INFANTRY_MIX = {
+    name = "驯鹿协同巡逻队 (Reindeer Concerted Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "驯鹿协同巡逻队%d分队 (Reindeer Concerted Patrol Team %d)"
+}
+NAMES_GROUP_C17_MOTORIZED = {
+    name = "驯鹿机动步兵巡逻队 (Reindeer Motorized Infantry Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "驯鹿机动步兵巡逻队%d分队 (Reindeer Motorized Infantry Patrol Team %d)"
+}
+NAMES_GROUP_C17_TANK_MEDIUM = {
+    name = "驯鹿中型装甲巡逻队 (Reindeer Medium Armor Patrol Team)"
+    for_countries = {
+        C17
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "驯鹿中型装甲巡逻队%d分队 (Reindeer Medium Armor Patrol Team %d)"
+}

@@ -1,0 +1,9 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			ROOT = {
+				COMPUTE_TRADE_CENTER_AUTO_TRADE = yes
+			}
+		}
+	}
+}

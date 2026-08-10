@@ -1,0 +1,11 @@
+TOGGLE_AUTO_TRADE_CRYSTALS_SELL = {
+	if = {
+		limit = {
+			has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_CRYSTALS_SELL
+		}
+		DISABLE_AUTO_TRADE_CRYSTALS_SELL = yes
+	}
+	else = {
+		ENABLE_AUTO_TRADE_CRYSTALS_SELL = yes
+	}
+}

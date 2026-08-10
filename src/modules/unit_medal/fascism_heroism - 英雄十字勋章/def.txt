@@ -1,0 +1,17 @@
+@cost = 30
+unit_medals = {
+	fascism_heroism = {
+		available = {
+			has_government = fascism
+		}
+		frame = 4
+		icon = GFX_medal_icon_fascism
+		cost = @cost
+		unit_modifiers = {
+			breakthrough_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

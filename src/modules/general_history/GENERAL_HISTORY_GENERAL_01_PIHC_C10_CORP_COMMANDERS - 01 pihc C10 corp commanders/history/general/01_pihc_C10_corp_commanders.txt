@@ -1,0 +1,74 @@
+C10 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C10_01_000
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 3
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C10_01_000
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 3
+                    skill = 2
+                    traits = {
+
+                    }
+                }
+                gender = female
+            }
+        }
+    }
+}
+C10 = {
+    random_list = {
+        seed = random
+        1 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C10_01_001
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 4
+                    planning_skill = 6
+                    logistics_skill = 1
+                    skill = 4
+                    traits = {
+
+                    }
+                }
+                gender = male
+            }
+        }
+        5 = {
+            generate_character = {
+                token_base = CHARACTER_GENERIC_RANDOM_CORPS_COMMANDER_C10_01_001
+                corps_commander = {
+                    attack_skill = 1
+                    defense_skill = 4
+                    planning_skill = 6
+                    logistics_skill = 1
+                    skill = 4
+                    traits = {
+
+                    }
+                }
+                gender = female
+            }
+        }
+    }
+}

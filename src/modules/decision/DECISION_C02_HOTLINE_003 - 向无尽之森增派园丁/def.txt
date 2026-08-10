@@ -1,0 +1,46 @@
+DECISION_CATEGORY_C02_HOTLINE = {
+    DECISION_C02_HOTLINE_003 = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 5
+        selectable_mission = yes
+        days_mission_timeout = 56
+        activation = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_HOTLINE_003
+        }
+        complete_effect = {
+            add_manpower = -20
+            hidden_effect = {
+                random = {
+                    chance = 80
+                    country_event = {
+                        id = C02_HOTLINE.5
+                        days = 7
+                        random_days = 30
+                    }
+                }
+                country_event = {
+                    id = C02_HOTLINE.35
+                    days = 64
+                }
+            }
+        }
+        timeout_effect = {
+            hidden_effect = {
+                random = {
+                    chance = 80
+                    country_event = {
+                        id = C02_HOTLINE.4
+                        days = 1
+                        random_days = 3
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+        fire_only_once = yes
+        icon = C02_HOTLINE_003
+    }
+}

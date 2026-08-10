@@ -1,0 +1,157 @@
+add_namespace = C08_ENIO
+country_event = {
+    id = C08_ENIO.1
+    picture = GFX_EVENT_C08_ENIO_1
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_1
+    desc = EVENT_C08_ENIO_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C08_ENIO_1_TOOLTIP
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_ENIO_OUTPOST_FIX
+        }
+        name = EVENT_C08_ENIO_1_o0
+    }
+}
+country_event = {
+    id = C08_ENIO.2
+    picture = GFX_EVENT_C08_ENIO_2
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_2
+    desc = EVENT_C08_ENIO_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_OUTPOST_FIX_2
+                }
+                country_event = {
+                    id = C08_ENIO.3
+                    days = 5
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_OUTPOST_FIX_1
+                }
+                country_event = {
+                    id = C08_ENIO.4
+                    days = 5
+                }
+            }
+        }
+        name = EVENT_C08_ENIO_2_o0
+    }
+}
+country_event = {
+    id = C08_ENIO.3
+    picture = GFX_EVENT_C08_ENIO_3
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_3
+    desc = EVENT_C08_ENIO_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C08_ENIO.5
+                days = 5
+            }
+        }
+        name = EVENT_C08_ENIO_3_o0
+    }
+}
+country_event = {
+    id = C08_ENIO.4
+    picture = GFX_EVENT_C08_ENIO_4
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_4
+    desc = EVENT_C08_ENIO_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C08_ENIO_4_TOOLTIP
+        add_manpower = -21
+        add_stability = -0.05
+        name = EVENT_C08_ENIO_4_o0
+    }
+}
+country_event = {
+    id = C08_ENIO.5
+    picture = GFX_EVENT_C08_ENIO_5
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_5
+    desc = EVENT_C08_ENIO_5_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = C08_ENIO.6
+            }
+        }
+        name = EVENT_C08_ENIO_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C08_ENIO.7
+            }
+        }
+        name = EVENT_C08_ENIO_5_o1
+    }
+}
+country_event = {
+    id = C08_ENIO.6
+    picture = GFX_EVENT_C08_ENIO_6
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_6
+    desc = EVENT_C08_ENIO_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C08_ENIO_6_TOOLTIP
+        add_political_power = -50
+        name = EVENT_C08_ENIO_6_o0
+    }
+}
+country_event = {
+    id = C08_ENIO.7
+    picture = GFX_EVENT_C08_ENIO_7
+    is_triggered_only = yes
+    title = EVENT_C08_ENIO_7
+    desc = EVENT_C08_ENIO_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C08_ENIO_7_TOOLTIP
+        custom_effect_tooltip = C08_OCCURTISM_INC_10
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_PLANE
+        }
+        add_tech_bonus = {
+            bonus = 0.25
+            uses = 2
+            category = pihc_air
+        }
+        add_to_variable = {
+            var = VAR_C08_OCCULTISM
+            value = 10
+        }
+        name = EVENT_C08_ENIO_7_o0
+    }
+}

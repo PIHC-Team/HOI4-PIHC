@@ -1,0 +1,9 @@
+defined_text = {
+    name = GetCustomEffectTooltip
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = PIHC_CUSTOM_EFFECT
+    }
+}

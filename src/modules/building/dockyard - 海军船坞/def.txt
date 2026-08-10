@@ -1,0 +1,17 @@
+buildings = {
+	dockyard = {
+		base_cost = 6400
+		value = 5
+		infrastructure_construction_effect = yes
+		only_costal = yes
+		naval_production = 1
+		level_cap = {
+			state_max = 20
+			shares_slots = yes
+		}
+		show_on_map = 1
+		show_on_map_meshes = 3
+		icon_frame = 4
+	}
+}
+

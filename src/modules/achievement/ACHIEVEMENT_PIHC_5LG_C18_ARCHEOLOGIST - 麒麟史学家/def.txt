@@ -1,0 +1,21 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_5LG_C18_ARCHEOLOGIST = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		is_ironman = yes
+		tag = C18
+	}
+	happened = {
+		C18 = {
+			TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_BEI_MING_CHRONICLES = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_YIN_YUN_CHRONICLES = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_HUA_HAI_CHRONICLES = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES = yes
+		}
+	}
+}

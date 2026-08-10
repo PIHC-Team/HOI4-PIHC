@@ -1,0 +1,288 @@
+add_namespace = C09_MAIN
+country_event = {
+    id = C09_MAIN.1
+    picture = GFX_EVENT_C09_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C09_MAIN_1
+    desc = EVENT_C09_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C01
+        }
+        hidden_effect = {
+            every_other_country = {
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+                    }
+                    country_event = {
+                        id = C09_MAIN.1
+                        days = 3
+                    }
+                }
+            }
+        }
+        531 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = C16
+                }
+                C16 = {
+                    give_resource_rights = {
+                        state = 531
+                        receiver = C01
+                        resources = {
+                            logs
+                        }
+                    }
+                }
+            }
+        }
+        526 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = C16
+                }
+                C16 = {
+                    give_resource_rights = {
+                        state = 526
+                        receiver = C01
+                        resources = {
+                            logs
+                        }
+                    }
+                }
+            }
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_300 = yes
+        name = EVENT_C09_MAIN_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C09
+        }
+        531 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = C16
+                }
+                remove_core_of = C16
+                transfer_state_to = C09
+                set_demilitarized_zone = no
+            }
+        }
+        526 = {
+            if = {
+                limit = {
+                    is_owned_and_controlled_by = C16
+                }
+                remove_core_of = C16
+                transfer_state_to = C09
+                set_demilitarized_zone = no
+            }
+        }
+        give_resource_rights = {
+            state = 531
+            receiver = C01
+            resources = {
+                logs
+            }
+        }
+        give_resource_rights = {
+            state = 526
+            receiver = C01
+            resources = {
+                logs
+            }
+        }
+        name = EVENT_C09_MAIN_1_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C01
+                tag = C09
+            }
+        }
+        name = EVENT_C09_MAIN_1_o2
+    }
+}
+country_event = {
+    id = C09_MAIN.2
+    picture = GFX_EVENT_C09_MAIN_2
+    immediate = {
+        hidden_effect = {
+            add_resource = {
+                type = logs
+                amount = 45
+                state = 526
+            }
+            add_resource = {
+                type = logs
+                amount = 45
+                state = 531
+            }
+        }
+    }
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C09_MAIN_2
+    desc = EVENT_C09_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            set_global_flag = PIHC_ACHIEVEMENT_FLAG_C09_OAK_TREES
+        }
+        name = EVENT_C09_MAIN_2_o0
+    }
+}
+country_event = {
+    id = C09_MAIN.3
+    picture = GFX_EVENT_C09_MAIN_3
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C09_MAIN_3
+    desc = EVENT_C09_MAIN_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C09
+        }
+        hidden_effect = {
+            random_list = {
+                seed = random
+                48 = {
+                    news_event = {
+                        id = C09_MAIN.4
+                    }
+                }
+                52 = {
+                    news_event = {
+                        id = C09_MAIN.5
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    tag = C09
+                }
+                country_event = {
+                    id = C09_MAIN.3
+                    days = 150
+                    random_days = 30
+                }
+            }
+        }
+        name = EVENT_C09_MAIN_3_o0
+    }
+}
+news_event = {
+    id = C09_MAIN.4
+    picture = GFX_EVENT_C09_MAIN_4
+    major = yes
+    show_major = {
+        OR = {
+            has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
+            has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+            is_in_faction_with = C09
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C09_MAIN_4
+    desc = EVENT_C09_MAIN_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C09
+        }
+        custom_effect_tooltip = WETM_DEV_BONDS_APPRECIATION
+        hidden_effect = {
+            subtract_from_variable = {
+                var = global.VAR_DEV_BONDS_EXCHANGE
+                value = 10
+            }
+            UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
+        }
+        name = EVENT_C09_MAIN_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C09
+            }
+        }
+        custom_effect_tooltip = WETM_DEV_BONDS_APPRECIATION
+        name = EVENT_C09_MAIN_4_o1
+    }
+}
+news_event = {
+    id = C09_MAIN.5
+    picture = GFX_EVENT_C09_MAIN_5
+    major = yes
+    show_major = {
+        OR = {
+            has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
+            has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_BLUEPRINT = yes
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+            is_in_faction_with = C09
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C09_MAIN_5
+    desc = EVENT_C09_MAIN_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            tag = C09
+        }
+        custom_effect_tooltip = WETM_DEV_BONDS_DEPRECIATION
+        hidden_effect = {
+            add_to_variable = {
+                var = global.VAR_DEV_BONDS_EXCHANGE
+                value = 10
+            }
+            UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
+        }
+        name = EVENT_C09_MAIN_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        trigger = {
+            NOT = {
+                tag = C09
+            }
+        }
+        custom_effect_tooltip = WETM_DEV_BONDS_DEPRECIATION
+        name = EVENT_C09_MAIN_5_o1
+    }
+}

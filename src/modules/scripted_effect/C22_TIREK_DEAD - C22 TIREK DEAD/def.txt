@@ -1,0 +1,378 @@
+C22_TIREK_DEAD = {
+	C22 = {
+		if = {
+			limit = {
+				has_country_leader = {
+					character = CHARACTER_LORD_TIREK
+					ruling_only = yes
+				}
+			}
+			kill_country_leader = yes
+		}
+		add_popularity = {
+			ideology = despotic
+			popularity = 1.0
+		}
+		add_popularity = {
+			ideology = harmonicism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = peacism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = despotic
+		}
+		deactivate_advisor = CHARACTER_SCORPAN
+		promote_character = {
+			character = CHARACTER_SCORPAN
+			ideology = despotic_harmonicism
+		}
+		load_focus_tree = generic_focus
+		add_named_threat = {
+			threat = 10
+			name = EVENT_SUPER_6_THREAT
+		}
+		417 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		66 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		469 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		468 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				remove_core_of = C22
+				transfer_state_to = C19
+			}
+		}
+		93 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		74 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		454 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		525 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		75 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		81 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				if = {
+					limit = {
+						country_exists = C64
+					}
+					add_core_of = C64
+					transfer_state_to = C64
+				}
+				else = {
+					add_core_of = C19
+					transfer_state_to = C19
+				}
+				remove_core_of = C22
+			}
+		}
+		115 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		128 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		626 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		671 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		669 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		678 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		697 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		679 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		657 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		129 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		591 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		583 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		620 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		116 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		117 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+		616 = {
+			if = {
+				limit = {
+					is_core_of = C22
+				}
+				add_core_of = C20
+				transfer_state_to = C20
+				remove_core_of = C22
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+COMPUTE_TRADE_CENTER_LIMIT = {
+	COMPUTE_NUM_TRADE_CENTERS = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_LIMIT
+		value = VAR_NUM_TRADE_CENTERS_OWNED
+	}
+	multiply_variable = {
+		var = VAR_TRADE_CENTER_LIMIT
+		value = VAR_TRADE_CENTER_LIMIT_PER
+	}
+	add_to_variable = {
+		var = VAR_TRADE_CENTER_LIMIT
+		value = VAR_TRADE_CENTER_LIMIT_EXTRA
+	}
+}

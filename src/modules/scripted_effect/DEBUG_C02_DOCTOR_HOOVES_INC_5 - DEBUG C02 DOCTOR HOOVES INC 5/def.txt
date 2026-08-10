@@ -1,0 +1,13 @@
+DEBUG_C02_DOCTOR_HOOVES_INC_5 = {
+	C02 = {
+		add_to_variable = {
+			var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+			value = 0.05
+		}
+		clamp_variable = {
+			var = C02.VAR_C02_ELECTION_DOCTOR_HOOVES
+			min = 0.0
+			max = 1.0
+		}
+	}
+}

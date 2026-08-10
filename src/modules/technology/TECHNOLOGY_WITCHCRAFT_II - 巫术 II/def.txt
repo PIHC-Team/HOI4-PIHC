@@ -1,0 +1,31 @@
+technologies = {
+    TECHNOLOGY_WITCHCRAFT_II = {
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 8
+                y = 6
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_infantry
+            pihc_magical
+            pihc_witchcraft
+        }
+        enable_equipments = {
+            EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_WITCHCRAFT_III
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1002
+    }
+}

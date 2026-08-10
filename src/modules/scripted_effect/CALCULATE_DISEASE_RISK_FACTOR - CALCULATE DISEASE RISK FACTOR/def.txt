@@ -1,0 +1,87 @@
+CALCULATE_DISEASE_RISK_FACTOR = {
+	set_variable = {
+		var = VAR_DISEASE_RISK_FACTOR
+		value = 1.0
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_1_IMMUNE
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 0.0
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_2_MYSO
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 0.2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_3_CLEAN
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 0.8
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_4_NORMAL
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 1.0
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_5_DIRTY
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 1.25
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_6_FILTHY
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 2.0
+		}
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HYGIENE_7_PLAGUE
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 5.0
+		}
+	}
+	if = {
+		limit = {
+			has_tech = TECHNOLOGY_SUPPORT_DISEASE_I
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 0.8
+		}
+	}
+	if = {
+		limit = {
+			has_tech = TECHNOLOGY_SUPPORT_DISEASE_II
+		}
+		multiply_variable = {
+			var = VAR_DISEASE_RISK_FACTOR
+			value = 0.8
+		}
+	}
+}

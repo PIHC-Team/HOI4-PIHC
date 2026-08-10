@@ -1,0 +1,15 @@
+scripted_gui = {
+	state_lore_container_text_gui = {
+		context_type = player_context
+		window_name = state_lore_text_container
+		dirty = ROOT.state_lore_text_state_id
+		visible = {
+			has_variable = state_lore_text_state_id
+		}
+		effects = {
+			state_lore_text_close_button_click = {
+				clear_variable = state_lore_text_state_id
+			}
+		}
+	}
+}

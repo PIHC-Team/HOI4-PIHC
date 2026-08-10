@@ -1,0 +1,61 @@
+focus = {
+	id = FOCUS_C02_PONY_OR_A_RAT
+	icon = GFX_FOCUS_C02_PONY_OR_A_RAT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C02_AN_OLD_FRIEND
+	}
+	prerequisite = {
+		focus = FOCUS_C02_ARMY_HAMBURGER
+	}
+	cost = 4
+	completion_reward = {
+		add_political_power = 50
+		custom_effect_tooltip = FOCUS_C02_PONY_OR_A_RAT_TOOLTIP
+		hidden_effect = {
+			C08 = {
+				set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+			}
+			hidden_effect = {
+				C11 = {
+					country_event = {
+						id = CECIA.3
+						days = 1
+						random_days = 60
+					}
+				}
+			}
+		}
+	}
+	available = {
+		NOT = {
+			has_war_with = C08
+		}
+		custom_trigger_tooltip = {
+			tooltip = C02_PIN_SWITCH_ON_TOOLITP
+			has_country_flag = PIHC_INVENTORY_ITEM_5LG_C02_PIN_o0_SWITCH_ON
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_SUPPRESSED_BY_C01_TOOLTIP
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 7
+	y = 8
+}

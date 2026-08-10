@@ -1,0 +1,41 @@
+pihc_land_rose_of_will_combat_support_a = {
+	track = combat_support
+	name = DOCTRINE_ARMY_3_3A_PONIES_WAR
+	description = DOCTRINE_ARMY_3_3A_PONIES_WAR_DESC
+	icon = GFX_doctrine_pihc_land_rose_of_will_combat_support_a_medium
+	xp_cost = 100
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	conscription_factor = 0.05
+	additional_brigade_column_size = 1
+	resistance_damage_to_garrison_on_our_occupied_states = 0.1
+	enable_tactic = tactic_human_wave_tactics
+	rewards = {
+		battlefield_at_home = {
+			industrial_capacity_factory = 0.1
+			cic_construction_boost_factor = 0.1
+			war_support_factor = 0.1
+		}
+		each_to_own_jobs = {
+			max_command_power = 20
+			command_power_gain_mult = 0.25
+			land_reinforce_rate = 0.06
+			supply_consumption_factor = -0.05
+			coordination_bonus = 0.02
+			category_all_infantry = {
+				casualty_trickleback = 0.02
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+on_actions = {
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_idea = IDEA_EIJC_MEMBER
+					}
+					ROOT = {
+						NOT = {
+							has_idea = IDEA_EIJC_MEMBER
+						}
+					}
+				}
+				ROOT = {
+					add_ideas = IDEA_EIJC_MEMBER
+				}
+			}
+		}
+	}
+}

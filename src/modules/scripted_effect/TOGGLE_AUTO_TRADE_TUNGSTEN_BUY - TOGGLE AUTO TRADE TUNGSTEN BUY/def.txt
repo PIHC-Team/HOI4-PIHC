@@ -1,0 +1,11 @@
+TOGGLE_AUTO_TRADE_TUNGSTEN_BUY = {
+	if = {
+		limit = {
+			has_country_flag = PIHC_COUNTRY_FLAG_AUTO_TRADE_TUNGSTEN_BUY
+		}
+		DISABLE_AUTO_TRADE_TUNGSTEN_BUY = yes
+	}
+	else = {
+		ENABLE_AUTO_TRADE_TUNGSTEN_BUY = yes
+	}
+}

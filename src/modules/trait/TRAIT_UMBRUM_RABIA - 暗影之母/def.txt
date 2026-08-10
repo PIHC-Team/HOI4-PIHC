@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_UMBRUM_RABIA = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		monthly_population = 0.15
+		transcendence_drift = 0.02
+	}
+}

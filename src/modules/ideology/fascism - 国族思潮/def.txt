@@ -1,0 +1,86 @@
+ideologies = {
+	fascism = {
+		types = {
+			fascism_republic = {
+			}
+			fascism_democracy = {
+			}
+			fascism_monarchy = {
+			}
+			fascism_oligarchy = {
+			}
+			fascism_tribe = {
+			}
+			fascism_freestate = {
+			}
+			fascism_organization = {
+			}
+			fascism_duchy = {
+				can_be_randomly_selected = no
+			}
+			fascism_authoritarianism = {
+				can_be_randomly_selected = no
+			}
+			fascism_totalitarianism = {
+				can_be_randomly_selected = no
+			}
+			fascism_utopia = {
+				can_be_randomly_selected = no
+			}
+			fascism_dystopia = {
+				can_be_randomly_selected = no
+			}
+			fascism_theocracy = {
+			}
+			fascism_technocracy = {
+			}
+			fascism_militarism = {
+			}
+			fascism_dogmatism = {
+			}
+			fascism_federal = {
+				can_be_randomly_selected = no
+			}
+			fascism_spirit = {
+			}
+			fascism_pegasi = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = {
+			75
+			60
+			60
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		can_be_boosted = yes
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		modifiers = {
+			annex_cost_factor = 0.05
+			puppet_cost_factor = 0.05
+			justify_war_goal_when_in_major_war_time = -0.8
+			drift_defence_factor = 0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			embargo_cost_factor = -0.3
+			embargo_threshold_factor = -0.3
+		}
+		ai_fascist = yes
+		ai_ideology_wanted_units_factor = 1.5
+		ai_give_core_state_control_threshold = 10000
+	}
+}

@@ -1,0 +1,55 @@
+focus = {
+	id = FOCUS_C01_C03_DELIVERY
+	icon = GFX_FOCUS_C01_C03_DELIVERY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_C03_WHAT_IS_SHE_LIKE
+	}
+	cost = 4
+	select_effect = {
+		hidden_effect = {
+			C02 = {
+				country_event = {
+					id = C02_HOTLINE.37
+					days = 1
+				}
+			}
+		}
+	}
+	continue_if_invalid = yes
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C01_C03_DELIVERY_TOOLTIP
+		hidden_effect = {
+			C02 = {
+				country_event = {
+					id = C02_HOTLINE.36
+					days = 1
+				}
+			}
+		}
+	}
+	available = {
+		C03 = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_INDEPENDENT_YET_TOOLTIP
+				NOT = {
+					has_country_flag = PIHC_COUNTRY_FLAG_INDEPENDENT_FROM_C01
+				}
+			}
+		}
+		has_intelligence_agency = yes
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 16
+	y = 12
+}

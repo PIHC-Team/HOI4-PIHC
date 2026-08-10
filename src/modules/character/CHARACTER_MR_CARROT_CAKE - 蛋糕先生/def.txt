@@ -1,0 +1,34 @@
+characters = {
+    CHARACTER_MR_CARROT_CAKE = {
+        name = CHARACTER_MR_CARROT_CAKE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_MR_CARROT_CAKE.dds"
+                small = "gfx/leaders/CHARACTER_MR_CARROT_CAKE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_MR_CARROT_CAKE_army.dds"
+                small = "gfx/leaders/CHARACTER_MR_CARROT_CAKE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_MR_CARROT_CAKE_navy.dds"
+                small = "gfx/leaders/CHARACTER_MR_CARROT_CAKE_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_MR_CARROT_CAKE
+            desc = CHARACTER_MR_CARROT_CAKE_DESC
+            traits = {
+                TRAIT_POLITICAL_IDIOT
+                TRAIT_POPULAR
+                TRAIT_ECONOMICAL_GENIUS
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 350
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

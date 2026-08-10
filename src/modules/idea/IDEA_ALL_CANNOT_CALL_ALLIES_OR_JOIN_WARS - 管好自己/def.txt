@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS = {
+			picture = ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS
+			removal_cost = -1
+			modifier = {
+				cannot_call_allies_or_join_wars = 1
+				custom_modifier_tooltip = IDEA_ALL_CANNOT_CALL_ALLIES_OR_JOIN_WARS_TOOLTIP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

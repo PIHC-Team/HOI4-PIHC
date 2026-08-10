@@ -1,0 +1,45 @@
+C03_ROULETTE_REGEN_NEXT = {
+	clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+	clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+	if = {
+		limit = {
+			check_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_BOXES
+				value = 0
+				compare = equals
+			}
+		}
+		clr_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_PLAYING
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD
+				value = 0
+				compare = equals
+			}
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = C03.VAR_MUFFIN_ROULETTE_BOXES_BAD
+				value = 0
+				compare = equals
+			}
+		}
+		set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+	}
+	else = {
+		random_list = {
+			seed = random
+			C03.VAR_MUFFIN_ROULETTE_BOXES_GOOD = {
+				set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_GOOD
+			}
+			C03.VAR_MUFFIN_ROULETTE_BOXES_BAD = {
+				set_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_NEXT_BOX_BAD
+			}
+		}
+	}
+}

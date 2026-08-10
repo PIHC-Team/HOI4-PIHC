@@ -1,0 +1,32 @@
+add_namespace = DEBUG
+country_event = {
+    id = DEBUG.1
+    picture = GFX_EVENT_DEBUG_1
+    is_triggered_only = yes
+    title = EVENT_DEBUG_1
+    desc = EVENT_DEBUG_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_DEBUG_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_DEBUG_1_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_DEBUG_1_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_DEBUG_1_o3
+    }
+}

@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_ARCHAEOLOGIST = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		custom_modifier_tooltip = TRAIT_ARCHAEOLOGIST_MODIFER_TOOLTIP
+	}
+}

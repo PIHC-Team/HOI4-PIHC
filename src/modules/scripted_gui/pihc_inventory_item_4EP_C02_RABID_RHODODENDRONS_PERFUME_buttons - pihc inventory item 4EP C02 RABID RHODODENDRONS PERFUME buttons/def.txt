@@ -1,0 +1,45 @@
+scripted_gui = {
+	pihc_inventory_item_4EP_C02_RABID_RHODODENDRONS_PERFUME_buttons = {
+		context_type = player_context
+		window_name = pihc_inventory_item_4EP_C02_RABID_RHODODENDRONS_PERFUME_buttons_container
+		parent_window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+			has_variable = PIHC_INVENTORY_DISPLAY
+			check_variable = {
+				var = PIHC_INVENTORY_DISPLAY
+				value = 117
+				compare = equals
+			}
+		}
+		triggers = {
+			pihc_inventory_item_4EP_C02_RABID_RHODODENDRONS_PERFUME_o0_button_visible = {
+				always = yes
+			}
+			pihc_inventory_item_4EP_C02_RABID_RHODODENDRONS_PERFUME_o0_button_click_enabled = {
+				TRIGGER_HAVE_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME = yes
+			}
+		}
+		effects = {
+			pihc_inventory_item_4EP_C02_RABID_RHODODENDRONS_PERFUME_o0_button_click = {
+				DEL_INVENTORY_ITEM_4EP_C02_RABID_RHODODENDRONS_PERFUME_10 = yes
+				custom_effect_tooltip = C02_TRIXIE_LULAMOON_INC_5
+				add_to_variable = {
+					var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+					value = 0.03
+				}
+				clamp_variable = {
+					var = C02.VAR_C02_ELECTION_TRIXIE_LULAMOON
+					min = 0.0
+					max = 1.0
+				}
+				add_power_balance_value = {
+					id = BOP_C02_INDEPENDENCE
+					value = 0.01
+					tooltip_side = BOP_C02_INDEPENDENCE_RIGHT_SIDE
+				}
+			}
+		}
+	}
+}

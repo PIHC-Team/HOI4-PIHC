@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C08_DOUBLE_DIAMOND = {
+			picture = C08_DOUBLE_DIAMOND
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				enemy_operative_detection_chance_factor = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

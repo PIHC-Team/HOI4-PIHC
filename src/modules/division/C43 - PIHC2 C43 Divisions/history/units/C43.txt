@@ -1,0 +1,508 @@
+division_template = {
+    name = "森林火炮群 (Forest Artillery Pack)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C43_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "森林轻型装甲群 (Forest Light Armor Pack)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "森林常规步兵群 (Forest Regular Infantry Pack)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "森林小型步兵群 (Forest Small Infantry Pack)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "森林自动作战群 (Forest Automata Pack)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "森林重装步兵群 (Forest Heavy Infantry Pack)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "森林魔法步兵群 (Forest Magical Infantry Pack)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "森林协同群 (Forest Concerted Pack)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "森林机动步兵群 (Forest Motorized Infantry Pack)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C43_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 819
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 819
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 819
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 465
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 465
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 249
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 8502
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 3086
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 13047
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 920
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 718
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 17
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 9244
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 18
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 7386
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 19
+        }
+        division_template = "森林自动作战群 (Forest Automata Pack)"
+        location = 12635
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+}

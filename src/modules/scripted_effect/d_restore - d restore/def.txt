@@ -1,0 +1,16 @@
+d_restore = {
+	for_each_scope_loop = {
+		array = args
+		every_state = {
+			if = {
+				limit = {
+					has_state_flag = {
+						flag = PIHC_STATE_FLAG_PV_0
+						value = PREV
+					}
+				}
+				transfer_state_to = PREV
+			}
+		}
+	}
+}

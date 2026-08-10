@@ -1,0 +1,41 @@
+focus = {
+	id = FOCUS_C01_GREAT_JAHR_NULL
+	icon = GFX_FOCUS_C01_GREAT_JAHR_NULL_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_QUESTIONNAIRE
+	}
+	prerequisite = {
+		focus = FOCUS_C01_CORRECTING_HISTORY
+	}
+	prerequisite = {
+		focus = FOCUS_C01_NEW_HOLIDAYS
+	}
+	completion_reward = {
+		remove_ideas = IDEA_C01_EMPRESS_OF_FRIENDSHIP_QUESTIONED_2
+		hidden_effect = {
+			add_power_balance_value = {
+				id = BOP_C01_COZY_GLOW_EXHAUSTION
+				value = -0.05
+				tooltip_side = BOP_C01_COZY_GLOW_EXHAUSTION_LEFT_SIDE
+			}
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	cost = 5
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 6
+}

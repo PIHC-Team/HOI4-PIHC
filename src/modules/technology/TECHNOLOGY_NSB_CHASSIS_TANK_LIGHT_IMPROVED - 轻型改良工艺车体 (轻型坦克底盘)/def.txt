@@ -1,0 +1,69 @@
+technologies = {
+    TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_IMPROVED = {
+        folder = {
+            name = nsb_armour_folder
+            position = {
+                x = 0
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_CHASSIS_TANK_LIGHT_IMPROVED
+        }
+        enable_subunits = {
+            tank_light
+        }
+        enable_equipment_modules = {
+            MODULE_TURRET_3A_VERTICAL
+            MODULE_TURRET_3B_SPIN
+            MODULE_SPECIAL_BROADCAST
+            MODULE_SPECIAL_DJ
+            MODULE_SPECIAL_TELESCOPE
+            MODULE_PROJECTILE_4A_IRONBALL
+            MODULE_PROJECTILE_4B_HOTIRONBALL
+            MODULE_PROJECTILE_4C_PETRIFIED
+            MODULE_PROJECTILE_4D_TNT
+            MODULE_PROJECTILE_5D_GOLDBAR
+            MODULE_PAINTING_CAMOU
+            MODULE_PAINTING_FLAG
+            MODULE_PAINTING_GOLD
+            MODULE_PAINTING_ANIME
+            MODULE_SUSPENSION_2A_TRACK
+            MODULE_SUSPENSION_2B_ROD
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED
+            research_cost_coeff = 1
+        }
+        ai_will_do = {
+            modifier = {
+                factor = 10
+                arms_factory > 30
+            }
+            modifier = {
+                factor = -10
+                arms_factory < 20
+            }
+            modifier = {
+                factor = 10
+                date > 1005.1.1
+            }
+            modifier = {
+                add = 50
+                date > 1003.1.1
+                OR = {
+                    tag = C01
+                }
+            }
+        }
+        research_cost = 3
+        start_year = 1003
+    }
+}

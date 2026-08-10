@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		IDEA_C54_MAGIC_ACADEMY = {
+			picture = C54_MAGIC_ACADEMY
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 20
+				conscription_factor = -0.5
+			}
+			research_bonus = {
+				pihc_magical = 0.25
+			}
+			equipment_bonus = {
+				ARCHETYPE_WITCHCRAFT = {
+					build_cost_ic = -0.2
+					reliability = 0.1
+					hard_attack = 0.25
+					soft_attack = 0.25
+					defense = 0.5
+					instant = yes
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_ALL_RAIDED = {
+			picture = ALL_RAIDED
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.03
+			}
+			on_add = {
+				add_stability = -0.01
+			}
+			cancel = {
+				has_war_with = C25
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

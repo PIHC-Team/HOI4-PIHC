@@ -1,0 +1,54 @@
+ideas = {
+	naval_manufacturer = {
+		IDEA_DNAVY_OSB = {
+			picture = DNAVY_OSB
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				naval_manufacturer
+			}
+			cost = 150
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				country_exists = C25
+			}
+			research_bonus = {
+				pihc_navy = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+				}
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					add = -1
+					FROM = {
+						tag = C08
+						controls_state = 389
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

@@ -1,0 +1,16 @@
+infiltration_submarine = {
+	name = infiltration_submarine
+	desc = infiltration_submarine_desc
+	outcome = infiltration_submarine_outcome
+	picture = GFX_phase_infiltration_submarine
+	icon = GFX_phase_infiltration_submarine_small
+	requirements = {
+		FROM = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+	}
+	equipment = {
+	}
+}

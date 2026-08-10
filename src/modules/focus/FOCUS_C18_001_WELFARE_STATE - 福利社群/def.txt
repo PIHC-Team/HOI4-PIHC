@@ -1,0 +1,37 @@
+focus = {
+	id = FOCUS_C18_001_WELFARE_STATE
+	icon = GFX_FOCUS_C18_001_WELFARE_STATE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_001_TRANSFER_PERSIST
+	}
+	prerequisite = {
+		focus = FOCUS_C18_001_DOLE
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C18_000_KIRIN_DREAM
+	}
+	cost = 6
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = IDEA_C18_DOLE
+			add_idea = IDEA_C18_DOLE_2
+		}
+		custom_effect_tooltip = FOCUS_C18_001_WELFARE_STATE_TOOLTIP
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 26
+	y = 6
+}

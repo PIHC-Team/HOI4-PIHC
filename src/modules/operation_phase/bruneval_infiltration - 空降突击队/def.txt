@@ -1,0 +1,10 @@
+bruneval_infiltration = {
+	name = bruneval_infiltration
+	desc = bruneval_infiltration_desc
+	outcome = bruneval_infiltration_outcome
+	icon = GFX_phase_bruneval_infiltration_small
+	picture = GFX_phase_bruneval_infiltration
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 2
+	}
+}

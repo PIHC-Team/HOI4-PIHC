@@ -1,0 +1,50 @@
+characters = {
+    CHARACTER_AUTUMN_BLAZE = {
+        name = CHARACTER_AUTUMN_BLAZE_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_AUTUMN_BLAZE_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_army.dds"
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_navy.dds"
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_AUTUMN_BLAZE_DESC
+            traits = {
+                TRAIT_AUTUMN_BLAZE_A_PEACEFUL_DREAM
+            }
+            ideology = peacism_dogmatism
+        }
+        advisor = {
+            idea_token = CHARACTER_AUTUMN_BLAZE
+            desc = CHARACTER_AUTUMN_BLAZE_DESC
+            traits = {
+
+            }
+            ledger = all
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = political_advisor
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = CHARACTER_AUTUMN_BLAZE_TOOLTIP
+                    always = no
+                }
+            }
+            visible = {
+                NOT = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_RETIRED
+                }
+            }
+        }
+    }
+}

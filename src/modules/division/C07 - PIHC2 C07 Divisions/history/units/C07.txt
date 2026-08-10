@@ -1,0 +1,563 @@
+division_template = {
+    name = "火炮安保队 (Artillery Security Team)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+        cannon_light = {
+            x = 0
+            y = 0
+        }
+    }
+    division_names_group = NAMES_GROUP_C07_ARTILLERY
+    priority = 5
+}
+division_template = {
+    name = "轻型装甲安保队 (Light Armor Security Team)"
+    regiments = {
+        tank_light = {
+            x = 0
+            y = 0
+        }
+        tank_light = {
+            x = 0
+            y = 1
+        }
+        tank_light = {
+            x = 0
+            y = 2
+        }
+        tank_light = {
+            x = 1
+            y = 0
+        }
+        tank_light = {
+            x = 1
+            y = 1
+        }
+        tank_light = {
+            x = 1
+            y = 2
+        }
+        tank_light = {
+            x = 2
+            y = 0
+        }
+        tank_light = {
+            x = 2
+            y = 1
+        }
+        tank_light = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_TANK_LIGHT
+    priority = 7
+}
+division_template = {
+    name = "常规步兵安保队 (Regular Infantry Security Team)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_traditional = {
+            x = 0
+            y = 2
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_traditional = {
+            x = 1
+            y = 2
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_traditional = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_TRADITIONAL_REGULAR
+    priority = 1
+}
+division_template = {
+    name = "小型步兵安保队 (Small Infantry Security Team)"
+    regiments = {
+        infantry_traditional = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_TRADITIONAL_SMALL
+    priority = 0
+}
+division_template = {
+    name = "自动作战安保队 (Automata Security Team)"
+    regiments = {
+        infantry_automata = {
+            x = 0
+            y = 0
+        }
+        infantry_automata = {
+            x = 1
+            y = 0
+        }
+        infantry_automata = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_AUTOMATA
+    priority = 4
+}
+division_template = {
+    name = "重装步兵安保队 (Heavy Infantry Security Team)"
+    regiments = {
+        infantry_shield = {
+            x = 0
+            y = 0
+        }
+        infantry_shield = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 0
+        }
+        infantry_shield = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 0
+        }
+        infantry_shield = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_SHIELD
+    priority = 2
+}
+division_template = {
+    name = "魔法步兵安保队 (Magical Infantry Security Team)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_magical = {
+            x = 0
+            y = 1
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_magical = {
+            x = 1
+            y = 1
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_magical = {
+            x = 2
+            y = 1
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_MAGICAL
+    priority = 6
+}
+division_template = {
+    name = "协同安保队 (Concerted Security Team)"
+    regiments = {
+        infantry_magical = {
+            x = 0
+            y = 0
+        }
+        infantry_traditional = {
+            x = 0
+            y = 1
+        }
+        infantry_shield = {
+            x = 0
+            y = 2
+        }
+        infantry_magical = {
+            x = 1
+            y = 0
+        }
+        infantry_traditional = {
+            x = 1
+            y = 1
+        }
+        infantry_shield = {
+            x = 1
+            y = 2
+        }
+        infantry_magical = {
+            x = 2
+            y = 0
+        }
+        infantry_traditional = {
+            x = 2
+            y = 1
+        }
+        infantry_shield = {
+            x = 2
+            y = 2
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_INFANTRY_MIX
+    priority = 10
+}
+division_template = {
+    name = "机动步兵安保队 (Motorized Infantry Security Team)"
+    regiments = {
+        infantry_motorized = {
+            x = 0
+            y = 0
+        }
+        infantry_motorized = {
+            x = 1
+            y = 0
+        }
+        infantry_motorized = {
+            x = 2
+            y = 0
+        }
+    }
+    support = {
+
+    }
+    division_names_group = NAMES_GROUP_C07_MOTORIZED
+    priority = 3
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "常规步兵安保队 (Regular Infantry Security Team)"
+        location = 12077
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "常规步兵安保队 (Regular Infantry Security Team)"
+        location = 12077
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "常规步兵安保队 (Regular Infantry Security Team)"
+        location = 13008
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "常规步兵安保队 (Regular Infantry Security Team)"
+        location = 12520
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 12633
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 12633
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 9655
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 9655
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 2129
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 7458
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 12520
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 12520
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 5051
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 1269
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 2016
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 2541
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 9300
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        division_template = "小型步兵安保队 (Small Infantry Security Team)"
+        location = 7458
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "轻型装甲安保队 (Light Armor Security Team)"
+        location = 12077
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        division_template = "轻型装甲安保队 (Light Armor Security Team)"
+        location = 2016
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        division_template = "轻型装甲安保队 (Light Armor Security Team)"
+        location = 2541
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        division_template = "轻型装甲安保队 (Light Armor Security Team)"
+        location = 1269
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        division_template = "轻型装甲安保队 (Light Armor Security Team)"
+        location = 9300
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        division_template = "火炮安保队 (Artillery Security Team)"
+        location = 12077
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+}

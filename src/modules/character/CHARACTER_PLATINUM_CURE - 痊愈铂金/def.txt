@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_PLATINUM_CURE = {
+        name = CHARACTER_PLATINUM_CURE_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_PLATINUM_CURE.dds"
+                small = "gfx/leaders/CHARACTER_PLATINUM_CURE_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_PLATINUM_CURE_army.dds"
+                small = "gfx/leaders/CHARACTER_PLATINUM_CURE_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_PLATINUM_CURE_navy.dds"
+                small = "gfx/leaders/CHARACTER_PLATINUM_CURE_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_PLATINUM_CURE
+            desc = CHARACTER_PLATINUM_CURE_DESC
+            traits = {
+                TRAIT_ADVANCED_MEDICAL_EXPERT
+            }
+            ledger = all
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 150
+            slot = theorist
+        }
+    }
+}

@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_KING_THAUMAS = {
+        name = CHARACTER_KING_THAUMAS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_KING_THAUMAS.dds"
+                small = "gfx/leaders/CHARACTER_KING_THAUMAS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_KING_THAUMAS_army.dds"
+                small = "gfx/leaders/CHARACTER_KING_THAUMAS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_KING_THAUMAS_navy.dds"
+                small = "gfx/leaders/CHARACTER_KING_THAUMAS_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_KING_THAUMAS_DESC
+            traits = {
+
+            }
+            ideology = despotic_monarchy
+        }
+    }
+}

@@ -1,0 +1,10 @@
+targeted_sabotage_remove_roadsigns = {
+	name = targeted_sabotage_remove_roadsigns
+	desc = targeted_sabotage_remove_roadsigns_desc
+	outcome = targeted_sabotage_remove_roadsigns_outcome
+	picture = GFX_phase_targeted_sabotage_remove_roadsigns
+	icon = GFX_phase_targeted_sabotage_remove_roadsigns_small
+	equipment = {
+		ARCHETYPE_SUPPORT = 50
+	}
+}

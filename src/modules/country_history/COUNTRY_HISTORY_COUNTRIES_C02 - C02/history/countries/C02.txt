@@ -1,0 +1,225 @@
+capital = 504
+set_popularities = {
+    democratic = 40
+    despotic = 30
+    harmonicism = 15
+    peacism = 10
+    corporation = 5
+}
+set_politics = {
+    ruling_party = democratic
+    last_election = 1002.3.1
+    election_frequency = 48
+    elections_allowed = no
+}
+set_technology = {
+    TECHNOLOGY_SUPPORT = 1
+    TECHNOLOGY_TRAIN_I = 1
+    TECHNOLOGY_ANCIENT_MELEE_WEAPON = 1
+    TECHNOLOGY_ANCIENT_RANGED_WEAPON = 1
+    TECHNOLOGY_SHIELD_CROSSBOW = 1
+    TECHNOLOGY_POWDER_EXPLOSIVE = 1
+    TECHNOLOGY_FIREARM_I = 1
+    TECHNOLOGY_WITCHCRAFT_I = 1
+    TECHNOLOGY_VEHICLE_I = 1
+    TECHNOLOGY_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_AIR_ANCIENT = 1
+    TECHNOLOGY_BBA_FRAME_BALLOON = 1
+    TECHNOLOGY_AIR_CREATURES = 1
+    TECHNOLOGY_BBA_AIR_CREATURES = 1
+    TECHNOLOGY_CREATURE_TRAINING = 1
+    TECHNOLOGY_TECH_COMM = 1
+    TECHNOLOGY_TECH_COMM_I = 1
+    TECHNOLOGY_TECH_INFO = 1
+    TECHNOLOGY_TECH_INFO_I = 1
+    TECHNOLOGY_TECH_ENER = 1
+    TECHNOLOGY_TECH_MAGI = 1
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        TECHNOLOGY_MTG_SHIP_ANCIENT = 1
+    }
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+        }
+    }
+    set_technology = {
+        TECHNOLOGY_SHIP_ANCIENT = 1
+    }
+}
+oob = C02
+recruit_character = CHARACTER_CRANKY_DOODLE_DONKEY
+recruit_character = CHARACTER_OCTAVIA
+recruit_character = CHARACTER_RUSTY_BUCKET
+recruit_character = CHARACTER_CATTAIL
+recruit_character = CHARACTER_INKY_ROSE
+recruit_character = CHARACTER_SPOILED_RICH
+recruit_character = CHARACTER_TRIXIE_LULAMOON
+recruit_character = CHARACTER_CHEERILEE
+recruit_character = CHARACTER_MRS_CUP_CAKE
+recruit_character = CHARACTER_MR_CARROT_CAKE
+recruit_character = CHARACTER_FILTHY_RICH
+recruit_character = CHARACTER_DJ_PON3
+recruit_character = CHARACTER_SILVER_SHILL
+recruit_character = CHARACTER_RAINY_DAY
+recruit_character = CHARACTER_CRACKLE_COSETTE
+recruit_character = CHARACTER_CHERRY_JUBILEE
+recruit_character = CHARACTER_MARE
+recruit_character = CHARACTER_LADY_BEETLE
+recruit_character = CHARACTER_BULK_BICEPS
+recruit_character = CHARACTER_STARSTREAK
+recruit_character = CHARACTER_DOCTOR_HOOVES
+recruit_character = CHARACTER_ROSETTA
+recruit_character = CHARACTER_PHOTO_FINISH
+recruit_character = CHARACTER_PEACHY_PLUME
+recruit_character = CHARACTER_MAREY_POPPINS
+recruit_character = CHARACTER_UNITY_COMMITTEE_C02
+recruit_character = CHARACTER_NOPONY_3
+recruit_character = CHARACTER_TRIXIE_LULAMOON_AMULET
+activate_advisor = CHARACTER_MARE
+activate_advisor = CHARACTER_FILTHY_RICH
+activate_advisor = CHARACTER_DOCTOR_HOOVES
+add_ideas = export_focus
+add_ideas = limited_conscription
+add_ideas = low_economic_mobilisation
+add_ideas = IDEA_C02_PUPPET_GOVERNMENT
+add_ideas = IDEA_ALL_ECONOMIC_RECOVERY
+add_ideas = IDEA_C02_C14_TRADE
+add_ideas = IDEA_DINFANTRY_EEMD
+set_power_balance = {
+    id = BOP_C02_INDEPENDENCE
+    set_default = yes
+}
+add_power_balance_modifier = {
+    id = BOP_C02_INDEPENDENCE
+    modifier = BOP_C02_INDEPENDENCE_DAILY_DRIFT
+}
+set_rule = {
+    can_join_factions = no
+}
+567 = {
+    remove_core_of = C02
+}
+545 = {
+    remove_core_of = C02
+}
+579 = {
+    remove_core_of = C02
+}
+590 = {
+    remove_core_of = C02
+}
+set_research_slots = 2
+add_political_power = 250
+set_stability = 0.75
+add_command_power = 50
+army_experience = 10
+set_war_support = 0.3
+set_convoys = 150
+add_manpower = 3000
+567 = {
+    add_core_of = C49
+}
+579 = {
+    add_core_of = C49
+}
+590 = {
+    add_core_of = C49
+}
+set_major = yes
+set_variable = {
+    var = VAR_C02_ELECTION_TRIXIE_LULAMOON
+    value = 0.8
+}
+set_variable = {
+    var = VAR_C02_ELECTION_MARE
+    value = 0.6
+}
+set_variable = {
+    var = VAR_C02_ELECTION_OCTAVIA
+    value = 0.45
+}
+set_variable = {
+    var = VAR_C02_ELECTION_FILTHY_RICH
+    value = 0.3
+}
+set_variable = {
+    var = VAR_C02_ELECTION_DOCTOR_HOOVES
+    value = 0.45
+}
+set_variable = {
+    var = VAR_C02_ELECTION_CRACKLE_COSETTE
+    value = 0.05
+}
+set_variable = {
+    var = VAR_C02_WINTER_FIRE_BASE
+    value = 0
+}
+complete_national_focus = FOCUS_C02_CANTERLOT_PACT
+complete_national_focus = FOCUS_C02_AS_A_DUKE
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SUPPORT
+    amount = 200
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_INFANTRY
+    amount = 100
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_SHIELD
+    amount = 200
+}
+add_equipment_to_stockpile = {
+    type = ARCHETYPE_AIR_TRANSPORT
+    amount = 40
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 60
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SUPPORT_I
+        creator = C02
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_RANGED_FIRELANCE
+        creator = C02
+    }
+    requested_factories = 2
+    progress = 0.0
+    efficiency = 100
+}
+add_equipment_production = {
+    equipment = {
+        type = EQUIPMENT_SHIELD_CROSSBOW
+        creator = C02
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+add_equipment_production = {
+    equipment = {
+        type = train_equipment_1
+        creator = C02
+    }
+    requested_factories = 1
+    progress = 0.0
+    efficiency = 80
+}
+set_country_flag = PIHC_COUNTRY_FLAG_C01_INTELLIGENCE
+set_country_flag = PIHC_COUNTRY_FLAG_HAS_UNICORN
+set_country_flag = PIHC_COUNTRY_FLAG_C02_PIN
+set_country_flag = PIHC_INVENTORY_ITEM_5LG_C02_PIN_o0_SWITCH_ON

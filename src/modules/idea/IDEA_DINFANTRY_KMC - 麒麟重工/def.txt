@@ -1,0 +1,50 @@
+ideas = {
+	materiel_manufacturer = {
+		IDEA_DINFANTRY_KMC = {
+			picture = DINFANTRY_KMC
+			removal_cost = -1
+			modifier = {
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			cost = 25
+			allowed = {
+				always = yes
+			}
+			visible = {
+				C18 = {
+					has_completed_focus = FOCUS_C18_100_MILITARY_RESEARCH
+				}
+			}
+			available = {
+				country_exists = C18
+				OR = {
+					tag = C18
+					C18 = {
+						has_opinion = {
+							target = ROOT
+							value > -21
+						}
+					}
+				}
+			}
+			research_bonus = {
+				pihc_infantry = 0.2
+			}
+			equipment_bonus = {
+				ARCHETYPE_INFANTRY = {
+					soft_attack = -0.05
+					build_cost_ic = -0.15
+				}
+			}
+			ai_will_do = {
+				base = 0
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		designer = yes
+	}
+}

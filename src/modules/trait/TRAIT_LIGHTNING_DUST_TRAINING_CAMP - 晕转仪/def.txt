@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_LIGHTNING_DUST_TRAINING_CAMP = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		air_maximum_speed_factor = 0.15
+		air_training_xp_gain_factor = 0.15
+		conscription_factor = -0.1
+	}
+}

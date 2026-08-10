@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_DUCHESS_DIAMOND_WAVES = {
+        name = CHARACTER_DUCHESS_DIAMOND_WAVES_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES.dds"
+                small = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES_army.dds"
+                small = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES_navy.dds"
+                small = "gfx/leaders/CHARACTER_DUCHESS_DIAMOND_WAVES_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_DUCHESS_DIAMOND_WAVES_DESC
+            traits = {
+                TRAIT_DIAMOND_WAVE
+            }
+            ideology = harmonicism_monarchy
+        }
+    }
+}

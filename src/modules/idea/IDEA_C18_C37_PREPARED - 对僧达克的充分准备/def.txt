@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_C18_C37_PREPARED = {
+			picture = C18_C37_PREPARED
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 0.3
+				supply_consumption_factor = -0.12
+			}
+			targeted_modifier = {
+				tag = C37
+				attack_bonus_against = 0.35
+				breakthrough_bonus_against = 0.25
+				defense_bonus_against = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

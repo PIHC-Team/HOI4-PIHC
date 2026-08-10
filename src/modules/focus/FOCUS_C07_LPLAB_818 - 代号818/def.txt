@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C07_LPLAB_818
+	icon = GFX_FOCUS_C07_LPLAB_818_icon
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+		has_tech = TECHNOLOGY_MAGICAL_YOVIDAPHONE
+	}
+	cost = 2
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C07_LPLAB_TOOLTIP
+	}
+	available = {
+		has_tech = TECHNOLOGY_MAGICAL_BLUNDERBUSS
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 37
+	y = 4
+}

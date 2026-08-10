@@ -1,0 +1,14 @@
+C03_MUFFINS_AID_INIT = {
+	every_possible_country = {
+		set_variable = {
+			var = VAR_MUFFINS_AID_FROM_C03
+			value = 0
+		}
+	}
+	C03 = {
+		set_variable = {
+			var = VAR_MUFFINS_AID_TOTAL_C03
+			value = 0
+		}
+	}
+}

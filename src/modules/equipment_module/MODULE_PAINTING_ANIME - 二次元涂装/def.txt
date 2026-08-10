@@ -1,0 +1,12 @@
+MODULE_PAINTING_ANIME = {
+	category = pihc_tank_painting_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 0.2
+	}
+	multiply_stats = {
+		casualty_trickleback = 0.02
+		recon = 0.15
+	}
+	xp_cost = 5
+}

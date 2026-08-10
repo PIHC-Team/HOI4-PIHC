@@ -1,0 +1,17 @@
+@cost = 30
+unit_medals = {
+	democratic_gallantry = {
+		available = {
+			has_government = democratic
+		}
+		frame = 1
+		icon = GFX_medal_icon_democratic
+		cost = @cost
+		unit_modifiers = {
+			army_morale_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}

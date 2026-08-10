@@ -1,0 +1,117 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/scripted_gui
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-scripted-gui
+items:
+-   kind: entity
+    identifier: pihc3-scripted-gui-module
+    name: PIHC3 Scripted Gui Module
+    desc: Project-owned scripted_gui source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3ScriptedGuiModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-scripted-gui
+    name: PIHC3 Scripted Gui
+    desc: PIHC3 scripted_gui module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-scripted-gui-module
+        definition:
+            identifier: pihc3-scripted-gui
+            name: PIHC3 Scripted Gui
+            version: 0.2.4
+            desc: PIHC3 scripted_gui module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-scripted-gui-module
+            meta:
+                project: PIHC3
+                family: scripted_gui
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-scripted-gui
+    name: PIHC3 Scripted Gui Compiler
+    desc: Registry-backed source slots and compiler hooks for scripted_gui.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: scripted-guis
+            title: Scripted GUIs
+            group: shared
+            title_key: modules.scriptedGuis.title
+        dependencies:
+        - extension:pihc3-scripted-gui
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-9845b975d8047f90
+    name: PIHC3 Basic Scripted GUI
+    desc: PIHC3 authoring template pihc3:scripted_gui/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:scripted_gui/basic
+            declaration:
+                title: PIHC3 Basic Scripted GUI
+                family: scripted_gui
+                args:
+                    title:
+                        required: true
+                    context_type:
+                        default: player_context
+                    window_name:
+                        default: pihc3_placeholder_container
+                    parent_window_token:
+                        default: top_bar
+                    visible:
+                        default: 'no'
+                    effects_body:
+                        type: text
+                        label: Named effects
+                        description: Named effect blocks exposed by this scripted GUI.
+                        advanced: false
+                    triggers_body:
+                        type: text
+                        label: Named triggers
+                        description: Named trigger blocks exposed by this scripted GUI.
+                        advanced: false
+                    properties_body:
+                        type: text
+                        label: Properties
+                        description: Named properties exposed by this scripted GUI.
+                        advanced: false
+                files:
+                    def.txt: "scripted_gui = {{\n    {object_id} = {{\n        context_type\
+                        \ = {context_type}\n        window_name = \"{window_name}\"\
+                        \n        parent_window_token = {parent_window_token}\n\n\
+                        \        visible = {{\n            always = {visible}\n  \
+                        \      }}\n\n        effects = {{\n{effects_body}\n        }}\n\n        triggers\
+                        \ = {{\n{triggers_body}\n        }}\n\n        properties = {{\n{properties_body}\n        }}\n\
+                        \    }}\n}}\n"
+                directory: '{object_id} - {title}'

@@ -1,0 +1,39 @@
+pihc_air_bloodthirsty_flock_fighter_aircraft_b = {
+	track = fighter_aircraft
+	name = DOCTRINE_AIR_1_1B_CROWD
+	description = DOCTRINE_AIR_1_1B_CROWD_DESC
+	icon = GFX_doctrine_pihc_air_bloodthirsty_flock_fighter_aircraft_b_medium
+	xp_cost = 100
+	xp_type = air
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_air_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	air_untrained_pilots_penalty_factor = -0.3
+	rewards = {
+		stars = {
+			air_night_penalty = -0.25
+			air_strategic_bomber_night_penalty = -0.25
+			category_air_plane = {
+				air_attack = 0.08
+				air_bombing = 0.08
+			}
+			category_air_creatures = {
+				air_attack = 0.08
+			}
+		}
+		cheap = {
+			category_air = {
+				build_cost_ic = -0.25
+			}
+		}
+	}
+}

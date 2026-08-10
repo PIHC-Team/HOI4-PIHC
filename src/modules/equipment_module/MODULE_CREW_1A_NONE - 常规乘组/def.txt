@@ -1,0 +1,8 @@
+MODULE_CREW_1A_NONE = {
+	category = pihc_tank_crew_type_0
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		reliability = 0.05
+	}
+	xp_cost = 5
+}

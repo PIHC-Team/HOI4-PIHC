@@ -1,0 +1,146 @@
+NAMES_GROUP_C21_ARTILLERY = {
+    name = "牦牛火炮师 (Yak Artillery Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "牦牛火炮师%d师 (Yak Artillery Division %d)"
+}
+NAMES_GROUP_C21_TANK_LIGHT = {
+    name = "牦牛轻型装甲师 (Yak Light Armor Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "牦牛轻型装甲师%d师 (Yak Light Armor Division %d)"
+}
+NAMES_GROUP_C21_TRADITIONAL_REGULAR = {
+    name = "牦牛常规步兵师 (Yak Regular Infantry Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "牦牛常规步兵师%d师 (Yak Regular Infantry Division %d)"
+}
+NAMES_GROUP_C21_TANK_HEAVY = {
+    name = "牦牛重型装甲师 (Yak Heavy Armor Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "牦牛重型装甲师%d师 (Yak Heavy Armor Division %d)"
+}
+NAMES_GROUP_C21_TRADITIONAL_SMALL = {
+    name = "牦牛小型步兵师 (Yak Small Infantry Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "牦牛小型步兵师%d师 (Yak Small Infantry Division %d)"
+}
+NAMES_GROUP_C21_AUTOMATA = {
+    name = "牦牛自动作战师 (Yak Automata Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "牦牛自动作战师%d师 (Yak Automata Division %d)"
+}
+NAMES_GROUP_C21_SHIELD = {
+    name = "牦牛重装步兵师 (Yak Heavy Infantry Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "牦牛重装步兵师%d师 (Yak Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C21_MAGICAL = {
+    name = "牦牛魔法步兵师 (Yak Magical Infantry Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "牦牛魔法步兵师%d师 (Yak Magical Infantry Division %d)"
+}
+NAMES_GROUP_C21_INFANTRY_MIX = {
+    name = "牦牛协同师 (Yak Concerted Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "牦牛协同师%d师 (Yak Concerted Division %d)"
+}
+NAMES_GROUP_C21_MOTORIZED = {
+    name = "牦牛机动步兵师 (Yak Motorized Infantry Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "牦牛机动步兵师%d师 (Yak Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C21_TANK_MEDIUM = {
+    name = "牦牛中型装甲师 (Yak Medium Armor Division)"
+    for_countries = {
+        C21
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "牦牛中型装甲师%d师 (Yak Medium Armor Division %d)"
+}

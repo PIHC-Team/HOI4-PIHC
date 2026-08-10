@@ -1,0 +1,146 @@
+NAMES_GROUP_C05_ARTILLERY = {
+    name = "火炮军团 (Artillery Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮军团%d师 (Artillery Legion %d)"
+}
+NAMES_GROUP_C05_TANK_LIGHT = {
+    name = "轻型装甲军团 (Light Armor Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲军团%d师 (Light Armor Legion %d)"
+}
+NAMES_GROUP_C05_TRADITIONAL_REGULAR = {
+    name = "常规步兵军团 (Regular Infantry Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵军团%d师 (Regular Infantry Legion %d)"
+}
+NAMES_GROUP_C05_TANK_HEAVY = {
+    name = "重型装甲军团 (Heavy Armor Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲军团%d师 (Heavy Armor Legion %d)"
+}
+NAMES_GROUP_C05_TRADITIONAL_SMALL = {
+    name = "小型步兵军团 (Small Infantry Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵军团%d师 (Small Infantry Legion %d)"
+}
+NAMES_GROUP_C05_AUTOMATA = {
+    name = "自动作战军团 (Automata Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战军团%d师 (Automata Legion %d)"
+}
+NAMES_GROUP_C05_SHIELD = {
+    name = "重装步兵军团 (Heavy Infantry Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵军团%d师 (Heavy Infantry Legion %d)"
+}
+NAMES_GROUP_C05_MAGICAL = {
+    name = "魔法步兵军团 (Magical Infantry Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵军团%d师 (Magical Infantry Legion %d)"
+}
+NAMES_GROUP_C05_INFANTRY_MIX = {
+    name = "协同军团 (Concerted Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同军团%d师 (Concerted Legion %d)"
+}
+NAMES_GROUP_C05_MOTORIZED = {
+    name = "机动步兵军团 (Motorized Infantry Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵军团%d师 (Motorized Infantry Legion %d)"
+}
+NAMES_GROUP_C05_TANK_MEDIUM = {
+    name = "中型装甲军团 (Medium Armor Legion)"
+    for_countries = {
+        C05
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲军团%d师 (Medium Armor Legion %d)"
+}

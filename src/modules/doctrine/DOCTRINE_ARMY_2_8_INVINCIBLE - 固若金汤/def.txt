@@ -1,0 +1,30 @@
+pihc_land_wall_of_unity_operations_core = {
+	track = operations
+	name = DOCTRINE_ARMY_2_8_INVINCIBLE
+	description = DOCTRINE_ARMY_2_8_INVINCIBLE_DESC
+	icon = GFX_doctrine_pihc_land_wall_of_unity_operations_core_medium
+	xp_cost = 200
+	xp_type = army
+	available = {
+		always = yes
+	}
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			NOT = {
+				has_army_experience > 120
+			}
+			factor = 0.8
+		}
+	}
+	rewards = {
+		invincible = {
+			production_speed_bunker_factor = 0.5
+			land_bunker_effectiveness_factor = 0.25
+			production_speed_anti_air_building_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.5
+			army_core_defence_factor = 0.2
+			enable_tactic = tactic_pihc_magic_seal
+		}
+	}
+}

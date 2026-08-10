@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_SHORT_FUSE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		max_planning_factor = -0.25
+	}
+}

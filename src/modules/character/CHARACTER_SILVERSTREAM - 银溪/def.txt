@@ -1,0 +1,38 @@
+characters = {
+    CHARACTER_SILVERSTREAM = {
+        name = CHARACTER_SILVERSTREAM_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SILVERSTREAM.dds"
+                small = "gfx/leaders/CHARACTER_SILVERSTREAM_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SILVERSTREAM_army.dds"
+                small = "gfx/leaders/CHARACTER_SILVERSTREAM_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SILVERSTREAM_navy.dds"
+                small = "gfx/leaders/CHARACTER_SILVERSTREAM_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_SILVERSTREAM
+            desc = CHARACTER_SILVERSTREAM_DESC
+            traits = {
+                TRAIT_SILVERSTREAM
+            }
+            ledger = civilian
+            can_be_fired = no
+            cost = 0
+            removal_cost = -1
+            slot = navy_chief
+            available = {
+                custom_trigger_tooltip = {
+                    tooltip = CHARACTER_SILVERSTREAM_TOOLTIP
+                    has_country_flag = PIHC_COUNTRY_FLAG_C08_SILVERSTREAM
+                }
+            }
+        }
+    }
+}

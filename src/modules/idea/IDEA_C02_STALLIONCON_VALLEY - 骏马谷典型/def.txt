@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C02_STALLIONCON_VALLEY = {
+			picture = C02_STALLIONCON_VALLEY
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.3
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

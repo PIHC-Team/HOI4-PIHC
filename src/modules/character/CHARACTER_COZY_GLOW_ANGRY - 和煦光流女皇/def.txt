@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_COZY_GLOW_ANGRY = {
+        name = CHARACTER_COZY_GLOW_ANGRY_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_COZY_GLOW_ANGRY_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_army.dds"
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_navy.dds"
+                small = "gfx/leaders/CHARACTER_COZY_GLOW_ANGRY_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_COZY_GLOW_ANGRY_DESC
+            traits = {
+                TRAIT_COZY_GLOW_PARANOIA
+                TRAIT_COZY_GLOW_RED_TAPE_MACHINE
+                TRAIT_ECONOMICAL_IDIOT
+                TRAIT_POLITICAL_GENIUS_II
+            }
+            ideology = fascism_spirit
+        }
+    }
+}

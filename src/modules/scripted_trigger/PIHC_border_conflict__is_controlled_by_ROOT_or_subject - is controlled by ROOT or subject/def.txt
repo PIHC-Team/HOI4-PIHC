@@ -1,0 +1,8 @@
+is_controlled_by_ROOT_or_subject = {
+	CONTROLLER = {
+		OR = {
+			tag = ROOT
+			is_subject_of = ROOT
+		}
+	}
+}

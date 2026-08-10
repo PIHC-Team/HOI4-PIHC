@@ -1,0 +1,30 @@
+technologies = {
+    TECHNOLOGY_MTG_SHIP_SEACARDINAL_IRON = {
+        folder = {
+            name = mtgnavalfolder
+            position = {
+                x = 4
+                y = 11
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_navy
+            pihc_cardinal
+        }
+        enable_equipments = {
+            EQUIPMENT_SHIP_SEACARDINAL_IRON
+        }
+        enable_subunits = {
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_MTG_SHIP_SEACARDINAL_STEAM
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1003
+    }
+}

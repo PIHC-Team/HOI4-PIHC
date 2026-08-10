@@ -1,0 +1,30 @@
+characters = {
+    CHARACTER_SQUIZARD = {
+        name = CHARACTER_SQUIZARD_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SQUIZARD.dds"
+                small = "gfx/leaders/CHARACTER_SQUIZARD_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SQUIZARD_army.dds"
+                small = "gfx/leaders/CHARACTER_SQUIZARD_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SQUIZARD_navy.dds"
+                small = "gfx/leaders/CHARACTER_SQUIZARD_navy_small.dds"
+            }
+        }
+        gender = undefined
+        corps_commander = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+
+            }
+        }
+    }
+}

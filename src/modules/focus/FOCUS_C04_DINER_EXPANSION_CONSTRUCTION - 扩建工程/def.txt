@@ -1,0 +1,87 @@
+focus = {
+	id = FOCUS_C04_DINER_EXPANSION_CONSTRUCTION
+	icon = GFX_FOCUS_C04_DINER_EXPANSION_CONSTRUCTION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C04_DINER_EXPANSION
+		focus = FOCUS_C04_CRYSTAL_APPROVE
+		focus = FOCUS_C04_ANOTHER_NOTICE
+	}
+	prerequisite = {
+		focus = FOCUS_C04_RETURN_OF_ACADEMY
+	}
+	prerequisite = {
+		focus = FOCUS_C04_WASHOUT_TOUR
+	}
+	cost = 7
+	allow_branch = {
+		has_country_flag = PIHC_COUNTRY_FLAG_C04_DINER_EXPANSION_CONSTRUCTION_AVAILABLE
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	select_effect = {
+		DEL_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_500 = yes
+		hidden_effect = {
+			country_event = {
+				id = C04_MAIN.22
+				days = 21
+				random_days = 3
+			}
+			country_event = {
+				id = C04_MAIN.25
+				days = 30
+				random_days = 14
+			}
+		}
+	}
+	completion_reward = {
+		336 = {
+			BUILD_A_FARM = yes
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		37 = {
+			BUILD_A_FARM = yes
+			BUILD_A_CIC = yes
+		}
+		if = {
+			limit = {
+				has_idea = IDEA_ALL_ECONOMIC_RECOVERY
+			}
+			swap_ideas = {
+				remove_idea = IDEA_ALL_ECONOMIC_RECOVERY
+				add_idea = IDEA_ALL_ECONOMIC_GROWTH
+			}
+		}
+		else = {
+			add_ideas = IDEA_ALL_ECONOMIC_GROWTH
+		}
+		custom_effect_tooltip = FOCUS_C04_DINER_EXPANSION_CONSTRUCTION_TOOLTIP
+		hidden_effect = {
+			country_event = {
+				id = C04_MAIN.26
+				days = 21
+				random_days = 10
+			}
+		}
+	}
+	available = {
+		OR = {
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_TIMBUCKTU_CRYSTAL_500 = yes
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_20000 = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 4
+	y = 7
+}

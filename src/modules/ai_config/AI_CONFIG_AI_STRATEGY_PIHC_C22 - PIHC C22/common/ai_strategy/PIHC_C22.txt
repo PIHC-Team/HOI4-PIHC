@@ -1,0 +1,116 @@
+C22_be_friend_with_empire = {
+    allowed = {
+        original_tag = C22
+    }
+    enable = {
+        C22 = {
+            NOT = {
+                has_government = harmonicism
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = befriend
+        id = C01
+        value = 100
+    }
+    ai_strategy = {
+        type = support
+        id = C01
+        value = 100
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = C01
+        value = 100
+        target = send_volunteers
+    }
+    ai_strategy = {
+        type = send_lend_lease_desire
+        id = C01
+        value = 100
+    }
+}
+C22_accept_volunteers_fropm_empire = {
+    allowed = {
+        original_tag = C22
+    }
+    enable = {
+        C22 = {
+            NOT = {
+                has_government = harmonicism
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = C01
+        value = 100
+        target = send_volunteers
+    }
+}
+C22_build_an_air_facility_anywhere = {
+    allowed = {
+        original_tag = C22
+    }
+    enable = {
+        air_base < 30
+        date > 1006.1.1
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = build_building
+        id = air_base
+        value = 10
+    }
+}
+C22_fight_agasinst_resistance = {
+    allowed = {
+        original_tag = C22
+    }
+    enable = {
+        C08 = {
+            has_country_leader = {
+                ruling_only = yes
+                character = CHARACTER_STARLIGHT_GLIMMER
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = C08
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = C05
+        value = 100
+    }
+}
+C22_fight_agasinst_sunset_shimmer = {
+    allowed = {
+        original_tag = C22
+    }
+    enable = {
+        C23 = {
+            has_country_leader = {
+                ruling_only = yes
+                character = CHARACTER_SUNSET_SHIMMER
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = C23
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = C23
+        value = 100
+    }
+}

@@ -1,0 +1,95 @@
+focus = {
+	id = FOCUS_C08_ARMY_INTEGRATION
+	icon = GFX_FOCUS_C08_ARMY_INTEGRATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_CITY_SUMMIT
+	}
+	cost = 3
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_ARMY_INTEGRATION_TOOLTIP
+		set_division_template_lock = {
+			division_template = "近卫军团 (Guards Corps)"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "轻型步兵军团 (Light Infantry Corps)"
+			is_locked = no
+		}
+		delete_units = {
+			division_template = "战斗组 (Combat Group)"
+			disband = no
+		}
+		389 = {
+			create_unit = {
+				division = "name = \"步兵军团第7师 (Infantry Divison 7)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C08
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"步兵军团第8师 (Infantry Divison 8)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C08
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"步兵军团第9师 (Infantry Divison 9)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C08
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"步兵军团第10师 (Infantry Divison 10)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C08
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"近卫军团第4师 “马哈顿” (Infantry Divison 4 “Manehattan”)\" division_template = \"近卫军团 (Guards Corps)\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+				owner = C08
+				count = 1
+			}
+			if = {
+				limit = {
+					C08 = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C08_ENLIST_MNS
+					}
+				}
+				create_unit = {
+					division = "name = \"步兵军团第11师 (Infantry Divison 11)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = C08
+					count = 1
+				}
+			}
+			if = {
+				limit = {
+					C08 = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C08_ENLIST_ARMY
+					}
+				}
+				create_unit = {
+					division = "name = \"步兵军团第11师 (Infantry Divison 10)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = C08
+					count = 1
+				}
+				create_unit = {
+					division = "name = \"步兵军团第12师 (Infantry Divison 12)\" division_template = \"轻型步兵军团 (Light Infantry Corps)\" start_experience_factor = 0.3 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+					owner = C08
+					count = 1
+				}
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 14
+	y = 4
+}

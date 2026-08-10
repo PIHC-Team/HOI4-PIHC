@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_REFLECTIVE_ROCK = {
+        name = CHARACTER_REFLECTIVE_ROCK_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK.dds"
+                small = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK_army.dds"
+                small = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK_navy.dds"
+                small = "gfx/leaders/CHARACTER_REFLECTIVE_ROCK_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_REFLECTIVE_ROCK
+            desc = CHARACTER_REFLECTIVE_ROCK_DESC
+            traits = {
+                TRAIT_ARMY_DOCTRINE
+            }
+            ledger = army
+            can_be_fired = yes
+            cost = 120
+            removal_cost = 350
+            slot = theorist
+        }
+    }
+}

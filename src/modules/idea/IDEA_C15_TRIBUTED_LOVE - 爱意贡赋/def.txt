@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C15_TRIBUTED_LOVE = {
+			picture = C15_TRIBUTED_LOVE
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			}
+			targeted_modifier = {
+				tag = C11
+				cic_to_target_factor = 0.5
+				extra_trade_to_target_factor = 0.3
+				mic_to_target_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

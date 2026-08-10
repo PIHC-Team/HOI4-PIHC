@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_DIPLOMATIC_IDIOT = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		opinion_gain_monthly_factor = -0.2
+		opinion_gain_monthly_same_ideology_factor = -0.2
+		political_power_gain = 0.1
+	}
+}

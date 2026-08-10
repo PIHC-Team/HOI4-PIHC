@@ -1,0 +1,114 @@
+focus = {
+	id = FOCUS_C08_MANEHATTAN_BAY_AREA
+	icon = GFX_FOCUS_C08_MANEHATTAN_BAY_AREA_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_NEW_HOME_PLAN
+	}
+	prerequisite = {
+		focus = FOCUS_C08_TROTTINGHAM_REFORM
+	}
+	cost = 3
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = IDEA_C08_RECONSTRUCTION_01
+			}
+			swap_ideas = {
+				remove_idea = IDEA_C08_RECONSTRUCTION_01
+				add_idea = IDEA_C08_RECONSTRUCTION_02
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C08_RECONSTRUCTION_02
+			}
+			swap_ideas = {
+				remove_idea = IDEA_C08_RECONSTRUCTION_02
+				add_idea = IDEA_C08_RECONSTRUCTION_03
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_C08_RECONSTRUCTION_03
+			}
+			remove_ideas = IDEA_C08_RECONSTRUCTION_03
+		}
+		4 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 2
+			}
+		}
+		450 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 1
+			}
+			set_state_category = pastoral
+		}
+		401 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 1
+			}
+		}
+		481 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				instant_build = yes
+				level = 1
+			}
+		}
+		415 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				instant_build = yes
+				level = 1
+			}
+		}
+		413 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				instant_build = yes
+				level = 1
+			}
+			set_state_category = pastoral
+		}
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FOCUS_C08_MANEHATTAN_BAY_AREA_TOOLTIP
+			check_variable = {
+				VAR_C08_URBANIZATION > 74
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 24
+	y = 7
+}

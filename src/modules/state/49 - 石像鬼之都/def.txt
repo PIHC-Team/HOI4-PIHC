@@ -1,0 +1,38 @@
+state = {
+    id = 49
+    name = STATE_49
+    provinces = {
+        1878
+        2081
+        2220
+        2676
+        2837
+        5031
+        6790
+        7115
+        7600
+        8291
+        8659
+        10799
+        10932
+    }
+    manpower = 102996
+    state_category = large_city
+    history = {
+        owner = C22
+        victory_points = {
+            1878
+            25
+        }
+        buildings = {
+            infrastructure = 4
+            1878 = {
+                supply_node = 1
+            }
+        }
+        add_core_of = C22
+    }
+    resources = {
+        logs = 4
+    }
+}

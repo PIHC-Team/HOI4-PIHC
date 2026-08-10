@@ -1,0 +1,65 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/trait
+version: 0.2.3
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-trait
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-trait
+    name: PIHC3 Trait Compiler
+    desc: Registry-backed routed compiler and source slots for traits.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        presentation:
+            id: traits
+            title: Traits
+            group: country
+            title_key: modules.traits.title
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-4b4551903ec24d4f
+    name: PIHC3 Country Leader Trait
+    desc: PIHC3 authoring template pihc3:trait/country-leader.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.3
+        definition:
+            template_id: pihc3:trait/country-leader
+            declaration:
+                title: PIHC3 Country Leader Trait
+                family: trait
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    random:
+                        default: 'no'
+                    language:
+                        default: en
+                files:
+                    def.txt: "leader_traits = {{\n\t{object_id} = {{\n\t\trandom =\
+                        \ {random}\n\t\tai_will_do = {{\n\t\t\tfactor = 1\n\t\t}}\n\
+                        \t}}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

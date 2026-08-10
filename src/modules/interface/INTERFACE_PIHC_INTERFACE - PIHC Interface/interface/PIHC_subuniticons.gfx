@@ -1,0 +1,422 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_unit_windigo_fraction_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_windigo_fraction_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_windigo_fraction_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_windigo_fraction_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_windigo_fraction_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_windigo_fraction_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_tank_heavy_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_tank_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_heavy_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_heavy_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_heavy_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_shield_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_shield_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_shield_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_shield_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_shield_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_shield_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_heavy_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_mot_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_heavy_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_heavy_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_heavy_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_landmine_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_landmine_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_landmine_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_landmine_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_landmine_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_landmine_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_tank_medium_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_tank_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_medium_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_medium_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_medium_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_windigo_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_windigo_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_windigo_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_windigo_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_windigo_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_windigo_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_rockbreaker_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_rockbreaker_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_rockbreaker_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_rockbreaker_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_rockbreaker_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_rockbreaker_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_medium_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_tank_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_medium_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_medium_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_medium_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_traditional_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_traditional_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_traditional_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_traditional_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_traditional_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_traditional_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_light_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_mot_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_light_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_light_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_light_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_tank_light_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_tank_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_light_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tank_light_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_light_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_tirek_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_tirek_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tirek_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tirek_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_tirek_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tirek_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_heavy_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_tank_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_heavy_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_heavy_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_heavy_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_biochemi_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_biochemi_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_biochemi_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_biochemi_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_biochemi_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_biochemi_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_colossal_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_colossal_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_colossal_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_colossal_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_colossal_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_colossal_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_light_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_light_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_light_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_light_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_icy_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_icy_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_icy_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icy_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_motorized_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_motorized_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_motorized_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_motorized_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_motorized_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_motorized_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_medium_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_medium_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_medium_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_medium_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_automata_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_automata_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_automata_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_automata_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_automata_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_automata_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_music_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_music_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_music_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_music_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_music_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_music_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_witchcraft_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_witchcraft_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_witchcraft_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_witchcraft_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_witchcraft_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_witchcraft_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_infantry_magical_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_infantry_magical_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_magical_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_magical_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_infantry_magical_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_magical_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_titan_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_titan_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_titan_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_titan_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_medium_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_mot_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_medium_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_medium_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_mot_medium_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_mot_medium_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_heavy_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_heavy_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_heavy_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_heavy_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_heavy_icon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_light_icon_medium
+        textureFile = "gfx/interface/counters/divisions_large/unit_cannon_tank_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_light_icon_medium_white
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_light_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = GFX_unit_cannon_tank_light_icon_small
+        textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cannon_tank_light_icon.dds"
+        legacy_lazy_load = no
+    }
+}

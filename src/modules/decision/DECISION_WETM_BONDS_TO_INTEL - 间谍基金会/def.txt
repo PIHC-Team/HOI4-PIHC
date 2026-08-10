@@ -1,0 +1,39 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_BONDS_TO_INTEL = {
+        fixed_random_seed = no
+        priority = 93
+        cost = 0
+        days_remove = 120
+        days_re_enable = 0
+        visible = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+        }
+        available = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+            }
+        }
+        custom_cost_trigger = {
+            ROOT = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+            }
+        }
+        custom_cost_text = CUSTOM_COST_DEV_BONDS_1200
+        modifier = {
+            intel_network_gain_factor = 0.15
+            decryption_power_factor = 0.25
+            intel_from_operatives_factor = 0.15
+            intelligence_agency_defense = 0.15
+            political_power_cost = 0.02
+        }
+        complete_effect = {
+            ROOT = {
+                DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = WETM_BONDS_TO_INTEL
+    }
+}

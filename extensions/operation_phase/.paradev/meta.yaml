@@ -1,0 +1,115 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/operation_phase
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-operation-phase
+items:
+-   kind: entity
+    identifier: pihc3-operation-phase-module
+    name: PIHC3 Operation Phase Module
+    desc: Project-owned operation_phase source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3OperationPhaseModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-operation-phase
+    name: PIHC3 Operation Phase
+    desc: PIHC3 operation_phase module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-operation-phase-module
+        definition:
+            identifier: pihc3-operation-phase
+            name: PIHC3 Operation Phase
+            version: 0.2.4
+            desc: PIHC3 operation_phase module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-operation-phase-module
+            meta:
+                project: PIHC3
+                family: operation_phase
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-operation-phase
+    name: PIHC3 Operation Phase Compiler
+    desc: Registry-backed source slots and compiler hooks for operation_phase.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: operation-phases
+            title: Operation Phases
+            group: military
+            title_key: modules.operationPhases.title
+        dependencies:
+        - extension:pihc3-operation-phase
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-14e5aecbf15a4535
+    name: PIHC3 Basic Operation Phase
+    desc: PIHC3 authoring template pihc3:operation_phase/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:operation_phase/basic
+            declaration:
+                title: PIHC3 Basic Operation Phase
+                family: operation_phase
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    outcome:
+                        default: The phase completes cleanly.
+                    picture:
+                        default: GFX_phase_infiltration_diplomatic
+                    icon:
+                        default: GFX_phase_infiltration_diplomatic_small
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n    name = {object_id}\n    desc =\
+                        \ {object_id}_desc\n    outcome = {object_id}_outcome\n    picture = {picture}\n\
+                        \    icon = {icon}\n\n    equipment = {{\n    }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+
+                        [{language}.{object_id}_outcome]
+
+                        {outcome}
+
+                        '
+                directory: '{object_id} - {title}'

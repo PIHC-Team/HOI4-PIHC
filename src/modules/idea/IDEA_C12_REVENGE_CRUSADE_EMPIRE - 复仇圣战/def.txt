@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		IDEA_C12_REVENGE_CRUSADE_EMPIRE = {
+			picture = C12_REVENGE_CRUSADE_EMPIRE
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = C01
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+				trade_cost_for_target_factor = 0.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

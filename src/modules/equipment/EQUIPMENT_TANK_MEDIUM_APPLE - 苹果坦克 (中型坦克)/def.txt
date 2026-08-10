@@ -1,0 +1,35 @@
+equipments = {
+	EQUIPMENT_TANK_MEDIUM_APPLE = {
+		picture = EQUIPMENT_TANK_MEDIUM_APPLE
+		is_archetype = no
+		group_by = type
+		archetype = ARCHETYPE_TANK_MEDIUM
+		priority = 20000
+		visual_level = 20000
+		build_cost_ic = 8.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.8
+		manpower = 8
+		weight = 1.8
+		soft_attack = 20.0
+		hard_attack = 10.0
+		air_attack = 0.0
+		ap_attack = 8.0
+		breakthrough = 40.0
+		defense = 30.0
+		max_strength = 100.0
+		armor_value = 16.0
+		hardness = 0.8
+		resources = {
+			logs = 18
+			rubber = 2
+		}
+		fuel_consumption = 0.08
+		fuel_capacity = 10.0
+		maximum_speed = 15.0
+		entrenchment = 4.0
+		recon = 2
+	}
+}

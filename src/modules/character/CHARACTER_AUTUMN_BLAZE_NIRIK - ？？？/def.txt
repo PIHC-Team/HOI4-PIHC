@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_AUTUMN_BLAZE_NIRIK = {
+        name = CHARACTER_AUTUMN_BLAZE_NIRIK_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_army.dds"
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_navy.dds"
+                small = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_AUTUMN_BLAZE_NIRIK_DESC
+            traits = {
+
+            }
+            ideology = fascism_militarism
+        }
+    }
+}

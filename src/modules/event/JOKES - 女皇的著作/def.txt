@@ -1,0 +1,2617 @@
+add_namespace = JOKES
+country_event = {
+    id = JOKES.1
+    picture = GFX_EVENT_JOKES_1
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_001_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_001_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_1
+    desc = EVENT_JOKES_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_1_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_1_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.2
+        }
+        name = EVENT_JOKES_1_o2
+    }
+}
+country_event = {
+    id = JOKES.2
+    picture = GFX_EVENT_JOKES_2
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_002_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_002_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_2
+    desc = EVENT_JOKES_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_2_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_2_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.3
+        }
+        name = EVENT_JOKES_2_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.1
+        }
+        name = EVENT_JOKES_2_o3
+    }
+}
+country_event = {
+    id = JOKES.3
+    picture = GFX_EVENT_JOKES_3
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_003_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_003_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_3
+    desc = EVENT_JOKES_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_3_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_3_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.4
+        }
+        name = EVENT_JOKES_3_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.2
+        }
+        name = EVENT_JOKES_3_o3
+    }
+}
+country_event = {
+    id = JOKES.4
+    picture = GFX_EVENT_JOKES_4
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_004_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_004_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_4
+    desc = EVENT_JOKES_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_4_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.5
+        }
+        name = EVENT_JOKES_4_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.3
+        }
+        name = EVENT_JOKES_4_o3
+    }
+}
+country_event = {
+    id = JOKES.5
+    picture = GFX_EVENT_JOKES_5
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_005_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_005_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_5
+    desc = EVENT_JOKES_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_5_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_5_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.6
+        }
+        name = EVENT_JOKES_5_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.4
+        }
+        name = EVENT_JOKES_5_o3
+    }
+}
+country_event = {
+    id = JOKES.6
+    picture = GFX_EVENT_JOKES_6
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_006_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_006_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_6
+    desc = EVENT_JOKES_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_6_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_6_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.7
+        }
+        name = EVENT_JOKES_6_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.5
+        }
+        name = EVENT_JOKES_6_o3
+    }
+}
+country_event = {
+    id = JOKES.7
+    picture = GFX_EVENT_JOKES_7
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_007_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_007_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_7
+    desc = EVENT_JOKES_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_7_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_7_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.8
+        }
+        name = EVENT_JOKES_7_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.6
+        }
+        name = EVENT_JOKES_7_o3
+    }
+}
+country_event = {
+    id = JOKES.8
+    picture = GFX_EVENT_JOKES_8
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_008_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_008_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_8
+    desc = EVENT_JOKES_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_8_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_8_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.9
+        }
+        name = EVENT_JOKES_8_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.7
+        }
+        name = EVENT_JOKES_8_o3
+    }
+}
+country_event = {
+    id = JOKES.9
+    picture = GFX_EVENT_JOKES_9
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_009_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_009_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_9
+    desc = EVENT_JOKES_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_9_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_9_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.10
+        }
+        name = EVENT_JOKES_9_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.8
+        }
+        name = EVENT_JOKES_9_o3
+    }
+}
+country_event = {
+    id = JOKES.10
+    picture = GFX_EVENT_JOKES_10
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_010_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_010_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_10
+    desc = EVENT_JOKES_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_10_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_10_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.11
+        }
+        name = EVENT_JOKES_10_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.9
+        }
+        name = EVENT_JOKES_10_o3
+    }
+}
+country_event = {
+    id = JOKES.11
+    picture = GFX_EVENT_JOKES_11
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_011_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_011_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_11
+    desc = EVENT_JOKES_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_11_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.12
+        }
+        name = EVENT_JOKES_11_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.10
+        }
+        name = EVENT_JOKES_11_o3
+    }
+}
+country_event = {
+    id = JOKES.12
+    picture = GFX_EVENT_JOKES_12
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_012_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_012_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_12
+    desc = EVENT_JOKES_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_12_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_12_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.13
+        }
+        name = EVENT_JOKES_12_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.11
+        }
+        name = EVENT_JOKES_12_o3
+    }
+}
+country_event = {
+    id = JOKES.13
+    picture = GFX_EVENT_JOKES_13
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_013_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_013_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_13
+    desc = EVENT_JOKES_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_13_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.14
+        }
+        name = EVENT_JOKES_13_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.12
+        }
+        name = EVENT_JOKES_13_o3
+    }
+}
+country_event = {
+    id = JOKES.14
+    picture = GFX_EVENT_JOKES_14
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_014_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_014_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_14
+    desc = EVENT_JOKES_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_14_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_14_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.15
+        }
+        name = EVENT_JOKES_14_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.13
+        }
+        name = EVENT_JOKES_14_o3
+    }
+}
+country_event = {
+    id = JOKES.15
+    picture = GFX_EVENT_JOKES_15
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_015_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_015_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_15
+    desc = EVENT_JOKES_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_15_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_15_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.16
+        }
+        name = EVENT_JOKES_15_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.14
+        }
+        name = EVENT_JOKES_15_o3
+    }
+}
+country_event = {
+    id = JOKES.16
+    picture = GFX_EVENT_JOKES_16
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_016_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_016_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_16
+    desc = EVENT_JOKES_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_16_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_16_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.17
+        }
+        name = EVENT_JOKES_16_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.15
+        }
+        name = EVENT_JOKES_16_o3
+    }
+}
+country_event = {
+    id = JOKES.17
+    picture = GFX_EVENT_JOKES_17
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_017_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_017_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_17
+    desc = EVENT_JOKES_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_17_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_17_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.18
+        }
+        name = EVENT_JOKES_17_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.16
+        }
+        name = EVENT_JOKES_17_o3
+    }
+}
+country_event = {
+    id = JOKES.18
+    picture = GFX_EVENT_JOKES_18
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_018_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_018_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_18
+    desc = EVENT_JOKES_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_18_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_18_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.19
+        }
+        name = EVENT_JOKES_18_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.17
+        }
+        name = EVENT_JOKES_18_o3
+    }
+}
+country_event = {
+    id = JOKES.19
+    picture = GFX_EVENT_JOKES_19
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_019_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_019_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_19
+    desc = EVENT_JOKES_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_19_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_19_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.20
+        }
+        name = EVENT_JOKES_19_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.18
+        }
+        name = EVENT_JOKES_19_o3
+    }
+}
+country_event = {
+    id = JOKES.20
+    picture = GFX_EVENT_JOKES_20
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_020_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_020_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_20
+    desc = EVENT_JOKES_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_20_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_20_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.21
+        }
+        name = EVENT_JOKES_20_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.19
+        }
+        name = EVENT_JOKES_20_o3
+    }
+}
+country_event = {
+    id = JOKES.21
+    picture = GFX_EVENT_JOKES_21
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_021_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_021_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_21
+    desc = EVENT_JOKES_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_21_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_21_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.22
+        }
+        name = EVENT_JOKES_21_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.20
+        }
+        name = EVENT_JOKES_21_o3
+    }
+}
+country_event = {
+    id = JOKES.22
+    picture = GFX_EVENT_JOKES_22
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_022_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_022_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_22
+    desc = EVENT_JOKES_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_22_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_22_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.23
+        }
+        name = EVENT_JOKES_22_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.21
+        }
+        name = EVENT_JOKES_22_o3
+    }
+}
+country_event = {
+    id = JOKES.23
+    picture = GFX_EVENT_JOKES_23
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_023_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_023_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_23
+    desc = EVENT_JOKES_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_23_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_23_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.24
+        }
+        name = EVENT_JOKES_23_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.22
+        }
+        name = EVENT_JOKES_23_o3
+    }
+}
+country_event = {
+    id = JOKES.24
+    picture = GFX_EVENT_JOKES_24
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_024_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_024_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_24
+    desc = EVENT_JOKES_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_24_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_24_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.25
+        }
+        name = EVENT_JOKES_24_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.23
+        }
+        name = EVENT_JOKES_24_o3
+    }
+}
+country_event = {
+    id = JOKES.25
+    picture = GFX_EVENT_JOKES_25
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_025_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_025_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_25
+    desc = EVENT_JOKES_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_25_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_25_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.26
+        }
+        name = EVENT_JOKES_25_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.24
+        }
+        name = EVENT_JOKES_25_o3
+    }
+}
+country_event = {
+    id = JOKES.26
+    picture = GFX_EVENT_JOKES_26
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_026_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_026_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_26
+    desc = EVENT_JOKES_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_26_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_26_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.27
+        }
+        name = EVENT_JOKES_26_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.25
+        }
+        name = EVENT_JOKES_26_o3
+    }
+}
+country_event = {
+    id = JOKES.27
+    picture = GFX_EVENT_JOKES_27
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_027_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_027_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_27
+    desc = EVENT_JOKES_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_27_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_27_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.28
+        }
+        name = EVENT_JOKES_27_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.26
+        }
+        name = EVENT_JOKES_27_o3
+    }
+}
+country_event = {
+    id = JOKES.28
+    picture = GFX_EVENT_JOKES_28
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_028_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_028_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_28
+    desc = EVENT_JOKES_28_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_28_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_28_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.29
+        }
+        name = EVENT_JOKES_28_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.27
+        }
+        name = EVENT_JOKES_28_o3
+    }
+}
+country_event = {
+    id = JOKES.29
+    picture = GFX_EVENT_JOKES_29
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_029_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_029_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_29
+    desc = EVENT_JOKES_29_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_29_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_29_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.30
+        }
+        name = EVENT_JOKES_29_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.28
+        }
+        name = EVENT_JOKES_29_o3
+    }
+}
+country_event = {
+    id = JOKES.30
+    picture = GFX_EVENT_JOKES_30
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_030_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_030_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_30
+    desc = EVENT_JOKES_30_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_30_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_30_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.31
+        }
+        name = EVENT_JOKES_30_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.29
+        }
+        name = EVENT_JOKES_30_o3
+    }
+}
+country_event = {
+    id = JOKES.31
+    picture = GFX_EVENT_JOKES_31
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_031_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_031_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_31
+    desc = EVENT_JOKES_31_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_31_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_31_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.32
+        }
+        name = EVENT_JOKES_31_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.30
+        }
+        name = EVENT_JOKES_31_o3
+    }
+}
+country_event = {
+    id = JOKES.32
+    picture = GFX_EVENT_JOKES_32
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_032_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_032_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_32
+    desc = EVENT_JOKES_32_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_32_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_32_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.33
+        }
+        name = EVENT_JOKES_32_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.31
+        }
+        name = EVENT_JOKES_32_o3
+    }
+}
+country_event = {
+    id = JOKES.33
+    picture = GFX_EVENT_JOKES_33
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_033_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_033_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_33
+    desc = EVENT_JOKES_33_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_33_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_33_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.34
+        }
+        name = EVENT_JOKES_33_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.32
+        }
+        name = EVENT_JOKES_33_o3
+    }
+}
+country_event = {
+    id = JOKES.34
+    picture = GFX_EVENT_JOKES_34
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_034_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_034_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_34
+    desc = EVENT_JOKES_34_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_34_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_34_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.35
+        }
+        name = EVENT_JOKES_34_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.33
+        }
+        name = EVENT_JOKES_34_o3
+    }
+}
+country_event = {
+    id = JOKES.35
+    picture = GFX_EVENT_JOKES_35
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_035_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_035_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_35
+    desc = EVENT_JOKES_35_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_35_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_35_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.36
+        }
+        name = EVENT_JOKES_35_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.34
+        }
+        name = EVENT_JOKES_35_o3
+    }
+}
+country_event = {
+    id = JOKES.36
+    picture = GFX_EVENT_JOKES_36
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_036_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_036_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_36
+    desc = EVENT_JOKES_36_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_36_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_36_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.37
+        }
+        name = EVENT_JOKES_36_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.35
+        }
+        name = EVENT_JOKES_36_o3
+    }
+}
+country_event = {
+    id = JOKES.37
+    picture = GFX_EVENT_JOKES_37
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_037_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_037_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_37
+    desc = EVENT_JOKES_37_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_37_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_37_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.38
+        }
+        name = EVENT_JOKES_37_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.36
+        }
+        name = EVENT_JOKES_37_o3
+    }
+}
+country_event = {
+    id = JOKES.38
+    picture = GFX_EVENT_JOKES_38
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_038_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_038_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_38
+    desc = EVENT_JOKES_38_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_38_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_38_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.39
+        }
+        name = EVENT_JOKES_38_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.37
+        }
+        name = EVENT_JOKES_38_o3
+    }
+}
+country_event = {
+    id = JOKES.39
+    picture = GFX_EVENT_JOKES_39
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = PIHC_GLOBAL_FLAG_JOKE_039_SEEN
+                    }
+                }
+                add_to_variable = {
+                    var = global.VAR_PIHC_JOKE_COUNTER
+                    value = 1
+                }
+                set_global_flag = PIHC_GLOBAL_FLAG_JOKE_039_SEEN
+            }
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_JOKES_39
+    desc = EVENT_JOKES_39_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_39_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        hidden_effect = {
+            country_event = {
+                id = JOKES.9999
+            }
+        }
+        name = EVENT_JOKES_39_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = JOKES.38
+        }
+        name = EVENT_JOKES_39_o2
+    }
+}
+country_event = {
+    id = JOKES.9999
+    picture = GFX_EVENT_JOKES_9999
+    immediate = {
+        hidden_effect = {
+            random_list = {
+                seed = random
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_001_SEEN
+                        }
+                    }
+                    country_event = JOKES.1
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_002_SEEN
+                        }
+                    }
+                    country_event = JOKES.2
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_003_SEEN
+                        }
+                    }
+                    country_event = JOKES.3
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_004_SEEN
+                        }
+                    }
+                    country_event = JOKES.4
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_005_SEEN
+                        }
+                    }
+                    country_event = JOKES.5
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_006_SEEN
+                        }
+                    }
+                    country_event = JOKES.6
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_007_SEEN
+                        }
+                    }
+                    country_event = JOKES.7
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_008_SEEN
+                        }
+                    }
+                    country_event = JOKES.8
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_009_SEEN
+                        }
+                    }
+                    country_event = JOKES.9
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_010_SEEN
+                        }
+                    }
+                    country_event = JOKES.10
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_011_SEEN
+                        }
+                    }
+                    country_event = JOKES.11
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_012_SEEN
+                        }
+                    }
+                    country_event = JOKES.12
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_013_SEEN
+                        }
+                    }
+                    country_event = JOKES.13
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_014_SEEN
+                        }
+                    }
+                    country_event = JOKES.14
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_015_SEEN
+                        }
+                    }
+                    country_event = JOKES.15
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_016_SEEN
+                        }
+                    }
+                    country_event = JOKES.16
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_017_SEEN
+                        }
+                    }
+                    country_event = JOKES.17
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_018_SEEN
+                        }
+                    }
+                    country_event = JOKES.18
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_019_SEEN
+                        }
+                    }
+                    country_event = JOKES.19
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_020_SEEN
+                        }
+                    }
+                    country_event = JOKES.20
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_021_SEEN
+                        }
+                    }
+                    country_event = JOKES.21
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_022_SEEN
+                        }
+                    }
+                    country_event = JOKES.22
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_023_SEEN
+                        }
+                    }
+                    country_event = JOKES.23
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_024_SEEN
+                        }
+                    }
+                    country_event = JOKES.24
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_025_SEEN
+                        }
+                    }
+                    country_event = JOKES.25
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_026_SEEN
+                        }
+                    }
+                    country_event = JOKES.26
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_027_SEEN
+                        }
+                    }
+                    country_event = JOKES.27
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_028_SEEN
+                        }
+                    }
+                    country_event = JOKES.28
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_029_SEEN
+                        }
+                    }
+                    country_event = JOKES.29
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_030_SEEN
+                        }
+                    }
+                    country_event = JOKES.30
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_031_SEEN
+                        }
+                    }
+                    country_event = JOKES.31
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_032_SEEN
+                        }
+                    }
+                    country_event = JOKES.32
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_033_SEEN
+                        }
+                    }
+                    country_event = JOKES.33
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_034_SEEN
+                        }
+                    }
+                    country_event = JOKES.34
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_035_SEEN
+                        }
+                    }
+                    country_event = JOKES.35
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_036_SEEN
+                        }
+                    }
+                    country_event = JOKES.36
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_037_SEEN
+                        }
+                    }
+                    country_event = JOKES.37
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_038_SEEN
+                        }
+                    }
+                    country_event = JOKES.38
+                }
+                1 = {
+                    modifier = {
+                        factor = 8
+                        NOT = {
+                            has_global_flag = PIHC_GLOBAL_FLAG_JOKE_039_SEEN
+                        }
+                    }
+                    country_event = JOKES.39
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_JOKES_9999
+    desc = EVENT_JOKES_9999_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_JOKES_9999_o0
+    }
+}

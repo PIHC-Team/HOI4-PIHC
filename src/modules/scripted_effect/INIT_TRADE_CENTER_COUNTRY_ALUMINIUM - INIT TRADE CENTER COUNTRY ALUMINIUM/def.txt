@@ -1,0 +1,24 @@
+INIT_TRADE_CENTER_COUNTRY_ALUMINIUM = {
+	ENABLE_AUTO_TRADE_ALUMINIUM_BUY = yes
+	ENABLE_AUTO_TRADE_ALUMINIUM_SELL = yes
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_PRESERVE
+		value = 2
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_REQ
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_OFF
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_GAIN
+		value = 0
+	}
+	set_variable = {
+		var = VAR_TRADE_CENTER_ALUMINIUM_COST
+		value = 0
+	}
+}

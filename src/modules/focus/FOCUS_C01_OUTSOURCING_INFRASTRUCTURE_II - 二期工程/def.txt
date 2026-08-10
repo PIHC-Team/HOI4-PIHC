@@ -1,0 +1,59 @@
+focus = {
+	id = FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II
+	icon = GFX_FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_OUTSOURCING_LASPEGASUS
+		focus = FOCUS_C01_OUTSOURCING_SIRESHOLLOW
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+			add_resource = {
+				type = aluminium
+				amount = 24
+				state = ROOT
+			}
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+			add_resource = {
+				type = chromium
+				amount = 24
+				state = ROOT
+			}
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+	}
+	cost = 4
+	x = 21
+	y = 6
+}

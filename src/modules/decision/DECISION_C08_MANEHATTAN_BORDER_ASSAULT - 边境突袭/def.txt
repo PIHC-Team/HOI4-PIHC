@@ -1,0 +1,62 @@
+DECISION_CATEGORY_C08_STARLIGHT_RADIO = {
+    DECISION_C08_MANEHATTAN_BORDER_ASSAULT = {
+        fixed_random_seed = no
+        priority = 79998
+        cost = 10
+        days_remove = 7
+        visible = {
+            has_completed_focus = FOCUS_C08_MANEHATTAN_ARMY
+            NOT = {
+                has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = DECISION_C08_MANEHATTAN_WAR_TOOLTIP
+                NOT = {
+                    has_global_flag = PIHC_GLOBAL_FLAG_MANEHATTAN_WAR
+                }
+            }
+        }
+        complete_effect = {
+            C08 = {
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_RANGED_HANDGONNE
+                    amount = 70
+                    producer = C06
+                }
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+                    amount = 30
+                    producer = C06
+                }
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_SUPPORT_I
+                    amount = 40
+                    producer = C06
+                }
+            }
+            C06 = {
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_RANGED_HANDGONNE
+                    amount = -70
+                    producer = C06
+                }
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+                    amount = -30
+                    producer = C06
+                }
+                add_equipment_to_stockpile = {
+                    type = EQUIPMENT_SUPPORT_I
+                    amount = -40
+                    producer = C06
+                }
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = C08_MANEHATTAN_BORDER_ASSAULT
+    }
+}

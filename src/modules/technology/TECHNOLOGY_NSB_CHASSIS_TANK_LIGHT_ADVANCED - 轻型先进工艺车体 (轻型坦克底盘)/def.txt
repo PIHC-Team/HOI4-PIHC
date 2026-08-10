@@ -1,0 +1,38 @@
+technologies = {
+    TECHNOLOGY_NSB_CHASSIS_TANK_LIGHT_ADVANCED = {
+        folder = {
+            name = nsb_armour_folder
+            position = {
+                x = 0
+                y = 18
+            }
+        }
+        force_use_small_tech_layout = no
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_military
+            pihc_armor
+        }
+        enable_equipments = {
+            EQUIPMENT_CHASSIS_TANK_LIGHT_ADVANCED
+        }
+        enable_subunits = {
+            tank_light
+        }
+        enable_equipment_modules = {
+            MODULE_TURRET_4A_SPHERE
+            MODULE_ARMOR_3A_CRYSTAL
+            MODULE_ARMOR_3B_TRAMPOLINE
+            MODULE_PLANE_ARMOR_3A_CRYSTAL
+            MODULE_PLANE_ARMOR_3B_TRAMPOLINE
+            MODULE_PROJECTILE_5A_CRYSTAL
+            MODULE_PROJECTILE_5B_SHELL
+            MODULE_PROJECTILE_5C_GEMSHOT
+            MODULE_SUSPENSION_3A_SPIDER
+            MODULE_SPECIAL_ERA
+        }
+        research_cost = 3.0
+        start_year = 1006
+    }
+}

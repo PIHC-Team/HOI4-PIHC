@@ -1,0 +1,10 @@
+lar_fra_launch_coup = {
+	name = lar_fra_launch_coup
+	desc = lar_fra_launch_coup_desc
+	outcome = launch_coup_exfiltration_outcome
+	risk_extra = launch_coup_exfiltration_outcome_fail
+	picture = GFX_phase_lar_fra_launch_coup
+	icon = GFX_phase_lar_fra_coup_launch_coup_small
+	equipment = {
+	}
+}

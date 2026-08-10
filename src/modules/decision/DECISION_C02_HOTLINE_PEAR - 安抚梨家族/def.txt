@@ -1,0 +1,70 @@
+DECISION_CATEGORY_C02_HOTLINE = {
+    DECISION_C02_HOTLINE_PEAR = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 75
+        days_re_enable = 70
+        visible = {
+            tag = C02
+            has_completed_focus = FOCUS_C02_APPLE_INSULT
+            OR = {
+                533 = {
+                    is_demilitarized_zone = yes
+                }
+                553 = {
+                    is_demilitarized_zone = yes
+                }
+                C14 = {
+                    has_resources_rights = {
+                        state = 533
+                    }
+                }
+                C14 = {
+                    has_resources_rights = {
+                        state = 553
+                    }
+                }
+            }
+        }
+        available = {
+            num_divisions_in_states = {
+                count > 0
+                states = {
+                    533
+                }
+            }
+            num_divisions_in_states = {
+                count > 0
+                states = {
+                    553
+                }
+            }
+        }
+        complete_effect = {
+            533 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+            553 = {
+                if = {
+                    limit = {
+                        is_demilitarized_zone = yes
+                    }
+                    set_demilitarized_zone = no
+                }
+            }
+            C14 = {
+                remove_resource_rights = 533
+                remove_resource_rights = 553
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = C02_HOTLINE_PEAR
+    }
+}

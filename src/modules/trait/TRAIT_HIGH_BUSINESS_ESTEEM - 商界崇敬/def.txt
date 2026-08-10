@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_HIGH_BUSINESS_ESTEEM = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		political_advisor_cost_factor = -0.25
+		trade_opinion_factor = 0.2
+		production_factory_max_efficiency_factor = 0.05
+	}
+}

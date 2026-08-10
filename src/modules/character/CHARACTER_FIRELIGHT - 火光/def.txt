@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_FIRELIGHT = {
+        name = CHARACTER_FIRELIGHT_NAME
+        portraits = {
+            civilian = {
+                large = GFX_CHARACTER_FIRELIGHT_ANIMATED_portrait
+                small = "gfx/leaders/CHARACTER_FIRELIGHT_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FIRELIGHT_army.dds"
+                small = "gfx/leaders/CHARACTER_FIRELIGHT_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FIRELIGHT_navy.dds"
+                small = "gfx/leaders/CHARACTER_FIRELIGHT_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_FIRELIGHT_DESC
+            traits = {
+
+            }
+            ideology = democratic_democracy
+        }
+    }
+}

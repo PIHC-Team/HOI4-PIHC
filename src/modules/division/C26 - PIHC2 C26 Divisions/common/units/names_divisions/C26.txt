@@ -1,0 +1,146 @@
+NAMES_GROUP_C26_ARTILLERY = {
+    name = "风魔火炮力量 (Windigo Artillery Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "风魔火炮力量%d幻影 (Windigo Artillery Force %d Phantom)"
+}
+NAMES_GROUP_C26_TANK_LIGHT = {
+    name = "风魔轻型装甲力量 (Windigo Light Armor Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "风魔轻型装甲力量%d幻影 (Windigo Light Armor Force %d Phantom)"
+}
+NAMES_GROUP_C26_TRADITIONAL_REGULAR = {
+    name = "风魔常规步兵力量 (Windigo Regular Infantry Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "风魔常规步兵力量%d幻影 (Windigo Regular Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C26_TANK_HEAVY = {
+    name = "风魔重型装甲力量 (Windigo Heavy Armor Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "风魔重型装甲力量%d幻影 (Windigo Heavy Armor Force %d Phantom)"
+}
+NAMES_GROUP_C26_TRADITIONAL_SMALL = {
+    name = "风魔小型步兵力量 (Windigo Small Infantry Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "风魔小型步兵力量%d幻影 (Windigo Small Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C26_AUTOMATA = {
+    name = "风魔自动作战力量 (Windigo Automata Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "风魔自动作战力量%d幻影 (Windigo Automata Force %d Phantom)"
+}
+NAMES_GROUP_C26_SHIELD = {
+    name = "风魔重装步兵力量 (Windigo Heavy Infantry Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "风魔重装步兵力量%d幻影 (Windigo Heavy Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C26_MAGICAL = {
+    name = "风魔魔法步兵力量 (Windigo Magical Infantry Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "风魔魔法步兵力量%d幻影 (Windigo Magical Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C26_INFANTRY_MIX = {
+    name = "风魔协同力量 (Windigo Concerted Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "风魔协同力量%d幻影 (Windigo Concerted Force %d Phantom)"
+}
+NAMES_GROUP_C26_MOTORIZED = {
+    name = "风魔机动步兵力量 (Windigo Motorized Infantry Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "风魔机动步兵力量%d幻影 (Windigo Motorized Infantry Force %d Phantom)"
+}
+NAMES_GROUP_C26_TANK_MEDIUM = {
+    name = "风魔中型装甲力量 (Windigo Medium Armor Force)"
+    for_countries = {
+        C26
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "风魔中型装甲力量%d幻影 (Windigo Medium Armor Force %d Phantom)"
+}

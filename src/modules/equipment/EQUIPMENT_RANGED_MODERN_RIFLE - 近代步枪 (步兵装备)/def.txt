@@ -1,0 +1,32 @@
+equipments = {
+	EQUIPMENT_RANGED_MODERN_RIFLE = {
+		archetype = ARCHETYPE_INFANTRY
+		priority = 10010
+		visual_level = 10010
+		build_cost_ic = 1.5451935127200005
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.95
+		soft_attack = 19.314918909000006
+		hard_attack = 1.7559017190000001
+		air_attack = 0.0
+		ap_attack = 11.413361173500002
+		breakthrough = 8.779508595000003
+		defense = 52.878962708667814
+		armor_value = 0.8779508595000001
+		hardness = 0.0
+		maximum_speed = 6.0
+		entrenchment = 0.0
+		recon = 1
+		picture = EQUIPMENT_RANGED_MODERN_RIFLE
+		is_archetype = no
+		group_by = type
+		parent = EQUIPMENT_RANGED_CARBINE
+		resources = {
+			logs = 1
+			steel = 3
+			aluminium = 1
+		}
+	}
+}

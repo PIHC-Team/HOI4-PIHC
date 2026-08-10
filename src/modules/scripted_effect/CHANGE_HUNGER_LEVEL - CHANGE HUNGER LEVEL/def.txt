@@ -1,0 +1,69 @@
+CHANGE_HUNGER_LEVEL = {
+	CALCULATE_HUNGER = yes
+	if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_2_FULL
+			check_variable = {
+				var = VAR_NUM_FARMS_REQUIRED_2
+				value = VAR_NUM_FARMS_OWNED
+				compare = greater_than
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_3_NORMAL
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_3_NORMAL
+			check_variable = {
+				var = VAR_NUM_FARMS_REQUIRED_3
+				value = VAR_NUM_FARMS_OWNED
+				compare = greater_than
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_4_HUNGER
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_4_HUNGER
+			check_variable = {
+				var = VAR_NUM_FARMS_REQUIRED_4
+				value = VAR_NUM_FARMS_OWNED
+				compare = greater_than
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_5_FAMINE
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_3_NORMAL
+			check_variable = {
+				var = VAR_NUM_FARMS_OWNED
+				value = VAR_NUM_FARMS_REQUIRED_2
+				compare = greater_than_or_equals
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_2_FULL
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_4_HUNGER
+			check_variable = {
+				var = VAR_NUM_FARMS_OWNED
+				value = VAR_NUM_FARMS_REQUIRED_3
+				compare = greater_than_or_equals
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_3_NORMAL
+	}
+	else_if = {
+		limit = {
+			has_idea = IDEA_ERA_HUNGER_5_FAMINE
+			check_variable = {
+				var = VAR_NUM_FARMS_OWNED
+				value = VAR_NUM_FARMS_REQUIRED_4
+				compare = greater_than_or_equals
+			}
+		}
+		add_ideas = IDEA_ERA_HUNGER_4_HUNGER
+	}
+}

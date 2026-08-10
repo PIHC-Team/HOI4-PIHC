@@ -1,0 +1,50 @@
+DECISION_CATEGORY_C15_PARLIAMENT = {
+    DECISION_C11_MIND_TRICK = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 200
+        days_remove = 90
+        days_re_enable = 28
+        visible = {
+            tag = C11
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+        }
+        available = {
+            has_tech = TECHNOLOGY_TECH_MAGI_DARKMAGIC
+            if = {
+                limit = {
+                    ROOT = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+                    always = no
+                }
+            }
+        }
+        complete_effect = {
+            hidden_effect = {
+                C15_PARLIAMENT_CALCULATE_NEXT_ELECTION = yes
+            }
+            add_ideas = IDEA_C15_PARLIAMENT_C11_MIND_TRICK
+        }
+        remove_effect = {
+            remove_ideas = IDEA_C15_PARLIAMENT_C11_MIND_TRICK
+        }
+        cancel_effect = {
+            remove_ideas = IDEA_C15_PARLIAMENT_C11_MIND_TRICK
+        }
+        ai_will_do = {
+            base = 20
+            modifier = {
+                factor = 1000
+                has_country_leader = {
+                    character = CHARACTER_TRICKSTER
+                    ruling_only = yes
+                }
+            }
+        }
+        icon = C11_MIND_TRICK
+    }
+}

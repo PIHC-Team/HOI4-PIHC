@@ -1,0 +1,39 @@
+focus = {
+	id = FOCUS_GEN_MILITARY_ARMY_DONE
+	icon = GFX_FOCUS_GEN_MILITARY_ARMY_DONE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY_ARMY_EQUIP_MAGIC_2
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY_ARMY_EQUIP_IRON_2
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY_ARMY_EQUIP_AUTO_2
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY_ARMY_DOCT_SPECIAL
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_MILITARY_ARMY_CONSCRIPTION_3
+	}
+	cost = 12
+	completion_reward = {
+		add_ideas = IDEA_ALL_MILITARY_MODERN
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 6
+	y = 6
+}

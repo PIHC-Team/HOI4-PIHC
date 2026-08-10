@@ -1,0 +1,24 @@
+DECISION_CATEGORY_C08_CHEAT_TOOL = {
+    DECISION_C08_CHEAT_FOCUS_PARTII = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        allowed = {
+            tag = C08
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C08_CHEAT
+        }
+        complete_effect = {
+            load_focus_tree = C08_PARTII
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_PARTII_2
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_PARTII_3
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_EXPLORATION_WORKS
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = {
+            base = 0
+        }
+        icon = C08_CHEAT_FOCUS_PARTII
+    }
+}

@@ -1,0 +1,33 @@
+focus = {
+	id = FOCUS_C12_RECONNECTING_WITH_DISTANT_RELATIVES
+	icon = GFX_FOCUS_C12_RECONNECTING_WITH_DISTANT_RELATIVES_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_SPEECH_NOT_QUITE_INTERESTING
+	}
+	cost = 2
+	completion_reward = {
+		effect_tooltip = {
+			recruit_character = CHARACTER_ACACIA_PIE
+			recruit_character = CHARACTER_OCTAVIO_PIE
+			recruit_character = CHARACTER_OAK_PIE
+			recruit_character = CHARACTER_BIRCH_PIE
+			recruit_character = CHARACTER_PEACHY_PIE
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 11
+	y = 6
+}

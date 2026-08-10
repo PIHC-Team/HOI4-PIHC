@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_SVENGALLOP = {
+        name = CHARACTER_SVENGALLOP_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SVENGALLOP.dds"
+                small = "gfx/leaders/CHARACTER_SVENGALLOP_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SVENGALLOP_army.dds"
+                small = "gfx/leaders/CHARACTER_SVENGALLOP_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SVENGALLOP_navy.dds"
+                small = "gfx/leaders/CHARACTER_SVENGALLOP_navy_small.dds"
+            }
+        }
+        gender = male
+        advisor = {
+            idea_token = CHARACTER_SVENGALLOP
+            desc = CHARACTER_SVENGALLOP_DESC
+            traits = {
+                TRAIT_SILVER_SPOON_SYNDROME
+            }
+            ledger = military
+            can_be_fired = yes
+            cost = 200
+            removal_cost = -1
+            slot = navy_chief
+        }
+    }
+}

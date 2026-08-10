@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas = {
+		IDEA_C15_PARLIAMENT_C11_MIND_TRICK = {
+			picture = C15_PARLIAMENT_C11_MIND_TRICK
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.06
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

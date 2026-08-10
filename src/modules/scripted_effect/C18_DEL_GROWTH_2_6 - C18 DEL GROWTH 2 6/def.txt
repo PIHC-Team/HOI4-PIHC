@@ -1,0 +1,11 @@
+C18_DEL_GROWTH_2_6 = {
+	custom_effect_tooltip = C18_DEL_GROWTH_2_6_TOOLTIP
+	multiply_variable = {
+		C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1 = 0.94
+	}
+	clamp_variable = {
+		var = C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_WEEKLY_FACTOR^1
+		min = 0.005
+		max = 100.0
+	}
+}

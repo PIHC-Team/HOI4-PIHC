@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_SUNSET_SHIMMER_SYMPATHY = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		political_power_gain = 0.5
+		stability_factor = 0.05
+	}
+}

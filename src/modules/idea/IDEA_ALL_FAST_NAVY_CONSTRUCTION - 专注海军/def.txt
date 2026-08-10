@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_ALL_FAST_NAVY_CONSTRUCTION = {
+			picture = ALL_FAST_NAVY_CONSTRUCTION
+			removal_cost = -1
+			modifier = {
+				production_speed_naval_base_factor = 0.5
+				production_speed_dockyard_factor = 0.5
+				experience_gain_navy_factor = 0.5
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_RADIANT_HOPE = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		harmonicism_drift = 0.03
+		political_power_gain = 0.4
+		war_support_factor = -0.5
+	}
+}

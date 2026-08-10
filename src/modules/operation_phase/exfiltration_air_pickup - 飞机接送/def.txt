@@ -1,0 +1,19 @@
+exfiltration_air_pickup = {
+	name = exfiltration_air_pickup
+	desc = exfiltration_air_pickup_desc
+	outcome = exfiltration_air_pickup_outcome
+	risk_extra = exfiltration_air_pickup_outcome_fail
+	picture = GFX_phase_exfiltration_air_pickup
+	icon = GFX_phase_exfiltration_air_pickup_small
+	requirements = {
+		ROOT = {
+			has_equipment = {
+				ARCHETYPE_AIR_TRANSPORT > 0
+			}
+		}
+	}
+	equipment = {
+		ARCHETYPE_AIR_TRANSPORT = 1
+	}
+	return_on_complete = yes
+}

@@ -1,0 +1,88 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/idea
+version: 0.2.7
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-idea
+items:
+-   kind: paradev_build_family
+    identifier: pihc3-idea
+    name: PIHC3 Idea Compiler
+    desc: Compiles ideas together with their owned icon resources.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        presentation:
+            id: ideas
+            title: Ideas
+            group: country
+            title_key: modules.ideas.title
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-d021e4cbea8e5350
+    name: PIHC3 Basic Idea
+    desc: PIHC3 authoring template pihc3:idea/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.7
+        definition:
+            template_id: pihc3:idea/basic
+            declaration:
+                title: PIHC3 Basic Idea
+                family: idea
+                args:
+                    title:
+                        required: true
+                        description: Preferred-language idea name used for the readable
+                            folder and localization.
+                    description:
+                        default: ''
+                        type: text
+                        description: Preferred-language idea tooltip text written to
+                            the `_desc` localization key.
+                    category:
+                        default: country
+                        description: Outer idea-category block that owns the idea,
+                            such as `country` or a project-defined category.
+                    language:
+                        default: en
+                        description: Localization language code for the generated name
+                            and description; PIHC3 commonly uses `zh` or `en`.
+                    cic:
+                        default: 0
+                        type: number
+                        label: Civilian industry factor
+                        description: Decimal factory-output modifier; use 0.02 for
+                            2%.
+                    modifier:
+                        default: ''
+                        type: text
+                        label: Additional modifier PDX
+                        description: Optional additional PDX statements inserted inside
+                            the idea's `modifier` block.
+                files:
+                    def.txt: "ideas = {{\n  {category} = {{\n    {object_id} = {{\n\
+                        \      picture = {object_id}\n      removal_cost = -1\n  \
+                        \    modifier = {{\n        industrial_capacity_factory =\
+                        \ {cic}\n        {modifier}\n      }}\n      allowed_civil_war\
+                        \ = {{\n        always = yes\n      }}\n    }}\n  }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

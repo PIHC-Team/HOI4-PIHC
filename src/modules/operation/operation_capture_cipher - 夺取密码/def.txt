@@ -1,0 +1,165 @@
+operation_capture_cipher = {
+	icon = GFX_operations_capture_ciphers
+	map_icon = GFX_operations_capture_ciphers_map
+	name = operation_capture_cipher
+	desc = operation_capture_cipher_desc
+	priority = 3
+	days = 75
+	network_strength = 40
+	operatives = 2
+	is_captured_cipher = yes
+	visible = {
+		network_strength = {
+			target = FROM
+			value > 25
+		}
+		has_done_agency_upgrade = upgrade_form_department
+		NOT = {
+			ROOT = {
+				is_fully_decrypted = FROM
+			}
+		}
+	}
+	equipment = {
+	}
+	risk_chance = 0.2
+	outcome_extra_chance = 0.25
+	outcome_execute = {
+		ROOT = {
+			add_decryption = {
+				target = FROM
+				ratio = 0.3
+			}
+		}
+	}
+	outcome_extra_execute = {
+		random_list = {
+			33 = {
+				ROOT = {
+					add_decryption = {
+						target = FROM
+						ratio = 0.5
+					}
+					random_list = {
+						25 = {
+							add_intel = {
+								target = FROM
+								civilian_intel = 10
+							}
+						}
+						25 = {
+							add_intel = {
+								target = FROM
+								army_intel = 10
+							}
+						}
+						25 = {
+							add_intel = {
+								target = FROM
+								navy_intel = 10
+							}
+						}
+						25 = {
+							add_intel = {
+								target = FROM
+								airforce_intel = 10
+							}
+						}
+					}
+				}
+			}
+			67 = {
+				ROOT = {
+					add_decryption = {
+						target = FROM
+						ratio = 0.5
+					}
+				}
+			}
+		}
+	}
+	outcome_potential = {
+		ROOT = {
+			add_decryption = {
+				target = FROM
+				ratio = 0.3
+			}
+		}
+	}
+	phases = {
+		infiltration_border = {
+			base = 25
+		}
+		infiltration_submarine = {
+			base = 25
+		}
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war = no
+				}
+			}
+		}
+	}
+	phases = {
+		capture_cyphers_bribe = {
+			base = 20
+		}
+		capture_cyphers_raid = {
+			base = 20
+			modifier = {
+				ROOT = {
+					has_war = no
+				}
+				factor = 0
+			}
+		}
+		capture_cyphers_seduction = {
+			base = 20
+		}
+		capture_cyphers_smuggle = {
+			base = 20
+		}
+		capture_cyphers_reverse_engineer = {
+			base = 20
+		}
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						ARCHETYPE_AIR_TRANSPORT < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = {
+			base = 30
+		}
+		exfiltration_go_to_ground = {
+			base = 30
+		}
+		exfiltration_submarine_pickup = {
+			base = 25
+		}
+	}
+}

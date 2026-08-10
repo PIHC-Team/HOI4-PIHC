@@ -1,0 +1,129 @@
+PIHC_C08_PIN_GAME_2_GET_RANDOM_DAY = {
+	clear_array = C08.ARRAY_C08_PIN_GAME_2_1234
+	add_to_array = {
+		array = C08.ARRAY_C08_PIN_GAME_2_1234
+		value = 4
+	}
+	add_to_array = {
+		array = C08.ARRAY_C08_PIN_GAME_2_1234
+		value = 2
+	}
+	add_to_array = {
+		array = C08.ARRAY_C08_PIN_GAME_2_1234
+		value = 1
+	}
+	add_to_array = {
+		array = C08.ARRAY_C08_PIN_GAME_2_1234
+		value = 3
+	}
+	clear_array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				C08.ARRAY_C08_PIN_GAME_2_1234^num > 0
+			}
+		}
+		set_temp_variable_to_random = {
+			var = deletion_index
+			min = 0
+			max = C08.ARRAY_C08_PIN_GAME_2_1234^num
+			integer = yes
+		}
+		add_to_array = {
+			array = C08.ARRAY_C08_PIN_GAME_2_PUZZLE
+			value = C08.ARRAY_C08_PIN_GAME_2_1234^deletion_index
+		}
+		remove_from_array = {
+			array = C08.ARRAY_C08_PIN_GAME_2_1234
+			index = deletion_index
+		}
+	}
+	random = {
+		chance = 50
+		set_temp_variable = {
+			var = temp_swap
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+			value = temp_swap
+		}
+	}
+	random = {
+		chance = 50
+		set_temp_variable = {
+			var = temp_swap
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3
+			value = temp_swap
+		}
+	}
+	random = {
+		chance = 50
+		set_temp_variable = {
+			var = temp_swap
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^0
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^3
+			value = temp_swap
+		}
+	}
+	random = {
+		chance = 50
+		set_temp_variable = {
+			var = temp_swap
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^1
+			value = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2
+		}
+		set_variable = {
+			var = C08.ARRAY_C08_PIN_GAME_2_PUZZLE^2
+			value = temp_swap
+		}
+	}
+	clear_variable = C08.VAR_C08_PIN_GAME_2_BILLBOARD
+	random_list = {
+		seed = random
+		25 = {
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_BILLBOARD
+				value = 2
+			}
+		}
+		25 = {
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_BILLBOARD
+				value = 4
+			}
+		}
+		25 = {
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_BILLBOARD
+				value = 3
+			}
+		}
+		25 = {
+			set_variable = {
+				var = C08.VAR_C08_PIN_GAME_2_BILLBOARD
+				value = 1
+			}
+		}
+	}
+}

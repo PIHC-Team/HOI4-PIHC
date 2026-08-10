@@ -1,0 +1,42 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_ORE_BOULDERS_TO_CANNON = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 1
+        visible = {
+            OR = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+                has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+                tag = C12
+                is_in_faction_with = C12
+                AND = {
+                    owns_state = 601
+                    controls_state = 601
+                }
+            }
+        }
+        available = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_600 = yes
+        }
+        custom_cost_trigger = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_600 = yes
+        }
+        custom_cost_text = CUSTOM_COST_ORE_BOULDERS_600
+        complete_effect = {
+            DEL_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_600 = yes
+            add_equipment_to_stockpile = {
+                type = EQUIPMENT_CANNON_LIGHT_PINKIE
+                amount = 300
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 10
+                tag = C12
+            }
+        }
+        icon = WETM_ORE_BOULDERS_TO_CANNON
+    }
+}

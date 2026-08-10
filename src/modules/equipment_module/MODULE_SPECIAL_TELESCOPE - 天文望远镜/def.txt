@@ -1,0 +1,13 @@
+MODULE_SPECIAL_TELESCOPE = {
+	category = pihc_tank_special_type_1
+	sfx = sfx_ui_sd_module_engine
+	add_stats = {
+		build_cost_ic = 1.0
+	}
+	multiply_stats = {
+		reliability = -0.08
+		maximum_speed = -0.1
+		recon = 0.35
+	}
+	xp_cost = 8
+}

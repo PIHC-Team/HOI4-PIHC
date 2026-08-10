@@ -1,0 +1,22 @@
+C18_BECOME_THE_NIRIK = {
+	C18 = {
+		set_country_flag = PIHC_COUNTRY_FLAG_C18_BECOME_THE_NIRIK
+		set_cosmetic_tag = Y18
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 1.0
+		}
+		retire_character = CHARACTER_AUTUMN_BLAZE
+		promote_character = {
+			character = CHARACTER_AUTUMN_BLAZE_NIRIK
+			ideology = fascism_militarism
+		}
+		add_ideas = unleash_your_inner_nirik_lokadhatu
+		load_oob = Z18_nirik
+		C18_ADD_NIRIK_0_200 = yes
+		C18_ADD_GROWTH_0_50 = yes
+	}
+}

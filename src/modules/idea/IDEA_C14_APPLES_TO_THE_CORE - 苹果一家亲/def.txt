@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		IDEA_C14_APPLES_TO_THE_CORE = {
+			picture = C14_APPLES_TO_THE_CORE
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

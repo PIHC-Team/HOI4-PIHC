@@ -1,0 +1,41 @@
+characters = {
+    CHARACTER_FILTHY_RICH = {
+        name = CHARACTER_FILTHY_RICH_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_FILTHY_RICH.dds"
+                small = "gfx/leaders/CHARACTER_FILTHY_RICH_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_FILTHY_RICH_army.dds"
+                small = "gfx/leaders/CHARACTER_FILTHY_RICH_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_FILTHY_RICH_navy.dds"
+                small = "gfx/leaders/CHARACTER_FILTHY_RICH_navy_small.dds"
+            }
+        }
+        gender = male
+        country_leader = {
+            desc = CHARACTER_FILTHY_RICH_DESC
+            traits = {
+                TRAIT_SILVER_SPOON_SYNDROME
+                TRAIT_ECONOMICAL_GENIUS_II
+            }
+            ideology = corporation_democracy
+        }
+        advisor = {
+            idea_token = CHARACTER_FILTHY_RICH
+            desc = CHARACTER_FILTHY_RICH_DESC
+            traits = {
+                TRAIT_SILVER_SPOON_SYNDROME
+                TRAIT_ECONOMICAL_GENIUS_II
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			C08 = {
+				news_event = {
+					id = C08_MAIN.47
+					days = 776
+				}
+			}
+		}
+	}
+}

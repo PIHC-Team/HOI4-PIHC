@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C12_HOLDERS_BOULDER = {
+			picture = C12_HOLDERS_BOULDER
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				stability_weekly = 0.001
+				political_power_factor = 0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

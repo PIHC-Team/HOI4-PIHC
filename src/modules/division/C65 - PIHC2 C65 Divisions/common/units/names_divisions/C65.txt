@@ -1,0 +1,146 @@
+NAMES_GROUP_C65_ARTILLERY = {
+    name = "狮鹫火炮师 (Griffon Artillery Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "狮鹫火炮师%d师 (Griffon Artillery Division %d)"
+}
+NAMES_GROUP_C65_TANK_LIGHT = {
+    name = "狮鹫轻型装甲师 (Griffon Light Armor Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "狮鹫轻型装甲师%d师 (Griffon Light Armor Division %d)"
+}
+NAMES_GROUP_C65_TRADITIONAL_REGULAR = {
+    name = "狮鹫常规步兵师 (Griffon Regular Infantry Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "狮鹫常规步兵师%d师 (Griffon Regular Infantry Division %d)"
+}
+NAMES_GROUP_C65_TANK_HEAVY = {
+    name = "狮鹫重型装甲师 (Griffon Heavy Armor Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "狮鹫重型装甲师%d师 (Griffon Heavy Armor Division %d)"
+}
+NAMES_GROUP_C65_TRADITIONAL_SMALL = {
+    name = "狮鹫小型步兵师 (Griffon Small Infantry Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "狮鹫小型步兵师%d师 (Griffon Small Infantry Division %d)"
+}
+NAMES_GROUP_C65_AUTOMATA = {
+    name = "狮鹫自动作战师 (Griffon Automata Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "狮鹫自动作战师%d师 (Griffon Automata Division %d)"
+}
+NAMES_GROUP_C65_SHIELD = {
+    name = "狮鹫重装步兵师 (Griffon Heavy Infantry Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "狮鹫重装步兵师%d师 (Griffon Heavy Infantry Division %d)"
+}
+NAMES_GROUP_C65_MAGICAL = {
+    name = "狮鹫魔法步兵师 (Griffon Magical Infantry Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "狮鹫魔法步兵师%d师 (Griffon Magical Infantry Division %d)"
+}
+NAMES_GROUP_C65_INFANTRY_MIX = {
+    name = "狮鹫协同师 (Griffon Concerted Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "狮鹫协同师%d师 (Griffon Concerted Division %d)"
+}
+NAMES_GROUP_C65_MOTORIZED = {
+    name = "狮鹫机动步兵师 (Griffon Motorized Infantry Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "狮鹫机动步兵师%d师 (Griffon Motorized Infantry Division %d)"
+}
+NAMES_GROUP_C65_TANK_MEDIUM = {
+    name = "狮鹫中型装甲师 (Griffon Medium Armor Division)"
+    for_countries = {
+        C65
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "狮鹫中型装甲师%d师 (Griffon Medium Armor Division %d)"
+}

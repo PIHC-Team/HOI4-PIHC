@@ -1,0 +1,12 @@
+MODULE_PLANE_ARMOR_1A_WOODEN = {
+	category = pihc_plane_armor_type_0
+	sfx = sfx_ui_sd_module_engine
+	multiply_stats = {
+		air_defence = 0.1
+		build_cost_ic = 0.05
+	}
+	build_cost_resources = {
+		logs = 1
+	}
+	xp_cost = 5
+}

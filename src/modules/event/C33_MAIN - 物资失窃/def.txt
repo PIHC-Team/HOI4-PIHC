@@ -1,0 +1,68 @@
+add_namespace = C33_MAIN
+country_event = {
+    id = C33_MAIN.1
+    picture = GFX_EVENT_C33_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C33_MAIN_1
+    desc = EVENT_C33_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_equipment_to_stockpile = {
+            type = EQUIPMENT_RANGED_HANDGONNE
+            amount = -821
+        }
+        add_equipment_to_stockpile = {
+            type = EQUIPMENT_WITCHCRAFT_WOODEN_STAFF_II
+            amount = -407
+        }
+        add_equipment_to_stockpile = {
+            type = EQUIPMENT_SHIELD_CROSSBOW
+            amount = -105
+        }
+        add_equipment_to_stockpile = {
+            type = EQUIPMENT_SUPPORT_I
+            amount = -122
+        }
+        add_equipment_to_stockpile = {
+            type = EQUIPMENT_CANNON_LIGHT_CATAPULT
+            amount = -51
+        }
+        C01 = {
+            country_event = {
+                id = C08_MAIN.41
+            }
+        }
+        name = EVENT_C33_MAIN_1_o0
+    }
+}
+country_event = {
+    id = C33_MAIN.2
+    picture = GFX_EVENT_C33_MAIN_2
+    is_triggered_only = yes
+    title = EVENT_C33_MAIN_2
+    desc = EVENT_C33_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        403 = {
+            if = {
+                limit = {
+                    arms_factory > 0
+                }
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
+        }
+        C01 = {
+            country_event = {
+                id = C08_MAIN.41
+            }
+        }
+        name = EVENT_C33_MAIN_2_o0
+    }
+}

@@ -1,0 +1,26 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_ON_STAGE_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_ON_STAGE_army_small.dds"
+    }
+}

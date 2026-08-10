@@ -1,0 +1,11 @@
+leader_traits = {
+	TRAIT_HIGH_POLITICAL_ESTEEM = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		political_power_gain = 0.2
+		drift_defence_factor = 0.3
+		political_advisor_cost_factor = -0.3
+	}
+}

@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_WALL = {
+			picture = C01_ANGRY_WALL
+			removal_cost = -1
+			modifier = {
+				civilian_intel_to_others = -50
+				army_intel_to_others = -50
+				navy_intel_to_others = -50
+				airforce_intel_to_others = -50
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

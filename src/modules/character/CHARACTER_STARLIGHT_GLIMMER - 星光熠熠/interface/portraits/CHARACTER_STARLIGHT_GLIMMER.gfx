@@ -1,0 +1,43 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_alt
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_alt.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_alt_small
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_alt_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_STARLIGHT_GLIMMER_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_STARLIGHT_GLIMMER_ANIMATED_default_strip.dds"
+        noOfFrames = 96
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 6.1
+    }
+}

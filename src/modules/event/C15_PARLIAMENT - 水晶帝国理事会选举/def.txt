@@ -1,0 +1,90 @@
+add_namespace = C15_PARLIAMENT
+news_event = {
+    id = C15_PARLIAMENT.1
+    picture = GFX_EVENT_C15_PARLIAMENT_1
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    tag = C15
+                }
+                C15 = {
+                    country_event = {
+                        id = C15_PARLIAMENT.3
+                        days = 13
+                    }
+                    news_event = {
+                        id = C15_PARLIAMENT.2
+                        days = 14
+                    }
+                    set_country_flag = {
+                        flag = PIHC_COUNTRY_FLAG_C15_PARLIAMENT_ELECTION_ONGOING
+                        days = 14
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+    major = yes
+    show_major = {
+        OR = {
+            tag = C15
+            tag = C11
+            tag = C01
+            tag = C08
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C15_PARLIAMENT_1
+    desc = EVENT_C15_PARLIAMENT_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_PARLIAMENT_1_o0
+    }
+}
+news_event = {
+    id = C15_PARLIAMENT.2
+    picture = GFX_EVENT_C15_PARLIAMENT_2
+    major = yes
+    show_major = {
+        OR = {
+            tag = C15
+            tag = C11
+            tag = C01
+            tag = C08
+        }
+    }
+    is_triggered_only = yes
+    title = EVENT_C15_PARLIAMENT_2
+    desc = EVENT_C15_PARLIAMENT_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_PARLIAMENT_2_o0
+    }
+}
+country_event = {
+    id = C15_PARLIAMENT.3
+    picture = GFX_EVENT_C15_PARLIAMENT_3
+    immediate = {
+        hidden_effect = {
+            C15 = {
+                C15_PARLIAMENT_ELECTION = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    title = EVENT_C15_PARLIAMENT_3
+    desc = EVENT_C15_PARLIAMENT_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C15_PARLIAMENT_3_o0
+    }
+}

@@ -1,0 +1,31 @@
+PIHC_dev_debug = {
+	PIHC_dev_debug_1 = {
+		complete_effect = {
+			add_ideas = IDEA_ERA_COLD_1_COAL
+			set_technology = {
+				TECHNOLOGY_SUPPORT_COLD_I = 1
+			}
+		}
+	}
+	PIHC_dev_debug_2 = {
+		complete_effect = {
+			PIHC_update_monthly_global_variables = yes
+		}
+	}
+	PIHC_dev_debug_3 = {
+		complete_effect = {
+			C08 = {
+				set_technology = {
+					TECHNOLOGY_SP_HIDDEN_GENERATOR = 1
+				}
+			}
+			375 = {
+				add_building_construction = {
+					type = generator_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+technologies = {
+    TECHNOLOGY_SUPPORT_MAINTENANCE_IV = {
+        folder = {
+            name = support_folder
+            position = {
+                x = 8
+                y = 5
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_support
+            pihc_support_maintenance
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        maintenance_company = {
+            reliability_factor = 0.05
+            equipment_capture_factor = 0.05
+        }
+        dependencies = {
+            TECHNOLOGY_SUPPORT_MAINTENANCE_III = 1
+        }
+        path = {
+        }
+        ai_will_do = {
+            modifier = {
+                factor = 150
+                arms_factory > 50
+            }
+            modifier = {
+                factor = 190
+                arms_factory > 70
+            }
+            modifier = {
+                factor = 225
+                arms_factory > 90
+            }
+            modifier = {
+                factor = 250
+                arms_factory > 120
+            }
+        }
+        research_cost = 1.5
+        start_year = 1008
+    }
+}

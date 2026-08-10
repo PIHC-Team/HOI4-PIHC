@@ -1,0 +1,38 @@
+DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
+    DECISION_SUPPLY_EXPANSION = {
+        fixed_random_seed = no
+        priority = 98
+        cost = 100
+        days_remove = 60
+        days_re_enable = 120
+        modifier = {
+            production_speed_supply_node_factor = 3.0
+            production_speed_rail_way_factor = 3.0
+            production_speed_fuel_silo_factor = 3.0
+        }
+        ai_will_do = {
+            base = -100
+            modifier = {
+                add = 10
+                has_offensive_war = yes
+            }
+            modifier = {
+                add = 10
+                has_defensive_war = yes
+            }
+            modifier = {
+                add = -2
+                FROM = {
+                    tag = C08
+                    is_ai = yes
+                }
+            }
+            modifier = {
+                add = -2
+                has_war = no
+                date < 1006.6.1
+            }
+        }
+        icon = SUPPLY_EXPANSION
+    }
+}

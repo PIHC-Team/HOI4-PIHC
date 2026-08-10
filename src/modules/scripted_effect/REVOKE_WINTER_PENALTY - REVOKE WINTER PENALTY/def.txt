@@ -1,0 +1,68 @@
+REVOKE_WINTER_PENALTY = {
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_100
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_100
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_090
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_090
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_080
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_080
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_070
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_070
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_060
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_060
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_050
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_050
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_040
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_040
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_030
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_030
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_020
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_020
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_010
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_010
+	}
+	if = {
+		limit = {
+			has_idea = IDEA_ALL_WINTER_PENALTY_000
+		}
+		remove_ideas = IDEA_ALL_WINTER_PENALTY_000
+	}
+}

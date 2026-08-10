@@ -1,0 +1,73 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				load_oob = general_infantry_small
+				scoped_play_song = pihc09
+				if = {
+					limit = {
+						is_ai = no
+					}
+					set_variable = {
+						pihc_welcome_screen = 2
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = IDEA_ALL_EXAI
+				}
+			}
+			C26 = {
+				load_oob = C26_hidden
+				18 = {
+					create_unit = {
+						division = "name = \"轻型坦克模型测试师 (Light Armor Model Test)\" division_template = \"风魔轻型装甲力量 (Windigo Light Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C26
+						count = 1
+						prioritize_location = 4380
+					}
+					create_unit = {
+						division = "name = \"中型坦克模型测试师 (Medium Armor Model Test)\" division_template = \"风魔中型装甲力量 (Windigo Medium Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C26
+						count = 1
+						prioritize_location = 9955
+					}
+					create_unit = {
+						division = "name = \"重型坦克模型测试师 (Heavy Armor Model Test)\" division_template = \"风魔重型装甲力量 (Windigo Heavy Armor Force)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C26
+						count = 1
+						prioritize_location = 9948
+					}
+				}
+				set_technology = {
+					TECHNOLOGY_TANK_TITAN_WINDIGO = 1
+					TECHNOLOGY_NSB_TANK_TITAN_WINDIGO = 1
+				}
+				load_oob = windigo
+				capital_scope = {
+					create_unit = {
+						division = "name = \"风之魔 (Windigo)\" division_template = \"风之魔 (Windigo)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C26
+						count = 3
+					}
+				}
+			}
+			C22 = {
+				set_technology = {
+					TECHNOLOGY_TANK_TITAN_TIREK = 1
+					TECHNOLOGY_NSB_TANK_TITAN_TIREK = 1
+				}
+				load_oob = tirek
+				capital_scope = {
+					create_unit = {
+						division = "name = \"提雷克大王 (Lord Tirek)\" division_template = \"提雷克 (Tirek)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = C22
+						count = 1
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+intelligence_agency = {
+	picture = GFX_INTEL_AGENCY_DEFAULT
+	names = {
+		"Spy Agency"
+	}
+	available = {
+		always = yes
+	}
+	default = {
+		always = yes
+	}
+}

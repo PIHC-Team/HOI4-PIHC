@@ -1,0 +1,33 @@
+PV_ANNEX_ALL_NON_CENTRAL_EQUESTRIA = {
+	C00 = {
+		change_tag_from = ROOT
+	}
+	every_country = {
+		every_owned_state = {
+			set_variable = {
+				PIHC_STATE_VAR_PV_0 = PREV
+			}
+		}
+	}
+	every_state = {
+		if = {
+			limit = {
+				NOT = {
+					has_state_flag = PIHC_STATE_FLAG_IS_CENTRAL_EQUESTRIA
+				}
+				owner = {
+					NOT = {
+						OR = {
+							tag = C00
+							tag = C13
+							tag = C15
+							tag = C16
+							tag = C31
+						}
+					}
+				}
+			}
+			transfer_state_to = C00
+		}
+	}
+}

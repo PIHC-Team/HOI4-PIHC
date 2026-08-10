@@ -1,0 +1,53 @@
+focus = {
+	id = FOCUS_C15_SOMBRA_APOCALYPSE
+	icon = GFX_FOCUS_C15_SOMBRA_APOCALYPSE_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_RUINS
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_MIL_ARMY_RETRIBUTION
+	}
+	prerequisite = {
+		focus = FOCUS_C15_SOMBRA_MIL_AIR_EVERNIGHT
+		focus = FOCUS_C15_SOMBRA_MIL_NAVY_PERMAFROST
+	}
+	cost = 12
+	will_lead_to_war_with = C01
+	will_lead_to_war_with = C02
+	will_lead_to_war_with = C03
+	will_lead_to_war_with = C04
+	will_lead_to_war_with = C05
+	will_lead_to_war_with = C06
+	will_lead_to_war_with = C07
+	will_lead_to_war_with = C08
+	will_lead_to_war_with = C09
+	will_lead_to_war_with = C10
+	will_lead_to_war_with = C12
+	will_lead_to_war_with = C13
+	will_lead_to_war_with = C14
+	completion_reward = {
+		C15 = {
+			WAR_ON_CENTRAL_EQUESTRIA = yes
+		}
+		add_to_variable = {
+			var = C15.VAR_C15_SOMBRA_COMPLETED_FOCUSES
+			value = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 9
+}

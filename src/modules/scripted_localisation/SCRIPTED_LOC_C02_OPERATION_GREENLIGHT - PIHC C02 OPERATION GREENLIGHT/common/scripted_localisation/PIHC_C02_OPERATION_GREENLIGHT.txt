@@ -1,0 +1,268 @@
+defined_text = {
+    name = GetC02OperationGreenlightBomb1Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb2Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb3Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb4Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb5Location
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb1Status
+    text = {
+        trigger = {
+            OR = {
+                AND = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS
+                    C02 = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_DISARMED
+                    }
+                }
+                C02 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED
+                }
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_DIFFUSING
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_1_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb2Status
+    text = {
+        trigger = {
+            OR = {
+                AND = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS
+                    C02 = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_DISARMED
+                    }
+                }
+                C02 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED
+                }
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_DIFFUSING
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_2_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb3Status
+    text = {
+        trigger = {
+            OR = {
+                AND = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+                    C02 = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED
+                    }
+                }
+                C02 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED
+                }
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_DIFFUSING
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb4Status
+    text = {
+        trigger = {
+            OR = {
+                AND = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+                    C02 = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_DISARMED
+                    }
+                }
+                C02 = {
+                    has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED
+                }
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_DIFFUSING
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_4_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP
+    }
+}
+defined_text = {
+    name = GetC02OperationGreenlightBomb5Status
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_DISARMED
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DISARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS
+            C02 = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_DIFFUSING
+            }
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_DIFFUSING_TOOLTIP
+    }
+    text = {
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_5_LOCATION_KNOWS
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_ARMED_TOOLTIP
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = C02_OPERATION_GREENLIGHT_BOMB_UNKNOWN_TOOLTIP
+    }
+}

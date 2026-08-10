@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_C08_MANEHATTAN_WAR = {
+			picture = C08_MANEHATTAN_WAR
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_org_regain = 0.35
+				supply_consumption_factor = -0.15
+			}
+			targeted_modifier = {
+				tag = C06
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

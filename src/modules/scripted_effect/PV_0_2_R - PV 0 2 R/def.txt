@@ -1,0 +1,23 @@
+PV_0_2_R = {
+	PV_ANNEX_ALL_NON_CENTRAL_EQUESTRIA = yes
+	every_country = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_IS_CENTRAL_EQUESTRIA
+				NOT = {
+					tag = C01
+				}
+			}
+			C00 = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	C01 = {
+		set_cosmetic_tag = PV_C01_ROYAL
+		change_tag_from = C00
+	}
+}

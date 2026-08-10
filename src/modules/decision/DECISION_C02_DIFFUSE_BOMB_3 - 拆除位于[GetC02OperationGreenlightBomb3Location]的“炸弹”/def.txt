@@ -1,0 +1,37 @@
+DECISION_CATEGORY_C02_C08_OPERATION_GREENLIGHT_ANTI = {
+    DECISION_C02_DIFFUSE_BOMB_3 = {
+        fixed_random_seed = no
+        priority = 104
+        cost = 5
+        days_remove = 14
+        fire_only_once = yes
+        allowed = {
+            tag = C02
+        }
+        visible = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_KNOWS
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_DIFFUSING
+                days = 14
+                value = 1
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C02_OPERATION_GREENLIGHT_BOMB_3_LOCATION_DISARMED
+            }
+        }
+        ai_will_do = {
+            base = 1000
+            modifier = {
+                factor = 0
+                C01 = {
+                    is_ai = no
+                }
+            }
+        }
+        icon = C02_DIFFUSE_BOMB_3
+    }
+}

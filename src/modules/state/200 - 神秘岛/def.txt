@@ -1,0 +1,31 @@
+state = {
+    id = 200
+    name = STATE_200
+    provinces = {
+        3440
+        5175
+        7735
+        8056
+        8728
+        9259
+        14482
+        14512
+    }
+    manpower = 24
+    state_category = small_island
+    history = {
+        owner = C25
+        victory_points = {
+            3440
+            1
+        }
+        buildings = {
+            infrastructure = 3
+            dockyard = 1
+        }
+        add_core_of = C25
+    }
+    resources = {
+
+    }
+}

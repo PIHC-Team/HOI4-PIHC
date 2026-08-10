@@ -1,0 +1,149 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/operation
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-operation
+items:
+-   kind: entity
+    identifier: pihc3-operation-module
+    name: PIHC3 Operation Module
+    desc: Project-owned operation source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3OperationModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-operation
+    name: PIHC3 Operation
+    desc: PIHC3 operation module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-operation-module
+        definition:
+            identifier: pihc3-operation
+            name: PIHC3 Operation
+            version: 0.2.4
+            desc: PIHC3 operation module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-operation-module
+            meta:
+                project: PIHC3
+                family: operation
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-operation
+    name: PIHC3 Operation Compiler
+    desc: Registry-backed source slots and compiler hooks for operation.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: operations
+            title: Operations
+            group: military
+            title_key: modules.operations.title
+        dependencies:
+        - extension:pihc3-operation
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-be3e1d42fef00f22
+    name: PIHC3 Basic Operation
+    desc: PIHC3 authoring template pihc3:operation/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:operation/basic
+            declaration:
+                title: PIHC3 Basic Operation
+                family: operation
+                args:
+                    title:
+                        required: true
+                    description:
+                        default: ''
+                    icon:
+                        default: GFX_operations_rescue_captured_operative
+                    map_icon:
+                        default: GFX_operations_rescue_captured_operative_map
+                    priority:
+                        default: '0'
+                    days:
+                        default: '35'
+                    network_strength:
+                        default: '30'
+                    operatives:
+                        default: '1'
+                    visible:
+                        default: always = yes
+                    available:
+                        default: always = no
+                    risk_chance:
+                        default: '0.1'
+                    experience:
+                        default: '2'
+                    cost_multiplier:
+                        default: '1'
+                    phase_one:
+                        default: infiltration_border
+                    phase_one_base:
+                        default: '100'
+                    phase_two:
+                        default: infiltration_diplomatic
+                    phase_two_base:
+                        default: '100'
+                    phase_three:
+                        default: exfiltration_border
+                    phase_three_base:
+                        default: '100'
+                    language:
+                        default: en
+                files:
+                    def.txt: "{object_id} = {{\n    icon = {icon}\n    map_icon =\
+                        \ {map_icon}\n    name = {object_id}\n    desc = {object_id}_desc\n\
+                        \    priority = {priority}\n\n    days = {days}\n    network_strength\
+                        \ = {network_strength}\n    operatives = {operatives}\n\n\
+                        \    visible = {{\n        {visible}\n    }}\n\n    available\
+                        \ = {{\n        {available}\n    }}\n\n    requirements =\
+                        \ {{\n    }}\n\n    equipment = {{\n    }}\n\n    risk_chance\
+                        \ = {risk_chance}\n    experience = {experience}\n    cost_multiplier\
+                        \ = {cost_multiplier}\n\n    phases = {{\n        {phase_one}\
+                        \ = {{ base = {phase_one_base} }}\n    }}\n\n    phases =\
+                        \ {{\n        {phase_two} = {{ base = {phase_two_base} }}\n\
+                        \    }}\n\n    phases = {{\n        {phase_three} = {{ base\
+                        \ = {phase_three_base} }}\n    }}\n\n    outcome_execute =\
+                        \ {{\n    }}\n}}\n"
+                    main.loc: '[{language}.{object_id}]
+
+                        {title}
+
+
+                        [{language}.{object_id}_desc]
+
+                        {description}
+
+                        '
+                directory: '{object_id} - {title}'

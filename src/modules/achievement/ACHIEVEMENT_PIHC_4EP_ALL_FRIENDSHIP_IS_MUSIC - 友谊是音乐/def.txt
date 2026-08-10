@@ -1,0 +1,16 @@
+unique_id = pihc_3154495198
+ACHIEVEMENT_PIHC_4EP_ALL_FRIENDSHIP_IS_MUSIC = {
+	possible = {
+		difficulty > 1
+		has_start_date < 1002.12.2
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		hidden_trigger = {
+			any_country_division = {
+				division_has_majority_template = infantry_music
+			}
+		}
+	}
+}

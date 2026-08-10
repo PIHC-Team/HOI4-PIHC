@@ -1,0 +1,25 @@
+categories = {
+    air_raids = {
+        visible = {
+            has_dlc = Gotterdammerung
+        }
+        intel_source = air
+    }
+    paratrooper_raids = {
+        intel_source = air
+        visible = {
+            has_dlc = Gotterdammerung
+        }
+        available = {
+            has_tech = TECHNOLOGY_SUPPORT_PARATROOPER
+        }
+    }
+    nuclear_raids = {
+        intel_source = air
+        free_targeting = yes
+        available = {
+            always = no
+            is_special_project_completed = SP_NUCLEAR_OVERCHARGE
+        }
+    }
+}

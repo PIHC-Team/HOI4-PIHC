@@ -1,0 +1,70 @@
+C18_REGIONAL_DEV_COMPUTE_UBRAN_MODIFIER = {
+	set_temp_variable = {
+		urban_100 = C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO
+	}
+	subtract_from_temp_variable = {
+		urban_100 = 0.25
+	}
+	clamp_temp_variable = {
+		var = urban_100
+		min = 0.0
+	}
+	set_variable = {
+		C18.VAR_URBAN_CONSTRUCTION = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_CONSTRUCTION = C18.VAR_URBAN_CONSTRUCTION_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_FACTORY = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_FACTORY = C18.VAR_URBAN_FACTORY_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_DOCKYARD = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_DOCKYARD = C18.VAR_URBAN_DOCKYARD_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_REPAIR = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_REPAIR = C18.VAR_URBAN_REPAIR_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_SELF_REPAIR = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_SELF_REPAIR = C18.VAR_URBAN_SELF_REPAIR_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_RESOURCE = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_RESOURCE = C18.VAR_URBAN_RESOURCE_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_SUPPLY_RANGE = urban_100
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_SUPPLY_RANGE = C18.VAR_URBAN_SUPPLY_RANGE_FACTOR
+	}
+	set_variable = {
+		C18.VAR_URBAN_POLITICAL_GAIN = C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_POLITICAL_GAIN = 100.0
+	}
+	subtract_from_variable = {
+		C18.VAR_URBAN_POLITICAL_GAIN = 25.0
+	}
+	clamp_variable = {
+		var = C18.VAR_URBAN_POLITICAL_GAIN
+		min = 0.0
+	}
+	multiply_variable = {
+		C18.VAR_URBAN_POLITICAL_GAIN = C18.VAR_URBAN_POLITICAL_GAIN_FACTOR
+	}
+}

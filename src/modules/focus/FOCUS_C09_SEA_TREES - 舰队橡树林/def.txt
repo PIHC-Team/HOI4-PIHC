@@ -1,0 +1,55 @@
+focus = {
+	id = FOCUS_C09_SEA_TREES
+	icon = GFX_FOCUS_C09_SEA_TREES_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C09_SEA_FIRST_FLEET
+	}
+	cost = 2
+	completion_reward = {
+		effect_tooltip = {
+			add_resource = {
+				type = logs
+				amount = 45
+				state = 526
+			}
+			add_resource = {
+				type = logs
+				amount = 45
+				state = 531
+			}
+		}
+		custom_effect_tooltip = FOCUS_C09_SEA_TREES_TOOLTIP
+		hidden_effect = {
+			country_event = {
+				id = C09_MAIN.2
+				days = 3650
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_STELLAR_FLARE
+			ruling_only = yes
+		}
+		526 = {
+			is_owned_and_controlled_by = C09
+		}
+		531 = {
+			is_owned_and_controlled_by = C09
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 1
+	y = 6
+}

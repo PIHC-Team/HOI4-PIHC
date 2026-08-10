@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_NOPONY_5 = {
+        name = CHARACTER_NOPONY_5_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_NOPONY_5.dds"
+                small = "gfx/leaders/CHARACTER_NOPONY_5_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_NOPONY_5_army.dds"
+                small = "gfx/leaders/CHARACTER_NOPONY_5_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_NOPONY_5_navy.dds"
+                small = "gfx/leaders/CHARACTER_NOPONY_5_navy_small.dds"
+            }
+        }
+        gender = undefined
+        country_leader = {
+            desc = CHARACTER_NOPONY_5_DESC
+            traits = {
+
+            }
+            ideology = harmonicism_freestate
+        }
+    }
+}

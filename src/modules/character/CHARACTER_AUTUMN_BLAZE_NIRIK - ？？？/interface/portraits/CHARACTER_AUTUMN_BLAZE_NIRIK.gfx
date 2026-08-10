@@ -1,0 +1,35 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait_navy
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_navy.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait_navy_small
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_navy_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait_small
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_small.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait_army
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_army.dds"
+    }
+    spriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_portrait_army_small
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_army_small.dds"
+    }
+    frameAnimatedSpriteType = {
+        name = GFX_CHARACTER_AUTUMN_BLAZE_NIRIK_ANIMATED_portrait
+        texturefile = "gfx/leaders/CHARACTER_AUTUMN_BLAZE_NIRIK_ANIMATED_default_strip.dds"
+        noOfFrames = 104
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+    }
+}

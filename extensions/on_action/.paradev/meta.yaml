@@ -1,0 +1,95 @@
+manifest_version: 2
+coordinate: paradev-projects/pihc3/on_action
+version: 0.2.4
+compatibility:
+    heavenbase:
+        min: 0.1.2.1
+        before: 0.1.3.0
+bundle: pihc3-on-action
+items:
+-   kind: entity
+    identifier: pihc3-on-action-module
+    name: PIHC3 On Action Module
+    desc: Project-owned on_action source module record.
+    source: path
+    target:
+        module: null
+        qualname: PIHC3OnActionModule
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+-   kind: extension
+    identifier: pihc3-on-action
+    name: PIHC3 On Action
+    desc: PIHC3 on_action module persistence and authoring.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        dependencies:
+        - entity:pihc3-on-action-module
+        definition:
+            identifier: pihc3-on-action
+            name: PIHC3 On Action
+            version: 0.2.4
+            desc: PIHC3 on_action module persistence and authoring.
+            required: false
+            requires: []
+            entities:
+            - pihc3-on-action-module
+            meta:
+                project: PIHC3
+                family: on_action
+            setup: null
+            api: null
+            api_name: null
+-   kind: paradev_build_family
+    identifier: pihc3-on-action
+    name: PIHC3 On Action Compiler
+    desc: Registry-backed source slots and compiler hooks for on_action.
+    source: path
+    target:
+        module: null
+        qualname: build_family
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        presentation:
+            id: on-actions
+            title: On Actions
+            group: shared
+            title_key: modules.onActions.title
+        dependencies:
+        - extension:pihc3-on-action
+-   kind: paradev_authoring_template
+    identifier: pihc3-template-34fb6e7a8f6ff58a
+    name: PIHC3 Basic On Action
+    desc: PIHC3 authoring template pihc3:on_action/basic.
+    source: inline
+    target: definition
+    active: true
+    meta:
+        schema_version: 1
+        version: 0.2.4
+        definition:
+            template_id: pihc3:on_action/basic
+            declaration:
+                title: PIHC3 Basic On Action
+                family: on_action
+                args:
+                    title:
+                        required: true
+                    hook:
+                        default: on_monthly
+                    effect_body:
+                        type: text
+                        label: Effect body
+                        description: PDX statements executed by the on-action hook; outer braces are added automatically.
+                        advanced: false
+                files:
+                    def.txt: "on_actions = {{\n\t{hook} = {{\n\t\teffect = {{\n{effect_body}\n\t\t}}\n\t}}\n}}\n"
+                directory: '{object_id} - {title}'

@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				set_variable = {
+					cost_to_core = 0
+				}
+				set_variable = {
+					cost_to_claim = 0
+				}
+				set_variable = {
+					landlord_state = 0
+				}
+			}
+		}
+	}
+}

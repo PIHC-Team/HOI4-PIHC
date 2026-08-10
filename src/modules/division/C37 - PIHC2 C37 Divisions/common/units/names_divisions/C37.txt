@@ -1,0 +1,146 @@
+NAMES_GROUP_C37_ARTILLERY = {
+    name = "火炮团 (Artillery Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        cannon_light
+        infantry_traditional
+    }
+    fallback_name = "火炮团%d团 (Artillery Cult %d)"
+}
+NAMES_GROUP_C37_TANK_LIGHT = {
+    name = "轻型装甲团 (Light Armor Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_light
+    }
+    fallback_name = "轻型装甲团%d团 (Light Armor Cult %d)"
+}
+NAMES_GROUP_C37_TRADITIONAL_REGULAR = {
+    name = "常规步兵团 (Regular Infantry Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "常规步兵团%d团 (Regular Infantry Cult %d)"
+}
+NAMES_GROUP_C37_TANK_HEAVY = {
+    name = "重型装甲团 (Heavy Armor Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_heavy
+    }
+    fallback_name = "重型装甲团%d团 (Heavy Armor Cult %d)"
+}
+NAMES_GROUP_C37_TRADITIONAL_SMALL = {
+    name = "小型步兵团 (Small Infantry Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_traditional
+    }
+    fallback_name = "小型步兵团%d团 (Small Infantry Cult %d)"
+}
+NAMES_GROUP_C37_AUTOMATA = {
+    name = "自动作战团 (Automata Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_automata
+    }
+    fallback_name = "自动作战团%d团 (Automata Cult %d)"
+}
+NAMES_GROUP_C37_SHIELD = {
+    name = "重装步兵团 (Heavy Infantry Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_shield
+    }
+    fallback_name = "重装步兵团%d团 (Heavy Infantry Cult %d)"
+}
+NAMES_GROUP_C37_MAGICAL = {
+    name = "魔法步兵团 (Magical Infantry Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+    }
+    fallback_name = "魔法步兵团%d团 (Magical Infantry Cult %d)"
+}
+NAMES_GROUP_C37_INFANTRY_MIX = {
+    name = "协同团 (Concerted Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_magical
+        infantry_shield
+        infantry_traditional
+    }
+    fallback_name = "协同团%d团 (Concerted Cult %d)"
+}
+NAMES_GROUP_C37_MOTORIZED = {
+    name = "机动步兵团 (Motorized Infantry Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        infantry_motorized
+    }
+    fallback_name = "机动步兵团%d团 (Motorized Infantry Cult %d)"
+}
+NAMES_GROUP_C37_TANK_MEDIUM = {
+    name = "中型装甲团 (Medium Armor Cult)"
+    for_countries = {
+        C37
+    }
+    can_use = {
+        always = yes
+    }
+    division_types = {
+        tank_medium
+    }
+    fallback_name = "中型装甲团%d团 (Medium Armor Cult %d)"
+}

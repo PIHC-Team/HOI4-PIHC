@@ -1,0 +1,10 @@
+leader_traits = {
+	TRAIT_BREAKTHROUGH = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		breakthrough_factor = 0.1
+		experience_gain_army = 0.15
+	}
+}

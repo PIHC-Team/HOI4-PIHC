@@ -1,0 +1,35 @@
+focus = {
+	id = FOCUS_C08_ARMY_CRUSADERS
+	icon = GFX_FOCUS_C08_ARMY_CRUSADERS_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C08_ARMY_LINE
+	}
+	cost = 2
+	completion_reward = {
+		custom_effect_tooltip = FOCUS_C08_ARMY_CRUSADERS_TOOLTIP
+		hidden_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C08_ARMY_CRUSADERS
+		}
+		add_tech_bonus = {
+			category = pihc_armor
+			bonus = 0.75
+			uses = 1
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 11
+	y = 6
+}

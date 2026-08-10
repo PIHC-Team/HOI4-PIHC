@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_ALL_DARK_MAGIC_PAYBACK = {
+			picture = ALL_DARK_MAGIC_PAYBACK
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.05
+				transcendence_drift = 0.05
+				transcendence_acceptance = 20
+				monthly_population = -0.05
+			}
+			research_bonus = {
+				pihc_magical = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

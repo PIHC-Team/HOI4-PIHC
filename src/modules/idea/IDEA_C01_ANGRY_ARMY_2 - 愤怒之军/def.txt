@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		IDEA_C01_ANGRY_ARMY_2 = {
+			picture = C01_ANGRY_ARMY_2
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				army_org_factor = 0.2
+				army_morale_factor = -0.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

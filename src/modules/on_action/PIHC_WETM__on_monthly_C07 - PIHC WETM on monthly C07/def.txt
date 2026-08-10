@@ -1,0 +1,15 @@
+on_actions = {
+	on_monthly_C07 = {
+		effect = {
+			add_to_variable = {
+				var = VAR_INVENTORY_ITEM_3RA_WETM_BLUEPRINT
+				value = VAR_BLUEPRINTS_PRODUCE
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			add_to_variable = {
+				var = global.VAR_BLUEPRINTS_MARKET
+				value = 50
+			}
+		}
+	}
+}

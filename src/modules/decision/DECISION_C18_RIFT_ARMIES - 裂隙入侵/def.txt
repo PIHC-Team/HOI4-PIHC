@@ -1,0 +1,53 @@
+DECISION_CATEGORY_WAR_MEASURES = {
+    DECISION_C18_RIFT_ARMIES = {
+        fixed_random_seed = no
+        priority = 999
+        cost = 0
+        days_remove = 28
+        days_re_enable = 0
+        visible = {
+            tag = C38
+        }
+        available = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C38_RIFT_ACTIVATED
+        }
+        remove_effect = {
+            every_controlled_state = {
+                create_unit = {
+                    division = "name = \"？？？\" division_template = \"多元宇宙裂隙 (Multiverse Rift)\" start_experience_factor = 1.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                    owner = C38
+                    count = 1
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = ARCHETYPE_WITCHCRAFT
+                amount = 100
+            }
+            add_equipment_to_stockpile = {
+                type = ARCHETYPE_SUPPORT
+                amount = 100
+            }
+            add_equipment_to_stockpile = {
+                type = ARCHETYPE_AIRFRAME_AIRSHIP
+                amount = 4
+            }
+            add_equipment_to_stockpile = {
+                type = ARCHETYPE_AIRFRAME_GALLEON
+                amount = 60
+            }
+            add_equipment_to_stockpile = {
+                type = ARCHETYPE_AIRFRAME_UFO
+                amount = 12
+            }
+            add_equipment_to_stockpile = {
+                type = EQUIPMENT_AIR_AIRSHIP_STORM
+                amount = 1
+            }
+            add_manpower = 1200
+        }
+        ai_will_do = {
+            base = 10000
+        }
+        icon = C18_RIFT_ARMIES
+    }
+}

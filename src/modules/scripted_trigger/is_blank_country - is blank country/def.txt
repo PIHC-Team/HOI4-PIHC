@@ -1,0 +1,10 @@
+is_blank_country = {
+	OR = {
+		tag = C00
+		tag = C32
+		tag = C38
+		tag = C41
+		tag = C42
+		tag = C43
+	}
+}

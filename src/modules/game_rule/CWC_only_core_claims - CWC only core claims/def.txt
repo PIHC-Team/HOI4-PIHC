@@ -1,0 +1,17 @@
+CWC_only_core_claims = {
+	name = CWC_CLAIM_FOR_CORE
+	group = CWC_FORMULA_PP_COST_GROUP
+	icon = GFX_core_button_small
+	default = {
+		name = CWC_NO_CLAIM_FOR_CORE
+		text = CWC_NO_CLAIM_FOR_CORE_NAME
+		desc = CWC_NO_CLAIM_FOR_CORE_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = CWC_CLAIM_FOR_CORE
+		text = CWC_CLAIM_FOR_CORE_NAME
+		desc = CWC_CLAIM_FOR_CORE_DESC
+		allow_achievements = yes
+	}
+}

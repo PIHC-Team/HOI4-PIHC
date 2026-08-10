@@ -1,0 +1,26 @@
+buildings = {
+	generator_complex = {
+		base_cost = 800
+		per_level_extra_cost = 400
+		value = 1
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		state_modifiers = {
+			attrition_for_controller = -0.01
+			compliance_gain = 0.01
+			local_org_regain = 0.01
+			local_manpower = 0.01
+		}
+		level_cap = {
+			province_max = 3
+		}
+		show_on_map = 1
+		has_destroyed_mesh = yes
+		icon_frame = 40
+		missing_tech_loc = {
+			localization_key = SP_BUILDING_MISSING_PROJECT
+			PROJECT = SP_OIL_ENGINE_GENERATOR
+		}
+	}
+}
+

@@ -1,0 +1,57 @@
+focus = {
+	id = FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_III
+	icon = GFX_FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_III_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C01_OUTSOURCING_INFRASTRUCTURE_II
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+			add_resource = {
+				type = coal
+				amount = 32
+				state = ROOT
+			}
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+			add_resource = {
+				type = tungsten
+				amount = 32
+				state = ROOT
+			}
+		}
+		random_owned_controlled_state = {
+			BUILD_A_CIC = yes
+			BUILD_A_CIC = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+		random_owned_controlled_state = {
+			BUILD_AN_INFRA = yes
+			BUILD_AN_INFRA = yes
+		}
+	}
+	cost = 5
+	x = 21
+	y = 7
+}

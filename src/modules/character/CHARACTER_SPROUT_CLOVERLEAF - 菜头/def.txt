@@ -1,0 +1,39 @@
+characters = {
+    CHARACTER_SPROUT_CLOVERLEAF = {
+        name = CHARACTER_SPROUT_CLOVERLEAF_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF.dds"
+                small = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF_army.dds"
+                small = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF_navy.dds"
+                small = "gfx/leaders/CHARACTER_SPROUT_CLOVERLEAF_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_SPROUT_CLOVERLEAF_DESC
+            traits = {
+
+            }
+            ideology = fascism_militarism
+        }
+        advisor = {
+            idea_token = CHARACTER_SPROUT_CLOVERLEAF
+            desc = CHARACTER_SPROUT_CLOVERLEAF_DESC
+            traits = {
+                TRAIT_RICH_MACHIAVELLIANISM
+            }
+            ledger = civilian
+            can_be_fired = yes
+            cost = 150
+            removal_cost = 350
+            slot = political_advisor
+        }
+    }
+}

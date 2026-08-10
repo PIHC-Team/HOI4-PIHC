@@ -1,0 +1,34 @@
+scripted_gui = {
+	state_lore_container_gui = {
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+		dirty = ROOT.state_lore_text_state_id
+		window_name = state_lore_container
+		visible = {
+			is_in_array = {
+				array = global.states_with_lore
+				value = THIS.id
+			}
+		}
+		effects = {
+			state_lore_button_click = {
+				if = {
+					limit = {
+						state = ROOT.state_lore_text_state_id
+					}
+					clear_variable = ROOT.state_lore_text_state_id
+				}
+				else = {
+					set_variable = {
+						ROOT.state_lore_text_state_id = THIS
+					}
+				}
+			}
+		}
+		properties = {
+			state_lore_button = {
+				image = [THIS.state_lore_get_button_gfx]
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+equipments = {
+	EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN = {
+		picture = EQUIPMENT_CHASSIS_TANK_HEAVY_WOODEN
+		is_archetype = no
+		group_by = type
+		archetype = ARCHETYPE_TANK_HEAVY
+		is_frame = yes
+		priority = 0
+		visual_level = 0
+		build_cost_ic = 6.0
+		lend_lease_cost = 1
+		can_license = yes
+		is_convertable = no
+		reliability = 0.65
+		manpower = 2
+		weight = 1.5
+		defense = 24.0
+		max_strength = 200.0
+		armor_value = 6.0
+		hardness = 0.8
+		resources = {
+			logs = 16
+			rubber = 6
+		}
+		fuel_consumption = 0.15
+		fuel_capacity = 0.0
+		module_slots = {
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_engine_type_0
+				}
+			}
+			crew_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_crew_type_0
+				}
+			}
+			painting_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_painting_type_0
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					pihc_tank_special_type_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_turret_type_0
+				}
+			}
+			projectile_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_projectile_type_0
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_armor_type_0
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					pihc_tank_suspension_type_0
+				}
+			}
+		}
+		default_modules = {
+			turret_type_slot = MODULE_TURRET_2A_HORIZONTAL
+			projectile_type_slot = MODULE_PROJECTILE_3A_PUMPKIN
+			painting_type_slot = MODULE_PAINTING_NORMAL
+			crew_type_slot = MODULE_CREW_1A_NONE
+			suspension_type_slot = MODULE_SUSPENSION_1A_WHEELS
+			armor_type_slot = MODULE_ARMOR_2B_STEEL
+			engine_type_slot = MODULE_ENGINE_1A_PONY
+		}
+		maximum_speed = 0.0
+		entrenchment = 2.0
+		recon = 1
+		module_count_limit = {
+			module = any
+			count < 8
+			title = CHASSIS_HAS_ONLY_8_SLOTS_TOOLTIP
+		}
+	}
+}

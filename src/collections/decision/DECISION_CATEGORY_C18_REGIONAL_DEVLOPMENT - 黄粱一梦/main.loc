@@ -1,0 +1,355 @@
+[en.DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT]
+Dream by the Fire
+
+[en.DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT_desc]
+“Silence” has left behind an imbalance in regional development that will be a long-term issue within the Kirins, but we must strive to bridge this gap to minimize the risk of Niriks.
+National Nirik Rate: §0[?C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO|.3%%]§!
+National Urbanization Rate: §Y[?C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO|%]§!
+
+[en.C18_state_group_btn_tooltip]
+§C[C18GetCurrentStateGroupName]§!
+Population Share: §Y[C18GetCurrentStateGroupPopulationRatioDisplay]§!
+Kirin Rate: §7[C18GetCurrentStateGroupKirinRatioDisplay]§!
+Nirik Rate: §0[C18GetCurrentStateGroupNirikRatioDisplay]§!
+Urbanization Rate: §Y[C18GetCurrentStateGroupUrbanRatioDisplay]§!
+--------
+Each region has an independent §0Nirik Rate Growth§!, which begins at §01.07§! at the start of the game. The §0Nirik Rate§! of each region this week is equal to the §0Nirik Rate§! of the previous week × §0Nirik Rate Growth§!. The National Nirik rate is the weighted average of the regional Nirik rates. Players can reduce the §0Nirik Rate§! by §YNirik Control§!, etc., which will make the growth rate less than §G1.00§!.
+Each region has an independent §YUrbanization Rate§!, which is only related to the number of different types of buildings in the region. §YFarms§! will reduce the Urbanization Rate, while §YFactories§! and §YDockyards§! will increase the Urbanization Rate.
+
+[en.C18_state_group_btn_nirik_tooltip]
+§C[C18GetCurrentStateGroupName]§!
+Population Share: §Y[C18GetCurrentStateGroupPopulationRatioDisplay]§!
+Kirin Rate: §7[C18GetCurrentStateGroupKirinRatioDisplay]§!
+Nirik Rate: §0[C18GetCurrentStateGroupNirikRatioDisplay]§!
+Urbanization Rate: §Y[C18GetCurrentStateGroupUrbanRatioDisplay]§!
+--------
+§0The Nirik rate in this region has exceeded 10%, and a small amount of building damage will occur. Please be aware of the risk of Niriks. When the Nirik rate exceeds 25%, large-scale building damage will occur. When the national Nirik rate exceeds 85%, the Kirin civilization will be destroyed.§!
+
+[en.C18_CURE]
+£foals_breath §YNirik Cure§!
+
+[en.unleash_your_inner_nirik]
+Unleash the Anger
+
+[en.unleash_your_inner_nirik_static]
+Unleash the Anger
+
+[en.unleash_your_inner_nirik_lokadhatu]
+Reincarnation
+
+[en.C18_NIRIKS_DYNAMIC_MODIFIER]
+Unleash the Anger
+
+[en.C18_URBAN_DYNAMIC_MODIFIER]
+Modernization
+
+[en.C18_UNLEASH_YOUR_INNER_NIRIK_MODIFIER_TOOLTIP]
+When using Nirik troops, the modifier will depend on the §0National Nirik Rate§!, every §Y1.0%§! of the §0National Nirik Rate§! will bring:
+Stability: [?C18.VAR_NIRIK_STABILITY_FACTOR|=.1+%%]
+Recruitable Population: [?C18.VAR_NIRIK_CONSCRIPTION_FACTOR|=.1+%%]
+Construction Speed: [?C18.VAR_NIRIK_CONSTRUCTION_FACTOR|=.1+%%]
+Factory Output: [?C18.VAR_NIRIK_FACTORY_FACTOR|=.1+%%]
+Dockyard Output: [?C18.VAR_NIRIK_DOCKYARD_FACTOR|=.1+%%]
+Training Time: [?C18.VAR_NIRIK_TRAINING_FACTOR|=.1-%%]
+Daily Political Power Cost: [?C18.VAR_NIRIK_POLITICAL_COST_FACTOR|=.2-]
+
+--------------------------------------------
+Current Effects (National Nirik Rate: §0[?C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO|.3%%]§!):
+Stability: [?C18.VAR_NIRIK_STABILITY|=.2+%]
+Recruitable Population: [?C18.VAR_NIRIK_CONSCRIPTION|=.2+%]
+Construction Speed: [?C18.VAR_NIRIK_CONSTRUCTION|=.2+%]
+Factory Output: [?C18.VAR_NIRIK_FACTORY|=.2+%]
+Dockyard Output: [?C18.VAR_NIRIK_DOCKYARD|=.2+%]
+Training Time: [?C18.VAR_NIRIK_TRAINING|=.2-%]
+Daily Political Power Cost: [?C18.VAR_NIRIK_POLITICAL_COST|=.2-]
+
+[en.C18_UNLEASH_YOUR_INNER_NIRIK_MODIFIER_TOOLTIP_STATIC]
+When using Nirik troops, the modifier will depend on the §0National Nirik Rate§!, every §Y1.0%§! of the §0National Nirik Rate§! will bring:
+Stability: §R-4.0%§!
+Recruitable Population: §G+1.0%§!
+Construction Speed: §R-1.5%§!
+Factory Output: §R-1.5%§!
+Dockyard Output: §R-1.5%§!
+Training Time: §G-0.5%§!
+Daily Political Power Cost: §R+0.15§!
+
+--------------------------------------------
+Current Effects (National Nirik Rate: §0[?C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO|.3%%]§!):
+Stability: §R-1.60%§!
+Recruitable Population: §G+0.40%§!
+Construction Speed: §R-0.60%§!
+Factory Output: §R-0.60%§!
+Dockyard Output: §R-0.60%§!
+Training Time: §G-0.20%§!
+Daily Political Power Cost: §R+0.06§!
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_0]
+Please click on a region to view detailed information.
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_1]
+Capital Region
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_2]
+Western Region
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_3]
+Northern Region
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_4]
+Eastern Region
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_5]
+Southern Region
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_6]
+Kirin Forest
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^0|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^1|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^2|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^3|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^4|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^5|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5|.3%%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^0|%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^1|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^2|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^3|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^4|.1%]
+
+[en.C18_REGIONAL_DEV_STATE_GROUP_URBAN_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^5|.1%]
+
+[zh.DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT]
+黄粱一梦
+
+[zh.DECISION_CATEGORY_C18_REGIONAL_DEVLOPMENT_desc]
+“静默”所一留下来的区域发展的不平衡是一个将在麒麟族内长期存在的问题，但我们需要尽力弥合这个差距才能最小化逆麟的风险。
+全国逆麟率：§0[?C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO|.3%%]§!
+全国城镇化率：§Y[?C18.VAR_REGIONAL_DEV_NATIONAL_URBANIZATION_RATIO|%]§!
+
+[zh.C18_state_group_btn_tooltip]
+§C[C18GetCurrentStateGroupName]§!
+占全国：§Y[C18GetCurrentStateGroupPopulationRatioDisplay]§!
+麒麟率：§7[C18GetCurrentStateGroupKirinRatioDisplay]§!
+逆麟率：§0[C18GetCurrentStateGroupNirikRatioDisplay]§!
+城镇化：§Y[C18GetCurrentStateGroupUrbanRatioDisplay]§!
+--------
+每个地区拥有独立的§0逆麟率增长速度§!，游戏开始时基础为§01.07§!，每个地区每周的§0逆麟率§!等于上周的§0逆麟率§! × §0逆麟率增长速度§!。全国逆麟率由地区逆麟率加权平均得出。玩家可以通过§Y逆麟管控§!等方式，让增长率变为小于§G1.00§!的值，来降低§0逆麟率§!。
+每个地区拥有独立的§Y城镇化率§!，§Y城镇化率§!只与地区内不同种类的建筑数量有关，§Y农场§!会降低城镇化率，而§Y工厂§!和§Y海军船坞§!等建筑会提高城镇化率。
+
+[zh.C18_state_group_btn_nirik_tooltip]
+§C[C18GetCurrentStateGroupName]§!
+占全国：§Y[C18GetCurrentStateGroupPopulationRatioDisplay]§!
+麒麟率：§7[C18GetCurrentStateGroupKirinRatioDisplay]§!
+逆麟率：§0[C18GetCurrentStateGroupNirikRatioDisplay]§!
+城镇化：§Y[C18GetCurrentStateGroupUrbanRatioDisplay]§!
+--------
+§0此地区的逆麟率已经高于10%，将会出现少量的建筑物破坏。请注意逆麟的风险，当逆麟率高于25%时，将会出现大规模的建筑物破坏。当全国逆麟率高于85%时，麒麟文明将灭亡。§!
+
+[zh.C18_CURE]
+£foals_breath §Y逆麟解药§!
+
+[zh.unleash_your_inner_nirik]
+释放怒火
+
+[zh.unleash_your_inner_nirik_static]
+释放怒火
+
+[zh.unleash_your_inner_nirik_lokadhatu]
+轮回
+
+[zh.C18_NIRIKS_DYNAMIC_MODIFIER]
+释放怒火
+
+[zh.C18_URBAN_DYNAMIC_MODIFIER]
+现代化
+
+[zh.C18_UNLEASH_YOUR_INNER_NIRIK_MODIFIER_TOOLTIP]
+使用逆麟军队时，修正将取决于§0全国逆麟率§!，每§Y1.0%§!的§0全国逆麟率§!将带来：
+稳定度：[?C18.VAR_NIRIK_STABILITY_FACTOR|=.1+%%]
+适役马口：[?C18.VAR_NIRIK_CONSCRIPTION_FACTOR|=.1+%%]
+建造速度：[?C18.VAR_NIRIK_CONSTRUCTION_FACTOR|=.1+%%]
+工厂产出：[?C18.VAR_NIRIK_FACTORY_FACTOR|=.1+%%]
+海军船坞产出：[?C18.VAR_NIRIK_DOCKYARD_FACTOR|=.1+%%]
+训练时间：[?C18.VAR_NIRIK_TRAINING_FACTOR|=.1-%%]
+每日消耗的政治点数：[?C18.VAR_NIRIK_POLITICAL_COST_FACTOR|=.2-]
+
+--------------------------------------------
+当前的效果（全国逆麟率：§0[?C18.VAR_REGIONAL_DEV_NATIONAL_NIRIK_RATIO|.3%%]§!）：
+稳定度：[?C18.VAR_NIRIK_STABILITY|=.2+%]
+适役马口：[?C18.VAR_NIRIK_CONSCRIPTION|=.2+%]
+建造速度：[?C18.VAR_NIRIK_CONSTRUCTION|=.2+%]
+工厂产出：[?C18.VAR_NIRIK_FACTORY|=.2+%]
+海军船坞产出：[?C18.VAR_NIRIK_DOCKYARD|=.2+%]
+训练时间：[?C18.VAR_NIRIK_TRAINING|=.2-%]
+每日消耗的政治点数：[?C18.VAR_NIRIK_POLITICAL_COST|=.2-]
+
+[zh.C18_UNLEASH_YOUR_INNER_NIRIK_MODIFIER_TOOLTIP_STATIC]
+使用逆麟军队时，修正将取决于§0全国逆麟率§!，每§Y1.0%§!的§0全国逆麟率§!将带来：
+稳定度：§R-4.0%§!
+适役马口：§G+1.0%§!
+建造速度：§R-1.5%§!
+工厂产出：§R-1.5%§!
+海军船坞产出：§R-1.5%§!
+训练时间：§G-0.5%§!
+每日消耗的政治点数：§R+0.15§!
+
+--------------------------------------------
+当前的效果（全国逆麟率：§R0.404%§!）：
+稳定度：§R-1.60%§!
+适役马口：§G+0.40%§!
+建造速度：§R-0.60%§!
+工厂产出：§R-0.60%§!
+海军船坞产出：§R-0.60%§!
+训练时间：§G-0.20%§!
+每日消耗的政治点数：§R+0.06§!
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_0]
+请点击一个地区以查看更多信息。
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_1]
+首都地区
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_2]
+西部地区
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_3]
+北部地区
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_4]
+东部地区
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_5]
+南部地区
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_6]
+麒麟之森
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^0|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^1|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^2|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^3|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^4|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_POPULATION_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_POPULATION_RATIO^5|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^0|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^1|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^2|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^3|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^4|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_KIRINS_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_KIRINS_DISPLAY^5|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^0|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^1|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^2|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^3|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^4|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_NIRIKS_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_DISPLAY^5|.3%%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_1]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^0|%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_2]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^1|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_3]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^2|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_4]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^3|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_5]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^4|.1%]
+
+[zh.C18_REGIONAL_DEV_STATE_GROUP_URBAN_6]
+[?C18.ARRAY_REGIONAL_DEV_REGIONS_URBANIZATION_RATIO^5|.1%]

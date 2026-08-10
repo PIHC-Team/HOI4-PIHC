@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		IDEA_C18_WAR = {
+			picture = C18_WAR
+			removal_cost = -1
+			modifier = {
+				offence = 0.1
+				defence = 0.25
+				acclimatization_cold_climate_gain_factor = 0.5
+				acclimatization_hot_climate_gain_factor = 0.5
+				dig_in_speed_factor = 0.15
+				custom_modifier_tooltip = IDEA_C18_WAR_MODIFIER_TOOLTIP
+			}
+			on_add = {
+				C18_ADD_GROWTH_0_3 = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

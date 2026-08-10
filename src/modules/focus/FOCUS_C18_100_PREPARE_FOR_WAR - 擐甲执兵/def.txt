@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C18_100_PREPARE_FOR_WAR
+	icon = GFX_FOCUS_C18_100_PREPARE_FOR_WAR_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_100_MILITARY_RESEARCH
+	}
+	cost = 2
+	completion_reward = {
+		C18_ADD_NIRIK_0_10 = yes
+		add_ideas = IDEA_C18_WAR
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 17
+	y = 6
+}

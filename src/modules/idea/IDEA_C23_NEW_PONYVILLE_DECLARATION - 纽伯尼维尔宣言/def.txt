@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		IDEA_C23_NEW_PONYVILLE_DECLARATION = {
+			picture = C23_NEW_PONYVILLE_DECLARATION
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.2
+				democratic_drift = 0.02
+				ai_badass_factor = 0.03
+				resistance_growth_on_our_occupied_states = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

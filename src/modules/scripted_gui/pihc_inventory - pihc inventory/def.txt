@@ -1,0 +1,20 @@
+scripted_gui = {
+	pihc_inventory = {
+		context_type = player_context
+		window_name = pihc_inventory_container
+		visible = {
+			is_ai = no
+			has_variable = pihc_inventory_open
+		}
+		triggers = {
+		}
+		effects = {
+			close_button_click = {
+				clear_variable = pihc_inventory_open
+			}
+			reload_button_click = {
+				INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			}
+		}
+	}
+}

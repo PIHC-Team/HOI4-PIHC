@@ -1,0 +1,21 @@
+focus = {
+	id = FOCUS_C14_TRADE_AGREEMENT
+	icon = GFX_FOCUS_C14_TRADE_AGREEMENT_icon
+	ai_will_do = {
+		factor = 1
+	}
+	cost = 81
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 8
+	y = 0
+}

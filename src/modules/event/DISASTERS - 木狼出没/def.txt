@@ -1,0 +1,73 @@
+add_namespace = DISASTERS
+country_event = {
+    id = DISASTERS.1
+    picture = GFX_EVENT_DISASTERS_1
+    mean_time_to_happen = {
+        years = 10
+    }
+    title = EVENT_DISASTERS_1
+    desc = EVENT_DISASTERS_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_TIMBERWOLVES
+        add_stability = -0.01
+        add_manpower = -50
+        name = EVENT_DISASTERS_1_o0
+    }
+}
+country_event = {
+    id = DISASTERS.2
+    picture = GFX_EVENT_DISASTERS_2
+    mean_time_to_happen = {
+        years = 10
+    }
+    title = EVENT_DISASTERS_2
+    desc = EVENT_DISASTERS_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_BUGBEAR
+        add_stability = -0.01
+        add_manpower = -50
+        name = EVENT_DISASTERS_2_o0
+    }
+}
+country_event = {
+    id = DISASTERS.3
+    picture = GFX_EVENT_DISASTERS_3
+    mean_time_to_happen = {
+        years = 10
+    }
+    title = EVENT_DISASTERS_3
+    desc = EVENT_DISASTERS_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_PARASPRITE
+        add_stability = -0.01
+        add_manpower = -50
+        name = EVENT_DISASTERS_3_o0
+    }
+}
+country_event = {
+    id = DISASTERS.4
+    picture = GFX_EVENT_DISASTERS_4
+    mean_time_to_happen = {
+        years = 10
+    }
+    title = EVENT_DISASTERS_4
+    desc = EVENT_DISASTERS_4_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_COCKATRICE
+        add_stability = -0.01
+        add_manpower = -50
+        name = EVENT_DISASTERS_4_o0
+    }
+}

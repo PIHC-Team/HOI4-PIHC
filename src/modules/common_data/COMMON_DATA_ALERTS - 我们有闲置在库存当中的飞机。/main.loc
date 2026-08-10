@@ -1,0 +1,3437 @@
+[l_braz_por.alert_air_reserve_unused_delayed]
+Temos aviões não utilizados em nossas reservas aéreas.
+
+[l_braz_por.alert_air_reserve_unused_instant]
+§HAviões disponíveis nas reservas§!
+
+[l_braz_por.alert_air_wings_unassigned_delayed]
+Temos unidades aéreas não utilizadas em nossas bases aéreas.
+
+[l_braz_por.alert_air_wings_unassigned_instant]
+§HUnidades aéreas sem missão ou região atribuídas§!
+
+[l_braz_por.alert_ally_pulling_its_expeditionaries_delayed]
+Forças expedicionárias do seguinte país: $COUNTRY_LIST|H$, serão convocadas de volta e retornarão para seus países em breve.
+
+[l_braz_por.alert_ally_pulling_its_expeditionaries_instant]
+§HForças expedicionárias chamadas de volta§!
+
+[l_braz_por.alert_available_wargoal_instant]
+§HObjetivo de guerra disponível§!
+
+[l_braz_por.alert_base_low_supply_delayed]
+O suprimento nesta área não é suficiente e isso está afetando as bases navais e aéreas. Todas as missões executadas a partir delas serão menos eficientes.
+
+[l_braz_por.alert_base_low_supply_instant]
+§RBases com pouco suprimento§!
+
+[l_braz_por.alert_base_very_low_supply_delayed]
+O suprimento nesta área não é suficiente e isso está afetando as bases navais e aéreas. Todas as missões executadas a partir delas serão menos eficientes.
+
+[l_braz_por.alert_base_very_low_supply_instant]
+§RBases com muito pouco suprimento§!
+
+[l_braz_por.alert_battleplans_with_no_divs_delayed]
+§HVocê deveria designar algumas divisões aos planos de batalha.§!
+
+[l_braz_por.alert_battleplans_with_no_divs_instant]
+§HPlanos de batalha com nenhuma unidade .§!
+
+[l_braz_por.alert_blocked_national_focus_delayed]
+O §YFoco Nacional§! parou de progredir devido a condições não cumpridas.
+
+[l_braz_por.alert_blocked_national_focus_instant]
+§HO Foco Nacional não está progredindo!§!
+
+[l_braz_por.alert_border_conflict_delayed]
+Há conflitos ocorrendo nas fronteiras.
+
+[l_braz_por.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_braz_por.alert_border_conflict_instant]
+§HConflitos em fronteiras§!
+
+[l_braz_por.alert_border_conflict_toggle]
+§GClique para alternar entre conflitos nas fronteiras§!
+
+[l_braz_por.alert_dangerous_naval_invasion_delayed]
+§THá invasões navais em andamento nesses estados no momento:§!
+
+[l_braz_por.alert_dangerous_naval_invasion_instant]
+§RInvasão naval perigosa§!
+
+[l_braz_por.alert_deployment_ready_delayed]
+§TVocê tem unidades prontas para serem implantadas.§!
+
+[l_braz_por.alert_deployment_ready_instant]
+§HImplantar unidades§!
+
+[l_braz_por.alert_doctrine_unlock_delayed]
+Você pode desbloquear novas doutrinas:
+$DOCTRINE$
+
+[l_braz_por.alert_doctrine_unlock_instant]
+§YDoutrinas disponíveis§!
+
+[l_braz_por.alert_enemy_air_superiority_delayed]
+O inimigo tem superioridade aérea em uma de suas regiões estratégicas.
+Lutar nessa região provavelmente causará penalidades severas.
+Considere atribuir mais aeronaves para essa região.
+
+[l_braz_por.alert_enemy_air_superiority_instant]
+§RO inimigo tem superioridade aérea§!
+
+[l_braz_por.alert_enemy_generate_wargoal_instant]
+§HAlguém está fabricando objetivos de guerra contra nós ou nossos aliados§!
+
+[l_braz_por.alert_exiled_units_instant]
+§HExilamos divisões§!
+
+[l_braz_por.alert_expeditionary_force_delayed]
+Você tem forças expedicionárias neste teatro.
+
+[l_braz_por.alert_expeditionary_force_instant]
+§HForça expedicionária§!
+
+[l_braz_por.alert_expensive_ships_low_str_entry]
+$FLEET|H$ tem $NUM|R$ navio(s) grande(s) com pouca força.
+
+[l_braz_por.alert_expensive_ships_low_str_instant]
+§HNavios grandes com §Rpouca força§!§!
+
+[l_braz_por.alert_external_influences_boost_party_popularity]
+§YAumentando popularidade de um partido§!
+
+[l_braz_por.alert_external_influences_delayed_entry]
+$COUNTRY|H$ está $ACTIONS$
+
+[l_braz_por.alert_external_influences_delayed_list]
+$LIST$
+
+[l_braz_por.alert_external_influences_instant]
+§HInfluência de política externa!§!
+
+[l_braz_por.alert_external_influences_stage_coup]
+§YOrganizando um golpe de Estado§!
+
+[l_braz_por.alert_faction_assume_leadership_possible_delayed]
+Nosso país é muito mais forte do que $LEADER|Y$, líder atual da facção $FACTION|Y$ e podemos assumir o controle se assim desejarmos.
+
+[l_braz_por.alert_faction_assume_leadership_possible_instant]
+§HPodemos assumir a liderança de nossa facção§!
+
+[l_braz_por.alert_faction_generate_wargoal_instant]
+§HHá membros de facções fabricando objetivos de guerra§!
+
+[l_braz_por.alert_faction_member_near_assuming_leadership_delayed]
+Os membros seguintes da facção também são (quase) fortes o suficiente para uma tomada de controle:
+
+[l_braz_por.alert_faction_member_near_assuming_leadership_instant]
+§HHá um risco que outro país assumo controle de nossa facção, $FACTION|Y$§!!
+
+[l_braz_por.alert_faction_possible_invite_instant]
+§HVocê pode convidar para a facção§!
+
+[l_braz_por.alert_few_manpower_delayed]
+Temos pouca mão de obra. Isso pode nos levar a situações onde nossas divisões não poderão receber reforços ou lutar.
+
+[l_braz_por.alert_few_manpower_instant]
+§HPouca mão de obra!§!
+
+[l_braz_por.alert_free_civilian_factories_delayed]
+§TVocê possui fábricas civis livres para usar em comércio e construções.§!
+
+[l_braz_por.alert_free_civilian_factories_instant]
+§HFábricas civis livres§!
+
+[l_braz_por.alert_free_military_factories_delayed]
+§TVocê possui fábricas militares livres para produzir equipamentos militares.§!
+
+[l_braz_por.alert_free_military_factories_instant]
+§HFábricas militares livres§!
+
+[l_braz_por.alert_free_naval_dockyards_delayed]
+§TVocê possui estaleiros livres para produzir navios.§!
+
+[l_braz_por.alert_free_naval_dockyards_instant]
+§HEstaleiros livres§!
+
+[l_braz_por.alert_hostile_troops_delayed]
+Há tropas hostis presentes na área defendida.
+
+[l_braz_por.alert_hostile_troops_instant]
+§RTropa hostil§!
+
+[l_braz_por.alert_is_spotting_delayed]
+Marinhas inimigas estão sendo avistadas por suas forças em patrulha.
+
+[l_braz_por.alert_is_spotting_instant]
+§RMarinhas inimigas avistadas§!
+
+[l_braz_por.alert_lack_of_resources_delayed]
+Necessário: $RESOURCES$.
+O equipamento será produzido a uma §Rvelocidade reduzida§! enquanto as fábricas estiverem com falta de recursos.
+
+[l_braz_por.alert_lack_of_resources_instant]
+§HRecursos insuficientes§!
+
+[l_braz_por.alert_low_supply_delayed]
+As unidades estão ficando sem suprimentos.
+
+[l_braz_por.alert_low_supply_instant]
+§RPouco suprimento§!
+
+[l_braz_por.alert_naval_battle_results_delayed_click]
+§GClique para centralizar no próximo resultado.
+Clique no ícone £mapicon_naval_battle_result_text na região para ler o relatório.
+§!
+
+[l_braz_por.alert_naval_battle_results_delayed_list]
+Há resultados não lidos de batalhas navais em:
+$LIST$
+
+[l_braz_por.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_braz_por.alert_naval_battle_results_instant]
+§HResultados de batalhas navais não lidos§!
+
+[l_braz_por.alert_naval_combat_delayed]
+Está ocorrendo um combate naval nesta região estratégica
+
+[l_braz_por.alert_naval_combat_instant]
+§RCombate naval§!
+
+[l_braz_por.alert_naval_convoy_raiding_results_delayed_click]
+§GClique para centralizar no próximo resultado.
+Clique no ícone £mapicon_naval_battle_result_text na região para ler o relatório.
+§!
+
+[l_braz_por.alert_naval_convoy_raiding_results_delayed_list]
+Há resultados não lidos de batalhas navais de ataque a comboios em:
+$LIST$
+
+[l_braz_por.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_braz_por.alert_naval_convoy_raiding_results_instant]
+§HResultados não lidos de batalhas navais de ataque a comboios§!
+
+[l_braz_por.alert_naval_invasion_delayed]
+§THá invasões navais inimigas com alvo nesses estados:§!
+
+[l_braz_por.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_braz_por.alert_naval_invasion_instant]
+§RInvasão naval§!
+
+[l_braz_por.alert_not_enough_garrison_delayed]
+Nos falta(m) $NUM|*H$ de mão de obra.
+
+[l_braz_por.alert_not_enough_garrison_delayed_equipment]
+Nos falta o seguinte equipamento:
+
+[l_braz_por.alert_not_enough_garrison_instant]
+§HMão de obra ou equipamento insuficiente para preencher nossas guarnições§!
+
+[l_braz_por.alert_not_enough_garrison_warning]
+§RAlgumas leis de ocupação não terão seus efeitos totais até que as necessidades da guarnição sejam totalmente cumpridas.§!
+
+[l_braz_por.alert_not_training_divisions_delayed]
+Você não está treinando nenhuma divisão nova no momento.
+
+[l_braz_por.alert_not_training_divisions_instant]
+§HNenhuma divisão em treinamento básico§!
+
+[l_braz_por.alert_officer_corps_advisor_delayed]
+Conselheiros:
+Você pode selecionar um:
+$ADVISOR|Y$
+
+[l_braz_por.alert_officer_corps_instant]
+§YModificar divisões de oficiais§!
+
+[l_braz_por.alert_officer_corps_spirit_delayed]
+Espíritos militares:
+Você pode selecionar um:
+$SPIRIT|Y$
+
+[l_braz_por.alert_paused_diplomatic_actions_delayed]
+Algumas de suas ações diplomáticas não podem progredir devido à sua falta de poder político.
+Considere cancelar essas ações para que não afetem seu ganho de poder político.
+
+Relações afetadas:
+$COUNTRIES$
+
+[l_braz_por.alert_paused_diplomatic_actions_instant]
+§HAs ações diplomáticas não podem progredir§!
+
+[l_braz_por.alert_pick_new_idea_advisor_delayed]
+Você pode selecionar um:
+$ADVISOR|Y$
+
+[l_braz_por.alert_pick_new_idea_delayed]
+§TVocê pode mudar para:§!
+
+[l_braz_por.alert_pick_new_idea_delayed_bop]
+§TBalança de Poder:§!
+
+[l_braz_por.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_braz_por.alert_pick_new_idea_instant]
+§HModificar governo§!
+
+[l_braz_por.alert_production_no_template_delayed]
+§TVocê está produzindo equipamentos sem ter modelos de divisão para eles.§!
+
+[l_braz_por.alert_production_no_template_equipments]
+§TEquipamento sendo produzido sem um modelo:§!
+
+[l_braz_por.alert_production_no_template_instant]
+§HNenhum modelo§!
+
+[l_braz_por.alert_production_no_template_xp]
+§RVocê precisa de mais EXP antes que possa criar um modelo para incluir seu equipamento.§!
+
+[l_braz_por.alert_resistance_delayed_countries]
+§HPaíses:§!
+
+[l_braz_por.alert_resistance_delayed_high_resistance_list]
+§HAltos níveis de resistência em:§!
+
+[l_braz_por.alert_resistance_delayed_states]
+§HEstados:§!
+
+[l_braz_por.alert_resistance_instant]
+§HResistência à ocupação!§!
+
+[l_braz_por.alert_select_focus_delayed]
+Você deveria selecionar um novo foco para sua nação.
+
+[l_braz_por.alert_select_focus_instant]
+§HNenhum foco nacional definido§!
+
+[l_braz_por.alert_self_gain_autonomy_instant]
+§HPodemos aumentar nossa autonomia§!
+
+[l_braz_por.alert_self_lose_autonomy_instant]
+§HNossa autonomia pode ser reduzida em breve§!
+
+[l_braz_por.alert_subject_gain_autonomy_instant]
+§HUm súdito pode aumentar sua autonomia em breve§!
+
+[l_braz_por.alert_subject_lose_autonomy_instant]
+§HPodemos reduzir a autonomia de um súdito§!
+
+[l_braz_por.alert_timed_activity_low_equipment_delayed_base]
+As atividades diplomáticas acabarão em breve e possuem menos de 50% do equipamento necessário:
+$ACTIVITIES$
+
+[l_braz_por.alert_timed_activity_low_equipment_instant]
+§HAtividade cronometrada sem equipamento!§!
+
+[l_braz_por.alert_very_low_supply_delayed]
+As unidades estão sem suprimentos.
+
+[l_braz_por.alert_very_low_supply_instant]
+§RMuito pouco suprimento§!
+
+[l_braz_por.alert_volunteer_transfer_instant]
+§HForças voluntárias em transferência§!
+
+[l_english.alert_air_reserve_unused_delayed]
+We have unused planes in our air reserves.
+
+[l_english.alert_air_reserve_unused_instant]
+§HAvailable planes in reserves§!
+
+[l_english.alert_air_wings_unassigned_delayed]
+We have unused air wings in our airbases.
+
+[l_english.alert_air_wings_unassigned_instant]
+§HAir wings with no mission or region assigned§!
+
+[l_english.alert_ally_pulling_its_expeditionaries_delayed]
+Expeditionary forces from $COUNTRY_LIST|H$ are called back and will return back to their own countries soon.
+
+[l_english.alert_ally_pulling_its_expeditionaries_instant]
+§HExpeditionary Forces are called back§!
+
+[l_english.alert_available_wargoal_instant]
+§HAvailable war goal§!
+
+[l_english.alert_base_low_supply_delayed]
+Supply in this area is not enough and this is impacting Naval and Air bases. Any missions run from them will be less efficient.
+
+[l_english.alert_base_low_supply_instant]
+§RBases in Low Supply§!
+
+[l_english.alert_base_very_low_supply_delayed]
+Supply in this area is not enough and this is impacting Naval and Air bases. Any missions run from them will be less efficient.
+
+[l_english.alert_base_very_low_supply_instant]
+§RBases in Very Low Supply§!
+
+[l_english.alert_battleplans_with_no_divs_delayed]
+§HYou should assign some divisions to the battleplans.§!
+
+[l_english.alert_battleplans_with_no_divs_instant]
+§HBattle plans with no units assigned.§!
+
+[l_english.alert_blocked_national_focus_delayed]
+§YNational Focus§! has stopped progressing because of unfulfilled conditions.
+
+[l_english.alert_blocked_national_focus_instant]
+§HNational Focus is not progressing!§!
+
+[l_english.alert_border_conflict_delayed]
+We have some border conflicts going on.
+
+[l_english.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_english.alert_border_conflict_instant]
+§HBorder Conflicts§!
+
+[l_english.alert_border_conflict_toggle]
+§GClick to toggle between border conflicts§!
+
+[l_english.alert_dangerous_naval_invasion_delayed]
+§TThere are enemy naval invasions currently performed on these states:§!
+
+[l_english.alert_dangerous_naval_invasion_instant]
+§RDangerous Naval Invasion§!
+
+[l_english.alert_deployment_ready_delayed]
+§TYou have Units ready for Deployment.§!
+
+[l_english.alert_deployment_ready_instant]
+§HDeploy Units§!
+
+[l_english.alert_doctrine_unlock_delayed]
+You can unlock new doctrines:
+$DOCTRINE$
+
+[l_english.alert_doctrine_unlock_instant]
+§YDoctrines available§!
+
+[l_english.alert_enemy_air_superiority_delayed]
+Enemy has Air Superiority in one of your strategic regions.
+Fighting in that region will likely cause harsh penalties.
+Consider assigning more aircraft in that region.
+
+[l_english.alert_enemy_air_superiority_instant]
+§REnemy has Air Superiority§!
+
+[l_english.alert_enemy_generate_wargoal_instant]
+§HThere is justification of war goals against us or allies§!
+
+[l_english.alert_exiled_units_instant]
+§HWe have exiled divisions§!
+
+[l_english.alert_expeditionary_force_delayed]
+You have expeditionary forces in this theater.
+
+[l_english.alert_expeditionary_force_instant]
+§HExpeditionary Forces§!
+
+[l_english.alert_expensive_ships_low_str_entry]
+$FLEET|H$ has $NUM|R$ large ship(s) on low strength.
+
+[l_english.alert_expensive_ships_low_str_instant]
+§HLarge ships on §Rlow Strength§!§!
+
+[l_english.alert_external_influences_boost_party_popularity]
+§YBoosting party popularity§!
+
+[l_english.alert_external_influences_delayed_entry]
+$COUNTRY|H$ is $ACTIONS$
+
+[l_english.alert_external_influences_delayed_list]
+$LIST$
+
+[l_english.alert_external_influences_instant]
+§HExternal political influences!§!
+
+[l_english.alert_external_influences_stage_coup]
+§YStaging a coup§!
+
+[l_english.alert_faction_assume_leadership_possible_delayed]
+Our country is substantially stronger than the current $FACTION|Y$ faction leader $LEADER|Y$, and we can take over if we wish.
+
+[l_english.alert_faction_assume_leadership_possible_instant]
+§HWe can assume leadership of our faction§!
+
+[l_english.alert_faction_generate_wargoal_instant]
+§HThere are faction members justifying war goals§!
+
+[l_english.alert_faction_member_near_assuming_leadership_delayed]
+The following faction members are also (nearly) strong enough to take over:
+
+[l_english.alert_faction_member_near_assuming_leadership_instant]
+§HWe are at risk of another country assuming leadership of our $FACTION|Y$ faction§!!
+
+[l_english.alert_faction_possible_invite_instant]
+§HYou can invite to faction§!
+
+[l_english.alert_few_manpower_delayed]
+We have very low Manpower. It can lead to situations when our divisions can no longer reinforce and fight.
+
+[l_english.alert_few_manpower_instant]
+§HLow Manpower!§!
+
+[l_english.alert_free_civilian_factories_delayed]
+§TYou have free Civilian Factories to use for trade and building constructions.§!
+
+[l_english.alert_free_civilian_factories_instant]
+§HFree Civilian Factories§!
+
+[l_english.alert_free_military_factories_delayed]
+§TYou have free Military Factories to use for producing military equipment.§!
+
+[l_english.alert_free_military_factories_instant]
+§HFree Military Factories§!
+
+[l_english.alert_free_naval_dockyards_delayed]
+§TYou have free Dockyards to use for producing ships.§!
+
+[l_english.alert_free_naval_dockyards_instant]
+§HFree Dockyards§!
+
+[l_english.alert_hostile_troops_delayed]
+There are hostile troops present in the defended area.
+
+[l_english.alert_hostile_troops_instant]
+§RHostile Troop§!
+
+[l_english.alert_is_spotting_delayed]
+Enemy navies are currently being spotted by your patrol forces.
+
+[l_english.alert_is_spotting_instant]
+§RSpotted enemy navies§!
+
+[l_english.alert_lack_of_resources_delayed]
+Need: $RESOURCES$.
+Equipment will be produced at §Rreduced speed§! while factories lack resources.
+
+[l_english.alert_lack_of_resources_instant]
+§HInsufficient resources§!
+
+[l_english.alert_low_supply_delayed]
+Units are running low on Supplies.
+
+[l_english.alert_low_supply_instant]
+§RLow Supplies§!
+
+[l_english.alert_naval_battle_results_delayed_click]
+§GClick to center on the next result.
+Click the £mapicon_naval_battle_result_text icon in the region to read the report.
+§!
+
+[l_english.alert_naval_battle_results_delayed_list]
+There are unread results for Naval Battles in:
+$LIST$
+
+[l_english.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_english.alert_naval_battle_results_instant]
+§HUnread Naval Battle Results§!
+
+[l_english.alert_naval_combat_delayed]
+Naval combat happens in this Strategic Region
+
+[l_english.alert_naval_combat_instant]
+§RNaval combat§!
+
+[l_english.alert_naval_convoy_raiding_results_delayed_click]
+§GClick to center on the next result.
+Click the £topbar_convoys icon in the region to read the report.
+§!
+
+[l_english.alert_naval_convoy_raiding_results_delayed_list]
+There are unread results for Naval Convoy Raider Battles in:
+$LIST$
+
+[l_english.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_english.alert_naval_convoy_raiding_results_instant]
+§HUnread Naval Convoy Raider Battle Results§!
+
+[l_english.alert_naval_invasion_delayed]
+§TThere are enemy naval invasions targeting these states:§!
+
+[l_english.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_english.alert_naval_invasion_instant]
+§RNaval Invasion§!
+
+[l_english.alert_not_enough_garrison_delayed]
+We are missing $NUM|*H$ Manpower.
+
+[l_english.alert_not_enough_garrison_delayed_equipment]
+We are missing the following Equipment:
+
+[l_english.alert_not_enough_garrison_instant]
+§HNot enough Manpower or Equipment to fulfill our Garrisons§!
+
+[l_english.alert_not_enough_garrison_warning]
+§RSome Occupation Laws will not have their full effect until their Garrison needs are fully satisfied.§!
+
+[l_english.alert_not_training_divisions_delayed]
+You are currently not training any new Divisions.
+
+[l_english.alert_not_training_divisions_instant]
+§HNo Divisions in basic training§!
+
+[l_english.alert_officer_corps_advisor_delayed]
+Advisors:
+You can select a:
+$ADVISOR|Y$
+
+[l_english.alert_officer_corps_instant]
+§YModify Officer Corps§!
+
+[l_english.alert_officer_corps_spirit_delayed]
+Military Spirits:
+You can select a:
+$SPIRIT|Y$
+
+[l_english.alert_paused_diplomatic_actions_delayed]
+Some of your diplomatic actions can't progress because you lack Political Power.
+Consider canceling these actions so they don't affect your Political Power gain.
+
+Affected relations:
+$COUNTRIES$
+
+[l_english.alert_paused_diplomatic_actions_instant]
+§HDiplomatic actions can't progress§!
+
+[l_english.alert_pick_new_idea_advisor_delayed]
+You can select a:
+$ADVISOR|Y$
+
+[l_english.alert_pick_new_idea_delayed]
+§TYou can change:§!
+
+[l_english.alert_pick_new_idea_delayed_bop]
+§TBalance of Power:§!
+
+[l_english.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_english.alert_pick_new_idea_instant]
+§HModify government§!
+
+[l_english.alert_production_no_template_delayed]
+§TYou are producing Equipment that you have no Division Template for.§!
+
+[l_english.alert_production_no_template_equipments]
+§TEquipment being produced without a template:§!
+
+[l_english.alert_production_no_template_instant]
+§HNo Template§!
+
+[l_english.alert_production_no_template_xp]
+§RYou need more XP before you can create a template to include your equipment.§!
+
+[l_english.alert_resistance_delayed_countries]
+§HCountries:§!
+
+[l_english.alert_resistance_delayed_high_resistance_list]
+§HHigh levels of resistance in:§!
+
+[l_english.alert_resistance_delayed_states]
+§HStates:§!
+
+[l_english.alert_resistance_instant]
+§HResistance to occupation!§!
+
+[l_english.alert_select_focus_delayed]
+You should select a new focus for your nation.
+
+[l_english.alert_select_focus_instant]
+§HNo national focus set§!
+
+[l_english.alert_self_gain_autonomy_instant]
+§HWe can raise our autonomy§!
+
+[l_english.alert_self_lose_autonomy_instant]
+§HOur autonomy may soon be lowered§!
+
+[l_english.alert_subject_gain_autonomy_instant]
+§HA subject may soon raise its autonomy§!
+
+[l_english.alert_subject_lose_autonomy_instant]
+§HWe can lower the autonomy of a subject§!
+
+[l_english.alert_timed_activity_low_equipment_delayed_base]
+Diplomatic activities will soon be finished and has less than 50% of the required equipment:
+$ACTIVITIES$
+
+[l_english.alert_timed_activity_low_equipment_instant]
+§HTimed activity lacks equipment!§!
+
+[l_english.alert_very_low_supply_delayed]
+Units are lacking supplies.
+
+[l_english.alert_very_low_supply_instant]
+§RVery low supplies§!
+
+[l_english.alert_volunteer_transfer_instant]
+§HVolunteer forces in transfer§!
+
+[l_french.alert_air_reserve_unused_delayed]
+Des avions sont disponibles dans nos réserves aériennes.
+
+[l_french.alert_air_reserve_unused_instant]
+§HAvions disponibles en réserve§!
+
+[l_french.alert_air_wings_unassigned_delayed]
+Des escadrilles sont disponibles sur nos bases aériennes.
+
+[l_french.alert_air_wings_unassigned_instant]
+§HEscadrilles sans mission ou région d'affectation§!
+
+[l_french.alert_ally_pulling_its_expeditionaries_delayed]
+Les forces expéditionnaires de $COUNTRY_LIST|H$ ont été rappelées et rentreront bientôt dans leur pays.
+
+[l_french.alert_ally_pulling_its_expeditionaries_instant]
+§HRappel des forces expéditionnaires§!
+
+[l_french.alert_available_wargoal_instant]
+§HBut de guerre disponible§!
+
+[l_french.alert_base_low_supply_delayed]
+Le ravitaillement de cette région est insuffisant, ce qui impacte les bases navales et aériennes. Toute mission lancée depuis ces bases sera bien moins performante.
+
+[l_french.alert_base_low_supply_instant]
+§RBases mal ravitaillées§!
+
+[l_french.alert_base_very_low_supply_delayed]
+Le ravitaillement de cette région est insuffisant, ce qui impacte les bases navales et aériennes. Toute mission lancée depuis ces bases sera bien moins performante.
+
+[l_french.alert_base_very_low_supply_instant]
+§RRavitaillement de bases critique§!
+
+[l_french.alert_battleplans_with_no_divs_delayed]
+§HVous devriez affecter quelques divisions aux plans de bataille.§!
+
+[l_french.alert_battleplans_with_no_divs_instant]
+§HAucune unité n'est affectée à ces plans de bataille.§!
+
+[l_french.alert_blocked_national_focus_delayed]
+§YLa priorité nationale§! ne progresse plus car les conditions requises ne sont pas remplies.
+
+[l_french.alert_blocked_national_focus_instant]
+§HLa priorité nationale ne progresse pas !§!
+
+[l_french.alert_border_conflict_delayed]
+Nous avons des conflits frontaliers en cours.
+
+[l_french.alert_border_conflict_entry]
+    – Frontière entre les États de $ATTACKER$ et de $DEFENDER$
+
+[l_french.alert_border_conflict_instant]
+§HConflits frontaliers§!
+
+[l_french.alert_border_conflict_toggle]
+§GCliquer§! pour passer de l'un à l'autre.
+
+[l_french.alert_dangerous_naval_invasion_delayed]
+§TDes invasions navales sont actuellement menées par l'ennemi dans ces États :§!
+
+[l_french.alert_dangerous_naval_invasion_instant]
+§RInvasion navale menaçante§!
+
+[l_french.alert_deployment_ready_delayed]
+§TNous disposons d'unités prêtes à être déployées.§!
+
+[l_french.alert_deployment_ready_instant]
+§HDéployer des unités§!
+
+[l_french.alert_doctrine_unlock_delayed]
+De nouvelles doctrines peuvent être adoptées :
+$DOCTRINE$
+
+[l_french.alert_doctrine_unlock_instant]
+§YDoctrines disponibles§!
+
+[l_french.alert_enemy_air_superiority_delayed]
+L'ennemi bénéficie d'une franche supériorité aérienne dans une région stratégique.
+Tout combat qui y sera mené se soldera inévitablement par de lourdes pertes.
+Nous devrions y déployer des avions supplémentaires.
+
+[l_french.alert_enemy_air_superiority_instant]
+§RSupériorité aérienne de l'ennemi§!
+
+[l_french.alert_enemy_generate_wargoal_instant]
+§HDes buts de guerre sont fabriqués de toute pièce contre nous ou nos alliés.§!
+
+[l_french.alert_exiled_units_instant]
+§HDes divisions sont en exil.§!
+
+[l_french.alert_expeditionary_force_delayed]
+Nous disposons de forces expéditionnaires sur ce théâtre d'opérations.
+
+[l_french.alert_expeditionary_force_instant]
+§HForces expéditionnaires§!
+
+[l_french.alert_expensive_ships_low_str_entry]
+$FLEET|H$ possède $NUM|R$ grand(s) navire(s) à capacité réduite.
+
+[l_french.alert_expensive_ships_low_str_instant]
+§HGrands navires à §Rcapacité réduite§!§!
+
+[l_french.alert_external_influences_boost_party_popularity]
+§YRenforcement de la popularité d'un parti§!
+
+[l_french.alert_external_influences_delayed_entry]
+$ACTIONS$ par $COUNTRY|H$
+
+[l_french.alert_external_influences_delayed_list]
+$LIST$
+
+[l_french.alert_external_influences_instant]
+§HInfluences politiques extérieures !§!
+
+[l_french.alert_external_influences_stage_coup]
+§YTentative de coup d'État§!
+
+[l_french.alert_faction_assume_leadership_possible_delayed]
+Notre pays est suffisamment plus puissant que $LEADER|Y$, aussi pouvons-nous prendre la tête de la faction $FACTION|Y$ si nous le souhaitons.
+
+[l_french.alert_faction_assume_leadership_possible_instant]
+§HNous ne pouvons prendre la tête de la faction.§!
+
+[l_french.alert_faction_generate_wargoal_instant]
+§HDes pays membres de la faction sont en train de justifier un but de guerre.§!
+
+[l_french.alert_faction_member_near_assuming_leadership_delayed]
+Ces pays membres sont aussi presque assez puissants pour prendre la tête de la faction :
+
+[l_french.alert_faction_member_near_assuming_leadership_instant]
+§HIl y a un risque qu'un autre pays prenne la tête de la faction $FACTION|Y$.§!
+
+[l_french.alert_faction_possible_invite_instant]
+§HNous pouvons inviter un nouveau membre dans notre faction.§!
+
+[l_french.alert_few_manpower_delayed]
+Nous manquons de réserves. Nos armées risquent de manquer d'hommes.
+
+[l_french.alert_few_manpower_instant]
+§HRéserves réduites !§!
+
+[l_french.alert_free_civilian_factories_delayed]
+§TDes usines civiles sont disponibles pour commercer et construire.§!
+
+[l_french.alert_free_civilian_factories_instant]
+§HUsines civiles disponibles§!
+
+[l_french.alert_free_military_factories_delayed]
+§TDes usines militaires sont disponibles pour produire du matériel militaire.§!
+
+[l_french.alert_free_military_factories_instant]
+§HUsines militaires disponibles§!
+
+[l_french.alert_free_naval_dockyards_delayed]
+§TDes chantiers navals sont disponibles pour construire des navires.§!
+
+[l_french.alert_free_naval_dockyards_instant]
+§HChantiers navals disponibles§!
+
+[l_french.alert_hostile_troops_delayed]
+Des troupes ennemies se trouvent dans une zone de défense.
+
+[l_french.alert_hostile_troops_instant]
+§RTroupes ennemies§!
+
+[l_french.alert_is_spotting_delayed]
+Des flottes ennemies ont été repérées par les patrouilles en mer.
+
+[l_french.alert_is_spotting_instant]
+§RFlottes ennemies repérées§!
+
+[l_french.alert_lack_of_resources_delayed]
+Besoin : $RESOURCES$.
+Le matériel sera produit à §Rvitesse réduite§! tant que les usines manqueront de ces ressources.
+
+[l_french.alert_lack_of_resources_instant]
+§HRessources insuffisantes§!
+
+[l_french.alert_low_supply_delayed]
+Des unités manquent de ravitaillement.
+
+[l_french.alert_low_supply_instant]
+§RRavitaillement insuffisant§!
+
+[l_french.alert_naval_battle_results_delayed_click]
+§GCliquer§! pour centrer la vue sur le résultat suivant.
+§GCliquer§! sur l'icône £mapicon_naval_battle_result_text£ de la région concernée pour lire le rapport.
+
+[l_french.alert_naval_battle_results_delayed_list]
+Des résultats de batailles navales non lus sont disponibles :
+$LIST$
+
+[l_french.alert_naval_battle_results_entry]
+$NAME$ $RESULT$ : $A_VALUE$$A_TAG$ - $D_VALUE$$D_TAG$
+
+[l_french.alert_naval_battle_results_instant]
+§HRésultats de batailles navales non lus.§!
+
+[l_french.alert_naval_combat_delayed]
+Combat naval en cours dans cette région stratégique
+
+[l_french.alert_naval_combat_instant]
+§RCombat naval§!
+
+[l_french.alert_naval_convoy_raiding_results_delayed_click]
+§GCliquer§! pour centrer la vue sur le résultat suivant.
+§GCliquer§! sur l'icône £topbar_convoys£ de la région concernée pour lire le rapport.
+
+[l_french.alert_naval_convoy_raiding_results_delayed_list]
+Des résultats d'attaques de convois non lus sont disponibles :
+$LIST$
+
+[l_french.alert_naval_convoy_raiding_results_entry]
+$NAME$ $RESULT$ : $A_VALUE$$A_TAG$ - $D_VALUE$$D_TAG$
+
+[l_french.alert_naval_convoy_raiding_results_instant]
+§HRésultats d'attaques de convois non lus.§!
+
+[l_french.alert_naval_invasion_delayed]
+§TCes États sont menacés par des invasions navales ennemies :§!
+
+[l_french.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_french.alert_naval_invasion_instant]
+§RInvasion navale§!
+
+[l_french.alert_not_enough_garrison_delayed]
+Il nous manque $NUM|*H$ hommes.
+
+[l_french.alert_not_enough_garrison_delayed_equipment]
+Matériel manquant :
+
+[l_french.alert_not_enough_garrison_instant]
+§HMatériel ou effectifs insuffisants pour les garnisons§!
+
+[l_french.alert_not_enough_garrison_warning]
+§RCertaines politiques d'occupation n'auront pas tous les effets escomptés tant que tous les besoins des garnisons ne seront pas comblés.§!
+
+[l_french.alert_not_training_divisions_delayed]
+Aucune nouvelle division n'est actuellement entraînée.
+
+[l_french.alert_not_training_divisions_instant]
+§HAucune division ne suit d'entraînement de base§!
+
+[l_french.alert_officer_corps_advisor_delayed]
+Conseillers :
+Nous pouvons choisir :
+$ADVISOR|Y$
+
+[l_french.alert_officer_corps_instant]
+§YChangements dans le corps des officiers§!
+
+[l_french.alert_officer_corps_spirit_delayed]
+Esprits militaires :
+Nous pouvons choisir :
+$SPIRIT|Y$
+
+[l_french.alert_paused_diplomatic_actions_delayed]
+Certaines actions diplomatiques ne peuvent pas progresser car nous manquons de poids politique.
+Nous devrions envisager d'en annuler certaines pour ne pas trop affecter notre gain de poids politique.
+
+Relations concernées :
+$COUNTRIES$
+
+[l_french.alert_paused_diplomatic_actions_instant]
+§HActions diplomatiques stoppées§!
+
+[l_french.alert_pick_new_idea_advisor_delayed]
+Nous pouvons choisir :
+$ADVISOR|Y$
+
+[l_french.alert_pick_new_idea_delayed]
+§TNous pouvons y faire entrer : §!
+
+[l_french.alert_pick_new_idea_delayed_bop]
+§TÉquilibre des pouvoirs :§!
+
+[l_french.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_french.alert_pick_new_idea_instant]
+§HChangement possible au gouvernement§!
+
+[l_french.alert_production_no_template_delayed]
+§TNous produisons du matériel qui n'est nécessaire à aucun modèle de division.§!
+
+[l_french.alert_production_no_template_equipments]
+§TMatériel produit sans modèle :§!
+
+[l_french.alert_production_no_template_instant]
+§HAucun modèle§!
+
+[l_french.alert_production_no_template_xp]
+§RAvant de pouvoir créer un modèle prenant en compte ce matériel, nous devons accumuler davantage d'expérience.§!
+
+[l_french.alert_resistance_delayed_countries]
+§HPays :§!
+
+[l_french.alert_resistance_delayed_high_resistance_list]
+§HNiveau de résistance élevé :§!
+
+[l_french.alert_resistance_delayed_states]
+§HÉtats :§!
+
+[l_french.alert_resistance_instant]
+§HRésistance à l'occupation !§!
+
+[l_french.alert_select_focus_delayed]
+Une nouvelle priorité devrait être choisie pour la nation.
+
+[l_french.alert_select_focus_instant]
+§HAucune priorité nationale définie§!
+
+[l_french.alert_self_gain_autonomy_instant]
+§HNous pouvons accroître notre autonomie.§!
+
+[l_french.alert_self_lose_autonomy_instant]
+§HNotre autonomie pourrait bientôt être restreinte.§!
+
+[l_french.alert_subject_gain_autonomy_instant]
+§HUne dépendance pourrait bientôt accroître son autonomie.§!
+
+[l_french.alert_subject_lose_autonomy_instant]
+§HNous pouvons restreindre l'autonomie d'une dépendance.§!
+
+[l_french.alert_timed_activity_low_equipment_delayed_base]
+Des activités diplomatiques seront bientôt terminées et moins de 50% du matériel requis est disponible :
+$ACTIVITIES$
+
+[l_french.alert_timed_activity_low_equipment_instant]
+§HMatériel insuffisant pour l'activité à durée déterminée !§!
+
+[l_french.alert_very_low_supply_delayed]
+Des unités manquent cruellement de ravitaillement.
+
+[l_french.alert_very_low_supply_instant]
+§RRavitaillement critique§!
+
+[l_french.alert_volunteer_transfer_instant]
+§HForces volontaires en cours de transfert§!
+
+[l_german.alert_air_reserve_unused_delayed]
+Wir haben ungenutzte Flugzeuge in unserer Luftreserve.
+
+[l_german.alert_air_reserve_unused_instant]
+§HFlugzeuge in der Reserve verfügbar§!
+
+[l_german.alert_air_wings_unassigned_delayed]
+Wir haben ungenutzte Luftgeschwader in unseren Luftwaffenstützpunkten.
+
+[l_german.alert_air_wings_unassigned_instant]
+§HLuftgeschwader ohne zugewiesene Mission oder Region§!
+
+[l_german.alert_ally_pulling_its_expeditionaries_delayed]
+Expeditionstruppen aus $COUNTRY_LIST|H$ werden zurückgerufen und kehren bald in ihr eigenes Land zurück.
+
+[l_german.alert_ally_pulling_its_expeditionaries_instant]
+§HExpeditionstruppen werden zurückgerufen§!
+
+[l_german.alert_available_wargoal_instant]
+§HVerfügbares Kriegsziel§!
+
+[l_german.alert_base_low_supply_delayed]
+In diesem Gebiet herrscht ein Nachschubengpass, der sich auf Marine- und Luftwaffenstützpunkte auswirkt. Von diesen Stützpunkten aus durchgeführte Aufträge sind weniger effizient.
+
+[l_german.alert_base_low_supply_instant]
+§RZu wenig Nachschub für Stützpunkte§!
+
+[l_german.alert_base_very_low_supply_delayed]
+In diesem Gebiet herrscht ein Nachschubengpass, der sich auf Marine- und Luftwaffenstützpunkte auswirkt. Von diesen Stützpunkten aus durchgeführte Aufträge sind weniger effizient.
+
+[l_german.alert_base_very_low_supply_instant]
+§RDeutlich zu wenig Nachschub für Stützpunkte§!
+
+[l_german.alert_battleplans_with_no_divs_delayed]
+§HSie sollten den Angriffsplänen einige Divisionen zuweisen.§!
+
+[l_german.alert_battleplans_with_no_divs_instant]
+§HAngriffspläne ohne zugewiesene Einheiten.§!
+
+[l_german.alert_blocked_national_focus_delayed]
+§YNationaler Schwerpunkt§! entwickelt sich nicht weiter, da Bedingungen nicht erfüllt sind.
+
+[l_german.alert_blocked_national_focus_instant]
+§HNationaler Schwerpunkt macht keine Fortschritte!§!
+
+[l_german.alert_border_conflict_delayed]
+Wir sind in einige Grenzkonflikte verwickelt.
+
+[l_german.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_german.alert_border_conflict_instant]
+§HGrenzkonflikte§!
+
+[l_german.alert_border_conflict_toggle]
+§GKlicken, um zwischen Grenzkonflikten umzuschalten§!
+
+[l_german.alert_dangerous_naval_invasion_delayed]
+§TGegen diese Staaten werden momentan feindliche Flotteninvasionen ausgeführt:§!
+
+[l_german.alert_dangerous_naval_invasion_instant]
+§RGefährliche Flotteninvasion§!
+
+[l_german.alert_deployment_ready_delayed]
+§TEs stehen Einheiten für den Einsatz bereit.§!
+
+[l_german.alert_deployment_ready_instant]
+§HEinheiten einsetzen§!
+
+[l_german.alert_doctrine_unlock_delayed]
+Es lassen sich neue Doktrinen freischalten:
+$DOCTRINE$
+
+[l_german.alert_doctrine_unlock_instant]
+§YDoktrinen verfügbar§!
+
+[l_german.alert_enemy_air_superiority_delayed]
+Der Gegner hat in einer Ihrer strategischen Regionen die Luftüberlegenheit.
+Gefechte in dieser Region werden wahrscheinlich zu großen Abzügen führen.
+Ziehen Sie in Erwägung, weitere Flugzeuge dieser Region zuzuordnen.
+
+[l_german.alert_enemy_air_superiority_instant]
+§RDer Gegner hat die Luftüberlegenheit§!
+
+[l_german.alert_enemy_generate_wargoal_instant]
+§HEs werden Kriegsziele gegen uns oder Alliierte fingiert§!
+
+[l_german.alert_exiled_units_instant]
+§HWir haben Divisionen im Exil§!
+
+[l_german.alert_expeditionary_force_delayed]
+Sie haben an diesem Kriegsschauplatz Expeditionsstreitkräfte.
+
+[l_german.alert_expeditionary_force_instant]
+§HExpeditionsstreitkräfte§!
+
+[l_german.alert_expensive_ships_low_str_entry]
+$FLEET|H$ hat $NUM|R$ große(s) Schiff(e) auf geringer Stärke.
+
+[l_german.alert_expensive_ships_low_str_instant]
+§HGroße Schiffe auf §Rgeringer Stärke§!§!
+
+[l_german.alert_external_influences_boost_party_popularity]
+§Ysteigert die Parteibeliebtheit§!
+
+[l_german.alert_external_influences_delayed_entry]
+$COUNTRY|H$ $ACTIONS$
+
+[l_german.alert_external_influences_delayed_list]
+$LIST$
+
+[l_german.alert_external_influences_instant]
+§HExterne politische Einflüsse!§!
+
+[l_german.alert_external_influences_stage_coup]
+§Yinszeniert einen Staatsstreich§!
+
+[l_german.alert_faction_assume_leadership_possible_delayed]
+Unser Land ist deutlich stärker als $LEADER|Y$, der momentane Anführer von $FACTION|Y$. Wir können die Führung übernehmen, wenn wir möchten.
+
+[l_german.alert_faction_assume_leadership_possible_instant]
+§HWir können die Führung über unsere Fraktion übernehmen§!
+
+[l_german.alert_faction_generate_wargoal_instant]
+§HMitglieder unseres Bündnisses fingieren Kriegsziele§!
+
+[l_german.alert_faction_member_near_assuming_leadership_delayed]
+Die folgenden Fraktionsmitglieder sind ebenfalls (fast) stark genug, um zu übernehmen:
+
+[l_german.alert_faction_member_near_assuming_leadership_instant]
+§HWir laufen Gefahr, dass ein anderes Land die Führung über unsere Fraktion $FACTION|Y$ übernimmt§!!
+
+[l_german.alert_faction_possible_invite_instant]
+§HSie können neue Mitglieder in Ihr Bündnis einladen§!
+
+[l_german.alert_few_manpower_delayed]
+Wir haben eine sehr geringe Mannstärke. Hierdurch kann es unseren Armeen an Verstärkung mangeln.
+
+[l_german.alert_few_manpower_instant]
+§HGeringe Mannstärke!§!
+
+[l_german.alert_free_civilian_factories_delayed]
+§TSie haben freie Zivilfabriken, die Sie für den Handel und für den Gebäudebau verwenden können.§!
+
+[l_german.alert_free_civilian_factories_instant]
+§HFreie Zivilfabriken§!
+
+[l_german.alert_free_military_factories_delayed]
+§TSie haben freie Militärfabriken, die Sie für die Produktion von militärischer Ausrüstung verwenden können.§!
+
+[l_german.alert_free_military_factories_instant]
+§HFreie Militärfabriken§!
+
+[l_german.alert_free_naval_dockyards_delayed]
+§TSie haben freie Werften, die Sie für die Produktion von Schiffen verwenden können.§!
+
+[l_german.alert_free_naval_dockyards_instant]
+§HFreie Schiffswerften§!
+
+[l_german.alert_hostile_troops_delayed]
+In dem verteidigten Gebiet befinden sich feindliche Truppen.
+
+[l_german.alert_hostile_troops_instant]
+§RFeindliche Truppen§!
+
+[l_german.alert_is_spotting_delayed]
+Ihre Patrouillentruppen orten gerade feindliche Flotten.
+
+[l_german.alert_is_spotting_instant]
+§RFeindliche Flotten geortet§!
+
+[l_german.alert_lack_of_resources_delayed]
+Bedarf: $RESOURCES$.
+Ausrüstung wird mit §Rreduzierter Geschwindigkeit§! produziert, so lange Fabriken nicht genügend Ressourcen haben.
+
+[l_german.alert_lack_of_resources_instant]
+§HNicht genügend Ressourcen§!
+
+[l_german.alert_low_supply_delayed]
+Die Einheiten werden kaum mit Nachschub versorgt.
+
+[l_german.alert_low_supply_instant]
+§RGeringer Nachschub§!
+
+[l_german.alert_naval_battle_results_delayed_click]
+§GKlicken, um zum nächsten Ergebnis zu gehen.
+Klicken Sie auf das Symbol£mapicon_naval_battle_result_text icon in der Region, um den Bericht zu lesen.
+§!
+
+[l_german.alert_naval_battle_results_delayed_list]
+Es gibt ungelesene Ergebnisse für Flottenschlachten in:
+$LIST$
+
+[l_german.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_german.alert_naval_battle_results_instant]
+§HUngelesene Flottenschlacht-Ergebnisse§!
+
+[l_german.alert_naval_combat_delayed]
+In dieser strategischen Region kommt es zu Seegefechten
+
+[l_german.alert_naval_combat_instant]
+§RSeegefecht§!
+
+[l_german.alert_naval_convoy_raiding_results_delayed_click]
+§GKlicken, um zum nächsten Ergebnis zu gehen.
+Klicken Sie auf das £mapicon_naval_battle_result_text-Symbol in der Region, um den Bericht zu lesen.
+§!
+
+[l_german.alert_naval_convoy_raiding_results_delayed_list]
+Es gibt ungelesene Ergebnisse für Konvoijäger-Flottenschlachten in:
+$LIST$
+
+[l_german.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_german.alert_naval_convoy_raiding_results_instant]
+§HUngelesene Konvoijäger-Flottenschlacht-Ergebnisse§!
+
+[l_german.alert_naval_invasion_delayed]
+§TFolgende Regionen sind das Ziel feindlicher Flotteninvasionen:§!
+
+[l_german.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_german.alert_naval_invasion_instant]
+§RFlotteninvasion§!
+
+[l_german.alert_not_enough_garrison_delayed]
+Uns fehlt $NUM|*H$ Mannstärke.
+
+[l_german.alert_not_enough_garrison_delayed_equipment]
+Uns fehlt folgende Ausrüstung:
+
+[l_german.alert_not_enough_garrison_instant]
+§HNicht genügend Mannstärke oder Ausrüstung, um unsere Garnisonn zu bestücken§!
+
+[l_german.alert_not_enough_garrison_warning]
+§REinige Besatzungsgesetze treten erst dann vollständig in Kraft, wenn ihre Garnisonsbedürfnisse vollständig erfüllt sind.§!
+
+[l_german.alert_not_training_divisions_delayed]
+Sie bilden aktuell keine neuen Divisionen aus.
+
+[l_german.alert_not_training_divisions_instant]
+§HKeine Divisionen in der Grundausbildung§!
+
+[l_german.alert_officer_corps_advisor_delayed]
+Berater:
+Sie können wählen:
+$ADVISOR|Y$
+
+[l_german.alert_officer_corps_instant]
+§YOffizierskorps modifizieren§!
+
+[l_german.alert_officer_corps_spirit_delayed]
+Militärischer Korpsgeist:
+Sie können wählen:
+$SPIRIT|Y$
+
+[l_german.alert_paused_diplomatic_actions_delayed]
+Einige Ihrer diplomatischen Aktionen können nicht fortgesetzt werden, weil Ihnen politische Macht fehlt.
+Sie sollten überlegen, diese Aktionen abzubrechen, damit sie sich nicht auf Ihren Zuwachs an politischer Macht auswirken.
+
+Folgende Beziehungen werden beeinflusst:
+$COUNTRIES$
+
+[l_german.alert_paused_diplomatic_actions_instant]
+§HDiplomatische Aktionen können nicht fortgesetzt werden§!
+
+[l_german.alert_pick_new_idea_advisor_delayed]
+Folgendes kann ausgewählt werden:
+$ADVISOR|Y$
+
+[l_german.alert_pick_new_idea_delayed]
+§TSie können ändern:§!
+
+[l_german.alert_pick_new_idea_delayed_bop]
+§TMachtgleichgewicht§!
+
+[l_german.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_german.alert_pick_new_idea_instant]
+§HRegierung ändern§!
+
+[l_german.alert_production_no_template_delayed]
+§TSie produzieren Ausrüstung, für die Sie keine Divisionsvorlage haben.§!
+
+[l_german.alert_production_no_template_equipments]
+§TAusrüstung, die ohne Vorlage produziert wird:§!
+
+[l_german.alert_production_no_template_instant]
+§HKeine Vorlage§!
+
+[l_german.alert_production_no_template_xp]
+§RSie benötigen mehr EP, um eine Vorlage erstellen zu können, die Ihre Ausrüstung umfasst.§!
+
+[l_german.alert_resistance_delayed_countries]
+§HLänder:§!
+
+[l_german.alert_resistance_delayed_high_resistance_list]
+§HHohes Maß an Widerstand in:§!
+
+[l_german.alert_resistance_delayed_states]
+§HStaaten:§!
+
+[l_german.alert_resistance_instant]
+§HWiderstand in besetzten Gebieten!§!
+
+[l_german.alert_select_focus_delayed]
+Sie sollten einen neuen Schwerpunkt für Ihre Nation auswählen.
+
+[l_german.alert_select_focus_instant]
+§HKein nationaler Schwerpunkt festgelegt§!
+
+[l_german.alert_self_gain_autonomy_instant]
+§HWir können unsere Autonomie erhöhen§!
+
+[l_german.alert_self_lose_autonomy_instant]
+§HUnsere Autonomie wird vielleicht bald verringert§!
+
+[l_german.alert_subject_gain_autonomy_instant]
+§HEin Untertan erhöht vielleicht bald seine Autonomie§!
+
+[l_german.alert_subject_lose_autonomy_instant]
+§HWir können die Autonomie eines Untertanen verringern§!
+
+[l_german.alert_timed_activity_low_equipment_delayed_base]
+Diplomatische Aktivitäten sind bald abgeschlossen und es fehlen mehr als 50 % der benötigten Ausrüstung:
+$ACTIVITIES$
+
+[l_german.alert_timed_activity_low_equipment_instant]
+§HAusrüstung für zeitlich festgelegte Aktivität fehlt!§!
+
+[l_german.alert_very_low_supply_delayed]
+Die Einheiten erhalten keinen Nachschub.
+
+[l_german.alert_very_low_supply_instant]
+§RSehr geringer Nachschub§!
+
+[l_german.alert_volunteer_transfer_instant]
+§HFreiwillige Streitkräfte unterwegs§!
+
+[l_japanese.alert_air_reserve_unused_delayed]
+利用可能な予備航空機がある。
+
+[l_japanese.alert_air_reserve_unused_instant]
+§H利用可能な予備の航空機§!
+
+[l_japanese.alert_air_wings_unassigned_delayed]
+航空基地に任務割り当てのない航空隊がある。
+
+[l_japanese.alert_air_wings_unassigned_instant]
+§H任務または空域が割り当てられていない航空隊§!
+
+[l_japanese.alert_ally_pulling_its_expeditionaries_delayed]
+$COUNTRY_LIST|H$から派遣された遠征軍は母国に呼び戻されており、まもなく帰還する。
+
+[l_japanese.alert_ally_pulling_its_expeditionaries_instant]
+§H遠征軍を呼び戻している§!
+
+[l_japanese.alert_available_wargoal_instant]
+§H宣戦布告が可能§!
+
+[l_japanese.alert_base_low_supply_delayed]
+この地域の物資は十分ではなく、海軍基地・航空基地に影響を与えている。彼らの任務の効果が薄れるだろう。
+
+[l_japanese.alert_base_low_supply_instant]
+§R基地が物資不足§!
+
+[l_japanese.alert_base_very_low_supply_delayed]
+この地域の物資は十分ではなく、海軍基地・航空基地に影響を与えている。彼らの任務の効果が薄れるだろう。
+
+[l_japanese.alert_base_very_low_supply_instant]
+§R基地が酷い物資不足§!
+
+[l_japanese.alert_battleplans_with_no_divs_delayed]
+§H戦闘計画にいくつかの師団を割り当てるべきだ。§!
+
+[l_japanese.alert_battleplans_with_no_divs_instant]
+§H戦闘計画に軍隊が割り当てられていない。§!
+
+[l_japanese.alert_blocked_national_focus_delayed]
+§Y国家方針§!は進行条件を満たさなくなったため進捗が停止している。
+
+[l_japanese.alert_blocked_national_focus_instant]
+§H国家方針の進行が停止中！§!
+
+[l_japanese.alert_border_conflict_delayed]
+我が国はいくつかの国境紛争を抱えている。
+
+[l_japanese.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_japanese.alert_border_conflict_instant]
+§H国境紛争中§!
+
+[l_japanese.alert_border_conflict_toggle]
+§Gクリックで国境紛争に切り替える§!
+
+[l_japanese.alert_dangerous_naval_invasion_delayed]
+§T敵軍が次の地域に現在強襲上陸中:§!
+
+[l_japanese.alert_dangerous_naval_invasion_instant]
+§R警告:強襲上陸§!
+
+[l_japanese.alert_deployment_ready_delayed]
+§T展開準備が完了した部隊がある。§!
+
+[l_japanese.alert_deployment_ready_instant]
+§H部隊の配備§!
+
+[l_japanese.alert_doctrine_unlock_delayed]
+新たなドクトリンを解放可能:
+$DOCTRINE$
+
+[l_japanese.alert_doctrine_unlock_instant]
+§Yドクトリンが利用可能§!
+
+[l_japanese.alert_enemy_air_superiority_delayed]
+戦略地域の一つにおいて、敵が航空優勢を奪取しました。
+該当地域における戦闘に過酷なペナルティが課されるでしょう。
+より多くの戦闘機の投入を検討してください。
+
+[l_japanese.alert_enemy_air_superiority_instant]
+§R敵が航空優勢を奪取§!
+
+[l_japanese.alert_enemy_generate_wargoal_instant]
+§H我々または同盟国に対して宣戦布告が可能な国家がある§!
+
+[l_japanese.alert_exiled_units_instant]
+§H師団が他国に侵入中§!
+
+[l_japanese.alert_expeditionary_force_delayed]
+この戦域に遠征軍を派兵している。
+
+[l_japanese.alert_expeditionary_force_instant]
+§H遠征軍§!
+
+[l_japanese.alert_expensive_ships_low_str_entry]
+$FLEET|H$所属の$NUM|R$隻の大型艦が致命的な損害を被っている。
+
+[l_japanese.alert_expensive_ships_low_str_instant]
+§H大型艦の§R耐久度低下§!§!
+
+[l_japanese.alert_external_influences_boost_party_popularity]
+§Y政党支持を後押し中§!
+
+[l_japanese.alert_external_influences_delayed_entry]
+$COUNTRY|H$は$ACTIONS$
+
+[l_japanese.alert_external_influences_delayed_list]
+$LIST$
+
+[l_japanese.alert_external_influences_instant]
+§H外国からの政治的影響！§!
+
+[l_japanese.alert_external_influences_stage_coup]
+§Yクーデターを画策中§!
+
+[l_japanese.alert_faction_assume_leadership_possible_delayed]
+我が国は現在の$FACTION|Y$陣営の主導国である$LEADER|Y$よりも十分に強大であり、望めば陣営の主導権を掌握できるだろう。
+
+[l_japanese.alert_faction_assume_leadership_possible_instant]
+§H陣営の主導が可能§!
+
+[l_japanese.alert_faction_generate_wargoal_instant]
+§H我々の陣営で他国に宣戦布告可能な加盟国がある§!
+
+[l_japanese.alert_faction_member_near_assuming_leadership_delayed]
+以下の構成国が陣営の主導権を奪取可能なほど強大になりつつある:
+
+[l_japanese.alert_faction_member_near_assuming_leadership_instant]
+§H他国による$FACTION|Y$陣営の主導権奪取の危機§!!
+
+[l_japanese.alert_faction_possible_invite_instant]
+§H陣営への招聘が可能§!
+
+[l_japanese.alert_few_manpower_delayed]
+人的資源が不足している。このままでは師団は長くは戦えないだろう。
+
+[l_japanese.alert_few_manpower_instant]
+§H人的資源不足§!
+
+[l_japanese.alert_free_civilian_factories_delayed]
+§T貿易または建設に供用できる未使用の民需工場がある。§!
+
+[l_japanese.alert_free_civilian_factories_instant]
+§H未稼働の民需工場§!
+
+[l_japanese.alert_free_military_factories_delayed]
+§T軍用装備の製造に供用できる未使用の軍需工場がある。§!
+
+[l_japanese.alert_free_military_factories_instant]
+§H未稼働の軍需工場§!
+
+[l_japanese.alert_free_naval_dockyards_delayed]
+§T艦船建造に供用できる未使用の造船所がある。§!
+
+[l_japanese.alert_free_naval_dockyards_instant]
+§H未稼働の造船施設§!
+
+[l_japanese.alert_hostile_troops_delayed]
+守備地域に敵軍が存在する。
+
+[l_japanese.alert_hostile_troops_instant]
+§R敵軍§!
+
+[l_japanese.alert_is_spotting_delayed]
+敵海軍が哨戒部隊により発見された。
+
+[l_japanese.alert_is_spotting_instant]
+§R敵の海軍を発見§!
+
+[l_japanese.alert_lack_of_resources_delayed]
+$RESOURCES$が必要である。
+資源不足の間、装備生産は§R遅延§!する。
+
+[l_japanese.alert_lack_of_resources_instant]
+§H資源不足§!
+
+[l_japanese.alert_low_supply_delayed]
+部隊が物資不足のまま活動している。
+
+[l_japanese.alert_low_supply_instant]
+§R物資不足§!
+
+[l_japanese.alert_naval_battle_results_delayed_click]
+§Gクリックで次の結果を中央に移動する。
+マップ上の£mapicon_naval_battle_result_text アイコンをクリックで、報告を読む。
+§!
+
+[l_japanese.alert_naval_battle_results_delayed_list]
+未読の海戦結果がある:
+$LIST$
+
+[l_japanese.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_japanese.alert_naval_battle_results_instant]
+§H未読の海戦結果§!
+
+[l_japanese.alert_naval_combat_delayed]
+この戦略地域で海戦が発生中
+
+[l_japanese.alert_naval_combat_instant]
+§R海戦§!
+
+[l_japanese.alert_naval_convoy_raiding_results_delayed_click]
+§Gクリックで次の結果を中央に移動する。
+海域にある£topbar_convoys アイコンをクリックで、その報告を読む。
+§!
+
+[l_japanese.alert_naval_convoy_raiding_results_delayed_list]
+未読の船団襲撃結果がある:
+$LIST$
+
+[l_japanese.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_japanese.alert_naval_convoy_raiding_results_instant]
+§H未読の船団襲撃結果§!
+
+[l_japanese.alert_naval_invasion_delayed]
+§T敵軍が次の地域へ強襲上陸中:§!
+
+[l_japanese.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_japanese.alert_naval_invasion_instant]
+§R敵軍の強襲上陸§!
+
+[l_japanese.alert_not_enough_garrison_delayed]
+$NUM|*H$の人的資源が不足。
+
+[l_japanese.alert_not_enough_garrison_delayed_equipment]
+次の装備が不足:
+
+[l_japanese.alert_not_enough_garrison_instant]
+§H駐屯部隊を充足させる人的資源または装備が足りない§!
+
+[l_japanese.alert_not_enough_garrison_warning]
+§R一部の占領法は、駐屯部隊の必要性が完全に満たされるまで、完全な効果を発揮しない。§!
+
+[l_japanese.alert_not_training_divisions_delayed]
+現在訓練中の師団が無い。
+
+[l_japanese.alert_not_training_divisions_instant]
+§H編成中の師団なし§!
+
+[l_japanese.alert_officer_corps_advisor_delayed]
+顧問:
+以下を選択可能:
+$ADVISOR|Y$
+
+[l_japanese.alert_officer_corps_instant]
+§Y将校団の刷新§!
+
+[l_japanese.alert_officer_corps_spirit_delayed]
+軍事精神:
+以下を選択可能:
+$SPIRIT|Y$
+
+[l_japanese.alert_paused_diplomatic_actions_delayed]
+政治力不足により、いくつかの外交活動が進行していません。
+政治力不足の解消のため、これらの活動の中止を検討してください。
+
+影響を受けている外交関係:
+$COUNTRIES$
+
+[l_japanese.alert_paused_diplomatic_actions_instant]
+§H外交活動の進行不可§!
+
+[l_japanese.alert_pick_new_idea_advisor_delayed]
+次の選択が可能:
+$ADVISOR|Y$
+
+[l_japanese.alert_pick_new_idea_delayed]
+§T変更可能:§!
+
+[l_japanese.alert_pick_new_idea_delayed_bop]
+§T勢力均衡: §!
+
+[l_japanese.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_japanese.alert_pick_new_idea_instant]
+§H政府の刷新§!
+
+[l_japanese.alert_production_no_template_delayed]
+§T自国のどの師団編制でも使用しない装備を生産している。§!
+
+[l_japanese.alert_production_no_template_equipments]
+§T師団編制にない生産中の装備:§!
+
+[l_japanese.alert_production_no_template_instant]
+§H師団編制にない装備の生産§!
+
+[l_japanese.alert_production_no_template_xp]
+§R装備を含む師団編制を作成するには陸軍経験値がさらに必要である。§!
+
+[l_japanese.alert_resistance_delayed_countries]
+§H国:§!
+
+[l_japanese.alert_resistance_delayed_high_resistance_list]
+§H以下の地域でレジスタンスが活発:§!
+
+[l_japanese.alert_resistance_delayed_states]
+§H州:§!
+
+[l_japanese.alert_resistance_instant]
+§H占領に対するレジスタンス！§!
+
+[l_japanese.alert_select_focus_delayed]
+新たな国家方針を選択すべきだ。
+
+[l_japanese.alert_select_focus_instant]
+§H国家方針が設定されていない§!
+
+[l_japanese.alert_self_gain_autonomy_instant]
+§H自治度を拡大可能§!
+
+[l_japanese.alert_self_lose_autonomy_instant]
+§H自治度が間もなく縮小する§!
+
+[l_japanese.alert_subject_gain_autonomy_instant]
+§H属国の自治度が間もなく拡大する§!
+
+[l_japanese.alert_subject_lose_autonomy_instant]
+§H属国の自治度を縮小可能§!
+
+[l_japanese.alert_timed_activity_low_equipment_delayed_base]
+外交活動はまもなく終了するが、装備が必要量の50%未満しか満たされていない:
+$ACTIVITIES$
+
+[l_japanese.alert_timed_activity_low_equipment_instant]
+§H期限付きの活動に必要な装備が不足している！§!
+
+[l_japanese.alert_very_low_supply_delayed]
+部隊の物資が欠乏している。
+
+[l_japanese.alert_very_low_supply_instant]
+§R酷い物資不足§!
+
+[l_japanese.alert_volunteer_transfer_instant]
+§H義勇軍が移動中§!
+
+[l_korean.alert_air_reserve_unused_delayed]
+예비대에 미사용 항공기가 있습니다.
+
+[l_korean.alert_air_reserve_unused_instant]
+§H예비대에 사용 가능한 비행기가 있음§!
+
+[l_korean.alert_air_wings_unassigned_delayed]
+공군 기지에 미사용 비행단이 있습니다.
+
+[l_korean.alert_air_wings_unassigned_instant]
+§H비행단이 임무가 없거나 지역에 배치되지 않음§!
+
+[l_korean.alert_ally_pulling_its_expeditionaries_delayed]
+$COUNTRY_LIST|H$의 원정군이 귀환 명령을 받아 곧 자기 국가로 돌아갈 것입니다.
+
+[l_korean.alert_ally_pulling_its_expeditionaries_instant]
+§H원정군 귀환 중§!
+
+[l_korean.alert_available_wargoal_instant]
+§H사용 가능한 전쟁 명분§!
+
+[l_korean.alert_base_low_supply_delayed]
+이 구역의 보급이 부족하여 해군 및 공군기지에 영향을 주고 있습니다. 해당 기지에서 수행하는 임무의 효율이 떨어집니다.
+
+[l_korean.alert_base_low_supply_instant]
+§R기지 보급 부족§!
+
+[l_korean.alert_base_very_low_supply_delayed]
+이 구역의 보급이 부족하여 해군 및 공군기지에 영향을 주고 있습니다. 해당 기지에서 수행하는 임무의 효율이 떨어집니다.
+
+[l_korean.alert_base_very_low_supply_instant]
+§R심각한 기지 보급 부족§!
+
+[l_korean.alert_battleplans_with_no_divs_delayed]
+§H전투 계획에 사단을 배정해야 합니다.§!
+
+[l_korean.alert_battleplans_with_no_divs_instant]
+§H배정된 부대가 없는 전투 계획이 있습니다.§!
+
+[l_korean.alert_blocked_national_focus_delayed]
+조건이 충족되지 않아 §Y국가중점§! 진행이 멈췄습니다.
+
+[l_korean.alert_blocked_national_focus_instant]
+§H국가중점이 진행되지 않고 있습니다!§!
+
+[l_korean.alert_border_conflict_delayed]
+몇 건의 국경 분쟁이 진행 중입니다.
+
+[l_korean.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_korean.alert_border_conflict_instant]
+§H국경 분쟁§!
+
+[l_korean.alert_border_conflict_toggle]
+§G클릭하여 국경 분쟁 전환§!
+
+[l_korean.alert_dangerous_naval_invasion_delayed]
+§T현재 다음 주에 적이 상륙을 감행했습니다:§!
+
+[l_korean.alert_dangerous_naval_invasion_instant]
+§R위협적인 상륙§!
+
+[l_korean.alert_deployment_ready_delayed]
+§T배치할 수 있는 부대가 있습니다.§!
+
+[l_korean.alert_deployment_ready_instant]
+§H부대 배치§!
+
+[l_korean.alert_doctrine_unlock_delayed]
+새로운 교리를 잠금 해제할 수 있습니다:
+$DOCTRINE$
+
+[l_korean.alert_doctrine_unlock_instant]
+§Y교리 사용 가능§!
+
+[l_korean.alert_enemy_air_superiority_delayed]
+적군이 우리의 전략 지역 중 하나에서 공중 우세를 가졌습니다.
+해당 지역에서 전투할 때 가혹한 불이익을 받게 됩니다.
+그 지역에 항공기를 더 많이 배치하는 걸 고려하십시오.
+
+[l_korean.alert_enemy_air_superiority_instant]
+§R적군이 공중 우세 보유§!
+
+[l_korean.alert_enemy_generate_wargoal_instant]
+§H자국 또는 동맹국에 대한 전쟁 명분 정당화가 있음§!
+
+[l_korean.alert_exiled_units_instant]
+§H망명 중인 사단이 있습니다§!
+
+[l_korean.alert_expeditionary_force_delayed]
+우리는 이 전구에 원정군을 가지고 있습니다.
+
+[l_korean.alert_expeditionary_force_instant]
+§H원정군§!
+
+[l_korean.alert_expensive_ships_low_str_entry]
+$FLEET|H$ 소속 대형함 $NUM|R$척의 내구도가 낮습니다.
+
+[l_korean.alert_expensive_ships_low_str_instant]
+§H대형함의 §R내구도 낮음§!§!
+
+[l_korean.alert_external_influences_boost_party_popularity]
+§Y정당 인기도 증가시킴§!
+
+[l_korean.alert_external_influences_delayed_entry]
+$COUNTRY|H$(이)가 $ACTIONS$
+
+[l_korean.alert_external_influences_delayed_list]
+$LIST$
+
+[l_korean.alert_external_influences_instant]
+§H외부의 정치 영향!§!
+
+[l_korean.alert_external_influences_stage_coup]
+§Y쿠데타 준비 중§!
+
+[l_korean.alert_faction_assume_leadership_possible_delayed]
+우리 국가는 현재 $FACTION|Y$ 세력 맹주국인 $LEADER|Y$보다 훨씬 강하며, 원한다면 주도권을 가져올 수 있습니다.
+
+[l_korean.alert_faction_assume_leadership_possible_instant]
+§H세력 주도권을 장악할 수 있습니다§!
+
+[l_korean.alert_faction_generate_wargoal_instant]
+§H전쟁 명분을 정당화하고 있는 세력 회원국이 있음§!
+
+[l_korean.alert_faction_member_near_assuming_leadership_delayed]
+다음 세력 회원국들도 (거의) 세력을 장악할 만큼 강합니다:
+
+[l_korean.alert_faction_member_near_assuming_leadership_instant]
+§H다른 국가가 $FACTION|Y$ 세력의 주도권을 쥘 위험이 있습니다§!!
+
+[l_korean.alert_faction_possible_invite_instant]
+§H세력에 초청 가능§!
+
+[l_korean.alert_few_manpower_delayed]
+인력이 매우 부족합니다. 사단이 병력을 보충받지 못하고 전투를 지속할 수 없는 상황이 발생할 수 있습니다.
+
+[l_korean.alert_few_manpower_instant]
+§H인력 부족!§!
+
+[l_korean.alert_free_civilian_factories_delayed]
+§T무역과 건설에 사용할 수 있는 여분의 민간공장이 있습니다.§!
+
+[l_korean.alert_free_civilian_factories_instant]
+§H여분의 민간공장§!
+
+[l_korean.alert_free_military_factories_delayed]
+§T군사 장비를 생산할 수 있는 여분의 군수공장이 있습니다.§!
+
+[l_korean.alert_free_military_factories_instant]
+§H여분의 군수공장§!
+
+[l_korean.alert_free_naval_dockyards_delayed]
+§T함선을 생산할 수 있는 여분의 조선소가 있습니다.§!
+
+[l_korean.alert_free_naval_dockyards_instant]
+§H여분의 조선소§!
+
+[l_korean.alert_hostile_troops_delayed]
+우리가 방어하는 지역에 적 부대가 있습니다.
+
+[l_korean.alert_hostile_troops_instant]
+§R적 부대§!
+
+[l_korean.alert_is_spotting_delayed]
+우리의 초계 부대가 적 해군을 발견했습니다.
+
+[l_korean.alert_is_spotting_instant]
+§R적 해군 발견§!
+
+[l_korean.alert_lack_of_resources_delayed]
+필요: $RESOURCES$.
+공장에 자원이 부족하면 장비 생산 §R속도가 감소§!합니다.
+
+[l_korean.alert_lack_of_resources_instant]
+§H자원 부족§!
+
+[l_korean.alert_low_supply_delayed]
+부대의 보급이 부족합니다.
+
+[l_korean.alert_low_supply_instant]
+§R보급 부족§!
+
+[l_korean.alert_naval_battle_results_delayed_click]
+§G클릭하여 다음 결과를 중앙에 오게 합니다.
+지역의 £mapicon_naval_battle_result_text 아이콘을 클릭하여 보고서를 읽습니다.
+§!
+
+[l_korean.alert_naval_battle_results_delayed_list]
+읽지 않은 해상 전투 결과가 있습니다:
+$LIST$
+
+[l_korean.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_korean.alert_naval_battle_results_instant]
+§H읽지 않은 해상 전투 결과§!
+
+[l_korean.alert_naval_combat_delayed]
+이 전략 지역에서 해상 전투가 발생했습니다.
+
+[l_korean.alert_naval_combat_instant]
+§R해상 전투§!
+
+[l_korean.alert_naval_convoy_raiding_results_delayed_click]
+§G클릭하여 다음 결과를 중앙에 오게 합니다.
+지역의 £topbar_convoys 아이콘을 클릭하여 보고서를 읽습니다.
+§!
+
+[l_korean.alert_naval_convoy_raiding_results_delayed_list]
+읽지 않은 수송선 습격 전투 결과가 있습니다:
+$LIST$
+
+[l_korean.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_korean.alert_naval_convoy_raiding_results_instant]
+§H읽지 않은 수송선 습격 전투 결과§!
+
+[l_korean.alert_naval_invasion_delayed]
+§T다음 주에 상륙을 시도하는 적이 있습니다:§!
+
+[l_korean.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_korean.alert_naval_invasion_instant]
+§R상륙§!
+
+[l_korean.alert_not_enough_garrison_delayed]
+$NUM|*H$ 인력이 부족합니다.
+
+[l_korean.alert_not_enough_garrison_delayed_equipment]
+다음 장비가 없습니다:
+
+[l_korean.alert_not_enough_garrison_instant]
+§H주둔군을 충원할 인력이나 장비가 부족함§!
+
+[l_korean.alert_not_enough_garrison_warning]
+§R일부 점령법은 주둔군의 요구가 완전히 충족될 때까지 완전한 효력을 갖지 못할 것입니다.§!
+
+[l_korean.alert_not_training_divisions_delayed]
+현재 훈련 중인 신규 사단이 없습니다.
+
+[l_korean.alert_not_training_divisions_instant]
+§H기초 훈련 중인 사단 없음§!
+
+[l_korean.alert_officer_corps_advisor_delayed]
+고문:
+다음을 선택할 수 있습니다:
+$ADVISOR|Y$
+
+[l_korean.alert_officer_corps_instant]
+§Y장교단 설정§!
+
+[l_korean.alert_officer_corps_spirit_delayed]
+육군 정신:
+다음을 선택할 수 있습니다:
+$SPIRIT|Y$
+
+[l_korean.alert_paused_diplomatic_actions_delayed]
+정치력이 부족하여 일부 외교적 행동을 진행할 수 없습니다.
+정치력 획득에 차질이 없도록 이 활동들을 취소하는 것을 고려하십시오.
+
+영향받은 관계:
+$COUNTRIES$
+
+[l_korean.alert_paused_diplomatic_actions_instant]
+§H외교적 행동을 진행할 수 없음§!
+
+[l_korean.alert_pick_new_idea_advisor_delayed]
+다음을 선택할 수 있습니다:
+$ADVISOR|Y$
+
+[l_korean.alert_pick_new_idea_delayed]
+§T다음 변경 가능:§!
+
+[l_korean.alert_pick_new_idea_delayed_bop]
+§T권력의 균형:§!
+
+[l_korean.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_korean.alert_pick_new_idea_instant]
+§H정부 설정§!
+
+[l_korean.alert_production_no_template_delayed]
+§T사단 편제에 포함되지 않은 장비를 생산하고 있습니다.§!
+
+[l_korean.alert_production_no_template_equipments]
+§T편제에 포함되지 않았는데도 생산되고 있는 장비:§!
+
+[l_korean.alert_production_no_template_instant]
+§H편제 없음§!
+
+[l_korean.alert_production_no_template_xp]
+§R장비를 편제에 포함하려면 경험치가 더 필요합니다.§!
+
+[l_korean.alert_resistance_delayed_countries]
+§H국가:§!
+
+[l_korean.alert_resistance_delayed_high_resistance_list]
+§H높은 수준의 저항:§!
+
+[l_korean.alert_resistance_delayed_states]
+§H주:§!
+
+[l_korean.alert_resistance_instant]
+§H점령에 대한 저항!§!
+
+[l_korean.alert_select_focus_delayed]
+국가의 새로운 중점을 선택하십시오.
+
+[l_korean.alert_select_focus_instant]
+§H국가중점 지정되지 않음§!
+
+[l_korean.alert_self_gain_autonomy_instant]
+§H자치도를 높일 수 있습니다§!
+
+[l_korean.alert_self_lose_autonomy_instant]
+§H곧 자치도가 낮아질 것입니다§!
+
+[l_korean.alert_subject_gain_autonomy_instant]
+§H종속국이 곧 자치도를 높일 수 있습니다§!
+
+[l_korean.alert_subject_lose_autonomy_instant]
+§H종속국의 자치도를 낮출 수 있습니다§!
+
+[l_korean.alert_timed_activity_low_equipment_delayed_base]
+곧 외교 활동이 끝나는데, 필요한 장비가 절반도 없습니다:
+$ACTIVITIES$
+
+[l_korean.alert_timed_activity_low_equipment_instant]
+§H시간제한이 있는 활동에 장비가 부족합니다!§!
+
+[l_korean.alert_very_low_supply_delayed]
+부대의 보급품이 바닥났습니다.
+
+[l_korean.alert_very_low_supply_instant]
+§R심각한 보급 부족§!
+
+[l_korean.alert_volunteer_transfer_instant]
+§H이송 중인 의용군§!
+
+[l_polish.alert_air_reserve_unused_delayed]
+W rezerwach mamy niewykorzystane samoloty.
+
+[l_polish.alert_air_reserve_unused_instant]
+§HSamoloty w rezerwach§!
+
+[l_polish.alert_air_wings_unassigned_delayed]
+Niektóre skrzydła nie dostały rozkazów.
+
+[l_polish.alert_air_wings_unassigned_instant]
+§HSkrzydła bez wyznaczonych zadań lub rejonów§!
+
+[l_polish.alert_ally_pulling_its_expeditionaries_delayed]
+Siły ekspedycyjne zostały odwołane i wkrótce powrócą do własnych krajów ($COUNTRY_LIST|H$).
+
+[l_polish.alert_ally_pulling_its_expeditionaries_instant]
+§HSiły ekspedycyjne zostały odwołane§!
+
+[l_polish.alert_available_wargoal_instant]
+§HPotencjalne cele wojenne§!
+
+[l_polish.alert_base_low_supply_delayed]
+W tym rejonie jest za mało zaopatrzenia, co wpływa na bazy morskie i powietrzne. Wykonywane stamtąd misje będą mniej skuteczne.
+
+[l_polish.alert_base_low_supply_instant]
+§RBraki w zaopatrzeniu baz§!
+
+[l_polish.alert_base_very_low_supply_delayed]
+W tym rejonie jest za mało zaopatrzenia, co wpływa na bazy morskie i powietrzne. Wykonywane stamtąd misje będą mniej skuteczne.
+
+[l_polish.alert_base_very_low_supply_instant]
+§RKrytyczne braki w zaopatrzeniu baz§!
+
+[l_polish.alert_battleplans_with_no_divs_delayed]
+§HPrzydziel do planów bitwy jakieś dywizje.§!
+
+[l_polish.alert_battleplans_with_no_divs_instant]
+§HPlany bitwy bez przydzielonych jednostek.§!
+
+[l_polish.alert_blocked_national_focus_delayed]
+Realizacja §Ycelu narodowego§! jest niemożliwa ze względu na niespełnione warunki.
+
+[l_polish.alert_blocked_national_focus_instant]
+§HNie można zrealizować celu narodowego!§!
+
+[l_polish.alert_border_conflict_delayed]
+Trwa jakiś konflikt graniczny.
+
+[l_polish.alert_border_conflict_entry]
+    - $ATTACKER$ – $DEFENDER$
+
+[l_polish.alert_border_conflict_instant]
+§HKonflikty graniczne§!
+
+[l_polish.alert_border_conflict_toggle]
+§GKliknij§!, by przełączać się pomiędzy konfliktami granicznymi.
+
+[l_polish.alert_dangerous_naval_invasion_delayed]
+§TW tych regionach przeprowadzane są teraz wrogie desanty morskie:§!
+
+[l_polish.alert_dangerous_naval_invasion_instant]
+§RNiebezpieczny desant morski§!
+
+[l_polish.alert_deployment_ready_delayed]
+§TMożesz wystawić nowe jednostki.§!
+
+[l_polish.alert_deployment_ready_instant]
+§HWystaw jednostki§!
+
+[l_polish.alert_doctrine_unlock_delayed]
+Do odblokowania są nowe doktryny:
+$DOCTRINE$
+
+[l_polish.alert_doctrine_unlock_instant]
+§YDostępne doktryny§!
+
+[l_polish.alert_enemy_air_superiority_delayed]
+Wróg dominuje w powietrzu nad jednym z twoich rejonów strategicznych.
+Walki w tym rejonie mogą być mocno utrudnione.
+Rozważ przerzucenie tam dodatkowych samolotów.
+
+[l_polish.alert_enemy_air_superiority_instant]
+§RWróg dominuje w powietrzu§!
+
+[l_polish.alert_enemy_generate_wargoal_instant]
+§HKtoś przygotowuje cele wymierzone w nas lub sojuszników§!
+
+[l_polish.alert_exiled_units_instant]
+§HMamy wygnane dywizje§!
+
+[l_polish.alert_expeditionary_force_delayed]
+Na tym teatrze operują twoje siły ekspedycyjne.
+
+[l_polish.alert_expeditionary_force_instant]
+§HSiły ekspedycyjne§!
+
+[l_polish.alert_expensive_ships_low_str_entry]
+$FLEET|H$: $NUM|R$ - liczba okrętów liniowych w kiepskim stanie.
+
+[l_polish.alert_expensive_ships_low_str_instant]
+§HOkręty liniowe w §Rkiepskim stanie§!§!
+
+[l_polish.alert_external_influences_boost_party_popularity]
+§YZwiększa popularność partii.§!
+
+[l_polish.alert_external_influences_delayed_entry]
+$COUNTRY|H$ prowadzi działania: $ACTIONS$
+
+[l_polish.alert_external_influences_delayed_list]
+$LIST$
+
+[l_polish.alert_external_influences_instant]
+§HZewnętrzne wpływy polityczne!§!
+
+[l_polish.alert_external_influences_stage_coup]
+§YPrzygotowuje przewrót.§!
+
+[l_polish.alert_faction_assume_leadership_possible_delayed]
+Nasz kraj jest znacznie silniejszy od obecnego lidera frakcji ($FACTION|Y$), którym jest $LEADER|Y$. Możemy przejąć tę rolę, jeśli chcemy.
+
+[l_polish.alert_faction_assume_leadership_possible_instant]
+§HMożemy objąć przywództwo w naszej frakcji.§!
+
+[l_polish.alert_faction_generate_wargoal_instant]
+§HCzłonkowie frakcji przygotowują cele wojenne§!
+
+[l_polish.alert_faction_member_near_assuming_leadership_delayed]
+Członkowie frakcji, którzy są też (prawie) na tyle silni, by przejąć przywództwo:
+
+[l_polish.alert_faction_member_near_assuming_leadership_instant]
+§HIstnieje niebezpieczeństwo, że inny kraj obejmie przywództwo w naszej frakcji ($FACTION|Y$)§!!
+
+[l_polish.alert_faction_possible_invite_instant]
+§HMożesz zaprosić do frakcji§!
+
+[l_polish.alert_few_manpower_delayed]
+Nasze zasoby ludzkie są niewielkie. Może to doprowadzić do sytuacji, gdy zabraknie nam żołnierzy.
+
+[l_polish.alert_few_manpower_instant]
+§HBraki w zasobach ludzkich!§!
+
+[l_polish.alert_free_civilian_factories_delayed]
+§TCzęść fabryk cywilnych można wykorzystać do produkcji dóbr handlowych lub wznoszenia budynków.§!
+
+[l_polish.alert_free_civilian_factories_instant]
+§HWolne fabryki cywilne§!
+
+[l_polish.alert_free_military_factories_delayed]
+§TMasz wolne fabryki wojskowe, które mogą produkować wyposażenie bojowe.§!
+
+[l_polish.alert_free_military_factories_instant]
+§HWolne fabryki wojskowe§!
+
+[l_polish.alert_free_naval_dockyards_delayed]
+§TMasz wolne stocznie, które mogą produkować statki.§!
+
+[l_polish.alert_free_naval_dockyards_instant]
+§HWolne stocznie§!
+
+[l_polish.alert_hostile_troops_delayed]
+Na bronionym obszarze znajdują się oddziały wroga.
+
+[l_polish.alert_hostile_troops_instant]
+§ROddziały wroga§!
+
+[l_polish.alert_is_spotting_delayed]
+Nasze jednostki patrolowe wykryły okręty wroga.
+
+[l_polish.alert_is_spotting_instant]
+§RWykryto okręty wroga§!
+
+[l_polish.alert_lack_of_resources_delayed]
+Potrzeba: $RESOURCES$.
+Wyposażenie będzie produkowane ze §Rzmniejszoną prędkością§!, dopóki fabrykom będzie brakowało zasobów.
+
+[l_polish.alert_lack_of_resources_instant]
+§HZa mało zasobów§!
+
+[l_polish.alert_low_supply_delayed]
+Jednostkom kończy się zaopatrzenie.
+
+[l_polish.alert_low_supply_instant]
+§RBraki w zaopatrzeniu§!
+
+[l_polish.alert_naval_battle_results_delayed_click]
+§GKliknij, by wyśrodkować na następnym wyniku.
+Kliknij ikonę £mapicon_naval_battle_result_text w rejonie, by przeczytać raport.
+§!
+
+[l_polish.alert_naval_battle_results_delayed_list]
+Masz nieodczytane wyniki bitew morskich:
+$LIST$
+
+[l_polish.alert_naval_battle_results_entry]
+$RESULT$ ($NAME$): $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_polish.alert_naval_battle_results_instant]
+§HNieodczytane wyniki bitwy morskiej§!
+
+[l_polish.alert_naval_combat_delayed]
+W tym rejonie strategicznym trwa bitwa morska.
+
+[l_polish.alert_naval_combat_instant]
+§RBitwa morska§!
+
+[l_polish.alert_naval_convoy_raiding_results_delayed_click]
+§GKliknij, by wyśrodkować na następnym wyniku.
+Kliknij ikonę £mapicon_naval_battle_result_text w rejonie, by przeczytać raport.
+§!
+
+[l_polish.alert_naval_convoy_raiding_results_delayed_list]
+Masz nieodczytane wyniki bitew morskich (atak na konwój):
+$LIST$
+
+[l_polish.alert_naval_convoy_raiding_results_entry]
+$RESULT$ ($NAME$): $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_polish.alert_naval_convoy_raiding_results_instant]
+§HNieodczytane wyniki bitwy morskiej (atak na konwój)§!
+
+[l_polish.alert_naval_invasion_delayed]
+§TNastępujące regiony są celem desantu wroga:§!
+
+[l_polish.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_polish.alert_naval_invasion_instant]
+§RDesant morski§!
+
+[l_polish.alert_not_enough_garrison_delayed]
+Brakuje nam $NUM|*H$ zasobów ludzkich.
+
+[l_polish.alert_not_enough_garrison_delayed_equipment]
+Brakuje nam następującego wyposażenia:
+
+[l_polish.alert_not_enough_garrison_instant]
+§HNiewystarczająca ilość zasobów ludzkich albo wyposażenia dla naszych garnizonów§!
+
+[l_polish.alert_not_enough_garrison_warning]
+§RNiektóre prawa okupacyjne nie mogą działać w pełnym zakresie, dopóki nie zostaną zaspokojone wszystkie potrzeby garnizonu.§!
+
+[l_polish.alert_not_training_divisions_delayed]
+W tej chwili nie szkolisz żadnych dywizji.
+
+[l_polish.alert_not_training_divisions_instant]
+§HŻadne dywizje nie są szkolone§!
+
+[l_polish.alert_officer_corps_advisor_delayed]
+Doradcy:
+Możesz wybrać:
+$ADVISOR|Y$
+
+[l_polish.alert_officer_corps_instant]
+§YModyfikacja korpusu oficerskiego§!
+
+[l_polish.alert_officer_corps_spirit_delayed]
+Duchy militarne:
+Możesz wybrać:
+$SPIRIT|Y$
+
+[l_polish.alert_paused_diplomatic_actions_delayed]
+Część twoich działań dyplomatycznych nie może postępować, ponieważ brakuje ci siły politycznej.
+Rozważ anulowanie tych działań, by nie wpłynęły na przyrost twojej siły politycznej.
+
+Objęte relacje:
+$COUNTRIES$
+
+[l_polish.alert_paused_diplomatic_actions_instant]
+§HDziałania dyplomatyczne nie mogą postępować.§!
+
+[l_polish.alert_pick_new_idea_advisor_delayed]
+Możesz wybrać:
+$ADVISOR|Y$
+
+[l_polish.alert_pick_new_idea_delayed]
+§TMożesz zmienić:§!
+
+[l_polish.alert_pick_new_idea_delayed_bop]
+§TRównowaga sił:§!
+
+[l_polish.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_polish.alert_pick_new_idea_instant]
+§HWprowadź zmiany w rządzie§!
+
+[l_polish.alert_production_no_template_delayed]
+§TProdukujesz wyposażenie niepasujące do żadnego szablonu dywizji.§!
+
+[l_polish.alert_production_no_template_equipments]
+§TProdukujesz wyposażenie bez szablonu:§!
+
+[l_polish.alert_production_no_template_instant]
+§HBrak szablonu§!
+
+[l_polish.alert_production_no_template_xp]
+§RMusisz zebrać więcej PD, by stworzyć szablon uwzględniający twoje wyposażenie.§!
+
+[l_polish.alert_resistance_delayed_countries]
+§HKraje:§!
+
+[l_polish.alert_resistance_delayed_high_resistance_list]
+§HWysoki poziom ruchu oporu w:§!
+
+[l_polish.alert_resistance_delayed_states]
+§HRegiony:§!
+
+[l_polish.alert_resistance_instant]
+§HOpór przeciwko okupacji!§!
+
+[l_polish.alert_select_focus_delayed]
+Wybierz nowy cel dla swojego kraju.
+
+[l_polish.alert_select_focus_instant]
+§HNie wybrano celu narodowego.§!
+
+[l_polish.alert_self_gain_autonomy_instant]
+§HMożemy zwiększyć naszą autonomię§!
+
+[l_polish.alert_self_lose_autonomy_instant]
+§HNasza autonomia może wkrótce zostać obniżona§!
+
+[l_polish.alert_subject_gain_autonomy_instant]
+§HPodległe państwo może wkrótce zwiększyć swoją autonomię§!
+
+[l_polish.alert_subject_lose_autonomy_instant]
+§HMożemy zmniejszyć autonomię państwa podległego§!
+
+[l_polish.alert_timed_activity_low_equipment_delayed_base]
+Wkrótce zakończone zostaną akcje dyplomatyczne, a dostarczono mniej niż 50% wymaganego wyposażenia:
+$ACTIVITIES$
+
+[l_polish.alert_timed_activity_low_equipment_instant]
+§HBrak wyposażenia do akcji czasowej!§!
+
+[l_polish.alert_very_low_supply_delayed]
+Jednostki nie mają zaopatrzenia.
+
+[l_polish.alert_very_low_supply_instant]
+§RPoważne braki w zaopatrzeniu§!
+
+[l_polish.alert_volunteer_transfer_instant]
+§HPrzenoszenie ochotników§!
+
+[l_russian.alert_air_reserve_unused_delayed]
+В нашем резерве есть неиспользуемые самолеты.
+
+[l_russian.alert_air_reserve_unused_instant]
+§HЕсть самолеты в резерве§!
+
+[l_russian.alert_air_wings_unassigned_delayed]
+На наших авиабазах есть неиспользуемые авиакрылья.
+
+[l_russian.alert_air_wings_unassigned_instant]
+§HАвиакрылья без заданий и прикрепления к региону§!
+
+[l_russian.alert_ally_pulling_its_expeditionaries_delayed]
+Экспедиционные войска отозваны из государств $COUNTRY_LIST|H$ и скоро вернутся к себе домой.
+
+[l_russian.alert_ally_pulling_its_expeditionaries_instant]
+§HЭкспедиционные войска отозваны§!
+
+[l_russian.alert_available_wargoal_instant]
+§HДоступна цель войны§!
+
+[l_russian.alert_base_low_supply_delayed]
+Недостаточное снабжение этого района сказалось на работе морских баз и авиабаз. Эффективность выполнения боевых заданий снижена.
+
+[l_russian.alert_base_low_supply_instant]
+§RБазы с плохим снабжением§!
+
+[l_russian.alert_base_very_low_supply_delayed]
+Недостаточное снабжение этого района сказалось на работе морских баз и авиабаз. Эффективность выполнения боевых заданий снижена.
+
+[l_russian.alert_base_very_low_supply_instant]
+§RБазы с очень плохим снабжением§!
+
+[l_russian.alert_battleplans_with_no_divs_delayed]
+§HПрикрепите несколько дивизий к планам операций.§!
+
+[l_russian.alert_battleplans_with_no_divs_instant]
+§HЕсть планы операций без прикрепленных боевых единиц.§!
+
+[l_russian.alert_blocked_national_focus_delayed]
+Выполнение §Yнационального фокуса§! остановлено из-за невыполненных условий.
+
+[l_russian.alert_blocked_national_focus_instant]
+§HНет прогресса в достижении национального фокуса!§!
+
+[l_russian.alert_border_conflict_delayed]
+Мы втянуты в несколько пограничных конфликтов.
+
+[l_russian.alert_border_conflict_entry]
+    — $ATTACKER$ — $DEFENDER$
+
+[l_russian.alert_border_conflict_instant]
+§HПограничные конфликты§!
+
+[l_russian.alert_border_conflict_toggle]
+§GЩелкните, чтобы переключиться между пограничными конфликтами§!
+
+[l_russian.alert_dangerous_naval_invasion_delayed]
+§TВражеские войска сейчас вторгаются с моря в эти регионы:§!
+
+[l_russian.alert_dangerous_naval_invasion_instant]
+§RОпасная высадка с моря§!
+
+[l_russian.alert_deployment_ready_delayed]
+§TУ вас есть боевые части, готовые к развертыванию.§!
+
+[l_russian.alert_deployment_ready_instant]
+§HРазвертывание боевых частей§!
+
+[l_russian.alert_doctrine_unlock_delayed]
+Доступна новая доктрина:
+$DOCTRINE$
+
+[l_russian.alert_doctrine_unlock_instant]
+§YДоступные доктрины§!
+
+[l_russian.alert_enemy_air_superiority_delayed]
+Противник обладает превосходством в воздухе в одном из ваших стратегических районов.
+Сражения в этом районе будут сопряжены с трудностями.
+Рекомендуем направить туда больше самолетов.
+
+[l_russian.alert_enemy_air_superiority_instant]
+§RУ противника превосходство в воздухе§!
+
+[l_russian.alert_enemy_generate_wargoal_instant]
+§HОбоснованы цели войны с нами или нашими союзниками§!
+
+[l_russian.alert_exiled_units_instant]
+§HУ нас есть дивизии в изгнании§!
+
+[l_russian.alert_expeditionary_force_delayed]
+У вас есть экспедиционный корпус на этом театре военных действий.
+
+[l_russian.alert_expeditionary_force_instant]
+§HЭкспедиционный корпус§!
+
+[l_russian.alert_expensive_ships_low_str_entry]
+Количество больших кораблей с низкой боеспособностью во флоте $FLEET|H$: $NUM|R$
+
+[l_russian.alert_expensive_ships_low_str_instant]
+§H§RНизкая боеспособность§! больших кораблей§!
+
+[l_russian.alert_external_influences_boost_party_popularity]
+§Yувеличивает популярность партии§!
+
+[l_russian.alert_external_influences_delayed_entry]
+Государство $COUNTRY|H$ $ACTIONS$
+
+[l_russian.alert_external_influences_delayed_list]
+$LIST$
+
+[l_russian.alert_external_influences_instant]
+§HПолитическое влияние извне!§!
+
+[l_russian.alert_external_influences_stage_coup]
+§Yготовит переворот§!
+
+[l_russian.alert_faction_assume_leadership_possible_delayed]
+Наша страна гораздо сильнее, чем государство $LEADER|Y$, возглавляющее сейчас альянс $FACTION|Y$, и мы можем при желании перехватить руководство.
+
+[l_russian.alert_faction_assume_leadership_possible_instant]
+§HМы можем взять на себя руководство нашим альянсом§!
+
+[l_russian.alert_faction_generate_wargoal_instant]
+§HЧлены нашего альянса обосновывают цели войны§!
+
+[l_russian.alert_faction_member_near_assuming_leadership_delayed]
+Эти участники альянса почти набрали достаточно сил, чтобы перехватить руководство:
+
+[l_russian.alert_faction_member_near_assuming_leadership_instant]
+§HЕсть риск, что другое государство перехватит руководство нашим альянсом $FACTION|Y$!§!
+
+[l_russian.alert_faction_possible_invite_instant]
+§HВы можете пригласить в альянс§!
+
+[l_russian.alert_few_manpower_delayed]
+У нас очень мало людских ресурсов. Это может привести к тому, что наши дивизии не смогут получать подкрепления и продолжать воевать.
+
+[l_russian.alert_few_manpower_instant]
+§HМало людских ресурсов!§!
+
+[l_russian.alert_free_civilian_factories_delayed]
+§TУ вас есть свободные фабрики для торговли и строительства.§!
+
+[l_russian.alert_free_civilian_factories_instant]
+§HСвободные фабрики§!
+
+[l_russian.alert_free_military_factories_delayed]
+§TУ вас есть свободные военные заводы для выпуска военной техники.§!
+
+[l_russian.alert_free_military_factories_instant]
+§HСвободные военные заводы§!
+
+[l_russian.alert_free_naval_dockyards_delayed]
+§TУ вас есть свободные верфи для выпуска кораблей.§!
+
+[l_russian.alert_free_naval_dockyards_instant]
+§HСвободные верфи§!
+
+[l_russian.alert_hostile_troops_delayed]
+На обороняемой территории находятся вражеские войска.
+
+[l_russian.alert_hostile_troops_instant]
+§RВражеские войска§!
+
+[l_russian.alert_is_spotting_delayed]
+Вашими патрульными отрядами обнаружен вражеский флот.
+
+[l_russian.alert_is_spotting_instant]
+§RОбнаружен вражеский флот§!
+
+[l_russian.alert_lack_of_resources_delayed]
+Необходимо: $RESOURCES$.
+Техника будет выпускаться с §Rменьшим темпом§!, пока фабрики нуждаются в ресурсах.
+
+[l_russian.alert_lack_of_resources_instant]
+§HНедостаточно ресурсов§!
+
+[l_russian.alert_low_supply_delayed]
+У боевых частей осталось мало припасов.
+
+[l_russian.alert_low_supply_instant]
+§RНехватка припасов§!
+
+[l_russian.alert_naval_battle_results_delayed_click]
+§GЩелкните, чтобы переместиться к следующему отчету.
+Щелкните по значку £mapicon_naval_battle_result_text в регионе, чтобы прочитать отчет.
+§!
+
+[l_russian.alert_naval_battle_results_delayed_list]
+Есть непрочитанные отчеты о морских сражениях в:
+$LIST$
+
+[l_russian.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ — $D_TAG$ $D_VALUE$
+
+[l_russian.alert_naval_battle_results_instant]
+§HНепрочитанные отчеты о морских сражениях§!
+
+[l_russian.alert_naval_combat_delayed]
+В этом стратегическом регионе идет морское сражение
+
+[l_russian.alert_naval_combat_instant]
+§RМорское сражение§!
+
+[l_russian.alert_naval_convoy_raiding_results_delayed_click]
+§GЩелкните, чтобы переместиться к следующему отчету.
+Щелкните по значку £topbar_convoys в регионе, чтобы прочитать отчет.
+§!
+
+[l_russian.alert_naval_convoy_raiding_results_delayed_list]
+Есть непрочитанные отчеты о битвах за морские конвои в:
+$LIST$
+
+[l_russian.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ — $D_TAG$ $D_VALUE$
+
+[l_russian.alert_naval_convoy_raiding_results_instant]
+§HНепрочитанные отчеты о битвах за морские конвои§!
+
+[l_russian.alert_naval_invasion_delayed]
+§TВражеские войска вторгаются с моря в эти регионы:§!
+
+[l_russian.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_russian.alert_naval_invasion_instant]
+§RМорское вторжение§!
+
+[l_russian.alert_not_enough_garrison_delayed]
+Нам не хватает $NUM|*H$ ед. людских ресурсов.
+
+[l_russian.alert_not_enough_garrison_delayed_equipment]
+Нам не хватает следующего оборудования:
+
+[l_russian.alert_not_enough_garrison_instant]
+§HНедостаточно людских ресурсов или снаряжения для заполнения гарнизонов§!
+
+[l_russian.alert_not_enough_garrison_warning]
+§RНекоторые оккупационные законы не будут действовать полностью, пока не удовлетворены их потребности в гарнизонах.§!
+
+[l_russian.alert_not_training_divisions_delayed]
+Сейчас вы не занимаетесь подготовкой новых дивизий.
+
+[l_russian.alert_not_training_divisions_instant]
+§HНет дивизий, проходящих базовую подготовку§!
+
+[l_russian.alert_officer_corps_advisor_delayed]
+Советники:
+Можно выбрать:
+$ADVISOR|Y$
+
+[l_russian.alert_officer_corps_instant]
+§YИзменить офицерский корпус§!
+
+[l_russian.alert_officer_corps_spirit_delayed]
+Военный дух:
+Можно выбрать:
+$SPIRIT|Y$
+
+[l_russian.alert_paused_diplomatic_actions_delayed]
+Некоторые ваши дипломатические действия приостановлены, потому что у вас мало политической власти.
+Рекомендуем отменить эти действия, чтобы они не мешали вам набирать политическую власть.
+
+Затрагивает отношения с:
+$COUNTRIES$
+
+[l_russian.alert_paused_diplomatic_actions_instant]
+§HДипломатические действия приостановлены§!
+
+[l_russian.alert_pick_new_idea_advisor_delayed]
+Можно выбрать:
+$ADVISOR|Y$
+
+[l_russian.alert_pick_new_idea_delayed]
+§TВы можете изменить:§!
+
+[l_russian.alert_pick_new_idea_delayed_bop]
+§TБаланс сил§!
+
+[l_russian.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_russian.alert_pick_new_idea_instant]
+§HИзменение правительства§!
+
+[l_russian.alert_production_no_template_delayed]
+§TВы выпускаете технику, для которой не создан шаблон дивизии.§!
+
+[l_russian.alert_production_no_template_equipments]
+§TТехника, выпускаемая без шаблона:§!
+
+[l_russian.alert_production_no_template_instant]
+§HНет шаблона§!
+
+[l_russian.alert_production_no_template_xp]
+§RВам необходимо набрать больше опыта, прежде чем вы сможете создать шаблон и включить в него вашу технику.§!
+
+[l_russian.alert_resistance_delayed_countries]
+§HСтраны:§!
+
+[l_russian.alert_resistance_delayed_high_resistance_list]
+§HВысокий уровень сопротивления в:§!
+
+[l_russian.alert_resistance_delayed_states]
+§HРегионы:§!
+
+[l_russian.alert_resistance_instant]
+§HПротиводействие оккупации!§!
+
+[l_russian.alert_select_focus_delayed]
+Вам следует выбрать новый фокус для вашей нации.
+
+[l_russian.alert_select_focus_instant]
+§HНациональный фокус не выбран§!
+
+[l_russian.alert_self_gain_autonomy_instant]
+§HМы можем увеличить уровень нашей автономии§!
+
+[l_russian.alert_self_lose_autonomy_instant]
+§HУровень нашей автономии может скоро понизиться§!
+
+[l_russian.alert_subject_gain_autonomy_instant]
+§HСубъект может скоро повысить уровень своей автономии§!
+
+[l_russian.alert_subject_lose_autonomy_instant]
+§HМы можем понизить уровень автономии субъекта§!
+
+[l_russian.alert_timed_activity_low_equipment_delayed_base]
+Это дипломатическое действие скоро завершится, но сейчас доступно менее 50% необходимого снаряжения:
+$ACTIVITIES$
+
+[l_russian.alert_timed_activity_low_equipment_instant]
+§HНужна техника для действия, ограниченного по времени!§!
+
+[l_russian.alert_very_low_supply_delayed]
+Боевые части остро нуждаются в припасах.
+
+[l_russian.alert_very_low_supply_instant]
+§RСильная нехватка припасов§!
+
+[l_russian.alert_volunteer_transfer_instant]
+§HПереброска добровольцев§!
+
+[l_simp_chinese.alert_air_reserve_unused_delayed]
+我们有闲置在库存当中的飞机。
+
+[l_simp_chinese.alert_air_reserve_unused_instant]
+§H库存可用飞机§!
+
+[l_simp_chinese.alert_air_wings_unassigned_delayed]
+我方空军基地中存在未投入任务的联队。
+
+[l_simp_chinese.alert_air_wings_unassigned_instant]
+§H空军联队未指定任务或行动区域§!
+
+[l_simp_chinese.alert_ally_pulling_its_expeditionaries_delayed]
+来自$COUNTRY_LIST|H$的远征军已被该国召回，不日便将返回其祖国。
+
+[l_simp_chinese.alert_ally_pulling_its_expeditionaries_instant]
+§H远征军被召回§!
+
+[l_simp_chinese.alert_available_wargoal_instant]
+§H可选战争目标§!
+
+[l_simp_chinese.alert_base_low_supply_delayed]
+此区域补给不足，并对此处的海空军基地造成了影响，本地所有的任务效率下降。
+
+[l_simp_chinese.alert_base_low_supply_instant]
+§R基地补给不足§!
+
+[l_simp_chinese.alert_base_very_low_supply_delayed]
+此区域补给不足，并对此处的海空军基地造成了影响，本地所有的任务效率下降。
+
+[l_simp_chinese.alert_base_very_low_supply_instant]
+§R基地补给严重不足§!
+
+[l_simp_chinese.alert_battleplans_with_no_divs_delayed]
+§H请为你的作战计划安排部队。§!
+
+[l_simp_chinese.alert_battleplans_with_no_divs_instant]
+§H没有为作战计划安排部队。§!
+
+[l_simp_chinese.alert_blocked_national_focus_delayed]
+由于前提条件尚未满足，当前§Y国策§!的进度已停止。
+
+[l_simp_chinese.alert_blocked_national_focus_instant]
+§H国策进度停止！§!
+
+[l_simp_chinese.alert_border_conflict_delayed]
+我方正存在交火中的边境冲突。
+
+[l_simp_chinese.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_simp_chinese.alert_border_conflict_instant]
+§H边境冲突§!
+
+[l_simp_chinese.alert_border_conflict_toggle]
+§G点击以在诸边境冲突间切换§!
+
+[l_simp_chinese.alert_dangerous_naval_invasion_delayed]
+§T敌军已在以下地区登陆：§!
+
+[l_simp_chinese.alert_dangerous_naval_invasion_instant]
+§R有威胁的登陆作战§!
+
+[l_simp_chinese.alert_deployment_ready_delayed]
+§T你有单位可供部署。§!
+
+[l_simp_chinese.alert_deployment_ready_instant]
+§H部署单位§!
+
+[l_simp_chinese.alert_doctrine_unlock_delayed]
+你可以解锁新学说：
+$DOCTRINE$
+
+[l_simp_chinese.alert_doctrine_unlock_instant]
+§Y可用的学说§!
+
+[l_simp_chinese.alert_enemy_air_superiority_delayed]
+敌方目前在你其中一处战略区域拥有制空权。
+在此区域的作战将会受到极大的负面影响。
+请考虑增派更多战机支援该区域。
+
+[l_simp_chinese.alert_enemy_air_superiority_instant]
+§R敌方拥有制空权§!
+
+[l_simp_chinese.alert_enemy_generate_wargoal_instant]
+§H有国家正在对我国或我国盟友正当化战争目标§!
+
+[l_simp_chinese.alert_exiled_units_instant]
+§H我方存在境外流亡部队§!
+
+[l_simp_chinese.alert_expeditionary_force_delayed]
+你在这个战区里有远征军。
+
+[l_simp_chinese.alert_expeditionary_force_instant]
+§H远征军§!
+
+[l_simp_chinese.alert_expensive_ships_low_str_entry]
+$FLEET|H$有$NUM|R$艘大型军舰严重受损。
+
+[l_simp_chinese.alert_expensive_ships_low_str_instant]
+§H大型军舰§R严重受损§!§!
+
+[l_simp_chinese.alert_external_influences_boost_party_popularity]
+§Y提高党派支持率§!
+
+[l_simp_chinese.alert_external_influences_delayed_entry]
+$COUNTRY|H$在$ACTIONS$
+
+[l_simp_chinese.alert_external_influences_delayed_list]
+$LIST$
+
+[l_simp_chinese.alert_external_influences_instant]
+§H外部政治影响！§!
+
+[l_simp_chinese.alert_external_influences_stage_coup]
+§Y策动政变§!
+
+[l_simp_chinese.alert_faction_assume_leadership_possible_delayed]
+鉴于我国现已大幅强于目前的$FACTION|Y$领袖$LEADER|Y$，因此若我方有意，便可取而代之。
+
+[l_simp_chinese.alert_faction_assume_leadership_possible_instant]
+§H我国可承担本阵营领导者职责§!
+
+[l_simp_chinese.alert_faction_generate_wargoal_instant]
+§H有阵营成员正在正当化战争目标§!
+
+[l_simp_chinese.alert_faction_member_near_assuming_leadership_delayed]
+以下阵营成员国也有能力或接近有能力接管阵营领导权：
+
+[l_simp_chinese.alert_faction_member_near_assuming_leadership_instant]
+§H我国面临被其他国家顶替$FACTION|Y$领袖地位的风险§!！
+
+[l_simp_chinese.alert_faction_possible_invite_instant]
+§H可邀请加入阵营的国家§!
+
+[l_simp_chinese.alert_few_manpower_delayed]
+我方马力储备低下，这将导致我军部队不再能补员和战斗。
+
+[l_simp_chinese.alert_few_manpower_instant]
+§H马力短缺！§!
+
+[l_simp_chinese.alert_free_civilian_factories_delayed]
+§T你有空闲的民用工厂可用于贸易和建设。§!
+
+[l_simp_chinese.alert_free_civilian_factories_instant]
+§H民用工厂空闲§!
+
+[l_simp_chinese.alert_free_military_factories_delayed]
+§T你有空闲的军用工厂可用于生产装备。§!
+
+[l_simp_chinese.alert_free_military_factories_instant]
+§H军用工厂空闲§!
+
+[l_simp_chinese.alert_free_naval_dockyards_delayed]
+§T你有空闲的海军船坞可用于建造舰船。§!
+
+[l_simp_chinese.alert_free_naval_dockyards_instant]
+§H海军船坞空闲§!
+
+[l_simp_chinese.alert_hostile_troops_delayed]
+守备区目前存在敌方部队。
+
+[l_simp_chinese.alert_hostile_troops_instant]
+§R敌方部队§!
+
+[l_simp_chinese.alert_is_spotting_delayed]
+你的巡航舰队目前发现了敌方海军。
+
+[l_simp_chinese.alert_is_spotting_instant]
+§R侦测到敌方海军§!
+
+[l_simp_chinese.alert_lack_of_resources_delayed]
+所需项：$RESOURCES$。
+当工业缺乏所需战略资源时，装备的生产速度将会§R下降§!。
+
+[l_simp_chinese.alert_lack_of_resources_instant]
+§H战略资源短缺§!
+
+[l_simp_chinese.alert_low_supply_delayed]
+单位即将面临补给短缺。
+
+[l_simp_chinese.alert_low_supply_instant]
+§R补给不足§!
+
+[l_simp_chinese.alert_naval_battle_results_delayed_click]
+§G点击以居中页面。
+点击目标区域的£mapicon_naval_battle_result_text 图标查看报告。
+§!
+
+[l_simp_chinese.alert_naval_battle_results_delayed_list]
+有未读的海战报告：
+$LIST$
+
+[l_simp_chinese.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_simp_chinese.alert_naval_battle_results_instant]
+§H未读海战报告§!
+
+[l_simp_chinese.alert_naval_combat_delayed]
+此战略区域发生了海战。
+
+[l_simp_chinese.alert_naval_combat_instant]
+§R海战§!
+
+[l_simp_chinese.alert_naval_convoy_raiding_results_delayed_click]
+§G点击以居中页面。
+点击目标区域的£topbar_convoys 图标查看报告。
+§!
+
+[l_simp_chinese.alert_naval_convoy_raiding_results_delayed_list]
+有未读的海运袭击报告：
+$LIST$
+
+[l_simp_chinese.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_simp_chinese.alert_naval_convoy_raiding_results_instant]
+§H未读海运袭击报告§!
+
+[l_simp_chinese.alert_naval_invasion_delayed]
+§T敌军正欲登陆入侵以下地区：§!
+
+[l_simp_chinese.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_simp_chinese.alert_naval_invasion_instant]
+§R登陆作战§!
+
+[l_simp_chinese.alert_not_enough_garrison_delayed]
+我方目前存在$NUM|*H$单位马力空缺。
+
+[l_simp_chinese.alert_not_enough_garrison_delayed_equipment]
+我方目前存在下列装备空缺：
+
+[l_simp_chinese.alert_not_enough_garrison_instant]
+§H缺乏足够的马力或装备增援驻军§!
+
+[l_simp_chinese.alert_not_enough_garrison_warning]
+§R若当地的卫戍部队未达到要求，部分占领法案将不会发挥全部效用。§!
+
+[l_simp_chinese.alert_not_training_divisions_delayed]
+你目前没有在训练任何新部队。
+
+[l_simp_chinese.alert_not_training_divisions_instant]
+§H未训练新部队§!
+
+[l_simp_chinese.alert_officer_corps_advisor_delayed]
+顾问：
+你可以选择下列顾问：
+$ADVISOR|Y$
+
+[l_simp_chinese.alert_officer_corps_instant]
+§Y调整军官团§!
+
+[l_simp_chinese.alert_officer_corps_spirit_delayed]
+军武精神：
+你可以选择下列军武精神：
+$SPIRIT|Y$
+
+[l_simp_chinese.alert_paused_diplomatic_actions_delayed]
+由于缺乏政治点数，你的部分外交行动现已中断。
+可考虑减少部分行动，以此使政治点数增长免受影响。
+
+受影响的外事关系：
+$COUNTRIES$
+
+[l_simp_chinese.alert_paused_diplomatic_actions_instant]
+§H外交行动进展中断§!
+
+[l_simp_chinese.alert_pick_new_idea_advisor_delayed]
+你可以选择下列顾问：
+$ADVISOR|Y$
+
+[l_simp_chinese.alert_pick_new_idea_delayed]
+§T你可进行的变革：§!
+
+[l_simp_chinese.alert_pick_new_idea_delayed_bop]
+§T权力平衡：§!
+
+[l_simp_chinese.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_simp_chinese.alert_pick_new_idea_instant]
+§H政府革新§!
+
+[l_simp_chinese.alert_production_no_template_delayed]
+§T正在生产编制表中没有列装的装备。§!
+
+[l_simp_chinese.alert_production_no_template_equipments]
+§T以下正在生产的装备并未列装：§!
+
+[l_simp_chinese.alert_production_no_template_instant]
+§H没有编制§!
+
+[l_simp_chinese.alert_production_no_template_xp]
+§R你需要更多的陆军经验来创建编制以编入你的装备配置。§!
+
+[l_simp_chinese.alert_resistance_delayed_countries]
+§H国家：§!
+
+[l_simp_chinese.alert_resistance_delayed_high_resistance_list]
+§H下列地方存在高度的抵抗：§!
+
+[l_simp_chinese.alert_resistance_delayed_states]
+§H地区：§!
+
+[l_simp_chinese.alert_resistance_instant]
+§H占领区抵抗！§!
+
+[l_simp_chinese.alert_select_focus_delayed]
+请为你的国家选择一个国策。
+
+[l_simp_chinese.alert_select_focus_instant]
+§H未设定国策§!
+
+[l_simp_chinese.alert_self_gain_autonomy_instant]
+§H我国可提升自治度§!
+
+[l_simp_chinese.alert_self_lose_autonomy_instant]
+§H我国自治度即将被降低§!
+
+[l_simp_chinese.alert_subject_gain_autonomy_instant]
+§H有附属国即将能够提升其自治等级§!
+
+[l_simp_chinese.alert_subject_lose_autonomy_instant]
+§H我们可降低一个附属国的自治等级§!
+
+[l_simp_chinese.alert_timed_activity_low_equipment_delayed_base]
+对外行动即将完成，但行动所需的装备尚不满50%：
+$ACTIVITIES$
+
+[l_simp_chinese.alert_timed_activity_low_equipment_instant]
+§H限时行动缺乏装备！§!
+
+[l_simp_chinese.alert_very_low_supply_delayed]
+单位正严重缺乏补给。
+
+[l_simp_chinese.alert_very_low_supply_instant]
+§R补给严重不足§!
+
+[l_simp_chinese.alert_volunteer_transfer_instant]
+§H志愿部队移交§!
+
+[l_spanish.alert_air_reserve_unused_delayed]
+Tenemos aviones no usados en nuestra reserva aérea.
+
+[l_spanish.alert_air_reserve_unused_instant]
+§HAviones disponibles en reserva§!
+
+[l_spanish.alert_air_wings_unassigned_delayed]
+Tenemos alas sin usar en nuestras bases aéreas.
+
+[l_spanish.alert_air_wings_unassigned_instant]
+§HAlas sin misión ni región asignada§!
+
+[l_spanish.alert_ally_pulling_its_expeditionaries_delayed]
+Las fuerzas expedicionarias de $COUNTRY_LIST|H$ se retiran y regresarán a sus países en breve.
+
+[l_spanish.alert_ally_pulling_its_expeditionaries_instant]
+§HRetirada de fuerzas expedicionarias§!
+
+[l_spanish.alert_available_wargoal_instant]
+§HObjetivo de guerra disponible§!
+
+[l_spanish.alert_base_low_supply_delayed]
+El suministro en esta área no es suficiente y está afectando a las bases navales y aéreas. Cualquier misión desde ellas será menos eficiente.
+
+[l_spanish.alert_base_low_supply_instant]
+§RBases con suministros bajos§!
+
+[l_spanish.alert_base_very_low_supply_delayed]
+El suministro en esta área no es suficiente y está afectando a las bases navales y aéreas. Cualquier misión desde ellas será menos eficiente.
+
+[l_spanish.alert_base_very_low_supply_instant]
+§RBases con suministro muy bajos§!
+
+[l_spanish.alert_battleplans_with_no_divs_delayed]
+§HDeberías asignar divisiones a los planes de batalla.§!
+
+[l_spanish.alert_battleplans_with_no_divs_instant]
+§HPlanes de batalla sin unidades asignadas.§!
+
+[l_spanish.alert_blocked_national_focus_delayed]
+§YEl enfoque nacional§! ha dejado de progresar porque no se cumplen las condiciones.
+
+[l_spanish.alert_blocked_national_focus_instant]
+§HEl enfoque nacional no avanza§!
+
+[l_spanish.alert_border_conflict_delayed]
+Tenemos varios conflictos fronterizos.
+
+[l_spanish.alert_border_conflict_entry]
+    - $ATTACKER$ - $DEFENDER$
+
+[l_spanish.alert_border_conflict_instant]
+§HConflictos fronterizos§!
+
+[l_spanish.alert_border_conflict_toggle]
+§GHaz clic derecho para alternar entre conflictos fronterizos§!
+
+[l_spanish.alert_dangerous_naval_invasion_delayed]
+§TEn este momento se están realizando invasiones navales en los siguientes estados:§!
+
+[l_spanish.alert_dangerous_naval_invasion_instant]
+§RInvasión naval peligrosa§!
+
+[l_spanish.alert_deployment_ready_delayed]
+§TTienes unidades listas para su despliegue.§!
+
+[l_spanish.alert_deployment_ready_instant]
+§HDesplegar unidades§!
+
+[l_spanish.alert_doctrine_unlock_delayed]
+Puedes desbloquear nuevas doctrinas:
+$DOCTRINE$
+
+[l_spanish.alert_doctrine_unlock_instant]
+§YDoctrinas disponibles§!
+
+[l_spanish.alert_enemy_air_superiority_delayed]
+El enemigo tiene superioridad aérea en una de tus regiones estratégicas.
+Combatir en esa región probablemente causará penalizaciones severas.
+Considera asignar más aviones a esa región.
+
+[l_spanish.alert_enemy_air_superiority_instant]
+§REnemigo tiene superioridad aérea§!
+
+[l_spanish.alert_enemy_generate_wargoal_instant]
+§HSe han fabricado objetivos de guerra contra nosotros o aliados§!
+
+[l_spanish.alert_exiled_units_instant]
+§HHemos exiliado ejércitos§!
+
+[l_spanish.alert_expeditionary_force_delayed]
+Tienes fuerzas expedicionarias en este escenario.
+
+[l_spanish.alert_expeditionary_force_instant]
+§HFuerzas expedicionarias§!
+
+[l_spanish.alert_expensive_ships_low_str_entry]
+$FLEET|H$ tiene $NUM|R$ barco(s) grande(s) con fuerzas bajas.
+
+[l_spanish.alert_expensive_ships_low_str_instant]
+§HGrandes barcos con §Rfuerzas baja§!§!
+
+[l_spanish.alert_external_influences_boost_party_popularity]
+§YAumentando la popularidad del partido§!
+
+[l_spanish.alert_external_influences_delayed_entry]
+$COUNTRY|H$ está $ACTIONS$
+
+[l_spanish.alert_external_influences_delayed_list]
+$LIST$
+
+[l_spanish.alert_external_influences_instant]
+§H¡Influencias políticas externas!§!
+
+[l_spanish.alert_external_influences_stage_coup]
+§YDando un golpe de estado§!
+
+[l_spanish.alert_faction_assume_leadership_possible_delayed]
+Nuestro país es mucho más fuerte que $LEADER|Y$, actual líder de la facción $FACTION|Y$, por lo que podemos hacernos con el poder si lo deseamos.
+
+[l_spanish.alert_faction_assume_leadership_possible_instant]
+§HPodemos asumir el liderazgo de nuestra facción§!
+
+[l_spanish.alert_faction_generate_wargoal_instant]
+§HHay miembros de facción fabricando objetivos de guerra§!
+
+[l_spanish.alert_faction_member_near_assuming_leadership_delayed]
+Los siguientes miembros de la facción también son (casi) lo bastante fuertes para hacerse con el poder:
+
+[l_spanish.alert_faction_member_near_assuming_leadership_instant]
+¡§HCorremos el peligro de que otro país asuma el liderazgo de nuestra facción $FACTION|Y$§!!
+
+[l_spanish.alert_faction_possible_invite_instant]
+§HPuedes invitar a la facción§!
+
+[l_spanish.alert_few_manpower_delayed]
+Tenemos muy poca mano de obra. Esto puede llevar a una situación en la que nuestros ejércitos se queden sin efectivos.
+
+[l_spanish.alert_few_manpower_instant]
+§HPoca mano de obra§!
+
+[l_spanish.alert_free_civilian_factories_delayed]
+§TTienes fábricas civiles libres que puedes usar para comercio y construcciones.§!
+
+[l_spanish.alert_free_civilian_factories_instant]
+§HFábricas civiles libres§!
+
+[l_spanish.alert_free_military_factories_delayed]
+§TTienes fábricas militares libres que puedes usar para producir equipo militar.§!
+
+[l_spanish.alert_free_military_factories_instant]
+§HFábricas militares libres§!
+
+[l_spanish.alert_free_naval_dockyards_delayed]
+§TTienes astilleros libres que puedes usar para la producción de buques.§!
+
+[l_spanish.alert_free_naval_dockyards_instant]
+§HAstilleros libres§!
+
+[l_spanish.alert_hostile_troops_delayed]
+Hay tropas hostiles en la zona defendida.
+
+[l_spanish.alert_hostile_troops_instant]
+§RTropa Hostil§!
+
+[l_spanish.alert_is_spotting_delayed]
+Tus patrullas están divisando armadas enemigas.
+
+[l_spanish.alert_is_spotting_instant]
+§RHas divisado armadas enemigas§!
+
+[l_spanish.alert_lack_of_resources_delayed]
+Necesitas: $RESOURCES$.
+El equipo se producirá a §Rmenor velocidad§! cuando los recursos de las fábricas escaseen.
+
+[l_spanish.alert_lack_of_resources_instant]
+§HRecursos insuficientes§!
+
+[l_spanish.alert_low_supply_delayed]
+Las unidades se quedan sin provisiones.
+
+[l_spanish.alert_low_supply_instant]
+§RSuministros bajos§!
+
+[l_spanish.alert_naval_battle_results_delayed_click]
+§GClic para centrarse en el siguiente
+resultado.
+§!
+
+[l_spanish.alert_naval_battle_results_delayed_list]
+Hay resultados de batallas navales sin leer en
+$LIST$
+
+[l_spanish.alert_naval_battle_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_spanish.alert_naval_battle_results_instant]
+§HResultados de batalla naval sin leer§!
+
+[l_spanish.alert_naval_combat_delayed]
+Un combate naval ocurre en esta región estratégica
+
+[l_spanish.alert_naval_combat_instant]
+§RCombate naval§!
+
+[l_spanish.alert_naval_convoy_raiding_results_delayed_click]
+§GHaz clic para centrar el siguiente resultado.
+Haz clic en el icono £mapicon_naval_battle_result_text de la región para leer el informe.
+§!
+
+[l_spanish.alert_naval_convoy_raiding_results_delayed_list]
+Tienes resultados de batallas de incursiones a convoyes navales sin leer en:
+$LIST$
+
+[l_spanish.alert_naval_convoy_raiding_results_entry]
+$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$
+
+[l_spanish.alert_naval_convoy_raiding_results_instant]
+§HResultados de batallas de incursiones a convoyes navales sin leer§!
+
+[l_spanish.alert_naval_invasion_delayed]
+§THay invasiones navales de tropas hostiles§!
+
+[l_spanish.alert_naval_invasion_delayed_state]
+$STATE|H$
+
+[l_spanish.alert_naval_invasion_instant]
+§RInvasión Naval§!
+
+[l_spanish.alert_not_enough_garrison_delayed]
+Nos falta $NUM|*H$ de mano de obra.
+
+[l_spanish.alert_not_enough_garrison_delayed_equipment]
+Nos falta el siguiente equipo:
+
+[l_spanish.alert_not_enough_garrison_instant]
+§HNo hay mano de obra o equipo suficientes para satisfacer a nuestras guarniciones§!
+
+[l_spanish.alert_not_enough_garrison_warning]
+§RAlgunas leyes de ocupación no tendrán vigencia plena hasta que todas las necesidades de la guarnición estén cubiertas.§!
+
+[l_spanish.alert_not_training_divisions_delayed]
+Actualmente no estás entrenando ninguna división nueva.
+
+[l_spanish.alert_not_training_divisions_instant]
+§HNo hay divisiones en adiestramiento básico§!
+
+[l_spanish.alert_officer_corps_advisor_delayed]
+Consejeros:
+Puedes seleccionar:
+$ADVISOR|Y$
+
+[l_spanish.alert_officer_corps_instant]
+§YModificar el cuerpo de oficiales§!
+
+[l_spanish.alert_officer_corps_spirit_delayed]
+Espíritu militar:
+Puedes seleccionar:
+$SPIRIT|Y$
+
+[l_spanish.alert_paused_diplomatic_actions_delayed]
+Hay acciones diplomáticas que no pueden prosperar porque te falta poder político.
+Plantéate cancelar estas acciones para que no afecten al poder político que obtengas.
+
+Relaciones afectadas:
+$COUNTRIES$
+
+[l_spanish.alert_paused_diplomatic_actions_instant]
+§HLas acciones diplomáticas no pueden prosperar§!
+
+[l_spanish.alert_pick_new_idea_advisor_delayed]
+Puedes seleccionar:
+$ADVISOR|Y$
+
+[l_spanish.alert_pick_new_idea_delayed]
+§TPuedes cambiar:§!
+
+[l_spanish.alert_pick_new_idea_delayed_bop]
+§TEquilibrio de poder:§!
+
+[l_spanish.alert_pick_new_idea_group_type]
+$TYPE|H$
+
+[l_spanish.alert_pick_new_idea_instant]
+§HModificar el gobierno§!
+
+[l_spanish.alert_production_no_template_delayed]
+§TEstás produciendo equipo que no tienes en ninguna plantilla de división.§!
+
+[l_spanish.alert_production_no_template_equipments]
+§TEquipo producido sin plantilla:§!
+
+[l_spanish.alert_production_no_template_instant]
+§HSin plantilla§!
+
+[l_spanish.alert_production_no_template_xp]
+§RNecesitas más XP antes de poder crear una plantilla que incluya tu equipo.§!
+
+[l_spanish.alert_resistance_delayed_countries]
+§HPaíses:§!
+
+[l_spanish.alert_resistance_delayed_high_resistance_list]
+§HNiveles de resistencia altos en:§!
+
+[l_spanish.alert_resistance_delayed_states]
+§HEstados:§!
+
+[l_spanish.alert_resistance_instant]
+§H¡Resistencia a la ocupación!§!
+
+[l_spanish.alert_select_focus_delayed]
+Deberías seleccionar un nuevo enfoque para tu nación.
+
+[l_spanish.alert_select_focus_instant]
+§HNingún enfoque nacional establecido§!
+
+[l_spanish.alert_self_gain_autonomy_instant]
+§HPodemos aumentar nuestra autonomía§!
+
+[l_spanish.alert_self_lose_autonomy_instant]
+§HNuestra autonomía podría disminuir pronto§!
+
+[l_spanish.alert_subject_gain_autonomy_instant]
+§HUn súbdito podría aumentar su autonomía§!
+
+[l_spanish.alert_subject_lose_autonomy_instant]
+§HPodemos disminuir la autonomía de un súbdito§!
+
+[l_spanish.alert_timed_activity_low_equipment_delayed_base]
+Las actividades diplomáticas pronto habrán acabado y tienen menos del 50% del equipo requeridos:
+$ACTIVITIES$
+
+[l_spanish.alert_timed_activity_low_equipment_instant]
+§HActividad calculada carece de material§!
+
+[l_spanish.alert_very_low_supply_delayed]
+Las unidades carecen de suministros.
+
+[l_spanish.alert_very_low_supply_instant]
+§RSuministros muy bajos§!
+
+[l_spanish.alert_volunteer_transfer_instant]
+§HTransfiriendo fuerzas voluntarias§!

@@ -1,0 +1,60 @@
+DECISION_CATEGORY_WETM = {
+    DECISION_WETM_ORE_BOULDERS_TO_RESOURCES = {
+        fixed_random_seed = no
+        priority = 100
+        cost = 0
+        days_re_enable = 0
+        visible = {
+            OR = {
+                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+                has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+                tag = C12
+                is_in_faction_with = C12
+                AND = {
+                    owns_state = 601
+                    controls_state = 601
+                }
+            }
+        }
+        available = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800 = yes
+        }
+        custom_cost_trigger = {
+            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800 = yes
+        }
+        custom_cost_text = CUSTOM_COST_ORE_BOULDERS_800
+        complete_effect = {
+            DEL_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_800 = yes
+            capital_scope = {
+                add_resource = {
+                    type = steel
+                    amount = 6
+                }
+                add_resource = {
+                    type = crystals
+                    amount = 4
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 3
+                }
+                add_resource = {
+                    type = chromium
+                    amount = 1
+                }
+                add_resource = {
+                    type = tungsten
+                    amount = 1
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 10
+                tag = C12
+            }
+        }
+        icon = WETM_ORE_BOULDERS_TO_RESOURCES
+    }
+}

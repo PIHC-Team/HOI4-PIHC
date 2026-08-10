@@ -1,0 +1,31 @@
+technologies = {
+    TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE = {
+        folder = {
+            name = muffins_folder
+            position = {
+                x = 8
+                y = 9
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_muffins
+        }
+        enable_equipments = {
+        }
+        on_research_complete = {
+            custom_effect_tooltip = TECHNOLOGY_C03_MUFFINS_GAMBLE_PROP_DOUBLE_TOOLTIP
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                factor = 1000
+                tag = C03
+            }
+        }
+        research_cost = 1.0
+        start_year = 1003
+    }
+}

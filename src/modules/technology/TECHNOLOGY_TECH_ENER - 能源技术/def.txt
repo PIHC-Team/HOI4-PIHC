@@ -1,0 +1,45 @@
+technologies = {
+    TECHNOLOGY_TECH_ENER = {
+        folder = {
+            name = electronics_folder
+            position = {
+                x = 5
+                y = 0
+            }
+        }
+        force_use_small_tech_layout = yes
+        show_equipment_icon = yes
+        categories = {
+            pihc_all
+            pihc_civil
+            pihc_energy
+        }
+        enable_equipments = {
+        }
+        enable_subunits = {
+        }
+        enable_building = {
+            building = steampunk_facility
+            level = 1
+        }
+        enable_building = {
+            building = oilpunk_facility
+            level = 1
+        }
+        enable_building = {
+            building = elecpunk_facility
+            level = 1
+        }
+        special_project_specialization = {
+            specialization_steampunk
+            specialization_oilpunk
+            specialization_elecpunk
+        }
+        path = {
+            leads_to_tech = TECHNOLOGY_TECH_ENER_I
+            research_cost_coeff = 1
+        }
+        research_cost = 3.0
+        start_year = 1000
+    }
+}

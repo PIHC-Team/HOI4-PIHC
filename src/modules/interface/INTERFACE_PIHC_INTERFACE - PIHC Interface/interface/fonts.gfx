@@ -1,0 +1,135 @@
+
+bitmapfonts = {
+	bitmapfont = {
+		name = "garamond_12"
+		path = "gfx/fonts/garamond_12"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "cw_3d_debug"
+		path = "gfx/fonts/garamond_12"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_36_outline"
+		fontfiles = {
+			"gfx/fonts/aldrich_36_outline"
+			"gfx/fonts/fzrzhm_28_outline"
+		}
+		color = 0xffffffff
+	}
+	
+	bitmapfont = {
+		name = "aldrich_48_outline"
+		fontfiles = {
+			"gfx/fonts/aldrich_48_outline"
+			"gfx/fonts/fzrzhm_34_outline_0"
+			"gfx/fonts/fzrzhm_34_outline_1"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_32_outline"
+		fontfiles = {
+			"gfx/fonts/aldrich_32_outline"
+			"gfx/fonts/fzrzhdb_28_outline"
+			"gfx/fonts/fzrzhdb_28_outline_expand"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_30_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_24_outline"
+			"gfx/fonts/aldrich_30_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_28_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_22_outline"
+			"gfx/fonts/aldrich_28_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_24_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_20_outline"
+			"gfx/fonts/aldrich_24_outline"
+		}
+		color = 0xffffffff
+	}
+	
+	bitmapfont = {
+		name = "aldrich_24_outline_closing"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_20_outline"
+			"gfx/fonts/fzrzhdb_20_outline_expand"
+			"gfx/fonts/aldrich_24_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_22_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_18_outline"
+			"gfx/fonts/aldrich_22_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_20_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhdb_16_outline"
+			"gfx/fonts/fzrzhdb_16_outline_expand"
+			"gfx/fonts/aldrich_20_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_18_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhm_16_outline"
+			"gfx/fonts/aldrich_18_outline"
+		}
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "aldrich_16_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhm_14_outline"
+			"gfx/fonts/aldrich_16_outline"
+		}
+		color = 0xffffffff
+	}
+	
+	bitmapfont = {
+		name = "aldrich_14_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhm_10_outline"
+			"gfx/fonts/aldrich_14_outline"
+		}
+		color = 0xffffffff
+	}
+	
+	bitmapfont = {
+		name = "aldrich_12_outline"
+		fontfiles = {
+			"gfx/fonts/fzrzhm_9_outline"
+			"gfx/fonts/aldrich_12_outline"
+		}
+		color = 0xffffffff
+	}
+}

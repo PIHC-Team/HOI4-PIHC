@@ -1,0 +1,3672 @@
+add_namespace = C18_MAIN
+country_event = {
+    id = C18_MAIN.1
+    picture = GFX_EVENT_C18_MAIN_1
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_1
+    desc = EVENT_C18_MAIN_1_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.2
+            days = 1
+        }
+        name = EVENT_C18_MAIN_1_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.2
+    picture = GFX_EVENT_C18_MAIN_2
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_2
+    desc = EVENT_C18_MAIN_2_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_6MY_C18_RAIN_SHINE_FOALS_BREATH_1 = yes
+        C18_KIRINS_PASS_ON = yes
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.57
+                days = 14
+                random_days = 35
+            }
+            country_event = {
+                id = C18_MAIN.71
+                days = 90
+                random_days = 35
+            }
+        }
+        name = EVENT_C18_MAIN_2_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.3
+    picture = GFX_EVENT_C18_MAIN_3
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_3
+    desc = EVENT_C18_MAIN_3_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                NOT = {
+                    TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT = yes
+                }
+            }
+            ADD_INVENTORY_ITEM_4EP_C18_CLIMATE_REPORT_1 = yes
+        }
+        name = EVENT_C18_MAIN_3_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.4
+    picture = GFX_EVENT_C18_MAIN_4
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_4
+    desc = EVENT_C18_MAIN_4_desc
+    option = {
+        ai_chance = {
+            factor = 95
+        }
+        C18_DRAW_ATTENTION_2 = yes
+        add_ideas = IDEA_C18_FLOWER_MARKET_1
+        add_offsite_building = {
+            type = industrial_complex
+            level = 5
+        }
+        name = EVENT_C18_MAIN_4_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 5
+        }
+        C18_DRAW_ATTENTION_1 = yes
+        add_ideas = IDEA_C18_FLOWER_MARKET_2
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+        name = EVENT_C18_MAIN_4_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        add_ideas = IDEA_C18_FLOWER_MARKET_3
+        add_offsite_building = {
+            type = industrial_complex
+            level = 1
+        }
+        name = EVENT_C18_MAIN_4_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.5
+    picture = GFX_EVENT_C18_MAIN_5
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_DRAW_ATTENTION_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_5
+    desc = EVENT_C18_MAIN_5_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_5_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.6
+    picture = GFX_EVENT_C18_MAIN_6
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_DRAW_ATTENTION_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_6
+    desc = EVENT_C18_MAIN_6_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_6_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.7
+    picture = GFX_EVENT_C18_MAIN_7
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_DRAW_ATTENTION_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_7
+    desc = EVENT_C18_MAIN_7_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_7_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.8
+    picture = GFX_EVENT_C18_MAIN_8
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_8
+    desc = EVENT_C18_MAIN_8_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.9
+        }
+        name = EVENT_C18_MAIN_8_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.9
+    picture = GFX_EVENT_C18_MAIN_9
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_9
+    desc = EVENT_C18_MAIN_9_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.10
+            days = 1
+        }
+        name = EVENT_C18_MAIN_9_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.10
+    picture = GFX_EVENT_C18_MAIN_10
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_10
+    desc = EVENT_C18_MAIN_10_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1 = yes
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                country_event = {
+                    id = C18_MAIN.11
+                    days = 14
+                }
+            }
+        }
+        name = EVENT_C18_MAIN_10_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.11
+    picture = GFX_EVENT_C18_MAIN_11
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_11
+    desc = EVENT_C18_MAIN_11_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_TECH_MAGI_DARKMAGIC = 1
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_idea = IDEA_ALL_DARK_MAGIC_USER
+                }
+                remove_ideas = IDEA_ALL_DARK_MAGIC_USER
+            }
+            if = {
+                limit = {
+                    has_idea = IDEA_ALL_DARK_MAGIC_PAYBACK
+                }
+                remove_ideas = IDEA_ALL_DARK_MAGIC_PAYBACK
+            }
+            C18_ADD_GROWTH_0_5 = yes
+            country_event = {
+                id = C18_MAIN.59
+                days = 180
+                random_days = 180
+            }
+            country_event = {
+                id = C18_MAIN.62
+                days = 60
+                random_days = 30
+            }
+            country_event = {
+                id = C18_MAIN.61
+                days = 90
+                random_days = 30
+            }
+            country_event = {
+                id = C18_MAIN.63
+                days = 120
+                random_days = 30
+            }
+            country_event = {
+                id = C18_MAIN.64
+                days = 150
+                random_days = 30
+            }
+            country_event = {
+                id = C18_MAIN.65
+                days = 120
+                random_days = 60
+            }
+            country_event = {
+                id = C18_MAIN.66
+                days = 14
+                random_days = 42
+            }
+        }
+        add_ideas = IDEA_ALL_DARK_MAGIC_USER
+        add_timed_idea = {
+            idea = IDEA_C18_SENDAKS_SECRET_COOPERATOR
+            years = 3
+        }
+        DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1 = yes
+        name = EVENT_C18_MAIN_11_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1 = yes
+        name = EVENT_C18_MAIN_11_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.12
+    picture = GFX_EVENT_C18_MAIN_12
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_12
+    desc = EVENT_C18_MAIN_12_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE
+        ADD_INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE_1 = yes
+        custom_effect_tooltip = EVENT_C18_MAIN_12_TOOLTIP
+        name = EVENT_C18_MAIN_12_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.13
+    picture = GFX_EVENT_C18_MAIN_13
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_13
+    desc = EVENT_C18_MAIN_13_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_13_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+            }
+            country_event = {
+                id = C18_MAIN.15
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+            }
+            country_event = {
+                id = C18_MAIN.18
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+            }
+            country_event = {
+                id = C18_MAIN.20
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+            }
+            country_event = {
+                id = C18_MAIN.27
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+            country_event = {
+                id = C18_MAIN.22
+            }
+        }
+        name = EVENT_C18_MAIN_13_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.14
+    picture = GFX_EVENT_C18_MAIN_14
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_14
+    desc = EVENT_C18_MAIN_14_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_14_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.15
+    picture = GFX_EVENT_C18_MAIN_15
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_15
+    desc = EVENT_C18_MAIN_15_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_15_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+            }
+            country_event = {
+                id = C18_MAIN.18
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+            }
+            country_event = {
+                id = C18_MAIN.20
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+            }
+            country_event = {
+                id = C18_MAIN.27
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+            country_event = {
+                id = C18_MAIN.22
+            }
+        }
+        name = EVENT_C18_MAIN_15_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.13
+        }
+        name = EVENT_C18_MAIN_15_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.16
+    picture = GFX_EVENT_C18_MAIN_16
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_16
+    desc = EVENT_C18_MAIN_16_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_16_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.17
+    picture = GFX_EVENT_C18_MAIN_17
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_17
+    desc = EVENT_C18_MAIN_17_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_17_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.18
+    picture = GFX_EVENT_C18_MAIN_18
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_18
+    desc = EVENT_C18_MAIN_18_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_18_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+            }
+            country_event = {
+                id = C18_MAIN.20
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+            }
+            country_event = {
+                id = C18_MAIN.27
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+            country_event = {
+                id = C18_MAIN.22
+            }
+        }
+        name = EVENT_C18_MAIN_18_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+            }
+            country_event = {
+                id = C18_MAIN.15
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.13
+            }
+        }
+        name = EVENT_C18_MAIN_18_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.19
+    picture = GFX_EVENT_C18_MAIN_19
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_19
+    desc = EVENT_C18_MAIN_19_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_19_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.20
+    picture = GFX_EVENT_C18_MAIN_20
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_20
+    desc = EVENT_C18_MAIN_20_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_20_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+            }
+            country_event = {
+                id = C18_MAIN.27
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+            country_event = {
+                id = C18_MAIN.22
+            }
+        }
+        name = EVENT_C18_MAIN_20_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+            }
+            country_event = {
+                id = C18_MAIN.18
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+            }
+            country_event = {
+                id = C18_MAIN.15
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.13
+            }
+        }
+        name = EVENT_C18_MAIN_20_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.21
+    picture = GFX_EVENT_C18_MAIN_21
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_21
+    desc = EVENT_C18_MAIN_21_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_21_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.22
+    picture = GFX_EVENT_C18_MAIN_22
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_22
+    desc = EVENT_C18_MAIN_22_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_22_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7
+            }
+            country_event = {
+                id = C18_MAIN.24
+            }
+        }
+        name = EVENT_C18_MAIN_22_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+            }
+            country_event = {
+                id = C18_MAIN.27
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+            }
+            country_event = {
+                id = C18_MAIN.20
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+            }
+            country_event = {
+                id = C18_MAIN.18
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+            }
+            country_event = {
+                id = C18_MAIN.15
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.13
+            }
+        }
+        name = EVENT_C18_MAIN_22_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.23
+    picture = GFX_EVENT_C18_MAIN_23
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_23
+    desc = EVENT_C18_MAIN_23_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_7
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_23_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.24
+    picture = GFX_EVENT_C18_MAIN_24
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_24
+    desc = EVENT_C18_MAIN_24_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_24_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.22
+        }
+        name = EVENT_C18_MAIN_24_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.25
+    picture = GFX_EVENT_C18_MAIN_25
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_25
+    desc = EVENT_C18_MAIN_25_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_25_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.26
+    picture = GFX_EVENT_C18_MAIN_26
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_26
+    desc = EVENT_C18_MAIN_26_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_5
+        custom_effect_tooltip = C18_SMUGGLING_CASE_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_26_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.27
+    picture = GFX_EVENT_C18_MAIN_27
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_27
+    desc = EVENT_C18_MAIN_27_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_27_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_6
+            }
+            country_event = {
+                id = C18_MAIN.22
+            }
+        }
+        name = EVENT_C18_MAIN_27_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_4
+            }
+            country_event = {
+                id = C18_MAIN.20
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_3
+            }
+            country_event = {
+                id = C18_MAIN.18
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_REPORT_2
+            }
+            country_event = {
+                id = C18_MAIN.15
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.13
+            }
+        }
+        name = EVENT_C18_MAIN_27_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.28
+    picture = GFX_EVENT_C18_MAIN_28
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_28
+    desc = EVENT_C18_MAIN_28_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE
+        ADD_INVENTORY_ITEM_5LG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_1 = yes
+        name = EVENT_C18_MAIN_28_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.29
+    picture = GFX_EVENT_C18_MAIN_29
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_29
+    desc = EVENT_C18_MAIN_29_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_29_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+            }
+            country_event = {
+                id = C18_MAIN.31
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+            }
+            country_event = {
+                id = C18_MAIN.33
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+            }
+            country_event = {
+                id = C18_MAIN.35
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+            }
+            country_event = {
+                id = C18_MAIN.37
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+            country_event = {
+                id = C18_MAIN.39
+            }
+        }
+        name = EVENT_C18_MAIN_29_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.30
+    picture = GFX_EVENT_C18_MAIN_30
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_30
+    desc = EVENT_C18_MAIN_30_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+        custom_effect_tooltip = C18_SMUGGLING_CASE_KIRIN_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_30_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.31
+    picture = GFX_EVENT_C18_MAIN_31
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_31
+    desc = EVENT_C18_MAIN_31_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_31_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+            }
+            country_event = {
+                id = C18_MAIN.33
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+            }
+            country_event = {
+                id = C18_MAIN.35
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+            }
+            country_event = {
+                id = C18_MAIN.37
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+            country_event = {
+                id = C18_MAIN.39
+            }
+        }
+        name = EVENT_C18_MAIN_31_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.29
+        }
+        name = EVENT_C18_MAIN_31_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.32
+    picture = GFX_EVENT_C18_MAIN_32
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_32
+    desc = EVENT_C18_MAIN_32_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+        custom_effect_tooltip = C18_SMUGGLING_CASE_KIRIN_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_32_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.33
+    picture = GFX_EVENT_C18_MAIN_33
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_33
+    desc = EVENT_C18_MAIN_33_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_33_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+            }
+            country_event = {
+                id = C18_MAIN.35
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+            }
+            country_event = {
+                id = C18_MAIN.37
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+            country_event = {
+                id = C18_MAIN.39
+            }
+        }
+        name = EVENT_C18_MAIN_33_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+            }
+            country_event = {
+                id = C18_MAIN.31
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.29
+            }
+        }
+        name = EVENT_C18_MAIN_33_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.34
+    picture = GFX_EVENT_C18_MAIN_34
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_34
+    desc = EVENT_C18_MAIN_34_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+        custom_effect_tooltip = C18_SMUGGLING_CASE_KIRIN_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_34_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.35
+    picture = GFX_EVENT_C18_MAIN_35
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_35
+    desc = EVENT_C18_MAIN_35_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_35_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+            }
+            country_event = {
+                id = C18_MAIN.37
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+            country_event = {
+                id = C18_MAIN.39
+            }
+        }
+        name = EVENT_C18_MAIN_35_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+            }
+            country_event = {
+                id = C18_MAIN.33
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+            }
+            country_event = {
+                id = C18_MAIN.31
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.29
+            }
+        }
+        name = EVENT_C18_MAIN_35_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.36
+    picture = GFX_EVENT_C18_MAIN_36
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_36
+    desc = EVENT_C18_MAIN_36_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+        custom_effect_tooltip = C18_SMUGGLING_CASE_KIRIN_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_36_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.37
+    picture = GFX_EVENT_C18_MAIN_37
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_37
+    desc = EVENT_C18_MAIN_37_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_37_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        trigger = {
+            OR = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+            }
+            country_event = {
+                id = C18_MAIN.39
+            }
+        }
+        name = EVENT_C18_MAIN_37_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+            }
+            country_event = {
+                id = C18_MAIN.35
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+            }
+            country_event = {
+                id = C18_MAIN.33
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+            }
+            country_event = {
+                id = C18_MAIN.31
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.29
+            }
+        }
+        name = EVENT_C18_MAIN_37_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.38
+    picture = GFX_EVENT_C18_MAIN_38
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_38
+    desc = EVENT_C18_MAIN_38_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_6
+        custom_effect_tooltip = C18_SMUGGLING_CASE_KIRIN_INFO_UPDATE_TOOLTIP
+        name = EVENT_C18_MAIN_38_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.39
+    picture = GFX_EVENT_C18_MAIN_39
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_39
+    desc = EVENT_C18_MAIN_39_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_39_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_5
+            }
+            country_event = {
+                id = C18_MAIN.37
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_4
+            }
+            country_event = {
+                id = C18_MAIN.35
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_3
+            }
+            country_event = {
+                id = C18_MAIN.33
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_KIRIN_ARCHIVE_2
+            }
+            country_event = {
+                id = C18_MAIN.31
+            }
+        }
+        else = {
+            country_event = {
+                id = C18_MAIN.29
+            }
+        }
+        name = EVENT_C18_MAIN_39_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.40
+    picture = GFX_EVENT_C18_MAIN_40
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_40
+    desc = EVENT_C18_MAIN_40_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_40_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.41
+    picture = GFX_EVENT_C18_MAIN_41
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_41
+    desc = EVENT_C18_MAIN_41_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_PUNJAB_PICTURE_1 = yes
+        name = EVENT_C18_MAIN_41_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.42
+    picture = GFX_EVENT_C18_MAIN_42
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_42
+    desc = EVENT_C18_MAIN_42_desc
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        retire_character = CHARACTER_AQUAMARINE
+        custom_effect_tooltip = EVENT_C18_MAIN_42_TOOLTIP
+        country_event = {
+            id = C18_MAIN.43
+        }
+        name = EVENT_C18_MAIN_42_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        retire_character = CHARACTER_BURNT_UMBER
+        custom_effect_tooltip = EVENT_C18_MAIN_42_TOOLTIP
+        country_event = {
+            id = C18_MAIN.44
+        }
+        name = EVENT_C18_MAIN_42_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        retire_character = CHARACTER_COMPOSED
+        custom_effect_tooltip = EVENT_C18_MAIN_42_TOOLTIP
+        country_event = {
+            id = C18_MAIN.45
+        }
+        name = EVENT_C18_MAIN_42_o2
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        retire_character = CHARACTER_GRASS_GREEN
+        custom_effect_tooltip = EVENT_C18_MAIN_42_TOOLTIP
+        country_event = {
+            id = C18_MAIN.46
+        }
+        name = EVENT_C18_MAIN_42_o3
+    }
+    option = {
+        ai_chance = {
+            factor = 80
+        }
+        retire_character = CHARACTER_OCHRE
+        custom_effect_tooltip = EVENT_C18_MAIN_42_TOOLTIP
+        country_event = {
+            id = C18_MAIN.47
+        }
+        name = EVENT_C18_MAIN_42_o4
+    }
+}
+country_event = {
+    id = C18_MAIN.43
+    picture = GFX_EVENT_C18_MAIN_43
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_43
+    desc = EVENT_C18_MAIN_43_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.48
+                days = 21
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+        }
+        name = EVENT_C18_MAIN_43_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.44
+    picture = GFX_EVENT_C18_MAIN_44
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_44
+    desc = EVENT_C18_MAIN_44_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.49
+                days = 21
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+        }
+        name = EVENT_C18_MAIN_44_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.45
+    picture = GFX_EVENT_C18_MAIN_45
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_45
+    desc = EVENT_C18_MAIN_45_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.50
+                days = 21
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+        }
+        name = EVENT_C18_MAIN_45_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.46
+    picture = GFX_EVENT_C18_MAIN_46
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_46
+    desc = EVENT_C18_MAIN_46_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.51
+                days = 21
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+        }
+        name = EVENT_C18_MAIN_46_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.47
+    picture = GFX_EVENT_C18_MAIN_47
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_47
+    desc = EVENT_C18_MAIN_47_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.52
+                days = 21
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_SMUGGLING_CASE_2_CLOSED
+        }
+        name = EVENT_C18_MAIN_47_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.48
+    picture = GFX_EVENT_C18_MAIN_48
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_48
+    desc = EVENT_C18_MAIN_48_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAC_C18_PRISON_ESCAPE
+        name = EVENT_C18_MAIN_48_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.49
+    picture = GFX_EVENT_C18_MAIN_49
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_49
+    desc = EVENT_C18_MAIN_49_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAC_C18_PRISON_ESCAPE
+        name = EVENT_C18_MAIN_49_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.50
+    picture = GFX_EVENT_C18_MAIN_50
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_50
+    desc = EVENT_C18_MAIN_50_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAC_C18_PRISON_ESCAPE
+        name = EVENT_C18_MAIN_50_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.51
+    picture = GFX_EVENT_C18_MAIN_51
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_51
+    desc = EVENT_C18_MAIN_51_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAC_C18_PRISON_ESCAPE
+        name = EVENT_C18_MAIN_51_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.52
+    picture = GFX_EVENT_C18_MAIN_52
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_52
+    desc = EVENT_C18_MAIN_52_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAC_C18_PRISON_ESCAPE
+        name = EVENT_C18_MAIN_52_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.53
+    picture = GFX_EVENT_C18_MAIN_53
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_53
+    desc = EVENT_C18_MAIN_53_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_political_power = 50
+        name = EVENT_C18_MAIN_53_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.54
+    picture = GFX_EVENT_C18_MAIN_54
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_54
+    desc = EVENT_C18_MAIN_54_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_political_power = 50
+        name = EVENT_C18_MAIN_54_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.55
+    picture = GFX_EVENT_C18_MAIN_55
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_55
+    desc = EVENT_C18_MAIN_55_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS_DISCOVERED
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_55_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.56
+    picture = GFX_EVENT_C18_MAIN_56
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS
+                complete_national_focus = FOCUS_C18_101_CLIMATE_REPORT
+                complete_national_focus = FOCUS_C18_101_CLIMATE_RESEARCH
+                country_event = {
+                    id = C18_MAIN.68
+                    days = 30
+                    random_days = 60
+                }
+                country_event = {
+                    id = C18_MAIN.70
+                    days = 60
+                    random_days = 42
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_56
+    desc = EVENT_C18_MAIN_56_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_56_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.57
+    picture = GFX_EVENT_C18_MAIN_57
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_completed_focus = FOCUS_C18_010_CORRUPTION
+                        }
+                    }
+                    activate_mission = DECISION_C18_PRESSURE_FOR_BLOSSOM_CASE
+                    country_event = {
+                        id = C18_MAIN.72
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_57
+    desc = EVENT_C18_MAIN_57_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_57_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.58
+    picture = GFX_EVENT_C18_MAIN_58
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_SENDAK = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_58
+    desc = EVENT_C18_MAIN_58_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_58_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.59
+    picture = GFX_EVENT_C18_MAIN_59
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_59
+    desc = EVENT_C18_MAIN_59_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.60
+        }
+        name = EVENT_C18_MAIN_59_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.60
+    picture = GFX_EVENT_C18_MAIN_60
+    immediate = {
+        C18 = {
+            hidden_effect = {
+                activate_mission = DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK
+                if = {
+                    limit = {
+                        TRIGGER_HAVE_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN = yes
+                    }
+                    DEL_INVENTORY_ITEM_4EP_C18_SENDAKS_PLAN_1 = yes
+                }
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_60
+    desc = EVENT_C18_MAIN_60_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            activate_mission = DECISION_C18_PRESSURE_FOR_WAR_ON_SENDAK
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_WAR_ON_C37
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_60_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.61
+    picture = GFX_EVENT_C18_MAIN_61
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_61
+    desc = EVENT_C18_MAIN_61_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            construction1 = 1
+        }
+        name = EVENT_C18_MAIN_61_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.62
+    picture = GFX_EVENT_C18_MAIN_62
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_62
+    desc = EVENT_C18_MAIN_62_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_SUPPORT_MAGIC_I = 1
+        }
+        name = EVENT_C18_MAIN_62_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.63
+    picture = GFX_EVENT_C18_MAIN_63
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_63
+    desc = EVENT_C18_MAIN_63_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_TECH_MAGI_NONUNICORN = 1
+        }
+        name = EVENT_C18_MAIN_63_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.64
+    picture = GFX_EVENT_C18_MAIN_64
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_64
+    desc = EVENT_C18_MAIN_64_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_technology = {
+            TECHNOLOGY_TECH_MAGI_MODERN = 1
+        }
+        name = EVENT_C18_MAIN_64_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.65
+    picture = GFX_EVENT_C18_MAIN_65
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_65
+    desc = EVENT_C18_MAIN_65_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1800 = yes
+        name = EVENT_C18_MAIN_65_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.66
+    picture = GFX_EVENT_C18_MAIN_66
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_66
+    desc = EVENT_C18_MAIN_66_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        184 = {
+            BUILD_A_CIC = yes
+        }
+        799 = {
+            BUILD_A_CIC = yes
+        }
+        name = EVENT_C18_MAIN_66_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.67
+    picture = GFX_EVENT_C18_MAIN_67
+    immediate = {
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_NARROW_GATE_MINING_DISABLED
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_67
+    desc = EVENT_C18_MAIN_67_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            country_event = {
+                id = C18_MAIN.69
+                days = 1
+                random_days = 3
+            }
+        }
+        name = EVENT_C18_MAIN_67_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.68
+    picture = GFX_EVENT_C18_MAIN_68
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_tech = construction1
+                        }
+                    }
+                    set_technology = {
+                        construction1 = 1
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_68
+    desc = EVENT_C18_MAIN_68_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_68_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.69
+    picture = GFX_EVENT_C18_MAIN_69
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_69
+    desc = EVENT_C18_MAIN_69_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_NARROW_GATE_ACCIDENT
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_69_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.70
+    picture = GFX_EVENT_C18_MAIN_70
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS_2
+                complete_national_focus = FOCUS_C18_101_CLIMATE_RESEARCH_2
+                country_event = {
+                    id = C18_MAIN.104
+                    days = 72
+                    random_days = 14
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_70
+    desc = EVENT_C18_MAIN_70_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_70_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.71
+    picture = GFX_EVENT_C18_MAIN_71
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_completed_focus = FOCUS_C18_011_TRADE_FLOWER
+                        }
+                    }
+                    activate_mission = DECISION_C18_PRESSURE_FOR_OPEN_FLOWER_MARKET
+                    country_event = {
+                        id = C18_MAIN.73
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_71
+    desc = EVENT_C18_MAIN_71_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_71_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.72
+    picture = GFX_EVENT_C18_MAIN_72
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_72
+    desc = EVENT_C18_MAIN_72_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            activate_mission = DECISION_C18_PRESSURE_FOR_BLOSSOM_CASE
+        }
+        name = EVENT_C18_MAIN_72_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.73
+    picture = GFX_EVENT_C18_MAIN_73
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_73
+    desc = EVENT_C18_MAIN_73_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        effect_tooltip = {
+            activate_mission = DECISION_C18_PRESSURE_FOR_OPEN_FLOWER_MARKET
+        }
+        name = EVENT_C18_MAIN_73_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.74
+    picture = GFX_EVENT_C18_MAIN_74
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_74
+    desc = EVENT_C18_MAIN_74_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_800 = yes
+        name = EVENT_C18_MAIN_74_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.75
+    picture = GFX_EVENT_C18_MAIN_75
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_75
+    desc = EVENT_C18_MAIN_75_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_tech_bonus = {
+            name = C18_ARCHEOLOGY_TECHNOLOGY_BONUS
+            bonus = 0.35
+            uses = 2
+            category = pihc_all
+        }
+        name = EVENT_C18_MAIN_75_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.76
+    picture = GFX_EVENT_C18_MAIN_76
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_76
+    desc = EVENT_C18_MAIN_76_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_political_power = 200
+        name = EVENT_C18_MAIN_76_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.77
+    picture = GFX_EVENT_C18_MAIN_77
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_77
+    desc = EVENT_C18_MAIN_77_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C18_DEL_NIRIK_0_10 = yes
+        name = EVENT_C18_MAIN_77_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.78
+    picture = GFX_EVENT_C18_MAIN_78
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_78
+    desc = EVENT_C18_MAIN_78_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C18_DEL_NIRIK_0_10 = yes
+        name = EVENT_C18_MAIN_78_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.79
+    picture = GFX_EVENT_C18_MAIN_79
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_79
+    desc = EVENT_C18_MAIN_79_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_HEI_SHA_CHRONICLES_1 = yes
+        custom_effect_tooltip = EVENT_C18_MAIN_79_MODIFIER_TOOLTIP
+        multiply_variable = {
+            C18.VAR_STREAM_OF_SILENCE_CURE_SPEED = 1.1
+        }
+        name = EVENT_C18_MAIN_79_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.80
+    picture = GFX_EVENT_C18_MAIN_80
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_80
+    desc = EVENT_C18_MAIN_80_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_80_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.81
+    picture = GFX_EVENT_C18_MAIN_81
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_81
+    desc = EVENT_C18_MAIN_81_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_81_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.82
+    picture = GFX_EVENT_C18_MAIN_82
+    immediate = {
+        hidden_effect = {
+            C22 = {
+                every_controlled_state = {
+                    if = {
+                        limit = {
+                            any_state_division = {
+                                division_has_battalion_in_template = tirek
+                            }
+                        }
+                    }
+                    teleport_armies = {
+                        limit = {
+                            tag = C22
+                        }
+                        to_state = 772
+                    }
+                }
+                772 = {
+                    transfer_state_to = C22
+                }
+                ADD_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES_1 = yes
+            }
+            C18 = {
+                772 = {
+                    set_state_name = STATE_772_DUAN_SHAN
+                }
+                country_event = {
+                    id = C18_MAIN.83
+                    days = 1
+                }
+                ADD_INVENTORY_ITEM_6MY_C18_DUAN_SHAN_CHRONICLES_1 = yes
+                set_global_flag = PIHC_GLOBAL_FLAG_DUAN_SHAN
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_82
+    desc = EVENT_C18_MAIN_82_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_82_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.83
+    picture = GFX_EVENT_C18_MAIN_83
+    immediate = {
+        hidden_effect = {
+            772 = {
+                every_neighbor_state = {
+                    if = {
+                        limit = {
+                            is_owned_by = C18
+                        }
+                        remove_core_of = C18
+                        add_core_of = C22
+                        transfer_state_to = C22
+                    }
+                }
+            }
+            C18 = {
+                country_event = {
+                    id = C18_MAIN.84
+                    days = 1
+                }
+            }
+            C22 = {
+                set_variable = {
+                    var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                    value = C37
+                }
+                CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+                clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_83
+    desc = EVENT_C18_MAIN_83_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_83_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.84
+    picture = GFX_EVENT_C18_MAIN_84
+    immediate = {
+        hidden_effect = {
+            for_each_scope_loop = {
+                array = C18.ARRAY_REGIONAL_DEV_STATES_1
+                if = {
+                    limit = {
+                        is_owned_by = C18
+                    }
+                    remove_core_of = C18
+                    add_core_of = C22
+                    transfer_state_to = C22
+                }
+            }
+            for_each_scope_loop = {
+                array = C18.ARRAY_REGIONAL_DEV_STATES_2
+                if = {
+                    limit = {
+                        is_owned_by = C18
+                    }
+                    remove_core_of = C18
+                    add_core_of = C22
+                    transfer_state_to = C22
+                }
+            }
+            for_each_scope_loop = {
+                array = C18.ARRAY_REGIONAL_DEV_STATES_5
+                if = {
+                    limit = {
+                        is_owned_by = C18
+                    }
+                    remove_core_of = C18
+                    add_core_of = C22
+                    transfer_state_to = C22
+                }
+            }
+            C18 = {
+                country_event = {
+                    id = C18_MAIN.85
+                    days = 1
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_84
+    desc = EVENT_C18_MAIN_84_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_84_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.85
+    picture = GFX_EVENT_C18_MAIN_85
+    immediate = {
+        hidden_effect = {
+            C22 = {
+                set_variable = {
+                    var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+                    value = C18
+                }
+                CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
+                clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_85
+    desc = EVENT_C18_MAIN_85_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_85_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.86
+    picture = GFX_EVENT_C18_MAIN_86
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_86
+    desc = EVENT_C18_MAIN_86_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_86_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.87
+    picture = GFX_EVENT_C18_MAIN_87
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_87
+    desc = EVENT_C18_MAIN_87_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_87_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.88
+    picture = GFX_EVENT_C18_MAIN_88
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_88
+    desc = EVENT_C18_MAIN_88_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_88_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.89
+    picture = GFX_EVENT_C18_MAIN_89
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_89
+    desc = EVENT_C18_MAIN_89_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_BEI_MING_CHRONICLES_1 = yes
+        name = EVENT_C18_MAIN_89_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.90
+    picture = GFX_EVENT_C18_MAIN_90
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_90
+    desc = EVENT_C18_MAIN_90_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_YIN_YUN_CHRONICLES_1 = yes
+        name = EVENT_C18_MAIN_90_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.91
+    picture = GFX_EVENT_C18_MAIN_91
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_91
+    desc = EVENT_C18_MAIN_91_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_4EP_C18_HUA_HAI_CHRONICLES_1 = yes
+        name = EVENT_C18_MAIN_91_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.92
+    picture = GFX_EVENT_C18_MAIN_92
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_92
+    desc = EVENT_C18_MAIN_92_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.93
+        }
+        name = EVENT_C18_MAIN_92_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.93
+    picture = GFX_EVENT_C18_MAIN_93
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_93
+    desc = EVENT_C18_MAIN_93_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_93_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.94
+    picture = GFX_EVENT_C18_MAIN_94
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_94
+    desc = EVENT_C18_MAIN_94_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_94_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.95
+        }
+        name = EVENT_C18_MAIN_94_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.95
+    picture = GFX_EVENT_C18_MAIN_95
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_95
+    desc = EVENT_C18_MAIN_95_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_95_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.96
+        }
+        name = EVENT_C18_MAIN_95_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.94
+        }
+        name = EVENT_C18_MAIN_95_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.96
+    picture = GFX_EVENT_C18_MAIN_96
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_96
+    desc = EVENT_C18_MAIN_96_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_96_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.95
+        }
+        name = EVENT_C18_MAIN_96_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.97
+    picture = GFX_EVENT_C18_MAIN_97
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_97
+    desc = EVENT_C18_MAIN_97_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_97_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.98
+        }
+        name = EVENT_C18_MAIN_97_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.98
+    picture = GFX_EVENT_C18_MAIN_98
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_98
+    desc = EVENT_C18_MAIN_98_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_98_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.97
+        }
+        name = EVENT_C18_MAIN_98_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.99
+    picture = GFX_EVENT_C18_MAIN_99
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_99
+    desc = EVENT_C18_MAIN_99_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_99_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.100
+        }
+        name = EVENT_C18_MAIN_99_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.100
+    picture = GFX_EVENT_C18_MAIN_100
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_100
+    desc = EVENT_C18_MAIN_100_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_100_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.101
+        }
+        name = EVENT_C18_MAIN_100_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.99
+        }
+        name = EVENT_C18_MAIN_100_o2
+    }
+}
+country_event = {
+    id = C18_MAIN.101
+    picture = GFX_EVENT_C18_MAIN_101
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_101
+    desc = EVENT_C18_MAIN_101_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_101_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        country_event = {
+            id = C18_MAIN.100
+        }
+        name = EVENT_C18_MAIN_101_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.102
+    picture = GFX_EVENT_C18_MAIN_102
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_102
+    desc = EVENT_C18_MAIN_102_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_C18_LOG_I_1 = yes
+        name = EVENT_C18_MAIN_102_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.103
+    picture = GFX_EVENT_C18_MAIN_103
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_103
+    desc = EVENT_C18_MAIN_103_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_C18_LOG_III_1 = yes
+        name = EVENT_C18_MAIN_103_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.104
+    picture = GFX_EVENT_C18_MAIN_104
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4 = 0.4
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^6 = 0.02
+                }
+                country_event = {
+                    id = C18_MAIN.105
+                    days = 7
+                    random_days = 14
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_104
+    desc = EVENT_C18_MAIN_104_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_104_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.105
+    picture = GFX_EVENT_C18_MAIN_105
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4 = 1.6
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^6 = 0.48
+                }
+                country_event = {
+                    id = C18_MAIN.106
+                    days = 90
+                    random_days = 14
+                }
+                if = {
+                    limit = {
+                        is_ai = yes
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C18_NIRIK_SPIES_DISCOVERED
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_105
+    desc = EVENT_C18_MAIN_105_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_105_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.106
+    picture = GFX_EVENT_C18_MAIN_106
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^4 = 3.2
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^6 = 1.4
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^0 = 0.02
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^1 = 0.1
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^2 = 0.08
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^3 = 0.06
+                }
+                add_to_variable = {
+                    C18.ARRAY_REGIONAL_DEV_REGIONS_NIRIKS_PERCENTAGE_NEW_WORLD^5 = 0.12
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_106
+    desc = EVENT_C18_MAIN_106_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_106_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.107
+    picture = GFX_EVENT_C18_MAIN_107
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_107
+    desc = EVENT_C18_MAIN_107_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CLUB
+        name = EVENT_C18_MAIN_107_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.108
+    picture = GFX_EVENT_C18_MAIN_108
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_108
+    desc = EVENT_C18_MAIN_108_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_BLOSSOM_BURST_SECRET_CODE
+        custom_effect_tooltip = EVENT_C18_MAIN_108_TOOLTIP
+        name = EVENT_C18_MAIN_108_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.109
+    picture = GFX_EVENT_C18_MAIN_109
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_109
+    desc = EVENT_C18_MAIN_109_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_C18_LOG_II_1 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE
+        custom_effect_tooltip = EVENT_C18_MAIN_109_TOOLTIP
+        name = EVENT_C18_MAIN_109_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.110
+    picture = GFX_EVENT_C18_MAIN_110
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_110
+    desc = EVENT_C18_MAIN_110_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_C18_LOG_II_1 = yes
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_GRASS_GREEN_SECRET_CODE
+        custom_effect_tooltip = EVENT_C18_MAIN_110_TOOLTIP
+        name = EVENT_C18_MAIN_110_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.111
+    picture = GFX_EVENT_C18_MAIN_111
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_111
+    desc = EVENT_C18_MAIN_111_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_RAIN_SHINE_SECRET_CODE
+        custom_effect_tooltip = EVENT_C18_MAIN_111_TOOLTIP
+        C18_ADD_NIRIK_0_10 = yes
+        name = EVENT_C18_MAIN_111_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.112
+    picture = GFX_EVENT_C18_MAIN_112
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_112
+    desc = EVENT_C18_MAIN_112_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C18_MAIN.113
+        }
+        name = EVENT_C18_MAIN_112_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.113
+    picture = GFX_EVENT_C18_MAIN_113
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_113
+    desc = EVENT_C18_MAIN_113_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_PREPARATION
+        activate_mission = DECISION_C18_DIE_NEBENWELT_WAR_TIMER
+        name = EVENT_C18_MAIN_113_o0
+    }
+}
+news_event = {
+    id = C18_MAIN.114
+    picture = GFX_EVENT_C18_MAIN_114
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_CIVIL_WAR = yes
+                activate_mission = DECISION_C18_DIE_NEBENWELT_UNSTABLE_TIMER
+            }
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_114
+    desc = EVENT_C18_MAIN_114_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_114_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.115
+    picture = GFX_EVENT_C18_MAIN_115
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_115
+    desc = EVENT_C18_MAIN_115_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C18_MAIN_115_o0_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EXPEL
+        add_named_threat = {
+            threat = 10
+            name = EVENT_C18_MAIN_115_THREAT
+        }
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_115_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        custom_effect_tooltip = EVENT_C18_MAIN_115_o1_TOOLTIP
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CIVIL_WAR_ENDED
+        set_country_flag = PIHC_COUNTRY_FLAG_C18_CHOICE_OF_EMBRACE
+        C18_ADD_NIRIK_0_15 = yes
+        mark_focus_tree_layout_dirty = yes
+        name = EVENT_C18_MAIN_115_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.116
+    picture = GFX_EVENT_C18_MAIN_116
+    fire_only_once = yes
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_116
+    desc = EVENT_C18_MAIN_116_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_5LG_C18_FEN_TIAN_CHRONICLES_1 = yes
+        hidden_effect = {
+            set_country_flag = PIHC_COUNTRY_FLAG_C18_COLLAPSED
+            country_event = {
+                id = C18_MAIN.118
+            }
+        }
+        name = EVENT_C18_MAIN_116_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.117
+    picture = GFX_EVENT_C18_MAIN_117
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_117
+    desc = EVENT_C18_MAIN_117_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_117_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.118
+    picture = GFX_EVENT_C18_MAIN_118
+    immediate = {
+        hidden_effect = {
+            801 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            756 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            202 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.119
+                days = 28
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_118
+    desc = EVENT_C18_MAIN_118_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_118_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.119
+    picture = GFX_EVENT_C18_MAIN_119
+    immediate = {
+        hidden_effect = {
+            883 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            203 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            793 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.120
+                days = 21
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_119
+    desc = EVENT_C18_MAIN_119_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_119_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.120
+    picture = GFX_EVENT_C18_MAIN_120
+    immediate = {
+        hidden_effect = {
+            217 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            224 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            779 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            213 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            203 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.121
+                days = 14
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_120
+    desc = EVENT_C18_MAIN_120_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_120_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.121
+    picture = GFX_EVENT_C18_MAIN_121
+    immediate = {
+        hidden_effect = {
+            736 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            628 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            770 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            756 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            883 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            828 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.122
+                days = 7
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_121
+    desc = EVENT_C18_MAIN_121_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_121_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.122
+    picture = GFX_EVENT_C18_MAIN_122
+    immediate = {
+        hidden_effect = {
+            810 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            179 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            225 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            173 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            114 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            799 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            731 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.123
+                days = 3
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_122
+    desc = EVENT_C18_MAIN_122_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_122_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.123
+    picture = GFX_EVENT_C18_MAIN_123
+    immediate = {
+        hidden_effect = {
+            739 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            60 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            788 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            184 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            167 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            819 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            787 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            734 = {
+                if = {
+                    limit = {
+                        is_core_of = C18
+                    }
+                    remove_core_of = C18
+                    ADD_TO_C00_WASTELAND = yes
+                }
+            }
+            country_event = {
+                id = C18_MAIN.124
+                days = 1
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_123
+    desc = EVENT_C18_MAIN_123_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_123_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.124
+    picture = GFX_EVENT_C18_MAIN_124
+    immediate = {
+        hidden_effect = {
+            C00 = {
+                annex_country = {
+                    target = C18
+                    transfer_troops = no
+                }
+                if = {
+                    limit = {
+                        country_exists = Z18
+                    }
+                    annex_country = {
+                        target = Z18
+                        transfer_troops = no
+                    }
+                }
+                if = {
+                    limit = {
+                        country_exists = Y18
+                    }
+                    annex_country = {
+                        target = Y18
+                        transfer_troops = no
+                    }
+                }
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_124
+    desc = EVENT_C18_MAIN_124_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_124_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.125
+    picture = GFX_EVENT_C18_MAIN_125
+    immediate = {
+        hidden_effect = {
+            C18 = {
+                C18_DRAW_ATTENTION_1 = yes
+            }
+        }
+    }
+    hidden = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = EVENT_C18_MAIN_125
+    desc = EVENT_C18_MAIN_125_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = EVENT_C18_MAIN_125_o0
+    }
+}
+country_event = {
+    id = C18_MAIN.126
+    picture = GFX_EVENT_C18_MAIN_126
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_126
+    desc = EVENT_C18_MAIN_126_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_ideas = IDEA_C18_C34_TRADE
+        name = EVENT_C18_MAIN_126_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C18_MAIN_126_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.127
+    picture = GFX_EVENT_C18_MAIN_127
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_127
+    desc = EVENT_C18_MAIN_127_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_ideas = IDEA_C18_C20_TRADE
+        name = EVENT_C18_MAIN_127_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C18_MAIN_127_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.128
+    picture = GFX_EVENT_C18_MAIN_128
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_128
+    desc = EVENT_C18_MAIN_128_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            load_oob = C18_new_army
+        }
+        add_equipment_to_stockpile = {
+            type = ARCHETYPE_WITCHCRAFT
+            amount = 200
+        }
+        add_equipment_to_stockpile = {
+            type = ARCHETYPE_SUPPORT
+            amount = 600
+        }
+        add_equipment_to_stockpile = {
+            type = ARCHETYPE_INFANTRY
+            amount = 400
+        }
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = pihc_firearm
+            name = EVENT_C18_MAIN_128_TOOLTIP
+        }
+        capital_scope = {
+            create_unit = {
+                division = "name = \"抵抗军训练战斗组 (Resistance-trained Combat Group)\" division_template = \"战斗组 (Combat Group)\" start_experience_factor = 0.4 start_equipment_factor = 0.9 start_manpower_factor = 1.0"
+                owner = C18
+                count = 3
+            }
+        }
+        C08 = {
+            add_intel = {
+                target = C18
+                civilian_intel = 40
+                army_intel = 80
+            }
+        }
+        name = EVENT_C18_MAIN_128_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C18_MAIN_128_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.129
+    picture = GFX_EVENT_C18_MAIN_129
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_129
+    desc = EVENT_C18_MAIN_129_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C18_MAIN_129_TOOLTIP
+        hidden_effect = {
+            CREATE_C18_NAVY_1 = yes
+        }
+        diplomatic_relation = {
+            country = C51
+            relation = docking_rights
+            active = yes
+        }
+        diplomatic_relation = {
+            country = C51
+            relation = non_aggression_pact
+            active = yes
+        }
+        diplomatic_relation = {
+            country = C25
+            relation = docking_rights
+            active = yes
+        }
+        diplomatic_relation = {
+            country = C25
+            relation = non_aggression_pact
+            active = yes
+        }
+        C25 = {
+            diplomatic_relation = {
+                country = C18
+                relation = docking_rights
+                active = yes
+            }
+        }
+        C51 = {
+            diplomatic_relation = {
+                country = C18
+                relation = docking_rights
+                active = yes
+            }
+        }
+        name = EVENT_C18_MAIN_129_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        name = EVENT_C18_MAIN_129_o1
+    }
+}
+country_event = {
+    id = C18_MAIN.130
+    picture = GFX_EVENT_C18_MAIN_130
+    is_triggered_only = yes
+    title = EVENT_C18_MAIN_130
+    desc = EVENT_C18_MAIN_130_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+        name = EVENT_C18_MAIN_130_o0
+    }
+}

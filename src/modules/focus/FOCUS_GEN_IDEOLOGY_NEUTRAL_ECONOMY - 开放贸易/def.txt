@@ -1,0 +1,75 @@
+focus = {
+	id = FOCUS_GEN_IDEOLOGY_NEUTRAL_ECONOMY
+	icon = GFX_FOCUS_GEN_IDEOLOGY_NEUTRAL_ECONOMY_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_GEN_IDEOLOGY_NEUTRAL_TRADE
+	}
+	cost = 5
+	bypass = {
+		has_idea = free_trade
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					tag = C26
+				}
+				NOT = {
+					tag = C22
+				}
+				NOT = {
+					tag = C36
+				}
+				NOT = {
+					tag = C46
+				}
+				NOT = {
+					tag = C29
+				}
+			}
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = free_trade
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_exports
+				}
+				swap_ideas = {
+					remove_idea = limited_exports
+					add_idea = export_focus
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				swap_ideas = {
+					remove_idea = closed_economy
+					add_idea = limited_exports
+				}
+			}
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 35
+	y = 4
+}

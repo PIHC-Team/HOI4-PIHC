@@ -1,0 +1,27 @@
+characters = {
+    CHARACTER_RIFT_ERIS = {
+        name = CHARACTER_RIFT_ERIS_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_RIFT_ERIS.dds"
+                small = "gfx/leaders/CHARACTER_RIFT_ERIS_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_RIFT_ERIS_army.dds"
+                small = "gfx/leaders/CHARACTER_RIFT_ERIS_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_RIFT_ERIS_navy.dds"
+                small = "gfx/leaders/CHARACTER_RIFT_ERIS_navy_small.dds"
+            }
+        }
+        gender = female
+        country_leader = {
+            desc = CHARACTER_RIFT_ERIS_DESC
+            traits = {
+                TRAIT_RIFT_STYGIAN_APPRENTICE
+            }
+            ideology = transcendence_deity
+        }
+    }
+}

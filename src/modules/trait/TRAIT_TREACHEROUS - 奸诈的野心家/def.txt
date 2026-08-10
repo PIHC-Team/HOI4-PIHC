@@ -1,0 +1,9 @@
+leader_traits = {
+	TRAIT_TREACHEROUS = {
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+		party_popularity_stability_factor = -0.03
+	}
+}

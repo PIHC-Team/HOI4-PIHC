@@ -1,0 +1,32 @@
+characters = {
+    CHARACTER_OCEAN_SPRAY = {
+        name = CHARACTER_OCEAN_SPRAY_NAME
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CHARACTER_OCEAN_SPRAY.dds"
+                small = "gfx/leaders/CHARACTER_OCEAN_SPRAY_small.dds"
+            }
+            army = {
+                large = "gfx/leaders/CHARACTER_OCEAN_SPRAY_army.dds"
+                small = "gfx/leaders/CHARACTER_OCEAN_SPRAY_army_small.dds"
+            }
+            navy = {
+                large = "gfx/leaders/CHARACTER_OCEAN_SPRAY_navy.dds"
+                small = "gfx/leaders/CHARACTER_OCEAN_SPRAY_navy_small.dds"
+            }
+        }
+        gender = female
+        advisor = {
+            idea_token = CHARACTER_OCEAN_SPRAY
+            desc = CHARACTER_OCEAN_SPRAY_DESC
+            traits = {
+                TRAIT_AIR_DOCTRINE
+            }
+            ledger = air
+            can_be_fired = yes
+            cost = 120
+            removal_cost = 350
+            slot = theorist
+        }
+    }
+}

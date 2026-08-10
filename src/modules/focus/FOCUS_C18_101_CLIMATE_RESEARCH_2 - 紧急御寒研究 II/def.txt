@@ -1,0 +1,44 @@
+focus = {
+	id = FOCUS_C18_101_CLIMATE_RESEARCH_2
+	icon = GFX_FOCUS_C18_101_CLIMATE_RESEARCH_2_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C18_101_CLIMATE_RESEARCH
+	}
+	allow_branch = {
+		has_completed_focus = FOCUS_C18_101_CLIMATE_RESEARCH
+	}
+	cost = 26
+	completion_reward = {
+		set_technology = {
+			TECHNOLOGY_SUPPORT_COLD_III = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = pihc_support_cold
+			name = FOCUS_C18_101_CLIMATE_RESEARCH_2
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_C18_REPORT_MODIFIED_BY_NIRIKS_2
+			}
+			custom_effect_tooltip = FOCUS_C18_101_CLIMATE_RESEARCH_2_TOOLTIP
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 15
+	y = 6
+}
