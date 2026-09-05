@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		IDEA_C12_ADJUST_EXPORT_SHARE = {
+			picture = C12_ADJUST_EXPORT_SHARE
+			removal_cost = -1
+			modifier = {
+			}
+			targeted_modifier = {
+				local_building_slots_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				political_power_gain = -0.25
+				min_export = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

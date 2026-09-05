@@ -4,7 +4,7 @@ ideas = {
 			picture = C12_WAR_PREPARATION
 			removal_cost = -1
 			modifier = {
-				training_time_army_factor = 0.5
+				training_time_army_factor = -0.25
 				production_speed_arms_factory_factor = 0.25
 				production_speed_bunker_factor = 0.25
 			}

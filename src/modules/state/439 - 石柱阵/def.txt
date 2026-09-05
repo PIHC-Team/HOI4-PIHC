@@ -22,18 +22,17 @@ state = {
     manpower = 9183
     state_category = pastoral
     history = {
-        owner = C01
+        owner = C67
         victory_points = {
             615
             3
         }
         buildings = {
             infrastructure = 2
-            farm_complex = 1
+            arms_factory = 2
         }
-        add_core_of = C01
+        add_core_of = C67
     }
     resources = {
-
     }
 }

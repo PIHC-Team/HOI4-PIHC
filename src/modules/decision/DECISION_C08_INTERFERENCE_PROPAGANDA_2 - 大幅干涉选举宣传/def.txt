@@ -1,0 +1,46 @@
+DECISION_CATEGORY_C15_PARLIAMENT = {
+	DECISION_C08_INTERFERENCE_PROPAGANDA_2 = {
+		fixed_random_seed = no
+		priority = 199
+		cost = 50
+		days_re_enable = 28
+		visible = {
+			tag = C08
+			has_country_flag = PIHC_COUNTRY_FLAG_C08_PARLIAMENT
+		}
+		available = {
+			hidden_trigger = {
+				tag = C08
+				has_country_flag = PIHC_COUNTRY_FLAG_C08_PARLIAMENT
+			}
+		}
+		complete_effect = {
+			C15 = {
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.01
+				}
+				add_popularity = {
+					ideology = despotic
+					popularity = 0.02
+				}
+				custom_effect_tooltip = C15_PARLIAMENT_INCREASE_ROYAL_2
+				hidden_effect = {
+					multiply_variable = {
+						var = C15_royal_support_factor
+						value = 1.02
+					}
+					clamp_variable = {
+						var = C15_royal_support_factor
+						min = 0.3
+						max = 0.9
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+		icon = C08_INTERFERENCE_PROPAGANDA
+	}
+}

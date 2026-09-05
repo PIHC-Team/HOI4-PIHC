@@ -1,0 +1,28 @@
+focus = {
+	id = FOCUS_C12_REORGANIZE_RFPAB
+	icon = GFX_FOCUS_C12_REORGANIZE_RFPAB_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_AWAITING_THE_RIGHT_OPPORTUNITY
+		focus = FOCUS_C12_PEACEFUL_ISOLATION
+	}
+	cost = 5
+	completion_reward = {
+		add_ideas = IDEA_C12_RFPAB
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 20
+	y = 21
+}

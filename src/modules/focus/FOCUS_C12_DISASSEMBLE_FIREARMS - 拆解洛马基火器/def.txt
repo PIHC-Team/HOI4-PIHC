@@ -20,7 +20,11 @@ focus = {
 			limit = {
 				is_ai = yes
 			}
-			has_completed_focus = FOCUS_C12_REVENGE_CRUSADE
+			OR = {
+				has_completed_focus = FOCUS_C12_REVENGE_CRUSADE
+				has_completed_focus = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE
+				has_completed_focus = FOCUS_C12_REJECT_THE_IMPERIAL_DECREE
+			}
 		}
 		if = {
 			limit = {

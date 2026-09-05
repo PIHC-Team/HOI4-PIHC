@@ -2,8 +2,14 @@ DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
     DECISION_C12_INCREASE_INTIMACY = {
         fixed_random_seed = no
         priority = 100
-        days_remove = 180
-        days_re_enable = 180
+        days_remove = 210
+        fire_only_once = yes
+        visible = {
+            has_idea = IDEA_C12_APPLES_FROM_SAME_TREE_3
+            NOT = {
+                has_completed_focus = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION
+            }
+        }
         available = {
             num_of_civilian_factories_available_for_projects > 7
             hidden_trigger = {
@@ -21,15 +27,47 @@ DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
             civilian_factory_use = 8
         }
         complete_effect = {
+            custom_effect_tooltip = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION_TOOLTIP_2
             hidden_effect = {
                 add_political_power = -200
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+                            has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+                            has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+                        }
+                    }
+                    set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+                }
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+                    }
+                    clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+                    set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+                }
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+                    }
+                    clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+                    set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+                }
+                if = {
+                    limit = {
+                        has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+                    }
+                    clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+                    UPGRADE_C12_C14_RELATION = yes
+                }
             }
         }
         remove_effect = {
             UPGRADE_C12_C14_RELATION = yes
         }
         ai_will_do = {
-            base = 10
+            base = 50
         }
         icon = C12_INCREASE_INTIMACY
     }

@@ -47,30 +47,4 @@ UPGRADE_C12_C14_RELATION = {
 		}
 		custom_effect_tooltip = IDEA_C12_APPLES_FROM_SAME_TREE_4_UPGRADE_TOOLTIP
 	}
-	else_if = {
-		limit = {
-			country_exists = C14
-			has_idea = IDEA_C12_APPLES_FROM_SAME_TREE_4
-			C14 = {
-				has_war = no
-			}
-		}
-		C12 = {
-			effect_tooltip = {
-				annex_country = {
-					target = C14
-					transfer_troops = yes
-				}
-			}
-			hidden_effect = {
-				set_variable = {
-					var = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
-					value = C14
-				}
-				CLEAN_ANNEX_COUNTRY_WITH_CORE = yes
-				clear_variable = VAR_CLEAN_ANNEX_PREV_TARGET_COUNTRY_SCOPE
-			}
-			set_cosmetic_tag = C12_APPLEPIE
-		}
-	}
 }

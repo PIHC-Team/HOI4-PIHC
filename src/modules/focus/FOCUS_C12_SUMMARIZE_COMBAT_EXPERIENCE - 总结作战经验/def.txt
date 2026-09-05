@@ -12,7 +12,12 @@ focus = {
 		has_completed_focus = FOCUS_C12_FORMATION_OF_THE_ROCKBREAKER
 	}
 	completion_reward = {
-		PIHC_DOCTRINE_LAND_LARGE_BOOST = yes
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = pihc_army_doctrine
+			name = FOCUS_C12_SUMMARIZE_COMBAT_EXPERIENCE
+		}
 	}
 	available = {
 		if = {

@@ -9,6 +9,7 @@ focus = {
 	}
 	cost = 3
 	allow_branch = {
+		has_completed_focus = FOCUS_C12_GREAT_ROCKVILLE
 		NOT = {
 			has_country_flag = C12_LIMESTONE_PIE_REMAINS_RATIONAL
 		}
@@ -75,6 +76,6 @@ focus = {
 			}
 		}
 	}
-	x = 18
+	x = 30
 	y = 30
 }

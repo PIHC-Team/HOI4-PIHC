@@ -6,16 +6,61 @@ focus = {
 	}
 	prerequisite = {
 		focus = FOCUS_C12_IN_CHARGE
+		focus = FOCUS_C12_REJECT_THE_IMPERIAL_DECREE
 	}
 	cost = 5
 	completion_reward = {
-		remove_ideas = IDEA_C12_BRIBE_IMPERIAL_OFFICIALS
-		custom_effect_tooltip = PIHC_C12_STOP_SHOWING_WEAKNESS_TO_THE_EMPIRE_TOOLTIP
-		hidden_effect = {
-			C01 = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = C02
+		if = {
+			limit = {
+				has_country_leader = {
+					character = CHARACTER_LIMESTONE_PIE
+					ruling_only = yes
+				}
+			}
+			remove_ideas = IDEA_C12_BRIBE_IMPERIAL_OFFICIALS
+			custom_effect_tooltip = PIHC_C12_STOP_SHOWING_WEAKNESS_TO_THE_EMPIRE_TOOLTIP
+			hidden_effect = {
+				C01 = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = C02
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = CHARACTER_MAUD_PIE
+					ruling_only = yes
+				}
+			}
+			add_political_power = 25
+			if = {
+				limit = {
+					has_idea = IDEA_ALL_C01_COLONY
+				}
+				remove_ideas = IDEA_ALL_C01_COLONY
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_ALL_C01_COLONY_1
+				}
+				remove_ideas = IDEA_ALL_C01_COLONY_1
+			}
+			if = {
+				limit = {
+					has_idea = IDEA_ALL_C01_COLONY_2
+				}
+				remove_ideas = IDEA_ALL_C01_COLONY_2
+			}
+			custom_effect_tooltip = PIHC_C12_STOP_SHOWING_WEAKNESS_TO_THE_EMPIRE_TOOLTIP
+			hidden_effect = {
+				C01 = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = C02
+					}
 				}
 			}
 		}
@@ -33,6 +78,10 @@ focus = {
 		if = {
 			limit = {
 				is_ai = yes
+				has_country_leader = {
+					character = CHARACTER_LIMESTONE_PIE
+					ruling_only = yes
+				}
 			}
 			always = no
 		}
@@ -45,6 +94,6 @@ focus = {
 			has_war_with = C01
 		}
 	}
-	x = 21
+	x = 33
 	y = 24
 }

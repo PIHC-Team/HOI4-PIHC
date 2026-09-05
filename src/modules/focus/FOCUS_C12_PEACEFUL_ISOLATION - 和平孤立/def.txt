@@ -1,0 +1,34 @@
+focus = {
+	id = FOCUS_C12_PEACEFUL_ISOLATION
+	icon = GFX_FOCUS_C12_PEACEFUL_ISOLATION_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_GET_BACK_TOGETHER
+	}
+	mutually_exclusive = {
+		focus = FOCUS_C12_AWAITING_THE_RIGHT_OPPORTUNITY
+	}
+	cost = 3
+	completion_reward = {
+		add_timed_idea = {
+			idea = IDEA_C12_WAR_PREPARATION
+			days = 210
+		}
+	}
+	available = {
+		always = no
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 22
+	y = 20
+}

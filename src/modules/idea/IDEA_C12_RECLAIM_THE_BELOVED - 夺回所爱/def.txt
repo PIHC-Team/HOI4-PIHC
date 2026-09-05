@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		IDEA_C12_RECLAIM_THE_BELOVED = {
+			picture = C12_RECLAIM_THE_BELOVED
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = C01
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+				resistance_decay_on_our_occupied_states = -0.2
+				resistance_growth_on_our_occupied_states = 0.2
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

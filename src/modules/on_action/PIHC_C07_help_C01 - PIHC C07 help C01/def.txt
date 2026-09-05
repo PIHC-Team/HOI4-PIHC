@@ -11,6 +11,11 @@ on_actions = {
 						}
 						longest_war_length > 24
 					}
+					C12 = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_PIE_FAMILIY_AGREES_WITH_THE_TWO_BROTHERS
+						}
+					}
 				}
 				C07 = {
 					country_event = {

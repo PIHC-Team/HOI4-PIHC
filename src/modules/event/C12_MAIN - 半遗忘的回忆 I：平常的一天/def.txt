@@ -152,6 +152,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        custom_effect_tooltip = FOCUS_C12_FORMAL_VISIT_TO_APPLELOOSA_TOOLTIP
         UPGRADE_C12_C14_RELATION = yes
         name = EVENT_C12_MAIN_9_o0
     }
@@ -449,7 +450,6 @@ news_event = {
                 country_leader = {
                     ideology = democratic_republic
                     traits = {
-
                     }
                 }
             }
@@ -910,6 +910,9 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        remove_ideas = IDEA_C12_PROSPEROUS_FARM
+        add_stability = -0.1
+        add_political_power = -50
         name = EVENT_C12_MAIN_39_o0
     }
 }
@@ -936,6 +939,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        add_stability = -0.03
+        add_political_power = -25
         name = EVENT_C12_MAIN_41_o0
     }
 }
@@ -980,6 +985,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        custom_effect_tooltip = EVENT_C12_MAIN_44_TOOLTIP
         deactivate_advisor = CHARACTER_ACACIA_PIE
         remove_advisor_role = {
             character = CHARACTER_ACACIA_PIE
@@ -1133,7 +1139,7 @@ country_event = {
                 add = 25
                 has_opinion = {
                     target = C08
-                    value> 89
+                    value > 89
                 }
             }
         }
@@ -1287,14 +1293,25 @@ country_event = {
     desc = EVENT_C12_MAIN_55_desc
     option = {
         ai_chance = {
-            factor = 100
+            factor = 45
         }
-        add_political_power = 30
+        C12 = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C12_PIE_FAMILIY_AGREES_WITH_THE_TWO_BROTHERS
+            }
+            add_ideas = IDEA_C12_PIE_FAMILY_AGREES_WITH_THE_TWO_BROTHERS
+        }
         name = EVENT_C12_MAIN_55_o0
     }
     option = {
         ai_chance = {
-            factor = 25
+            factor = 45
+        }
+        C12 = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C12_PIE_FAMILIY_AGREES_WITH_THE_TWO_BROTHERS
+            }
+            add_ideas = IDEA_C12_PIE_FAMILY_AGREES_WITH_THE_TWO_BROTHERS_1
         }
         name = EVENT_C12_MAIN_55_o1
     }
@@ -1465,7 +1482,7 @@ country_event = {
                 add = 15
                 has_opinion = {
                     target = C14
-                    value> 89
+                    value > 89
                 }
             }
         }
@@ -2192,14 +2209,29 @@ country_event = {
     desc = EVENT_C12_MAIN_98_desc
     option = {
         ai_chance = {
-            factor = 100
+            factor = 0
         }
-        country_event = {
-            id = C12_MAIN.99
-            days = 2
-            random_days = 2
+        C12 = {
+            country_event = {
+                id = C12_MAIN.99
+                days = 2
+                random_days = 2
+            }
         }
         name = EVENT_C12_MAIN_98_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C12 = {
+            country_event = {
+                id = C12_MAIN.137
+                days = 2
+                random_days = 2
+            }
+        }
+        name = EVENT_C12_MAIN_98_o1
     }
 }
 country_event = {
@@ -2230,6 +2262,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        add_stability = -0.075
+        add_political_power = -50
         country_event = {
             id = C12_MAIN.101
             days = 2
@@ -2746,7 +2780,7 @@ country_event = {
             has_full_control_of_state = 86
             casualties_inflicted_by = {
                 opponent = C12
-                thousands<1
+                thousands < 1
             }
         }
     }
@@ -3246,5 +3280,259 @@ country_event = {
             count = 8
         }
         name = EVENT_C12_MAIN_131_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.132
+    picture = GFX_EVENT_C12_MAIN_132
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_132
+    desc = EVENT_C12_MAIN_132_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C12_MAIN_132_TOOLTIP
+        capital_scope = {
+            create_unit = {
+                division = "name = \"采石农场志愿军 (Protesters)\" division_template = \"通用小型步兵师 (Generic Small Infantry Division)\" start_experience_factor = 2.0 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+                owner = C08
+                count = 3
+            }
+        }
+        name = EVENT_C12_MAIN_132_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.133
+    picture = GFX_EVENT_C12_MAIN_133
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_133
+    desc = EVENT_C12_MAIN_133_desc
+    option = {
+        ai_chance = {
+            factor = 45
+        }
+        C12 = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C12_PIE_FAMILIY_AGREES_WITH_THE_TWO_BROTHERS
+            }
+            add_ideas = IDEA_C12_PIE_FAMILY_AGREES_WITH_THE_TWO_BROTHERS
+        }
+        name = EVENT_C12_MAIN_133_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 45
+        }
+        C12 = {
+            hidden_effect = {
+                set_country_flag = PIHC_COUNTRY_FLAG_C12_PIE_FAMILIY_AGREES_WITH_THE_TWO_BROTHERS
+            }
+            add_ideas = IDEA_C12_PIE_FAMILY_AGREES_WITH_THE_TWO_BROTHERS_1
+        }
+        name = EVENT_C12_MAIN_133_o1
+    }
+    option = {
+        ai_chance = {
+            factor = 10
+        }
+        C12 = {
+            add_political_power = -75
+        }
+        name = EVENT_C12_MAIN_133_o2
+    }
+}
+country_event = {
+    id = C12_MAIN.134
+    picture = GFX_EVENT_C12_MAIN_134
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_134
+    desc = EVENT_C12_MAIN_134_desc
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        C12 = {
+            add_political_power = -100
+        }
+        name = EVENT_C12_MAIN_134_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C12 = {
+            country_event = {
+                id = C12_MAIN.135
+                days = 2
+                random_days = 2
+            }
+        }
+        name = EVENT_C12_MAIN_134_o1
+    }
+}
+country_event = {
+    id = C12_MAIN.135
+    picture = GFX_EVENT_C12_MAIN_135
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_135
+    desc = EVENT_C12_MAIN_135_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        C31 = {
+            add_political_power = 100
+        }
+        if = {
+            limit = {
+                C08 = {
+                    is_in_faction_with = C12
+                }
+            }
+            C08 = {
+                add_to_faction = C31
+            }
+        }
+        else = {
+            C12 = {
+                add_to_faction = C31
+            }
+        }
+        name = EVENT_C12_MAIN_135_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.136
+    picture = GFX_EVENT_C12_MAIN_136
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_136
+    desc = EVENT_C12_MAIN_136_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                C12 = {
+                    NOT = {
+                        has_idea = IDEA_C08_STARLIGHT_RADIO_01
+                        set_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO
+                    }
+                }
+            }
+            C12 = {
+                add_ideas = IDEA_C08_STARLIGHT_RADIO_01
+            }
+            set_country_flag = PIHC_COUNTRY_FLAG_C08_STARLIGHT_RADIO
+        }
+        name = EVENT_C12_MAIN_136_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.137
+    picture = GFX_EVENT_C12_MAIN_137
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_137
+    desc = EVENT_C12_MAIN_137_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        country_event = {
+            id = C12_MAIN.138
+            days = 2
+            random_days = 2
+        }
+        name = EVENT_C12_MAIN_137_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.138
+    picture = GFX_EVENT_C12_MAIN_138
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_138
+    desc = EVENT_C12_MAIN_138_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        retire_character = CHARACTER_lIMESTONE_PIE
+        add_stability = -0.03
+        add_political_power = -25
+        country_event = {
+            id = C12_MAIN.139
+            days = 2
+            random_days = 2
+        }
+        name = EVENT_C12_MAIN_138_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.139
+    picture = GFX_EVENT_C12_MAIN_139
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_139
+    desc = EVENT_C12_MAIN_139_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        custom_effect_tooltip = EVENT_C12_MAIN_139_TOOLTIP_1
+        complete_national_focus = FOCUS_C12_GET_BACK_TOGETHER
+        unlock_national_focus = FOCUS_C12_AWAITING_THE_RIGHT_OPPORTUNITY
+        name = EVENT_C12_MAIN_139_o0
+    }
+    option = {
+        ai_chance = {
+            factor = 0
+        }
+        custom_effect_tooltip = EVENT_C12_MAIN_139_TOOLTIP_2
+        complete_national_focus = FOCUS_C12_GET_BACK_TOGETHER
+        unlock_national_focus = FOCUS_C12_PEACEFUL_ISOLATION
+        name = EVENT_C12_MAIN_139_o1
+    }
+}
+country_event = {
+    id = C12_MAIN.140
+    picture = GFX_EVENT_C12_MAIN_140
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_140
+    desc = EVENT_C12_MAIN_140_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        add_manpower = -500
+        add_stability = -0.03
+        add_political_power = -75
+        name = EVENT_C12_MAIN_140_o0
+    }
+}
+country_event = {
+    id = C12_MAIN.141
+    picture = GFX_EVENT_C12_MAIN_141
+    is_triggered_only = yes
+    title = EVENT_C12_MAIN_141
+    desc = EVENT_C12_MAIN_141_desc
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        retire_character = CHARACTER_CHEESE_SANDWICH
+        641 = {
+            add_extra_state_shared_building_slots = 3
+            remove_building = {
+                type = industrial_complex
+                level = 2
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 4
+                instant_build = yes
+            }
+        }
+        name = EVENT_C12_MAIN_141_o0
     }
 }

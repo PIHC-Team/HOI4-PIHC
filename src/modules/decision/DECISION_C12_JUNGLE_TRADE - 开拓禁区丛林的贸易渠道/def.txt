@@ -1,0 +1,51 @@
+DECISION_CATEGORY_C12_ADJUST_EXPORT_SHARE = {
+	DECISION_C12_JUNGLE_TRADE = {
+		fixed_random_seed = no
+		priority = 100
+		fire_only_once = yes
+		cost = 150
+		days_remove = 120
+		remove_effect = {
+			set_country_flag = PIHC_COUNTRY_FLAG_C12_ECONOMIC_INDEPENDENCE
+			diplomatic_relation = {
+				country = C13
+				relation = non_aggression_pact
+				active = yes
+			}
+			691 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				add = 20
+				has_political_power > 250
+			}
+		}
+		icon = C12_JUNGLE_TRADE
+	}
+}

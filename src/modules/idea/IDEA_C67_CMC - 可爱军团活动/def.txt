@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		IDEA_C67_CMC = {
+			picture = C67_CMC
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+				weekly_manpower = -25
+			}
+			allowed = {
+				tag = C67
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

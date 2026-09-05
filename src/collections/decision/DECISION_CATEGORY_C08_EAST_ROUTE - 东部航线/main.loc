@@ -34,21 +34,7 @@ Hippogriffs-Seaponies: [GetEastRouteC28Location]
 东部航线
 
 [zh.DECISION_CATEGORY_C08_EAST_ROUTE_desc]
-在§C小马利亚解放阵线§!牵头下，“§C东部航线§!”这一计划正式立项，并逐步向对§Y小马利亚帝国§!持消极乃至反对态度的国家发出邀请。
-
-§C东部航线§!以东小马利亚为起点，建立通往各国家或地区港口的海上航路，通过各个§C站点§!联系各国。主要目的是§C解放阵线§!希望建立航线以请求各国支援小马利亚的抵抗事业，同时促进谐律传播及各国之间的经济交流。
-
-只要我们§Y控制§!着我们境内的站点，我们就能使用东部航线发出援助或求援。
-
-航线效率/效率上限：[?C08.VAR_C08_EAST_ROUTE|C]/[?C08.VAR_C08_EAST_ROUTE_MAX|Y]
-
-可能加入的国家：
-解放阵线：[GetEastRouteC08Location]
-狮鹫：[GetEastRouteC19Location]
-龙族：[GetEastRouteC20Location]
-麒麟：[GetEastRouteC18Location]
-风暴岛：[GetEastRouteC23Location]
-骏鹰-海马：[GetEastRouteC28Location]
+在§C小马利亚解放阵线§!牵头下，“§C东部航线§!”这一计划正式立项，并逐步向对§Y小马利亚帝国§!持消极乃至反对态度的国家发出邀请。\n\n§C东部航线§!以东小马利亚为起点，建立通往各国家或地区港口的海上航路，通过各个§C站点§!联系各国。主要目的是§C解放阵线§!希望建立航线以请求各国支援小马利亚的抵抗事业，同时促进谐律传播及各国之间的经济交流。\n\n只要我们§Y控制§!着我们境内的站点，我们就能使用东部航线发出援助或求援。\n\n可能加入的国家：\n解放阵线：[GetEastRouteC08Location]\n狮鹫：[GetEastRouteC19Location]\n龙族：[GetEastRouteC20Location]\n麒麟：[GetEastRouteC18Location]\n风暴岛：[GetEastRouteC23Location]\n骏鹰-海马：[GetEastRouteC28Location]
 
 [zh.C08_EAST_ROUTE_UNKNOWN]
 §Y未联络§!

@@ -1787,10 +1787,6 @@ news_event = {
         trigger = {
             tag = C08
         }
-        news_event = {
-            id = C08_MAIN.50
-            days = 3
-        }
         name = EVENT_C08_MAIN_50_o1
     }
     option = {
@@ -2682,7 +2678,6 @@ country_event = {
         add_stability = -0.15
         add_war_support = -0.05
         hidden_effect = {
-
         }
         name = EVENT_C08_MAIN_73_o0
     }

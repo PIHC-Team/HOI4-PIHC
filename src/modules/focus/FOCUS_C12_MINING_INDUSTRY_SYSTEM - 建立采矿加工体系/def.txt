@@ -7,8 +7,9 @@ focus = {
 	prerequisite = {
 		focus = FOCUS_C12_ROCKVILLE_GEOLOGICAL_UNIVERSITY
 	}
-	cost = 4
+	cost = 8
 	completion_reward = {
+		custom_effect_tooltip = FOCUS_C12_MINING_INDUSTRY_SYSTEM_TOOLTIP
 		every_state = {
 			limit = {
 				is_controlled_by = C12
@@ -28,7 +29,11 @@ focus = {
 			limit = {
 				is_ai = yes
 			}
-			has_completed_focus = FOCUS_C12_ROAD_OF_APPLELOOSA
+			OR = {
+				has_completed_focus = FOCUS_C12_ROAD_OF_APPLELOOSA
+				has_completed_focus = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE
+				has_completed_focus = FOCUS_C12_REJECT_THE_IMPERIAL_DECREE
+			}
 		}
 		if = {
 			limit = {

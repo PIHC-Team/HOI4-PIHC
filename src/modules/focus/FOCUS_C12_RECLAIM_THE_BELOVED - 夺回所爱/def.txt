@@ -1,0 +1,45 @@
+focus = {
+	id = FOCUS_C12_RECLAIM_THE_BELOVED
+	icon = GFX_FOCUS_C12_RECLAIM_THE_BELOVED_icon
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE
+		focus = FOCUS_C12_CONTACT_THE_RESISTANCE
+	}
+	cost = 5
+	completion_reward = {
+		add_ideas = IDEA_C12_RECLAIM_THE_BELOVED
+		if = {
+			limit = {
+				C12 = {
+					NOT = {
+						has_war_with = C01
+					}
+				}
+			}
+			declare_war_on = {
+				target = C01
+				type = take_state_focus
+			}
+		}
+	}
+	available = {
+		has_country_leader = {
+			character = CHARACTER_MAUD_PIE
+			ruling_only = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = PIHC_COUNTRY_FLAG_NO_FOCUS
+			}
+			custom_trigger_tooltip = {
+				tooltip = PIHC_COUNTRY_FLAG_NO_FOCUS_TOOLTIP
+				always = no
+			}
+		}
+	}
+	x = 10
+	y = 25
+}

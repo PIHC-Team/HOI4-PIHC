@@ -18,19 +18,20 @@ state = {
         11559
     }
     manpower = 2405
-    state_category = pastoral
+    state_category = town
     history = {
-        owner = C01
+        owner = C67
         victory_points = {
             84
-            3
+            5
         }
         buildings = {
             infrastructure = 3
             industrial_complex = 1
-            farm_complex = 1
+            farm_complex = 3
+            arms_factory = 1
         }
-        add_core_of = C01
+        add_core_of = C67
     }
     resources = {
         rubber = 6

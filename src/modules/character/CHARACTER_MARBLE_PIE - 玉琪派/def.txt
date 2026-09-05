@@ -23,7 +23,6 @@ characters = {
             planning_skill = 2
             logistics_skill = 2
             traits = {
-
             }
         }
         advisor = {
@@ -34,8 +33,8 @@ characters = {
             }
             ledger = all
             can_be_fired = yes
-            cost = 150
-            removal_cost = 150
+            cost = 0
+            removal_cost = 0
             slot = political_advisor
         }
     }

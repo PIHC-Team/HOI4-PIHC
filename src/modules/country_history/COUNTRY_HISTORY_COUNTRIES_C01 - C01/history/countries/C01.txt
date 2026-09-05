@@ -18,6 +18,7 @@ add_to_faction = C04
 add_to_faction = C10
 add_to_faction = C33
 add_to_faction = C59
+add_to_faction = C67
 set_technology = {
     TECHNOLOGY_SUPPORT = 1
     TECHNOLOGY_TRAIN_I = 1
@@ -132,6 +133,11 @@ puppet = C59
 set_autonomy = {
     target = C59
     autonomous_state = autonomy_pihc_licensed
+}
+puppet = C67
+set_autonomy = {
+    target = C67
+    autonomous_state = autonomy_pihc_district
 }
 489 = {
     add_core_of = C53

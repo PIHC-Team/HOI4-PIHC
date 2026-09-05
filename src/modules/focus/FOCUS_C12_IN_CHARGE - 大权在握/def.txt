@@ -16,6 +16,13 @@ focus = {
 	cost = 4
 	completion_reward = {
 		add_country_leader_trait = TRAIT_DICTATORIAL_LEADER
+		hidden_effect = {
+			country_event = {
+				id = C12_MAIN.140
+				days = 21
+				random_days = 2
+			}
+		}
 	}
 	available = {
 		if = {
@@ -28,6 +35,6 @@ focus = {
 			}
 		}
 	}
-	x = 17
+	x = 29
 	y = 23
 }

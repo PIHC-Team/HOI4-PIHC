@@ -1,0 +1,75 @@
+DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
+	DECISION_C12_HOLD_A_SOCIAL_PARTY_WITH_APPLELOOSA = {
+		fixed_random_seed = no
+		priority = 100
+		cost = 50
+		days_remove = 30
+		days_re_enable = 180
+		available = {
+			country_exists = C14
+			hidden_trigger = {
+				has_political_power > 50
+			}
+		}
+		visible = {
+			NOT = {
+				has_completed_focus = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION
+			}
+		}
+		remove_effect = {
+			C14 = {
+				add_stability = 0.05
+			}
+			add_stability = 0.05
+			custom_effect_tooltip = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION_TOOLTIP_2
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+						}
+					}
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+					UPGRADE_C12_C14_RELATION = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 20
+				has_political_power > 250
+			}
+			modifier = {
+				add = 100
+				FROM = {
+					tag = C12
+					is_ai = yes
+				}
+			}
+		}
+		icon = C12_HOLD_A_SOCIAL_PARTY_WITH_APPLELOOSA
+	}
+}

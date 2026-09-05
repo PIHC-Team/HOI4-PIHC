@@ -1,0 +1,95 @@
+DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
+	DECISION_C12_HELP_APPLELOOSA_REPAY_ITS_DEBT = {
+		fixed_random_seed = no
+		priority = 100
+		cost = 0
+		days_remove = 60
+		days_re_enable = 150
+		available = {
+			country_exists = C14
+			check_variable = {
+				var = ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS
+				value = global.VAR_DEV_BONDS_EXCHANGE
+				compare = greater_than_or_equals
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = global.VAR_ZAP_APPLES_MARKET
+						value = 1000
+						compare = less_than
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = DECISION_WETM_BONDS_TO_ZAP_APPLES_TOOLTIP
+					always = no
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_completed_focus = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION
+			}
+		}
+		remove_effect = {
+			ROOT = {
+				DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+			}
+			C14 = {
+				add_to_variable = {
+					var = global.VAR_BLUEPRINTS_MARKET
+					value = 1000
+				}
+			}
+			custom_effect_tooltip = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION_TOOLTIP_2
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+							has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+						}
+					}
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_1
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_2
+					set_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+				}
+				if = {
+					limit = {
+						has_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+					}
+					clr_country_flag = PIHC_COUNTRY_FLAG_C12_MERGE_C14_PART_3
+					UPGRADE_C12_C14_RELATION = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 20
+				has_political_power > 250
+			}
+			modifier = {
+				add = 100
+				FROM = {
+					tag = C12
+					is_ai = yes
+				}
+			}
+		}
+		icon = C12_HELP_APPLELOOSA_REPAY_ITS_DEBT
+	}
+}

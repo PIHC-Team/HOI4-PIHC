@@ -12,7 +12,12 @@ focus = {
 		add_stability = 0.05
 		add_resource = {
 			type = steel
-			amount = 12
+			amount = 36
+			state = 601
+		}
+		add_resource = {
+			type = chromium
+			amount = 24
 			state = 601
 		}
 	}

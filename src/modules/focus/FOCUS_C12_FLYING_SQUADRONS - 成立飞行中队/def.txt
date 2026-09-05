@@ -19,7 +19,11 @@ focus = {
 				instant_build = yes
 			}
 		}
-		PIHC_DOCTRINE_AIR_LARGE_BOOST = yes
+		add_tech_bonus = {
+			category = pihc_air_doctrine
+			bonus = 0.5
+			uses = 2
+		}
 		add_equipment_to_stockpile = {
 			type = ARCHETYPE_AIR_TBOMBER
 			amount = 200

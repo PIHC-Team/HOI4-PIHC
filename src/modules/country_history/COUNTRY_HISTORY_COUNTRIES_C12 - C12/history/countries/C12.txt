@@ -90,20 +90,12 @@ add_ideas = IDEA_ERA_HYGIENE_5_DIRTY
 add_ideas = IDEA_C12_APPLES_FROM_SAME_TREE
 add_ideas = IDEA_C12_DESOLATE_FARM
 add_ideas = IDEA_C12_PONIES_IN_POVERTY
-set_power_balance = {
-    id = BOP_C12_INDEPENDENCE
-    set_default = yes
-}
-add_power_balance_modifier = {
-    id = BOP_C12_INDEPENDENCE
-    modifier = BOP_C12_INDEPENDENCE_DAILY_DRIFT
-}
 set_rule = {
     can_join_factions = no
 }
 set_research_slots = 2
 add_political_power = 250
-set_stability = 0.6
+set_stability = 0.35
 add_command_power = 50
 army_experience = 10
 set_war_support = 0.15
@@ -133,3 +125,6 @@ add_equipment_to_stockpile = {
     type = train_equipment
     amount = 120
 }
+activate_advisor = CHARACTER_MARBLE_PIE
+activate_advisor = CHARACTER_LIMESTONE_PIE
+activate_advisor = CHARACTER_CLOUDY_QUARTZ

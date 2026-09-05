@@ -1,0 +1,40 @@
+DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
+	DECISION_C12_INCREASE_TRADE_WITH_APPLELOOSA = {
+		fixed_random_seed = no
+		priority = 100
+		cost = 25
+		days_remove = 0
+		days_re_enable = 90
+		available = {
+			country_exists = C14
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_1000 = yes
+		}
+		visible = {
+			NOT = {
+				has_completed_focus = FOCUS_C12_APPLELOOSA_UNION_NEGOTIATION
+			}
+		}
+		remove_effect = {
+			DEL_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_1000 = yes
+			ADD_INVENTORY_ITEM_3RA_WETM_ZAP_APPLE_1000 = yes
+			C14 = {
+				ADD_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_1000 = yes
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 20
+				has_political_power > 250
+			}
+			modifier = {
+				add = 100
+				FROM = {
+					tag = C12
+					is_ai = yes
+				}
+			}
+		}
+		icon = C12_INCREASE_TRADE_WITH_APPLELOOSA
+	}
+}

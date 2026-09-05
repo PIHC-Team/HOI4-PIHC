@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		IDEA_C12_RFPAB = {
+			picture = C12_RFPAB
+			removal_cost = -1
+			modifier = {
+				crypto_department_enabled = yes
+				agency_upgrade_time = -0.2
+				civilian_intel_to_others = -0.25
+				airforce_intel_to_others = -0.2
+				army_intel_to_others = -0.2
+				navy_intel_to_others = -0.2
+				operative_slot = 1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

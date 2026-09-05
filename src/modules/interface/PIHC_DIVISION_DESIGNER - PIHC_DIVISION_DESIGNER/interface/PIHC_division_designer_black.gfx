@@ -1,0 +1,58 @@
+# PIHC: black digits + black Chinese labels for the division designer's
+# unit-data rows (designer_stat_entry in divisiondesignerview.gui).
+# Same typewriter style as the original, only the colour is black.
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "pihc_division_designer_num"
+		path = "gfx/fonts/hoi4_typewriter16_inverted"
+		color = 0xff000000
+		textcolors = {
+			C = { 0 0 0 }
+			L = { 0 0 0 }
+			W = { 0 0 0 }
+			B = { 0 0 0 }
+			G = { 0 0 0 }
+			R = { 0 0 0 }
+			b = { 0 0 0 }
+			g = { 0 0 0 }
+			Y = { 0 0 0 }
+			H = { 0 0 0 }
+			T = { 0 0 0 }
+			O = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "pihc_division_designer_label"
+		path = "gfx/fonts/hoi4_typewriter16_inverted"
+		color = 0xff000000
+		textcolors = {
+			C = { 0 0 0 }
+			L = { 0 0 0 }
+			W = { 0 0 0 }
+			B = { 0 0 0 }
+			G = { 0 0 0 }
+			R = { 0 0 0 }
+			b = { 0 0 0 }
+			g = { 0 0 0 }
+			Y = { 0 0 0 }
+			H = { 0 0 0 }
+			T = { 0 0 0 }
+			O = { 0 0 0 }
+		}
+	}
+
+	bitmapfont_override = {
+		name = "pihc_division_designer_label"
+		fontfiles = {
+			"gfx/fonts/14b"
+			"gfx/fonts/Arial_14b"
+			"gfx/fonts/hoi4_typewriter16_inverted"
+			"gfx/fonts/hoi_16typewriter_inverted"
+			"gfx/fonts/hoi_16typewriter_cryllic_inverted"
+		}
+		languages = { "l_simp_chinese" }
+	}
+
+}

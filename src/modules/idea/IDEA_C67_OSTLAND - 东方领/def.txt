@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		IDEA_C67_OSTLAND = {
+			picture = C67_OSTLAND
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.75
+				party_popularity_stability_factor = 0.25
+				war_support_factor = -0.25
+				local_resources_factor = 0.15
+				stability_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = C01
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.5
+			}
+			allowed = {
+				tag = C67
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}
