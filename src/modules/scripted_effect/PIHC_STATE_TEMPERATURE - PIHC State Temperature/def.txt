@@ -271,12 +271,12 @@ PIHC_update_state_indoor_temperature = {
 PIHC_update_state_outdoor_temperature_frame = {
 	set_variable = { THIS.PIHC_var_state_outdoor_temperature_display = THIS.PIHC_var_state_outdoor_temperature }
 	clamp_variable = { var = THIS.PIHC_var_state_outdoor_temperature_display min = -39 max = 42 }
-	# Existing mercury art has its top at y=39. Its clipped container starts at y=40.
-	# Child coordinates/clipping do not inherit the parent 1.28 scale.
-	# y = 1.28 * (129 - 4*T); top moves along the scaled tube.
+	# Artwork top is y=39; the clip starts at y=40 and zero is y=208.
+	# Sprite positions inherit the parent scale: 40 + 39 + (129 - 4*T).
+	# Only the clipping height needs separate scale compensation.
 	set_variable = { THIS.PIHC_temperature_mercury_y = THIS.PIHC_var_state_outdoor_temperature_display }
-	multiply_variable = { THIS.PIHC_temperature_mercury_y = -5.12 }
-	add_to_variable = { THIS.PIHC_temperature_mercury_y = 165.12 }
+	multiply_variable = { THIS.PIHC_temperature_mercury_y = -4 }
+	add_to_variable = { THIS.PIHC_temperature_mercury_y = 129 }
 }
 
 PIHC_update_state_indoor_temperature_frame = {

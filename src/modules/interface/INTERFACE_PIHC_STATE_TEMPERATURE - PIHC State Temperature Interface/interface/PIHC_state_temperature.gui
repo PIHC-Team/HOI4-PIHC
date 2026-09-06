@@ -3,7 +3,7 @@ guiTypes = {
 		name = pihc_state_temperature
 		position = {
 			x = 30
-			y = -480
+			y = -362
 		}
 		size = {
 			width = 180
@@ -34,13 +34,13 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = pihc_state_temperature_mercury_clip
-			position = { x = 0 y = 51 }
+			position = { x = 0 y = 40 }
 			size = { width = 180 height = 438 }
 			clipping = yes
 			iconType = {
 				name = pihc_state_temperature_mercury_indicator
 				spriteType = GFX_pihc_state_temperature_mercury_indicator
-				position = { x = 0 y = 165 }
+				position = { x = 0 y = 129 }
 				alwaystransparent = yes
 			}
 		}
