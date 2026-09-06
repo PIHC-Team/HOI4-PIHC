@@ -3,7 +3,7 @@
 PIHC3 is the canonical, ParaDev-native source project for **The Pony in the
 High Castle**, a Hearts of Iron IV total-conversion mod.
 
-**Canonical unified release (2026-09-05):** [reconciliation and reproducible build](docs/releases/unified-20260905-r2.md) · [standalone compiled download](https://github.com/Magolor/HOI4-PIHC-Compiled/releases/tag/unified-20260905-r2).
+**Canonical unified release (2026-09-05):** [reconciliation and reproducible build](docs/releases/unified-20260906-r3.md) · [standalone compiled download](https://github.com/Magolor/HOI4-PIHC-Compiled/releases/tag/unified-20260906-r3).
 
 **Languages:** [English](README.en.md) · [简体中文](README.zh.md)
 

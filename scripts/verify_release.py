@@ -22,7 +22,7 @@ def main() -> None:
     parser.add_argument(
         "--manifest",
         type=Path,
-        default=PROJECT_ROOT / "docs/releases/unified-20260905-r2-files.json",
+        default=PROJECT_ROOT / "docs/releases/unified-20260906-r3-files.json",
     )
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))

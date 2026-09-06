@@ -359,7 +359,9 @@ def _replacement_artifacts(
         entries = _document_entries(document, document_index=document_index)
         path = (
             _replacement_path(document.path)
-            if not document.path.startswith("localisation/replace/") and any(entry.key in reference_keys for entry in entries)
+            if not document.path.startswith("localisation/replace/")
+            and document.artifact.metadata.get("family") != "state"
+            and any(entry.key in reference_keys for entry in entries)
             else document.path
         )
         grouped.setdefault(path, []).append(document)
@@ -411,6 +413,11 @@ def _merged_artifact(path: str, documents: tuple[_Document, ...]) -> Artifact:
         metadata.pop("family", None)
     predecessor_paths = {document.path for document in ordered}
     for document in ordered:
+        if document.artifact.metadata.get("family") == "state":
+            # State aggregates intentionally shadow vanilla's exact file paths.
+            # Retire the relocated copies emitted before this runtime fix.
+            predecessor_paths.add(f"localisation/replace/{PurePosixPath(document.path).name}")
+            predecessor_paths.add(PurePosixPath("localisation", "replace", *PurePosixPath(document.path).parts[1:]).as_posix())
         if path != document.path and not document.path.startswith("localisation/replace/"):
             predecessor_paths.add(f"localisation/replace/{PurePosixPath(document.path).name}")
     metadata.update(
