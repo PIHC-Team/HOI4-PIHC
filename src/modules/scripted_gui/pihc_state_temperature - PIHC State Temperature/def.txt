@@ -3,18 +3,15 @@ scripted_gui = {
 		context_type = selected_state_context
 		parent_window_token = selected_state_view
 		window_name = pihc_state_temperature
-		dirty = THIS.PIHC_var_state_indoor_temperature_frame
-		dirty = THIS.PIHC_var_state_indoor_temperature
-		dirty = THIS.PIHC_var_state_outdoor_temperature_indicator_frame
-		dirty = THIS.PIHC_var_state_outdoor_temperature_display
-		dirty = THIS.PIHC_var_state_outdoor_temperature
+
+		dirty = global.PIHC_temperature_revision
 
 		properties = {
 			pihc_state_temperature_indoor_needle = {
 				frame = THIS.PIHC_var_state_indoor_temperature_frame
 			}
 			pihc_state_temperature_mercury_indicator = {
-				frame = THIS.PIHC_var_state_outdoor_temperature_indicator_frame
+				y = THIS.PIHC_temperature_mercury_y
 			}
 		}
 

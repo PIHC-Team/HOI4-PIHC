@@ -1,230 +1,114 @@
 PIHC_update_current_month = {
-	add_to_variable = {
-		global.PIHC_var_current_month = 1
-	}
-	modulo_variable = {
-		global.PIHC_var_current_month = 12
-	}
-	if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 0
-			}
-		}
-		set_variable = {
-			global.PIHC_var_current_month = 12
-		}
-	}
-
+	PIHC_sync_temperature_calendar = yes
 	PIHC_update_monthly_global_variables = yes
 }
 
-PIHC_apply_startup_controller_temperature_modifier = {
-	every_country = {
-		limit = {
-			OR = {
-				tag = C15
-				tag = C17
-				tag = C27
-			}
-		}
-		every_controlled_state = {
-			add_to_variable = {
-				THIS.PIHC_var_state_outdoor_temperature = -8
-			}
-			clamp_variable = {
-				var = THIS.PIHC_var_state_outdoor_temperature
-				min = -50
-				max = 50
-			}
-			PIHC_update_state_outdoor_temperature_frame = yes
-			PIHC_update_state_indoor_temperature = yes
-		}
-		PIHC_update_average_temperature_buff = yes
+# HoI4's global.num_days uses a 365-day calendar (verified against native dates).
+# Derive the season from the engine date, never from the number of callbacks.
+PIHC_sync_temperature_calendar = {
+	set_variable = { global.PIHC_temperature_day_of_year = global.num_days }
+	modulo_variable = { global.PIHC_temperature_day_of_year = 365 }
+	if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 31 } }
+		set_variable = { global.PIHC_var_current_month = 1 }
 	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 59 } }
+		set_variable = { global.PIHC_var_current_month = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 90 } }
+		set_variable = { global.PIHC_var_current_month = 3 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 120 } }
+		set_variable = { global.PIHC_var_current_month = 4 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 151 } }
+		set_variable = { global.PIHC_var_current_month = 5 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 181 } }
+		set_variable = { global.PIHC_var_current_month = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 212 } }
+		set_variable = { global.PIHC_var_current_month = 7 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 243 } }
+		set_variable = { global.PIHC_var_current_month = 8 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 273 } }
+		set_variable = { global.PIHC_var_current_month = 9 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 304 } }
+		set_variable = { global.PIHC_var_current_month = 10 }
+	}
+	else_if = {
+		limit = { check_variable = { global.PIHC_temperature_day_of_year < 334 } }
+		set_variable = { global.PIHC_var_current_month = 11 }
+	}
+	else = { set_variable = { global.PIHC_var_current_month = 12 } }
+	# A unique year/month key also guards staggered country callbacks.
+	set_variable = { global.PIHC_temperature_calendar_key = global.num_days }
+	subtract_from_variable = { global.PIHC_temperature_calendar_key = global.PIHC_temperature_day_of_year }
+	add_to_variable = { global.PIHC_temperature_calendar_key = global.PIHC_var_current_month }
 }
 
 PIHC_update_monthly_global_variables = {
-	set_variable = {
-		global.PIHC_var_state_temperature_factor_threat = global.threat
+	# No weekly work. One seasonal lookup and one temperature evaluation per state per month.
+	PIHC_prepare_temperature_season = yes
+	set_variable = { global.PIHC_var_state_temperature_factor_threat = global.threat }
+	multiply_variable = { global.PIHC_var_state_temperature_factor_threat = 60 }
+	every_country = { PIHC_prepare_country_temperature = yes }
+	# Scatter neighbor heat from towers only; no per-state adjacency traversal.
+	every_state = { set_variable = { PIHC_temperature_neighbor_heat = 0 } }
+	every_state = {
+		limit = { generator_complex > 0 }
+		every_neighbor_state = { add_to_variable = { PIHC_temperature_neighbor_heat = 5 } }
 	}
-	multiply_variable = {
-		global.PIHC_var_state_temperature_factor_threat = 60
-	}
-
 	every_country = {
+		set_variable = { THIS.PIHC_var_state_subsidies_cost_coal = 0 }
+		set_variable = { THIS.PIHC_var_state_subsidies_cost_logs = 0 }
+		set_variable = {
+			THIS.PIHC_var_country_temperature_weighted_comfort_sum = 0
+		}
+		set_variable = {
+			THIS.PIHC_var_country_temperature_population_sum = 0
+		}
 		every_controlled_state = {
+			set_variable = { THIS.PIHC_var_state_temperature_factor_threat_con = PREV.PIHC_var_state_temperature_factor_threat_con }
+			set_variable = { THIS.PIHC_var_state_controller_outdoor_temperature_influence = PREV.PIHC_var_state_controller_outdoor_temperature_influence }
+			set_variable = { THIS.PIHC_var_country_ERA_COLD_level = PREV.PIHC_var_country_ERA_COLD_level }
+			set_variable = { THIS.PIHC_var_country_tec_COLD_level = PREV.PIHC_var_country_tec_COLD_level }
+			PIHC_update_state_outdoor_temperature = yes
+			add_to_variable = { PREV.PIHC_var_state_subsidies_cost_coal = THIS.coal_subsidies }
+			add_to_variable = { PREV.PIHC_var_state_subsidies_cost_logs = THIS.logs_subsidies }
 			set_variable = {
-				THIS.PIHC_var_state_temperature_factor_threat_con = PREV.has_added_tension_amount
+				THIS.PIHC_var_state_temperature_population_weight = THIS.state_population_k
+			}
+			divide_variable = { THIS.PIHC_var_state_temperature_population_weight = 1000 }
+			set_variable = {
+				THIS.PIHC_var_state_temperature_weighted_comfort = THIS.PIHC_var_state_temperature_population_weight
 			}
 			multiply_variable = {
-				THIS.PIHC_var_state_temperature_factor_threat_con = 0.3
+				THIS.PIHC_var_state_temperature_weighted_comfort = THIS.PIHC_var_state_indoor_temperature_comfort_score
 			}
-			set_variable = {
-				THIS.PIHC_var_state_controller_outdoor_temperature_influence = PREV.VAR_OUTDOOR_TEMPERATURE_INFLUENCE
+			add_to_variable = {
+				PREV.PIHC_var_country_temperature_population_sum = THIS.PIHC_var_state_temperature_population_weight
 			}
-			set_variable = {
-				THIS.PIHC_var_country_ERA_COLD_level = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_tec_COLD_level = 0
+			add_to_variable = {
+				PREV.PIHC_var_country_temperature_weighted_comfort_sum = THIS.PIHC_var_state_temperature_weighted_comfort
 			}
 		}
-
-		set_variable = {
-			THIS.PIHC_var_country_resource_cost_coal = THIS.num_controlled_states
-		}
-		set_variable = {
-			THIS.PIHC_var_country_resource_cost_logs = THIS.num_controlled_states
-		}
-		divide_variable = {
-			THIS.PIHC_var_country_resource_cost_coal = 3
-		}
-		divide_variable = {
-			THIS.PIHC_var_country_resource_cost_logs = 2
-		}
-		round_variable = THIS.PIHC_var_country_resource_cost_coal
-		round_variable = THIS.PIHC_var_country_resource_cost_logs
-
-		set_variable = {
-			THIS.PIHC_var_country_resource_cost_civ = THIS.PIHC_var_country_resource_cost_logs
-		}
-		divide_variable = {
-			THIS.PIHC_var_country_resource_cost_civ = 4
-		}
-		round_variable = THIS.PIHC_var_country_resource_cost_civ
-
-		set_variable = {
-			THIS.PIHC_var_country_modifier_cost_coal = THIS.PIHC_var_country_resource_cost_coal
-		}
-		set_variable = {
-			THIS.PIHC_var_country_modifier_cost_logs = THIS.PIHC_var_country_resource_cost_logs
-		}
-		set_variable = {
-			THIS.PIHC_var_country_modifier_cost_civ = THIS.PIHC_var_country_resource_cost_civ
-		}
-
-		PIHC_change_ERA_COLD_level = yes
-
-		if = {
-			limit = {
-				has_idea = IDEA_ERA_COLD_1_COAL
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_logs = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_civ = 0
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_ERA_COLD_level = 3
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = IDEA_ERA_COLD_2_WOOD
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_coal = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_civ = 0
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_ERA_COLD_level = 2
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = IDEA_ERA_COLD_3_SUBSIDY
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_coal = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_logs = 0
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_ERA_COLD_level = 1
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = IDEA_ERA_COLD_5_BURN
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_coal = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_logs = 0
-			}
-			set_variable = {
-				THIS.PIHC_var_country_modifier_cost_civ = 0
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_ERA_COLD_level = -1
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				has_tech = TECHNOLOGY_SUPPORT_COLD_IV
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_tec_COLD_level = 4
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_tech = TECHNOLOGY_SUPPORT_COLD_III
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_tec_COLD_level = 3
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_tech = TECHNOLOGY_SUPPORT_COLD_II
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_tec_COLD_level = 2
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_tech = TECHNOLOGY_SUPPORT_COLD_I
-			}
-			every_controlled_state = {
-				set_variable = {
-					THIS.PIHC_var_country_tec_COLD_level = 1
-				}
-			}
-		}
-
-		PIHC_update_state_temperature_subsidies_modifier = yes
-		force_update_dynamic_modifier = yes
-	}
-
-	every_state = {
-		PIHC_update_state_outdoor_temperature = yes
-	}
-	every_country = {
 		PIHC_update_average_temperature_buff = yes
 	}
+	set_global_flag = PIHC_temperature_initialized
+	add_to_variable = { global.PIHC_temperature_revision = 1 }
 }
 
 PIHC_change_ERA_COLD_level = {
@@ -241,7 +125,6 @@ PIHC_change_ERA_COLD_level = {
 		limit = {
 			has_idea = IDEA_ERA_COLD_2_WOOD
 			check_variable = {
-				resource@coal < 0
 				resource@logs < 0
 			}
 		}
@@ -250,153 +133,11 @@ PIHC_change_ERA_COLD_level = {
 }
 
 PIHC_update_state_outdoor_temperature = {
-	if = {
-		limit = {
-			OR = {
-				check_variable = {
-					global.PIHC_var_current_month = 1
-				}
-				check_variable = {
-					global.PIHC_var_current_month = 2
-				}
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -22
-			max = 2
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 3
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -22
-			max = 2
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 4
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -14
-			max = 5
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 5
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -6
-			max = 8
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 6
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -1
-			max = 15
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 7
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = 3
-			max = 19
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 8
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = 6
-			max = 21
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 9
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = 4
-			max = 20
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 10
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = 0
-			max = 16
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 11
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -6
-			max = 10
-			integer = yes
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				global.PIHC_var_current_month = 12
-			}
-		}
-		set_variable_to_random = {
-			var = THIS.PIHC_var_state_outdoor_temperature
-			min = -11
-			max = 6
-			integer = yes
-		}
+	set_variable_to_random = {
+		var = THIS.PIHC_var_state_outdoor_temperature
+		min = global.PIHC_temperature_season_min
+		max = global.PIHC_temperature_season_max
+		integer = yes
 	}
 
 	set_variable = {
@@ -440,36 +181,11 @@ PIHC_update_state_outdoor_temperature = {
 }
 
 PIHC_update_state_temperature_subsidies_modifier = {
-	set_variable = {
-		THIS.PIHC_var_state_subsidies_cost_coal = 0
-	}
-	set_variable = {
-		THIS.PIHC_var_state_subsidies_cost_logs = 0
-	}
+	set_variable = { THIS.PIHC_var_state_subsidies_cost_coal = 0 }
+	set_variable = { THIS.PIHC_var_state_subsidies_cost_logs = 0 }
 	every_controlled_state = {
-		limit = {
-			check_variable = {
-				THIS.coal_subsidies = 1
-			}
-		}
-		add_to_variable = {
-			PREV.PIHC_var_state_subsidies_cost_coal = 1
-		}
-	}
-	every_controlled_state = {
-		limit = {
-			check_variable = {
-				THIS.logs_subsidies = 1
-			}
-		}
-		add_to_variable = {
-			PREV.PIHC_var_state_subsidies_cost_logs = 1
-		}
-	}
-
-	force_update_dynamic_modifier = yes
-	every_controlled_state = {
-		PIHC_update_state_indoor_temperature = yes
+		add_to_variable = { PREV.PIHC_var_state_subsidies_cost_coal = THIS.coal_subsidies }
+		add_to_variable = { PREV.PIHC_var_state_subsidies_cost_logs = THIS.logs_subsidies }
 	}
 }
 
@@ -488,25 +204,7 @@ PIHC_update_state_indoor_temperature = {
 		THIS.PIHC_var_state_indoor_temperature = THIS.PIHC_var_state_temperature_factor_gc
 	}
 
-	set_variable = {
-		THIS.PIHC_var_state_temperature_factor_gc = 0
-	}
-	every_neighbor_state = {
-		if = {
-			limit = {
-				generator_complex > 0
-			}
-			add_to_variable = {
-				PREV.PIHC_var_state_temperature_factor_gc = 1
-			}
-		}
-	}
-	multiply_variable = {
-		THIS.PIHC_var_state_temperature_factor_gc = 5
-	}
-	add_to_variable = {
-		THIS.PIHC_var_state_indoor_temperature = THIS.PIHC_var_state_temperature_factor_gc
-	}
+	add_to_variable = { THIS.PIHC_var_state_indoor_temperature = THIS.PIHC_temperature_neighbor_heat }
 
 	set_variable = {
 		THIS.PIHC_var_state_temperature_factor_gc = 3
@@ -571,21 +269,14 @@ PIHC_update_state_indoor_temperature = {
 }
 
 PIHC_update_state_outdoor_temperature_frame = {
-	set_variable = {
-		THIS.PIHC_var_state_outdoor_temperature_display = THIS.PIHC_var_state_outdoor_temperature
-	}
-	clamp_variable = {
-		var = THIS.PIHC_var_state_outdoor_temperature_display
-		min = -39
-		max = 42
-	}
-	set_variable = {
-		THIS.PIHC_var_state_outdoor_temperature_indicator_frame = THIS.PIHC_var_state_outdoor_temperature_display
-	}
-	add_to_variable = {
-		THIS.PIHC_var_state_outdoor_temperature_indicator_frame = 40
-	}
-	round_variable = THIS.PIHC_var_state_outdoor_temperature_indicator_frame
+	set_variable = { THIS.PIHC_var_state_outdoor_temperature_display = THIS.PIHC_var_state_outdoor_temperature }
+	clamp_variable = { var = THIS.PIHC_var_state_outdoor_temperature_display min = -39 max = 42 }
+	# Existing mercury art has its top at y=39. Its clipped container starts at y=40.
+	# Child coordinates/clipping do not inherit the parent 1.28 scale.
+	# y = 1.28 * (129 - 4*T); top moves along the scaled tube.
+	set_variable = { THIS.PIHC_temperature_mercury_y = THIS.PIHC_var_state_outdoor_temperature_display }
+	multiply_variable = { THIS.PIHC_temperature_mercury_y = -5.12 }
+	add_to_variable = { THIS.PIHC_temperature_mercury_y = 165.12 }
 }
 
 PIHC_update_state_indoor_temperature_frame = {
@@ -862,30 +553,6 @@ PIHC_update_state_temperature_buff = {
 }
 
 PIHC_update_average_temperature_buff = {
-	set_variable = {
-		THIS.PIHC_var_country_temperature_weighted_comfort_sum = 0
-	}
-	set_variable = {
-		THIS.PIHC_var_country_temperature_population_sum = 0
-	}
-	every_controlled_state = {
-		PIHC_update_state_indoor_temperature_frame = yes
-		set_variable = {
-			THIS.PIHC_var_state_temperature_population_weight = THIS.state_population_k
-		}
-		set_variable = {
-			THIS.PIHC_var_state_temperature_weighted_comfort = THIS.PIHC_var_state_temperature_population_weight
-		}
-		multiply_variable = {
-			THIS.PIHC_var_state_temperature_weighted_comfort = THIS.PIHC_var_state_indoor_temperature_comfort_score
-		}
-		add_to_variable = {
-			PREV.PIHC_var_country_temperature_population_sum = THIS.PIHC_var_state_temperature_population_weight
-		}
-		add_to_variable = {
-			PREV.PIHC_var_country_temperature_weighted_comfort_sum = THIS.PIHC_var_state_temperature_weighted_comfort
-		}
-	}
 	if = {
 		limit = {
 			check_variable = {
@@ -896,11 +563,6 @@ PIHC_update_average_temperature_buff = {
 		set_variable = {
 			THIS.PIHC_var_country_temperature_comfort_score = 10
 		}
-		every_controlled_state = {
-			set_variable = {
-				THIS.PIHC_var_state_temperature_population_share_percent = 0
-			}
-		}
 	}
 	else = {
 		set_variable = {
@@ -908,17 +570,6 @@ PIHC_update_average_temperature_buff = {
 		}
 		divide_variable = {
 			THIS.PIHC_var_country_temperature_comfort_score = THIS.PIHC_var_country_temperature_population_sum
-		}
-		every_controlled_state = {
-			set_variable = {
-				THIS.PIHC_var_state_temperature_population_share_percent = THIS.PIHC_var_state_temperature_population_weight
-			}
-			divide_variable = {
-				THIS.PIHC_var_state_temperature_population_share_percent = PREV.PIHC_var_country_temperature_population_sum
-			}
-			multiply_variable = {
-				THIS.PIHC_var_state_temperature_population_share_percent = 100
-			}
 		}
 	}
 
@@ -1018,6 +669,14 @@ PIHC_update_average_temperature_buff = {
 	}
 
 	every_controlled_state = {
+		set_variable = { THIS.PIHC_var_state_temperature_population_share_percent = 0 }
+		if = {
+			limit = { check_variable = { PREV.PIHC_var_country_temperature_population_sum > 0 } }
+			set_variable = { THIS.PIHC_var_state_temperature_population_share_percent = THIS.PIHC_var_state_temperature_population_weight }
+			divide_variable = { THIS.PIHC_var_state_temperature_population_share_percent = PREV.PIHC_var_country_temperature_population_sum }
+			multiply_variable = { THIS.PIHC_var_state_temperature_population_share_percent = 100 }
+		}
+
 		set_variable = {
 			THIS.PIHC_var_state_controller_temperature_comfort_score = PREV.PIHC_var_country_temperature_comfort_score
 		}
@@ -1036,4 +695,243 @@ PIHC_update_average_temperature_buff = {
 	}
 
 	force_update_dynamic_modifier = yes
+}
+
+PIHC_prepare_temperature_season = {
+
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					global.PIHC_var_current_month = 1
+				}
+				check_variable = {
+					global.PIHC_var_current_month = 2
+				}
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -22 }
+		set_variable = { global.PIHC_temperature_season_max = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 3
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -22 }
+		set_variable = { global.PIHC_temperature_season_max = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 4
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -14 }
+		set_variable = { global.PIHC_temperature_season_max = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 5
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -6 }
+		set_variable = { global.PIHC_temperature_season_max = 8 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 6
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -1 }
+		set_variable = { global.PIHC_temperature_season_max = 15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 7
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = 3 }
+		set_variable = { global.PIHC_temperature_season_max = 19 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 8
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = 6 }
+		set_variable = { global.PIHC_temperature_season_max = 21 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 9
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = 4 }
+		set_variable = { global.PIHC_temperature_season_max = 20 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 10
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = 0 }
+		set_variable = { global.PIHC_temperature_season_max = 16 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 11
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -6 }
+		set_variable = { global.PIHC_temperature_season_max = 10 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				global.PIHC_var_current_month = 12
+			}
+		}
+		set_variable = { global.PIHC_temperature_season_min = -11 }
+		set_variable = { global.PIHC_temperature_season_max = 6 }
+	}
+
+}
+
+PIHC_prepare_country_temperature = {
+
+		set_variable = { THIS.PIHC_var_country_ERA_COLD_level = 0 }
+		set_variable = { THIS.PIHC_var_country_tec_COLD_level = 0 }
+		set_variable = { THIS.PIHC_var_state_temperature_factor_threat_con = THIS.has_added_tension_amount }
+		multiply_variable = { THIS.PIHC_var_state_temperature_factor_threat_con = 0.3 }
+		set_variable = { THIS.PIHC_var_state_controller_outdoor_temperature_influence = THIS.VAR_OUTDOOR_TEMPERATURE_INFLUENCE }
+		# Preserve the original first-month regional cold snap, without a second state update.
+		if = {
+			limit = { NOT = { has_global_flag = PIHC_temperature_initialized } check_variable = { global.num_days = 366064 } OR = { tag = C15 tag = C17 tag = C27 } }
+			add_to_variable = { THIS.PIHC_var_state_controller_outdoor_temperature_influence = -8 }
+		}
+
+		set_variable = {
+			THIS.PIHC_var_country_resource_cost_coal = THIS.num_controlled_states
+		}
+		set_variable = {
+			THIS.PIHC_var_country_resource_cost_logs = THIS.num_controlled_states
+		}
+		divide_variable = {
+			THIS.PIHC_var_country_resource_cost_coal = 3
+		}
+		divide_variable = {
+			THIS.PIHC_var_country_resource_cost_logs = 2
+		}
+		round_variable = THIS.PIHC_var_country_resource_cost_coal
+		round_variable = THIS.PIHC_var_country_resource_cost_logs
+
+		set_variable = {
+			THIS.PIHC_var_country_resource_cost_civ = THIS.PIHC_var_country_resource_cost_logs
+		}
+		divide_variable = {
+			THIS.PIHC_var_country_resource_cost_civ = 4
+		}
+		round_variable = THIS.PIHC_var_country_resource_cost_civ
+
+		set_variable = {
+			THIS.PIHC_var_country_modifier_cost_coal = 0
+		}
+		set_variable = {
+			THIS.PIHC_var_country_modifier_cost_logs = 0
+		}
+		set_variable = {
+			THIS.PIHC_var_country_modifier_cost_civ = 0
+		}
+
+		PIHC_change_ERA_COLD_level = yes
+
+		if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_1_COAL
+			}
+			set_variable = { THIS.PIHC_var_country_modifier_cost_coal = THIS.PIHC_var_country_resource_cost_coal }
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_logs = 0
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_civ = 0
+			}
+			set_variable = { THIS.PIHC_var_country_ERA_COLD_level = 3 }
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_2_WOOD
+			}
+			set_variable = { THIS.PIHC_var_country_modifier_cost_logs = THIS.PIHC_var_country_resource_cost_logs }
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_coal = 0
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_civ = 0
+			}
+			set_variable = { THIS.PIHC_var_country_ERA_COLD_level = 2 }
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_3_SUBSIDY
+			}
+			set_variable = { THIS.PIHC_var_country_modifier_cost_civ = THIS.PIHC_var_country_resource_cost_civ }
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_coal = 0
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_logs = 0
+			}
+			set_variable = { THIS.PIHC_var_country_ERA_COLD_level = 1 }
+		}
+		else_if = {
+			limit = {
+				has_idea = IDEA_ERA_COLD_5_BURN
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_coal = 0
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_logs = 0
+			}
+			set_variable = {
+				THIS.PIHC_var_country_modifier_cost_civ = 0
+			}
+			set_variable = { THIS.PIHC_var_country_ERA_COLD_level = -1 }
+		}
+
+		if = {
+			limit = {
+				has_tech = TECHNOLOGY_SUPPORT_COLD_IV
+			}
+			set_variable = { THIS.PIHC_var_country_tec_COLD_level = 4 }
+		}
+		else_if = {
+			limit = {
+				has_tech = TECHNOLOGY_SUPPORT_COLD_III
+			}
+			set_variable = { THIS.PIHC_var_country_tec_COLD_level = 3 }
+		}
+		else_if = {
+			limit = {
+				has_tech = TECHNOLOGY_SUPPORT_COLD_II
+			}
+			set_variable = { THIS.PIHC_var_country_tec_COLD_level = 2 }
+		}
+		else_if = {
+			limit = {
+				has_tech = TECHNOLOGY_SUPPORT_COLD_I
+			}
+			set_variable = { THIS.PIHC_var_country_tec_COLD_level = 1 }
+		}
+
 }

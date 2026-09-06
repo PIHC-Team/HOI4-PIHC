@@ -1,43 +1,51 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			set_variable = {
-				global.PIHC_var_current_month = 12
-			}
-			every_country = {
-				add_dynamic_modifier = {
-					modifier = PIHC_ERA_COLD_DYNAMIC_MODIFIER
+			if = {
+				limit = { NOT = { has_global_flag = PIHC_temperature_initialized } }
+				if = {
+					limit = { NOT = { has_variable = global.PIHC_var_current_month } }
+					set_variable = { global.PIHC_var_current_month = 12 }
 				}
-				add_dynamic_modifier = {
-					modifier = PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER
+				every_country = {
+					add_dynamic_modifier = {
+						modifier = PIHC_ERA_COLD_DYNAMIC_MODIFIER
+					}
+					add_dynamic_modifier = {
+						modifier = PIHC_state_temperature_subsidies_DYNAMIC_MODIFIER
+					}
+					add_dynamic_modifier = {
+						modifier = PIHC_average_temperature_DYNAMIC_MODIFIER
+					}
 				}
-				add_dynamic_modifier = {
-					modifier = PIHC_average_temperature_DYNAMIC_MODIFIER
+				every_state = {
+					add_dynamic_modifier = {
+						modifier = PIHC_state_temperature_DYNAMIC_MODIFIER
+					}
 				}
-			}
-			every_state = {
-				add_dynamic_modifier = {
-					modifier = PIHC_state_temperature_DYNAMIC_MODIFIER
+				random_country = {
+					limit = {
+						always = yes
+					}
+					PIHC_initialize_state_outdoor_temperature_influence = yes
+					PIHC_update_current_month = yes
+					set_variable = { global.PIHC_temperature_last_update_month = global.PIHC_temperature_calendar_key }
 				}
-			}
-			random_country = {
-				limit = {
-					always = yes
-				}
-				PIHC_initialize_state_outdoor_temperature_influence = yes
-				PIHC_update_monthly_global_variables = yes
-				PIHC_apply_startup_controller_temperature_modifier = yes
 			}
 		}
 	}
 
+	# The generic monthly hook is invoked for multiple countries. Stamp globally
+	# before entering any country scope, so the world advances exactly once, even if callbacks are staggered.
 	on_monthly = {
 		effect = {
-			random_country = {
+			PIHC_sync_temperature_calendar = yes
+			if = {
 				limit = {
-					always = yes
+					NOT = { check_variable = { global.PIHC_temperature_last_update_month = global.PIHC_temperature_calendar_key } }
 				}
-				PIHC_update_current_month = yes
+				set_variable = { global.PIHC_temperature_last_update_month = global.PIHC_temperature_calendar_key }
+				random_country = { PIHC_update_monthly_global_variables = yes }
 			}
 		}
 	}
