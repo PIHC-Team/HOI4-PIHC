@@ -236,7 +236,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        custom_effect_tooltip = EVENT_C02_MAIN_12_EFFECT_TOOLTIP
+        custom_effect_tooltip = EVENT_C02_MAIN_12_TOOLTIP
         set_country_flag = {
             flag = PIHC_COUNTRY_FLAG_C02_MAIN_12_COOLDOWN
             days = 42

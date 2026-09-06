@@ -1,29 +1,43 @@
 DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
-    DECISION_CIVIL_INDUSTRY = {
-        fixed_random_seed = no
-        priority = 100
-        cost = 125
-        days_remove = 60
-        days_re_enable = 240
-        remove_effect = {
-            random_owned_controlled_state = {
-                BUILD_A_CIC = yes
-            }
-        }
-        ai_will_do = {
-            base = 5
-            modifier = {
-                add = 20
-                has_political_power > 250
-            }
-            modifier = {
-                add = -5
-                FROM = {
-                    tag = C08
-                    is_ai = yes
-                }
-            }
-        }
-        icon = CIVIL_INDUSTRY
-    }
+	DECISION_CIVIL_INDUSTRY = {
+		fixed_random_seed = no
+		priority = 100
+		cost = 125
+		days_remove = 60
+		days_re_enable = 240
+		remove_effect = {
+			random_owned_controlled_state = {
+				BUILD_A_CIC = yes
+			}
+			if = {
+				limit = {
+					tag = C12
+					has_completed_focus = FOCUS_C12_LAND_EXPLORATION
+				}
+				add_political_power = 63
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 20
+				has_political_power > 250
+			}
+			modifier = {
+				add = -5
+				FROM = {
+					tag = C08
+					is_ai = yes
+				}
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					tag = C12
+					is_ai = yes
+				}
+			}
+		}
+		icon = CIVIL_INDUSTRY
+	}
 }

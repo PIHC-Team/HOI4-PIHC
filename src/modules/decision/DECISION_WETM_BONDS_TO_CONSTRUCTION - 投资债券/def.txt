@@ -1,39 +1,45 @@
 DECISION_CATEGORY_WETM = {
-    DECISION_WETM_BONDS_TO_CONSTRUCTION = {
-        fixed_random_seed = no
-        priority = 94
-        cost = 0
-        days_remove = 90
-        days_re_enable = 0
-        visible = {
-            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
-        }
-        available = {
-            ROOT = {
-                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
-            }
-        }
-        custom_cost_trigger = {
-            ROOT = {
-                TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
-            }
-        }
-        custom_cost_text = CUSTOM_COST_DEV_BONDS_1200
-        modifier = {
-            production_factory_max_efficiency_factor = 0.1
-            production_speed_buildings_factor = 0.1
-            conversion_cost_mil_to_civ_factor = -0.5
-            local_resources_factor = 0.05
-            political_power_cost = 0.02
-        }
-        complete_effect = {
-            ROOT = {
-                DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
-            }
-        }
-        ai_will_do = {
-            base = 0
-        }
-        icon = WETM_BONDS_TO_CONSTRUCTION
-    }
+	DECISION_WETM_BONDS_TO_CONSTRUCTION = {
+		fixed_random_seed = no
+		priority = 94
+		cost = 0
+		days_remove = 90
+		days_re_enable = 0
+		visible = {
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS = yes
+		}
+		available = {
+			ROOT = {
+				TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+			}
+		}
+		custom_cost_trigger = {
+			ROOT = {
+				TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+			}
+		}
+		custom_cost_text = CUSTOM_COST_DEV_BONDS_1200
+		modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			conversion_cost_mil_to_civ_factor = -0.5
+			local_resources_factor = 0.05
+			political_power_cost = 0.02
+		}
+		complete_effect = {
+			ROOT = {
+				DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_1200 = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				FROM = {
+					check_variable = { var = ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS value = 5000 compare = greater_than }
+				}
+			}
+		}
+		icon = WETM_BONDS_TO_CONSTRUCTION
+	}
 }

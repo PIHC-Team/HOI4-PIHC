@@ -1,6 +1,6 @@
 # 高堡奇驹 — PIHC3
 
-**统一发布版本（2026-09-05）：** [版本整合与可复现构建](docs/releases/unified-20260906-r3.md) · [独立编译版下载](https://github.com/Magolor/HOI4-PIHC-Compiled/releases/tag/unified-20260906-r3)。
+**统一发布版本（2026-09-05）：** [版本整合与可复现构建](docs/releases/unified-20260906-r4.md) · [独立编译版下载](https://github.com/Magolor/HOI4-PIHC-Compiled/releases/tag/unified-20260906-r4)。
 
 
 PIHC3 是**高堡奇驹**这一《钢铁雄心 IV》大型转换模组的规范
@@ -88,3 +88,5 @@ paradev build . --family idea --module IDEA_C99_EXAMPLE \
 本仓库尚未声明覆盖全仓库的开源许可证；请勿默认代码、文案、美术、音乐或
 其他资产可以再利用或再分发。贡献者必须拥有提交所有相关
 资产的权限。
+
+发布前请运行 `scripts/check_integration.py` 检查中英文依赖；详见 [r4 集成说明](docs/releases/unified-20260906-r4.md)。

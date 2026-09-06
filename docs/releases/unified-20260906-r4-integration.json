@@ -1,0 +1,110 @@
+{
+  "release": "unified-20260906-r4",
+  "donor_branch": "5b037333de3484e15aa9e4f07f831edaf2ea57d3",
+  "baseline_source": "4d416d66019e183c5a06407cbf274d7eef750411",
+  "inputs": {
+    "PIHC3.json": {
+      "inventory_sha256": "309585de1e1ceec69c2d540889fda4e569b9bf5d6cce75ee1e9638165b5c02ff",
+      "entries": 35397
+    },
+    "PIHC3.pre-current-20260810.json": {
+      "inventory_sha256": "3d0535f7830acb578b413ffdff36ab8378927ae12eea1b32e1d261d07750851f",
+      "entries": 35397
+    },
+    "HOI4-PIHC-Compiled-Bugfix260825.json": {
+      "inventory_sha256": "1a42f70c5380422fa26d83c2c480790c5b4ecb6c528b44e6528e65119f9e0788",
+      "entries": 37569
+    },
+    "PIHC_dev.json": {
+      "inventory_sha256": "c56647f6d1375b6fb6c01ce4c6fba6d1fa53f9503ed55a66b9928ea8b0dbdcd6",
+      "entries": 26953
+    },
+    "PIHC2-resources.json": {
+      "inventory_sha256": "3296030f1728a3459ec41cfecddf43464b77ba74d96bfb769fe40c339352aba9",
+      "entries": 16019
+    },
+    "PIHC_dev-zip.json": {
+      "inventory_sha256": "4f9a5206af541c46ea5b45c1e1c288f2632a5666f5a3be1ebaee56fb7134d69e",
+      "entries": 27073
+    },
+    "resources-zip.json": {
+      "inventory_sha256": "efa57958e01361a389b85cd046f76f2076b516aa1274d2f4e9b7f4453221ec3d",
+      "entries": 15990
+    }
+  },
+  "additional_source_merges": [
+    {
+      "source": "src/modules/decision/DECISION_AGRICULTURE_INDUSTRY - 农业建设/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_CIVIL_INDUSTRY - 民用工业建设/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_COAL_EXPLORATION - 煤炭资源勘探/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_CONSTRUCTION_EXPANSION - 建设扩张/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_FOREST_CULTIVATION - 林场培养/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_MILITARY_INDUSTRY - 军用工业建设/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_MINERAL_EXPLORATION - 矿产资源勘探/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_STEEL_SMELTING - 钢铁冶炼/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_WAR_RADIO - 战争广播/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_WETM_BONDS_TO_CIV_FACTORY - 轻工业投资/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_WETM_BONDS_TO_CONSTRUCTION - 投资债券/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_WETM_OIL_TO_BONDS - 出售石油/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/decision/DECISION_WETM_ORE_BOULDERS_TO_BONDS - 兑换债券/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/idea/IDEA_C54_MAGIC_ACADEMY - 魔法研究中心/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/ai_config/AI_CONFIG_AI_STRATEGY_PIHC_C54 - PIHC C54/common/ai_strategy/PIHC_C54.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    },
+    {
+      "source": "src/modules/trait/TRAIT_DIAMOND_WAVE - 莫纳驹的怒涛/def.txt",
+      "origin": "resources.zip full dependency reconciliation"
+    }
+  ],
+  "conflicts": [],
+  "compatibility_exclusions": [
+    "Older vanilla UI/raids/equipment/doctrine formats in legacy resource snapshot",
+    "C61/C62 shared NOPONY_1 recruitment; retain distinct canonical characters",
+    "Retired supply_factor identifiers; retain current supply_consumption_factor",
+    "M6 execution narrative; preserve approved missing/unknown story",
+    "Old mod branding and descriptor",
+    "Malformed donor country-scope forestry refund and inconsistent bond thresholds corrected during import"
+  ]
+}

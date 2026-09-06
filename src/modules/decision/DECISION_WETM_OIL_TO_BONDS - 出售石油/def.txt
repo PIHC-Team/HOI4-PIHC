@@ -1,52 +1,51 @@
 DECISION_CATEGORY_WETM = {
-    DECISION_WETM_OIL_TO_BONDS = {
-        fixed_random_seed = no
-        priority = 96
-        days_remove = 180
-        days_re_enable = 0
-        visible = {
-            OR = {
-                has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
-                has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
-                is_in_faction_with = C07
-                is_in_faction_with = C09
-                has_idea = IDEA_EIJC_MEMBER
-            }
-        }
-        available = {
-            oil > 9
-        }
-        custom_cost_trigger = {
-            oil > 9
-        }
-        custom_cost_text = DECISION_WETM_OIL_TO_BONDS_CUSTOM_COST
-        modifier = {
-            country_resource_cost_oil = 10
-        }
-        ai_hint_pp_cost = 0
-        complete_effect = {
-            ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600 = yes
-            hidden_effect = {
-                add_to_variable = {
-                    var = global.VAR_DEV_BONDS_EXCHANGE
-                    value = 1
-                }
-                UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
-            }
-        }
-        cancel_trigger = {
-            always = no
-        }
-        remove_effect = {
-
-        }
-        ai_will_do = {
-            base = 10
-            modifier = {
-                add = 300
-                tag = C24
-            }
-        }
-        icon = WETM_OIL_TO_BONDS
-    }
+	DECISION_WETM_OIL_TO_BONDS = {
+		fixed_random_seed = no
+		priority = 96
+		days_remove = 180
+		days_re_enable = 0
+		visible = {
+			OR = {
+				has_country_flag = PIHC_COUNTRY_FLAG_IS_IN_WETM
+				has_country_flag = PIHC_COUNTRY_FLAG_WETM_DEBUG
+				is_in_faction_with = C07
+				is_in_faction_with = C09
+				has_idea = IDEA_EIJC_MEMBER
+			}
+		}
+		available = {
+			oil > 9
+		}
+		custom_cost_trigger = {
+			oil > 9
+		}
+		custom_cost_text = DECISION_WETM_OIL_TO_BONDS_CUSTOM_COST
+		modifier = {
+			country_resource_cost_oil = 10
+		}
+		ai_hint_pp_cost = 0
+		complete_effect = {
+			ADD_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_600 = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = global.VAR_DEV_BONDS_EXCHANGE
+					value = 1
+				}
+				UPDATE_DEV_BONDS_EXCHANGE_RATE = yes
+			}
+		}
+		cancel_trigger = {
+			always = no
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 300
+				tag = C24
+			}
+		}
+		icon = WETM_OIL_TO_BONDS
+	}
 }

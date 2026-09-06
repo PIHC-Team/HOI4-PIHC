@@ -1,38 +1,38 @@
 DECISION_CATEGORY_WETM = {
-    DECISION_WETM_ORE_BOULDERS_TO_BONDS = {
-        fixed_random_seed = no
-        priority = 98
-        cost = 0
-        days_re_enable = 1
-        visible = {
-            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
-        }
-        available = {
-            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_100 = yes
-        }
-        custom_cost_trigger = {
-            TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_100 = yes
-        }
-        custom_cost_text = CUSTOM_COST_ORE_BOULDERS_100
-        complete_effect = {
-            DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_100 = yes
-            add_to_variable = {
-                var = ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS
-                value = global.VAR_DEV_BONDS_EXCHANGE
-            }
-            INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
-            add_to_variable = {
-                var = global.VAR_ORE_BOULDERS_MARKET
-                value = 100
-            }
-        }
-        ai_will_do = {
-            base = 0
-            modifier = {
-                add = 10
-                tag = C12
-            }
-        }
-        icon = WETM_ORE_BOULDERS_TO_BONDS
-    }
+	DECISION_WETM_ORE_BOULDERS_TO_BONDS = {
+		fixed_random_seed = no
+		priority = 98
+		cost = 0
+		days_re_enable = 1
+		visible = {
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER = yes
+		}
+		available = {
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_100 = yes
+		}
+		custom_cost_trigger = {
+			TRIGGER_HAVE_INVENTORY_ITEM_3RA_WETM_ORE_BOULDER_100 = yes
+		}
+		custom_cost_text = CUSTOM_COST_ORE_BOULDERS_100
+		complete_effect = {
+			DEL_INVENTORY_ITEM_3RA_WETM_DEV_BONDS_100 = yes
+			add_to_variable = {
+				var = ROOT.VAR_INVENTORY_ITEM_3RA_WETM_DEV_BONDS
+				value = global.VAR_DEV_BONDS_EXCHANGE
+			}
+			INVENTORY_RELOAD_ONLY_WHEN_OPEN = yes
+			add_to_variable = {
+				var = global.VAR_ORE_BOULDERS_MARKET
+				value = 100
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
+				tag = C12
+			}
+		}
+		icon = WETM_ORE_BOULDERS_TO_BONDS
+	}
 }

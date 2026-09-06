@@ -11,7 +11,7 @@ DECISION_CATEGORY_C03_MUFFIN_ROULETTE = {
         }
         available = {
             custom_trigger_tooltip = {
-                tooltip = DECISION_C03_MUFFIN_ROULETTE_TASK_5_DO_NOTHING_TOOLTIP
+                tooltip = DECISION_C03_MUFFIN_ROULETTE_TASK_5_DONITHING_TOOLTIP
                 NOT = {
                     has_country_flag = PIHC_COUNTRY_FLAG_C03_ROULETTE_TASK_5_DO_NOTHING
                 }

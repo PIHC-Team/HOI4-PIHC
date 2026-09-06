@@ -1,27 +1,34 @@
 DECISION_CATEGORY_RESOURCES_DEVELOPMENT = {
-    DECISION_CONSTRUCTION_EXPANSION = {
-        fixed_random_seed = no
-        priority = 98
-        cost = 75
-        days_re_enable = 120
-        complete_effect = {
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1
-            }
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-        ai_will_do = {
-            base = 2
-            modifier = {
-                add = -2
-                FROM = {
-                    tag = C08
-                    is_ai = yes
-                }
-            }
-        }
-        icon = CONSTRUCTION_EXPANSION
-    }
+	DECISION_CONSTRUCTION_EXPANSION = {
+		fixed_random_seed = no
+		priority = 98
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			if = {
+				limit = {
+					tag = C12
+					has_completed_focus = FOCUS_C12_MINING_INDUSTRY_SYSTEM
+				}
+				add_political_power = 38
+			}
+		}
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = -2
+				FROM = {
+					tag = C08
+					is_ai = yes
+				}
+			}
+		}
+		icon = CONSTRUCTION_EXPANSION
+	}
 }

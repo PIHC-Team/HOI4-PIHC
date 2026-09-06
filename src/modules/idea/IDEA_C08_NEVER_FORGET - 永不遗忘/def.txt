@@ -10,6 +10,8 @@ ideas = {
 				tag = C01
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
+				resistance_decay_on_our_occupied_states = -0.25
+				resistance_growth_on_our_occupied_states = 0.25
 			}
 			allowed_civil_war = {
 				always = yes
