@@ -8,7 +8,7 @@ DECISION_CATEGORY_C12_PROVISIONAL_CONSOLIDATION = {
     visible = {
         has_completed_focus = FOCUS_C12_FORMAL_VISIT_TO_APPLELOOSA
         NOT = {
-            complete_national_focus = FOCUS_C12_PERSUADE_THE_FAMILY
+            has_completed_focus = FOCUS_C12_PERSUADE_THE_FAMILY
         }
     }
 }

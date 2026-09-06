@@ -23,7 +23,11 @@ focus = {
 				C08 = {
 					give_military_access = C12
 					give_market_access = C12
-					send_attache = C12
+					diplomatic_relation = {
+						country = C12
+						relation = send_attache
+						active = yes
+					}
 					add_opinion_modifier = {
 						target = C12
 						modifier = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE_OPINION_MODIFIER
@@ -31,8 +35,11 @@ focus = {
 				}
 				C12 = {
 					give_military_access = C08
-					give_market_access = C08
-					send_attache = C08
+					diplomatic_relation = {
+						country = C08
+						relation = send_attache
+						active = yes
+					}
 					add_opinion_modifier = {
 						target = C08
 						modifier = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE_OPINION_MODIFIER
@@ -55,7 +62,6 @@ focus = {
 				}
 				C12 = {
 					give_military_access = C05
-					give_market_access = C05
 					add_opinion_modifier = {
 						target = C05
 						modifier = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE_OPINION_MODIFIER
@@ -78,7 +84,6 @@ focus = {
 				}
 				C12 = {
 					give_military_access = C52
-					give_market_access = C52
 					add_opinion_modifier = {
 						target = C52
 						modifier = FOCUS_C12_LAST_BASTION_OF_THE_RESISTANCE_OPINION_MODIFIER
