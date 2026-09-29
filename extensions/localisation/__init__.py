@@ -21,7 +21,7 @@ from paradev.build import (
     Artifact,
     BuildContext,
     BuildRegistry,
-    LocalizationEntry,
+    LocalizationYMLWriter,
     artifact_collection_ids,
     artifact_module_ids,
 )
@@ -159,7 +159,7 @@ def _artifact_path(artifact: Artifact) -> str:
 
 def _artifact_text(artifact: Artifact) -> str:
     if artifact.artifact_type == "loc":
-        return "\ufeff" + _localisation_yml(_localisation_entries(artifact))
+        return LocalizationYMLWriter().render_bytes(artifact).decode("utf-8")
     if artifact.artifact_type == "copy":
         if len(artifact.inputs) != 1:
             raise ValueError("PIHC3 localisation copy artifacts must have exactly one input: " f"{_artifact_path(artifact)} has {len(artifact.inputs)}.")
@@ -213,29 +213,6 @@ def _validated_localisation_text(
     if any(entry.key[0] != language for entry in entries):
         raise ValueError(f"PIHC3 localisation entries do not all match header {language!r}: {path}.")
     return normalized, language
-
-
-def _localisation_entries(artifact: Artifact) -> tuple[LocalizationEntry, ...]:
-    payload = artifact.payload
-    if not isinstance(payload, tuple) or not payload or not all(isinstance(entry, LocalizationEntry) for entry in payload):
-        raise ValueError(f"PIHC3 localisation artifact has an invalid payload: {_artifact_path(artifact)}.")
-    languages = {entry.language for entry in payload}
-    if len(languages) != 1:
-        raise ValueError(f"PIHC3 localisation artifact mixes languages: {_artifact_path(artifact)}.")
-    return payload
-
-
-def _localisation_yml(entries: tuple[LocalizationEntry, ...]) -> str:
-    language = entries[0].language
-    lines = [f"{language}:"]
-    for entry in sorted(entries, key=lambda item: item.key):
-        lines.append(f' {entry.key}:0 "{_localisation_escape(entry.text)}"')
-    return "\n".join(lines) + "\n"
-
-
-def _localisation_escape(value: str) -> str:
-    normalized = value.replace("\r\n", "\n").replace("\r", "\n")
-    return normalized.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
 
 
 def _deduplicate_documents(documents: tuple[_Document, ...]) -> tuple[_Document, ...]:
